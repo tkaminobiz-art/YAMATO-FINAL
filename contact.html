@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ご来場のご予約・お問い合わせ｜株式会社やまと不動産</title>
+<meta name="description" content="モデルハウス見学のご予約、資料請求、未公開区画のご希望条件はこちらから。お電話（0742-36-1123）でも承ります。">
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ============ 夕暮れの受付（contact.html 図面 v1）============
+     コンセプト: 灯りのともった玄関に迎えられ、受付台で用件を告げる。
+     左=実写リライト(夕暮れの玄関ポーチ) / 右=紙の受付カード(用件3タブのフォーム)。
+     アンバー=送信ボタンのみ。送信先(FORM_ENDPOINT)は納品時に1行差し込み、
+     未接続時は嘘をつかず電話へ誘導するフォールバック。 */
+  :root{
+    --paper:#F4F1EA; --sheet:#FCFAF4; --paper2:#FAFAF7;
+    --ink:#241F1B; --ink2:#5A544C; --ink3:#8D857A;
+    --line:rgba(36,31,27,.14); --line2:rgba(36,31,27,.24);
+    --gold:#C9A24B; --goldhair:rgba(201,162,75,.5);
+    --green:#486B00; --green-deep:#2E4600; --amber:#C4851F; --amber-deep:#A56C12;
+    --earth:#7D4427; --cream:#F4F1EA; --dark:#12160c;
+    --fh:"dnp-shuei-gothic-gin-std","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    --fb:"Inter","Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
+    --fn:"Inter","Noto Sans JP",sans-serif;
+    --fm:"Shippori Mincho","Hiragino Mincho ProN",serif;
+    --ease:cubic-bezier(.16,1,.3,1); --eases:cubic-bezier(.22,1,.36,1);
+    --header-h:clamp(60px,7vw,80px);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{background:var(--paper);-webkit-text-size-adjust:100%}
+  html,body{word-break:normal;overflow-wrap:normal;line-break:strict}
+  body{font-family:var(--fb);color:var(--ink);background:var(--paper);
+    -webkit-font-smoothing:antialiased;font-feature-settings:"palt";overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  ::selection{background:#EDE3D2}
+
+  /* ============ ヘッダー（CTAは電話に差し替え＝このページ自体がCV） ============ */
+  /* 分割レイアウト（左=暗/右=明）のため透過ヘッダーは成立しない → 常時白地で可読性を保証 */
+  .hd{position:fixed;top:0;left:0;right:0;z-index:80;height:var(--header-h);
+    display:flex;align-items:center;gap:clamp(14px,2vw,26px);
+    padding:0 clamp(16px,3vw,40px) 0 clamp(20px,4.5vw,60px);color:var(--ink);
+    background:rgba(250,250,247,.92);
+    -webkit-backdrop-filter:saturate(1.05) blur(9px);backdrop-filter:saturate(1.05) blur(9px);
+    box-shadow:0 1px 0 var(--line)}
+  .hd__brand{display:flex;align-items:center;gap:11px;line-height:1}
+  .hd__mark{height:clamp(26px,3.4vw,32px);width:auto;display:block}
+  .hd__kk{display:flex;flex-direction:column;gap:3px;font-family:var(--fh);font-weight:500;font-size:.5rem;letter-spacing:.16em;opacity:.85}
+  .hd__jp{font-family:var(--fh);font-weight:500;letter-spacing:.1em;font-size:clamp(1rem,.9rem + .6vw,1.26rem)}
+    .hd__back{margin-left:auto;font-family:var(--fh);font-weight:500;font-size:.82rem;letter-spacing:.05em;
+    opacity:.9;display:inline-flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid transparent;transition:.3s var(--ease)}
+  .hd__back:hover{opacity:1;border-bottom-color:currentColor}
+  .hd__back svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;fill:none;transform:rotate(180deg)}
+  .hd__tel{display:inline-flex;flex-direction:column;align-items:flex-end;gap:3px;line-height:1}
+  .hd__tel b{font-family:var(--fn);font-weight:400;font-variant-numeric:tabular-nums;font-size:clamp(1.05rem,1rem + .5vw,1.3rem);letter-spacing:.01em;color:var(--earth)}
+  .hd__tel span{font-size:.58rem;letter-spacing:.06em;color:var(--ink3)}
+  @media(max-width:560px){ .hd__back{display:none} .hd__kk{display:none} }
+
+  /* ============ 受付（split） ============ */
+  .desk{display:grid;grid-template-columns:minmax(340px,44%) minmax(0,1fr);min-height:100svh}
+  @media(max-width:960px){ .desk{display:block} }
+
+  /* ---- 左：夕暮れの玄関（実写リライト） ---- */
+  .porch{position:relative;isolation:isolate;overflow:hidden;background:var(--dark);color:var(--cream);
+    display:flex;flex-direction:column;justify-content:flex-end}
+  .porch__img{position:absolute;inset:0;z-index:0}
+  .porch__img img{width:100%;height:100%;object-fit:cover;object-position:center 40%;
+    transform:scale(1.04);animation:porchdrift 30s var(--eases) infinite alternate}
+  @keyframes porchdrift{from{transform:scale(1.04)}to{transform:scale(1.09)}}
+  .porch__scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(to top,rgba(12,10,6,.72) 0%,rgba(12,10,6,.18) 38%,rgba(12,10,6,.12) 70%,rgba(12,10,6,.34) 100%)}
+  .porch__in{position:relative;z-index:2;padding:clamp(28px,4vw,52px);padding-top:calc(var(--header-h) + 20px)}
+  .porch__eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--fn);font-size:.62rem;font-weight:500;
+    letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+  .porch__eyebrow::before{content:"";width:28px;height:1px;background:currentColor;opacity:.8}
+  .porch h1{font-family:var(--fm);font-weight:600;letter-spacing:.06em;line-height:1.7;
+    font-size:clamp(1.5rem,1.15rem + 1.4vw,2.1rem);color:var(--cream);text-shadow:0 2px 22px rgba(6,8,4,.6)}
+  .porch__lead{margin-top:14px;font-size:clamp(.88rem,.85rem + .2vw,.98rem);line-height:2;letter-spacing:.04em;
+    color:rgba(244,241,234,.86);max-width:30em;text-shadow:0 1px 12px rgba(6,8,4,.5)}
+  .porch__tel{margin-top:clamp(20px,3vw,30px);padding-top:clamp(16px,2.4vw,22px);border-top:1px solid rgba(201,162,75,.4)}
+  .porch__tel .k{font-size:.66rem;letter-spacing:.14em;color:rgba(244,241,234,.66);display:block;margin-bottom:8px}
+  .porch__tel a{font-family:var(--fn);font-weight:300;font-variant-numeric:tabular-nums;
+    font-size:clamp(1.7rem,1.4rem + 1.3vw,2.4rem);letter-spacing:.01em;color:var(--cream);
+    display:inline-flex;align-items:center;gap:12px;border-bottom:1px solid rgba(201,162,75,.45);padding-bottom:4px}
+  .porch__tel a svg{width:20px;height:20px;stroke:var(--gold);stroke-width:1.5;fill:none}
+  .porch__hours{margin-top:9px;font-size:.7rem;letter-spacing:.05em;color:rgba(244,241,234,.68)}
+  /* LINE相談（公式色#06C755はブランドパレット外の例外＝LINE識別専用） */
+  .porch__lineblk{margin-top:clamp(18px,2.6vw,26px);padding-top:clamp(16px,2.2vw,20px);
+    border-top:1px solid rgba(201,162,75,.4);display:flex;align-items:center;gap:clamp(14px,1.8vw,20px);flex-wrap:wrap}
+  .porch__linebody{flex:1;min-width:200px}
+  .porch__lineblk .k{font-size:.66rem;letter-spacing:.14em;color:rgba(244,241,234,.66);display:block;margin-bottom:10px}
+  .linebtn{display:inline-flex;align-items:center;gap:10px;background:#06C755;color:#fff;
+    font-family:var(--fh);font-weight:500;font-size:.92rem;letter-spacing:.04em;
+    padding:13px 24px;border-radius:5px;line-height:1;white-space:nowrap;
+    box-shadow:0 10px 26px -10px rgba(6,199,85,.55);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .linebtn:hover{transform:translateY(-2px);box-shadow:0 14px 32px -12px rgba(6,199,85,.65)}
+  .linebtn svg{width:17px;height:17px;fill:#fff}
+  .linebtn .soon{font-family:var(--fn);font-size:.56rem;letter-spacing:.1em;background:rgba(255,255,255,.25);
+    border-radius:3px;padding:.25em .5em}
+  .porch__linenote{margin-top:9px;font-size:.66rem;letter-spacing:.04em;color:rgba(244,241,234,.62);line-height:1.8}
+  .lineqr{flex:0 0 auto;width:92px;height:92px;border-radius:8px;overflow:hidden;
+    background:rgba(252,250,244,.95);display:grid;place-items:center;text-align:center;
+    border:1px solid rgba(201,162,75,.45)}
+  .lineqr img{width:100%;height:100%;object-fit:contain;padding:5px}
+  .lineqr .ph{font-family:var(--fb);font-size:.56rem;letter-spacing:.08em;color:var(--ink3);line-height:1.7}
+  .lineqr .ph b{display:block;font-family:var(--fn);font-size:.7rem;color:#06C755;font-weight:600;letter-spacing:.02em}
+  @media(max-width:960px){
+    .porch{min-height:52vh}
+    .porch__in{padding-bottom:clamp(24px,5vw,36px)}
+  }
+
+  /* ---- 右：受付カード（フォーム） ---- */
+  .card{position:relative;background:var(--paper);display:flex;align-items:flex-start;justify-content:center;
+    padding:calc(var(--header-h) + clamp(24px,4vw,56px)) clamp(20px,4vw,64px) clamp(72px,9vw,120px)}
+  .card::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background:repeating-linear-gradient(0deg,transparent 0 46px,rgba(125,68,39,.05) 46px 47px)}
+  .card__in{position:relative;width:min(640px,100%)}
+  .fm{background:var(--sheet);border:1px solid var(--line);border-radius:8px;
+    box-shadow:0 30px 70px -40px rgba(60,44,26,.5),0 8px 22px -12px rgba(60,44,26,.14);
+    padding:clamp(24px,3.4vw,44px) clamp(20px,3vw,40px) clamp(28px,3.6vw,44px)}
+  .fm__title{font-family:var(--fh);font-weight:500;font-size:clamp(1.2rem,1.1rem + .6vw,1.5rem);letter-spacing:.05em}
+  .fm__note{margin-top:8px;font-size:.8rem;line-height:1.9;color:var(--ink2);letter-spacing:.03em}
+
+  /* 用件タブ */
+  .types{display:flex;gap:0;margin-top:clamp(18px,2.4vw,26px);border:1px solid var(--line2);border-radius:6px;overflow:hidden}
+  .type{flex:1;appearance:none;border:none;background:var(--paper2);cursor:pointer;
+    font-family:var(--fh);font-weight:500;font-size:clamp(.78rem,.74rem + .2vw,.88rem);letter-spacing:.02em;color:var(--ink2);
+    padding:13px 6px;min-height:48px;transition:background .3s,color .3s;position:relative}
+  .type + .type{border-left:1px solid var(--line)}
+  .type.is-on{background:var(--green-deep);color:#F4F1EA}
+  .type:focus-visible{outline:2px solid var(--green);outline-offset:-3px}
+
+  /* 物件チップ（?lot= 自動挿入） */
+  .lotchip{display:none;margin-top:14px;padding:10px 14px;border:1px solid var(--goldhair);border-radius:5px;
+    background:rgba(201,162,75,.08);font-size:.82rem;letter-spacing:.03em;color:var(--ink)}
+  .lotchip.is-on{display:flex;align-items:center;gap:10px}
+  .lotchip b{font-weight:500}
+  .lotchip .x{margin-left:auto;cursor:pointer;border:none;background:none;color:var(--ink3);font-size:1rem;line-height:1;padding:4px}
+
+  /* フィールド */
+  .fields{margin-top:clamp(18px,2.6vw,28px);display:grid;gap:clamp(16px,2.2vw,22px)}
+  .fld{display:grid;gap:8px}
+  .fld label{font-family:var(--fh);font-weight:500;font-size:.84rem;letter-spacing:.04em;display:flex;align-items:baseline;gap:8px}
+  .req{font-family:var(--fn);font-size:.56rem;letter-spacing:.12em;color:#fff;background:var(--earth);
+    border-radius:3px;padding:.25em .5em;text-transform:uppercase}
+  .opt{font-family:var(--fn);font-size:.56rem;letter-spacing:.12em;color:var(--ink3);border:1px solid var(--line2);
+    border-radius:3px;padding:.22em .5em;text-transform:uppercase}
+  .fld input[type=text],.fld input[type=tel],.fld input[type=email],.fld input[type=date],.fld select,.fld textarea{
+    appearance:none;width:100%;font-family:var(--fb);font-size:16px;color:var(--ink);letter-spacing:.02em;
+    background:#fff;border:1px solid var(--line2);border-radius:5px;padding:13px 14px;min-height:48px;
+    transition:border-color .3s,box-shadow .3s}
+  .fld select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%235A544C' stroke-width='1.6'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+  .fld textarea{min-height:110px;resize:vertical;line-height:1.9}
+  .fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(72,107,0,.12)}
+  .fld .hint{font-size:.7rem;color:var(--ink3);letter-spacing:.03em;line-height:1.7}
+  .fld.is-error input,.fld.is-error select{border-color:#B3462E;box-shadow:0 0 0 3px rgba(179,70,46,.1)}
+  .fld .err{display:none;font-size:.72rem;color:#B3462E;letter-spacing:.03em}
+  .fld.is-error .err{display:block}
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:560px){ .duo{grid-template-columns:1fr} }
+
+  /* 送信 */
+  .send{margin-top:clamp(22px,3vw,30px)}
+  .send__btn{width:100%;appearance:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px;
+    background:var(--amber);color:#fff;font-family:var(--fh);font-weight:500;font-size:1.05rem;letter-spacing:.05em;
+    padding:18px 20px;border-radius:5px;min-height:56px;
+    box-shadow:0 14px 34px -12px rgba(196,133,31,.55);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .send__btn:hover{transform:translateY(-2px);box-shadow:0 20px 44px -14px rgba(196,133,31,.65)}
+  .send__btn svg{width:16px;height:16px;stroke:#fff;stroke-width:2;fill:none}
+  .send__pp{margin-top:12px;font-size:.7rem;color:var(--ink3);letter-spacing:.04em;text-align:center;line-height:1.8}
+  .send__fail{display:none;margin-top:14px;padding:14px 16px;border:1px solid rgba(179,70,46,.4);border-radius:6px;
+    background:rgba(179,70,46,.06);font-size:.82rem;line-height:1.9;color:var(--ink2)}
+  .send__fail.is-on{display:block}
+  .send__fail a{color:var(--earth);border-bottom:1px solid rgba(125,68,39,.4);font-variant-numeric:tabular-nums}
+
+  /* 送信完了（受付票） */
+  .done{display:none;text-align:center;padding:clamp(30px,5vw,56px) clamp(12px,2vw,24px)}
+  .done.is-on{display:block}
+  .done__seal{width:88px;height:88px;margin:0 auto;border-radius:50%;display:grid;place-items:center;
+    color:var(--green-deep);border:1.5px solid rgba(72,107,0,.5);position:relative;transform:rotate(-8deg)}
+  .done__seal::before{content:"";position:absolute;inset:6px;border-radius:50%;border:1px dashed rgba(72,107,0,.5)}
+  .done__seal svg{width:34px;height:34px;stroke:currentColor;stroke-width:1.8;fill:none}
+  .done h2{margin-top:22px;font-family:var(--fm);font-weight:600;font-size:clamp(1.25rem,1.15rem + .5vw,1.55rem);letter-spacing:.06em}
+  .done p{margin-top:14px;font-size:.9rem;line-height:2.05;color:var(--ink2);letter-spacing:.03em}
+  .done__back{display:inline-flex;align-items:center;gap:9px;margin-top:24px;font-family:var(--fh);font-weight:500;
+    font-size:.9rem;color:var(--green-deep);border-bottom:1px solid rgba(46,70,0,.35);padding-bottom:3px}
+
+  /* ============ 奥付 ============ */
+  .colo{background:var(--dark);color:rgba(244,241,234,.6)}
+  .colo__in{max-width:1220px;margin:0 auto;padding:clamp(26px,3.6vw,40px) clamp(20px,5vw,64px) calc(clamp(30px,3.6vw,44px) + env(safe-area-inset-bottom))}
+  .colo p{font-size:.7rem;line-height:2.1;letter-spacing:.05em}
+  .colo b{font-weight:500;color:rgba(244,241,234,.8)}
+
+  /* リビール */
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--eases),transform 1s var(--eases)}
+  .rv.is-in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .porch__img img{animation:none}
+    .rv{opacity:1!important;transform:none!important;transition:none}
+  }
+
+  /* 奥付ブランド（ロゴロックアップ） */
+  .colo__brand{display:flex;align-items:center;gap:11px;border-top:1px solid rgba(244,241,234,.14);
+    padding-top:clamp(20px,2.8vw,28px);margin-bottom:13px}
+  .colo__brand img{height:24px;width:auto;display:block}
+  .colo__brand b{font-family:var(--fh);font-weight:500;font-size:.88rem;letter-spacing:.1em;color:rgba(244,241,234,.88)}
+  .colo p{border-top:none!important;padding-top:0!important}
+</style>
+</head>
+<body>
+
+<header class="hd" id="hd">
+  <a class="hd__brand" href="index.html" aria-label="やまと不動産 トップへ">
+    <img class="hd__mark" src="assets/brand/yamato_mark.svg" alt="">
+    <span class="hd__kk"><span>株式</span><span>会社</span></span>
+    <span class="hd__jp">やまと不動産</span>
+  </a>
+  <a class="hd__back" href="index.html"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>トップへ戻る</a>
+  <a class="hd__tel" href="tel:0742361123" aria-label="電話をかける 0742-36-1123">
+    <b>0742-36-1123</b><span>受付 9:00〜19:00｜火・水定休</span>
+  </a>
+</header>
+
+<div class="desk">
+  <!-- 左：夕暮れの玄関 -->
+  <aside class="porch">
+    <div class="porch__img" aria-hidden="true">
+      <img src="assets/contact/porch_dusk.jpg" alt="" fetchpriority="high">
+    </div>
+    <div class="porch__scrim" aria-hidden="true"></div>
+    <div class="porch__in">
+      <span class="porch__eyebrow">Contact ／ ご予約・お問い合わせ</span>
+      <h1>灯りをつけて、<br>お待ちしています。</h1><!-- 仮コピー: copywriterパスで確定 -->
+      <p class="porch__lead">モデルハウスは標準仕様のまま建てています。見て、触れて、確かめにいらしてください。</p>
+      <div class="porch__tel">
+        <span class="k">お急ぎの方はお電話で</span>
+        <a href="tel:0742361123"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>0742-36-1123</a>
+        <p class="porch__hours">受付 9:00〜19:00｜定休日：火曜・水曜</p>
+      </div>
+      <div class="porch__lineblk" id="line">
+        <div class="porch__linebody">
+          <span class="k">LINEでもご相談いただけます</span>
+          <a class="linebtn" id="lineBtn" href="#" aria-disabled="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5C6.2 2.5 1.5 6.36 1.5 11.1c0 4.25 3.74 7.81 8.79 8.49.34.07.81.23.93.52.1.27.07.68.03.95l-.15.9c-.04.27-.21 1.05.92.57 1.13-.47 6.1-3.6 8.33-6.16 1.53-1.68 2.15-3.39 2.15-5.27 0-4.74-4.7-8.6-10.5-8.6z"/></svg>
+            LINEで友だち追加
+            <span class="soon" id="lineSoon">準備中</span>
+          </a>
+          <p class="porch__linenote">夜間や移動中でも、お気軽にどうぞ。お返事は営業時間内にいたします。</p>
+        </div>
+        <div class="lineqr" id="lineQr" aria-label="LINE友だち追加QRコード">
+          <span class="ph"><b>QR</b>準備中</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 右：受付カード -->
+  <main class="card">
+    <div class="card__in rv" id="cardIn">
+      <form class="fm" id="fm" novalidate>
+        <h2 class="fm__title">ご用件をお選びください</h2>
+        <p class="fm__note">3分ほどで送れます。いただいた内容に、担当者からご連絡します。</p>
+
+        <div class="types" role="tablist" aria-label="ご用件">
+          <button class="type is-on" type="button" data-type="reserve" role="tab" aria-selected="true">来場のご予約</button>
+          <button class="type" type="button" data-type="docs" role="tab" aria-selected="false">資料請求</button>
+          <button class="type" type="button" data-type="request" role="tab" aria-selected="false">土地の希望条件</button>
+        </div>
+
+        <div class="lotchip" id="lotchip">
+          <b id="lotname"></b>についてのお問い合わせ
+          <button class="x" type="button" id="lotclear" aria-label="物件の指定を外す">✕</button>
+        </div>
+
+        <div class="fields">
+          <div class="fld" data-common>
+            <label for="fname">お名前 <span class="req">必須</span></label>
+            <input type="text" id="fname" name="name" autocomplete="name" placeholder="例）山田 太郎">
+            <span class="err">お名前をご記入ください</span>
+          </div>
+          <div class="duo">
+            <div class="fld" data-common id="fldTel">
+              <label for="ftel">お電話番号 <span class="opt">どちらか必須</span></label>
+              <input type="tel" id="ftel" name="tel" autocomplete="tel" inputmode="tel" placeholder="例）090-1234-5678">
+              <span class="err">電話かメールのどちらかをご記入ください</span>
+            </div>
+            <div class="fld" data-common id="fldMail">
+              <label for="fmail">メールアドレス <span class="opt">どちらか必須</span></label>
+              <input type="email" id="fmail" name="email" autocomplete="email" inputmode="email" placeholder="例）yamada@example.com">
+              <span class="err"></span>
+            </div>
+          </div>
+
+          <!-- 来場予約 -->
+          <div class="duo" data-for="reserve">
+            <div class="fld">
+              <label for="fdate">ご希望日 <span class="opt">任意</span></label>
+              <input type="date" id="fdate" name="date">
+              <span class="hint">未定でも大丈夫です。ご連絡の際に調整します。</span>
+            </div>
+            <div class="fld">
+              <label for="ftime">時間帯 <span class="opt">任意</span></label>
+              <select id="ftime" name="time">
+                <option value="">選択してください</option>
+                <option>午前（10:00〜12:00）</option>
+                <option>午後（13:00〜16:00）</option>
+                <option>夕方（16:00〜18:00）</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 資料請求 -->
+          <div class="fld" data-for="docs">
+            <label for="faddr">お届け先ご住所 <span class="opt">郵送ご希望の場合</span></label>
+            <input type="text" id="faddr" name="address" autocomplete="street-address" placeholder="例）奈良県奈良市◯◯町1-2-3">
+            <span class="hint">メールでのお届けをご希望の場合は空欄で構いません。</span>
+          </div>
+
+          <!-- 土地の希望条件 -->
+          <div class="duo" data-for="request">
+            <div class="fld">
+              <label for="farea">ご希望エリア <span class="opt">任意</span></label>
+              <select id="farea" name="area">
+                <option value="">こだわらない</option>
+                <option>奈良市</option><option>生駒市</option><option>大和郡山市</option>
+                <option>斑鳩町</option><option>天理市</option><option>田原本町</option>
+                <option>橿原市</option><option>木津川市</option><option>京田辺市</option>
+                <option>その他・複数エリア</option>
+              </select>
+            </div>
+            <div class="fld">
+              <label for="fbudget">土地のご予算 <span class="opt">任意</span></label>
+              <select id="fbudget" name="budget">
+                <option value="">こだわらない</option>
+                <option>〜1,500万円</option><option>〜2,000万円</option>
+                <option>〜2,500万円</option><option>2,500万円〜</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="fld" data-common>
+            <label for="fmsg">メッセージ <span class="opt">任意</span></label>
+            <textarea id="fmsg" name="message" placeholder="ご質問・ご希望など、自由にお書きください。"></textarea>
+          </div>
+        </div>
+
+        <div class="send">
+          <button class="send__btn" type="submit" id="sendBtn">この内容で送信する
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="send__pp">いただいた情報は、ご連絡とご案内の目的にのみ使用します。</p>
+          <div class="send__fail" id="sendFail">
+            送信できませんでした。お手数ですが、お電話（<a href="tel:0742361123">0742-36-1123</a>／受付 9:00〜19:00・火水定休）でお伝えいただくか、時間をおいてもう一度お試しください。
+          </div>
+        </div>
+      </form>
+
+      <!-- 受付完了票 -->
+      <div class="fm done" id="done" hidden>
+        <div class="done__seal" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5 11-12"/></svg></div>
+        <h2>受け付けました。</h2>
+        <p id="doneMsg">担当者より、ご記入いただいた<br>連絡先へご連絡します。</p>
+        <a class="done__back" href="index.html">トップへ戻る<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer class="colo">
+  <div class="colo__in">
+    <div class="colo__brand"><img src="assets/brand/yamato_mark.svg" alt=""><b>株式会社やまと不動産</b></div>
+    <p>
+      <b>株式会社やまと不動産</b>（奈良県奈良市大宮町1丁目6番21）　宅地建物取引業 国土交通大臣（1）第10516号<br>
+      お電話：0742-36-1123（受付 9:00〜19:00｜定休日：火曜・水曜）
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.25/dist/lenis.min.js" integrity="sha384-ClD7pCgIUz5M81HT8aZmMxCsWmfsycmBiwL5gy1pUbdWHvICIbea22N9sTtAFotA" crossorigin="anonymous"></script>
+<script>
+(function(){
+  var d=document;
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+  /* ---- 送信先: 納品時にエンドポイントを設定（例: 'https://formspree.io/f/xxxx' / 自社API）。
+         空のままなら送信時に電話フォールバックを案内する（嘘の「送信しました」は出さない）。 ---- */
+  var FORM_ENDPOINT='';
+
+  /* ---- LINE公式: QR/URLが届いたらここに設定（LINE_URL='https://lin.ee/xxxx' /
+         QR画像を assets/contact/line_qr.png に配置）。未設定の間は「準備中」表示。 ---- */
+  var LINE_URL='';
+  var LINE_QR='assets/contact/line_qr.png';
+  (function(){
+    var btn=d.getElementById('lineBtn'), soon=d.getElementById('lineSoon'), qr=d.getElementById('lineQr');
+    if(LINE_URL){
+      btn.href=LINE_URL; btn.target='_blank'; btn.rel='noopener noreferrer';
+      btn.removeAttribute('aria-disabled'); if(soon)soon.remove();
+    } else {
+      btn.addEventListener('click',function(e){ e.preventDefault(); });
+    }
+    /* QR画像が実在すれば差し込み（無ければ準備中プレースホルダのまま） */
+    var probe=new Image();
+    probe.onload=function(){ qr.innerHTML=''; probe.alt='LINE友だち追加QRコード'; qr.appendChild(probe); };
+    probe.src=LINE_QR;
+  })();
+
+  /* Lenis（autoRaf必須の教訓に従い明示） */
+  if(!reduce && fine && matchMedia('(min-width:961px)').matches && window.Lenis){
+    new Lenis({autoRaf:true,smoothWheel:true,syncTouch:false,
+      duration:1.15,easing:function(t){return Math.min(1,1.001-Math.pow(2,-10*t));}});
+    d.documentElement.style.scrollBehavior='auto';
+  }
+  var hd=d.getElementById('hd');
+  function onScroll(){ hd.classList.toggle('is-solid',window.scrollY>30); }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ d.getElementById('cardIn').classList.add('is-in'); }); });
+
+  /* ---- 用件タブ ---- */
+  var qs=new URLSearchParams(location.search);
+  var TYPE_LABEL={reserve:'来場のご予約',docs:'資料請求',request:'土地の希望条件'};
+  var state={type:'reserve'};
+  function setType(t){
+    if(!TYPE_LABEL[t]) t='reserve';
+    state.type=t;
+    d.querySelectorAll('.type').forEach(function(b){
+      var on=b.getAttribute('data-type')===t;
+      b.classList.toggle('is-on',on); b.setAttribute('aria-selected',on?'true':'false');
+    });
+    d.querySelectorAll('[data-for]').forEach(function(el){
+      el.style.display=(el.getAttribute('data-for')===t)?'':'none';
+    });
+  }
+  d.querySelectorAll('.type').forEach(function(b){
+    b.addEventListener('click',function(){ setType(b.getAttribute('data-type')); });
+  });
+  setType(qs.get('type')||'reserve');
+
+  /* ---- ?lot= 物件名の自動挿入（lots.html/lot.htmlからの遷移） ---- */
+  var lot=qs.get('lot')||'';
+  var chip=d.getElementById('lotchip');
+  if(lot){
+    d.getElementById('lotname').textContent=lot;
+    chip.classList.add('is-on');
+  }
+  d.getElementById('lotclear').addEventListener('click',function(){ lot=''; chip.classList.remove('is-on'); });
+
+  /* ---- バリデーション（最小・摩擦を増やさない） ---- */
+  function setErr(id,on){ d.getElementById(id).closest('.fld').classList.toggle('is-error',!!on); }
+  function validate(){
+    var ok=true;
+    var name=d.getElementById('fname').value.trim();
+    setErr('fname',!name); if(!name) ok=false;
+    var tel=d.getElementById('ftel').value.trim();
+    var mail=d.getElementById('fmail').value.trim();
+    var contact=!!(tel||mail);
+    d.getElementById('fldTel').classList.toggle('is-error',!contact);
+    if(!contact) ok=false;
+    return ok;
+  }
+
+  /* ---- 送信 ---- */
+  var fm=d.getElementById('fm'), fail=d.getElementById('sendFail'), btn=d.getElementById('sendBtn');
+  fm.addEventListener('submit',function(e){
+    e.preventDefault();
+    fail.classList.remove('is-on');
+    if(!validate()){
+      var firstErr=d.querySelector('.fld.is-error input');
+      if(firstErr) firstErr.focus();
+      return;
+    }
+    var payload={
+      type:TYPE_LABEL[state.type],
+      lot:lot||'',
+      name:d.getElementById('fname').value.trim(),
+      tel:d.getElementById('ftel').value.trim(),
+      email:d.getElementById('fmail').value.trim(),
+      date:d.getElementById('fdate').value,
+      time:d.getElementById('ftime').value,
+      address:d.getElementById('faddr').value.trim(),
+      area:d.getElementById('farea').value,
+      budget:d.getElementById('fbudget').value,
+      message:d.getElementById('fmsg').value.trim(),
+      page:location.href
+    };
+    if(!FORM_ENDPOINT){
+      /* 未接続: 正直に電話フォールバック（偽の完了画面は出さない） */
+      fail.classList.add('is-on');
+      fail.scrollIntoView({block:'nearest',behavior:reduce?'auto':'smooth'});
+      return;
+    }
+    btn.disabled=true; btn.style.opacity=.6;
+    fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify(payload)})
+    .then(function(r){ if(!r.ok) throw new Error(r.status);
+      fm.style.display='none';
+      var doneEl=d.getElementById('done'); doneEl.hidden=false; doneEl.classList.add('is-on');
+      window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
+    })
+    .catch(function(){ fail.classList.add('is-on'); })
+    .finally(function(){ btn.disabled=false; btn.style.opacity=1; });
+  });
+})();
+</script>
+</body>
+</html>

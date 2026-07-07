@@ -1,0 +1,2924 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>株式会社やまと不動産｜奈良の注文住宅（トップ統合図面）</title>
+<meta name="description" content="ヘッダー・メニュー・FV（標準装備ループ動画）・実績セクションを統合したトップページ図面。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<!-- LCP＝FVポスター：ビューポート別に先読み（SPは縦長版） -->
+<link rel="preload" as="image" href="assets/video_ab/B_poster_sp.webp?v=sp2" media="(max-width:700px)">
+<link rel="preload" as="image" href="assets/video_ab/B_poster.webp?v=shuei" media="(min-width:701px)">
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* 面・文字 */
+    --paper:#F4F1EA; --cream:#F4F1EA; --bg:#FAFAF7; --bg-warm:#F5EEE2;
+    --ink:#241F1B; --text:#241F1B; --text-light:#6B6B6B; --ink2:#5A544C; --line-color:#E4DDCE; --line:#D8D1C4;
+    /* 色（緑=ブランド／amber=CV専用／earth=メニュー差し色） */
+    --main:#486B00; --green:#486B00; --main-dark:#2E4600; --main-light:#EDF2D5; --lime:#A2C523;
+    --earth:#7D4427; --earth-light:#F2EAE0; --cta:#C4851F; --amber:#C4851F; --cta-dark:#A56C12; --gold:#C9A24B;
+    /* 書体 */
+    --fh:"dnp-shuei-gothic-gin-std","Noto Sans JP",sans-serif;
+    --font-head:"Inter","dnp-shuei-gothic-gin-std","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    --font-body:"Inter","Noto Sans JP","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    --fb:"Inter","Noto Sans JP",sans-serif;
+    --fn:"Inter","Noto Sans JP",sans-serif; --font-num:"Inter","Noto Sans JP",sans-serif;
+    --header-h:clamp(60px,7vw,84px); --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:#12160c}
+  html,body{word-break:normal;overflow-wrap:normal;line-break:strict}
+  body{font-family:var(--font-body);color:var(--ink);background:var(--paper);
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:"palt"}
+  body.is-locked{overflow:hidden}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  ::selection{background:var(--main-light)}
+
+  /* ===================== HEADER (fixed 透過→solid) ===================== */
+  .site-header{position:fixed;top:0;left:0;right:0;z-index:80;
+    /* Dynamic Island/ノッチ：セーフエリア分を上に足す（非対応環境では0） */
+    height:calc(var(--header-h) + env(safe-area-inset-top,0px));
+    padding-top:env(safe-area-inset-top,0px);
+    display:flex;align-items:center;
+    padding-left:clamp(20px,4.5vw,60px);padding-right:clamp(16px,3vw,40px);
+    color:var(--cream);
+    transition:background .55s var(--ease),color .45s var(--ease),box-shadow .55s var(--ease),border-color .55s var(--ease);
+    border-bottom:1px solid transparent}
+  .site-header::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:linear-gradient(to bottom,rgba(16,20,10,.42),rgba(16,20,10,0));
+    opacity:1;transition:opacity .5s var(--ease)}
+  .site-header.is-solid{background:rgba(250,250,247,.90);color:var(--text);
+    -webkit-backdrop-filter:saturate(1.1) blur(14px);backdrop-filter:saturate(1.1) blur(14px);
+    border-bottom-color:var(--line-color);box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .site-header.is-solid::before{opacity:0}
+
+  .brand{display:flex;align-items:center;line-height:1;gap:11px;flex:0 0 auto;
+    padding:12px 10px;margin:-12px -10px} /* タップ領域44px級を維持 */
+  .brand__mark{height:clamp(26px,3.4vw,32px);width:auto;display:block}
+  .brand__kk{display:flex;flex-direction:column;gap:3px;font-family:var(--font-head);font-weight:500;
+    font-size:.5rem;letter-spacing:.16em;opacity:.85}
+  .brand__jp{font-family:var(--font-head);font-weight:500;letter-spacing:.10em;
+    font-size:clamp(1.02rem,.9rem + .7vw,1.32rem)}
+  .brand__en{font-family:"Inter",sans-serif;font-weight:400;letter-spacing:.30em;
+    font-size:.5rem;text-transform:uppercase;opacity:.62;padding-left:.05em}
+
+  .nav{margin-left:auto;display:flex;align-items:center;gap:clamp(18px,2vw,34px)}
+  .nav__link{position:relative;font-family:var(--font-head);font-weight:500;
+    font-size:.85rem;letter-spacing:.05em;padding:6px 0;white-space:nowrap;opacity:.94;
+    transition:opacity .3s var(--ease)}
+  .nav__link::after{content:"";position:absolute;left:0;right:100%;bottom:-1px;height:1px;
+    background:currentColor;transition:right .4s var(--ease);opacity:.7}
+  .nav__link:hover{opacity:1}
+  .nav__link:hover::after{right:0}
+  .site-header.is-solid .nav__link:hover{color:var(--main)}
+
+  .actions{display:flex;align-items:center;gap:clamp(10px,1.4vw,18px);margin-left:clamp(20px,2.4vw,40px)}
+  .ghost-link{font-family:var(--font-head);font-weight:500;font-size:.82rem;letter-spacing:.05em;
+    opacity:.9;border-bottom:1px solid transparent;padding-bottom:2px;transition:.3s var(--ease)}
+  .ghost-link:hover{opacity:1;border-bottom-color:currentColor}
+  .btn-reserve{display:inline-flex;align-items:center;gap:9px;background:var(--cta);color:#fff;
+    font-family:var(--font-head);font-weight:500;font-size:.85rem;letter-spacing:.04em;
+    padding:11px 22px;border-radius:4px;line-height:1;white-space:nowrap;
+    box-shadow:0 6px 22px rgba(196,133,31,.28);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .btn-reserve:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(196,133,31,.36)}
+  .btn-reserve svg{width:13px;height:13px;stroke:#fff;stroke-width:2;fill:none}
+
+  .burger{width:clamp(44px,4vw,54px);height:clamp(44px,4vw,54px);border-radius:50%;
+    display:inline-flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;
+    background:transparent;border:1px solid rgba(244,241,234,.34);cursor:pointer;color:inherit;
+    transition:background .4s var(--ease),border-color .4s var(--ease)}
+  .site-header.is-solid .burger{border-color:var(--line-color);background:#fff}
+  .burger span{display:block;width:20px;height:1.6px;background:currentColor;border-radius:2px;
+    transition:transform .4s var(--ease),width .4s var(--ease)}
+  .site-header.is-solid .burger span{background:var(--text)}
+  .burger:hover span:first-child{width:14px}
+  .burger:hover span:last-child{width:14px}
+
+  /* ===================== FV（標準装備ループ動画） ===================== */
+  .hero{position:relative;height:100svh;min-height:560px;overflow:hidden;isolation:isolate;background:#12160c;color:var(--cream)}
+  .hero__v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .hero__scrim{position:absolute;inset:0;z-index:2;pointer-events:none;
+    background:linear-gradient(to bottom,rgba(16,20,10,.42) 0%,rgba(16,20,10,.05) 12%,transparent 24%),
+      linear-gradient(to top,rgba(16,20,10,.7) 0%,rgba(16,20,10,.15) 20%,transparent 40%)}
+
+  /* FVロックアップ: 左寄せ・「50」特大(Inter200)・二行目の段違い・字間設計 */
+  .intro{position:absolute;left:0;right:auto;top:45%;transform:translateY(-50%);z-index:5;text-align:left;
+    padding:0 22px 0 clamp(22px,6vw,88px);pointer-events:none;
+    opacity:0;animation:intro 1.8s ease forwards}
+  @keyframes intro{0%{opacity:0;transform:translateY(-50%) scale(1.012)}100%{opacity:1;transform:translateY(-50%) scale(1)}}
+  @keyframes introV{0%{opacity:0;transform:translateX(14px)}100%{opacity:1;transform:none}}
+  .intro h1{font-family:var(--fh);font-weight:500;line-height:1;text-shadow:0 3px 30px rgba(8,10,5,.7)}
+  .in-l1{display:flex;align-items:baseline;gap:clamp(6px,1vw,16px)}
+  .in-num{font-family:"Inter","Noto Sans JP",sans-serif;font-style:normal;font-weight:200;
+    font-size:clamp(5rem, 2.5rem + 11vw, 12rem);line-height:.86;letter-spacing:-.03em;
+    font-variant-numeric:tabular-nums}
+  .in-w{font-size:clamp(1.5rem, .9rem + 2.6vw, 3.1rem);letter-spacing:.1em;font-weight:500;line-height:1.3}
+  .in-l2{display:block;margin-top:clamp(10px,1.6vw,22px);margin-left:clamp(2.4rem, 1rem + 6vw, 8.6rem);
+    font-size:clamp(1.72rem, 1rem + 3.4vw, 4.3rem);letter-spacing:.08em;font-weight:500;line-height:1.35}
+  .intro p{margin-top:clamp(18px,2.6vw,34px);margin-left:clamp(2.4rem, 1rem + 6vw, 8.6rem);
+    display:inline-flex;align-items:center;gap:14px;
+    font-size:clamp(.98rem, .84rem + .8vw, 1.5rem);letter-spacing:.1em;color:rgba(244,241,234,.92);
+    text-shadow:0 1px 20px rgba(10,12,6,.6)}
+  .intro p::before{content:"";width:clamp(22px,3vw,38px);height:1px;background:var(--gold);opacity:.85;flex:0 0 auto}
+
+  .cta-row{position:absolute;right:clamp(20px,5vw,60px);left:auto;bottom:calc(env(safe-area-inset-bottom) + 46px);z-index:6;
+    display:flex;gap:14px;align-items:center}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--cta);color:#fff;text-decoration:none;border-radius:7px;
+    font-weight:500;font-size:1.02rem;letter-spacing:.03em;padding:16px 34px;min-height:54px;
+    box-shadow:0 14px 40px rgba(196,133,31,.44);transition:transform .5s var(--ease)}
+  .cta:hover{transform:translateY(-3px)}
+  .cta svg{width:15px;height:15px}
+  .cta-ghost{color:var(--cream);text-decoration:none;font-size:.95rem;letter-spacing:.04em;padding:14px 16px;border-bottom:1px solid rgba(244,241,234,.45)}
+  .cue{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 20px);transform:translateX(-50%);z-index:6;
+    font-family:var(--fb);font-size:.56rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(244,241,234,.7)}
+
+  /* ===================== 実績（生きた図面・動画背景＋製図インデックスバナー） ===================== */
+  .authority{position:relative;overflow:hidden;isolation:isolate;color:var(--cream);background:#100d09;
+    --gold:#D8B25A;--gold-hi:#FFF3D0;
+    padding:clamp(104px,15vw,224px) 0 clamp(72px,9vw,120px)}
+  .authority__bg{position:absolute;inset:-16% 0;z-index:0;width:100%;height:132%;object-fit:cover;display:block;
+    transform:scale(1.12);will-change:transform;filter:brightness(1.06) contrast(1.02)}
+  .authority__scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(180deg,rgba(12,10,7,.72),rgba(16,13,9,.52) 42%,rgba(12,10,7,.8)),
+      radial-gradient(72% 58% at 50% 42%,rgba(9,7,4,.46),rgba(9,7,4,0) 72%)}
+  .authority__grain{position:absolute;inset:-30px;z-index:2;pointer-events:none;opacity:.13;mix-blend-mode:soft-light;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:150px;animation:agrain 1.05s steps(5) infinite}
+  @keyframes agrain{0%{transform:translate(0,0)}20%{transform:translate(-14px,9px)}40%{transform:translate(9px,-12px)}60%{transform:translate(-8px,13px)}80%{transform:translate(12px,7px)}100%{transform:translate(0,0)}}
+  .authority__anno{position:absolute;z-index:2;top:0;left:50%;transform:translateX(-50%);width:min(1180px,92vw);pointer-events:none;will-change:transform}
+  .authority__anno svg{width:100%;height:auto;overflow:visible}
+  .authority .anno-line{fill:none;stroke:var(--gold);stroke-width:1;opacity:.7;vector-effect:non-scaling-stroke;
+    stroke-dasharray:1600;stroke-dashoffset:1600;transition:stroke-dashoffset 1.8s var(--ease)}
+  .authority.is-in .anno-line{stroke-dashoffset:0}
+  .authority.is-in .anno-line.a2{transition-delay:.5s}
+  .authority.is-in .anno-line.a3{transition-delay:.9s}
+  .authority .anno-txt{fill:var(--gold);font-family:var(--fn);font-size:12px;letter-spacing:.18em;opacity:0;transition:opacity .8s ease 1.2s}
+  .authority.is-in .anno-txt{opacity:.82}
+  .authority .wrap{position:relative;z-index:3;max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,56px);text-align:center;display:flex;flex-direction:column;align-items:center}
+  .authority .eyebrow{font-family:var(--fn);font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);
+    display:inline-flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3.4vw,40px)}
+  .authority .eyebrow::before,.authority .eyebrow::after{content:"";width:36px;height:1px;background:currentColor;opacity:.55}
+  .authority .numwrap{position:relative;display:flex;align-items:baseline;justify-content:center;gap:.04em;line-height:.84}
+  .authority .numwrap::before{content:"";position:absolute;left:50%;top:48%;width:88%;height:130%;transform:translate(-50%,-50%);z-index:-1;
+    background:radial-gradient(closest-side,rgba(216,178,90,.28),rgba(216,178,90,0) 72%);filter:blur(10px);animation:aglow 6.5s ease-in-out infinite}
+  @keyframes aglow{0%,100%{opacity:.55;transform:translate(-50%,-50%) scale(1)}50%{opacity:.85;transform:translate(-50%,-50%) scale(1.07)}}
+  .authority .count{font-family:var(--fn);font-weight:900;font-size:clamp(7rem,23vw,18.5rem);letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+    background-image:linear-gradient(96deg,#B98B34 0%,#E4C877 26%,#FFF6DE 46%,#F0DCA9 56%,#CFA24B 74%,#B98B34 100%);
+    background-size:260% 100%;background-position:0% 0;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 0 42px rgba(216,178,90,.4)) drop-shadow(0 12px 36px rgba(0,0,0,.6));animation:asheen 6.5s ease-in-out infinite}
+  @keyframes asheen{0%{background-position:0% 0}54%{background-position:100% 0}100%{background-position:0% 0}}
+  .authority .unit{font-family:var(--fh);font-weight:700;font-size:clamp(2rem,5.4vw,4.1rem);color:var(--gold);transform:translateY(-.12em);text-shadow:0 2px 22px rgba(0,0,0,.5)}
+  .authority .lead{font-family:var(--fh);font-weight:700;font-size:clamp(1.55rem,3.6vw,2.7rem);letter-spacing:.03em;color:#F8F3E7;
+    line-height:1.5;margin-top:clamp(18px,2.4vw,30px);text-wrap:balance;text-shadow:0 2px 28px rgba(0,0,0,.6)}
+  .authority .sub{font-family:var(--fb);font-size:clamp(.95rem,1.4vw,1.1rem);color:rgba(244,241,234,.8);margin-top:16px;text-shadow:0 1px 18px rgba(0,0,0,.6)}
+  .authority .stats{display:flex;justify-content:center;flex-wrap:wrap;margin-top:clamp(40px,5vw,64px)}
+  .authority .stat{padding:6px clamp(20px,3.2vw,46px);position:relative}
+  .authority .stat + .stat::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:1px;height:42px;background:currentColor;opacity:.26}
+  .authority .stat .n{font-family:var(--fn);font-weight:700;font-size:clamp(1.6rem,3vw,2.25rem);color:#F8F3E7;font-variant-numeric:tabular-nums;display:block;text-shadow:0 1px 16px rgba(0,0,0,.5)}
+  .authority .stat .l{font-family:var(--fb);font-size:12px;color:rgba(244,241,234,.72);letter-spacing:.04em;margin-top:5px;display:block}
+  /* バナー：製図インデックス帳（A hybrid） */
+  .authority .marquee{position:relative;z-index:3;margin-top:clamp(56px,7vw,96px);width:100%;overflow:hidden;
+    cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+  .authority .marquee.is-grab{cursor:grabbing}
+  .authority .track{display:flex;gap:20px;width:max-content;padding:10px clamp(11px,1.5vw,22px);will-change:transform}
+  /* タイル＝生成したプレミアム画像＋テキストのみ（統一グレーディング） */
+  .authority .tile{position:relative;flex:0 0 auto;width:clamp(258px,27vw,298px);aspect-ratio:3/4;border-radius:14px;overflow:hidden;isolation:isolate;
+    text-decoration:none;color:var(--cream);display:block;border:1px solid transparent;
+    background:linear-gradient(#0d0a06,#0d0a06) padding-box,linear-gradient(180deg,rgba(216,178,90,.5),rgba(216,178,90,.06) 60%,rgba(216,178,90,.02)) border-box;
+    box-shadow:0 20px 44px -18px rgba(0,0,0,.7);transition:transform .7s var(--ease),box-shadow .7s var(--ease)}
+  .authority .tile:hover{transform:translateY(-5px);box-shadow:0 28px 60px -20px rgba(0,0,0,.8)}
+  .authority .tile__img{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;
+    filter:brightness(.84) saturate(.9) contrast(1.03);transform:scale(1.03);transition:transform .9s var(--ease)}
+  .authority .tile:hover .tile__img{transform:scale(1.09)}
+  .authority .tile::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(180deg,rgba(13,10,6,.18) 0%,rgba(13,10,6,.06) 30%,rgba(13,10,6,.5) 62%,rgba(13,10,6,.92) 100%)}
+  .authority .tile__no{position:absolute;z-index:2;left:18px;top:12px;font-family:var(--fn);font-weight:600;
+    font-size:clamp(40px,6vw,54px);line-height:.8;color:var(--gold);font-variant-numeric:tabular-nums;letter-spacing:-.02em;text-shadow:0 2px 14px rgba(0,0,0,.75)}
+  .authority .tile__vcap{position:absolute;z-index:2;right:11px;top:15px;writing-mode:vertical-rl;
+    font-family:var(--fn);font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:rgba(244,241,234,.66);text-shadow:0 1px 8px rgba(0,0,0,.7)}
+  .authority .tile__body{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;display:flex;flex-direction:column;gap:6px;text-align:left}
+  .authority .tile__en{font-family:var(--fn);font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(244,241,234,.62);transition:color .5s var(--ease);text-shadow:0 1px 10px rgba(0,0,0,.7)}
+  .authority .tile:hover .tile__en{color:var(--gold)}
+  .authority .tile__jp{font-family:var(--fh);font-weight:700;font-size:clamp(1.2rem,1.7vw,1.42rem);letter-spacing:.04em;color:var(--cream);display:flex;align-items:center;gap:10px;text-shadow:0 2px 16px rgba(0,0,0,.75)}
+  .authority .tile__jp::before{content:"";width:15px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);flex:0 0 auto}
+  .authority .tile__fact{font-family:var(--fb);font-size:12px;color:rgba(244,241,234,.72);letter-spacing:.02em;padding-top:9px;position:relative;text-shadow:0 1px 10px rgba(0,0,0,.7)}
+  .authority .tile__fact::before{content:"";position:absolute;left:0;top:0;height:1px;width:26px;background:rgba(216,178,90,.4)}
+  .authority .tile__fact::after{content:"";position:absolute;left:0;top:0;height:1px;width:0;background:linear-gradient(90deg,var(--gold),transparent);transition:width .7s var(--ease)}
+  .authority .tile:hover .tile__fact::after{width:100%}
+  .authority .cap{position:relative;z-index:3;text-align:center;font-family:var(--fb);font-size:11.5px;color:rgba(244,241,234,.5);letter-spacing:.08em;margin-top:24px}
+  .authority [data-reveal]{opacity:0;transform:translateY(46px);filter:blur(9px);transition:opacity 1s var(--ease),transform 1.15s var(--ease),filter 1s var(--ease);transition-delay:var(--d,0s)}
+  .authority.is-in [data-reveal]{opacity:1;transform:none;filter:none}
+  .authority .marquee[data-reveal]{transform:translateY(56px)}
+  @media (prefers-reduced-motion:reduce){
+    .authority [data-reveal]{opacity:1!important;transform:none!important;filter:none!important;transition:none}
+    .authority .track,.authority__grain,.authority .count,.authority .numwrap::before{animation:none}
+    .authority .anno-line{stroke-dashoffset:0!important;transition:none}.authority .anno-txt{opacity:.82!important;transition:none}
+    .authority__bg{transform:scale(1.04)!important}
+  }
+
+  /* ===================== 信条（散らしコラージュ・明朝／このセクションのみMincho） ===================== */
+  .heart{position:relative;isolation:isolate;overflow:hidden;
+    --font-head:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+    --font-body:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+    --font-en:"Inter",sans-serif;
+    --cream-soft:rgba(244,241,234,.84);--cream-faint:rgba(244,241,234,.5);--sand:#E0CBA0;
+    --ease-soft:cubic-bezier(.22,1,.36,1);--shadow:0 50px 90px -30px rgba(0,0,0,.66),0 14px 34px -18px rgba(0,0,0,.45);
+    padding:clamp(120px,18vh,224px) clamp(20px,5vw,72px) clamp(104px,14vh,188px);
+    background:radial-gradient(128% 92% at 50% 26%,#4C4237 0%,#3A332B 50%,#2B2620 100%)}
+  .heart::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(56% 42% at 84% 6%,rgba(224,203,160,.20),transparent 60%),radial-gradient(120% 80% at 50% 118%,rgba(0,0,0,.34),transparent 58%)}
+  .heart::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.055;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .heart img{display:block;width:100%;height:100%;object-fit:cover}
+  .heart__inner{position:relative;z-index:2;max-width:1340px;margin:0 auto}
+  .heart__text{position:relative;z-index:3;width:min(920px,92vw);margin:0 auto;text-align:center}
+  .heart__text::before{content:"";position:absolute;z-index:-1;inset:-8% -14%;
+    background:radial-gradient(56% 54% at 50% 46%,rgba(28,24,19,.6),transparent 72%);filter:blur(10px)}
+  .heart .kicker{display:inline-block;font-family:var(--font-en);font-size:.62rem;font-weight:400;letter-spacing:.4em;text-transform:uppercase;color:var(--cream-faint);margin-bottom:34px}
+  .heart .kicker::before,.heart .kicker::after{content:"";display:inline-block;width:30px;height:1px;background:currentColor;vertical-align:middle;opacity:.6}
+  .heart .kicker::before{margin-right:14px}
+  .heart .kicker::after{margin-left:14px}
+  .heart .lead-in{font-family:var(--font-head);font-weight:400;letter-spacing:.24em;font-size:clamp(1.02rem,.92rem + .5vw,1.32rem);color:var(--cream-soft);margin-bottom:26px}
+  .heart__head{font-family:var(--font-head);font-weight:500;color:var(--cream);font-size:clamp(1.62rem,1.05rem + 2.05vw,2.5rem);line-height:1.74;letter-spacing:.08em}
+  .heart__head .q{display:block}
+  .heart__head .q em{font-style:normal;color:var(--sand)}
+  .heart__prose,.heart__close{margin-left:auto;margin-right:auto}
+  .heart__prose{max-width:640px;margin-top:clamp(52px,7vh,88px)}
+  .heart__prose p{font-family:var(--font-body);font-weight:400;color:var(--cream-soft);font-size:clamp(1rem,.95rem + .38vw,1.14rem);line-height:2.5;letter-spacing:.09em;text-align:center;text-align-last:center;text-wrap:pretty}
+  .heart__prose p + p{margin-top:clamp(34px,5vh,60px)}
+  .heart__prose .accent{color:var(--cream);font-weight:500}
+  .heart__close{max-width:660px;margin-top:clamp(60px,8vh,104px)}
+  .heart__close p{font-family:var(--font-head);font-weight:500;color:var(--cream);font-size:clamp(1.16rem,1rem + .92vw,1.62rem);line-height:2.15;letter-spacing:.08em;text-wrap:pretty}
+  .heart__rule{display:block;width:46px;height:1px;margin:clamp(38px,5vh,58px) auto 0;background:var(--lime);opacity:.55;transform:scaleX(0);transform-origin:center;transition:transform 1.1s var(--ease-soft) .2s}
+  .heart__close.is-in .heart__rule{transform:scaleX(1)}
+  .heart .reveal-up{opacity:0;transform:translateY(30px);transition:opacity 1.05s var(--ease-soft),transform 1.15s var(--ease-soft);transition-delay:calc(var(--i,0) * .09s)}
+  .heart .reveal-up.is-in{opacity:1;transform:none}
+  .heart .ph{position:absolute;z-index:1;opacity:0;transform:translateY(66px) scale(.97);filter:blur(6px);transition:opacity 1.3s var(--ease-soft),transform 1.5s var(--ease-soft),filter 1.2s var(--ease-soft);will-change:opacity,transform,filter}
+  .heart .ph.is-in{opacity:1;transform:none;filter:none}
+  .heart .ph__px{will-change:transform}
+  .heart .ph__f{position:relative;border-radius:8px;overflow:hidden;box-shadow:var(--shadow);will-change:transform;animation:floaty var(--fdur,9s) var(--ease) infinite;animation-delay:var(--fdel,0s)}
+  .heart .ph__f::after{content:"";position:absolute;inset:0;border-radius:8px;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(255,244,224,.05),transparent 30%,rgba(0,0,0,.06))}
+  .heart .ph img{transition:transform 1.6s var(--ease-soft),filter 1.6s var(--ease-soft);transform:scale(1.02)}
+  .heart .ph.is-in img{transform:scale(1)}
+  .heart .ph__f:hover img{transform:scale(1.05)}
+  @keyframes floaty{0%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-15px) rotate(.55deg)}100%{transform:translateY(0) rotate(0deg)}}
+  .heart .ph--kitchen{top:3%;left:-5%;width:20%;--fdur:8.5s;--fdel:-.4s}
+  .heart .ph--atrium{top:-4%;right:-2%;width:15.5%;--fdur:11s;--fdel:-2.2s}
+  .heart .ph--living{top:37%;left:-6%;width:30%;--fdur:9.5s;--fdel:-1.1s}
+  .heart .ph--vanity{top:44%;right:-7%;width:22.5%;--fdur:10.5s;--fdel:-3s}
+  .heart .ph--bath{top:79%;right:1%;width:26.5%;--fdur:9s;--fdel:-.8s}
+  .heart .ph--kitchen .ph__f{aspect-ratio:4/3}
+  .heart .ph--atrium .ph__f{aspect-ratio:3/4}
+  .heart .ph--living .ph__f{aspect-ratio:16/10}
+  .heart .ph--vanity .ph__f{aspect-ratio:3/2}
+  .heart .ph--bath .ph__f{aspect-ratio:16/10}
+  .heart .only-sp{display:none}
+  .heart .nowrap{white-space:nowrap}
+  @media (max-width:900px){
+    .heart .only-pc{display:none}
+    .heart{padding:clamp(88px,12vh,130px) 0}
+    .heart__inner{max-width:640px;padding:0 clamp(24px,6vw,44px)}
+    .heart__text{width:100%}
+    .heart__prose{margin-top:clamp(40px,7vh,64px)}
+    .heart .ph{position:relative!important;top:auto!important;left:auto!important;right:auto!important;width:auto!important;margin:clamp(34px,7vw,56px) 0;transform:translateY(44px) scale(.985)}
+    .heart .ph__px{transform:none!important}
+    .heart .ph--kitchen .ph__f{aspect-ratio:16/10}
+    .heart .ph--atrium{width:76%!important;margin-left:auto!important}
+    .heart .ph--atrium .ph__f{aspect-ratio:4/5}
+    .heart .ph--vanity{width:86%!important}
+  }
+  @media (max-width:560px){
+    .heart .only-sp{display:inline}
+    .heart__head{font-size:1.44rem;letter-spacing:.045em;line-height:1.72}
+    .heart .ph{margin-left:calc(-1 * clamp(6px,3vw,18px));margin-right:calc(-1 * clamp(6px,3vw,18px))}
+    .heart .ph--atrium{width:84%!important}
+    .heart .ph--vanity{width:94%!important}
+    .heart__prose p{letter-spacing:.05em;line-height:2.3}
+    .heart__close p{font-size:1.05rem;line-height:2.05;letter-spacing:.02em}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .heart .reveal-up,.heart .ph{transition:opacity .5s ease;transform:none!important;filter:none!important}
+    .heart .ph__f{animation:none!important}
+    .heart__rule{transition:none}
+  }
+
+  /* ===================== 商品ライン 花・風・京（白系ドラフティングテーブル×動く図面） ===================== */
+  .lineup{position:relative;isolation:isolate;overflow:hidden;
+    --paper:#F1EBDD;--paper2:#FCFAF4;--paper3:#F7F2E7;--ink:#2A2621;--ink2:#6E6355;--ink3:#9A9081;
+    --line:#DCD2BF;--graphite:#8A7F6E;--gold:#C9A24B;--gold-deep:#A9822F;--amber:#C4851F;
+    --ease:cubic-bezier(.16,1,.3,1);--ease-soft:cubic-bezier(.22,1,.36,1);
+    color:var(--ink);background:var(--paper);padding:clamp(104px,14vw,196px) 0 clamp(96px,12vw,164px)}
+  .lineup__bg{position:absolute;inset:-8% 0;z-index:0;width:100%;height:116%;object-fit:cover;object-position:center;
+    opacity:.5;transform:scale(1.14);will-change:transform;filter:saturate(.9) brightness(1.04)}
+  .lineup__veil{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(180deg,var(--paper) 0%,rgba(241,235,221,.62) 16%,rgba(241,235,221,.52) 50%,rgba(241,235,221,.72) 82%,var(--paper) 100%),
+      radial-gradient(120% 70% at 50% 42%,rgba(252,250,244,.5),rgba(241,235,221,0) 70%)}
+  .lineup__grain{position:absolute;inset:-30px;z-index:2;pointer-events:none;opacity:.5;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");background-size:160px}
+  .lineup__inner{position:relative;z-index:3;max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+  .lineup__head{max-width:760px;margin:0 auto clamp(56px,7vw,92px);text-align:center;display:flex;flex-direction:column;align-items:center}
+  .lineup .eyebrow{font-family:var(--fn);font-size:12px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);
+    display:inline-flex;align-items:center;gap:14px;margin-bottom:clamp(22px,3vw,34px)}
+  .lineup .eyebrow::before,.lineup .eyebrow::after{content:"";width:34px;height:1px;background:currentColor;opacity:.6}
+  .lp-title{font-family:var(--fh);font-weight:700;color:var(--ink);letter-spacing:.02em;line-height:1.4;white-space:nowrap;
+    font-size:min(2.5rem, calc((min(100vw,1200px) - 2 * clamp(20px,5vw,64px)) / 27))}
+  .lp-lead{font-family:var(--fb);font-size:clamp(.98rem,.94rem + .3vw,1.12rem);line-height:2.1;color:var(--ink2);max-width:600px;margin-top:clamp(20px,2.4vw,30px)}
+  .lp-dim{position:relative;width:min(340px,72vw);height:22px;margin-top:clamp(30px,4vw,46px)}
+  .lp-dim::before{content:"";position:absolute;left:0;top:50%;height:1px;width:0;background:linear-gradient(90deg,transparent,var(--gold) 12%,var(--gold) 88%,transparent);transition:width 1.5s var(--ease) .3s}
+  .lp-dim::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:7px;height:7px;border:1px solid var(--gold);background:var(--paper);transform-origin:center;rotate:45deg;opacity:0;transition:opacity .6s ease 1.1s}
+  .lineup.is-in .lp-dim::before{width:100%}
+  .lineup.is-in .lp-dim::after{opacity:1}
+  .lp-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.2vw,32px);align-items:start}
+  @media(min-width:761px){
+    .pcard:nth-child(2){margin-top:clamp(22px,3vw,44px)}
+  }
+  .pcard{position:relative;display:flex;flex-direction:column;background:var(--paper2);border:1px solid var(--line);border-radius:6px;overflow:hidden;
+    box-shadow:0 24px 50px -30px rgba(60,48,30,.5);isolation:isolate;
+    opacity:0;transform:translateY(52px);transition:opacity 1s var(--ease),transform 1.1s var(--ease),box-shadow .7s var(--ease),border-color .7s var(--ease);transition-delay:calc(var(--i,0) * .14s)}
+  .lineup.is-in .pcard{opacity:1;transform:none}
+  .pcard:hover{transform:translateY(-8px);box-shadow:0 40px 70px -34px rgba(60,48,30,.6);border-color:#CDBF9E}
+  .pcard::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;z-index:5;background:linear-gradient(90deg,var(--gold-deep),var(--gold) 40%,#EAD08A 60%,var(--gold-deep));transform:scaleX(0);transform-origin:left;transition:transform 1s var(--ease)}
+  .lineup.is-in .pcard::before{transform:scaleX(1);transition-delay:calc(.2s + var(--i,0) * .14s)}
+  .pcard__plan{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--paper3);border-bottom:1px solid var(--line)}
+  .pcard__planimg{position:absolute;inset:0;background-size:cover;background-position:center;filter:contrast(1.03) brightness(1.02);
+    clip-path:inset(0 100% 0 0);transition:clip-path 1.5s var(--ease),transform 1.2s var(--ease-soft),filter .8s ease;transition-delay:calc(.25s + var(--i,0) * .18s)}
+  .lineup.is-in .pcard__planimg{clip-path:inset(0 0 0 0)}
+  .pcard:hover .pcard__planimg{transform:scale(1.05);filter:contrast(1.06) brightness(1.05)}
+  .pcard__plan::after{content:"";position:absolute;top:0;bottom:0;left:0;width:1.5px;z-index:3;pointer-events:none;background:linear-gradient(180deg,transparent,var(--gold),transparent);opacity:0}
+  .lineup.is-in .pcard__plan::after{animation:pen 1.6s var(--ease) forwards;animation-delay:calc(.3s + var(--i,0) * .18s)}
+  @keyframes pen{0%{left:0;opacity:0}10%{opacity:1}86%{opacity:1}100%{left:100%;opacity:0}}
+  .pcard__kanji{position:absolute;z-index:2;right:8px;top:-8px;font-family:var(--fh);font-weight:700;font-size:clamp(6rem,11vw,8.2rem);line-height:1;color:rgba(42,38,33,.07);pointer-events:none;letter-spacing:0}
+  .pcard:hover .pcard__kanji{color:rgba(169,130,47,.14)}
+  .pcard__idx{position:absolute;z-index:3;left:0;top:0;font-family:var(--fn);font-size:11px;font-weight:600;letter-spacing:.16em;color:var(--ink2);background:var(--paper2);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:9px 14px;border-bottom-right-radius:5px}
+  .pcard__idx b{color:var(--gold-deep);font-weight:700}
+  .pcard__block{position:relative;z-index:2;display:flex;flex-direction:column;padding:clamp(22px,2vw,30px) clamp(20px,1.8vw,28px) clamp(24px,2.2vw,30px)}
+  .pcard__name{font-family:var(--fh);font-weight:700;color:var(--ink);letter-spacing:.06em;line-height:1;font-size:clamp(2rem,3.4vw,2.7rem);display:flex;align-items:baseline;gap:12px}
+  .pcard__name small{font-family:var(--fn);font-weight:500;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ink3)}
+  .pcard__tag{font-family:var(--fb);font-size:clamp(.92rem,.9rem + .2vw,1rem);line-height:1.7;color:var(--ink2);margin-top:14px}
+  .pcard__spec{margin-top:20px;border-top:1px solid var(--line)}
+  .pcard__spec div{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}
+  .pcard__spec dt{font-family:var(--fb);font-size:11.5px;letter-spacing:.06em;color:var(--ink3)}
+  .pcard__spec dd{font-family:var(--fn);font-size:13.5px;font-weight:500;color:var(--ink);letter-spacing:.02em;font-variant-numeric:tabular-nums}
+  .pcard__spec dd .u{font-family:var(--fb);font-size:11px;color:var(--ink2);margin-left:2px}
+  .pcard__price{margin-top:20px;display:flex;align-items:flex-end;gap:8px}
+  .pcard__price .yen{font-family:var(--fn);font-size:1rem;font-weight:600;color:var(--ink2);transform:translateY(-.5em)}
+  .pcard__price .num{font-family:var(--fn);font-weight:700;font-size:clamp(2.1rem,3.2vw,2.7rem);line-height:.9;letter-spacing:-.01em;color:var(--amber);font-variant-numeric:tabular-nums}
+  .pcard__price .man{font-family:var(--fh);font-weight:700;font-size:1.2rem;color:var(--amber);transform:translateY(-.1em)}
+  .pcard__price .from{font-family:var(--fb);font-size:.82rem;color:var(--ink2);transform:translateY(-.35em)}
+  .pcard__incl{font-family:var(--fb);font-size:11.5px;letter-spacing:.04em;color:var(--ink2);margin-top:8px;display:flex;align-items:center;gap:7px}
+  .pcard__incl::before{content:"";width:14px;height:14px;flex:0 0 auto;border-radius:50%;background:radial-gradient(circle at 50% 42%,var(--gold) 38%,transparent 40%),conic-gradient(from 0deg,var(--gold-deep),#EAD08A,var(--gold-deep));-webkit-mask:radial-gradient(circle,transparent 44%,#000 46%);mask:radial-gradient(circle,transparent 44%,#000 46%);opacity:.9}
+  .pcard__cta{margin-top:auto;padding-top:22px;font-family:var(--fh);font-weight:700;font-size:.95rem;letter-spacing:.04em;color:var(--ink);display:inline-flex;align-items:center;gap:10px;width:fit-content;position:relative}
+  .pcard__cta svg{width:20px;height:20px;stroke:var(--gold-deep);stroke-width:1.7;fill:none;transition:transform .5s var(--ease)}
+  .pcard__cta::after{content:"";position:absolute;left:0;bottom:12px;height:1px;width:0;background:var(--gold-deep);transition:width .5s var(--ease)}
+  .pcard:hover .pcard__cta svg{transform:translateX(6px)}
+  .pcard:hover .pcard__cta::after{width:calc(100% - 30px)}
+  .lineup [data-rise]{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease-soft),transform 1.1s var(--ease-soft);transition-delay:calc(var(--d,0) * 1s)}
+  .lineup.is-in [data-rise]{opacity:1;transform:none}
+  .lp-foot{position:relative;z-index:3;max-width:1200px;margin:clamp(40px,4vw,58px) auto 0;padding:0 clamp(20px,5vw,64px);text-align:center;font-family:var(--fb);font-size:11.5px;letter-spacing:.04em;color:var(--ink3)}
+  @media (max-width:920px){
+    .lp-cards{grid-template-columns:1fr;gap:clamp(22px,5vw,30px);max-width:520px;margin:0 auto}
+    .pcard__kanji{font-size:7rem}
+  }
+  @media (max-width:560px){
+    .lineup__bg{opacity:.42}
+    .pcard__name{font-size:2.1rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .pcard,.lineup [data-rise]{opacity:1!important;transform:none!important;transition:none}
+    .pcard__planimg{clip-path:none!important;transition:none}
+    .pcard::before{transform:scaleX(1)!important}
+    .lp-dim::before{width:100%!important;transition:none}.lp-dim::after{opacity:1!important;transition:none}
+    .pcard__plan::after{display:none}
+    .lineup__bg{transform:scale(1.04)!important}
+  }
+
+  /* ===================== なぜ、この値段で（施工断面×正直な二列・深緑アクセント） ===================== */
+  .naze{position:relative;isolation:isolate;
+    --paper:#ECE4D3;--paper2:#F6F1E5;--paper3:#F2ECDD;--ink:#2B2620;--ink2:#6B6152;--ink3:#9A9082;--line:#D8CDB8;
+    --green:#486B00;--green-deep:#2E4600;--green-soft:#E7EFCF;--lime:#A2C523;--amber:#C4851F;--amber-deep:#A56C12;
+    --ease-soft:cubic-bezier(.22,1,.36,1);
+    color:var(--ink);background:var(--paper)}
+  .naze__hero{position:relative;min-height:clamp(440px,62vh,660px);display:flex;align-items:flex-end;overflow:hidden;isolation:isolate;background:#241f18}
+  .naze__heroimg{position:absolute;inset:0;z-index:0;background:url(assets/strength/naze_hero.webp) center/cover;transform:scale(1.06);will-change:transform;filter:saturate(.96) brightness(.92)}
+  .naze__heroscrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(180deg,rgba(20,16,10,.42),rgba(20,16,10,.12) 34%,rgba(20,16,10,.5) 74%,rgba(20,16,10,.82)),
+      radial-gradient(120% 80% at 22% 88%,rgba(46,70,0,.34),transparent 60%)}
+  .naze__herowrap{position:relative;z-index:2;width:100%;max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,88px) clamp(22px,5vw,64px)}
+  .naze__eyebrow{font-family:var(--fn);font-size:12px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:#DDE8B4;display:inline-flex;align-items:center;gap:12px;margin-bottom:clamp(20px,2.6vw,30px);text-shadow:0 2px 16px rgba(10,8,4,.9),0 0 6px rgba(10,8,4,.55)}
+  .naze__eyebrow::before{content:"";width:30px;height:1px;background:currentColor;opacity:.7}
+  .naze__quote{font-family:var(--fh);font-weight:700;color:#FCF8EE;letter-spacing:.02em;line-height:1.32;font-size:clamp(2rem,1.1rem + 4vw,4.3rem);text-shadow:0 3px 30px rgba(10,8,4,.6);max-width:16em}
+  .naze__quote .qm{color:var(--lime);font-weight:700;margin:0 -.06em}
+  .naze__attr{font-family:var(--fb);font-size:clamp(.9rem,.86rem + .3vw,1.05rem);color:rgba(252,248,238,.82);margin-top:clamp(18px,2.2vw,26px);letter-spacing:.03em}
+  .naze__body{position:relative;z-index:2;max-width:820px;margin:0 auto;padding:clamp(64px,8vw,104px) clamp(22px,5vw,64px) clamp(8px,2vw,20px);text-align:center}
+  .naze__lead{font-family:var(--fb);font-size:clamp(1.02rem,.96rem + .42vw,1.24rem);line-height:2.15;color:var(--ink);letter-spacing:.03em;text-wrap:pretty}
+  .naze__lead .em{color:var(--green-deep);font-weight:700}
+  .ledger{position:relative;z-index:2;max-width:1120px;margin:clamp(52px,6vw,80px) auto 0;padding:0 clamp(22px,5vw,64px);display:grid;grid-template-columns:1.35fr .9fr;gap:clamp(20px,3vw,48px);align-items:start}
+  .lcol{position:relative}
+  .lcol__head{display:flex;flex-direction:column;gap:6px;margin-bottom:clamp(18px,2.2vw,26px)}
+  .lcol__head .k{font-family:var(--fn);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+  .lcol__head h3{font-family:var(--fh);font-weight:700;font-size:clamp(1.16rem,1rem + .7vw,1.5rem);letter-spacing:.04em;line-height:1.3}
+  .lcol--in .lcol__head{color:var(--green-deep)}
+  .lcol--in .lcol__head .k{color:var(--green)}
+  .lrow{display:flex;align-items:center;gap:clamp(14px,1.6vw,20px);padding:clamp(13px,1.5vw,18px) 0;border-top:1px solid var(--line)}
+  .lrow:last-child{border-bottom:1px solid var(--line)}
+  .lrow__img{flex:0 0 auto;width:clamp(60px,7vw,74px);aspect-ratio:1;border-radius:9px;overflow:hidden;background:var(--paper3);position:relative;box-shadow:0 8px 18px -10px rgba(60,48,20,.5)}
+  .lrow__img span{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(.96) brightness(1.02);transform:scale(1.02);transition:transform .8s var(--ease)}
+  .lrow:hover .lrow__img span{transform:scale(1.12)}
+  .lrow__t{flex:1;min-width:0}
+  .lrow__part{font-family:var(--fn);font-size:10.5px;font-weight:600;letter-spacing:.2em;color:var(--green);
+    display:flex;align-items:center;gap:9px}
+  .lrow__part .chk{width:17px;height:17px;flex:0 0 auto;border-radius:50%;background:var(--green-soft);box-shadow:inset 0 0 0 1.5px var(--green);display:inline-flex;align-items:center;justify-content:center}
+  .lrow__part .chk svg{width:11px;height:11px;stroke:var(--green);stroke-width:2.6;fill:none;display:block}
+  .lrow__name{font-family:var(--fh);font-weight:700;font-size:clamp(1.05rem,.98rem + .4vw,1.24rem);color:var(--ink);letter-spacing:.04em;margin-top:5px;margin-left:26px}
+  .lrow__meta{font-family:var(--fb);font-size:12.5px;color:var(--ink2);letter-spacing:.02em;margin-top:4px;margin-left:26px}
+  .lcol--out{padding-top:2px}
+  .lcol--out .lcol__head{color:var(--ink2)}
+  .lcol--out .lcol__head .k{color:var(--ink3)}
+  .lpanel{background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:clamp(20px,2.2vw,28px)}
+  .lout{display:flex;align-items:center;gap:12px;padding:13px 0;color:var(--ink2)}
+  .lout + .lout{border-top:1px dashed var(--line)}
+  .lout__mk{flex:0 0 auto;width:17px;height:17px;border-radius:50%;border:1.5px solid var(--ink3);position:relative;opacity:.7}
+  .lout__mk::before,.lout__mk::after{content:"";position:absolute;left:3px;right:3px;top:50%;height:1.4px;background:var(--ink3);transform:translateY(-50%) rotate(45deg)}
+  .lout__mk::after{transform:translateY(-50%) rotate(-45deg)}
+  .lout__t{font-family:var(--fb);font-size:clamp(.95rem,.9rem + .2vw,1.05rem);letter-spacing:.02em}
+  .lpanel .note{font-family:var(--fb);font-size:12.5px;color:var(--ink3);line-height:1.95;margin-top:16px;letter-spacing:.02em}
+  .naze__cta{position:relative;z-index:2;max-width:1120px;margin:clamp(56px,7vw,92px) auto 0;padding:clamp(56px,7vw,90px) clamp(22px,5vw,64px) clamp(104px,13vw,190px);text-align:center} /* 転換点(声の前)=余白最大 */
+  .naze__cta h4{font-family:var(--fh);font-weight:700;font-size:clamp(1.4rem,1rem + 1.8vw,2.3rem);letter-spacing:.04em;color:var(--ink);line-height:1.5}
+  .naze__cta p{font-family:var(--fb);font-size:clamp(.92rem,.9rem + .2vw,1.02rem);color:var(--ink2);margin-top:16px;line-height:1.9}
+  .naze__btn{display:inline-flex;align-items:center;gap:12px;margin-top:clamp(28px,3vw,40px);background:var(--amber);color:#fff;text-decoration:none;font-family:var(--fh);font-weight:700;font-size:1.02rem;letter-spacing:.04em;padding:17px 40px;border-radius:6px;box-shadow:0 14px 34px -12px rgba(196,133,31,.6);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .naze__btn:hover{transform:translateY(-3px);box-shadow:0 20px 44px -14px rgba(196,133,31,.7)}
+  .naze__btn svg{width:16px;height:16px;stroke:#fff;stroke-width:2;fill:none;transition:transform .5s var(--ease)}
+  .naze__btn:hover svg{transform:translateX(5px)}
+  .naze::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.4;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");background-size:160px}
+  .naze__proof{position:relative;z-index:2;max-width:1120px;margin:clamp(44px,5.4vw,72px) auto 0;padding:0 clamp(22px,5vw,64px)}
+  .naze__proof .qp__stats{display:flex;flex-wrap:wrap;gap:14px clamp(30px,4.4vw,64px);
+    border-top:1px solid var(--line);padding-top:clamp(26px,3.2vw,40px)}
+  .naze__proof .qp__stat{display:flex;flex-direction:column;gap:5px}
+  .naze__proof .qp__stat b{font-family:var(--fn);font-weight:500;font-size:clamp(1.7rem,1.4rem + 1.4vw,2.5rem);letter-spacing:.01em;line-height:1;color:var(--ink)}
+  .naze__proof .qp__stat b small{font-size:.5em;font-weight:500;letter-spacing:.06em;margin-left:2px}
+  .naze__proof .qp__stat span{font-family:var(--fb);font-size:.72rem;letter-spacing:.08em;color:var(--ink3)}
+  .naze__partner{margin-top:clamp(16px,2vw,22px);font-family:var(--fb);font-size:.76rem;letter-spacing:.04em;color:var(--ink3)}
+  .naze__sub{margin-top:18px;font-family:var(--fb);font-size:.85rem;letter-spacing:.03em;color:var(--ink2)}
+  .naze__sub a{color:var(--green-deep);border-bottom:1px solid rgba(72,107,0,.35);padding-bottom:2px;transition:border-color .25s}
+  .naze__sub a:hover{border-bottom-color:var(--green-deep)}
+  .naze [data-rise]{opacity:0;transform:translateY(30px);transition:opacity 1s var(--ease-soft),transform 1.1s var(--ease-soft);transition-delay:calc(var(--d,0) * 1s)}
+  .naze.is-in [data-rise]{opacity:1;transform:none}
+  .lrow{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform 1s var(--ease);transition-delay:calc(.1s + var(--i,0) * .1s)}
+  .naze.is-in .lrow{opacity:1;transform:none}
+  .naze.is-in .naze__heroimg{animation:heroDrift 20s ease-in-out infinite alternate}
+  @keyframes heroDrift{from{transform:scale(1.06)}to{transform:scale(1.13)}}
+  @media (max-width:860px){
+    .ledger{grid-template-columns:1fr;gap:clamp(28px,7vw,40px)}
+    .naze__quote{white-space:nowrap;max-width:none;
+      font-size:min(2.7rem, calc((100vw - 2 * clamp(22px,5vw,64px)) / 16.5))}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .naze [data-rise],.lrow{opacity:1!important;transform:none!important;transition:none}
+    .naze__heroimg{animation:none!important;transform:scale(1.04)!important}
+  }
+
+  /* ===================== セクション境界：紙を重ねる奥行き（overlap / stacked sheets） ===================== */
+  /* 各セクションが前面へ乗り上げ、丸い上端＋上向きの影で“紙を重ねた”奥行きを作る。
+     丸角のノッチが下の（前の）セクション色を覗かせることで、明↔暗の境界が浮き上がる。 */
+  .authority,.heart,.lineup,.naze{
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px)}
+  .authority{z-index:2;margin-top:clamp(-16px,-1.3vw,-10px);box-shadow:0 -20px 44px -28px rgba(0,0,0,.55)}
+  .heart{z-index:3;margin-top:clamp(-58px,-4.6vw,-34px);box-shadow:0 -34px 66px -28px rgba(0,0,0,.5)}
+  .lineup{z-index:4;margin-top:clamp(-78px,-5.6vw,-46px);box-shadow:0 -46px 88px -32px rgba(0,0,0,.4)}
+  .naze{overflow:hidden;z-index:5;margin-top:clamp(-78px,-5.6vw,-46px);box-shadow:0 -46px 88px -32px rgba(0,0,0,.5)}
+  @media (max-width:560px){
+    .authority,.heart,.lineup,.naze{border-top-left-radius:20px;border-top-right-radius:20px}
+    .heart,.lineup,.naze{margin-top:-32px}
+  }
+
+  /* ===== 境界 格上げ（案1）：スクロール連動 living overlap ＋ 明↔暗2境界の scale&round-away ===== */
+  /* 非対応ブラウザ / prefers-reduced-motion では上の静的overlapにフォールバック */
+  @property --sr{syntax:"<length>";initial-value:14px;inherits:false}
+  @property --br{syntax:"<length>";initial-value:0px;inherits:false}
+  .authority,.heart,.lineup,.naze{--sr-max:clamp(30px,3.6vw,52px);--br-max:clamp(24px,2.6vw,40px)}
+  .heart,.lineup{--tuck-scale:.952}
+  @media (max-width:560px){
+    .authority,.heart,.lineup,.naze{--sr-max:24px;--br-max:20px}
+    .heart,.lineup{--tuck-scale:.984}
+  }
+  @supports (animation-timeline: view()){
+    @media (prefers-reduced-motion:no-preference) and (min-width:768px){
+      /* A. living overlap（全境界）：入場中に角丸と影が育つ（paint系のためPC限定＝SPは静的シートで高速化） */
+      .authority,.heart,.lineup,.naze{
+        border-top-left-radius:var(--sr);border-top-right-radius:var(--sr);
+        animation:seamlift linear both;animation-timeline:view();
+        animation-range:entry-crossing 0% entry-crossing 52%}
+      /* C. scale & round-away（明↔暗の2境界の“退場側”＝信条/花風京）：覆われながら縮んで角丸に畳まれる */
+      .heart,.lineup{
+        border-bottom-left-radius:var(--br);border-bottom-right-radius:var(--br);
+        transform-origin:50% 34%;
+        animation:seamlift linear both, seamtuck linear both;
+        animation-timeline:view(),view();
+        animation-range:entry-crossing 0% entry-crossing 52%, exit-crossing 44% exit-crossing 94%}
+    }
+  }
+  @keyframes seamlift{
+    from{--sr:10px;box-shadow:0 -6px 18px -12px rgba(0,0,0,.28)}
+    to  {--sr:var(--sr-max,48px);box-shadow:0 -48px 92px -30px rgba(0,0,0,.55)}}
+  @keyframes seamtuck{
+    from{--br:0px;transform:scale(1);filter:brightness(1)}
+    to  {--br:var(--br-max,38px);transform:scale(var(--tuck-scale,.952));filter:brightness(.8)}}
+
+  /* ===================== FULLSCREEN MENU ===================== */
+  .menu{position:fixed;inset:0;z-index:120;display:grid;grid-template-columns:40% 60%;visibility:hidden;pointer-events:none}
+  .menu.is-open{visibility:visible;pointer-events:auto}
+  .menu__media{position:relative;overflow:hidden;background:#12160c;transform:scale(1.06);opacity:0;transition:transform .9s var(--ease),opacity .7s var(--ease)}
+  .menu.is-open .menu__media{transform:scale(1);opacity:1}
+  .menu__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+  .menu__media::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(16,20,10,.5),rgba(16,20,10,.05) 34%,rgba(16,20,10,.28))}
+  .menu__brand{position:absolute;top:clamp(24px,3vw,40px);left:clamp(24px,3vw,48px);z-index:2;color:var(--cream);display:flex;flex-direction:column;gap:6px}
+  .menu__brand .jp{font-family:var(--fh);font-weight:700;letter-spacing:.08em;font-size:clamp(1.1rem,.9rem + .8vw,1.4rem)}
+  .menu__brand .mk{height:30px;width:auto;display:block;margin-bottom:2px}
+  .menu__addr{position:absolute;left:clamp(24px,3vw,48px);bottom:clamp(24px,3vw,40px);z-index:2;color:rgba(244,241,234,.82);font-size:.72rem;letter-spacing:.06em;line-height:1.9}
+  .menu__addr .lic{display:block;font-size:.62rem;letter-spacing:.1em;opacity:.7;margin-top:6px}
+  .menu__panel{position:relative;background:var(--bg-warm);color:var(--text);overflow-y:auto;
+    padding:clamp(70px,8vh,96px) clamp(30px,4.5vw,80px) clamp(30px,4vh,48px);display:flex;flex-direction:column;
+    transform:translateX(100%);transition:transform .8s var(--ease)}
+  .menu.is-open .menu__panel{transform:translateX(0)}
+  .menu__panel::before{content:"";position:absolute;top:0;left:0;right:0;height:56px;background:linear-gradient(var(--bg-warm),rgba(245,238,226,0));pointer-events:none;z-index:3}
+  .menu__close{position:absolute;top:clamp(20px,2.4vw,30px);right:clamp(24px,3.4vw,48px);z-index:5;
+    width:clamp(48px,4.4vw,58px);height:clamp(48px,4.4vw,58px);border-radius:50%;border:none;cursor:pointer;
+    background:var(--earth);color:var(--cream);display:inline-flex;align-items:center;justify-content:center;transition:transform .5s var(--ease),background .3s var(--ease)}
+  .menu__close:hover{transform:rotate(90deg);background:var(--main-dark)}
+  .menu__close svg{width:18px;height:18px;stroke:currentColor;stroke-width:1.6;fill:none}
+  .menu__nav{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,52px);padding-bottom:clamp(28px,4vh,44px);border-bottom:1px solid var(--line-color)}
+  .navcol{display:flex;flex-direction:column}
+  .navcol__label{font-family:"Inter",sans-serif;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--main);opacity:.85;margin-bottom:16px}
+  .navcol a.lead{font-family:var(--fh);font-weight:700;font-size:clamp(1.05rem,1rem + .3vw,1.22rem);letter-spacing:.04em;line-height:1.5;padding:9px 0;position:relative;display:inline-flex;width:fit-content;transition:color .3s var(--ease),padding-left .35s var(--ease)}
+  .navcol a.lead::before{content:"";position:absolute;left:-14px;top:50%;width:6px;height:1px;background:var(--earth);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+  .navcol a.lead:hover{color:var(--main);padding-left:12px}
+  .navcol a.lead:hover::before{transform:scaleX(1)}
+  .subnav{margin:4px 0 6px;padding-left:2px;display:flex;flex-direction:column;gap:2px}
+  .subnav a{font-size:.82rem;letter-spacing:.03em;line-height:1.5;color:var(--text-light);padding:5px 0;transition:color .25s var(--ease),transform .3s var(--ease)}
+  .subnav a:hover{color:var(--earth);transform:translateX(4px)}
+  .menu__contact{margin-top:clamp(24px,3.4vh,38px);border:1px solid var(--line-color);border-radius:8px;background:rgba(255,255,255,.5)}
+  .contact-row{display:flex;align-items:center;gap:clamp(16px,2.4vw,32px);padding:clamp(18px,2.4vh,26px) clamp(20px,2.6vw,34px)}
+  .contact-row + .contact-row{border-top:1px solid var(--line-color)}
+  .contact-row__label{font-family:var(--fh);font-weight:700;font-size:.88rem;letter-spacing:.04em;flex:0 0 auto;min-width:150px;line-height:1.5}
+  .contact-row__label small{display:block;font-family:var(--font-body);font-weight:400;font-size:.68rem;letter-spacing:.04em;color:var(--text-light);margin-top:5px}
+  .contact-row__action{margin-left:auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+  .btn-form{display:inline-flex;align-items:center;gap:12px;background:var(--cta);color:#fff;font-family:var(--font-head);font-weight:500;font-size:.92rem;letter-spacing:.04em;padding:15px 28px;border-radius:4px;line-height:1;white-space:nowrap;box-shadow:0 6px 22px rgba(196,133,31,.26);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .btn-form:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(196,133,31,.34)}
+  .btn-form svg{width:14px;height:14px;stroke:#fff;stroke-width:2;fill:none}
+  .doc-link{font-family:var(--font-head);font-weight:500;font-size:.82rem;letter-spacing:.04em;color:var(--main-dark);border-bottom:1px solid rgba(46,70,0,.35);padding-bottom:3px;transition:.3s var(--ease)}
+  .doc-link:hover{color:var(--main);border-bottom-color:var(--main)}
+  .tel{font-family:var(--font-num);font-weight:300;font-variant-numeric:tabular-nums;font-size:clamp(1.7rem,1.3rem + 1.4vw,2.35rem);letter-spacing:.01em;color:var(--earth);line-height:1;display:inline-flex;align-items:center;gap:12px}
+  .tel svg{width:20px;height:20px;stroke:var(--earth);stroke-width:1.5;fill:none;flex:0 0 auto}
+  .tel-hours{font-size:.7rem;letter-spacing:.05em;color:var(--text-light);margin-top:8px;line-height:1.6}
+  .menu__foot{margin-top:auto;padding-top:clamp(22px,3vh,32px);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .sns{display:flex;gap:16px}
+  .sns a{width:38px;height:38px;border-radius:10px;overflow:hidden;display:block;transition:.3s var(--ease)}
+  .sns a img{display:block;width:100%;height:100%}
+  .sns a:hover{transform:translateY(-2px)}
+  .sns svg{width:17px;height:17px;stroke:currentColor;stroke-width:1.6;fill:none}
+  .foot-links{display:flex;gap:20px;font-size:.72rem;letter-spacing:.05em;color:var(--text-light)}
+  .foot-links a{transition:color .25s var(--ease)}
+  .foot-links a:hover{color:var(--main)}
+  .menu .stagger{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+  .menu.is-open .stagger{opacity:1;transform:translateY(0);transition-delay:calc(.28s + var(--i,0)*.05s)}
+
+  /* ===================== RESPONSIVE ===================== */
+  @media (max-width:1180px){ .nav{display:none} .ghost-link{display:none} }
+  @media (max-width:900px){
+    .menu{grid-template-columns:1fr;grid-template-rows:34svh 1fr}
+    .menu__media{transform:scale(1.04)}
+    .menu__panel{transform:translateY(40px);transition:transform .8s var(--ease),opacity .6s var(--ease);opacity:0;padding-top:clamp(30px,5vh,48px);
+      padding-bottom:calc(env(safe-area-inset-bottom,0px) + 34px)} /* ホームバー回避 */
+    .menu.is-open .menu__panel{transform:translateY(0);opacity:1}
+    .menu__addr{display:none}
+    .menu__brand{top:calc(env(safe-area-inset-top,0px) + 18px)}   /* Dynamic Island回避 */
+    .menu__close{top:calc(env(safe-area-inset-top,0px) + 16px)}
+    .menu__nav{grid-template-columns:1fr 1fr;gap:22px 28px}
+    .contact-row{flex-direction:column;align-items:flex-start;gap:14px}
+    .contact-row__action{margin-left:0;justify-content:flex-start}
+    .btn-reserve{padding:13px 18px;font-size:.8rem;min-height:44px} /* ヘッダーCV＝44pxタップ規範 */
+    .btn-reserve .lbl-long{display:none}
+  }
+  /* タッチ端末のタップターゲット44px規範（見た目の位置は負マージンで相殺） */
+  @media (pointer:coarse){
+    .subnav a{display:block;padding:12px 0}
+    .sns a{width:44px;height:44px}
+    .doc-link{display:inline-block;padding:12px 0 3px;margin-top:-12px}
+    .tel{padding-block:6px;margin-block:-6px}
+    .menu__foot a{display:inline-block;padding:12px 4px;margin:-12px -4px}
+    .sb-morelink{padding-block:11px;margin-top:11px;margin-bottom:-11px}
+  }
+  @media (max-width:600px){
+    .cta-row{left:0;right:0;justify-content:center;bottom:calc(env(safe-area-inset-bottom) + 40px);flex-direction:column;gap:10px}
+    .cta{width:min(88%,340px);justify-content:center}
+    .cta-ghost{order:2}
+    .cue{display:none}
+    /* モバイル：横組みロックアップをそのまま縮小（「50」のシグネチャーをPC/SPで統一） */
+    .intro{top:calc(env(safe-area-inset-top, 0px) + var(--header-h) + clamp(20px,5vh,48px));bottom:auto;transform:none;
+      padding:0 22px;animation:introV 1.7s ease forwards} /* introVはtransformのY移動を持たない=位置が汚れない */
+    .intro h1{text-shadow:0 2px 28px rgba(8,10,5,.92),0 0 12px rgba(8,10,5,.6)}
+    .intro p{margin-left:0;font-size:.92rem;letter-spacing:.08em;text-shadow:0 2px 22px rgba(10,12,6,.88)}
+  }
+  @media (max-width:560px){
+    .menu{grid-template-rows:26svh 1fr}
+    .menu__nav{grid-template-columns:1fr}
+    .brand__kk{display:none}
+    .tel{font-size:2rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.001ms !important;transition-duration:.001ms !important}
+    html{scroll-behavior:auto}
+    .intro{animation:none;opacity:1}
+    .track{animation:none}
+  }
+</style>
+<style id="pm-css">
+  /* ===================== PREMIUM MOTION LAYER（pm-）＝JS成功時のみ発火する追加演出層 =====================
+     方針：既存演出は温存し、html.pm-motion が付いた時だけ初期状態を隠す（JS死亡時も無傷で表示）。
+     スクラブ系は transform/opacity のみ（モバイル60fps維持）。各セクションで語彙を変える（ワンパターン禁止）。 */
+
+  /* 読了プログレス・ヘアライン（金）：CSS scroll-timeline 対応なら 0JS で駆動 */
+  .pm-progress{position:fixed;top:0;left:0;width:100%;height:2px;z-index:92;pointer-events:none;
+    background:linear-gradient(90deg,#A9822F,#C9A24B 45%,#E8CE8F 70%,#C9A24B);
+    transform:scaleX(0);transform-origin:0 50%}
+  @supports (animation-timeline: scroll()){
+    .pm-progress{animation:pmprog linear both;animation-timeline:scroll(root)}
+  }
+  @keyframes pmprog{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+  /* FV：シネマ開幕（PCはJSタイムラインが行単位マスクで起こすため、CSS一括イントロを無効化） */
+  .pm-motion .hero.fv-jsintro .intro{animation:none;opacity:1}
+  .pm-line{display:block;overflow:hidden}
+  .pm-line>span{display:block}
+  /* FV：スクロールキュー（伸びる糸） */
+  .pm-motion .cue::after{content:"";display:block;width:1px;height:30px;margin:9px auto 0;
+    background:linear-gradient(rgba(244,241,234,.85),rgba(244,241,234,0));
+    animation:pmcue 2.4s cubic-bezier(.16,1,.3,1) infinite}
+  @keyframes pmcue{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}
+    55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+  /* 実績：インデックスバナーが製図ワイプで1枚ずつ開く（transitionは per-property delay で分離） */
+  .pm-motion .authority .tile{--pmtd:0s;clip-path:inset(0 100% 0 0 round 14px);
+    transition:transform .7s var(--ease),box-shadow .7s var(--ease),clip-path 1.05s var(--ease) var(--pmtd)}
+  .pm-motion .authority.is-in .tile{clip-path:inset(0 0 0 0 round 14px)}
+  .pm-motion .authority.is-in .track .tile:nth-child(1){--pmtd:.9s}
+  .pm-motion .authority.is-in .track .tile:nth-child(2){--pmtd:1.02s}
+  .pm-motion .authority.is-in .track .tile:nth-child(3){--pmtd:1.14s}
+  .pm-motion .authority.is-in .track .tile:nth-child(4){--pmtd:1.26s}
+  .pm-motion .authority.is-in .track .tile:nth-child(5){--pmtd:1.38s}
+  .pm-motion .authority.is-in .track .tile:nth-child(6){--pmtd:1.5s}
+  .pm-motion .authority.is-in .track .tile:nth-child(7){--pmtd:1.62s}
+  .pm-motion .authority.is-in .track .tile:nth-child(8){--pmtd:1.74s}
+  .pm-motion .authority.is-in .track .tile:nth-child(9){--pmtd:1.86s}
+  .pm-motion .authority.is-in .track .tile:nth-child(10){--pmtd:1.98s}
+
+  /* 信条：本文の墨入れ（ink-fill）＝文字がスクロールに合わせて濃くなる（JSが .pm-ch を生成） */
+  .pm-ch{opacity:.14}
+  /* 信条：accent の砂金下線スイープ */
+  .pm-motion .heart__prose p .accent{background-image:linear-gradient(90deg,rgba(224,203,160,.9),rgba(224,203,160,.3));
+    background-repeat:no-repeat;background-position:0 100%;background-size:0% 1px;
+    transition:background-size 1.3s var(--ease) .5s;padding-bottom:2px}
+  .pm-motion .heart__prose p.is-in .accent{background-size:100% 1px}
+
+  /* 花風京：タイトルが製図机の上で左→右にドラフトされる（data-riseの縦揺れは無効化して置換） */
+  .pm-motion .lineup .lp-title[data-rise]{opacity:1;transform:none;
+    clip-path:inset(-12% 100% -12% 0);transition:clip-path 1.5s var(--ease) .15s}
+  .pm-motion .lineup.is-in .lp-title[data-rise]{clip-path:inset(-12% -3% -12% 0)}
+
+  /* なぜ：チェックマークの描き込み（stroke draw-on・行の--iで時差） */
+  .pm-motion .naze .chk svg path{stroke-dasharray:26;stroke-dashoffset:26;
+    transition:stroke-dashoffset .8s cubic-bezier(.4,0,.2,1) calc(.45s + var(--i,0)*.12s)}
+  .pm-motion .naze.is-in .chk svg path{stroke-dashoffset:0}
+  /* なぜ：鍵括弧はJSがポップさせる（inline-block化） */
+  .pm-motion .naze__quote .qm{display:inline-block}
+
+  /* 土地：展開エリアの市名が台帳に書き込まれていく（JSが--iを付与） */
+  .pm-motion .lt-areas .a{opacity:0;transform:translateY(7px);display:inline-block;
+    transition:opacity .7s var(--lt-eases,cubic-bezier(.22,1,.36,1)),transform .7s var(--lt-eases,cubic-bezier(.22,1,.36,1));
+    transition-delay:calc(.55s + var(--i,0)*.07s)}
+  .pm-motion .lt-lots.is-ltin .lt-areas .a{opacity:1;transform:none}
+
+  /* 土地の台帳：金の罫線を左から「引く」（pm-motion時のみ。JS死亡時は通常の静的罫線のまま） */
+  .pm-motion .lt-register{border-top-color:transparent;position:relative}
+  .pm-motion .lt-register::before{content:"";position:absolute;top:-1px;left:0;right:0;height:1px;
+    background:var(--lt-goldhair,rgba(201,174,124,.55));transform:scaleX(0);transform-origin:0 50%;
+    transition:transform 1.1s var(--lt-eases,cubic-bezier(.22,1,.36,1)) .34s}
+  .pm-motion .lt-lots.is-ltin .lt-register::before{transform:scaleX(1)}
+  .pm-motion .lt-regrow + .lt-regrow{border-top-color:transparent;position:relative}
+  .pm-motion .lt-regrow + .lt-regrow::before{content:"";position:absolute;top:-1px;left:0;right:0;height:1px;
+    background:rgba(244,241,234,.1);transform:scaleX(0);transform-origin:0 50%;
+    transition:transform 1s var(--lt-eases,cubic-bezier(.22,1,.36,1)) .62s}
+  .pm-motion .lt-lots.is-ltin .lt-regrow + .lt-regrow::before{transform:scaleX(1)}
+
+  /* お客様の声：朱印スタンプの合成ヒント（初期隠しはJS側 gsap.set＝JS死亡時は通常表示） */
+  .pm-motion .vc__mark{will-change:transform,opacity}
+
+  /* CV導線（アンバー）だけの磁気ボタン：transformをCSSトランジションから外しGSAPに譲渡 */
+  .pm-motion .pm-mag{transition:box-shadow .5s var(--ease),background .3s var(--ease)}
+
+  /* 診断用：?seams=off でシーム（紙重ね境界）のスクロール連動アニメを無効化 */
+  .pm-noseams .authority,.pm-noseams .heart,.pm-noseams .lineup,.pm-noseams .naze,
+  .pm-noseams .lt-lots,.pm-noseams .sb-social{animation:none!important}
+
+  /* ===== 最高ぬるぬる化：スクロール中のペイント系アニメを全停止（見た目は最終状態のまま静的維持） =====
+     living seam は border-radius/box-shadow/brightness をスクロール毎フレーム再描画するため、
+     JS成功時（pm-motion）は角丸・影を最終状態で固定し、GPU合成だけでスクロールさせる。 */
+  @media (min-width:768px){
+    .pm-motion .authority,.pm-motion .heart,.pm-motion .lineup,.pm-motion .naze,
+    .pm-motion .lt-lots,.pm-motion .sb-social{
+      animation:none!important;transform:none!important;
+      border-top-left-radius:clamp(24px,3vw,46px)!important;
+      border-top-right-radius:clamp(24px,3vw,46px)!important;
+      border-bottom-left-radius:0!important;border-bottom-right-radius:0!important}
+  }
+  /* naze ヒーローの background-position 視差＝毎フレームのペイント。凍結（CSSのdriftズームは温存） */
+  .pm-motion #nazeHero{background-position:center 50%!important}
+  /* ヘッダーのbackdrop blurを14px→9pxへ（視覚差ほぼゼロ・スクロール中のGPU再ブラー負荷を削減） */
+  .pm-motion .site-header.is-solid{-webkit-backdrop-filter:saturate(1.05) blur(9px);backdrop-filter:saturate(1.05) blur(9px)}
+
+  /* 安全弁：reduced-motion では pm 層を完全静止（JS側でも付与しないが二重ガード） */
+  @media (prefers-reduced-motion:reduce){
+    .pm-progress{display:none}
+    .pm-motion .cue::after{animation:none}
+    .pm-motion .authority .tile{clip-path:none;transition:none}
+    .pm-ch{opacity:1}
+    .pm-motion .heart__prose p .accent{background-size:100% 1px;transition:none}
+    .pm-motion .lineup .lp-title[data-rise]{clip-path:none;transition:none}
+    .pm-motion .naze .chk svg path{stroke-dashoffset:0;transition:none}
+    .pm-motion .lt-areas .a{opacity:1;transform:none;transition:none}
+    .pm-motion .lt-register{border-top-color:var(--lt-goldhair,rgba(201,174,124,.55))}
+    .pm-motion .lt-regrow + .lt-regrow{border-top-color:rgba(244,241,234,.1)}
+    .pm-motion .lt-register::before,.pm-motion .lt-regrow + .lt-regrow::before{display:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="#top" aria-label="株式会社やまと不動産 トップへ">
+    <img class="brand__mark" src="assets/brand/yamato_mark.svg" alt="">
+    <span class="brand__kk"><span>株式</span><span>会社</span></span>
+    <span class="brand__jp">やまと不動産</span>
+  </a>
+  <nav class="nav" aria-label="グローバルナビゲーション">
+    <a class="nav__link" href="#heart">私たちについて</a>
+    <a class="nav__link" href="kodawari.html">家づくりのこだわり</a>
+    <a class="nav__link" href="#">施工事例</a>
+    <a class="nav__link" href="model.html">モデルハウス</a>
+    <a class="nav__link" href="lots.html">分譲地・物件</a>
+    <a class="nav__link" href="company.html">会社案内</a>
+  </nav>
+  <div class="actions">
+    <a class="ghost-link" href="contact.html?type=docs">資料請求</a>
+    <a class="btn-reserve" href="contact.html?type=reserve">
+      <span>来場<span class="lbl-long">のご</span>予約</span>
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <button class="burger" id="burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ FV（標準装備ループ動画） ============ -->
+<section class="hero" id="top">
+  <video class="hero__v" id="hv" poster="assets/video_ab/B_poster.webp?v=shuei" muted loop playsinline preload="auto" autoplay>
+    <source src="assets/video_ab/B_loop_sp.mp4?v=cut3" type="video/mp4" media="(max-width: 700px)">
+    <source src="assets/video_ab/B_loop.mp4?v=cut3" type="video/mp4">
+  </video>
+  <script>/* SPは縦長ポスター（LCP一致・パース直後に差し替え＝初期描画前） */
+  if(matchMedia('(max-width:700px)').matches){document.getElementById('hv').poster='assets/video_ab/B_poster_sp.webp?v=sp2';}</script>
+  <div class="hero__scrim"></div>
+  <div class="intro">
+    <h1>
+      <span class="in-l1"><em class="in-num">50</em><span class="in-w">年先まで<br>考えて、</span></span>
+      <span class="in-l2">家をつくっています。</span>
+    </h1>
+    <p>違いは、10年後からはっきり出ます。</p>
+  </div>
+  <div class="cta-row">
+    <a class="cta" href="contact.html?type=reserve">モデルハウスを予約する
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="cta-ghost" href="contact.html?type=docs">資料を請求する</a>
+  </div>
+  <div class="cue">Scroll</div>
+</section>
+
+<!-- ============ 実績（生きた図面・動画背景＋製図インデックスバナー） ============ -->
+<section class="authority" id="auth">
+  <video class="authority__bg" id="authBg" autoplay muted loop playsinline preload="metadata" poster="assets/authority/blueprint.webp">
+    <source src="assets/authority/bp_bg.mp4" type="video/mp4">
+  </video>
+  <div class="authority__scrim"></div>
+  <div class="authority__anno" id="anno" aria-hidden="true">
+    <svg viewBox="0 0 1180 640" preserveAspectRatio="xMidYMid meet">
+      <path class="anno-line a1" d="M40 66 h30 M40 66 v30"/>
+      <path class="anno-line a1" d="M1140 66 h-30 M1140 66 v30"/>
+      <path class="anno-line a1" d="M40 574 h30 M40 574 v-30"/>
+      <path class="anno-line a1" d="M1140 574 h-30 M1140 574 v-30"/>
+      <path class="anno-line a1" d="M360 96 H820"/>
+      <path class="anno-line a1" d="M360 88 V104 M820 88 V104 M590 90 V102"/>
+      <text class="anno-txt" x="590" y="82" text-anchor="middle">TRACK RECORD</text>
+      <path class="anno-line a2" d="M372 372 H808"/>
+      <path class="anno-line a2" d="M372 364 V380 M808 364 V380"/>
+      <text class="anno-txt" x="590" y="402" text-anchor="middle">600 棟 ／ BUILT IN NARA</text>
+      <path class="anno-line a3" d="M840 250 L980 196 H1090"/>
+      <circle class="anno-line a3" cx="840" cy="250" r="4"/>
+      <text class="anno-txt" x="984" y="188" text-anchor="start">自社設計 ／ 自社施工</text>
+      <circle class="anno-line a3" cx="150" cy="452" r="26"/>
+      <path class="anno-line a3" d="M176 452 H250"/>
+      <text class="anno-txt" x="150" y="456" text-anchor="middle" style="font-size:11px">03</text>
+      <text class="anno-txt" x="258" y="456" text-anchor="start" style="font-size:11px">DETAIL</text>
+    </svg>
+  </div>
+  <div class="authority__grain"></div>
+
+  <div class="wrap">
+    <p class="eyebrow" data-reveal style="--d:.05s">Track Record ／ 創業からの実績</p>
+    <div class="numwrap" data-reveal style="--d:.2s"><span class="count" id="count" data-target="600">0</span><span class="unit">棟超</span></div>
+    <h2 class="lead" data-reveal style="--d:.42s">選ばれる理由は、価格だけではありません。</h2>
+    <p class="sub" data-reveal style="--d:.54s">創業から、奈良でこれだけの家をつくってきました。その一棟ずつに、設計があります。</p>
+    <div class="stats" data-reveal style="--d:.68s">
+      <div class="stat"><span class="n">約150</span><span class="l">区画｜自社分譲（常時）</span></div>
+      <div class="stat"><span class="n">50</span><span class="l">組｜お客様の声</span></div>
+      <div class="stat"><span class="n" id="foundY">14</span><span class="l">年｜創業</span></div>
+    </div>
+    <script>
+    /* 創業2011-11-30からの満年数（周年を跨いだら自動繰上げ。JS無効時は静的値のまま） */
+    (function(){var e=document.getElementById('foundY');if(!e)return;
+      var n=new Date(),y=n.getFullYear()-2011-((n.getMonth()<10||(n.getMonth()===10&&n.getDate()<30))?1:0);
+      if(y>0&&String(y)!==e.textContent)e.textContent=y;})();
+    </script>
+  </div>
+
+  <div class="marquee" data-reveal style="--d:.84s" aria-label="関連ページ">
+    <div class="track" id="track">
+      <a class="tile" href="#works" aria-label="施工事例">
+        <span class="tile__img" style="background-image:url(assets/authority/tile_works.webp)"></span>
+        <span class="tile__no">01</span><span class="tile__vcap">Built in Nara</span>
+        <span class="tile__body"><span class="tile__en">Works</span><span class="tile__jp">施工事例</span><span class="tile__fact">600棟の設計図</span></span>
+      </a>
+      <a class="tile" href="model.html" aria-label="モデルハウス">
+        <span class="tile__img" style="background-image:url(assets/authority/tile_model.webp)"></span>
+        <span class="tile__no">02</span><span class="tile__vcap">Model House</span>
+        <span class="tile__body"><span class="tile__en">Model House</span><span class="tile__jp">モデルハウス</span><span class="tile__fact">暮らしを見にきませんか</span></span>
+      </a>
+      <a class="tile" href="#voice" aria-label="お客様の声">
+        <span class="tile__img" style="background-image:url(assets/authority/tile_voice.webp)"></span>
+        <span class="tile__no">03</span><span class="tile__vcap">Customer Voice</span>
+        <span class="tile__body"><span class="tile__en">Voice</span><span class="tile__jp">お客様の声</span><span class="tile__fact">実際に建てた方の声</span></span>
+      </a>
+      <a class="tile" href="lots.html" aria-label="土地・分譲地">
+        <span class="tile__img" style="background-image:url(assets/authority/tile_land.webp)"></span>
+        <span class="tile__no">04</span><span class="tile__vcap">Land ／ Lots</span>
+        <span class="tile__body"><span class="tile__en">Land</span><span class="tile__jp">土地・分譲地</span><span class="tile__fact">分譲中の区画があります</span></span>
+      </a>
+      <a class="tile" href="kodawari.html#standard" aria-label="標準装備">
+        <span class="tile__img" style="background-image:url(assets/authority/tile_equipment.webp)"></span>
+        <span class="tile__no">05</span><span class="tile__vcap">Standard Spec</span>
+        <span class="tile__body"><span class="tile__en">Equipment</span><span class="tile__jp">標準装備</span><span class="tile__fact">地盤改良費は当社負担</span></span>
+      </a>
+    </div>
+  </div>
+  <p class="cap" data-reveal style="--d:.92s">ドラッグ／スワイプで動かせます — 各バナーから、詳しいページへ</p>
+</section>
+
+<!-- ============ 信条（散らしコラージュ・明朝） ============ -->
+<section class="heart" id="heart">
+  <div class="heart__inner">
+    <div class="m-flow">
+      <figure class="ph ph--kitchen" data-rise><div class="ph__px" data-amp="-150"><div class="ph__f"><img src="assets/video_cine/gh_kitchen.webp" loading="lazy" decoding="async" alt="ウォールナットの天井と一枚板カウンターのあるキッチン" style="object-position:center 58%"></div></div></figure>
+      <figure class="ph ph--atrium"  data-rise><div class="ph__px" data-amp="118"><div class="ph__f"><img src="assets/video_cine/gh_atrium.webp" loading="lazy" decoding="async" alt="夕刻の光が差し込む階段ホール" style="object-position:center 40%"></div></div></figure>
+
+      <div class="heart__text">
+        <span class="kicker reveal-up" style="--i:0">Our philosophy</span>
+        <p class="lead-in reveal-up" style="--i:1">やまと不動産の信条は</p>
+        <h2 class="heart__head reveal-up" style="--i:2">
+          <span class="q">「この金額で、<br class="only-sp"><em>ここまでできるんだ</em>」と</span>
+          <span>驚いてもらえる家づくりです。</span>
+        </h2>
+
+        <div class="heart__prose">
+          <p class="reveal-up">
+            モデルハウスで見た設備も、暮らしやすい間取りも、<br class="only-pc">
+            あとから追加費用がどんどん増えていくものではありません。<br class="only-pc">
+            <span class="accent">最初から、いいものを標準で入れています。</span>
+          </p>
+          <p class="reveal-up">
+            断熱、耐震、外壁、設備、地盤。<br class="only-pc">
+            見えないところにも手を抜かず、長く気持ちよく住める家にする。<br class="only-pc">
+            それでいて、無駄な中間コストや見えにくい費用はできるだけ抑える。
+          </p>
+          <p class="reveal-up">
+            「この予算では無理かも」と思っていた人にこそ、<br class="only-pc">
+            もっといい家が、その予算で建つことを知ってほしい。
+          </p>
+        </div>
+      </div>
+
+      <figure class="ph ph--living" data-rise><div class="ph__px" data-amp="-190"><div class="ph__f"><img src="assets/video_cine/gh_living.webp" loading="lazy" decoding="async" alt="間接照明が灯る石壁のリビング" style="object-position:center 62%"></div></div></figure>
+      <figure class="ph ph--vanity" data-rise><div class="ph__px" data-amp="92"><div class="ph__f"><img src="assets/video_cine/gh_vanity.webp" loading="lazy" decoding="async" alt="木の格子扉と朝の光が差す洗面" style="object-position:center 60%"></div></div></figure>
+
+      <div class="heart__close reveal-up">
+        <p>引き渡しの日に<br><span class="nowrap">「やまと不動産にお願いしてよかった」</span><br>と言ってもらえる家を<br>私たちはつくっています。</p>
+        <span class="heart__rule"></span>
+      </div>
+
+      <figure class="ph ph--bath" data-rise><div class="ph__px" data-amp="-120"><div class="ph__f"><img src="assets/video_cine/gh_bath.webp" loading="lazy" decoding="async" alt="湯気と西日のあたたかな浴室" style="object-position:center 46%"></div></div></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 商品ライン 花・風・京（動く図面・ドラフティングテーブル） ============ -->
+<section class="lineup" id="lineup">
+  <video class="lineup__bg" id="lpBg" autoplay muted loop playsinline preload="metadata" poster="assets/products/bp_white_poster.webp">
+    <source src="assets/products/blueprint_white_loop.mp4" type="video/mp4">
+  </video>
+  <div class="lineup__veil"></div>
+  <div class="lineup__grain"></div>
+
+  <div class="lineup__inner">
+    <header class="lineup__head">
+      <p class="eyebrow" data-rise style="--d:.05">Product Lineup ／ 商品ラインナップ</p>
+      <h2 class="lp-title" data-rise style="--d:.15">断熱・耐震・外壁・設備・地盤にこだわって、この価格です。</h2>
+      <p class="lp-lead" data-rise style="--d:.28"><span style="display:inline-block">花・風・京。</span><span style="display:inline-block">3つのプランは、</span><span style="display:inline-block">すべて追加費用なしのコミコミ税込。</span><span style="display:inline-block">間取りも設備も、</span><span style="display:inline-block">最初から入っています。</span></p>
+      <div class="lp-dim"></div>
+    </header>
+
+    <div class="lp-cards">
+      <article class="pcard" style="--i:0">
+        <div class="pcard__plan">
+          <span class="pcard__planimg" style="background-image:url(assets/products/plan_hana.webp)"></span>
+          <span class="pcard__idx">PLAN <b>01</b></span>
+          <span class="pcard__kanji">花</span>
+        </div>
+        <div class="pcard__block">
+          <h3 class="pcard__name">花<small>Hana</small></h3>
+          <p class="pcard__tag">天井が高く、光のよくまわる家。</p>
+          <dl class="pcard__spec">
+            <div><dt>延床面積</dt><dd class="cnt" data-to="31">31<span class="u">坪</span></dd></div>
+            <div><dt>間取り</dt><dd>4LDK</dd></div>
+            <div><dt>特徴</dt><dd>天井高2500・顔認証</dd></div>
+          </dl>
+          <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2680">2,680</span><span class="man">万円</span><span class="from">〜</span></div>
+          <p class="pcard__incl">コミコミ税込／土地は別途</p>
+          <a class="pcard__cta" href="#">間取りの詳細を見る
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="pcard" style="--i:1">
+        <div class="pcard__plan">
+          <span class="pcard__planimg" style="background-image:url(assets/products/plan_kaze.webp)"></span>
+          <span class="pcard__idx">PLAN <b>02</b></span>
+          <span class="pcard__kanji">風</span>
+        </div>
+        <div class="pcard__block">
+          <h3 class="pcard__name">風<small>Kaze</small></h3>
+          <p class="pcard__tag">風がとおる、長く住める家。</p>
+          <dl class="pcard__spec">
+            <div><dt>延床面積</dt><dd class="cnt" data-to="30">30<span class="u">坪</span></dd></div>
+            <div><dt>間取り</dt><dd>4LDK</dd></div>
+            <div><dt>特徴</dt><dd>長期優良住宅 対応</dd></div>
+          </dl>
+          <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2680">2,680</span><span class="man">万円</span><span class="from">〜</span></div>
+          <p class="pcard__incl">コミコミ税込／土地は別途</p>
+          <a class="pcard__cta" href="#">間取りの詳細を見る
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="pcard" style="--i:2">
+        <div class="pcard__plan">
+          <span class="pcard__planimg" style="background-image:url(assets/products/plan_kyo.webp)"></span>
+          <span class="pcard__idx">PLAN <b>03</b></span>
+          <span class="pcard__kanji">京</span>
+        </div>
+        <div class="pcard__block">
+          <h3 class="pcard__name">京<small>Kyo</small></h3>
+          <p class="pcard__tag">狭い土地を、賢く活かす家。</p>
+          <dl class="pcard__spec">
+            <div><dt>延床面積</dt><dd class="cnt" data-to="28">28<span class="u">坪</span></dd></div>
+            <div><dt>間取り</dt><dd>3LDK</dd></div>
+            <div><dt>特徴</dt><dd>狭小地に対応</dd></div>
+          </dl>
+          <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2480">2,480</span><span class="man">万円</span><span class="from">〜</span></div>
+          <p class="pcard__incl">コミコミ税込／土地は別途</p>
+          <a class="pcard__cta" href="#">間取りの詳細を見る
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <p class="lp-foot" data-rise style="--d:.1">※ 価格・面積・間取りは確定値です。平面図は実施図面に差し替え予定です。</p>
+</section>
+
+<!-- ============ なぜ、この値段で（施工断面×正直な二列） ============ -->
+<!-- ============ USP巨大タイポ帯（usp- シグネチャーモーメント：専務の芯の言葉） ============ -->
+<style>
+  .usp{position:relative;isolation:isolate;background:#F4F1EA;color:#241F1B;overflow:hidden;
+    z-index:5;margin-top:clamp(-78px,-5.6vw,-46px);
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    box-shadow:0 -46px 88px -32px rgba(0,0,0,.4);
+    padding:calc(clamp(96px,13vw,190px)) 0 calc(clamp(96px,13vw,190px) + clamp(46px,5.6vw,78px));
+    text-align:center}
+  .usp__l{white-space:nowrap;font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;font-weight:600;
+    font-size:clamp(1.5rem, 6.1vw, 6.2rem);line-height:1.42;letter-spacing:.08em}
+  .usp__l em{font-style:normal;color:#2E4600}
+  .usp__note{margin-top:clamp(22px,3.4vw,40px);font-family:var(--fh);font-weight:500;
+    font-size:clamp(.86rem,.8rem + .4vw,1.05rem);letter-spacing:.12em;color:#5A544C;padding:0 22px}
+  .usp__attr{margin-top:10px;font-family:var(--fb);font-size:.7rem;letter-spacing:.1em;color:#8D857A}
+  /* スクラブ: 2行が逆方向に静かに流れる（ネイティブscroll-driven・PCのみ・低モーション尊重） */
+  @supports (animation-timeline: view()){
+    @media (prefers-reduced-motion:no-preference) and (min-width:768px){
+      .usp__l1{animation:uspDriftL linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+      .usp__l2{animation:uspDriftR linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+    }
+  }
+  @keyframes uspDriftL{from{transform:translateX(3.5%)}to{transform:translateX(-3.5%)}}
+  @keyframes uspDriftR{from{transform:translateX(-3.5%)}to{transform:translateX(3.5%)}}
+</style>
+<section class="usp" aria-label="やまとの約束のひとこと">
+  <div class="usp__l usp__l1">お見積もり後</div>
+  <div class="usp__l usp__l2"><em>追加料金の上乗せはありません。</em></div>
+  <p class="usp__note">間取りも設備も入った、コミコミ税込のお見積もりです。地盤改良費が必要になっても、当社が負担します。</p>
+  <p class="usp__attr">── 「追加かからへんくて家建ったね」。私たちが目標にしている、お客様の一言です。</p>
+</section>
+
+<section class="naze" id="naze">
+  <div class="naze__hero">
+    <div class="naze__heroimg" id="nazeHero"></div>
+    <div class="naze__heroscrim"></div>
+    <div class="naze__herowrap">
+      <p class="naze__eyebrow" data-rise style="--d:.05">Reason ／ この価格の理由</p>
+      <h2 class="naze__quote" data-rise style="--d:.16"><span class="qm">「</span>これで、この値段なんですか？<span class="qm">」</span></h2>
+      <p class="naze__attr" data-rise style="--d:.3">やまとで家を建てられたお客様から、いちばん多くいただく声です。</p>
+    </div>
+  </div>
+
+  <div class="naze__body">
+    <p class="naze__lead" data-rise style="--d:.05">断熱・耐震・外壁・設備・地盤。家の性能を決める部分に、しっかり手をかけています。そのうえで、大きなモデルハウス展示場や広告にはお金をかけません。<span class="em">だから、適正な価格のまま、高い水準の家づくりができます。</span></p>
+  </div>
+
+  <div class="ledger">
+    <div class="lcol lcol--in">
+      <div class="lcol__head" data-rise style="--d:.05"><span class="k">Where we invest</span><h3>この家に、手をかけているところ</h3></div>
+      <div class="lrow" style="--i:0"><div class="lrow__img"><span style="background-image:url(assets/strength/ma_dannetsu.webp)"></span></div><div class="lrow__t"><div class="lrow__part"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5 11-12"/></svg></span>断熱・窓</div><div class="lrow__name">アクアフォーム</div><div class="lrow__meta">現場で吹き付けて、柱のすき間まで埋めます。窓はLow-E複層ガラスです。</div></div></div>
+      <div class="lrow" style="--i:1"><div class="lrow__img"><span style="background-image:url(assets/strength/ma_taishin.webp)"></span></div><div class="lrow__t"><div class="lrow__part"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5 11-12"/></svg></span>耐震・制震</div><div class="lrow__name">住友ゴム ミライエ</div><div class="lrow__meta">制震ユニットも標準で、揺れを最大70%抑えます。</div></div></div>
+      <div class="lrow" style="--i:2"><div class="lrow__img"><span style="background-image:url(assets/strength/ma_gaiheki.webp)"></span></div><div class="lrow__t"><div class="lrow__part"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5 11-12"/></svg></span>外壁</div><div class="lrow__name">旭化成 ヘーベルパワーボード</div><div class="lrow__meta">10年経っても、まだ新築のように見えます。</div></div></div>
+      <div class="lrow" style="--i:3"><div class="lrow__img"><span style="background-image:url(assets/strength/ma_setsubi.webp)"></span></div><div class="lrow__t"><div class="lrow__part"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5 11-12"/></svg></span>キッチン・浴室</div><div class="lrow__name"><span style="display:inline-block">クリナップ ステディア</span>／<span style="display:inline-block">TOTO サザナ</span></div><div class="lrow__meta">浴室は1.25坪サイズまで、ぜんぶ標準です。</div></div></div>
+      <div class="lrow" style="--i:4"><div class="lrow__img"><span style="background-image:url(assets/strength/ma_jiban.webp)"></span></div><div class="lrow__t"><div class="lrow__part"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5 11-12"/></svg></span>地盤</div><div class="lrow__name">改良費は、当社が負担</div><div class="lrow__meta">調査の結果、必要なときだけ改良します。地盤保証もついています。</div></div></div>
+    </div>
+
+    <div class="lcol lcol--out">
+      <div class="lcol__head" data-rise style="--d:.12"><span class="k">Where we don't</span><h3>大きくは、かけていないところ</h3></div>
+      <div class="lpanel" data-rise style="--d:.2">
+        <div class="lout"><span class="lout__mk"></span><span class="lout__t">大きなモデルハウス展示場</span></div>
+        <div class="lout"><span class="lout__mk"></span><span class="lout__t">大きな広告</span></div>
+        <p class="note">分譲地に建てた家を、そのままモデルハウスにしています。広告も必要な分だけにして、そのぶんを家の中身に回しています。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="naze__proof" data-rise style="--d:.1">
+    <div class="qp__stats"><!-- カウントアップはenh層が.qp__statsを検出して駆動 -->
+      <div class="qp__stat"><b>約1.5<small>倍</small></b><span>構造強度（在来比・ハイブリッド工法）</span></div>
+      <div class="qp__stat"><b>2.3<small>m</small></b><span>室内ドアの高さ（ハイドア標準）</span></div>
+      <div class="qp__stat"><b>1.25<small>坪</small></b><span>浴室の広さ（標準サイズ）</span></div>
+    </div>
+    <p class="naze__partner">提携機関：JIO 日本住宅保証検査機構／地盤ネット／大阪ガス</p>
+  </div>
+
+  <div class="naze__cta">
+    <h4 data-rise style="--d:.05">まずは実物のモデルハウスで、確かめませんか。</h4>
+    <p data-rise style="--d:.14">奈良のモデルハウスは、標準仕様のまま建てています。写真と実物に、違いはありません。</p>
+    <a class="naze__btn" href="contact.html?type=reserve" data-rise style="--d:.22">モデルハウスを予約する
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <p class="naze__sub" data-rise style="--d:.3"><a href="kodawari.html#standard">標準仕様のすべてを見る</a>　／　<a href="model.html">実物の部屋ごとの標準を見る</a></p>
+  </div>
+</section>
+
+<!-- ============ お客様の声（50通の手紙・vc- 名前空間／voice.htmlへの橋） ============ -->
+<style>
+  .vc{position:relative;isolation:isolate;overflow:hidden;color:#241F1B;
+    --vc-earth:#7D4427;--vc-earthsoft:rgba(125,68,39,.55);--vc-earthfaint:rgba(125,68,39,.12);
+    --vc-sheet:#FCFAF4;--vc-line:rgba(36,31,27,.12);
+    --vc-fk:"Klee One","Hiragino Maru Gothic ProN","Noto Sans JP",sans-serif;
+    --vc-ease:cubic-bezier(.16,1,.3,1);--vc-eases:cubic-bezier(.22,1,.36,1);
+    background:#F5EEE2;
+    z-index:6;margin-top:clamp(-78px,-5.6vw,-46px);
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    box-shadow:0 -46px 88px -32px rgba(0,0,0,.35);
+    padding:clamp(96px,13vw,180px) 0 clamp(120px,15vw,210px)}
+  .vc::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;
+    background:repeating-linear-gradient(0deg,transparent 0 46px,rgba(125,68,39,.07) 46px 47px)}
+  .vc::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(80% 60% at 18% 8%,rgba(252,250,244,.85),rgba(252,250,244,0) 65%)}
+  .vc__in{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,64px);
+    display:grid;grid-template-columns:minmax(300px,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,84px);align-items:center}
+  .vc__eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--fn);font-size:.64rem;font-weight:500;
+    letter-spacing:.3em;text-transform:uppercase;color:var(--vc-earth);margin-bottom:clamp(18px,2.6vw,28px)}
+  .vc__eyebrow::before{content:"";width:30px;height:1px;background:currentColor;opacity:.7}
+  .vc h2{font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;font-weight:600;letter-spacing:.06em;
+    line-height:1.6;font-size:clamp(1.65rem,1.1rem + 2.2vw,2.7rem)}
+  .vc h2 em{font-style:normal;color:var(--vc-earth)}
+  .vc__lead{margin-top:clamp(16px,2.2vw,24px);font-size:clamp(.92rem,.88rem + .3vw,1.04rem);
+    line-height:2.05;letter-spacing:.04em;color:#5A544C;max-width:30em}
+  .vc__cta{display:inline-flex;align-items:center;gap:12px;margin-top:clamp(26px,3.4vw,40px);
+    font-family:var(--fh);font-weight:500;font-size:.98rem;letter-spacing:.04em;color:var(--vc-earth);
+    padding:15px 30px;border:1px solid var(--vc-earthsoft);border-radius:4px;background:rgba(252,250,244,.6);
+    transition:transform .5s var(--vc-ease),box-shadow .5s var(--vc-ease),background .4s}
+  .vc__cta:hover{transform:translateY(-3px);background:#FCFAF4;box-shadow:0 16px 36px -16px rgba(125,68,39,.45)}
+  .vc__cta svg{width:15px;height:15px;stroke:currentColor;stroke-width:2;fill:none;transition:transform .5s var(--vc-ease)}
+  .vc__cta:hover svg{transform:translateX(4px)}
+  /* 手紙の扇（3通） */
+  .vc__fan{position:relative;min-height:clamp(340px,34vw,480px)}
+  .vc__card{position:absolute;width:clamp(230px,21vw,300px);background:var(--vc-sheet);
+    border:1px solid var(--vc-line);border-radius:6px;overflow:hidden;cursor:pointer;display:block;
+    box-shadow:0 24px 50px -28px rgba(60,44,26,.5),0 6px 16px -8px rgba(60,44,26,.14);
+    transform:rotate(var(--r,0deg)) translateY(40px);opacity:0;
+    transition:opacity .95s var(--vc-eases),transform 1.05s var(--vc-eases),box-shadow .5s var(--vc-ease)}
+  .vc.is-vcin .vc__card{opacity:1;transform:rotate(var(--r,0deg)) translateY(0)}
+  .vc__card:hover{transform:rotate(0deg) translateY(-8px);box-shadow:0 40px 70px -30px rgba(60,44,26,.55);z-index:5}
+  .vc__card:nth-child(1){--r:-5deg;left:0;top:6%;z-index:1;transition-delay:.05s}
+  .vc__card:nth-child(2){--r:2.5deg;left:29%;top:0;z-index:4;transition-delay:.17s} /* 中央を最前面=引用文を隠さない（写真は重なりに耐える） */
+  .vc__card:nth-child(3){--r:7deg;left:58%;top:9%;z-index:2;transition-delay:.29s}
+  @media(min-width:961px){
+    .vc__card:nth-child(3){--r:9.5deg;left:auto;right:-4.5%;top:3%}
+  }
+  .vc__ph{position:relative;overflow:hidden;background:#E9E2D4;display:block}
+  .vc__ph img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;filter:saturate(.97)}
+  .vc__mark{position:absolute;right:10px;top:10px;width:64px;height:64px;border-radius:50%;
+    display:grid;place-items:center;text-align:center;pointer-events:none;color:var(--vc-earth);
+    border:1.5px solid var(--vc-earthsoft);background:rgba(252,250,244,.62);transform:rotate(-8deg);mix-blend-mode:multiply}
+  .vc__mark::before{content:"";position:absolute;inset:4px;border-radius:50%;border:1px dashed var(--vc-earthsoft);opacity:.7}
+  .vc__mark i{font-style:normal;display:block;font-family:var(--fn);font-size:.44rem;letter-spacing:.16em;line-height:1.5;text-transform:uppercase}
+  .vc__mark b{display:block;font-family:var(--fh);font-weight:500;font-size:.66rem;letter-spacing:.05em;line-height:1.3}
+  .vc__body{padding:14px 16px 13px;display:block}
+  .vc__pull{font-family:var(--vc-fk);font-size:.9rem;line-height:1.9;letter-spacing:.02em;color:#241F1B;display:-webkit-box;
+    -webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .vc__pull::before{content:"“";font-family:"Shippori Mincho",serif;color:var(--vc-earth);font-size:1.25em;line-height:0;margin-right:2px}
+  .vc__who{display:block;margin-top:10px;padding-top:9px;border-top:1px solid var(--vc-line);
+    font-family:var(--fh);font-weight:500;font-size:.74rem;letter-spacing:.05em;color:#5A544C}
+  @media(max-width:960px){
+    .vc__in{grid-template-columns:1fr}
+    .vc__fan{min-height:0;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch;scrollbar-width:none;padding:10px 4px 18px;margin:0 calc(-1*clamp(20px,5vw,64px));
+      padding-left:clamp(20px,5vw,64px);padding-right:clamp(20px,5vw,64px)}
+    .vc__fan::-webkit-scrollbar{display:none}
+    .vc__card{position:relative;left:auto!important;top:auto!important;flex:0 0 72%;max-width:320px;scroll-snap-align:center;--r:0deg}
+    .vc__card:nth-child(2){--r:0deg}.vc__card:nth-child(3){--r:0deg}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .vc__card{opacity:1!important;transform:rotate(var(--r,0deg))!important;transition:box-shadow .3s}
+  }
+</style>
+<section class="vc" id="voice" aria-label="お客様の声">
+  <div class="vc__in">
+    <div>
+      <span class="vc__eyebrow">Voice ／ お客様の声</span>
+      <h2><em>50通</em>の声が、<br>届いています。</h2><!-- copywriterパス済（50家族はリード文で補足） -->
+      <p class="vc__lead">やまとの家を建てられたお客様に、お引き渡し後のアンケートでいただいた言葉です。原文のまま載せています。</p>
+      <a class="vc__cta" href="voice.html">50通すべてを読む<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="vc__fan" id="vcFan" aria-label="お客様の声（抜粋）"><!-- JSが3通を描画 --></div>
+  </div>
+</section>
+<script>
+(function(){
+  var sec=document.getElementById('voice'); if(!sec) return;
+  var FEATURED=['v01','v05','v06'];
+  function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  fetch('data/voices.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(data){
+    var vs=data.voices||[]; if(!vs.length) return;
+    var picks=FEATURED.map(function(id){ return vs.find(function(v){return v.id===id;}); }).filter(Boolean);
+    if(picks.length<3) picks=vs.slice(0,3);
+    var html='';
+    picks.forEach(function(v){
+      html+='<a class="vc__card" href="voice.html#'+esc(v.id)+'" aria-label="'+esc(v.area)+' '+esc(v.family)+'の声を読む">'+
+        '<span class="vc__ph"><img src="'+esc(v.cover)+'" alt="'+esc(v.coverAlt||'やまとの家の実例写真')+'" loading="lazy" decoding="async">'+
+        '<span class="vc__mark" aria-hidden="true"><span><i>Yamato Voice</i><b>'+esc(v.area)+'</b><i>No.'+String(v.no).padStart(2,'0')+'</i></span></span></span>'+
+        '<span class="vc__body"><span class="vc__pull">'+esc(v.pull)+'</span>'+
+        '<span class="vc__who">'+esc(v.area)+'・'+esc(v.family)+'</span></span></a>';
+    });
+    document.getElementById('vcFan').innerHTML=html;
+  }).catch(function(){});
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es,io){
+      es.forEach(function(e){ if(e.isIntersecting){ sec.classList.add('is-vcin'); io.unobserve(sec); } });
+    },{threshold:.2,rootMargin:'0px 0px -8% 0px'}).observe(sec);
+  } else { sec.classList.add('is-vcin'); }
+})();
+</script>
+
+<!-- ============ P1 奈良に住むという選択（iju- 移住・通勤の路線図／第13視覚言語=深緑の路線図） ============ -->
+<style>
+  .iju{position:relative;isolation:isolate;color:#F4F1EA;
+    background:linear-gradient(160deg,#2A4200 0%,#22350A 55%,#1B2A08 100%);
+    z-index:6;margin-top:clamp(-78px,-5.6vw,-46px);
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    box-shadow:0 -46px 88px -32px rgba(0,0,0,.5)}
+  @media(max-width:560px){ .iju{margin-top:-32px;border-top-left-radius:20px;border-top-right-radius:20px} }
+  .iju::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(60% 50% at 82% 8%,rgba(162,197,35,.13),transparent 65%)}
+  .iju__in{position:relative;z-index:1;max-width:1240px;margin:0 auto;
+    padding:clamp(72px,9vw,130px) clamp(20px,5vw,64px) calc(clamp(72px,9vw,120px) + clamp(46px,5.6vw,78px))}
+  .iju__eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--fn,"Inter",sans-serif);
+    font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+  .iju__eyebrow::after{content:"";width:32px;height:1px;background:rgba(201,162,75,.5)}
+  .iju h2{margin-top:16px;font-family:var(--fh);font-weight:500;
+    font-size:clamp(1.35rem,1.05rem + 1.4vw,2.1rem);letter-spacing:.06em;line-height:1.8}
+  .iju__lead{margin-top:clamp(14px,2vw,22px);max-width:620px;font-size:.95rem;line-height:2.2;
+    letter-spacing:.03em;color:rgba(244,241,234,.78)}
+  .iju__nw{display:inline-block}
+  /* パノラマ相関図「二つの街の夜景」（生成イラスト・縦横マスクは入れ子で交差） */
+  .iju__pano{position:relative;margin-top:clamp(34px,4.6vw,56px);max-width:1000px}
+  .iju__panofade{display:block;
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 15%,#000 90%,transparent 100%);
+    mask-image:linear-gradient(to bottom,transparent 0,#000 15%,#000 90%,transparent 100%)}
+  .iju__panoimg{display:block;width:100%;height:auto;
+    -webkit-mask-image:linear-gradient(to right,transparent 0,#000 7%,#000 93%,transparent 100%);
+    mask-image:linear-gradient(to right,transparent 0,#000 7%,#000 93%,transparent 100%)}
+  .iju__panoglow{position:absolute;left:49.5%;top:47%;width:30%;aspect-ratio:3/1;
+    transform:translate(-50%,-50%);pointer-events:none;mix-blend-mode:screen;opacity:.35;
+    background:radial-gradient(50% 50% at 50% 50%,rgba(255,212,138,.42),rgba(255,196,110,.14) 55%,transparent 76%)}
+  .iju__pano.is-in .iju__panoglow{animation:ijubreath 3.6s ease-in-out .8s infinite alternate}
+  @keyframes ijubreath{from{opacity:.3}to{opacity:.9}}
+  @media(prefers-reduced-motion:reduce){ .iju__panoglow{animation:none!important;opacity:.5} }
+  .iju__panolab{position:absolute;bottom:8%;font-family:var(--fh);font-weight:500;
+    font-size:clamp(.78rem,.74rem + .3vw,.95rem);letter-spacing:.14em;color:rgba(244,241,234,.9);
+    display:flex;flex-direction:column;gap:2px;text-shadow:0 2px 14px rgba(5,10,2,.7)}
+  .iju__panolab small{font-family:var(--fn,"Inter",sans-serif);font-size:.6rem;font-weight:500;
+    letter-spacing:.22em;color:rgba(244,241,234,.55)}
+  .iju__panolab--l{left:2.5%}
+  .iju__panolab--r{right:2.5%;text-align:right;align-items:flex-end}
+  @media(max-width:560px){
+    .iju__pano{margin-inline:calc(-1*clamp(20px,5vw,64px))}
+    .iju__panolab--l{left:16px}
+    .iju__panolab--r{right:16px}
+  }
+  /* 路線図 */
+  .iju__routes{margin-top:clamp(38px,5vw,60px);display:flex;flex-direction:column;gap:clamp(22px,3vw,34px);max-width:820px}
+  .iju__line{display:flex;align-items:center;gap:clamp(12px,1.8vw,22px)}
+  .iju__st{flex:0 0 auto;font-family:var(--fh);font-weight:500;font-size:clamp(.95rem,.9rem + .4vw,1.15rem);
+    letter-spacing:.08em;display:flex;align-items:center;gap:9px}
+  .iju__st::before{content:"";width:11px;height:11px;border-radius:50%;border:2px solid #A2C523;background:#F4F1EA;flex:0 0 auto}
+  .iju__st--r{flex-direction:row-reverse}
+  .iju__st--r::before{order:-1}
+  .iju__rail{flex:1;display:flex;align-items:center;gap:clamp(10px,1.4vw,18px);min-width:0}
+  .iju__rail i{flex:1;height:2px;min-width:14px;
+    background:linear-gradient(to right,rgba(162,197,35,.2),rgba(162,197,35,.75),rgba(162,197,35,.2))}
+  .iju__time{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:2px;line-height:1}
+  .iju__time b{font-family:var(--fn,"Inter",sans-serif);font-weight:500;font-size:clamp(1.6rem,1.3rem + 1.4vw,2.4rem);letter-spacing:.01em}
+  .iju__time b small{font-size:.46em;letter-spacing:.08em;margin-left:2px}
+  .iju__time span{font-size:.62rem;letter-spacing:.14em;color:rgba(244,241,234,.62)}
+  .iju__note{margin-top:14px;font-size:.7rem;letter-spacing:.05em;color:rgba(244,241,234,.5)}
+  /* 資産の話 */
+  .iju__asset{margin-top:clamp(44px,5.6vw,72px);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+    gap:clamp(20px,4vw,64px);align-items:start;border-top:1px solid rgba(244,241,234,.16);padding-top:clamp(30px,4vw,48px)}
+  @media(max-width:760px){ .iju__asset{grid-template-columns:1fr;gap:16px} }
+  .iju__asset h3{font-family:var(--fm,"Shippori Mincho",serif);font-weight:600;
+    font-size:clamp(1.25rem,1.1rem + .9vw,1.8rem);letter-spacing:.08em;line-height:2}
+  .iju__asset p{font-size:.92rem;line-height:2.3;letter-spacing:.04em;color:rgba(244,241,234,.78);
+    font-family:var(--fh);font-weight:500}
+  .iju__foot{margin-top:clamp(34px,4.4vw,52px);display:flex;flex-wrap:wrap;align-items:center;gap:18px clamp(24px,3.4vw,44px)}
+  .iju__areas{display:flex;flex-wrap:wrap;gap:8px}
+  .iju__chip{font-family:var(--fn,"Inter",sans-serif);font-size:.7rem;font-weight:500;letter-spacing:.08em;
+    color:rgba(244,241,234,.8);border:1px solid rgba(244,241,234,.28);border-radius:100px;padding:.45em 1em}
+  .iju__go{display:inline-flex;align-items:center;gap:10px;font-family:var(--fh);font-weight:500;
+    font-size:.92rem;letter-spacing:.05em;color:#F4F1EA;
+    border:1px solid rgba(244,241,234,.45);border-radius:5px;padding:13px 26px;
+    transition:background .3s,border-color .3s,transform .3s}
+  .iju__go:hover{background:rgba(244,241,234,.1);border-color:rgba(244,241,234,.8);transform:translateY(-2px)}
+  .iju__go svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none}
+  .iju-rv{opacity:0;transform:translateY(14px)}
+  .iju-rv.is-in{opacity:1;transform:none;transition:opacity .6s cubic-bezier(.25,1,.5,1),transform .6s cubic-bezier(.25,1,.5,1)}
+  @media(max-width:760px){ .iju-rv{transform:translateY(8px)} }
+  @media(prefers-reduced-motion:reduce){ .iju-rv{opacity:1!important;transform:none!important;transition:none!important} }
+  @media(max-width:560px){
+    .iju__st{font-size:.85rem;letter-spacing:.04em}
+    .iju__line{gap:8px} .iju__rail{gap:8px}
+  }
+</style>
+<section class="iju" id="iju" aria-label="奈良に住むという選択・大阪京都への通勤">
+  <div class="iju__in">
+    <span class="iju__eyebrow iju-rv">Move to Nara ／ 奈良に住むという選択</span>
+    <h2 class="iju-rv"><span class="iju__nw">大阪で働きながら、</span><span class="iju__nw">奈良で暮らせます。</span></h2>
+    <p class="iju__lead iju-rv">やまとの分譲地は、奈良市・生駒市を中心に京都南部まで広がっています。通勤も通学も、あきらめなくて大丈夫です。</p>
+    <div class="iju__pano iju-rv" aria-hidden="true">
+      <span class="iju__panofade"><img class="iju__panoimg" src="assets/iju/pano_night.webp" alt="" width="1584" height="512" loading="lazy" decoding="async"></span>
+      <span class="iju__panoglow"></span>
+      <span class="iju__panolab iju__panolab--l">大阪・京都<small>はたらく街</small></span>
+      <span class="iju__panolab iju__panolab--r">奈良<small>くらす街</small></span>
+    </div>
+    <div class="iju__routes iju-rv">
+      <div class="iju__line">
+        <b class="iju__st">近鉄奈良</b>
+        <span class="iju__rail"><i></i><span class="iju__time"><b>約40<small>分</small></b><span>快速急行</span></span><i></i></span>
+        <b class="iju__st iju__st--r">大阪難波</b>
+      </div>
+      <div class="iju__line">
+        <b class="iju__st">生駒</b>
+        <span class="iju__rail"><i></i><span class="iju__time"><b>約20<small>分</small></b><span>快速急行</span></span><i></i></span>
+        <b class="iju__st iju__st--r">大阪難波</b>
+      </div>
+      <div class="iju__line">
+        <b class="iju__st">近鉄奈良</b>
+        <span class="iju__rail"><i></i><span class="iju__time"><b>約35<small>分</small></b><span>近鉄特急</span></span><i></i></span>
+        <b class="iju__st iju__st--r">京都</b>
+      </div>
+    </div>
+    <p class="iju__note iju-rv">所要時間はおおよその目安です。列車の種別・時間帯により変わります。</p>
+    <div class="iju__asset iju-rv">
+      <h3><span class="iju__nw">家賃は消えます。</span><span class="iju__nw">家は残ります。</span></h3>
+      <p>毎月の家賃は、支払って終わりです。同じくらいの毎月の支払いでも、家はご家族の資産として残ります。大阪や京都に通える奈良で、一戸建てから始めませんか。</p>
+    </div>
+    <div class="iju__foot iju-rv">
+      <div class="iju__areas">
+        <span class="iju__chip">奈良市</span><span class="iju__chip">生駒市</span><span class="iju__chip">橿原市</span><span class="iju__chip">大和郡山市</span><span class="iju__chip">京都府 木津川市</span><span class="iju__chip">京田辺市 ほか</span>
+      </div>
+      <a class="iju__go" href="#lots">いま選べる分譲地を見る<svg viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var els=document.querySelectorAll('.qp-rv,.iju-rv');
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
+    },{threshold:.2,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(x){ io.observe(x); });
+  } else {
+    els.forEach(function(x){ x.classList.add('is-in'); });
+  }
+})();
+</script>
+
+<!-- ============ 自社物件(土地)：出口ゾーン（フライト動画＋緑PIN／lt- 名前空間・境界=紙重ねに統合） ============ -->
+<style>
+  .lt-lots{
+    --lt-cream:#F4F1EA; --lt-green:#486B00; --lt-lime:#A2C523; --lt-forest:#2E4600;
+    --lt-gold:#C9AE7C; --lt-goldhair:rgba(201,174,124,.55);
+    --lt-fh:"Inter","dnp-shuei-gothic-gin-std","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    --lt-fb:"Inter","Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
+    --lt-ease:cubic-bezier(.16,1,.3,1); --lt-eases:cubic-bezier(.22,1,.36,1);
+    position:relative;isolation:isolate;overflow:hidden;min-height:clamp(600px,86vh,820px);
+    display:flex;align-items:flex-end;background:#12160c;color:var(--lt-cream);
+    /* 境界：紙重ね（naze の上に乗り上げ・SNS が上に乗る）。z:naze5<lots6<SNS7 */
+    z-index:6;margin-top:clamp(-78px,-5.6vw,-46px);
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    box-shadow:0 -46px 88px -32px rgba(0,0,0,.5);
+    --lt-sr-max:clamp(30px,3.6vw,52px); --lt-br-max:clamp(24px,2.6vw,40px); --lt-tuck:.952}
+  @media(max-width:560px){
+    .lt-lots{--lt-sr-max:24px;--lt-br-max:20px;--lt-tuck:.984;margin-top:-32px;
+      border-top-left-radius:20px;border-top-right-radius:20px;min-height:clamp(560px,84vh,700px)}
+    .lt-inner{padding-bottom:clamp(84px,12vh,124px)}
+  }
+  /* スクロール連動 living overlap＋tuck（境界システムと統一。非対応/低モーション/SPは静的にフォールバック） */
+  @supports (animation-timeline: view()){
+    @media (prefers-reduced-motion:no-preference) and (min-width:768px){
+      .lt-lots{border-top-left-radius:var(--sr);border-top-right-radius:var(--sr);
+        border-bottom-left-radius:var(--br);border-bottom-right-radius:var(--br);transform-origin:50% 34%;
+        --sr-max:var(--lt-sr-max);--br-max:var(--lt-br-max);--tuck-scale:var(--lt-tuck);
+        animation:seamlift linear both, seamtuck linear both;animation-timeline:view(),view();
+        animation-range:entry-crossing 0% entry-crossing 52%, exit-crossing 44% exit-crossing 94%}}}
+
+  .lt-video{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:center 44%}
+  .lt-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:
+      linear-gradient(103deg, rgba(12,14,8,.8) 0%, rgba(12,14,8,.52) 32%, rgba(12,14,8,.14) 60%, rgba(12,14,8,0) 82%),
+      linear-gradient(to top, rgba(12,14,8,.72) 0%, rgba(12,14,8,.14) 42%, rgba(12,14,8,.1) 66%, rgba(12,14,8,.34) 100%)}
+  .lt-hazescrim{display:none;position:absolute;inset:0;z-index:2;pointer-events:none;
+    background:linear-gradient(to top,rgba(12,14,8,.82) 0%,rgba(12,14,8,.34) 34%,transparent 56%)}
+
+  /* 緑PIN層 */
+  .lt-pins{position:absolute;inset:0;z-index:2;pointer-events:none}
+  .lt-pin{position:absolute;width:var(--s,14px);height:var(--s,14px);transform:translate(-50%,-50%) scale(0);
+    opacity:0;transition:opacity .7s var(--lt-eases),transform .8s var(--lt-eases);transition-delay:calc(.2s + var(--i,0)*.11s)}
+  .lt-lots.is-ltin .lt-pin{opacity:1;transform:translate(-50%,-50%) scale(1)}
+  .lt-pin::before{content:"";position:absolute;inset:0;border-radius:50%;
+    background:radial-gradient(circle at 50% 40%, #EAFBAF 0%, var(--lt-lime) 42%, var(--lt-green) 100%);
+    box-shadow:0 0 10px 2px rgba(162,197,35,.75), 0 0 22px 6px rgba(72,107,0,.45)}
+  .lt-pin::after{content:"";position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--lt-lime);
+    animation:ltpulse 3s var(--lt-ease) infinite;animation-delay:calc(var(--i,0)*.3s);opacity:0}
+  .lt-lots.is-ltin .lt-pin::after{opacity:1}
+  @keyframes ltpulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(2.6);opacity:0}100%{opacity:0}}
+  .lt-pin--lg{--s:20px}.lt-pin--sm{--s:10px}
+
+  .lt-inner{position:relative;z-index:3;width:100%;max-width:1140px;margin:0 auto;
+    padding:0 clamp(20px,5vw,64px) clamp(84px,12vh,140px)}
+
+  /* eyebrow：温かいゴールドの極細ラベル（ブライトライムから格上げ） */
+  .lt-eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--lt-fb);font-size:.65rem;font-weight:500;
+    letter-spacing:.3em;text-transform:uppercase;color:var(--lt-gold);margin-bottom:clamp(15px,2.2vh,24px);
+    text-shadow:0 1px 10px rgba(6,8,4,.55);
+    opacity:0;transform:translateY(18px);transition:opacity .9s var(--lt-eases),transform .9s var(--lt-eases)}
+  .lt-eyebrow::before{content:"";width:30px;height:1px;background:var(--lt-gold);opacity:.85}
+  .lt-lots.is-ltin .lt-eyebrow{opacity:1;transform:none}
+
+  /* 見出し：明朝で品位（JP見出しに max-width/ch は付けない＝折返し事故回避／改行は手動<br>） */
+  .lt-title{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:600;
+    letter-spacing:.045em;line-height:1.44;font-size:clamp(1.72rem,1.05rem + 2.5vw,3.05rem);
+    color:var(--lt-cream);text-shadow:0 2px 26px rgba(6,8,4,.62);
+    opacity:0;transform:translateY(24px);transition:opacity 1s var(--lt-eases) .08s,transform 1s var(--lt-eases) .08s}
+  .lt-lots.is-ltin .lt-title{opacity:1;transform:none}
+  .lt-title em{font-style:normal;color:var(--lt-gold)}
+
+  /* ファクトのマストヘッド：金の細い縦罫で区切る */
+  .lt-facts{display:flex;align-items:baseline;gap:clamp(16px,2.4vw,30px);flex-wrap:wrap;
+    margin-top:clamp(24px,3.4vh,42px);
+    opacity:0;transform:translateY(20px);transition:opacity 1s var(--lt-eases) .16s,transform 1s var(--lt-eases) .16s}
+  .lt-lots.is-ltin .lt-facts{opacity:1;transform:none}
+  .lt-fact{display:inline-flex;align-items:baseline;gap:.26em;white-space:nowrap}
+  .lt-fact .pre{font-family:var(--lt-fb);font-weight:400;font-size:.76rem;letter-spacing:.08em;color:rgba(244,241,234,.64)}
+  .lt-fact .n{font-family:var(--lt-fb);font-weight:300;font-variant-numeric:tabular-nums;line-height:.95;
+    font-size:clamp(2.05rem,1.4rem + 2.5vw,3.05rem);color:var(--lt-cream);letter-spacing:.01em;text-shadow:0 1px 14px rgba(6,8,4,.5)}
+  .lt-fact .u{font-family:var(--lt-fb);font-weight:400;font-size:.84rem;color:rgba(244,241,234,.8)}
+  .lt-fact .tag{font-family:var(--lt-fb);font-weight:500;font-size:.64rem;letter-spacing:.1em;color:var(--lt-gold);
+    border:1px solid var(--lt-goldhair);border-radius:3px;padding:.3em .6em;margin-left:.5em;align-self:center}
+  .lt-fdiv{width:1px;align-self:stretch;min-height:2.1em;background:var(--lt-goldhair)}
+
+  /* 展開エリアの台帳：実在地名の羅列＝土地の広がりを“読ませて”誇る（数字より説得力） */
+  .lt-register{margin-top:clamp(24px,3.2vh,38px);border-top:1px solid var(--lt-goldhair);
+    padding-top:clamp(17px,2.2vh,25px);
+    opacity:0;transform:translateY(20px);transition:opacity 1s var(--lt-eases) .26s,transform 1s var(--lt-eases) .26s}
+  .lt-lots.is-ltin .lt-register{opacity:1;transform:none}
+  .lt-reglabel{display:block;font-family:var(--lt-fb);font-size:.61rem;font-weight:500;letter-spacing:.26em;
+    text-transform:uppercase;color:var(--lt-gold);margin-bottom:12px;text-shadow:0 1px 10px rgba(6,8,4,.55)}
+  .lt-reglabel i{font-style:italic;opacity:.66;margin-left:.4em;letter-spacing:.12em}
+  .lt-regrow{display:flex;align-items:baseline;gap:clamp(12px,1.6vw,22px);padding:9px 0}
+  .lt-regrow + .lt-regrow{border-top:1px solid rgba(244,241,234,.1)}
+  .lt-pref{flex:0 0 auto;font-family:var(--lt-fb);font-size:.7rem;font-weight:500;letter-spacing:.14em;
+    color:rgba(244,241,234,.6);min-width:3.4em}
+  .lt-areas{font-family:var(--lt-fb);font-weight:400;font-size:clamp(.95rem,.86rem + .5vw,1.18rem);letter-spacing:.05em;
+    line-height:1.7;color:var(--lt-cream);text-shadow:0 1px 12px rgba(6,8,4,.5)}
+  /* 市名は分割禁止（天理/市 のような泣き別れ回避）。区切り「・」は名前に糊付けして行頭に来させない */
+  .lt-areas .a{white-space:nowrap}
+  .lt-areas .a:not(:last-child)::after{content:"・";color:var(--lt-gold);opacity:.55;margin:0 .24em;font-size:.82em}
+
+  /* 締め：一言リード＋一覧CTA */
+  .lt-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:clamp(20px,4vw,56px);flex-wrap:wrap;
+    margin-top:clamp(24px,3.2vh,38px);
+    opacity:0;transform:translateY(18px);transition:opacity 1s var(--lt-eases) .34s,transform 1s var(--lt-eases) .34s}
+  .lt-lots.is-ltin .lt-foot{opacity:1;transform:none}
+  .lt-lead{max-width:32em;font-family:var(--lt-fb);font-size:clamp(.9rem,.86rem + .3vw,1rem);
+    line-height:1.9;letter-spacing:.04em;color:rgba(244,241,234,.84);text-shadow:0 1px 12px rgba(6,8,4,.5)}
+  /* CTA：非アンバー（ガラス＋温かい金の縁）。アンバーは来場予約に温存 */
+  .lt-cta{flex:0 0 auto;display:inline-flex;align-items:center;gap:12px;white-space:nowrap;
+    font-family:var(--lt-fb);font-weight:500;font-size:1rem;letter-spacing:.04em;color:var(--lt-cream);
+    padding:16px 30px;border-radius:4px;border:1px solid var(--lt-goldhair);
+    background:rgba(244,241,234,.06);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+    transition:transform .5s var(--lt-eases),background .5s var(--lt-eases),border-color .5s var(--lt-eases),box-shadow .5s var(--lt-eases)}
+  .lt-cta:hover{transform:translateY(-3px);background:rgba(201,174,124,.16);border-color:var(--lt-gold);
+    box-shadow:0 16px 40px -16px rgba(201,174,124,.5)}
+  .lt-cta svg{width:16px;height:16px;stroke:currentColor;stroke-width:1.7;fill:none;transition:transform .5s var(--lt-eases)}
+  .lt-cta:hover svg{transform:translateX(5px)}
+
+  @media(max-width:720px){
+    .lt-foot{flex-direction:column;align-items:stretch;gap:22px}
+    .lt-cta{align-self:stretch;justify-content:center}
+  }
+  @media(max-width:560px){
+    .lt-facts{gap:12px 18px}
+    .lt-fdiv{display:none}
+    .lt-fact .n{font-size:1.9rem}
+    .lt-regrow{flex-direction:column;gap:5px;padding:11px 0}
+    .lt-pref{min-width:0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .lt-lots .lt-pin::after{animation:none}
+    .lt-eyebrow,.lt-title,.lt-facts,.lt-register,.lt-foot{transition:opacity .5s ease;transform:none}
+    .lt-pin{transition:opacity .5s ease;transform:translate(-50%,-50%) scale(1)}
+  }
+</style>
+<section class="lt-lots" id="lots" data-ltreveal aria-label="自社分譲地・土地">
+  <video class="lt-video" autoplay muted loop playsinline preload="metadata" poster="assets/lots/aerial_poster.webp">
+    <source src="assets/lots/aerial_loop.mp4" type="video/mp4">
+  </video>
+  <div class="lt-scrim"></div>
+  <!-- 緑PINは今回は不使用（構成が合わないため撤去。CSS .lt-pin/.lt-hazescrim は残置＝将来復帰可） -->
+  <div class="lt-inner">
+    <span class="lt-eyebrow">Lots ／ 分譲地・物件</span>
+    <h2 class="lt-title">選べる土地が、<br><em>こんなに</em>あります。</h2>
+
+    <div class="lt-facts">
+      <span class="lt-fact"><span class="pre">常時</span><span class="n">約150</span><span class="u">区画</span></span>
+      <span class="lt-fdiv" aria-hidden="true"></span>
+      <span class="lt-fact"><span class="n">9</span><span class="u">エリア</span></span>
+      <span class="lt-fdiv" aria-hidden="true"></span>
+      <span class="lt-fact"><span class="n">36</span><span class="u">区画</span><span class="tag">ただ今 販売中</span></span>
+    </div>
+
+    <div class="lt-register">
+      <span class="lt-reglabel">展開エリア <i>Areas</i></span>
+      <div class="lt-regrow">
+        <span class="lt-pref">奈良県</span>
+        <span class="lt-areas"><span class="a">奈良市</span><span class="a">生駒市</span><span class="a">橿原市</span><span class="a">大和郡山市</span><span class="a">天理市</span><span class="a">斑鳩町</span><span class="a">田原本町</span></span>
+      </div>
+      <div class="lt-regrow">
+        <span class="lt-pref">京都府</span>
+        <span class="lt-areas"><span class="a">木津川市</span><span class="a">京田辺市</span></span>
+      </div>
+    </div>
+
+    <div class="lt-foot">
+      <p class="lt-lead">奈良と京都南部の この広がりの中から、ご希望に合う一区画がきっと見つかります。</p>
+      <a class="lt-cta" href="lots.html">自社分譲物件一覧を見る
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var sec=document.getElementById('lots'); if(!sec) return;
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-ltin'); io.unobserve(e.target); } });
+    },{threshold:.2,rootMargin:'0px 0px -8% 0px'});
+    io.observe(sec);
+  }else{ sec.classList.add('is-ltin'); }
+  /* 省データ/低速回線では動画を止めて poster 静止 */
+  var v=sec.querySelector('.lt-video');
+  var c=navigator.connection||{}; var save=c.saveData===true||/(^|-)2g/.test(c.effectiveType||'');
+  if(v&&save){ try{ v.removeAttribute('autoplay'); v.pause(); }catch(_){} }
+})();
+</script>
+
+<!-- ============ SNS 小休止バンド（section-social.html を統合／sb- 名前空間で完全分離） ============ -->
+<style>
+  .sb-social{
+    --sb-bg:#FAFAF7; --sb-text:#232220; --sb-tmid:#5F5B54;
+    --sb-main:#486B00; --sb-maind:#2E4600;
+    --sb-fh:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    --sb-fe:"Inter",sans-serif;
+    --sb-ease:cubic-bezier(.16,1,.3,1); --sb-eases:cubic-bezier(.22,1,.36,1);
+    position:relative;isolation:isolate;overflow:hidden;
+    padding:clamp(58px,8vh,100px) clamp(20px,5vw,72px);background:var(--sb-bg);color:var(--sb-text);
+    font-family:var(--sb-fh);
+    /* 境界：紙を重ねる（lots の上に乗り上げ・境界システムと統一） */
+    z-index:7;margin-top:clamp(-78px,-5.6vw,-46px);
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    box-shadow:0 -46px 88px -34px rgba(0,0,0,.16)}
+  .sb-social *{box-sizing:border-box}
+  .sb-social a{color:inherit;text-decoration:none}
+  .sb-social img{display:block;width:100%;height:100%;object-fit:cover}
+  .sb-social::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(70% 120% at 100% 50%, rgba(72,107,0,.045), transparent 60%)}
+  .sb-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto}
+  .sb-grid{display:grid;grid-template-columns:minmax(280px,1fr) 1.8fr;gap:clamp(28px,3.4vw,64px);align-items:center}
+  .sb-head{text-align:left}
+  .sb-eyebrow{display:inline-flex;align-items:center;gap:11px;font-family:var(--sb-fe);
+    font-size:.6rem;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--sb-main);margin-bottom:18px}
+  .sb-eyebrow::before{content:"";width:20px;height:1px;background:currentColor;opacity:.55}
+  .sb-title{font-family:var(--sb-fh);font-weight:700;color:var(--sb-text);
+    font-size:clamp(1.46rem,1.05rem + 1.3vw,1.9rem);line-height:1.5;letter-spacing:.02em}
+  .sb-title .sb-line{display:block;overflow:hidden;padding:.04em 0}
+  .sb-title .sb-line > span{display:inline-block;transform:translateY(115%);transition:transform .95s var(--sb-eases)}
+  .sb-title .sb-line:nth-child(2) > span{transition-delay:.09s}
+  .sb-head.is-sbin .sb-title .sb-line > span{transform:none}
+  .sb-title .sb-accent{color:var(--sb-main)}
+  .sb-lead{margin-top:16px;font-family:var(--sb-fh);font-size:.92rem;line-height:1.95;letter-spacing:.04em;color:var(--sb-tmid);
+    opacity:0;transform:translateY(16px);transition:opacity .9s var(--sb-eases) .24s,transform .9s var(--sb-eases) .24s}
+  .sb-head.is-sbin .sb-lead{opacity:1;transform:none}
+  .sb-morelink{margin-top:22px;display:inline-flex;align-items:center;gap:9px;font-family:var(--sb-fh);
+    font-weight:500;font-size:.86rem;letter-spacing:.03em;color:var(--sb-maind);
+    border-bottom:1px solid rgba(46,70,0,.26);padding-bottom:4px;
+    opacity:0;transform:translateY(16px);transition:opacity .9s var(--sb-eases) .34s,transform .9s var(--sb-eases) .34s,color .4s,border-color .4s}
+  .sb-head.is-sbin .sb-morelink{opacity:1;transform:none}
+  .sb-morelink:hover{color:var(--sb-main);border-bottom-color:var(--sb-main)}
+  .sb-morelink svg{width:13px;height:13px;stroke:currentColor;stroke-width:1.8;fill:none;transition:transform .5s var(--sb-eases)}
+  .sb-morelink:hover svg{transform:translateX(5px)}
+  .sb-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.3vw,20px)}
+  .sb-tile{position:relative;display:block;perspective:1000px;
+    opacity:0;transform:translateY(38px) rotate(1.1deg);
+    transition:opacity .95s var(--sb-eases),transform 1.05s var(--sb-eases);transition-delay:calc(var(--d,0) * .1s)}
+  .sb-tiles .sb-tile:nth-child(2){transform:translateY(46px) rotate(-1.2deg)}
+  .sb-tile.is-sbin{opacity:1;transform:none}
+  .sb-tiles .sb-tile.is-sbin:nth-child(2){transform:none}
+  .sb-tin{position:relative;aspect-ratio:4/5;border-radius:15px;overflow:hidden;background:#E9E4DB;
+    box-shadow:0 5px 20px rgba(60,50,30,.09);
+    transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--ty,0px));
+    transform-style:preserve-3d;transition:transform .55s var(--sb-eases),box-shadow .55s var(--sb-eases);will-change:transform}
+  .sb-tile:hover .sb-tin{--ty:-7px;box-shadow:0 30px 52px -24px var(--glow,rgba(60,50,30,.45)),0 10px 24px -14px rgba(60,50,30,.16)}
+  .sb-tmedia{position:absolute;inset:0;overflow:hidden;z-index:0}
+  .sb-tpar{position:absolute;top:-8%;left:0;right:0;height:116%;will-change:transform}
+  .sb-tpar img{transform:scale(1.05);transition:transform 1.4s var(--sb-eases)}
+  .sb-tile:hover .sb-tpar img{transform:scale(1.12)}
+  .sb-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(to top,rgba(20,16,12,.6) 0%,rgba(20,16,12,.05) 40%,transparent 62%),
+      linear-gradient(to bottom,rgba(20,16,12,.28),transparent 24%)}
+  .sb-brandtint{position:absolute;inset:0;z-index:2;pointer-events:none;mix-blend-mode:soft-light;
+    opacity:0;transition:opacity .6s var(--sb-eases);background:var(--brandbg)}
+  .sb-tile:hover .sb-brandtint{opacity:.42}
+  .sb-sheen{position:absolute;top:0;left:-60%;width:44%;height:100%;z-index:5;pointer-events:none;
+    background:linear-gradient(100deg,transparent,rgba(255,255,255,.3),transparent);transform:skewX(-14deg)}
+  .sb-tile:hover .sb-sheen{animation:sbsheen 1.05s var(--sb-eases) .05s}
+  @keyframes sbsheen{to{left:130%}}
+  .sb-chrome{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;padding:clamp(12px,1vw,16px)}
+  .sb-pill{display:inline-flex;align-items:center;gap:7px;align-self:flex-start;
+    padding:5px 11px 5px 5px;border-radius:100px;background:rgba(255,255,255,.16);
+    -webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);border:1px solid rgba(255,255,255,.22);transform:translateZ(34px)}
+  .sb-pill .sb-ic{width:22px;height:22px;border-radius:7px;display:grid;place-items:center;background:#fff;flex:0 0 auto}
+  .sb-pill .sb-ic svg{width:14px;height:14px}
+  .sb-pill .sb-ic-ring{background:var(--brandbg);padding:2px}
+  .sb-pill .sb-ic-ring span{display:grid;place-items:center;width:100%;height:100%;border-radius:6px;background:#2a2320}
+  .sb-pill b{font-family:var(--sb-fe);font-weight:600;font-size:.72rem;color:#fff;letter-spacing:.01em}
+  .sb-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;color:#fff}
+  .sb-foot .sb-handle{font-family:var(--sb-fe);font-weight:400;font-size:.72rem;letter-spacing:.01em;
+    color:rgba(255,255,255,.92);text-shadow:0 1px 8px rgba(0,0,0,.4)}
+  .sb-foot .sb-arw{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto;
+    background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.34);transition:.5s var(--sb-eases)}
+  .sb-foot .sb-arw svg{width:13px;height:13px;stroke:#fff;stroke-width:1.9;fill:none;transition:transform .5s var(--sb-eases)}
+  .sb-tile:hover .sb-foot .sb-arw{background:var(--brand,#fff);border-color:transparent}
+  .sb-tile:hover .sb-foot .sb-arw svg{transform:translateX(2px)}
+  .sb-play{position:absolute;top:44%;left:50%;z-index:4;transform:translate(-50%,-50%) translateZ(46px)}
+  .sb-play i{position:relative;display:grid;place-items:center;width:46px;height:33px;border-radius:11px;
+    background:rgba(230,0,0,.94);box-shadow:0 10px 26px rgba(200,0,0,.42);transition:transform .55s var(--sb-eases)}
+  .sb-play i::after{content:"";width:0;height:0;border-style:solid;border-width:7px 0 7px 12px;
+    border-color:transparent transparent transparent #fff;margin-left:2px}
+  .sb-play i::before{content:"";position:absolute;inset:-6px;border-radius:16px;border:1.4px solid rgba(230,0,0,.5);
+    animation:sbpulse 2.6s var(--sb-ease) infinite}
+  .sb-tile-yt:hover .sb-play i{transform:scale(1.08)}
+  @keyframes sbpulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.3);opacity:0}100%{opacity:0}}
+  .sb-tile-ig{--brand:#C7267E;--glow:rgba(199,38,126,.42);--brandbg:linear-gradient(120deg,#F58529,#DD2A7B 46%,#8134AF 78%,#515BD4)}
+  .sb-tile-yt{--brand:#E60000;--glow:rgba(230,0,0,.34);--brandbg:linear-gradient(120deg,#FF3B3B,#E60000)}
+  .sb-tile-tt{--brand:#0d0d0d;--glow:rgba(37,244,238,.4);--brandbg:linear-gradient(120deg,#25F4EE,#111 44%,#FE2C55)}
+  .sb-igg-a{stop-color:#F58529}.sb-igg-b{stop-color:#DD2A7B}.sb-igg-c{stop-color:#8134AF}
+  .sb-onlypc{display:inline}
+  @media (max-width:820px){
+    .sb-grid{grid-template-columns:1fr;gap:clamp(26px,5vw,40px)}
+    .sb-head{text-align:center}
+    .sb-eyebrow::after{content:"";width:20px;height:1px;background:currentColor;opacity:.55}
+  }
+  @media (max-width:560px){
+    .sb-onlypc{display:none}
+    .sb-social{padding:clamp(52px,8vh,80px) 0;margin-top:-40px;border-top-left-radius:20px;border-top-right-radius:20px}
+    .sb-head{padding:0 clamp(20px,6vw,30px)}
+    .sb-tiles{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;
+      padding:0 clamp(20px,6vw,30px) 4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .sb-tiles::-webkit-scrollbar{display:none}
+    .sb-tile{flex:0 0 62%;scroll-snap-align:center}
+    .sb-tin{transform:none!important}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .sb-social *{animation:none!important}
+    .sb-tile,.sb-lead,.sb-morelink{transition:opacity .5s ease}
+    .sb-tile,.sb-lead,.sb-morelink,.sb-tin{transform:none!important}
+    .sb-title .sb-line > span{transform:none!important}
+  }
+  /* 境界 格上げ（案1）：SNSも入場で living overlap（対応ブラウザのみ・静的にフォールバック） */
+  @property --sbsr{syntax:"<length>";initial-value:14px;inherits:false}
+  @supports (animation-timeline: view()){
+    @media (prefers-reduced-motion:no-preference) and (min-width:768px){
+      .sb-social{
+        border-top-left-radius:var(--sbsr);border-top-right-radius:var(--sbsr);
+        animation:sbseamlift linear both;animation-timeline:view();
+        animation-range:entry-crossing 0% entry-crossing 52%}
+    }
+  }
+  @keyframes sbseamlift{
+    from{--sbsr:10px;box-shadow:0 -6px 16px -12px rgba(60,50,30,.12)}
+    to  {--sbsr:clamp(24px,3vw,46px);box-shadow:0 -46px 88px -34px rgba(60,50,30,.18)}}
+</style>
+<!-- ============ P3 家づくりの流れ 1→10（fl- 工程の道のり／横スクロールストリップ） ============ -->
+<style>
+  .fl{position:relative;isolation:isolate;background:#F4F1EA;color:#241F1B;
+    z-index:7;margin-top:clamp(-78px,-5.6vw,-46px);
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    box-shadow:0 -46px 88px -32px rgba(0,0,0,.45)}
+  @media(max-width:560px){ .fl{margin-top:-32px;border-top-left-radius:20px;border-top-right-radius:20px} }
+  .fl__in{max-width:1240px;margin:0 auto;
+    padding:clamp(72px,9vw,130px) 0 calc(clamp(72px,9vw,120px) + clamp(46px,5.6vw,78px))}
+  .fl__head{padding:0 clamp(20px,5vw,64px)}
+  /* 入口グラマーB系: 数字が先に立つ */
+  .fl__big{display:flex;align-items:baseline;gap:clamp(10px,1.6vw,22px);color:#2E4600}
+  .fl__big b{font-family:var(--fn,"Inter",sans-serif);font-weight:200;
+    font-size:clamp(4rem,2.4rem + 7vw,8.2rem);line-height:.9;letter-spacing:-.02em}
+  .fl__big svg{width:clamp(30px,4vw,52px);height:auto;color:var(--gold);align-self:center}
+  .fl__bigl{margin-left:clamp(8px,1.6vw,20px);font-family:var(--fh);font-weight:500;
+    font-size:clamp(.86rem,.8rem + .4vw,1.05rem);letter-spacing:.22em;color:#5A544C;align-self:center}
+  .fl__h2s{margin-top:clamp(18px,2.4vw,28px);font-family:var(--fh);font-weight:500;
+    font-size:clamp(1.05rem,.95rem + .6vw,1.4rem);letter-spacing:.06em;line-height:1.9;color:#241F1B}
+  .fl__lead{margin-top:clamp(14px,2vw,22px);max-width:640px;font-size:.95rem;line-height:2.2;letter-spacing:.03em;color:#5A544C}
+  .fl__nw{display:inline-block}
+  /* 道のりストリップ */
+  .fl__scroller{margin-top:clamp(36px,4.8vw,58px);overflow-x:auto;overscroll-behavior-x:contain;
+    scroll-snap-type:x proximity;scroll-padding-left:clamp(20px,5vw,64px);-webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;scrollbar-color:rgba(72,107,0,.4) transparent}
+  .fl__track{display:flex;gap:0;padding:0 clamp(20px,5vw,64px) 18px;width:max-content}
+  .fl__step{position:relative;scroll-snap-align:start;flex:0 0 auto;width:clamp(218px,24vw,264px);
+    padding:0 clamp(18px,2vw,26px) 0 0;display:flex;flex-direction:column;gap:10px}
+  /* 道: 番号の高さを貫く緑の線 */
+  .fl__step::before{content:"";position:absolute;left:0;right:0;top:21px;height:2px;
+    background:linear-gradient(to right,rgba(72,107,0,.35),rgba(72,107,0,.18))}
+  .fl__step:last-child::before{right:40%}
+  .fl__no{position:relative;z-index:1;width:44px;height:44px;border-radius:50%;
+    background:#F4F1EA;border:2px solid #486B00;display:grid;place-items:center;
+    font-family:var(--fn,"Inter",sans-serif);font-weight:500;font-size:1rem;color:#2E4600}
+  .fl__t{font-family:var(--fh);font-weight:500;font-size:clamp(.98rem,.94rem + .3vw,1.1rem);letter-spacing:.04em;line-height:1.6}
+  .fl__d{font-size:.8rem;line-height:1.95;letter-spacing:.02em;color:#5A544C;padding-right:8px}
+  .fl__d b{font-weight:500;color:#8a6a1f}
+  .fl__hint{margin-top:10px;padding:0 clamp(20px,5vw,64px);font-family:var(--fn,"Inter",sans-serif);
+    font-size:.62rem;letter-spacing:.18em;color:#8D857A;text-transform:uppercase}
+  .fl__links{margin-top:clamp(26px,3.4vw,38px);padding:0 clamp(20px,5vw,64px)}
+  .fl__more{display:inline-flex;align-items:center;gap:8px;font-family:var(--fh);font-weight:500;
+    font-size:.88rem;letter-spacing:.04em;color:#2E4600;padding:5px 0;
+    border-bottom:1px solid rgba(72,107,0,.35);transition:border-color .25s}
+  .fl__more:hover{border-bottom-color:#2E4600}
+  .fl__more svg{width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none}
+  .fl-rv{opacity:0;transform:translateY(14px)}
+  .fl-rv.is-in{opacity:1;transform:none;transition:opacity .6s cubic-bezier(.25,1,.5,1),transform .6s cubic-bezier(.25,1,.5,1)}
+  @media(max-width:760px){ .fl-rv{transform:translateY(8px)} }
+  @media(prefers-reduced-motion:reduce){ .fl-rv{opacity:1!important;transform:none!important;transition:none!important} }
+</style>
+<section class="fl" id="flow" aria-label="家づくりの流れ">
+  <div class="fl__in">
+    <div class="fl__head">
+      <div class="fl__big fl-rv" aria-hidden="true"><b>1</b><svg viewBox="0 0 46 16"><path d="M0 8h42M36 2l7 6-7 6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg><b>10</b><span class="fl__bigl">家づくりの流れ</span></div>
+      <h2 class="fl__h2s fl-rv"><span class="fl__nw">土地探しからお引き渡しまで、</span><span class="fl__nw">この順番で進みます。</span></h2>
+      <p class="fl__lead fl-rv"><span class="fl__nw">はじめての方がイメージしやすいように、10の段階にまとめました。</span><span class="fl__nw">それぞれの段階で何をするかは、</span><span class="fl__nw">担当者が毎回ご説明します。</span></p>
+    </div>
+    <div class="fl__scroller fl-rv"><!-- 工程・期間=現サイト「やまとの家づくり」原文 -->
+      <div class="fl__track">
+        <div class="fl__step"><span class="fl__no">1</span><span class="fl__t"><span class="fl__nw">土地探し・</span><span class="fl__nw">モデルハウス見学</span></span><span class="fl__d">自社分譲地からも、お探しの土地からも始められます。</span></div>
+        <div class="fl__step"><span class="fl__no">2</span><span class="fl__t">住宅ローン事前審査</span><span class="fl__d">無理のない資金計画を先に固めます。</span></div>
+        <div class="fl__step"><span class="fl__no">3</span><span class="fl__t">土地の売買契約</span><span class="fl__d">土地を押さえて、家づくりの土台を確保します。</span></div>
+        <div class="fl__step"><span class="fl__no">4</span><span class="fl__t">間取りの打ち合わせ</span><span class="fl__d"><b>期間：約3ヶ月。</b>当社の設計士と一緒に進めます。</span></div>
+        <div class="fl__step"><span class="fl__no">5</span><span class="fl__t">建物工事の請負契約</span><span class="fl__d">プランと金額に納得いただいてから契約します。</span></div>
+        <div class="fl__step"><span class="fl__no">6</span><span class="fl__t">仕様の打ち合わせ</span><span class="fl__d"><b>期間：約2ヶ月。</b>ショールームで実物を見て選びます。</span></div>
+        <div class="fl__step"><span class="fl__no">7</span><span class="fl__t">地盤調査・地盤改良</span><span class="fl__d">改良が必要になった場合、<b>費用は当社負担</b>です。</span></div>
+        <div class="fl__step"><span class="fl__no">8</span><span class="fl__t">着工・上棟</span><span class="fl__d"><b>工事は3ヶ月以内。</b>並行して外構の打ち合わせも始まります。</span></div>
+        <div class="fl__step"><span class="fl__no">9</span><span class="fl__t">完成・建物チェック</span><span class="fl__d">お客様と一緒に、仕上がりを確認します。</span></div>
+        <div class="fl__step"><span class="fl__no">10</span><span class="fl__t">お引き渡し</span><span class="fl__d">ここからが、本当のお付き合いの始まりです。</span></div>
+      </div>
+    </div>
+    <p class="fl__hint">Drag / Scroll →</p>
+    <div class="fl__links fl-rv">
+      <a class="fl__more" href="kodawari.html">価格・設計・アフターのこだわりを見る<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ P4 よくあるご質問（fq- 出口前の不安解消） ============ -->
+<style>
+  .fq{position:relative;isolation:isolate;background:#FAFAF7;color:#241F1B;
+    z-index:7;margin-top:clamp(-78px,-5.6vw,-46px);
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    box-shadow:0 -46px 88px -32px rgba(0,0,0,.35)}
+  @media(max-width:560px){ .fq{margin-top:-32px;border-top-left-radius:20px;border-top-right-radius:20px} }
+  .fq__in{max-width:880px;margin:0 auto;
+    padding:clamp(72px,9vw,130px) clamp(20px,5vw,64px) calc(clamp(100px,13vw,180px) + clamp(46px,5.6vw,78px))} /* 転換点(最終CTAの前)=余白最大 */
+  /* 入口グラマーC系: 宣言が先に語る */
+  .fq__label{font-family:var(--fh);font-weight:500;font-size:.78rem;letter-spacing:.26em;color:#8D857A}
+  .fq__decl{margin-top:14px;font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;font-weight:600;
+    font-size:clamp(1.5rem,1.15rem + 1.7vw,2.5rem);letter-spacing:.08em;line-height:1.9;color:#241F1B}
+  .fq__decl .qm{color:var(--gold)}
+  .fq__decl br{display:none}
+  @media(max-width:560px){ .fq__decl br{display:block} }
+  .fq__list{margin-top:clamp(30px,4vw,46px);border-top:1px solid rgba(36,31,27,.16)}
+  .fq details{border-bottom:1px solid rgba(36,31,27,.16)}
+  .fq summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:16px;
+    padding:clamp(18px,2.4vw,26px) 4px;
+    font-family:var(--fh);font-weight:500;font-size:clamp(.98rem,.94rem + .35vw,1.14rem);
+    letter-spacing:.04em;line-height:1.8;transition:color .25s}
+  .fq summary::-webkit-details-marker{display:none}
+  .fq summary:hover{color:#2E4600}
+  .fq summary::before{content:"Q";font-family:var(--fn,"Inter",sans-serif);font-weight:500;
+    font-size:.95rem;color:var(--gold);flex:0 0 auto}
+  .fq summary::after{content:"";width:11px;height:11px;margin-left:auto;flex:0 0 auto;align-self:center;
+    border-right:1.5px solid #8D857A;border-bottom:1.5px solid #8D857A;
+    transform:rotate(45deg);transition:transform .3s cubic-bezier(.33,1,.68,1)}
+  .fq details[open] summary::after{transform:rotate(-135deg)}
+  .fq__a{padding:0 4px clamp(20px,2.6vw,28px) calc(16px + 1em);
+    font-size:.92rem;line-height:2.25;letter-spacing:.03em;color:#5A544C;max-width:56em}
+  .fq__foot{margin-top:clamp(24px,3.2vw,36px);font-size:.88rem;line-height:2.1;letter-spacing:.03em;color:#5A544C}
+  .fq__foot a{color:#2E4600;border-bottom:1px solid rgba(72,107,0,.35);padding-bottom:2px;transition:border-color .25s}
+  .fq__foot a:hover{border-bottom-color:#2E4600}
+  .fq-rv{opacity:0;transform:translateY(14px)}
+  .fq-rv.is-in{opacity:1;transform:none;transition:opacity .6s cubic-bezier(.25,1,.5,1),transform .6s cubic-bezier(.25,1,.5,1)}
+  @media(max-width:760px){ .fq-rv{transform:translateY(8px)} }
+  @media(prefers-reduced-motion:reduce){ .fq-rv{opacity:1!important;transform:none!important;transition:none!important} }
+</style>
+<section class="fq" id="faq" aria-label="よくあるご質問">
+  <div class="fq__in">
+    <p class="fq__label fq-rv">よくあるご質問</p>
+    <h2 class="fq__decl fq-rv"><span class="qm">「</span>聞きにくいことから、<br>答えます。<span class="qm">」</span></h2>
+    <div class="fq__list fq-rv">
+      <details>
+        <summary>本当に、あとから追加費用はかかりませんか？</summary>
+        <p class="fq__a">お見積もりは税込のコミコミ価格で、あとから金額が増える項目を残しません。地盤改良が必要になった場合の費用も、当社が負担します。正直にお伝えすると、カーテンレールと居室の照明は標準に含まれないため、事前のご用意をお願いしています。</p>
+      </details>
+      <details>
+        <summary>土地だけの相談もできますか？</summary>
+        <p class="fq__a">できます。奈良・京都南部に自社分譲地を常時150区画ほどご用意しています。土地探しからのご相談も、土地が決まっている方のご相談も承ります。</p>
+      </details>
+      <details>
+        <summary>京都でも建てられますか？</summary>
+        <p class="fq__a">建てられます。京都府南部（木津川市・京田辺市など）にも自社分譲地があり、宇治の京都支店でもご相談いただけます。</p>
+      </details>
+      <details>
+        <summary>見学や相談に費用はかかりますか？</summary>
+        <p class="fq__a">かかりません。モデルハウス「やまとランド」の見学は無料です。予約制のため、ご来場前にご予約をお願いします。</p>
+      </details>
+      <details>
+        <summary>見学したら、営業されませんか？</summary>
+        <p class="fq__a">無理におすすめすることはありません。その土地やプランがお客様に本当に合っているか、メリットもデメリットも正直にお話しします。合っていなければ、別の案をご提案します。</p>
+      </details>
+    </div>
+    <p class="fq__foot fq-rv">このほかのご質問は、<a href="contact.html">お問い合わせフォーム</a>からお気軽にどうぞ。</p>
+  </div>
+</section>
+
+<!-- ============ P5 最終CTA（fin- 温度3段の締めバンド） ============ -->
+<style>
+  .fin{position:relative;isolation:isolate;background:#12160c;color:#F4F1EA;overflow:hidden;
+    z-index:7;margin-top:clamp(-78px,-5.6vw,-46px);
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    box-shadow:0 -46px 88px -32px rgba(0,0,0,.5)}
+  @media(max-width:560px){ .fin{margin-top:-32px;border-top-left-radius:20px;border-top-right-radius:20px} }
+  .fin::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(64% 80% at 50% 0%,rgba(201,162,75,.14),transparent 62%)}
+  .fin__in{position:relative;max-width:880px;margin:0 auto;text-align:center;
+    padding:clamp(76px,10vw,132px) clamp(22px,5vw,64px) calc(clamp(80px,10vw,130px) + clamp(46px,5.6vw,78px))}
+  .fin__k{display:inline-flex;align-items:center;gap:12px;font-family:var(--fn,"Inter",sans-serif);font-size:.62rem;font-weight:500;
+    letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+  .fin__k::before,.fin__k::after{content:"";width:26px;height:1px;background:currentColor;opacity:.6}
+  .fin h2{margin-top:clamp(18px,2.6vw,28px);font-family:var(--fm,"Shippori Mincho",serif);font-weight:600;
+    font-size:clamp(1.4rem,1.05rem + 1.6vw,2.1rem);line-height:2;letter-spacing:.1em}
+  .fin__nw{display:inline-block}
+  .fin p{margin:clamp(16px,2.4vw,24px) auto 0;max-width:33em;font-size:clamp(.9rem,.87rem + .25vw,1rem);
+    line-height:2.25;letter-spacing:.04em;color:rgba(244,241,234,.78);font-family:var(--fh);font-weight:500}
+  .fin__cv{margin-top:clamp(30px,4vw,46px);display:flex;flex-wrap:wrap;justify-content:center;align-items:center;
+    gap:16px clamp(20px,2.8vw,30px)}
+  .fin__btn{display:inline-flex;align-items:center;gap:12px;background:var(--amber);color:#fff;
+    font-family:var(--fh);font-weight:500;font-size:clamp(.92rem,.88rem + .3vw,1.05rem);letter-spacing:.05em;
+    padding:17px 38px;border-radius:5px;line-height:1;
+    box-shadow:0 14px 34px -12px rgba(196,133,31,.6);transition:transform .3s cubic-bezier(.33,1,.68,1),box-shadow .3s}
+  .fin__btn:hover{transform:translateY(-3px);box-shadow:0 20px 44px -14px rgba(196,133,31,.7)}
+  .fin__btn svg{width:15px;height:15px;stroke:#fff;stroke-width:2;fill:none}
+  .fin__ghost{font-family:var(--fh);font-weight:500;font-size:.88rem;letter-spacing:.05em;color:rgba(244,241,234,.85);
+    padding:6px 0;border-bottom:1px solid rgba(244,241,234,.35);transition:color .3s,border-color .3s}
+  .fin__ghost:hover{color:#F4F1EA;border-bottom-color:rgba(244,241,234,.85)}
+  .fin__line{display:inline-flex;align-items:center;gap:9px;font-family:var(--fh);font-weight:500;font-size:.88rem;
+    letter-spacing:.04em;color:#fff;background:#06C755;border-radius:5px;padding:13px 24px;line-height:1;
+    transition:transform .3s cubic-bezier(.33,1,.68,1)}
+  .fin__line:hover{transform:translateY(-2px)}
+  .fin__meta{margin-top:clamp(24px,3.2vw,34px);font-size:.7rem;letter-spacing:.06em;color:rgba(244,241,234,.5);line-height:2}
+  .fin-rv{opacity:0;transform:translateY(14px)}
+  .fin-rv.is-in{opacity:1;transform:none;transition:opacity .6s cubic-bezier(.25,1,.5,1),transform .6s cubic-bezier(.25,1,.5,1)}
+  @media(max-width:760px){ .fin-rv{transform:translateY(8px)} }
+  @media(prefers-reduced-motion:reduce){ .fin-rv{opacity:1!important;transform:none!important;transition:none!important} }
+</style>
+<section class="fin" id="final-cta" aria-label="ご相談・ご予約">
+  <div class="fin__in">
+    <span class="fin__k fin-rv">Contact ／ ご相談・ご予約</span>
+    <h2 class="fin-rv"><span class="fin__nw">次のお休みに、</span><span class="fin__nw">実物を見にきませんか。</span></h2>
+    <p class="fin-rv">モデルハウス「やまとランド」の見学は、無料・予約制です。ご見学の場で、契約を迫ることはありません。資料だけ、LINEだけのご相談も歓迎です。</p>
+    <div class="fin__cv fin-rv">
+      <a class="fin__btn" href="contact.html?type=reserve">来場のご予約<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="fin__ghost" href="contact.html?type=docs">資料請求はこちら</a>
+      <a class="fin__line" href="contact.html#line">LINEで気軽に聞く</a>
+    </div>
+    <p class="fin__meta fin-rv"><span class="fin__nw">株式会社やまと不動産（奈良県奈良市大宮町1丁目6番21）</span>　<span class="fin__nw">宅地建物取引業 国土交通大臣（1）第10516号</span><br><span class="fin__nw">お電話：0742-36-1123</span><span class="fin__nw">（受付 9:00〜19:00｜定休日：火曜・水曜）</span></p>
+  </div>
+</section>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var els=document.querySelectorAll('.fl-rv,.fq-rv,.fin-rv');
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
+    },{threshold:.2,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(x){ io.observe(x); });
+  } else {
+    els.forEach(function(x){ x.classList.add('is-in'); });
+  }
+})();
+</script>
+
+<!-- ============ enh- 新設5セクションの演出層（JS死亡/reduced-motionで無傷・?pm=offで停止） ============ -->
+<style>
+  /* ---- ゲート: html.enh が付いた時だけ初期状態を仕込む（基礎のqp-rv等は温存） ---- */
+  /* iju: レール描画・列車・到着パルス */
+  html.enh .iju__rail{position:relative}
+  html.enh .iju__rail i{transform:scaleX(0);transition:transform .65s cubic-bezier(.25,1,.5,1)}
+  html.enh .iju__rail i:first-child{transform-origin:left}
+  html.enh .iju__rail i:last-child{transform-origin:right}
+  html.enh .iju__line.is-drawn .iju__rail i{transform:scaleX(1)}
+  .iju__trainDot{position:absolute;left:0;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;
+    background:#F4F1EA;box-shadow:0 0 14px 2px rgba(244,241,234,.55);opacity:0;pointer-events:none;will-change:transform}
+  .iju__st{position:relative}
+  @keyframes ijupulse{0%{transform:scale(1)}45%{transform:scale(1.75);border-color:#F4F1EA}100%{transform:scale(1)}}
+  .iju__st.is-ping::before{animation:ijupulse .7s cubic-bezier(.33,1,.68,1)}
+  /* 「家賃は消えます。家は残ります。」= 意味の演出 */
+  html.enh .iju__asset h3 .iju__nw{position:relative;transition:opacity 1.4s ease}
+  html.enh .iju__asset.is-wit h3 .iju__nw:first-child{opacity:.42}
+  html.enh .iju__asset h3 .iju__nw:last-child::after{content:"";position:absolute;left:.1em;right:.55em;bottom:-4px;height:1px;
+    background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 1s cubic-bezier(.25,1,.5,1) .4s}
+  html.enh .iju__asset.is-wit h3 .iju__nw:last-child::after{transform:scaleX(1)}
+  /* fl: 工程の点灯とドラッグ */
+  .fl__scroller{cursor:grab}
+  .fl__scroller.is-grab{cursor:grabbing;scroll-snap-type:none}
+  .fl__no{transition:background .45s,color .45s,border-color .45s}
+  .fl__step.is-on .fl__no{background:#486B00;border-color:#486B00;color:#F4F1EA}
+  .fl__step::before{transition:opacity .45s;opacity:.55}
+  .fl__step.is-on::before{opacity:1}
+  /* fin: 字間の着地・呼吸する光・ボタン光沢 */
+  html.enh .fin h2{letter-spacing:.22em;transition:opacity .9s cubic-bezier(.25,1,.5,1),transform .9s cubic-bezier(.25,1,.5,1),letter-spacing 1.2s cubic-bezier(.25,1,.5,1)}
+  html.enh .fin h2.is-in{letter-spacing:.1em}
+  @keyframes finbreath{0%,100%{opacity:.72}50%{opacity:1}}
+  @media (prefers-reduced-motion:no-preference){ html.enh .fin::before{animation:finbreath 8s ease-in-out infinite} }
+  .fin__btn{position:relative;overflow:hidden}
+  .fin__btn::after{content:"";position:absolute;top:0;bottom:0;left:0;width:46%;pointer-events:none;
+    background:linear-gradient(105deg,transparent,rgba(255,255,255,.35),transparent);
+    transform:translateX(-130%) skewX(-12deg)}
+  .fin__btn:hover::after{transform:translateX(320%) skewX(-12deg);transition:transform .8s cubic-bezier(.33,1,.68,1)}
+</style>
+<script>
+(function(){
+  var qs=new URLSearchParams(location.search);
+  if(qs.get('pm')==='off') return;
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(reduce || !('IntersectionObserver' in window) || !Element.prototype.animate) return;
+  document.documentElement.classList.add('enh');
+
+  /* ---- 数字カウントアップ（qp統計 / iju所要時間） ---- */
+  function count(el,to,dec,dur,prefix,suffixNode){
+    var t0=null;
+    function tick(ts){
+      if(!t0) t0=ts;
+      var p=Math.min(1,(ts-t0)/dur); p=1-Math.pow(1-p,3);
+      el.nodeValue=(prefix||'')+(to*p).toFixed(dec);
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  /* qp統計: 「約1.5」「2.3」「1.25」のテキストノードを検出して数える */
+  var stats=document.querySelector('.qp__stats');
+  if(stats){
+    new IntersectionObserver(function(es,o){
+      if(!es[0].isIntersecting) return; o.disconnect();
+      stats.querySelectorAll('.qp__stat b').forEach(function(b,i){
+        var tn=b.firstChild; if(!tn || tn.nodeType!==3) return;
+        var m=tn.nodeValue.match(/^(約?)([\d.]+)$/); if(!m) return;
+        var dec=(m[2].split('.')[1]||'').length;
+        setTimeout(function(){ count(tn,parseFloat(m[2]),dec,900,m[1]); }, i*140);
+      });
+    },{threshold:.5}).observe(stats);
+  }
+
+  /* ---- iju: レール描画→列車走行→到着パルス→時間カウント（親コンテナ1点監視で堅牢化） ---- */
+  var routes=document.querySelector('.iju__routes');
+  if(routes) new IntersectionObserver(function(es,o){
+    if(!es[0].isIntersecting) return; o.disconnect();
+    routes.querySelectorAll('.iju__line').forEach(function(line,idx){
+      setTimeout(function(){
+        line.classList.add('is-drawn');
+        var rail=line.querySelector('.iju__rail');
+        var timeB=line.querySelector('.iju__time b');
+        var dest=line.querySelector('.iju__st--r');
+        setTimeout(function(){
+          /* 時間カウント */
+          if(timeB && timeB.firstChild && timeB.firstChild.nodeType===3){
+            var m=timeB.firstChild.nodeValue.match(/^(約?)(\d+)$/);
+            if(m) count(timeB.firstChild,parseInt(m[2],10),0,1100,m[1]);
+          }
+          /* 列車 */
+          var dot=document.createElement('i'); dot.className='iju__trainDot';
+          rail.appendChild(dot);
+          var w=rail.getBoundingClientRect().width-9;
+          var anim=dot.animate(
+            [{transform:'translateX(0)',opacity:0},{transform:'translateX('+(w*.12)+'px)',opacity:1,offset:.12},
+             {transform:'translateX('+(w*.88)+'px)',opacity:1,offset:.88},{transform:'translateX('+w+'px)',opacity:0}],
+            {duration:1250,easing:'cubic-bezier(.45,.05,.35,1)'});
+          anim.onfinish=function(){
+            dot.remove();
+            if(dest){ dest.classList.add('is-ping'); setTimeout(function(){dest.classList.remove('is-ping');},800); }
+          };
+        },450);
+      }, idx*300);
+    });
+  },{threshold:.3}).observe(routes);
+
+  /* ---- lots: 統計3つのカウントアップ（動的注入後のテキストを数える） ---- */
+  var ltf=document.querySelector('.lt-facts');
+  if(ltf){
+    new IntersectionObserver(function(es,o){
+      if(!es[0].isIntersecting) return; o.disconnect();
+      ltf.querySelectorAll('.lt-fact .n').forEach(function(n,i){
+        var tn=n.firstChild; if(!tn || tn.nodeType!==3) return;
+        var m=tn.nodeValue.match(/^(約?)(\d+)$/); if(!m) return;
+        setTimeout(function(){ count(tn,parseInt(m[2],10),0,900,m[1]); }, i*140);
+      });
+    },{threshold:.5}).observe(ltf);
+  }
+
+  /* ---- iju: 「家賃は消えます。家は残ります。」の意味演出 ---- */
+  var asset=document.querySelector('.iju__asset');
+  if(asset){
+    new IntersectionObserver(function(es,o){
+      if(!es[0].isIntersecting) return; o.disconnect();
+      setTimeout(function(){ asset.classList.add('is-wit'); },900);
+    },{threshold:.3}).observe(asset);
+  }
+
+  /* ---- fl: 通過点灯＋入場ナッジ＋ドラッグスクロール ---- */
+  var sc=document.querySelector('.fl__scroller');
+  if(sc){
+    var track=sc.querySelector('.fl__track');
+    var steps=sc.querySelectorAll('.fl__step');
+    var touched=false, nudging=false;
+    function paint(){
+      var r=sc.getBoundingClientRect(), mid=r.left+r.width*.55;
+      steps.forEach(function(st){
+        var no=st.querySelector('.fl__no').getBoundingClientRect();
+        st.classList.toggle('is-on', no.left < mid);
+      });
+    }
+    sc.addEventListener('scroll',function(){ if(!nudging) touched=true; requestAnimationFrame(paint); },{passive:true});
+    new IntersectionObserver(function(es,o){
+      if(!es[0].isIntersecting) return; o.disconnect();
+      paint();
+      /* ひと撫でのナッジ（触られる前だけ） */
+      setTimeout(function(){
+        if(touched || sc.scrollLeft>4) return;
+        /* ネイティブsmoothの往復＝scroll-snapと衝突しない */
+        nudging=true;
+        sc.scrollTo({left:76,behavior:'smooth'});
+        setTimeout(function(){ if(!touched) sc.scrollTo({left:0,behavior:'smooth'}); },650);
+        /* 終端保証: smoothが環境要因で完走しなくても必ず原点へ */
+        setTimeout(function(){ if(!touched) sc.scrollLeft=0; nudging=false; },1500);
+      },700);
+    },{threshold:.4}).observe(sc);
+    /* ドラッグ（|dx|>5でキャプチャ=クリック温存の教訓） */
+    var down=false,cap=false,sx=0,sl=0,pid=null;
+    sc.addEventListener('pointerdown',function(e){ down=true;cap=false;sx=e.clientX;sl=sc.scrollLeft;pid=e.pointerId; });
+    sc.addEventListener('pointermove',function(e){
+      if(!down) return;
+      var dx=e.clientX-sx;
+      if(!cap && Math.abs(dx)>5){ cap=true; sc.classList.add('is-grab'); try{sc.setPointerCapture(pid);}catch(_){}}
+      if(cap){ sc.scrollLeft=sl-dx; touched=true; }
+    });
+    function up(){ down=false; if(cap){ cap=false; sc.classList.remove('is-grab'); } }
+    sc.addEventListener('pointerup',up); sc.addEventListener('pointercancel',up);
+  }
+
+  /* ---- fq: 開閉の高さアニメ ---- */
+  document.querySelectorAll('.fq details').forEach(function(dt){
+    var sum=dt.querySelector('summary'), ans=dt.querySelector('.fq__a');
+    if(!sum||!ans) return;
+    sum.addEventListener('click',function(e){
+      e.preventDefault();
+      if(dt.classList.contains('is-anim')) return;
+      dt.classList.add('is-anim');
+      if(!dt.open){
+        dt.open=true;
+        var h=ans.scrollHeight;
+        ans.style.overflow='hidden';
+        ans.animate([{height:'0px',opacity:0},{height:h+'px',opacity:1}],{duration:340,easing:'cubic-bezier(.25,1,.5,1)'})
+          .onfinish=function(){ ans.style.overflow=''; dt.classList.remove('is-anim'); };
+      } else {
+        var h2=ans.scrollHeight;
+        ans.style.overflow='hidden';
+        ans.animate([{height:h2+'px',opacity:1},{height:'0px',opacity:0}],{duration:280,easing:'cubic-bezier(.5,0,.75,0)'})
+          .onfinish=function(){ ans.style.overflow=''; dt.open=false; dt.classList.remove('is-anim'); };
+      }
+    });
+  });
+})();
+</script>
+
+<section class="sb-social" id="sns-breather">
+  <div class="sb-inner">
+    <div class="sb-grid">
+      <div class="sb-head" data-sbreveal>
+        <span class="sb-eyebrow">Follow us</span>
+        <h2 class="sb-title">
+          <span class="sb-line"><span>やまと不動産のことを、</span></span>
+          <span class="sb-line"><span>もっと<span class="sb-accent">詳しく</span>。</span></span>
+        </h2>
+        <p class="sb-lead">家づくりの裏側や、暮らしの様子を、<br class="sb-onlypc">それぞれの場所でお届けしています。</p>
+        <a class="sb-morelink" href="https://www.yamatogroup.net/pg-strength/" target="_blank" rel="noopener noreferrer">
+          家づくりの強みを見る <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="sb-tiles">
+        <a class="sb-tile sb-tile-ig" href="https://www.instagram.com/yamatonoie/" target="_blank" rel="noopener noreferrer" data-sbtilt data-sbreveal style="--d:0" aria-label="やまと不動産の公式Instagramを開く">
+          <div class="sb-tin">
+            <div class="sb-tmedia"><div class="sb-tpar"><img src="assets/social/ig.webp" alt="朝の光が差す食卓のしつらえ" style="object-position:center 58%"></div></div>
+            <span class="sb-scrim"></span><span class="sb-brandtint"></span><span class="sb-sheen"></span>
+            <div class="sb-chrome">
+              <span class="sb-pill">
+                <span class="sb-ic sb-ic-ring"><span><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="sbiga" x1="0" y1="1" x2="1" y2="0"><stop offset="0" class="sb-igg-a"/><stop offset=".5" class="sb-igg-b"/><stop offset="1" class="sb-igg-c"/></linearGradient></defs><rect x="4" y="4" width="16" height="16" rx="5" fill="none" stroke="url(#sbiga)" stroke-width="1.9"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="url(#sbiga)" stroke-width="1.9"/><circle cx="16.8" cy="7.2" r="1" fill="url(#sbiga)"/></svg></span></span>
+                <b>Instagram</b>
+              </span>
+              <div class="sb-foot">
+                <span class="sb-handle">@yamatonoie</span>
+                <span class="sb-arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="sb-tile sb-tile-yt" href="https://www.youtube.com/@user-ed2cw4tx9o" target="_blank" rel="noopener noreferrer" data-sbtilt data-sbreveal style="--d:1" aria-label="やまと不動産の公式YouTubeチャンネルを開く">
+          <div class="sb-tin">
+            <div class="sb-tmedia"><div class="sb-tpar"><img src="assets/social/yt.webp" alt="夕景のリビングルーム" style="object-position:center 46%"></div></div>
+            <span class="sb-scrim"></span><span class="sb-brandtint"></span><span class="sb-sheen"></span>
+            <span class="sb-play"><i></i></span>
+            <div class="sb-chrome">
+              <span class="sb-pill">
+                <span class="sb-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.4" y="5.6" width="19.2" height="12.8" rx="3.6" fill="#E60000"/><path d="M10 9.3l5 2.7-5 2.7z" fill="#fff"/></svg></span>
+                <b>YouTube</b>
+              </span>
+              <div class="sb-foot">
+                <span class="sb-handle">公式チャンネル</span>
+                <span class="sb-arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="sb-tile sb-tile-tt" href="https://www.tiktok.com/@yamatofudosan" target="_blank" rel="noopener noreferrer" data-sbtilt data-sbreveal style="--d:2" aria-label="やまと不動産の公式TikTokを開く">
+          <div class="sb-tin">
+            <div class="sb-tmedia"><div class="sb-tpar"><img src="assets/social/tt.webp" alt="オリーブの木と吹き抜けの階段ホール" style="object-position:center 40%"></div></div>
+            <span class="sb-scrim"></span><span class="sb-brandtint"></span><span class="sb-sheen"></span>
+            <div class="sb-chrome">
+              <span class="sb-pill">
+                <span class="sb-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3.3c.35 2.3 1.9 3.9 4.2 4.2v2.9c-1.55 0-3-.5-4.2-1.35v6a5.5 5.5 0 1 1-5.5-5.5c.3 0 .58.02.86.06v3a2.55 2.55 0 1 0 1.78 2.43V3.3H14z" fill="#111"/></svg></span>
+                <b>TikTok</b>
+              </span>
+              <div class="sb-foot">
+                <span class="sb-handle">@yamatofudosan</span>
+                <span class="sb-arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var sec=document.getElementById('sns-breather');
+  if(!sec) return;
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var revealEls=sec.querySelectorAll('[data-sbreveal]');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-sbin'); io.unobserve(e.target); } });
+    },{threshold:.2,rootMargin:'0px 0px -6% 0px'});
+    revealEls.forEach(function(el){ io.observe(el); });
+  }else{ revealEls.forEach(function(el){ el.classList.add('is-sbin'); }); }
+  if(reduce) return;
+  if(matchMedia('(hover:hover) and (pointer:fine) and (min-width:561px)').matches){
+    sec.querySelectorAll('[data-sbtilt]').forEach(function(card){
+      var inner=card.querySelector('.sb-tin'), raf=null, tx=0, ty=0, cx=0, cy=0;
+      function loop(){
+        cx+=(tx-cx)*.13; cy+=(ty-cy)*.13;
+        inner.style.setProperty('--ry',cx.toFixed(2)+'deg'); inner.style.setProperty('--rx',cy.toFixed(2)+'deg');
+        if(Math.abs(tx-cx)>.02||Math.abs(ty-cy)>.02){ raf=requestAnimationFrame(loop); } else { raf=null; }
+      }
+      card.addEventListener('pointermove',function(e){
+        var r=card.getBoundingClientRect();
+        tx=((e.clientX-r.left)/r.width-.5)*6; ty=-((e.clientY-r.top)/r.height-.5)*6;
+        if(!raf) raf=requestAnimationFrame(loop);
+      });
+      card.addEventListener('pointerleave',function(){ tx=0; ty=0; if(!raf) raf=requestAnimationFrame(loop); });
+    });
+  }
+  var pars=[].slice.call(sec.querySelectorAll('.sb-tpar'));
+  var targetP=.5, curP=.5, running=false;
+  function computeT(){
+    var r=sec.getBoundingClientRect();
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    var p=(vh-r.top)/(vh+r.height);
+    targetP=p<0?0:(p>1?1:p);
+    if(!running){ running=true; requestAnimationFrame(frame); }
+  }
+  function frame(){
+    curP+=(targetP-curP)*.08;
+    var d=(curP-.5)*26;
+    for(var i=0;i<pars.length;i++){ pars[i].style.transform='translate3d(0,'+(d*(i%2===0?1:-1)).toFixed(2)+'px,0)'; }
+    if(Math.abs(targetP-curP)>.0006){ requestAnimationFrame(frame); } else { running=false; }
+  }
+  if(matchMedia('(min-width:561px)').matches){
+    computeT();
+    document.addEventListener('scroll',computeT,{passive:true,capture:true});
+    window.addEventListener('resize',computeT);
+  }
+})();
+</script>
+
+<!-- ============ authority バナー帯：自動流し＋任意スワイプ/ドラッグ（mouse+touch統一・無限ループ） ============ -->
+<script>
+(function(){
+  var marquee=document.querySelector('.authority .marquee');
+  var track=marquee&&marquee.querySelector('.track');
+  if(!track) return;
+  if(track.dataset.mqReady) return; track.dataset.mqReady='1';  /* 二重初期化ガード（clone/rAF/listener の重複防止） */
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  /* 2セットに複製（継ぎ目のない無限ループ用） */
+  var originals=[].slice.call(track.children);
+  originals.forEach(function(node){ var c=node.cloneNode(true); c.setAttribute('aria-hidden','true'); c.tabIndex=-1; track.appendChild(c); });
+
+  var half=0;
+  function measure(){
+    var kids=track.children;
+    if(kids.length>originals.length){
+      half=kids[originals.length].getBoundingClientRect().left - kids[0].getBoundingClientRect().left;
+    }
+  }
+  measure();
+  window.addEventListener('resize',measure);
+
+  var x=0, speed=.4, hovering=false, dragging=false, dragged=false, hidden=false, startX=0, startPos=0;
+  function norm(v){ if(!half) return v; while(v<=-half) v+=half; while(v>0) v-=half; return v; }
+  function apply(){ track.style.transform='translate3d('+x.toFixed(2)+'px,0,0)'; }
+  function tick(){
+    if(!hovering && !dragging && !hidden && !reduce && half){ x=norm(x-speed); apply(); }
+    requestAnimationFrame(tick);
+  }
+  apply(); requestAnimationFrame(tick);
+
+  marquee.addEventListener('mouseenter',function(){ hovering=true; });
+  marquee.addEventListener('mouseleave',function(){ hovering=false; });
+  document.addEventListener('visibilitychange',function(){ hidden=document.hidden; });
+
+  /* ドラッグ／スワイプ（Pointer Events で mouse・touch を統一）
+     注意: setPointerCapture を pointerdown で即発動すると click がリンクに届かなくなる
+     （captureで pointerup のターゲットが marquee になり、タイル<a>への click が発生しない）。
+     捕捉は「実際にドラッグが始まった時」まで遅延させる。 */
+  marquee.addEventListener('pointerdown',function(e){
+    dragging=true; dragged=false; startX=e.clientX; startPos=x;
+    marquee.classList.add('is-grab');
+  });
+  marquee.addEventListener('pointermove',function(e){
+    if(!dragging) return;
+    var dx=e.clientX-startX;
+    if(!dragged && Math.abs(dx)>5){
+      dragged=true;
+      try{ marquee.setPointerCapture(e.pointerId); }catch(_){}
+    }
+    if(dragged){ x=norm(startPos+dx); apply(); }
+  });
+  function endDrag(){ if(!dragging) return; dragging=false; marquee.classList.remove('is-grab'); }
+  marquee.addEventListener('pointerup',endDrag);
+  marquee.addEventListener('pointercancel',endDrag);
+  marquee.addEventListener('lostpointercapture',endDrag);
+
+  /* ドラッグ後のリンク誤発火を抑止 */
+  track.addEventListener('click',function(e){
+    if(dragged){ e.preventDefault(); e.stopPropagation(); dragged=false; }
+  },true);
+})();
+</script>
+
+<!-- ============ FOOTER（紋章の奥付・一日の終わり） ============ -->
+<style>
+  /* トップ専用フッター: 紋章型センター組み。境界=紙の乗り上げ(サイト規約)。
+     アンバーは来場予約1点のみ。金はヘアライン・ホバー下線のみ。 */
+  .ft{position:relative;background:#12160c;color:var(--cream);isolation:isolate;overflow:hidden;
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    /* 境界システム: 後のシートがz-indexを上げて前のシートに乗り上げる(sb-socialと同じ文法) */
+    z-index:8;margin-top:clamp(-78px,-5.6vw,-46px);
+    box-shadow:0 -46px 88px -30px rgba(0,0,0,.5)}
+  /* 乗り上げ分、SNSセクションの下に呼吸を足す */
+  .sb-social{padding-bottom:calc(clamp(58px,8vh,100px) + clamp(46px,5.6vw,78px))!important}
+  .ft::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(60% 46% at 50% 0%,rgba(201,162,75,.12),transparent 70%)}
+  .ft__in{position:relative;z-index:1;max-width:1240px;margin:0 auto;text-align:center;
+    padding:clamp(72px,9vw,124px) clamp(20px,5vw,64px) calc(clamp(26px,3.4vw,38px) + env(safe-area-inset-bottom))}
+  .ft__mark{width:clamp(66px,7.4vw,92px);height:auto;margin:0 auto;display:block}
+  .ft__name{margin-top:clamp(16px,2.2vw,24px);font-family:var(--fh);font-weight:500;
+    font-size:clamp(1.04rem,.98rem + .5vw,1.32rem);letter-spacing:.16em}
+  .ft__desc{margin-top:10px;font-family:var(--fh);font-weight:500;font-size:.76rem;letter-spacing:.18em;color:rgba(244,241,234,.58)}
+  .ft__nav{margin-top:clamp(36px,4.6vw,56px);display:flex;flex-wrap:wrap;justify-content:center;
+    gap:12px clamp(20px,2.8vw,36px);font-family:var(--fh);font-weight:500;
+    font-size:clamp(.86rem,.83rem + .2vw,.95rem);letter-spacing:.07em}
+  .ft__nav a{padding:6px 2px;border-bottom:1px solid transparent;opacity:.86;
+    transition:opacity .3s,border-color .3s}
+  .ft__nav a:hover{opacity:1;border-bottom-color:rgba(201,162,75,.65)}
+  .ft__cv{margin-top:clamp(30px,3.8vw,44px);display:flex;flex-wrap:wrap;justify-content:center;align-items:center;
+    gap:14px clamp(18px,2.6vw,28px)}
+  .ft__btn{display:inline-flex;align-items:center;gap:11px;background:var(--amber);color:#fff;
+    font-family:var(--fh);font-weight:500;font-size:clamp(.9rem,.87rem + .25vw,1rem);letter-spacing:.05em;
+    padding:15px 34px;border-radius:5px;line-height:1;
+    box-shadow:0 14px 34px -14px rgba(196,133,31,.6);transition:transform .3s cubic-bezier(.33,1,.68,1),box-shadow .3s}
+  .ft__btn:hover{transform:translateY(-3px);box-shadow:0 20px 44px -16px rgba(196,133,31,.7)}
+  .ft__btn svg{width:14px;height:14px;stroke:#fff;stroke-width:2;fill:none}
+  .ft__ghost{font-family:var(--fh);font-weight:500;font-size:.85rem;letter-spacing:.05em;color:rgba(244,241,234,.82);
+    padding:6px 0;border-bottom:1px solid rgba(244,241,234,.35);transition:color .3s,border-color .3s}
+  .ft__ghost:hover{color:var(--cream);border-bottom-color:rgba(244,241,234,.85)}
+  .ft__hr{margin:clamp(40px,5vw,64px) auto 0;width:min(560px,72%);height:1px;
+    background:linear-gradient(to right,transparent,rgba(201,162,75,.45),transparent)}
+  .ft__offices{margin-top:clamp(26px,3.4vw,38px);display:flex;flex-wrap:wrap;justify-content:center;
+    gap:14px clamp(28px,4vw,56px)}
+  .ft__of{display:flex;flex-direction:column;gap:6px}
+  .ft__of b{font-family:var(--fh);font-weight:500;font-size:.72rem;letter-spacing:.2em;color:var(--gold)}
+  .ft__of span{font-size:.8rem;letter-spacing:.05em;line-height:1.9;color:rgba(244,241,234,.75)}
+  .ft__of a{font-family:"Inter","Noto Sans JP",sans-serif;font-weight:500;font-size:1.05rem;letter-spacing:.04em;color:var(--cream)}
+  .ft__hours{margin-top:14px;font-size:.74rem;letter-spacing:.08em;color:rgba(244,241,234,.55)}
+  .ft__sns{margin-top:clamp(24px,3vw,34px);display:flex;justify-content:center;gap:16px}
+  .ft__sns a{display:block;width:40px;height:40px;border-radius:10px;overflow:hidden;
+    transition:transform .3s cubic-bezier(.33,1,.68,1),box-shadow .3s}
+  .ft__sns a:hover{transform:translateY(-3px)}
+  .ft__sns img{display:block;width:100%;height:100%}
+  .ft__legal{margin-top:clamp(34px,4.4vw,52px);border-top:1px solid rgba(244,241,234,.12);
+    padding-top:16px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 20px;
+    font-size:.66rem;letter-spacing:.06em;color:rgba(244,241,234,.5)}
+  @media(max-width:640px){
+    .ft__legal{justify-content:center;text-align:center}
+    .ft__offices{gap:18px}
+  }
+</style>
+<footer class="ft" id="footer">
+  <div class="ft__in">
+    <img class="ft__mark" src="assets/brand/yamato_mark.svg" alt="">
+    <p class="ft__name">株式会社やまと不動産</p>
+    <p class="ft__desc">奈良の注文住宅と自社分譲地｜奈良市大宮町</p>
+
+    <nav class="ft__nav" aria-label="フッターナビゲーション">
+      <a href="kodawari.html">家づくりのこだわり</a>
+      <a href="model.html">モデルハウス</a>
+      <a href="lots.html">分譲地・物件</a>
+      <a href="voice.html">お客様の声</a>
+      <a href="company.html">会社案内</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+
+
+    <div class="ft__hr" aria-hidden="true"></div>
+
+    <div class="ft__offices">
+      <div class="ft__of">
+        <b>HEAD OFFICE</b>
+        <span>〒630-8115 奈良県奈良市大宮町1丁目6番21</span>
+        <a href="tel:0742361123">0742-36-1123</a>
+      </div>
+      <div class="ft__of">
+        <b>KYOTO BRANCH</b>
+        <span>京都府宇治市小倉町西山67-5</span>
+        <a href="tel:0774251123">0774-25-1123</a>
+      </div>
+    </div>
+    <p class="ft__hours">受付 9:00〜19:00｜定休日：火曜・水曜</p>
+
+    <div class="ft__sns">
+      <a href="https://www.instagram.com/yamatonoie/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/brand/sns/instagram.svg" alt="Instagram" loading="lazy"></a>
+      <a href="https://www.youtube.com/@user-ed2cw4tx9o" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="assets/brand/sns/youtube.svg" alt="YouTube" loading="lazy"></a>
+      <a href="https://www.tiktok.com/@yamatofudosan" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="assets/brand/sns/tiktok.svg" alt="TikTok" loading="lazy"></a>
+    </div>
+
+    <div class="ft__legal">
+      <span>宅地建物取引業 国土交通大臣（1）第10516号</span>
+      <span>© 株式会社やまと不動産</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FULLSCREEN MENU ============ -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="サイトメニュー" aria-hidden="true">
+  <div class="menu__media">
+    <img src="assets/menu_photo.webp" alt="">
+    <div class="menu__brand">
+      <img class="mk" src="assets/brand/yamato_mark.svg" alt="">
+      <span class="jp">株式会社やまと不動産</span>
+    </div>
+    <div class="menu__addr">
+      奈良県奈良市大宮町1丁目6番21<br>
+      9:00〜19:00｜定休日：火曜・水曜
+      <span class="lic">宅地建物取引業 国土交通大臣（1）第10516号</span>
+    </div>
+  </div>
+  <div class="menu__panel">
+    <button class="menu__close" id="menuClose" type="button" aria-label="メニューを閉じる">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="menu__nav" aria-label="サイトメニュー">
+      <div class="navcol stagger" style="--i:0">
+        <span class="navcol__label">Understand</span>
+        <a class="lead" href="#heart">私たちについて</a>
+        <a class="lead" href="kodawari.html">家づくりのこだわり</a>
+        <div class="subnav">
+          <a href="kodawari.html#price">見せた価格が、そのまま届く</a>
+          <a href="kodawari.html#standard">標準仕様（モデルハウス＝標準）</a>
+          <a href="kodawari.html#design">自由設計・間取り</a>
+          <a href="kodawari.html#after">保証・アフターフォロー</a>
+        </div>
+      </div>
+      <div class="navcol stagger" style="--i:1">
+        <span class="navcol__label">See &amp; Choose</span>
+        <a class="lead" href="#">施工事例</a>
+        <a class="lead" href="model.html">モデルハウス</a>
+        <a class="lead" href="lots.html">分譲地・土地情報</a>
+        <a class="lead" href="voice.html">お客様の声</a>
+      </div>
+      <div class="navcol stagger" style="--i:2">
+        <span class="navcol__label">Company</span>
+        <a class="lead" href="company.html">会社案内</a>
+        <a class="lead" href="#">スタッフ紹介</a>
+        <a class="lead" href="#">お知らせ</a>
+        <a class="lead" href="company.html#access">アクセス</a>
+      </div>
+    </nav>
+    <div class="menu__contact stagger" style="--i:3">
+      <div class="contact-row">
+        <div class="contact-row__label">来場・ご相談のご予約<small>WEBから 24時間受付</small></div>
+        <div class="contact-row__action">
+          <a class="doc-link" href="contact.html?type=docs">資料請求はこちら</a>
+          <a class="btn-form" href="contact.html?type=reserve">ご予約フォームへ<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row__label">お電話でのお問い合わせ</div>
+        <div class="contact-row__action">
+          <div>
+            <a class="tel" href="tel:0742361123"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>0742-36-1123</a>
+            <div class="tel-hours">受付 9:00〜19:00｜定休日：火曜・水曜</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row__label">LINEでのご相談<small>夜間もお気軽にどうぞ</small></div>
+        <div class="contact-row__action">
+          <a class="btn-form" style="background:#06C755;box-shadow:0 6px 22px rgba(6,199,85,.3)" href="contact.html#line">LINEで友だち追加<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="menu__foot stagger" style="--i:4">
+      <div class="sns">
+        <a href="https://www.instagram.com/yamatonoie/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/brand/sns/instagram.svg" alt="Instagram" loading="lazy"></a>
+        <a href="https://www.youtube.com/@user-ed2cw4tx9o" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="assets/brand/sns/youtube.svg" alt="YouTube" loading="lazy"></a>
+        <a href="https://www.tiktok.com/@yamatofudosan" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="assets/brand/sns/tiktok.svg" alt="TikTok" loading="lazy"></a>
+      </div>
+      <div class="foot-links">
+        <a href="company.html#about">会社概要</a>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">サイトマップ</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement; root.className=root.className.replace('no-js','').trim();
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  /* --- ヘッダー 透過⇄solid（FVの末尾を監視） --- */
+  var header=document.getElementById('siteHeader');
+  var hero=document.getElementById('top');
+  if('IntersectionObserver' in window && hero){
+    new IntersectionObserver(function(es){
+      header.classList.toggle('is-solid',!es[0].isIntersecting);
+    },{rootMargin:'-70px 0px 0px 0px',threshold:0}).observe(hero);
+  }else{
+    window.addEventListener('scroll',function(){
+      header.classList.toggle('is-solid',window.scrollY>window.innerHeight*0.7);
+    },{passive:true});
+  }
+
+  /* --- メニュー開閉 --- */
+  var menu=document.getElementById('menu'), burger=document.getElementById('burger'),
+      closeBtn=document.getElementById('menuClose'), lastFocus=null;
+  function onKey(e){ if(e.key==='Escape') closeMenu(); }
+  function openMenu(){ lastFocus=document.activeElement; menu.classList.add('is-open');
+    menu.setAttribute('aria-hidden','false'); burger.setAttribute('aria-expanded','true');
+    document.body.classList.add('is-locked'); setTimeout(function(){closeBtn.focus();},60);
+    document.addEventListener('keydown',onKey); }
+  function closeMenu(){ menu.classList.remove('is-open'); menu.setAttribute('aria-hidden','true');
+    burger.setAttribute('aria-expanded','false'); document.body.classList.remove('is-locked');
+    document.removeEventListener('keydown',onKey); if(lastFocus)lastFocus.focus(); }
+  burger.addEventListener('click',openMenu);
+  closeBtn.addEventListener('click',closeMenu);
+  menu.querySelectorAll('a[href="#"]').forEach(function(a){ a.addEventListener('click',function(e){e.preventDefault();closeMenu();}); });
+
+  /* --- FV動画 再生（スマホは縦版に確実に切替＋省データ/視差軽減で退避） --- */
+  var v=document.getElementById('hv');
+  if(v){
+    var mob=matchMedia('(max-width: 700px)').matches;
+    if(mob){
+      // media属性を無視するブラウザ向けの保険：モバイルは必ず縦版
+      if((v.currentSrc||'').indexOf('B_loop_sp')<0){
+        while(v.firstChild) v.removeChild(v.firstChild);
+        var so=document.createElement('source');
+        so.src='assets/video_ab/B_loop_sp.mp4?v=cut3'; so.type='video/mp4';
+        v.appendChild(so); v.load();
+      }
+      v.poster='assets/video_ab/B_poster_sp.webp?v=sp2';
+    }
+    var c=navigator.connection||{}; var save=c.saveData===true || /(^|-)2g/.test(c.effectiveType||'');
+    if(reduce||save){ try{ v.removeAttribute('autoplay'); v.pause(); }catch(e){} }
+    else { var p=v.play(); if(p&&p.catch) p.catch(function(){}); }
+  }
+
+  /* --- 実績（生きた図面）: 動画/カウント/リビール/注記/パララックス --- */
+  (function(){
+    var sec=document.getElementById('auth'); if(!sec) return;
+    var bg=document.getElementById('authBg'), anno=document.getElementById('anno'),
+        count=document.getElementById('count'), atrack=document.getElementById('track');
+    if(reduce && bg && bg.pause){ try{bg.pause();}catch(e){} }
+    /* trackの複製・自動流し・スワイプは authority バナー帯スクリプトが担当（旧CSS marquee用の複製は撤去） */
+    function runCount(){ if(!count) return; var t=+count.getAttribute('data-target');
+      if(reduce){ count.textContent=t; return; }
+      var dur=1900,s=null; function tick(n){ if(!s)s=n; var p=Math.min((n-s)/dur,1);
+        count.textContent=Math.round((1-Math.pow(1-p,3))*t); if(p<1)requestAnimationFrame(tick);} requestAnimationFrame(tick); }
+    var fired=false;
+    function fire(){ if(fired) return; fired=true; sec.classList.add('is-in'); runCount(); }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) fire(); }); },{threshold:0,rootMargin:'0px 0px -12% 0px'}).observe(sec);
+    } else { fire(); }
+    function checkInView(){ if(fired) return; var r=sec.getBoundingClientRect(); if(r.top < innerHeight*0.9 && r.bottom > 0) fire(); }
+    setTimeout(checkInView,300); window.addEventListener('scroll',checkInView,{passive:true,once:true});
+    if(!reduce && bg){
+      var prog=0,mx=0,my=0,ticking=false;
+      function render(){ ticking=false;
+        bg.style.transform='scale(1.12) translate('+(mx*-16)+'px,'+(prog*82 + my*-12)+'px)';
+        if(anno) anno.style.transform='translateX(-50%) translate('+(mx*24)+'px,'+(my*16)+'px)'; }
+      function req(){ if(!ticking){ ticking=true; requestAnimationFrame(render); } }
+      window.addEventListener('scroll',function(){ var r=sec.getBoundingClientRect(),vh=innerHeight;
+        prog=Math.max(-1,Math.min(1,(vh-(r.top+r.height/2))/(vh+r.height/2))); req(); },{passive:true});
+      window.addEventListener('mousemove',function(e){ mx=(e.clientX/innerWidth-.5); my=(e.clientY/innerHeight-.5); req(); },{passive:true});
+      render();
+    }
+  })();
+
+  /* --- 信条（散らしコラージュ）: リビール＋パララックス --- */
+  (function(){
+    var revealEls=document.querySelectorAll('.heart .ph, .heart .reveal-up, .heart .heart__close');
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){
+        es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
+      },{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+      revealEls.forEach(function(el){ io.observe(el); });
+    }else{ revealEls.forEach(function(el){ el.classList.add('is-in'); }); }
+    if(reduce) return;
+    var section=document.getElementById('heart'); if(!section) return;
+    var pxEls=[].slice.call(document.querySelectorAll('.heart .ph__px'));
+    var isDesktop=matchMedia('(min-width:901px)').matches;
+    var targetP=0.5,curP=0.5,running=false;
+    function computeTarget(){ var r=section.getBoundingClientRect();
+      var vh=window.innerHeight||document.documentElement.clientHeight;
+      var p=(vh - r.top)/(vh + r.height); targetP=p<0?0:(p>1?1:p);
+      if(!running){ running=true; requestAnimationFrame(frame); } }
+    function frame(){ curP += (targetP - curP) * 0.085; var d=curP - 0.5;
+      for(var i=0;i<pxEls.length;i++){ var amp=parseFloat(pxEls[i].getAttribute('data-amp'))||0;
+        pxEls[i].style.transform='translate3d(0,'+(d*amp).toFixed(2)+'px,0)'; }
+      if(Math.abs(targetP-curP) > 0.0005){ requestAnimationFrame(frame); } else { running=false; } }
+    function onResize(){ isDesktop=matchMedia('(min-width:901px)').matches; computeTarget(); }
+    if(isDesktop){ computeTarget(); window.addEventListener('scroll', computeTarget, {passive:true}); window.addEventListener('resize', onResize); }
+    else { window.addEventListener('resize', onResize); }
+  })();
+
+  /* --- 商品ライン 花・風・京: 動画/リビール/カウント/視差 --- */
+  (function(){
+    var sec=document.getElementById('lineup'); if(!sec) return;
+    var bg=document.getElementById('lpBg');
+    if(reduce && bg && bg.pause){ try{bg.pause();}catch(e){} }
+    function runCount(el){ var to=+el.getAttribute('data-to'); if(!to) return;
+      var hasComma=el.textContent.indexOf(',')>-1;
+      if(reduce){ el.firstChild.textContent=to.toLocaleString(); return; }
+      var dur=1500,s=null; function fmt(n){ return hasComma?n.toLocaleString():String(n); }
+      function tick(n){ if(!s)s=n; var p=Math.min((n-s)/dur,1); var v=Math.round((1-Math.pow(1-p,3))*to);
+        el.firstChild.textContent=fmt(v); if(p<1)requestAnimationFrame(tick);} requestAnimationFrame(tick); }
+    var fired=false;
+    function fire(){ if(fired) return; fired=true; sec.classList.add('is-in'); sec.querySelectorAll('.cnt').forEach(runCount); }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) fire(); }); },{threshold:0,rootMargin:'0px 0px -14% 0px'}).observe(sec);
+    } else { fire(); }
+    function checkInView(){ if(fired) return; var r=sec.getBoundingClientRect(); if(r.top<innerHeight*0.9 && r.bottom>0) fire(); }
+    setTimeout(checkInView,300); window.addEventListener('scroll',checkInView,{passive:true,once:true});
+    var cards=[].slice.call(sec.querySelectorAll('.pcard'));
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } }); },{threshold:.24});
+      cards.forEach(function(c){ io.observe(c); });
+    } else { cards.forEach(function(c){ c.classList.add('is-in'); }); }
+    if(!reduce && bg){
+      var ticking=false,prog=0;
+      function render(){ ticking=false; bg.style.transform='scale(1.14) translateY('+(prog*64)+'px)'; }
+      function req(){ if(!ticking){ ticking=true; requestAnimationFrame(render); } }
+      window.addEventListener('scroll',function(){ var r=sec.getBoundingClientRect(),vh=innerHeight;
+        prog=Math.max(-1,Math.min(1,(vh-(r.top+r.height/2))/(vh+r.height/2))); req(); },{passive:true});
+      render();
+    }
+  })();
+
+  /* --- なぜ、この値段で: リビール＋ヒーロー視差 --- */
+  (function(){
+    var sec=document.getElementById('naze'); if(!sec) return;
+    var fired=false;
+    function fire(){ if(fired) return; fired=true; sec.classList.add('is-in'); }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) fire(); }); },{threshold:0,rootMargin:'0px 0px -12% 0px'}).observe(sec);
+    } else { fire(); }
+    function checkInView(){ if(fired) return; var r=sec.getBoundingClientRect(); if(r.top<innerHeight*0.9 && r.bottom>0) fire(); }
+    setTimeout(checkInView,300); window.addEventListener('scroll',checkInView,{passive:true,once:true});
+    if(!reduce){
+      var hero=document.getElementById('nazeHero'),ticking=false,prog=0;
+      function render(){ ticking=false; if(hero) hero.style.backgroundPosition='center calc(50% + '+(prog*40)+'px)'; }
+      function req(){ if(!ticking){ ticking=true; requestAnimationFrame(render); } }
+      window.addEventListener('scroll',function(){ var r=sec.getBoundingClientRect(),vh=innerHeight; prog=Math.max(-1,Math.min(1,(vh-(r.top+r.height/2))/(vh+r.height/2))); req(); },{passive:true});
+    }
+  })();
+})();
+</script>
+
+<!-- ============ PREMIUM MOTION LAYER（GSAP + ScrollTrigger + Lenis / 失敗時は既存演出のまま動作） ============ -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.25/dist/lenis.min.js" integrity="sha384-ClD7pCgIUz5M81HT8aZmMxCsWmfsycmBiwL5gy1pUbdWHvICIbea22N9sTtAFotA" crossorigin="anonymous"></script>
+<script>
+(function(){
+  var d=document, root=d.documentElement;
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var conn=navigator.connection||{}; var save=conn.saveData===true||/(^|-)2g/.test(conn.effectiveType||'');
+
+  /* ---------- 診断用キルスイッチ（?pm=off / ?lenis=off / ?pmvid=off / ?seams=off） ---------- */
+  var qs; try{ qs=new URLSearchParams(location.search); }catch(e){ qs={get:function(){return null;}}; }
+  function OFF(k){ return qs.get(k)==='off'; }
+  if(OFF('seams')) root.classList.add('pm-noseams');
+  if(OFF('pm')) return;
+
+  /* ---------- 0) 背景動画のIO管理：スマホ/省データのみ（デスクトップは常時再生＝play()再開ヒッチ回避。
+       実測: 切替ありだと境界跨ぎで最大150msのメインスレッド停止が出る。Macは4本常時再生で問題なし） ---------- */
+  var isNarrow=matchMedia('(max-width:700px)').matches;
+  if(!reduce && (isNarrow||save) && !OFF('pmvid') && 'IntersectionObserver' in window){
+    var vio=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        var v=e.target;
+        if(e.isIntersecting){ var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+        else{ try{v.pause();}catch(_){} }
+      });
+    },{rootMargin:'60% 0px 60% 0px'});   /* 切替は画面から充分遠い位置で＝再生開始の負荷を見えない所へ */
+    [].slice.call(d.querySelectorAll('video[autoplay]')).forEach(function(v){ vio.observe(v); });
+  }
+
+  /* ---------- 1) モーション層のゲート：GSAP必須・reduced-motionは完全不参加 ---------- */
+  if(reduce || !window.gsap || !window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ignoreMobileResize:true});
+  root.classList.add('pm-motion');
+
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+  var mobile=matchMedia('(max-width:700px)').matches;
+  var SCRUB=mobile?1:.55;                      /* SPは数値スクラブで吸収、PCはタイト */
+  var EASE='power4.out';
+
+  /* ---------- 2) Lenis：デスクトップのみの慣性スクロール（タッチはネイティブ温存） ---------- */
+  var lenis=null;
+  if(fine && !mobile && !OFF('lenis') && window.Lenis){
+    lenis=new Lenis({autoRaf:false,smoothWheel:true,syncTouch:false,
+      duration:1.15,easing:function(t){return Math.min(1,1.001-Math.pow(2,-10*t));},
+      anchors:{offset:-90}}); /* expo-out 1.15s = 定番の余韻グライド（ぬるぬるの正体） */
+    lenis.on('scroll',ScrollTrigger.update);
+    gsap.ticker.add(function(t){ lenis.raf(t*1000); });
+    gsap.ticker.lagSmoothing(0);
+    root.style.scrollBehavior='auto';          /* CSS smoothとの競合を排除 */
+    /* メニュー開閉に同期して停止/再開（classの変化を監視＝既存コード無改変） */
+    var menuEl=d.getElementById('menu');
+    if(menuEl && 'MutationObserver' in window){
+      new MutationObserver(function(){
+        if(menuEl.classList.contains('is-open')) lenis.stop(); else lenis.start();
+      }).observe(menuEl,{attributes:true,attributeFilter:['class']});
+    }
+  }
+
+  /* ---------- 3) 読了ヘアライン（CSS scroll-timeline非対応ブラウザのみJSで駆動） ---------- */
+  var bar=d.createElement('div'); bar.className='pm-progress'; bar.setAttribute('aria-hidden','true');
+  d.body.appendChild(bar);
+  var cssTimeline=(window.CSS&&CSS.supports&&CSS.supports('animation-timeline: scroll()'));
+  if(!cssTimeline){
+    gsap.to(bar,{scaleX:1,ease:'none',
+      scrollTrigger:{trigger:d.body,start:'top top',end:'max',scrub:SCRUB}});
+  }
+
+  /* ---------- 4) FV：シネマ開幕（PC＝行マスクの立ち上がり／SP＝既存の縦書きイントロを温存） ---------- */
+  var hero=d.getElementById('top');
+  var intro=hero&&hero.querySelector('.intro');
+  var h1=intro&&intro.querySelector('h1'), sub=intro&&intro.querySelector('p');
+  if(hero&&h1&&sub&&!mobile){
+    /* h1 を <br> 区切りで行マスク化（.tcu span はノードごと移動＝組版無傷） */
+    var groups=[[]];
+    [].slice.call(h1.childNodes).forEach(function(n){
+      if(n.nodeType===1&&n.tagName==='BR'){ groups.push([]); } else { groups[groups.length-1].push(n); }
+    });
+    var inners=[];
+    h1.textContent='';
+    groups.forEach(function(g){
+      var outer=d.createElement('span'); outer.className='pm-line';
+      var inner=d.createElement('span');
+      g.forEach(function(n){ inner.appendChild(n); });
+      outer.appendChild(inner); h1.appendChild(outer); inners.push(inner);
+    });
+    /* スクラブ用ラッパ（.introのtranslateY(-50%)センタリングを壊さないため子を包む） */
+    var fvin=d.createElement('div'); fvin.className='pm-fvin';
+    intro.insertBefore(fvin,h1); fvin.appendChild(h1); fvin.appendChild(sub);
+    hero.classList.add('fv-jsintro');
+    /* 開幕タイムライン */
+    gsap.set(inners,{yPercent:112});
+    gsap.set(sub,{autoAlpha:0,y:22});
+    var ctaRow=hero.querySelector('.cta-row'), cue=hero.querySelector('.cue');
+    if(ctaRow) gsap.set(ctaRow,{autoAlpha:0,y:26});
+    if(cue) gsap.set(cue,{autoAlpha:0});
+    var tl=gsap.timeline({delay:.15,defaults:{ease:EASE}});
+    tl.to(inners,{yPercent:0,duration:1.15,stagger:.16},0)
+      .to(sub,{autoAlpha:1,y:0,duration:.9},.8)
+      .to(ctaRow,{autoAlpha:1,y:0,duration:.9},1.05)
+      .to(cue,{autoAlpha:1,duration:.7},1.3);
+    /* 退場コレオ：スクロールで見出しが浮き上がり、動画がわずかに寄る */
+    gsap.to(fvin,{y:-46,autoAlpha:.3,ease:'none',
+      scrollTrigger:{trigger:hero,start:'top top',end:'bottom 25%',scrub:SCRUB}});
+  }
+  /* FV動画の退場ズーム（PC/SP共通・transformのみ） */
+  var hv=d.getElementById('hv');
+  if(hv){
+    gsap.to(hv,{scale:mobile?1.04:1.07,ease:'none',
+      scrollTrigger:{trigger:'#top',start:'top top',end:'bottom top',scrub:SCRUB}});
+  }
+  if(mobile&&intro){
+    /* SP：縦書き見出しはCSSイントロのまま、退場だけ軽く（子要素をタッチ＝introVと非競合） */
+    gsap.to([h1,sub],{y:-18,autoAlpha:.35,ease:'none',
+      scrollTrigger:{trigger:'#top',start:'top top',end:'bottom 30%',scrub:1}});
+  }
+
+  /* ---------- 5) 汎用カウントアップ（実績stats・土地facts。数字を含む要素だけ発火） ---------- */
+  function countUp(el,dur){
+    var m=(el.textContent||'').match(/^([^0-9]*)([\d,]+)(.*)$/); if(!m) return;
+    var pre=m[1],to=parseInt(m[2].replace(/,/g,''),10),suf=m[3],comma=m[2].indexOf(',')>-1;
+    if(!isFinite(to)) return;
+    var o={v:0};
+    gsap.to(o,{v:to,duration:dur||1.5,ease:'power3.out',onUpdate:function(){
+      var n=Math.round(o.v);
+      el.textContent=pre+(comma?n.toLocaleString('ja-JP'):String(n))+suf;
+    }});
+  }
+  ScrollTrigger.create({trigger:'#auth .stats',start:'top 88%',once:true,
+    onEnter:function(){ [].slice.call(d.querySelectorAll('#auth .stat .n')).forEach(function(el,i){
+      gsap.delayedCall(i*.12,function(){ countUp(el,1.4); }); }); }});
+  ScrollTrigger.create({trigger:'#lots .lt-facts',start:'top 88%',once:true,
+    onEnter:function(){ [].slice.call(d.querySelectorAll('#lots .lt-fact .n')).forEach(function(el,i){
+      gsap.delayedCall(.45+i*.14,function(){ countUp(el,1.5); }); }); }});
+
+  /* ---------- 6) 信条：見出しの行マスク＋本文の墨入れ（ink-fill scrub） ---------- */
+  var heartHead=d.querySelector('.heart__head');
+  if(heartHead){
+    var qs=[].slice.call(heartHead.querySelectorAll('.q'));
+    var qInners=qs.map(function(q){
+      var inner=d.createElement('span'); inner.style.display='block';
+      while(q.firstChild) inner.appendChild(q.firstChild);
+      q.appendChild(inner); q.style.overflow='hidden'; return inner;
+    });
+    gsap.set(qInners,{yPercent:118});
+    ScrollTrigger.create({trigger:heartHead,start:'top 82%',once:true,onEnter:function(){
+      gsap.to(qInners,{yPercent:0,duration:1.2,ease:EASE,stagger:.15});
+    }});
+  }
+  var prose=d.querySelector('.heart__prose');
+  if(prose){
+    /* 文字単位に分割して .pm-ch を生成（<br>・.accent はそのまま維持） */
+    [].slice.call(prose.querySelectorAll('p')).forEach(function(p){
+      (function walk(node){
+        [].slice.call(node.childNodes).forEach(function(n){
+          if(n.nodeType===3){
+            var frag=d.createDocumentFragment(), s=n.textContent;
+            for(var i=0;i<s.length;i++){
+              var ch=s[i];
+              if(/\s/.test(ch)){ frag.appendChild(d.createTextNode(ch)); continue; }
+              var sp=d.createElement('span'); sp.className='pm-ch'; sp.textContent=ch;
+              frag.appendChild(sp);
+            }
+            node.replaceChild(frag,n);
+          } else if(n.nodeType===1&&n.tagName!=='BR'){ walk(n); }
+        });
+      })(p);
+    });
+    var chs=prose.querySelectorAll('.pm-ch');
+    if(chs.length){
+      gsap.to(chs,{opacity:1,ease:'none',stagger:{each:.012},
+        scrollTrigger:{trigger:prose,start:'top 80%',end:'bottom 58%',scrub:SCRUB}});
+    }
+  }
+
+  /* ---------- 7) 花風京：漢字ウォーターマークの製図ドリフト（カード毎スクラブ） ---------- */
+  [].slice.call(d.querySelectorAll('.pcard')).forEach(function(card){
+    var k=card.querySelector('.pcard__kanji'); if(!k) return;
+    gsap.fromTo(k,{yPercent:-9},{yPercent:9,ease:'none',
+      scrollTrigger:{trigger:card,start:'top bottom',end:'bottom top',scrub:SCRUB}});
+  });
+
+  /* ---------- 8) なぜ：鍵括弧のポップ（back.out＝現場の一声が弾む） ---------- */
+  var qms=d.querySelectorAll('.naze__quote .qm');
+  if(qms.length){
+    gsap.set(qms,{scale:.3,rotation:-10,transformOrigin:'50% 60%'});
+    ScrollTrigger.create({trigger:'.naze__hero',start:'top 72%',once:true,onEnter:function(){
+      gsap.to(qms,{scale:1,rotation:0,duration:.85,ease:'back.out(2.2)',stagger:.16,delay:.3});
+    }});
+  }
+
+  /* ---------- 9) 土地：市名の書き込み順（--i付与）＋空撮のスロー・ズーム ---------- */
+  [].slice.call(d.querySelectorAll('.lt-areas .a')).forEach(function(a,i){
+    a.style.setProperty('--i',i);
+  });
+  var ltv=d.querySelector('.lt-video');
+  if(ltv){
+    gsap.fromTo(ltv,{scale:1},{scale:1.07,ease:'none',
+      scrollTrigger:{trigger:'#lots',start:'top bottom',end:'bottom top',scrub:SCRUB}});
+  }
+
+  /* ---------- 9.5) お客様の声：投函の所作（左列の静かな入場＋「50通」カウント＋朱印スタンプ） ---------- */
+  var vc=d.getElementById('voice');
+  if(vc){
+    var vcLeft=vc.querySelector('.vc__in > div:first-child');
+    var vcEls=vcLeft?[].slice.call(vcLeft.children):[];
+    if(vcEls.length) gsap.set(vcEls,{autoAlpha:0,y:26});
+    var vcEm=vc.querySelector('h2 em');
+    var vcEntered=false, vcStamped=false;
+    /* カードはfetch描画＝マークが存在した時点で初期隠し（未描画なら何もしない＝JS競合安全） */
+    var vcHideMarks=function(){
+      var ms=vc.querySelectorAll('.vc__mark');
+      if(ms.length && !vcStamped) gsap.set(ms,{autoAlpha:0,scale:1.45,rotation:7,transformOrigin:'50% 50%'});
+      return ms;
+    };
+    var vcStamp=function(){
+      if(vcStamped) return;
+      var ms=vcHideMarks(); if(!ms.length) return;
+      vcStamped=true;
+      /* 判子の所作：加速して落ち、わずかに沈んで戻る（跳ねない） */
+      gsap.to(ms,{keyframes:[
+        {autoAlpha:1,scale:.96,rotation:0,duration:.42,ease:'power3.in'},
+        {scale:1,duration:.26,ease:'power2.out'}
+      ],stagger:.18,delay:.55});
+    };
+    var fan=d.getElementById('vcFan');
+    if(fan){
+      if(fan.children.length){ vcHideMarks(); }
+      else if('MutationObserver' in window){
+        var fanMo=new MutationObserver(function(){
+          if(!fan.children.length) return;
+          fanMo.disconnect();
+          vcHideMarks();
+          if(vcEntered) vcStamp();
+        });
+        fanMo.observe(fan,{childList:true});
+      }
+    }
+    ScrollTrigger.create({trigger:vc,start:'top 76%',once:true,onEnter:function(){
+      vcEntered=true;
+      if(vcEls.length) gsap.to(vcEls,{autoAlpha:1,y:0,duration:1.05,ease:EASE,stagger:.12});
+      if(vcEm) gsap.delayedCall(.4,function(){ countUp(vcEm,1.25); });
+      vcStamp();
+    }});
+  }
+
+  /* ---------- 9.6) メニュー開幕：玄関ポーチのケンバーンズ（開くたびゆっくり寄る。CSSはコンテナ側、imgはGSAP専有） ---------- */
+  var menuBox=d.getElementById('menu');
+  var menuImg=menuBox&&menuBox.querySelector('.menu__media img');
+  if(menuBox&&menuImg&&'MutationObserver' in window){
+    new MutationObserver(function(){
+      if(menuBox.classList.contains('is-open')){
+        gsap.fromTo(menuImg,{scale:1.12,yPercent:2},{scale:1,yPercent:0,duration:2.6,ease:'power2.out',overwrite:'auto'});
+      }
+    }).observe(menuBox,{attributes:true,attributeFilter:['class']});
+  }
+
+  /* ---------- 10) 磁気CTA（アンバーCV導線のみ・デスクトップのみ・離脱はelastic） ---------- */
+  if(fine && !mobile){
+    [].slice.call(d.querySelectorAll('.btn-reserve, .hero .cta, .naze__btn, .btn-form')).forEach(function(btn){
+      btn.classList.add('pm-mag');
+      var qx=gsap.quickTo(btn,'x',{duration:.35,ease:'power3.out'});
+      var qy=gsap.quickTo(btn,'y',{duration:.35,ease:'power3.out'});
+      btn.addEventListener('pointermove',function(e){
+        var r=btn.getBoundingClientRect();
+        qx((e.clientX-(r.left+r.width/2))*.22);
+        qy((e.clientY-(r.top+r.height/2))*.3 - 2);
+      },{passive:true});
+      btn.addEventListener('pointerenter',function(){ gsap.to(btn,{scale:1.02,duration:.4,ease:'power3.out'}); },{passive:true});
+      btn.addEventListener('pointerleave',function(){
+        gsap.to(btn,{x:0,y:0,scale:1,duration:.75,ease:'elastic.out(1,.55)'});
+      },{passive:true});
+    });
+  }
+
+  /* ---------- 11) 計測の作法：フォント/読込完了後にトリガー位置を再計測 ---------- */
+  if(d.fonts&&d.fonts.ready) d.fonts.ready.then(function(){ ScrollTrigger.refresh(); });
+  window.addEventListener('load',function(){ ScrollTrigger.refresh(); });
+})();
+</script>
+</body>
+</html>

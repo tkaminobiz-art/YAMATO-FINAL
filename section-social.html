@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>やまと不動産｜SNS小休止バンド（もっと詳しく／白基調・生成サムネ）</title>
+<meta name="description" content="やまと不動産のSNSへ誘う、白基調の軽やかな休憩地点バンド図面。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAFAF7; --line:#ECE7DC; --text:#232220; --text-mid:#5F5B54; --text-light:#8A857C;
+    --main:#486B00; --main-dark:#2E4600;
+    --font-head:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    --font-body:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    --font-en:"Inter",sans-serif;
+    --ease:cubic-bezier(.16,1,.3,1);
+    --ease-soft:cubic-bezier(.22,1,.36,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;font-size:100%}
+  html,body{word-break:normal;overflow-wrap:normal;line-break:strict}
+  body{font-family:var(--font-body);background:var(--bg);color:var(--text);
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;font-feature-settings:"palt"}
+  a{color:inherit;text-decoration:none}
+  img{display:block;width:100%;height:100%;object-fit:cover}
+
+  /* ============================================================
+     SNS 小休止バンド — 横長・低い・軽やか（休憩地点）
+     ============================================================ */
+  .social{position:relative;isolation:isolate;overflow:hidden;
+    padding:clamp(58px,8vh,100px) clamp(20px,5vw,72px);background:var(--bg)}
+  .social::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(70% 120% at 100% 50%, rgba(72,107,0,.045), transparent 60%)}
+  .social__inner{position:relative;z-index:2;max-width:1200px;margin:0 auto}
+
+  .breather{display:grid;grid-template-columns:minmax(280px,1fr) 1.8fr;
+    gap:clamp(28px,3.4vw,64px);align-items:center}
+
+  /* ── 左：見出し（コンパクト・左寄せ） ── */
+  .head{text-align:left}
+  .eyebrow{display:inline-flex;align-items:center;gap:11px;font-family:var(--font-en);
+    font-size:.6rem;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--main);margin-bottom:18px}
+  .eyebrow::before{content:"";width:20px;height:1px;background:currentColor;opacity:.55}
+  .title{font-family:var(--font-head);font-weight:700;color:var(--text);
+    font-size:clamp(1.46rem,1.05rem + 1.3vw,1.9rem);line-height:1.5;letter-spacing:.02em}
+  .title .line{display:block;overflow:hidden;padding:.04em 0}
+  .title .line > span{display:inline-block;transform:translateY(115%);transition:transform .95s var(--ease-soft)}
+  .title .line:nth-child(2) > span{transition-delay:.09s}
+  .head.is-in .title .line > span{transform:none}
+  .title .accent{color:var(--main)}
+  .lead{margin-top:16px;font-size:.92rem;line-height:1.95;letter-spacing:.04em;color:var(--text-mid);
+    opacity:0;transform:translateY(16px);transition:opacity .9s var(--ease-soft) .24s,transform .9s var(--ease-soft) .24s}
+  .head.is-in .lead{opacity:1;transform:none}
+  .morelink{margin-top:22px;display:inline-flex;align-items:center;gap:9px;font-family:var(--font-head);
+    font-weight:500;font-size:.86rem;letter-spacing:.03em;color:var(--main-dark);
+    border-bottom:1px solid rgba(46,70,0,.26);padding-bottom:4px;transition:.4s var(--ease-soft);
+    opacity:0;transform:translateY(16px);transition:opacity .9s var(--ease-soft) .34s,transform .9s var(--ease-soft) .34s,color .4s,border-color .4s}
+  .head.is-in .morelink{opacity:1;transform:none}
+  .morelink:hover{color:var(--main);border-bottom-color:var(--main)}
+  .morelink svg{width:13px;height:13px;stroke:currentColor;stroke-width:1.8;fill:none;transition:transform .5s var(--ease-soft)}
+  .morelink:hover svg{transform:translateX(5px)}
+
+  /* ── 右：SNSサムネ 3枚（小さめ・共通4:5） ── */
+  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.3vw,20px)}
+
+  .tile{position:relative;display:block;perspective:1000px;
+    opacity:0;transform:translateY(34px);
+    transition:opacity .95s var(--ease-soft),transform 1.05s var(--ease-soft);
+    transition-delay:calc(var(--d,0) * .1s)}
+  .tile.is-in{opacity:1;transform:none}
+  .tile__in{position:relative;aspect-ratio:4/5;border-radius:15px;overflow:hidden;background:#E9E4DB;
+    box-shadow:0 5px 20px rgba(60,50,30,.09);
+    transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--ty,0px));
+    transform-style:preserve-3d;
+    transition:transform .55s var(--ease-soft),box-shadow .55s var(--ease-soft);will-change:transform}
+  .tile:hover .tile__in{--ty:-7px;box-shadow:0 30px 52px -24px var(--glow,rgba(60,50,30,.45)),0 10px 24px -14px rgba(60,50,30,.16)}
+
+  .tile__media{position:absolute;inset:0;overflow:hidden;z-index:0}
+  .tile__par{position:absolute;top:-8%;left:0;right:0;height:116%;will-change:transform}
+  .tile__par img{transform:scale(1.05);transition:transform 1.4s var(--ease-soft)}
+  .tile:hover .tile__par img{transform:scale(1.12)}
+  .scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(to top,rgba(20,16,12,.6) 0%,rgba(20,16,12,.05) 40%,transparent 62%),
+      linear-gradient(to bottom,rgba(20,16,12,.28),transparent 24%)}
+  .brandtint{position:absolute;inset:0;z-index:2;pointer-events:none;mix-blend-mode:soft-light;
+    opacity:0;transition:opacity .6s var(--ease-soft);background:var(--brandbg)}
+  .tile:hover .brandtint{opacity:.42}
+  .sheen{position:absolute;top:0;left:-60%;width:44%;height:100%;z-index:5;pointer-events:none;
+    background:linear-gradient(100deg,transparent,rgba(255,255,255,.3),transparent);transform:skewX(-14deg)}
+  .tile:hover .sheen{animation:sheen 1.05s var(--ease-soft) .05s}
+  @keyframes sheen{to{left:130%}}
+
+  .chrome{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;
+    padding:clamp(12px,1vw,16px)}
+  .pill{display:inline-flex;align-items:center;gap:7px;align-self:flex-start;
+    padding:5px 11px 5px 5px;border-radius:100px;background:rgba(255,255,255,.16);
+    -webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);border:1px solid rgba(255,255,255,.22);
+    transform:translateZ(34px)}
+  .pill .ic{width:22px;height:22px;border-radius:7px;display:grid;place-items:center;background:#fff;flex:0 0 auto}
+  .pill .ic svg{width:14px;height:14px}
+  .pill .ic--ring{background:var(--brandbg);padding:2px}
+  .pill .ic--ring span{display:grid;place-items:center;width:100%;height:100%;border-radius:6px;background:#2a2320}
+  .pill b{font-family:var(--font-en);font-weight:600;font-size:.72rem;color:#fff;letter-spacing:.01em}
+
+  .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;color:#fff}
+  .foot .handle{font-family:var(--font-en);font-weight:400;font-size:.72rem;letter-spacing:.01em;
+    color:rgba(255,255,255,.92);text-shadow:0 1px 8px rgba(0,0,0,.4)}
+  .foot .arw{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto;
+    background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.34);transition:.5s var(--ease-soft)}
+  .foot .arw svg{width:13px;height:13px;stroke:#fff;stroke-width:1.9;fill:none;transition:transform .5s var(--ease-soft)}
+  .tile:hover .foot .arw{background:var(--brand,#fff);border-color:transparent}
+  .tile:hover .foot .arw svg{transform:translateX(2px)}
+
+  /* YouTube 小さめ再生ボタン */
+  .play{position:absolute;top:44%;left:50%;z-index:4;transform:translate(-50%,-50%) translateZ(46px)}
+  .play i{position:relative;display:grid;place-items:center;width:46px;height:33px;border-radius:11px;
+    background:rgba(230,0,0,.94);box-shadow:0 10px 26px rgba(200,0,0,.42);transition:transform .55s var(--ease-soft)}
+  .play i::after{content:"";width:0;height:0;border-style:solid;border-width:7px 0 7px 12px;
+    border-color:transparent transparent transparent #fff;margin-left:2px}
+  .play i::before{content:"";position:absolute;inset:-6px;border-radius:16px;border:1.4px solid rgba(230,0,0,.5);
+    animation:pulse 2.6s var(--ease) infinite}
+  .tile--yt:hover .play i{transform:scale(1.08)}
+  @keyframes pulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.3);opacity:0}100%{opacity:0}}
+
+  /* ブランド別 */
+  .tile--ig{--brand:#C7267E;--glow:rgba(199,38,126,.42);
+    --brandbg:linear-gradient(120deg,#F58529,#DD2A7B 46%,#8134AF 78%,#515BD4)}
+  .tile--yt{--brand:#E60000;--glow:rgba(230,0,0,.34);--brandbg:linear-gradient(120deg,#FF3B3B,#E60000)}
+  .tile--tt{--brand:#0d0d0d;--glow:rgba(37,244,238,.4);--brandbg:linear-gradient(120deg,#25F4EE,#111 44%,#FE2C55)}
+  .ig-g-a{stop-color:#F58529}.ig-g-b{stop-color:#DD2A7B}.ig-g-c{stop-color:#8134AF}
+
+  /* ============================================================
+     RESPONSIVE — スマホは見出し上・サムネ横スクロール
+     ============================================================ */
+  .only-pc{display:inline}
+  @media (max-width:820px){
+    .breather{grid-template-columns:1fr;gap:clamp(26px,5vw,40px)}
+    .head{text-align:center}
+    .eyebrow::before{width:20px}
+    .eyebrow{gap:11px}
+    .eyebrow::after{content:"";width:20px;height:1px;background:currentColor;opacity:.55}
+  }
+  @media (max-width:560px){
+    .only-pc{display:none}
+    .social{padding:clamp(52px,8vh,80px) 0}
+    .head{padding:0 clamp(20px,6vw,30px)}
+    .tiles{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;
+      padding:0 clamp(20px,6vw,30px) 4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .tiles::-webkit-scrollbar{display:none}
+    .tile{flex:0 0 62%;scroll-snap-align:center}
+    .tile__in{transform:none!important}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    .tile,.lead,.morelink{transition:opacity .5s ease}
+    .tile,.lead,.morelink{transform:none!important}
+    .title .line > span{transform:none!important}
+    .tile__in{transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<div style="height:20vh;background:#F0EDE6"></div>
+
+<section class="social" id="social">
+  <div class="social__inner">
+    <div class="breather">
+
+      <!-- 左：見出し -->
+      <div class="head" data-reveal>
+        <span class="eyebrow">Follow us</span>
+        <h2 class="title">
+          <span class="line"><span>やまと不動産のことを、</span></span>
+          <span class="line"><span>もっと<span class="accent">詳しく</span>。</span></span>
+        </h2>
+        <p class="lead">家づくりの裏側や、暮らしの様子を、<br class="only-pc">それぞれの場所でお届けしています。</p>
+        <a class="morelink" href="https://www.yamatogroup.net/pg-strength/" target="_blank" rel="noopener noreferrer">
+          家づくりの強みを見る <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <!-- 右：SNSサムネ 3枚 -->
+      <div class="tiles">
+
+        <a class="tile tile--ig" href="https://www.instagram.com/yamatonoie/" target="_blank" rel="noopener noreferrer" data-tilt data-reveal style="--d:0" aria-label="やまと不動産の公式Instagramを開く">
+          <div class="tile__in">
+            <div class="tile__media"><div class="tile__par"><img src="assets/social/ig.webp" alt="朝の光が差す食卓のしつらえ" style="object-position:center 58%"></div></div>
+            <span class="scrim"></span><span class="brandtint"></span><span class="sheen"></span>
+            <div class="chrome">
+              <span class="pill">
+                <span class="ic ic--ring"><span><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="iga" x1="0" y1="1" x2="1" y2="0"><stop offset="0" class="ig-g-a"/><stop offset=".5" class="ig-g-b"/><stop offset="1" class="ig-g-c"/></linearGradient></defs><rect x="4" y="4" width="16" height="16" rx="5" fill="none" stroke="url(#iga)" stroke-width="1.9"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="url(#iga)" stroke-width="1.9"/><circle cx="16.8" cy="7.2" r="1" fill="url(#iga)"/></svg></span></span>
+                <b>Instagram</b>
+              </span>
+              <div class="foot">
+                <span class="handle">@yamatonoie</span>
+                <span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="tile tile--yt" href="https://www.youtube.com/@user-ed2cw4tx9o" target="_blank" rel="noopener noreferrer" data-tilt data-reveal style="--d:1" aria-label="やまと不動産の公式YouTubeチャンネルを開く">
+          <div class="tile__in">
+            <div class="tile__media"><div class="tile__par"><img src="assets/social/yt.webp" alt="夕景のリビングルーム" style="object-position:center 46%"></div></div>
+            <span class="scrim"></span><span class="brandtint"></span><span class="sheen"></span>
+            <span class="play"><i></i></span>
+            <div class="chrome">
+              <span class="pill">
+                <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.4" y="5.6" width="19.2" height="12.8" rx="3.6" fill="#E60000"/><path d="M10 9.3l5 2.7-5 2.7z" fill="#fff"/></svg></span>
+                <b>YouTube</b>
+              </span>
+              <div class="foot">
+                <span class="handle">公式チャンネル</span>
+                <span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="tile tile--tt" href="https://www.tiktok.com/@yamatofudosan" target="_blank" rel="noopener noreferrer" data-tilt data-reveal style="--d:2" aria-label="やまと不動産の公式TikTokを開く">
+          <div class="tile__in">
+            <div class="tile__media"><div class="tile__par"><img src="assets/social/tt.webp" alt="オリーブの木と吹き抜けの階段ホール" style="object-position:center 40%"></div></div>
+            <span class="scrim"></span><span class="brandtint"></span><span class="sheen"></span>
+            <div class="chrome">
+              <span class="pill">
+                <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3.3c.35 2.3 1.9 3.9 4.2 4.2v2.9c-1.55 0-3-.5-4.2-1.35v6a5.5 5.5 0 1 1-5.5-5.5c.3 0 .58.02.86.06v3a2.55 2.55 0 1 0 1.78 2.43V3.3H14z" fill="#111"/></svg></span>
+                <b>TikTok</b>
+              </span>
+              <div class="foot">
+                <span class="handle">@yamatofudosan</span>
+                <span class="arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="height:26vh;background:#F0EDE6"></div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  root.className=root.className.replace('no-js','').trim();
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  var revealEls=document.querySelectorAll('[data-reveal]');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
+    },{threshold:.2,rootMargin:'0px 0px -6% 0px'});
+    revealEls.forEach(function(el){ io.observe(el); });
+  }else{ revealEls.forEach(function(el){ el.classList.add('is-in'); }); }
+  if(reduce) return;
+
+  if(matchMedia('(hover:hover) and (pointer:fine) and (min-width:561px)').matches){
+    document.querySelectorAll('[data-tilt]').forEach(function(card){
+      var inner=card.querySelector('.tile__in'), raf=null, tx=0, ty=0, cx=0, cy=0;
+      function loop(){
+        cx+=(tx-cx)*.13; cy+=(ty-cy)*.13;
+        inner.style.setProperty('--ry',cx.toFixed(2)+'deg'); inner.style.setProperty('--rx',cy.toFixed(2)+'deg');
+        if(Math.abs(tx-cx)>.02||Math.abs(ty-cy)>.02){ raf=requestAnimationFrame(loop); } else { raf=null; }
+      }
+      card.addEventListener('pointermove',function(e){
+        var r=card.getBoundingClientRect();
+        tx=((e.clientX-r.left)/r.width-.5)*6; ty=-((e.clientY-r.top)/r.height-.5)*6;
+        if(!raf) raf=requestAnimationFrame(loop);
+      });
+      card.addEventListener('pointerleave',function(){ tx=0; ty=0; if(!raf) raf=requestAnimationFrame(loop); });
+    });
+  }
+
+  var pars=[].slice.call(document.querySelectorAll('.tile__par'));
+  var section=document.getElementById('social');
+  var targetP=.5, curP=.5, running=false;
+  function computeT(){
+    var r=section.getBoundingClientRect();
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    var p=(vh-r.top)/(vh+r.height);
+    targetP=p<0?0:(p>1?1:p);
+    if(!running){ running=true; requestAnimationFrame(frame); }
+  }
+  function frame(){
+    curP+=(targetP-curP)*.08;
+    var d=(curP-.5)*26;
+    for(var i=0;i<pars.length;i++){ pars[i].style.transform='translate3d(0,'+(d*(i%2===0?1:-1)).toFixed(2)+'px,0)'; }
+    if(Math.abs(targetP-curP)>.0006){ requestAnimationFrame(frame); } else { running=false; }
+  }
+  if(matchMedia('(min-width:561px)').matches){
+    computeT(); window.addEventListener('scroll',computeT,{passive:true}); window.addEventListener('resize',computeT);
+  }
+})();
+</script>
+</body>
+</html>

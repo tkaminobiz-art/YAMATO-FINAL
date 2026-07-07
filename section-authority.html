@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>やまと｜権威バーン＋流れるバナー（図面）</title>
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4F1EA; --paper2:#EFEAE0; --ink:#241F1B; --ink2:#5A544C; --line:#D8D1C4;
+    --green:#486B00; --lime:#A2C523; --amber:#C4851F;
+    --fh:"dnp-shuei-gothic-gin-std","Noto Sans JP",sans-serif;
+    --fn:"Inter","Noto Sans JP",sans-serif;
+    --fb:"Noto Sans JP",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--paper);color:var(--ink);font-family:var(--fb);-webkit-font-smoothing:antialiased;line-height:1.8;overflow-x:hidden}
+
+  .authority{padding:clamp(64px,9vw,132px) 0 clamp(48px,6vw,88px);
+    background:
+      radial-gradient(120% 90% at 50% 0%, #FAF7F0 0%, var(--paper) 46%);}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,56px);text-align:center}
+
+  .eyebrow{font-family:var(--fn);font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--green);
+    display:inline-flex;align-items:center;gap:14px;margin-bottom:clamp(18px,3vw,34px)}
+  .eyebrow::before,.eyebrow::after{content:"";width:34px;height:1px;background:var(--line)}
+
+  .bignum{display:flex;align-items:baseline;justify-content:center;gap:.06em;line-height:.9;margin-bottom:6px}
+  .count{font-family:var(--fn);font-weight:800;font-size:clamp(6rem,20vw,15.5rem);letter-spacing:-.02em;color:var(--ink);
+    font-variant-numeric:tabular-nums}
+  .unit{font-family:var(--fh);font-weight:700;font-size:clamp(1.8rem,5vw,3.6rem);color:var(--green);transform:translateY(-.15em)}
+
+  .lead{font-family:var(--fh);font-weight:700;font-size:clamp(1.5rem,3.6vw,2.6rem);letter-spacing:.03em;color:var(--ink);
+    line-height:1.5;margin:clamp(14px,2vw,22px) auto 0;max-width:22ch}
+  .sub{font-family:var(--fb);font-size:clamp(.95rem,1.4vw,1.08rem);color:var(--ink2);margin-top:16px}
+
+  .stats{display:flex;justify-content:center;flex-wrap:wrap;gap:0;margin-top:clamp(34px,5vw,56px)}
+  .stat{padding:6px clamp(22px,3.4vw,46px);position:relative}
+  .stat + .stat::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:1px;height:40px;background:var(--line)}
+  .stat .n{font-family:var(--fn);font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);color:var(--green);font-variant-numeric:tabular-nums;display:block}
+  .stat .l{font-family:var(--fb);font-size:12px;color:var(--ink2);letter-spacing:.04em;margin-top:4px;display:block}
+
+  /* 流れるバナー */
+  .marquee{margin-top:clamp(48px,6vw,86px);width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+  .track{display:flex;gap:22px;width:max-content;padding:8px clamp(11px,1.5vw,22px);animation:flow 42s linear infinite}
+  .marquee:hover .track{animation-play-state:paused}
+  @keyframes flow{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  .tile{position:relative;flex:0 0 auto;width:clamp(240px,24vw,320px);aspect-ratio:4/5;border-radius:6px;overflow:hidden;
+    text-decoration:none;color:#fff;box-shadow:0 12px 34px rgba(36,31,27,.14);display:block;isolation:isolate}
+  .tile__img{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.02);transition:transform .8s cubic-bezier(.16,1,.3,1);
+    filter:saturate(.96) contrast(1.02)}
+  .tile::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(20,17,13,.82) 0%,rgba(20,17,13,.28) 42%,rgba(20,17,13,.05) 70%)}
+  .tile:hover .tile__img{transform:scale(1.09)}
+  .tile__body{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:20px 20px 22px;text-align:left}
+  .tile__en{font-family:var(--fn);font-size:10.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,241,234,.82)}
+  .tile__jp{font-family:var(--fh);font-weight:700;font-size:clamp(1.15rem,1.6vw,1.4rem);letter-spacing:.03em;margin-top:5px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .tile__jp svg{width:19px;height:19px;flex:0 0 auto;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+  .tile:hover .tile__jp svg{transform:translateX(5px)}
+
+  .cap{text-align:center;font-family:var(--fb);font-size:11.5px;color:var(--ink2);letter-spacing:.08em;margin-top:20px}
+
+  @media (prefers-reduced-motion:reduce){ .track{animation:none} .tile__img{transition:none} }
+</style>
+</head>
+<body>
+
+<section class="authority">
+  <div class="wrap">
+    <p class="eyebrow">Track Record ／ 創業からの実績</p>
+    <div class="bignum">
+      <span class="count" data-target="600">0</span><span class="unit">棟超</span>
+    </div>
+    <h2 class="lead">選ばれるのは、価格だけではありません。</h2>
+    <p class="sub">創業から、奈良でこれだけの家をつくってきました。</p>
+
+    <div class="stats">
+      <div class="stat"><span class="n">約150</span><span class="l">区画｜自社分譲（常時）</span></div>
+      <div class="stat"><span class="n">50</span><span class="l">組｜お客様の声</span></div>
+      <div class="stat"><span class="n">◯</span><span class="l">年｜創業</span></div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-label="関連ページ">
+    <div class="track" id="track">
+      <a class="tile" href="#voice"><span class="tile__img" style="background-image:url(assets/authority/voice.webp)"></span><span class="tile__body"><span class="tile__en">Voice</span><span class="tile__jp">お客様の声<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="tile" href="#land"><span class="tile__img" style="background-image:url(assets/authority/land.webp)"></span><span class="tile__body"><span class="tile__en">Land</span><span class="tile__jp">土地・分譲地<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="tile" href="#equipment"><span class="tile__img" style="background-image:url(assets/authority/equipment.webp)"></span><span class="tile__body"><span class="tile__en">Equipment</span><span class="tile__jp">標準装備<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="tile" href="#works"><span class="tile__img" style="background-image:url(assets/authority/works.webp)"></span><span class="tile__body"><span class="tile__en">Works</span><span class="tile__jp">施工事例<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="tile" href="#model"><span class="tile__img" style="background-image:url(assets/authority/model.webp)"></span><span class="tile__body"><span class="tile__en">Model House</span><span class="tile__jp">モデルハウス<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+    </div>
+  </div>
+  <p class="cap">← 自動で流れます／カーソルを乗せると止まります。各バナーから深いページへ</p>
+</section>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  /* バナーをシームレスループさせるため中身を複製 */
+  var track=document.getElementById('track');
+  if(track){ track.innerHTML += track.innerHTML; }
+
+  /* カウントアップ */
+  var els=document.querySelectorAll('.count');
+  function run(el){
+    var target=+el.getAttribute('data-target');
+    if(reduce){ el.textContent=target; return; }
+    var dur=1700, start=null;
+    function tick(now){
+      if(!start) start=now;
+      var p=Math.min((now-start)/dur,1);
+      var eased=1-Math.pow(1-p,3);
+      el.textContent=Math.round(eased*target);
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ run(e.target); io.unobserve(e.target); } });
+    },{threshold:.5});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(run); }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>モデルハウス「やまとランド」｜株式会社やまと不動産</title>
+<meta name="description" content="奈良市左京のモデルハウス「やまとランド」。標準仕様のまま建てています。見学無料・ご予約制。奈良県奈良市左京1-8-8。">
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
+<style>
+  /* ============ 実物大の標準（model.html 図面 v1）============
+     コンセプト:「モデルハウス＝標準仕様のまま建てた実物大カタログ」。
+     左京25MPの実写でルームツアーし、各室に「これも標準」チップ（実型番）を打つ。
+     第8の視覚言語: 室名札(部屋プレート) × 標準チップ × 実写大判。
+     Leafletあり=Lenis非搭載(サイト規約)。アンバー=来場予約のみ。 */
+  :root{
+    --paper:#F4F1EA; --paper2:#FAFAF7; --dark:#12160c;
+    --ink:#241F1B; --ink2:#5A544C; --ink3:#8D857A;
+    --line:rgba(36,31,27,.12); --line2:rgba(36,31,27,.2);
+    --gold:#C9A24B; --goldhair:rgba(201,162,75,.5);
+    --green:#486B00; --green-deep:#2E4600; --lime:#A2C523; --amber:#C4851F;
+    --cream:#F4F1EA;
+    --fh:"dnp-shuei-gothic-gin-std","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    --fb:"Inter","Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
+    --fn:"Inter","Noto Sans JP",sans-serif;
+    --fm:"Shippori Mincho","Hiragino Mincho ProN",serif;
+    --ease:cubic-bezier(.16,1,.3,1); --eases:cubic-bezier(.22,1,.36,1);
+    --header-h:clamp(60px,7vw,80px);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{background:var(--paper);-webkit-text-size-adjust:100%}
+  html,body{word-break:normal;overflow-wrap:normal;line-break:strict}
+  body{font-family:var(--fb);color:var(--ink);background:var(--paper);
+    -webkit-font-smoothing:antialiased;font-feature-settings:"palt";overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  ::selection{background:#EDF2D5}
+
+  /* ============ ヘッダー（透過→白地） ============ */
+  .hd{position:fixed;top:0;left:0;right:0;z-index:80;height:var(--header-h);
+    display:flex;align-items:center;gap:clamp(14px,2vw,26px);
+    padding:0 clamp(16px,3vw,40px) 0 clamp(20px,4.5vw,60px);
+    color:var(--cream);transition:background .5s var(--ease),color .4s var(--ease),box-shadow .5s var(--ease)}
+  .hd::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:linear-gradient(to bottom,rgba(16,20,10,.44),rgba(16,20,10,0));
+    opacity:1;transition:opacity .5s var(--ease)}
+  .hd.is-solid{background:rgba(250,250,247,.92);color:var(--ink);
+    -webkit-backdrop-filter:saturate(1.05) blur(9px);backdrop-filter:saturate(1.05) blur(9px);
+    box-shadow:0 1px 0 var(--line)}
+  .hd.is-solid::before{opacity:0}
+  .hd__brand{display:flex;align-items:center;gap:11px;line-height:1}
+  .hd__mark{height:clamp(26px,3.4vw,32px);width:auto;display:block}
+  .hd__kk{display:flex;flex-direction:column;gap:3px;font-family:var(--fh);font-weight:500;font-size:.5rem;letter-spacing:.16em;opacity:.85}
+  .hd__jp{font-family:var(--fh);font-weight:500;letter-spacing:.1em;font-size:clamp(1rem,.9rem + .6vw,1.26rem)}
+    .hd__back{margin-left:auto;font-family:var(--fh);font-weight:500;font-size:.82rem;letter-spacing:.05em;
+    opacity:.9;display:inline-flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid transparent;transition:.3s var(--ease)}
+  .hd__back:hover{opacity:1;border-bottom-color:currentColor}
+  .hd__back svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;fill:none;transform:rotate(180deg)}
+  .hd__cta{display:inline-flex;align-items:center;gap:9px;background:var(--amber);color:#fff;
+    font-family:var(--fh);font-weight:500;font-size:.85rem;letter-spacing:.04em;
+    padding:11px 22px;border-radius:4px;line-height:1;white-space:nowrap;
+    box-shadow:0 6px 22px rgba(196,133,31,.28);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .hd__cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(196,133,31,.36)}
+  .hd__cta svg{width:13px;height:13px;stroke:#fff;stroke-width:2;fill:none}
+  @media(max-width:560px){ .hd__back{display:none} .hd__kk{display:none} }
+
+  /* ============ ① ヒーロー（ゴールデンアワーの実物） ============ */
+  .hero{position:relative;min-height:clamp(520px,86vh,860px);display:flex;align-items:flex-end;
+    overflow:hidden;isolation:isolate;background:var(--dark);color:var(--cream)}
+  .hero__bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+  .hero__bg img{width:100%;height:100%;object-fit:cover;object-position:center 55%;
+    transform:scale(1.05);animation:herodrift 28s var(--eases) infinite alternate}
+  @keyframes herodrift{from{transform:scale(1.05)}to{transform:scale(1.11)}}
+  .hero__scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(to top,rgba(12,10,6,.74) 0%,rgba(12,10,6,.2) 40%,rgba(12,10,6,.08) 66%,rgba(12,10,6,.32) 100%)}
+  .hero__in{position:relative;z-index:2;width:100%;max-width:1240px;margin:0 auto;
+    padding:0 clamp(20px,5vw,64px) clamp(48px,8vh,96px)}
+  .hero .eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--fn);font-size:.64rem;font-weight:500;
+    letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:clamp(16px,2.4vh,26px);
+    opacity:0;transform:translateY(16px);transition:opacity .9s var(--eases),transform .9s var(--eases)}
+  .hero .eyebrow::before{content:"";width:30px;height:1px;background:var(--gold);opacity:.85}
+  .hero h1{font-family:var(--fm);font-weight:600;letter-spacing:.05em;line-height:1.4;
+    font-size:clamp(2rem,1.2rem + 3.4vw,3.8rem);color:var(--cream);text-shadow:0 2px 28px rgba(6,8,4,.6);
+    opacity:0;transform:translateY(24px);transition:opacity 1s var(--eases) .08s,transform 1s var(--eases) .08s}
+  .hero h1 small{display:block;font-family:var(--fh);font-weight:500;font-size:clamp(.95rem,.9rem + .5vw,1.2rem);
+    letter-spacing:.14em;color:rgba(244,241,234,.85);margin-bottom:14px}
+  .hero__lead{margin-top:clamp(16px,2.2vh,24px);font-size:clamp(.92rem,.88rem + .3vw,1.05rem);
+    line-height:2;letter-spacing:.04em;color:rgba(244,241,234,.88);max-width:34em;text-shadow:0 1px 12px rgba(6,8,4,.5);
+    opacity:0;transform:translateY(18px);transition:opacity 1s var(--eases) .18s,transform 1s var(--eases) .18s}
+  .hero__meta{display:flex;align-items:center;gap:clamp(14px,2.4vw,28px);flex-wrap:wrap;margin-top:clamp(22px,3.2vh,36px);
+    opacity:0;transform:translateY(16px);transition:opacity 1s var(--eases) .28s,transform 1s var(--eases) .28s}
+  .is-hin .eyebrow,.is-hin h1,.is-hin .hero__lead,.is-hin .hero__meta{opacity:1;transform:none}
+  .hmeta{display:inline-flex;align-items:center;gap:9px;font-size:.8rem;letter-spacing:.05em;color:rgba(244,241,234,.85)}
+  .hmeta b{font-family:var(--fb);font-weight:500;font-size:.66rem;letter-spacing:.1em;color:var(--gold);
+    border:1px solid rgba(201,162,75,.5);border-radius:3px;padding:.3em .65em}
+  .hero__cta{display:inline-flex;align-items:center;gap:12px;margin-top:clamp(24px,3.4vh,38px);
+    background:var(--amber);color:#fff;font-family:var(--fh);font-weight:500;font-size:1.02rem;letter-spacing:.04em;
+    padding:17px 36px;border-radius:5px;box-shadow:0 14px 40px rgba(196,133,31,.44);
+    transition:transform .5s var(--ease),box-shadow .5s var(--ease);
+    opacity:0;transform:translateY(16px)}
+  .is-hin .hero__cta{opacity:1;transform:none;transition:opacity 1s var(--eases) .38s,transform 1s var(--eases) .38s,box-shadow .5s var(--ease)}
+  .hero__cta:hover{transform:translateY(-3px)!important;box-shadow:0 20px 50px rgba(196,133,31,.55)}
+  .hero__cta svg{width:15px;height:15px;stroke:#fff;stroke-width:2;fill:none}
+
+  /* ============ ② 約束の帯 ============ */
+  .vow{position:relative;z-index:3;background:var(--paper);
+    margin-top:clamp(-40px,-3vw,-24px);
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    box-shadow:0 -34px 66px -28px rgba(0,0,0,.45)}
+  .vow__in{max-width:880px;margin:0 auto;text-align:center;
+    padding:clamp(56px,8vw,104px) clamp(22px,5vw,64px) clamp(40px,6vw,72px)}
+  .vow h2{font-family:var(--fh);font-weight:500;letter-spacing:.05em;line-height:1.7;
+    font-size:clamp(1.3rem,1.05rem + 1.2vw,1.9rem)}
+  .vow h2 em{font-style:normal;color:var(--green-deep)}
+  .vow p{margin:clamp(16px,2.4vw,24px) auto 0;max-width:36em;font-size:clamp(.92rem,.88rem + .28vw,1.04rem);
+    line-height:2.1;letter-spacing:.04em;color:var(--ink2)}
+
+  /* ============ ③ ルームツアー ============ */
+  .tour{max-width:1280px;margin:0 auto;padding:clamp(16px,3vw,40px) clamp(18px,4vw,56px) clamp(72px,9vw,120px)}
+  .room{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(22px,3.4vw,56px);
+    align-items:center;padding:clamp(36px,5.5vw,80px) 0}
+  .room+.room{border-top:1px solid var(--line)}
+  .room:nth-child(even){grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+  .room:nth-child(even) .room__media{order:2}
+  @media(max-width:860px){
+    .room,.room:nth-child(even){grid-template-columns:1fr;gap:clamp(18px,4vw,26px)}
+    .room:nth-child(even) .room__media{order:0}
+  }
+  .room__media{display:grid;gap:12px;
+    opacity:0;transform:translateY(26px);transition:opacity .95s var(--eases),transform 1.05s var(--eases)}
+  .room.is-in .room__media{opacity:1;transform:none}
+  .room__ph{position:relative;overflow:hidden;border-radius:8px;border:1px solid var(--line);
+    box-shadow:0 24px 54px -30px rgba(60,48,30,.5)}
+  .room__ph img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;
+    transform:scale(1.02);transition:transform 1.3s var(--eases);filter:saturate(.98)}
+  .room__ph:hover img{transform:scale(1.06)}
+  .room__sub{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .room__sub .room__ph img{aspect-ratio:4/3}
+  .room__sub .room__ph:only-child{grid-column:1/-1}
+  .room__body{opacity:0;transform:translateY(22px);transition:opacity .95s var(--eases) .1s,transform 1.05s var(--eases) .1s}
+  .room.is-in .room__body{opacity:1;transform:none}
+  /* 室名札（このページの署名的意匠） */
+  .plate{display:inline-flex;align-items:stretch;border:1px solid var(--line2);border-radius:5px;overflow:hidden;
+    background:var(--paper2);box-shadow:0 8px 20px -12px rgba(60,48,30,.35)}
+  .plate__no{display:grid;place-items:center;padding:10px 12px;background:var(--green-deep);color:#F4F1EA;
+    font-family:var(--fn);font-weight:400;font-size:.8rem;letter-spacing:.06em;font-variant-numeric:tabular-nums}
+  .plate__t{display:flex;flex-direction:column;justify-content:center;gap:3px;padding:8px 16px 8px 14px}
+  .plate__jp{font-family:var(--fh);font-weight:500;font-size:1rem;letter-spacing:.08em;line-height:1}
+  .plate__en{font-family:var(--fn);font-size:.54rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3)}
+  .room__txt{margin-top:clamp(16px,2.2vw,22px);font-size:clamp(.92rem,.88rem + .25vw,1rem);
+    line-height:2.1;letter-spacing:.04em;color:var(--ink2);max-width:34em}
+  /* 「これも標準」チップ */
+  .std{margin-top:clamp(16px,2.2vw,22px);display:flex;flex-wrap:wrap;gap:8px}
+  .std__k{width:100%;font-family:var(--fn);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:2px}
+  .chip{display:inline-flex;align-items:center;gap:7px;font-family:var(--fb);font-weight:500;font-size:.78rem;
+    letter-spacing:.03em;color:var(--green-deep);border:1px solid rgba(72,107,0,.38);border-radius:100px;
+    padding:.5em .95em;background:rgba(72,107,0,.04);
+    opacity:0;transform:translateY(10px);transition:opacity .6s var(--eases),transform .7s var(--eases)}
+  .room.is-in .chip{opacity:1;transform:none}
+  .chip::before{content:"";width:13px;height:13px;flex:0 0 auto;border-radius:50%;
+    background:radial-gradient(circle at 50% 42%,#D9F09A 20%,var(--lime) 55%,var(--green) 100%)}
+
+  /* 息継ぎの全幅 */
+  .breath{position:relative;overflow:hidden;margin:clamp(8px,2vw,24px) 0}
+  .breath img{width:100%;height:clamp(300px,48vw,560px);object-fit:cover;filter:saturate(.98)}
+  .breath::after{content:"";position:absolute;inset:0;pointer-events:none;
+    box-shadow:inset 0 -40px 60px -40px rgba(20,16,10,.35),inset 0 40px 60px -40px rgba(20,16,10,.2)}
+  .breath figcaption{position:absolute;left:clamp(20px,4vw,48px);bottom:clamp(16px,3vw,30px);
+    font-family:var(--fm);font-weight:500;font-size:clamp(.95rem,.9rem + .4vw,1.2rem);letter-spacing:.1em;
+    color:var(--cream);text-shadow:0 2px 18px rgba(6,8,4,.7)}
+
+  /* ============ ④ 標準の台帳（型番サマリ） ============ */
+  .ledger{background:var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .ledger__in{max-width:1100px;margin:0 auto;padding:clamp(52px,7vw,96px) clamp(20px,5vw,64px)}
+  .ledger__t{font-family:var(--fh);font-weight:500;font-size:clamp(1.15rem,1.05rem + .6vw,1.5rem);letter-spacing:.05em;
+    display:flex;align-items:baseline;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--goldhair)}
+  .ledger__t i{font-style:normal;font-family:var(--fn);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)}
+  .ledger__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:0 clamp(20px,3vw,40px);margin-top:6px}
+  .lrow{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+    padding:13px 2px;border-bottom:1px solid var(--line)}
+  .lrow dt{font-size:.78rem;letter-spacing:.05em;color:var(--ink3)}
+  .lrow dd{font-family:var(--fb);font-weight:500;font-size:.88rem;letter-spacing:.02em;color:var(--ink);text-align:right}
+  .lrow dd b{font-family:var(--fn);font-variant-numeric:tabular-nums}
+  .ledger__note{margin-top:18px;font-size:.7rem;color:var(--ink3);letter-spacing:.04em;line-height:1.9}
+
+  /* ============ ⑤ アクセス・受付 ============ */
+  .access{max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,110px) clamp(18px,4vw,56px)}
+  .access__grid{display:grid;grid-template-columns:minmax(0,1fr) clamp(320px,34vw,460px);gap:clamp(24px,3.4vw,52px);align-items:stretch}
+  @media(max-width:900px){ .access__grid{grid-template-columns:1fr} }
+  .mapbox{position:relative;min-height:clamp(300px,40vw,440px);border-radius:10px;overflow:hidden;isolation:isolate;
+    border:1px solid var(--line2);box-shadow:inset 0 0 40px rgba(36,31,27,.08),0 18px 40px -26px rgba(36,31,27,.4);
+    background:
+      repeating-linear-gradient(0deg,rgba(36,31,27,.05) 0 1px,transparent 1px 28px),
+      repeating-linear-gradient(90deg,rgba(36,31,27,.05) 0 1px,transparent 1px 28px),
+      var(--paper2)}
+  #map{position:absolute;inset:0;z-index:0;background:transparent}
+  .leaflet-tile-pane{filter:sepia(14%) saturate(70%) brightness(103%) contrast(90%)}
+  .map-glaze{position:absolute;inset:0;z-index:500;pointer-events:none;background:#F4F1EA;opacity:.12;mix-blend-mode:multiply}
+  .leaflet-control-attribution{font-size:.54rem!important;background:rgba(244,241,234,.75)!important;color:var(--ink3)!important}
+  .leaflet-control-attribution a{color:var(--ink2)!important}
+  .leaflet-control-zoom{border:1px solid var(--line2)!important;border-radius:6px!important;overflow:hidden;box-shadow:0 8px 20px -10px rgba(36,31,27,.35)!important}
+  .leaflet-control-zoom a{background:var(--paper2)!important;color:var(--ink)!important;border-bottom:1px solid var(--line)!important;font-family:var(--fn)!important}
+  .pin{position:relative;width:44px;height:44px;display:grid;place-items:center}
+  .pin::before{content:"";width:22px;height:22px;border-radius:50%;border:1.5px solid var(--green);background:rgba(244,241,234,.5)}
+  .pin::after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;
+    background:radial-gradient(circle at 50% 40%,#D9F09A 0%,var(--lime) 45%,var(--green) 100%);
+    box-shadow:0 0 8px 1px rgba(162,197,35,.5)}
+  .adesk{background:var(--paper2);border:1px solid var(--line);border-radius:10px;
+    box-shadow:0 20px 44px -28px rgba(60,48,30,.45);padding:clamp(22px,3vw,32px);display:flex;flex-direction:column}
+  .adesk__t{font-family:var(--fh);font-weight:500;font-size:clamp(1.05rem,1rem + .5vw,1.3rem);letter-spacing:.05em}
+  .adesk__rows{margin-top:clamp(14px,2vw,20px)}
+  .adrow{display:grid;grid-template-columns:84px minmax(0,1fr);gap:14px;padding:11px 2px;border-top:1px solid var(--line);
+    font-size:.88rem;letter-spacing:.03em;line-height:1.8}
+  .adrow dt{font-size:.72rem;color:var(--ink3);letter-spacing:.08em;padding-top:3px}
+  .adrow dd b{font-family:var(--fn);font-weight:500;font-variant-numeric:tabular-nums;font-size:1.15em}
+  .adesk__btn{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:auto;
+    background:var(--amber);color:#fff;font-family:var(--fh);font-weight:500;font-size:1rem;letter-spacing:.04em;
+    padding:17px 20px;border-radius:5px;min-height:54px;
+    box-shadow:0 12px 32px -12px rgba(196,133,31,.55);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .adesk__btn:hover{transform:translateY(-2px);box-shadow:0 18px 42px -14px rgba(196,133,31,.65)}
+  .adesk__btn svg{width:15px;height:15px;stroke:#fff;stroke-width:2;fill:none}
+  .adesk__note{margin-top:12px;font-size:.7rem;color:var(--ink3);letter-spacing:.04em;text-align:center;line-height:1.8}
+
+  /* ============ 奥付 ============ */
+  .colo{background:var(--dark);color:rgba(244,241,234,.6)}
+  .colo__in{max-width:1240px;margin:0 auto;padding:clamp(26px,3.6vw,40px) clamp(20px,5vw,64px) calc(clamp(30px,3.6vw,44px) + env(safe-area-inset-bottom))}
+  .colo p{font-size:.7rem;line-height:2.1;letter-spacing:.05em}
+  .colo b{font-weight:500;color:rgba(244,241,234,.8)}
+
+  /* モバイル追従CV */
+  .stickycv{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;
+    padding:10px clamp(14px,4vw,20px) calc(10px + env(safe-area-inset-bottom));
+    background:rgba(250,250,247,.92);-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px);
+    box-shadow:0 -8px 30px rgba(20,16,10,.14);
+    transform:translateY(110%);transition:transform .55s var(--ease)}
+  .stickycv.is-show{transform:none}
+  .stickycv a{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+    background:var(--amber);color:#fff;font-family:var(--fh);font-weight:500;font-size:.95rem;
+    letter-spacing:.04em;padding:15px 20px;border-radius:4px;box-shadow:0 10px 26px -10px rgba(196,133,31,.55)}
+  .stickycv a svg{width:14px;height:14px;stroke:#fff;stroke-width:2;fill:none}
+  @media(max-width:900px){ .stickycv{display:block} }
+
+  @media (prefers-reduced-motion:reduce){
+    .hero__bg img{animation:none}
+    .hero .eyebrow,.hero h1,.hero__lead,.hero__meta,.hero__cta{opacity:1!important;transform:none!important;transition:none}
+    .room__media,.room__body,.chip{opacity:1!important;transform:none!important;transition:none}
+    .stickycv{transition:none}
+  }
+
+  /* 奥付ブランド（ロゴロックアップ） */
+  .colo__brand{display:flex;align-items:center;gap:11px;border-top:1px solid rgba(244,241,234,.14);
+    padding-top:clamp(20px,2.8vw,28px);margin-bottom:13px}
+  .colo__brand img{height:24px;width:auto;display:block}
+  .colo__brand b{font-family:var(--fh);font-weight:500;font-size:.88rem;letter-spacing:.1em;color:rgba(244,241,234,.88)}
+  .colo p{border-top:none!important;padding-top:0!important}
+</style>
+</head>
+<body>
+
+<header class="hd" id="hd">
+  <a class="hd__brand" href="index.html" aria-label="やまと不動産 トップへ">
+    <img class="hd__mark" src="assets/brand/yamato_mark.svg" alt="">
+    <span class="hd__kk"><span>株式</span><span>会社</span></span>
+    <span class="hd__jp">やまと不動産</span>
+  </a>
+  <a class="hd__back" href="index.html"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>トップへ戻る</a>
+  <a class="hd__cta" href="contact.html?type=reserve">来場のご予約<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</header>
+
+<!-- ① ヒーロー -->
+<section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true"><img src="assets/model/hero_golden.jpg" alt="" fetchpriority="high"></div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <div class="hero__in">
+    <span class="eyebrow">Model House ／ モデルハウス</span>
+    <h1><small>モデルハウス</small>やまとランド</h1>
+    <p class="hero__lead">標準仕様のまま建てた、実物のモデルハウスです。ここで見たものが、そのままあなたの家の標準になります。</p><!-- 仮コピー: copywriterパスで確定 -->
+    <div class="hero__meta">
+      <span class="hmeta"><b>見学無料</b></span>
+      <span class="hmeta"><b>ご予約制</b></span>
+      <span class="hmeta">奈良県奈良市左京1-8-8</span>
+      <span class="hmeta">定休日：火曜・水曜</span>
+    </div>
+    <a class="hero__cta" href="contact.html?type=reserve">見学を予約する<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<!-- ② 約束の帯 -->
+<section class="vow">
+  <div class="vow__in">
+    <h2>モデルハウスは、<em>標準仕様のまま</em>建てています。</h2>
+    <p>大きな展示場は持たず、分譲地に建てた家をそのままモデルハウスにしています。だから、写真と実物に違いはありません。オプションで飾った「見せるための家」ではなく、この仕様のまま、お引き渡しできる家です。</p><!-- 仮コピー: 承認済みフレーズに接地 -->
+  </div>
+</section>
+
+<!-- ③ ルームツアー -->
+<main class="tour" id="tour">
+
+  <section class="room">
+    <div class="room__media">
+      <figure class="room__ph"><img src="assets/model/living08.jpg" alt="吹き抜けのあるLDK" loading="lazy"></figure>
+      <div class="room__sub">
+        <figure class="room__ph"><img src="assets/model/living10.jpg" alt="間接照明のリビング" loading="lazy"></figure>
+        <figure class="room__ph"><img src="assets/model/living11.jpg" alt="一枚板のダイニング" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="room__body">
+      <span class="plate"><span class="plate__no">01</span><span class="plate__t"><span class="plate__jp">リビング・ダイニング</span><span class="plate__en">Living / Dining</span></span></span>
+      <p class="room__txt">家族団らんが実現できる、広々としたリビングです。吹き抜けから光が落ち、天井高いっぱいのハイドアが空間をひと続きに見せます。</p>
+      <div class="std">
+        <span class="std__k">これも標準</span>
+        <span class="chip">ハイドア 2.3m</span>
+        <span class="chip">Low-E複層ガラス</span>
+        <span class="chip">省エネ照明</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="room">
+    <div class="room__media">
+      <figure class="room__ph"><img src="assets/model/kitchen07.jpg" alt="クリナップ ステディアのキッチン全景" loading="lazy"></figure>
+      <div class="room__sub">
+        <figure class="room__ph"><img src="assets/model/kitchen05.jpg" alt="一枚板カウンター" loading="lazy"></figure>
+        <figure class="room__ph"><img src="assets/model/mizu02.jpg" alt="パントリー" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="room__body">
+      <span class="plate"><span class="plate__no">02</span><span class="plate__t"><span class="plate__jp">キッチン</span><span class="plate__en">Kitchen</span></span></span>
+      <p class="room__txt">クリナップ「ステディア」を標準仕様に。対面キッチンで開放感を持たせ、隣にはパントリーを設けて、食品や調味料をすっきり収納できます。</p>
+      <div class="std">
+        <span class="std__k">これも標準</span>
+        <span class="chip">クリナップ ステディア</span>
+        <span class="chip">カップボード</span>
+        <span class="chip">パントリー</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="room">
+    <div class="room__media">
+      <figure class="room__ph"><img src="assets/model/washitsu01.jpg" alt="半畳縁なし畳の和室" loading="lazy"></figure>
+      <div class="room__sub">
+        <figure class="room__ph"><img src="assets/model/washitsu03.jpg" alt="和室からLDKへの繋がり" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="room__body">
+      <span class="plate"><span class="plate__no">03</span><span class="plate__t"><span class="plate__jp">和室</span><span class="plate__en">Japanese room</span></span></span>
+      <p class="room__txt">半畳縁なしの畳を使った、リビングと地続きの和室です。客間にも、子どものお昼寝にも使えます。</p>
+      <div class="std">
+        <span class="std__k">これも標準</span>
+        <span class="chip">半畳縁なし畳</span>
+      </div>
+    </div>
+  </section>
+
+  <figure class="breath">
+    <img src="assets/model/entry02.jpg" alt="吹き抜けの階段ホール" loading="lazy">
+    <figcaption>この吹き抜けも、見学できます。</figcaption>
+  </figure>
+
+  <section class="room">
+    <div class="room__media">
+      <figure class="room__ph"><img src="assets/model/entry04.jpg" alt="玄関ホール" loading="lazy"></figure>
+      <div class="room__sub">
+        <figure class="room__ph"><img src="assets/model/ext08.jpg" alt="玄関ポーチ" loading="lazy"></figure>
+        <figure class="room__ph"><img src="assets/model/entry06.jpg" alt="階段" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="room__body">
+      <span class="plate"><span class="plate__no">04</span><span class="plate__t"><span class="plate__jp">玄関・階段</span><span class="plate__en">Entrance</span></span></span>
+      <p class="room__txt">玄関ドアは、採光機能つきの親子ドアです。日中も明るい玄関になります。ポーチタイルは耐凍・汚れ防止仕様です。</p>
+      <div class="std">
+        <span class="std__k">これも標準</span>
+        <span class="chip">親子ドア（採光）</span>
+        <span class="chip">耐凍ポーチタイル</span>
+        <span class="chip">機能門柱</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="room">
+    <div class="room__media">
+      <figure class="room__ph"><img src="assets/model/mizu05.jpg" alt="TOTO サザナの浴室" loading="lazy"></figure>
+      <div class="room__sub">
+        <figure class="room__ph"><img src="assets/model/mizu04.jpg" alt="三面鏡の洗面化粧台" loading="lazy"></figure>
+        <figure class="room__ph"><img src="assets/model/mizu03.jpg" alt="ランドリールーム" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="room__body">
+      <span class="plate"><span class="plate__no">05</span><span class="plate__t"><span class="plate__jp">水回り</span><span class="plate__en">Bath / Sanitary</span></span></span>
+      <p class="room__txt">浴室はTOTO「サザナ」、1.25坪サイズが標準です。保温構造の浴槽で、あとから入っても温かい。洗面は三面鏡と広い収納を標準にしています。</p>
+      <div class="std">
+        <span class="std__k">これも標準</span>
+        <span class="chip">TOTO サザナ 1.25坪</span>
+        <span class="chip">保温浴槽</span>
+        <span class="chip">三面鏡洗面</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="room">
+    <div class="room__media">
+      <figure class="room__ph"><img src="assets/model/ext04.jpg" alt="ヘーベルパワーボードの外壁と木格子" loading="lazy"></figure>
+      <div class="room__sub">
+        <figure class="room__ph"><img src="assets/model/ext05.jpg" alt="外観全景" loading="lazy"></figure>
+        <figure class="room__ph"><img src="assets/model/room03.jpg" alt="寝室" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="room__body">
+      <span class="plate"><span class="plate__no">06</span><span class="plate__t"><span class="plate__jp">外壁・見えない性能</span><span class="plate__en">Exterior / Structure</span></span></span>
+      <p class="room__txt">外壁は旭化成のヘーベルパワーボード。断熱・遮音・防災に優れた耐久性のある外壁材です。壁の中には吹付断熱アクアフォーム、構造には制震ダンパー「ミライエ」。見えないところこそ、標準で固めています。</p>
+      <div class="std">
+        <span class="std__k">これも標準</span>
+        <span class="chip">ヘーベルパワーボード</span>
+        <span class="chip">アクアフォーム</span>
+        <span class="chip">制震 ミライエ</span>
+        <span class="chip">軽量瓦 全6色</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ④ 標準の台帳 -->
+<section class="ledger">
+  <div class="ledger__in">
+    <h2 class="ledger__t">この家の標準仕様 <i>Standard specifications</i></h2>
+    <dl class="ledger__grid">
+      <div class="lrow"><dt>キッチン</dt><dd>クリナップ ステディア</dd></div>
+      <div class="lrow"><dt>カップボード</dt><dd>標準</dd></div>
+      <div class="lrow"><dt>浴室</dt><dd>TOTO サザナ <b>1.25</b>坪</dd></div>
+      <div class="lrow"><dt>洗面化粧台</dt><dd>三面鏡・広収納</dd></div>
+      <div class="lrow"><dt>断熱</dt><dd>吹付 アクアフォーム</dd></div>
+      <div class="lrow"><dt>サッシ</dt><dd>Low-E複層ガラス</dd></div>
+      <div class="lrow"><dt>外壁</dt><dd>旭化成 ヘーベルパワーボード</dd></div>
+      <div class="lrow"><dt>制震</dt><dd>住友ゴム ミライエ</dd></div>
+      <div class="lrow"><dt>内装建具</dt><dd>ハイドア <b>2.3</b>m</dd></div>
+      <div class="lrow"><dt>屋根</dt><dd>軽量瓦 全<b>6</b>色</dd></div>
+      <div class="lrow"><dt>構造</dt><dd>ハイブリッド工法（在来比 約<b>1.5</b>倍）</dd></div>
+      <div class="lrow"><dt>地盤改良費</dt><dd>必要時 当社負担</dd></div>
+    </dl>
+    <p class="ledger__note">※ 掲載の仕様は現サイト公開情報にもとづきます。時期により変更となる場合があります。詳しくは現地でご確認ください。</p>
+  </div>
+</section>
+
+<!-- ⑤ アクセス・受付 -->
+<section class="access">
+  <div class="access__grid">
+    <div class="mapbox">
+      <div id="map"></div>
+      <div class="map-glaze" aria-hidden="true"></div>
+    </div>
+    <div class="adesk">
+      <h2 class="adesk__t">ご来場のご案内</h2>
+      <dl class="adesk__rows">
+        <div class="adrow"><dt>名称</dt><dd>モデルハウス「やまとランド」</dd></div>
+        <div class="adrow"><dt>所在地</dt><dd>奈良県奈良市左京1-8-8</dd></div>
+        <div class="adrow"><dt>見学</dt><dd>無料・ご予約制</dd></div>
+        <div class="adrow"><dt>電話</dt><dd><b>0742-36-1123</b><br>受付 9:00〜19:00｜火曜・水曜定休</dd></div>
+      </dl>
+      <a class="adesk__btn" href="contact.html?type=reserve">見学を予約する<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <p class="adesk__note">当日のご案内が難しい場合があります。ご予約いただけると確実です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 奥付 -->
+<footer class="colo">
+  <div class="colo__in">
+    <div class="colo__brand"><img src="assets/brand/yamato_mark.svg" alt=""><b>株式会社やまと不動産</b></div>
+    <p>
+      <b>株式会社やまと不動産</b>（奈良県奈良市大宮町1丁目6番21）　宅地建物取引業 国土交通大臣（1）第10516号<br>
+      モデルハウス：奈良県奈良市左京1-8-8　お電話：0742-36-1123（受付 9:00〜19:00｜定休日：火曜・水曜）<br>
+      地図：地理院タイル（国土地理院）
+    </p>
+  </div>
+</footer>
+
+<div class="stickycv" id="stickycv" aria-hidden="true">
+  <a href="contact.html?type=reserve">見学を予約する<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<script>
+(function(){
+  var d=document;
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+  /* ヘッダー透過⇄白地 */
+  var hd=d.getElementById('hd'), hero=d.getElementById('hero');
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ hd.classList.toggle('is-solid',!es[0].isIntersecting); },
+      {rootMargin:'-70px 0px 0px 0px'}).observe(hero);
+  }
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ hero.classList.add('is-hin'); }); });
+
+  /* ルームツアーのリビール（部屋単位・チップは時差） */
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
+    },{threshold:.18,rootMargin:'0px 0px -6% 0px'});
+    d.querySelectorAll('.room').forEach(function(r){
+      r.querySelectorAll('.chip').forEach(function(c,i){ c.style.transitionDelay=(.35+i*.09)+'s'; });
+      io.observe(r);
+    });
+  } else {
+    d.querySelectorAll('.room').forEach(function(r){ r.classList.add('is-in'); });
+  }
+
+  /* アクセス地図（やまとランド＝左京1-8-8） */
+  if(window.L){
+    var LAT=34.710045, LNG=135.800079;
+    var map=L.map('map',{zoomControl:true,attributionControl:true,
+      minZoom:11,maxZoom:17,dragging:fine,scrollWheelZoom:false,touchZoom:true});
+    L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',{
+      attribution:'<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>',
+      maxZoom:17,keepBuffer:2}).addTo(map);
+    var ic=L.divIcon({className:'',html:'<span class="pin"></span>',iconSize:[44,44],iconAnchor:[22,22]});
+    L.marker([LAT,LNG],{icon:ic}).addTo(map);
+    map.setView([LAT,LNG],15);
+  }
+
+  /* 追従CV */
+  var cv=d.getElementById('stickycv');
+  window.addEventListener('scroll',function(){
+    var on=window.scrollY>innerHeight*.7;
+    cv.classList.toggle('is-show',on); cv.setAttribute('aria-hidden',on?'false':'true');
+  },{passive:true});
+})();
+</script>
+</body>
+</html>

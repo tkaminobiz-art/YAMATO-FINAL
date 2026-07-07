@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Higgsfield 3D 実証 — やまとの家 GLB</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js" integrity="sha384-Ftcjj/GNLxPvzNDftO/oryXB9aGxsGZY9JGqsXG0uUKgQDl9RfDgsx9NJ/4IVNPe" crossorigin="anonymous"></script>
+<style>
+  body{margin:0;background:radial-gradient(120% 90% at 50% 20%,#fff,#F3F1EA 55%,#E9E6DC 100%);font-family:"Inter","Noto Sans JP",sans-serif;color:#2B2B2B}
+  .tag{position:fixed;top:16px;left:16px;z-index:10;background:rgba(20,24,14,.72);color:#fff;font-size:12px;letter-spacing:.14em;padding:6px 12px;border-radius:100px}
+  model-viewer{width:100vw;height:100vh;--poster-color:transparent}
+  .cap{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:10;background:rgba(20,24,14,.6);color:#fff;font-size:12px;letter-spacing:.06em;padding:7px 15px;border-radius:100px}
+</style>
+</head>
+<body>
+  <div class="tag">HIGGSFIELD multi_image_to_3d — 左京モデルハウス 実写4枚(背景除去)から・高精細版</div>
+  <model-viewer
+    src="assets/sakyo-house-v2.glb"
+    alt="やまとの家 3Dモデル"
+    camera-controls
+    auto-rotate
+    auto-rotate-delay="0"
+    rotation-per-second="24deg"
+    shadow-intensity="1"
+    shadow-softness="0.8"
+    exposure="1.05"
+    camera-orbit="-32deg 74deg auto"
+    interaction-prompt="none">
+  </model-viewer>
+  <div class="cap">ドラッグで360° / やまとの実写3アングルから生成した実物3D</div>
+</body>
+</html>

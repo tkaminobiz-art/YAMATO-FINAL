@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0">
+<title>スクロール連動デモ｜3Dモデルをスクロールで回す</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js" integrity="sha384-Ftcjj/GNLxPvzNDftO/oryXB9aGxsGZY9JGqsXG0uUKgQDl9RfDgsx9NJ/4IVNPe" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#FAFAF7;--ink:#2B2B2B;--light:#6B6B6B;--main:#486B00;--main-dark:#2E4600;--lime:#A2C523;
+    --fh:"dnp-shuei-gothic-gin-std","Noto Sans JP",sans-serif;--fb:"Inter","Noto Sans JP",sans-serif;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.9;-webkit-font-smoothing:antialiased}
+  .intro,.outro{min-height:70vh;display:flex;flex-direction:column;justify-content:center;padding:80px clamp(20px,6vw,90px);max-width:1100px;margin-inline:auto}
+  .kick{font-size:.72rem;font-weight:500;letter-spacing:.22em;color:var(--main);text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+  .kick::before{content:"";width:26px;height:1px;background:var(--lime)}
+  h1{font-family:var(--fh);font-weight:500;letter-spacing:.04em;line-height:1.3;font-size:clamp(1.8rem,1.2rem+3vw,3.4rem);margin-top:22px;text-wrap:balance}
+  h1 em{font-style:normal;color:var(--main)}
+  .lead{max-width:620px;margin-top:24px;font-size:clamp(1rem,.95rem+.3vw,1.1rem)}
+  .hint{margin-top:30px;font-size:.85rem;color:var(--light);letter-spacing:.06em;display:flex;align-items:center;gap:10px}
+  .hint .d{width:7px;height:7px;border-radius:50%;background:var(--lime);animation:pz 1.7s ease-in-out infinite}
+  @keyframes pz{0%,100%{opacity:.3}50%{opacity:1}}
+
+  .s3{height:460vh;position:relative}
+  .s3__stage{position:sticky;top:0;height:100vh;overflow:hidden;
+    background:radial-gradient(130% 90% at 50% 26%,#fff,#F3F1EA 58%,#E7E3D8 100%)}
+  model-viewer{width:100%;height:100%;--poster-color:transparent}
+  .s3__tag{position:absolute;top:26px;left:26px;z-index:5;font-size:.66rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+    background:rgba(20,24,14,.72);color:#fff;padding:6px 13px;border-radius:100px}
+  .s3__cap{position:absolute;left:50%;bottom:88px;transform:translateX(-50%);z-index:5;font-family:var(--fh);font-weight:500;
+    font-size:clamp(1rem,.85rem+.9vw,1.5rem);letter-spacing:.08em;color:var(--main-dark);text-align:center;transition:opacity .25s}
+  .s3__bar{position:absolute;left:clamp(20px,6vw,90px);right:clamp(20px,6vw,90px);bottom:56px;z-index:5;height:2px;background:rgba(43,43,43,.14)}
+  .s3__bar i{position:absolute;left:0;top:0;height:100%;width:0;background:var(--lime)}
+  .s3__cue{position:absolute;right:26px;bottom:28px;z-index:5;writing-mode:vertical-rl;font-size:.62rem;letter-spacing:.24em;color:var(--light)}
+  .foot{padding:36px 20px 70px;text-align:center;font-size:.74rem;color:var(--light);letter-spacing:.05em;line-height:1.9}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hint .d{animation:none}}
+</style>
+</head>
+<body>
+
+<section class="intro">
+  <span class="kick">Scroll Interaction — 3Dモデル連動</span>
+  <h1>スクロールで、<br><em>3Dの家がぐるっと回ります。</em></h1>
+  <p class="lead">こちらは実写から起こした3Dモデル（高精細版）を、スクロール量にカメラを連動させて滑らかに1周させる方式です。回転は完全に滑らかで、途中でAR「自分の土地に置く」へも展開できます。ターンテーブル（写真方式）との違いを見比べてください。</p>
+  <p class="hint"><span class="d"></span>下へスクロールしてください</p>
+</section>
+
+<section class="s3" id="s3">
+  <div class="s3__stage">
+    <span class="s3__tag">3Dモデル / スクロールでカメラ連動</span>
+    <model-viewer id="mv"
+      src="assets/sakyo-house-v2.glb"
+      alt="やまとの家 3Dモデル"
+      disable-zoom
+      interaction-prompt="none"
+      shadow-intensity="1" shadow-softness="0.85" exposure="1.05"
+      camera-orbit="-40deg 76deg auto" field-of-view="32deg">
+    </model-viewer>
+    <div class="s3__cap" id="cap">スクロールで一周します</div>
+    <div class="s3__bar"><i id="bar"></i></div>
+    <div class="s3__cue">SCROLL</div>
+  </div>
+</section>
+
+<section class="outro">
+  <span class="kick">2つの「スクロールで動く」を比べる</span>
+  <h1>写真か、3Dか。<em>用途で選べます。</em></h1>
+  <p class="lead">ターンテーブル（写真）＝歪みゼロ・コーポレート品質だが枚数分だけの角度。3Dモデル連動＝完全に滑らか＋AR展開可だが、メッシュに軽い癖が残る。両方を同じサイトの別セクションで併用することもできます。</p>
+</section>
+
+<div class="foot">スクロール連動デモ（2026-07-03）／ 実写4枚(背景除去)から生成した高精細GLBを、スクロールでcamera-orbit連動。reduced-motion時は正面固定。</div>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var s3 = document.getElementById('s3'), mv = document.getElementById('mv');
+  var cap = document.getElementById('cap'), bar = document.getElementById('bar');
+  var caps=['左まわりから','正面へ','右へ','背面へ','ぐるりと一周'];
+  if(reduce){ mv.setAttribute('camera-orbit','0deg 78deg auto'); return; }
+  var ticking=false;
+  function update(){
+    ticking=false;
+    var r = s3.getBoundingClientRect();
+    var total = s3.offsetHeight - window.innerHeight;
+    var p = Math.min(1, Math.max(0, -r.top/total));
+    var theta = -40 + p*360;            // スクロールで1周
+    var phi = 78 - Math.sin(p*Math.PI)*10; // 中盤だけ少し見上げる
+    mv.setAttribute('camera-orbit', theta.toFixed(1)+'deg '+phi.toFixed(1)+'deg auto');
+    bar.style.width = (p*100)+'%';
+    cap.textContent = caps[Math.min(caps.length-1, Math.floor(p*caps.length))];
+  }
+  window.addEventListener('scroll', function(){ if(!ticking){ requestAnimationFrame(update); ticking=true; } }, {passive:true});
+  window.addEventListener('resize', update);
+  mv.addEventListener('load', update); update();
+})();
+</script>
+</body>
+</html>

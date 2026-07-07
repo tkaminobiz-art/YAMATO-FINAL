@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>自社分譲物件一覧｜株式会社やまと不動産</title>
+<meta name="description" content="奈良と京都南部の自社分譲地から、いま選べる土地をすべて掲載しています。常時約150区画。">
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
+<style>
+  /* ============ 台帳×測量図（lots.html 図面 v1）============
+     コンセプト:「代々つけてきた台帳を、開いてお見せする」
+     ・一覧=目録行（写真カード禁止） ・地図=紙に刷った測量図 ・GSAP/Lenis非搭載
+     ・アンバーはCV 2箇所のみ（追従バー/希望条件） ・法定表記は奥付として堂々と */
+  :root{
+    --paper:#F4F1EA; --paper2:#FAFAF7; --dark:#12160c;
+    --ink:#241F1B; --ink2:#5A544C; --ink3:#8D857A;
+    --line:rgba(36,31,27,.12); --line2:rgba(36,31,27,.2);
+    --gold:#C9A24B; --goldhair:rgba(201,162,75,.5);
+    --green:#486B00; --green-deep:#2E4600; --lime:#A2C523; --amber:#C4851F;
+    --cream:#F4F1EA; --cream-soft:rgba(244,241,234,.82);
+    --fh:"dnp-shuei-gothic-gin-std","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    --fb:"Inter","Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
+    --fn:"Inter","Noto Sans JP",sans-serif;
+    --fm:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+    --ease:cubic-bezier(.16,1,.3,1); --eases:cubic-bezier(.22,1,.36,1);
+    --header-h:clamp(60px,7vw,80px);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{background:var(--paper);-webkit-text-size-adjust:100%}
+  html,body{word-break:normal;overflow-wrap:normal;line-break:strict}
+  body{font-family:var(--fb);color:var(--ink);background:var(--paper);
+    -webkit-font-smoothing:antialiased;font-feature-settings:"palt";overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  ::selection{background:#EDF2D5}
+
+  /* ============ ヘッダー（indexと同語法・簡約） ============ */
+  .hd{position:fixed;top:0;left:0;right:0;z-index:80;height:var(--header-h);
+    display:flex;align-items:center;gap:clamp(14px,2vw,26px);
+    padding:0 clamp(16px,3vw,40px) 0 clamp(20px,4.5vw,60px);
+    color:var(--cream);transition:background .5s var(--ease),color .4s var(--ease),box-shadow .5s var(--ease)}
+  .hd::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:linear-gradient(to bottom,rgba(16,20,10,.44),rgba(16,20,10,0));
+    opacity:1;transition:opacity .5s var(--ease)}
+  .hd.is-solid{background:rgba(250,250,247,.92);color:var(--ink);
+    -webkit-backdrop-filter:saturate(1.05) blur(9px);backdrop-filter:saturate(1.05) blur(9px);
+    box-shadow:0 1px 0 var(--line)}
+  .hd.is-solid::before{opacity:0}
+  .hd__brand{display:flex;align-items:center;gap:11px;line-height:1}
+  .hd__mark{height:clamp(26px,3.4vw,32px);width:auto;display:block}
+  .hd__kk{display:flex;flex-direction:column;gap:3px;font-family:var(--fh);font-weight:500;font-size:.5rem;letter-spacing:.16em;opacity:.85}
+  .hd__jp{font-family:var(--fh);font-weight:500;letter-spacing:.1em;font-size:clamp(1rem,.9rem + .6vw,1.26rem)}
+    .hd__back{margin-left:auto;font-family:var(--fh);font-weight:500;font-size:.82rem;letter-spacing:.05em;
+    opacity:.9;display:inline-flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid transparent;transition:.3s var(--ease)}
+  .hd__back:hover{opacity:1;border-bottom-color:currentColor}
+  .hd__back svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;fill:none;transform:rotate(180deg)}
+  .hd__cta{display:inline-flex;align-items:center;gap:9px;background:var(--amber);color:#fff;
+    font-family:var(--fh);font-weight:500;font-size:.85rem;letter-spacing:.04em;
+    padding:11px 22px;border-radius:4px;line-height:1;white-space:nowrap;
+    box-shadow:0 6px 22px rgba(196,133,31,.28);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .hd__cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(196,133,31,.36)}
+  .hd__cta svg{width:13px;height:13px;stroke:#fff;stroke-width:2;fill:none}
+  @media(max-width:560px){ .hd__back{display:none} .hd__kk{display:none} }
+
+  /* ============ ① 扉（暗・台帳の表紙） ============ */
+  .cover{position:relative;min-height:clamp(480px,68vh,720px);display:flex;align-items:flex-end;
+    overflow:hidden;isolation:isolate;background:var(--dark);color:var(--cream)}
+  .cover__bg{position:absolute;inset:0;z-index:0;background:url(assets/lots/aerial_poster.webp) center 42%/cover no-repeat;
+    transform:scale(1.04);animation:coverdrift 26s var(--eases) infinite alternate;filter:saturate(.95) brightness(.9)}
+  @keyframes coverdrift{from{transform:scale(1.04)}to{transform:scale(1.1)}}
+  .cover__scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(103deg,rgba(12,14,8,.78) 0%,rgba(12,14,8,.5) 34%,rgba(12,14,8,.12) 66%,rgba(12,14,8,0) 84%),
+      linear-gradient(to top,rgba(12,14,8,.7) 0%,rgba(12,14,8,.12) 44%,rgba(12,14,8,.3) 100%)}
+  .cover__in{position:relative;z-index:2;width:100%;max-width:1220px;margin:0 auto;
+    padding:calc(var(--header-h) + clamp(30px,5vh,60px)) clamp(20px,5vw,64px) clamp(56px,9vh,104px)}
+  .cover .eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--fn);font-size:.64rem;font-weight:500;
+    letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:clamp(16px,2.4vh,26px);
+    opacity:0;transform:translateY(16px);transition:opacity .9s var(--eases),transform .9s var(--eases)}
+  .cover .eyebrow::before{content:"";width:30px;height:1px;background:var(--gold);opacity:.85}
+  .cover h1{font-family:var(--fm);font-weight:600;letter-spacing:.05em;line-height:1.5;
+    font-size:clamp(1.7rem,1.05rem + 2.5vw,3rem);color:var(--cream);text-shadow:0 2px 26px rgba(6,8,4,.6);
+    opacity:0;transform:translateY(22px);transition:opacity 1s var(--eases) .08s,transform 1s var(--eases) .08s}
+  .cover h1 em{font-style:normal;color:var(--gold)}
+  .cover__lead{margin-top:clamp(14px,2vh,22px);font-family:var(--fb);font-size:clamp(.9rem,.86rem + .3vw,1.02rem);
+    line-height:1.95;letter-spacing:.04em;color:var(--cream-soft);max-width:34em;text-shadow:0 1px 12px rgba(6,8,4,.5);
+    opacity:0;transform:translateY(18px);transition:opacity 1s var(--eases) .18s,transform 1s var(--eases) .18s}
+  .cover__facts{display:flex;align-items:baseline;gap:clamp(16px,2.4vw,30px);flex-wrap:wrap;
+    margin-top:clamp(24px,3.6vh,44px);
+    opacity:0;transform:translateY(18px);transition:opacity 1s var(--eases) .28s,transform 1s var(--eases) .28s}
+  .is-covin .eyebrow,.is-covin h1,.is-covin .cover__lead,.is-covin .cover__facts{opacity:1;transform:none}
+  .cfact{display:inline-flex;align-items:baseline;gap:.26em;white-space:nowrap}
+  .cfact .pre{font-family:var(--fb);font-size:.74rem;letter-spacing:.08em;color:rgba(244,241,234,.62)}
+  .cfact .n{font-family:var(--fn);font-weight:300;font-variant-numeric:tabular-nums;line-height:.95;
+    font-size:clamp(1.9rem,1.3rem + 2.3vw,2.8rem);color:var(--cream);letter-spacing:.01em}
+  .cfact .u{font-size:.82rem;color:rgba(244,241,234,.78)}
+  .cdiv{width:1px;align-self:stretch;min-height:2em;background:var(--goldhair)}
+
+  /* ============ ② 索引（暗のまま・市名=アンカー） ============ */
+  .index{position:relative;background:var(--dark);color:var(--cream);
+    padding:clamp(10px,2vh,20px) 0 clamp(88px,12vh,150px)}
+  .index__in{max-width:1220px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+  .index__label{display:block;font-family:var(--fn);font-size:.61rem;font-weight:500;letter-spacing:.26em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  .index__label i{font-style:italic;opacity:.66;margin-left:.4em;letter-spacing:.12em}
+  .irow{display:flex;align-items:baseline;gap:clamp(12px,1.6vw,22px);padding:10px 0;border-top:1px solid var(--goldhair)}
+  .irow:last-child{border-bottom:1px solid rgba(244,241,234,.12)}
+  .irow__pref{flex:0 0 auto;font-family:var(--fb);font-size:.7rem;font-weight:500;letter-spacing:.14em;
+    color:rgba(244,241,234,.6);min-width:3.4em}
+  .irow__cities{font-family:var(--fb);font-weight:400;font-size:clamp(.95rem,.86rem + .5vw,1.14rem);
+    letter-spacing:.05em;line-height:1.9;color:var(--cream)}
+  .irow__cities a{white-space:nowrap;border-bottom:1px solid transparent;transition:border-color .3s,color .3s}
+  .irow__cities a:hover{color:var(--gold);border-bottom-color:var(--goldhair)}
+  .irow__cities a sup{font-family:var(--fn);font-size:.66em;color:var(--gold);opacity:.85;margin-left:.14em;font-variant-numeric:tabular-nums}
+  .irow__cities a:not(:last-child)::after{content:"・";color:var(--gold);opacity:.55;margin:0 .3em;font-size:.82em}
+
+  /* ============ ③ 紙が乗り上げる（明転・この1回だけ） ============ */
+  .ledgerpaper{position:relative;z-index:3;background:var(--paper);
+    margin-top:clamp(-52px,-4.6vw,-34px);
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    box-shadow:0 -34px 66px -28px rgba(0,0,0,.5)}
+
+  /* ============ ④ 帳場（フィルタ）+ ⑤ 台帳本文 ============ */
+  .desk{max-width:1400px;margin:0 auto;padding:clamp(44px,6vw,76px) clamp(18px,4vw,56px) clamp(88px,11vw,150px)}
+  .deskbar{display:flex;flex-wrap:wrap;align-items:baseline;gap:clamp(14px,2.4vw,32px);
+    padding-bottom:clamp(18px,2.4vw,26px);border-bottom:1px solid var(--line2)}
+  .deskbar__title{font-family:var(--fh);font-weight:500;font-size:clamp(1.15rem,1rem + .8vw,1.5rem);letter-spacing:.05em}
+  .deskbar__count{font-family:var(--fn);font-size:.85rem;color:var(--ink2);letter-spacing:.03em;font-variant-numeric:tabular-nums}
+  .deskbar__count b{font-weight:600;color:var(--green-deep);font-size:1.15em}
+  .deskbar__date{margin-left:auto;font-family:var(--fb);font-size:.72rem;color:var(--ink3);letter-spacing:.04em}
+  .filters{display:flex;flex-wrap:wrap;gap:clamp(10px,2vw,26px);align-items:center;
+    padding:clamp(14px,2vw,20px) 0 clamp(10px,1.6vw,16px)}
+  .fgroup{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+  .fgroup__k{font-family:var(--fb);font-size:.66rem;letter-spacing:.16em;color:var(--ink3);margin-right:10px;text-transform:uppercase}
+  .fbtn{appearance:none;border:none;background:none;cursor:pointer;font-family:var(--fb);font-size:.84rem;
+    letter-spacing:.03em;color:var(--ink2);padding:8px 10px;position:relative;transition:color .3s var(--ease);min-height:38px}
+  .fbtn::after{content:"";position:absolute;left:10px;right:10px;bottom:4px;height:1.5px;background:var(--green);
+    transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+  .fbtn:hover{color:var(--ink)}
+  .fbtn.is-on{color:var(--green-deep);font-weight:500}
+  .fbtn.is-on::after{transform:scaleX(1)}
+
+  /* B案: 左=目録 / 右=測量図(sticky) */
+  .split{display:grid;grid-template-columns:minmax(0,1fr) clamp(380px,36vw,560px);
+    gap:clamp(24px,3vw,48px);align-items:start;margin-top:clamp(20px,3vw,36px)}
+  @media(max-width:1080px){ .split{display:flex;flex-direction:column-reverse;align-items:stretch} }
+  /* 0件時のゼロ状態（空白のまま放置しない） */
+  .zero{padding:clamp(48px,7vw,88px) clamp(8px,2vw,24px);text-align:center;border-bottom:1px solid var(--line)}
+  .zero__t{font-family:var(--fh);font-weight:500;font-size:clamp(1.05rem,1rem + .5vw,1.3rem);letter-spacing:.04em;color:var(--ink)}
+  .zero__d{margin:14px auto 0;max-width:30em;font-size:.88rem;line-height:2;letter-spacing:.03em;color:var(--ink2)}
+  .zero__acts{margin-top:clamp(22px,3vw,32px);display:flex;gap:clamp(16px,3vw,28px);justify-content:center;align-items:center;flex-wrap:wrap}
+  .zero__reset{appearance:none;cursor:pointer;background:none;border:1px solid var(--line2);border-radius:4px;
+    font-family:var(--fh);font-weight:500;font-size:.88rem;letter-spacing:.04em;color:var(--ink);
+    padding:12px 24px;transition:border-color .3s,color .3s,background .3s}
+  .zero__reset:hover{border-color:var(--green);color:var(--green-deep);background:var(--paper2)}
+  .zero__req{font-family:var(--fh);font-weight:500;font-size:.88rem;letter-spacing:.04em;color:var(--green-deep);
+    border-bottom:1px solid rgba(46,70,0,.3);padding-bottom:3px;transition:color .3s,border-color .3s}
+  .zero__req:hover{color:var(--green)}
+
+  /* ---- 目録（章と行） ---- */
+  .chapter{padding-top:clamp(44px,6vw,84px)}
+  .chapter:first-child{padding-top:clamp(20px,3vw,36px)}
+  .chap__head{display:flex;align-items:baseline;gap:clamp(12px,1.6vw,20px);
+    padding-bottom:12px;border-bottom:1px solid var(--goldhair);margin-bottom:4px}
+  .chap__no{font-family:var(--fn);font-weight:300;font-size:.8rem;color:var(--gold);letter-spacing:.08em;font-variant-numeric:tabular-nums}
+  .chap__name{font-family:var(--fh);font-weight:500;font-size:clamp(1.35rem,1.1rem + 1.1vw,1.85rem);letter-spacing:.05em}
+  .chap__en{font-family:var(--fn);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)}
+  .chap__count{margin-left:auto;font-family:var(--fn);font-variant-numeric:tabular-nums;font-size:1rem;color:var(--ink2)}
+  .chap__count i{font-style:normal;font-size:.7rem;margin-left:2px}
+
+  .row{position:relative;display:grid;grid-template-columns:minmax(0,1.5fr) auto auto auto 22px;
+    align-items:center;gap:clamp(12px,1.8vw,26px);
+    padding:clamp(18px,2.2vw,24px) 6px clamp(20px,2.4vw,26px);
+    border-bottom:1px solid var(--line);cursor:pointer;
+    opacity:0;transform:translateY(22px);transition:opacity .8s var(--eases),transform .9s var(--eases),background .25s}
+  .row.is-in{opacity:1;transform:none}
+  .row:hover,.row.is-active{background:var(--paper2)}
+  .row__name{font-family:var(--fh);font-weight:500;font-size:clamp(1.02rem,.95rem + .4vw,1.18rem);
+    letter-spacing:.03em;color:var(--ink);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .row__tag{font-family:var(--fb);font-weight:500;font-size:.6rem;letter-spacing:.1em;color:var(--gold);
+    border:1px solid var(--goldhair);border-radius:3px;padding:.28em .55em;white-space:nowrap}
+  .row__addr{font-family:var(--fb);font-size:.74rem;color:var(--ink3);letter-spacing:.03em;margin-top:5px}
+  .row__price{font-family:var(--fn);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+  .row__price b{font-weight:400;font-size:clamp(1.25rem,1.1rem + .7vw,1.5rem);letter-spacing:.01em;color:var(--ink)}
+  .row__price i{font-style:normal;font-size:.76rem;color:var(--ink2);margin-left:2px}
+  .row__area{font-family:var(--fn);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+  .row__area b{font-weight:500;font-size:1rem;color:var(--ink)}
+  .row__area i{font-style:normal;font-size:.74rem;color:var(--ink2);margin-left:1px}
+  .row__area small{font-size:.72rem;color:var(--ink3);margin-left:6px;font-weight:400}
+  .row__units{font-family:var(--fb);font-size:.78rem;color:var(--ink2);white-space:nowrap}
+  .row__arw{width:18px;height:18px;justify-self:end}
+  .row__arw svg{width:18px;height:18px;stroke:var(--ink3);stroke-width:1.7;fill:none;transition:stroke .3s,transform .5s var(--ease)}
+  .row:hover .row__arw svg{stroke:var(--green);transform:translateX(4px)}
+  /* 寸法線（このページ固有のモーション語彙） */
+  .row__dim{position:absolute;left:6px;right:26px;bottom:10px;height:7px;pointer-events:none}
+  .row__dim::before{content:"";position:absolute;left:0;right:0;top:3px;height:1px;background:var(--line2);
+    transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease) .15s,background .3s}
+  .row__dim::after{content:"";position:absolute;left:0;top:0;width:1px;height:7px;background:var(--line2);
+    transform:scaleY(0);transition:transform .3s var(--ease) .7s,background .3s;box-shadow:none}
+  .row__dim i{position:absolute;right:0;top:0;width:1px;height:7px;background:var(--line2);
+    transform:scaleY(0);transition:transform .3s var(--ease) .7s,background .3s}
+  .row.is-in .row__dim::before{transform:scaleX(1)}
+  .row.is-in .row__dim::after,.row.is-in .row__dim i{transform:scaleY(1)}
+  .row:hover .row__dim::before,.row:hover .row__dim::after,.row:hover .row__dim i,
+  .row.is-active .row__dim::before,.row.is-active .row__dim::after,.row.is-active .row__dim i{background:var(--green)}
+  @media(max-width:700px){
+    .filters{gap:8px 0;flex-direction:column;align-items:stretch}
+    .fgroup{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:2px}
+    .fgroup::-webkit-scrollbar{display:none}
+    .fbtn{white-space:nowrap;flex:0 0 auto}
+    .row{grid-template-columns:minmax(0,1fr) 22px;row-gap:10px;padding:16px 4px 22px}
+    .row__facts{grid-column:1 / -1;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+    .row__price,.row__area{text-align:left}
+    .row__dim{right:4px}
+  }
+  .row__facts{display:contents}
+  @media(max-width:700px){ .row__facts{display:flex} }
+
+  /* ---- 測量図（地図） ---- */
+  .mapwrap{position:sticky;top:calc(var(--header-h) + 14px);height:calc(100vh - var(--header-h) - 34px);
+    border-radius:10px;overflow:hidden;isolation:isolate;
+    border:1px solid var(--line2);box-shadow:inset 0 0 48px rgba(36,31,27,.1),0 18px 44px -26px rgba(36,31,27,.4);
+    background:
+      repeating-linear-gradient(0deg,rgba(36,31,27,.05) 0 1px,transparent 1px 28px),
+      repeating-linear-gradient(90deg,rgba(36,31,27,.05) 0 1px,transparent 1px 28px),
+      var(--paper2)}
+  @media(max-width:1080px){ .mapwrap{position:relative;top:auto;height:48vh;min-height:340px;border-radius:8px} }
+  #map{position:absolute;inset:0;z-index:0;background:transparent}
+  .leaflet-tile-pane{filter:sepia(14%) saturate(70%) brightness(103%) contrast(90%)}
+  .map-glaze{position:absolute;inset:0;z-index:500;pointer-events:none;background:#F4F1EA;opacity:.12;mix-blend-mode:multiply}
+  .map-vig{position:absolute;inset:0;z-index:501;pointer-events:none;box-shadow:inset 0 0 46px rgba(36,31,27,.12)}
+  .map-note{position:absolute;left:10px;bottom:8px;z-index:502;pointer-events:none;
+    font-family:var(--fb);font-size:.58rem;letter-spacing:.04em;color:rgba(36,31,27,.55);
+    background:rgba(244,241,234,.8);padding:3px 8px;border-radius:3px}
+  .leaflet-control-attribution{font-family:var(--fb);font-size:.56rem!important;background:rgba(244,241,234,.75)!important;color:var(--ink3)!important}
+  .leaflet-control-attribution a{color:var(--ink2)!important}
+  .leaflet-control-zoom{border:1px solid var(--line2)!important;border-radius:6px!important;overflow:hidden;box-shadow:0 8px 20px -10px rgba(36,31,27,.35)!important}
+  .leaflet-control-zoom a{background:var(--paper2)!important;color:var(--ink)!important;border-bottom:1px solid var(--line)!important;font-family:var(--fn)!important}
+  /* 測量基準点PIN */
+  .pin{position:relative;width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+  .pin::before{content:"";width:22px;height:22px;border-radius:50%;border:1.5px solid var(--green);
+    background:rgba(244,241,234,.5);transition:transform .25s var(--ease),border-color .25s}
+  .pin::after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;
+    background:radial-gradient(circle at 50% 40%,#D9F09A 0%,var(--lime) 45%,var(--green) 100%);
+    box-shadow:0 0 8px 1px rgba(162,197,35,.5)}
+  .pin:hover::before,.pin.is-hot::before{transform:scale(1.35);border-color:var(--green-deep)}
+  .pin.is-hot::after{box-shadow:0 0 12px 3px rgba(162,197,35,.75)}
+  /* 市郡チップ（中間ズーム=判子。広域では出さない） */
+  .citychip{display:inline-flex;align-items:baseline;gap:5px;white-space:nowrap;cursor:pointer;
+    font-family:var(--fh);font-weight:500;font-size:.72rem;letter-spacing:.03em;color:var(--ink);
+    background:var(--paper2);border:1.5px solid var(--green);border-radius:5px;padding:5px 10px;
+    box-shadow:0 8px 18px -8px rgba(36,31,27,.4);transition:transform .25s var(--ease)}
+  .citychip:hover{transform:translateY(-2px)}
+  .citychip b{font-family:var(--fn);font-weight:600;font-size:.8rem;color:var(--green-deep);font-variant-numeric:tabular-nums}
+  /* 広域ズーム=文字なしの集約ドット（土地勘のない人へ「この辺に集まっている」を先に見せる） */
+  .citydot{position:relative;width:34px;height:34px;display:grid;place-items:center;cursor:pointer}
+  .citydot::before{content:"";width:16px;height:16px;border-radius:50%;border:1.5px solid var(--green);
+    background:rgba(244,241,234,.55);transition:transform .25s var(--ease)}
+  .citydot::after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;
+    background:radial-gradient(circle at 50% 40%,#D9F09A 0%,var(--lime) 45%,var(--green) 100%);
+    box-shadow:0 0 8px 1px rgba(114,150,22,.55)}
+  .citydot:hover::before{transform:scale(1.3)}
+  /* ドットのツールチップ（紙の小札） */
+  .leaflet-tooltip.dot-tip{background:var(--paper2);border:1px solid var(--line2);border-radius:5px;
+    color:var(--ink);font-family:var(--fh);font-weight:500;font-size:.74rem;letter-spacing:.03em;
+    padding:5px 10px;box-shadow:0 8px 18px -8px rgba(36,31,27,.4)}
+  .leaflet-tooltip.dot-tip::before{display:none}
+  /* 台帳ポップアップ */
+  .leaflet-popup-content-wrapper{background:var(--paper2);color:var(--ink);border-radius:8px;
+    border:1px solid var(--line2);box-shadow:0 20px 44px -18px rgba(36,31,27,.5);font-family:var(--fb)}
+  .leaflet-popup-tip{background:var(--paper2)}
+  .leaflet-popup-content{margin:14px 16px}
+  .pop__name{font-family:var(--fh);font-weight:500;font-size:.95rem;letter-spacing:.03em}
+  .pop__facts{margin-top:7px;font-family:var(--fn);font-variant-numeric:tabular-nums;font-size:.9rem;color:var(--ink)}
+  .pop__facts i{font-style:normal;font-size:.72rem;color:var(--ink2)}
+  .pop__addr{margin-top:5px;font-size:.68rem;color:var(--ink3)}
+  .pop__more{display:inline-flex;margin-top:9px;font-family:var(--fh);font-weight:500;font-size:.76rem;
+    letter-spacing:.03em;color:var(--green-deep)!important;border-bottom:1px solid rgba(46,70,0,.35);padding-bottom:2px}
+  /* モバイル: 地図の初期ロック */
+  .map-lock{position:absolute;inset:0;z-index:503;display:none;place-items:center;cursor:pointer;
+    background:rgba(18,22,12,.12);-webkit-tap-highlight-color:transparent}
+  .map-lock span{font-family:var(--fb);font-size:.78rem;letter-spacing:.06em;color:var(--ink);
+    background:rgba(250,250,247,.94);border:1px solid var(--line2);border-radius:100px;
+    padding:10px 20px;box-shadow:0 10px 26px -10px rgba(36,31,27,.4)}
+  @media(max-width:1080px){ .map-lock.is-locked{display:grid} }
+
+  /* ============ ⑥ 完売御礼（台帳の巻末記録・信頼資産） ============ */
+  .sold{background:var(--paper2);border-top:1px solid var(--line)}
+  .sold__in{max-width:1220px;margin:0 auto;padding:clamp(56px,8vw,104px) clamp(20px,5vw,64px) clamp(96px,12vw,160px)}
+  .sold__head{display:flex;align-items:baseline;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--goldhair)}
+  .sold__t{font-family:var(--fh);font-weight:500;font-size:clamp(1.2rem,1.05rem + .7vw,1.5rem);letter-spacing:.05em}
+  .sold__en{font-family:var(--fn);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)}
+  .sold__lead{margin-top:clamp(16px,2.4vw,24px);font-family:var(--fb);font-size:clamp(.92rem,.88rem + .3vw,1.02rem);
+    line-height:2;letter-spacing:.04em;color:var(--ink2)}
+  .sold__lead b{font-family:var(--fn);font-weight:600;font-variant-numeric:tabular-nums;color:var(--green-deep);font-size:1.2em;letter-spacing:.01em}
+  .sold__grid{margin-top:clamp(22px,3vw,34px);columns:3;column-gap:clamp(28px,4vw,56px)}
+  @media(max-width:900px){ .sold__grid{columns:2} }
+  @media(max-width:560px){ .sold__grid{columns:1} }
+  .sold__city{break-inside:avoid;margin-bottom:clamp(18px,2.4vw,26px)}
+  .sold__cname{font-family:var(--fb);font-weight:500;font-size:.72rem;letter-spacing:.14em;color:var(--ink3);
+    padding-bottom:7px;margin-bottom:4px;border-bottom:1px solid var(--line)}
+  .sold__item{display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+    font-family:var(--fb);font-size:.8rem;letter-spacing:.02em;color:var(--ink2);padding:5px 0;line-height:1.6}
+  .sold__item i{font-style:normal;font-family:var(--fn);font-variant-numeric:tabular-nums;font-size:.72rem;color:var(--ink3);white-space:nowrap}
+  .sold__note{margin-top:clamp(20px,3vw,30px);font-size:.7rem;color:var(--ink3);letter-spacing:.04em;line-height:1.9}
+
+  /* ============ ⑦ 希望条件（未公開区画・アンバー1箇所） ============ */
+  .req{background:var(--dark);color:var(--cream);position:relative;isolation:isolate;overflow:hidden;
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    margin-top:clamp(-40px,-3vw,-24px);box-shadow:0 -30px 60px -30px rgba(0,0,0,.45)}
+  .req::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(70% 90% at 82% 10%,rgba(201,162,75,.14),transparent 60%)}
+  .req__in{position:relative;z-index:1;max-width:880px;margin:0 auto;text-align:center;
+    padding:clamp(72px,10vw,128px) clamp(22px,5vw,64px) clamp(80px,11vw,136px)}
+  .req__k{display:inline-flex;align-items:center;gap:12px;font-family:var(--fn);font-size:.62rem;font-weight:500;
+    letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:clamp(18px,2.6vw,28px)}
+  .req__k::before,.req__k::after{content:"";width:26px;height:1px;background:currentColor;opacity:.6}
+  .req h2{font-family:var(--fm);font-weight:600;font-size:clamp(1.4rem,1.05rem + 1.6vw,2.1rem);
+    letter-spacing:.06em;line-height:1.7;color:var(--cream)}
+  .req p{margin:clamp(16px,2.4vw,24px) auto 0;max-width:34em;font-size:clamp(.9rem,.87rem + .25vw,1rem);
+    line-height:2.05;letter-spacing:.04em;color:var(--cream-soft)}
+  .req__btn{display:inline-flex;align-items:center;gap:12px;margin-top:clamp(28px,3.6vw,42px);
+    background:var(--amber);color:#fff;font-family:var(--fh);font-weight:500;font-size:1rem;letter-spacing:.04em;
+    padding:17px 38px;border-radius:4px;box-shadow:0 14px 34px -12px rgba(196,133,31,.6);
+    transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .req__btn:hover{transform:translateY(-3px);box-shadow:0 20px 44px -14px rgba(196,133,31,.7)}
+  .req__btn svg{width:15px;height:15px;stroke:#fff;stroke-width:2;fill:none}
+  .req__tel{margin-top:clamp(20px,3vw,30px);font-size:.78rem;color:rgba(244,241,234,.66);letter-spacing:.04em}
+  .req__tel a{font-family:var(--fn);font-variant-numeric:tabular-nums;font-size:1.05rem;color:var(--cream);letter-spacing:.02em;border-bottom:1px solid var(--goldhair);padding-bottom:2px}
+
+  /* ============ ⑧ 奥付（法定表記） ============ */
+  .colo{background:var(--dark);color:rgba(244,241,234,.6);border-top:1px solid rgba(244,241,234,.1)}
+  .colo__in{max-width:1220px;margin:0 auto;padding:clamp(30px,4vw,44px) clamp(20px,5vw,64px) calc(clamp(34px,4vw,48px) + env(safe-area-inset-bottom))}
+  .colo__t{font-family:var(--fn);font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);opacity:.85;margin-bottom:14px}
+  .colo p{font-family:var(--fb);font-size:.7rem;line-height:2.1;letter-spacing:.05em}
+  .colo b{font-weight:500;color:rgba(244,241,234,.8)}
+
+  /* ============ モバイル追従CV（アンバー2箇所目） ============ */
+  .stickycv{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;
+    padding:10px clamp(14px,4vw,20px) calc(10px + env(safe-area-inset-bottom));
+    background:rgba(250,250,247,.92);-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px);
+    box-shadow:0 -8px 30px rgba(20,16,10,.14);
+    transform:translateY(110%);transition:transform .55s var(--ease)}
+  .stickycv.is-show{transform:none}
+  .stickycv a{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+    background:var(--amber);color:#fff;font-family:var(--fh);font-weight:500;font-size:.95rem;
+    letter-spacing:.04em;padding:15px 20px;border-radius:4px;box-shadow:0 10px 26px -10px rgba(196,133,31,.55)}
+  .stickycv a svg{width:14px;height:14px;stroke:#fff;stroke-width:2;fill:none}
+  @media(max-width:1080px){ .stickycv{display:block} }
+
+  @media (prefers-reduced-motion:reduce){
+    .cover__bg{animation:none}
+    .cover .eyebrow,.cover h1,.cover__lead,.cover__facts{opacity:1!important;transform:none!important;transition:none}
+    .row{opacity:1!important;transform:none!important;transition:background .25s}
+    .row__dim::before{transform:scaleX(1)!important}.row__dim::after,.row__dim i{transform:scaleY(1)!important}
+    .stickycv{transition:none}
+  }
+
+  /* 奥付ブランド（ロゴロックアップ） */
+  .colo__brand{display:flex;align-items:center;gap:11px;margin-bottom:16px}
+  .colo__brand img{height:24px;width:auto;display:block}
+  .colo__brand b{font-family:var(--fh);font-weight:500;font-size:.88rem;letter-spacing:.1em;color:rgba(244,241,234,.88)}
+</style>
+</head>
+<body>
+
+<header class="hd" id="hd">
+  <a class="hd__brand" href="index.html" aria-label="やまと不動産 トップへ">
+    <img class="hd__mark" src="assets/brand/yamato_mark.svg" alt="">
+    <span class="hd__kk"><span>株式</span><span>会社</span></span>
+    <span class="hd__jp">やまと不動産</span>
+  </a>
+  <a class="hd__back" href="index.html"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>トップへ戻る</a>
+  <a class="hd__cta" href="contact.html?type=reserve">来場のご予約<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</header>
+
+<!-- ① 扉 -->
+<section class="cover" id="cover">
+  <div class="cover__bg" aria-hidden="true"></div>
+  <div class="cover__scrim" aria-hidden="true"></div>
+  <div class="cover__in">
+    <span class="eyebrow">Lots ／ 自社分譲物件一覧</span>
+    <h1>いま選べる土地を、<br>すべて載せています。</h1><!-- 仮コピー: copywriterパスで確定 -->
+    <p class="cover__lead">奈良と京都南部の自社分譲地です。気になる土地が見つかりましたら、現地でご案内します。</p>
+    <div class="cover__facts">
+      <span class="cfact"><span class="pre">公開</span><span class="n" data-count="82">0</span><span class="u">件</span></span>
+      <span class="cdiv" aria-hidden="true"></span>
+      <span class="cfact"><span class="pre">販売中</span><span class="n" data-count="36">0</span><span class="u">区画</span></span>
+      <span class="cdiv" aria-hidden="true"></span>
+      <span class="cfact"><span class="pre">常時</span><span class="n" data-count="150">0</span><span class="u">区画（約）</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ② 索引 -->
+<section class="index" aria-label="展開エリア索引">
+  <div class="index__in">
+    <span class="index__label">展開エリア <i>Areas</i></span>
+    <div id="idxRows">
+      <!-- JSが lots.json から生成: 市名(件数)=章アンカー -->
+    </div>
+  </div>
+</section>
+
+<!-- ③④⑤ 台帳本文 -->
+<main class="ledgerpaper">
+  <div class="desk">
+    <div class="deskbar">
+      <h2 class="deskbar__title">分譲地台帳</h2>
+      <span class="deskbar__count"><b id="visCount">0</b> 件を表示中</span>
+      <span class="deskbar__date" id="metaDate"></span>
+    </div>
+    <div class="filters" role="group" aria-label="絞り込み">
+      <div class="fgroup" id="fArea">
+        <span class="fgroup__k">Area</span>
+        <button class="fbtn is-on" data-area="all" type="button">すべて</button>
+        <button class="fbtn" data-area="nara" type="button">奈良市</button>
+        <button class="fbtn" data-area="ikoma" type="button">生駒市</button>
+        <button class="fbtn" data-area="chubu" type="button">橿原・天理・田原本</button>
+        <button class="fbtn" data-area="west" type="button">斑鳩・大和郡山</button>
+        <button class="fbtn" data-area="kyoto" type="button">京都南部</button>
+      </div>
+      <div class="fgroup" id="fPrice">
+        <span class="fgroup__k">Price</span>
+        <button class="fbtn is-on" data-price="all" type="button">すべて</button>
+        <button class="fbtn" data-price="0-1500" type="button">〜1,500万</button>
+        <button class="fbtn" data-price="0-2000" type="button">〜2,000万</button>
+        <button class="fbtn" data-price="0-2500" type="button">〜2,500万</button>
+        <button class="fbtn" data-price="2500-9999" type="button">2,500万〜</button>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="listcol">
+        <div class="list" id="list"><!-- JSが章+目録行を生成 --></div>
+        <div class="zero" id="zero" hidden>
+          <p class="zero__t">この条件に合う販売中の区画は、いまはありません。</p>
+          <p class="zero__d">条件を広げてご覧いただくか、ご希望の条件をお聞かせください。合う区画が出たときにご連絡します。</p>
+          <div class="zero__acts">
+            <button class="zero__reset" id="zeroReset" type="button">条件をリセットする</button>
+            <a class="zero__req" href="#request">希望条件を送る →</a>
+          </div>
+        </div>
+      </div>
+      <div class="mapwrap" id="mapwrap">
+        <div id="map"></div>
+        <div class="map-glaze" aria-hidden="true"></div>
+        <div class="map-vig" aria-hidden="true"></div>
+        <span class="map-note">地図上の位置は町名にもとづく概略です</span>
+        <button class="map-lock is-locked" id="mapLock" type="button" aria-label="地図の操作を有効にする"><span>タップで地図を操作</span></button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ⑥ 完売御礼（データ駆動・完売0件なら非表示） -->
+<section class="sold" id="sold" aria-label="完売御礼" hidden>
+  <div class="sold__in">
+    <header class="sold__head"><h2 class="sold__t">完売御礼</h2><span class="sold__en">Sold out</span></header>
+    <p class="sold__lead" id="soldLead"></p>
+    <div class="sold__grid" id="soldGrid"></div>
+    <p class="sold__note">完売した分譲地の記録です。価格の掲載は終了しています。同じエリアで次の分譲を計画していることがありますので、お探しのエリアが完売していた場合もお声がけください。</p>
+  </div>
+</section>
+
+<!-- ⑦ 希望条件（未公開区画） -->
+<section class="req" id="request" aria-label="未公開区画のご案内">
+  <div class="req__in">
+    <span class="req__k">Request</span>
+    <h2>サイトに載る前の区画も<br class="only-sp">あります。</h2><!-- 仮コピー: copywriterパスで確定 -->
+    <p>常時約150区画のうち、掲載しているのは一部です。ご希望のエリアとご予算をお聞かせいただければ、合う区画が出たときにご連絡します。</p>
+    <a class="req__btn" href="contact.html?type=request">希望条件を送る<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <p class="req__tel">お電話でも承ります　<a href="tel:0742361123">0742-36-1123</a><br>受付 9:00〜19:00｜定休日：火曜・水曜</p>
+  </div>
+</section>
+
+<!-- ⑧ 奥付 -->
+<footer class="colo">
+  <div class="colo__in">
+    <div class="colo__brand"><img src="assets/brand/yamato_mark.svg" alt=""><b>株式会社やまと不動産</b></div>
+    <p class="colo__t">Colophon ／ 物件広告に関する表記</p>
+    <p>
+      取引態様：<b>売主</b>　／　宅地建物取引業 国土交通大臣（1）第10516号<br>
+      <b>株式会社やまと不動産</b>（奈良県奈良市大宮町1丁目6番21）<br>
+      価格は土地代金です。土地の売買に消費税はかかりません。<br>
+      地図上の位置は町名にもとづく概略です。区画の正確な位置は現地でご案内します。<br>
+      掲載情報は <b id="coloDate"></b> 現在のものです。　地図：地理院タイル（国土地理院）
+    </p>
+  </div>
+</footer>
+
+<!-- モバイル追従CV -->
+<div class="stickycv" id="stickycv" aria-hidden="true">
+  <a href="contact.html?type=reserve">見学のご予約・ご相談<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<script>
+(function(){
+  var d=document;
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var mobile=matchMedia('(max-width:1080px)').matches;
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+  /* ---- ヘッダー透過⇄solid + 扉リビール + カウント ---- */
+  var hd=d.getElementById('hd'), cover=d.getElementById('cover');
+  new IntersectionObserver(function(es){ hd.classList.toggle('is-solid',!es[0].isIntersecting); },
+    {rootMargin:'-70px 0px 0px 0px'}).observe(cover);
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ cover.classList.add('is-covin'); }); });
+  function countUp(el){
+    var to=+el.getAttribute('data-count'); if(reduce){ el.textContent=to; return; }
+    var s=null,dur=1400;
+    function tick(n){ if(!s)s=n; var p=Math.min((n-s)/dur,1);
+      el.textContent=Math.round((1-Math.pow(1-p,3))*to); if(p<1)requestAnimationFrame(tick); }
+    requestAnimationFrame(tick);
+  }
+  setTimeout(function(){ [].slice.call(d.querySelectorAll('.cfact .n')).forEach(countUp); },450);
+
+  /* ---- モバイル追従CV ---- */
+  var cv=d.getElementById('stickycv');
+  if(cv){ window.addEventListener('scroll',function(){
+    var on=window.scrollY>innerHeight*.75;
+    cv.classList.toggle('is-show',on); cv.setAttribute('aria-hidden',on?'false':'true');
+  },{passive:true}); }
+
+  /* ---- データ読込 → 描画 ---- */
+  var CITY_ORDER=['奈良市','生駒市','大和郡山市','斑鳩町','天理市','田原本町','橿原市','桜井市','葛城市','木津川市','京田辺市','長岡京市'];
+  var CITY_EN={'奈良市':'Nara','生駒市':'Ikoma','大和郡山市':'Yamatokoriyama','斑鳩町':'Ikaruga','天理市':'Tenri',
+    '田原本町':'Tawaramoto','橿原市':'Kashihara','桜井市':'Sakurai','葛城市':'Katsuragi',
+    '木津川市':'Kizugawa','京田辺市':'Kyotanabe','長岡京市':'Nagaokakyo'};
+  var AREA_GROUP={'奈良市':'nara','生駒市':'ikoma','橿原市':'chubu','天理市':'chubu','田原本町':'chubu','桜井市':'chubu','葛城市':'chubu',
+    '斑鳩町':'west','大和郡山市':'west','木津川市':'kyoto','京田辺市':'kyoto','長岡京市':'kyoto'};
+  var state={area:'all',price:'all'};
+  var LOTS=[],META={},map=null,markers={},cityLayer=null,pinLayer=null,dotLayer=null,activeId=null;
+
+  function tsubo(m2){ return (typeof m2==='number')?(Math.floor(m2*0.3025*100)/100).toFixed(2):'—'; }
+  function fmtMan(n){ return (typeof n==='number')?n.toLocaleString('ja-JP'):'—'; }
+  function visible(lot){
+    if(lot.status==='完売') return false;
+    if(state.area!=='all' && AREA_GROUP[lot.city]!==state.area) return false;
+    if(state.price!=='all'){
+      var pr=state.price.split('-'), lo=+pr[0], hi=+pr[1];
+      if(!(lot.priceMan>lo-1 && lot.priceMan<=hi)) return false;
+    }
+    return true;
+  }
+
+  fetch('data/lots.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(data){
+    LOTS=data.lots||[]; META=data.meta||{};
+    var dt=(META.lastUpdated||'').split('-');
+    var dateStr=dt.length===3? dt[0]+'年'+(+dt[1])+'月'+(+dt[2])+'日' : '';
+    d.getElementById('metaDate').textContent=dateStr? dateStr+' 現在':'';
+    d.getElementById('coloDate').textContent=dateStr;
+    buildIndex(); buildList(); buildMap(); buildSold(); applyFilter();
+  }).catch(function(e){
+    d.getElementById('list').innerHTML='<p style="padding:40px 0;color:#8D857A;font-size:.85rem">物件データを読み込めませんでした。時間をおいて再度お試しください。</p>';
+  });
+
+  /* ---- ② 索引 ---- */
+  function buildIndex(){
+    var byPref={'奈良県':[],'京都府':[]};
+    CITY_ORDER.forEach(function(c){
+      var n=LOTS.filter(function(l){return l.city===c && l.status!=='完売';}).length;
+      if(!n) return;
+      var pref=(c==='木津川市'||c==='京田辺市')?'京都府':'奈良県';
+      byPref[pref].push('<a href="#chap-'+CITY_EN[c]+'">'+c+'<sup>'+n+'</sup></a>');
+    });
+    var html='';
+    Object.keys(byPref).forEach(function(p){
+      if(!byPref[p].length) return;
+      html+='<div class="irow"><span class="irow__pref">'+p+'</span><span class="irow__cities">'+byPref[p].join('')+'</span></div>';
+    });
+    d.getElementById('idxRows').innerHTML=html;
+  }
+
+  /* ---- ⑤ 目録（章+行） ---- */
+  function buildList(){
+    var html='',no=0;
+    CITY_ORDER.forEach(function(c){
+      /* 目録は販売中のみ（完売は巻末の「完売御礼」へ） */
+      var items=LOTS.filter(function(l){return l.city===c && l.status!=='完売';});
+      if(!items.length) return;
+      no++;
+      html+='<section class="chapter" id="chap-'+CITY_EN[c]+'" data-city="'+c+'">';
+      html+='<header class="chap__head"><span class="chap__no">'+String(no).padStart(2,'0')+'</span>'+
+        '<span class="chap__name">'+c+'</span><span class="chap__en">'+CITY_EN[c]+'</span>'+
+        '<span class="chap__count"><b class="chap__n"></b><i>件</i></span></header>';
+      items.forEach(function(l){
+        html+='<article class="row" data-id="'+l.id+'" tabindex="0" role="button" aria-label="'+l.name+' の位置を地図で見る">'+
+          '<div class="row__main"><div class="row__name">'+l.name+
+            (l.phase?' <span class="row__tag">'+l.phase+'</span>':'')+'</div>'+
+            '<div class="row__addr">'+l.address+'</div></div>'+
+          '<div class="row__facts">'+
+            '<span class="row__price"><b>'+fmtMan(l.priceMan)+'</b><i>万円</i></span>'+
+            '<span class="row__area"><b>'+tsubo(l.areaM2)+'</b><i>坪</i>'+(typeof l.areaM2==='number'?'<small>('+l.areaM2.toFixed(2)+'㎡)</small>':'')+'</span>'+
+            (l.unitsTotal?'<span class="row__units">全'+l.unitsTotal+'区画</span>':'<span class="row__units"></span>')+
+          '</div>'+
+          '<span class="row__arw"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>'+
+          '<span class="row__dim" aria-hidden="true"><i></i></span>'+
+        '</article>';
+      });
+      html+='</section>';
+    });
+    d.getElementById('list').innerHTML=html;
+
+    /* 行リビール（IO・寸法線つき） */
+    if('IntersectionObserver' in window && !reduce){
+      var io=new IntersectionObserver(function(es){
+        es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
+      },{threshold:.15,rootMargin:'0px 0px -4% 0px'});
+      d.querySelectorAll('.row').forEach(function(r,i){
+        r.style.transitionDelay=(i%6*0.06)+'s';
+        io.observe(r);
+      });
+    } else {
+      d.querySelectorAll('.row').forEach(function(r){ r.classList.add('is-in'); });
+    }
+
+    /* 行クリック=物件調書（lot.html）へ。地図連動はhover(PC)とPIN側が担当 */
+    var list=d.getElementById('list');
+    list.addEventListener('click',function(e){
+      var row=e.target.closest('.row'); if(!row) return;
+      location.href='lot.html?id='+encodeURIComponent(row.getAttribute('data-id'));
+    });
+    list.addEventListener('keydown',function(e){
+      if(e.key!=='Enter'&&e.key!==' ') return;
+      var row=e.target.closest('.row'); if(!row) return;
+      e.preventDefault();
+      location.href='lot.html?id='+encodeURIComponent(row.getAttribute('data-id'));
+    });
+    if(fine){
+      list.addEventListener('pointerover',function(e){
+        var row=e.target.closest('.row'); if(!row) return;
+        var m=markers[row.getAttribute('data-id')];
+        if(m&&m._icon) m._icon.querySelector('.pin').classList.add('is-hot');
+      });
+      list.addEventListener('pointerout',function(e){
+        var row=e.target.closest('.row'); if(!row) return;
+        var m=markers[row.getAttribute('data-id')];
+        if(m&&m._icon){ var p=m._icon.querySelector('.pin'); if(row.getAttribute('data-id')!==activeId) p.classList.remove('is-hot'); }
+      });
+    }
+  }
+
+  /* ---- ⑥ 完売御礼（巻末記録） ---- */
+  function buildSold(){
+    var sold=LOTS.filter(function(l){return l.status==='完売';});
+    if(!sold.length) return;
+    var sec=d.getElementById('sold'); sec.hidden=false;
+    var units=sold.reduce(function(s,l){return s+(l.unitsTotal||0);},0);
+    d.getElementById('soldLead').innerHTML='これまでに <b>'+sold.length+'</b> 分譲地・<b>'+units+'</b> 区画が完売しました。';
+    var html='';
+    CITY_ORDER.forEach(function(c){
+      var items=sold.filter(function(l){return l.city===c;});
+      if(!items.length) return;
+      html+='<div class="sold__city"><div class="sold__cname">'+c+'</div>';
+      items.forEach(function(l){
+        html+='<div class="sold__item"><span>'+l.name+(l.phase?'（'+l.phase+'）':'')+'</span>'+
+          (l.unitsTotal?'<i>全'+l.unitsTotal+'区画</i>':'')+'</div>';
+      });
+      html+='</div>';
+    });
+    d.getElementById('soldGrid').innerHTML=html;
+  }
+
+  /* ---- ④ 測量図（Leaflet） ---- */
+  function buildMap(){
+    if(!window.L) return;
+    map=L.map('map',{zoomControl:false,attributionControl:true,
+      minZoom:9,maxZoom:17,
+      maxBounds:[[33.7,135.2],[35.2,136.4]],maxBoundsViscosity:.8,
+      dragging:!mobile,scrollWheelZoom:!mobile,touchZoom:!mobile,tap:!mobile});
+    L.control.zoom({position:'bottomright'}).addTo(map);
+    L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',{
+      attribution:'<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>',
+      maxZoom:17,keepBuffer:2
+    }).addTo(map);
+    pinLayer=L.layerGroup(); cityLayer=L.layerGroup(); dotLayer=L.layerGroup();
+
+    LOTS.forEach(function(l){
+      if(l.lat==null || l.status==='完売') return;   /* 地図PINも販売中のみ */
+      var ic=L.divIcon({className:'',html:'<span class="pin" data-id="'+l.id+'"></span>',iconSize:[44,44],iconAnchor:[22,22]});
+      var m=L.marker([l.lat,l.lng],{icon:ic});
+      m.bindPopup('<div class="pop__name">'+l.name+(l.phase?' <span style="color:#C9A24B;font-size:.7em">'+l.phase+'</span>':'')+'</div>'+
+        '<div class="pop__facts">'+fmtMan(l.priceMan)+'<i>万円</i>　'+tsubo(l.areaM2)+'<i>坪</i>'+(l.unitsTotal?'　<i>全'+l.unitsTotal+'区画</i>':'')+'</div>'+
+        (l.station?'<div class="pop__addr">'+l.station+(l.walkMin?' 徒歩'+l.walkMin+'分':'')+'</div>':'')+
+        '<div class="pop__addr">'+l.address+'</div>'+
+        '<a class="pop__more" href="lot.html?id='+encodeURIComponent(l.id)+'">この区画の調書を見る →</a>',{closeButton:false,offset:[0,-8]});
+      m.on('click',function(){ focusLot(l.id,false); });
+      markers[l.id]=m;
+    });
+
+    /* 3段階: 広域(z≤10)=無文字ドット → 中間(11-12)=市郡名チップ → 近接(z≥13)=個別PIN
+       土地勘のない移住検討者向け: 引き=「この辺に集まっている」/ 寄り=「奈良市か」/ さらに寄り=物件 */
+    function rebuildAggregates(){
+      cityLayer.clearLayers(); dotLayer.clearLayers();
+      CITY_ORDER.forEach(function(c){
+        var items=LOTS.filter(function(l){ return l.city===c && l.lat!=null && visible(l); });
+        if(!items.length) return;
+        var la=0,ln=0; items.forEach(function(l){la+=l.lat;ln+=l.lng;});
+        la/=items.length; ln/=items.length;
+        /* 中間ズーム: 名前チップ */
+        var chipIc=L.divIcon({className:'',html:'<span class="citychip">'+c.replace('大和郡山市','大和郡山')+' <b>'+items.length+'</b></span>',
+          iconSize:[10,10],iconAnchor:[5,5]});
+        var chip=L.marker([la,ln],{icon:chipIc});
+        chip.on('click',function(){ map.flyTo([la,ln],13,{duration:.7}); });
+        cityLayer.addLayer(chip);
+        /* 広域ズーム: 無文字ドット（hoverで小札・タップで市名ズームへ） */
+        var dotIc=L.divIcon({className:'',html:'<span class="citydot"></span>',iconSize:[34,34],iconAnchor:[17,17]});
+        var dot=L.marker([la,ln],{icon:dotIc});
+        dot.bindTooltip(c+'　'+items.length+'件',{className:'dot-tip',direction:'top',offset:[0,-12]});
+        dot.on('click',function(){ map.flyTo([la,ln],12,{duration:.7}); });
+        dotLayer.addLayer(dot);
+      });
+    }
+    function syncZoomLayer(){
+      var z=map.getZoom();
+      var want = z>=13 ? pinLayer : (z>=11 ? cityLayer : dotLayer);
+      [pinLayer,cityLayer,dotLayer].forEach(function(ly){
+        if(ly===want){ if(!map.hasLayer(ly))map.addLayer(ly); }
+        else{ if(map.hasLayer(ly))map.removeLayer(ly); }
+      });
+    }
+    map.on('zoomend',syncZoomLayer);
+    map.__rebuildChips=rebuildAggregates;
+    map.__syncZoom=syncZoomLayer;
+    window.__lotsMap=map; /* 検証・保守用の参照 */
+
+    /* モバイル: タップで操作解放 */
+    var lock=d.getElementById('mapLock');
+    if(lock){ lock.addEventListener('click',function(){
+      lock.classList.remove('is-locked');
+      map.dragging.enable(); map.touchZoom.enable(); if(map.tap)map.tap.enable();
+    }); }
+
+    /* コンテナ寸法の変化に追従（回転・レイアウト変化でタイル欠けを防ぐ） */
+    if('ResizeObserver' in window){
+      var ro=new ResizeObserver(function(){ map.invalidateSize(); fitAll(); });
+      ro.observe(d.getElementById('mapwrap'));
+    } else {
+      window.addEventListener('resize',function(){ map.invalidateSize(); },{passive:true});
+    }
+
+    fitAll();
+  }
+
+  function fitAll(){
+    var pts=LOTS.filter(function(l){return l.lat!=null && visible(l);}).map(function(l){return [l.lat,l.lng];});
+    if(pts.length&&map) map.fitBounds(L.latLngBounds(pts).pad(.12));
+  }
+
+  function focusLot(id,fromList){
+    var l=LOTS.find(function(x){return x.id===id;}); if(!l||!map) return;
+    activeId=id;
+    d.querySelectorAll('.row.is-active').forEach(function(r){r.classList.remove('is-active');});
+    var row=d.querySelector('.row[data-id="'+id+'"]');
+    if(row) row.classList.add('is-active');
+    Object.keys(markers).forEach(function(k){ if(markers[k]._icon){ markers[k]._icon.querySelector('.pin').classList.toggle('is-hot',k===id); } });
+    if(l.lat!=null){
+      if(map.getZoom()<13||!map.hasLayer(pinLayer)){ map.setView([l.lat,l.lng],14,{animate:!reduce}); }
+      else if(fromList){ (reduce?map.setView([l.lat,l.lng],map.getZoom()):map.flyTo([l.lat,l.lng],Math.max(map.getZoom(),14),{duration:.7})); }
+      setTimeout(function(){ if(markers[id]&&map.hasLayer(pinLayer)) markers[id].openPopup(); },reduce?0:720);
+    }
+    if(!fromList&&row&&fine){ row.scrollIntoView({block:'nearest',behavior:reduce?'auto':'smooth'}); }
+    if(fromList&&mobile){ d.getElementById('mapwrap').scrollIntoView({block:'start',behavior:reduce?'auto':'smooth'}); }
+  }
+
+  /* ---- 絞り込み ---- */
+  function applyFilter(){
+    var vis=0;
+    d.querySelectorAll('.row').forEach(function(r){
+      var l=LOTS.find(function(x){return x.id===r.getAttribute('data-id');});
+      var on=l&&visible(l);
+      r.style.display=on?'':'none'; if(on)vis++;
+    });
+    d.querySelectorAll('.chapter').forEach(function(ch){
+      var c=ch.getAttribute('data-city');
+      var n=LOTS.filter(function(l){return l.city===c&&visible(l);}).length;
+      ch.style.display=n?'':'none';
+      var b=ch.querySelector('.chap__n'); if(b)b.textContent=n;
+    });
+    d.getElementById('visCount').textContent=vis;
+    var zero=d.getElementById('zero'); if(zero) zero.hidden=(vis!==0);
+    if(map){
+      pinLayer.clearLayers();
+      LOTS.forEach(function(l){ if(l.lat!=null&&visible(l)) pinLayer.addLayer(markers[l.id]); });
+      map.__rebuildChips(); map.__syncZoom(); fitAll();
+    }
+  }
+  /* ゼロ状態からの復帰 */
+  var zr=d.getElementById('zeroReset');
+  if(zr){ zr.addEventListener('click',function(){
+    state.area='all'; state.price='all';
+    ['fArea','fPrice'].forEach(function(g){
+      d.querySelectorAll('#'+g+' .fbtn').forEach(function(b){
+        b.classList.toggle('is-on', b.getAttribute('data-area')==='all'||b.getAttribute('data-price')==='all');
+      });
+    });
+    applyFilter();
+  }); }
+  function wireFilter(groupId,key){
+    d.getElementById(groupId).addEventListener('click',function(e){
+      var b=e.target.closest('.fbtn'); if(!b) return;
+      d.querySelectorAll('#'+groupId+' .fbtn').forEach(function(x){x.classList.remove('is-on');});
+      b.classList.add('is-on');
+      state[key]=b.getAttribute('data-'+key);
+      applyFilter();
+    });
+  }
+  wireFilter('fArea','area'); wireFilter('fPrice','price');
+})();
+</script>
+</body>
+</html>

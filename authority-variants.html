@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>やまと｜実績セクション 3方向 比較</title>
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4F1EA; --cream:#F4F1EA; --ink:#241F1B; --ink2:#5A544C; --line:#D8D1C4;
+    --green:#486B00; --green-d:#2E4600; --lime:#A2C523; --amber:#C4851F; --earth:#7D4427; --gold:#C9A24B;
+    --fh:"dnp-shuei-gothic-gin-std","Noto Sans JP",sans-serif;
+    --fn:"Inter","Noto Sans JP",sans-serif;
+    --fb:"Noto Sans JP",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:#e7e2d8;color:var(--ink);font-family:var(--fb);line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:"palt"}
+  .flag{background:#1a1712;color:#f0e9db;font-family:var(--fn);font-size:13px;letter-spacing:.06em;padding:12px clamp(20px,5vw,56px)}
+  .flag b{color:var(--lime)}
+
+  /* 共通パーツ */
+  .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+  .eyebrow{font-family:var(--fn);font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;
+    display:inline-flex;align-items:center;gap:14px}
+  .eyebrow::before,.eyebrow::after{content:"";width:34px;height:1px;background:currentColor;opacity:.4}
+  .bignum{display:flex;align-items:baseline;gap:.05em;line-height:.86}
+  .count{font-family:var(--fn);font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;
+    font-size:clamp(6rem, 19vw, 15rem)}
+  .unit{font-family:var(--fh);font-weight:700;font-size:clamp(1.8rem,5vw,3.6rem);transform:translateY(-.12em)}
+  .lead{font-family:var(--fh);font-weight:700;font-size:clamp(1.5rem, 1rem + 1.8vw, 2.5rem);letter-spacing:.03em;line-height:1.5;text-wrap:balance}
+  .sub{font-family:var(--fb);font-size:clamp(.95rem,1.2vw,1.08rem)}
+  .stats{display:flex;gap:0}
+  .stat{padding:6px clamp(18px,3vw,42px);position:relative}
+  .stat:first-child{padding-left:0}
+  .stat + .stat::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:1px;height:38px;background:currentColor;opacity:.28}
+  .stat .n{font-family:var(--fn);font-weight:700;font-size:clamp(1.5rem,2.6vw,2.1rem);font-variant-numeric:tabular-nums;display:block}
+  .stat .l{font-family:var(--fb);font-size:11.5px;letter-spacing:.04em;margin-top:5px;display:block;opacity:.72}
+
+  /* ============ A｜深緑シネマ帯 ============ */
+  .vA{position:relative;padding:clamp(92px,13vw,190px) 0;overflow:hidden;color:var(--cream);text-align:center;background:#131a0c}
+  .vA__bg{position:absolute;inset:0;background:url(assets/authority/ext_wide.webp) center/cover;transform:scale(1.05);filter:saturate(.92)}
+  .vA__scrim{position:absolute;inset:0;background:
+    linear-gradient(180deg,rgba(15,20,8,.82),rgba(19,26,12,.7)),
+    radial-gradient(130% 90% at 50% 42%,rgba(46,70,0,.34),rgba(15,20,8,.15) 65%)}
+  .vA .inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
+  .vA .eyebrow{color:var(--lime);margin-bottom:clamp(20px,3vw,36px)}
+  .vA .bignum{justify-content:center}
+  .vA .count{color:#F7F3E9;text-shadow:0 6px 44px rgba(0,0,0,.4)}
+  .vA .unit{color:var(--gold)}
+  .vA .lead{color:#F6F2E7;margin-top:clamp(16px,2vw,26px);text-shadow:0 2px 24px rgba(0,0,0,.35)}
+  .vA .sub{color:rgba(244,241,234,.78);margin-top:14px}
+  .vA .stats{justify-content:center;margin-top:clamp(38px,5vw,60px)}
+  .vA .stat .n{color:#F7F3E9}
+  .vA .stat .l{color:rgba(244,241,234,.7)}
+
+  /* ============ B｜生成り×非対称編集 ============ */
+  .vB{background:var(--paper);padding:clamp(72px,10vw,140px) 0}
+  .vB .grid{display:grid;grid-template-columns:1.18fr .82fr;gap:clamp(34px,5vw,76px);align-items:center}
+  .vB__text{position:relative}
+  .vB .eyebrow{color:var(--green);margin-bottom:clamp(20px,3vw,32px)}
+  .vB .count{color:var(--ink)}
+  .vB .unit{color:var(--green)}
+  .vB .lead{color:var(--ink);margin-top:clamp(16px,2vw,24px);max-width:none}
+  .vB .rule{width:52px;height:2px;background:var(--green);margin:clamp(20px,2.6vw,30px) 0}
+  .vB .sub{color:var(--ink2)}
+  .vB .stats{margin-top:clamp(30px,4vw,46px);flex-wrap:wrap}
+  .vB .stat .n{color:var(--green)}
+  .vB .stat .l{color:var(--ink2)}
+  .vB__photo{position:relative;aspect-ratio:3/4;border-radius:8px;overflow:hidden;box-shadow:0 24px 60px rgba(36,31,27,.2)}
+  .vB__photo img{width:100%;height:100%;object-fit:cover}
+  .vB__vlabel{position:absolute;top:0;right:-14px;writing-mode:vertical-rl;font-family:var(--fh);font-weight:700;
+    font-size:14px;letter-spacing:.3em;color:var(--green);opacity:.55}
+  @media(max-width:820px){
+    .vB .grid{grid-template-columns:1fr;gap:36px}
+    .vB__photo{aspect-ratio:16/10;max-height:340px}
+    .vB__vlabel{display:none}
+  }
+
+  /* ============ C｜数字に景色をクリップ ============ */
+  .vC{background:var(--paper);padding:clamp(88px,12vw,170px) 0;text-align:center;
+    background-image:radial-gradient(120% 90% at 50% 0%,#FBF8F1,var(--paper) 46%)}
+  .vC .inner{display:flex;flex-direction:column;align-items:center}
+  .vC .eyebrow{color:var(--green);margin-bottom:clamp(20px,3vw,34px)}
+  .vC .bignum{justify-content:center}
+  .vC .count{
+    background-image:linear-gradient(rgba(60,45,20,.18),rgba(60,45,20,.28)),url(assets/authority/ext_wide.webp);
+    background-size:cover;background-position:center 62%;
+    -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+    filter:contrast(1.02)}
+  .vC .unit{color:var(--green)}
+  .vC .lead{color:var(--ink);margin-top:clamp(18px,2vw,28px)}
+  .vC .sub{color:var(--ink2);margin-top:14px}
+  .vC .stats{justify-content:center;margin-top:clamp(36px,5vw,56px)}
+  .vC .stat .n{color:var(--green)}
+  .vC .stat .l{color:var(--ink2)}
+</style>
+</head>
+<body>
+
+<!-- A -->
+<div class="flag">A｜<b>深緑シネマ帯</b> ── 外観写真を敷き森の深緑で沈め、数字をクリーム＋単位ゴールド（背景にする＋文字色を変える）</div>
+<section class="vA">
+  <div class="vA__bg"></div><div class="vA__scrim"></div>
+  <div class="wrap inner">
+    <p class="eyebrow">Track Record ／ 創業からの実績</p>
+    <div class="bignum"><span class="count">600</span><span class="unit">棟超</span></div>
+    <h2 class="lead">選ばれるのは、価格だけではありません。</h2>
+    <p class="sub">創業から、奈良でこれだけの家をつくってきました。</p>
+    <div class="stats">
+      <div class="stat"><span class="n">約150</span><span class="l">区画｜自社分譲（常時）</span></div>
+      <div class="stat"><span class="n">50</span><span class="l">組｜お客様の声</span></div>
+      <div class="stat"><span class="n">◯</span><span class="l">年｜創業</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- B -->
+<div class="flag">B｜<b>生成り×非対称編集</b> ── 数字は墨のまま左寄せ編集、右に縦写真＋縦組みラベル＋細罫（構成で格を出す）</div>
+<section class="vB">
+  <div class="wrap grid">
+    <div class="vB__text">
+      <p class="eyebrow">Track Record ／ 創業からの実績</p>
+      <div class="bignum" style="margin-top:22px"><span class="count">600</span><span class="unit">棟超</span></div>
+      <div class="rule"></div>
+      <h2 class="lead">選ばれるのは、価格だけではありません。</h2>
+      <p class="sub" style="margin-top:14px">創業から、奈良でこれだけの家をつくってきました。</p>
+      <div class="stats">
+        <div class="stat"><span class="n">約150</span><span class="l">区画｜自社分譲（常時）</span></div>
+        <div class="stat"><span class="n">50</span><span class="l">組｜お客様の声</span></div>
+        <div class="stat"><span class="n">◯</span><span class="l">年｜創業</span></div>
+      </div>
+    </div>
+    <div class="vB__photo">
+      <img src="assets/authority/ext_tall.webp" alt="">
+      <span class="vB__vlabel">SINCE ／ 奈良</span>
+    </div>
+  </div>
+</section>
+
+<!-- C -->
+<div class="flag">C｜<b>数字に景色をクリップ</b> ── 600の中に golden hour の家が透ける（文字色を“風景”に）</div>
+<section class="vC">
+  <div class="wrap inner">
+    <p class="eyebrow">Track Record ／ 創業からの実績</p>
+    <div class="bignum"><span class="count">600</span><span class="unit">棟超</span></div>
+    <h2 class="lead">選ばれるのは、価格だけではありません。</h2>
+    <p class="sub">創業から、奈良でこれだけの家をつくってきました。</p>
+    <div class="stats">
+      <div class="stat"><span class="n">約150</span><span class="l">区画｜自社分譲（常時）</span></div>
+      <div class="stat"><span class="n">50</span><span class="l">組｜お客様の声</span></div>
+      <div class="stat"><span class="n">◯</span><span class="l">年｜創業</span></div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

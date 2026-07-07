@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>やまとの家｜FV（標準装備ループ）</title>
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F1EA; --ink:#20241A; --cream:#F4F1EA; --light:#6B6B6B;
+    --main:#486B00; --lime:#A2C523; --cta:#C4851F;
+    --fh:"dnp-shuei-gothic-gin-std","Noto Sans JP",sans-serif;
+    --fb:"Inter","Noto Sans JP",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;background:#12160c}
+  body{font-family:var(--fb);color:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+  .hero{position:relative;height:100svh;min-height:560px;overflow:hidden;isolation:isolate;background:#12160c}
+  .hero__v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  /* 可読性スクリム（上=固定UI／下=CTA。動画のcalloutは左下なので下右寄りは干渉少） */
+  .hero__scrim{position:absolute;inset:0;z-index:2;pointer-events:none;
+    background:linear-gradient(to bottom,rgba(16,20,10,.42) 0%,rgba(16,20,10,.05) 12%,transparent 24%),
+      linear-gradient(to top,rgba(16,20,10,.7) 0%,rgba(16,20,10,.15) 20%,transparent 40%)}
+
+  .brandmark{position:absolute;top:calc(env(safe-area-inset-top) + 22px);left:clamp(20px,5vw,60px);z-index:6;
+    font-family:var(--fh);font-weight:500;font-size:1rem;letter-spacing:.1em;color:var(--cream)}
+  .toppill{position:absolute;top:calc(env(safe-area-inset-top) + 22px);right:clamp(20px,5vw,60px);z-index:6;
+    font-family:var(--fb);font-size:.6rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,241,234,.82);
+    border:1px solid rgba(244,241,234,.3);padding:6px 13px;border-radius:100px}
+
+  /* 見出し（ふわっと出て、そのまま出しっぱなし） */
+  .intro{position:absolute;left:0;right:0;top:40%;transform:translateY(-50%);z-index:5;text-align:center;padding:0 22px;pointer-events:none;
+    opacity:0;animation:intro 1.8s ease forwards}
+  @keyframes intro{0%{opacity:0;transform:translateY(-50%) scale(1.012)}100%{opacity:1;transform:translateY(-50%) scale(1)}}
+  .intro h1{font-family:var(--fh);font-weight:700;line-height:1.22;letter-spacing:.02em;
+    font-size:clamp(2.05rem, .85rem + 5.3vw, 6.6rem);-webkit-text-stroke:.5px var(--cream);text-shadow:0 3px 30px rgba(8,10,5,.7)}
+  .intro h1 em{font-style:normal;color:var(--lime)}
+  .intro p{margin-top:24px;font-size:clamp(1.25rem, .9rem + 1.6vw, 3rem);color:rgba(244,241,234,.9);text-shadow:0 1px 20px rgba(10,12,6,.6)}
+
+  /* CTA（PCは右下＝動画calloutの左下と衝突させない） */
+  .cta-row{position:absolute;right:clamp(20px,5vw,60px);left:auto;bottom:calc(env(safe-area-inset-bottom) + 46px);z-index:6;
+    display:flex;gap:14px;align-items:center}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--cta);color:#fff;text-decoration:none;border-radius:7px;
+    font-weight:500;font-size:1.02rem;letter-spacing:.03em;padding:16px 34px;min-height:54px;
+    box-shadow:0 14px 40px rgba(196,133,31,.44);transition:transform .5s cubic-bezier(.16,1,.3,1)}
+  .cta:hover{transform:translateY(-3px)}
+  .cta svg{width:15px;height:15px}
+  .cta-ghost{color:var(--cream);text-decoration:none;font-size:.95rem;letter-spacing:.04em;padding:14px 16px;border-bottom:1px solid rgba(244,241,234,.45)}
+
+  .cue{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 20px);transform:translateX(-50%);z-index:6;
+    font-family:var(--fb);font-size:.56rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(244,241,234,.7)}
+
+  /* 次セクションの気配 */
+  .next{position:relative;z-index:1;background:var(--bg);color:var(--ink);min-height:50svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 22px}
+  .next p{font-family:var(--fh);font-weight:500;font-size:clamp(1.05rem, .9rem + 1vw, 1.4rem);letter-spacing:.04em;color:#2E4600;line-height:1.7}
+  .next small{display:block;margin-top:12px;font-family:var(--fb);font-size:.7rem;letter-spacing:.16em;color:var(--light);text-transform:uppercase}
+
+  @media (max-width:600px){
+    .cta-row{left:0;right:0;justify-content:center;bottom:calc(env(safe-area-inset-bottom) + 40px);flex-direction:column;gap:10px}
+    .cta{width:min(88%,340px);justify-content:center}
+    .cta-ghost{order:2}
+    .cue{display:none}
+    .intro{top:30%}
+    .intro h1{font-size:1.7rem;line-height:1.4;-webkit-text-stroke:.3px var(--cream)}
+    .intro p{font-size:1.05rem;line-height:1.6;margin-top:16px}
+  }
+  @media (prefers-reduced-motion:reduce){ .intro{animation:none;opacity:1} }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <video class="hero__v" id="hv" poster="assets/video_ab/B_poster.webp?v=shuei" muted loop playsinline preload="auto" autoplay>
+    <source src="assets/video_ab/B_loop.mp4?v=shuei" type="video/mp4">
+  </video>
+  <div class="hero__scrim"></div>
+
+  <div class="brandmark">やまとの家</div>
+  <div class="toppill">奈良の注文住宅</div>
+
+  <div class="intro">
+    <h1>50年先まで考えて、<br>家をつくっています。</h1>
+    <p>違いは、10年後からはっきり出ます。</p>
+  </div>
+
+  <div class="cta-row">
+    <a class="cta" href="#">モデルハウスを予約する
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="cta-ghost" href="#">資料を請求する</a>
+  </div>
+  <div class="cue">Scroll</div>
+</section>
+
+<section class="next">
+  <p>この下に、価格・自由設計・移住のセクションが続きます。<small>Yamato — next sections</small></p>
+</section>
+
+<script>
+(function(){
+  var root=document.documentElement; root.className=root.className.replace('no-js','').trim();
+  var v=document.getElementById('hv');
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var c=navigator.connection||{}; var save=c.saveData===true || /(^|-)2g/.test(c.effectiveType||'');
+  if(reduce||save){ /* 省データ/視差軽減：動画を止めてposter静止＋招待コピーのみ */
+    try{ v.removeAttribute('autoplay'); v.pause(); }catch(e){}
+  } else {
+    /* iOS自動再生保険：ユーザー操作なしでも muted+playsinline なら再生可。失敗時はposterのまま */
+    var p=v.play(); if(p&&p.catch) p.catch(function(){});
+  }
+})();
+</script>
+</body>
+</html>

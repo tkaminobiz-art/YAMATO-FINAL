@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>物件詳細｜株式会社やまと不動産</title>
+<meta name="description" content="やまと不動産の自社分譲地の詳細情報。価格・面積・接道・設備・引渡時期を掲載しています。">
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
+<style>
+  /* ============ 一筆の調書（lot.html 図面 v1）============
+     lots.html「台帳×測量図」の子ページ＝台帳から抜き出した1枚の物件調書。
+     データ駆動(lot.html?id=rXXXX / 旧URL受け皿 ?rid=roomID)・完売も生かす(404を作らない)。
+     アンバー=現地案内予約のみ。写真は救出原本が長辺640px上限のため控えめなストリップで。 */
+  :root{
+    --paper:#F4F1EA; --paper2:#FAFAF7; --paper3:#F7F2E7; --dark:#12160c;
+    --ink:#241F1B; --ink2:#5A544C; --ink3:#8D857A;
+    --line:rgba(36,31,27,.12); --line2:rgba(36,31,27,.2);
+    --gold:#C9A24B; --goldhair:rgba(201,162,75,.5);
+    --green:#486B00; --green-deep:#2E4600; --lime:#A2C523; --amber:#C4851F;
+    --cream:#F4F1EA;
+    --fh:"dnp-shuei-gothic-gin-std","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    --fb:"Inter","Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
+    --fn:"Inter","Noto Sans JP",sans-serif;
+    --fm:"Shippori Mincho","Hiragino Mincho ProN",serif;
+    --ease:cubic-bezier(.16,1,.3,1); --eases:cubic-bezier(.22,1,.36,1);
+    --header-h:clamp(60px,7vw,80px);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{background:var(--paper);-webkit-text-size-adjust:100%}
+  html,body{word-break:normal;overflow-wrap:normal;line-break:strict}
+  body{font-family:var(--fb);color:var(--ink);background:var(--paper);
+    -webkit-font-smoothing:antialiased;font-feature-settings:"palt";overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  ::selection{background:#EDF2D5}
+
+  /* ============ ヘッダー（lots.htmlと同語法・白地） ============ */
+  .hd{position:fixed;top:0;left:0;right:0;z-index:80;height:var(--header-h);
+    display:flex;align-items:center;gap:clamp(14px,2vw,26px);
+    padding:0 clamp(16px,3vw,40px) 0 clamp(20px,4.5vw,60px);color:var(--ink);
+    background:rgba(250,250,247,.92);
+    -webkit-backdrop-filter:saturate(1.05) blur(9px);backdrop-filter:saturate(1.05) blur(9px);
+    box-shadow:0 1px 0 var(--line)}
+  .hd__brand{display:flex;align-items:center;gap:11px;line-height:1}
+  .hd__mark{height:clamp(26px,3.4vw,32px);width:auto;display:block}
+  .hd__kk{display:flex;flex-direction:column;gap:3px;font-family:var(--fh);font-weight:500;font-size:.5rem;letter-spacing:.16em;opacity:.85}
+  .hd__jp{font-family:var(--fh);font-weight:500;letter-spacing:.1em;font-size:clamp(1rem,.9rem + .6vw,1.26rem)}
+    .hd__back{margin-left:auto;font-family:var(--fh);font-weight:500;font-size:.82rem;letter-spacing:.05em;
+    opacity:.9;display:inline-flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid transparent;transition:.3s var(--ease)}
+  .hd__back:hover{opacity:1;border-bottom-color:currentColor}
+  .hd__back svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;fill:none;transform:rotate(180deg)}
+  .hd__cta{display:inline-flex;align-items:center;gap:9px;background:var(--amber);color:#fff;
+    font-family:var(--fh);font-weight:500;font-size:.85rem;letter-spacing:.04em;
+    padding:11px 22px;border-radius:4px;line-height:1;white-space:nowrap;
+    box-shadow:0 6px 22px rgba(196,133,31,.28);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .hd__cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(196,133,31,.36)}
+  .hd__cta svg{width:13px;height:13px;stroke:#fff;stroke-width:2;fill:none}
+  @media(max-width:560px){ .hd__back{display:none} .hd__kk{display:none} }
+
+  /* ============ 調書ヘッダ ============ */
+  .sheet{max-width:1240px;margin:0 auto;padding:calc(var(--header-h) + clamp(24px,4vw,44px)) clamp(18px,4vw,56px) clamp(80px,10vw,140px)}
+  .crumb{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.04em;color:var(--ink2);
+    border-bottom:1px solid transparent;transition:.3s var(--ease)}
+  .crumb:hover{color:var(--green-deep);border-bottom-color:var(--goldhair)}
+  .crumb svg{width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none;transform:rotate(180deg)}
+  .head{margin-top:clamp(18px,2.6vw,28px);padding-bottom:clamp(18px,2.6vw,26px);border-bottom:1px solid var(--line2)}
+  .head__tags{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .tag-city{font-family:var(--fb);font-weight:500;font-size:.68rem;letter-spacing:.12em;color:var(--green-deep);
+    border:1px solid rgba(72,107,0,.4);border-radius:3px;padding:.3em .7em}
+  .tag-phase{font-family:var(--fb);font-weight:500;font-size:.68rem;letter-spacing:.1em;color:var(--gold);
+    border:1px solid var(--goldhair);border-radius:3px;padding:.3em .7em}
+  .tag-status{font-family:var(--fb);font-weight:500;font-size:.68rem;letter-spacing:.12em;border-radius:3px;padding:.32em .7em}
+  .tag-status.on{color:#fff;background:var(--green)}
+  .tag-status.sold{color:var(--ink2);background:rgba(36,31,27,.1)}
+  .head h1{font-family:var(--fh);font-weight:500;letter-spacing:.04em;line-height:1.35;
+    font-size:clamp(1.6rem,1.2rem + 1.8vw,2.5rem)}
+  .head__addr{margin-top:10px;font-size:.85rem;color:var(--ink2);letter-spacing:.04em}
+  .head__facts{display:flex;align-items:baseline;gap:clamp(18px,2.6vw,36px);flex-wrap:wrap;margin-top:clamp(18px,2.4vw,26px)}
+  .hfact{display:inline-flex;align-items:baseline;gap:.28em;white-space:nowrap}
+  .hfact .k{font-size:.72rem;letter-spacing:.08em;color:var(--ink3)}
+  .hfact .n{font-family:var(--fn);font-weight:400;font-variant-numeric:tabular-nums;line-height:.95;
+    font-size:clamp(1.7rem,1.3rem + 1.8vw,2.6rem);color:var(--ink);letter-spacing:.01em}
+  .hfact .n.amber{color:var(--amber-deep,#A56C12);color:#A56C12}
+  .hfact .u{font-size:.82rem;color:var(--ink2)}
+  .hfact small{font-size:.76rem;color:var(--ink3);margin-left:4px}
+  .head__sold{margin-top:clamp(16px,2.2vw,22px);font-family:var(--fm);font-weight:600;
+    font-size:clamp(1.05rem,1rem + .5vw,1.3rem);letter-spacing:.06em;color:var(--ink2)}
+
+  /* ============ 本文 split ============ */
+  .body{display:grid;grid-template-columns:minmax(0,1fr) clamp(340px,32vw,440px);
+    gap:clamp(26px,3.4vw,56px);align-items:start;margin-top:clamp(26px,3.6vw,44px)}
+  @media(max-width:1020px){ .body{display:block} .side{margin-top:clamp(28px,5vw,40px)} }
+
+  /* ---- 調書表 ---- */
+  .spec__t{font-family:var(--fh);font-weight:500;font-size:clamp(1.05rem,1rem + .4vw,1.25rem);letter-spacing:.05em;
+    display:flex;align-items:baseline;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--goldhair)}
+  .spec__t i{font-style:normal;font-family:var(--fn);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)}
+  .srow{display:grid;grid-template-columns:clamp(96px,12vw,140px) minmax(0,1fr);gap:clamp(12px,2vw,24px);
+    padding:clamp(12px,1.6vw,16px) 4px;border-bottom:1px solid var(--line);
+    opacity:0;transform:translateY(14px);transition:opacity .7s var(--eases),transform .8s var(--eases)}
+  .srow.is-in{opacity:1;transform:none}
+  .srow dt{font-family:var(--fb);font-weight:500;font-size:.78rem;letter-spacing:.06em;color:var(--ink3);padding-top:2px}
+  .srow dd{font-family:var(--fb);font-size:clamp(.9rem,.88rem + .2vw,.98rem);line-height:1.9;letter-spacing:.03em;color:var(--ink);white-space:pre-line}
+  .srow dd .sub{display:block;font-size:.72rem;color:var(--ink3);margin-top:3px}
+  .srow dd b{font-family:var(--fn);font-weight:500;font-variant-numeric:tabular-nums}
+
+  /* ---- 写真ストリップ（原本640px上限＝控えめに） ---- */
+  .shots{margin-top:clamp(26px,3.6vw,40px)}
+  .shots__row{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 10px;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;scroll-snap-type:x proximity}
+  .shots__row::-webkit-scrollbar{display:none}
+  .shots__row img{flex:0 0 auto;width:min(300px,72vw);aspect-ratio:4/3;object-fit:cover;border-radius:6px;
+    border:1px solid var(--line);box-shadow:0 12px 26px -18px rgba(60,48,30,.5);scroll-snap-align:start;
+    background:#E9E2D4}
+  .shots__cap{margin-top:8px;font-size:.68rem;color:var(--ink3);letter-spacing:.04em}
+
+  /* ---- 右：測量図＋受付 ---- */
+  .side{position:sticky;top:calc(var(--header-h) + 14px);display:grid;gap:clamp(16px,2vw,22px)}
+  @media(max-width:1020px){ .side{position:static} }
+  .mapbox{position:relative;height:clamp(260px,30vw,360px);border-radius:10px;overflow:hidden;isolation:isolate;
+    border:1px solid var(--line2);box-shadow:inset 0 0 40px rgba(36,31,27,.08),0 16px 38px -24px rgba(36,31,27,.35);
+    background:
+      repeating-linear-gradient(0deg,rgba(36,31,27,.05) 0 1px,transparent 1px 28px),
+      repeating-linear-gradient(90deg,rgba(36,31,27,.05) 0 1px,transparent 1px 28px),
+      var(--paper2)}
+  #map{position:absolute;inset:0;z-index:0;background:transparent}
+  .leaflet-tile-pane{filter:sepia(14%) saturate(70%) brightness(103%) contrast(90%)}
+  .map-glaze{position:absolute;inset:0;z-index:500;pointer-events:none;background:#F4F1EA;opacity:.12;mix-blend-mode:multiply}
+  .map-note{position:absolute;left:8px;bottom:6px;z-index:502;pointer-events:none;
+    font-size:.56rem;letter-spacing:.04em;color:rgba(36,31,27,.55);
+    background:rgba(244,241,234,.82);padding:3px 8px;border-radius:3px}
+  .leaflet-control-attribution{font-size:.54rem!important;background:rgba(244,241,234,.75)!important;color:var(--ink3)!important}
+  .leaflet-control-attribution a{color:var(--ink2)!important}
+  .leaflet-control-zoom{border:1px solid var(--line2)!important;border-radius:6px!important;overflow:hidden;box-shadow:0 8px 20px -10px rgba(36,31,27,.35)!important}
+  .leaflet-control-zoom a{background:var(--paper2)!important;color:var(--ink)!important;border-bottom:1px solid var(--line)!important;font-family:var(--fn)!important}
+  .pin{position:relative;width:44px;height:44px;display:grid;place-items:center}
+  .pin::before{content:"";width:22px;height:22px;border-radius:50%;border:1.5px solid var(--green);background:rgba(244,241,234,.5)}
+  .pin::after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;
+    background:radial-gradient(circle at 50% 40%,#D9F09A 0%,var(--lime) 45%,var(--green) 100%);
+    box-shadow:0 0 8px 1px rgba(162,197,35,.5)}
+
+  .cv{background:var(--paper2);border:1px solid var(--line);border-radius:10px;
+    box-shadow:0 20px 44px -28px rgba(60,48,30,.45);padding:clamp(18px,2.4vw,26px)}
+  .cv__t{font-family:var(--fh);font-weight:500;font-size:1rem;letter-spacing:.05em}
+  .cv__d{margin-top:8px;font-size:.78rem;line-height:1.9;color:var(--ink2);letter-spacing:.03em}
+  .cv__btn{display:flex;align-items:center;justify-content:center;gap:11px;margin-top:14px;width:100%;
+    background:var(--amber);color:#fff;font-family:var(--fh);font-weight:500;font-size:.98rem;letter-spacing:.04em;
+    padding:16px 18px;border-radius:5px;min-height:52px;
+    box-shadow:0 12px 30px -12px rgba(196,133,31,.55);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .cv__btn:hover{transform:translateY(-2px);box-shadow:0 18px 40px -14px rgba(196,133,31,.65)}
+  .cv__btn svg{width:15px;height:15px;stroke:#fff;stroke-width:2;fill:none}
+  .cv__btn.ghost{background:none;color:var(--green-deep);border:1px solid rgba(72,107,0,.4);box-shadow:none}
+  .cv__btn.ghost:hover{background:rgba(72,107,0,.05);box-shadow:none}
+  .cv__tel{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);text-align:center}
+  .cv__tel a{font-family:var(--fn);font-weight:400;font-variant-numeric:tabular-nums;font-size:1.3rem;color:#7D4427;letter-spacing:.01em}
+  .cv__tel span{display:block;margin-top:5px;font-size:.66rem;color:var(--ink3);letter-spacing:.05em}
+
+  /* ---- 同じ市の他の区画 ---- */
+  .also{margin-top:clamp(48px,7vw,84px)}
+  .also__t{font-family:var(--fh);font-weight:500;font-size:clamp(1.05rem,1rem + .5vw,1.3rem);letter-spacing:.05em;
+    display:flex;align-items:baseline;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--goldhair)}
+  .also__t i{font-style:normal;font-family:var(--fn);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)}
+  .arow{display:grid;grid-template-columns:minmax(0,1.5fr) auto auto 20px;align-items:center;gap:clamp(12px,2vw,26px);
+    padding:clamp(14px,1.8vw,18px) 4px;border-bottom:1px solid var(--line);transition:background .25s}
+  .arow:hover{background:var(--paper2)}
+  .arow__n{font-family:var(--fh);font-weight:500;font-size:.98rem;letter-spacing:.03em}
+  .arow__n small{display:block;font-family:var(--fb);font-weight:400;font-size:.7rem;color:var(--ink3);margin-top:3px}
+  .arow__p{font-family:var(--fn);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+  .arow__p b{font-weight:400;font-size:1.15rem}
+  .arow__p i{font-style:normal;font-size:.72rem;color:var(--ink2)}
+  .arow__a{font-family:var(--fn);font-variant-numeric:tabular-nums;font-size:.85rem;color:var(--ink2);white-space:nowrap}
+  .arow__w{width:16px;height:16px;justify-self:end}
+  .arow__w svg{width:16px;height:16px;stroke:var(--ink3);stroke-width:1.7;fill:none;transition:stroke .3s,transform .4s var(--ease)}
+  .arow:hover .arow__w svg{stroke:var(--green);transform:translateX(3px)}
+  .also__more{display:inline-flex;align-items:center;gap:9px;margin-top:16px;font-family:var(--fh);font-weight:500;
+    font-size:.88rem;color:var(--green-deep);border-bottom:1px solid rgba(46,70,0,.3);padding-bottom:3px}
+
+  /* ---- 見つからない場合 ---- */
+  .miss{display:none;text-align:center;padding:clamp(60px,10vw,120px) 20px}
+  .miss.is-on{display:block}
+  .miss h1{font-family:var(--fm);font-weight:600;font-size:clamp(1.2rem,1.1rem + .6vw,1.6rem);letter-spacing:.06em}
+  .miss p{margin-top:14px;font-size:.9rem;line-height:2;color:var(--ink2)}
+  .miss a{color:var(--green-deep);border-bottom:1px solid rgba(46,70,0,.35)}
+
+  /* ---- 奥付 ---- */
+  .colo{background:var(--dark);color:rgba(244,241,234,.6)}
+  .colo__in{max-width:1240px;margin:0 auto;padding:clamp(28px,3.6vw,42px) clamp(20px,5vw,64px) calc(clamp(30px,3.6vw,44px) + env(safe-area-inset-bottom))}
+  .colo__t{font-family:var(--fn);font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);opacity:.85;margin-bottom:12px}
+  .colo p{font-size:.7rem;line-height:2.1;letter-spacing:.05em}
+  .colo b{font-weight:500;color:rgba(244,241,234,.8)}
+
+  /* モバイル追従CV */
+  .stickycv{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;
+    padding:10px clamp(14px,4vw,20px) calc(10px + env(safe-area-inset-bottom));
+    background:rgba(250,250,247,.92);-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px);
+    box-shadow:0 -8px 30px rgba(20,16,10,.14);
+    transform:translateY(110%);transition:transform .55s var(--ease)}
+  .stickycv.is-show{transform:none}
+  .stickycv a{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+    background:var(--amber);color:#fff;font-family:var(--fh);font-weight:500;font-size:.95rem;
+    letter-spacing:.04em;padding:15px 20px;border-radius:4px;box-shadow:0 10px 26px -10px rgba(196,133,31,.55)}
+  .stickycv a svg{width:14px;height:14px;stroke:#fff;stroke-width:2;fill:none}
+  @media(max-width:1020px){ .stickycv{display:block} }
+
+  @media (prefers-reduced-motion:reduce){
+    .srow{opacity:1!important;transform:none!important;transition:none}
+    .stickycv{transition:none}
+  }
+
+  /* 奥付ブランド（ロゴロックアップ） */
+  .colo__brand{display:flex;align-items:center;gap:11px;margin-bottom:16px}
+  .colo__brand img{height:24px;width:auto;display:block}
+  .colo__brand b{font-family:var(--fh);font-weight:500;font-size:.88rem;letter-spacing:.1em;color:rgba(244,241,234,.88)}
+</style>
+</head>
+<body>
+
+<header class="hd">
+  <a class="hd__brand" href="index.html" aria-label="やまと不動産 トップへ">
+    <img class="hd__mark" src="assets/brand/yamato_mark.svg" alt="">
+    <span class="hd__kk"><span>株式</span><span>会社</span></span>
+    <span class="hd__jp">やまと不動産</span>
+  </a>
+  <a class="hd__back" href="lots.html"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>分譲地台帳へ戻る</a>
+  <a class="hd__cta" id="hdCta" href="contact.html?type=reserve">来場のご予約<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</header>
+
+<main class="sheet" id="sheet" hidden>
+  <a class="crumb" href="lots.html"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>分譲地台帳（一覧）へ戻る</a>
+
+  <!-- 調書ヘッダ -->
+  <header class="head">
+    <div class="head__tags" id="tags"></div>
+    <h1 id="name"></h1>
+    <p class="head__addr" id="addr"></p>
+    <div class="head__facts" id="facts"></div>
+    <p class="head__sold" id="soldNote" hidden>この分譲地は、おかげさまで完売しました。</p>
+  </header>
+
+  <div class="body">
+    <div class="main">
+      <h2 class="spec__t">物件調書 <i>Property record</i></h2>
+      <dl id="spec"><!-- JSが調書行を生成 --></dl>
+
+      <div class="shots" id="shots" hidden>
+        <h2 class="spec__t">現地写真 <i>Photos</i></h2>
+        <div class="shots__row" id="shotsRow"></div>
+        <p class="shots__cap">旧サイト掲載時の写真です（画質は掲載当時のものです）。現況を優先します。</p>
+      </div>
+
+      <section class="also" id="also" hidden>
+        <h2 class="also__t"><span id="alsoTitle"></span> <i>More in this area</i></h2>
+        <div id="alsoRows"></div>
+        <a class="also__more" href="lots.html">分譲地台帳で、すべての区画を見る →</a>
+      </section>
+    </div>
+
+    <aside class="side">
+      <div class="mapbox" id="mapbox" hidden>
+        <div id="map"></div>
+        <div class="map-glaze" aria-hidden="true"></div>
+        <span class="map-note">町名にもとづく概略位置です</span>
+      </div>
+      <div class="cv" id="cvOn">
+        <p class="cv__t">この土地を、現地で見る</p>
+        <p class="cv__d">図面ではわからない日当たりや街の空気は、現地がいちばん正直です。ご案内します。</p>
+        <a class="cv__btn" id="cvReserve" href="contact.html?type=reserve">現地案内を予約する<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="cv__btn ghost" id="cvDocs" href="contact.html?type=docs">資料を請求する</a>
+        <div class="cv__tel">
+          <a href="tel:0742361123">0742-36-1123</a>
+          <span>受付 9:00〜19:00｜定休日：火曜・水曜</span>
+        </div>
+      </div>
+      <div class="cv" id="cvSold" hidden>
+        <p class="cv__t">このエリアの、次の分譲を待つ</p>
+        <p class="cv__d">同じエリアで次の分譲を計画していることがあります。ご希望を伺っていれば、動きが出たときにご連絡できます。</p>
+        <a class="cv__btn" id="cvRequest" href="contact.html?type=request">希望条件を送る<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="cv__tel">
+          <a href="tel:0742361123">0742-36-1123</a>
+          <span>受付 9:00〜19:00｜定休日：火曜・水曜</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- 見つからない場合（旧URL含む・404を作らない） -->
+<div class="miss" id="miss">
+  <h1>この物件ページは見つかりませんでした。</h1>
+  <p>掲載が終了したか、URLが変わった可能性があります。<br>3秒後に<a href="lots.html">分譲地台帳（一覧）</a>へご案内します。</p>
+</div>
+
+<footer class="colo">
+  <div class="colo__in">
+    <div class="colo__brand"><img src="assets/brand/yamato_mark.svg" alt=""><b>株式会社やまと不動産</b></div>
+    <p class="colo__t">物件広告に関する表記</p>
+    <p id="legal">
+      取引態様：<b>売主</b>　／　宅地建物取引業 国土交通大臣（1）第10516号<br>
+      <b>株式会社やまと不動産</b>（奈良県奈良市大宮町1丁目6番21）<br>
+      価格は土地代金です。土地の売買に消費税はかかりません。徒歩分数は80m＝1分で換算しています。<br>
+      地図上の位置は町名にもとづく概略です。区画の正確な位置は現地でご案内します。<br>
+      掲載情報は <b id="coloDate"></b> 現在のものです。　地図：地理院タイル（国土地理院）
+    </p>
+  </div>
+</footer>
+
+<div class="stickycv" id="stickycv" aria-hidden="true">
+  <a id="stickyBtn" href="contact.html?type=reserve">現地案内を予約する<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<script>
+(function(){
+  var d=document;
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+  function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function tsubo(m2){ return (typeof m2==='number')?(Math.floor(m2*0.3025*100)/100).toFixed(2):'—'; }
+  function fmtMan(n){ return (typeof n==='number')?n.toLocaleString('ja-JP'):'—'; }
+
+  var qs=new URLSearchParams(location.search);
+  var wantId=qs.get('id')||'', wantRid=qs.get('rid')||'';
+
+  fetch('data/lots.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(data){
+    var LOTS=data.lots||[], META=data.meta||{};
+    var lot=null;
+    if(wantId) lot=LOTS.find(function(l){return l.id===wantId;});
+    if(!lot&&wantRid) lot=LOTS.find(function(l){return String(l.legacyRoomId)===wantRid;});
+    var dt=(META.lastUpdated||'').split('-');
+    d.getElementById('coloDate').textContent=dt.length===3? dt[0]+'年'+(+dt[1])+'月'+(+dt[2])+'日':'';
+    if(!lot){ miss(); return; }
+    render(lot,LOTS);
+  }).catch(function(){ miss(); });
+
+  function miss(){
+    d.getElementById('miss').classList.add('is-on');
+    setTimeout(function(){ location.replace('lots.html'); },3000);
+  }
+
+  function render(l,LOTS){
+    d.getElementById('sheet').hidden=false;
+    var onSale=(l.status!=='完売');
+    var fullName=l.name+(l.phase?'（'+l.phase+'）':'');
+    document.title=fullName+'｜自社分譲物件｜株式会社やまと不動産';
+    var mdesc=d.querySelector('meta[name=description]');
+    if(mdesc) mdesc.setAttribute('content',
+      l.address+'の自社分譲地。'+(onSale&&l.priceMan?fmtMan(l.priceMan)+'万円〜、':'')+tsubo(l.areaM2)+'坪。'+(l.station?l.station+(l.walkMin?' 徒歩'+l.walkMin+'分。':'。'):''));
+
+    /* タグ・見出し・数字 */
+    var tags='<span class="tag-city">'+esc(l.pref)+' '+esc(l.city)+'</span>';
+    if(l.phase) tags+='<span class="tag-phase">'+esc(l.phase)+'</span>';
+    tags+='<span class="tag-status '+(onSale?'on':'sold')+'">'+(onSale?'販売中':'完売御礼')+'</span>';
+    d.getElementById('tags').innerHTML=tags;
+    d.getElementById('name').textContent=l.name;
+    d.getElementById('addr').textContent=l.address;
+
+    var facts='';
+    if(onSale&&typeof l.priceMan==='number'){
+      facts+='<span class="hfact"><span class="n amber">'+fmtMan(l.priceMan)+'</span><span class="u">万円〜</span></span>';
+    }
+    facts+='<span class="hfact"><span class="n">'+tsubo(l.areaM2)+'</span><span class="u">坪</span>'+(typeof l.areaM2==='number'?'<small>（'+l.areaM2.toFixed(2)+'㎡）</small>':'')+'</span>';
+    if(l.unitsTotal) facts+='<span class="hfact"><span class="k">全</span><span class="n">'+l.unitsTotal+'</span><span class="u">区画</span></span>';
+    if(l.station) facts+='<span class="hfact"><span class="u">'+esc(l.station)+(l.walkMin?'　徒歩'+l.walkMin+'分':'')+'</span></span>';
+    d.getElementById('facts').innerHTML=facts;
+    if(!onSale) d.getElementById('soldNote').hidden=false;
+
+    /* 調書表（値のあるものだけ・原文まま） */
+    var rows=[
+      ['所在地',l.address],
+      ['交通',l.station?(l.station+(l.walkMin?'　徒歩'+l.walkMin+'分':'')):''],
+      ['土地面積',(typeof l.areaM2==='number')?(l.areaM2.toFixed(2)+'㎡（'+tsubo(l.areaM2)+'坪）'):''],
+      ['総区画数',l.unitsTotal?('全'+l.unitsTotal+'区画'):''],
+      ['地目',l.landCategory],
+      ['用途地域',l.useDistrict],
+      ['建ぺい率／容積率',(l.kenpei||l.yoseki)?((l.kenpei||'—')+' ／ '+(l.yoseki||'—')):''],
+      ['接道',l.roadNote],
+      ['設備',l.facilities],
+      ['引渡し',l.handover],
+      ['建築条件',l.buildingCondition?(l.buildingCondition==='有'?'有（建築条件付き土地）':l.buildingCondition):''],
+      ['学区',l.school?(l.school+'\n※旧サイト「周辺環境」欄より（参考）。就学区は市町の指定をご確認ください。'):'']
+    ];
+    var spec='';
+    rows.forEach(function(r){
+      if(!r[1]) return;
+      spec+='<div class="srow"><dt>'+esc(r[0])+'</dt><dd>'+esc(r[1])+'</dd></div>';
+    });
+    d.getElementById('spec').innerHTML=spec;
+
+    /* 行リビール */
+    if('IntersectionObserver' in window && !reduce){
+      var io=new IntersectionObserver(function(es){
+        es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
+      },{threshold:.2});
+      d.querySelectorAll('.srow').forEach(function(r,i){ r.style.transitionDelay=(i%8*0.05)+'s'; io.observe(r); });
+    } else {
+      d.querySelectorAll('.srow').forEach(function(r){ r.classList.add('is-in'); });
+    }
+
+    /* 写真 */
+    if((l.photos||[]).length){
+      d.getElementById('shots').hidden=false;
+      d.getElementById('shotsRow').innerHTML=l.photos.map(function(p,i){
+        return '<img src="'+esc(p)+'" alt="'+esc(l.name)+' 現地写真'+(i+1)+'" loading="lazy" decoding="async">';
+      }).join('');
+    }
+
+    /* CV配線（物件名を持ってcontactへ） */
+    var lotParam='&lot='+encodeURIComponent(fullName);
+    if(onSale){
+      d.getElementById('cvReserve').href='contact.html?type=reserve'+lotParam;
+      d.getElementById('cvDocs').href='contact.html?type=docs'+lotParam;
+      d.getElementById('stickyBtn').href='contact.html?type=reserve'+lotParam;
+    } else {
+      d.getElementById('cvOn').hidden=true;
+      d.getElementById('cvSold').hidden=false;
+      d.getElementById('cvRequest').href='contact.html?type=request'+lotParam;
+      var sb=d.getElementById('stickyBtn');
+      sb.href='contact.html?type=request'+lotParam;
+      sb.firstChild.textContent='希望条件を送る';
+    }
+    d.getElementById('hdCta').href='contact.html?type=reserve'+lotParam;
+
+    /* 地図（単一の測量点・SPはドラッグ無効） */
+    if(l.lat!=null && window.L){
+      d.getElementById('mapbox').hidden=false;
+      var map=L.map('map',{zoomControl:true,attributionControl:true,
+        minZoom:11,maxZoom:17,dragging:fine,scrollWheelZoom:false,touchZoom:true});
+      L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',{
+        attribution:'<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>',
+        maxZoom:17,keepBuffer:2}).addTo(map);
+      var ic=L.divIcon({className:'',html:'<span class="pin"></span>',iconSize:[44,44],iconAnchor:[22,22]});
+      L.marker([l.lat,l.lng],{icon:ic}).addTo(map);
+      map.setView([l.lat,l.lng],15);
+    }
+
+    /* 同じ市の他の販売中区画（自分以外・最大4件） */
+    var others=LOTS.filter(function(x){ return x.city===l.city && x.id!==l.id && x.status!=='完売'; }).slice(0,4);
+    if(others.length){
+      d.getElementById('also').hidden=false;
+      d.getElementById('alsoTitle').textContent=l.city+'の、ほかの区画';
+      d.getElementById('alsoRows').innerHTML=others.map(function(x){
+        return '<a class="arow" href="lot.html?id='+esc(x.id)+'">'+
+          '<span class="arow__n">'+esc(x.name)+(x.phase?' <span class="tag-phase" style="font-size:.58rem">'+esc(x.phase)+'</span>':'')+
+          '<small>'+esc(x.address)+'</small></span>'+
+          '<span class="arow__p"><b>'+fmtMan(x.priceMan)+'</b><i>万円</i></span>'+
+          '<span class="arow__a">'+tsubo(x.areaM2)+'坪</span>'+
+          '<span class="arow__w"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>';
+      }).join('');
+    }
+
+    /* 追従CV表示 */
+    var cvBar=d.getElementById('stickycv');
+    window.addEventListener('scroll',function(){
+      var on=window.scrollY>420;
+      cvBar.classList.toggle('is-show',on); cvBar.setAttribute('aria-hidden',on?'false':'true');
+    },{passive:true});
+  }
+})();
+</script>
+</body>
+</html>

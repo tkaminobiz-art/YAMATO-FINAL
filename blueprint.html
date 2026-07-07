@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0">
+<title>やまと不動産 新サイト デザイン図面 v2｜アートディレクション3案</title>
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAFAF7; --bg-warm:#F5EEE2;
+    --text:#2B2B2B; --text-light:#6B6B6B;
+    --main:#486B00; --main-dark:#2E4600; --main-light:#EDF2D5;
+    --lime:#A2C523; --earth:#7D4427; --earth-light:#F2EAE0;
+    --cta:#C4851F;
+    --ink:#14180E;
+    --font-head:"dnp-shuei-gothic-gin-std","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    --font-body:"Inter","Noto Sans JP","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    --font-num:"Inter",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{font-size:100%; scroll-behavior:smooth}
+  body{
+    font-family:var(--font-body); background:var(--bg); color:var(--text);
+    line-height:1.9; letter-spacing:0.04em; font-feature-settings:"palt";
+    word-break:normal; overflow-wrap:normal; line-break:strict;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{display:block; max-width:100%}
+  .num{font-family:var(--font-num); font-feature-settings:"tnum"; letter-spacing:0.01em}
+
+  /* ---------- 進行ナビ ---------- */
+  .topbar{
+    position:fixed; inset-inline:0; top:0; z-index:200; height:52px;
+    display:flex; align-items:center; gap:18px; padding-inline:clamp(16px,3vw,40px);
+    background:rgba(250,250,247,0.86); backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(43,43,43,0.08); font-size:0.75rem; letter-spacing:0.1em;
+  }
+  .topbar b{font-family:var(--font-head); font-weight:500; letter-spacing:0.08em}
+  .topbar nav{margin-left:auto; display:flex; gap:6px}
+  .topbar nav a{
+    color:var(--text-light); text-decoration:none; padding:5px 11px; border-radius:100px;
+    border:1px solid transparent; transition:.3s; white-space:nowrap;
+  }
+  .topbar nav a:hover{color:var(--text); border-color:rgba(43,43,43,0.16)}
+  .topbar nav a b{color:var(--main)}
+  .scroll-progress{position:fixed; top:52px; left:0; height:2px; background:var(--lime); z-index:200; width:0}
+  @media(max-width:767px){ .topbar nav{display:none} }
+
+  /* ---------- 共通セクション枠 ---------- */
+  .wrap{max-width:1180px; margin-inline:auto; padding-inline:clamp(20px,5vw,80px)}
+  .kicker{
+    display:inline-flex; align-items:center; gap:10px; font-family:var(--font-num);
+    font-size:0.72rem; font-weight:500; letter-spacing:0.22em; color:var(--main); text-transform:uppercase;
+  }
+  .kicker::before{content:""; width:26px; height:1px; background:var(--lime)}
+
+  /* ---------- カバー ---------- */
+  .cover{min-height:100svh; display:flex; flex-direction:column; justify-content:center; padding-block:96px 64px; position:relative; overflow:hidden}
+  .cover__grid{
+    position:absolute; inset:0; z-index:0; opacity:.5;
+    background-image:linear-gradient(rgba(72,107,0,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(72,107,0,0.05) 1px,transparent 1px);
+    background-size:clamp(40px,6vw,72px) clamp(40px,6vw,72px);
+    -webkit-mask-image:radial-gradient(ellipse 80% 70% at 30% 40%,#000,transparent);
+    mask-image:radial-gradient(ellipse 80% 70% at 30% 40%,#000,transparent);
+  }
+  .cover__inner{position:relative; z-index:1}
+  .cover h1{
+    font-family:var(--font-head); font-weight:500; letter-spacing:0.04em; line-height:1.28;
+    font-size:clamp(2rem,1.2rem + 4.4vw,4.2rem); margin-top:26px; text-wrap:balance;
+  }
+  .cover h1 em{font-style:normal; color:var(--main)}
+  .cover .lead{max-width:640px; margin-top:28px; font-size:clamp(1rem,0.95rem + 0.4vw,1.125rem); color:var(--text); text-wrap:pretty}
+  .cover .reset{
+    max-width:720px; margin-top:32px; padding:22px 26px; border-left:2px solid var(--earth);
+    background:var(--earth-light); border-radius:0 8px 8px 0; font-size:0.95rem; color:var(--text);
+  }
+  .cover .reset b{color:var(--earth)}
+  .cover__meta{margin-top:44px; display:flex; flex-wrap:wrap; gap:32px 56px; font-size:0.85rem; color:var(--text-light)}
+  .cover__meta .num{font-size:1.9rem; font-weight:300; color:var(--main-dark); display:block; line-height:1}
+  .cover__meta span small{display:block; margin-top:8px; letter-spacing:0.08em}
+
+  /* ---------- 方向セクション共通 ---------- */
+  .dir{padding-block:clamp(80px,10vh,140px); position:relative}
+  .dir--01{background:var(--bg)}
+  .dir--02{background:var(--ink); color:#EDEBE4}
+  .dir--03{background:#0f0d0b; color:#EFE7DC}
+  .dir__head{display:flex; flex-wrap:wrap; align-items:flex-end; gap:20px 40px; margin-bottom:clamp(36px,5vw,60px)}
+  .dir__no{font-family:var(--font-num); font-weight:200; font-size:clamp(3.4rem,2rem + 6vw,6.6rem); line-height:.8; color:var(--lime)}
+  .dir--02 .dir__no,.dir--03 .dir__no{color:var(--lime)}
+  .dir__title{font-family:var(--font-head); font-weight:500; letter-spacing:0.06em; font-size:clamp(1.6rem,1.1rem + 2.4vw,2.8rem); line-height:1.2}
+  .dir__title span{display:block; font-family:var(--font-num); font-weight:400; font-size:0.42em; letter-spacing:0.24em; color:var(--text-light); margin-top:10px}
+  .dir--02 .dir__title span,.dir--03 .dir__title span{color:rgba(237,235,228,0.5)}
+  .dir__feeling{max-width:680px; font-size:clamp(1.05rem,1rem + 0.5vw,1.35rem); line-height:1.7; letter-spacing:0.02em; font-weight:400}
+  .dir--01 .dir__feeling{color:var(--main-dark)}
+  .dir__kicker.dark{color:var(--lime)}
+  .dir__kicker.dark::before{background:var(--lime)}
+
+  /* ==== デモ枠 ==== */
+  .demo{margin-top:clamp(32px,4vw,52px); border-radius:12px; overflow:hidden; position:relative}
+  .demo__tag{
+    position:absolute; top:14px; left:14px; z-index:6; font-family:var(--font-num);
+    font-size:0.64rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase;
+    background:rgba(20,24,14,0.72); color:#fff; padding:5px 11px; border-radius:100px; backdrop-filter:blur(4px);
+  }
+  .demo__hint{
+    position:absolute; bottom:14px; left:50%; transform:translateX(-50%); z-index:6;
+    font-size:0.72rem; letter-spacing:0.08em; color:#fff; background:rgba(20,24,14,0.6);
+    padding:7px 15px; border-radius:100px; backdrop-filter:blur(4px); white-space:nowrap;
+    display:flex; align-items:center; gap:8px; pointer-events:none;
+  }
+  .demo__hint .dot{width:6px; height:6px; border-radius:50%; background:var(--lime); animation:pulse 1.8s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+  /* ==== 01 GENSUN: ドラッグ3Dハウス ==== */
+  .stage3d{
+    height:clamp(360px,52vh,540px); background:
+      radial-gradient(120% 90% at 50% 18%, #ffffff 0%, #F3F1EA 55%, #E9E6DC 100%);
+    display:grid; place-items:center; perspective:1300px; cursor:grab; touch-action:pan-y;
+    position:relative;
+  }
+  .stage3d.grabbing{cursor:grabbing}
+  .stage3d::after{ /* 接地影 */
+    content:""; position:absolute; bottom:24%; width:min(46%,320px); height:26px;
+    background:radial-gradient(ellipse,rgba(43,43,43,0.22),transparent 70%); filter:blur(3px);
+    transform:rotateX(70deg) scale(1.1);
+  }
+  /* 実棟(living-a)に合わせた箱型モダン住宅。W220×H268×D180の直方体を中央基準で構成 */
+  .house{position:relative; width:220px; height:268px; transform-style:preserve-3d; transform:rotateX(-16deg) rotateY(-30deg); will-change:transform}
+  .house .face{position:absolute; top:50%; left:50%; background:linear-gradient(160deg,#5b7a1f,#3c5410); border:1px solid rgba(20,24,14,.28)}
+  .fw--front{width:220px;height:268px;transform:translate(-50%,-50%) translateZ(90px)}
+  .fw--back{width:220px;height:268px;transform:translate(-50%,-50%) rotateY(180deg) translateZ(90px); filter:brightness(.72)}
+  .fw--right{width:180px;height:268px;transform:translate(-50%,-50%) rotateY(90deg) translateZ(110px); filter:brightness(.88)}
+  .fw--left{width:180px;height:268px;transform:translate(-50%,-50%) rotateY(-90deg) translateZ(110px); filter:brightness(.76)}
+  .fw--top{width:220px;height:180px;transform:translate(-50%,-50%) rotateX(90deg) translateZ(134px); background:linear-gradient(120deg,#3a4d13,#2a3a0d)}
+  .fw--bottom{width:220px;height:180px;transform:translate(-50%,-50%) rotateX(-90deg) translateZ(134px); background:#20300a}
+  /* earthトーンの軒先ライン(前面上端の帯) */
+  .eave{position:absolute; top:0; left:0; width:100%; height:15px; background:linear-gradient(#7D4427,#5a3019); border-bottom:1px solid rgba(20,24,14,.4)}
+  .win{position:absolute; background:#EDF2D5; box-shadow:inset 0 0 0 3px rgba(20,24,14,.32); border-radius:2px}
+  .door{position:absolute; background:#2a1c12; box-shadow:inset 0 0 0 2px rgba(237,242,213,.25); border-radius:1px}
+  .stat-under{margin-top:22px; display:flex; align-items:baseline; gap:14px; flex-wrap:wrap}
+  .stat-under .price{font-family:var(--font-num); font-weight:300; font-size:clamp(2rem,1.4rem + 2.6vw,3.2rem); color:var(--main-dark); line-height:1}
+  .stat-under .price small{font-size:0.34em; font-family:var(--font-head); font-weight:500; margin-left:2px}
+  .stat-under .cap{font-size:0.8rem; color:var(--text-light); letter-spacing:0.06em}
+
+  /* ==== 02 IMMOVABLE: 金額固定・背景スワップ ==== */
+  .pin-sec{height:320vh; position:relative}
+  .pin-stage{position:sticky; top:52px; height:calc(100svh - 52px); overflow:hidden; display:grid; place-items:center}
+  .pin-bg{position:absolute; inset:0; opacity:0; background-size:cover; background-position:center; will-change:opacity}
+  .pin-bg--1{background:linear-gradient(135deg,#1c2411,#2E4600)}
+  .pin-bg--2{background:#14180E url("assets/living-a.jpg") center/cover}
+  .pin-bg--3{background:#14180E url("assets/nara-hero.jpg") center/cover}
+  .pin-scrim{position:absolute; inset:0; background:linear-gradient(0deg,rgba(20,24,14,.66),rgba(20,24,14,.28))}
+  .pin-center{position:relative; z-index:3; text-align:center; color:#fff; padding:20px}
+  .pin-center .label{font-size:0.8rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--lime); font-family:var(--font-num); min-height:1.2em; transition:opacity .3s}
+  .pin-center .price{
+    font-family:var(--font-num); font-weight:200; letter-spacing:0.005em; line-height:.9;
+    font-size:clamp(3.6rem,2rem + 11vw,10rem); margin:10px 0 4px; text-shadow:0 4px 40px rgba(0,0,0,.4);
+  }
+  .pin-center .price small{font-size:0.2em; font-weight:400; font-family:var(--font-head); margin-left:6px}
+  .pin-center .sub{font-size:clamp(0.9rem,0.85rem + 0.4vw,1.1rem); color:rgba(255,255,255,.9); letter-spacing:0.04em}
+  .pin-center .stepcap{margin-top:22px; font-size:0.82rem; color:rgba(255,255,255,.7); letter-spacing:0.08em; min-height:1.4em}
+  .pin-track{position:absolute; left:50%; bottom:34px; transform:translateX(-50%); z-index:4; display:flex; gap:8px}
+  .pin-track i{width:34px; height:3px; border-radius:3px; background:rgba(255,255,255,.28); transition:.3s}
+  .pin-track i.on{background:var(--lime)}
+  .pin-static-note{position:absolute; right:20px; bottom:30px; z-index:4; font-size:0.7rem; color:rgba(255,255,255,.55); letter-spacing:0.08em; writing-mode:vertical-rl}
+
+  /* ==== 03 NARA HOURS: スクロール・スクラブ・クロスフェード ==== */
+  .scrub-sec{height:320vh; position:relative}
+  .scrub-stage{position:sticky; top:52px; height:calc(100svh - 52px); overflow:hidden}
+  .scrub-frame{position:absolute; inset:0; opacity:0; will-change:opacity}
+  .scrub-frame img{width:100%; height:100%; object-fit:cover; filter:sepia(.05) saturate(.95) brightness(.92)}
+  .scrub-frame--draw{background:#0f0d0b; display:grid; place-items:center}
+  .scrub-frame--draw svg{width:min(70%,520px); height:auto}
+  .scrub-scrim{position:absolute; inset:0; background:linear-gradient(0deg,rgba(15,13,11,.7),transparent 45%)}
+  .scrub-caption{position:absolute; left:clamp(20px,5vw,64px); bottom:clamp(60px,10vh,96px); z-index:5; max-width:560px}
+  .scrub-caption .fr{font-family:var(--font-num); font-size:0.72rem; letter-spacing:0.2em; color:var(--lime); text-transform:uppercase}
+  .scrub-caption .cap{font-family:var(--font-head); font-weight:500; font-size:clamp(1.3rem,1rem + 2vw,2.2rem); line-height:1.35; margin-top:12px; color:#fff; text-wrap:balance}
+  .scrub-caption .price-overlay{margin-top:16px; font-family:var(--font-num); font-weight:300; font-size:clamp(1.4rem,1rem + 1.6vw,2.2rem); color:#fff; opacity:0}
+  .scrub-caption .price-overlay small{font-size:.4em; font-family:var(--font-head); font-weight:500}
+  .scrub-bar{position:absolute; left:0; bottom:0; height:3px; background:var(--lime); z-index:6; width:0}
+
+  /* ---------- セクションマップ ---------- */
+  .smap{margin-top:clamp(40px,5vw,64px)}
+  .smap h4{font-family:var(--font-head); font-weight:500; letter-spacing:0.06em; font-size:1.05rem; margin-bottom:18px}
+  .smap table{width:100%; border-collapse:collapse; font-size:0.86rem}
+  .smap th,.smap td{text-align:left; padding:13px 14px; vertical-align:top; border-bottom:1px solid rgba(43,43,43,0.1); letter-spacing:0.02em; line-height:1.6}
+  .dir--02 .smap th,.dir--02 .smap td,.dir--03 .smap th,.dir--03 .smap td{border-color:rgba(237,235,228,0.14)}
+  .smap thead th{font-family:var(--font-num); font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-light); font-weight:500}
+  .dir--02 .smap thead th,.dir--03 .smap thead th{color:rgba(237,235,228,0.5)}
+  .smap td .sec{font-weight:500; color:var(--main); white-space:nowrap}
+  .dir--02 .smap td .sec,.dir--03 .smap td .sec{color:var(--lime)}
+  .smap td .tech{font-family:var(--font-num); font-size:0.76rem; color:var(--text-light)}
+  .dir--02 .smap td .tech,.dir--03 .smap td .tech{color:rgba(237,235,228,0.55)}
+  .smap .star{color:var(--cta); font-weight:600}
+
+  /* ---------- 2カラム説明 ---------- */
+  .cols{margin-top:clamp(36px,4vw,52px); display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,3vw,44px)}
+  .cols .col h5{font-family:var(--font-num); font-size:0.7rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-light); margin-bottom:12px}
+  .dir--02 .cols .col h5,.dir--03 .cols .col h5{color:rgba(237,235,228,0.5)}
+  .cols .col p{font-size:0.92rem; line-height:1.85; text-wrap:pretty}
+  @media(max-width:767px){ .cols{grid-template-columns:1fr; gap:24px} }
+
+  /* ---------- 比較・締め ---------- */
+  .compare{padding-block:clamp(80px,10vh,130px); background:var(--bg-warm)}
+  .ctable{margin-top:40px; overflow-x:auto}
+  .ctable table{width:100%; min-width:640px; border-collapse:collapse; font-size:0.88rem}
+  .ctable th,.ctable td{text-align:left; padding:16px; border-bottom:1px solid rgba(43,43,43,0.12); vertical-align:top; line-height:1.6}
+  .ctable thead th{font-family:var(--font-head); font-weight:500; font-size:1rem}
+  .ctable thead th .en{display:block; font-family:var(--font-num); font-size:0.66rem; letter-spacing:0.14em; color:var(--text-light); text-transform:uppercase; margin-top:4px}
+  .ctable th[scope=row]{font-family:var(--font-num); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-light); white-space:nowrap; font-weight:500}
+  .rec{margin-top:44px; padding:28px 30px; background:#fff; border-radius:10px; box-shadow:0 6px 30px rgba(43,43,43,.06); max-width:780px}
+  .rec .kicker{margin-bottom:14px}
+  .rec p{font-size:0.98rem; line-height:1.9; text-wrap:pretty}
+  .rec b{color:var(--main-dark)}
+  .ask{margin-top:36px; font-family:var(--font-head); font-weight:500; font-size:clamp(1.2rem,1rem + 1.2vw,1.7rem); letter-spacing:0.04em; color:var(--text)}
+
+  .foot{padding:40px 0 80px; text-align:center; font-size:0.75rem; color:var(--text-light); letter-spacing:0.06em; line-height:1.9}
+  .foot a{color:var(--main)}
+
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .demo__hint .dot{animation:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <b>やまと不動産</b><span>デザイン図面 v2</span>
+  <nav>
+    <a href="#cover">概要</a>
+    <a href="#d01"><b>01</b> 原寸</a>
+    <a href="#d02"><b>02</b> 動かない数字</a>
+    <a href="#d03"><b>03</b> 奈良時間</a>
+    <a href="#compare">比較</a>
+  </nav>
+</div>
+<div class="scroll-progress" id="sp"></div>
+
+<!-- ============ カバー ============ -->
+<header class="cover" id="cover">
+  <div class="cover__grid" aria-hidden="true"></div>
+  <div class="wrap cover__inner">
+    <span class="kicker">Art Direction Blueprint — 2026.07.03</span>
+    <h1>「見せたものが、そのまま届く」を、<br><em>言葉ではなく体験で</em>証明する3つの図面。</h1>
+    <p class="lead">株式会社やまと不動産の新サイトを、150万円クラスにふさわしい水準で作り直します。各案は3D・スクロール連動・キネティックの最先端技法を、意味のある場所にだけ効かせています。下へスクロールすると、各案のシグネチャ技法が実際に動きます。</p>
+    <div class="reset">
+      <b>リセットの理由:</b> 前回は「白カード＋影＋見出し＋中央ボタン」という同じ型を全セクションに複製し、量産テンプレになりました。今回は<b>セクションごとに視覚言語を変える</b>ことを前提に、まず図面から引き直します。色と書体（緑 #486B00 / 秀英角ゴシック銀）は資産として維持し、捨てるのは「組み方」です。
+    </div>
+    <div class="cover__meta">
+      <span><b class="num">3</b><small>本当に軸の違う方向</small></span>
+      <span><b class="num">7</b><small>採集した受賞サイト群</small></span>
+      <span><b class="num">1〜2</b><small>3Dを効かせる箇所（全面3Dは却下）</small></span>
+      <span><b class="num">16px</b><small>SP本文死守（実測優位）</small></span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 01 原寸 / GENSUN ============ -->
+<section class="dir dir--01" id="d01">
+  <div class="wrap">
+    <div class="dir__head">
+      <div class="dir__no num">01</div>
+      <h2 class="dir__title">原寸 —<br>触れて確かめる立体証明<span>GENSUN / TANGIBLE PROOF</span></h2>
+    </div>
+    <p class="dir__feeling">「これが“そのまま”、うちの土地に建つ」。驚きでも感動でもなく、<strong>疑いが消える瞬間の静かな納得</strong>を持ち帰ってもらう。</p>
+
+    <div class="demo">
+      <span class="demo__tag">Live demo — Signature 3D slot ①</span>
+      <div class="stage3d" id="stage3d">
+        <div class="house" id="house">
+          <div class="face fw--front">
+            <div class="eave"></div>
+            <div class="win" style="left:14%;top:16%;width:30%;height:11%"></div>
+            <div class="win" style="right:14%;top:16%;width:16%;height:11%"></div>
+            <div class="win" style="left:14%;bottom:10%;width:34%;height:34%"></div>
+            <div class="door" style="right:16%;bottom:8%;width:15%;height:30%"></div>
+          </div>
+          <div class="face fw--back"></div>
+          <div class="face fw--right">
+            <div class="win" style="left:22%;top:20%;width:26%;height:12%"></div>
+            <div class="win" style="right:20%;bottom:16%;width:20%;height:22%"></div>
+          </div>
+          <div class="face fw--left"></div>
+          <div class="face fw--top"></div>
+          <div class="face fw--bottom"></div>
+        </div>
+        <div class="demo__hint"><span class="dot"></span>ドラッグで360°回してみてください</div>
+      </div>
+    </div>
+    <div class="stat-under">
+      <span class="price num">2,480<small>万円</small></span>
+      <span class="cap">花・税込コミコミ ／ 立体の直下に金額を静置 ＝「この立体が、この金額で建つ」を一体の驚きに</span>
+    </div>
+
+    <div class="cols">
+      <div class="col">
+        <h5>視覚言語（白カードの真逆）</h5>
+        <p>白カードを一枚も置かない“ステージ演出”系。広い余白を舞台に見立て、被写体（3Dモデル・写真・数字）を主役として据え、周囲UIは緑の1px線とラベルだけ。影はbox-shadowでなく“物が置かれている実影”で表現。説明はすべて図解と実写に逃がし、文字を最小化します。</p>
+      </div>
+      <div class="col">
+        <h5>3D戦略（Part I 判断ゲート通過）</h5>
+        <p>WebGL/3Dは全7セクション中<b>2箇所だけ</b>に封印。①価格＝施主の実プランを360°、②品質＝同じモデルをAR「自分の土地に原寸で置く」。“2Dで不可能な体験”＝実プランを全周・原寸で確かめることだけを3Dに正当化。FVは逆にモバイルLCP優先で3Dを却下し、native CSSパララックスに逃がします。本番は <span class="num">modelviewer.dev</span> の model-viewer に花/風/京の実GLBを載せます（このデモはCSS3Dの代用表現）。</p>
+      </div>
+    </div>
+
+    <div class="smap">
+      <h4>セクション設計 — レイアウトと技法を毎回変える</h4>
+      <table>
+        <thead><tr><th>セクション</th><th>レイアウトの型</th><th>シグネチャ技法 / 出典</th></tr></thead>
+        <tbody>
+          <tr><td><span class="sec">FV（物件なし）</span></td><td>全画面フルブリード・奈良情景の3層速度差レイヤー（生駒8%／建つ家20%／木立畦道40%）、文字1字なし</td><td><span class="tech">native CSS 3層パララックス（transformのみ・SPは2層・reduced-motionで静止）<br>MDN scroll-driven</span></td></tr>
+          <tr><td><span class="sec">権威 600棟</span></td><td>main-dark全幅ベタ面に反転。巨大Inter数字“600”1個だけ。FVと真逆の“静寂な数字面”</td><td><span class="tech">@property + animation-timeline:view() カウントアップ（到達時1回）<br>Josh W. Comeau</span></td></tr>
+          <tr><td><span class="sec">価格の正直</span></td><td><span class="star">★3D①</span> 中央ステージにmodel-viewerで実プラン1体。周囲は余白と緑1px線。下に税込額を静置</td><td><span class="tech">model-viewer 360°（reveal=interaction／poster WebPでLCP確保／reduced-motion停止）<br>modelviewer.dev</span></td></tr>
+          <tr><td><span class="sec">品質</span></td><td>左右分割。左＝同一モデルのARボタン「土地に原寸で置く」、右＝“8つのゼロ”円形SVG図解</td><td><span class="tech"><span class="star">★3D②</span> model-viewer AR（webxr/scene-viewer/quick-look・非対応は自動フォールバック）</span></td></tr>
+          <tr><td><span class="sec">実例・声</span></td><td>施工事例のフルブリード横スクロール写真帯＋ルームツアー動画。声は大きめ引用組み。“帯”構造でカード反復を排除</td><td><span class="tech">animation-timeline:view() 全幅写真帯リビール</span></td></tr>
+          <tr><td><span class="sec">移住</span></td><td>奈良の暮らしをカラー生活情景で。地図UI＋暮らし方タグ。SPは2層に削減した情感パララックス</td><td><span class="tech">native 2層パララックス（明朝/セピア/生成り罫線を一切乗せずイムラ回避）</span></td></tr>
+          <tr><td><span class="sec">出口</span></td><td>物件・土地・LINE配信のリスト。SP追従バー2分割。装飾ゼロの実務面で締める</td><td><span class="tech">view()段送り＋sticky CTA（amberは予約のみ）</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 動かない数字 / IMMOVABLE ============ -->
+<section class="dir dir--02" id="d02">
+  <div class="wrap">
+    <div class="dir__head">
+      <div class="dir__no num">02</div>
+      <h2 class="dir__title" style="color:#EDEBE4">動かない数字 —<br>最後まで1pxも動かない金額<span>IMMOVABLE</span></h2>
+    </div>
+    <p class="dir__feeling" style="color:#EDEBE4">「この数字は、最後まで動かない」。契約から引き渡しまで金額が上がらないことへの、<strong>身体で感じる安堵</strong>。他社の“打ち合わせるほど増える”恐怖の解毒。</p>
+  </div>
+
+  <!-- 金額固定・背景スワップ scrollytelling -->
+  <div class="pin-sec" id="pinSec">
+    <div class="pin-stage">
+      <div class="pin-bg pin-bg--1" id="pinbg1"></div>
+      <div class="pin-bg pin-bg--2" id="pinbg2"></div>
+      <div class="pin-bg pin-bg--3" id="pinbg3"></div>
+      <div class="pin-scrim"></div>
+      <div class="pin-center">
+        <div class="label" id="pinLabel">STEP 01 — 見積り</div>
+        <div class="price num">2,480<small>万円</small></div>
+        <div class="sub">花・建物本体・税込コミコミ</div>
+        <div class="stepcap" id="pinStep">見積書を、そのままお見せします。</div>
+      </div>
+      <div class="pin-track"><i class="on" id="pt1"></i><i id="pt2"></i><i id="pt3"></i></div>
+      <div class="pin-static-note">金額は 1px も動かない</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="cols">
+      <div class="col">
+        <h5>視覚言語（WebGLゼロ・キネティックタイポ）</h5>
+        <p>3DをPart Iゲートで全却下した純DOM・エディトリアル系。主役はInter数字と秀英角ゴ銀の言葉そのもの。写真は脇役で、余白とタイポのリズムが画面を作る。緑単色の罫線グリッドにamberは金額のCTA着地でのみ点火。“数字が主人公の紙面が動く”雑誌のような体験です。</p>
+      </div>
+      <div class="col">
+        <h5>運動戦略（意味を1箇所に集中）</h5>
+        <p>上のデモがこの案の心臓です。<b>中央の金額は1pxも動かず、背後の見積書→着工→完成だけが差し替わる</b>——「見せた金額のまま家が建つ」を運動そのもので証明。GSAP ScrollTriggerのpin+scrub、reduced-motion時はmatchMediaで素の縦積みに退避。Lenisや粒子は積まず、キネティックは“数字カウント”と“語のマスク送り”の2手だけに絞ります。</p>
+      </div>
+    </div>
+
+    <div class="smap">
+      <h4>セクション設計 — 数字と言葉が主役</h4>
+      <table>
+        <thead><tr><th>セクション</th><th>レイアウトの型</th><th>シグネチャ技法 / 出典</th></tr></thead>
+        <tbody>
+          <tr><td><span class="sec">FV（物件なし）</span></td><td>全面のタイポステージ。「見せたものが、そのまま届く」1行をスクロールでマスクリビール。物件も写真も出さず言葉と余白で掴む</td><td><span class="tech">animation-timeline:view()/scroll() テキスト・マスクリビール<br>Josh W. Comeau</span></td></tr>
+          <tr><td><span class="sec">権威 600棟</span></td><td>左に固定の巨大“600”、右カラムに区画数・エリア・年数が流れる非対称グリッド。“数字が居座る”構図</td><td><span class="tech">@property + view() カウントアップ＋sticky数字</span></td></tr>
+          <tr><td><span class="sec">価格の正直</span></td><td><span class="star">★核</span> 中央にInter税込額を完全固定、背後で見積書→着工→完成がpin区間で差し替わる。金額は1pxも動かない</td><td><span class="tech">GSAP ScrollTrigger pin+scrub（.priceは不動・matchMediaでreduced-motion退避）<br>gsap.com</span></td></tr>
+          <tr><td><span class="sec">品質</span></td><td>“8つのゼロ”を縦スクロールで0が1つずつ積層するキネティック・タイポリスト。円形図解ではなく数字の列</td><td><span class="tech">animation-timeline:view() stagger入場（各“0”を50ms差・CSSのみ）</span></td></tr>
+          <tr><td><span class="sec">実例・声</span></td><td>声を主役化したマガジン見開き。大きな引用タイポ＋小さな人物実写1点。編集しないタグ引用</td><td><span class="tech">view() 引用リビール（balance適用でorphan禁止）</span></td></tr>
+          <tr><td><span class="sec">移住</span></td><td>「大阪から◯分」を大Inter数字でキネティックに提示＋地図UI。距離を数字で語り移住ハードルを下げる</td><td><span class="tech">native 2層パララックス＋view() 数字カウント</span></td></tr>
+          <tr><td><span class="sec">出口</span></td><td>花2,480/風2,480/京2,280の税込価格表（tabular-nums整列）＋来場予約。ここで初めてamber点火</td><td><span class="tech">view() 行送り＋SP追従バー2分割</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 奈良時間 / NARA HOURS ============ -->
+<section class="dir dir--03" id="d03">
+  <div class="wrap">
+    <div class="dir__head">
+      <div class="dir__no num">03</div>
+      <h2 class="dir__title" style="color:#EFE7DC">奈良時間 —<br>一本の映画のように建つ<span>NARA HOURS / CINEMATIC</span></h2>
+    </div>
+    <p class="dir__feeling" style="color:#EFE7DC">「大阪の“今”より、ここでの“朝”がいい」。移住後の生活を先に体験してしまった憧れと、<strong>手描きの線が家になるまでを見届けた静かな高揚</strong>。</p>
+  </div>
+
+  <!-- 連番スクラブの縮約デモ(3状態クロスフェード) -->
+  <div class="scrub-sec" id="scrubSec">
+    <div class="scrub-stage">
+      <div class="scrub-frame scrub-frame--draw" id="sf1">
+        <svg viewBox="0 0 400 240" fill="none" stroke="#A2C523" stroke-width="1.4" id="drawSvg">
+          <path d="M60 200 L60 110 L200 40 L340 110 L340 200 Z"/>
+          <path d="M60 110 L200 40 L340 110"/>
+          <rect x="110" y="130" width="50" height="40"/>
+          <rect x="240" y="130" width="50" height="70"/>
+          <line x1="30" y1="200" x2="370" y2="200"/>
+          <text x="200" y="228" fill="#A2C523" stroke="none" font-size="11" text-anchor="middle" font-family="Inter" letter-spacing="2">DRAWING #001</text>
+        </svg>
+      </div>
+      <div class="scrub-frame" id="sf2"><img src="assets/detail-a.jpg" alt="木材・構造の実写"></div>
+      <div class="scrub-frame" id="sf3"><img src="assets/living-a.jpg" alt="完成外観の実写"></div>
+      <div class="scrub-scrim"></div>
+      <div class="scrub-caption">
+        <div class="fr" id="scrubFr">FRAME 001 / 090</div>
+        <div class="cap" id="scrubCap">手描きの見積り線画から。</div>
+        <div class="price-overlay num" id="scrubPrice">2,480<small>万円</small>で、この家が建ちます。</div>
+      </div>
+      <div class="scrub-bar" id="scrubBar"></div>
+      <div class="demo__tag" style="top:14px;left:14px">Live demo — image-sequence scrub（3状態に縮約）</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="cols">
+      <div class="col">
+        <h5>視覚言語（シネマティック・観る）</h5>
+        <p>実写・動画・連番フレームが全面を支配する方向。文字は字幕のように最小、被写体はwarm castで統一しシネスコ横位置を多用。白カードもグリッドも封印し、フルブリード映像の連なりで物語を送る。明朝縦書き・モノクロ静謐（＝イムラ/旅館テンプレ）を避け、あえてカラーの生活情景で“動いている今”を見せます。</p>
+      </div>
+      <div class="col">
+        <h5>運動戦略（大技を1箇所に集中）</h5>
+        <p>上のデモが核。<b>手描き見積り線画→木材構造→完成外観</b>を連番WebPでcanvasにscrub描画（本番48〜90枚、このデモは3状態に縮約）。“見積りがそのまま家になる”変形の連続性は静止画では出せず、ここだけscrubを正当化。モバイルはposter先出し＋先読み＋saveData/reduced-motionで静止フォールバック。最終フレームに税込額を重ね、価格不変も同時に語ります。</p>
+      </div>
+    </div>
+
+    <div class="smap">
+      <h4>セクション設計 — “読む”を捨て“観る”に振る</h4>
+      <table>
+        <thead><tr><th>セクション</th><th>レイアウトの型</th><th>シグネチャ技法 / 出典</th></tr></thead>
+        <tbody>
+          <tr><td><span class="sec">FV（物件なし）</span></td><td>シネスコ全画面。奈良の朝の生活情景を3層速度差でゆっくり流す。文字は極小コピー1行を字幕位置に</td><td><span class="tech">native CSS 3層パララックス（カラー生活情景・SPは2層・reduced-motion静止）</span></td></tr>
+          <tr><td><span class="sec">権威 600棟</span></td><td>施工実写タイル群が敷き詰まり“600”を面で示すモザイク。数字は写真の上に重畳。FVと対照の“集積”構図</td><td><span class="tech">view() グリッドstagger出現＋@propertyカウント</span></td></tr>
+          <tr><td><span class="sec">価格の正直</span></td><td><span class="star">★核</span> sticky canvasで手描き見積り→木材→完成外観へ変形、最終フレームに税込額を重畳</td><td><span class="tech">連番WebPのcanvas scrub（48-90枚・poster先出し・非対応は静止）<br>Codrops OPTIKKA</span></td></tr>
+          <tr><td><span class="sec">品質</span></td><td>素材マクロの実写/動画をフルブリードで。塗料12貫・外壁通気・軒天木目を映像＋字幕注記で見せる</td><td><span class="tech">view() 全幅映像リビール＋autoplay muted loop（reduced-motion静止）</span></td></tr>
+          <tr><td><span class="sec">実例・声</span></td><td>お客さんごとのルームツアー動画をシネマ横スクロールギャラリーで。声は字幕引用</td><td><span class="tech">view() 横帯リビール＋動画埋め込み（遅延ロード）</span></td></tr>
+          <tr><td><span class="sec">移住</span></td><td>奈良の一日（朝→昼→夜）を写真連続で縦に送る短編。地図UIと他府県アクセスを字幕で添える</td><td><span class="tech">native 2層パララックス＋view() 連続フェード</span></td></tr>
+          <tr><td><span class="sec">出口</span></td><td>完成外観の実写を背景に物件・土地・LINEへ。映画のエンドロールから実務へ着地させamber点火</td><td><span class="tech">view() 静かな締め＋sticky CTA</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 比較・締め ============ -->
+<section class="compare" id="compare">
+  <div class="wrap">
+    <span class="kicker">Compare & Decide</span>
+    <h2 style="font-family:var(--font-head);font-weight:500;letter-spacing:.05em;font-size:clamp(1.5rem,1.1rem+2vw,2.4rem);margin-top:18px;line-height:1.3">3案は「どこに賭けるか」が違います。</h2>
+    <div class="ctable">
+      <table>
+        <thead><tr>
+          <th>観点</th>
+          <th>01 原寸<span class="en">GENSUN</span></th>
+          <th>02 動かない数字<span class="en">IMMOVABLE</span></th>
+          <th>03 奈良時間<span class="en">NARA HOURS</span></th>
+        </tr></thead>
+        <tbody>
+          <tr><th scope="row">主役</th><td>実プランの3D立体</td><td>金額そのもの（数字）</td><td>実写・動画・連番</td></tr>
+          <tr><th scope="row">核の技法</th><td>model-viewer 360°＋AR</td><td>GSAP pin（金額固定・背景可変）</td><td>連番WebP canvas scrub</td></tr>
+          <tr><th scope="row">証明するもの</th><td>「見た仕様が原寸で建つ」</td><td>「見た金額が動かない」</td><td>「見積りが家になる物語」</td></tr>
+          <tr><th scope="row">制作コスト</th><td>中〜高（GLB/USDZを花風京で）</td><td><b>低（WebGL・撮影不要）</b></td><td>高（60-90枚＋動画撮影）</td></tr>
+          <tr><th scope="row">モバイル軽さ</th><td>中（3Dは2箇所に限定）</td><td><b>高（純DOM）</b></td><td>中（連番の遅延ロード必須）</td></tr>
+          <tr><th scope="row">やまとの手札適合</th><td>実プラン3Dの新規制作が要る</td><td>専務の芯「金額が一致」に直結</td><td>専務「動画資産あり＋撮る」に直結</td></tr>
+          <tr><th scope="row">既視感の壊し方</th><td>“物を見せる”ステージ</td><td>“数字が動かない”運動</td><td>“観る”シネマ</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="rec">
+      <span class="kicker">僕の見立て</span>
+      <p><b>02「動かない数字」を軸に、03「奈良時間」の映像を移住セクションへ差し込む</b>ハイブリッドが、やまとに最も効くと考えています。理由は3つ——(1) 専務の芯「パンと見せたものと値段が一致する」を、金額固定の運動が理屈より速く証明する。(2) WebGLゼロで“寝る前スマホ”に確実に軽く、スマホ最優先と完全合致。(3) GLB制作費が不要で150万予算の耐性が最も高い。<br>ただし「触れて確かめる立体（01）」は移住検討層のSUUMO写真不信に最も鋭く刺さる差別化なので、予算とGLB運用が確保できるなら01も強い候補です。決めるのはあなたです。</p>
+    </div>
+
+    <p class="ask">どの方向で、本設計（全セクション）に進めますか？<br><span style="font-size:.62em;font-weight:400;color:var(--text-light);letter-spacing:.04em;font-family:var(--font-body)">01 / 02 / 03、または「02＋03のハイブリッド」等の組み合わせでも指定できます。</span></p>
+  </div>
+</section>
+
+<div class="foot">
+  デザイン図面 v2（2026-07-03）／ 出典: modelviewer.dev・gsap.com・Codrops(tympanus.net)・Josh W. Comeau・MDN scroll-driven animations ほか受賞サイト実測<br>
+  3Dハウス・金額スワップ・スクラブはすべて<b>実際に動く図面デモ</b>です。本番の実プランGLB・連番WebP・撮影素材への差し替えを前提としています。価格は2026年4月改定後の税込値。
+</div>
+
+<!-- GSAP: IMMOVABLEのpin と NARA HOURSのscrub にだけ使用 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* 進捗バー */
+  var sp = document.getElementById('sp');
+  function onScrollProg(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    sp.style.width = (h>0 ? (window.scrollY/h*100) : 0) + '%';
+  }
+  window.addEventListener('scroll', onScrollProg, {passive:true}); onScrollProg();
+
+  /* ---- 01 ドラッグ3Dハウス ---- */
+  (function(){
+    var stage = document.getElementById('stage3d'), house = document.getElementById('house');
+    if(!stage||!house) return;
+    var ry = -28, rx = -14, dragging=false, lastX=0, lastY=0, auto=!reduce, idle;
+    function apply(){ house.style.transform = 'rotateX('+rx+'deg) rotateY('+ry+'deg)'; }
+    function start(x,y){ dragging=true; auto=false; lastX=x; lastY=y; stage.classList.add('grabbing'); clearTimeout(idle); }
+    function move(x,y){ if(!dragging) return; ry += (x-lastX)*0.5; rx += -(y-lastY)*0.3; rx=Math.max(-52,Math.min(28,rx)); lastX=x; lastY=y; apply(); }
+    function end(){ dragging=false; stage.classList.remove('grabbing'); if(!reduce){ idle=setTimeout(function(){auto=true;},2600);} }
+    stage.addEventListener('mousedown',function(e){start(e.clientX,e.clientY);});
+    window.addEventListener('mousemove',function(e){move(e.clientX,e.clientY);});
+    window.addEventListener('mouseup',end);
+    stage.addEventListener('touchstart',function(e){start(e.touches[0].clientX,e.touches[0].clientY);},{passive:true});
+    stage.addEventListener('touchmove',function(e){move(e.touches[0].clientX,e.touches[0].clientY);},{passive:true});
+    stage.addEventListener('touchend',end);
+    function tick(){ if(auto){ ry+=0.28; apply(); } requestAnimationFrame(tick); }
+    apply(); tick();
+  })();
+
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  var mm = gsap.matchMedia();
+
+  /* ---- 02 IMMOVABLE: 金額固定・背景スワップ ---- */
+  mm.add('(prefers-reduced-motion: no-preference)', function(){
+    var bg1=document.getElementById('pinbg1'),bg2=document.getElementById('pinbg2'),bg3=document.getElementById('pinbg3');
+    var label=document.getElementById('pinLabel'),step=document.getElementById('pinStep');
+    var pt=[document.getElementById('pt1'),document.getElementById('pt2'),document.getElementById('pt3')];
+    var steps=[
+      {label:'STEP 01 — 見積り', cap:'見積書を、そのままお見せします。'},
+      {label:'STEP 02 — 着工', cap:'打ち合わせが進んでも、金額はそのまま。'},
+      {label:'STEP 03 — 完成', cap:'お引き渡し。最初の金額のまま、家が建ちました。'}
+    ];
+    gsap.set(bg1,{opacity:1});
+    var cur=0;
+    function setStep(i){ if(i===cur) return; cur=i; label.style.opacity=0; step.style.opacity=0;
+      setTimeout(function(){ label.textContent=steps[i].label; step.textContent=steps[i].cap; label.style.opacity=1; step.style.opacity=1; },160);
+      pt.forEach(function(d,k){ d.classList.toggle('on',k<=i); });
+    }
+    ScrollTrigger.create({
+      trigger:'#pinSec', start:'top top', end:'bottom bottom', scrub:true,
+      onUpdate:function(self){
+        var p=self.progress;
+        // 3状態クロスフェード(金額は不動)
+        var o2 = Math.min(1,Math.max(0,(p-0.30)/0.22));
+        var o3 = Math.min(1,Math.max(0,(p-0.62)/0.22));
+        bg2.style.opacity=o2; bg3.style.opacity=o3;
+        setStep(p<0.34?0:(p<0.66?1:2));
+      }
+    });
+  });
+  mm.add('(prefers-reduced-motion: reduce)', function(){
+    document.getElementById('pinbg2').style.opacity=1; // 静止で完成状態を見せる
+    document.getElementById('pinSec').style.height='auto';
+    document.querySelector('#pinSec .pin-stage').style.position='static';
+  });
+
+  /* ---- 03 NARA HOURS: 連番スクラブ(3状態) ---- */
+  mm.add('(prefers-reduced-motion: no-preference)', function(){
+    var sf1=document.getElementById('sf1'),sf2=document.getElementById('sf2'),sf3=document.getElementById('sf3');
+    var fr=document.getElementById('scrubFr'),cap=document.getElementById('scrubCap'),price=document.getElementById('scrubPrice'),bar=document.getElementById('scrubBar');
+    var caps=['手描きの見積り線画から。','木材の構造が、立ち上がる。','完成した外観。写真と実物に、違いはありません。'];
+    gsap.set(sf1,{opacity:1});
+    var last=-1;
+    ScrollTrigger.create({
+      trigger:'#scrubSec', start:'top top', end:'bottom bottom', scrub:true,
+      onUpdate:function(self){
+        var p=self.progress;
+        var o2=Math.min(1,Math.max(0,(p-0.28)/0.24));
+        var o3=Math.min(1,Math.max(0,(p-0.60)/0.24));
+        sf2.style.opacity=o2; sf3.style.opacity=o3;
+        var frame=Math.round(1+p*89); fr.textContent='FRAME '+String(frame).padStart(3,'0')+' / 090';
+        bar.style.width=(p*100)+'%';
+        var idx=p<0.34?0:(p<0.66?1:2);
+        if(idx!==last){ last=idx; cap.textContent=caps[idx]; }
+        price.style.opacity = p>0.82 ? Math.min(1,(p-0.82)/0.12) : 0;
+      }
+    });
+  });
+  mm.add('(prefers-reduced-motion: reduce)', function(){
+    document.getElementById('sf3').style.opacity=1;
+    document.getElementById('scrubPrice').style.opacity=1;
+    document.getElementById('scrubSec').style.height='auto';
+    document.querySelector('#scrubSec .scrub-stage').style.position='static';
+  });
+
+  ScrollTrigger.refresh();
+})();
+</script>
+</body>
+</html>

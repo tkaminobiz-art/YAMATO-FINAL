@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>やまと｜実績セクション（世界トップ級プロトタイプ）</title>
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4F1EA; --cream:#F4F1EA; --ink:#241F1B; --green:#486B00; --lime:#A2C523;
+    --gold:#D8B25A; --amber:#C4851F;
+    --fh:"dnp-shuei-gothic-gin-std","Noto Sans JP",sans-serif;
+    --fn:"Inter","Noto Sans JP",sans-serif; --fb:"Noto Sans JP",sans-serif;
+    --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:#0f1408;color:var(--cream);font-family:var(--fb);line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:"palt"}
+  /* 前後の暗さ確認用ダミー */
+  .pad{height:60vh;background:#0f1408;display:flex;align-items:center;justify-content:center;color:#5c6349;font-family:var(--fn);letter-spacing:.2em;font-size:12px}
+
+  .authority{position:relative;overflow:hidden;isolation:isolate;color:var(--cream);background:#111808;
+    padding:clamp(100px,15vw,220px) 0 clamp(70px,9vw,120px)}
+  /* 背景（パララックス） */
+  .authority__bg{position:absolute;inset:-14% 0;z-index:0;background:url(assets/authority/ext_wide.webp) center/cover;
+    transform:scale(1.1) translateY(0);will-change:transform;filter:saturate(.9) brightness(.9)}
+  .authority__scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(180deg,rgba(12,17,6,.9),rgba(17,24,8,.74) 40%,rgba(12,16,6,.9)),
+      radial-gradient(120% 80% at 50% 40%,rgba(46,70,0,.32),rgba(12,16,6,.2) 62%)}
+  /* フィルムグレイン */
+  .authority__grain{position:absolute;inset:-30px;z-index:2;pointer-events:none;opacity:.16;mix-blend-mode:soft-light;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:150px;
+    animation:grain 1.05s steps(5) infinite}
+  @keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-14px,9px)}40%{transform:translate(9px,-12px)}60%{transform:translate(-8px,13px)}80%{transform:translate(12px,7px)}100%{transform:translate(0,0)}}
+  .wrap{position:relative;z-index:3;max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,56px);text-align:center;display:flex;flex-direction:column;align-items:center}
+
+  .eyebrow{font-family:var(--fn);font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--lime);
+    display:inline-flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3.4vw,40px)}
+  .eyebrow::before,.eyebrow::after{content:"";width:36px;height:1px;background:currentColor;opacity:.5}
+
+  /* 数字＝発光する“家を覗く窓” */
+  .numwrap{position:relative;display:flex;align-items:baseline;justify-content:center;gap:.04em;line-height:.84}
+  .numwrap::before{content:"";position:absolute;left:50%;top:48%;width:78%;height:120%;transform:translate(-50%,-50%);z-index:-1;
+    background:radial-gradient(closest-side,rgba(216,178,90,.22),rgba(216,178,90,0) 72%);filter:blur(6px)}
+  .count{font-family:var(--fn);font-weight:900;font-size:clamp(7rem,23vw,18rem);letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+    background-image:linear-gradient(rgba(255,244,222,.05),rgba(255,244,222,.05)),url(assets/authority/ext_bright.webp);
+    background-size:132% auto;background-position:center 46%;
+    -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 0 34px rgba(216,178,90,.32)) drop-shadow(0 10px 34px rgba(0,0,0,.55));will-change:background-position}
+  .unit{font-family:var(--fh);font-weight:700;font-size:clamp(2rem,5.4vw,4rem);color:var(--gold);transform:translateY(-.12em);
+    text-shadow:0 2px 20px rgba(0,0,0,.4)}
+
+  .lead{font-family:var(--fh);font-weight:700;font-size:clamp(1.55rem,3.6vw,2.7rem);letter-spacing:.03em;color:#F7F2E6;
+    line-height:1.5;margin-top:clamp(18px,2.4vw,30px);text-wrap:balance;text-shadow:0 2px 26px rgba(0,0,0,.45)}
+  .sub{font-family:var(--fb);font-size:clamp(.95rem,1.4vw,1.1rem);color:rgba(244,241,234,.76);margin-top:16px}
+
+  .stats{display:flex;justify-content:center;flex-wrap:wrap;margin-top:clamp(40px,5vw,64px)}
+  .stat{padding:6px clamp(20px,3.2vw,46px);position:relative}
+  .stat + .stat::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:1px;height:42px;background:currentColor;opacity:.26}
+  .stat .n{font-family:var(--fn);font-weight:700;font-size:clamp(1.6rem,3vw,2.25rem);color:#F7F2E6;font-variant-numeric:tabular-nums;display:block}
+  .stat .l{font-family:var(--fb);font-size:12px;color:rgba(244,241,234,.66);letter-spacing:.04em;margin-top:5px;display:block}
+
+  /* 流れるバナー */
+  .marquee{position:relative;z-index:3;margin-top:clamp(56px,7vw,96px);width:100%;overflow:hidden;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+  .track{display:flex;gap:22px;width:max-content;padding:8px clamp(11px,1.5vw,22px);animation:flow 46s linear infinite}
+  .marquee:hover .track{animation-play-state:paused}
+  @keyframes flow{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .tile{position:relative;flex:0 0 auto;width:clamp(240px,24vw,320px);aspect-ratio:4/5;border-radius:7px;overflow:hidden;
+    text-decoration:none;color:#fff;box-shadow:0 18px 40px rgba(0,0,0,.4);display:block;isolation:isolate}
+  .tile__img{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.03);transition:transform .9s var(--ease);filter:saturate(.98)}
+  .tile::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(12,10,6,.86),rgba(12,10,6,.24) 44%,rgba(12,10,6,.04) 72%)}
+  .tile:hover .tile__img{transform:scale(1.1)}
+  .tile__body{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:20px 20px 22px;text-align:left}
+  .tile__en{font-family:var(--fn);font-size:10.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,241,234,.82)}
+  .tile__jp{font-family:var(--fh);font-weight:700;font-size:clamp(1.15rem,1.6vw,1.4rem);letter-spacing:.03em;margin-top:5px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .tile__jp svg{width:19px;height:19px;flex:0 0 auto;transition:transform .5s var(--ease)}
+  .tile:hover .tile__jp svg{transform:translateX(5px)}
+  .cap{position:relative;z-index:3;text-align:center;font-family:var(--fb);font-size:11.5px;color:rgba(244,241,234,.5);letter-spacing:.08em;margin-top:22px}
+
+  /* ===== 入場の振付（scroll-triggered stagger） ===== */
+  [data-reveal]{opacity:0;transform:translateY(46px);filter:blur(9px);
+    transition:opacity 1s var(--ease),transform 1.15s var(--ease),filter 1s var(--ease);transition-delay:var(--d,0s)}
+  .authority.is-in [data-reveal]{opacity:1;transform:none;filter:none}
+  .marquee[data-reveal]{transform:translateY(56px)}
+
+  @media (prefers-reduced-motion:reduce){
+    [data-reveal]{opacity:1 !important;transform:none !important;filter:none !important;transition:none}
+    .track,.authority__grain{animation:none}
+    .authority__bg{transform:scale(1.03) !important}
+  }
+</style>
+</head>
+<body>
+<div class="pad">↑ FV（暗い動画）から続く想定</div>
+
+<section class="authority" id="auth">
+  <div class="authority__bg" id="authBg"></div>
+  <div class="authority__scrim"></div>
+  <div class="authority__grain"></div>
+
+  <div class="wrap">
+    <p class="eyebrow" data-reveal style="--d:.05s">Track Record ／ 創業からの実績</p>
+    <div class="numwrap" data-reveal style="--d:.2s">
+      <span class="count" id="count" data-target="600">0</span><span class="unit">棟超</span>
+    </div>
+    <h2 class="lead" data-reveal style="--d:.42s">選ばれるのは、価格だけではありません。</h2>
+    <p class="sub" data-reveal style="--d:.54s">創業から、奈良でこれだけの家をつくってきました。</p>
+    <div class="stats" data-reveal style="--d:.68s">
+      <div class="stat"><span class="n">約150</span><span class="l">区画｜自社分譲（常時）</span></div>
+      <div class="stat"><span class="n">50</span><span class="l">組｜お客様の声</span></div>
+      <div class="stat"><span class="n">◯</span><span class="l">年｜創業</span></div>
+    </div>
+  </div>
+
+  <div class="marquee" data-reveal style="--d:.84s" aria-label="関連ページ">
+    <div class="track" id="track">
+      <a class="tile" href="#"><span class="tile__img" style="background-image:url(assets/authority/voice.webp)"></span><span class="tile__body"><span class="tile__en">Voice</span><span class="tile__jp">お客様の声<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="tile" href="#"><span class="tile__img" style="background-image:url(assets/authority/land.webp)"></span><span class="tile__body"><span class="tile__en">Land</span><span class="tile__jp">土地・分譲地<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="tile" href="#"><span class="tile__img" style="background-image:url(assets/authority/equipment.webp)"></span><span class="tile__body"><span class="tile__en">Equipment</span><span class="tile__jp">標準装備<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="tile" href="#"><span class="tile__img" style="background-image:url(assets/authority/works.webp)"></span><span class="tile__body"><span class="tile__en">Works</span><span class="tile__jp">施工事例<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+      <a class="tile" href="#"><span class="tile__img" style="background-image:url(assets/authority/model.webp)"></span><span class="tile__body"><span class="tile__en">Model House</span><span class="tile__jp">モデルハウス<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
+    </div>
+  </div>
+  <p class="cap" data-reveal style="--d:.92s">← 自動で流れます／カーソルを乗せると止まります</p>
+</section>
+
+<div class="pad">↓ §3 価格（生成り・明るい）へ続く想定</div>
+
+<script>
+(function(){
+  var root=document.documentElement; root.className=root.className.replace('no-js','').trim();
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  var sec=document.getElementById('auth');
+  var bg=document.getElementById('authBg');
+  var count=document.getElementById('count');
+  var track=document.getElementById('track');
+  if(track){ track.innerHTML += track.innerHTML; }
+
+  /* カウントアップ（窓のまま） */
+  function runCount(){
+    var target=+count.getAttribute('data-target');
+    if(reduce){ count.textContent=target; return; }
+    var dur=1800,start=null;
+    function tick(now){ if(!start)start=now; var p=Math.min((now-start)/dur,1);
+      count.textContent=Math.round((1-Math.pow(1-p,3))*target); if(p<1)requestAnimationFrame(tick); }
+    requestAnimationFrame(tick);
+  }
+
+  /* 入場：セクションが入ったら振付＋カウント発火 */
+  var fired=false;
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting && !fired){ fired=true; sec.classList.add('is-in'); runCount(); } });
+    },{threshold:.12}).observe(sec);
+  } else { sec.classList.add('is-in'); runCount(); }
+
+  /* パララックス：背景と“窓の中の風景”をスクロールで微差ドリフト */
+  if(!reduce){
+    var ticking=false;
+    function onScroll(){
+      if(ticking) return; ticking=true;
+      requestAnimationFrame(function(){
+        var r=sec.getBoundingClientRect();
+        var vh=window.innerHeight;
+        // セクションが視界を通過する進捗 -1(下)〜1(上)
+        var prog=(vh - (r.top+r.height/2)) / (vh + r.height/2);
+        prog=Math.max(-1,Math.min(1,prog));
+        bg.style.transform='scale(1.1) translateY('+(prog*96)+'px)';
+        count.style.backgroundPositionY=(46 + prog*20)+'%';
+        ticking=false;
+      });
+    }
+    window.addEventListener('scroll',onScroll,{passive:true});
+    onScroll();
+  }
+})();
+</script>
+</body>
+</html>

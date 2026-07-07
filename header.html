@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>やまと不動産｜ヘッダー & メニュー図面</title>
+<meta name="description" content="ヘッダー・グローバルメニューの単体図面。FVには非干渉。">
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAFAF7; --bg-warm:#F5EEE2; --cream:#F4F1EA;
+    --text:#2B2B2B; --text-light:#6B6B6B;
+    --main:#486B00; --main-dark:#2E4600; --main-light:#EDF2D5;
+    --lime:#A2C523; --earth:#7D4427; --earth-light:#F2EAE0;
+    --cta:#C4851F; --cta-dark:#A56C12; --line-color:#E4DDCE;
+    --font-head:"Inter","dnp-shuei-gothic-gin-std","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    --font-body:"Inter","Noto Sans JP","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    --font-num:"Inter","Noto Sans JP",sans-serif;
+    --header-h:clamp(60px,7vw,84px);
+    --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;font-size:100%;scroll-behavior:smooth}
+  html,body{word-break:normal;overflow-wrap:normal;line-break:strict}
+  body{font-family:var(--font-body);color:var(--text);background:var(--bg);
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:"palt"}
+  body.is-locked{overflow:hidden}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  ::selection{background:var(--main-light)}
+
+  /* ============================================================
+     HEADER (fixed) — 透過（ヒーロー上）→ スクロールで温かいクリーム地
+     ============================================================ */
+  .site-header{position:fixed;top:0;left:0;right:0;z-index:80;height:var(--header-h);
+    display:flex;align-items:center;
+    padding-left:clamp(20px,4.5vw,60px);padding-right:clamp(16px,3vw,40px);
+    color:var(--cream);
+    transition:background .55s var(--ease),color .45s var(--ease),box-shadow .55s var(--ease),border-color .55s var(--ease);
+    border-bottom:1px solid transparent}
+  /* 透過状態の可読性：上からのごく薄いスクリム */
+  .site-header::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:linear-gradient(to bottom,rgba(16,20,10,.42),rgba(16,20,10,0));
+    opacity:1;transition:opacity .5s var(--ease)}
+  .site-header.is-solid{background:rgba(250,250,247,.90);color:var(--text);
+    -webkit-backdrop-filter:saturate(1.1) blur(14px);backdrop-filter:saturate(1.1) blur(14px);
+    border-bottom-color:var(--line-color);box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .site-header.is-solid::before{opacity:0}
+
+  /* ロゴ */
+  .brand{display:flex;flex-direction:column;line-height:1;gap:5px;flex:0 0 auto}
+  .brand__jp{font-family:var(--font-head);font-weight:500;letter-spacing:.10em;
+    font-size:clamp(1.02rem,.9rem + .7vw,1.32rem)}
+  .brand__en{font-family:"Inter",sans-serif;font-weight:400;letter-spacing:.30em;
+    font-size:.5rem;text-transform:uppercase;opacity:.62;padding-left:.05em}
+  .site-header.is-solid .brand__en{color:var(--earth);opacity:.75}
+
+  /* ナビ（PC） */
+  .nav{margin-left:auto;display:flex;align-items:center;gap:clamp(18px,2vw,34px)}
+  .nav__link{position:relative;font-family:var(--font-head);font-weight:500;
+    font-size:.85rem;letter-spacing:.05em;padding:6px 0;white-space:nowrap;opacity:.94;
+    transition:opacity .3s var(--ease)}
+  .nav__link::after{content:"";position:absolute;left:0;right:100%;bottom:-1px;height:1px;
+    background:currentColor;transition:right .4s var(--ease);opacity:.7}
+  .nav__link:hover{opacity:1}
+  .nav__link:hover::after{right:0}
+  .site-header.is-solid .nav__link:hover{color:var(--main)}
+
+  /* 右側アクション */
+  .actions{display:flex;align-items:center;gap:clamp(10px,1.4vw,18px);margin-left:clamp(20px,2.4vw,40px)}
+  .ghost-link{font-family:var(--font-head);font-weight:500;font-size:.82rem;letter-spacing:.05em;
+    opacity:.9;border-bottom:1px solid transparent;padding-bottom:2px;transition:.3s var(--ease)}
+  .ghost-link:hover{opacity:1;border-bottom-color:currentColor}
+  .btn-reserve{display:inline-flex;align-items:center;gap:9px;background:var(--cta);color:#fff;
+    font-family:var(--font-head);font-weight:500;font-size:.85rem;letter-spacing:.04em;
+    padding:11px 22px;border-radius:4px;line-height:1;white-space:nowrap;
+    box-shadow:0 6px 22px rgba(196,133,31,.28);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .btn-reserve:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(196,133,31,.36)}
+  .btn-reserve svg{width:13px;height:13px;stroke:#fff;stroke-width:2;fill:none}
+
+  /* ハンバーガー */
+  .burger{width:clamp(44px,4vw,54px);height:clamp(44px,4vw,54px);border-radius:50%;
+    display:inline-flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;
+    background:transparent;border:1px solid rgba(244,241,234,.34);cursor:pointer;
+    transition:background .4s var(--ease),border-color .4s var(--ease)}
+  .site-header.is-solid .burger{border-color:var(--line-color);background:#fff}
+  .burger span{display:block;width:20px;height:1.6px;background:currentColor;border-radius:2px;
+    transition:transform .4s var(--ease),width .4s var(--ease)}
+  .site-header.is-solid .burger span{background:var(--text)}
+  .burger:hover span:first-child{width:14px}
+  .burger:hover span:last-child{width:14px}
+
+  /* ============================================================
+     HERO（この図面のデモ背景のみ — FVは別図面 fv_video.html）
+     ============================================================ */
+  .demo-hero{position:relative;height:100svh;min-height:560px;display:flex;align-items:flex-end;
+    padding:0 clamp(20px,5vw,60px) clamp(40px,7vh,80px);overflow:hidden;background:#12160c}
+  .demo-hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:0}
+  .demo-hero__scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(to top,rgba(16,20,10,.6),rgba(16,20,10,.05) 42%,transparent 70%)}
+  .demo-hero__note{position:relative;z-index:2;color:var(--cream);max-width:560px}
+  .demo-hero__note .tag{font-family:"Inter",sans-serif;font-size:.6rem;letter-spacing:.24em;
+    text-transform:uppercase;opacity:.7}
+  .demo-hero__note h1{font-family:var(--font-head);font-weight:500;letter-spacing:.03em;line-height:1.3;
+    font-size:clamp(1.15rem,.9rem + 1.4vw,1.9rem);margin-top:14px;text-shadow:0 2px 24px rgba(8,10,5,.5)}
+  .demo-hero__note h1 em{font-style:normal;color:var(--lime)}
+  .scrollcue{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:2;
+    font-family:"Inter",sans-serif;font-size:.55rem;letter-spacing:.26em;text-transform:uppercase;
+    color:rgba(244,241,234,.72)}
+
+  /* デモ用の後続ダミーセクション（solid状態確認のため） */
+  .demo-sec{padding:clamp(60px,10vh,120px) clamp(20px,5vw,60px);border-bottom:1px solid var(--line-color)}
+  .demo-sec:nth-child(odd){background:var(--bg-warm)}
+  .demo-sec .en{font-family:"Inter",sans-serif;font-size:.62rem;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--main)}
+  .demo-sec h2{font-family:var(--font-head);font-weight:500;letter-spacing:.05em;line-height:1.35;
+    font-size:clamp(1.4rem,1.1rem + 1.6vw,2.2rem);margin-top:12px;color:var(--text)}
+  .demo-sec p{max-width:640px;margin-top:18px;font-size:clamp(1rem,.95rem + .2vw,1.0625rem);
+    line-height:1.9;letter-spacing:.04em;color:var(--text-light)}
+
+  /* ============================================================
+     FULLSCREEN MENU（左＝実写 / 右＝クリーム地）
+     ============================================================ */
+  .menu{position:fixed;inset:0;z-index:120;display:grid;grid-template-columns:40% 60%;
+    visibility:hidden;pointer-events:none}
+  .menu.is-open{visibility:visible;pointer-events:auto}
+
+  /* 左：実写 + 社名 */
+  .menu__media{position:relative;overflow:hidden;background:#12160c;
+    transform:scale(1.06);opacity:0;transition:transform .9s var(--ease),opacity .7s var(--ease)}
+  .menu.is-open .menu__media{transform:scale(1);opacity:1}
+  .menu__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+  .menu__media::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(16,20,10,.5),rgba(16,20,10,.05) 34%,rgba(16,20,10,.28))}
+  .menu__brand{position:absolute;top:clamp(24px,3vw,40px);left:clamp(24px,3vw,48px);z-index:2;
+    color:var(--cream);display:flex;flex-direction:column;gap:6px}
+  .menu__brand .jp{font-family:var(--font-head);font-weight:500;letter-spacing:.10em;
+    font-size:clamp(1.1rem,.9rem + .8vw,1.4rem)}
+  .menu__brand .en{font-family:"Inter",sans-serif;font-weight:400;letter-spacing:.30em;
+    font-size:.52rem;text-transform:uppercase;opacity:.7}
+  .menu__addr{position:absolute;left:clamp(24px,3vw,48px);bottom:clamp(24px,3vw,40px);z-index:2;
+    color:rgba(244,241,234,.82);font-size:.72rem;letter-spacing:.06em;line-height:1.9}
+  .menu__addr .lic{display:block;font-size:.62rem;letter-spacing:.1em;opacity:.7;margin-top:6px}
+
+  /* 右：クリーム地パネル */
+  .menu__panel{position:relative;background:var(--bg-warm);color:var(--text);overflow-y:auto;
+    padding:clamp(70px,8vh,96px) clamp(30px,4.5vw,80px) clamp(30px,4vh,48px);
+    display:flex;flex-direction:column;
+    transform:translateX(100%);transition:transform .8s var(--ease)}
+  .menu.is-open .menu__panel{transform:translateX(0)}
+  .menu__panel::before{content:"";position:absolute;top:0;left:0;right:0;height:56px;
+    background:linear-gradient(var(--bg-warm),rgba(245,238,226,0));pointer-events:none;z-index:3}
+
+  .menu__close{position:absolute;top:clamp(20px,2.4vw,30px);right:clamp(24px,3.4vw,48px);z-index:5;
+    width:clamp(48px,4.4vw,58px);height:clamp(48px,4.4vw,58px);border-radius:50%;border:none;cursor:pointer;
+    background:var(--earth);color:var(--cream);display:inline-flex;align-items:center;justify-content:center;
+    transition:transform .5s var(--ease),background .3s var(--ease)}
+  .menu__close:hover{transform:rotate(90deg);background:var(--main-dark)}
+  .menu__close svg{width:18px;height:18px;stroke:currentColor;stroke-width:1.6;fill:none}
+
+  /* ナビ本体 */
+  .menu__nav{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,52px);
+    padding-bottom:clamp(28px,4vh,44px);border-bottom:1px solid var(--line-color)}
+  .navcol{display:flex;flex-direction:column}
+  .navcol__label{font-family:"Inter",sans-serif;font-size:.58rem;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--main);opacity:.85;margin-bottom:16px}
+  .navcol a.lead{font-family:var(--font-head);font-weight:500;font-size:clamp(1.05rem,1rem + .3vw,1.22rem);
+    letter-spacing:.04em;line-height:1.5;padding:9px 0;position:relative;display:inline-flex;width:fit-content;
+    transition:color .3s var(--ease),padding-left .35s var(--ease)}
+  .navcol a.lead::before{content:"";position:absolute;left:-14px;top:50%;width:6px;height:1px;background:var(--earth);
+    transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+  .navcol a.lead:hover{color:var(--main);padding-left:12px}
+  .navcol a.lead:hover::before{transform:scaleX(1)}
+  .subnav{margin:4px 0 6px;padding-left:2px;display:flex;flex-direction:column;gap:2px}
+  .subnav a{font-size:.82rem;letter-spacing:.03em;line-height:1.5;color:var(--text-light);
+    padding:5px 0;transition:color .25s var(--ease),transform .3s var(--ease)}
+  .subnav a:hover{color:var(--earth);transform:translateX(4px)}
+
+  /* 連絡カード（罫線区切り・浮かせない） */
+  .menu__contact{margin-top:clamp(24px,3.4vh,38px);border:1px solid var(--line-color);border-radius:8px;
+    background:rgba(255,255,255,.5)}
+  .contact-row{display:flex;align-items:center;gap:clamp(16px,2.4vw,32px);
+    padding:clamp(18px,2.4vh,26px) clamp(20px,2.6vw,34px)}
+  .contact-row + .contact-row{border-top:1px solid var(--line-color)}
+  .contact-row__label{font-family:var(--font-head);font-weight:500;font-size:.88rem;letter-spacing:.04em;
+    flex:0 0 auto;min-width:150px;line-height:1.5}
+  .contact-row__label small{display:block;font-family:var(--font-body);font-weight:400;
+    font-size:.68rem;letter-spacing:.04em;color:var(--text-light);margin-top:5px}
+  .contact-row__action{margin-left:auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+  .btn-form{display:inline-flex;align-items:center;gap:12px;background:var(--cta);color:#fff;
+    font-family:var(--font-head);font-weight:500;font-size:.92rem;letter-spacing:.04em;
+    padding:15px 28px;border-radius:4px;line-height:1;white-space:nowrap;
+    box-shadow:0 6px 22px rgba(196,133,31,.26);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+  .btn-form:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(196,133,31,.34)}
+  .btn-form svg{width:14px;height:14px;stroke:#fff;stroke-width:2;fill:none}
+  .doc-link{font-family:var(--font-head);font-weight:500;font-size:.82rem;letter-spacing:.04em;
+    color:var(--main-dark);border-bottom:1px solid rgba(46,70,0,.35);padding-bottom:3px;transition:.3s var(--ease)}
+  .doc-link:hover{color:var(--main);border-bottom-color:var(--main)}
+  .tel{font-family:var(--font-num);font-weight:300;font-variant-numeric:tabular-nums;
+    font-size:clamp(1.7rem,1.3rem + 1.4vw,2.35rem);letter-spacing:.01em;color:var(--earth);line-height:1;
+    display:inline-flex;align-items:center;gap:12px}
+  .tel svg{width:20px;height:20px;stroke:var(--earth);stroke-width:1.5;fill:none;flex:0 0 auto}
+  .tel-hours{font-size:.7rem;letter-spacing:.05em;color:var(--text-light);margin-top:8px;line-height:1.6}
+
+  /* メニュー最下部：SNS + 小リンク */
+  .menu__foot{margin-top:auto;padding-top:clamp(22px,3vh,32px);display:flex;align-items:center;
+    justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .sns{display:flex;gap:16px}
+  .sns a{width:38px;height:38px;border-radius:50%;border:1px solid var(--line-color);display:inline-flex;
+    align-items:center;justify-content:center;color:var(--text-light);transition:.3s var(--ease)}
+  .sns a:hover{color:var(--earth);border-color:var(--earth);transform:translateY(-2px)}
+  .sns svg{width:17px;height:17px;stroke:currentColor;stroke-width:1.6;fill:none}
+  .foot-links{display:flex;gap:20px;font-size:.72rem;letter-spacing:.05em;color:var(--text-light)}
+  .foot-links a{transition:color .25s var(--ease)}
+  .foot-links a:hover{color:var(--main)}
+
+  /* stagger（開いた時に各要素がふわっと） */
+  .menu .stagger{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+  .menu.is-open .stagger{opacity:1;transform:translateY(0)}
+  .menu.is-open .stagger{transition-delay:calc(.28s + var(--i,0)*.05s)}
+
+  /* ============================================================
+     RESPONSIVE
+     ============================================================ */
+  @media (max-width:1180px){
+    .nav{display:none}
+    .ghost-link{display:none}
+  }
+  @media (min-width:901px) and (max-width:1180px){
+    .nav{display:none}
+  }
+  @media (max-width:900px){
+    .menu{grid-template-columns:1fr;grid-template-rows:34vh 1fr}
+    .menu__media{transform:scale(1.04)}
+    .menu__panel{transform:translateY(40px);transition:transform .8s var(--ease),opacity .6s var(--ease);opacity:0;
+      padding-top:clamp(30px,5vh,48px)}
+    .menu.is-open .menu__panel{transform:translateY(0);opacity:1}
+    .menu__addr{display:none}
+    .menu__nav{grid-template-columns:1fr 1fr;gap:22px 28px}
+    .contact-row{flex-direction:column;align-items:flex-start;gap:14px}
+    .contact-row__action{margin-left:0;justify-content:flex-start}
+    .btn-reserve{padding:10px 16px;font-size:.8rem}
+    .btn-reserve .lbl-long{display:none}
+  }
+  @media (max-width:560px){
+    .menu{grid-template-rows:26vh 1fr}
+    .menu__nav{grid-template-columns:1fr}
+    .brand__en{display:none}
+    .tel{font-size:2rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.001ms !important;transition-duration:.001ms !important}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="#top" aria-label="やまと不動産 トップへ">
+    <span class="brand__jp">やまと不動産</span>
+    <span class="brand__en">Yamato Estate</span>
+  </a>
+
+  <nav class="nav" aria-label="グローバルナビゲーション">
+    <a class="nav__link" href="#">私たちについて</a>
+    <a class="nav__link" href="#">家づくりのこだわり</a>
+    <a class="nav__link" href="#">施工事例</a>
+    <a class="nav__link" href="#">モデルハウス</a>
+    <a class="nav__link" href="#">分譲地・物件</a>
+    <a class="nav__link" href="#">会社案内</a>
+  </nav>
+
+  <div class="actions">
+    <a class="ghost-link" href="#">資料請求</a>
+    <a class="btn-reserve" href="#">
+      <span>来場<span class="lbl-long">のご</span>予約</span>
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <button class="burger" id="burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO（デモ背景 — 実FVは fv_video.html） ============ -->
+<section class="demo-hero" id="top">
+  <img class="demo-hero__img" src="assets/nara-hero.jpg" alt="">
+  <div class="demo-hero__scrim"></div>
+  <div class="demo-hero__note">
+    <span class="tag">Header figure — over-hero state</span>
+    <h1>この背景は<em>差し替え用のダミー</em>です。<br>FV本体は別図面 fv_video.html が担当します。</h1>
+  </div>
+  <div class="scrollcue">Scroll</div>
+</section>
+
+<!-- ============ デモ用ダミーセクション（solid状態の確認用） ============ -->
+<section class="demo-sec">
+  <span class="en">A — Price</span>
+  <h2>スクロールすると、ヘッダーが<br>温かいクリーム地に切り替わります。</h2>
+  <p>ヒーローの上では透過（クリーム文字）、コンテンツに入ると背景がクリーム地＋墨文字へ。ここから下はヘッダーの「solid」状態を確認するためのダミー領域です。実際のセクション（価格・標準仕様・施工事例など）は別図面で組み上げます。</p>
+</section>
+<section class="demo-sec">
+  <span class="en">B — Quality</span>
+  <h2>ヘッダーとメニューだけを<br>切り出した図面です。</h2>
+  <p>右上のボタンからメニューが開きます。左に実写、右にクリーム地のパネルという構成で、ナビゲーションとご予約・お電話の導線をまとめています。</p>
+</section>
+
+<!-- ============ FULLSCREEN MENU ============ -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="サイトメニュー" aria-hidden="true">
+
+  <!-- 左：実写 + 社名 -->
+  <div class="menu__media">
+    <img src="assets/hero_front.png" alt="">
+    <div class="menu__brand">
+      <span class="jp">株式会社やまと不動産</span>
+      <span class="en">Yamato Estate</span>
+    </div>
+    <div class="menu__addr">
+      奈良県奈良市大宮町1丁目6番21<br>
+      9:00〜19:00｜定休日：火曜・水曜
+      <span class="lic">宅地建物取引業 国土交通大臣（1）第10516号</span>
+    </div>
+  </div>
+
+  <!-- 右：クリーム地パネル -->
+  <div class="menu__panel">
+    <button class="menu__close" id="menuClose" type="button" aria-label="メニューを閉じる">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+
+    <nav class="menu__nav" aria-label="サイトメニュー">
+      <div class="navcol stagger" style="--i:0">
+        <span class="navcol__label">Understand</span>
+        <a class="lead" href="#">私たちについて</a>
+        <a class="lead" href="#">家づくりのこだわり</a>
+        <div class="subnav">
+          <a href="#">見せた価格が、そのまま届く</a>
+          <a href="#">標準仕様（モデルハウス＝標準）</a>
+          <a href="#">自由設計・間取り</a>
+          <a href="#">保証・アフターフォロー</a>
+        </div>
+      </div>
+
+      <div class="navcol stagger" style="--i:1">
+        <span class="navcol__label">See &amp; Choose</span>
+        <a class="lead" href="#">施工事例</a>
+        <a class="lead" href="#">モデルハウス</a>
+        <a class="lead" href="#">分譲地・土地情報</a>
+        <a class="lead" href="#">お客様の声</a>
+      </div>
+
+      <div class="navcol stagger" style="--i:2">
+        <span class="navcol__label">Company</span>
+        <a class="lead" href="#">会社案内</a>
+        <a class="lead" href="#">スタッフ紹介</a>
+        <a class="lead" href="#">お知らせ</a>
+        <a class="lead" href="#">アクセス</a>
+      </div>
+    </nav>
+
+    <div class="menu__contact stagger" style="--i:3">
+      <div class="contact-row">
+        <div class="contact-row__label">
+          来場・ご相談のご予約
+          <small>WEBから 24時間受付</small>
+        </div>
+        <div class="contact-row__action">
+          <a class="doc-link" href="#">資料請求はこちら</a>
+          <a class="btn-form" href="#">
+            ご予約フォームへ
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row__label">
+          お電話でのお問い合わせ
+        </div>
+        <div class="contact-row__action">
+          <div>
+            <a class="tel" href="tel:0742361123">
+              <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+              0742-36-1123
+            </a>
+            <div class="tel-hours">受付 9:00〜19:00｜定休日：火曜・水曜</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu__foot stagger" style="--i:4">
+      <div class="sns">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2l5 2.8-5 2.8z" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 6.5a5 5 0 0 0 5 4.2"/></svg></a>
+      </div>
+      <div class="foot-links">
+        <a href="#">会社概要</a>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">サイトマップ</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  root.className=root.className.replace('no-js','').trim();
+
+  /* --- ヘッダー 透過⇄solid（ヒーロー末尾を監視） --- */
+  var header=document.getElementById('siteHeader');
+  var hero=document.getElementById('top');
+  if('IntersectionObserver' in window && hero){
+    var io=new IntersectionObserver(function(entries){
+      header.classList.toggle('is-solid',!entries[0].isIntersecting);
+    },{rootMargin:'-70px 0px 0px 0px',threshold:0});
+    io.observe(hero);
+  }else{
+    window.addEventListener('scroll',function(){
+      header.classList.toggle('is-solid',window.scrollY>window.innerHeight*0.7);
+    },{passive:true});
+  }
+
+  /* --- メニュー開閉 --- */
+  var menu=document.getElementById('menu');
+  var burger=document.getElementById('burger');
+  var closeBtn=document.getElementById('menuClose');
+  var lastFocus=null;
+
+  function openMenu(){
+    lastFocus=document.activeElement;
+    menu.classList.add('is-open');
+    menu.setAttribute('aria-hidden','false');
+    burger.setAttribute('aria-expanded','true');
+    document.body.classList.add('is-locked');
+    setTimeout(function(){closeBtn.focus();},60);
+    document.addEventListener('keydown',onKey);
+  }
+  function closeMenu(){
+    menu.classList.remove('is-open');
+    menu.setAttribute('aria-hidden','true');
+    burger.setAttribute('aria-expanded','false');
+    document.body.classList.remove('is-locked');
+    document.removeEventListener('keydown',onKey);
+    if(lastFocus)lastFocus.focus();
+  }
+  function onKey(e){
+    if(e.key==='Escape')closeMenu();
+  }
+  burger.addEventListener('click',openMenu);
+  closeBtn.addEventListener('click',closeMenu);
+  /* メニュー内リンククリックで閉じる（同一ページ遷移デモ） */
+  menu.querySelectorAll('a[href="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){e.preventDefault();closeMenu();});
+  });
+})();
+</script>
+</body>
+</html>

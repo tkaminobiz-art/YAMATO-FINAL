@@ -1,0 +1,313 @@
+[
+ {
+  "patternName": "B-rhythmic-catalog ／「これも、標準なんですか？」— リズミカル標準装備カタログ",
+  "concept": "奈良・やまと不動産の\"実際に建つ標準装備\"を、ビートに乗せて次々に巡るテンポ主導のループ。各設備で「オプションだと思ってました→実は、標準です」の対比を1カット1メッセージで畳みかけ、\"高さ・寸法\"のcalloutを主役級に大きく打つ。外観で始まり外観に還る円環構造なので、FV直下に置いてもシームレスに無限ループ。安っぽいカット割りにせず、間(ま)と光の移ろいで\"高級カタログ\"の格を担保する。実写素材→nano_banana_proのimage-to-imageでシネマ化→4Kアップスケール→seedance/klingで微速のカメラ移動を付与、という本案件で実証済みの手順を全ショットで前提化。",
+  "mood": "エネルギッシュだが上質。お得感・驚き・信頼。テンポは速いのに、一つひとつの空間には朝〜昼の柔らかな自然光が満ちて呼吸がある。「畳みかけるのに、うるさくない」——ハイブランドの製品カタログ映像の間合いを住宅に移植する。",
+  "totalDurationSec": 21,
+  "loopMechanics": "円環（外観→設備群→外観）で組む。Shot 1 とラスト Shot 11 は同一の外観ソース・同一フレーミング・同一グレーディングで生成し、末尾0.5sと冒頭0.5sを同じ絵にしておく。結合は2段構え：(1)一次ループ保険＝ラストの外観クリップにごく淡い光のブルーム(白のピーク)を0.3sだけ乗せ、そのピーク・フレームでカットして冒頭へ繋ぐ。白ピークが両端の微差を飲み込むので、ピクセル一致でなくても継ぎ目が見えない。(2)本命＝ラストと冒頭が同一フレーミングなので、白ブルームを使わず0.4sクロスディゾルブでも成立する（納品先の好みで切替可能に両方書き出す）。BGMは尺21.0sで頭に戻る小節数（96BPM前後に微調整）で1ループを完全一致させ、映像ループとBGMループの周期を揃える。書き出しは首尾フレームを各3フレーム重複させ、動画結合ツールで重複分をオーバーラップ処理してハードな段差を消す。",
+  "heightItems": [
+   "天井高（リビング）【要クライアント確認：例 2400 / 2600mm】— 「頭の上に、ゆとり」を数字で見せる主役",
+   "ハイドア・親子玄関ドアの有効高【要確認：例 2000〜2400mm】— 縦の抜けを強調",
+   "吹き抜け天井までの高さ【要確認：実測値。1階床〜吹き抜け天井】— 縦パンで\"高さ\"を体感させる最重要項目",
+   "システムキッチン ワークトップ高【要確認：例 850 / 900mm】— 立って使いやすい標準寸法",
+   "カップボード カウンター高＆吊戸下端高【要確認】— 収納量と使い勝手を高さで語る",
+   "三面鏡洗面化粧台 ミラー上端／カウンター高【要確認】— 朝の身支度動線を寸法で見せる",
+   "保温浴槽 ゆったり浸かれる浴槽深さ【要確認：浴槽内深さmm】— \"深さ=くつろぎ\"に翻訳",
+   "玄関框の上がり框高【要確認】— 段差の設計配慮を数値で",
+   "軽量瓦（全6色）※高さでなく\"選べる数=6\"で見せる標準の幅",
+   "旭化成ヘーベルパワーボード 外壁の厚み【要確認：例 37mm】— \"守り\"の厚さを数字で"
+  ],
+  "music": "96BPM前後、尺21.0sで完全に1ループする長さに微調整。ジャンルは「プレミアム・アコースティック×ミニマル・エレクトロニカ」：温かいナイロンギターのアルペジオ＋指パッチン/クラップ/軽いリムショットの弱いパーカッションで前進感、ローファイでない上質なキック。EDMのビルドやシンセリードは禁止（安っぽさの原因）。ビート設計：拍頭（約2.4s間隔）にカット点とcalloutのポップ（スケールイン）を同期。各\"これも標準\"の瞬間に指パッチン1発＋アンバー下線がスッと引かれるSEを重ねる。外観の首尾は音数を間引いてブレス（吸気の\"間\"）を作り、ループ境界で息を吐くように次周へ。終盤Shot10-11で一度だけ音を\"開いて\"温度を上げ、円環の到達感を出す。ボイスは入れない（テロップの声＝register北極星で語る）。参考質感の方向：無印良品CM的な清潔なアコースティック × Apple製品カタログ映像の余白のあるリズム。",
+  "higgsfieldAssets": [
+   "静止画(nano_banana_pro image-to-image)：Shot1〜11の計11枚をシネマ化生成。外観はShot1とShot11で同一ソース・同一フレーミングのペア生成（グレーディングも一致）。",
+   "4Kアップスケール(upscale_image)：全11枚を4Kへ。特に外壁ヘーベル/軽量瓦/三面鏡などディテール勝負のカットは必須。",
+   "モーション動画(seedance または kling image-to-video)：Shot1,3,4,5,6,7,10,11 に微速カメラ移動を付与（計8本）。Shot2(玄関),8(框),9(瓦)は静止画＋CSS/編集側Ken Burnsで代替可（コスト最適化。動きが欲しければ同様にi2v化）。",
+   "外観の\"朝寄り黄金光\"バージョンはFVの黄金の夜明け変換とグレーディングを地続きにする（同一LUT感）。",
+   "ループ結合用：ラスト外観クリップの白ブルーム版（0.3sピーク）と、無ブルーム版の2種を書き出し。",
+   "各calloutテロップは実装側(After Effects/Remotion/CapCut等)でオーバーレイ。数値は全て【要確認】プレースホルダのまま組み、確定後に差し替え。"
+  ],
+  "whyItWorks": "(1)対比構造「オプションだと思ってた→実は標準」は損失回避が支配的な日本市場で最も効く\\\"お得の発見\\\"フレームで、register北極星のお客様の声引用（「これも標準なんですか？」）と噛み合う。(2)\\\"高さ・寸法\\\"を主役calloutにすることで、他社が言葉で済ませる標準装備を\\\"測れる事実\\\"に変換し、数値の裏付け＝信頼を生む（かつ捏造せず【要確認】で誠実）。(3)テンポの良いカタログ形式は「情報量が多い＝充実している」という充実感を体感で伝え、1カット1メッセージなのでスマホの小画面でも各訴求が埋もれない。(4)外観→設備→外観の円環はFV直下のシームレスループに最適で、\\\"家全体\\\"の記憶像を毎周焼き直す。(5)Higgsfieldのシネマ化で実写のしょぼさを消し、間と光でハイブランドの格を担保するため、テンポが速くても安っぽく見えない。",
+  "watchouts": [
+   "数値は現サイトに存在しない。天井高・ハイドア高・吹き抜け高・各カウンター高・外壁厚・浴槽深さは全て【要クライアント確認】。確定するまで数値テロップは伏せ、定性語（たっぷり/ゆとりの）＋\"標準\"訴求で先行運用可。捏造は絶対禁止。",
+   "nano_banana_proのimage-to-imageは\"建築・被写体のアイデンティティ保持\"を毎回明示指示。窓割り・カップボードの段数・三面鏡の形状・瓦の色などを勝手に改変させない（実棟と食い違うと信頼を毀損）。",
+   "旭化成ヘーベルパワーボード/MIRAIE(住友ゴム)/軽量瓦は他社の登録商標・製品名。ロゴや刻印を生成で作り込まない（偽ロゴ捏造リスク）。名称テロップはテキストで正確に、映像は\"素材の質感\"に留める。",
+   "テンポを上げすぎるとカタログが\"チラシ\"化し安っぽくなる。1カット最低1.5s確保、外観の首尾は2.5sで呼吸を。BGMのEDM化・過剰SEは禁止。",
+   "白ブルームのループ保険を強くしすぎるとフラッシュがうるさい。ピーク白は80〜90%程度に抑え、0.3s以内。",
+   "スマホ縦(9:16)最優先。全calloutはセーフエリア内、下部CTAゾーンと被らせない。横位置ソース(外壁/キッチン等)は9:16へreframe時に主要被写体を中央保持。",
+   "同一視覚キットの使い回し禁止（MEMORY準拠）。本パターンは\"墨タイプ＋アンバー下線＋左下vs右上の対角callout配置\"を固有の視覚言語とし、他パターン(A/C)や各サイトセクションの白カードキットと差別化する。"
+  ],
+  "shots": [
+   {
+    "n": 1,
+    "scene": "外観（establishing・フック）朝の柔らかな順光〜半逆光、生成りの空。円環の起点かつ終点。",
+    "sourcePhoto": "外観：NEW素材/外観写真（CIMG4846.JPG 等の実棟）または 写真素材/06_YAMATO撮影(7952pxプロ)。FVで実証済みの実棟→黄金の夜明け変換の\"朝寄り\"グレーディングを継承。",
+    "higgsfieldImage": "nano_banana_pro image-to-image。指示核：『Preserve the exact architecture identity, window layout, roofline, wall material and proportions of this real house — do NOT redesign. Cinematize only: soft golden morning sunlight raking from the left, gentle warm-to-neutral gradient sky, clean air, remove all clutter (電線/コーン/ホース/雑草/駐車物/ゴミ/看板), damp fresh ground, subtle atmospheric haze. Photoreal architectural photography, medium-format look, natural color, no CG sheen, no over-saturation.』グレードはF4F1EA生成りを基調にアンバー寄りの朝光。Shot11と完全ペアで生成（同一seed運用が可能なら同一構図を固定）。",
+    "higgsfieldVideo": "seedance image-to-video。微速の\"ゆっくり前進ドリー＋わずかな上向きティルト\"（建物へ静かに寄る）。カメラ移動量は控えめ(数%)。光は朝日がじわり強まる程度の移ろい。2.5秒尺。※Shot11は同ソースで\"寄り切った終端\"を作り、白ブルームを乗せる版も生成。",
+    "durationSec": 2.5,
+    "onScreenText": "墨字・左下寄せ大：『この家、どこまでが標準だと思いますか？』／小・その下：やまと不動産の注文住宅（奈良）",
+    "transition": "（前＝ループ境界）白ブルームのピークから明けてIN。冒頭は光がスッと澄む\"夜明け明け\"の呼吸で始まる。"
+   },
+   {
+    "n": 2,
+    "scene": "親子玄関ドア／ハイドア（縦の抜け）。玄関ポーチ〜見上げ気味の縦位置。",
+    "sourcePhoto": "玄関：写真素材/05_モデルハウス高画質/三山木（家具あり）高画質（縦位置候補）、または 04_施工事例/case-1/ext.jpg 近辺、旧サイト整理/06_modelhouse。親子ドア・機能門柱・ポーチタイルが写るカット。",
+    "higgsfieldImage": "nano_banana_pro i2i。『Keep the親子玄関ドア(parent-child entry door), 機能門柱, ポーチタイル exactly as-is. Cinematize: warm morning light through the porch, soft shadow of door frame, spotless tiles with subtle reflection, remove clutter/宅配物/傘立ての乱れ. Emphasize verticality — clean tall composition. Photoreal, natural wood/metal texture, no fake logos on the door.』縦9:16構図で有効高が伝わる見上げ。",
+    "higgsfieldVideo": "静止画＋Ken Burns（下から上へゆっくりティルトアップ、ドア有効高の高さを目でなぞらせる）。動きが欲しければseedanceで同方向の微速ティルトアップi2v化。2.0秒。",
+    "durationSec": 2,
+    "onScreenText": "右上寄せ大：『親子玄関ドア。ハイドアの、堂々。』／アンバー下線＋小：有効高 約【要確認】mm ＝ これも標準。",
+    "transition": "ハードカット（拍頭でパチンと切替）。ドア枠の縦ラインを次カットの縦ラインへマッチカット気味に。"
+   },
+   {
+    "n": 3,
+    "scene": "吹き抜け（縦の主役）。1階床から吹き抜け天井を見上げる。縦パンで\"高さ\"を体感。",
+    "sourcePhoto": "吹き抜け：写真素材/05_モデルハウス高画質/三山木（家具あり）高画質 の _MG_9282/9246/9287/9230/9228/9239/9249 等（縦位置3000x4500候補）。",
+    "higgsfieldImage": "nano_banana_pro i2i。『Preserve the吹き抜け(double-height void), 階段, 手すり, 窓配置 precisely. Cinematize: shafts of soft daylight pouring down from high windows, luminous air, warm wood tones, immaculate white walls, remove clutter. Photoreal interior architecture, natural contrast, the vertical volume should feel airy and tall.』縦構図、上部に光源。",
+    "higgsfieldVideo": "seedance i2v。\"ゆっくり上へティルトアップ＋わずかにドリーバック\"で吹き抜けの高さがせり上がって見える運動。光が上から降りる移ろい。2.5秒。カメラ移動は\"高さを測るように\"一定速度。",
+    "durationSec": 2.5,
+    "onScreenText": "中央〜上へ抜ける大：『見上げて、ためいき。』／下・墨小＋アンバー数値枠：吹き抜け高さ 約【要確認】m ＝ 標準の、開放感。",
+    "transition": "上向きの動きの頂点で\"光に溶ける\"軽いホワイトディゾルブ(0.2s)→次カットへ。"
+   },
+   {
+    "n": 4,
+    "scene": "リビング（天井高＝ゆとり）。家具の入った明るいLDK横位置〜広めの画。",
+    "sourcePhoto": "リビング：写真素材/04_施工事例/case-1/living.jpg、旧サイト整理/03_construction_部屋別、06_modelhouse(18)。",
+    "higgsfieldImage": "nano_banana_pro i2i。『Keep the room layout, ceiling, windows, furniture placement identity. Cinematize: bright airy midday light, soft window glow, warm neutral palette(生成りF4F1EA基調), clean uncluttered surfaces, subtle depth. Photoreal residential interior, natural white balance, no CG gloss.』天井ラインが伸びやかに見える構図。",
+    "higgsfieldVideo": "seedance i2v。水平の\"ゆっくり左→右パン\"または微速ドリーイン。天井の水平ラインを見せて広がりを強調。光は窓から柔らかく安定。2.0秒。",
+    "durationSec": 2,
+    "onScreenText": "左下大：『頭の上に、ゆとり。』／アンバー下線＋小：天井高 【要確認】mm ＝ もちろん標準。",
+    "transition": "ハードカット（拍頭）。天井の水平ライン→次カットのキッチン水平ワークトップへ横のリズムを継承。"
+   },
+   {
+    "n": 5,
+    "scene": "システムキッチン＋カップボード（お得感の核）。ワークトップとカップボードが写る。",
+    "sourcePhoto": "標準設備(6000px)：写真素材/03_標準設備/kitchen.jpg。補助：04_施工事例/case-1/kitchen.jpg。",
+    "higgsfieldImage": "nano_banana_pro i2i。『Preserve the system kitchen & カップボード identity — same counter, cabinet count, sink, faucet shape. Cinematize: clean premium morning light, gentle reflection on the countertop, spotless(no dishes/clutter/生活感), warm subtle rim light on cabinet edges. Photoreal product-catalog quality, natural material texture(人造大理石/木目), no fake brand logos.』",
+    "higgsfieldVideo": "seedance i2v。微速の\"横スライド（ドリー）\"でワークトップの長さ＝作業スペースの広さをなぞる。反射光がスッと流れる。2.0秒。",
+    "durationSec": 2,
+    "onScreenText": "右上大：『「カップボードも標準なんですか？」』／墨小＋アンバー：はい。ワークトップ高 約【要確認】mm。カップボード付き＝標準。",
+    "transition": "ハードカット。反射光のフレアが抜ける瞬間で切る（\"お得\"のポップSEと同期）。"
+   },
+   {
+    "n": 6,
+    "scene": "システムバス（保温浴槽＝くつろぎの深さ）。浴槽と洗い場が写る清潔な画。",
+    "sourcePhoto": "標準設備(6000px)：写真素材/03_標準設備/bath.jpg。補助：04_施工事例/case-1/bath.jpg。",
+    "higgsfieldImage": "nano_banana_pro i2i。『Keep the system bath identity — same tub shape, wall panel, fixtures. Cinematize: soft spa-like daylight, clean dry surfaces with subtle sheen, faint warm steam mood(控えめ), pristine no-mold no-clutter. Photoreal, calm premium tone, natural color, no CG plastic look.』浴槽の深さが伝わるやや俯瞰。",
+    "higgsfieldVideo": "seedance i2v。ごく微速の\"寄りドリー\"で浴槽の内側へ視線を導く。湯気/光がふわりと移ろう程度。2.0秒。",
+    "durationSec": 2,
+    "onScreenText": "左下大：『保温浴槽で、ゆっくり。』／アンバー下線＋小：ゆったり浸かれる深さ 約【要確認】mm ＝ これも標準。",
+    "transition": "クロスディゾルブ0.3s（湯気の柔らかさを次の洗面の朝光へ繋ぐ、水回りの連続感）。"
+   },
+   {
+    "n": 7,
+    "scene": "三面鏡洗面化粧台・トイレ（朝の身支度）。三面鏡と洗面カウンターが主役。",
+    "sourcePhoto": "標準設備：写真素材/03_標準設備 近辺の洗面、04_施工事例/case-1/wash.jpg、旧サイト整理/05_standardplan_設備(facility_img_xx.png)。",
+    "higgsfieldImage": "nano_banana_pro i2i。『Preserve the三面鏡(three-panel mirror) 洗面化粧台 identity — same mirror shape/count, counter, faucet. Cinematize: crisp clean morning light, mirror reflecting soft bright room, spotless counter, remove toiletry clutter. Photoreal, fresh clean tone, natural glass reflection, no fake logos.』",
+    "higgsfieldVideo": "静止画＋Ken Burns（鏡の面を横になぞる微速パン）またはseedanceで同微速パンi2v化。鏡に映る光がスッと流れる。2.0秒。",
+    "durationSec": 2,
+    "onScreenText": "右上大・強：『三面鏡洗面。これも、標準。』／アンバー：カウンター高 約【要確認】mm ／ 朝が、ちょっと好きになる。",
+    "transition": "ハードカット（この\"これも標準\"で指パッチンSE最強調）。鏡の反射ハイライト抜けで切る。"
+   },
+   {
+    "n": 8,
+    "scene": "外壁＝旭化成ヘーベルパワーボード（守りの厚さ）。外壁面のディテール寄り。",
+    "sourcePhoto": "標準設備(6000px)：写真素材/03_標準設備/exterior-wall.jpg（旭化成ヘーベル外壁）。",
+    "higgsfieldImage": "nano_banana_pro i2i。『Keep the exterior wall panel texture & joint pattern exactly(ヘーベルパワーボードの目地). Cinematize: raking side light revealing surface texture and depth, clean crisp detail, subtle warm tone. Photoreal macro-architectural texture, natural matte finish. Do NOT fabricate any brand stamp or logo.』壁の厚み・重厚感が伝わる斜光ディテール。",
+    "higgsfieldVideo": "静止画＋Ken Burns（斜め方向へ微速スライド、目地の陰影が動いて厚み/質感が立つ）。またはseedance微速i2v。1.5秒。",
+    "durationSec": 1.5,
+    "onScreenText": "左下：『外壁は、旭化成ヘーベルパワーボード。』／アンバー小：厚み 約【要確認】mm ＝ 守りも、標準。",
+    "transition": "ハードカット（速い・拍頭）。テンポを一段上げる区間の入口。"
+   },
+   {
+    "n": 9,
+    "scene": "軽量瓦・全6色（選べる標準の幅）／またはMIRAIE制震ダンパー。屋根瓦のディテールか色見本的な見せ。",
+    "sourcePhoto": "施工事例extの屋根、写真素材/06_YAMATO撮影の外観屋根部、旧サイト整理/07_strength_強み。瓦の質感が写るカット。",
+    "higgsfieldImage": "nano_banana_pro i2i。『Preserve the roof tile(軽量瓦) shape & layout. Cinematize: clean morning light on tile surface, crisp texture, warm neutral tone, tidy. Photoreal roof detail, natural material.』色バリエは映像内で作り込まず\"6色\"はテロップで訴求（偽色見本を捏造しない）。",
+    "higgsfieldVideo": "静止画＋Ken Burns（瓦の列に沿った微速スライド）。1.5秒。",
+    "durationSec": 1.5,
+    "onScreenText": "右上：『軽量瓦は、全6色から。』／墨小：屋根まで、選ぶ楽しさが標準。",
+    "transition": "ハードカット。ここから外観へ\"引き\"に転じる合図として、わずかに画を引く。"
+   },
+   {
+    "n": 10,
+    "scene": "総括の一枚（信頼の畳みかけ→円環へ）。設備が凝縮したLDK広め、または外観手前の引き。音を\"開く\"到達点。",
+    "sourcePhoto": "広めのLDKまたは外観半引き：06_modelhouse、06_YAMATO撮影、NEW素材/高画質。Shot11(外観)へ滑らかに繋がる画。",
+    "higgsfieldImage": "nano_banana_pro i2i。『Cinematize a warm, generous wide shot(LDK or house exterior approach), soft golden hour-ish light, airy and inviting, immaculate. Photoreal, premium warm tone matching the opening exterior grade.』グレーディングはShot1/11の朝光と地続き。",
+    "higgsfieldVideo": "seedance i2v。ゆっくり\"引きドリー\"で全体が視界に入る到達運動。光がふわっと開く。2.0秒。",
+    "durationSec": 2,
+    "onScreenText": "中央大：『ぜんぶ、標準。だから、迷わない。』／小：オプションだと思っていたもの、実は——標準です。",
+    "transition": "クロスディゾルブ0.4s→外観(Shot11)へ。音が最も開く瞬間。"
+   },
+   {
+    "n": 11,
+    "scene": "外観（ループ終端＝Shot1と同一）。寄り切った終端フレームで冒頭へ還す。",
+    "sourcePhoto": "Shot1と完全同一ソース・同一フレーミング（NEW素材/外観写真 CIMG4846.JPG 等 or 06_YAMATO撮影）。同一グレーディングで生成。",
+    "higgsfieldImage": "nano_banana_pro i2i。Shot1と同一プロンプト・同一構図で生成し、\"わずかに寄り切った/朝光が最も澄んだ\"終端状態を作る。Shot1冒頭0.5sと本カット末尾0.5sが同じ絵になるよう調整。",
+    "higgsfieldVideo": "seedance i2v。Shot1の前進ドリーの\"続き＝到達\"に相当する微速の詰め。末尾0.3sに白ブルーム(白ピーク80-90%)を乗せた版と、無ブルーム版の2種を書き出し（ループ結合の2方式に対応）。2.5秒。",
+    "durationSec": 2.5,
+    "onScreenText": "左下（Shot1と同位置・同書体でループ感を出す）：『——見に来ませんか、この標準を。』／アンバーCTA極小：奈良／来店・お問い合わせは公式サイトへ",
+    "transition": "（ループ境界）末尾の白ブルームのピークでカット→Shot1冒頭へ。または同一フレーミングを活かし0.4sクロスディゾルブ。継ぎ目ゼロで無限ループ。"
+   }
+  ]
+ },
+ {
+  "patternName": "C-vertical-height「見上げる家 ― 高さが立ち上がる縦の物語」",
+  "concept": "スマホ縦画面(9:16 / 1080×1920)に最適化し、\"高さ\"そのものを主役にする没入ループ。カメラは常に床レベルから天井・空へと「昇る/見上げる」縦方向モーションだけで構成する。玄関→吹き抜け→ハイドア→リビング天井→キッチン→洗面/浴室→外観見上げの順で視線が下から上へ連続して立ち上がり続け、最後の外観クレーンアップ(空へ抜ける)が冒頭の玄関(暗い土間→上方の採光)へシームレスに繋がり、\"永遠に昇り続ける\"錯覚をつくる。各カットで高さの数値がテキストとして空間の中に立ち上がるように出現し、感情=「大手ハウスメーカーで予算的に諦めた\"吹き抜けのある家\"が、やまとなら標準で叶う」開放感を体感させる。冷たい寸法カタログにせず「これも標準なんですか？」の驚きの声を温かいregisterで乗せる。数値は捏造せず【要クライアント確認】プレースホルダで運用し、確定後に差し込むだけの完成台本。",
+  "mood": "開放感・伸びやかさ・見上げた瞬間の息を呑む静けさ。朝の斜光が上から降りてくる澄んだ空気。生成り#F4F1EAの余白と墨#20241Aの陰影のコントラストで\"高さの深呼吸\"を演出。緑#486B00はテキスト下線アクセント、アンバー#C4851Fは最終CVカットのみ。全体に「静→昇→開ける」の呼吸。AI generic臭・CG臭は禁物、実写建築写真をシネマ質感へ磨いた\"本物の家を実際に見上げている\"リアリティを死守。",
+  "totalDurationSec": 27,
+  "loopMechanics": "全カットのモーションベクトルを「上向き(tilt-up / crane-up / push-up)」で統一し、視線が一度も下がらない\"連続上昇\"の錯覚をループの核にする。終端(Shot7)は外観を軒→屋根→空へクレーンアップし、フレーム上部が澄んだ朝空の明るいブルーム(白飛び手前の光)で満たされて終わる。始端(Shot1)は玄関土間の墨色の陰影(下・暗)から上方の採光へ抜けるカットで始まる。この「終端=最も明るい空(上)」→「始端=最も暗い影(下)」を0.4秒のluma-dissolve(明→暗クロスディゾルブ)で繋ぐと、上へ抜けた視線が次の家の足元にワープして再び昇り始める=無限に上昇し続ける1本の縦運動として閉じる。実装:各クリップは4〜4.5秒だが前後0.3秒ずつモーションが残る\"動いている最中\"の端でカットし、静止フレームで切らない(静止で切ると上昇の連続感が途切れる)。Shot間トランジションは基本すべて上向きのwhip/lumaで、繋ぎ目のカメラ速度をほぼ一致させる。書き出しは同一クリップを2周分連結して中央1周をプレビューし、繋ぎ目のジャンプが無いことを確認してから単一ループを無限リピート指定。",
+  "shots": [
+   {
+    "n": 1,
+    "scene": "玄関土間ホール見上げ(コールドオープン/影→光)",
+    "sourcePhoto": "写真素材/05_モデルハウス高画質/三山木（家具あり）高画質/_MG_9230.jpg(縦・玄関〜ホール系。無ければ同フォルダの縦位置玄関カットを要選定)",
+    "higgsfieldImage": "generate_image(nano_banana_pro, image-to-image)。入力=縦位置の玄関ホール写真。プロンプト:'Cinematic architectural interior, Japanese new-build home entrance hall shot from doma floor level looking steeply upward. PRESERVE exactly the source door, wall proportions, floor material and layout identity — do NOT invent new architecture. Early-morning soft directional light descending from an upper window, deep warm charcoal shadow in the lower foreground, gentle glow toward top of frame. Remove all clutter, shoes, cables, signage and photographer reflections. Natural materials, subtle film grain, high dynamic range, editorial real-estate photography, photoreal, 9:16 vertical framing headroom at top.' その後 upscale_image で4K化。",
+    "higgsfieldVideo": "generate_video(seedance image-to-video, 4s)。プロンプト:'Slow smooth crane-up (tilt up) from the dark doma floor toward the bright upper window, no horizontal pan, camera stays centered, gentle parallax on the door frame, dust motes drifting in the morning light beam. Subtle, calm, premium real-estate film.' カメラ移動=床レベル→上方採光へ垂直クレーンアップのみ。",
+    "durationSec": 3.5,
+    "onScreenText": "eyebrow(緑#486B00 小):『家に入った、その一歩目から。』/ 中央下(墨#20241A 明朝銀):見上げてください。",
+    "transition": "上向きluma-wipe(光の増加でShot2の吹き抜けへ抜ける)"
+   },
+   {
+    "n": 2,
+    "scene": "吹き抜け クレーンアップ(主役カット)",
+    "sourcePhoto": "写真素材/05_モデルハウス高画質/三山木（家具あり）高画質/_MG_9282.jpg(縦3000×4500・2Fホール吹き抜け手すり・フロストガラス・シーリングファン・木目床/確認済み実素材)",
+    "higgsfieldImage": "generate_image(nano_banana_pro, image-to-image)。入力=_MG_9282.jpg。プロンプト:'Cinematic vertical view up through a two-story open atrium (吹き抜け) of a Japanese home. PRESERVE exactly the frosted-glass handrail, ceiling fan, white walls, wood flooring and spatial identity of the source. Warm morning light pouring from the high skylight/upper windows, airy bright top, soft graded shadows below, remove any clutter or reflections. Sense of soaring vertical height, photoreal architectural film, natural film grain, 9:16, generous vertical headroom.' → upscale_image 4K。",
+    "higgsfieldVideo": "generate_video(kling image-to-video, 4.5s)。プロンプト:'Continuous crane-up along the atrium void, camera rising past the frosted-glass handrail toward the ceiling fan and skylight, ceiling fan blades turning slowly, soft light bloom increasing as it rises. Seamless, weightless ascent, no horizontal movement.' カメラ=手すり沿いに垂直上昇→天井/ファンへ。",
+    "durationSec": 4.5,
+    "onScreenText": "中央(墨 明朝銀 大):天井まで、【要クライアント確認】m。/ 小(生成り地帯):両手を広げても、まだ余白がある。",
+    "transition": "上向きwhip(ファン→次カットのハイドア天端へ視線を送る)"
+   },
+   {
+    "n": 3,
+    "scene": "ハイドア/大開口 ティルトアップ",
+    "sourcePhoto": "写真素材/05_モデルハウス高画質/三山木（家具あり）高画質/_MG_9246.jpg または _MG_9287.jpg(縦・室内建具/大開口。木目内装建具・高断熱スリムサッシが写る縦カットを要選定)",
+    "higgsfieldImage": "generate_image(nano_banana_pro, image-to-image)。プロンプト:'Vertical interior looking up along a full-height wood-grain hi-door / tall slim-sash window opening in a Japanese home. PRESERVE the exact door/sash proportions, wood grain, wall and floor identity of the source. The door reaches almost to the ceiling; emphasize its uninterrupted vertical line. Soft daylight through the slim sash, clean, decluttered, warm neutral palette, photoreal, subtle grain, 9:16.' → upscale 4K。",
+    "higgsfieldVideo": "generate_video(seedance image-to-video, 3.5s)。プロンプト:'Slow tilt-up tracing the tall hi-door from floor handle to top jamb near the ceiling, light gradually brightening at the top edge, faint parallax. Calm premium interior film, purely vertical motion.' カメラ=ドア下端→天端まで垂直ティルトアップ。",
+    "durationSec": 3.5,
+    "onScreenText": "eyebrow:「え、この背の高い扉も標準？」/ 本文(墨):ハイドア、天端【要クライアント確認】mm。木目の一本線が、天井まで途切れない。",
+    "transition": "上向きluma(建具天端の光→リビング天井へ)"
+   },
+   {
+    "n": 4,
+    "scene": "リビング天井 見上げ push-up",
+    "sourcePhoto": "写真素材/04_施工事例/living(見上げ/勾配天井のあるカット) もしくは 05_モデルハウス高画質/三山木/_MG_9228.jpg・_MG_9239.jpg(縦・リビング)",
+    "higgsfieldImage": "generate_image(nano_banana_pro, image-to-image)。プロンプト:'Cinematic upward view of a bright Japanese living-room ceiling, wide open ceiling plane / gentle pitched ceiling with recessed lighting. PRESERVE the exact ceiling geometry, beams, lighting fixtures and room identity of the source. Morning light washing across the ceiling, airy and expansive, remove clutter, warm off-white #F4F1EA tonality, photoreal architectural film, film grain, 9:16 vertical.' → upscale 4K。",
+    "higgsfieldVideo": "generate_video(kling image-to-video, 4s)。プロンプト:'Slow push-up / dolly toward the living-room ceiling as if lying back and looking up, light slowly sweeping across the ceiling plane, extremely gentle, meditative. Vertical/forward motion only, no roll.' カメラ=床から天井面へ緩やかにプッシュアップ。",
+    "durationSec": 4,
+    "onScreenText": "中央(墨 明朝銀):この余白が、毎日の深呼吸になる。/ 小(緑#486B00 下線):リビング天井高 【要クライアント確認】mm(標準)",
+    "transition": "上向きwhip(天井の光→キッチン背面カウンター上へ)"
+   },
+   {
+    "n": 5,
+    "scene": "標準キッチン 縦リフレーム push-up(設備の高さ)",
+    "sourcePhoto": "写真素材/03_標準設備/kitchen.jpg(6192×4128・ダークアイランド/ウォルナット天井/一枚板ライブエッジカウンター/カップボード・冷蔵庫/確認済み実素材)",
+    "higgsfieldImage": "まず reframe または outpaint_image で 9:16 縦構図へ(アイランド〜カップボード〜ウォルナット天井が縦に収まるよう天井方向へ拡張)。次に generate_image(nano_banana_pro, image-to-image)。プロンプト:'Vertical cinematic view of a premium Japanese standard kitchen: dark stone island counter, live-edge solid-wood counter, walnut plank ceiling, matte cupboard and tall fridge cabinet. PRESERVE exactly the island, live-edge wood grain, walnut ceiling, cupboard and appliance identity of the source — do NOT restyle the kitchen. Warm pendant light, clean decluttered surfaces (keep only tasteful minimal props), photoreal, high-end interior film, film grain, 9:16.' → upscale 4K。",
+    "higgsfieldVideo": "generate_video(seedance image-to-video, 4s)。プロンプト:'Slow push-up from the island counter surface rising to reveal the tall cupboard and walnut ceiling above, warm pendant lights swaying almost imperceptibly, steam-free calm morning kitchen. Vertical rise only.' カメラ=カウンター天板→カップボード/天井へプッシュアップ。",
+    "durationSec": 4,
+    "onScreenText": "eyebrow:「収納も、天井の木も、これで標準なんですか。」/ 本文(墨):カップボード高 【要クライアント確認】mm・カウンター高 【要クライアント確認】mm。使う人の背に、寸法を合わせて。",
+    "transition": "上向きluma(ウォルナット天井の陰→洗面の鏡の光へ)"
+   },
+   {
+    "n": 6,
+    "scene": "三面鏡洗面化粧台/システムバス ティルトアップ",
+    "sourcePhoto": "洗面=写真素材/旧サイト整理/05_standardplan_設備/facility_img_0X.png(三面鏡洗面化粧台)、浴室=写真素材/03_標準設備/bath.jpg(6000px・保温浴槽/確認済み)。縦位置トリミング前提",
+    "higgsfieldImage": "generate_image(nano_banana_pro, image-to-image)を2素材で個別に。洗面:'Vertical view tilting up a three-mirror vanity in a clean Japanese washroom. PRESERVE the exact vanity, three-panel mirror, faucet and cabinet identity. Soft daylight, spotless surfaces, decluttered, warm neutral tones, photoreal, film grain, 9:16.' 浴室:'Vertical cinematic view of a premium Japanese system bath with insulated tub. PRESERVE tub, wall panels and fixtures identity. Soft steam-free morning light from above, calm spa-like mood, photoreal, 9:16.' 各 upscale 4K。",
+    "higgsfieldVideo": "generate_video(seedance image-to-video, 各1.75s→連結3.5s)。洗面:'Slow tilt-up from the vanity counter to the top of the three-mirror cabinet, faint light glow increasing upward.' 浴室:'Gentle push-up along the bath wall toward the ceiling light, water surface perfectly still.' いずれも垂直上昇のみ。2クリップを0.2s上向きwhipで内部連結。",
+    "durationSec": 3.5,
+    "onScreenText": "eyebrow:『毎朝の高さ、ちゃんと考えました。』/ 本文(墨):三面鏡・洗面台の高さ 【要クライアント確認】mm。保温浴槽も、もちろん標準。",
+    "transition": "上向きluma(鏡/天井の光→外観の空へ大きく開ける)"
+   },
+   {
+    "n": 7,
+    "scene": "実棟外観 見上げクレーンアップ→空へ抜ける(ループ結合カット+CV)",
+    "sourcePhoto": "NEW素材/高画質(6000px超) もしくは 06_YAMATO撮影(7952pxプロ)/04_施工事例/ext の実棟外観。ローアングルで軒〜屋根が見える縦向きカットを要選定。FVの黄金の夜明け変換と同系統",
+    "higgsfieldImage": "generate_image(nano_banana_pro, image-to-image)。プロンプト:'Cinematic low-angle vertical view of a real Japanese two-story custom home exterior, looking up from ground level toward the eaves, Asahi Kasei Hebel power-board wall texture, light-weight roof tiles, parent-child entrance door. PRESERVE the exact building identity, facade, roof and proportions of the source — this is a real photographed house, keep it real. Golden early-morning light raking across the wall, clean sky with soft bloom at the very top of frame, remove wires/cars/clutter, photoreal architectural film continuous with the FV dawn look, film grain, 9:16 with sky headroom at top.' → upscale 4K。",
+    "higgsfieldVideo": "generate_video(kling image-to-video, 4s)。プロンプト:'Slow crane-up along the facade from the entrance door, past the Hebel wall and eaves, up to the roofline and into the clear morning sky where light blooms bright at the top. Weightless vertical ascent, ends on bright sky. No horizontal pan.' カメラ=玄関→外壁→軒→屋根→空へ垂直クレーンアップ、最終フレームは明るい朝空。",
+    "durationSec": 4,
+    "onScreenText": "中央(墨 明朝銀 大):諦めていた、あの開放感を。/ CVボタン(アンバー#C4851F 最終0.8sのみ):まずは、見上げに来てください。│ やまと不動産・奈良/ ※外壁=旭化成ヘーベル・軽量瓦は標準",
+    "transition": "上向きluma-dissolve 0.4s(明るい空→Shot1玄関の墨色の影へ=ループ結合)"
+   }
+  ],
+  "heightItems": [
+   "吹き抜け高さ(2層分の空間高):数値=【要クライアント確認】m ※Shot2の主役数値。現サイトに記載無し、実測要",
+   "リビング天井高:【要クライアント確認】mm(標準仕様値) ※Shot4",
+   "ハイドア(内装建具)天端高:【要クライアント確認】mm ※木目内装建具。既製ハイドアは2,400mm前後が一般的だが、やまと標準の実値を要確認",
+   "高断熱スリムサッシ/大開口の窓高:【要クライアント確認】mm ※Shot3",
+   "キッチンカウンター高:【要クライアント確認】mm(使用者身長に合わせる旨を訴求) ※Shot5",
+   "カップボード/吊戸棚 有効高:【要クライアント確認】mm ※Shot5",
+   "洗面化粧台(三面鏡)カウンター高:【要クライアント確認】mm ※Shot6",
+   "保温浴槽の浴槽縁高さ/またぎ高さ:【要クライアント確認】mm ※Shot6(高齢配慮の訴求余地)",
+   "親子玄関ドア高さ:【要クライアント確認】mm ※Shot1/Shot7で触れる余地",
+   "外観 軒高/最高高さ:【要クライアント確認】mm ※Shot7。※全数値は現サイトに無いため捏造禁止、確定するまでプレースホルダのまま公開しない"
+  ],
+  "music": "静→昇→開けるの呼吸に合わせたアンビエント・ピアノ+弦のミニマル曲(BPM70前後、無歌詞)。低いドローンの上に単音ピアノが一音ずつ上行し、Shot4リビング天井で弦が加わり、Shot7空へ抜ける瞬間に最高音+リバーブ開放でブルームと同期。ループ点は「空へ抜けた残響」と「Shot1冒頭の静寂」が同一音量・同一残響で繋がるようテール処理し、繋ぎ目を無音一歩手前まで落として無限ループでも音のジャンプが出ないようにする。~/.claude/assets/bgm 内に該当ムードの既製曲があれば流用可、無ければHiggsfield generate_audioで'calm minimal ambient piano and strings, slow ascending motif, weightless, cinematic real-estate, 70bpm, seamless loop, no drums'として生成。効果音は極小(Shot2ファンの微かな空気音、Shot7の朝の環境音)に留め、寸法calloutには一切SE無し(声のトーンを壊さない)。ペーシング=1カット1メッセージ厳守、テロップは各カット中央1.2秒フェードイン→静止→上抜けと同時にフェードアウト。",
+  "higgsfieldAssets": [
+   "media_upload: _MG_9230.jpg(玄関ホール縦/要最終選定)",
+   "media_upload: _MG_9282.jpg(吹き抜け縦・確認済み)",
+   "media_upload: _MG_9246.jpg または _MG_9287.jpg(ハイドア/大開口縦/要選定)",
+   "media_upload: 04_施工事例living または _MG_9228/_MG_9239(リビング天井縦/要選定)",
+   "media_upload: 03_標準設備/kitchen.jpg(確認済み)",
+   "media_upload: 05_standardplan_設備/facility三面鏡洗面 + 03_標準設備/bath.jpg(確認済み)",
+   "media_upload: NEW素材/高画質 or 06_YAMATO撮影 の実棟外観ローアングル縦(要選定)",
+   "reframe/outpaint_image ×2: kitchen.jpg と bath.jpg を 9:16 縦へ拡張(天井方向)",
+   "generate_image(nano_banana_pro, image-to-image) ×8: Shot1〜7の各シネマ化変換(Shot6は洗面+浴室で2枚)",
+   "upscale_image(4K) ×8: 各image変換後",
+   "generate_video ×9クリップ: Shot1(seedance4s)/Shot2(kling4.5s)/Shot3(seedance3.5s)/Shot4(kling4s)/Shot5(seedance4s)/Shot6(seedance洗面1.75s+浴室1.75s)/Shot7(kling4s)",
+   "generate_audio ×1: アンビエント・ループBGM(bgmフォルダに既製が無い場合)",
+   "upscale_video: 最終結合前に各クリップ2K/4K均一化(任意)",
+   "job_status/job_display でポーリングし各生成の完了を確認、reveal_generationで結果取得"
+  ],
+  "whyItWorks": "(1)\"高さ\"を情報でなく体験に変換:寸法を字幕で羅列する凡百の設備紹介と違い、カメラが実際に下から上へ昇る身体運動を観客に肩代わりさせるので、数値が\"読む情報\"でなく\"見上げて感じる感覚\"として入る。スマホ縦画面の物理形状(縦長)がこの上昇運動と完全一致し、親指スクロールを止めて画面いっぱいに没入させる。(2)ループの錯覚が滞在を伸ばす:全カット上向き統一+終端の空→始端の影のluma-dissolveで\"永遠に昇り続ける1本の縦運動\"に見えるため、視聴者は無意識に「どこまで続くのか」と繰り返し見てしまい、FV直下の平均視聴秒数(=CVRに効く指標)が伸びる。(3)register北極星に忠実:「これも標準なんですか？」の驚きの声+対比(諦めた→叶う)で、冷たい寸法カタログではなく温かい誘いかけになっている。大手で予算的に諦めた\"吹き抜けのある家\"という具体的な喪失体験を突き、それが\"標準で叶う\"逆転で感情のピークをShot7のCVに接続。(4)ブランド地続き:Shot7の実棟→黄金の朝の光がFVの「夜明けの転回」と同じ視覚言語で、この動画単体でもFV下でも世界観が切れない。(5)白カード量産・同一キット使い回しの禁を守り、各カットは\"上昇するカメラ\"という単一の映像言語だけで統一し、装飾UIに頼らない=MEMORYのワンパターン却下を回避。(6)実写級Higgsfield手順(実写→nano_banana_pro image-to-imageで建築アイデンティティ保持+クラッター除去+シネマ化→4K→seedance/klingで微細な上昇モーション)を前提に書いており、AI generic臭を出さずこの案件で実証済みの勝ち筋に乗っている。",
+  "watchouts": [
+   "高さ数値は全て現サイトに無い=捏造厳禁。【要クライアント確認】のまま公開せず、専務に天井高/吹き抜け高/ハイドア天端/カウンター高/洗面高/軒高の実値を確認して確定後に差し込む。特にハイドア『2,400mm』等の一般値を勝手に入れない。",
+   "nano_banana_pro変換で建築のアイデンティティが変質するリスク(窓割・手すり形状・キッチンの一枚板が別物化)。必ず'PRESERVE exactly the source identity, do NOT invent'を明記し、生成後に元写真と重ねて別物化していないか目視検品。別物化したらdenoise/変換強度を下げて再生成。",
+   "seedance/klingの上昇モーションで手すり・建具が歪む/伸びるアーティファクト、シーリングファンの羽根が溶ける等が出やすい。ファンは『slowly turning』程度に抑え、破綻フレームはトリム。カメラは必ず垂直のみ(横パン・ロールが混ざると上昇の連続感とループが崩壊)。",
+   "kitchen.jpg/bath.jpgは横位置6000px。9:16化のoutpaintで天井方向を捏造補完するため、補完部が不自然(存在しない梁や窓を生む)にならないか要検品。難しければ縦位置の実素材(旧サイト整理/06_modelhouse等)への差し替えを検討。",
+   "ループ繋ぎ目:終端の空(明)→始端の玄関(暗)のluma-dissolveでカメラ速度が食い違うとジャンプが見える。Shot7末とShot1頭のカメラ上昇速度をほぼ一致させ、2周連結プレビューで繋ぎ目を必ず確認。",
+   "トーン過剰装飾の禁:白カード+影+eyebrow-h2-lead+中央CTAの量産キットは禁止(MEMORY)。テロップは明朝銀の細い一行を空間に置くのみ、UIチップやカードで囲まない。挙動説明(『スクロールで昇ります』等のメタ文言)は本文に絶対書かない。",
+   "CVカラー規律:アンバー#C4851FはShot7最終0.8秒のCVボタンのみ。他カットのテキストで使わない(CV専用色の希釈防止)。",
+   "register検品:calloutは毎回北極星から新規に書き、保存済み検証済み例文の再利用はしない(MEMORY)。冷たい列挙(『天井高◯◯mm/カウンター◯◯mm』の羅列)にならないよう、必ず驚きの声か対比を1カット1つ添える。",
+   "スマホ表示のセーフエリア:上下のテキストがブラウザUI/CVボタンに被らないよう、縦1920pxの上200px・下320pxをセーフマージンとしてテロップ配置。"
+  ]
+ },
+ {
+  "patternName": "A-cinematic-slow ／ 静謐なシネマ・スロー「夜明けから、ぜんぶ標準。」",
+  "concept": "高級車・ハイブランドのブランドフィルムの呼吸で、やまとの家を\"夜明けの黄金光\"に置く。外観→親子玄関→吹き抜けを見上げる→リビング→キッチン→浴室→洗面→外壁ディテール→外観へ還る、を1カット1メッセージ・\"間\"を効かせて滑らかに繋ぐ編集的スロー。カメラは常に「ゆっくり」——押す/見上げる/横に流れるだけ。切らずに溶かす。高さ・寸法の数値は画面の隅に上品な小さい数字で添え、主役の映像を邪魔しない。FVで実証済みの「実棟→黄金の夜明け」トーンと地続きの光。感情=\"静かな憧れ\"と\"信頼\"。冷たい設備カタログにせず、「これも標準なんですか？」というお客様の声をそのまま光に乗せる。",
+  "mood": "静謐・上質・黄金の夜明け。high-keyではなくlow-keyの中に一条の暖色光(3200〜4000K)。空気に微粒子(ダスト/朝もや)。コントラストは浅く、ハイライトはミルキーに転ばせ、シャドウは墨#20241Aへ。彩度-10〜-15で生成り#F4F1EAに寄せた膜。手持ち感ゼロ、据わったジンバル/ドリー。1カット5〜6秒の持続でラグジュアリー・スロー。",
+  "totalDurationSec": 48,
+  "loopMechanics": "「夜明け一周」構造で完全シームレス化。(1)冒頭Shot1と末尾Shot9をどちらも\"同じ棟・同じ夜明け光・ほぼ同じ画角の外観ロング\"にし、Shot1はゆっくり前進(dolly-in)で始まり、Shot9はゆっくり後退(dolly-out)で終える——動きの向きを反転させることでShot9末尾フレーム≒Shot1冒頭フレームに視覚着地する。(2)結合はShot9の最後1.0秒とShot1の最初1.0秒を明度クロスディゾルブでオーバーラップ。各カット境界は動きの静止(ease-out→ease-in)を置き速度連続性を担保。(3)全カット共通の黄金の夜明けLUT(FV流用)で色ジャンプを消す。(4)BGMは尺48秒ちょうどの1フレーズを頭尾同音で作り、末尾リバーブテールを冒頭にかぶせる。(5)実装:9本のimage-to-videoを書き出し→各境界0.4〜0.6秒ディゾルブ、Shot9→Shot1境界のみ1.0秒ディゾルブ→2周分レンダリングし継ぎ目が無感覚か確認→OKなら1周をループ素材として書き出し(HTMLは video loop muted playsinline)。動きは動画側で持つのでCSS Ken Burnsは不要。",
+  "shots": [],
+  "heightItems": [
+   "天井高(リビング)：約【要クライアント確認】mm ※標準/オプションの別も要確認",
+   "ハイドア(内装建具)高さ：約【要確認】mm",
+   "吹き抜け天井までの高さ：約【要確認】m(2層分)",
+   "親子玄関ドア：高さ約【要確認】mm/有効幅約【要確認】mm(親扉＋子扉開放時)",
+   "キッチンカップボード天板高さ：約【要確認】mm/カウンター奥行【要確認】mm",
+   "洗面化粧台カウンター高さ：約【要確認】mm(三面鏡下端まで【要確認】mm)",
+   "軒高/最高高さ(外観)：約【要確認】m",
+   "保温浴槽の浴槽サイズ(1616/1618等の型)：【要確認】",
+   "高断熱スリムサッシの窓高(掃き出し)：約【要確認】mm"
+  ],
+  "music": "無音に近いピアノ+弦のアンビエント。BPM60前後、4つ打ちなし、ルバートで\"間\"を作る。参照方向:高級車CM/ハイブランドの静かなブランドフィルム(ソロピアノ+ロングリバーブ+低いドローン)。48秒ワンフレーズ、頭尾同音でループ結合。生成する場合は Higgsfield generate_audio で「slow cinematic solo piano with warm string pad, sparse, reverberant, calm and hopeful, dawn mood, no drums, no percussion, 60bpm, loopable, warm and intimate」。SEは控えめに——朝の小鳥1声(Shot1)、湯船の\"ちゃぷ\"1音(Shot6)だけ点で。ナレーション無し(callout主体、温かい声は文字で)。音量はBGM -18〜-20LUFS狙いでFV BGMと衝突しない。",
+  "higgsfieldAssets": [
+   "media_upload×9(各Shotの実写ソースをアップ)",
+   "generate_image nano_banana_pro image-to-image ×9(各Shotの黄金の夜明けシネマ化)",
+   "upscale_image 4K ×9(建築ディテール/寸法の可読性確保、特に外壁・キッチン・洗面)",
+   "generate_video seedance image-to-video ×7(外観×2・吹き抜け・リビング・キッチン・浴室・洗面のゆっくりカメラ移動)",
+   "generate_video kling image-to-video ×2(玄関ドア開き・外壁グレイズ光の微細モーション=物理挙動が要る2カット)",
+   "generate_audio ×1(48秒ループBGM)",
+   "(任意)upscale_video ×9 で最終4K納品",
+   "※共通ネガティブ:CG look, plastic, oversaturated, HDR halo, warped lines, extra windows, fisheye, people faces, text artifacts"
+  ],
+  "whyItWorks": "(1)近年の建築/不動産/ハイブランドのショーケース映像の勝ち筋=\"説明しない、浸らせる\"。スローで間を効かせるほど「高級」と脳が解釈する(処理流暢性の逆張り=あえて溜める贅沢)。(2)1カット1メッセージ+隅に小さな数字、で\"高さ・寸法\"を押し付けず\"気づかせる\"。数値が主役化しないので冷たくならず、憧れの温度を保てる。(3)「これも標準なんですか？」というお客様の声引用と対比構造(大手ではオプション/やまとでは標準)を光の余韻に乗せることで、register北極星の\"温かく熱く誘いかける声\"を維持しつつ核メッセージ「お見積りの金額のまま」を刷り込む。(4)FVの夜明けトーンと地続きの光で、FV→この動画→各セクションが一本の世界として繋がり、ブランドの一貫性が信頼に変わる。(5)スマホ縦最優先の据わったカメラ+シームレスループで、スクロールが止まった瞬間に\"ずっと観ていられる\"体験を作る。",
+  "watchouts": [
+   "高さ・寸法の数値は全て【要クライアント確認】。現サイトに数値根拠が無いため捏造禁止。確定するまでプレースホルダ表示 or 数字非表示で運用(『天井、高い。』等の定性表現に逃がすのも可)。",
+   "外壁は旭化成『パワーボード』グランロック、制振は住友ゴム『MIRAIE』(揺れ最大70%低減)が確定固有名詞。キッチン=クリナップ ステディア、浴室=TOTO サザナ。calloutで商品名を出す場合はこの表記を厳守し、他メーカー名を混ぜない。",
+   "三面鏡洗面台の実写が素材に見当たらない場合は04_standardplan設備/05_standardplan設備から充当 or クライアントに追加撮影/支給を依頼。無ければ洗面カットを差し替え(トイレ or 収納)。",
+   "V2(YAMATOFUDOUSANV2)は競合。構成・成果物を参照/流用しない。",
+   "nano_banana_proは建築のアイデンティティ保持が生命線。窓数・屋根形状・柱位置が変わったら不採用→identity保持を強めたre-run。人物の顔・ナンバープレート・近隣家屋が写り込む素材は要マスク/除去。",
+   "calloutはApple/MUJI構文(体言止め・『のは、X。』)を避け丁寧語基調で。1セクション体言止めは1回まで。『スクロールすると回ります』等のUI説明を本文に混ぜない。",
+   "スマホでの可読性:小さい数字は最小でも本文比0.65em以上、下部セーフエリア(CTA/UI)と重ねない。",
+   "BGMがFVのBGMと同時再生されないようセクション遷移でフェード管理。動画はmuted自動再生前提、音は任意再生に。"
+  ]
+ }
+]

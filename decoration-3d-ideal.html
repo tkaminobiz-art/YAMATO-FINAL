@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0">
+<title>3D装飾パララックス｜背後で家が回り、セクションが変わる</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js" integrity="sha384-Ftcjj/GNLxPvzNDftO/oryXB9aGxsGZY9JGqsXG0uUKgQDl9RfDgsx9NJ/4IVNPe" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F1EA; --bg2:#E9E4D8; --ink:#20241A; --light:#6B6B6B;
+    --main:#486B00; --main-dark:#2E4600; --lime:#A2C523; --earth:#7D4427; --cta:#C4851F;
+    --fh:"dnp-shuei-gothic-gin-std","Noto Sans JP",sans-serif;
+    --fb:"Inter","Noto Sans JP",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.9;-webkit-font-smoothing:antialiased}
+
+  /* ===== 背景に常駐する3D(装飾レイヤー) ===== */
+  .stage{position:fixed;inset:0;z-index:0;overflow:hidden;
+    background:radial-gradient(120% 100% at 50% 20%,#FBFAF5 0%,var(--bg) 52%,var(--bg2) 100%)}
+  .stage__grain{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.5;mix-blend-mode:multiply;
+    background-image:radial-gradient(rgba(72,107,0,0.06) 1px,transparent 1px);background-size:26px 26px;
+    -webkit-mask-image:radial-gradient(ellipse 90% 80% at 50% 40%,#000,transparent);mask-image:radial-gradient(ellipse 90% 80% at 50% 40%,#000,transparent)}
+  .house{position:absolute;inset:0;z-index:1;will-change:transform,filter;
+    transition:transform 1s cubic-bezier(.22,1,.36,1), filter 1s ease, opacity 1s ease}
+  model-viewer{width:100%;height:100%;--poster-color:transparent}
+  /* テキスト可読のための可変スクリム */
+  .scrim{position:fixed;inset:0;z-index:3;pointer-events:none;transition:background .6s ease;
+    background:linear-gradient(90deg,rgba(244,241,234,.94) 0%,rgba(244,241,234,.9) 30%,rgba(244,241,234,.35) 50%,rgba(244,241,234,0) 66%)}
+  .scrim.right{background:linear-gradient(270deg,rgba(244,241,234,.94) 0%,rgba(244,241,234,.9) 30%,rgba(244,241,234,.35) 50%,rgba(244,241,234,0) 66%)}
+  .scrim.center{background:radial-gradient(90% 80% at 50% 50%,rgba(244,241,234,.9) 0%,rgba(244,241,234,.82) 34%,rgba(244,241,234,.4) 60%,rgba(244,241,234,.1) 100%)}
+
+  /* ===== 進行UI ===== */
+  .rail{position:fixed;top:50%;right:26px;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:14px}
+  .rail b{width:8px;height:8px;border-radius:50%;background:rgba(43,43,43,.2);transition:.35s;display:block}
+  .rail b.on{background:var(--main);transform:scale(1.5)}
+  .brandmark{position:fixed;top:22px;left:26px;z-index:20;font-family:var(--fh);font-weight:500;font-size:.95rem;letter-spacing:.08em;color:var(--main-dark)}
+  .tagpill{position:fixed;top:22px;right:26px;z-index:20;font-family:var(--fb);font-size:.6rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(20,24,14,.6);padding:6px 12px;border-radius:100px}
+  .cue{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:20;font-family:var(--fb);font-size:.62rem;letter-spacing:.24em;color:var(--light);display:flex;align-items:center;gap:8px}
+  .cue .d{width:6px;height:6px;border-radius:50%;background:var(--lime);animation:pz 1.7s infinite}
+  @keyframes pz{0%,100%{opacity:.3}50%{opacity:1}}
+
+  /* ===== 前面セクション ===== */
+  .chapters{position:relative;z-index:10}
+  .ch{min-height:100vh;display:flex;align-items:center;padding:0 clamp(24px,7vw,120px)}
+  .ch__in{max-width:520px}
+  .ch--right{justify-content:flex-end;text-align:right}
+  .ch--right .ch__in{align-items:flex-end}
+  .ch--center{justify-content:center;text-align:center}
+  .ch--center .ch__in{max-width:640px}
+  .eyebrow{font-family:var(--fb);font-size:.7rem;font-weight:500;letter-spacing:.22em;color:var(--main);text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:24px;height:1px;background:var(--lime)}
+  .ch--right .eyebrow{flex-direction:row-reverse}
+  .ch--right .eyebrow::before{background:var(--lime)}
+  .ch h2{font-family:var(--fh);font-weight:500;letter-spacing:.05em;line-height:1.32;margin-top:20px;
+    font-size:clamp(1.9rem,1.2rem+3.4vw,3.7rem);text-wrap:balance;color:var(--ink)}
+  .ch h2 em{font-style:normal;color:var(--main)}
+  .ch p{margin-top:22px;font-size:clamp(1rem,.95rem+.3vw,1.12rem);color:#3a3f30;text-wrap:pretty}
+  .price{margin-top:24px;font-family:var(--fb);font-weight:200;font-feature-settings:"tnum";
+    font-size:clamp(3rem,2rem+5vw,6.4rem);line-height:.9;color:var(--main-dark);letter-spacing:.01em}
+  .price small{font-size:.2em;font-family:var(--fh);font-weight:500;margin-left:6px}
+  .price + .note{margin-top:8px;font-size:.85rem;color:var(--light);letter-spacing:.04em}
+  .cta{margin-top:30px;display:inline-block;background:var(--cta);color:#fff;text-decoration:none;border-radius:4px;
+    font-weight:500;font-size:1.05rem;letter-spacing:.06em;padding:16px 42px;box-shadow:0 8px 30px rgba(196,133,31,.34);
+    transition:transform .4s cubic-bezier(.16,1,.3,1)}
+  .cta:hover{transform:translateY(-3px)}
+
+  .end{position:relative;z-index:10;background:var(--ink);color:#EDEBE4;padding:80px clamp(24px,7vw,120px) 90px;text-align:center}
+  .end p{max-width:640px;margin:14px auto 0;font-size:.92rem;color:rgba(237,235,228,.7);line-height:1.9}
+  .end .k{font-family:var(--fb);font-size:.7rem;letter-spacing:.2em;color:var(--lime);text-transform:uppercase}
+
+  @media(max-width:767px){
+    .ch,.ch--right{justify-content:center;text-align:center}
+    .ch__in{align-items:center;max-width:none}
+    .ch--right .eyebrow{flex-direction:row}
+    .scrim,.scrim.right{background:radial-gradient(120% 90% at 50% 55%,rgba(244,241,234,0) 22%,rgba(244,241,234,.6) 80%)}
+    .rail{right:12px}
+  }
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cue .d{animation:none}}
+</style>
+</head>
+<body>
+
+<div class="brandmark">やまとの家</div>
+<div class="tagpill">3D FULL 360 — Ideal Mesh</div>
+
+<!-- 背景に常駐する3D装飾 -->
+<div class="stage">
+  <div class="house" id="house">
+    <model-viewer id="mv"
+      src="assets/ideal-house-hq.glb"
+      alt="やまとの家 3D装飾"
+      disable-zoom disable-tap interaction-prompt="none" camera-controls="false"
+      tone-mapping="commerce" shadow-intensity="1.2" shadow-softness="0.9" exposure="1.08"
+      camera-orbit="-36deg 80deg auto" field-of-view="30deg">
+    </model-viewer>
+  </div>
+  <div class="stage__grain"></div>
+</div>
+<div class="scrim" id="scrim"></div>
+
+<div class="rail"><b class="on" data-i="0"></b><b data-i="1"></b><b data-i="2"></b><b data-i="3"></b></div>
+<div class="cue"><span class="d"></span>SCROLL</div>
+
+<!-- 前面セクション -->
+<main class="chapters" id="chapters">
+  <section class="ch ch--left" data-scrim="left">
+    <div class="ch__in">
+      <span class="eyebrow">花鳥風月 ─ やまとの家</span>
+      <h2>見せたものが、<br><em>そのまま届く。</em></h2>
+      <p>背後で回っているのは、やまとの実際のモデルハウスを3D化したものです。ページの装飾として、スクロールに合わせて回り続けます。</p>
+    </div>
+  </section>
+
+  <section class="ch ch--right" data-scrim="right">
+    <div class="ch__in">
+      <span class="eyebrow">Price ─ 価格の正直</span>
+      <h2>この家が、<br><em>この金額で。</em></h2>
+      <p class="price">2,480<small>万円</small></p>
+      <p class="note">花・建物本体・税込コミコミ／あとから金額は増えません。</p>
+    </div>
+  </section>
+
+  <section class="ch ch--left" data-scrim="left">
+    <div class="ch__in">
+      <span class="eyebrow">Quality ─ 品質</span>
+      <h2>モデルハウスの仕様が、<br><em>そのまま標準仕様。</em></h2>
+      <p>外壁の通気工法、12貫の塗装、木目の軒天。回転する背後の家そのものが、標準仕様の見本です。</p>
+    </div>
+  </section>
+
+  <section class="ch ch--center" data-scrim="center">
+    <div class="ch__in">
+      <span class="eyebrow">Visit ─ 実物を見る</span>
+      <h2>回っているこの家は、<br><em>奈良に建っています。</em></h2>
+      <p>写真でも図面でもなく、実際に見て、触れて確かめられます。</p>
+      <a class="cta" href="#">モデルハウスを見学する</a>
+    </div>
+  </section>
+</main>
+
+<footer class="end">
+  <span class="k">3D Decoration Parallax — 2026.07.03</span>
+  <p>背景に常駐した3Dの家が、スクロール量に連動して回転＋左右へパララックス移動し、前面のセクションが切り替わります。3Dは主役ではなく“動く装飾”。背景の微ノイズはぼかしと暗さで消え、雰囲気だけが残ります。実写ターンテーブル版と差し替えることも可能です。</p>
+</footer>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var mv=document.getElementById('mv'), house=document.getElementById('house'), scrim=document.getElementById('scrim');
+  var rails=[].slice.call(document.querySelectorAll('.rail b'));
+  var chapters=[].slice.call(document.querySelectorAll('.ch'));
+
+  // 章ごとの家の定位置(テキストと反対側へ)。CSSトランジションで滑らかに動く
+  var POS=[
+    {x: 16, s:1.06, blur:0,   o:1},   // ch0 text左 → 家は右
+    {x:-22, s:1.00, blur:0,   o:1},   // ch1 text右 → 家は左
+    {x: 22, s:1.03, blur:0.3, o:1},   // ch2 text左 → 家は右
+    {x:  0, s:0.78, blur:2.4, o:.42}  // ch3 text中央 → 家は後退・薄く(CTA可読優先)
+  ];
+  var ticking=false, lastActive=-1;
+  function frame(){
+    ticking=false;
+    var max=document.documentElement.scrollHeight-window.innerHeight;
+    var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;
+
+    if(!reduce){
+      // 背後の家: スクロールで連続回転
+      var theta=p*360 - 20;
+      var phi=82 - Math.sin(p*Math.PI)*13;
+      mv.setAttribute('camera-orbit', theta.toFixed(1)+'deg '+phi.toFixed(1)+'deg auto');
+    }
+
+    // アクティブ章 = 画面中央を過ぎた最後の章
+    var active=0, vh=window.innerHeight;
+    chapters.forEach(function(c,i){var r=c.getBoundingClientRect(); if(r.top < vh*0.5) active=i;});
+    if(active!==lastActive){
+      lastActive=active;
+      rails.forEach(function(b,i){b.classList.toggle('on', i===active);});
+      scrim.className='scrim'+(chapters[active].getAttribute('data-scrim')==='right'?' right':chapters[active].getAttribute('data-scrim')==='center'?' center':'');
+      if(!reduce){
+        var t=POS[active];
+        house.style.transform='translateX('+t.x+'%) scale('+t.s+')';
+        house.style.filter=t.blur>0.05?'blur('+t.blur+'px)':'none';
+        house.style.opacity=(t.o!=null?t.o:1);
+      }
+    }
+  }
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(frame);ticking=true;}},{passive:true});
+  window.addEventListener('resize',frame);
+  mv.addEventListener('load',function(){ if(!reduce){house.style.transform='translateX(16%) scale(1.06)';} frame(); });
+  frame();
+})();
+</script>
+</body>
+</html>

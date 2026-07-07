@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# ローカル作業ファイル（公開リポジトリに含めない）
+index.backup_*.html
+company_shoin_rejected.html
+
+# 旧版・バックアップ素材（本番HTMLから参照なし）
+*_old.*
+*_backup.*
+
+# 未採用のFV候補動画（参照なし）
+assets/fv_candidates/
+
+# 他社サイトの参考キャプチャ（再配布不可）
+参考FV_20260704/

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>動画AI 撮り比べ｜Seedance 2.0 vs Google Veo 3.1</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#12160c;color:#F4F1EA;font-family:"Hiragino Sans","Noto Sans JP",sans-serif;padding:22px clamp(14px,4vw,40px) 60px;-webkit-font-smoothing:antialiased}
+  h1{font-size:clamp(1.05rem,.9rem+1vw,1.4rem);font-weight:600;letter-spacing:.04em;margin-bottom:6px}
+  .sub{font-size:.82rem;color:rgba(244,241,234,.66);line-height:1.7;margin-bottom:22px}
+  .grid{display:grid;gap:22px;max-width:1200px;margin:0 auto}
+  @media(min-width:900px){.grid{grid-template-columns:1fr 1fr}}
+  .card{background:#1b2012;border:1px solid rgba(244,241,234,.12);border-radius:12px;overflow:hidden}
+  .card video{width:100%;display:block;background:#000;aspect-ratio:16/9;object-fit:cover}
+  .meta{padding:13px 15px}
+  .tag{display:inline-block;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:100px;font-weight:600}
+  .tag.sd{background:#486B00;color:#fff}
+  .tag.veo{background:#C4851F;color:#fff}
+  .meta h2{font-size:1rem;margin:9px 0 4px;font-weight:600}
+  .meta p{font-size:.76rem;color:rgba(244,241,234,.62);line-height:1.65}
+  .note{max-width:1200px;margin:26px auto 0;font-size:.78rem;color:rgba(244,241,234,.6);line-height:1.8;border-top:1px solid rgba(244,241,234,.12);padding-top:18px}
+  .note b{color:#A2C523}
+</style>
+</head>
+<body>
+  <h1>動画AI 撮り比べ ― 同じ実棟（黄金の夜明け）を、ゆっくり寄る</h1>
+  <p class="sub">やまとの実棟写真をHiggsfieldで夜明けに変換した1枚を、2つの動画AIで image-to-video。実際の動き・滑らかさ・実写感を見比べてください（無音・自動ループ）。</p>
+
+  <div class="grid">
+    <div class="card">
+      <video src="assets/video_ab/seedance_exterior.mp4" autoplay muted loop playsinline></video>
+      <div class="meta">
+        <span class="tag sd">Seedance 2.0 ／ Bytedance</span>
+        <h2>Seedance 2.0</h2>
+        <p>5秒・1080p・5.2MB。end画像指定でループ制御◎／4K対応／尺自由／軽量。動きは繊細で安定。</p>
+      </div>
+    </div>
+    <div class="card">
+      <video src="assets/video_ab/veo_exterior.mp4" autoplay muted loop playsinline></video>
+      <div class="meta">
+        <span class="tag veo">Google Veo 3.1（新作）</span>
+        <h2>Google Veo 3.1</h2>
+        <p>6秒・1080p・13.7MB。ultra-realistic。寄りが明確でシネマ的、中盤に陽光フレア。start画像のみ（ループはやや工夫要）。</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="note">
+    どちらも<b>実写級・破綻なし</b>。用途で使い分けも可能です：<br>
+    ・<b>ループ主体のB（円環）</b>＝Seedance 2.0（end画像で継ぎ目を作れる・4K・軽い）が有利<br>
+    ・<b>掴みのヒーロー1カット</b>＝Veo 3.1のドリーイン＋フレアが映える<br>
+    実機で見た印象で「どちらを本番の主軸にするか」を教えてください。
+  </p>
+</body>
+</html>

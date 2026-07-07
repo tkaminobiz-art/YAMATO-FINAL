@@ -1,0 +1,292 @@
+[
+ {
+  "file": "ext01.jpg",
+  "source": "実邸_外観_正面.jpg",
+  "folder": "01_外観"
+ },
+ {
+  "file": "ext02.jpg",
+  "source": "実邸_外観_近景.jpg",
+  "folder": "01_外観"
+ },
+ {
+  "file": "ext03.jpg",
+  "source": "左京_ルーフバルコニー.jpg",
+  "folder": "01_外観"
+ },
+ {
+  "file": "ext04.jpg",
+  "source": "左京_外壁_木格子.jpg",
+  "folder": "01_外観"
+ },
+ {
+  "file": "ext05.jpg",
+  "source": "左京_外観_全景.jpg",
+  "folder": "01_外観"
+ },
+ {
+  "file": "ext06.jpg",
+  "source": "左京_外観_正面.jpg",
+  "folder": "01_外観"
+ },
+ {
+  "file": "ext07.jpg",
+  "source": "左京_外観_正面2.jpg",
+  "folder": "01_外観"
+ },
+ {
+  "file": "ext08.jpg",
+  "source": "左京_玄関ポーチ.jpg",
+  "folder": "01_外観"
+ },
+ {
+  "file": "living01.jpg",
+  "source": "三山木_LDK.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "living02.jpg",
+  "source": "三山木_ダイニング俯瞰.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "living03.jpg",
+  "source": "実邸_LDK.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "living04.jpg",
+  "source": "実邸_LDK_広間.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "living05.jpg",
+  "source": "実邸_ダイニングバー.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "living06.jpg",
+  "source": "左京_LDK_01.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "living07.jpg",
+  "source": "左京_LDK_02.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "living08.jpg",
+  "source": "左京_LDK_吹抜.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "living09.jpg",
+  "source": "左京_LDK_掃出窓.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "living10.jpg",
+  "source": "左京_LDK_間接照明.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "living11.jpg",
+  "source": "左京_ダイニング_一枚板.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "living12.jpg",
+  "source": "左京_ダイニングバー.jpg",
+  "folder": "02_リビング・ダイニング"
+ },
+ {
+  "file": "kitchen01.jpg",
+  "source": "実邸_キッチン_アイランド.jpg",
+  "folder": "03_キッチン"
+ },
+ {
+  "file": "kitchen02.jpg",
+  "source": "実邸_キッチン_レンジ.jpg",
+  "folder": "03_キッチン"
+ },
+ {
+  "file": "kitchen03.jpg",
+  "source": "左京_キッチン_アイランド.jpg",
+  "folder": "03_キッチン"
+ },
+ {
+  "file": "kitchen04.jpg",
+  "source": "左京_キッチン_カウンター.jpg",
+  "folder": "03_キッチン"
+ },
+ {
+  "file": "kitchen05.jpg",
+  "source": "左京_キッチン_一枚板01.jpg",
+  "folder": "03_キッチン"
+ },
+ {
+  "file": "kitchen06.jpg",
+  "source": "左京_キッチン_一枚板02.jpg",
+  "folder": "03_キッチン"
+ },
+ {
+  "file": "kitchen07.jpg",
+  "source": "左京_キッチン_全景.jpg",
+  "folder": "03_キッチン"
+ },
+ {
+  "file": "kitchen08.jpg",
+  "source": "左京_キッチン_木天井.jpg",
+  "folder": "03_キッチン"
+ },
+ {
+  "file": "kitchen09.jpg",
+  "source": "左京_ダイニングバー2.jpg",
+  "folder": "03_キッチン"
+ },
+ {
+  "file": "washitsu01.jpg",
+  "source": "左京_和室01.jpg",
+  "folder": "04_和室"
+ },
+ {
+  "file": "washitsu02.jpg",
+  "source": "左京_和室02.jpg",
+  "folder": "04_和室"
+ },
+ {
+  "file": "washitsu03.jpg",
+  "source": "左京_和室からLDK.jpg",
+  "folder": "04_和室"
+ },
+ {
+  "file": "room01.jpg",
+  "source": "三山木_スタディ.jpg",
+  "folder": "05_寝室・居室"
+ },
+ {
+  "file": "room02.jpg",
+  "source": "三山木_子供室.jpg",
+  "folder": "05_寝室・居室"
+ },
+ {
+  "file": "room03.jpg",
+  "source": "左京_寝室01.jpg",
+  "folder": "05_寝室・居室"
+ },
+ {
+  "file": "room04.jpg",
+  "source": "左京_寝室02.jpg",
+  "folder": "05_寝室・居室"
+ },
+ {
+  "file": "room05.jpg",
+  "source": "左京_書斎コーナー.jpg",
+  "folder": "05_寝室・居室"
+ },
+ {
+  "file": "entry01.jpg",
+  "source": "三山木_玄関.jpg",
+  "folder": "06_玄関・吹抜・階段"
+ },
+ {
+  "file": "entry02.jpg",
+  "source": "左京_吹抜01.jpg",
+  "folder": "06_玄関・吹抜・階段"
+ },
+ {
+  "file": "entry03.jpg",
+  "source": "左京_吹抜02.jpg",
+  "folder": "06_玄関・吹抜・階段"
+ },
+ {
+  "file": "entry04.jpg",
+  "source": "左京_玄関ホール.jpg",
+  "folder": "06_玄関・吹抜・階段"
+ },
+ {
+  "file": "entry05.jpg",
+  "source": "左京_玄関収納.jpg",
+  "folder": "06_玄関・吹抜・階段"
+ },
+ {
+  "file": "entry06.jpg",
+  "source": "左京_階段.jpg",
+  "folder": "06_玄関・吹抜・階段"
+ },
+ {
+  "file": "mizu01.jpg",
+  "source": "左京_トイレ.jpg",
+  "folder": "07_水回り"
+ },
+ {
+  "file": "mizu02.jpg",
+  "source": "左京_パントリー.jpg",
+  "folder": "07_水回り"
+ },
+ {
+  "file": "mizu03.jpg",
+  "source": "左京_ランドリー.jpg",
+  "folder": "07_水回り"
+ },
+ {
+  "file": "mizu04.jpg",
+  "source": "左京_洗面.jpg",
+  "folder": "07_水回り"
+ },
+ {
+  "file": "mizu05.jpg",
+  "source": "左京_浴室.jpg",
+  "folder": "07_水回り"
+ },
+ {
+  "file": "std01.jpg",
+  "source": "標準_キッチン.jpg",
+  "folder": "08_標準設備"
+ },
+ {
+  "file": "std02.jpg",
+  "source": "標準_外壁タイル.jpg",
+  "folder": "08_標準設備"
+ },
+ {
+  "file": "std03.jpg",
+  "source": "標準_浴室.jpg",
+  "folder": "08_標準設備"
+ },
+ {
+  "file": "model01.jpg",
+  "source": "京_キッチン.jpg",
+  "folder": "09_モデル別_花風京"
+ },
+ {
+  "file": "model02.jpg",
+  "source": "京_リビング.jpg",
+  "folder": "09_モデル別_花風京"
+ },
+ {
+  "file": "model03.jpg",
+  "source": "京_外観.jpg",
+  "folder": "09_モデル別_花風京"
+ },
+ {
+  "file": "model04.jpg",
+  "source": "京_外観2.jpg",
+  "folder": "09_モデル別_花風京"
+ },
+ {
+  "file": "model05.jpg",
+  "source": "花_外観2.jpg",
+  "folder": "09_モデル別_花風京"
+ },
+ {
+  "file": "model06.jpg",
+  "source": "風_浴室.jpg",
+  "folder": "09_モデル別_花風京"
+ },
+ {
+  "file": "model07.jpg",
+  "source": "風_玄関.jpg",
+  "folder": "09_モデル別_花風京"
+ }
+]

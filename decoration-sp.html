@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>やまとの家｜スマホ版 装飾（据え置き舞台・連番オービット）</title>
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F1EA; --bg2:#E9E4D8; --ink:#20241A; --light:#6B6B6B;
+    --main:#486B00; --main-dark:#2E4600; --lime:#A2C523; --earth:#7D4427; --cta:#C4851F;
+    --stageH:54svh;
+    --fh:"dnp-shuei-gothic-gin-std","Noto Sans JP",sans-serif;
+    --fb:"Inter","Noto Sans JP",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  /* スクロールは100%ネイティブ（snapなし＝指に一切引っかからない）。演出はスクロールから切り離す */
+  html{-webkit-text-size-adjust:100%;background:var(--bg)}
+  body{font-family:var(--fb);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+  /* 固定UI */
+  .brandmark{position:fixed;top:calc(env(safe-area-inset-top) + 18px);left:calc(env(safe-area-inset-left) + 20px);z-index:30;font-family:var(--fh);font-weight:500;font-size:.9rem;letter-spacing:.08em;color:var(--main-dark)}
+  .tagpill{position:fixed;top:calc(env(safe-area-inset-top) + 18px);right:calc(env(safe-area-inset-right) + 18px);z-index:30;font-family:var(--fb);font-size:.54rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(20,24,14,.55);padding:5px 10px;border-radius:100px}
+  .rail{position:fixed;top:50%;right:calc(env(safe-area-inset-right) + 12px);transform:translateY(-50%);z-index:30;display:flex;flex-direction:column;gap:11px}
+  .rail b{width:7px;height:7px;border-radius:50%;background:rgba(43,43,43,.22);transition:.5s cubic-bezier(.22,1,.36,1);display:block}
+  .rail b.on{background:var(--main);transform:scale(1.55)}
+  .frameno{position:fixed;left:20px;bottom:calc(env(safe-area-inset-bottom) + 16px);z-index:30;font-family:var(--fb);font-size:.55rem;letter-spacing:.14em;color:var(--light)}
+  .cue{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom) + 16px);transform:translateX(-50%);z-index:30;font-family:var(--fb);font-size:.56rem;letter-spacing:.24em;color:var(--light);display:flex;align-items:center;gap:7px;transition:opacity .5s}
+  .cue.gone{opacity:0;pointer-events:none}
+  .cue .d{width:6px;height:6px;border-radius:50%;background:var(--lime);animation:pz 1.7s infinite}
+  @keyframes pz{0%,100%{opacity:.3}50%{opacity:1}}
+
+  .scrolly{position:relative}     /* transform/filter/overflow を置かない＝stickyの包含ブロックを汚さない */
+
+  /* 上部スティッキー・ステージ（家）。fixedでなくsticky＝コンポジタ管理でiOSアドレスバー伸縮に据わる */
+  .stage{position:sticky;top:0;z-index:2;height:var(--stageH);overflow:hidden;
+    background:radial-gradient(120% 100% at 50% 42%,#FBFAF5 0%,var(--bg) 56%,var(--bg2) 100%)}
+  #house{position:absolute;inset:0;will-change:transform;
+    transition:transform 1s cubic-bezier(.22,1,.36,1),filter 1s ease,opacity 1s ease}
+  #house.receded{transform:scale(.86);filter:blur(1.4px);opacity:.55}   /* 最終章：家が一歩退いてCTAを主役に */
+  #cv{display:block;width:100%;height:100%}
+  .stage__grain{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.4;mix-blend-mode:multiply;
+    background-image:radial-gradient(rgba(72,107,0,.05) 1px,transparent 1px);background-size:24px 24px;
+    -webkit-mask-image:radial-gradient(ellipse 92% 80% at 50% 42%,#000,transparent);mask-image:radial-gradient(ellipse 92% 80% at 50% 42%,#000,transparent)}
+  .stage::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;z-index:3;pointer-events:none;
+    background:linear-gradient(to bottom,rgba(244,241,234,0),var(--bg) 88%)}
+  .stage::before{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;z-index:4;
+    background:linear-gradient(90deg,transparent,var(--lime),transparent);opacity:.5}
+  .loading{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);z-index:5;font-family:var(--fb);font-size:.62rem;letter-spacing:.18em;color:var(--light);text-transform:uppercase;transition:opacity .5s}
+  .loading.hide{opacity:0;pointer-events:none}
+
+  /* 下部スクロールカード（ステージ背面へ潜る）。margin-topをstageH連動で引き上げ初期FVを読取ラインへ据える */
+  .cards{position:relative;z-index:1;margin-top:calc(11svh - var(--stageH) / 2)}
+  .card{position:relative;min-height:78svh;display:flex;flex-direction:column;justify-content:center;
+    padding:0 clamp(22px,7vw,40px);text-align:center}
+  .sentinel{position:absolute;left:0;top:50%;width:1px;height:1px;pointer-events:none}  /* カード中心のセンチネル＝IOの活性判定点 */
+  .card__in{max-width:30rem;margin:0 auto;width:100%}
+  .eyebrow{font-family:var(--fb);font-size:.68rem;font-weight:500;letter-spacing:.2em;color:var(--main);
+    text-transform:uppercase;display:inline-flex;align-items:center;gap:9px}
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--lime)}
+  .card h2{font-family:var(--fh);font-weight:500;line-height:1.34;letter-spacing:.05em;margin-top:15px;
+    font-size:clamp(1.5rem,1.05rem+2.6vw,2.15rem);color:var(--ink);text-wrap:balance}
+  .card h2 em{font-style:normal;color:var(--main)}
+  .card p{margin-top:15px;font-size:clamp(.95rem,.9rem+.5vw,1.04rem);color:#33372b;text-wrap:pretty}
+  .price{margin-top:16px;font-family:var(--fb);font-weight:200;font-feature-settings:"tnum";
+    font-size:clamp(3.1rem,2rem+9vw,4.4rem);line-height:.9;color:var(--main-dark);letter-spacing:.01em}
+  .price small{font-size:.23em;font-family:var(--fh);font-weight:500;margin-left:5px}
+  .note{margin-top:7px;font-size:.79rem;color:var(--light);letter-spacing:.03em}
+  .cta{margin-top:24px;display:inline-block;background:var(--cta);color:#fff;text-decoration:none;border-radius:6px;
+    font-weight:500;font-size:1.04rem;letter-spacing:.04em;padding:16px 36px;min-height:52px;
+    box-shadow:0 10px 30px rgba(196,133,31,.32)}
+
+  .end{position:relative;z-index:2;background:var(--ink);color:#EDEBE4;padding:70px clamp(22px,7vw,40px) calc(env(safe-area-inset-bottom) + 80px);text-align:center}
+  .end .k{font-family:var(--fb);font-size:.62rem;letter-spacing:.2em;color:var(--lime);text-transform:uppercase}
+  .end p{max-width:34rem;margin:12px auto 0;font-size:.82rem;color:rgba(237,235,228,.68);line-height:1.85}
+
+  /* ===== セクション活性リビール：IntersectionObserverが .in を付与、時間ベースの滑らかな切替（スクロール速度に一切依存しない） ===== */
+  .js .card .card__in{opacity:.18;transition:opacity .75s ease}     /* 非活性は静かに沈める＝1画面1メッセージの焦点 */
+  .js .card.in .card__in{opacity:1}
+  .js .card .eyebrow,.js .card h2,.js .card .price,.js .card .note,.js .card p,.js .card .cta{
+    transform:translateY(24px);
+    transition:transform .9s cubic-bezier(.19,1,.22,1)}          /* GPU合成のみ（blur/字送りアニメなし） */
+  .js .card.in .eyebrow,.js .card.in h2,.js .card.in .price,.js .card.in .note,.js .card.in p,.js .card.in .cta{will-change:transform}
+  .js .card .eyebrow::before{transform:scaleX(0);transform-origin:left;transition:transform .9s cubic-bezier(.19,1,.22,1) .1s}
+  .js .card.in .eyebrow{transform:none;transition-delay:.05s}
+  .js .card.in .eyebrow::before{transform:scaleX(1)}
+  .js .card.in h2{transform:none;transition-delay:.13s}
+  .js .card.in .price{transform:none;transition-delay:.22s}
+  .js .card.in .note{transform:none;transition-delay:.3s}
+  .js .card.in p{transform:none;transition-delay:.27s}
+  .js .card.in .cta{transform:none;transition-delay:.37s}
+
+  /* 小画面（SE級）：ステージを縮め窓を確保。margin-topはstageH連動で自動追従(-14svh)。priceを抑え左下framenoの被りも除去 */
+  @media (max-height:680px){
+    :root{--stageH:50svh}
+    .price{font-size:clamp(2.6rem,1.6rem+6vw,3.4rem)}
+    .frameno{display:none}
+  }
+  /* 狭幅(SE/mini 375px級)：見出しを微縮し長いem行のオーファンを回避 */
+  @media (max-width:385px){
+    .card h2{font-size:1.46rem}
+  }
+
+  /* 退避（reduced-motion）：家は回さず全文即表示 */
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .js .card .card__in{opacity:1!important}
+    .js .card .eyebrow,.js .card h2,.js .card .price,.js .card .note,.js .card p,.js .card .cta{transform:none!important;filter:none!important;letter-spacing:.05em}
+    .js .card.in .eyebrow,.js .card.in h2,.js .card.in .price,.js .card.in .note,.js .card.in p,.js .card.in .cta{will-change:auto}
+    .js .card .eyebrow::before{transform:none}
+    #house{transition:none;will-change:auto}#house.receded{transform:none;filter:none;opacity:1}.cue .d{animation:none}
+  }
+  /* JS判定の退避（saveData/低速/低メモリ）も全文即表示 */
+  .is-static .card .card__in{opacity:1!important}
+  .is-static .card .eyebrow,.is-static .card h2,.is-static .card .price,.is-static .card .note,.is-static .card p,.is-static .card .cta{transform:none!important;filter:none!important;letter-spacing:.05em;will-change:auto!important}
+  .is-static .card .eyebrow::before{transform:none}
+  .is-static #house{will-change:auto}
+  .is-static .cue{display:none}
+</style>
+</head>
+<body>
+
+<div class="brandmark">やまとの家</div>
+<div class="tagpill">Scroll Orbit — SP</div>
+<div class="rail"><b class="on" data-i="0"></b><b data-i="1"></b><b data-i="2"></b><b data-i="3"></b><b data-i="4"></b></div>
+<div class="frameno" id="frameno">FRAME 01 / 60</div>
+<div class="cue" id="cue"><span class="d"></span>SCROLL</div>
+
+<section class="scrolly">
+  <div class="stage">
+    <div id="house"><canvas id="cv"></canvas></div>
+    <div class="stage__grain"></div>
+    <div class="loading" id="loading">Loading…</div>
+  </div>
+
+  <div class="cards">
+    <article class="card">
+      <span class="sentinel"></span>
+      <div class="card__in">
+        <span class="eyebrow">花鳥風月 ─ やまとの家</span>
+        <h2>大手で諦めた家を、<br><em>当社と一緒に叶えましょう。</em></h2>
+        <p>自由設計と、高水準な標準装備。夢を、あきらめないでください。</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="sentinel"></span>
+      <div class="card__in">
+        <span class="eyebrow">Design ─ 自由設計</span>
+        <h2>自由設計と、<br><em>高水準な標準装備。</em></h2>
+        <p>吹き抜けをつくる。天井を上げる。壁を湾曲させる。建築士と楽しく相談しながら、決めていけます。</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="sentinel"></span>
+      <div class="card__in">
+        <span class="eyebrow">Estimate ─ お見積り</span>
+        <h2>見積書に、あとから追加。<br><em>当社は、絶対にしません。</em></h2>
+        <p class="price">2,480<small>万円</small></p>
+        <p class="note">花・建物本体価格・税込。土地は別途です。</p>
+        <p>一度お出しした金額のまま、家が建ちます。標準装備が高いので、あとから足す設備もありません。</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="sentinel"></span>
+      <div class="card__in">
+        <span class="eyebrow">Standard ─ 標準装備</span>
+        <h2><em>「これも標準なんですか？」</em></h2>
+        <p>当社で家を建てられたお客様から、何度もいただく言葉です。オプションだと思っていた設備が、はじめから付いています。</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="sentinel"></span>
+      <div class="card__in">
+        <span class="eyebrow">Visit ─ 実物を見る</span>
+        <h2>まずはモデルハウスで、<br><em>お会いしませんか？</em></h2>
+        <p>奈良にあるモデルハウスは、標準仕様のまま建てています。写真と実物に、違いはありません。</p>
+        <a class="cta" href="#">モデルハウスを予約する</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer class="end">
+  <span class="k">Scroll Orbit / Frame Sequence — SP prototype 2026.07.03</span>
+  <p>家は上部の舞台に据わり、章が変わるたびに角度を変えて次の表情を見せます。1画面につき1つの言葉だけをお読みいただけます。</p>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  root.className=(root.className.replace('no-js','').trim()+' js').trim();
+
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var conn=navigator.connection||{};
+  var slow=conn.saveData===true || /(^|-)2g/.test(conn.effectiveType||'');
+  var mem=navigator.deviceMemory||8;                 /* iOS等未実装は8扱い→フル120枚(3°刻み)でぬるぬる */
+  var STATIC=reduce||slow||mem<3;                    /* ≤2GB / 省データ / reduced-motion は静止 */
+
+  var stage=document.querySelector('.stage');
+  var house=document.getElementById('house');
+  var cv=document.getElementById('cv'), ctx=cv.getContext('2d',{alpha:false});
+  var cards=[].slice.call(document.querySelectorAll('.card'));
+  var rails=[].slice.call(document.querySelectorAll('.rail b'));
+  var frameno=document.getElementById('frameno');
+  var loading=document.getElementById('loading');
+  var cue=document.getElementById('cue');
+  var nCh=cards.length, BG='#F4F1EA', DIR='assets/orbit_sp/';
+  function pad(n){return (n<10?'00':n<100?'0':'')+n;}
+  function nm(a){return DIR+'s_'+pad(a+1)+'.webp';}
+
+  var cw=0, chh=0, lastF=-1;
+  function sizeCanvas(){
+    var dpr=Math.min(1.5, window.devicePixelRatio||1);
+    var w=Math.round(cv.clientWidth*dpr), h=Math.round(cv.clientHeight*dpr);
+    if(w===cw && h===chh) return false;              /* svh固定なのでアドレスバー伸縮では変わらない＝無駄な再計算を避ける */
+    cw=cv.width=w; chh=cv.height=h; lastF=-1; return true;
+  }
+  function drawFit(im){
+    if(!im||!im.complete||!im.naturalWidth) return;
+    var s=Math.min(cw/im.naturalWidth, chh/im.naturalHeight)*0.96;
+    var w=im.naturalWidth*s, h=im.naturalHeight*s;
+    ctx.drawImage(im,(cw-w)/2,(chh-h)/2,w,h);
+  }
+
+  /* ---------- 退避モード：家は回さず決めフレーム1枚＋全文即表示 ---------- */
+  if(STATIC){
+    root.classList.add('is-static');
+    cards.forEach(function(c){ c.classList.add('in'); });
+    if(loading) loading.classList.add('hide');
+    var still=new Image();
+    function paintStill(){ if(!still.complete||!still.naturalWidth) return; sizeCanvas(); ctx.fillStyle=BG; ctx.fillRect(0,0,cw,chh); drawFit(still); }
+    still.onload=paintStill;
+    still.src=DIR+'s_030.webp';
+    addEventListener('resize', function(){ cw=chh=-1; paintStill(); }, {passive:true});
+    return;
+  }
+
+  /* ---------- 連番（メモリでティア）：全枚数を先読み＋事前デコード（各~18KB・計~1MB） ---------- */
+  var N, stride;
+  if(mem>=8){ N=120; stride=1; }   /* 3°刻み・最も滑らか（元素材の全密度） */
+  else      { N=60;  stride=2; }   /* 4GB級：6°刻み（デコード常駐を半減） */
+  var imgs=new Array(N), ready=0, started=false;
+  function mark(){ if(++ready>=5 && !started) begin(); }
+  function load(j){
+    if(imgs[j]) return;
+    var im=new Image();
+    /* onload後にdecode()で事前デコード＝切替中のdrawImageで同期デコードjankを起こさない */
+    im.onload=function(){ lastF=-1; if(im.decode){ im.decode().then(mark, mark); } else { mark(); } };
+    im.onerror=mark;
+    im.src=nm(j*stride);
+    imgs[j]=im;
+  }
+  for(var s=0;s<nCh;s++) load(targetFrame(s));   /* 各章の決め角を最優先ロード＝着地が常に間に合う */
+  for(var i=0;i<N;i++) load(i);                  /* 残り全枚数（loadは重複ガードあり）。Safariが非表示分を随時破棄 */
+  setTimeout(function(){ if(!started) begin(); }, 2500);
+
+  /* 隣接フレームのクロスフェード描画（切替アニメ中のみ呼ばれる＝スクロールを妨げない） */
+  function drawBlend(f){
+    var fl=Math.floor(f), fr=f-fl;
+    var a=((fl%N)+N)%N, b=(a+1)%N;               /* 剰余で環状＝多回転(TURNS>1)でも119→0がシームレス */
+    if(!(imgs[a] && imgs[a].complete && imgs[a].naturalWidth)) return; /* 未ロードは前フレーム保持 */
+    if(Math.abs(f-lastF)<0.004) return; lastF=f;  /* 120枚では微差も描いて回転を最も滑らかに */
+    ctx.fillStyle=BG; ctx.fillRect(0,0,cw,chh);
+    ctx.globalAlpha=1; drawFit(imgs[a]);
+    if(fr>0.001 && imgs[b] && imgs[b].complete){ ctx.globalAlpha=fr; drawFit(imgs[b]); ctx.globalAlpha=1; }
+    if(frameno) frameno.textContent='FRAME '+pad(a+1)+' / '+N;
+  }
+
+  function targetFrame(i){ return Math.round(i*(N-1)/(nCh-1)); }   /* 章の決め角＝優先ロード用 */
+
+  /* ---------- 幾何キャッシュ：毎フレームgetBoundingClientRectしない（＝スクロールjankの主因を根絶） ---------- */
+  var stageHpx=0, ctr=[], cspan=1;
+  function measure(){
+    stageHpx=stage.getBoundingClientRect().height;               /* svh由来の実px（アドレスバー伸縮では不変） */
+    var y=window.scrollY||0;
+    ctr=cards.map(function(el){ var r=el.getBoundingClientRect(); return r.top+y+r.height/2; }); /* 文書座標＝安定 */
+    cspan=(ctr[nCh-1]-ctr[0])||1;
+    lastF=-1;
+  }
+
+  /* ---------- セクション活性（IntersectionObserver）＝テキストのリビール/レール/家の後退だけ（家の回転はスクロール直結） ---------- */
+  var active=-1;
+  function setActive(i){
+    if(i===active) return;
+    active=i;
+    for(var k=0;k<nCh;k++) cards[k].classList.toggle('in', k===i);
+    for(var r=0;r<rails.length;r++) rails[r].classList.toggle('on', r===i);
+    house.classList.toggle('receded', i===nCh-1);
+  }
+  var io=null;
+  function observe(){
+    if(io) io.disconnect();
+    io=new IntersectionObserver(function(ents){
+      for(var e=0;e<ents.length;e++){
+        if(ents[e].isIntersecting){
+          var idx=cards.indexOf(ents[e].target.parentNode);
+          if(idx>=0) setActive(idx);
+        }
+      }
+    }, {rootMargin:'-62% 0px -16% 0px', threshold:0});
+    for(var k=0;k<nCh;k++) io.observe(cards[k].querySelector('.sentinel'));
+  }
+
+  /* ---------- 家＝スクロール直結の連続回転（Apple製品ページ方式）。指の動きにそのまま追従＝自然 ---------- */
+  /* 素材のオービットは正面左→背面→正面右の約200°弧（360°閉ループではない）。
+     TURNS=1で全弧を一方向に一度だけ掃引＝巻き戻し(119→0)の急転換を出さない */
+  var TURNS=1;
+  var rendered=0;
+  function houseLoop(){
+    var y=window.scrollY||0, ih=window.innerHeight;
+    var p=(y+(stageHpx+ih)/2-ctr[0])/cspan;      /* scrollY＋キャッシュのみ＝gBCRゼロ。アドレスバー伸縮にも追従 */
+    if(p<0)p=0; else if(p>1)p=1;
+    var target=p*(N-1)*TURNS;
+    rendered += (target-rendered)*0.28;          /* 指に近く追従しつつ、慣性の微ジタだけ平滑化 */
+    if(Math.abs(target-rendered)<0.01) rendered=target;
+    drawBlend(rendered);
+    requestAnimationFrame(houseLoop);
+  }
+
+  var cueGone=false;
+  addEventListener('scroll', function(){ if(!cueGone && (window.scrollY||0)>40){ cueGone=true; cue&&cue.classList.add('gone'); } }, {passive:true});
+
+  function relayout(){ if(sizeCanvas()){ measure(); } }        /* 実サイズが変わった時だけ再計測（スクロール由来のresizeは無視） */
+  function begin(){
+    if(started) return; started=true;
+    if(loading) loading.classList.add('hide');
+    sizeCanvas(); measure();
+    addEventListener('resize', relayout, {passive:true});
+    addEventListener('orientationchange', function(){ setTimeout(relayout,300); }, {passive:true});
+    if(document.fonts && document.fonts.ready){ document.fonts.ready.then(measure); }
+    setTimeout(measure, 1200);
+    observe();
+    requestAnimationFrame(houseLoop);
+  }
+})();
+</script>
+</body>
+</html>

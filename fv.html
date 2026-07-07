@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>やまとの家｜FV 夜明けの転回</title>
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F1EA; --ink:#20241A; --cream:#F4F1EA; --light:#6B6B6B;
+    --main:#486B00; --main-dark:#2E4600; --lime:#A2C523; --cta:#C4851F;
+    --fh:"dnp-shuei-gothic-gin-std","Noto Sans JP",sans-serif;
+    --fb:"Inter","Noto Sans JP",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;background:#12160c}
+  body{font-family:var(--fb);color:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+  /* ===== FV：夜明けの舞台 ===== */
+  .hero{position:relative;height:100svh;min-height:560px;overflow:hidden;isolation:isolate;background:#12160c}
+
+  /* 家の写真（Ken Burns＋夜明けカラーグレード） */
+  .hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 46%;z-index:1;
+    transform:scale(1.09);
+    filter:brightness(.66) saturate(.58) contrast(1.06);
+    transition:filter 2.8s ease, transform 7.5s cubic-bezier(.22,1,.36,1);
+    will-change:filter,transform}
+  .hero.lit .hero__img{filter:brightness(1) saturate(1.06) contrast(1); transform:scale(1)}
+
+  /* 夜明け前の寒色ベール（青→消える） */
+  .hero__cool{position:absolute;inset:0;z-index:2;pointer-events:none;
+    background:linear-gradient(205deg,#141f38 0%,#1d2b48 45%,#243a52 100%);
+    mix-blend-mode:multiply;opacity:.8;transition:opacity 2.6s ease}
+  .hero.lit .hero__cool{opacity:0}
+
+  /* 差し込む陽光のブルーム（太陽＝上中央付近） */
+  .hero__glow{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;
+    background:radial-gradient(70% 58% at 24% 26%,rgba(255,216,152,.6) 0%,rgba(255,190,120,.2) 44%,transparent 74%);
+    mix-blend-mode:screen}
+  .hero.lit .hero__glow{animation:bloom 3.4s cubic-bezier(.22,1,.36,1) .25s forwards}
+  @keyframes bloom{0%{opacity:0;transform:scale(.72)}52%{opacity:.9}100%{opacity:.42;transform:scale(1)}}
+
+  /* 斜めの光条（一度だけ薄く走る） */
+  .hero__ray{position:absolute;top:-30%;left:8%;width:60%;height:160%;z-index:3;pointer-events:none;opacity:0;
+    background:linear-gradient(102deg,transparent 42%,rgba(255,226,175,.16) 50%,transparent 58%);
+    transform:translateX(-30%)}
+  .hero.lit .hero__ray{animation:ray 3.6s ease .5s forwards}
+  @keyframes ray{0%{opacity:0;transform:translateX(-30%)}40%{opacity:1}100%{opacity:0;transform:translateX(22%)}}
+
+  /* 可読性のための下スクリム＋淡いビネット */
+  .hero__scrim{position:absolute;inset:0;z-index:4;pointer-events:none;
+    background:linear-gradient(to top,rgba(16,20,10,.86) 0%,rgba(16,20,10,.5) 24%,rgba(16,20,10,.12) 46%,transparent 60%),
+      linear-gradient(to bottom,rgba(16,20,10,.32) 0%,rgba(16,20,10,.08) 10%,transparent 18%),
+      radial-gradient(120% 92% at 50% 38%,transparent 56%,rgba(16,20,10,.34) 100%)}
+
+  /* 固定UI */
+  .brandmark{position:absolute;top:calc(env(safe-area-inset-top) + 22px);left:clamp(20px,5vw,64px);z-index:10;
+    font-family:var(--fh);font-weight:500;font-size:1rem;letter-spacing:.1em;color:var(--cream);
+    opacity:0;transition:opacity 1.4s ease .1s}
+  .hero.lit .brandmark{opacity:.96}
+  .toppill{position:absolute;top:calc(env(safe-area-inset-top) + 22px);right:clamp(20px,5vw,64px);z-index:10;
+    font-family:var(--fb);font-size:.6rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;
+    color:rgba(244,241,234,.8);border:1px solid rgba(244,241,234,.28);padding:6px 13px;border-radius:100px;
+    opacity:0;transition:opacity 1.4s ease .2s}
+  .hero.lit .toppill{opacity:1}
+
+  /* コピー */
+  .copy{position:absolute;left:0;right:0;bottom:0;z-index:6;
+    padding:0 clamp(22px,5vw,64px) clamp(88px,16vh,150px);
+    max-width:1180px;margin:0 auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:11px;font-family:var(--fb);font-size:.72rem;font-weight:500;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--lime);
+    opacity:0;transform:translateY(14px);transition:opacity 1.2s ease,transform 1.2s cubic-bezier(.19,1,.22,1)}
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--lime);opacity:.8}
+  .hero.lit .eyebrow{opacity:1;transform:none;transition-delay:.15s}
+
+  h1{font-family:var(--fh);font-weight:500;line-height:1.24;letter-spacing:.04em;margin-top:20px;
+    font-size:clamp(2rem,1.2rem+4.4vw,4.1rem);text-shadow:0 2px 30px rgba(10,12,6,.5)}
+  .l1{display:block;color:rgba(244,241,234,.62);
+    transition:color 2s ease}
+  .hero.lit .l1{color:rgba(244,241,234,.92);transition-delay:.6s}
+  .l2{display:block;color:var(--cream);
+    opacity:0;transform:translateY(30px);filter:blur(6px);
+    transition:opacity 1.5s cubic-bezier(.19,1,.22,1),transform 1.5s cubic-bezier(.19,1,.22,1),filter 1.4s ease}
+  .hero.lit .l2{opacity:1;transform:none;filter:none;transition-delay:1.15s}
+  .l2 em{font-style:normal;color:var(--lime);text-shadow:0 0 34px rgba(162,197,35,.4)}
+  .brk{display:none}
+
+  .sub{margin-top:clamp(18px,3vh,30px);font-size:clamp(1rem,.94rem+.4vw,1.18rem);
+    color:rgba(244,241,234,.9);line-height:1.8;max-width:34rem;
+    opacity:0;transform:translateY(18px);transition:opacity 1.3s ease,transform 1.3s cubic-bezier(.19,1,.22,1)}
+  .hero.lit .sub{opacity:1;transform:none;transition-delay:1.9s}
+
+  .proof{margin-top:16px;display:inline-flex;align-items:baseline;gap:10px;
+    font-family:var(--fb);color:rgba(244,241,234,.86);letter-spacing:.02em;
+    opacity:0;transform:translateY(16px);transition:opacity 1.2s ease,transform 1.2s cubic-bezier(.19,1,.22,1)}
+  .hero.lit .proof{opacity:1;transform:none;transition-delay:2.2s}
+  .proof b{font-weight:400;font-size:2rem;font-feature-settings:"tnum";color:var(--cream);line-height:1}
+  .proof span{font-size:.86rem;color:rgba(244,241,234,.72)}
+
+  .cta-row{margin-top:clamp(26px,4vh,40px);display:flex;flex-wrap:wrap;gap:14px;align-items:center;
+    opacity:0;transform:translateY(16px);transition:opacity 1.2s ease,transform 1.2s cubic-bezier(.19,1,.22,1)}
+  .hero.lit .cta-row{opacity:1;transform:none;transition-delay:2.5s}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--cta);color:#fff;text-decoration:none;
+    border-radius:7px;font-weight:500;font-size:1.04rem;letter-spacing:.03em;padding:17px 34px;min-height:54px;
+    box-shadow:0 14px 40px rgba(196,133,31,.42);transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s}
+  .cta:hover{transform:translateY(-3px);box-shadow:0 20px 50px rgba(196,133,31,.5)}
+  .cta svg{width:15px;height:15px}
+  .cta-ghost{display:inline-flex;align-items:center;color:var(--cream);text-decoration:none;font-size:.96rem;
+    letter-spacing:.04em;padding:14px 18px;border-bottom:1px solid rgba(244,241,234,.4);transition:border-color .4s}
+  .cta-ghost:hover{border-color:var(--cream)}
+
+  /* スクロール誘導（下のオービットへ） */
+  .scroll{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 22px);transform:translateX(-50%);z-index:7;
+    display:flex;flex-direction:column;align-items:center;gap:9px;
+    font-family:var(--fb);font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(244,241,234,.7);
+    opacity:0;transition:opacity 1.4s ease}
+  .hero.lit .scroll{opacity:1;transition-delay:3s}
+  .scroll i{width:1px;height:38px;background:linear-gradient(rgba(244,241,234,.7),transparent);position:relative;overflow:hidden}
+  .scroll i::after{content:"";position:absolute;top:-40%;left:0;width:1px;height:40%;background:var(--lime);animation:drop 2.2s cubic-bezier(.6,0,.4,1) infinite}
+  @keyframes drop{0%{top:-40%}60%,100%{top:100%}}
+
+  /* 次セクションの気配（下のオービットのプレースホルダ） */
+  .next{position:relative;background:var(--bg);color:var(--ink);min-height:60svh;display:flex;align-items:center;justify-content:center;
+    text-align:center;padding:80px 22px}
+  .next p{font-family:var(--fh);font-weight:500;font-size:clamp(1.1rem,.9rem+1vw,1.5rem);letter-spacing:.04em;color:var(--main-dark);line-height:1.7}
+  .next small{display:block;margin-top:14px;font-family:var(--fb);font-size:.72rem;letter-spacing:.16em;color:var(--light);text-transform:uppercase}
+
+  /* SP調整 */
+  @media (max-width:600px){
+    .hero__img{object-position:50% 46%}
+    .copy{padding-bottom:clamp(96px,18vh,140px)}
+    h1{letter-spacing:.02em;font-size:clamp(1.8rem,1.1rem+3.2vw,2.35rem);line-height:1.3}
+    .brk{display:inline}
+    .proof span{font-size:.8rem}
+    .cta{flex:1 1 auto;justify-content:center}
+  }
+  /* 動きを抑える設定：即・温かい確定状態で表示 */
+  @media (prefers-reduced-motion:reduce){
+    .hero__img{filter:none!important;transform:none!important;transition:none}
+    .hero__cool{opacity:0!important}.hero__glow,.hero__ray{animation:none!important;opacity:0!important}
+    .brandmark,.toppill,.eyebrow,.l2,.sub,.proof,.cta-row,.scroll{opacity:1!important;transform:none!important;filter:none!important;transition:none}
+    .l1{color:rgba(244,241,234,.92)!important}
+    .scroll i::after{animation:none}
+  }
+</style>
+</head>
+<body>
+
+<section class="hero" id="hero">
+  <picture>
+    <source media="(max-width:600px)" srcset="assets/fv_hero/fv_sp.webp">
+    <img class="hero__img" id="heroimg" src="assets/fv_hero/fv_pc.webp" alt="夜明けのやまとの家">
+  </picture>
+  <div class="hero__cool"></div>
+  <div class="hero__glow"></div>
+  <div class="hero__ray"></div>
+  <div class="hero__scrim"></div>
+
+  <div class="brandmark">やまとの家</div>
+  <div class="toppill">奈良の注文住宅</div>
+
+  <div class="copy">
+    <span class="eyebrow">Yamato ─ 奈良で、家を建てる</span>
+    <h1>
+      <span class="l1">大手で諦めた家を、</span>
+      <span class="l2">当社と一緒に、<br class="brk"><em>叶えましょう。</em></span>
+    </h1>
+    <p class="sub">見積もりの金額のまま、家が建ちます。自由設計と、高水準な標準装備で。</p>
+    <div class="proof"><b>600</b><span>棟。その実物を、モデルハウスで。</span></div>
+    <div class="cta-row">
+      <a class="cta" href="#">モデルハウスを予約する
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="cta-ghost" href="#">資料を請求する</a>
+    </div>
+  </div>
+
+  <div class="scroll"><span>Scroll</span><i></i></div>
+</section>
+
+<section class="next">
+  <p>この下に、3Dオービットのセクションが続きます。<small>3D Orbit — next section</small></p>
+</section>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  root.className=root.className.replace('no-js','').trim();
+  var hero=document.getElementById('hero'), img=document.getElementById('heroimg');
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function lit(){ hero.classList.add('lit'); }
+  if(reduce){ lit(); return; }
+  function go(){ setTimeout(lit, 620); }   /* 夜明け前を一拍見せてから、光が差す */
+  if(img.complete && img.naturalWidth) go();
+  else { img.addEventListener('load', go); img.addEventListener('error', go); }
+  setTimeout(function(){ if(!hero.classList.contains('lit')) lit(); }, 3000); /* 保険 */
+})();
+</script>
+</body>
+</html>
