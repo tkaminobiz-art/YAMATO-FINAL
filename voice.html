@@ -402,6 +402,13 @@
 
   /* ---- 手紙カード生成 ---- */
   function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  /* 文末の孤立行（泣き別れ）防止: 末尾数文字を分割不可の塊にする。テキスト自体（原文）は変えない */
+  function wrapTail(s,n){
+    var chars=Array.from(String(s||''));
+    if(chars.length<=n) return esc(chars.join(''));
+    var head=chars.slice(0,chars.length-n).join(''), tail=chars.slice(chars.length-n).join('');
+    return esc(head)+'<span style="display:inline-block;white-space:nowrap">'+esc(tail)+'</span>';
+  }
   function buildWall(){
     var html='';
     VOICES.forEach(function(v){
@@ -411,7 +418,7 @@
           '<span class="vo__mark" aria-hidden="true"><span><i>Yamato Voice</i><b>'+esc(v.area||v.family)+'</b><i>No.'+String(v.no).padStart(2,'0')+'</i></span></span>'+
         '</figure>'+
         '<div class="vo__body">'+
-          '<blockquote class="vo__pull">'+esc(v.pull)+'</blockquote>'+
+          '<blockquote class="vo__pull">'+wrapTail(v.pull,6)+'</blockquote>'+
           '<footer class="vo__meta"><b class="vo__who">'+esc(who)+'</b>'+
             (v.staffName?'<span class="vo__staff">担当：'+esc(v.staffName)+'</span>':'')+
             '<span class="vo__open">手紙を読む<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>'+

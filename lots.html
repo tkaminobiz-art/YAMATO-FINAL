@@ -539,6 +539,12 @@
 
   function tsubo(m2){ return (typeof m2==='number')?(Math.floor(m2*0.3025*100)/100).toFixed(2):'—'; }
   function fmtMan(n){ return (typeof n==='number')?n.toLocaleString('ja-JP'):'—'; }
+  /* 文末の孤立行（泣き別れ）防止: 末尾数文字を分割不可の塊にする。テキスト自体（原文）は変えない */
+  function tailWrap(s,n){
+    var chars=Array.from(String(s||''));
+    if(chars.length<=n) return chars.join('');
+    return chars.slice(0,chars.length-n).join('')+'<span style="display:inline-block;white-space:nowrap">'+chars.slice(chars.length-n).join('')+'</span>';
+  }
   function visible(lot){
     if(lot.status==='完売') return false;
     if(state.area!=='all' && AREA_GROUP[lot.city]!==state.area) return false;
@@ -659,7 +665,7 @@
       if(!items.length) return;
       html+='<div class="sold__city"><div class="sold__cname">'+c+'</div>';
       items.forEach(function(l){
-        html+='<div class="sold__item"><span>'+l.name+(l.phase?'（'+l.phase+'）':'')+'</span>'+
+        html+='<div class="sold__item"><span>'+l.name+(l.phase?'（'+tailWrap(l.phase+'）',7):'')+'</span>'+
           (l.unitsTotal?'<i>全'+l.unitsTotal+'区画</i>':'')+'</div>';
       });
       html+='</div>';
