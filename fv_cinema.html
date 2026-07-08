@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>やまと不動産｜FV図面 v4「あかりの物語・改」</title>
-<meta name="description" content="FV再設計図面v4：消灯した家のシルエット→宛名→金縁の緞帳がひらいて灯りの家→0円の台帳→2,680万円の祭壇→フルブリード標準装備3景→10年後50年後。ひとつの夕暮れを貫く一本のスクロール。">
+<meta name="description" content="FV再設計図面v4：消灯した家のシルエット→宛名→金縁の緞帳がひらいて灯りの家→0円の台帳→2,480万円〜の祭壇→フルブリード標準装備5景→10年後50年後。ひとつの夕暮れを貫く一本のスクロール。">
 <!--
 ============================================================================
 FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を受けた全面再演出（2026-07-08）
@@ -16,22 +16,31 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
   ・舞台はひとつ: 同じ夕暮れの家。幕A/Bはほぼ消灯（動画を95%の幕布で覆う=息づくシルエット）
   ・幕C: 金縁の緞帳が上下にひらき、灯りのともった家がフルブリードで現れる
   ・タイポは幕ごとに組み替える: 左下段違い→右寄せ→中央→左台帳(巨大な0)→中央祭壇(桁立ち上がり)
-    →フルブリード3景(細身巨大の室名EN)→大数字の結び。章番号01/07と金の罫で章立てを明示
+    →フルブリード5景(細身巨大の室名EN)→大数字の結び。章番号01/07と金の罫で章立てを明示
   ・装備はフルブリード実写クリップ（Seedance微モーションが生きる）×台帳×標準チップ
-■ ストーリー（クライアント提示フロー原文ベース・変更なし）
+■ ストーリー（クライアント提示フロー原文ベース）
   動揺した方へ→あきらめた方へ→お役に立てるかもしれません→費用は増えません(0円台帳)
-  →2,680万円(追加指示)→標準装備が充実(3景)→10年後50年後・見に来てください
+  →2,480万円〜(2026-07-08改)→標準装備が充実(5景)→10年後50年後・見に来てください
+■ 2026-07-08 追加修正
+  ①価格を2,680万円→2,480万円〜に変更。専務まとめ§5では花2,680/風2,680/京2,480(税込・土地別途)。
+    「〜」で最安値(京)を起点に見せる方が間口が広く、驚きの提供（この金額で建つんだ）にも資する。
+    ノートは対象モデルを「花」「風」→「京」に訂正（2,480万円は京の価格のため）。
+  ②標準装備ギャラリーを3景→5景に拡張。追加: Vanity(洗面・三面鏡標準/clip_vanity実写)、
+    Atrium(吹き抜け・自由設計/gh_atrium.webp静止画)。吹き抜けは標準ではなく自由設計の実例なので
+    chip文言のみ「自由設計」に変え、他4景の「標準」と区別（誠実性維持）。位置はジグザグ
+    (K左→B右→V左→L右→At左)でE-3原則に準拠。Living位置をleftからrightへ変更。
 ■ コピーの接地
   D=「ご契約・着工の後から、費用は増えません。」
   （2026-07-08 クライアント裁定: 約束の基準点は「見積もり後」ではなく「契約・着工後」。見積もり〜契約間は
    仕様選択で金額が動くのが当然なので、見積もり基準の約束は実在性が崩れる。専務実発言「契約した時が
-   一番安いのよ（他社）」とも整合。旧「お見積りの後から」から差し替え済み）
+   一番安いのよ（他社）」とも整合）
   地盤改良費 最大150万円・全額当社負担／つなぎ融資・仲介手数料=自社分譲（専務まとめ§2⑤・標準装備調査§C。
-  境界実数は骨格設計§6のとおり専務ファクト確認前提）。価格2,680万円=専務まとめ§5（花・風/税込/土地別途）。
+  境界実数は骨格設計§6のとおり専務ファクト確認前提）。
   「オプションだと思っていた設備が、はじめから付いています。」=クライアント実文(2026-07-03)
+  Atrium台帳「吹き抜け・天井を上げる」= 確定コピー(5-0-b4)「吹き抜けをつくる。天井を上げる。」の要約
 ■ スクロールUI（v3で実証済み・継続）
-  方向追従ビート・スナップ=1フリック1幕で「完成した画」に静止。Lenis時はLenis自身が吸着、
-  無い時はScrollTrigger snap(inertia:false)。進捗7ドット=クリックで幕ジャンプ。
+  方向追従ビート・スナップ=1フリック1幕で「完成した画」に静止（ギャラリー内の各景も個別スナップ対象）。
+  Lenis時はLenis自身が吸着、無い時はScrollTrigger snap(inertia:false)。進捗7ドット=クリックで幕ジャンプ。
 ■ フォールバック: GSAP不成立/reduced-motion/?pm=off → 現行FV(B_loop+静的イントロ+CTA)無傷
 ■ 注意: ローカルは秀英角ゴ銀がtypekitドメインロックでNoto代替。本番ドメインで本来の字形になる
 ============================================================================
@@ -262,10 +271,10 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
   .st__pnote{margin-top:clamp(12px,1.8vw,18px);font-family:var(--fb);font-size:.72rem;
     letter-spacing:.06em;color:rgba(244,241,234,.55)}
 
-  /* ---- 幕E: 標準装備＝フルブリード3景 ---- */
+  /* ---- 幕E: 標準装備＝フルブリード5景 ---- */
   .st__e{position:absolute;inset:0;z-index:4;opacity:0;visibility:hidden}
   .st__sc{position:absolute;inset:0;overflow:hidden;opacity:0;z-index:1;isolation:isolate}
-  .st__sc video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform}
+  .st__sc video,.st__sc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform}
   .st__sc .scr{position:absolute;inset:0;pointer-events:none;
     background:linear-gradient(to top,rgba(8,10,5,.74),rgba(8,10,5,.16) 40%,transparent 62%),
       linear-gradient(to bottom,rgba(8,10,5,.6),rgba(8,10,5,.18) 18%,transparent 32%)}
@@ -277,16 +286,19 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
   .st__ehead .s{margin-top:8px;font-family:var(--fh);font-weight:500;
     font-size:clamp(.8rem,.74rem + .35vw,.98rem);letter-spacing:.1em;color:rgba(244,241,234,.78);
     text-shadow:0 1px 16px rgba(6,8,4,.8)}
-  /* 巨大な室名（細身EN・景ごとに位置回転） */
+  /* 巨大な室名（細身EN・景ごとに位置回転=is-left/is-right） */
   .st__room{position:absolute;z-index:2;font-family:var(--fn);font-weight:100;text-transform:uppercase;
     font-size:clamp(3.2rem,1.8rem + 8.5vw,9rem);letter-spacing:.14em;line-height:1;color:rgba(244,241,234,.95);
     text-shadow:0 4px 44px rgba(6,8,4,.75)}
   .st__room .lm>span{padding-right:.14em}
   .st__pled{position:absolute;z-index:2}
-  .st__sc--k .st__room,.st__sc--l .st__room{left:var(--mx);bottom:clamp(112px,19vh,190px)}
-  .st__sc--k .st__pled,.st__sc--l .st__pled{left:var(--mx);bottom:clamp(72px,12vh,126px)}
-  .st__sc--b .st__room{right:var(--mx);bottom:clamp(112px,19vh,190px)}
-  .st__sc--b .st__pled{right:var(--mx);bottom:clamp(72px,12vh,126px)}
+  .st__sc.is-left .st__room{left:var(--mx);bottom:clamp(112px,19vh,190px)}
+  .st__sc.is-left .st__pled{left:var(--mx);bottom:clamp(72px,12vh,126px)}
+  .st__sc.is-right .st__room{right:var(--mx);bottom:clamp(112px,19vh,190px)}
+  .st__sc.is-right .st__pled{right:var(--mx);bottom:clamp(72px,12vh,126px)}
+  /* Atrium: 縦長素材（1100x1971）をフルブリードcoverすると天地が大きく切れるため、
+     光の窓＋ガラス手すりの帯が収まる位置に寄せる（撮影意図に近い箇所） */
+  .st__sc--at img{object-position:center 58%}
 
   /* ---- 幕F: 結び（左・大数字ロックアップ） ---- */
   .st__f{position:absolute;left:var(--mx);right:22px;top:45%;transform:translateY(-50%);z-index:5;
@@ -345,11 +357,12 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
     .st__row .v{font-size:clamp(2rem,1.5rem + 4vw,2.9rem)}
     .st__ehead{left:22px;right:22px}
     .st__room{font-size:clamp(2.5rem,1.6rem + 9vw,4.4rem)}
-    .st__sc--k .st__room,.st__sc--l .st__room{left:22px;bottom:calc(env(safe-area-inset-bottom) + 30vh)}
-    .st__sc--b .st__room{right:22px;bottom:calc(env(safe-area-inset-bottom) + 30vh)}
-    .st__sc--k .st__pled,.st__sc--l .st__pled{left:22px;right:22px;bottom:calc(env(safe-area-inset-bottom) + 23vh)}
-    .st__sc--b .st__pled{right:22px;left:22px;bottom:calc(env(safe-area-inset-bottom) + 23vh);justify-content:flex-end}
+    .st__sc.is-left .st__room{left:22px;bottom:calc(env(safe-area-inset-bottom) + 30vh)}
+    .st__sc.is-right .st__room{right:22px;bottom:calc(env(safe-area-inset-bottom) + 30vh)}
+    .st__sc.is-left .st__pled{left:22px;right:22px;bottom:calc(env(safe-area-inset-bottom) + 23vh)}
+    .st__sc.is-right .st__pled{right:22px;left:22px;bottom:calc(env(safe-area-inset-bottom) + 23vh);justify-content:flex-end}
     .st__pled{display:flex;flex-wrap:wrap;gap:8px 10px;white-space:normal}
+    .st__sc--at img{object-position:center 50%}
     .st__f{left:22px;right:22px;top:42%}
     .st__f .fl2{margin-left:.5rem}
     .st__f .st__ledger{margin-left:.5rem;white-space:normal;flex-wrap:wrap;gap:8px 10px}
@@ -386,25 +399,37 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
 
   <!-- ===== 物語層（GSAP成立時のみ .fv-cine で出現） ===== -->
   <div class="st">
-    <!-- 幕E: フルブリード3景（文字層より下） -->
+    <!-- 幕E: フルブリード5景（文字層より下）。位置はジグザグ: K左→B右→V左→L右→At左 -->
     <div class="st__e">
-      <figure class="st__sc st__sc--k" data-sc="kitchen">
+      <figure class="st__sc st__sc--k is-left" data-sc="kitchen">
         <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_kitchen.webp"></video>
         <span class="scr"></span>
         <p class="st__room"><span class="lm"><span>Kitchen</span></span></p>
         <p class="st__pled st__ledger"><span class="en">Standard</span><span class="dash"></span>クリナップ ステディア<em class="st__std">標準</em></p>
       </figure>
-      <figure class="st__sc st__sc--b" data-sc="bath">
+      <figure class="st__sc st__sc--b is-right" data-sc="bath">
         <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_bath.webp"></video>
         <span class="scr"></span>
         <p class="st__room"><span class="lm"><span>Bath</span></span></p>
         <p class="st__pled st__ledger"><span class="en">Standard</span><span class="dash"></span>TOTO サザナ 1.25坪<em class="st__std">標準</em></p>
       </figure>
-      <figure class="st__sc st__sc--l" data-sc="living">
+      <figure class="st__sc st__sc--v is-left" data-sc="vanity">
+        <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_vanity.webp"></video>
+        <span class="scr"></span>
+        <p class="st__room"><span class="lm"><span>Vanity</span></span></p>
+        <p class="st__pled st__ledger"><span class="en">Standard</span><span class="dash"></span>三面鏡・広収納<em class="st__std">標準</em></p>
+      </figure>
+      <figure class="st__sc st__sc--l is-right" data-sc="living">
         <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_living.webp"></video>
         <span class="scr"></span>
         <p class="st__room"><span class="lm"><span>Living</span></span></p>
         <p class="st__pled st__ledger"><span class="en">Standard</span><span class="dash"></span>天井高2.4m・ハイドア2.3m<em class="st__std">標準</em></p>
+      </figure>
+      <figure class="st__sc st__sc--at is-left" data-sc="atrium">
+        <img src="assets/video_cine/gh_atrium.webp" alt="夕刻の光が差し込む吹き抜けの階段ホール" loading="lazy" decoding="async">
+        <span class="scr"></span>
+        <p class="st__room"><span class="lm"><span>Atrium</span></span></p>
+        <p class="st__pled st__ledger"><span class="en">Design</span><span class="dash"></span>吹き抜け・天井を上げる<em class="st__std">自由設計</em></p>
       </figure>
     </div>
 
@@ -464,15 +489,15 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
       <p class="st__dnote">※適用条件の詳細は、お見積りの際にご説明します。</p>
     </div>
 
-    <!-- 幕P: 価格の祭壇（桁ごとに立ち上がる） -->
+    <!-- 幕P: 価格の祭壇（2026-07-08改: 2,680→2,480万円〜。京モデルの実価格を起点に表示） -->
     <div class="st__p">
       <p class="st__pk">Price ── 花鳥風月・やまとの家</p>
-      <p class="st__pnum" aria-label="2,680万円">
-        <span class="dg"><span>2</span></span><span class="dg"><span>,</span></span><span class="dg"><span>6</span></span><span class="dg"><span>8</span></span><span class="dg"><span>0</span></span><span class="un">万円</span>
+      <p class="st__pnum" aria-label="2,480万円から">
+        <span class="dg"><span>2</span></span><span class="dg"><span>,</span></span><span class="dg"><span>4</span></span><span class="dg"><span>8</span></span><span class="dg"><span>0</span></span><span class="un">万円〜</span>
       </p>
       <span class="st__pline" aria-hidden="true"></span>
       <p class="st__ps"><span class="lm"><span>この価格で、本当に高品質の<br class="spbr">家が建ちます。</span></span></p>
-      <p class="st__pnote">建物本体価格・税込（「花」「風」／土地別途）</p>
+      <p class="st__pnote">建物本体価格・税込（「京」／土地別途）</p>
     </div>
 
     <!-- 幕F: 結び（大数字ロックアップ） -->
@@ -503,8 +528,8 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
   <!-- ===== 静的フォールバック（シネマ不成立時はこのまま出る） ===== -->
   <div class="intro" id="fvIntro">
     <h1>やまと不動産なら、<br>お役に立てるかもしれません。</h1>
-    <p class="in-sub">2,680万円で、本当に高品質の家が建ちます。</p>
-    <p class="in-note">建物本体価格・税込（「花」「風」／土地別途）</p>
+    <p class="in-sub">2,480万円〜で、本当に高品質の家が建ちます。</p>
+    <p class="in-note">建物本体価格・税込（「京」／土地別途）</p>
   </div>
 
   <div class="cta-wrap" id="ctaWrap">
@@ -568,25 +593,26 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
     hv.load(); var p0=hv.play(); if(p0&&p0.catch)p0.catch(function(){});
   }catch(e){}
 
-  /* 装備3景（preload=none。価格幕あたりで先読み） */
+  /* 装備クリップ（preload=none。価格幕あたりで先読み）。Atriumは静止画のためsrc不要 */
   var SRC={
     kitchen:['assets/video_ab/clip_kitchen.mp4','assets/video_ab/sp_reframe/kitchen.mp4'],
     bath:['assets/video_ab/clip_bath.mp4','assets/video_ab/sp_reframe/bath.mp4'],
+    vanity:['assets/video_ab/clip_vanity.mp4','assets/video_ab/sp_reframe/vanity.mp4'],
     living:['assets/video_ab/clip_living.mp4','assets/video_ab/sp_reframe/living.mp4']
   };
   var scenes={};
   [].slice.call(d.querySelectorAll('.st__sc')).forEach(function(sc){
     var k=sc.getAttribute('data-sc');
-    scenes[k]={el:sc,v:sc.querySelector('video'),loaded:false};
+    scenes[k]={el:sc,v:sc.querySelector('video'),loaded:false}; /* atriumはvideo無し=v:null */
   });
-  function prep(k){ var s=scenes[k]; if(!s||s.loaded) return;
+  function prep(k){ var s=scenes[k]; if(!s||s.loaded||!s.v) return;
     s.loaded=true; s.v.src=SRC[k][mobile?1:0]; s.v.preload='auto'; s.v.load(); }
   var curScene=null;
   function playScene(k){
     if(k===curScene) return; curScene=k;
     for(var key in scenes){ var s=scenes[key];
-      if(key===k){ prep(key); var p=s.v.play(); if(p&&p.catch)p.catch(function(){}); }
-      else{ try{s.v.pause();}catch(e){} } }
+      if(key===k){ prep(key); if(s.v){ var p=s.v.play(); if(p&&p.catch)p.catch(function(){}); } }
+      else{ if(s.v){ try{s.v.pause();}catch(e){} } } }
     if(k){ try{hv.pause();}catch(e){} }
     else{ if(hv.paused){ var q=hv.play(); if(q&&q.catch)q.catch(function(){}); } }
   }
@@ -650,9 +676,22 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
     if(actN.textContent!==t) actN.textContent=t;
   }
 
-  /* ---- スナップ（方向追従・実証済みの二本立て） ---- */
-  var SNAPS=[0,.145,.375,.585,.75,.826,.882,.936,1];
-  var ACT_SNAP=[0,.145,.375,.585,.75,.882,1];
+  /* ---- タイムライン設計（2026-07-08改: 5景対応で総尺を1.0→1.108に拡張）----
+     A/B/C/D/Pの各position値は無改変（既存の間・演出を一切崩さない）。
+     Kitchen(.792)/Bath(.852)は無改変のまま、Vanity(.906)を新規挿入、
+     Living開始を.906→.959へシフト、Atrium(1.005)を新規挿入、Finale開始を.952→1.06へシフト。
+     総尺が1.0→1.108に伸びるぶん、end(スクロール距離)も560%→620%に拡大し、
+     A〜Pの絶対スクロール量(vh)は従来と完全に同じ体感を維持する。 */
+  var cnt={n:150};
+  /* 進捗率のしきい値は全て「新総尺1.108」を分母とした比率（tl.progress()はtl.time()/tl.duration()で
+     自動算出されるため、以下の定数は全て position値/1.108 で再計算済み） */
+  /* SNAPS/ACT_SNAPは「幕の開始位置」ではなく「その幕の内容が完成して見える安定点」を狙う
+     （開始位置ちょうどだと、次幕のフェードインが始まったばかりで何も見えない空白に着地する事故になる。
+     2026-07-08 5景拡張時に発見・修正: raw=[0,.145,.375,.585,.75(A-P共通の実証済み値・無改変),
+     .84(Kitchen完成),.89(Bath完成),.95(Vanity完成),1.0(Living完成),1.045(Atrium完成),1.108(Finale=末尾)]
+     を新総尺1.108で割った比率） */
+  var SNAPS=[0,.1309,.3385,.5281,.6769,.7581,.8032,.8574,.9026,.9432,1];
+  var ACT_SNAP=[0,.1309,.3385,.5281,.6769,.7581,1];
   function snapBeat(v,self){
     var dir=(self&&self.direction)||1, i;
     if(dir>0){ for(i=0;i<SNAPS.length;i++){ if(SNAPS[i]>=v-.012) return SNAPS[i]; } return 1; }
@@ -660,8 +699,7 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
     return 0;
   }
 
-  var cnt={n:150};
-  var stCfg={trigger:hero,pin:true,scrub:SCRUB,start:'top top',end:'+=560%',
+  var stCfg={trigger:hero,pin:true,scrub:SCRUB,start:'top top',end:'+=620%',
     anticipatePin:1,invalidateOnRefresh:true,
     onLeave:function(){ hd.classList.add('is-solid'); },
     onEnterBack:function(){ hd.classList.remove('is-solid'); }};
@@ -704,7 +742,7 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
     .to(D,{autoAlpha:0,y:-24,duration:.032},.615)
     .set(D,{y:0},.648)
 
-  /* 幕P: 価格の祭壇（桁ごとに立ち上がる） */
+  /* 幕P: 価格の祭壇（桁ごとに立ち上がる。2,480万円〜） */
     .to(P,{autoAlpha:1,duration:.012},.648)
     .to(pk,{autoAlpha:1,duration:.025},.652)
     .to(pdgs,{yPercent:0,duration:.05,ease:'power3.out',stagger:.008},.66)
@@ -715,49 +753,67 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
     .to(P,{autoAlpha:0,y:-24,duration:.032},.775)
     .set(P,{y:0},.806)
 
-  /* 幕E: フルブリード3景（台所→浴室→居間） */
+  /* 幕E-1: Kitchen（無改変：.792開始） */
     .to(E,{autoAlpha:1,duration:.01},.792)
     .to(scenes.kitchen.el,{autoAlpha:1,duration:.02},.795)
-    .fromTo(scenes.kitchen.v,{scale:1.07},{scale:1.005,duration:.085,ease:'none'},.795)
+    .fromTo(scenes.kitchen.v,{scale:1.07},{scale:1.005,duration:.055,ease:'none'},.795)
     .to(ehead,{autoAlpha:1,y:0,duration:.025},.802)
     .to(d.querySelectorAll('.st__sc--k .st__room .lm>span'),{yPercent:0,duration:.036,ease:'power3.out'},.807)
     .to(d.querySelectorAll('.st__sc--k .st__pled'),{autoAlpha:1,y:0,duration:.026},.82)
     .to(d.querySelectorAll('.st__sc--k .st__pled .st__std'),{scale:1,autoAlpha:1,duration:.016,ease:'back.out(2.2)'},.834)
 
+  /* 幕E-2: Bath（無改変：.852開始） */
     .to(scenes.bath.el,{autoAlpha:1,duration:.022},.852)
-    .fromTo(scenes.bath.v,{scale:1.07},{scale:1.005,duration:.082,ease:'none'},.852)
+    .fromTo(scenes.bath.v,{scale:1.07},{scale:1.005,duration:.052,ease:'none'},.852)
     .to(d.querySelectorAll('.st__sc--b .st__room .lm>span'),{yPercent:0,duration:.036,ease:'power3.out'},.862)
     .to(d.querySelectorAll('.st__sc--b .st__pled'),{autoAlpha:1,y:0,duration:.026},.875)
     .to(d.querySelectorAll('.st__sc--b .st__pled .st__std'),{scale:1,autoAlpha:1,duration:.016,ease:'back.out(2.2)'},.889)
 
-    .to(scenes.living.el,{autoAlpha:1,duration:.022},.906)
-    .fromTo(scenes.living.v,{scale:1.07},{scale:1.005,duration:.08,ease:'none'},.906)
-    .to(d.querySelectorAll('.st__sc--l .st__room .lm>span'),{yPercent:0,duration:.036,ease:'power3.out'},.915)
-    .to(d.querySelectorAll('.st__sc--l .st__pled'),{autoAlpha:1,y:0,duration:.026},.927)
-    .to(d.querySelectorAll('.st__sc--l .st__pled .st__std'),{scale:1,autoAlpha:1,duration:.014,ease:'back.out(2.2)'},.938)
+  /* 幕E-3: Vanity（新規挿入：.906開始・Bath終端 .906 直後） */
+    .to(scenes.vanity.el,{autoAlpha:1,duration:.022},.906)
+    .fromTo(scenes.vanity.v,{scale:1.07},{scale:1.005,duration:.05,ease:'none'},.906)
+    .to(d.querySelectorAll('.st__sc--v .st__room .lm>span'),{yPercent:0,duration:.034,ease:'power3.out'},.916)
+    .to(d.querySelectorAll('.st__sc--v .st__pled'),{autoAlpha:1,y:0,duration:.025},.929)
+    .to(d.querySelectorAll('.st__sc--v .st__pled .st__std'),{scale:1,autoAlpha:1,duration:.015,ease:'back.out(2.2)'},.943)
 
-  /* 幕F: 3景が引いて、灯りの家と大数字の結び */
-    .to([E,ehead],{autoAlpha:0,duration:.026},.952)
-    .to(veil,{opacity:0,duration:.03},.952)
-    .to(actWrap,{autoAlpha:0,duration:.02},.955)
-    .to(F,{autoAlpha:1,duration:.012},.958)
-    .to(F.querySelectorAll('.fl1 .lm>span'),{yPercent:0,duration:.036,ease:'power3.out',stagger:.012},.962)
-    .to(F.querySelectorAll('.fl2 .lm>span'),{yPercent:0,duration:.032,ease:'power3.out'},.972)
-    .to(fLed,{autoAlpha:1,y:0,duration:.022},.978)
-    .to(fChip,{scale:1,autoAlpha:1,duration:.014,ease:'back.out(2.2)'},.986)
-    .to(ctaWrap,{autoAlpha:1,y:0,duration:.024},.976)
-    .to(cue,{autoAlpha:1,duration:.014},.986);
+  /* 幕E-4: Living（.906→.959へシフト。内部構造は無改変のまま平行移動） */
+    .to(scenes.living.el,{autoAlpha:1,duration:.022},.959)
+    .fromTo(scenes.living.v,{scale:1.07},{scale:1.005,duration:.046,ease:'none'},.959)
+    .to(d.querySelectorAll('.st__sc--l .st__room .lm>span'),{yPercent:0,duration:.034,ease:'power3.out'},.968)
+    .to(d.querySelectorAll('.st__sc--l .st__pled'),{autoAlpha:1,y:0,duration:.025},.98)
+    .to(d.querySelectorAll('.st__sc--l .st__pled .st__std'),{scale:1,autoAlpha:1,duration:.014,ease:'back.out(2.2)'},.991)
 
-  /* 章番号・進捗・3景の再生・緞帳金縁の状態管理 */
-  function actIdx(p){ return p<.08?0:p<.20?1:p<.42?2:p<.635?3:p<.79?4:p<.95?5:6; }
+  /* 幕E-5: Atrium（新規挿入：1.005開始・自由設計chip。静止画=Ken Burnsのみ、play/pause対象外） */
+    .to(scenes.atrium.el,{autoAlpha:1,duration:.022},1.005)
+    .fromTo(scenes.atrium.el.querySelector('img'),{scale:1.08},{scale:1.01,duration:.05,ease:'none'},1.005)
+    .to(d.querySelectorAll('.st__sc--at .st__room .lm>span'),{yPercent:0,duration:.034,ease:'power3.out'},1.014)
+    .to(d.querySelectorAll('.st__sc--at .st__pled'),{autoAlpha:1,y:0,duration:.025},1.026)
+    .to(d.querySelectorAll('.st__sc--at .st__pled .st__std'),{scale:1,autoAlpha:1,duration:.014,ease:'back.out(2.2)'},1.037)
+
+  /* 幕F: 5景が引いて、灯りの家と大数字の結び（開始 .952→1.06 へシフト。内部構造は無改変で平行移動） */
+    .to([E,ehead],{autoAlpha:0,duration:.026},1.06)
+    .to(veil,{opacity:0,duration:.03},1.06)
+    .to(actWrap,{autoAlpha:0,duration:.02},1.063)
+    .to(F,{autoAlpha:1,duration:.012},1.066)
+    .to(F.querySelectorAll('.fl1 .lm>span'),{yPercent:0,duration:.036,ease:'power3.out',stagger:.012},1.07)
+    .to(F.querySelectorAll('.fl2 .lm>span'),{yPercent:0,duration:.032,ease:'power3.out'},1.08)
+    .to(fLed,{autoAlpha:1,y:0,duration:.022},1.086)
+    .to(fChip,{scale:1,autoAlpha:1,duration:.014,ease:'back.out(2.2)'},1.094)
+    .to(ctaWrap,{autoAlpha:1,y:0,duration:.024},1.084)
+    .to(cue,{autoAlpha:1,duration:.014},1.094);
+
+  /* 章番号・進捗・5景の再生・緞帳金縁の状態管理（しきい値は上記SNAPSと同じ換算=raw位置/1.108） */
+  function actIdx(p){ return p<.0722?0:p<.1805?1:p<.3791?2:p<.5731?3:p<.713?4:p<.954?5:6; }
   function stateSync(){
     var p=tl.progress();
     dot(actIdx(p));
-    if(p>=.788 && p<.852){ playScene('kitchen'); }
-    else if(p>=.852 && p<.906){ playScene('bath'); }
-    else if(p>=.906 && p<.954){ playScene('living'); }
-    else{ playScene(null); if(p>.63 && p<.79) prep('kitchen'); }
-    var glow=(p>.24 && p<.42);
+    if(p>=.7148 && p<.769){ playScene('kitchen'); }
+    else if(p>=.769 && p<.8177){ playScene('bath'); }
+    else if(p>=.8177 && p<.8656){ playScene('vanity'); }
+    else if(p>=.8656 && p<.9071){ playScene('living'); }
+    else if(p>=.9071 && p<.9567){ playScene('atrium'); }
+    else{ playScene(null); if(p>.55 && p<.7148) prep('kitchen'); }
+    var glow=(p>.203 && p<.3791);
     if(curT.__glow!==glow){ curT.__glow=glow;
       curT.classList.toggle('is-glow',glow); curB.classList.toggle('is-glow',glow); }
   }
@@ -771,7 +827,7 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
       gsap.set(A.querySelectorAll('.lm>span'),{yPercent:0});
       gsap.set(A.querySelector('.st__eye'),{autoAlpha:1,x:0});
       gsap.set(dotsWrap,{autoAlpha:1});
-      if(p<.95) gsap.set(actWrap,{autoAlpha:1});
+      if(p<.954) gsap.set(actWrap,{autoAlpha:1});
       stateSync();
     }
   }); });
