@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>やまと不動産｜FV図面 v2「夢の内覧」スクロールシネマ</title>
+<meta name="description" content="FV再設計図面：B_loopの6シーンをスクロール駆動に解放し、『大手で諦めた家を、当社と一緒に叶えましょう。』→内覧3ビート→『50年先まで考えて』で権威セクションへ渡す。">
+<!--
+============================================================================
+FV図面 v2「夢の内覧」— スクロールシネマ（第15視覚言語）
+============================================================================
+■ なぜ作り直すか
+  現FV = B_loop.mp4（外観→設備5室を15.5秒で勝手に流す受動カタログ映画）。
+  iju「Move to Nara」= pin+scrubで訪問者自身が進める能動シネマ。この差が品質差の正体。
+  → FVも「勝手に流れる映画」から「自分のスクロールで内覧する家」へ解放する。
+
+■ メッセージ設計（クライアント指示 2026-07-08）
+  ①開幕: あなたが他社(大手)で諦めた夢を叶えられる
+      → h1「大手で諦めた家を、当社と一緒に叶えましょう。」(クライアント実文 2026-07-03 register北極星そのまま)
+  ②結び: 10年先、50年先まで考えて設計している
+      → 承認済みロックアップ「50年先まで考えて、家をつくっています。」を climaxに温存
+  内覧3ビート = スタッフが案内する丁寧語（天井を上げて、照明を仕込みました。等）
+  台帳callout = B_loop焼き込み文言をDOM化（KITCHEN ── クリナップ ステディア 等・全て承認済み実文言）
+
+■ ijuとの語彙差別化（同装置の使い回し禁止）
+  iju: 時計HUD／トンネル暗転／円形リビール／路線プログレス
+  FV : 生きた実写クリップ(Seedance微モーション)／内覧レール(右端の室名インデックス)／
+       台帳ワイプ＋標準チップの押印／お客様の声引用(Klee One=voiceセクションと同じ「客の声」の書体文法)
+
+■ フォールバック（ijuと同じゲート思想＝無傷退行）
+  GSAP不成立・prefers-reduced-motion・?pm=off → .fv-cine が付かず、
+  現行FVそのまま（B_loop自動再生＋静的イントロ＋CTA）。シネマ層(.fvc)はdisplay:none。
+
+■ 素材（新規生成ゼロ・全て承認済み実写ベース）
+  シーン動画: assets/video_ab/clip_*.mp4(PC 16:9) / assets/video_ab/sp_reframe/*.mp4(SP 9:16)
+  wallのみ再圧縮: assets/fv_cine/wall_pc.mp4(2.4MB) / wall_sp.mp4(4.9MB)
+  ポスター: assets/fv_cine/poster_*.webp（読込前の下敷き＋動画失敗時の静止画保険）
+  シネマ起動時に #hv のsrcをB_loop→clip_exterior(素の外観・callout無し)へ差し替え=二重DL回避
+
+■ 統合時の注意（index.htmlへ移植する人へ）
+  - hero直下に .fvc 層を追加し、pm層(9.55の隣)に本図面の choreography を移植する
+  - ヘッダー is-solid はpin解放(onLeave)まで透過を維持
+  - FloatingCTA(300px発火)はpin中に被るため「heroのpin中は抑制」を推奨
+  - h1が「大手で諦めた家を〜」に変わる（旧50年h1はclimaxロックアップとして温存）
+============================================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<link rel="preload" as="image" href="assets/video_ab/B_poster_sp.webp?v=sp2" media="(max-width:700px)">
+<link rel="preload" as="image" href="assets/video_ab/B_poster.webp?v=shuei" media="(min-width:701px)">
+<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@400;500&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4F1EA; --cream:#F4F1EA; --ink:#241F1B;
+    --main:#486B00; --main-dark:#2E4600; --lime:#A2C523;
+    --earth:#7D4427; --cta:#C4851F; --gold:#C9A24B;
+    --fh:"dnp-shuei-gothic-gin-std","Noto Sans JP",sans-serif;
+    --fb:"Inter","Noto Sans JP",sans-serif;
+    --fn:"Inter","Noto Sans JP",sans-serif;
+    --header-h:clamp(60px,7vw,84px); --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;background:#12160c}
+  html,body{word-break:normal;overflow-wrap:normal;line-break:strict}
+  body{font-family:var(--fb);color:var(--ink);background:var(--paper);
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:"palt"}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+
+  /* ===== 検分用の簡易ヘッダー（本番はindex.htmlのヘッダーがそのまま載る） ===== */
+  .site-header{position:fixed;top:0;left:0;right:0;z-index:80;
+    height:calc(var(--header-h) + env(safe-area-inset-top,0px));
+    padding-top:env(safe-area-inset-top,0px);
+    display:flex;align-items:center;
+    padding-left:clamp(20px,4.5vw,60px);padding-right:clamp(16px,3vw,40px);
+    color:var(--cream);
+    transition:background .55s var(--ease),color .45s var(--ease),box-shadow .55s var(--ease)}
+  .site-header::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:linear-gradient(to bottom,rgba(16,20,10,.42),rgba(16,20,10,0));
+    opacity:1;transition:opacity .5s var(--ease)}
+  .site-header.is-solid{background:rgba(250,250,247,.9);color:var(--ink);
+    -webkit-backdrop-filter:saturate(1.1) blur(10px);backdrop-filter:saturate(1.1) blur(10px);
+    box-shadow:0 1px 0 rgba(0,0,0,.04)}
+  .site-header.is-solid::before{opacity:0}
+  .brand__jp{font-family:var(--fh);font-weight:500;letter-spacing:.1em;font-size:clamp(1.02rem,.9rem + .7vw,1.32rem)}
+  .hd-right{margin-left:auto;display:flex;align-items:center;gap:clamp(12px,1.6vw,20px)}
+  .btn-reserve{display:inline-flex;align-items:center;gap:9px;background:var(--cta);color:#fff;
+    font-family:var(--fh);font-weight:500;font-size:.85rem;letter-spacing:.04em;
+    padding:11px 22px;border-radius:4px;line-height:1;white-space:nowrap;
+    box-shadow:0 6px 22px rgba(196,133,31,.28)}
+  .burger{width:44px;height:44px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+    flex-direction:column;gap:5px;background:transparent;border:1px solid rgba(244,241,234,.34);color:inherit}
+  .site-header.is-solid .burger{border-color:#E4DDCE}
+  .burger span{display:block;width:20px;height:1.6px;background:currentColor;border-radius:2px}
+
+  /* ===================== FV（内覧シネマ） ===================== */
+  .hero{position:relative;height:100svh;min-height:560px;overflow:hidden;isolation:isolate;background:#12160c;color:var(--cream)}
+  .hero__v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .hero__scrim{position:absolute;inset:0;z-index:2;pointer-events:none;
+    background:linear-gradient(to bottom,rgba(16,20,10,.42) 0%,rgba(16,20,10,.05) 12%,transparent 24%),
+      linear-gradient(to top,rgba(16,20,10,.7) 0%,rgba(16,20,10,.15) 20%,transparent 40%)}
+
+  /* ---- 開幕ロックアップ（h1=クライアント実文）: 静的フォールバックでもこのまま出る ---- */
+  .intro{position:absolute;left:0;right:auto;top:45%;transform:translateY(-50%);z-index:6;text-align:left;
+    padding:0 22px 0 clamp(22px,6vw,88px);pointer-events:none;
+    opacity:0;animation:intro 1.8s ease forwards .1s}
+  @keyframes intro{to{opacity:1}}
+  .intro h1{font-family:var(--fh);font-weight:500;color:var(--cream);text-shadow:0 3px 30px rgba(8,10,5,.72)}
+  .in-a{display:block;font-size:clamp(1.42rem,.95rem + 2.2vw,2.7rem);letter-spacing:.1em;line-height:1.35}
+  .in-b{display:block;margin-top:clamp(8px,1.2vw,18px);margin-left:clamp(1.2rem,.6rem + 3vw,4.4rem);
+    font-size:clamp(1.72rem,1rem + 3.4vw,4.1rem);letter-spacing:.08em;line-height:1.35}
+  .intro .in-sub{margin-top:clamp(18px,2.6vw,34px);margin-left:clamp(1.2rem,.6rem + 3vw,4.4rem);
+    display:inline-flex;align-items:center;gap:14px;
+    font-family:var(--fh);font-weight:500;
+    font-size:clamp(.95rem,.82rem + .7vw,1.4rem);letter-spacing:.1em;color:rgba(244,241,234,.92);
+    text-shadow:0 1px 20px rgba(10,12,6,.6)}
+  .intro .in-sub::before{content:"";width:clamp(22px,3vw,38px);height:1px;background:var(--gold);opacity:.85;flex:0 0 auto}
+  .spbr{display:none}
+
+  /* ---- CTA（招待の一文＋ボタン。静的フォールバックでも表示） ---- */
+  .cta-wrap{position:absolute;right:clamp(20px,5vw,60px);left:auto;bottom:calc(env(safe-area-inset-bottom) + 42px);z-index:7;
+    display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+  .cta-invite{font-family:var(--fh);font-weight:500;font-size:clamp(.92rem,.85rem + .4vw,1.12rem);
+    letter-spacing:.09em;color:rgba(244,241,234,.95);text-shadow:0 2px 18px rgba(10,12,6,.8)}
+  .cta-row{display:flex;gap:14px;align-items:center}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--cta);color:#fff;border-radius:7px;
+    font-family:var(--fh);font-weight:500;font-size:1.02rem;letter-spacing:.03em;padding:16px 34px;min-height:54px;
+    box-shadow:0 14px 40px rgba(196,133,31,.44);transition:transform .5s var(--ease)}
+  .cta:hover{transform:translateY(-3px)}
+  .cta svg{width:15px;height:15px;stroke:currentColor;stroke-width:2;fill:none}
+  .cta-ghost{color:var(--cream);font-size:.95rem;letter-spacing:.04em;padding:14px 16px;border-bottom:1px solid rgba(244,241,234,.45)}
+  .cue{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 20px);transform:translateX(-50%);z-index:7;
+    font-family:var(--fb);font-size:.56rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(244,241,234,.7)}
+  .cue::after{content:"";display:block;width:1px;height:30px;margin:9px auto 0;
+    background:linear-gradient(rgba(244,241,234,.85),rgba(244,241,234,0));
+    animation:cue 2.4s cubic-bezier(.16,1,.3,1) infinite}
+  @keyframes cue{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}
+    55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+  /* ===== 内覧シネマ層（fvc）: 既定は不在。GSAP成立で .fv-cine が付いた時だけ現れる ===== */
+  .fvc{display:none}
+  .hero.fv-cine .fvc{display:block}
+
+  .fvc__scenes{position:absolute;inset:0;z-index:3}
+  .fvc__sc{position:absolute;inset:0;overflow:hidden;opacity:0}
+  .fvc__sc video,.fvc__sc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform}
+  .fvc__sc .sc-scrim{position:absolute;inset:0;pointer-events:none}
+  .fvc__sc--kitchen .sc-scrim{background:linear-gradient(to top,rgba(10,12,6,.72) 0%,rgba(10,12,6,.18) 36%,transparent 60%),
+    linear-gradient(to bottom,rgba(10,12,6,.35),transparent 22%)}
+  .fvc__sc--bath .sc-scrim{background:radial-gradient(70% 58% at 50% 54%,rgba(10,12,6,.46),rgba(10,12,6,.12) 62%,rgba(10,12,6,.34) 100%),
+    linear-gradient(to bottom,rgba(10,12,6,.38),transparent 24%)}
+  .fvc__sc--living .sc-scrim{background:linear-gradient(to top,rgba(10,12,6,.72) 0%,rgba(10,12,6,.16) 40%,transparent 62%),
+    linear-gradient(to bottom,rgba(10,12,6,.35),transparent 22%)}
+  .fvc__sc--wall .sc-scrim{background:linear-gradient(100deg,rgba(10,12,6,.6) 0%,rgba(10,12,6,.24) 46%,transparent 72%),
+    linear-gradient(to top,rgba(10,12,6,.62),transparent 36%),
+    linear-gradient(to bottom,rgba(10,12,6,.3),transparent 20%)}
+
+  .fvc__grain{position:absolute;inset:0;z-index:4;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+  /* ---- 開幕の刻印（B_loop焼き込みt1のDOM化。シネマ時のみ） ---- */
+  .fvc__brand{position:absolute;left:clamp(22px,6vw,88px);bottom:calc(env(safe-area-inset-bottom) + clamp(46px,7vh,74px));z-index:5;
+    font-family:var(--fn);font-weight:500;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
+    color:rgba(244,241,234,.88);text-shadow:0 1px 12px rgba(6,8,4,.7)}
+  .fvc__brand b{font-weight:500;color:var(--gold)}
+
+  /* ---- 内覧ビートの文言 ---- */
+  .fvc__beat{position:absolute;z-index:5;opacity:0;pointer-events:none;visibility:hidden}
+  .fvc__lm{display:block;overflow:hidden}
+  .fvc__lm>span{display:block}
+  .fvc__line{font-family:var(--fh);font-weight:500;color:var(--cream);
+    font-size:clamp(1.35rem,1rem + 1.9vw,2.5rem);letter-spacing:.09em;line-height:1.5;
+    text-shadow:0 2px 26px rgba(6,8,4,.75)}
+  .fvc__ledger{display:flex;align-items:center;gap:12px;margin-top:clamp(12px,1.6vw,20px);
+    font-family:var(--fn);font-weight:500;font-size:clamp(.66rem,.62rem + .2vw,.78rem);letter-spacing:.16em;
+    color:rgba(244,241,234,.85);text-shadow:0 1px 12px rgba(6,8,4,.7);white-space:nowrap}
+  .fvc__ledger .en{text-transform:uppercase;color:var(--gold)}
+  .fvc__ledger .dash{width:26px;height:1px;background:var(--gold);opacity:.85;flex:0 0 auto}
+  .fvc__std{font-family:var(--fh);font-style:normal;font-weight:500;font-size:.66rem;letter-spacing:.22em;
+    color:var(--lime);border:1px solid rgba(162,197,35,.75);border-radius:3px;
+    padding:4px 8px 4px 10px;margin-left:4px;
+    box-shadow:0 0 14px rgba(162,197,35,.22)}
+  .fvc__b1{left:clamp(22px,6vw,88px);bottom:clamp(96px,16vh,190px)}
+  .fvc__b3{right:clamp(22px,6vw,88px);bottom:clamp(96px,16vh,190px);text-align:right}
+  .fvc__b3 .fvc__ledger{justify-content:flex-end}
+
+  /* ---- ビート2＝お客様の声の引用（Klee One = voiceセクションと同じ「客の声」書体） ---- */
+  .fvc__b2{left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;padding:0 clamp(22px,6vw,88px)}
+  .fvc__q{font-family:"Klee One","Shippori Mincho",serif;font-weight:600;color:#FBF8EF;
+    font-size:clamp(1.7rem,1.1rem + 3vw,3.4rem);letter-spacing:.06em;line-height:1.5;
+    text-shadow:0 2px 30px rgba(6,8,4,.8)}
+  .fvc__attr{margin-top:clamp(12px,1.8vw,20px);font-family:var(--fh);font-weight:500;
+    font-size:clamp(.86rem,.8rem + .4vw,1.05rem);letter-spacing:.1em;color:rgba(244,241,234,.9);
+    text-shadow:0 1px 16px rgba(6,8,4,.75)}
+  .fvc__b2 .fvc__ledger{justify-content:center;margin-top:clamp(16px,2.2vw,26px)}
+
+  /* ---- クライマックス＝承認済み「50」ロックアップ ---- */
+  .fvc__fin{position:absolute;left:0;right:auto;top:45%;transform:translateY(-50%);z-index:5;text-align:left;
+    padding:0 22px 0 clamp(22px,6vw,88px);opacity:0;pointer-events:none;visibility:hidden}
+  .fvc__fifty{font-family:var(--fh);font-weight:500;line-height:1;color:var(--cream);text-shadow:0 3px 30px rgba(8,10,5,.7)}
+  .fvc__l1{display:flex;align-items:baseline;gap:clamp(6px,1vw,16px)}
+  .fvc__num{font-family:"Inter","Noto Sans JP",sans-serif;font-style:normal;font-weight:200;
+    font-size:clamp(5rem,2.5rem + 11vw,12rem);line-height:.86;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+  .fvc__w{font-size:clamp(1.5rem,.9rem + 2.6vw,3.1rem);letter-spacing:.1em;font-weight:500;line-height:1.3}
+  .fvc__l2{display:block;margin-top:clamp(10px,1.6vw,22px);margin-left:clamp(2.4rem,1rem + 6vw,8.6rem);
+    font-size:clamp(1.72rem,1rem + 3.4vw,4.3rem);letter-spacing:.08em;font-weight:500;line-height:1.35}
+  .fvc__finsub{margin-top:clamp(18px,2.6vw,34px);margin-left:clamp(2.4rem,1rem + 6vw,8.6rem);
+    display:inline-flex;align-items:center;gap:14px;font-family:var(--fh);font-weight:500;
+    font-size:clamp(.98rem,.84rem + .8vw,1.5rem);letter-spacing:.1em;color:rgba(244,241,234,.92);
+    text-shadow:0 1px 20px rgba(10,12,6,.6)}
+  .fvc__finsub::before{content:"";width:clamp(22px,3vw,38px);height:1px;background:var(--gold);opacity:.85;flex:0 0 auto}
+  .fvc__fin .fvc__ledger{margin-top:clamp(20px,3vw,34px);margin-left:clamp(2.4rem,1rem + 6vw,8.6rem)}
+
+  /* ---- 内覧レール（右端の室名インデックス・PCのみ） ---- */
+  .fvc__rail{position:absolute;right:clamp(16px,2.6vw,38px);top:50%;transform:translateY(-50%);z-index:6;
+    display:flex;flex-direction:column;align-items:flex-end;gap:clamp(16px,2.6vh,26px);
+    font-family:var(--fn);font-weight:500;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase}
+  .fvc__rst{position:relative;color:rgba(244,241,234,.38);transition:color .5s var(--ease);
+    text-shadow:0 1px 10px rgba(6,8,4,.7);padding-right:14px}
+  .fvc__rst::after{content:"";position:absolute;right:0;top:50%;width:5px;height:5px;margin-top:-2.5px;border-radius:50%;
+    background:rgba(244,241,234,.32);transition:background .5s var(--ease),box-shadow .5s var(--ease)}
+  .fvc__rst.is-on{color:var(--cream)}
+  .fvc__rst.is-on::after{background:var(--gold);box-shadow:0 0 10px rgba(201,162,75,.8)}
+
+  /* ===================== 検分用：次セクション（実績バーン想定のダミー） ===================== */
+  .next-dummy{position:relative;background:#100d09;color:var(--cream);min-height:120vh;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    padding:clamp(104px,15vw,224px) 24px}
+  .next-dummy p{font-family:var(--fh);font-weight:500;letter-spacing:.08em;opacity:.5;font-size:clamp(1rem,.9rem+1vw,1.5rem);line-height:2}
+
+  /* ===================== SP ===================== */
+  @media (max-width:700px){
+    .cta-wrap{left:0;right:0;align-items:center;bottom:calc(env(safe-area-inset-bottom) + 34px);gap:12px}
+    .cta-row{flex-direction:column;gap:10px;width:100%;align-items:center}
+    .cta{width:min(88%,340px);justify-content:center}
+    .cta-ghost{order:2}
+    .cue{display:none}
+    .intro{top:calc(env(safe-area-inset-top,0px) + var(--header-h) + clamp(20px,5vh,48px));bottom:auto;transform:none}
+    .intro h1{text-shadow:0 2px 28px rgba(8,10,5,.92),0 0 12px rgba(8,10,5,.6)}
+    .in-b{margin-left:.6rem}
+    .spbr{display:inline}
+    .intro .in-sub{margin-left:.6rem;font-size:.92rem;letter-spacing:.08em}
+    .fvc__rail{display:none}
+    .fvc__brand{left:22px;bottom:auto;top:calc(env(safe-area-inset-top,0px) + var(--header-h) + 10px);font-size:.6rem}
+    .fvc__b1{left:22px;right:22px;bottom:calc(env(safe-area-inset-bottom) + 25vh)}
+    .fvc__b3{left:22px;right:22px;bottom:calc(env(safe-area-inset-bottom) + 25vh);text-align:left}
+    .fvc__b3 .fvc__ledger{justify-content:flex-start}
+    .fvc__ledger{white-space:normal;flex-wrap:wrap;gap:8px 10px}
+    .fvc__fin{top:auto;bottom:calc(env(safe-area-inset-bottom) + 24vh);transform:none;padding:0 22px}
+    .fvc__fin .fvc__ledger,.fvc__finsub,.fvc__l2{margin-left:.4rem}
+  }
+
+  /* ===================== reduced-motion: シネマ全面不参加（静的FVのまま） ===================== */
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+    .intro{animation:none;opacity:1}
+    .fvc{display:none!important}
+    .cue::after{animation:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header" id="hd">
+  <span class="brand__jp">やまと不動産</span>
+  <div class="hd-right">
+    <a class="btn-reserve" href="#">来場予約</a>
+    <button class="burger" aria-label="メニュー"><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <video class="hero__v" id="hv" poster="assets/video_ab/B_poster.webp?v=shuei" muted loop playsinline preload="auto" autoplay>
+    <source src="assets/video_ab/B_loop_sp.mp4?v=cut3" type="video/mp4" media="(max-width: 700px)">
+    <source src="assets/video_ab/B_loop.mp4?v=cut3" type="video/mp4">
+  </video>
+  <script>/* SPは縦長ポスター（LCP一致・パース直後に差し替え） */
+  if(matchMedia('(max-width:700px)').matches){document.getElementById('hv').poster='assets/video_ab/B_poster_sp.webp?v=sp2';}</script>
+  <div class="hero__scrim"></div>
+
+  <!-- ===== 内覧シネマ層（GSAP成立時のみ .fv-cine で出現） ===== -->
+  <div class="fvc">
+    <div class="fvc__scenes" aria-hidden="true">
+      <figure class="fvc__sc fvc__sc--kitchen" data-sc="kitchen">
+        <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_kitchen.webp"></video>
+        <span class="sc-scrim"></span>
+      </figure>
+      <figure class="fvc__sc fvc__sc--bath" data-sc="bath">
+        <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_bath.webp"></video>
+        <span class="sc-scrim"></span>
+      </figure>
+      <figure class="fvc__sc fvc__sc--living" data-sc="living">
+        <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_living.webp"></video>
+        <span class="sc-scrim"></span>
+      </figure>
+      <figure class="fvc__sc fvc__sc--wall" data-sc="wall">
+        <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_wall.webp"></video>
+        <span class="sc-scrim"></span>
+      </figure>
+    </div>
+    <span class="fvc__grain" aria-hidden="true"></span>
+
+    <p class="fvc__brand"><b>Standard</b>&nbsp;──&nbsp;花鳥風月・やまとの家</p>
+
+    <!-- 幕1: キッチン（自由設計の証拠） -->
+    <div class="fvc__beat fvc__b1" data-beat="1">
+      <p class="fvc__line"><span class="fvc__lm"><span>天井を上げて、照明を仕込みました。</span></span></p>
+      <p class="fvc__ledger"><span class="en">Kitchen</span><span class="dash"></span>クリナップ ステディア<em class="fvc__std">標準</em></p>
+    </div>
+
+    <!-- 幕2: 浴室（お客様の声の引用＝驚きの証明） -->
+    <div class="fvc__beat fvc__b2" data-beat="2">
+      <p class="fvc__q"><span class="fvc__lm"><span>「これも標準<br class="spbr">なんですか？」</span></span></p>
+      <p class="fvc__attr">当社で家を建てられたお客様から、何度もいただく言葉です。</p>
+      <p class="fvc__ledger"><span class="en">Bath</span><span class="dash"></span>TOTO サザナ 1.25坪<em class="fvc__std">標準</em></p>
+    </div>
+
+    <!-- 幕3: リビング（自由設計の証拠・その2） -->
+    <div class="fvc__beat fvc__b3" data-beat="3">
+      <p class="fvc__line"><span class="fvc__lm"><span>壁のかわりに、格子で仕切りました。</span></span></p>
+      <p class="fvc__ledger"><span class="en">Ceiling</span><span class="dash"></span>天井高2.4m・ハイドア2.3m<em class="fvc__std">標準</em></p>
+    </div>
+
+    <!-- 結び: 承認済み「50年」ロックアップ（外壁＝時間に耐える素材の上で言う） -->
+    <div class="fvc__fin" data-beat="4">
+      <p class="fvc__fifty" aria-label="50年先まで考えて、家をつくっています。">
+        <span class="fvc__l1"><em class="fvc__num" id="fvcNum">50</em><span class="fvc__w"><span class="fvc__lm"><span>年先まで<br>考えて、</span></span></span></span>
+        <span class="fvc__l2"><span class="fvc__lm"><span>家をつくっています。</span></span></span>
+      </p>
+      <p class="fvc__finsub">違いは、10年後からはっきり出ます。</p>
+      <p class="fvc__ledger"><span class="en">Wall</span><span class="dash"></span>旭化成ヘーベル パワーボード</p>
+    </div>
+
+    <!-- 内覧レール（右端・PCのみ） -->
+    <nav class="fvc__rail" aria-hidden="true">
+      <span class="fvc__rst is-on" data-r="0">Exterior</span>
+      <span class="fvc__rst" data-r="1">Kitchen</span>
+      <span class="fvc__rst" data-r="2">Bath</span>
+      <span class="fvc__rst" data-r="3">Living</span>
+      <span class="fvc__rst" data-r="4">Wall</span>
+    </nav>
+  </div>
+
+  <!-- ===== 開幕（静的フォールバックはこのまま表示され続ける） ===== -->
+  <div class="intro" id="fvIntro">
+    <h1>
+      <span class="in-a"><span class="fvc__lm"><span>大手で諦めた家を、</span></span></span>
+      <span class="in-b"><span class="fvc__lm"><span>当社と一緒に<br class="spbr">叶えましょう。</span></span></span>
+    </h1>
+    <p class="in-sub">自由設計と、高水準な標準装備。</p>
+  </div>
+
+  <div class="cta-wrap" id="ctaWrap">
+    <p class="cta-invite">まずはモデルハウスで、お会いしませんか？</p>
+    <div class="cta-row">
+      <a class="cta" href="contact.html?type=reserve">モデルハウスを予約する
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="cta-ghost" href="contact.html?type=docs">資料を請求する</a>
+    </div>
+  </div>
+  <div class="cue" id="fvCue">Scroll</div>
+</section>
+
+<section class="next-dummy">
+  <p>（検分用ダミー）ここから実績「600棟」権威バーンへ<br>── pinが解けた勢いのまま数字に着地する ──</p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.25/dist/lenis.min.js" integrity="sha384-ClD7pCgIUz5M81HT8aZmMxCsWmfsycmBiwL5gy1pUbdWHvICIbea22N9sTtAFotA" crossorigin="anonymous"></script>
+<script>
+(function(){
+  var d=document;
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var qs; try{ qs=new URLSearchParams(location.search); }catch(e){ qs={get:function(){return null;}}; }
+  var hd=d.getElementById('hd');
+
+  /* ---- フォールバック用のヘッダー挙動（シネマ不成立時は素直にスクロール量で判定） ---- */
+  function plainHeader(){
+    addEventListener('scroll',function(){ hd.classList.toggle('is-solid',scrollY>innerHeight*.6); },{passive:true});
+  }
+
+  /* ---- ゲート（ijuと同思想）: 不成立なら現行FVのまま＝無傷 ---- */
+  if(qs.get('pm')==='off' || reduce || !window.gsap || !window.ScrollTrigger){ plainHeader(); return; }
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ignoreMobileResize:true});
+
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+  var mobile=matchMedia('(max-width:700px)').matches;
+  var SCRUB=mobile?1:.55;
+
+  /* ---- Lenis（デスクトップのみ・indexのpm層と同設定） ---- */
+  if(fine && !mobile && qs.get('lenis')!=='off' && window.Lenis){
+    var lenis=new Lenis({autoRaf:false,smoothWheel:true,syncTouch:false,
+      duration:1.15,easing:function(t){return Math.min(1,1.001-Math.pow(2,-10*t));}});
+    lenis.on('scroll',ScrollTrigger.update);
+    gsap.ticker.add(function(t){ lenis.raf(t*1000); });
+    gsap.ticker.lagSmoothing(0);
+  }
+
+  /* ---- シネマ起動 ---- */
+  var hero=d.getElementById('top');
+  hero.classList.add('fv-cine');
+
+  /* ベース動画をB_loop(焼き込みcallout入り)→素の外観クリップへ差し替え＝シネマの起点キャンバス */
+  var hv=d.getElementById('hv');
+  try{
+    hv.pause();
+    while(hv.firstChild) hv.removeChild(hv.firstChild);
+    hv.poster=mobile?'assets/fv_cine/poster_exterior_sp.webp':'assets/fv_cine/poster_exterior.webp';
+    hv.src=mobile?'assets/video_ab/sp_reframe/exterior.mp4':'assets/video_ab/clip_exterior.mp4';
+    hv.load(); var p0=hv.play(); if(p0&&p0.catch)p0.catch(function(){});
+  }catch(e){}
+
+  /* シーン動画のsrc割り当て（preload=none。前のビートに入った時点でロード） */
+  var SRC={
+    kitchen:['assets/video_ab/clip_kitchen.mp4','assets/video_ab/sp_reframe/kitchen.mp4','assets/fv_cine/poster_kitchen.webp','assets/fv_cine/poster_kitchen_sp.webp'],
+    bath:['assets/video_ab/clip_bath.mp4','assets/video_ab/sp_reframe/bath.mp4','assets/fv_cine/poster_bath.webp','assets/fv_cine/poster_bath_sp.webp'],
+    living:['assets/video_ab/clip_living.mp4','assets/video_ab/sp_reframe/living.mp4','assets/fv_cine/poster_living.webp','assets/fv_cine/poster_living_sp.webp'],
+    wall:['assets/fv_cine/wall_pc.mp4','assets/fv_cine/wall_sp.mp4','assets/fv_cine/poster_wall.webp','assets/fv_cine/poster_wall_sp.webp']
+  };
+  var scenes={};
+  [].slice.call(d.querySelectorAll('.fvc__sc')).forEach(function(sc){
+    var k=sc.getAttribute('data-sc'), v=sc.querySelector('video');
+    v.poster=SRC[k][mobile?3:2];
+    scenes[k]={el:sc,v:v,key:k,loaded:false};
+  });
+  function prep(k){ var s=scenes[k]; if(!s||s.loaded) return;
+    s.loaded=true; s.v.src=SRC[k][mobile?1:0]; s.v.preload='auto'; s.v.load(); }
+  function playOnly(k){
+    if(k==='hv'){ var q=hv.play(); if(q&&q.catch)q.catch(function(){}); }else{ try{hv.pause();}catch(e){} }
+    for(var key in scenes){ var s=scenes[key];
+      if(key===k){ prep(key); var p=s.v.play(); if(p&&p.catch)p.catch(function(){}); }
+      else{ try{s.v.pause();}catch(e){} } }
+  }
+
+  var intro=d.getElementById('fvIntro'), ctaWrap=d.getElementById('ctaWrap'), cue=d.getElementById('fvCue');
+  var brand=d.querySelector('.fvc__brand');
+  var lms=intro.querySelectorAll('.fvc__lm>span'), sub=intro.querySelector('.in-sub');
+  var rsts=d.querySelectorAll('.fvc__rst');
+  var beats={1:d.querySelector('.fvc__b1'),2:d.querySelector('.fvc__b2'),3:d.querySelector('.fvc__b3'),4:d.querySelector('.fvc__fin')};
+  function rail(i){ rsts.forEach(function(r,j){ r.classList.toggle('is-on',j===i); }); }
+
+  /* ---- 開幕（時間軸）: 行マスク→サブ→刻印→CTA→cue ---- */
+  intro.style.animation='none'; intro.style.opacity='1';
+  gsap.set(lms,{yPercent:112});
+  gsap.set(sub,{autoAlpha:0,y:22});
+  gsap.set(brand,{autoAlpha:0});
+  gsap.set(ctaWrap,{autoAlpha:0,y:26});
+  gsap.set(cue,{autoAlpha:0});
+  var open=gsap.timeline({delay:.15,defaults:{ease:'power4.out'}});
+  open.to(lms,{yPercent:0,duration:1.15,stagger:.16},0)
+      .to(sub,{autoAlpha:1,y:0,duration:.9},.8)
+      .to(brand,{autoAlpha:1,duration:.9},1.0)
+      .to(ctaWrap,{autoAlpha:1,y:0,duration:.9},1.05)
+      .to(cue,{autoAlpha:1,duration:.7},1.3);
+
+  /* 最初の遷移に備えてキッチンだけ先読み（開幕アニメ完了後のアイドルで） */
+  gsap.delayedCall(2.2,function(){ prep('kitchen'); });
+
+  /* ---- ビート文言の初期状態 ---- */
+  for(var b in beats){
+    var el=beats[b];
+    gsap.set(el,{autoAlpha:0});
+    gsap.set(el.querySelectorAll('.fvc__lm>span'),{yPercent:112});
+    var lg=el.querySelectorAll('.fvc__ledger'); if(lg.length) gsap.set(lg,{autoAlpha:0,y:14});
+    var st=el.querySelectorAll('.fvc__std'); if(st.length) gsap.set(st,{scale:.4,autoAlpha:0,transformOrigin:'50% 50%'});
+    var at=el.querySelectorAll('.fvc__attr'); if(at.length) gsap.set(at,{autoAlpha:0,y:16});
+  }
+  var finsub=d.querySelector('.fvc__finsub'); gsap.set(finsub,{autoAlpha:0,y:18});
+
+  /* ビート出現の共通振付け（scrub内で使うミニtl生成） */
+  function beatIn(tl,el,at){
+    tl.to(el,{autoAlpha:1,duration:.02},at)
+      .to(el.querySelectorAll('.fvc__lm>span'),{yPercent:0,duration:.05,ease:'power3.out',stagger:.015},at+.005)
+      .to(el.querySelectorAll('.fvc__ledger'),{autoAlpha:1,y:0,duration:.03},at+.02)
+      .to(el.querySelectorAll('.fvc__std'),{scale:1,autoAlpha:1,duration:.025,ease:'back.out(2.4)'},at+.038);
+  }
+  function beatOut(tl,el,at){
+    tl.to(el,{autoAlpha:0,y:-26,duration:.04,ease:'power2.in'},at)
+      .set(el,{y:0},at+.05);
+  }
+
+  /* ---- 本編: pin+scrub（外観→台所→浴室→居間→外壁50年） ---- */
+  var num={n:0}, fvcNum=d.getElementById('fvcNum');
+  var K=scenes.kitchen, B=scenes.bath, L=scenes.living, W=scenes.wall;
+
+  var tl=gsap.timeline({defaults:{ease:'none'},
+    scrollTrigger:{trigger:hero,pin:true,scrub:SCRUB,start:'top top',end:'+=320%',
+      anticipatePin:1,invalidateOnRefresh:true,
+      onLeave:function(){ hd.classList.add('is-solid'); },
+      onEnterBack:function(){ hd.classList.remove('is-solid'); }}});
+
+  /* 幕0: 外観 — 開幕文言の退場・ベース動画の寄り */
+  tl.to(hv,{scale:1.06,duration:.3},0)
+    .to(intro,{y:-46,autoAlpha:0,duration:.1},.02)
+    .to(ctaWrap,{autoAlpha:0,y:26,duration:.06},.02)
+    .to(cue,{autoAlpha:0,duration:.04},.02)
+    .to(brand,{autoAlpha:0,duration:.06},.08)
+    .add(function(){ rail(0); },.01)
+    .add(function(){ prep('kitchen'); playOnly('hv'); },.03)
+
+  /* 幕1: 台所 */
+    .to(K.el,{autoAlpha:1,duration:.06},.12)
+    .fromTo(K.v,{scale:1.1},{scale:1,duration:.24},.12)
+    .add(function(){ playOnly('kitchen'); rail(1); prep('bath'); },.13);
+  beatIn(tl,beats[1],.16);
+  beatOut(tl,beats[1],.30);
+
+  /* 幕2: 浴室 */
+  tl.to(B.el,{autoAlpha:1,duration:.06},.34)
+    .fromTo(B.v,{scale:1.1},{scale:1,duration:.24},.34)
+    .add(function(){ playOnly('bath'); rail(2); prep('living'); },.35)
+    .to(beats[2],{autoAlpha:1,duration:.02},.385)
+    .to(beats[2].querySelectorAll('.fvc__lm>span'),{yPercent:0,duration:.05,ease:'power3.out'},.39)
+    .to(beats[2].querySelectorAll('.fvc__attr'),{autoAlpha:1,y:0,duration:.035},.418)
+    .to(beats[2].querySelectorAll('.fvc__ledger'),{autoAlpha:1,y:0,duration:.03},.44)
+    .to(beats[2].querySelectorAll('.fvc__std'),{scale:1,autoAlpha:1,duration:.025,ease:'back.out(2.4)'},.458);
+  beatOut(tl,beats[2],.545);
+
+  /* 幕3: 居間 */
+  tl.to(L.el,{autoAlpha:1,duration:.06},.58)
+    .fromTo(L.v,{scale:1.1},{scale:1,duration:.24},.58)
+    .add(function(){ playOnly('living'); rail(3); prep('wall'); },.59);
+  beatIn(tl,beats[3],.625);
+  beatOut(tl,beats[3],.745);
+
+  /* 結び: 外壁＝50年 */
+  tl.to(W.el,{autoAlpha:1,duration:.08},.78)
+    .fromTo(W.v,{scale:1.08},{scale:1,duration:.22},.78)
+    .add(function(){ playOnly('wall'); rail(4); },.79)
+    .to(beats[4],{autoAlpha:1,duration:.02},.84)
+    .to(beats[4].querySelectorAll('.fvc__lm>span'),{yPercent:0,duration:.06,ease:'power3.out',stagger:.02},.845)
+    .to(num,{n:50,duration:.11,onUpdate:function(){ fvcNum.textContent=Math.round(num.n); }},.845)
+    .to(finsub,{autoAlpha:1,y:0,duration:.04},.9)
+    .to(beats[4].querySelectorAll('.fvc__ledger'),{autoAlpha:1,y:0,duration:.035},.925)
+    .to(ctaWrap,{autoAlpha:1,y:0,duration:.05},.95)
+    .to(cue,{autoAlpha:1,duration:.04},.97);
+
+  /* 内覧レールの点灯はscrub逆走にも追従させる（onUpdateで再判定） */
+  tl.eventCallback('onUpdate',function(){
+    var p=tl.progress();
+    rail(p<.12?0:p<.34?1:p<.58?2:p<.78?3:4);
+  });
+
+  /* 計測の作法 */
+  if(d.fonts&&d.fonts.ready) d.fonts.ready.then(function(){ ScrollTrigger.refresh(); });
+  addEventListener('load',function(){ ScrollTrigger.refresh(); });
+})();
+</script>
+</body>
+</html>
