@@ -42,7 +42,8 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
   方向追従ビート・スナップ=1フリック1幕で「完成した画」に静止（ギャラリー内の各景も個別スナップ対象）。
   Lenis時はLenis自身が吸着、無い時はScrollTrigger snap(inertia:false)。進捗7ドット=クリックで幕ジャンプ。
 ■ フォールバック: GSAP不成立/reduced-motion/?pm=off → 現行FV(B_loop+静的イントロ+CTA)無傷
-■ 注意: ローカルは秀英角ゴ銀がtypekitドメインロックでNoto代替。本番ドメインで本来の字形になる
+■ 注意(2026-07-08更新): typekit kitを ftb5hqp に差し替え。yamato-final.vercel.appで反映確認済み。
+  ローカルもこのkitのドメイン許可設定次第で本来の字形になる可能性あり（要目視確認）
 ============================================================================
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +52,17 @@ FV図面 v4「あかりの物語・改」— v3「3流・実力の20%」評を�
 <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 <link rel="preload" as="image" href="assets/video_ab/B_poster_sp.webp?v=sp2" media="(max-width:700px)">
 <link rel="preload" as="image" href="assets/video_ab/B_poster.webp?v=shuei" media="(min-width:701px)">
-<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<!-- Adobe Fonts(Typekit) kit "ftb5hqp"（2026-07-08 差し替え: 旧kit aym8vre） -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'ftb5hqp',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
