@@ -1290,7 +1290,7 @@
     <p class="eyebrow" data-reveal style="--d:.05s;white-space:nowrap">Track Record ／ 創業からの実績</p>
     <div class="numwrap" data-reveal style="--d:.2s"><span class="count" id="count" data-target="600">0</span><span class="unit">棟超</span></div>
     <h2 class="lead" data-reveal style="--d:.42s">選ばれる理由は、価格だけではありません。</h2>
-    <p class="sub" data-reveal style="--d:.54s">創業から、奈良でこれだけの家をつくってきました。その一棟ずつに、設計があります。</p>
+    <p class="sub" data-reveal style="--d:.54s">創業から、奈良でこれだけの家をつくってきました。設計も施工も、外注せず自社で手がけています。</p>
     <div class="stats" data-reveal style="--d:.68s">
       <div class="stat"><span class="n">約150</span><span class="l">区画｜自社分譲（常時）</span></div>
       <div class="stat"><span class="n">50</span><span class="l">組｜お客様の声</span></div>
@@ -1359,12 +1359,12 @@
           </p>
           <p class="reveal-up">
             断熱、耐震、外壁、設備、地盤。<br class="only-pc">
-            見えないところにも手を抜かず、長く気持ちよく住める家にする。<br class="only-pc">
-            それでいて、無駄な中間コストや見えにくい費用はできるだけ抑える。
+            見えないところにも手を抜かず、長く気持ちよく住める家にしています。<br class="only-pc">
+            それでいて、無駄な中間コストや見えにくい費用はできるだけ抑えています。
           </p>
           <p class="reveal-up">
             「この予算では無理かも」と思っていた人にこそ、<br class="only-pc">
-            もっといい家が、その予算で建つことを知ってほしい。
+            もっといい家が、その予算で建つことを知っていただきたいです。
           </p>
         </div>
       </div>
@@ -1394,7 +1394,7 @@
     <header class="lineup__head">
       <p class="eyebrow" data-rise style="--d:.05">Product Lineup ／ 商品ラインナップ</p>
       <h2 class="lp-title" data-rise style="--d:.15">断熱・耐震・外壁・設備・地盤にこだわって、この価格です。</h2>
-      <p class="lp-lead" data-rise style="--d:.28"><span style="display:inline-block">花・風・京。</span><span style="display:inline-block">3つのプランは、</span><span style="display:inline-block">すべて追加費用なしのコミコミ税込。</span><span style="display:inline-block">間取りも設備も、</span><span style="display:inline-block">最初から入っています。</span></p>
+      <p class="lp-lead" data-rise style="--d:.28"><span style="display:inline-block">花・風・京。</span><span style="display:inline-block">3つのプランは、</span><span style="display:inline-block">すべて追加費用なしのコミコミ税込です。</span><span style="display:inline-block">間取りも設備も、</span><span style="display:inline-block">最初から入っています。</span></p>
       <div class="lp-dim"></div>
     </header>
 
@@ -1926,7 +1926,7 @@
         </div>
         <div class="iju__eco2">
           <h3><span class="iju__nw">その家賃で、</span><span class="iju__nw">家が建ちます。</span></h3>
-          <p>毎月の家賃は、支払って終わりです。同じくらいの毎月の支払いでも、家はご家族の資産として残ります。大阪や京都に通える奈良で、一戸建てから始めませんか。</p>
+          <p>毎月の家賃は、払ってしまえば手元に何も残りません。同じ金額を住宅ローンの返済に充てれば、その家はご家族の資産として残ります。大阪や京都に通える奈良で、一戸建てから始めませんか？</p>
         </div>
       </div>
 
@@ -2144,7 +2144,7 @@
     </div>
 
     <div class="lt-foot">
-      <p class="lt-lead">奈良と京都南部の この広がりの中から、ご希望に合う一区画がきっと見つかります。</p>
+      <p class="lt-lead">奈良と京都南部、この広がりの中から、ご希望に合う一区画がきっと見つかります。</p>
       <a class="lt-cta" href="lots.html">自社分譲物件一覧を見る
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
@@ -3283,13 +3283,20 @@
     vanity:['assets/video_ab/clip_vanity.mp4','assets/video_ab/sp_reframe/vanity.mp4'],
     living:['assets/video_ab/clip_living.mp4','assets/video_ab/sp_reframe/living.mp4']
   };
+  /* SPは横クロップでなくnano_banana_proで縦構図から作り直した専用ポスター(見切れ対策) */
+  var fvPOSTER={
+    kitchen:['assets/fv_cine/poster_kitchen.webp','assets/fv_cine/poster_kitchen_sp.webp'],
+    bath:['assets/fv_cine/poster_bath.webp','assets/fv_cine/poster_bath_sp.webp'],
+    vanity:['assets/fv_cine/poster_vanity.webp','assets/fv_cine/poster_vanity_sp.webp'],
+    living:['assets/fv_cine/poster_living.webp','assets/fv_cine/poster_living_sp.webp']
+  };
   var fvScenes={};
   [].slice.call(d.querySelectorAll('.st__sc')).forEach(function(sc){
     var k=sc.getAttribute('data-sc');
     fvScenes[k]={el:sc,v:sc.querySelector('video'),loaded:false}; /* atriumはvideo無し=v:null */
   });
   function fvPrep(k){ var s=fvScenes[k]; if(!s||s.loaded||!s.v) return;
-    s.loaded=true; s.v.src=fvSRC[k][mobile?1:0]; s.v.preload='auto'; s.v.load(); }
+    s.loaded=true; s.v.poster=fvPOSTER[k][mobile?1:0]; s.v.src=fvSRC[k][mobile?1:0]; s.v.preload='auto'; s.v.load(); }
   var fvCurScene=null;
   function fvPlayScene(k){
     if(k===fvCurScene) return; fvCurScene=k;
