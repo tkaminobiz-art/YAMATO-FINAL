@@ -257,12 +257,17 @@ FV図面 v3「あかりの物語」— ゼロ再構築（2026-07-08）
   .st__f1 em{font-family:var(--fn);font-style:normal;font-weight:200;font-size:1.42em;
     letter-spacing:-.02em;font-variant-numeric:tabular-nums;vertical-align:-.06em;padding:0 .04em}
 
-  /* ---- 物語の進捗（6点の灯） ---- */
+  /* ---- 物語の進捗（7点の灯・クリック/タップで幕ジャンプ） ---- */
   .st__dots{position:absolute;left:50%;transform:translateX(-50%);
-    bottom:calc(env(safe-area-inset-bottom) + 22px);z-index:6;display:flex;gap:14px;opacity:0}
-  .st__dot{width:5px;height:5px;border-radius:50%;background:rgba(244,241,234,.28);
-    transition:background .45s var(--ease),box-shadow .45s var(--ease)}
-  .st__dot.is-on{background:var(--gold);box-shadow:0 0 10px rgba(201,162,75,.85)}
+    bottom:calc(env(safe-area-inset-bottom) + 12px);z-index:8;display:flex;gap:4px;opacity:0}
+  .st__dot{position:relative;width:26px;height:26px;background:transparent;border:0;padding:0;
+    cursor:pointer;-webkit-tap-highlight-color:transparent}
+  .st__dot::after{content:"";position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px 0 0 -3px;
+    border-radius:50%;background:rgba(244,241,234,.3);
+    transition:background .45s var(--ease),box-shadow .45s var(--ease),transform .45s var(--ease)}
+  .st__dot:hover::after{background:rgba(244,241,234,.66);transform:scale(1.25)}
+  .st__dot:focus-visible{outline:1px solid rgba(201,162,75,.8);outline-offset:2px;border-radius:50%}
+  .st__dot.is-on::after{background:var(--gold);box-shadow:0 0 10px rgba(201,162,75,.85)}
 
   /* ===================== 検分用: 次セクションダミー ===================== */
   .next-dummy{position:relative;background:#100d09;color:var(--cream);min-height:120vh;
@@ -395,14 +400,19 @@ FV図面 v3「あかりの物語」— ゼロ再構築（2026-07-08）
 
     <!-- 幕F: 結び -->
     <div class="st__f">
-      <p class="st__f1"><em>10</em>年後、<em>50</em>年後に、<br class="spbr">違いがわかります。</p>
+      <p class="st__f1"><em>10</em>年後、<em>50</em>年後に、<br>違いがわかります。</p>
     </div>
 
-    <!-- 物語の進捗（7点の灯） -->
-    <div class="st__dots" aria-hidden="true">
-      <span class="st__dot is-on"></span><span class="st__dot"></span><span class="st__dot"></span>
-      <span class="st__dot"></span><span class="st__dot"></span><span class="st__dot"></span><span class="st__dot"></span>
-    </div>
+    <!-- 物語の進捗（7点の灯・クリックで幕ジャンプ） -->
+    <nav class="st__dots" aria-label="物語の進捗">
+      <button class="st__dot is-on" type="button" aria-label="第1幕へ"></button>
+      <button class="st__dot" type="button" aria-label="第2幕へ"></button>
+      <button class="st__dot" type="button" aria-label="第3幕へ"></button>
+      <button class="st__dot" type="button" aria-label="第4幕へ"></button>
+      <button class="st__dot" type="button" aria-label="第5幕へ"></button>
+      <button class="st__dot" type="button" aria-label="第6幕へ"></button>
+      <button class="st__dot" type="button" aria-label="第7幕へ"></button>
+    </nav>
   </div>
 
   <!-- ===== 静的フォールバック（シネマ不成立時はこのまま出る） ===== -->
@@ -516,48 +526,63 @@ FV図面 v3「あかりの物語」— ゼロ再構築（2026-07-08）
   function dot(i){ dots.forEach(function(o,j){ o.classList.toggle('is-on',j===i); }); }
 
   /* ---- 本編: pin+scrub（宛名→転回→証明→装備→結び） ---- */
+  /* ビート・スナップ: どの速さで送っても、指を止めると最寄りの幕の「完成した画」へ吸着する。
+     ギャラリー(.79〜.94)だけは自由走行（パネルの好きな位置で眺められる） */
+  var SNAPS=[0,.14,.34,.605,.76,1];
+  var ACT_SNAP=[0,.14,.34,.605,.76,.875,1]; /* 7点ドット→ジャンプ先（6点目=ギャラリー中央） */
+  /* 方向追従スナップ: 下へ送れば次の幕、上へ戻せば前の幕（弱いフリックでも1幕きっちり進む） */
+  function snapBeat(v,self){
+    if(v>.79 && v<.94) return v; /* ギャラリーは自由走行 */
+    var dir=(self&&self.direction)||1, i;
+    if(dir>0){ for(i=0;i<SNAPS.length;i++){ if(SNAPS[i]>=v-.015) return SNAPS[i]; } return 1; }
+    for(i=SNAPS.length-1;i>=0;i--){ if(SNAPS[i]<=v+.015) return SNAPS[i]; }
+    return 0;
+  }
+
   var cnt={n:150};
-  var tl=gsap.timeline({defaults:{ease:'none'},
-    scrollTrigger:{trigger:hero,pin:true,scrub:SCRUB,start:'top top',end:'+=440%',
-      anticipatePin:1,invalidateOnRefresh:true,
-      onLeave:function(){ hd.classList.add('is-solid'); },
-      onEnterBack:function(){ hd.classList.remove('is-solid'); }}});
+  /* Lenis使用時はLenis自身が吸着を担当（内部状態の desync 防止）。無い時だけScrollTriggerのsnapを使う */
+  var stCfg={trigger:hero,pin:true,scrub:SCRUB,start:'top top',end:'+=440%',
+    anticipatePin:1,invalidateOnRefresh:true,
+    onLeave:function(){ hd.classList.add('is-solid'); },
+    onEnterBack:function(){ hd.classList.remove('is-solid'); }};
+  if(!lenis){ stCfg.snap={snapTo:snapBeat,inertia:false,duration:{min:.35,max:1},ease:'power2.inOut',delay:.1}; }
+  var tl=gsap.timeline({defaults:{ease:'none'},scrollTrigger:stCfg});
 
   /* 幕A→B: 宛名の交代（闇のまま） */
   tl.to(A,{autoAlpha:0,y:-22,duration:.03},.05)
     .to(cue,{autoAlpha:0,duration:.025},.04)
     .to(B,{autoAlpha:1,y:0,duration:.035},.095)
-    .to(B,{autoAlpha:0,y:-22,duration:.03},.155)
+    .to(B,{autoAlpha:0,y:-22,duration:.03},.165)
 
   /* 幕C: 転回の一行 → 闇が水平に裂けて灯りの家が開く */
-    .to(C,{autoAlpha:1,y:0,duration:.035},.195)
+    .to(C,{autoAlpha:1,y:0,duration:.035},.20)
     .add(function(){ var p=hv.play(); if(p&&p.catch)p.catch(function(){}); },.22)
     .to(hv,{clipPath:'inset(0% 0% 0% 0%)',webkitClipPath:'inset(0% 0% 0% 0%)',duration:.10,ease:'power2.inOut'},.23)
     .to(hv,{scale:1,duration:.18},.23)
-    .to(C,{autoAlpha:0,y:-26,duration:.035},.345)
+    .to(C,{autoAlpha:0,y:-26,duration:.035},.365)
 
   /* 幕D: 夕暮れの帳を下ろし、費用の台帳（150万→0円） */
-    .to(veil,{opacity:1,duration:.045},.385)
+    .to(veil,{opacity:1,duration:.045},.395)
     .to(D,{autoAlpha:1,duration:.025},.415)
-    .to(rows[0],{autoAlpha:1,y:0,duration:.025},.445)
-    .to(cnt,{n:0,duration:.05,onUpdate:function(){ r1.textContent=Math.round(cnt.n); }},.455)
-    .to(chips[0],{scale:1,autoAlpha:1,duration:.02,ease:'back.out(2.2)'},.5)
-    .to(rows[1],{autoAlpha:1,y:0,duration:.025},.515)
-    .to(chips[1],{scale:1,autoAlpha:1,duration:.02,ease:'back.out(2.2)'},.535)
-    .to(rows[2],{autoAlpha:1,y:0,duration:.025},.55)
-    .to(chips[2],{scale:1,autoAlpha:1,duration:.02,ease:'back.out(2.2)'},.57)
-    .to(dnote,{autoAlpha:1,duration:.025},.585)
-    .to(D,{autoAlpha:0,y:-24,duration:.035},.625)
-    .set(D,{y:0},.665)
+    .to(rows[0],{autoAlpha:1,y:0,duration:.025},.44)
+    .to(cnt,{n:0,duration:.05,onUpdate:function(){ r1.textContent=Math.round(cnt.n); }},.45)
+    .to(chips[0],{scale:1,autoAlpha:1,duration:.02,ease:'back.out(2.2)'},.495)
+    .to(rows[1],{autoAlpha:1,y:0,duration:.025},.51)
+    .to(chips[1],{scale:1,autoAlpha:1,duration:.02,ease:'back.out(2.2)'},.53)
+    .to(rows[2],{autoAlpha:1,y:0,duration:.025},.545)
+    .to(chips[2],{scale:1,autoAlpha:1,duration:.02,ease:'back.out(2.2)'},.565)
+    .to(dnote,{autoAlpha:1,duration:.025},.575)
+    .to(D,{autoAlpha:0,y:-24,duration:.035},.635)
+    .set(D,{y:0},.675)
 
   /* 幕D2: 価格の提示（2,680万円の一枚） */
-    .to(P,{autoAlpha:1,duration:.02},.665)
-    .to(pnum,{autoAlpha:1,y:0,duration:.04,ease:'power3.out'},.675)
-    .to(pline,{scaleX:1,duration:.035},.702)
-    .to(ps,{autoAlpha:1,y:0,duration:.035},.715)
-    .to(pnote,{autoAlpha:1,duration:.025},.735)
-    .to(P,{autoAlpha:0,y:-24,duration:.035},.765)
-    .set(P,{y:0},.805)
+    .to(P,{autoAlpha:1,duration:.02},.675)
+    .to(pnum,{autoAlpha:1,y:0,duration:.038,ease:'power3.out'},.685)
+    .to(pline,{scaleX:1,duration:.032},.707)
+    .to(ps,{autoAlpha:1,y:0,duration:.032},.717)
+    .to(pnote,{autoAlpha:1,duration:.022},.733)
+    .to(P,{autoAlpha:0,y:-24,duration:.035},.775)
+    .set(P,{y:0},.81)
 
   /* 幕E: 標準装備ギャラリー（横流れ） */
     .to(E,{autoAlpha:1,duration:.025},.79)
@@ -580,6 +605,38 @@ FV図面 v3「あかりの物語」— ゼロ再構築（2026-07-08）
     if((p>.21 && p<.43) || p>.93){ if(hv.paused){ var q=hv.play(); if(q&&q.catch)q.catch(function(){}); } }
     else if((p<.19 || (p>.47 && p<.9)) && !hv.paused){ try{hv.pause();}catch(e){} }
   });
+
+  /* ドット＝幕ジャンプ（Lenis経由でグライド。無ければネイティブsmooth） */
+  dots.forEach(function(o,i){
+    o.addEventListener('click',function(){
+      var st=tl.scrollTrigger;
+      var y=st.start+(st.end-st.start)*ACT_SNAP[i];
+      if(lenis){ lenis.scrollTo(y,{duration:1.1}); }
+      else{ window.scrollTo({top:y,behavior:'smooth'}); }
+    });
+  });
+
+  /* Lenis用ビート・スナップ: 惰性が収まったら最寄り（方向追従）の幕へグライド */
+  if(lenis){
+    var snapping=false, idleT=null, lastDir=1;
+    lenis.on('scroll',function(e){
+      if(e&&typeof e.direction==='number'&&e.direction!==0) lastDir=e.direction;
+      if(snapping) return;
+      clearTimeout(idleT);
+      idleT=setTimeout(function(){
+        var st=tl.scrollTrigger; if(!st) return;
+        var y=window.scrollY;
+        if(y<st.start-2 || y>st.end+2) return;
+        var p=(y-st.start)/(st.end-st.start);
+        var t=snapBeat(p,{direction:lastDir});
+        if(Math.abs(t-p)<.004) return;
+        snapping=true;
+        lenis.scrollTo(st.start+(st.end-st.start)*t,{duration:.85,
+          easing:function(x){return 1-Math.pow(1-x,3);},
+          onComplete:function(){ snapping=false; }});
+      },120);
+    });
+  }
 
   /* 計測の作法 */
   if(d.fonts&&d.fonts.ready) d.fonts.ready.then(function(){ ScrollTrigger.refresh(); });
