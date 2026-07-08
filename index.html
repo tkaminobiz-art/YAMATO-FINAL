@@ -10,8 +10,8 @@
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
 <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 <!-- LCP＝FVポスター：ビューポート別に先読み（SPは縦長版） -->
-<link rel="preload" as="image" href="assets/video_ab/B_poster_sp.webp?v=sp2" media="(max-width:700px)">
-<link rel="preload" as="image" href="assets/video_ab/B_poster.webp?v=shuei" media="(min-width:701px)">
+<link rel="preload" as="image" href="assets/fv_cine/poster_exterior_sp.webp" media="(max-width:700px)">
+<link rel="preload" as="image" href="assets/fv_cine/poster_exterior.webp" media="(min-width:701px)">
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
@@ -1103,12 +1103,12 @@
      →フルブリード標準装備5景→10年後50年後。GSAP不成立時は下部.introの静的フォールバックのみ表示。
      JSタイムラインはPREMIUM MOTION LAYER（本ファイル末尾）に統合済み。 -->
 <section class="hero" id="top">
-  <video class="hero__v" id="hv" poster="assets/video_ab/B_poster.webp?v=shuei" muted loop playsinline preload="auto" autoplay>
-    <source src="assets/video_ab/B_loop_sp.mp4?v=cut3" type="video/mp4" media="(max-width: 700px)">
-    <source src="assets/video_ab/B_loop.mp4?v=cut3" type="video/mp4">
+  <video class="hero__v" id="hv" poster="assets/fv_cine/poster_exterior.webp" muted loop playsinline preload="auto" autoplay>
+    <source src="assets/fv_cine/exterior_nb_sp.mp4" type="video/mp4" media="(max-width: 700px)">
+    <source src="assets/fv_cine/exterior_nb_pc.mp4" type="video/mp4">
   </video>
   <script>/* SPは縦長ポスター（LCP一致・パース直後に差し替え＝初期描画前） */
-  if(matchMedia('(max-width:700px)').matches){document.getElementById('hv').poster='assets/video_ab/B_poster_sp.webp?v=sp2';}</script>
+  if(matchMedia('(max-width:700px)').matches){document.getElementById('hv').poster='assets/fv_cine/poster_exterior_sp.webp';}</script>
   <div class="hero__scrim"></div>
 
   <!-- ===== 物語層（GSAP成立時のみ .fv-cine で出現） ===== -->
@@ -1415,7 +1415,7 @@
           </dl>
           <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2680">2,680</span><span class="man">万円</span><span class="from">〜</span></div>
           <p class="pcard__incl">コミコミ税込／土地は別途</p>
-          <a class="pcard__cta" href="#">間取りの詳細を見る
+          <a class="pcard__cta" href="madori.html#plans">間取りの詳細を見る
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
@@ -1436,7 +1436,7 @@
           </dl>
           <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2680">2,680</span><span class="man">万円</span><span class="from">〜</span></div>
           <p class="pcard__incl">コミコミ税込／土地は別途</p>
-          <a class="pcard__cta" href="#">間取りの詳細を見る
+          <a class="pcard__cta" href="madori.html#plans">間取りの詳細を見る
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
@@ -1457,7 +1457,7 @@
           </dl>
           <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2480">2,480</span><span class="man">万円</span><span class="from">〜</span></div>
           <p class="pcard__incl">コミコミ税込／土地は別途</p>
-          <a class="pcard__cta" href="#">間取りの詳細を見る
+          <a class="pcard__cta" href="madori.html#plans">間取りの詳細を見る
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
@@ -2973,6 +2973,7 @@
       </div>
       <div class="navcol stagger" style="--i:1">
         <span class="navcol__label">See &amp; Choose</span>
+        <a class="lead" href="madori.html">間取り・花風京</a>
         <a class="lead" href="works.html">施工事例</a>
         <a class="lead" href="model.html">モデルハウス</a>
         <a class="lead" href="lots.html">分譲地・土地情報</a>
@@ -3064,13 +3065,13 @@
     var mob=matchMedia('(max-width: 700px)').matches;
     if(mob){
       // media属性を無視するブラウザ向けの保険：モバイルは必ず縦版
-      if((v.currentSrc||'').indexOf('B_loop_sp')<0){
+      if((v.currentSrc||'').indexOf('exterior_nb_sp')<0){
         while(v.firstChild) v.removeChild(v.firstChild);
         var so=document.createElement('source');
-        so.src='assets/video_ab/B_loop_sp.mp4?v=cut3'; so.type='video/mp4';
+        so.src='assets/fv_cine/exterior_nb_sp.mp4'; so.type='video/mp4';
         v.appendChild(so); v.load();
       }
-      v.poster='assets/video_ab/B_poster_sp.webp?v=sp2';
+      v.poster='assets/fv_cine/poster_exterior_sp.webp';
     }
     var c=navigator.connection||{}; var save=c.saveData===true || /(^|-)2g/.test(c.effectiveType||'');
     if(reduce||save){ try{ v.removeAttribute('autoplay'); v.pause(); }catch(e){} }
@@ -3266,15 +3267,11 @@
   hero.classList.add('fv-cine');
   var hd=d.getElementById('siteHeader');
 
-  /* ベース動画をB_loop→素の外観クリップへ（緞帳の下で息づき、幕Cで全貌が現れる） */
+  /* ベース動画は静的markup+FV動画保険ブロックで既にexterior_nbを読み込み済み（緞帳の下で息づき、幕Cで全貌が現れる）。
+     ここでpause/removeChild/src再設定/load()をやり直すと旧B_loop→exterior_nbの二重リセットで
+     リロード時のチラつき・幕C到達前の描画未了(スクロール時の乱れ)を招くため、再生保証のみ行う。 */
   var hv=d.getElementById('hv');
-  try{
-    hv.pause();
-    while(hv.firstChild) hv.removeChild(hv.firstChild);
-    hv.poster=mobile?'assets/fv_cine/poster_exterior_sp.webp':'assets/fv_cine/poster_exterior.webp';
-    hv.src=mobile?'assets/fv_cine/exterior_nb_sp.mp4':'assets/fv_cine/exterior_nb_pc.mp4';
-    hv.load(); var p0=hv.play(); if(p0&&p0.catch)p0.catch(function(){});
-  }catch(e){}
+  try{ if(hv.paused){ var p0=hv.play(); if(p0&&p0.catch)p0.catch(function(){}); } }catch(e){}
 
   /* 装備クリップ（preload=none。価格幕あたりで先読み）。Atriumは静止画のためsrc不要 */
   var fvSRC={
