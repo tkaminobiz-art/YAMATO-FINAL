@@ -1222,201 +1222,285 @@
 })();
 </script>
 
-<!-- ============ P1 奈良に住むという選択（iju- 第13視覚言語=夜の帰路・シネマ夕景＋ガラスの時刻表） ============ -->
+<!-- ============ P1 奈良に住むという選択（iju- 第14視覚言語=夜の帰路シネマ／GSAP pin+scrubで「難波18:34発→生駒トンネル→18:54生駒着」を1スクロールで体感させる。時計HUD・サークルリビール・路線プログレス。fallback=静的ディプティク） ============ -->
 <style>
-  .iju{position:relative;isolation:isolate;color:#F4F1EA;
-    background:
-      radial-gradient(54% 40% at 86% 2%,rgba(162,197,35,.14),transparent 62%),
-      radial-gradient(50% 36% at 6% 72%,rgba(201,162,75,.10),transparent 66%),
-      linear-gradient(168deg,#2C4506 0%,#203309 48%,#141F06 100%);
-    z-index:6;margin-top:clamp(-78px,-5.6vw,-46px);
+  .iju{position:relative;isolation:isolate;z-index:6;
+    --night:#0E130A; --cr:#F4F1EA; --cr2:rgba(244,241,234,.8); --cr3:rgba(244,241,234,.52);
+    --gold:#C9A24B; --lime:#A2C523; --inkB:#241F1B; --ink2:#5A544C; --grn:#2E4600; --ea:#7D4427;
+    --hairD:rgba(244,241,234,.16); --hairL:rgba(36,31,27,.14);
+    --fmin:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+    background:var(--night);color:var(--cr);
+    margin-top:clamp(-78px,-5.6vw,-46px);
     border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
-    box-shadow:0 -46px 88px -32px rgba(0,0,0,.5)}
+    box-shadow:0 -20px 52px -24px rgba(8,12,4,.55)}
   @media(max-width:560px){ .iju{margin-top:-32px;border-top-left-radius:20px;border-top-right-radius:20px} }
-  .iju__grain{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
-    border-radius:inherit;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
-  .iju__in{position:relative;z-index:1;max-width:1240px;margin:0 auto;
-    padding:clamp(72px,9vw,130px) clamp(20px,5vw,64px) calc(clamp(72px,9vw,120px) + clamp(46px,5.6vw,78px))}
-  /* ---- 導入（左：見出し／右：出発地カード） ---- */
-  .iju__head{display:grid;grid-template-columns:minmax(0,1.16fr) minmax(200px,.84fr);
-    gap:clamp(26px,4vw,72px);align-items:end}
-  .iju__eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--fn,"Inter",sans-serif);
-    font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
-  .iju__eyebrow::after{content:"";width:32px;height:1px;background:rgba(201,162,75,.5)}
-  .iju h2{margin-top:clamp(14px,1.6vw,20px);font-family:var(--fh);font-weight:500;
-    font-size:clamp(1.5rem,1.1rem + 2.1vw,2.6rem);letter-spacing:.06em;line-height:1.55;
-    text-shadow:0 2px 26px rgba(0,0,0,.35)}
-  .iju__lead{margin-top:clamp(16px,2vw,26px);max-width:560px;font-size:.95rem;line-height:2.15;
-    letter-spacing:.03em;color:rgba(244,241,234,.8)}
   .iju__nw{display:inline-block}
-  .iju__dep{position:relative;margin:0;justify-self:end;width:clamp(220px,24vw,330px);
-    transform:translateY(clamp(10px,1.4vw,20px))}
-  .iju__dep img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px;
-    outline:1px solid rgba(244,241,234,.14);outline-offset:-1px;
-    filter:saturate(.72) brightness(.85) contrast(1.06)}
-  .iju__dep::before{content:"";position:absolute;inset:0;border-radius:12px;pointer-events:none;
-    background:linear-gradient(to top,rgba(9,16,24,.5),rgba(9,16,24,.05) 55%)}
-  .iju__dep::after{content:"";position:absolute;left:50%;top:100%;height:clamp(30px,4vw,60px);
-    border-left:1px dashed rgba(201,162,75,.6)}
-  .iju__cap{position:absolute;left:14px;bottom:11px;z-index:1;
-    font-family:var(--fh);font-weight:500;font-size:clamp(.78rem,.74rem + .3vw,.95rem);
-    letter-spacing:.14em;color:rgba(244,241,234,.94);display:flex;flex-direction:column;gap:2px;
-    text-shadow:0 2px 14px rgba(5,10,2,.75)}
-  .iju__cap small{font-family:var(--fn,"Inter",sans-serif);font-size:.6rem;font-weight:500;
-    letter-spacing:.22em;color:rgba(244,241,234,.62)}
-  /* ---- 奈良の大パノラマ（帰る先） ---- */
-  .iju__pan{position:relative;margin:clamp(26px,3.4vw,44px) 0 0;
-    border-radius:clamp(12px,1.6vw,18px);overflow:hidden;
-    outline:1px solid rgba(201,162,75,.3);outline-offset:-1px;
-    box-shadow:0 40px 80px -34px rgba(0,0,0,.6)}
-  .iju__pan img{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover;object-position:50% 58%;
-    filter:saturate(1.07) contrast(1.03)}
-  .iju__pan::after{content:"";position:absolute;inset:0;pointer-events:none;
-    background:
-      radial-gradient(46% 42% at 16% 96%,rgba(201,140,45,.24),transparent 68%),
-      linear-gradient(to top,rgba(18,13,2,.52),rgba(18,13,2,.04) 42%)}
-  .iju__pan .iju__cap{left:clamp(16px,2.2vw,28px);bottom:clamp(13px,1.8vw,22px)}
-  .iju__pan .iju__cap b{font-weight:500;font-size:clamp(.95rem,.88rem + .5vw,1.2rem);letter-spacing:.2em}
-  @media(min-width:701px){ .iju__pan .iju__cap{top:clamp(16px,2vw,26px);bottom:auto} }
-  html.enh .iju__pan img{transform:scale(1.055);transition:transform 1.8s cubic-bezier(.25,1,.5,1)}
-  html.enh .iju__pan.is-in img{transform:scale(1)}
-  /* ---- ガラスの夜行時刻表 ---- */
-  .iju__board{position:relative;z-index:2;width:min(100%,1000px);margin:clamp(-56px,-4.2vw,-34px) auto 0;
-    border-radius:16px;border:1px solid rgba(244,241,234,.15);
-    background:linear-gradient(180deg,rgba(31,44,12,.62),rgba(18,27,7,.74));
-    -webkit-backdrop-filter:blur(20px) saturate(150%);backdrop-filter:blur(20px) saturate(150%);
-    box-shadow:0 30px 60px -26px rgba(0,0,0,.65),inset 0 1px 0 rgba(255,255,255,.09);
-    padding:0 clamp(18px,3vw,40px)}
-  .iju__bhead{display:flex;align-items:baseline;justify-content:space-between;gap:14px;
-    padding:clamp(15px,1.8vw,20px) 0 clamp(12px,1.5vw,16px);border-bottom:1px solid rgba(244,241,234,.12)}
-  .iju__blabel{font-family:var(--fn,"Inter",sans-serif);font-size:10.5px;font-weight:600;
-    letter-spacing:.26em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
-  .iju__bnote{font-size:.62rem;letter-spacing:.05em;line-height:1.7;color:rgba(244,241,234,.5);text-align:right}
-  .iju__routes{display:flex;flex-direction:column}
-  .iju__line{display:flex;align-items:center;gap:clamp(12px,1.8vw,24px);
-    padding:clamp(15px,2vw,23px) 0}
-  .iju__line + .iju__line{border-top:1px solid rgba(244,241,234,.09)}
-  .iju__st{flex:0 0 auto;font-family:var(--fh);font-weight:500;font-size:clamp(.92rem,.88rem + .35vw,1.12rem);
-    letter-spacing:.08em;display:flex;align-items:center;gap:10px}
-  .iju__st::before{content:"";width:11px;height:11px;border-radius:50%;border:2px solid #A2C523;background:#F4F1EA;flex:0 0 auto}
-  .iju__st--r{flex-direction:row-reverse}
-  .iju__st--r::before{order:-1}
-  .iju__rail{flex:1;display:flex;align-items:center;gap:clamp(10px,1.6vw,20px);min-width:0}
-  .iju__rail i{flex:1;height:1px;min-width:14px;
-    background:linear-gradient(to right,rgba(162,197,35,.16),rgba(162,197,35,.62),rgba(162,197,35,.16))}
-  .iju__time{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:3px;line-height:1}
-  .iju__time b{font-family:var(--fn,"Inter",sans-serif);font-weight:300;font-variant-numeric:tabular-nums;
-    font-size:clamp(1.85rem,1.45rem + 2vw,2.9rem);letter-spacing:.01em;color:#F7F2E2;
-    text-shadow:0 0 26px rgba(247,242,226,.18)}
-  .iju__time b small{font-size:.42em;font-weight:400;letter-spacing:.08em;margin-left:3px;color:rgba(244,241,234,.85)}
-  .iju__time span{font-size:.6rem;letter-spacing:.16em;color:rgba(244,241,234,.58)}
-  /* ---- 結び（家賃の話） ---- */
-  .iju__asset{margin-top:clamp(48px,6vw,84px);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
-    gap:clamp(20px,4vw,64px);align-items:start}
-  @media(max-width:760px){ .iju__asset{grid-template-columns:1fr;gap:16px} }
-  .iju__asset h3{font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;font-weight:600;
-    font-size:clamp(1.4rem,1.15rem + 1.4vw,2.1rem);letter-spacing:.1em;line-height:1.95}
-  .iju__asset p{font-size:.95rem;line-height:2.25;letter-spacing:.04em;color:rgba(244,241,234,.78);
-    font-family:var(--fh);font-weight:500;max-width:560px}
-  .iju__foot{margin-top:clamp(34px,4.4vw,56px);display:flex;flex-wrap:wrap;align-items:center;
-    justify-content:space-between;gap:18px clamp(24px,3.4vw,44px)}
-  .iju__areas{display:flex;flex-wrap:wrap;gap:8px}
-  .iju__chip{font-family:var(--fn,"Inter",sans-serif);font-size:.7rem;font-weight:500;letter-spacing:.08em;
-    color:rgba(244,241,234,.82);border:1px solid rgba(244,241,234,.22);border-radius:7px;
-    background:rgba(244,241,234,.05);padding:.5em 1em}
-  .iju__go{display:inline-flex;align-items:center;gap:10px;font-family:var(--fh);font-weight:500;
-    font-size:.92rem;letter-spacing:.05em;color:#F4F1EA;background:rgba(244,241,234,.05);
-    border:1px solid rgba(244,241,234,.5);border-radius:6px;padding:14px 30px;
-    transition:background .4s var(--ease),color .4s var(--ease),border-color .4s var(--ease),transform .4s var(--ease)}
-  .iju__go:hover{background:#F4F1EA;color:#1E3008;border-color:#F4F1EA;transform:translateY(-2px)}
-  .iju__go svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none}
-  /* ---- リビール ---- */
+
+  /* ---- 舞台（既定=静的ディプティク。GSAP成功時のみ .is-cine が夜の帰路シネマへ組み替え）
+       ※角丸はinheritにしない＝ScrollTriggerのpin-spacer挿入後も上角を保つ ---- */
+  .iju__stage{position:relative;overflow:hidden;
+    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
+    padding:clamp(64px,8vw,116px) clamp(20px,5vw,64px) clamp(52px,6.4vw,84px)}
+  @media(max-width:560px){ .iju__stage{border-top-left-radius:20px;border-top-right-radius:20px} }
+  .iju__hud{position:relative;z-index:6;display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    max-width:1240px;margin:0 auto clamp(30px,4vw,48px)}
+  .iju__eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--fn);font-size:.66rem;font-weight:500;
+    letter-spacing:.28em;text-transform:uppercase;color:var(--gold);text-shadow:0 1px 10px rgba(6,8,4,.5)}
+  .iju__eyebrow::before{content:"";width:30px;height:1px;background:var(--gold);opacity:.85;flex:0 0 auto}
+  .iju__clock{display:none;align-items:baseline;gap:12px;font-family:var(--fn)}
+  .iju__clock b{font-weight:300;font-size:clamp(1.25rem,1rem + 1.1vw,1.9rem);letter-spacing:.04em;
+    font-variant-numeric:tabular-nums;color:var(--cr);text-shadow:0 1px 12px rgba(6,8,4,.6)}
+  .iju__clock span{font-family:var(--fmin);font-weight:500;font-size:.78rem;letter-spacing:.14em;color:var(--cr2)}
+
+  .iju__scenes{position:relative;max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.8vw,22px)}
+  .iju__scene{position:relative;margin:0}
+  .iju__scene img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:10px;filter:saturate(.98)}
+  .iju__sA img{object-position:center 30%}
+  .iju__sB img{object-position:center 42%}
+  .iju__cap{display:flex;justify-content:space-between;align-items:baseline;margin-top:10px;
+    font-family:var(--fn);font-size:.68rem;font-weight:500;letter-spacing:.14em;color:var(--cr3)}
+  .iju__cap b{font-family:var(--fmin);font-weight:500;font-size:.86rem;letter-spacing:.1em;color:var(--cr2)}
+  .iju__scrim{display:none}
+  .iju__tunnel{display:none}
+
+  .iju__b1,.iju__b2{display:none}
+  .iju__b3{position:relative;z-index:5;max-width:1240px;margin:clamp(40px,5vw,68px) auto 0;text-align:center}
+  .iju__arr{display:none;font-family:var(--fn);font-size:.7rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);
+    text-shadow:0 1px 10px rgba(6,8,4,.6)}
+  .iju__big{display:flex;align-items:baseline;justify-content:center;line-height:.85;color:var(--cr);margin-bottom:clamp(18px,2.4vw,28px)}
+  .iju__big b{font-family:var(--fn);font-weight:300;font-variant-numeric:tabular-nums;letter-spacing:-.03em;
+    font-size:clamp(4.2rem,2.6rem + 7vw,8.4rem);text-shadow:0 2px 30px rgba(0,0,0,.4)}
+  .iju__big span{font-family:var(--fmin);font-weight:500;font-size:clamp(1.2rem,.9rem + 1.6vw,2rem);letter-spacing:.06em;margin-left:.14em;color:var(--gold)}
+  .iju__h2{font-family:var(--fmin);font-weight:600;letter-spacing:.06em;line-height:1.6;color:var(--cr);
+    font-size:clamp(1.5rem,1.05rem + 2.1vw,2.7rem)}
+  .iju__lm{display:block;overflow:hidden}
+  .iju__lm > span{display:block}
+
+  .iju__prog{display:none}
+  .iju__grain{position:absolute;inset:0;z-index:7;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+  /* ---- シネマ（.is-cine）＝pin+scrub の完成形レイアウト ---- */
+  .iju.is-cine .iju__stage{height:100svh;min-height:560px;padding:0}
+  .iju.is-cine .iju__hud{position:absolute;left:0;right:0;top:0;max-width:none;margin:0;align-items:flex-start;
+    padding:calc(var(--header-h) + clamp(10px,2vh,22px)) clamp(20px,5vw,64px) 0}
+  .iju.is-cine .iju__clock{display:flex}
+  .iju.is-cine .iju__scenes{position:absolute;inset:0;display:block;max-width:none;margin:0}
+  .iju.is-cine .iju__scene{position:absolute;inset:0;overflow:hidden}
+  .iju.is-cine .iju__scene img{width:100%;height:100%;aspect-ratio:auto;border-radius:0;will-change:transform}
+  .iju.is-cine .iju__sB{z-index:4} /* トンネル(z3)より上＝円形リビールは暗闇から開く */
+  .iju.is-cine .iju__cap{display:none}
+  .iju.is-cine .iju__scrim{display:block;position:absolute;inset:0;pointer-events:none}
+  .iju.is-cine .iju__sA .iju__scrim{background:linear-gradient(to top,rgba(8,11,5,.7) 0%,rgba(8,11,5,.16) 34%,rgba(8,11,5,.1) 68%,rgba(8,11,5,.4) 100%)}
+  .iju.is-cine .iju__sB .iju__scrim{background:radial-gradient(74% 60% at 50% 52%,rgba(8,11,5,.4),rgba(8,11,5,.1) 60%,rgba(8,11,5,.32) 100%),
+    linear-gradient(to top,rgba(8,11,5,.5),transparent 38%)}
+  .iju.is-cine .iju__tunnel{display:block;position:absolute;inset:0;z-index:3;background:#050703;opacity:0;pointer-events:none}
+  .iju.is-cine .iju__b1,.iju.is-cine .iju__b2{display:block;position:absolute;left:clamp(20px,5vw,64px);right:clamp(20px,5vw,64px);z-index:5;
+    text-align:center;font-family:var(--fmin);font-weight:600;letter-spacing:.09em;color:var(--cr);text-shadow:0 2px 24px rgba(6,8,4,.75)}
+  .iju.is-cine .iju__b1{bottom:clamp(110px,17vh,180px);font-size:clamp(1.3rem,1rem + 1.7vw,2.15rem)}
+  .iju.is-cine .iju__b1 s{display:block;margin-top:13px;text-decoration:none;font-family:var(--fn);font-weight:500;
+    font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+  .iju.is-cine .iju__b2{top:50%;transform:translateY(-50%);font-size:clamp(1.4rem,1rem + 2.1vw,2.5rem)}
+  .iju.is-cine .iju__b3{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:clamp(10px,1.8vh,18px);margin:0;padding:0 clamp(20px,5vw,64px)}
+  .iju.is-cine .iju__arr{display:block}
+  .iju.is-cine .iju__big{margin-bottom:0}
+  .iju.is-cine .iju__big b{font-size:clamp(4.8rem,3rem + 9vw,10rem)}
+  .iju.is-cine .iju__h2{text-shadow:0 2px 26px rgba(6,8,4,.7)}
+  .iju.is-cine .iju__prog{display:flex;position:absolute;left:50%;transform:translateX(-50%);bottom:clamp(26px,5vh,46px);z-index:6;
+    width:min(640px,74vw);align-items:center;gap:clamp(10px,1.6vw,16px)}
+  .iju__pst{font-family:var(--fmin);font-weight:500;font-size:clamp(.72rem,.68rem + .2vw,.84rem);letter-spacing:.12em;color:var(--cr2);
+    white-space:nowrap;text-shadow:0 1px 10px rgba(6,8,4,.6)}
+  .iju__pline{position:relative;flex:1;height:1px;background:rgba(244,241,234,.24)}
+  .iju__pline i{position:absolute;inset:0;transform:scaleX(0);transform-origin:left;
+    background:linear-gradient(90deg,var(--gold),var(--lime))}
+  .iju__pline b{position:absolute;left:0;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;background:var(--lime);
+    box-shadow:0 0 12px 3px rgba(162,197,35,.6),0 0 3px 1px rgba(110,140,22,.6)}
+
+  /* ---- 台帳（board）＝クリーム紙の時刻表 ---- */
+  .iju__board{position:relative;background:#F4F1EA;color:var(--inkB)}
+  .iju__bin{max-width:1240px;margin:0 auto;container-type:inline-size;
+    padding:clamp(56px,7vw,104px) clamp(20px,5vw,64px) calc(clamp(56px,7vw,96px) + clamp(46px,5.6vw,78px))}
+  .iju__lead{font-family:var(--fb);font-weight:400;font-size:clamp(1rem,.95rem + .3vw,1.0625rem);line-height:2.05;letter-spacing:.03em;
+    color:var(--inkB);max-width:40em;margin-bottom:clamp(32px,4vw,52px)}
+  .iju__figline{display:flex;align-items:baseline;gap:clamp(10px,1.4vw,18px);
+    padding-bottom:clamp(13px,1.5vw,18px);border-bottom:1.5px solid rgba(36,31,27,.4)}
+  .iju__fignm{font-family:var(--fn);font-size:11px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--ea)}
+  .iju__figttl{font-family:var(--fh);font-weight:500;font-size:clamp(1rem,.95rem + .4vw,1.2rem);letter-spacing:.08em;color:var(--grn)}
+  .iju__figleg{margin-left:auto;font-family:var(--fn);font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#8B8375;white-space:nowrap}
+  .iju__rt{display:grid;grid-template-columns:minmax(0,1.28fr) minmax(0,1fr);gap:clamp(28px,4vw,60px);padding-top:clamp(28px,3.2vw,44px)}
+  .iju__hero{display:flex;flex-direction:column;justify-content:center;gap:clamp(10px,1.4vw,16px)}
+  .iju__subs{border-left:1px solid var(--hairL);padding-left:clamp(28px,4vw,56px);display:flex;flex-direction:column;justify-content:center}
+  .iju__sub{display:flex;flex-direction:column;gap:8px;padding:clamp(14px,1.8vw,22px) 0}
+  .iju__sub + .iju__sub{border-top:1px solid var(--hairL)}
+  .iju__dest{font-family:var(--fmin);font-weight:600;letter-spacing:.08em;color:var(--grn);display:flex;align-items:baseline;gap:.4em;
+    font-size:clamp(1.15rem,1rem + .8vw,1.55rem)}
+  .iju__sub .iju__dest{font-size:clamp(1rem,.92rem + .5vw,1.2rem)}
+  .iju__dest em{font-style:normal;font-family:var(--fn);font-weight:400;font-size:.56em;letter-spacing:.12em;text-transform:uppercase;color:var(--ea)}
+  .iju__num{display:inline-flex;align-items:baseline;font-family:var(--fn);font-weight:300;color:var(--inkB);
+    font-variant-numeric:tabular-nums;line-height:.85;letter-spacing:-.03em}
+  .iju__hero .iju__num{font-size:clamp(4.6rem,2.6rem + 9cqi,8.6rem)}
+  .iju__sub .iju__num{font-size:clamp(2.5rem,1.6rem + 4cqi,4.2rem)}
+  .iju__num .u{font-family:var(--fmin);font-weight:500;font-size:.26em;letter-spacing:.06em;margin-left:.12em;color:var(--grn)}
+  .iju__via{font-family:var(--fb);font-size:clamp(.84rem,.8rem + .2vw,.94rem);letter-spacing:.05em;color:var(--ink2)}
+  .iju__note{margin-top:clamp(18px,2.2vw,26px);font-family:var(--fb);font-size:.72rem;letter-spacing:.04em;line-height:1.8;color:#8B8375}
+
+  .iju__eco{margin-top:clamp(46px,5.4vw,76px)}
+  .iju__eco2{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(28px,4vw,64px);
+    align-items:center;padding-top:clamp(26px,3vw,42px)}
+  .iju__eco2 h3{font-family:var(--fmin);font-weight:600;color:var(--grn);
+    font-size:clamp(1.8rem,1.25rem + 2.8vw,3.2rem);letter-spacing:.04em;line-height:1.55}
+  .iju__eco2 p{font-family:var(--fb);font-weight:400;color:var(--inkB);
+    font-size:clamp(1rem,.95rem + .3vw,1.0625rem);line-height:2.1;letter-spacing:.03em;
+    padding-left:clamp(20px,2.4vw,34px);border-left:1px solid var(--hairL)}
+
+  /* ---- 結び ---- */
+  .iju__foot{margin-top:clamp(34px,3.8vw,52px);padding-top:clamp(24px,2.8vw,34px);border-top:1px solid var(--hairL);
+    display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:22px clamp(24px,3.4vw,44px)}
+  .iju__areas{display:flex;flex-direction:column;gap:10px}
+  .iju__areas .k{font-family:var(--fn);font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8B8375}
+  .iju__areas ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;margin:0;padding:0}
+  .iju__areas li{font-family:var(--fmin);font-weight:500;font-size:.92rem;letter-spacing:.05em;color:var(--grn)}
+  .iju__go{display:inline-flex;align-items:center;gap:12px;font-family:var(--fh);font-weight:500;
+    font-size:.96rem;letter-spacing:.06em;color:#FAFAF7;background:var(--main);border:1px solid var(--main);
+    border-radius:5px;padding:16px 32px;min-height:54px;white-space:nowrap;
+    transition:background .4s var(--ease),border-color .4s var(--ease),transform .4s var(--ease),box-shadow .4s var(--ease)}
+  .iju__go:hover{background:var(--main-dark);border-color:var(--main-dark);transform:translateY(-2px);
+    box-shadow:0 12px 28px -14px rgba(46,70,0,.5)}
+  .iju__go svg{width:16px;height:16px;stroke:currentColor;stroke-width:1.8;fill:none}
+
+  /* ---- リビール（board用・既存の共通IOが .iju-rv を拾う） ---- */
   .iju-rv{opacity:0;transform:translateY(14px)}
   .iju-rv.is-in{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.25,1,.5,1),transform .7s cubic-bezier(.25,1,.5,1)}
-  .iju__pan.iju-rv.is-in{transition-duration:1.1s}
-  @media(prefers-reduced-motion:reduce){
-    .iju-rv{opacity:1!important;transform:none!important;transition:none!important}
-    html.enh .iju__pan img{transform:none!important;transition:none!important}
-  }
+  @media(prefers-reduced-motion:reduce){ .iju-rv{opacity:1!important;transform:none!important;transition:none!important} }
+
   /* ---- レスポンシブ ---- */
   @media(max-width:860px){
-    .iju__head{grid-template-columns:1fr;gap:26px;align-items:start}
-    .iju__dep{justify-self:start;width:min(78%,340px);transform:none}
-    .iju__dep img{aspect-ratio:21/10}
-    .iju__dep::after{height:clamp(24px,6vw,40px)}
-    .iju__pan{margin-top:clamp(22px,5vw,34px)}
-    .iju__pan img{aspect-ratio:16/9}
-  }
-  @media(max-width:700px){
-    .iju__pan{margin-inline:calc(-1 * clamp(20px,5vw,64px));border-radius:0;outline:none;
-      box-shadow:0 30px 60px -30px rgba(0,0,0,.55)}
-    .iju__pan img{aspect-ratio:4/3}
-    .iju__board{margin-top:-24px}
-    .iju__bhead{flex-direction:column;gap:5px}
-    .iju__bnote{text-align:left}
+    .iju__scenes{grid-template-columns:1fr;gap:clamp(20px,4vw,28px)}
+    .iju__rt{grid-template-columns:1fr}
+    .iju__subs{border-left:none;padding-left:0;border-top:1px solid var(--hairL);padding-top:clamp(8px,1.6vw,14px)}
+    .iju__eco2{grid-template-columns:1fr;gap:20px;align-items:start}
+    .iju__eco2 p{padding-left:0;border-left:none;padding-top:clamp(14px,3vw,20px);border-top:1px solid var(--hairL)}
   }
   @media(max-width:560px){
-    .iju__st{font-size:.85rem;letter-spacing:.04em;gap:7px}
-    .iju__line{gap:9px} .iju__rail{gap:9px}
-    .iju__board{padding:0 16px}
+    .iju.is-cine .iju__b1{bottom:clamp(96px,15vh,150px)}
+    .iju.is-cine .iju__prog{width:min(520px,80vw)}
+    .iju__foot{flex-direction:column;align-items:stretch;gap:24px}
     .iju__go{width:100%;justify-content:center}
-    .iju-rv{transform:translateY(8px)}
   }
 </style>
 <section class="iju" id="iju" aria-label="奈良に住むという選択・大阪京都への通勤">
-  <div class="iju__grain" aria-hidden="true"></div>
-  <div class="iju__in">
-    <div class="iju__head">
-      <div class="iju__intro">
-        <span class="iju__eyebrow iju-rv">Move to Nara ／ 奈良に住むという選択</span>
-        <h2 class="iju-rv"><span class="iju__nw">大阪で働きながら、</span><span class="iju__nw">奈良で暮らせます。</span></h2>
-        <p class="iju__lead iju-rv">やまとの分譲地は、奈良市・生駒市を中心に<span class="iju__nw">京都南部まで</span>広がっています。<span class="iju__nw">通勤も通学も、</span><span class="iju__nw">あきらめなくて大丈夫です。</span></p>
-      </div>
-      <figure class="iju__dep iju-rv" aria-hidden="true"><!-- 写真: Pexels（Ehsan Haque）商用利用可・クレジット不要ライセンス -->
-        <img src="assets/iju/duo_osaka.webp" alt="" width="1320" height="990" loading="lazy" decoding="async">
-        <figcaption class="iju__cap">大阪・京都<small>はたらく街</small></figcaption>
+
+  <!-- 幕1: 夜の帰路シネマ（GSAP成功時はpin+scrub／失敗時は静的ディプティクのまま） -->
+  <div class="iju__stage" id="ijuStage">
+    <div class="iju__hud">
+      <span class="iju__eyebrow">Move to Nara ／ 奈良に住むという選択</span>
+      <span class="iju__clock" aria-hidden="true"><b id="ijuClock">18:34</b><span id="ijuClockCap">大阪・難波</span></span>
+    </div>
+
+    <div class="iju__scenes">
+      <figure class="iju__scene iju__sA">
+        <img src="assets/iju/duo_osaka.webp" alt="夕暮れの大阪・あべのハルカスと市街" loading="lazy" decoding="async" width="1320" height="990">
+        <span class="iju__scrim" aria-hidden="true"></span>
+        <figcaption class="iju__cap"><b>大阪</b><span>18:34 ／ はたらく街</span></figcaption>
       </figure>
+      <figure class="iju__scene iju__sB">
+        <img src="assets/iju/duo_nara.webp" alt="夕日に照らされる奈良・東大寺周辺と鹿" loading="lazy" decoding="async" width="1320" height="990">
+        <span class="iju__scrim" aria-hidden="true"></span>
+        <figcaption class="iju__cap"><b>奈良</b><span>18:54 ／ くらす街</span></figcaption>
+      </figure>
+      <span class="iju__tunnel" aria-hidden="true"></span>
     </div>
-    <figure class="iju__pan iju-rv" aria-hidden="true"><!-- 写真: Pexels（Jim TheFrog）商用利用可・クレジット不要ライセンス -->
-      <img src="assets/iju/duo_nara.webp" alt="" width="1320" height="990" loading="lazy" decoding="async">
-      <figcaption class="iju__cap"><b>奈良</b><small>くらす街</small></figcaption>
-    </figure>
-    <div class="iju__board iju-rv">
-      <div class="iju__bhead">
-        <span class="iju__blabel">Train Access ／ 通勤の目安</span>
-        <span class="iju__bnote">所要時間はおおよその目安です。列車の種別・時間帯により<span style="display:inline-block;white-space:nowrap">変わります。</span></span>
-      </div>
-      <div class="iju__routes">
-        <div class="iju__line">
-          <b class="iju__st">近鉄奈良</b>
-          <span class="iju__rail"><i></i><span class="iju__time"><b>約40<small>分</small></b><span>快速急行</span></span><i></i></span>
-          <b class="iju__st iju__st--r">大阪難波</b>
-        </div>
-        <div class="iju__line">
-          <b class="iju__st">生駒</b>
-          <span class="iju__rail"><i></i><span class="iju__time"><b>約20<small>分</small></b><span>快速急行</span></span><i></i></span>
-          <b class="iju__st iju__st--r">大阪難波</b>
-        </div>
-        <div class="iju__line">
-          <b class="iju__st">近鉄奈良</b>
-          <span class="iju__rail"><i></i><span class="iju__time"><b>約35<small>分</small></b><span>近鉄特急</span></span><i></i></span>
-          <b class="iju__st iju__st--r">京都</b>
-        </div>
-      </div>
+
+    <p class="iju__b1" aria-hidden="true">18時34分、難波を出る。<s>Osaka Namba — Dep. 18:34</s></p>
+    <p class="iju__b2" aria-hidden="true">生駒トンネルを抜けると、<br>空が広くなる。</p>
+
+    <div class="iju__b3">
+      <span class="iju__arr">Ikoma — Arr. 18:54</span>
+      <div class="iju__big" aria-label="難波から生駒まで快速急行で約20分"><b id="ijuBigN">20</b><span>分</span></div>
+      <h2 class="iju__h2"><span class="iju__lm"><span>大阪で働きながら、</span></span><span class="iju__lm"><span>奈良で暮らせます。</span></span></h2>
     </div>
-    <div class="iju__asset iju-rv">
-      <h3><span class="iju__nw">その家賃で、</span><span class="iju__nw">家が建ちます。</span></h3>
-      <p>毎月の家賃は、支払って終わりです。同じくらいの毎月の支払いでも、家はご家族の資産として残ります。大阪や京都に通える奈良で、一戸建てから始めませんか。</p>
+
+    <div class="iju__prog" aria-hidden="true">
+      <span class="iju__pst">難波</span>
+      <span class="iju__pline"><i id="ijuPfill"></i><b id="ijuPdot"></b></span>
+      <span class="iju__pst">生駒</span>
     </div>
-    <div class="iju__foot iju-rv">
-      <div class="iju__areas">
-        <span class="iju__chip">奈良市</span><span class="iju__chip">生駒市</span><span class="iju__chip">橿原市</span><span class="iju__chip">大和郡山市</span><span class="iju__chip">京都府 木津川市</span><span class="iju__chip">京田辺市 ほか</span>
+    <span class="iju__grain" aria-hidden="true"></span>
+  </div>
+
+  <!-- 幕2: クリーム紙の台帳（時刻表と暮らしの経済） -->
+  <div class="iju__board">
+    <div class="iju__bin">
+      <p class="iju__lead iju-rv">やまとの分譲地は、奈良市・生駒市を中心に<span class="iju__nw">京都南部まで広がっています。</span><span class="iju__nw">通勤も通学も、</span><span class="iju__nw">あきらめなくて大丈夫です。</span></p>
+
+      <div class="iju-rv">
+        <div class="iju__figline">
+          <span class="iju__fignm">図 01</span>
+          <span class="iju__figttl">通勤の目安</span>
+          <span class="iju__figleg">Minutes to the city</span>
+        </div>
+        <div class="iju__rt">
+          <div class="iju__hero">
+            <span class="iju__dest">生駒 → 大阪・難波<em>Rapid Exp.</em></span>
+            <span class="iju__num"><span class="n">20</span><span class="u">分</span></span>
+            <span class="iju__via">近鉄奈良線・快速急行で乗り換えなし。</span>
+          </div>
+          <div class="iju__subs">
+            <div class="iju__sub">
+              <span class="iju__dest">近鉄奈良 → 大阪・難波<em>Rapid Exp.</em></span>
+              <span class="iju__num"><span class="n">40</span><span class="u">分</span></span>
+            </div>
+            <div class="iju__sub">
+              <span class="iju__dest">近鉄奈良 → 京都<em>Ltd. Exp.</em></span>
+              <span class="iju__num"><span class="n">35</span><span class="u">分</span></span>
+            </div>
+          </div>
+        </div>
+        <p class="iju__note">所要時間はおおよその目安です。列車の種別・時間帯により<span style="display:inline-block;white-space:nowrap">変わります。</span></p>
       </div>
-      <a class="iju__go" href="#lots">分譲地を見る<svg viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+
+      <div class="iju__eco iju-rv">
+        <div class="iju__figline">
+          <span class="iju__fignm">図 02</span>
+          <span class="iju__figttl">暮らしの経済</span>
+        </div>
+        <div class="iju__eco2">
+          <h3><span class="iju__nw">その家賃で、</span><span class="iju__nw">家が建ちます。</span></h3>
+          <p>毎月の家賃は、支払って終わりです。同じくらいの毎月の支払いでも、家はご家族の資産として残ります。大阪や京都に通える奈良で、一戸建てから始めませんか。</p>
+        </div>
+      </div>
+
+      <div class="iju__foot iju-rv">
+        <div class="iju__areas">
+          <span class="k">Areas</span>
+          <ul><li>奈良市</li><li>生駒市</li><li>橿原市</li><li>大和郡山市</li><li>京都府 木津川市</li><li>京田辺市 ほか</li></ul>
+        </div>
+        <a class="iju__go" href="#lots">分譲地を見る<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
     </div>
   </div>
 </section>
+<script>
+(function(){
+  /* 台帳の数字カウントアップ（シネマ層とは独立・reduced-motionと?pm=offで不参加） */
+  var qs=new URLSearchParams(location.search);
+  if(qs.get('pm')==='off') return;
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  if(!('IntersectionObserver' in window)) return;
+  var rt=document.querySelector('.iju__rt'); if(!rt) return;
+  new IntersectionObserver(function(es,o){
+    if(!es[0].isIntersecting) return; o.disconnect();
+    rt.querySelectorAll('.iju__num .n').forEach(function(n,i){
+      var to=parseInt(n.textContent,10); if(isNaN(to)) return;
+      var dur=900+i*140,t0=null; n.textContent='0';
+      function tick(ts){ if(!t0)t0=ts; var p=Math.min(1,(ts-t0)/dur); p=1-Math.pow(1-p,3);
+        n.textContent=Math.round(to*p); if(p<1) requestAnimationFrame(tick); }
+      setTimeout(function(){ requestAnimationFrame(tick); }, 240+i*150);
+    });
+  },{threshold:.3}).observe(rt);
+})();
+</script>
 
 <script>
 (function(){
@@ -1980,23 +2064,6 @@
 <!-- ============ enh- 新設5セクションの演出層（JS死亡/reduced-motionで無傷・?pm=offで停止） ============ -->
 <style>
   /* ---- ゲート: html.enh が付いた時だけ初期状態を仕込む（基礎のqp-rv等は温存） ---- */
-  /* iju: レール描画・列車・到着パルス */
-  html.enh .iju__rail{position:relative}
-  html.enh .iju__rail i{transform:scaleX(0);transition:transform .65s cubic-bezier(.25,1,.5,1)}
-  html.enh .iju__rail i:first-child{transform-origin:left}
-  html.enh .iju__rail i:last-child{transform-origin:right}
-  html.enh .iju__line.is-drawn .iju__rail i{transform:scaleX(1)}
-  .iju__trainDot{position:absolute;left:0;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;
-    background:#F4F1EA;box-shadow:0 0 14px 2px rgba(244,241,234,.55);opacity:0;pointer-events:none;will-change:transform}
-  .iju__st{position:relative}
-  @keyframes ijupulse{0%{transform:scale(1)}45%{transform:scale(1.75);border-color:#F4F1EA}100%{transform:scale(1)}}
-  .iju__st.is-ping::before{animation:ijupulse .7s cubic-bezier(.33,1,.68,1)}
-  /* 「家賃は消えます。家は残ります。」= 意味の演出 */
-  html.enh .iju__asset h3 .iju__nw{position:relative;transition:opacity 1.4s ease}
-  html.enh .iju__asset.is-wit h3 .iju__nw:first-child{opacity:.42}
-  html.enh .iju__asset h3 .iju__nw:last-child::after{content:"";position:absolute;left:.1em;right:.55em;bottom:-4px;height:1px;
-    background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 1s cubic-bezier(.25,1,.5,1) .4s}
-  html.enh .iju__asset.is-wit h3 .iju__nw:last-child::after{transform:scaleX(1)}
   /* fl: 工程の点灯とドラッグ */
   .fl__scroller{cursor:grab}
   .fl__scroller.is-grab{cursor:grabbing;scroll-snap-type:none}
@@ -2048,39 +2115,6 @@
     },{threshold:.5}).observe(stats);
   }
 
-  /* ---- iju: レール描画→列車走行→到着パルス→時間カウント（親コンテナ1点監視で堅牢化） ---- */
-  var routes=document.querySelector('.iju__routes');
-  if(routes) new IntersectionObserver(function(es,o){
-    if(!es[0].isIntersecting) return; o.disconnect();
-    routes.querySelectorAll('.iju__line').forEach(function(line,idx){
-      setTimeout(function(){
-        line.classList.add('is-drawn');
-        var rail=line.querySelector('.iju__rail');
-        var timeB=line.querySelector('.iju__time b');
-        var dest=line.querySelector('.iju__st--r');
-        setTimeout(function(){
-          /* 時間カウント */
-          if(timeB && timeB.firstChild && timeB.firstChild.nodeType===3){
-            var m=timeB.firstChild.nodeValue.match(/^(約?)(\d+)$/);
-            if(m) count(timeB.firstChild,parseInt(m[2],10),0,1100,m[1]);
-          }
-          /* 列車 */
-          var dot=document.createElement('i'); dot.className='iju__trainDot';
-          rail.appendChild(dot);
-          var w=rail.getBoundingClientRect().width-9;
-          var anim=dot.animate(
-            [{transform:'translateX(0)',opacity:0},{transform:'translateX('+(w*.12)+'px)',opacity:1,offset:.12},
-             {transform:'translateX('+(w*.88)+'px)',opacity:1,offset:.88},{transform:'translateX('+w+'px)',opacity:0}],
-            {duration:1250,easing:'cubic-bezier(.45,.05,.35,1)'});
-          anim.onfinish=function(){
-            dot.remove();
-            if(dest){ dest.classList.add('is-ping'); setTimeout(function(){dest.classList.remove('is-ping');},800); }
-          };
-        },450);
-      }, idx*300);
-    });
-  },{threshold:.3}).observe(routes);
-
   /* ---- lots: 統計3つのカウントアップ（動的注入後のテキストを数える） ---- */
   var ltf=document.querySelector('.lt-facts');
   if(ltf){
@@ -2092,15 +2126,6 @@
         setTimeout(function(){ count(tn,parseInt(m[2],10),0,900,m[1]); }, i*140);
       });
     },{threshold:.5}).observe(ltf);
-  }
-
-  /* ---- iju: 「家賃は消えます。家は残ります。」の意味演出 ---- */
-  var asset=document.querySelector('.iju__asset');
-  if(asset){
-    new IntersectionObserver(function(es,o){
-      if(!es[0].isIntersecting) return; o.disconnect();
-      setTimeout(function(){ asset.classList.add('is-wit'); },900);
-    },{threshold:.3}).observe(asset);
   }
 
   /* ---- fl: 通過点灯＋入場ナッジ＋ドラッグスクロール ---- */
@@ -2949,6 +2974,64 @@
       if(vcEm) gsap.delayedCall(.4,function(){ countUp(vcEm,1.25); });
       vcStamp();
     }});
+  }
+
+  /* ---------- 9.55) iju: 夜の帰路シネマ（pin+scrub＝難波18:34発→生駒トンネル→18:54生駒着を1スクロールで体感）
+       GSAP不成立時は .is-cine が付かず、静的ディプティク＋台帳のまま＝無傷フォールバック ---------- */
+  var iju=d.getElementById('iju'), ijuStage=d.getElementById('ijuStage');
+  if(iju&&ijuStage){
+    iju.classList.add('is-cine');
+    var jA=ijuStage.querySelector('.iju__sA img'), jB=ijuStage.querySelector('.iju__sB');
+    var jBimg=jB&&jB.querySelector('img'), jTun=ijuStage.querySelector('.iju__tunnel');
+    var jb1=ijuStage.querySelector('.iju__b1'), jb2=ijuStage.querySelector('.iju__b2'), jb3=ijuStage.querySelector('.iju__b3');
+    var jLms=ijuStage.querySelectorAll('.iju__lm > span'), jArr=ijuStage.querySelector('.iju__arr');
+    var jBigN=d.getElementById('ijuBigN'), jFill=d.getElementById('ijuPfill'), jDot=d.getElementById('ijuPdot');
+    var jClock=d.getElementById('ijuClock'), jCap=d.getElementById('ijuClockCap');
+    var jClip0='circle(0% at 50% 55%)', jClip1='circle(125% at 50% 55%)';
+
+    gsap.set(jB,{clipPath:jClip0,webkitClipPath:jClip0});
+    if(jBimg) gsap.set(jBimg,{scale:1.16});
+    gsap.set(jb2,{autoAlpha:0,y:16});
+    gsap.set(jb3,{autoAlpha:0});
+    gsap.set(jLms,{yPercent:112});
+    gsap.set(jArr,{autoAlpha:0});
+
+    /* 時計: 18:34（難波発）→ 18:54（生駒着）。乗車分数をスクラブで刻む */
+    var jRide={m:0}, jNum={n:0};
+    function jTick(){
+      var mm=34+Math.round(jRide.m), h=18+((mm/60)|0);
+      if(jClock) jClock.textContent=h+':'+String(mm%60).padStart(2,'0');
+    }
+    function jCapSet(t){ if(jCap&&jCap.textContent!==t) jCap.textContent=t; }
+
+    var jtl=gsap.timeline({defaults:{ease:'none'},
+      scrollTrigger:{trigger:ijuStage,pin:true,scrub:SCRUB,start:'top top',end:'+=280%',
+        anticipatePin:1,invalidateOnRefresh:true}});
+
+    /* 第1景: 大阪の夕暮れに寄っていく（発車） */
+    jtl.to(jA,{scale:1.1,duration:.24},0)
+       .to(jRide,{m:4,duration:.2,onUpdate:jTick},0)
+       .to(jb1,{autoAlpha:0,y:-20,duration:.08},.13)
+       .add(function(){ jCapSet('近鉄奈良線 車内'); },.2)
+    /* 第2景: 生駒トンネル（暗転の間・文言だけが灯る） */
+       .to(jTun,{opacity:1,duration:.1},.2)
+       .to(jRide,{m:14,duration:.26,onUpdate:jTick},.2)
+       .to(jb2,{autoAlpha:1,y:0,duration:.08},.29)
+       .to(jb2,{autoAlpha:0,y:-14,duration:.06},.42)
+    /* 第3景: トンネルの先に奈良が円形に開く（車窓の光） */
+       .to(jB,{clipPath:jClip1,webkitClipPath:jClip1,duration:.24},.47)
+       .to(jTun,{opacity:0,duration:.08},.63)
+       .to(jRide,{m:20,duration:.2,onUpdate:jTick},.46)
+       .add(function(){ jCapSet('生駒'); },.62)
+    /* 到着: 20分の数字と結語 */
+       .to(jb3,{autoAlpha:1,duration:.06},.66)
+       .to(jArr,{autoAlpha:1,duration:.06},.67)
+       .to(jNum,{n:20,duration:.18,onUpdate:function(){ if(jBigN) jBigN.textContent=Math.round(jNum.n); }},.66)
+       .to(jLms,{yPercent:0,duration:.14,ease:'power3.out',stagger:.05},.7)
+       .to(jBimg||{},{scale:1,duration:.5},.5)
+    /* 路線プログレス（全行程を通してスクラブ） */
+       .to(jFill,{scaleX:1,duration:.86},.02)
+       .to(jDot,{x:function(){ var ln=jFill&&jFill.parentNode; return ln?Math.max(0,ln.offsetWidth-9):0; },duration:.86},.02);
   }
 
   /* ---------- 9.6) メニュー開幕：玄関ポーチのケンバーンズ（開くたびゆっくり寄る。CSSはコンテナ側、imgはGSAP専有） ---------- */
