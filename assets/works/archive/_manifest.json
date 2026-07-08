@@ -1,0 +1,122 @@
+[
+  {
+    "file": "archive/archive_storage_02.webp",
+    "room": "storage",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_storage_03.webp",
+    "room": "storage",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_storage_05.webp",
+    "room": "storage",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_storage_08.webp",
+    "room": "storage",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_stair_02.webp",
+    "room": "stair",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_stair_04.webp",
+    "room": "stair",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_stair_06.webp",
+    "room": "stair",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_bath_02.webp",
+    "room": "bath",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_bath_04.webp",
+    "room": "bath",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_bath_06.webp",
+    "room": "bath",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_wash_02.webp",
+    "room": "wash",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_wash_04.webp",
+    "room": "wash",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_wash_06.webp",
+    "room": "wash",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_toilet_01.webp",
+    "room": "toilet",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_toilet_03.webp",
+    "room": "toilet",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_toilet_05.webp",
+    "room": "toilet",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_entrance_03.webp",
+    "room": "entrance",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_entrance_06.webp",
+    "room": "entrance",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_washitsu_03.webp",
+    "room": "washitsu",
+    "property": "archive",
+    "tier": "archive"
+  },
+  {
+    "file": "archive/archive_washitsu_05.webp",
+    "room": "washitsu",
+    "property": "archive",
+    "tier": "archive"
+  }
+]

@@ -1,0 +1,324 @@
+[
+  {
+    "file": "jittei_ext_01.webp",
+    "room": "ext",
+    "property": "jittei",
+    "tier": "hero",
+    "bytes": 230568
+  },
+  {
+    "file": "jittei_ext_02.webp",
+    "room": "ext",
+    "property": "jittei",
+    "tier": "card",
+    "bytes": 170060
+  },
+  {
+    "file": "jittei_living_01.webp",
+    "room": "living",
+    "property": "jittei",
+    "tier": "hero",
+    "bytes": 130362
+  },
+  {
+    "file": "jittei_living_02.webp",
+    "room": "living",
+    "property": "jittei",
+    "tier": "hero",
+    "bytes": 94048
+  },
+  {
+    "file": "jittei_living_03.webp",
+    "room": "living",
+    "property": "jittei",
+    "tier": "card",
+    "bytes": 67580
+  },
+  {
+    "file": "jittei_kitchen_01.webp",
+    "room": "kitchen",
+    "property": "jittei",
+    "tier": "hero",
+    "bytes": 114246
+  },
+  {
+    "file": "jittei_kitchen_02.webp",
+    "room": "kitchen",
+    "property": "jittei",
+    "tier": "card",
+    "bytes": 73518
+  },
+  {
+    "file": "sakyo_ext_01.webp",
+    "room": "ext",
+    "property": "sakyo",
+    "tier": "hero",
+    "bytes": 296286
+  },
+  {
+    "file": "sakyo_ext_02.webp",
+    "room": "ext",
+    "property": "sakyo",
+    "tier": "hero",
+    "bytes": 429000
+  },
+  {
+    "file": "sakyo_ext_03.webp",
+    "room": "ext",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 102700
+  },
+  {
+    "file": "sakyo_ext_04.webp",
+    "room": "ext",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 174140
+  },
+  {
+    "file": "sakyo_ext_05.webp",
+    "room": "ext",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 181068
+  },
+  {
+    "file": "sakyo_entrance_01.webp",
+    "room": "entrance",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 243626
+  },
+  {
+    "file": "sakyo_living_01.webp",
+    "room": "living",
+    "property": "sakyo",
+    "tier": "hero",
+    "bytes": 227532
+  },
+  {
+    "file": "sakyo_living_02.webp",
+    "room": "living",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 119514
+  },
+  {
+    "file": "sakyo_living_03.webp",
+    "room": "living",
+    "property": "sakyo",
+    "tier": "hero",
+    "bytes": 175106
+  },
+  {
+    "file": "sakyo_kitchen_01.webp",
+    "room": "kitchen",
+    "property": "sakyo",
+    "tier": "hero",
+    "bytes": 203654
+  },
+  {
+    "file": "sakyo_kitchen_02.webp",
+    "room": "kitchen",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 103456
+  },
+  {
+    "file": "sakyo_kitchen_03.webp",
+    "room": "kitchen",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 96660
+  },
+  {
+    "file": "sakyo_kitchen_04.webp",
+    "room": "kitchen",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 105640
+  },
+  {
+    "file": "sakyo_kitchen_05.webp",
+    "room": "kitchen",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 75052
+  },
+  {
+    "file": "sakyo_kitchen_06.webp",
+    "room": "kitchen",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 77462
+  },
+  {
+    "file": "sakyo_washitsu_01.webp",
+    "room": "washitsu",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 73036
+  },
+  {
+    "file": "sakyo_washitsu_02.webp",
+    "room": "washitsu",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 75730
+  },
+  {
+    "file": "sakyo_washitsu_03.webp",
+    "room": "washitsu",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 136860
+  },
+  {
+    "file": "sakyo_bedroom_01.webp",
+    "room": "bedroom",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 121214
+  },
+  {
+    "file": "sakyo_bedroom_02.webp",
+    "room": "bedroom",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 140588
+  },
+  {
+    "file": "sakyo_bedroom_03.webp",
+    "room": "bedroom",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 90252
+  },
+  {
+    "file": "sakyo_stair_01.webp",
+    "room": "stair",
+    "property": "sakyo",
+    "tier": "hero",
+    "bytes": 184224
+  },
+  {
+    "file": "sakyo_stair_02.webp",
+    "room": "stair",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 110678
+  },
+  {
+    "file": "sakyo_entrance_02.webp",
+    "room": "entrance",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 53976
+  },
+  {
+    "file": "sakyo_storage_01.webp",
+    "room": "storage",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 65240
+  },
+  {
+    "file": "sakyo_stair_03.webp",
+    "room": "stair",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 93280
+  },
+  {
+    "file": "sakyo_toilet_01.webp",
+    "room": "toilet",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 114430
+  },
+  {
+    "file": "sakyo_storage_02.webp",
+    "room": "storage",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 62108
+  },
+  {
+    "file": "sakyo_wash_01.webp",
+    "room": "wash",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 69268
+  },
+  {
+    "file": "sakyo_wash_02.webp",
+    "room": "wash",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 62234
+  },
+  {
+    "file": "sakyo_bath_01.webp",
+    "room": "bath",
+    "property": "sakyo",
+    "tier": "card",
+    "bytes": 106688
+  },
+  {
+    "file": "miyamaki_living_01.webp",
+    "room": "living",
+    "property": "miyamaki",
+    "tier": "hero",
+    "bytes": 251902
+  },
+  {
+    "file": "miyamaki_living_02.webp",
+    "room": "living",
+    "property": "miyamaki",
+    "tier": "card",
+    "bytes": 159768
+  },
+  {
+    "file": "miyamaki_bedroom_01.webp",
+    "room": "bedroom",
+    "property": "miyamaki",
+    "tier": "card",
+    "bytes": 218712
+  },
+  {
+    "file": "miyamaki_bedroom_02.webp",
+    "room": "bedroom",
+    "property": "miyamaki",
+    "tier": "card",
+    "bytes": 63624
+  },
+  {
+    "file": "miyamaki_entrance_01.webp",
+    "room": "entrance",
+    "property": "miyamaki",
+    "tier": "card",
+    "bytes": 488430
+  },
+  {
+    "file": "standard_kitchen_01.webp",
+    "room": "kitchen",
+    "property": "standard",
+    "tier": "card",
+    "bytes": 96252
+  },
+  {
+    "file": "standard_ext_01.webp",
+    "room": "ext",
+    "property": "standard",
+    "tier": "card",
+    "bytes": 316746
+  },
+  {
+    "file": "standard_bath_01.webp",
+    "room": "bath",
+    "property": "standard",
+    "tier": "card",
+    "bytes": 120396
+  }
+]
