@@ -383,6 +383,78 @@
     .cue::after{animation:none}
   }
 
+  /* FVの横向きスマホ調整（高さが主制約＝フォント/位置をvh基準に圧縮。幅は760px超も対象=iPhone横持ち幅対策） */
+  @media (max-height:500px) and (orientation:landscape){
+    .hero{min-height:0}
+    .cue{display:none}
+    .st__act{top:calc(var(--header-h) + 4px);gap:8px}
+    .st__act::before{width:20px}
+    .st__act b{font-size:1.05rem}
+    .st__act i{font-size:.6rem}
+    .st__dots{bottom:4px}
+    .st__dot{width:22px;height:22px}
+
+    .intro{top:calc(env(safe-area-inset-top,0px) + var(--header-h) + 8px);bottom:auto;transform:none}
+    .intro h1{font-size:clamp(1.1rem,1rem + 3.2vh,1.6rem);line-height:1.4}
+    .intro .in-sub{margin-top:8px;font-size:clamp(.76rem,.7rem + .9vh,.92rem)}
+    .intro .in-note{margin-top:6px}
+
+    .cta-wrap{left:0;right:0;align-items:center;bottom:calc(env(safe-area-inset-bottom) + 8px);gap:6px}
+    .cta-invite{display:none}
+    .cta-row{gap:8px}
+    .cta{padding:9px 20px;min-height:36px;font-size:.82rem;border-radius:5px}
+    .cta svg{width:12px;height:12px}
+    .cta-ghost{padding:8px 10px;font-size:.76rem}
+
+    .st__eye{margin-bottom:8px;font-size:.56rem}
+    .st__eye::before{width:18px}
+
+    .st__a,.st__b{bottom:8vh}
+    .st__a .l1,.st__b .l1{font-size:clamp(.88rem,.7rem + 2.8vh,1.25rem);line-height:1.3}
+    .st__a .l2,.st__b .l2{font-size:clamp(1.5rem,1rem + 6vh,2.3rem);margin-top:4px;line-height:1.25}
+    .st__a .l2{margin-left:.6rem}
+    .st__b .l2{margin-right:.6rem}
+
+    .st__c .l1{font-size:clamp(.92rem,.7rem + 2.8vh,1.3rem);line-height:1.3}
+    .st__c .l2{font-size:clamp(1.6rem,1rem + 6.2vh,2.5rem);margin-top:6px}
+
+    .st__d{left:22px;right:22px;max-width:none}
+    .st__d .l1{font-size:clamp(.8rem,.65rem + 2.2vh,1.05rem);line-height:1.35}
+    .st__d .l2{font-size:clamp(1.3rem,.9rem + 4.4vh,1.9rem);margin:3px 0 8px .5rem;line-height:1.3}
+    .st__row{padding:5px 2px}
+    .st__row .k{font-size:clamp(.7rem,.6rem + 1.6vh,.88rem)}
+    .st__row .lead{min-width:12px}
+    .st__row .v{font-size:clamp(1.15rem,.8rem + 3.4vh,1.7rem)}
+    .st__chip{font-size:.54rem;padding:2px 6px}
+    .st__dnote{margin-top:6px;font-size:.6rem}
+
+    .st__pk{margin-bottom:8px;font-size:.56rem}
+    .st__pnum .dg>span{font-size:clamp(2rem,1.2rem + 8.6vh,3.4rem)}
+    .st__pnum .un{font-size:clamp(.95rem,.7rem + 3vh,1.5rem)}
+    .st__pline{margin:8px auto}
+    .st__ps{font-size:clamp(.95rem,.7rem + 3.2vh,1.4rem);line-height:1.4}
+    .st__pnote{margin-top:6px;font-size:.6rem}
+
+    .st__ehead{left:22px;right:22px;top:calc(var(--header-h) + 6px)}
+    .st__ehead .t{font-size:clamp(.8rem,.7rem + 1.8vh,1rem)}
+    .st__ehead .s{margin-top:4px;font-size:.66rem}
+    .st__room{font-size:clamp(1.7rem,1rem + 9vh,3rem)}
+    .st__sc.is-left .st__room{left:22px;bottom:calc(env(safe-area-inset-bottom) + 15vh)}
+    .st__sc.is-right .st__room{right:22px;bottom:calc(env(safe-area-inset-bottom) + 15vh)}
+    .st__sc.is-left .st__pled{left:22px;right:22px;bottom:calc(env(safe-area-inset-bottom) + 8vh)}
+    .st__sc.is-right .st__pled{right:22px;left:22px;bottom:calc(env(safe-area-inset-bottom) + 8vh);justify-content:flex-end}
+    .st__pled{display:flex;flex-wrap:wrap;gap:6px 8px;white-space:normal}
+    .st__ledger{font-size:.62rem;gap:8px}
+    .st__std{font-size:.56rem;padding:3px 7px 3px 8px}
+    .st__sc--at img{object-position:center 50%}
+
+    .st__f{left:22px;right:22px;top:44%}
+    .st__f .fn{font-size:clamp(1.8rem,1rem + 8.4vh,3.2rem)}
+    .st__f .fw{font-size:clamp(.84rem,.65rem + 2.6vh,1.25rem)}
+    .st__f .fl2{font-size:clamp(1.35rem,.9rem + 5vh,2.1rem);margin:6px 0 0 .6rem;line-height:1.3}
+    .st__f .st__ledger{margin:8px 0 0 .6rem;white-space:normal;flex-wrap:wrap;gap:6px 8px}
+  }
+
   /* ===================== 実績（生きた図面・動画背景＋製図インデックスバナー） ===================== */
   .authority{position:relative;overflow:hidden;isolation:isolate;color:var(--cream);background:#100d09;
     --gold:#D8B25A;--gold-hi:#FFF3D0;
@@ -1758,6 +1830,22 @@
     .iju.is-cine .iju__prog{width:min(520px,80vw)}
     .iju__foot{flex-direction:column;align-items:stretch;gap:24px}
     .iju__go{width:100%;justify-content:center}
+  }
+  /* 夜の帰路シネマの横向きスマホ調整（高さ主制約＝vh基準に圧縮） */
+  @media(max-height:500px) and (orientation:landscape){
+    .iju.is-cine .iju__stage{min-height:0}
+    .iju.is-cine .iju__hud{padding-top:calc(var(--header-h) + 4px)}
+    .iju.is-cine .iju__clock b{font-size:clamp(1rem,.8rem + 2.6vh,1.5rem)}
+    .iju.is-cine .iju__clock span{font-size:.7rem}
+    .iju.is-cine .iju__b1{bottom:9vh;font-size:clamp(.95rem,.75rem + 3vh,1.5rem)}
+    .iju.is-cine .iju__b1 s{margin-top:8px;font-size:.58rem}
+    .iju.is-cine .iju__b2{font-size:clamp(1.1rem,.85rem + 3.6vh,1.8rem)}
+    .iju.is-cine .iju__b3{gap:8px}
+    .iju.is-cine .iju__big{margin-bottom:0}
+    .iju.is-cine .iju__big b{font-size:clamp(2.2rem,1.4rem + 9vh,3.8rem)}
+    .iju__big span{font-size:clamp(.95rem,.75rem + 2.4vh,1.3rem)}
+    .iju__h2{font-size:clamp(1.05rem,.85rem + 3.6vh,1.6rem);line-height:1.4}
+    .iju.is-cine .iju__prog{bottom:8px;width:min(520px,70vw)}
   }
 </style>
 <section class="iju" id="iju" aria-label="奈良に住むという選択・大阪京都への通勤">
@@ -3184,7 +3272,7 @@
     hv.pause();
     while(hv.firstChild) hv.removeChild(hv.firstChild);
     hv.poster=mobile?'assets/fv_cine/poster_exterior_sp.webp':'assets/fv_cine/poster_exterior.webp';
-    hv.src=mobile?'assets/fv_cine/exterior_graded_sp.mp4':'assets/fv_cine/exterior_graded_pc.mp4';
+    hv.src=mobile?'assets/fv_cine/exterior_nb_sp.mp4':'assets/fv_cine/exterior_nb_pc.mp4';
     hv.load(); var p0=hv.play(); if(p0&&p0.catch)p0.catch(function(){});
   }catch(e){}
 
