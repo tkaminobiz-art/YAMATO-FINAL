@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>FV図面 ステップ送り版（fv_step）｜やまと不動産</title>
+<meta name="description" content="FVのステップ送り（1操作=1シーン）検証図面。標準装備8景＋承認済みコピー幕5景。">
+<!--
+  ============================================================
+  FV図面: ステップ送り版（案B / GSAP Observer）2026-08-18
+  ------------------------------------------------------------
+  目的:
+   1) 「スクロールが敏感すぎる」への根治 = 1ジェスチャー=1シーン。
+      速度依存とオーバーシュートが構造的に発生しない（c77e3ea の再発防止）
+   2) 標準装備を 5景→8景 に拡張（実写 assets/std/ ＝ 左京25MP源から現像）
+   3) srcset/picture の導入（PC 16:9 3段 ＋ SP 9:16 3段 / AVIF+WebP）
+  逃げ道（必須要件）:
+   - ドットナビ クリックで任意シーンへ / キーボード ↑↓ PgUp PgDn Home End
+   - 最終シーンで前進 → 解放して通常スクロール / 先頭上端で復帰
+   - prefers-reduced-motion / GSAP不成立 / ?static=1 → 全シーン縦積みの静的表示
+   - スキップリンク
+  コピーは index.html v4「あかりの物語・改」承認済み文言をそのまま使用。
+  変更点は2つだけ（いずれもクライアント指示）:
+   - 幕D脚注に 8/4指示書の例文「2,000万円規模の土地の場合…」を追加（指示#13）
+   - Vanityの台帳を「三面鏡・広収納」→「TOTO オクターブ Lite」へ
+     （パンフレットP.10/P.36で全グレード標準を確認済み。三面鏡は確認事項⑩）
+  未確定のため保留:
+   - ミライエの「標準」表記（確認事項⑬: パンフは耐震/制振の選択制）→ チップ無し
+   - シリーズカラー（確認事項③）/ Staff Check吹き出し（計画§6-Q5）→ 未適用
+   - Atriumの高解像度再ライト（Higgsfield要再認証）→ 現状は自然グレード版
+   - 幕E背景は poster_wall 静止画（統合時に wall_pc.mp4 ループへ差し替え）
+  ============================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Inter:wght@100;200;300;400&family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#100D0A; --bg2:#171310; --cream:#F3EEE3; --cream2:rgba(243,238,227,.72);
+    --gold:#C9A24B; --gold2:#E8C77D; --amber:#C4851F; --amber-d:#A56C12;
+    --line:rgba(243,238,227,.18);
+    --fj:"Shippori Mincho",serif;
+    --fg:"Zen Kaku Gothic New",sans-serif;
+    --fn:"Inter",sans-serif;
+    --fh:"Cormorant Garamond",serif;
+    --mx:clamp(22px,5vw,72px);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html.fvs-app{scroll-behavior:auto}
+  body{background:var(--bg);color:var(--cream);font-family:var(--fg);font-weight:300;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.9}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+
+  .skip{position:fixed;top:10px;left:10px;z-index:99;background:var(--cream);color:#221C14;
+    padding:10px 16px;border-radius:4px;font-size:.8rem;letter-spacing:.08em;text-decoration:none;
+    transform:translateY(-64px);transition:transform .25s}
+  .skip:focus-visible{transform:none}
+
+  /* ============ ステージ ============ */
+  .fvs{position:relative;background:var(--bg)}
+  html.fvs-app .fvs{height:100vh;height:100svh;overflow:hidden}
+  .fvs__scene{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;
+    overflow:hidden;padding:calc(env(safe-area-inset-top) + 56px) var(--mx) calc(env(safe-area-inset-bottom) + 64px)}
+  html.fvs-app .fvs__scene{position:absolute;inset:0;min-height:0}
+
+  /* 静的モード（JS無効/reduced-motion/?static=1）: 全景を縦積み・操作UIは出さない */
+  html.fvs-static .fvs__dots,html.fvs-static .fvs__count,html.fvs-static .fvs__hint{display:none}
+
+  /* ============ コピー幕 ============ */
+  .fvs__inner{max-width:1080px;width:100%;text-align:center}
+  .fvs__eyebrow{font-family:var(--fh);font-style:italic;font-size:clamp(.9375rem,.84rem + .5vw,1.08rem);
+    letter-spacing:.34em;color:var(--gold);margin-bottom:clamp(22px,4vh,44px)}
+  .fvs__line{font-family:var(--fj);font-weight:500;font-size:clamp(1.7rem,1.1rem + 3.4vw,3.6rem);
+    line-height:1.62;letter-spacing:.1em}
+  .fvs__sub{margin-top:clamp(18px,3.4vh,34px);font-size:clamp(.86rem,.8rem + .3vw,1rem);
+    letter-spacing:.12em;color:var(--cream2)}
+
+  /* 0円の台帳 */
+  .ledger{max-width:640px;margin:clamp(26px,4.5vh,48px) auto 0;text-align:left}
+  .ledger__row{display:flex;align-items:baseline;gap:14px;padding:clamp(12px,2vh,20px) 2px;
+    border-bottom:1px solid var(--line)}
+  .ledger__k{font-size:clamp(.92rem,.85rem + .4vw,1.12rem);letter-spacing:.14em;font-weight:400}
+  .ledger__lead{flex:1;border-bottom:1px dotted rgba(243,238,227,.34);transform:translateY(-4px)}
+  .ledger__v{font-family:var(--fn);font-weight:200;font-size:clamp(1.5rem,1.2rem + 1.6vw,2.4rem);letter-spacing:.04em}
+  .ledger__v small{font-size:.5em;font-family:var(--fg);font-weight:400;letter-spacing:.1em;margin-left:2px}
+  .ledger__chip{display:inline-block;margin-left:12px;font-size:.68rem;letter-spacing:.1em;color:var(--cream2);
+    border:1px solid var(--line);border-radius:99px;padding:3px 10px;white-space:nowrap}
+  .ledger__note{margin-top:clamp(16px,2.6vh,26px);font-size:clamp(.78rem,.74rem + .2vw,.9rem);
+    letter-spacing:.1em;color:var(--cream2);text-align:center}
+
+  /* 価格の祭壇 */
+  .price{display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;
+    gap:clamp(18px,4vw,64px);margin-top:clamp(22px,4vh,44px)}
+  .price__u{text-align:center}
+  .price__nm{font-family:var(--fj);font-weight:600;font-size:clamp(1rem,.9rem + .6vw,1.4rem);letter-spacing:.3em;color:var(--gold2)}
+  .price__v{font-family:var(--fn);font-weight:100;font-size:clamp(2.6rem,1.8rem + 4.6vw,5.4rem);letter-spacing:.02em;line-height:1.2}
+  .price__v small{font-size:.38em;font-family:var(--fj);font-weight:500;letter-spacing:.08em}
+  .price__chip{display:inline-block;margin-top:clamp(16px,2.6vh,26px);font-size:.78rem;letter-spacing:.22em;
+    color:var(--gold);border:1px solid rgba(201,162,75,.5);padding:7px 18px;border-radius:2px}
+
+  /* ============ 設備景 ============ */
+  .fvs__media,.fvs__media picture{position:absolute;inset:0}
+  .fvs__media img{width:100%;height:100%;object-fit:cover}
+  .fvs__scrim{position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(16,13,10,.42) 0%,rgba(16,13,10,0) 30%,rgba(16,13,10,0) 55%,rgba(16,13,10,.66) 100%)}
+  .fvs__scene--eq{padding:0}
+  .fvs__eqtxt{position:absolute;left:var(--mx);bottom:clamp(64px,11vh,120px);z-index:2;text-align:left}
+  .fvs__scene--eq.is-right .fvs__eqtxt{left:auto;right:var(--mx);text-align:right}
+  .fvs__room{font-family:var(--fn);font-weight:100;text-transform:uppercase;
+    font-size:clamp(2.6rem,1.6rem + 5.4vw,5.2rem);letter-spacing:.06em;line-height:1.05}
+  .fvs__pled{margin-top:14px;font-size:clamp(.8rem,.76rem + .25vw,.95rem);letter-spacing:.14em;display:flex;
+    align-items:center;gap:12px;flex-wrap:wrap}
+  .fvs__scene--eq.is-right .fvs__pled{justify-content:flex-end}
+  .fvs__pled .en{font-family:var(--fh);font-style:italic;letter-spacing:.26em;color:var(--gold2)}
+  .fvs__pled .dash{width:34px;height:1px;background:var(--gold);opacity:.7}
+  .chip{font-style:normal;font-family:var(--fj);font-weight:500;font-size:.66rem;letter-spacing:.22em;
+    color:var(--gold2);border:1px solid rgba(201,162,75,.6);padding:4px 10px 4px 12px;border-radius:2px;white-space:nowrap}
+
+  /* ============ 台帳グリッド（Finale） ============ */
+  .fvs__scene--grid{background:radial-gradient(120% 90% at 50% 0%,#1B1712 0%,var(--bg) 62%)}
+  .grid__head{text-align:center;margin-bottom:clamp(18px,3vh,32px)}
+  .grid__h{font-family:var(--fj);font-weight:600;font-size:clamp(1.3rem,1rem + 1.8vw,2.2rem);letter-spacing:.14em}
+  .grid__s{margin-top:10px;font-size:clamp(.76rem,.72rem + .25vw,.9rem);letter-spacing:.1em;color:var(--cream2)}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(8px,1.2vw,14px);
+    width:min(1060px,100%);margin:0 auto}
+  .g{position:relative;border-radius:4px;overflow:hidden;background:#1D1813}
+  .g::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(243,238,227,.09);border-radius:4px;pointer-events:none}
+  .g img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .g figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 10px 8px;
+    font-size:.66rem;letter-spacing:.08em;line-height:1.5;color:var(--cream);
+    background:linear-gradient(180deg,transparent,rgba(12,10,7,.82))}
+  .g .t{display:inline-block;margin-left:6px;font-size:.58rem;letter-spacing:.14em;color:var(--gold2)}
+  .grid__cta{margin-top:clamp(20px,3.4vh,38px);text-align:center}
+  .grid__cta p{font-family:var(--fj);font-weight:500;font-size:clamp(.95rem,.9rem + .4vw,1.2rem);
+    letter-spacing:.16em;margin-bottom:16px}
+  .btn{display:inline-block;font-size:.86rem;letter-spacing:.2em;text-decoration:none;
+    padding:14px 34px;border-radius:2px;margin:0 8px 10px}
+  .btn--fill{background:var(--amber);color:#fff}
+  .btn--fill:hover{background:var(--amber-d)}
+  .btn--ghost{border:1px solid var(--line);color:var(--cream)}
+  .btn--ghost:hover{border-color:var(--gold)}
+
+  /* ============ 操作UI ============ */
+  .fvs__dots{position:fixed;right:clamp(2px,1vw,14px);top:50%;transform:translateY(-50%);z-index:60;
+    display:flex;flex-direction:column;gap:0}
+  html.fvs-released .fvs__dots{opacity:0;pointer-events:none;transition:opacity .3s}
+  .fvs__dots button{appearance:none;border:0;background:none;cursor:pointer;padding:0;line-height:0;
+    width:44px;height:44px;display:grid;place-items:center}
+  .fvs__dots button::before{content:"";display:block;width:7px;height:7px;border-radius:50%;
+    background:rgba(243,238,227,.32);transition:transform .3s,background .3s}
+  .fvs__dots button[aria-current="true"]::before{background:var(--gold);transform:scale(1.5)}
+  .fvs__dots button:focus-visible{outline:1px solid var(--gold);outline-offset:2px;border-radius:50%}
+  .fvs__count{position:fixed;right:clamp(14px,2.2vw,30px);bottom:clamp(14px,3vh,26px);z-index:60;
+    font-family:var(--fn);font-weight:200;font-size:.8rem;letter-spacing:.24em;color:var(--cream2)}
+  html.fvs-released .fvs__count{opacity:0;transition:opacity .3s}
+  .fvs__hint{position:fixed;left:50%;bottom:clamp(12px,2.6vh,22px);transform:translateX(-50%);z-index:60;
+    font-size:1rem;letter-spacing:.18em;color:var(--cream2);display:flex;align-items:center;gap:10px;white-space:nowrap}
+  .fvs__hint::after{content:"";width:1px;height:26px;background:linear-gradient(180deg,var(--gold),transparent);
+    animation:cue 1.8s ease-in-out infinite}
+  html.fvs-released .fvs__hint{opacity:0;transition:opacity .3s}
+  @keyframes cue{0%{transform:scaleY(.2);transform-origin:top}55%{transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
+
+  /* ============ 図面メモ（解放後の通常スクロール領域） ============ */
+  .after{background:#F5F1E8;color:#241E16;padding:clamp(64px,10vh,120px) var(--mx)}
+  .after__in{max-width:36em;margin:0 auto}
+  .after h2{font-family:var(--fj);font-weight:600;font-size:clamp(1.2rem,1rem + 1vw,1.7rem);
+    letter-spacing:.14em;margin-bottom:22px}
+  .after p,.after li{font-size:1rem;line-height:2.05;letter-spacing:.05em;line-break:strict;overflow-wrap:break-word}
+  .after ul{list-style:none;margin:14px 0 30px}
+  .after li{padding-left:1.3em;text-indent:-1.3em}
+  .after li::before{content:"─";color:var(--amber);margin-right:.55em}
+  .after .small{font-size:1rem;color:#6B6154}
+
+  @media (max-width:700px){
+    .fvs__dots{display:none}
+    .grid{grid-template-columns:repeat(3,1fr)}
+    .g:nth-child(n+10){display:none} /* SPは9枚で1画面に収める */
+    .fvs__dots{gap:7px;right:8px}
+    .btn{display:block;margin:0 auto 12px;max-width:320px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .fvs__hint::after{animation:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#after">ステップ操作をスキップして図面メモへ</a>
+
+<section class="fvs" id="fvs" role="region" aria-label="やまと不動産の紹介（1操作で1シーン進みます）">
+
+  <!-- 01 幕A: 宛名（承認済みコピー） -->
+  <article class="fvs__scene" id="s01" data-name="宛名">
+    <div class="fvs__inner">
+      <p class="fvs__eyebrow" data-l>Yamato Fudosan ── Nara</p>
+      <p class="fvs__line" data-l>最近の物価高に、</p>
+      <p class="fvs__line" data-l>動揺した方へ。</p>
+    </div>
+  </article>
+
+  <!-- 02 幕B/C: 宛名2（承認済みコピー） -->
+  <article class="fvs__scene" id="s02" data-name="あきらめた方へ">
+    <div class="fvs__inner">
+      <p class="fvs__eyebrow" data-l>To You</p>
+      <p class="fvs__line" data-l>家を買う夢を、あきらめた方へ。</p>
+      <p class="fvs__sub" data-l>やまと不動産なら、お役に立てるかもしれません。</p>
+    </div>
+  </article>
+
+  <!-- 03 幕D: 0円の台帳（承認済み＋8/4指示#13の例文を脚注に追加） -->
+  <article class="fvs__scene" id="s03" data-name="0円の台帳">
+    <div class="fvs__inner">
+      <p class="fvs__line" data-l style="font-size:clamp(1.4rem,1rem + 2.6vw,2.7rem)">他社ではかかる費用が、<br>やまとでは0円です。</p>
+      <div class="ledger">
+        <div class="ledger__row" data-l>
+          <span class="ledger__k">地盤改良費</span><span class="ledger__lead"></span>
+          <span class="ledger__v">0<small>円</small></span><em class="ledger__chip">一般メーカーは120〜150万円</em>
+        </div>
+        <div class="ledger__row" data-l>
+          <span class="ledger__k">つなぎ融資</span><span class="ledger__lead"></span>
+          <span class="ledger__v">0<small>円</small></span><em class="ledger__chip">建物完成後に一括支払い</em>
+        </div>
+        <div class="ledger__row" data-l>
+          <span class="ledger__k">仲介手数料</span><span class="ledger__lead"></span>
+          <span class="ledger__v">0<small>円</small></span><em class="ledger__chip">すべて自社所有の土地</em>
+        </div>
+      </div>
+      <p class="ledger__note" data-l>土地測量費・土地造成費・水道工事変更費も0円です。<br>
+      2,000万円規模の土地の場合、通常400万円〜470万円かかる費用が全て0円です。</p>
+    </div>
+  </article>
+
+  <!-- 04 幕P: 価格の祭壇（承認済みコピー） -->
+  <article class="fvs__scene" id="s04" data-name="価格">
+    <div class="fvs__inner">
+      <p class="fvs__eyebrow" data-l>Price ── 花鳥風月・やまとの家</p>
+      <div class="price">
+        <div class="price__u" data-l>
+          <p class="price__nm">京</p>
+          <p class="price__v">2,480<small>万円</small></p>
+        </div>
+        <div class="price__u" data-l>
+          <p class="price__nm">花・風</p>
+          <p class="price__v">2,680<small>万円</small></p>
+        </div>
+      </div>
+      <p class="fvs__sub" data-l>この価格で、本当に高品質の家が建ちます。</p>
+      <p data-l><span class="price__chip">コミコミ価格・税込</span></p>
+    </div>
+  </article>
+
+  <!-- 05 幕E: 10年後50年後（背景は静止画。統合時に wall_pc.mp4 ループへ） -->
+  <article class="fvs__scene fvs__scene--eq" id="s05" data-name="外壁">
+    <div class="fvs__media"><img src="assets/fv_cine/poster_wall.webp" alt="夕景に浮かぶヘーベルパワーボードの外壁" decoding="async"></div>
+    <span class="fvs__scrim"></span>
+    <div class="fvs__eqtxt">
+      <p class="fvs__line" data-l style="font-size:clamp(1.5rem,1.1rem + 2.6vw,2.9rem);text-align:left">10年後、50年後に、<br>違いがわかります。</p>
+      <p class="fvs__pled" data-l><span class="en">Wall</span><span class="dash"></span>旭化成 ヘーベルパワーボード<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <!-- 06 Kitchen -->
+  <article class="fvs__scene fvs__scene--eq" id="s06" data-name="キッチン">
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/kitchen_sp_720.webp 720w, assets/std/kitchen_sp_1080.webp 1080w, assets/std/kitchen_sp_1440.webp 1440w" sizes="100vw">
+        <img src="assets/std/kitchen_1920.webp" srcset="assets/std/kitchen_1100.webp 1100w, assets/std/kitchen_1920.webp 1920w, assets/std/kitchen_2560.webp 2560w" sizes="100vw" alt="ウォールナットの折り下げ天井とクリナップ ステディアのキッチン" decoding="async">
+      </picture>
+    </div>
+    <span class="fvs__scrim"></span>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Kitchen</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>クリナップ ステディア<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <!-- 07 Bath -->
+  <article class="fvs__scene fvs__scene--eq is-right" id="s07" data-name="浴室">
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/bath_sp_720.webp 720w, assets/std/bath_sp_1080.webp 1080w, assets/std/bath_sp_1440.webp 1440w" sizes="100vw">
+        <img src="assets/std/bath_1920.webp" srcset="assets/std/bath_1100.webp 1100w, assets/std/bath_1920.webp 1920w, assets/std/bath_2560.webp 2560w" sizes="100vw" alt="TOTO サザナの浴室" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <span class="fvs__scrim"></span>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Bath</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>TOTO サザナ<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <!-- 08 Vanity（台帳をパンフレット確定の実仕様へ: TOTO オクターブ Lite） -->
+  <article class="fvs__scene fvs__scene--eq" id="s08" data-name="洗面">
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/vanity_sp_720.webp 720w, assets/std/vanity_sp_1080.webp 1080w, assets/std/vanity_sp_1440.webp 1440w" sizes="100vw">
+        <img src="assets/std/vanity_1920.webp" srcset="assets/std/vanity_1100.webp 1100w, assets/std/vanity_1920.webp 1920w, assets/std/vanity_2560.webp 2560w" sizes="100vw" alt="TOTO オクターブ Liteの洗面室" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <span class="fvs__scrim"></span>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Vanity</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>TOTO オクターブ Lite<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <!-- 09 Living -->
+  <article class="fvs__scene fvs__scene--eq is-right" id="s09" data-name="リビング">
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/living_sp_720.webp 720w, assets/std/living_sp_1080.webp 1080w, assets/std/living_sp_1440.webp 1440w" sizes="100vw">
+        <img src="assets/std/living_1920.webp" srcset="assets/std/living_1100.webp 1100w, assets/std/living_1920.webp 1920w, assets/std/living_2560.webp 2560w" sizes="100vw" alt="ハイドア2.3mのリビング" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <span class="fvs__scrim"></span>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Living</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>天井高2.4m・ハイドア2.3m<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <!-- 10 Tatami（新設: DAIKEN 和紙畳 ここち和座 = パンフレットP.18/P.36 全グレード共通） -->
+  <article class="fvs__scene fvs__scene--eq" id="s10" data-name="和室">
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/washitsu_sp_720.webp 720w, assets/std/washitsu_sp_1080.webp 1080w, assets/std/washitsu_sp_1440.webp 1440w" sizes="100vw">
+        <img src="assets/std/washitsu_1920.webp" srcset="assets/std/washitsu_1100.webp 1100w, assets/std/washitsu_1920.webp 1920w, assets/std/washitsu_2560.webp 2560w" sizes="100vw" alt="半畳縁なし畳の和室" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <span class="fvs__scrim"></span>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Tatami</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>DAIKEN 和紙畳 ここち和座<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <!-- 11 Entrance（新設: LIXIL ジエスタ2 = パンフレットP.20/P.37 全グレード） -->
+  <article class="fvs__scene fvs__scene--eq is-right" id="s11" data-name="玄関">
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/entrance_sp_720.webp 720w, assets/std/entrance_sp_1080.webp 1080w, assets/std/entrance_sp_1440.webp 1440w" sizes="100vw">
+        <img src="assets/std/entrance_1920.webp" srcset="assets/std/entrance_1100.webp 1100w, assets/std/entrance_1920.webp 1920w, assets/std/entrance_2560.webp 2560w" sizes="100vw" alt="木目の玄関ドア ジエスタ2と格子のポーチ" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <span class="fvs__scrim"></span>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Entrance</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>LIXIL ジエスタ2<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <!-- 12 Atrium（自由設計。※高解像度再ライトは Higgsfield 再認証後に差し替え） -->
+  <article class="fvs__scene fvs__scene--eq" id="s12" data-name="吹き抜け">
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/atrium_720.webp 720w, assets/std/atrium_1080.webp 1080w, assets/std/atrium_1440.webp 1440w" sizes="100vw">
+        <img src="assets/std/atrium_w_1920.webp" srcset="assets/std/atrium_w_1100.webp 1100w, assets/std/atrium_w_1920.webp 1920w, assets/std/atrium_w_2560.webp 2560w" sizes="100vw" alt="吹き抜けの階段ホール" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <span class="fvs__scrim"></span>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Atrium</p>
+      <p class="fvs__pled" data-l><span class="en">Design</span><span class="dash"></span>吹き抜け・天井を上げる<em class="chip">自由設計</em></p>
+    </div>
+  </article>
+
+  <!-- 13 Finale: 標準の台帳グリッド -->
+  <article class="fvs__scene fvs__scene--grid" id="s13" data-name="標準の台帳">
+    <div style="width:100%">
+      <div class="grid__head">
+        <p class="grid__h" data-l>標準装備が、充実しています。</p>
+        <p class="grid__s" data-l>オプションだと思っていた設備が、はじめから付いています。仕様はシリーズにより異なります。</p>
+      </div>
+      <div class="grid">
+        <figure class="g" data-l><img src="assets/std/kitchen_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>キッチン ステディア<span class="t">標準</span></figcaption></figure>
+        <figure class="g" data-l><img src="assets/std/bath_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>浴室 サザナ<span class="t">標準</span></figcaption></figure>
+        <figure class="g" data-l><img src="assets/std/vanity_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>洗面 オクターブ Lite<span class="t">標準</span></figcaption></figure>
+        <figure class="g" data-l><img src="assets/std/living_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>ハイドア 2.3m<span class="t">標準</span></figcaption></figure>
+        <figure class="g" data-l><img src="assets/std/washitsu_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>和紙畳 ここち和座<span class="t">標準</span></figcaption></figure>
+        <figure class="g" data-l><img src="assets/std/entrance_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>玄関ドア ジエスタ2<span class="t">標準</span></figcaption></figure>
+        <figure class="g" data-l><img src="assets/std/porch_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>玄関タイル（磁器）<span class="t">標準</span></figcaption></figure>
+        <figure class="g" data-l><img src="assets/std/stairs_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>内装階段<span class="t">標準</span></figcaption></figure>
+        <figure class="g" data-l><img src="assets/std/walltex_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>外壁 ヘーベルパワーボード<span class="t">標準</span></figcaption></figure>
+        <figure class="g" data-l><img src="assets/std/nokiten_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>軒天（木目）<span class="t">標準</span></figcaption></figure>
+        <!-- ミライエ: 標準表記は確認事項⑬（耐震/制振の選択制の可能性）につきチップ無し -->
+        <figure class="g" data-l><img src="assets/std/miraie_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>制振ダンパー ミライエ</figcaption></figure>
+        <figure class="g" data-l><img src="assets/std/atrium_720.webp" alt="" loading="lazy" decoding="async"><figcaption>吹き抜け<span class="t">自由設計</span></figcaption></figure>
+      </div>
+      <div class="grid__cta" data-l>
+        <p>やまと不動産の家を、見に来てください。</p>
+        <a class="btn btn--fill" href="contact.html?type=reserve">モデルハウスを予約する</a>
+        <a class="btn btn--ghost" href="contact.html?type=docs">資料を請求する</a>
+      </div>
+    </div>
+  </article>
+
+  <nav class="fvs__dots" aria-label="シーン移動"></nav>
+  <p class="fvs__count" aria-hidden="true"><span id="cNow">01</span> / <span id="cAll">13</span></p>
+  <p class="fvs__hint" aria-hidden="true">スクロール／スワイプで次へ</p>
+</section>
+
+<!-- 解放後の通常スクロール領域 -->
+<section class="after" id="after">
+  <div class="after__in">
+    <h2>図面メモ ── fv_step.html</h2>
+    <p>この図面は「1操作＝1シーン」のステップ送りを検証するものです。マウスホイール・トラックパッド・スワイプ・キーボード（↑↓ / PageUp・PageDown / Home・End）のどれでも、1回の操作で1シーンだけ進みます。PCでは右端のドットをクリックすると任意のシーンへ移動できます。最終シーンのあとは、この領域のとおり通常のスクロールに戻ります。ページ最上部まで戻ると、再びステップ操作になります。</p>
+    <ul>
+      <li>コピーは index.html v4「あかりの物語・改」の承認済み文言をそのまま使用しています。</li>
+      <li>幕Dの脚注「2,000万円規模の土地の場合…」は 8/4 編集指示書の例文を反映した追加です。</li>
+      <li>洗面の台帳は「TOTO オクターブ Lite」に更新しています（パンフレットP.10・P.36で全グレード標準を確認）。</li>
+      <li>写真はすべて左京モデルハウス＝やまとランドの実写です（25MP源から現像。PC 16:9／SP 9:16 の2構図・3サイズ・AVIF+WebP）。</li>
+      <li>ミライエの「標準」表記は保留中です（パンフレットは耐震／制振の選択制。確認事項⑬）。</li>
+      <li>統合時のTODO: 幕Eをwall動画ループへ／Atriumの高解像度再ライト（Higgsfield）／メーカー図解の空枠／Staff Check吹き出しの採否／シリーズカラー。</li>
+    </ul>
+    <p class="small">JSが無効の環境や、視差効果を減らす設定の環境では、<br>全シーンを縦に並べた静的表示になります。<br>URLに ?static=1 を付けても同じ表示を確認できます。</p>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Observer.min.js" integrity="sha384-KeRvMDjbVCiHOnTtiH71iO/kgJyOwgIrQXhyLo4qgVGDnw5aFdogZh34WVfj/D1q" crossorigin="anonymous"></script>
+<script>
+(function(){
+  var d=document, root=d.documentElement;
+  var qs=new URLSearchParams(location.search);
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ok=!!(window.gsap && window.Observer) && !reduce && qs.get('static')!=='1';
+  if(!ok){ root.classList.add('fvs-static'); return; }
+
+  gsap.registerPlugin(Observer);
+  root.classList.add('fvs-app');
+
+  var scenes=[].slice.call(d.querySelectorAll('.fvs__scene'));
+  var N=scenes.length;
+  var dotsNav=d.querySelector('.fvs__dots');
+  var cNow=d.getElementById('cNow');
+  d.getElementById('cAll').textContent=String(N).padStart(2,'0');
+
+  /* ドット生成 */
+  var dots=scenes.map(function(sc,idx){
+    var b=d.createElement('button');
+    b.type='button';
+    b.setAttribute('aria-label','シーン'+(idx+1)+'（'+(sc.getAttribute('data-name')||'')+'）へ');
+    b.addEventListener('click',function(){ go(idx); });
+    dotsNav.appendChild(b);
+    return b;
+  });
+
+  var i=0, animating=false, released=false, releasedAt=0;
+
+  gsap.set(scenes,{autoAlpha:0});
+  gsap.set(scenes[0],{autoAlpha:1});
+  sync();
+  introIn(scenes[0]);
+
+  function sync(){
+    dots.forEach(function(b,idx){ b.setAttribute('aria-current', idx===i ? 'true':'false'); });
+    cNow.textContent=String(i+1).padStart(2,'0');
+  }
+  function introIn(sc){
+    var parts=sc.querySelectorAll('[data-l]');
+    gsap.fromTo(parts,{y:34,autoAlpha:0},{y:0,autoAlpha:1,duration:.9,stagger:.07,ease:'power3.out',delay:.1,overwrite:'auto'});
+    var m=sc.querySelector('.fvs__media');
+    if(m) gsap.fromTo(m,{scale:1.05},{scale:1,duration:1.4,ease:'power2.out',overwrite:'auto'});
+  }
+  function go(n){
+    n=Math.max(0,Math.min(N-1,n));
+    if(n===i || animating) return;
+    animating=true;
+    var cur=scenes[i], nxt=scenes[n], dir=n>i?1:-1;
+    i=n; sync();
+    gsap.timeline({onComplete:function(){ animating=false; }})
+      .set(nxt,{autoAlpha:1},0)
+      .fromTo(nxt,{y:26*dir},{y:0,duration:.85,ease:'power3.out'},0)
+      .to(cur,{autoAlpha:0,duration:.5,ease:'power1.inOut'},0)
+      .set(cur,{y:0});
+    introIn(nxt);
+  }
+  function next(){ if(animating) return; if(i>=N-1){ release(); return; } go(i+1); }
+  function prev(){ if(animating) return; go(i-1); }
+
+  function release(){
+    if(released) return;
+    released=true; releasedAt=Date.now();
+    obs.disable();
+    root.classList.add('fvs-released');
+    d.getElementById('after').scrollIntoView({behavior:'smooth'});
+  }
+  function reenter(){
+    released=false;
+    obs.enable();
+    root.classList.remove('fvs-released');
+  }
+  addEventListener('scroll',function(){
+    if(released && window.scrollY<=0 && Date.now()-releasedAt>800) reenter();
+  },{passive:true});
+
+  /* 1ジェスチャー=1シーン（GSAP公式のセクション送りパターン。wheelSpeed:-1でホイール下=next） */
+  var obs=Observer.create({
+    target:window,
+    type:'wheel,touch,pointer',
+    wheelSpeed:-1,
+    tolerance:10,
+    preventDefault:true,
+    allowClicks:true,
+    onDown:function(){ prev(); },
+    onUp:function(){ next(); }
+  });
+
+  addEventListener('keydown',function(e){
+    if(released) return;
+    var k=e.key;
+    if(k==='ArrowDown'||k==='PageDown'||k===' '){ e.preventDefault(); next(); }
+    else if(k==='ArrowUp'||k==='PageUp'){ e.preventDefault(); prev(); }
+    else if(k==='Home'){ e.preventDefault(); go(0); }
+    else if(k==='End'){ e.preventDefault(); go(N-1); }
+  });
+
+  /* スキップリンク: 解放してから飛ぶ */
+  d.querySelector('.skip').addEventListener('click',function(){ release(); });
+
+  /* リロード時にページ中腹にいる場合はステップを解放状態で開始 */
+  if(window.scrollY>10){ released=true; releasedAt=Date.now(); obs.disable(); root.classList.add('fvs-released'); }
+
+  /* 検証用フック */
+  window.__fvs={ go:go, next:next, prev:prev, idx:function(){return i;}, release:release };
+})();
+</script>
+</body>
+</html>
