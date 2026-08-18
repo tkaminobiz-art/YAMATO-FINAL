@@ -21,10 +21,13 @@
    - prefers-reduced-motion / GSAP不成立 / ?static=1 → 全シーン縦積みの静的表示
    - スキップリンク
   コピーは index.html v4「あかりの物語・改」承認済み文言をそのまま使用。
-  変更点は2つだけ（いずれもクライアント指示）:
+  変更点は4つ（前2つはクライアント指示、後2つは 8/18 内部指示）:
    - 幕D脚注に 8/4指示書の例文「2,000万円規模の土地の場合…」を追加（指示#13）
    - Vanityの台帳を「三面鏡・広収納」→「TOTO オクターブ Lite」へ
      （パンフレットP.10/P.36で全グレード標準を確認済み。三面鏡は確認事項⑩）
+   - 幕Aに導入行「住宅価格が、目まぐるしい速度で上がっています。」を追加
+   - 幕Bの主役を「やまと不動産なら、お役に立てるかもしれません。」に復帰
+     （v4では独立幕。当図面の初版で添え書きに降格していたのを修正）
   未確定のため保留:
    - ミライエの「標準」表記（確認事項⑬: パンフは耐震/制振の選択制）→ チップ無し
    - シリーズカラー（確認事項③）/ Staff Check吹き出し（計画§6-Q5）→ 未適用
@@ -47,6 +50,7 @@
     --mx:clamp(22px,5vw,72px);
   }
   *{margin:0;padding:0;box-sizing:border-box}
+  .spbr{display:none}
   html{scroll-behavior:smooth}
   html.fvs-app{scroll-behavior:auto}
   body{background:var(--bg);color:var(--cream);font-family:var(--fg);font-weight:300;
@@ -72,11 +76,15 @@
   /* ============ コピー幕 ============ */
   .fvs__inner{max-width:1080px;width:100%;text-align:center}
   .fvs__eyebrow{font-family:var(--fh);font-style:italic;font-size:clamp(.9375rem,.84rem + .5vw,1.08rem);
-    letter-spacing:.34em;color:var(--gold);margin-bottom:clamp(22px,4vh,44px)}
-  .fvs__line{font-family:var(--fj);font-weight:500;font-size:clamp(1.7rem,1.1rem + 3.4vw,3.6rem);
-    line-height:1.62;letter-spacing:.1em}
+    letter-spacing:.28em;color:var(--gold);margin-bottom:clamp(18px,3.4vh,40px);white-space:nowrap}
+  .fvs__line{font-family:var(--fj);font-weight:500;font-size:clamp(1.42rem,.9rem + 3vw,3.6rem);
+    line-height:1.6;letter-spacing:.08em}
   .fvs__sub{margin-top:clamp(18px,3.4vh,34px);font-size:clamp(.86rem,.8rem + .3vw,1rem);
     letter-spacing:.12em;color:var(--cream2)}
+  .fvs__lead{font-size:clamp(1rem,.92rem + .4vw,1.15rem);letter-spacing:.1em;color:var(--cream2);
+    margin-bottom:clamp(10px,2vh,22px)}
+  .fvs__line--dim{font-size:clamp(1.15rem,.85rem + 2vw,2.2rem);color:var(--cream2);
+    margin-bottom:clamp(10px,2vh,20px)}
 
   /* 0円の台帳 */
   .ledger{max-width:640px;margin:clamp(26px,4.5vh,48px) auto 0;text-align:left}
@@ -175,7 +183,9 @@
   .after .small{font-size:1rem;color:#6B6154}
 
   @media (max-width:700px){
+    .spbr{display:inline}
     .fvs__dots{display:none}
+    .fvs__count{top:calc(env(safe-area-inset-top) + 14px);bottom:auto;right:16px}
     .grid{grid-template-columns:repeat(3,1fr)}
     .g:nth-child(n+10){display:none} /* SPは9枚で1画面に収める */
     .fvs__dots{gap:7px;right:8px}
@@ -195,6 +205,7 @@
   <article class="fvs__scene" id="s01" data-name="宛名">
     <div class="fvs__inner">
       <p class="fvs__eyebrow" data-l>Yamato Fudosan ── Nara</p>
+      <p class="fvs__lead" data-l>住宅価格が、<br class="spbr">目まぐるしい速度で上がっています。</p>
       <p class="fvs__line" data-l>最近の物価高に、</p>
       <p class="fvs__line" data-l>動揺した方へ。</p>
     </div>
@@ -204,8 +215,8 @@
   <article class="fvs__scene" id="s02" data-name="あきらめた方へ">
     <div class="fvs__inner">
       <p class="fvs__eyebrow" data-l>To You</p>
-      <p class="fvs__line" data-l>家を買う夢を、あきらめた方へ。</p>
-      <p class="fvs__sub" data-l>やまと不動産なら、お役に立てるかもしれません。</p>
+      <p class="fvs__line fvs__line--dim" data-l>家を買う夢を、<br class="spbr">あきらめた方へ。</p>
+      <p class="fvs__line" data-l>やまと不動産なら、<br>お役に立てる<br class="spbr">かもしれません。</p>
     </div>
   </article>
 
@@ -409,6 +420,7 @@
     <ul>
       <li>コピーは index.html v4「あかりの物語・改」の承認済み文言をそのまま使用しています。</li>
       <li>幕Dの脚注「2,000万円規模の土地の場合…」は 8/4 編集指示書の例文を反映した追加です。</li>
+      <li>幕Aの導入行「住宅価格が…」と、幕Bの主役を「お役に立てるかもしれません。」へ戻した2点は 8/18 の調整です。</li>
       <li>洗面の台帳は「TOTO オクターブ Lite」に更新しています（パンフレットP.10・P.36で全グレード標準を確認）。</li>
       <li>写真はすべて左京モデルハウス＝やまとランドの実写です（25MP源から現像。PC 16:9／SP 9:16 の2構図・3サイズ・AVIF+WebP）。</li>
       <li>ミライエの「標準」表記は保留中です（パンフレットは耐震／制振の選択制。確認事項⑬）。</li>
