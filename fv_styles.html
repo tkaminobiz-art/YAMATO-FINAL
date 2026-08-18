@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>FVビジュアル刷新 5方向比較｜検討シート</title>
+<!--
+  検討シート（brand_preview.html と同格の内部資料。本番導線に接続しない）
+  幕A「最近の物価高に、動揺した方へ。」を5方向のビジュアルで組んだ比較。
+  詳細: アイデア集_FVビジュアル刷新_20260818.md
+  書体注意: 本命displayは DNP秀英角ゴ銀(Typekit)だが、ローカルはドメインロックで
+  フォールバックするため、本シートは Zen Kaku Gothic New で代替表示している。
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Old+Mincho:wght@500;600&family=Yuji+Syuku&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4F1EA; --sumi:#2B2B2B; --gold:#C9A24B; --gold2:#E8C77D;
+    --shu:#C64A00; /* パンフ実測の朱赤 */
+    --void:#100D0A; --cream:#F3EEE3; --cream2:rgba(243,238,227,.72);
+    --fg:"Zen Kaku Gothic New",sans-serif;
+    --fm:"Zen Old Mincho",serif;
+    --fb:"Yuji Syuku",serif;
+    --fn:"Inter",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#EEEAE1;color:var(--sumi);font-family:var(--fg);font-weight:400;line-height:1.9;
+    padding:clamp(20px,4vw,56px) clamp(16px,4vw,56px) 96px}
+  .head{max-width:1100px;margin:0 auto clamp(28px,5vh,52px)}
+  .head h1{font-size:clamp(1.25rem,1rem + 1.4vw,1.9rem);font-weight:500;letter-spacing:.12em}
+  .head p{margin-top:10px;font-size:clamp(.875rem,.85rem+.2vw,1rem);color:#6B6154;max-width:40em}
+  .unit{max-width:1100px;margin:0 auto clamp(40px,7vh,72px)}
+  .unit h2{font-size:clamp(1rem,.9rem + .6vw,1.25rem);font-weight:500;letter-spacing:.1em;margin-bottom:6px}
+  .unit .note{font-size:clamp(.8rem,.78rem+.15vw,.9rem);color:#6B6154;margin-bottom:14px;max-width:44em}
+  .stage{position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;
+    box-shadow:0 10px 40px rgba(30,24,14,.14)}
+  @media (max-width:700px){.stage{aspect-ratio:3/4}}
+  .stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+  /* ---- 共通の文字部品 ---- */
+  .eyebrow{font-family:var(--fg);font-weight:400;font-size:clamp(.72rem,.68rem+.3vw,.9rem);
+    letter-spacing:.3em;color:var(--gold)}
+  .line{font-family:var(--fg);font-weight:500;letter-spacing:.1em;line-height:1.7;
+    font-size:clamp(1.15rem,.7rem + 2.6vw,2.6rem)}
+  .chip{display:inline-block;font-size:clamp(.66rem,.62rem+.2vw,.78rem);letter-spacing:.22em;color:var(--gold2);
+    border:1px solid rgba(201,162,75,.65);padding:4px 12px;border-radius:2px}
+
+  /* ============ A 夜の劇場 ============ */
+  .A{background:var(--void)}
+  .A .bgph{opacity:.34;filter:blur(26px) saturate(1.05);transform:scale(1.18)}
+  .A::before,.A::after{content:"";position:absolute;left:0;right:0;height:18%;z-index:2;pointer-events:none}
+  .A::before{top:0;background:linear-gradient(180deg,rgba(201,162,75,.16),transparent 70%);
+    border-top:1px solid rgba(201,162,75,.5)}
+  .A::after{bottom:0;background:linear-gradient(0deg,rgba(16,13,10,.9),transparent)}
+  .A .in{position:absolute;inset:0;z-index:3;display:grid;place-items:center;text-align:center;color:var(--cream);padding:6%}
+  .A .rule{width:56px;height:1px;background:var(--gold);margin:14px auto}
+  .A .act{position:absolute;top:5%;right:5%;z-index:3;font-family:var(--fn);font-weight:200;color:var(--cream2);
+    font-size:clamp(.8rem,.75rem+.3vw,1rem);letter-spacing:.24em}
+
+  /* ============ B 紙と金 ============ */
+  .B{background:var(--paper)}
+  .B .washi{position:absolute;inset:0;opacity:.5;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .38 0 0 0 0 .30 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .B .shu{position:absolute;top:0;bottom:0;right:0;width:26%;background:var(--shu)}
+  .B .shu::after{content:"";position:absolute;top:8%;bottom:8%;left:14px;width:1px;background:rgba(232,199,125,.75)}
+  .B .fude{position:absolute;top:7%;right:9%;writing-mode:vertical-rl;font-family:var(--fb);
+    font-size:clamp(1.3rem,1rem + 2.2vw,2.6rem);color:#F6E9D2;letter-spacing:.14em}
+  .B .in{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;
+    padding:6% 32% 6% 7%;color:var(--sumi)}
+  .B .eyebrow{color:#8A6D4B}
+  .B .line{color:#241E16}
+  .B .kin{width:64px;height:1px;background:var(--gold);margin:16px 0}
+  .B .lead{font-size:clamp(.8rem,.76rem+.3vw,1rem);letter-spacing:.1em;color:#5C5346}
+  @media (max-width:700px){.B .in{padding:8% 30% 8% 7%}}
+
+  /* ============ C 引き算 ============ */
+  .C .scrim{position:absolute;inset:0;background:linear-gradient(200deg,rgba(12,10,7,.05) 40%,rgba(12,10,7,.62) 100%)}
+  .C .in{position:absolute;left:6%;bottom:9%;color:var(--cream)}
+  .C .line{font-weight:300;letter-spacing:.14em;font-size:clamp(1rem,.7rem + 1.6vw,1.7rem)}
+  .C .sub{margin-top:8px;font-size:clamp(.72rem,.68rem+.2vw,.85rem);letter-spacing:.3em;color:var(--cream2)}
+
+  /* ============ D golden連続＋ガラス ============ */
+  .D .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,10,7,.2),rgba(12,10,7,.45))}
+  .D .glass{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(560px,84%);
+    padding:clamp(18px,3.4vw,34px) clamp(20px,3.8vw,40px);text-align:center;color:var(--cream);
+    background:rgba(16,13,10,.42);border:1px solid rgba(243,238,227,.16);border-radius:8px;
+    backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);
+    box-shadow:0 8px 40px rgba(0,0,0,.35)}
+  .D .rule{width:46px;height:1px;background:var(--gold);margin:12px auto}
+
+  /* ============ E 縦組帯 ============ */
+  .E{background:var(--void)}
+  .E .band{position:absolute;top:0;bottom:0;left:0;width:17%;background:var(--paper);z-index:3;
+    display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:5% 0}
+  .E .band::after{content:"";position:absolute;top:0;bottom:0;right:0;width:1px;background:rgba(201,162,75,.5)}
+  .E .sho{writing-mode:vertical-rl;font-family:var(--fm);font-weight:600;color:#241E16;
+    font-size:clamp(.9rem,.8rem+.6vw,1.3rem);letter-spacing:.3em}
+  .E .num{font-family:var(--fn);font-weight:200;color:#8A6D4B;font-size:clamp(.78rem,.74rem+.2vw,.9rem);letter-spacing:.2em}
+  .E .ph{position:absolute;inset:0 0 0 17%}
+  .E .ph img{opacity:.9}
+  .E .scrim{position:absolute;inset:0 0 0 17%;background:linear-gradient(190deg,rgba(12,10,7,.1),rgba(12,10,7,.6))}
+  .E .in{position:absolute;left:24%;bottom:10%;color:var(--cream);z-index:2}
+
+  .cap{margin-top:12px;font-size:clamp(.8rem,.78rem+.15vw,.9rem);color:#6B6154;max-width:46em}
+  .cap b{color:#241E16;font-weight:500}
+</style>
+</head>
+<body>
+<div class="head">
+  <h1>FVビジュアル刷新 ── 5方向比較（検討シート）</h1>
+  <p>幕A「最近の物価高に、動揺した方へ。」を5つの方向で組んだもの。ステップ送りの機構は全案共通で、変わるのは背景と書体。設計意図は アイデア集_FVビジュアル刷新_20260818.md を参照。本シートの見出しはローカル都合で Zen Kaku Gothic New 表示（本実装は秀英角ゴ銀）。</p>
+</div>
+
+<section class="unit">
+  <h2>案A 「夜の劇場」── v4の舞台美術をステップ版に移植</h2>
+  <p class="note">黒ベタをやめ、golden hour実写を大きくぼかした暗幕に。金縁の緞帳・罫・章番号が戻る。リスク最小の正統進化。</p>
+  <div class="stage A">
+    <img class="bgph" src="assets/std/living_1920.webp" alt="">
+    <p class="act">ACT 01</p>
+    <div class="in">
+      <div>
+        <p class="eyebrow">YAMATO FUDOSAN ── NARA</p>
+        <div class="rule"></div>
+        <p class="line">最近の物価高に、<br>動揺した方へ。</p>
+      </div>
+    </div>
+  </div>
+  <p class="cap"><b>参照:</b> NOT A HOTEL／SANU（フルブリード＋極小タイポ型）＋承認済みv4の緞帳意匠。<b>書体:</b> 秀英角ゴ銀 M 細身×字間0.1em。</p>
+</section>
+
+<section class="unit">
+  <h2>案B 「花鳥風月・紙と金」── パンフレットと同じ世界を開く（推奨主軸）</h2>
+  <p class="note">画面を「紙」にする。生成りの和紙面＋パンフ実測の朱赤 #C64A00 ＋金罫。頁をめくるステップ演出と意味が噛み合う。毛筆はパンフ入稿ロゴを使用（下は代替書体 Yuji Syuku）。</p>
+  <div class="stage B">
+    <div class="washi"></div>
+    <div class="shu"><p class="fude">花鳥風月</p></div>
+    <div class="in">
+      <div>
+        <p class="eyebrow">YAMATO FUDOSAN ── NARA</p>
+        <div class="kin"></div>
+        <p class="lead">住宅価格が、目まぐるしい速度で上がっています。</p>
+        <p class="line">最近の物価高に、<br>動揺した方へ。</p>
+      </div>
+    </div>
+  </div>
+  <p class="cap"><b>参照:</b> 三次元 The Classic（生成り×書体の格）＋パンフレット0723表紙。<b>8/4指示「パンフと世界観統一」への直接回答。</b>朱赤の色面は1画面1点まで。</p>
+</section>
+
+<section class="unit">
+  <h2>案C 「引き算エディトリアル」── 写真1枚と1行だけ</h2>
+  <p class="note">コピー幕も全景写真化し、文字は左下1行。最も「余白＝格」に忠実。ただし0円台帳・価格幕との相性が課題で、冷たく振れる地雷もある。</p>
+  <div class="stage C">
+    <img src="assets/std/washitsu_1920.webp" alt="">
+    <div class="scrim"></div>
+    <div class="in">
+      <p class="line">最近の物価高に、動揺した方へ。</p>
+      <p class="sub">YAMATO FUDOSAN ── NARA</p>
+    </div>
+  </div>
+  <p class="cap"><b>参照:</b> neie／溝田建築／AICHLER。<b>書体:</b> 秀英角ゴ銀 W3・字間0.12〜0.14em。</p>
+</section>
+
+<section class="unit">
+  <h2>案D 「golden hour連続」── 全景を1本の映像として繋ぐ</h2>
+  <p class="note">全13景の背景を実写で通し、情報幕（0円台帳・価格）はダークガラス面に載せる。写真資産272枚を最大活用。</p>
+  <div class="stage D">
+    <img src="assets/std/kitchen_1920.webp" alt="">
+    <div class="scrim"></div>
+    <div class="glass">
+      <p class="eyebrow">YAMATO FUDOSAN ── NARA</p>
+      <div class="rule"></div>
+      <p class="line">最近の物価高に、<br>動揺した方へ。</p>
+    </div>
+  </div>
+  <p class="cap"><b>参照:</b> 原則02「写真を面として敷く」＋D-5ガラス規格（ダーク上のみ）。<b>弱み:</b> 幕の「転換」の呼吸が弱くなる。</p>
+</section>
+
+<section class="unit">
+  <h2>案E 「和モダン縦組」── 章立ての帯</h2>
+  <p class="note">左に生成りの縦帯を常設し、章題「第一幕」がステップで替わる。ドットナビを和の意匠に昇華。SPでは上帯に変換が必要で工数最大。</p>
+  <div class="stage E">
+    <div class="band">
+      <p class="num">01</p>
+      <p class="sho">第一幕　宛名</p>
+      <p class="num">／13</p>
+    </div>
+    <div class="ph"><img src="assets/std/entrance_1920.webp" alt=""></div>
+    <div class="scrim"></div>
+    <div class="in">
+      <p class="line">最近の物価高に、<br>動揺した方へ。</p>
+    </div>
+  </div>
+  <p class="cap"><b>参照:</b> Re Loop（スプリット型）／塚地建築（和の作字）。<b>書体:</b> 帯だけ Zen Old Mincho 縦組・主面は秀英角ゴ銀。</p>
+</section>
+
+<div class="head" style="margin-top:8px">
+  <p>推奨は<b>案B主軸＋案Aの舞台術</b>（コピー幕＝紙と金、設備景＝golden hour写真）。理由と共通の下地修正6点はアイデア集を参照。</p>
+</div>
+</body>
+</html>
