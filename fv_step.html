@@ -268,6 +268,19 @@
   .is-quiet .fvs__room{font-size:clamp(1.15rem,1rem + 1vw,1.7rem);font-weight:200;letter-spacing:.34em}
   .is-quiet .fvs__room::after{margin-left:auto;margin-right:auto}
   .is-quiet .fvs__pled,.fvs__scene--eq.is-right.is-quiet .fvs__pled{font-size:clamp(.8rem,.78rem+.2vw,.9rem);justify-content:center}
+  /* 生成りの頁（紅と交互＝頁めくり） */
+  .fvs__scene--eq.is-kinari{background:linear-gradient(rgba(244,241,234,.62),rgba(244,241,234,.62)),url("assets/std/paper_washi.webp") center/cover var(--paper)}
+  .fvs__scene--eq.is-kinari::before{display:none}
+  .fvs__scene--eq.is-kinari::after{background:radial-gradient(120% 100% at 50% 0%,transparent 58%,rgba(122,104,76,.14) 100%)}
+  .fvs__scene--eq.is-quiet.is-kinari{background:linear-gradient(rgba(237,232,221,.72),rgba(237,232,221,.72)),url("assets/std/paper_washi.webp") center/cover var(--paper2)}
+  .is-kinari .fvs__media{border-color:#FCFAF5;outline-color:rgba(176,138,60,.5);
+    box-shadow:0 24px 70px rgba(60,48,28,.35)}
+  .is-kinari .fvs__room{color:var(--sumi)}
+  .is-kinari .fvs__pled,.is-kinari .pled__note{color:var(--sumi2);text-shadow:none}
+  .is-kinari .fvs__pled .en{color:var(--gold2)}
+  .is-kinari .chip{color:var(--gold2);border-color:rgba(176,138,60,.6)}
+  .is-kinari .act{color:var(--sumi3)}
+  .is-kinari .act::after{background:linear-gradient(180deg,rgba(176,138,60,.6),rgba(176,138,60,0))}
   .timg--e{width:min(560px,80vw)}
   .timg--o{width:min(620px,84vw)}
   .fvs__scene--open .fvs__eqtxt{bottom:clamp(76px,13vh,150px);max-width:min(760px,90vw)}
@@ -469,7 +482,7 @@
   </article>
 
   <!-- 07 Bath -->
-  <article class="fvs__scene fvs__scene--eq" id="s07" data-name="浴室" data-theme="dark">
+  <article class="fvs__scene fvs__scene--eq is-kinari" id="s07" data-name="浴室" data-theme="paper">
     <p class="act" data-l>第四幕</p>
     <div class="fvs__media">
       <picture>
@@ -501,7 +514,7 @@
   </article>
 
   <!-- 09 Living -->
-  <article class="fvs__scene fvs__scene--eq" id="s09" data-name="リビング" data-theme="dark">
+  <article class="fvs__scene fvs__scene--eq is-kinari" id="s09" data-name="リビング" data-theme="paper">
     <p class="act" data-l>第四幕</p>
     <div class="fvs__media">
       <picture>
@@ -529,7 +542,7 @@
   </article>
 
   <!-- 10 Tatami -->
-  <article class="fvs__scene fvs__scene--eq is-quiet" id="s10" data-name="和室" data-theme="dark">
+  <article class="fvs__scene fvs__scene--eq is-quiet is-kinari" id="s10" data-name="和室" data-theme="paper">
     <p class="act" data-l>第四幕</p>
     <div class="fvs__media">
       <picture>
@@ -561,7 +574,7 @@
   </article>
 
   <!-- 12 Atrium -->
-  <article class="fvs__scene fvs__scene--eq is-right is-quiet" id="s12" data-name="吹き抜け" data-theme="dark">
+  <article class="fvs__scene fvs__scene--eq is-right is-quiet is-kinari" id="s12" data-name="吹き抜け" data-theme="paper">
     <p class="act" data-l>第四幕</p>
     <div class="fvs__media">
       <picture>
