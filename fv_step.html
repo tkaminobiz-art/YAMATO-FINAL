@@ -107,6 +107,23 @@
   .art--sw2{top:calc(env(safe-area-inset-top) + clamp(48px,9vh,110px));left:6%;
     width:clamp(120px,15vw,220px);transform:scaleX(-1);opacity:.9}
 
+  /* ============ 幕0: 表紙（Higgsfield生成・箔押しの原画） ============ */
+  .fvs__scene--cover{padding:0;background:var(--shu)}
+  .cover__bg{position:absolute;inset:0}
+  .cover__bg img{width:100%;height:100%;object-fit:cover;object-position:52% 55%}
+  .cover__t{position:relative;z-index:2;text-align:center;color:#F6EFE2;
+    transform:translate(1%,4%)}
+  .cover__yamato{writing-mode:vertical-rl;margin:0 auto clamp(14px,2.6vh,26px);
+    font-family:"Shippori Mincho B1",serif;font-size:clamp(1rem,.9rem + .5vw,1.2rem);
+    letter-spacing:.42em;height:auto}
+  .cover__fude{font-family:var(--fb);font-size:clamp(2.6rem,1.8rem + 4.5vw,5.4rem);
+    line-height:1.3;letter-spacing:.18em;text-indent:.18em}
+  .cover__en{margin-top:clamp(12px,2.2vh,22px);font-family:var(--fn);font-weight:300;
+    font-size:clamp(.9375rem,.9rem + .2vw,1.05rem);letter-spacing:.3em;color:rgba(246,239,226,.85)}
+  @media (max-width:700px){
+    .cover__t{transform:translate(0,-2%)}
+  }
+
   /* ============ 幕1: 案A 余白の間（生成りの扉） ============ */
   #s01{place-items:end start}
   #s01 .paper__in{padding-bottom:clamp(6px,3vh,44px)}
@@ -357,6 +374,21 @@
 </div>
 
 <section class="fvs" id="fvs" role="region" aria-label="やまと不動産の紹介（1操作で1シーン進みます）">
+
+  <!-- 00 表紙: 花鳥風月（Higgsfield生成の箔押し原画。毛筆はパンフ入稿データ待ち=Yuji Syuku代替） -->
+  <article class="fvs__scene fvs__scene--cover" id="s00" data-name="表紙" data-theme="dark">
+    <div class="cover__bg">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/cover_sp_1080.webp 1080w, assets/std/cover_sp_1440.webp 1440w" sizes="100vw">
+        <img src="assets/std/cover_pc_1920.webp" srcset="assets/std/cover_pc_1920.webp 1920w, assets/std/cover_pc_2560.webp 2560w" sizes="100vw" alt="紅の地に箔押しの牡丹と燕の表紙" decoding="async">
+      </picture>
+    </div>
+    <div class="cover__t" data-l>
+      <p class="cover__yamato">やまとの家</p>
+      <p class="cover__fude">花鳥風月</p>
+      <p class="cover__en">The House of Yamato</p>
+    </div>
+  </article>
 
   <!-- 01 幕1: 理想（紙×燕。願望3例=クライアント実文の自由設計例を願望形に） -->
   <article class="fvs__scene fvs__scene--paper" id="s01" data-name="理想" data-theme="paper">
