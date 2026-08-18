@@ -55,7 +55,7 @@
   .hd__brand{display:flex;align-items:center;gap:11px;line-height:1}
   .hd__mark{height:clamp(26px,3.4vw,32px);width:auto;display:block}
   .hd__kk{display:flex;flex-direction:column;gap:3px;font-family:var(--fh);font-weight:500;font-size:.5rem;letter-spacing:.16em;opacity:.85}
-  .hd__jp{font-family:var(--fh);font-weight:500;letter-spacing:.1em;font-size:clamp(1rem,.9rem + .6vw,1.26rem)}
+  .hd__jp{font-family:var(--fh);font-weight:500;letter-spacing:.1em;font-size:clamp(1rem,.9rem + .6vw,1.26rem);white-space:nowrap}
     .hd__back{margin-left:auto;font-family:var(--fh);font-weight:500;font-size:.82rem;letter-spacing:.05em;
     opacity:.9;display:inline-flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid transparent;transition:.3s var(--ease)}
   .hd__back:hover{opacity:1;border-bottom-color:currentColor}
@@ -395,7 +395,7 @@
         <a class="lead" href="index.html#heart">私たちについて</a>
         <a class="lead" href="kodawari.html">家づくりのこだわり</a>
         <div class="subnav">
-          <a href="kodawari.html#price">見せた価格が、そのまま届く</a>
+          <a href="kodawari.html#price">価格・コミコミの中身</a>
           <a href="kodawari.html#standard">標準仕様（モデルハウス＝標準）</a>
           <a href="kodawari.html#design">自由設計・間取り</a>
           <a href="kodawari.html#after">保証・アフターフォロー</a>
@@ -412,8 +412,6 @@
       <div class="navcol stagger" style="--i:2">
         <span class="navcol__label">Company</span>
         <a class="lead" href="company.html">会社案内</a>
-        <a class="lead" href="#">スタッフ紹介</a>
-        <a class="lead" href="#">お知らせ</a>
         <a class="lead" href="company.html#access">アクセス</a>
       </div>
     </nav>
@@ -449,8 +447,6 @@
       </div>
       <div class="foot-links">
         <a href="company.html#about">会社概要</a>
-        <a href="#">プライバシーポリシー</a>
-        <a href="#">サイトマップ</a>
       </div>
     </div>
   </div>
@@ -463,7 +459,7 @@
   <div class="hero__in">
     <span class="eyebrow">Model House ／ モデルハウス</span>
     <h1><small>モデルハウス</small>やまとランド</h1>
-    <p class="hero__lead">標準仕様のまま建てた、実物のモデルハウスです。ここで見たものが、そのままあなたの家の標準になります。</p><!-- 仮コピー: copywriterパスで確定 -->
+    <p class="hero__lead">標準仕様のまま建てた、実物のモデルハウスです。オプションで飾っていません。仕様はシリーズにより異なります。</p>
     <div class="hero__meta">
       <span class="hmeta"><b>見学無料</b></span>
       <span class="hmeta"><b>ご予約制</b></span>
@@ -515,7 +511,7 @@
     </div>
     <div class="room__body">
       <span class="plate"><span class="plate__no">02</span><span class="plate__t"><span class="plate__jp">キッチン</span><span class="plate__en">Kitchen</span></span></span>
-      <p class="room__txt">クリナップ「ステディア」を標準仕様に。対面キッチンで開放感を持たせ、隣にはパントリーを設けて、食品や調味料をすっきり収納できます。</p>
+      <p class="room__txt">キッチンはクリナップ「ステディア」です（花・京の標準。風はESが標準）。対面キッチンで開放感を持たせ、隣にはパントリーを設けて、食品や調味料をすっきり収納できます。</p>
       <div class="std">
         <span class="std__k">これも標準</span>
         <span class="chip">クリナップ ステディア</span>
@@ -577,10 +573,10 @@
     </div>
     <div class="room__body">
       <span class="plate"><span class="plate__no">05</span><span class="plate__t"><span class="plate__jp">水回り</span><span class="plate__en">Bath / Sanitary</span></span></span>
-      <p class="room__txt">浴室はTOTO「サザナ」、1.25坪サイズが標準です。保温構造の浴槽で、あとから入っても温かい。洗面は三面鏡と広い収納を標準にしています。</p>
+      <p class="room__txt">浴室はTOTO「サザナ」です。このモデルハウスは1.25坪サイズ（花シリーズ）。京・風は1坪サイズが標準です。保温構造の浴槽で、あとから入っても温かい。洗面は三面鏡と広い収納を標準にしています。</p>
       <div class="std">
         <span class="std__k">これも標準</span>
-        <span class="chip">TOTO サザナ 1.25坪</span>
+        <span class="chip">TOTO サザナ 1.25坪（花）</span>
         <span class="chip">保温浴槽</span>
         <span class="chip">三面鏡洗面</span>
       </div>
@@ -616,7 +612,7 @@
     <dl class="ledger__grid">
       <div class="lrow"><dt>キッチン</dt><dd>クリナップ ステディア</dd></div>
       <div class="lrow"><dt>カップボード</dt><dd>標準</dd></div>
-      <div class="lrow"><dt>浴室</dt><dd>TOTO サザナ <b>1.25</b>坪</dd></div>
+      <div class="lrow"><dt>浴室</dt><dd>TOTO サザナ <b>1.25</b>坪<small>（花）／京・風は1坪</small></dd></div>
       <div class="lrow"><dt>洗面化粧台</dt><dd>三面鏡・広収納</dd></div>
       <div class="lrow"><dt>断熱</dt><dd>吹付 アクアフォーム</dd></div>
       <div class="lrow"><dt>サッシ</dt><dd>Low-E複層ガラス</dd></div>
@@ -624,10 +620,10 @@
       <div class="lrow"><dt>制震</dt><dd>住友ゴム ミライエ</dd></div>
       <div class="lrow"><dt>内装建具</dt><dd>ハイドア <b>2.3</b>m</dd></div>
       <div class="lrow"><dt>屋根</dt><dd>軽量瓦 全<b>6</b>色</dd></div>
-      <div class="lrow"><dt>構造</dt><dd>ハイブリッド工法（在来比 約<b>1.5</b>倍）</dd></div>
+      <div class="lrow"><dt>構造</dt><dd>ハイブリッド工法（構造強度は在来比 約<b>1.5</b>倍）</dd></div>
       <div class="lrow"><dt>地盤改良費</dt><dd>必要時 当社負担</dd></div>
     </dl>
-    <p class="ledger__note">※ 掲載の仕様は現サイト公開情報にもとづきます。時期により変更となる場合があります。詳しくは現地でご確認ください。</p>
+    <p class="ledger__note">※ 掲載の仕様は、時期により変更となる場合があります。詳しくは現地でご確認ください。</p>
   </div>
 </section>
 

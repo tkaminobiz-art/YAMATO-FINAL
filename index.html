@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>株式会社やまと不動産｜奈良の注文住宅（トップ統合図面）</title>
-<meta name="description" content="ヘッダー・メニュー・FV（標準装備ループ動画）・実績セクションを統合したトップページ図面。">
+<title>奈良の注文住宅｜株式会社やまと不動産</title>
+<meta name="description" content="奈良と京都で770棟超。京2,480万円／花・風2,680万円のコミコミ価格・税込。地盤改良費・つなぎ融資・仲介手数料は0円。自社分譲地150区画以上を保有する、やまと不動産の注文住宅。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
@@ -77,7 +77,7 @@
   .brand__mark{height:clamp(26px,3.4vw,32px);width:auto;display:block}
   .brand__kk{display:flex;flex-direction:column;gap:3px;font-family:var(--font-head);font-weight:500;
     font-size:.5rem;letter-spacing:.16em;opacity:.85}
-  .brand__jp{font-family:var(--font-head);font-weight:500;letter-spacing:.10em;
+  .brand__jp{font-family:var(--font-head);font-weight:500;letter-spacing:.10em;white-space:nowrap;
     font-size:clamp(1.02rem,.9rem + .7vw,1.32rem)}
   .brand__en{font-family:"Inter",sans-serif;font-weight:400;letter-spacing:.30em;
     font-size:.5rem;text-transform:uppercase;opacity:.62;padding-left:.05em}
@@ -115,7 +115,7 @@
   .burger:hover span:last-child{width:14px}
 
   /* ===================== FV「あかりの物語・改」v4（2026-07-08 fv_cinema.html図面より統合） =====================
-     消灯した家のシルエット→宛名→金縁の緞帳→灯りの家→0円台帳→2,480万円〜祭壇→標準装備5景→10年50年の結び。
+     消灯した家のシルエット→宛名→金縁の緞帳→灯りの家→0円台帳→2プラン価格の祭壇→標準装備5景→10年50年の結び。
      .st 層はGSAP成立時のみ表示（.hero.fv-cine .st）。GSAP不成立/reduced-motion時は下の .intro 静的表示のみ。 */
   .hero{position:relative;height:100svh;min-height:560px;overflow:hidden;isolation:isolate;
     background:var(--void);color:var(--cream)}
@@ -272,11 +272,14 @@
     font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);
     margin-bottom:clamp(18px,3vw,34px)}
   .st__pk::before,.st__pk::after{content:"";width:clamp(24px,3.4vw,46px);height:1px;background:var(--gold);opacity:.8}
+  .st__ptwo{display:flex;flex-direction:column;gap:clamp(4px,.9vw,14px);align-items:center}
   .st__pnum{display:flex;justify-content:center;align-items:baseline;color:var(--cream);line-height:.88;
     font-variant-numeric:tabular-nums;text-shadow:0 4px 48px rgba(6,8,4,.8)}
+  .st__pnum .ser{font-family:var(--fh);font-weight:500;letter-spacing:.16em;color:var(--gold);
+    font-size:clamp(.86rem,.66rem + 1.05vw,1.5rem);margin-right:clamp(10px,1.4vw,22px)}
   .st__pnum .dg{display:inline-block;overflow:hidden}
   .st__pnum .dg>span{display:block;font-family:var(--fn);font-weight:100;
-    font-size:clamp(4.6rem,2.4rem + 12vw,12.5rem);letter-spacing:-.01em}
+    font-size:clamp(2.8rem,1.5rem + 6.4vw,7rem);letter-spacing:-.01em}
   .st__pnum .un{font-family:var(--fh);font-weight:500;font-size:clamp(1.4rem,1rem + 2.4vw,3.2rem);
     letter-spacing:.06em;margin-left:.14em;color:var(--gold-hi)}
   .st__pline{display:block;width:min(340px,44vw);height:1px;margin:clamp(20px,3vw,32px) auto;
@@ -429,8 +432,10 @@
     .st__dnote{margin-top:6px;font-size:.6rem}
 
     .st__pk{margin-bottom:8px;font-size:.56rem}
-    .st__pnum .dg>span{font-size:clamp(2rem,1.2rem + 8.6vh,3.4rem)}
-    .st__pnum .un{font-size:clamp(.95rem,.7rem + 3vh,1.5rem)}
+    .st__ptwo{gap:2px}
+    .st__pnum .dg>span{font-size:clamp(1.5rem,.9rem + 5.4vh,2.4rem)}
+    .st__pnum .un{font-size:clamp(.75rem,.55rem + 1.9vh,1.05rem)}
+    .st__pnum .ser{font-size:clamp(.62rem,.5rem + 1.3vh,.84rem);margin-right:8px}
     .st__pline{margin:8px auto}
     .st__ps{font-size:clamp(.95rem,.7rem + 3.2vh,1.4rem);line-height:1.4}
     .st__pnote{margin-top:6px;font-size:.6rem}
@@ -492,6 +497,8 @@
   .authority .unit{font-family:var(--fh);font-weight:700;font-size:clamp(2rem,5.4vw,4.1rem);color:var(--gold);transform:translateY(-.12em);text-shadow:0 2px 22px rgba(0,0,0,.5)}
   .authority .lead{font-family:var(--fh);font-weight:700;font-size:clamp(1.55rem,3.6vw,2.7rem);letter-spacing:.03em;color:#F8F3E7;
     line-height:1.5;margin-top:clamp(18px,2.4vw,30px);text-wrap:balance;text-shadow:0 2px 28px rgba(0,0,0,.6)}
+  .authority .numnote{font-family:var(--fb);font-size:.72rem;letter-spacing:.06em;color:rgba(244,241,234,.55);
+    margin-top:6px;text-shadow:0 1px 12px rgba(0,0,0,.6)}
   .authority .sub{font-family:var(--fb);font-size:clamp(.95rem,1.4vw,1.1rem);color:rgba(244,241,234,.8);margin-top:16px;text-shadow:0 1px 18px rgba(0,0,0,.6)}
   .authority .stats{display:flex;justify-content:center;flex-wrap:wrap;margin-top:clamp(40px,5vw,64px)}
   .authority .stat{padding:6px clamp(20px,3.2vw,46px);position:relative}
@@ -670,8 +677,11 @@
   .pcard__plan::after{content:"";position:absolute;top:0;bottom:0;left:0;width:1.5px;z-index:3;pointer-events:none;background:linear-gradient(180deg,transparent,var(--gold),transparent);opacity:0}
   .lineup.is-in .pcard__plan::after{animation:pen 1.6s var(--ease) forwards;animation-delay:calc(.3s + var(--i,0) * .18s)}
   @keyframes pen{0%{left:0;opacity:0}10%{opacity:1}86%{opacity:1}100%{left:100%;opacity:0}}
-  .pcard__kanji{position:absolute;z-index:2;right:8px;top:-8px;font-family:var(--fh);font-weight:700;font-size:clamp(6rem,11vw,8.2rem);line-height:1;color:rgba(42,38,33,.07);pointer-events:none;letter-spacing:0}
-  .pcard:hover .pcard__kanji{color:rgba(169,130,47,.14)}
+  /* 間取り図を廃止（2026-08-04 指示）。シリーズ字を主役の意匠に昇格。差替用イメージ画像は支給待ち */
+  .pcard__kanji{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);
+    font-family:var(--fh);font-weight:700;font-size:clamp(5.4rem,10vw,7.6rem);line-height:1;
+    color:rgba(42,38,33,.16);pointer-events:none;letter-spacing:0;transition:color .6s var(--ease)}
+  .pcard:hover .pcard__kanji{color:rgba(169,130,47,.34)}
   .pcard__idx{position:absolute;z-index:3;left:0;top:0;font-family:var(--fn);font-size:11px;font-weight:600;letter-spacing:.16em;color:var(--ink2);background:var(--paper2);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:9px 14px;border-bottom-right-radius:5px}
   .pcard__idx b{color:var(--gold-deep);font-weight:700}
   .pcard__block{position:relative;z-index:2;display:flex;flex-direction:column;padding:clamp(22px,2vw,30px) clamp(20px,1.8vw,28px) clamp(24px,2.2vw,30px)}
@@ -688,6 +698,7 @@
   .pcard__price .num{font-family:var(--fn);font-weight:700;font-size:clamp(2.1rem,3.2vw,2.7rem);line-height:.9;letter-spacing:-.01em;color:var(--amber);font-variant-numeric:tabular-nums}
   .pcard__price .man{font-family:var(--fh);font-weight:700;font-size:1.2rem;color:var(--amber);transform:translateY(-.1em)}
   .pcard__price .from{font-family:var(--fb);font-size:.82rem;color:var(--ink2);transform:translateY(-.35em)}
+  .pcard__price .tax{font-family:var(--fb);font-size:.76rem;color:var(--ink2);margin-left:.2em}
   .pcard__incl{font-family:var(--fb);font-size:11.5px;letter-spacing:.04em;color:var(--ink2);margin-top:8px;display:flex;align-items:center;gap:7px}
   .pcard__incl::before{content:"";width:14px;height:14px;flex:0 0 auto;border-radius:50%;background:radial-gradient(circle at 50% 42%,var(--gold) 38%,transparent 40%),conic-gradient(from 0deg,var(--gold-deep),#EAD08A,var(--gold-deep));-webkit-mask:radial-gradient(circle,transparent 44%,#000 46%);mask:radial-gradient(circle,transparent 44%,#000 46%);opacity:.9}
   .pcard__cta{margin-top:auto;padding-top:22px;font-family:var(--fh);font-weight:700;font-size:.95rem;letter-spacing:.04em;color:var(--ink);display:inline-flex;align-items:center;gap:10px;width:fit-content;position:relative}
@@ -1099,7 +1110,7 @@
 </header>
 
 <!-- ============ FV「あかりの物語・改」v4（2026-07-08 fv_cinema.html図面より統合） ============
-     消灯した家のシルエット→宛名→金縁の緞帳がひらいて灯りの家→0円の台帳→2,480万円〜の祭壇
+     消灯した家のシルエット→宛名→金縁の緞帳がひらいて灯りの家→0円の台帳→2プラン価格の祭壇
      →フルブリード標準装備5景→10年後50年後。GSAP不成立時は下部.introの静的フォールバックのみ表示。
      JSタイムラインはPREMIUM MOTION LAYER（本ファイル末尾）に統合済み。 -->
 <section class="hero" id="top">
@@ -1125,7 +1136,7 @@
         <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_bath.webp"></video>
         <span class="scr"></span>
         <p class="st__room"><span class="lm"><span>Bath</span></span></p>
-        <p class="st__pled st__ledger"><span class="en">Standard</span><span class="dash"></span>TOTO サザナ 1.25坪<em class="st__std">標準</em></p>
+        <p class="st__pled st__ledger"><span class="en">Standard</span><span class="dash"></span>TOTO サザナ<em class="st__std">標準</em></p>
       </figure>
       <figure class="st__sc st__sc--v is-left" data-sc="vanity">
         <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_vanity.webp"></video>
@@ -1156,13 +1167,13 @@
     <!-- 幕Eの見出し（景の上） -->
     <div class="st__ehead">
       <p class="t">標準装備が、充実しています。</p>
-      <p class="s">オプションだと思っていた設備が、はじめから付いています。</p>
+      <p class="s">オプションだと思っていた設備が、はじめから付いています。仕様はシリーズにより異なります。</p>
     </div>
 
     <!-- 幕A: 宛名①（左下段違い） -->
     <div class="st__a">
       <p class="st__eye">Yamato Fudosan ── Nara</p>
-      <p class="l1"><span class="lm"><span>大手の価格に、</span></span></p>
+      <p class="l1"><span class="lm"><span>最近の物価高に、</span></span></p>
       <p class="l2"><span class="lm"><span>動揺した方へ。</span></span></p>
     </div>
 
@@ -1179,39 +1190,44 @@
       <p class="l2"><span class="lm"><span>お役に立てる<br class="spbr">かもしれません。</span></span></p>
     </div>
 
-    <!-- 幕D: 0円の台帳（契約・着工後アンカー=2026-07-08裁定） -->
+    <!-- 幕D: 0円の台帳（費用ゼロ訴求。2026-08-04 クライアント指示で「増えません」から0円列挙へ） -->
     <div class="st__d">
-      <p class="l1"><span class="lm"><span>ご契約・着工の後から、</span></span></p>
-      <p class="l2"><span class="lm"><span>費用は増えません。</span></span></p>
+      <p class="l1"><span class="lm"><span>他社ではかかる費用が、</span></span></p>
+      <p class="l2"><span class="lm"><span>やまとでは0円です。</span></span></p>
       <ul class="st__rows">
         <li class="st__row" data-row="1">
           <span class="k">地盤改良費</span><span class="lead"></span>
-          <b class="v"><span id="stR1">150</span><small>万円</small></b>
-          <em class="st__chip">全額当社負担</em>
+          <b class="v"><span id="stR1">150</span><small id="stR1u">万円</small></b>
+          <em class="st__chip">一般メーカーは120〜150万円</em>
         </li>
         <li class="st__row" data-row="2">
-          <span class="k">つなぎ融資の負担</span><span class="lead"></span>
-          <b class="v"><span class="nashi">なし</span></b>
-          <em class="st__chip">土地・建物セット提供</em>
+          <span class="k">つなぎ融資</span><span class="lead"></span>
+          <b class="v">0<small>円</small></b>
+          <em class="st__chip">建物完成後に一括支払い</em>
         </li>
         <li class="st__row" data-row="3">
           <span class="k">仲介手数料</span><span class="lead"></span>
           <b class="v">0<small>円</small></b>
-          <em class="st__chip">自社分譲</em>
+          <em class="st__chip">すべて自社所有の土地</em>
         </li>
       </ul>
-      <p class="st__dnote">※適用条件の詳細は、お見積りの際にご説明します。</p>
+      <p class="st__dnote">土地測量費・土地造成費・水道工事変更費も0円です。</p>
     </div>
 
-    <!-- 幕P: 価格の祭壇（2,480万円〜。京モデルの実価格を起点に表示） -->
+    <!-- 幕P: 価格の祭壇（2プラン明示。2026-08-04 クライアント指示で「〜」表記と「土地別途」を廃止） -->
     <div class="st__p">
       <p class="st__pk">Price ── 花鳥風月・やまとの家</p>
-      <p class="st__pnum" aria-label="2,480万円から">
-        <span class="dg"><span>2</span></span><span class="dg"><span>,</span></span><span class="dg"><span>4</span></span><span class="dg"><span>8</span></span><span class="dg"><span>0</span></span><span class="un">万円〜</span>
-      </p>
+      <div class="st__ptwo">
+        <p class="st__pnum" aria-label="京シリーズ 2,480万円 税込">
+          <span class="ser">京</span><span class="dg"><span>2</span></span><span class="dg"><span>,</span></span><span class="dg"><span>4</span></span><span class="dg"><span>8</span></span><span class="dg"><span>0</span></span><span class="un">万円</span>
+        </p>
+        <p class="st__pnum" aria-label="花・風シリーズ 2,680万円 税込">
+          <span class="ser">花・風</span><span class="dg"><span>2</span></span><span class="dg"><span>,</span></span><span class="dg"><span>6</span></span><span class="dg"><span>8</span></span><span class="dg"><span>0</span></span><span class="un">万円</span>
+        </p>
+      </div>
       <span class="st__pline" aria-hidden="true"></span>
       <p class="st__ps"><span class="lm"><span>この価格で、本当に高品質の<br class="spbr">家が建ちます。</span></span></p>
-      <p class="st__pnote">建物本体価格・税込（「京」／土地別途）</p>
+      <p class="st__pnote">コミコミ価格・税込</p>
     </div>
 
     <!-- 幕F: 結び（大数字ロックアップ） -->
@@ -1242,8 +1258,8 @@
   <!-- ===== 静的フォールバック（シネマ不成立時はこのまま出る） ===== -->
   <div class="intro" id="fvIntro">
     <h1>やまと不動産なら、<br>お役に立てるかもしれません。</h1>
-    <p class="in-sub">2,480万円〜で、本当に高品質の家が建ちます。</p>
-    <p class="in-note">建物本体価格・税込（「京」／土地別途）</p>
+    <p class="in-sub">京は2,480万円、花・風は2,680万円です。この価格で、高品質の家が建ちます。</p>
+    <p class="in-note">コミコミ価格・税込</p>
   </div>
 
   <div class="cta-wrap" id="ctaWrap">
@@ -1274,7 +1290,7 @@
       <text class="anno-txt" x="590" y="82" text-anchor="middle">TRACK RECORD</text>
       <path class="anno-line a2" d="M372 372 H808"/>
       <path class="anno-line a2" d="M372 364 V380 M808 364 V380"/>
-      <text class="anno-txt" x="590" y="402" text-anchor="middle">600 棟 ／ BUILT IN NARA</text>
+      <text class="anno-txt" x="590" y="402" text-anchor="middle">770 棟 ／ BUILT IN NARA</text>
       <path class="anno-line a3" d="M840 250 L980 196 H1090"/>
       <circle class="anno-line a3" cx="840" cy="250" r="4"/>
       <text class="anno-txt" x="984" y="188" text-anchor="start">自社設計 ／ 自社施工</text>
@@ -1288,18 +1304,19 @@
 
   <div class="wrap">
     <p class="eyebrow" data-reveal style="--d:.05s;white-space:nowrap">Track Record ／ 創業からの実績</p>
-    <div class="numwrap" data-reveal style="--d:.2s"><span class="count" id="count" data-target="600">0</span><span class="unit">棟超</span></div>
+    <div class="numwrap" data-reveal style="--d:.2s"><span class="count" id="count" data-target="770">0</span><span class="unit">棟超</span></div>
+    <p class="numnote" data-reveal style="--d:.3s">※2026年7月10日現在</p>
     <h2 class="lead" data-reveal style="--d:.42s">選ばれる理由は、価格だけではありません。</h2>
     <p class="sub" data-reveal style="--d:.54s">創業から、奈良でこれだけの家をつくってきました。設計も施工も、外注せず自社で手がけています。</p>
     <div class="stats" data-reveal style="--d:.68s">
-      <div class="stat"><span class="n">約150</span><span class="l">区画｜自社分譲（常時）</span></div>
+      <div class="stat"><span class="n">150</span><span class="l">区画以上｜自社分譲（保有）</span></div>
       <div class="stat"><span class="n">50</span><span class="l">組｜お客様の声</span></div>
-      <div class="stat"><span class="n" id="foundY">14</span><span class="l">年｜創業</span></div>
+      <div class="stat"><span class="n" id="foundY">15</span><span class="l">年目｜創業</span></div>
     </div>
     <script>
-    /* 創業2011-11-30からの満年数（周年を跨いだら自動繰上げ。JS無効時は静的値のまま） */
+    /* 創業2011-11-30からの「〜年目」（周年を跨いだら自動繰上げ。JS無効時は静的値のまま） */
     (function(){var e=document.getElementById('foundY');if(!e)return;
-      var n=new Date(),y=n.getFullYear()-2011-((n.getMonth()<10||(n.getMonth()===10&&n.getDate()<30))?1:0);
+      var n=new Date(),full=n.getFullYear()-2011-((n.getMonth()<10||(n.getMonth()===10&&n.getDate()<30))?1:0),y=full+1;
       if(y>0&&String(y)!==e.textContent)e.textContent=y;})();
     </script>
   </div>
@@ -1309,7 +1326,7 @@
       <a class="tile" href="works.html" aria-label="施工事例">
         <span class="tile__img" style="background-image:url(assets/authority/tile_works.webp)"></span>
         <span class="tile__no">01</span><span class="tile__vcap">Built in Nara</span>
-        <span class="tile__body"><span class="tile__en">Works</span><span class="tile__jp">施工事例</span><span class="tile__fact">600棟の設計図</span></span>
+        <span class="tile__body"><span class="tile__en">Works</span><span class="tile__jp">施工事例</span><span class="tile__fact">770棟の設計図</span></span>
       </a>
       <a class="tile" href="model.html" aria-label="モデルハウス">
         <span class="tile__img" style="background-image:url(assets/authority/tile_model.webp)"></span>
@@ -1358,13 +1375,12 @@
             <span class="accent">最初から、いいものを標準で入れています。</span>
           </p>
           <p class="reveal-up">
-            断熱、耐震、外壁、設備、地盤。<br class="only-pc">
-            見えないところにも手を抜かず、長く気持ちよく住める家にしています。<br class="only-pc">
-            それでいて、無駄な中間コストや見えにくい費用はできるだけ抑えています。
-          </p>
-          <p class="reveal-up">
             「この予算では無理かも」と思っていた人にこそ、<br class="only-pc">
             もっといい家が、その予算で建つことを知っていただきたいです。
+          </p>
+          <p class="reveal-up">
+            <span class="accent">毎日が楽しい暮らしを、つくりたい。</span><br class="only-pc">
+            そう考えて、一軒ずつ設計しています。
           </p>
         </div>
       </div>
@@ -1373,7 +1389,7 @@
       <figure class="ph ph--vanity" data-rise><div class="ph__px" data-amp="92"><div class="ph__f"><img src="assets/video_cine/gh_vanity.webp" loading="lazy" decoding="async" alt="木の格子扉と朝の光が差す洗面" style="object-position:center 60%"></div></div></figure>
 
       <div class="heart__close reveal-up">
-        <p>引き渡しの日に<br><span class="nowrap">「やまと不動産にお願いしてよかった」</span><br>と言ってもらえる家を<br>私たちはつくっています。</p>
+        <p>長く住んだあとも、5年10年経っても<br><span class="nowrap">「やまと不動産にお願いして良かった」</span><br>と言ってもらえる家を<br>私たちはつくっています。</p>
         <span class="heart__rule"></span>
       </div>
 
@@ -1394,14 +1410,13 @@
     <header class="lineup__head">
       <p class="eyebrow" data-rise style="--d:.05">Product Lineup ／ 商品ラインナップ</p>
       <h2 class="lp-title" data-rise style="--d:.15">断熱・耐震・外壁・設備・地盤にこだわって、この価格です。</h2>
-      <p class="lp-lead" data-rise style="--d:.28"><span style="display:inline-block">花・風・京。</span><span style="display:inline-block">3つのプランは、</span><span style="display:inline-block">すべて追加費用なしのコミコミ税込です。</span><span style="display:inline-block">間取りも設備も、</span><span style="display:inline-block">最初から入っています。</span></p>
+      <p class="lp-lead" data-rise style="--d:.28"><span style="display:inline-block">花・風・京。</span><span style="display:inline-block">3つのプランは、</span><span style="display:inline-block">すべて追加費用なしのコミコミ価格です。</span><span style="display:inline-block">間取りも設備も設計も、</span><span style="display:inline-block">最初から入っています。</span></p>
       <div class="lp-dim"></div>
     </header>
 
     <div class="lp-cards">
       <article class="pcard" style="--i:0">
         <div class="pcard__plan">
-          <span class="pcard__planimg" style="background-image:url(assets/products/plan_hana.webp)"></span>
           <span class="pcard__idx">PLAN <b>01</b></span>
           <span class="pcard__kanji">花</span>
         </div>
@@ -1410,19 +1425,18 @@
           <p class="pcard__tag">天井が高く、光のよくまわる家。</p>
           <dl class="pcard__spec">
             <div><dt>延床面積</dt><dd class="cnt" data-to="31">31<span class="u">坪</span></dd></div>
-            <div><dt>間取り</dt><dd>4LDK</dd></div>
-            <div><dt>特徴</dt><dd>天井高2500・顔認証</dd></div>
+            <div><dt>間取り</dt><dd>3LDK〜4LDK</dd></div>
+            <div><dt>特徴</dt><dd>天井高2,500・顔認証玄関</dd></div>
           </dl>
-          <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2680">2,680</span><span class="man">万円</span><span class="from">〜</span></div>
-          <p class="pcard__incl">コミコミ税込／土地は別途</p>
-          <a class="pcard__cta" href="madori.html#plans">間取りの詳細を見る
+          <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2680">2,680</span><span class="man">万円</span><span class="tax">（税込）</span></div>
+          <p class="pcard__incl">コミコミ価格・税込</p>
+          <a class="pcard__cta" href="madori.html#plans">仕様の詳細を見る
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
 
       <article class="pcard" style="--i:1">
         <div class="pcard__plan">
-          <span class="pcard__planimg" style="background-image:url(assets/products/plan_kaze.webp)"></span>
           <span class="pcard__idx">PLAN <b>02</b></span>
           <span class="pcard__kanji">風</span>
         </div>
@@ -1431,40 +1445,39 @@
           <p class="pcard__tag">風がとおる、長く住める家。</p>
           <dl class="pcard__spec">
             <div><dt>延床面積</dt><dd class="cnt" data-to="30">30<span class="u">坪</span></dd></div>
-            <div><dt>間取り</dt><dd>4LDK</dd></div>
+            <div><dt>間取り</dt><dd>3LDK〜4LDK</dd></div>
             <div><dt>特徴</dt><dd>長期優良住宅 対応</dd></div>
           </dl>
-          <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2680">2,680</span><span class="man">万円</span><span class="from">〜</span></div>
-          <p class="pcard__incl">コミコミ税込／土地は別途</p>
-          <a class="pcard__cta" href="madori.html#plans">間取りの詳細を見る
+          <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2680">2,680</span><span class="man">万円</span><span class="tax">（税込）</span></div>
+          <p class="pcard__incl">コミコミ価格・税込</p>
+          <a class="pcard__cta" href="madori.html#plans">仕様の詳細を見る
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
 
       <article class="pcard" style="--i:2">
         <div class="pcard__plan">
-          <span class="pcard__planimg" style="background-image:url(assets/products/plan_kyo.webp)"></span>
           <span class="pcard__idx">PLAN <b>03</b></span>
           <span class="pcard__kanji">京</span>
         </div>
         <div class="pcard__block">
-          <h3 class="pcard__name">京<small>Kyo</small></h3>
+          <h3 class="pcard__name">京<small>Miyako</small></h3>
           <p class="pcard__tag">狭い土地を、賢く活かす家。</p>
           <dl class="pcard__spec">
             <div><dt>延床面積</dt><dd class="cnt" data-to="28">28<span class="u">坪</span></dd></div>
-            <div><dt>間取り</dt><dd>3LDK</dd></div>
+            <div><dt>間取り</dt><dd>3LDK〜4LDK</dd></div>
             <div><dt>特徴</dt><dd>狭小地に対応</dd></div>
           </dl>
-          <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2480">2,480</span><span class="man">万円</span><span class="from">〜</span></div>
-          <p class="pcard__incl">コミコミ税込／土地は別途</p>
-          <a class="pcard__cta" href="madori.html#plans">間取りの詳細を見る
+          <div class="pcard__price"><span class="yen">¥</span><span class="num cnt" data-to="2480">2,480</span><span class="man">万円</span><span class="tax">（税込）</span></div>
+          <p class="pcard__incl">コミコミ価格・税込</p>
+          <a class="pcard__cta" href="madori.html#plans">仕様の詳細を見る
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
     </div>
   </div>
 
-  <p class="lp-foot" data-rise style="--d:.1">※ 価格・面積・間取りは確定値です。平面図は実施図面に差し替え予定です。</p>
+  <p class="lp-foot" data-rise style="--d:.1">※ 価格・面積・間取りは確定値（2026年改定・税込）です。</p>
 </section>
 
 <!-- ============ なぜ、この値段で（施工断面×正直な二列） ============ -->
@@ -1492,65 +1505,10 @@
   @keyframes uspDriftL{from{transform:translateX(3.5%)}to{transform:translateX(-3.5%)}}
   @keyframes uspDriftR{from{transform:translateX(-3.5%)}to{transform:translateX(3.5%)}}
 </style>
-<section class="usp" aria-label="やまとの約束のひとこと">
-  <div class="usp__l usp__l1">ご契約の後も、着工の後も</div>
-  <div class="usp__l usp__l2"><em>追加料金の上乗せはありません。</em></div>
-  <p class="usp__note">間取りも設備も入った、コミコミ税込のお見積もりです。地盤改良費が必要になっても、当社が負担します。</p>
-  <p class="usp__attr">── 「追加かからへんくて家建ったね」。私たちが目標にしている、お客様の一言です。</p>
-</section>
-
-<section class="naze" id="naze">
-  <div class="naze__hero">
-    <div class="naze__heroimg" id="nazeHero"></div>
-    <div class="naze__heroscrim"></div>
-    <div class="naze__herowrap">
-      <p class="naze__eyebrow" data-rise style="--d:.05">Reason ／ この価格の理由</p>
-      <h2 class="naze__quote" data-rise style="--d:.16"><span class="qm">「</span>これで、この値段なんですか？<span class="qm">」</span></h2>
-      <p class="naze__attr" data-rise style="--d:.3">やまとで家を建てられたお客様から、いちばん多くいただく声です。</p>
-    </div>
-  </div>
-
-  <div class="naze__body">
-    <p class="naze__lead" data-rise style="--d:.05">断熱・耐震・外壁・設備・地盤。家の性能を決める部分に、しっかり手をかけています。そのうえで、大きなモデルハウス展示場や広告にはお金をかけません。<span class="em">だから、適正な価格のまま、高い水準の家づくりができます。</span></p>
-  </div>
-
-  <div class="ledger">
-    <div class="lcol lcol--in">
-      <div class="lcol__head" data-rise style="--d:.05"><span class="k">Where we invest</span><h3>この家に、手をかけているところ</h3></div>
-      <div class="lrow" style="--i:0"><div class="lrow__img"><span style="background-image:url(assets/strength/ma_dannetsu.webp)"></span></div><div class="lrow__t"><div class="lrow__part"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5 11-12"/></svg></span>断熱・窓</div><div class="lrow__name">アクアフォーム</div><div class="lrow__meta">現場で吹き付けて、柱のすき間まで埋めます。窓はLow-E複層ガラスです。</div></div></div>
-      <div class="lrow" style="--i:1"><div class="lrow__img"><span style="background-image:url(assets/strength/ma_taishin.webp)"></span></div><div class="lrow__t"><div class="lrow__part"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5 11-12"/></svg></span>耐震・制震</div><div class="lrow__name">住友ゴム ミライエ</div><div class="lrow__meta">制震ユニットも標準で、揺れを最大70%抑えます。</div></div></div>
-      <div class="lrow" style="--i:2"><div class="lrow__img"><span style="background-image:url(assets/strength/ma_gaiheki.webp)"></span></div><div class="lrow__t"><div class="lrow__part"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5 11-12"/></svg></span>外壁</div><div class="lrow__name">旭化成 ヘーベルパワーボード</div><div class="lrow__meta">10年経っても、まだ新築のように見えます。</div></div></div>
-      <div class="lrow" style="--i:3"><div class="lrow__img"><span style="background-image:url(assets/strength/ma_setsubi.webp)"></span></div><div class="lrow__t"><div class="lrow__part"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5 11-12"/></svg></span>キッチン・浴室</div><div class="lrow__name"><span style="display:inline-block">クリナップ ステディア</span>／<span style="display:inline-block">TOTO サザナ</span></div><div class="lrow__meta">浴室は1.25坪サイズまで、ぜんぶ標準です。</div></div></div>
-      <div class="lrow" style="--i:4"><div class="lrow__img"><span style="background-image:url(assets/strength/ma_jiban.webp)"></span></div><div class="lrow__t"><div class="lrow__part"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5 11-12"/></svg></span>地盤</div><div class="lrow__name">改良費は、当社が負担</div><div class="lrow__meta">調査の結果、必要なときだけ改良します。地盤保証もついています。</div></div></div>
-    </div>
-
-    <div class="lcol lcol--out">
-      <div class="lcol__head" data-rise style="--d:.12"><span class="k">Where we don't</span><h3>大きくは、かけていないところ</h3></div>
-      <div class="lpanel" data-rise style="--d:.2">
-        <div class="lout"><span class="lout__mk"></span><span class="lout__t">大きなモデルハウス展示場</span></div>
-        <div class="lout"><span class="lout__mk"></span><span class="lout__t">大きな広告</span></div>
-        <p class="note">分譲地に建てた家を、そのままモデルハウスにしています。広告も必要な分だけにして、そのぶんを家の中身に回しています。</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="naze__proof" data-rise style="--d:.1">
-    <div class="qp__stats"><!-- カウントアップはenh層が.qp__statsを検出して駆動 -->
-      <div class="qp__stat"><b>約1.5<small>倍</small></b><span>構造強度（在来比・ハイブリッド工法）</span></div>
-      <div class="qp__stat"><b>2.3<small>m</small></b><span>室内ドアの高さ（ハイドア標準）</span></div>
-      <div class="qp__stat"><b>1.25<small>坪</small></b><span>浴室の広さ（標準サイズ）</span></div>
-    </div>
-    <p class="naze__partner">提携機関：JIO 日本住宅保証検査機構／地盤ネット／大阪ガス</p>
-  </div>
-
-  <div class="naze__cta">
-    <h4 data-rise style="--d:.05">まずは実物のモデルハウスで、<span style="display:inline-block;white-space:nowrap">確かめませんか。</span></h4>
-    <p data-rise style="--d:.14">奈良のモデルハウスは、標準仕様のまま建てています。写真と実物に、違いはありません。</p>
-    <a class="naze__btn" href="contact.html?type=reserve" data-rise style="--d:.22">モデルハウスを予約する
-      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    <p class="naze__sub" data-rise style="--d:.3"><a href="kodawari.html#standard" style="display:inline-block;white-space:nowrap">標準仕様のすべてを見る</a>　／　<a href="model.html" style="display:inline-block;white-space:nowrap">実物の部屋ごとの標準を見る</a></p>
-  </div>
-</section>
+<!-- 2026-08-04 クライアント指示によりトップページから非表示:
+     ①usp「ご契約の後も、着工の後も／追加料金の上乗せはありません」
+     ②naze「Reason／この価格の理由」→ 別ページで制作予定
+     CSS(.usp*/.naze*)とJS(guard済)は再利用のため残置 -->
 
 <!-- ============ お客様の声（50通の手紙・vc- 名前空間／voice.htmlへの橋） ============ -->
 <style>
@@ -1804,6 +1762,8 @@
   .iju__areas .k{font-family:var(--fn);font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8B8375}
   .iju__areas ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;margin:0;padding:0}
   .iju__areas li{font-family:var(--fmin);font-weight:500;font-size:.92rem;letter-spacing:.05em;color:var(--grn)}
+  .iju__close{max-width:36em;margin:clamp(28px,3.4vw,44px) 0 0;font-family:var(--fb);
+    font-size:clamp(.98rem,.92rem + .34vw,1.14rem);line-height:2.1;letter-spacing:.04em;color:var(--cr);text-wrap:pretty}
   .iju__go{display:inline-flex;align-items:center;gap:12px;font-family:var(--fh);font-weight:500;
     font-size:.96rem;letter-spacing:.06em;color:#FAFAF7;background:var(--main);border:1px solid var(--main);
     border-radius:5px;padding:16px 32px;min-height:54px;white-space:nowrap;
@@ -1929,6 +1889,8 @@
           <p>毎月の家賃は、払ってしまえば手元に何も残りません。同じ金額を住宅ローンの返済に充てれば、その家はご家族の資産として残ります。大阪や京都に通える奈良で、一戸建てから始めませんか？</p>
         </div>
       </div>
+
+      <p class="iju__close iju-rv">子どもと一緒に、のびのび暮らしませんか。共有のマンションではなく、庭のある土地で、家族だけの家に住む。奈良なら、その選び方ができます。</p>
 
       <div class="iju__foot iju-rv">
         <div class="iju__areas">
@@ -2056,6 +2018,7 @@
   .lt-fact .n{font-family:var(--lt-fb);font-weight:300;font-variant-numeric:tabular-nums;line-height:.95;
     font-size:clamp(2.05rem,1.4rem + 2.5vw,3.05rem);color:var(--lt-cream);letter-spacing:.01em;text-shadow:0 1px 14px rgba(6,8,4,.5)}
   .lt-fact .u{font-family:var(--lt-fb);font-weight:400;font-size:.84rem;color:rgba(244,241,234,.8)}
+  .lt-fact .u.wide{font-size:clamp(.95rem,.86rem + .4vw,1.18rem);color:var(--lt-cream);letter-spacing:.05em}
   .lt-fact .tag{font-family:var(--lt-fb);font-weight:500;font-size:.64rem;letter-spacing:.1em;color:var(--lt-gold);
     border:1px solid var(--lt-goldhair);border-radius:3px;padding:.3em .6em;margin-left:.5em;align-self:center}
   .lt-fdiv{width:1px;align-self:stretch;min-height:2.1em;background:var(--lt-goldhair)}
@@ -2124,15 +2087,15 @@
     <h2 class="lt-title">選べる土地が、<br><em>こんなに</em>あります。</h2>
 
     <div class="lt-facts">
-      <span class="lt-fact"><span class="pre">常時</span><span class="n">約150</span><span class="u">区画</span></span>
+      <span class="lt-fact"><span class="n">150</span><span class="u">区画以上を保有</span></span>
       <span class="lt-fdiv" aria-hidden="true"></span>
-      <span class="lt-fact"><span class="n">9</span><span class="u">エリア</span></span>
+      <span class="lt-fact"><span class="u wide">奈良県・京都府 全域</span></span>
       <span class="lt-fdiv" aria-hidden="true"></span>
-      <span class="lt-fact"><span class="n">36</span><span class="u">区画</span><span class="tag">ただ今 販売中</span></span>
+      <span class="lt-fact"><span class="n">216</span><span class="u">区画</span><span class="tag">展開中</span></span>
     </div>
 
     <div class="lt-register">
-      <span class="lt-reglabel">展開エリア <i>Areas</i></span>
+      <span class="lt-reglabel">現在の販売中エリア <i>Areas</i></span>
       <div class="lt-regrow">
         <span class="lt-pref">奈良県</span>
         <span class="lt-areas"><span class="a">奈良市</span><span class="a">生駒市</span><span class="a">橿原市</span><span class="a">大和郡山市</span><span class="a">天理市</span><span class="a">斑鳩町</span><span class="a">田原本町</span></span>
@@ -2412,7 +2375,7 @@
     transform:rotate(45deg);transition:transform .3s cubic-bezier(.33,1,.68,1)}
   .fq details[open] summary::after{transform:rotate(-135deg)}
   .fq__a{padding:0 4px clamp(20px,2.6vw,28px) calc(16px + 1em);
-    font-size:.92rem;line-height:2.25;letter-spacing:.03em;color:#5A544C;max-width:56em}
+    font-size:.92rem;line-height:2.25;letter-spacing:.03em;color:#5A544C;max-width:42em}
   .fq__foot{margin-top:clamp(24px,3.2vw,36px);font-size:.88rem;line-height:2.1;letter-spacing:.03em;color:#5A544C}
   .fq__foot a{color:#2E4600;border-bottom:1px solid rgba(72,107,0,.35);padding-bottom:2px;transition:border-color .25s}
   .fq__foot a:hover{border-bottom-color:#2E4600}
@@ -2428,11 +2391,11 @@
     <div class="fq__list fq-rv">
       <details>
         <summary>本当に、あとから追加費用はかかりませんか？</summary>
-        <p class="fq__a">お見積もりは税込のコミコミ価格です。ご契約の後も、着工の後も、金額が増える項目を残しません。地盤改良が必要になった場合の費用も、当社が負担します。正直にお伝えすると、カーテンレールと居室の照明は標準に含まれないため、事前のご用意をお願いしています。</p>
+        <p class="fq__a">お見積もりは税込のコミコミ価格です。地盤改良費・つなぎ融資・仲介手数料・土地測量費・土地造成費・水道工事変更費は、いずれも0円です。2,000万円規模の土地なら、通常400万円〜470万円かかる費用がかかりません。正直にお伝えすると、カーテンレールと居室の照明は標準に含まれないため、事前のご用意をお願いしています。</p>
       </details>
       <details>
         <summary>土地だけの相談もできますか？</summary>
-        <p class="fq__a">できます。奈良・京都南部に自社分譲地を常時150区画ほどご用意しています。土地探しからのご相談も、土地が決まっている方のご相談も承ります。</p>
+        <p class="fq__a">できます。奈良県・京都府全域に自社分譲地を150区画以上を保有しています。土地探しからのご相談も、土地が決まっている方のご相談も承ります。</p>
       </details>
       <details>
         <summary>京都でも建てられますか？</summary>
@@ -2445,6 +2408,22 @@
       <details>
         <summary>見学したら、営業されませんか？</summary>
         <p class="fq__a">無理におすすめすることはありません。その土地やプランがお客様に本当に合っているか、メリットもデメリットも正直にお話しします。合っていなければ、別の案をご提案します。</p>
+      </details>
+      <details>
+        <summary>なぜ高品質・高仕様なのに低価格なのですか？</summary>
+        <p class="fq__a">設計・建築・造成・開発・販売を、すべて自社で手がけているからです。間に入る会社がないので、中間マージンが乗りません。展示場専用の建物も持たず、分譲地に建てた家をそのままモデルハウスにしています。素材は旭化成・住友ゴム・クリナップ・TOTOなど、大手と同じものを使っています。</p>
+      </details>
+      <details>
+        <summary>なぜやまと不動産は自社所有の土地が多いのですか？</summary>
+        <p class="fq__a">創業から奈良で、土地の仕入れと宅地造成を自社で続けてきたからです。現在は奈良県・京都府全域で150区画以上を保有し、216区画を展開しています。仕入れから造成、設計、施工、販売までを一社で行っています。</p>
+      </details>
+      <details>
+        <summary>自社所有の土地と仲介の土地に、差はありますか？</summary>
+        <p class="fq__a">あります。自社所有の土地なら仲介手数料がかかりません。土地と建物をセットでご提供するため、建物完成後の一括支払いとなり、建築中の住宅ローンや金利のご負担も発生しません。土地の造成状況や地盤の履歴を当社が把握しているため、地盤改良が必要になった場合も当社が費用を負担します。</p>
+      </details>
+      <details>
+        <summary>引き渡し後のフォローはありますか？</summary>
+        <p class="fq__a">あります。定期点検は1年目・5年目・10年目・20年目に無料でうかがいます。初期保証は10年間で、10年ごとの延長により最長30年まで継続できます。地盤保証は20年、しろあり保証は10年です。蛇口の水漏れや網戸の張替えなど、日常の小さなお困りごともお電話でご相談いただけます。</p>
       </details>
     </div>
     <p class="fq__foot fq-rv">このほかのご質問は、<a href="contact.html">お問い合わせフォーム</a>からお気軽にどうぞ。</p>
@@ -2663,7 +2642,7 @@
           <span class="sb-line"><span>もっと<span class="sb-accent">詳しく</span>。</span></span>
         </h2>
         <p class="sb-lead">家づくりの裏側や、暮らしの様子を、<br class="sb-onlypc">それぞれの場所でお届けしています。</p>
-        <a class="sb-morelink" href="https://www.yamatogroup.net/pg-strength/" target="_blank" rel="noopener noreferrer">
+        <a class="sb-morelink" href="kodawari.html">
           家づくりの強みを見る <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </div>
@@ -2965,7 +2944,7 @@
         <a class="lead" href="#heart">私たちについて</a>
         <a class="lead" href="kodawari.html">家づくりのこだわり</a>
         <div class="subnav">
-          <a href="kodawari.html#price">見せた価格が、そのまま届く</a>
+          <a href="kodawari.html#price">価格・コミコミの中身</a>
           <a href="kodawari.html#standard">標準仕様（モデルハウス＝標準）</a>
           <a href="kodawari.html#design">自由設計・間取り</a>
           <a href="kodawari.html#after">保証・アフターフォロー</a>
@@ -2982,8 +2961,6 @@
       <div class="navcol stagger" style="--i:2">
         <span class="navcol__label">Company</span>
         <a class="lead" href="company.html">会社案内</a>
-        <a class="lead" href="#">スタッフ紹介</a>
-        <a class="lead" href="#">お知らせ</a>
         <a class="lead" href="company.html#access">アクセス</a>
       </div>
     </nav>
@@ -3019,8 +2996,6 @@
       </div>
       <div class="foot-links">
         <a href="company.html#about">会社概要</a>
-        <a href="#">プライバシーポリシー</a>
-        <a href="#">サイトマップ</a>
       </div>
     </div>
   </div>
@@ -3260,7 +3235,7 @@
 
   /* ==================================================================================
      4) FV「あかりの物語・改」v4（2026-07-08 fv_cinema.html図面より統合）
-     消灯した家のシルエット→宛名→金縁の緞帳→灯りの家→0円台帳→2,480万円〜祭壇→標準装備5景→10年50年の結び。
+     消灯した家のシルエット→宛名→金縁の緞帳→灯りの家→0円台帳→2プラン価格の祭壇→標準装備5景→10年50年の結び。
      外側IIFEの gsap/ScrollTrigger/fine/mobile/SCRUB/lenis/OFF() をそのまま再利用（二重初期化しない）。
      ================================================================================== */
   var hero=d.getElementById('top');
@@ -3311,14 +3286,14 @@
   var fvD=d.querySelector('.st__d'), fvRows=d.querySelectorAll('.st__row'),
       fvLeads=d.querySelectorAll('.st__row .lead'), fvChips=d.querySelectorAll('.st__d .st__chip');
   var fvDnote=d.querySelector('.st__dnote');
-  var fvP=d.querySelector('.st__p'), fvPdgs=d.querySelectorAll('.st__pnum .dg>span'), fvPun=d.querySelector('.st__pnum .un'),
+  var fvP=d.querySelector('.st__p'), fvPdgs=d.querySelectorAll('.st__pnum .dg>span'), fvPun=d.querySelectorAll('.st__pnum .un'),
       fvPline=d.querySelector('.st__pline'), fvPs=d.querySelector('.st__ps .lm>span'),
       fvPnote=d.querySelector('.st__pnote'), fvPk=d.querySelector('.st__pk');
   var fvE=d.querySelector('.st__e'), fvEhead=d.querySelector('.st__ehead');
   var fvF=d.querySelector('.st__f'), fvFLed=fvF.querySelector('.st__ledger'), fvFChip=fvF.querySelector('.st__std');
   var fvDots=d.querySelectorAll('.st__dot'), fvDotsWrap=d.querySelector('.st__dots');
   var fvActWrap=d.querySelector('.st__act'), fvActN=d.getElementById('stActN');
-  var fvR1=d.getElementById('stR1');
+  var fvR1=d.getElementById('stR1'), fvR1u=d.getElementById('stR1u');
 
   intro.style.animation='none'; gsap.set(intro,{autoAlpha:0});
   gsap.set(ctaWrap,{autoAlpha:0,y:26});
@@ -3405,7 +3380,7 @@
     .to(fvD.querySelectorAll('.l1 .lm>span, .l2 .lm>span'),{yPercent:0,duration:.045,ease:'power3.out',stagger:.012},.44)
     .to(fvRows[0],{autoAlpha:1,y:0,duration:.022},.475)
     .to(fvLeads[0],{scaleX:1,duration:.03},.478)
-    .to(fvCnt,{n:0,duration:.045,onUpdate:function(){ fvR1.textContent=Math.round(fvCnt.n); }},.482)
+    .to(fvCnt,{n:0,duration:.045,onUpdate:function(){ var v=Math.round(fvCnt.n); fvR1.textContent=v; if(fvR1u) fvR1u.textContent=(v===0?'円':'万円'); }},.482)
     .to(fvChips[0],{scale:1,autoAlpha:1,duration:.018,ease:'back.out(2.2)'},.522)
     .to(fvRows[1],{autoAlpha:1,y:0,duration:.022},.532)
     .to(fvLeads[1],{scaleX:1,duration:.03},.535)
@@ -3417,7 +3392,7 @@
     .to(fvD,{autoAlpha:0,y:-24,duration:.032},.615)
     .set(fvD,{y:0},.648)
 
-  /* 幕P: 価格の祭壇（桁ごとに立ち上がる。2,480万円〜） */
+  /* 幕P: 価格の祭壇（桁ごとに立ち上がる。京2,480／花・風2,680の2プラン） */
     .to(fvP,{autoAlpha:1,duration:.012},.648)
     .to(fvPk,{autoAlpha:1,duration:.025},.652)
     .to(fvPdgs,{yPercent:0,duration:.05,ease:'power3.out',stagger:.008},.66)
