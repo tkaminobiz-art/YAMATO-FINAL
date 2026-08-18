@@ -75,10 +75,17 @@
   html.fvs-static .fvs__dots,html.fvs-static .fvs__count,html.fvs-static .fvs__hint{display:none}
 
   /* ============ 紙の幕（案B） ============ */
-  .fvs__scene--paper{background:var(--paper) url("assets/std/paper_washi.webp") center/1024px repeat;color:var(--sumi)}
+  .fvs__scene--paper{background:linear-gradient(rgba(244,241,234,.62),rgba(244,241,234,.62)),url("assets/std/paper_washi.webp") center/cover var(--paper);color:var(--sumi)}
   .fvs__scene--paper::after{content:"";position:absolute;inset:0;pointer-events:none;
     background:radial-gradient(120% 100% at 50% 0%,transparent 58%,rgba(122,104,76,.14) 100%)}
   .paper__in{position:relative;z-index:2;width:min(1060px,100%)}
+  .act{position:absolute;left:clamp(4px,1.6vw,26px);top:38%;z-index:2;
+    writing-mode:vertical-rl;font-size:clamp(1rem,.95rem+.2vw,1.05rem);letter-spacing:.4em;
+    color:var(--sumi3);display:flex;align-items:center;gap:14px}
+  .act::after{content:"";width:1px;height:clamp(90px,24vh,240px);background:linear-gradient(180deg,rgba(176,138,60,.6),rgba(176,138,60,0))}
+  .fvs__scene--eq .act{color:var(--cream2)}
+  .fvs__scene--eq .act::after{background:linear-gradient(180deg,rgba(232,199,125,.7),rgba(232,199,125,0))}
+  @media (max-width:700px){.act{left:8px;font-size:1rem;letter-spacing:.24em}}
   .fvs__eyebrow{font-size:clamp(.9375rem,.86rem + .3vw,1.05rem);font-weight:400;
     letter-spacing:.3em;color:var(--gold2);margin-bottom:clamp(16px,3vh,30px)}
   .fvs__lead{font-size:clamp(1rem,.92rem + .4vw,1.15rem);letter-spacing:.1em;color:var(--sumi2);
@@ -89,30 +96,32 @@
   .timg--a{width:min(560px,84%)}
   .timg--bdim{width:min(520px,78%);margin-bottom:clamp(14px,2.6vh,26px)}
   .timg--bmain{width:min(680px,92%)}
-  .timg--d{width:min(520px,82%)}
+  .timg--d{width:min(540px,86%)}
   .timg--f{width:min(560px,86%);margin:0 auto}
 
   /* 燕・牡丹（乗算で紙に載せる） */
-  .art{position:absolute;pointer-events:none;mix-blend-mode:multiply;z-index:1;
-    -webkit-mask-image:radial-gradient(85% 85% at 55% 45%,#000 48%,transparent 76%);
-    mask-image:radial-gradient(85% 85% at 55% 45%,#000 48%,transparent 76%)}
-  .art--swallows{top:calc(env(safe-area-inset-top) + clamp(40px,7vh,84px));right:clamp(4px,4vw,64px);
-    width:clamp(190px,26vw,400px)}
-  .art--peony{bottom:-6%;right:-4%;width:clamp(230px,30vw,460px)}
+  .art{position:absolute;pointer-events:none;mix-blend-mode:multiply;z-index:1}
+  .art--swallows{top:16%;right:4%;width:clamp(240px,32vw,500px)}
+  .art--sw2{top:calc(env(safe-area-inset-top) + clamp(48px,9vh,110px));left:6%;
+    width:clamp(120px,15vw,220px);transform:scaleX(-1);opacity:.9}
 
   /* 0円の台帳 */
   .ledger{max-width:640px;margin:clamp(22px,3.6vh,40px) 0 0;text-align:left}
-  .ledger__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;padding:clamp(12px,2vh,20px) 2px;
+  .ledger__row{display:grid;grid-template-columns:max-content 1fr max-content clamp(190px,21vw,230px);
+    align-items:baseline;gap:10px 14px;padding:clamp(12px,2vh,20px) 2px;
     border-bottom:1px solid var(--line-p)}
   .ledger__k{font-size:clamp(.95rem,.88rem + .4vw,1.12rem);letter-spacing:.12em;font-weight:500;white-space:nowrap}
   .ledger__lead{flex:1;border-bottom:1px dotted rgba(36,30,22,.4);transform:translateY(-4px)}
   .ledger__v{font-family:var(--fn);font-weight:300;font-size:clamp(1.5rem,1.2rem + 1.6vw,2.3rem);
     letter-spacing:.02em;font-variant-numeric:tabular-nums;color:var(--sumi)}
   .ledger__v small{font-size:.5em;font-family:var(--fg);font-weight:500;letter-spacing:.1em;margin-left:2px}
-  .ledger__chip{display:inline-block;margin-left:12px;font-size:.8rem;letter-spacing:.08em;color:var(--sumi2);
-    border:1px solid var(--line-p);border-radius:99px;padding:3px 12px;white-space:nowrap}
+  .ledger__chip{display:inline-block;margin-left:0;font-size:.8rem;letter-spacing:.06em;color:var(--sumi2);
+    border:1px solid var(--line-p);border-radius:99px;padding:3px 10px;white-space:nowrap;
+    justify-self:end;text-align:center;width:100%}
+  .ledger__v{justify-self:end}
   @media (max-width:700px){
-    .ledger__chip{margin-left:0;flex-basis:100%;width:fit-content}
+    .ledger__row{display:flex;flex-wrap:wrap}
+    .ledger__chip{width:fit-content}
     .ledger__v{margin-left:auto}
   }
   .ledger__note{margin-top:clamp(16px,2.6vh,26px);font-size:clamp(.875rem,.84rem + .2vw,.95rem);
@@ -142,13 +151,13 @@
   .fvs__media img{width:100%;height:100%;object-fit:cover}
   .fvs__scrim{position:absolute;inset:0;pointer-events:none;
     background:linear-gradient(180deg,rgba(16,13,10,.4) 0%,rgba(16,13,10,0) 32%,rgba(16,13,10,0) 58%,rgba(16,13,10,.6) 100%)}
-  .fvs__scene--eq{padding:0;box-shadow:inset 0 0 0 clamp(5px,.8vw,10px) var(--paper)}
-  .fvs__scene--eq .fvs__media{inset:clamp(5px,.8vw,10px)}
-  .fvs__scene--eq .fvs__scrim{inset:clamp(5px,.8vw,10px)}
-  .fvs__eqtxt{position:absolute;left:var(--mx);bottom:clamp(64px,11vh,120px);z-index:2;text-align:left;
-    padding:clamp(14px,2.2vh,22px) clamp(16px,2vw,26px);border-radius:6px;
-    background:rgba(12,10,7,.36);border:1px solid rgba(243,238,227,.08);
-    backdrop-filter:blur(8px) saturate(130%);-webkit-backdrop-filter:blur(8px) saturate(130%)}
+  .fvs__scene--eq{padding:0}
+  .fvs__eqtxt{position:absolute;left:var(--mx);bottom:clamp(64px,11vh,120px);z-index:2;text-align:left}
+  .fvs__eqtxt::before{content:"";position:absolute;inset:-34% -26%;z-index:-1;pointer-events:none;
+    background:radial-gradient(closest-side,rgba(12,10,7,.52),rgba(12,10,7,.22) 58%,transparent 100%);
+    filter:blur(6px)}
+  .fvs__eqtxt .fvs__room{text-shadow:0 2px 30px rgba(0,0,0,.6),0 1px 3px rgba(0,0,0,.35)}
+  .fvs__eqtxt .fvs__pled,.fvs__eqtxt .pled__note{text-shadow:0 1px 18px rgba(0,0,0,.6),0 1px 2px rgba(0,0,0,.4)}
   .fvs__scene--eq.is-right .fvs__eqtxt{left:auto;right:var(--mx);text-align:right}
   .fvs__room{font-family:var(--fn);font-weight:100;text-transform:uppercase;color:var(--cream);
     font-size:clamp(2.4rem,1.5rem + 5vw,4.8rem);letter-spacing:.06em;line-height:1.05}
@@ -160,25 +169,25 @@
   .fvs__pled .dash{width:34px;height:1px;background:var(--gold);opacity:.8}
   .chip{font-style:normal;font-weight:500;font-size:.8rem;letter-spacing:.2em;color:#E8C77D;
     border:1px solid rgba(201,162,75,.65);padding:4px 10px 4px 12px;border-radius:2px;white-space:nowrap}
-  .timg--t1{width:min(600px,88%)}
-  .timg--t2{width:min(700px,94%)}
-  .timg--t0s{width:min(620px,88%);margin:0 auto}
-  .wish{list-style:none;margin:clamp(18px,3vh,30px) 0 0}
-  .wish li{font-size:clamp(1rem,.94rem + .5vw,1.25rem);letter-spacing:.1em;color:var(--sumi2);
-    padding:clamp(5px,1vh,10px) 0 clamp(5px,1vh,10px) 1.4em;position:relative}
-  .wish li::before{content:"";position:absolute;left:.2em;top:50%;transform:translateY(-50%);
-    width:8px;height:8px;border-radius:50%;background:url("assets/std/gold_washi.webp") center/cover}
+  .timg--t1{width:min(640px,92%)}
+  .timg--t2{width:min(660px,94%)}
+  .timg--t0s{width:min(620px,90%);margin:0 auto}
+  .wish{list-style:none;margin:clamp(20px,3.4vh,34px) 0 0}
+  .wish li{font-size:clamp(1rem,.94rem + .5vw,1.2rem);letter-spacing:.14em;color:var(--sumi2);
+    padding:clamp(6px,1.2vh,12px) 0}
   .reason__punch{margin-top:clamp(18px,3vh,28px);font-weight:500;
-    font-size:clamp(1.05rem,.95rem + .7vw,1.4rem);letter-spacing:.12em;color:var(--sumi);
+    font-size:clamp(1.15rem,1rem + 1vw,1.7rem);letter-spacing:.12em;color:var(--sumi);
     padding-bottom:8px;border-bottom:2px solid transparent;
     border-image:url("assets/std/gold_washi.webp") 30 / 0 0 2px 0 / 0 stretch;width:fit-content}
   .pled__note{margin-top:10px;font-size:clamp(.875rem,.83rem+.25vw,1rem);letter-spacing:.1em;color:var(--cream2)}
   .fvs__scene--climax{text-align:center}
-  .climax__in{width:min(760px,100%)}
+  .climax__in{width:min(760px,100%);padding-top:clamp(70px,13vh,150px)}
   .climax__sub{color:var(--sumi2)}
   .climax__cta{justify-content:center}
-  .art--swXL{width:clamp(240px,30vw,480px);top:calc(env(safe-area-inset-top) + clamp(30px,5vh,64px));right:clamp(2px,3vw,56px)}
-  .art--peonyL{left:-5%;right:auto;bottom:-8%;width:clamp(220px,28vw,440px);transform:scaleX(-1)}
+  .art--swXL{width:clamp(170px,19vw,300px);top:calc(env(safe-area-inset-top) + clamp(20px,3.6vh,48px));
+    right:clamp(16px,6vw,110px)}
+  .is-quiet .fvs__room{font-size:clamp(1.15rem,1rem + 1vw,1.7rem);font-weight:200;letter-spacing:.34em}
+  .is-quiet .fvs__pled{font-size:clamp(.8rem,.78rem+.2vw,.9rem)}
   .timg--e{width:min(560px,80vw)}
   .timg--o{width:min(620px,84vw)}
   .fvs__scene--open .fvs__eqtxt{bottom:clamp(76px,13vh,150px);max-width:min(760px,90vw)}
@@ -227,8 +236,8 @@
   .fvs__dots button:focus-visible{outline:1px solid var(--gold);outline-offset:2px;border-radius:50%}
   html[data-fvstheme="paper"] .fvs__dots button::before{background:rgba(36,30,22,.28)}
   html[data-fvstheme="paper"] .fvs__dots button[aria-current="true"]::before{background:var(--shu)}
-  .fvs__count{position:fixed;right:clamp(14px,2.2vw,30px);bottom:clamp(14px,3vh,26px);z-index:60;
-    font-family:var(--fn);font-weight:300;font-size:.8rem;letter-spacing:.24em;color:var(--cream2)}
+  .fvs__count{position:fixed;right:clamp(14px,2.2vw,30px);top:calc(env(safe-area-inset-top) + clamp(14px,2.6vh,24px));z-index:60;
+    font-family:var(--fn);font-weight:300;font-size:.9rem;letter-spacing:.24em;color:var(--cream2)}
   html[data-fvstheme="paper"] .fvs__count{color:var(--sumi2)}
   .fvs__hint{position:fixed;left:50%;bottom:clamp(12px,2.6vh,22px);transform:translateX(-50%);z-index:60;
     font-size:1rem;letter-spacing:.18em;color:var(--cream2);display:flex;align-items:center;gap:10px;white-space:nowrap}
@@ -239,7 +248,7 @@
   @keyframes cue{0%{transform:scaleY(.2);transform-origin:top}55%{transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
 
   /* ============ 図面メモ ============ */
-  .after{background:#F5F1E8;color:#241E16;padding:clamp(64px,10vh,120px) var(--mx)}
+  .after{background:#F5F1E8;color:#241E16;padding:clamp(40px,7vh,80px) var(--mx)}
   .after__in{max-width:36em;margin:0 auto}
   .after h2{font-weight:500;font-size:clamp(1.2rem,1rem + 1vw,1.7rem);letter-spacing:.14em;margin-bottom:22px}
   .after p,.after li{font-size:1rem;line-height:2.05;letter-spacing:.05em;line-break:strict;overflow-wrap:break-word}
@@ -247,11 +256,12 @@
   .after li{padding-left:1.3em;text-indent:-1.3em}
   .after li::before{content:"─";color:var(--amber);margin-right:.55em}
   .after .small{font-size:1rem;color:#6B6154}
+  .notes{display:none}
+  html.show-notes .notes{display:block}
 
   @media (max-width:700px){
     .spbr{display:inline}
     .fvs__dots{display:none}
-    .fvs__count{top:calc(env(safe-area-inset-top) + 14px);bottom:auto;right:16px}
     .grid{grid-template-columns:repeat(3,1fr)}
     .g:nth-child(n+10){display:none}
     .btn{display:block;margin:0 auto 12px;max-width:320px}
@@ -259,8 +269,8 @@
       width:clamp(140px,40vw,210px);opacity:.6}
     .art--peony{width:clamp(170px,42vw,280px);opacity:.65;bottom:-4%;right:-8%}
     .fvs__eyebrow{margin-bottom:12px}
-    .art--swXL{top:auto;bottom:calc(env(safe-area-inset-bottom) + 6vh);right:-8%;width:clamp(150px,40vw,220px);opacity:.55}
-    .art--peonyL{width:clamp(150px,38vw,240px);opacity:.6}
+    .art--swXL{width:clamp(120px,30vw,180px);right:4%;opacity:.85}
+    .art--sw2{width:clamp(90px,24vw,150px)}
     .fvs__eqtxt{left:16px;right:16px;bottom:calc(env(safe-area-inset-bottom) + 76px)}
     .fvs__scene--eq.is-right .fvs__eqtxt{left:16px;right:16px}
   }
@@ -271,7 +281,7 @@
 <a class="skip" href="#after">ステップ操作をスキップして図面メモへ</a>
 
 <div class="fvs__loader" aria-hidden="true">
-  <img src="assets/std/art_swallows.webp" alt="">
+  <img src="assets/std/art_swallows_t.webp" alt="">
   <p>花鳥風月</p>
 </div>
 
@@ -279,7 +289,8 @@
 
   <!-- 01 幕1: 理想（紙×燕。願望3例=クライアント実文の自由設計例を願望形に） -->
   <article class="fvs__scene fvs__scene--paper" id="s01" data-name="理想" data-theme="paper">
-    <img class="art art--swallows" src="assets/std/art_swallows.webp" alt="" data-l>
+    <img class="art art--swallows" src="assets/std/art_swallows_t.webp" alt="" data-l>
+    <p class="act" data-l>第一幕</p>
     <div class="paper__in">
       <p class="fvs__eyebrow" data-l>YAMATO FUDOSAN ── NARA</p>
       <img class="timg timg--t1" src="assets/std/t_1.png" alt="「こんな暮らしがしたい」" data-l>
@@ -294,15 +305,18 @@
 
   <!-- 02 幕2: 約束（コピー=ユーザー指定文言・一字一句そのまま） -->
   <article class="fvs__scene fvs__scene--paper" id="s02" data-name="約束" data-theme="paper">
-    <img class="art art--peony" src="assets/std/art_peony_left.webp" alt="" data-l>
+    <img class="art art--sw2" src="assets/std/art_swallows_t.webp" alt="" data-l>
+    <p class="act" data-l>第二幕</p>
     <div class="paper__in">
       <p class="fvs__eyebrow" data-l>OUR PROMISE</p>
       <img class="timg timg--t2" src="assets/std/t_2.png" alt="やまと不動産なら実現できるとお約束します。" data-l>
+      <p class="fvs__lead" data-l style="margin-top:clamp(16px,3vh,28px)">吹き抜けも、高い天井も、<br class="spbr">曲線の壁もつくれます。</p>
     </div>
   </article>
 
   <!-- 03 幕D: 0円の台帳（紙・150万→0円） -->
   <article class="fvs__scene fvs__scene--paper" id="s03" data-name="0円の台帳" data-theme="paper">
+    <p class="act" data-l>第三幕</p>
     <div class="paper__in">
       <p class="fvs__lead" data-l>標準装備のグレードが高いので、<br class="spbr">あとから設備を足す必要がありません。</p>
       <img class="timg timg--d" src="assets/std/t_d.png" alt="他社ではかかる費用が、やまとでは0円です。" data-l>
@@ -330,7 +344,8 @@
   </article>
 
   <!-- 06 Kitchen -->
-  <article class="fvs__scene fvs__scene--eq" id="s06" data-name="キッチン" data-theme="dark">
+  <article class="fvs__scene fvs__scene--eq is-right" id="s06" data-name="キッチン" data-theme="dark">
+    <p class="act" data-l>第四幕</p>
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/kitchen_sp_720.webp 720w, assets/std/kitchen_sp_1080.webp 1080w, assets/std/kitchen_sp_1440.webp 1440w" sizes="100vw">
@@ -345,7 +360,8 @@
   </article>
 
   <!-- 07 Bath -->
-  <article class="fvs__scene fvs__scene--eq is-right" id="s07" data-name="浴室" data-theme="dark">
+  <article class="fvs__scene fvs__scene--eq" id="s07" data-name="浴室" data-theme="dark">
+    <p class="act" data-l>第四幕</p>
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/bath_sp_720.webp 720w, assets/std/bath_sp_1080.webp 1080w, assets/std/bath_sp_1440.webp 1440w" sizes="100vw">
@@ -360,7 +376,8 @@
   </article>
 
   <!-- 08 Vanity -->
-  <article class="fvs__scene fvs__scene--eq" id="s08" data-name="洗面" data-theme="dark">
+  <article class="fvs__scene fvs__scene--eq is-right" id="s08" data-name="洗面" data-theme="dark">
+    <p class="act" data-l>第四幕</p>
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/vanity_sp_720.webp 720w, assets/std/vanity_sp_1080.webp 1080w, assets/std/vanity_sp_1440.webp 1440w" sizes="100vw">
@@ -375,7 +392,8 @@
   </article>
 
   <!-- 09 Living -->
-  <article class="fvs__scene fvs__scene--eq is-right" id="s09" data-name="リビング" data-theme="dark">
+  <article class="fvs__scene fvs__scene--eq" id="s09" data-name="リビング" data-theme="dark">
+    <p class="act" data-l>第四幕</p>
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/living_sp_720.webp 720w, assets/std/living_sp_1080.webp 1080w, assets/std/living_sp_1440.webp 1440w" sizes="100vw">
@@ -390,7 +408,8 @@
   </article>
 
   <!-- Wall（装備パレードに合流。ヘーベルパワーボード） -->
-  <article class="fvs__scene fvs__scene--eq" id="s05" data-name="外壁" data-theme="dark">
+  <article class="fvs__scene fvs__scene--eq is-right" id="s05" data-name="外壁" data-theme="dark">
+    <p class="act" data-l>第四幕</p>
     <div class="fvs__media"><img src="assets/fv_cine/poster_wall.webp" alt="夕景のヘーベルパワーボードの外壁" decoding="async" loading="lazy"></div>
     <span class="fvs__scrim"></span>
     <div class="fvs__eqtxt">
@@ -401,7 +420,8 @@
   </article>
 
   <!-- 10 Tatami -->
-  <article class="fvs__scene fvs__scene--eq is-right" id="s10" data-name="和室" data-theme="dark">
+  <article class="fvs__scene fvs__scene--eq is-quiet" id="s10" data-name="和室" data-theme="dark">
+    <p class="act" data-l>第四幕</p>
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/washitsu_sp_720.webp 720w, assets/std/washitsu_sp_1080.webp 1080w, assets/std/washitsu_sp_1440.webp 1440w" sizes="100vw">
@@ -417,6 +437,7 @@
 
   <!-- 11 Entrance -->
   <article class="fvs__scene fvs__scene--eq" id="s11" data-name="玄関" data-theme="dark">
+    <p class="act" data-l>第四幕</p>
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/entrance_sp_720.webp 720w, assets/std/entrance_sp_1080.webp 1080w, assets/std/entrance_sp_1440.webp 1440w" sizes="100vw">
@@ -431,7 +452,8 @@
   </article>
 
   <!-- 12 Atrium -->
-  <article class="fvs__scene fvs__scene--eq is-right" id="s12" data-name="吹き抜け" data-theme="dark">
+  <article class="fvs__scene fvs__scene--eq is-right is-quiet" id="s12" data-name="吹き抜け" data-theme="dark">
+    <p class="act" data-l>第四幕</p>
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/atrium_720.webp 720w, assets/std/atrium_1080.webp 1080w, assets/std/atrium_1440.webp 1440w" sizes="100vw">
@@ -447,8 +469,8 @@
 
   <!-- 12 クライマックス: 紙×花鳥風月×招待（コピー=クライアント実文） -->
   <article class="fvs__scene fvs__scene--paper fvs__scene--climax" id="s13" data-name="招待" data-theme="paper">
-    <img class="art art--swallows art--swXL" src="assets/std/art_swallows.webp" alt="" data-l>
-    <img class="art art--peonyL" src="assets/std/art_peony_left.webp" alt="" data-l>
+    <img class="art art--swallows art--swXL" src="assets/std/art_swallows_t.webp" alt="" data-l>
+    <p class="act" data-l>終幕</p>
     <div class="paper__in climax__in">
       <p class="fvs__eyebrow" data-l>花鳥風月 ── やまとの家</p>
       <img class="timg timg--t0s" src="assets/std/t_0s.png" alt="大手で諦めた家を、当社と一緒に叶えましょう。" data-l>
@@ -466,6 +488,13 @@
 </section>
 
 <section class="after" id="after">
+  <div class="after__in" style="text-align:center">
+    <p>株式会社やまと不動産</p>
+    <p class="small" style="margin-top:6px">奈良県奈良市大宮町1丁目6番21</p>
+  </div>
+</section>
+
+<section class="after notes" id="notes">
   <div class="after__in">
     <h2>図面メモ ── fv_step.html v3「理想起点の12幕」</h2>
     <p>1操作＝1シーンのステップ送りです。物語は、理想（こんな暮らしがしたい）→約束（実現できるとお約束します）→理由（標準の高さと0円の費用）→標準装備の実物8景→招待、の順で進みます。PCでは右端のドットで任意のシーンへ移動できます。最終シーンのあとは通常のスクロールに戻ります。</p>
@@ -490,6 +519,7 @@
   var qs=new URLSearchParams(location.search);
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var ok=!!(window.gsap && window.Observer) && !reduce && qs.get('static')!=='1';
+  if(qs.get('notes')==='1') root.classList.add('show-notes');
   if(!ok){ root.classList.add('fvs-static'); return; }
 
   gsap.registerPlugin(Observer);
