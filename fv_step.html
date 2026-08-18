@@ -76,7 +76,7 @@
   html.fvs-static .fvs__dots,html.fvs-static .fvs__count,html.fvs-static .fvs__hint{display:none}
 
   /* ============ 紙の幕（案B） ============ */
-  .fvs__scene--paper{background:linear-gradient(rgba(244,241,234,.62),rgba(244,241,234,.62)),url("assets/std/paper_washi.webp") center/cover var(--paper);color:var(--sumi)}
+  .fvs__scene--paper{background:url("assets/std/page_kinari.webp") center/cover var(--paper);color:var(--sumi)}
   .fvs__scene--paper::after{content:"";position:absolute;inset:0;pointer-events:none;
     background:radial-gradient(120% 100% at 50% 0%,transparent 58%,rgba(122,104,76,.14) 100%)}
   .paper__in{position:relative;z-index:2;width:min(1060px,100%)}
@@ -133,11 +133,9 @@
   #s01 .fvs__lead{margin-bottom:0}
 
   /* ============ 紅の幕（包み・方向B） ============ */
-  .fvs__scene--beni{background:var(--shu);color:var(--cream)}
-  .fvs__scene--beni::before{content:"";position:absolute;inset:0;pointer-events:none;
-    background:url("assets/std/paper_washi.webp") center/cover;mix-blend-mode:multiply;opacity:.3}
+  .fvs__scene--beni{background:url("assets/std/page_beni.webp") center/cover var(--shu);color:var(--cream)}
   .fvs__scene--beni::after{content:"";position:absolute;inset:0;pointer-events:none;
-    background:radial-gradient(118% 92% at 50% 44%,transparent 40%,rgba(84,8,12,.5) 100%)}
+    background:radial-gradient(118% 92% at 50% 44%,transparent 52%,rgba(84,8,12,.32) 100%)}
   .foil{position:absolute;pointer-events:none;z-index:1;opacity:.92;
     filter:brightness(0) invert(.55) sepia(1) saturate(2.2) brightness(.98)}
   .foil--tl{left:clamp(-140px,-11vw,-60px);top:clamp(-120px,-9vh,-40px);width:clamp(220px,34vw,520px);transform:rotate(188deg)}
@@ -214,11 +212,9 @@
     letter-spacing:.1em;color:var(--sumi2)}
 
   /* ============ 写真の幕（紅の図版プレート＝上質カタログ） ============ */
-  .fvs__scene--eq{padding:0;background:var(--shu)}
-  .fvs__scene--eq::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
-    background:url("assets/std/paper_washi.webp") center/cover;mix-blend-mode:multiply;opacity:.28}
+  .fvs__scene--eq{padding:0;background:url("assets/std/page_beni.webp") center/cover var(--shu)}
   .fvs__scene--eq::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
-    background:radial-gradient(118% 92% at 50% 44%,transparent 42%,rgba(84,8,12,.45) 100%)}
+    background:radial-gradient(118% 92% at 50% 44%,transparent 52%,rgba(84,8,12,.3) 100%)}
   .fvs__media{position:absolute;left:var(--mx);top:50%;transform:translateY(-50%);
     width:min(56vw,980px);aspect-ratio:3/2;z-index:2;background:#1c0f0f;
     border:clamp(10px,1.4vw,20px) solid #F6F2E8;outline:1px solid rgba(241,213,125,.45);
@@ -269,10 +265,9 @@
   .is-quiet .fvs__room::after{margin-left:auto;margin-right:auto}
   .is-quiet .fvs__pled,.fvs__scene--eq.is-right.is-quiet .fvs__pled{font-size:clamp(.8rem,.78rem+.2vw,.9rem);justify-content:center}
   /* 生成りの頁（紅と交互＝頁めくり） */
-  .fvs__scene--eq.is-kinari{background:linear-gradient(rgba(244,241,234,.62),rgba(244,241,234,.62)),url("assets/std/paper_washi.webp") center/cover var(--paper)}
-  .fvs__scene--eq.is-kinari::before{display:none}
+  .fvs__scene--eq.is-kinari{background:url("assets/std/page_kinari.webp") center/cover var(--paper)}
   .fvs__scene--eq.is-kinari::after{background:radial-gradient(120% 100% at 50% 0%,transparent 58%,rgba(122,104,76,.14) 100%)}
-  .fvs__scene--eq.is-quiet.is-kinari{background:linear-gradient(rgba(237,232,221,.72),rgba(237,232,221,.72)),url("assets/std/paper_washi.webp") center/cover var(--paper2)}
+  .fvs__scene--eq.is-quiet.is-kinari{background:linear-gradient(rgba(237,232,221,.45),rgba(237,232,221,.45)),url("assets/std/page_kinari.webp") center/cover var(--paper2)}
   .is-kinari .fvs__media{border-color:#FCFAF5;outline-color:rgba(176,138,60,.5);
     box-shadow:0 24px 70px rgba(60,48,28,.35)}
   .is-kinari .fvs__room{color:var(--sumi)}
