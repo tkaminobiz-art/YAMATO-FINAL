@@ -5,177 +5,213 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
 <title>FV図面 ステップ送り版（fv_step）｜やまと不動産</title>
-<meta name="description" content="FVのステップ送り（1操作=1シーン）検証図面。標準装備8景＋承認済みコピー幕5景。">
+<meta name="description" content="FVのステップ送り（1操作=1シーン）図面。案B『花鳥風月・紙と金』適用版。">
 <!--
   ============================================================
-  FV図面: ステップ送り版（案B / GSAP Observer）2026-08-18
+  FV図面: ステップ送り版 v2「花鳥風月・紙と金」 2026-08-18
   ------------------------------------------------------------
-  目的:
-   1) 「スクロールが敏感すぎる」への根治 = 1ジェスチャー=1シーン。
-      速度依存とオーバーシュートが構造的に発生しない（c77e3ea の再発防止）
-   2) 標準装備を 5景→8景 に拡張（実写 assets/std/ ＝ 左京25MP源から現像）
-   3) srcset/picture の導入（PC 16:9 3段 ＋ SP 9:16 3段 / AVIF+WebP）
-  逃げ道（必須要件）:
-   - ドットナビ クリックで任意シーンへ / キーボード ↑↓ PgUp PgDn Home End
-   - 最終シーンで前進 → 解放して通常スクロール / 先頭上端で復帰
-   - prefers-reduced-motion / GSAP不成立 / ?static=1 → 全シーン縦積みの静的表示
-   - スキップリンク
-  コピーは index.html v4「あかりの物語・改」承認済み文言をそのまま使用。
-  変更点は4つ（前2つはクライアント指示、後2つは 8/18 内部指示）:
-   - 幕D脚注に 8/4指示書の例文「2,000万円規模の土地の場合…」を追加（指示#13）
-   - Vanityの台帳を「三面鏡・広収納」→「TOTO オクターブ Lite」へ
-     （パンフレットP.10/P.36で全グレード標準を確認済み。三面鏡は確認事項⑩）
-   - 幕Aに導入行「住宅価格が、目まぐるしい速度で上がっています。」を追加
-   - 幕Bの主役を「やまと不動産なら、お役に立てるかもしれません。」に復帰
-     （v4では独立幕。当図面の初版で添え書きに降格していたのを修正）
-  未確定のため保留:
-   - ミライエの「標準」表記（確認事項⑬: パンフは耐震/制振の選択制）→ チップ無し
-   - シリーズカラー（確認事項③）/ Staff Check吹き出し（計画§6-Q5）→ 未適用
-   - Atriumの高解像度再ライト（Higgsfield要再認証）→ 現状は自然グレード版
-   - 幕E背景は poster_wall 静止画（統合時に wall_pc.mp4 ループへ差し替え）
+  機構 = v1のまま（1ジェスチャー=1シーン / GSAP Observer / 逃げ道6種）。
+  本版はビジュアルの化粧直し（案B主軸＋案Aの舞台術）:
+   - コピー幕(1-4,13) = 和紙の紙面(Adobe Stock #359565373) ＋ 墨文字
+     ＋ 金罫(#1829766889) ＋ 牡丹・燕(#762855711 TWINS DESIGN STUDIO)
+   - 表示行は実書体を画像化(Illustrator直出力・秀英角ゴ銀B / 幕Eのみ
+     凸版文久見出し明朝EB)。本番はTypekit ftb5hqp整備後にwebfontへ移行可
+   - 設備景(5-12) = golden hour実写フルブリード続行＋文字座面の強化
+     ＋紙の縁(アルバムの頁)
+   - ローダー0.9s(朱赤×燕) / 幕Dの150万→0円カウントダウン復活 /
+     シーン別テーマ(紙=墨UI・写真=クリームUI)
+  ライセンス素材の原本は assets/stock_src/(git管理外)。Web掲載は加工後のみ。
+  未確定のため保留: ミライエ標準表記(確認事項⑬) / 毛筆ロゴ(パンフ入稿待ち
+  =当面Yuji Syuku) / Atrium高解像度再ライト(Higgsfield)
   ============================================================
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Inter:wght@100;200;300;400&family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Yuji+Syuku&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#100D0A; --bg2:#171310; --cream:#F3EEE3; --cream2:rgba(243,238,227,.72);
-    --gold:#C9A24B; --gold2:#E8C77D; --amber:#C4851F; --amber-d:#A56C12;
-    --line:rgba(243,238,227,.18);
-    --fj:"Shippori Mincho",serif;
+    --paper:#F4F1EA; --paper2:#EDE8DD; --sumi:#241E16; --sumi2:#5C5346; --sumi3:#8A8070;
+    --gold:#C9A24B; --gold2:#B08A3C; --shu:#C64A00;
+    --void:#100D0A; --cream:#F3EEE3; --cream2:rgba(243,238,227,.72);
+    --amber:#C4851F; --amber-d:#A56C12;
+    --line-d:rgba(243,238,227,.18); --line-p:rgba(36,30,22,.22);
     --fg:"Zen Kaku Gothic New",sans-serif;
+    --fb:"Yuji Syuku",serif;
     --fn:"Inter",sans-serif;
-    --fh:"Cormorant Garamond",serif;
     --mx:clamp(22px,5vw,72px);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   .spbr{display:none}
   html{scroll-behavior:smooth}
   html.fvs-app{scroll-behavior:auto}
-  body{background:var(--bg);color:var(--cream);font-family:var(--fg);font-weight:300;
+  body{background:var(--void);color:var(--cream);font-family:var(--fg);font-weight:400;
     -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.9}
   img{display:block;max-width:100%}
   a{color:inherit}
 
-  .skip{position:fixed;top:10px;left:10px;z-index:99;background:var(--cream);color:#221C14;
+  .skip{position:fixed;top:10px;left:10px;z-index:299;background:var(--cream);color:#221C14;
     padding:10px 16px;border-radius:4px;font-size:.8rem;letter-spacing:.08em;text-decoration:none;
     transform:translateY(-64px);transition:transform .25s}
   .skip:focus-visible{transform:none}
 
+  /* ============ ローダー（朱赤×燕） ============ */
+  .fvs__loader{position:fixed;inset:0;z-index:200;background:var(--shu);display:grid;place-items:center;
+    animation:loaderOut .5s ease .95s forwards;pointer-events:none}
+  .fvs__loader img{width:clamp(150px,24vw,260px);opacity:.9;mix-blend-mode:luminosity;
+    animation:loaderIn .8s cubic-bezier(.16,1,.3,1) both}
+  .fvs__loader p{position:absolute;bottom:clamp(22px,6vh,48px);left:50%;transform:translateX(-50%);
+    font-family:var(--fb);font-size:clamp(1rem,.9rem + .8vw,1.4rem);letter-spacing:.34em;color:#F6E9D2}
+  @keyframes loaderIn{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:.9;transform:none}}
+  @keyframes loaderOut{to{opacity:0;visibility:hidden}}
+  html.fvs-static .fvs__loader{display:none}
+  @media (prefers-reduced-motion:reduce){.fvs__loader{display:none}}
+
   /* ============ ステージ ============ */
-  .fvs{position:relative;background:var(--bg)}
+  .fvs{position:relative;background:var(--void)}
   html.fvs-app .fvs{height:100vh;height:100svh;overflow:hidden}
   .fvs__scene{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;
-    overflow:hidden;padding:calc(env(safe-area-inset-top) + 56px) var(--mx) calc(env(safe-area-inset-bottom) + 64px)}
+    overflow:hidden;padding:calc(env(safe-area-inset-top) + 56px) var(--mx) calc(env(safe-area-inset-bottom) + 72px)}
   html.fvs-app .fvs__scene{position:absolute;inset:0;min-height:0}
-
-  /* 静的モード（JS無効/reduced-motion/?static=1）: 全景を縦積み・操作UIは出さない */
   html.fvs-static .fvs__dots,html.fvs-static .fvs__count,html.fvs-static .fvs__hint{display:none}
 
-  /* ============ コピー幕 ============ */
-  .fvs__inner{max-width:1080px;width:100%;text-align:center}
-  .fvs__eyebrow{font-family:var(--fh);font-style:italic;font-size:clamp(.9375rem,.84rem + .5vw,1.08rem);
-    letter-spacing:.28em;color:var(--gold);margin-bottom:clamp(18px,3.4vh,40px);white-space:nowrap}
-  .fvs__line{font-family:var(--fj);font-weight:500;font-size:clamp(1.42rem,.9rem + 3vw,3.6rem);
-    line-height:1.6;letter-spacing:.08em}
-  .fvs__sub{margin-top:clamp(18px,3.4vh,34px);font-size:clamp(.86rem,.8rem + .3vw,1rem);
-    letter-spacing:.12em;color:var(--cream2)}
-  .fvs__lead{font-size:clamp(1rem,.92rem + .4vw,1.15rem);letter-spacing:.1em;color:var(--cream2);
-    margin-bottom:clamp(10px,2vh,22px)}
-  .fvs__line--dim{font-size:clamp(1.15rem,.85rem + 2vw,2.2rem);color:var(--cream2);
-    margin-bottom:clamp(10px,2vh,20px)}
+  /* ============ 紙の幕（案B） ============ */
+  .fvs__scene--paper{background:var(--paper) url("assets/std/paper_washi.webp") center/1024px repeat;color:var(--sumi)}
+  .fvs__scene--paper::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(120% 100% at 50% 0%,transparent 58%,rgba(122,104,76,.14) 100%)}
+  .paper__in{position:relative;z-index:2;width:min(1060px,100%)}
+  .fvs__eyebrow{font-size:clamp(.9375rem,.86rem + .3vw,1.05rem);font-weight:400;
+    letter-spacing:.3em;color:var(--gold2);margin-bottom:clamp(16px,3vh,30px)}
+  .fvs__lead{font-size:clamp(1rem,.92rem + .4vw,1.15rem);letter-spacing:.1em;color:var(--sumi2);
+    margin-bottom:clamp(12px,2.2vh,22px)}
+  .kin{height:2px;border:0;background:url("assets/std/gold_washi.webp") center/cover;
+    width:clamp(48px,6vw,76px);margin:clamp(16px,3vh,28px) 0}
+  .timg{width:auto;height:auto}
+  .timg--a{width:min(560px,84%)}
+  .timg--bdim{width:min(520px,78%);margin-bottom:clamp(14px,2.6vh,26px)}
+  .timg--bmain{width:min(680px,92%)}
+  .timg--d{width:min(520px,82%)}
+  .timg--f{width:min(560px,86%);margin:0 auto}
+
+  /* 燕・牡丹（乗算で紙に載せる） */
+  .art{position:absolute;pointer-events:none;mix-blend-mode:multiply;z-index:1;
+    -webkit-mask-image:radial-gradient(85% 85% at 55% 45%,#000 48%,transparent 76%);
+    mask-image:radial-gradient(85% 85% at 55% 45%,#000 48%,transparent 76%)}
+  .art--swallows{top:calc(env(safe-area-inset-top) + clamp(40px,7vh,84px));right:clamp(4px,4vw,64px);
+    width:clamp(190px,26vw,400px)}
+  .art--peony{bottom:-6%;right:-4%;width:clamp(230px,30vw,460px)}
 
   /* 0円の台帳 */
-  .ledger{max-width:640px;margin:clamp(26px,4.5vh,48px) auto 0;text-align:left}
-  .ledger__row{display:flex;align-items:baseline;gap:14px;padding:clamp(12px,2vh,20px) 2px;
-    border-bottom:1px solid var(--line)}
-  .ledger__k{font-size:clamp(.92rem,.85rem + .4vw,1.12rem);letter-spacing:.14em;font-weight:400}
-  .ledger__lead{flex:1;border-bottom:1px dotted rgba(243,238,227,.34);transform:translateY(-4px)}
-  .ledger__v{font-family:var(--fn);font-weight:200;font-size:clamp(1.5rem,1.2rem + 1.6vw,2.4rem);letter-spacing:.04em}
-  .ledger__v small{font-size:.5em;font-family:var(--fg);font-weight:400;letter-spacing:.1em;margin-left:2px}
-  .ledger__chip{display:inline-block;margin-left:12px;font-size:.68rem;letter-spacing:.1em;color:var(--cream2);
-    border:1px solid var(--line);border-radius:99px;padding:3px 10px;white-space:nowrap}
-  .ledger__note{margin-top:clamp(16px,2.6vh,26px);font-size:clamp(.78rem,.74rem + .2vw,.9rem);
-    letter-spacing:.1em;color:var(--cream2);text-align:center}
+  .ledger{max-width:640px;margin:clamp(22px,3.6vh,40px) 0 0;text-align:left}
+  .ledger__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;padding:clamp(12px,2vh,20px) 2px;
+    border-bottom:1px solid var(--line-p)}
+  .ledger__k{font-size:clamp(.95rem,.88rem + .4vw,1.12rem);letter-spacing:.12em;font-weight:500;white-space:nowrap}
+  .ledger__lead{flex:1;border-bottom:1px dotted rgba(36,30,22,.4);transform:translateY(-4px)}
+  .ledger__v{font-family:var(--fn);font-weight:300;font-size:clamp(1.5rem,1.2rem + 1.6vw,2.3rem);
+    letter-spacing:.02em;font-variant-numeric:tabular-nums;color:var(--sumi)}
+  .ledger__v small{font-size:.5em;font-family:var(--fg);font-weight:500;letter-spacing:.1em;margin-left:2px}
+  .ledger__chip{display:inline-block;margin-left:12px;font-size:.8rem;letter-spacing:.08em;color:var(--sumi2);
+    border:1px solid var(--line-p);border-radius:99px;padding:3px 12px;white-space:nowrap}
+  @media (max-width:700px){
+    .ledger__chip{margin-left:0;flex-basis:100%;width:fit-content}
+    .ledger__v{margin-left:auto}
+  }
+  .ledger__note{margin-top:clamp(16px,2.6vh,26px);font-size:clamp(.875rem,.84rem + .2vw,.95rem);
+    letter-spacing:.08em;color:var(--sumi2)}
 
-  /* 価格の祭壇 */
-  .price{display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;
-    gap:clamp(18px,4vw,64px);margin-top:clamp(22px,4vh,44px)}
-  .price__u{text-align:center}
-  .price__nm{font-family:var(--fj);font-weight:600;font-size:clamp(1rem,.9rem + .6vw,1.4rem);letter-spacing:.3em;color:var(--gold2)}
-  .price__v{font-family:var(--fn);font-weight:100;font-size:clamp(2.6rem,1.8rem + 4.6vw,5.4rem);letter-spacing:.02em;line-height:1.2}
-  .price__v small{font-size:.38em;font-family:var(--fj);font-weight:500;letter-spacing:.08em}
-  .price__chip{display:inline-block;margin-top:clamp(16px,2.6vh,26px);font-size:.78rem;letter-spacing:.22em;
-    color:var(--gold);border:1px solid rgba(201,162,75,.5);padding:7px 18px;border-radius:2px}
+  /* 価格の祭壇（紙×朱の帯） */
+  .fvs__scene--price{padding-right:calc(var(--mx) + clamp(90px,17vw,250px))}
+  .shu__band{position:absolute;top:0;bottom:0;right:0;width:clamp(84px,16vw,240px);background:var(--shu);z-index:2}
+  .shu__band::after{content:"";position:absolute;top:7%;bottom:7%;left:clamp(9px,1.2vw,16px);width:1px;
+    background:linear-gradient(180deg,transparent,rgba(232,199,125,.85),transparent)}
+  .shu__fude{position:absolute;top:8%;left:50%;transform:translateX(-50%);writing-mode:vertical-rl;
+    font-family:var(--fb);font-size:clamp(1.3rem,1rem + 1.8vw,2.4rem);color:#F6E9D2;letter-spacing:.16em}
+  .price{display:flex;flex-wrap:wrap;align-items:baseline;gap:clamp(20px,4.5vw,72px);
+    margin:clamp(20px,3.6vh,40px) 0 0}
+  .price__u{text-align:left}
+  .price__nm{font-weight:500;font-size:clamp(1rem,.9rem + .6vw,1.35rem);letter-spacing:.3em;color:var(--gold2)}
+  .price__v{font-family:var(--fn);font-weight:200;font-size:clamp(2.5rem,1.7rem + 4.4vw,5rem);
+    letter-spacing:.01em;line-height:1.25;color:var(--sumi);font-variant-numeric:tabular-nums}
+  .price__v small{font-size:.36em;font-family:var(--fg);font-weight:500;letter-spacing:.08em}
+  .price__chip{display:inline-block;margin-top:clamp(14px,2.4vh,24px);font-size:.875rem;letter-spacing:.2em;
+    color:var(--gold2);border:1px solid rgba(176,138,60,.6);padding:7px 18px;border-radius:2px}
+  .price__sub{margin-top:clamp(14px,2.4vh,22px);font-size:clamp(.95rem,.9rem + .3vw,1.05rem);
+    letter-spacing:.1em;color:var(--sumi2)}
 
-  /* ============ 設備景 ============ */
+  /* ============ 写真の幕（案Aの舞台術） ============ */
   .fvs__media,.fvs__media picture{position:absolute;inset:0}
   .fvs__media img{width:100%;height:100%;object-fit:cover}
   .fvs__scrim{position:absolute;inset:0;pointer-events:none;
-    background:linear-gradient(180deg,rgba(16,13,10,.42) 0%,rgba(16,13,10,0) 30%,rgba(16,13,10,0) 55%,rgba(16,13,10,.66) 100%)}
-  .fvs__scene--eq{padding:0}
-  .fvs__eqtxt{position:absolute;left:var(--mx);bottom:clamp(64px,11vh,120px);z-index:2;text-align:left}
+    background:linear-gradient(180deg,rgba(16,13,10,.4) 0%,rgba(16,13,10,0) 32%,rgba(16,13,10,0) 58%,rgba(16,13,10,.6) 100%)}
+  .fvs__scene--eq{padding:0;box-shadow:inset 0 0 0 clamp(5px,.8vw,10px) var(--paper)}
+  .fvs__scene--eq .fvs__media{inset:clamp(5px,.8vw,10px)}
+  .fvs__scene--eq .fvs__scrim{inset:clamp(5px,.8vw,10px)}
+  .fvs__eqtxt{position:absolute;left:var(--mx);bottom:clamp(64px,11vh,120px);z-index:2;text-align:left;
+    padding:clamp(14px,2.2vh,22px) clamp(16px,2vw,26px);border-radius:6px;
+    background:rgba(12,10,7,.36);border:1px solid rgba(243,238,227,.08);
+    backdrop-filter:blur(8px) saturate(130%);-webkit-backdrop-filter:blur(8px) saturate(130%)}
   .fvs__scene--eq.is-right .fvs__eqtxt{left:auto;right:var(--mx);text-align:right}
-  .fvs__room{font-family:var(--fn);font-weight:100;text-transform:uppercase;
-    font-size:clamp(2.6rem,1.6rem + 5.4vw,5.2rem);letter-spacing:.06em;line-height:1.05}
-  .fvs__pled{margin-top:14px;font-size:clamp(.8rem,.76rem + .25vw,.95rem);letter-spacing:.14em;display:flex;
-    align-items:center;gap:12px;flex-wrap:wrap}
+  .fvs__room{font-family:var(--fn);font-weight:100;text-transform:uppercase;color:var(--cream);
+    font-size:clamp(2.4rem,1.5rem + 5vw,4.8rem);letter-spacing:.06em;line-height:1.05}
+  .fvs__pled{margin-top:12px;font-size:clamp(.875rem,.83rem + .25vw,1rem);letter-spacing:.12em;display:flex;
+    align-items:center;gap:12px;flex-wrap:wrap;color:var(--cream)}
   .fvs__scene--eq.is-right .fvs__pled{justify-content:flex-end}
-  .fvs__pled .en{font-family:var(--fh);font-style:italic;letter-spacing:.26em;color:var(--gold2)}
-  .fvs__pled .dash{width:34px;height:1px;background:var(--gold);opacity:.7}
-  .chip{font-style:normal;font-family:var(--fj);font-weight:500;font-size:.66rem;letter-spacing:.22em;
-    color:var(--gold2);border:1px solid rgba(201,162,75,.6);padding:4px 10px 4px 12px;border-radius:2px;white-space:nowrap}
+  .fvs__pled .en{font-family:var(--fn);font-weight:300;letter-spacing:.26em;text-transform:uppercase;
+    font-size:.92em;color:#E8C77D}
+  .fvs__pled .dash{width:34px;height:1px;background:var(--gold);opacity:.8}
+  .chip{font-style:normal;font-weight:500;font-size:.8rem;letter-spacing:.2em;color:#E8C77D;
+    border:1px solid rgba(201,162,75,.65);padding:4px 10px 4px 12px;border-radius:2px;white-space:nowrap}
+  .timg--e{width:min(560px,80vw)}
+  .fvs__scene--wall .fvs__eqtxt{background:rgba(12,10,7,.3)}
 
-  /* ============ 台帳グリッド（Finale） ============ */
-  .fvs__scene--grid{background:radial-gradient(120% 90% at 50% 0%,#1B1712 0%,var(--bg) 62%)}
-  .grid__head{text-align:center;margin-bottom:clamp(18px,3vh,32px)}
-  .grid__h{font-family:var(--fj);font-weight:600;font-size:clamp(1.3rem,1rem + 1.8vw,2.2rem);letter-spacing:.14em}
-  .grid__s{margin-top:10px;font-size:clamp(.76rem,.72rem + .25vw,.9rem);letter-spacing:.1em;color:var(--cream2)}
+  /* ============ 台帳グリッド（Finale・紙） ============ */
+  .grid__head{text-align:center;margin-bottom:clamp(16px,2.8vh,30px)}
+  .grid__s{margin-top:12px;font-size:clamp(.875rem,.84rem + .25vw,.95rem);letter-spacing:.08em;color:var(--sumi2)}
   .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(8px,1.2vw,14px);
     width:min(1060px,100%);margin:0 auto}
-  .g{position:relative;border-radius:4px;overflow:hidden;background:#1D1813}
-  .g::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(243,238,227,.09);border-radius:4px;pointer-events:none}
+  .g{position:relative;border-radius:4px;overflow:hidden;background:#E7E1D4;
+    box-shadow:0 3px 14px rgba(60,48,28,.18)}
   .g img{width:100%;aspect-ratio:4/3;object-fit:cover}
   .g figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 10px 8px;
-    font-size:.66rem;letter-spacing:.08em;line-height:1.5;color:var(--cream);
-    background:linear-gradient(180deg,transparent,rgba(12,10,7,.82))}
-  .g .t{display:inline-block;margin-left:6px;font-size:.58rem;letter-spacing:.14em;color:var(--gold2)}
-  .grid__cta{margin-top:clamp(20px,3.4vh,38px);text-align:center}
-  .grid__cta p{font-family:var(--fj);font-weight:500;font-size:clamp(.95rem,.9rem + .4vw,1.2rem);
-    letter-spacing:.16em;margin-bottom:16px}
-  .btn{display:inline-block;font-size:.86rem;letter-spacing:.2em;text-decoration:none;
+    font-size:.8rem;letter-spacing:.06em;line-height:1.5;color:var(--cream);
+    background:linear-gradient(180deg,transparent,rgba(12,10,7,.8))}
+  .g .t{display:inline-block;margin-left:6px;font-size:.72rem;letter-spacing:.12em;color:#E8C77D}
+  .grid__cta{margin-top:clamp(18px,3vh,34px);text-align:center}
+  .grid__cta p{font-weight:500;font-size:clamp(1rem,.94rem + .4vw,1.25rem);
+    letter-spacing:.14em;margin-bottom:16px;color:var(--sumi)}
+  .btn{display:inline-block;font-size:.9rem;letter-spacing:.2em;text-decoration:none;
     padding:14px 34px;border-radius:2px;margin:0 8px 10px}
   .btn--fill{background:var(--amber);color:#fff}
   .btn--fill:hover{background:var(--amber-d)}
-  .btn--ghost{border:1px solid var(--line);color:var(--cream)}
-  .btn--ghost:hover{border-color:var(--gold)}
+  .btn--ghost{border:1px solid var(--line-p);color:var(--sumi)}
+  .btn--ghost:hover{border-color:var(--gold2)}
 
-  /* ============ 操作UI ============ */
+  /* ============ 操作UI（テーマ連動） ============ */
   .fvs__dots{position:fixed;right:clamp(2px,1vw,14px);top:50%;transform:translateY(-50%);z-index:60;
     display:flex;flex-direction:column;gap:0}
-  html.fvs-released .fvs__dots{opacity:0;pointer-events:none;transition:opacity .3s}
+  html.fvs-released .fvs__dots,html.fvs-released .fvs__count,html.fvs-released .fvs__hint{opacity:0;pointer-events:none;transition:opacity .3s}
   .fvs__dots button{appearance:none;border:0;background:none;cursor:pointer;padding:0;line-height:0;
     width:44px;height:44px;display:grid;place-items:center}
   .fvs__dots button::before{content:"";display:block;width:7px;height:7px;border-radius:50%;
-    background:rgba(243,238,227,.32);transition:transform .3s,background .3s}
+    background:rgba(243,238,227,.34);transition:transform .3s,background .3s}
   .fvs__dots button[aria-current="true"]::before{background:var(--gold);transform:scale(1.5)}
   .fvs__dots button:focus-visible{outline:1px solid var(--gold);outline-offset:2px;border-radius:50%}
+  html[data-fvstheme="paper"] .fvs__dots button::before{background:rgba(36,30,22,.28)}
+  html[data-fvstheme="paper"] .fvs__dots button[aria-current="true"]::before{background:var(--shu)}
   .fvs__count{position:fixed;right:clamp(14px,2.2vw,30px);bottom:clamp(14px,3vh,26px);z-index:60;
-    font-family:var(--fn);font-weight:200;font-size:.8rem;letter-spacing:.24em;color:var(--cream2)}
-  html.fvs-released .fvs__count{opacity:0;transition:opacity .3s}
+    font-family:var(--fn);font-weight:300;font-size:.8rem;letter-spacing:.24em;color:var(--cream2)}
+  html[data-fvstheme="paper"] .fvs__count{color:var(--sumi2)}
   .fvs__hint{position:fixed;left:50%;bottom:clamp(12px,2.6vh,22px);transform:translateX(-50%);z-index:60;
     font-size:1rem;letter-spacing:.18em;color:var(--cream2);display:flex;align-items:center;gap:10px;white-space:nowrap}
+  html[data-fvstheme="paper"] .fvs__hint{color:var(--sumi2)}
   .fvs__hint::after{content:"";width:1px;height:26px;background:linear-gradient(180deg,var(--gold),transparent);
     animation:cue 1.8s ease-in-out infinite}
-  html.fvs-released .fvs__hint{opacity:0;transition:opacity .3s}
+  html[data-fvstheme="paper"] .fvs__hint::after{background:linear-gradient(180deg,var(--shu),transparent)}
   @keyframes cue{0%{transform:scaleY(.2);transform-origin:top}55%{transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
 
-  /* ============ 図面メモ（解放後の通常スクロール領域） ============ */
+  /* ============ 図面メモ ============ */
   .after{background:#F5F1E8;color:#241E16;padding:clamp(64px,10vh,120px) var(--mx)}
   .after__in{max-width:36em;margin:0 auto}
-  .after h2{font-family:var(--fj);font-weight:600;font-size:clamp(1.2rem,1rem + 1vw,1.7rem);
-    letter-spacing:.14em;margin-bottom:22px}
+  .after h2{font-weight:500;font-size:clamp(1.2rem,1rem + 1vw,1.7rem);letter-spacing:.14em;margin-bottom:22px}
   .after p,.after li{font-size:1rem;line-height:2.05;letter-spacing:.05em;line-break:strict;overflow-wrap:break-word}
   .after ul{list-style:none;margin:14px 0 30px}
   .after li{padding-left:1.3em;text-indent:-1.3em}
@@ -187,55 +223,76 @@
     .fvs__dots{display:none}
     .fvs__count{top:calc(env(safe-area-inset-top) + 14px);bottom:auto;right:16px}
     .grid{grid-template-columns:repeat(3,1fr)}
-    .g:nth-child(n+10){display:none} /* SPは9枚で1画面に収める */
-    .fvs__dots{gap:7px;right:8px}
+    .g:nth-child(n+10){display:none}
     .btn{display:block;margin:0 auto 12px;max-width:320px}
+    .art--swallows{top:calc(env(safe-area-inset-top) + 56px);bottom:auto;right:-6%;
+      width:clamp(140px,40vw,210px);opacity:.6}
+    .art--peony{width:clamp(170px,42vw,280px);opacity:.65;bottom:-4%;right:-8%}
+    .fvs__scene--price{padding-right:var(--mx);padding-bottom:calc(env(safe-area-inset-bottom) + 178px)}
+    .shu__band{top:auto;bottom:calc(env(safe-area-inset-bottom) + 52px);height:64px;left:0;width:100%}
+    .shu__band::after{top:auto;left:7%;right:7%;bottom:9px;width:auto;height:1px;
+      background:linear-gradient(90deg,transparent,rgba(232,199,125,.85),transparent)}
+    .shu__fude{writing-mode:horizontal-tb;top:50%;transform:translate(-50%,-50%);font-size:1.25rem}
+    .price{gap:8px 26px;margin-top:14px}
+    .price__v{font-size:clamp(1.9rem,11vw,2.6rem)}
+    .price__sub{margin-top:10px}
+    .fvs__eyebrow{margin-bottom:12px}
+    .fvs__eqtxt{left:16px;right:16px;bottom:calc(env(safe-area-inset-bottom) + 76px)}
+    .fvs__scene--eq.is-right .fvs__eqtxt{left:16px;right:16px}
   }
-  @media (prefers-reduced-motion:reduce){
-    .fvs__hint::after{animation:none}
-  }
+  @media (prefers-reduced-motion:reduce){.fvs__hint::after{animation:none}}
 </style>
 </head>
 <body>
 <a class="skip" href="#after">ステップ操作をスキップして図面メモへ</a>
 
+<div class="fvs__loader" aria-hidden="true">
+  <img src="assets/std/art_swallows.webp" alt="">
+  <p>花鳥風月</p>
+</div>
+
 <section class="fvs" id="fvs" role="region" aria-label="やまと不動産の紹介（1操作で1シーン進みます）">
 
-  <!-- 01 幕A: 宛名（承認済みコピー） -->
-  <article class="fvs__scene" id="s01" data-name="宛名">
-    <div class="fvs__inner">
-      <p class="fvs__eyebrow" data-l>Yamato Fudosan ── Nara</p>
+  <!-- 01 幕A: 宛名（紙） -->
+  <article class="fvs__scene fvs__scene--paper" id="s01" data-name="宛名" data-theme="paper">
+    <img class="art art--swallows" src="assets/std/art_swallows.webp" alt="" data-l>
+    <div class="paper__in">
+      <p class="fvs__eyebrow" data-l>YAMATO FUDOSAN ── NARA</p>
       <p class="fvs__lead" data-l>住宅価格が、<br class="spbr">目まぐるしい速度で上がっています。</p>
-      <p class="fvs__line" data-l>最近の物価高に、</p>
-      <p class="fvs__line" data-l>動揺した方へ。</p>
+      <img class="timg timg--a" src="assets/std/t_a.png" alt="最近の物価高に、動揺した方へ。" data-l>
+      <hr class="kin" data-l>
     </div>
   </article>
 
-  <!-- 02 幕B/C: 宛名2（承認済みコピー） -->
-  <article class="fvs__scene" id="s02" data-name="あきらめた方へ">
-    <div class="fvs__inner">
-      <p class="fvs__eyebrow" data-l>To You</p>
-      <p class="fvs__line fvs__line--dim" data-l>家を買う夢を、<br class="spbr">あきらめた方へ。</p>
-      <p class="fvs__line" data-l>やまと不動産なら、<br>お役に立てる<br class="spbr">かもしれません。</p>
+  <!-- 02 幕B（紙） -->
+  <article class="fvs__scene fvs__scene--paper" id="s02" data-name="あきらめた方へ" data-theme="paper">
+    <img class="art art--peony" src="assets/std/art_peony_left.webp" alt="" data-l>
+    <div class="paper__in">
+      <p class="fvs__eyebrow" data-l>TO YOU</p>
+      <img class="timg timg--bdim" src="assets/std/t_bdim.png" alt="家を買う夢を、あきらめた方へ。" data-l>
+      <img class="timg timg--bmain" src="assets/std/t_bmain.png" alt="やまと不動産なら、お役に立てるかもしれません。" data-l>
     </div>
   </article>
 
-  <!-- 03 幕D: 0円の台帳（承認済み＋8/4指示#13の例文を脚注に追加） -->
-  <article class="fvs__scene" id="s03" data-name="0円の台帳">
-    <div class="fvs__inner">
-      <p class="fvs__line" data-l style="font-size:clamp(1.4rem,1rem + 2.6vw,2.7rem)">他社ではかかる費用が、<br>やまとでは0円です。</p>
+  <!-- 03 幕D: 0円の台帳（紙・150万→0円） -->
+  <article class="fvs__scene fvs__scene--paper" id="s03" data-name="0円の台帳" data-theme="paper">
+    <div class="paper__in">
+      <img class="timg timg--d" src="assets/std/t_d.png" alt="他社ではかかる費用が、やまとでは0円です。" data-l>
       <div class="ledger">
         <div class="ledger__row" data-l>
           <span class="ledger__k">地盤改良費</span><span class="ledger__lead"></span>
-          <span class="ledger__v">0<small>円</small></span><em class="ledger__chip">一般メーカーは120〜150万円</em>
+          <span class="ledger__v"><span id="cd1">0</span><small id="cd1u">円</small></span>
+          <em class="ledger__chip">一般メーカーは120〜150万円</em>
         </div>
         <div class="ledger__row" data-l>
           <span class="ledger__k">つなぎ融資</span><span class="ledger__lead"></span>
-          <span class="ledger__v">0<small>円</small></span><em class="ledger__chip">建物完成後に一括支払い</em>
+          <span class="ledger__v">0<small>円</small></span>
+          <em class="ledger__chip">建物完成後に一括支払い</em>
         </div>
         <div class="ledger__row" data-l>
           <span class="ledger__k">仲介手数料</span><span class="ledger__lead"></span>
-          <span class="ledger__v">0<small>円</small></span><em class="ledger__chip">すべて自社所有の土地</em>
+          <span class="ledger__v">0<small>円</small></span>
+          <em class="ledger__chip">すべて自社所有の土地</em>
         </div>
       </div>
       <p class="ledger__note" data-l>土地測量費・土地造成費・水道工事変更費も0円です。<br>
@@ -243,10 +300,11 @@
     </div>
   </article>
 
-  <!-- 04 幕P: 価格の祭壇（承認済みコピー） -->
-  <article class="fvs__scene" id="s04" data-name="価格">
-    <div class="fvs__inner">
-      <p class="fvs__eyebrow" data-l>Price ── 花鳥風月・やまとの家</p>
+  <!-- 04 幕P: 価格の祭壇（紙×朱の帯×花鳥風月） -->
+  <article class="fvs__scene fvs__scene--paper fvs__scene--price" id="s04" data-name="価格" data-theme="paper">
+    <div class="shu__band" data-l><p class="shu__fude">花鳥風月</p></div>
+    <div class="paper__in">
+      <p class="fvs__eyebrow" data-l>PRICE ── 花鳥風月・やまとの家</p>
       <div class="price">
         <div class="price__u" data-l>
           <p class="price__nm">京</p>
@@ -257,23 +315,23 @@
           <p class="price__v">2,680<small>万円</small></p>
         </div>
       </div>
-      <p class="fvs__sub" data-l>この価格で、本当に高品質の家が建ちます。</p>
+      <p class="price__sub" data-l>この価格で、本当に高品質の家が建ちます。</p>
       <p data-l><span class="price__chip">コミコミ価格・税込</span></p>
     </div>
   </article>
 
-  <!-- 05 幕E: 10年後50年後（背景は静止画。統合時に wall_pc.mp4 ループへ） -->
-  <article class="fvs__scene fvs__scene--eq" id="s05" data-name="外壁">
-    <div class="fvs__media"><img src="assets/fv_cine/poster_wall.webp" alt="夕景に浮かぶヘーベルパワーボードの外壁" decoding="async"></div>
+  <!-- 05 幕E: 10年後50年後（写真×文久EB。統合時に wall_pc.mp4 ループへ） -->
+  <article class="fvs__scene fvs__scene--eq fvs__scene--wall" id="s05" data-name="外壁" data-theme="dark">
+    <div class="fvs__media"><img src="assets/fv_cine/poster_wall.webp" alt="夕景のヘーベルパワーボードの外壁" decoding="async"></div>
     <span class="fvs__scrim"></span>
     <div class="fvs__eqtxt">
-      <p class="fvs__line" data-l style="font-size:clamp(1.5rem,1.1rem + 2.6vw,2.9rem);text-align:left">10年後、50年後に、<br>違いがわかります。</p>
+      <img class="timg timg--e" src="assets/std/t_e.png" alt="10年後、50年後に、違いがわかります。" data-l>
       <p class="fvs__pled" data-l><span class="en">Wall</span><span class="dash"></span>旭化成 ヘーベルパワーボード<em class="chip">標準</em></p>
     </div>
   </article>
 
   <!-- 06 Kitchen -->
-  <article class="fvs__scene fvs__scene--eq" id="s06" data-name="キッチン">
+  <article class="fvs__scene fvs__scene--eq" id="s06" data-name="キッチン" data-theme="dark">
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/kitchen_sp_720.webp 720w, assets/std/kitchen_sp_1080.webp 1080w, assets/std/kitchen_sp_1440.webp 1440w" sizes="100vw">
@@ -288,7 +346,7 @@
   </article>
 
   <!-- 07 Bath -->
-  <article class="fvs__scene fvs__scene--eq is-right" id="s07" data-name="浴室">
+  <article class="fvs__scene fvs__scene--eq is-right" id="s07" data-name="浴室" data-theme="dark">
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/bath_sp_720.webp 720w, assets/std/bath_sp_1080.webp 1080w, assets/std/bath_sp_1440.webp 1440w" sizes="100vw">
@@ -302,8 +360,8 @@
     </div>
   </article>
 
-  <!-- 08 Vanity（台帳をパンフレット確定の実仕様へ: TOTO オクターブ Lite） -->
-  <article class="fvs__scene fvs__scene--eq" id="s08" data-name="洗面">
+  <!-- 08 Vanity -->
+  <article class="fvs__scene fvs__scene--eq" id="s08" data-name="洗面" data-theme="dark">
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/vanity_sp_720.webp 720w, assets/std/vanity_sp_1080.webp 1080w, assets/std/vanity_sp_1440.webp 1440w" sizes="100vw">
@@ -318,7 +376,7 @@
   </article>
 
   <!-- 09 Living -->
-  <article class="fvs__scene fvs__scene--eq is-right" id="s09" data-name="リビング">
+  <article class="fvs__scene fvs__scene--eq is-right" id="s09" data-name="リビング" data-theme="dark">
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/living_sp_720.webp 720w, assets/std/living_sp_1080.webp 1080w, assets/std/living_sp_1440.webp 1440w" sizes="100vw">
@@ -332,8 +390,8 @@
     </div>
   </article>
 
-  <!-- 10 Tatami（新設: DAIKEN 和紙畳 ここち和座 = パンフレットP.18/P.36 全グレード共通） -->
-  <article class="fvs__scene fvs__scene--eq" id="s10" data-name="和室">
+  <!-- 10 Tatami -->
+  <article class="fvs__scene fvs__scene--eq" id="s10" data-name="和室" data-theme="dark">
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/washitsu_sp_720.webp 720w, assets/std/washitsu_sp_1080.webp 1080w, assets/std/washitsu_sp_1440.webp 1440w" sizes="100vw">
@@ -347,8 +405,8 @@
     </div>
   </article>
 
-  <!-- 11 Entrance（新設: LIXIL ジエスタ2 = パンフレットP.20/P.37 全グレード） -->
-  <article class="fvs__scene fvs__scene--eq is-right" id="s11" data-name="玄関">
+  <!-- 11 Entrance -->
+  <article class="fvs__scene fvs__scene--eq is-right" id="s11" data-name="玄関" data-theme="dark">
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/entrance_sp_720.webp 720w, assets/std/entrance_sp_1080.webp 1080w, assets/std/entrance_sp_1440.webp 1440w" sizes="100vw">
@@ -362,8 +420,8 @@
     </div>
   </article>
 
-  <!-- 12 Atrium（自由設計。※高解像度再ライトは Higgsfield 再認証後に差し替え） -->
-  <article class="fvs__scene fvs__scene--eq" id="s12" data-name="吹き抜け">
+  <!-- 12 Atrium -->
+  <article class="fvs__scene fvs__scene--eq" id="s12" data-name="吹き抜け" data-theme="dark">
     <div class="fvs__media">
       <picture>
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/atrium_720.webp 720w, assets/std/atrium_1080.webp 1080w, assets/std/atrium_1440.webp 1440w" sizes="100vw">
@@ -377,11 +435,11 @@
     </div>
   </article>
 
-  <!-- 13 Finale: 標準の台帳グリッド -->
-  <article class="fvs__scene fvs__scene--grid" id="s13" data-name="標準の台帳">
-    <div style="width:100%">
+  <!-- 13 Finale: 標準の台帳（紙のアルバム見開き） -->
+  <article class="fvs__scene fvs__scene--paper" id="s13" data-name="標準の台帳" data-theme="paper">
+    <div class="paper__in" style="width:min(1100px,100%)">
       <div class="grid__head">
-        <p class="grid__h" data-l>標準装備が、充実しています。</p>
+        <img class="timg timg--f" src="assets/std/t_f.png" alt="標準装備が、充実しています。" data-l>
         <p class="grid__s" data-l>オプションだと思っていた設備が、はじめから付いています。仕様はシリーズにより異なります。</p>
       </div>
       <div class="grid">
@@ -395,7 +453,7 @@
         <figure class="g" data-l><img src="assets/std/stairs_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>内装階段<span class="t">標準</span></figcaption></figure>
         <figure class="g" data-l><img src="assets/std/walltex_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>外壁 ヘーベルパワーボード<span class="t">標準</span></figcaption></figure>
         <figure class="g" data-l><img src="assets/std/nokiten_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>軒天（木目）<span class="t">標準</span></figcaption></figure>
-        <!-- ミライエ: 標準表記は確認事項⑬（耐震/制振の選択制の可能性）につきチップ無し -->
+        <!-- ミライエ: 標準表記は確認事項⑬のためチップ無し -->
         <figure class="g" data-l><img src="assets/std/miraie_1100.webp" alt="" loading="lazy" decoding="async"><figcaption>制振ダンパー ミライエ</figcaption></figure>
         <figure class="g" data-l><img src="assets/std/atrium_720.webp" alt="" loading="lazy" decoding="async"><figcaption>吹き抜け<span class="t">自由設計</span></figcaption></figure>
       </div>
@@ -412,19 +470,17 @@
   <p class="fvs__hint" aria-hidden="true">スクロール／スワイプで次へ</p>
 </section>
 
-<!-- 解放後の通常スクロール領域 -->
 <section class="after" id="after">
   <div class="after__in">
-    <h2>図面メモ ── fv_step.html</h2>
-    <p>この図面は「1操作＝1シーン」のステップ送りを検証するものです。マウスホイール・トラックパッド・スワイプ・キーボード（↑↓ / PageUp・PageDown / Home・End）のどれでも、1回の操作で1シーンだけ進みます。PCでは右端のドットをクリックすると任意のシーンへ移動できます。最終シーンのあとは、この領域のとおり通常のスクロールに戻ります。ページ最上部まで戻ると、再びステップ操作になります。</p>
+    <h2>図面メモ ── fv_step.html v2「紙と金」</h2>
+    <p>1操作＝1シーンのステップ送りに、案B「花鳥風月・紙と金」の美術を適用した版です。コピー幕は和紙の紙面、設備の幕は実写のまま紙の縁で額装しています。PCでは右端のドットで任意のシーンへ移動できます。最終シーンのあとは通常のスクロールに戻り、最上部まで戻るとステップ操作に復帰します。</p>
     <ul>
-      <li>コピーは index.html v4「あかりの物語・改」の承認済み文言をそのまま使用しています。</li>
-      <li>幕Dの脚注「2,000万円規模の土地の場合…」は 8/4 編集指示書の例文を反映した追加です。</li>
-      <li>幕Aの導入行「住宅価格が…」と、幕Bの主役を「お役に立てるかもしれません。」へ戻した2点は 8/18 の調整です。</li>
-      <li>洗面の台帳は「TOTO オクターブ Lite」に更新しています（パンフレットP.10・P.36で全グレード標準を確認）。</li>
-      <li>写真はすべて左京モデルハウス＝やまとランドの実写です（25MP源から現像。PC 16:9／SP 9:16 の2構図・3サイズ・AVIF+WebP）。</li>
-      <li>ミライエの「標準」表記は保留中です（パンフレットは耐震／制振の選択制。確認事項⑬）。</li>
-      <li>統合時のTODO: 幕Eをwall動画ループへ／Atriumの高解像度再ライト（Higgsfield）／メーカー図解の空枠／Staff Check吹き出しの採否／シリーズカラー。</li>
+      <li>コピーは承認済み文言のまま。幕Aの導入行・幕Bの主従・幕D脚注の3点は8/4指示書と8/18調整の反映です。</li>
+      <li>表示行は実書体（DNP秀英角ゴシック銀B・幕Eのみ凸版文久見出し明朝EB）をIllustratorから画像化しています。本番はキット ftb5hqp 整備後にwebfontへ置換できます。</li>
+      <li>紙・金・牡丹・燕はAdobe Stockの正規ライセンス素材です（原本は assets/stock_src・git管理外）。毛筆「花鳥風月」はパンフ入稿ロゴが届くまで Yuji Syuku で代替しています。</li>
+      <li>幕Dの「150万円→0円」カウントダウンはシーン到達時に再生されます。</li>
+      <li>ミライエの「標準」表記は保留中です（確認事項⑬）。</li>
+      <li>統合時のTODO: 幕Eをwall動画ループへ／設備4景を承認済みclip動画へ／Atriumの高解像度再ライト。</li>
     </ul>
     <p class="small">JSが無効の環境や、視差効果を減らす設定の環境では、<br>全シーンを縦に並べた静的表示になります。<br>URLに ?static=1 を付けても同じ表示を確認できます。</p>
   </div>
@@ -449,7 +505,6 @@
   var cNow=d.getElementById('cNow');
   d.getElementById('cAll').textContent=String(N).padStart(2,'0');
 
-  /* ドット生成 */
   var dots=scenes.map(function(sc,idx){
     var b=d.createElement('button');
     b.type='button';
@@ -469,12 +524,25 @@
   function sync(){
     dots.forEach(function(b,idx){ b.setAttribute('aria-current', idx===i ? 'true':'false'); });
     cNow.textContent=String(i+1).padStart(2,'0');
+    root.setAttribute('data-fvstheme', scenes[i].getAttribute('data-theme')||'dark');
   }
   function introIn(sc){
     var parts=sc.querySelectorAll('[data-l]');
     gsap.fromTo(parts,{y:34,autoAlpha:0},{y:0,autoAlpha:1,duration:.9,stagger:.07,ease:'power3.out',delay:.1,overwrite:'auto'});
     var m=sc.querySelector('.fvs__media');
     if(m) gsap.fromTo(m,{scale:1.05},{scale:1,duration:1.4,ease:'power2.out',overwrite:'auto'});
+    if(sc.id==='s03') countdown();
+  }
+  /* 幕D: 150万円→0円（v4のカウントダウンを時間駆動で再現） */
+  var cdDone=false;
+  function countdown(){
+    if(cdDone) return; cdDone=true;
+    var el=d.getElementById('cd1'), un=d.getElementById('cd1u'), o={n:150};
+    el.textContent='150'; un.textContent='万円';
+    gsap.to(o,{n:0,duration:1.1,delay:.55,ease:'power3.inOut',onUpdate:function(){
+      var v=Math.round(o.n); el.textContent=v;
+      un.textContent=(v===0?'円':'万円');
+    }});
   }
   function go(n){
     n=Math.max(0,Math.min(N-1,n));
@@ -508,7 +576,6 @@
     if(released && window.scrollY<=0 && Date.now()-releasedAt>800) reenter();
   },{passive:true});
 
-  /* 1ジェスチャー=1シーン（GSAP公式のセクション送りパターン。wheelSpeed:-1でホイール下=next） */
   var obs=Observer.create({
     target:window,
     type:'wheel,touch,pointer',
@@ -529,13 +596,10 @@
     else if(k==='End'){ e.preventDefault(); go(N-1); }
   });
 
-  /* スキップリンク: 解放してから飛ぶ */
   d.querySelector('.skip').addEventListener('click',function(){ release(); });
 
-  /* リロード時にページ中腹にいる場合はステップを解放状態で開始 */
   if(window.scrollY>10){ released=true; releasedAt=Date.now(); obs.disable(); root.classList.add('fvs-released'); }
 
-  /* 検証用フック */
   window.__fvs={ go:go, next:next, prev:prev, idx:function(){return i;}, release:release };
 })();
 </script>
