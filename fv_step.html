@@ -161,6 +161,17 @@
   .chip{font-style:normal;font-weight:500;font-size:.8rem;letter-spacing:.2em;color:#E8C77D;
     border:1px solid rgba(201,162,75,.65);padding:4px 10px 4px 12px;border-radius:2px;white-space:nowrap}
   .timg--e{width:min(560px,80vw)}
+  .timg--o{width:min(620px,84vw)}
+  .fvs__scene--open .fvs__eqtxt{bottom:clamp(76px,13vh,150px);max-width:min(760px,90vw)}
+  .open__sub{margin-top:clamp(12px,2vh,18px);font-size:clamp(.95rem,.9rem + .3vw,1.05rem);
+    letter-spacing:.1em;color:var(--cream2)}
+  .open__cta{margin-top:clamp(16px,2.8vh,26px);display:flex;gap:12px;flex-wrap:wrap}
+  .btn--ghostD{border:1px solid rgba(243,238,227,.45);color:var(--cream)}
+  .btn--ghostD:hover{border-color:var(--gold)}
+  @media (max-width:700px){
+    .open__cta{gap:8px}
+    .open__cta .btn{display:inline-block;margin:0;padding:12px 18px;font-size:.85rem}
+  }
   .fvs__scene--wall .fvs__eqtxt{background:rgba(12,10,7,.3)}
 
   /* ============ 台帳グリッド（Finale・紙） ============ */
@@ -253,12 +264,26 @@
 
 <section class="fvs" id="fvs" role="region" aria-label="やまと不動産の紹介（1操作で1シーン進みます）">
 
+  <!-- 00 幕0: 招待の開幕（v4の開幕を復元。コピー=クライアント実文 2026-07-03 register見本） -->
+  <article class="fvs__scene fvs__scene--eq fvs__scene--open" id="s00" data-name="招待" data-theme="dark">
+    <div class="fvs__media"><img src="assets/fv_cine/poster_exterior.webp" alt="夕暮れのやまと不動産の家" decoding="async"></div>
+    <span class="fvs__scrim"></span>
+    <div class="fvs__eqtxt">
+      <p class="fvs__pled" data-l style="margin:0 0 12px"><span class="en">Yamato Fudosan ── Nara</span></p>
+      <img class="timg timg--o" src="assets/std/t_0.png" alt="大手で諦めた家を、当社と一緒に叶えましょう。" data-l>
+      <p class="open__sub" data-l>自由設計と、高水準な標準装備。夢を、あきらめないでください。</p>
+      <p class="open__cta" data-l>
+        <a class="btn btn--fill" href="contact.html?type=reserve">モデルハウスを予約する</a>
+        <a class="btn btn--ghost btn--ghostD" href="contact.html?type=docs">資料を請求する</a>
+      </p>
+    </div>
+  </article>
+
   <!-- 01 幕A: 宛名（紙） -->
   <article class="fvs__scene fvs__scene--paper" id="s01" data-name="宛名" data-theme="paper">
     <img class="art art--swallows" src="assets/std/art_swallows.webp" alt="" data-l>
     <div class="paper__in">
       <p class="fvs__eyebrow" data-l>YAMATO FUDOSAN ── NARA</p>
-      <p class="fvs__lead" data-l>住宅価格が、<br class="spbr">目まぐるしい速度で上がっています。</p>
       <img class="timg timg--a" src="assets/std/t_a.png" alt="最近の物価高に、動揺した方へ。" data-l>
       <hr class="kin" data-l>
     </div>
@@ -475,7 +500,8 @@
     <h2>図面メモ ── fv_step.html v2「紙と金」</h2>
     <p>1操作＝1シーンのステップ送りに、案B「花鳥風月・紙と金」の美術を適用した版です。コピー幕は和紙の紙面、設備の幕は実写のまま紙の縁で額装しています。PCでは右端のドットで任意のシーンへ移動できます。最終シーンのあとは通常のスクロールに戻り、最上部まで戻るとステップ操作に復帰します。</p>
     <ul>
-      <li>コピーは承認済み文言のまま。幕Aの導入行・幕Bの主従・幕D脚注の3点は8/4指示書と8/18調整の反映です。</li>
+      <li>コピーは承認済み文言のまま。幕0の招待はクライアント実文（2026-07-03 register見本）、幕Bの主従・幕D脚注は8/4指示書と8/18調整の反映です。</li>
+      <li>8/18に一度入れた幕Aの導入行「住宅価格が…」は、見出しとの反復と不安の二段重ねを理由に削除しました（開幕の招待化とセット）。</li>
       <li>表示行は実書体（DNP秀英角ゴシック銀B・幕Eのみ凸版文久見出し明朝EB）をIllustratorから画像化しています。本番はキット ftb5hqp 整備後にwebfontへ置換できます。</li>
       <li>紙・金・牡丹・燕はAdobe Stockの正規ライセンス素材です（原本は assets/stock_src・git管理外）。毛筆「花鳥風月」はパンフ入稿ロゴが届くまで Yuji Syuku で代替しています。</li>
       <li>幕Dの「150万円→0円」カウントダウンはシーン到達時に再生されます。</li>
