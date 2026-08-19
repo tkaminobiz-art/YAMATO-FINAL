@@ -67,14 +67,6 @@
 
   .cr__in{position:relative;z-index:1;width:min(1288px,100%);margin:0 auto;
     padding-left:var(--ng)}
-  /* 2段組み案：俵屋旅館型。436字を3段245pxに畳んでいる実例に倣う。
-     段の中では上から下へ読み、右段へ移る。塊が1画面に収まる高さでのみ成立する */
-  @media (min-width:1100px){
-    .cr__in{column-count:2;column-gap:clamp(48px,5vw,84px)}
-    .cr__p{max-width:none;break-inside:avoid}
-    .cr__p--lead{max-width:none}
-    .cr__q{font-size:1.62em}
-  }
 
   .cr__p{font-family:var(--fm);font-weight:400;font-size:var(--fs);
     line-height:2;letter-spacing:.085em;color:var(--cream);
@@ -92,6 +84,17 @@
     margin:.34em 0 .3em}
   /* 主題は1.88倍なので本文の段には収まらない。この段落だけ広げる（土と風も主題は別置き） */
   .cr__p--lead{max-width:calc(var(--col) * 1.42)}
+
+  /* 2段組み案：俵屋旅館型。436字を3段245pxに畳んでいる実例に倣う。
+     段の中では上から下へ読み、右段へ移る。塊が1画面に収まる高さでのみ成立する */
+  @media (min-width:1100px){
+    .cr__in{column-count:2;column-gap:clamp(48px,5vw,84px)}
+    /* 段が広いときも29字で頭打ち。30字超で読み心地が落ちる（小林ほか2016）。
+       29×1.085＝31.47em（em は字間を含まないので係数を掛ける） */
+    .cr__p{max-width:31.47em;break-inside:avoid}
+    .cr__p--lead{max-width:calc(31.47em * 1.42)}
+    .cr__q{font-size:1.62em}
+  }
 
   @media (max-width:760px){
     .cr__spine{left:8px}
