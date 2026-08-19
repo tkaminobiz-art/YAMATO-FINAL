@@ -72,13 +72,13 @@
 
   .b-sp{display:none}
 
-  /* 入場: 実測1〜2s（0.3s前後の短いフェードは高級側に実例なし） */
-  .cr__rv{opacity:0;transform:translateY(24px);
-    transition:opacity 1.6s cubic-bezier(.16,1,.3,1),transform 1.6s cubic-bezier(.16,1,.3,1)}
-  .cr__rv.is-in{opacity:1;transform:none}
-  @media (prefers-reduced-motion:reduce){
-    .cr__rv{opacity:1!important;transform:none!important;transition:none!important}
-  }
+  /* 本文には入場アニメーションを掛けない。
+     以前は1.6sのフェードを全段落に掛けていたが、これは誤りだった。
+     根拠にしていた「たねや2s／イムラ1s」はFV・装飾＝補助コンテンツの入場の実測で、
+     本文には当たらない。NN/g は最適100–400ms・500ms超は「遅い」と知覚とし、
+     本文は即座に読める状態にしろと明示している（遅いフェードで本文が読み飛ばされた実例あり）。
+     https://www.nngroup.com/articles/scroll-fading-101/
+     https://www.nngroup.com/articles/scroll-animations/ */
 
   @media (max-width:760px){
     .cr__spine{left:8px}
@@ -94,53 +94,42 @@
   <p class="cr__spine" aria-hidden="true">信条</p>
   <div class="cr__in">
 
-    <p class="cr__p cr__rv" id="crH">やまと不動産が、<br class="b-sp">ずっと大切にしていることがあります。</p>
+    <p class="cr__p" id="crH">やまと不動産が、<br class="b-sp">ずっと大切にしていることがあります。</p>
 
-    <p class="cr__p cr__rv">それは、家を見たときに
+    <p class="cr__p">それは、家を見たときに
       <span class="cr__q">「この金額で、<br class="b-sp">ここまでできるんだ」</span>
       と、少し驚いてもらえること。</p>
 
-    <p class="cr__p cr__p--m cr__rv">モデルハウスで心惹かれた設備も、<br>毎日の暮らしを考えた間取りも、<br>あとから追加費用を重ねて、<br class="b-sp">ようやく手に入るものには<br class="b-sp">したくありません。</p>
+    <p class="cr__p cr__p--m">モデルハウスで心惹かれた設備も、<br>毎日の暮らしを考えた間取りも、<br>あとから追加費用を重ねて、<br class="b-sp">ようやく手に入るものには<br class="b-sp">したくありません。</p>
 
-    <p class="cr__p cr__rv">いいと思うものは、<br class="b-sp">できるだけ最初から。<br>私たちは、<br class="b-sp">それを「標準」にしています。</p>
+    <p class="cr__p">いいと思うものは、<br class="b-sp">できるだけ最初から。<br>私たちは、<br class="b-sp">それを「標準」にしています。</p>
 
-    <p class="cr__p cr__p--m cr__rv">「この予算では、<br class="b-sp">理想の家は難しいかもしれない」</p>
+    <p class="cr__p cr__p--m">「この予算では、<br class="b-sp">理想の家は難しいかもしれない」</p>
 
-    <p class="cr__p cr__rv">そう思っている方にこそ、<br class="b-sp">知ってほしいのです。</p>
+    <p class="cr__p">そう思っている方にこそ、<br class="b-sp">知ってほしいのです。</p>
 
-    <p class="cr__p cr__rv">諦めなくてもいいこと。<br>その予算の中でも、もっと心地よく、<br>もっと好きになれる家は<br class="b-sp">つくれるということを。</p>
+    <p class="cr__p">諦めなくてもいいこと。<br>その予算の中でも、もっと心地よく、<br>もっと好きになれる家は<br class="b-sp">つくれるということを。</p>
 
-    <p class="cr__p cr__p--m cr__rv">家は、完成した日が<br class="b-sp">いちばん大切なのではありません。</p>
+    <p class="cr__p cr__p--m">家は、完成した日が<br class="b-sp">いちばん大切なのではありません。</p>
 
-    <p class="cr__p cr__rv">朝の光が差し込む洗面。<br>夜になると、間接照明が<br class="b-sp">石壁をやわらかく照らすリビング。<br>木の格子扉を開ける、何気ない毎日。</p>
+    <p class="cr__p">朝の光が差し込む洗面。<br>夜になると、間接照明が<br class="b-sp">石壁をやわらかく照らすリビング。<br>木の格子扉を開ける、何気ない毎日。</p>
 
-    <p class="cr__p cr__rv">そんな小さな景色のひとつひとつが、<br>そこで暮らす家族の<br class="b-sp">「楽しい毎日」になっていく。</p>
+    <p class="cr__p">そんな小さな景色のひとつひとつが、<br>そこで暮らす家族の<br class="b-sp">「楽しい毎日」になっていく。</p>
 
-    <p class="cr__p cr__rv">私たちは、そこまで想像しながら、<br>一軒ずつ家を設計しています。</p>
+    <p class="cr__p">私たちは、そこまで想像しながら、<br>一軒ずつ家を設計しています。</p>
 
-    <p class="cr__p cr__p--m cr__rv">そして5年、10年と<br class="b-sp">暮らしたその先にも、</p>
+    <p class="cr__p cr__p--m">そして5年、10年と<br class="b-sp">暮らしたその先にも、</p>
 
-    <p class="cr__p cr__rv">「やまと不動産に<br class="b-sp">お願いして、よかった」</p>
+    <p class="cr__p">「やまと不動産に<br class="b-sp">お願いして、よかった」</p>
 
-    <p class="cr__p cr__rv">そう言ってもらえる家でありたい。</p>
+    <p class="cr__p">そう言ってもらえる家でありたい。</p>
 
-    <p class="cr__p cr__rv">建てたときだけではなく、<br>暮らしてから、<br class="b-sp">もっと好きになる家を。</p>
+    <p class="cr__p">建てたときだけではなく、<br>暮らしてから、<br class="b-sp">もっと好きになる家を。</p>
 
-    <p class="cr__p cr__p--m cr__rv">それが、<br class="b-sp">やまと不動産の家づくりです。</p>
+    <p class="cr__p cr__p--m">それが、<br class="b-sp">やまと不動産の家づくりです。</p>
 
   </div>
 </section>
 
-<script>
-(function(){
-  var els=[].slice.call(document.querySelectorAll('.cr__rv'));
-  if(!els.length) return;
-  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('is-in')}); return; }
-  var io=new IntersectionObserver(function(en){
-    en.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('is-in'); io.unobserve(x.target); } });
-  },{threshold:.2});
-  els.forEach(function(e){ io.observe(e); });
-})();
-</script>
 </body>
 </html>
