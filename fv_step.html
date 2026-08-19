@@ -166,7 +166,9 @@
   .fincard .open__cta{margin-top:0}
   .encl--fin .fvs__eyebrow{margin-bottom:clamp(4px,1vh,10px)}
   .encl--fin{padding:clamp(18px,4vw,52px)}
-  .encl--fin .hline{font-size:clamp(1.45rem,1.1rem + 1.8vw,2.2rem)}
+  /* 円は 70svh でも縮むため、文字も svh に連動させないと低い画面で溢れる。
+     最長行「当社と一緒に叶えましょう。」13字が円の内寸に収まる上限で頭打ちにする */
+  .encl--fin .hline{font-size:clamp(1.2rem,min(1.1rem + 1.8vw, 3.6svh),2.2rem)}
   .encl--fin .rule-foil{margin:clamp(2px,.6vh,8px) auto}
   .fvs__scene--beni .climax__sub{color:rgba(247,243,234,.85)}
   @media (max-width:700px){
