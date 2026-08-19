@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>信条セクション図面（heart_mock）｜やまと不動産</title>
+<!--
+  ============================================================
+  信条（Our philosophy）図面「紅の頁・群言堂型三章」 2026-08-19
+  ------------------------------------------------------------
+  実測スカウト3本＋ピアセッションの確定案より。
+   - 色相は保ち明度極性だけ反転＝紅を地に、生成りを文字に
+     （20ページ実測: 125境界のうち色相が動いたのは3回=2.4%。
+      現状の暗いアース色は紅でも生成りでもない第3の地色で規律違反だった）
+   - 群言堂型: 1章＝1主張／左右交互／柱は縦組み
+     ただし尺は借りない（群言堂は独立1ページ・我々は11節中の3番目）
+   - 散らしコラージュは廃止（文章主体の節で成立例10サイト中0件）
+   - 本文コントラストの床は7.83。透明度を捨てて実色 #F3EEE3 で指定
+   - 地は brightness(.70)+暗幕。素の page_beni だと最悪画素5.70で床割れ
+     （原因は金葉でなく紙の明るい中心部が cover で拡大されること。
+      左寄せスクリムは章が左右交互のため右段で7.83ちょうどまで落ちる＝一様処方のみ可）
+  ============================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400&family=Zen+Kaku+Gothic+New:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#2A2620;font-family:"Zen Kaku Gothic New",sans-serif}
+  img{display:block;max-width:100%}
+
+  /* ============ 信条（紅の頁） ============ */
+  .cr{
+    --shu:#BD1B21; --beni-d:#951620; --cream:#F3EEE3; --foil1:#F1D57D; --foil2:#B08A3C;
+    --gx:clamp(20px, 5.3vw, 76px);
+    --fm:"YakuHanMP","Shippori Mincho B1",serif;
+    position:relative;overflow:hidden;isolation:isolate;
+    background:var(--beni-d);color:var(--cream);line-height:1.9;
+    padding:clamp(52px,6vw,86px) var(--gx) clamp(56px,6.4vw,92px)}
+  /* 地: 紙を暗く沈める一様処方（左寄せスクリムは左右交互と両立しない） */
+  .cr::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:url("assets/std/page_beni.webp") center/cover;
+    filter:brightness(.70)}
+  .cr::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:rgba(74,6,10,.46)}
+
+  /* 柱（縦組み） */
+  .cr__spine{position:absolute;left:clamp(6px,1.4vw,20px);top:clamp(40px,5vw,72px);
+    writing-mode:vertical-rl;font-family:var(--fm);font-size:16px;letter-spacing:.28em;
+    color:rgba(243,238,227,.66);display:flex;align-items:center;gap:14px}
+  .cr__spine::after{content:"";width:1px;height:clamp(60px,9vh,120px);
+    background:linear-gradient(180deg,rgba(241,213,125,.55),rgba(241,213,125,0))}
+
+  .cr__in{position:relative;z-index:1;width:min(1288px,100%);margin:0 auto}
+
+  /* 導入＝信条そのもの */
+  .cr__lead{font-family:var(--fm);font-weight:400;letter-spacing:.08em;line-height:1.9;
+    font-size:clamp(20px,15px + 1.3vw,34px);color:var(--cream);max-width:24em}
+  .cr__rule{width:clamp(48px,5vw,72px);height:1px;border:0;
+    margin:clamp(26px,3.4vw,44px) 0 clamp(30px,4vw,56px);
+    background:linear-gradient(90deg,var(--foil1),var(--foil2))}
+
+  /* 章：1章＝1主張。左右交互 */
+  .cr__ch{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px);
+    align-items:center;margin-bottom:clamp(34px,4.6vw,66px)}
+  .cr__ch:nth-of-type(even){direction:rtl}
+  .cr__ch:nth-of-type(even) > *{direction:ltr}
+  .cr__ch--solo{grid-template-columns:1fr;margin-bottom:0}
+  .cr__ch--solo .cr__body{max-width:34em}
+
+  .cr__no{font-family:var(--fm);font-size:14px;letter-spacing:.28em;
+    color:rgba(243,238,227,.5);writing-mode:vertical-rl;margin-bottom:14px}
+  .cr__body{font-family:var(--fm);font-weight:400;
+    font-size:clamp(16px,13px + .55vw,20px);line-height:2;letter-spacing:.09em;
+    color:var(--cream)}
+  .cr__fig{margin:0}
+  .cr__fig img{width:100%;aspect-ratio:660/420;object-fit:cover;
+    box-shadow:0 30px 70px -28px rgba(30,4,6,.75)}
+  .cr__cap{margin-top:12px;font-size:14px;letter-spacing:.06em;color:rgba(243,238,227,.6)}
+
+  /* 入場: 実測1〜2s（0.3s前後の短いフェードは高級側に実例なし） */
+  .cr__rv{opacity:0;transform:translateY(26px);
+    transition:opacity 1.6s cubic-bezier(.16,1,.3,1),transform 1.6s cubic-bezier(.16,1,.3,1)}
+  .cr__rv.is-in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .cr__rv{opacity:1!important;transform:none!important;transition:none!important}
+  }
+
+  @media (max-width:760px){
+    .cr__ch,.cr__ch:nth-of-type(even){grid-template-columns:1fr;direction:ltr}
+    .cr__fig{order:-1}
+    .cr__spine{left:8px}
+    .cr__lead{max-width:none}
+  }
+</style>
+</head>
+<body>
+
+<section class="cr" id="heart" aria-labelledby="crH">
+  <p class="cr__spine" aria-hidden="true">信条</p>
+  <div class="cr__in">
+    <p class="cr__lead cr__rv" id="crH">やまと不動産の信条は<br>「この金額で、ここまでできるんだ」と<br>驚いてもらえる家づくりです。</p>
+    <hr class="cr__rule cr__rv">
+
+    <div class="cr__ch">
+      <figure class="cr__fig cr__rv">
+        <img src="assets/std/heart_a_1920.webp"
+             srcset="assets/std/heart_a_1100.webp 1100w, assets/std/heart_a_1920.webp 1920w, assets/std/heart_a_2560.webp 2560w"
+             sizes="(max-width:760px) 100vw, 46vw" alt="間接照明のある左京モデルハウスのLDK" decoding="async" loading="lazy">
+        <figcaption class="cr__cap">奈良市左京・実邸</figcaption>
+      </figure>
+      <div class="cr__rv">
+        <p class="cr__no">一</p>
+        <p class="cr__body">「この予算では無理かも」と思っていた人にこそ、<br>もっといい家が、その予算で建つことを<br>知っていただきたいです。</p>
+      </div>
+    </div>
+
+    <div class="cr__ch">
+      <figure class="cr__fig cr__rv">
+        <img src="assets/std/heart_b_1920.webp"
+             srcset="assets/std/heart_b_1100.webp 1100w, assets/std/heart_b_1920.webp 1920w, assets/std/heart_b_2560.webp 2560w"
+             sizes="(max-width:760px) 100vw, 46vw" alt="和室からLDKを見通す左京モデルハウス" decoding="async" loading="lazy">
+        <figcaption class="cr__cap">奈良市左京・実邸</figcaption>
+      </figure>
+      <div class="cr__rv">
+        <p class="cr__no">二</p>
+        <p class="cr__body">毎日が楽しい暮らしを、つくりたい。<br>そう考えて、一軒ずつ設計しています。</p>
+      </div>
+    </div>
+
+    <div class="cr__ch cr__ch--solo cr__rv">
+      <div>
+        <p class="cr__no">三</p>
+        <p class="cr__body">5年10年経っても<br>「やまと不動産にお願いして良かった」と<br>言ってもらえる家を、私たちはつくっています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.cr__rv'));
+  if(!els.length) return;
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('is-in')}); return; }
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('is-in'); io.unobserve(x.target); } });
+  },{threshold:.2});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+</body>
+</html>
