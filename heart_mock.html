@@ -7,20 +7,17 @@
 <title>信条セクション図面（heart_mock）｜やまと不動産</title>
 <!--
   ============================================================
-  信条（Our philosophy）図面「紅の頁・写真なし」 2026-08-19
-  仕様の正本は design_heart_spec.md（数値の出所つき）
+  信条（Our philosophy）図面 2026-08-19
   ------------------------------------------------------------
-   - 写真ゼロ。文章は「人」の話なのに写真は「部屋」の話でレジスタが合わない
-   - 余白は比率で設計: 章の 上:本文:下 = 29:43:28（群言堂 260:384:256）
-     隣接章は margin collapse に任せて相殺する（積むと章間に空洞ができる）
-   - 地は専用アセット page_beni_dark_*.webp。CSSフィルタでの後付け減光は廃止
-     （brightness で沈めると繊維が潰れる。素の page_beni は最大輝度0.9956＝
-      金の粒が本文より明るくコントラスト0.87。左上0.1425↔右下0.0528の傾斜もあった）
-     専用アセットは Lmax≤0.0508 / 最明最暗比≤2.0 / 対#F3EEE3 で 9.00 以上を実測で保証
-   - 地に金は入れない。床7.83を満たす最明の金は #4E3D16（9.06）で、
-     紅の上では金でなく黴のシミに見える。箔は柱の罫（文字が載らない位置）だけ
-   - 本文は実色 #F3EEE3。透明度を使うと床を割る
-   - 段落は全て2行（PC）。1行14〜29字。改行は句・読点で固定しPC/SPを別々に打つ
+  コピーはクライアント指定の全文。一字一句そのまま。改行位置のみ PC/SP で打ち分ける。
+  地は専用アセット page_beni_dark_*.webp（Lmax≤0.0508 / 対#F3EEE3 で9.00以上）。
+  詳細は design_heart_spec.md。
+
+  ⚠️ この版は「コピー差し替えの受け皿」であって、余白設計は暫定。
+     旧版の 29:43:28 比率は 4ブロック180字向けに較正したもので、
+     16ブロック約500字にそのまま当てると節が約2,600px（PCで2.9画面）になる。
+     楽章内1.3em／楽章間3.4em の二段階に置き換えてある。
+     理念セクションの設計リサーチ後に組み直す。
   ============================================================
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,21 +28,19 @@
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:#2A2620;font-family:"Zen Kaku Gothic New",sans-serif}
 
-  /* ============ 信条（紅の頁・写真なし） ============ */
+  /* ============ 信条（紅の頁） ============ */
   .cr{
     --cream:#F3EEE3; --foil1:#F1D57D;
-    --gx:clamp(20px, 5.3vw, 76px);      /* 版面の左右（群言堂 5.27vw） */
-    --ng:clamp(40px, 3.9vw, 56px);      /* 柱（一二三）が入る内側の余白 */
-    --col:760px;                        /* 本文の段幅。20pxで最長29字≒629px */
-    --lcol:900px;                       /* 導入だけ広い段。28pxで28字＝847pxを1行に収め引用を割らない */
-    --fs:clamp(16px, 14.51px + 0.381vw, 20px);   /* 本文 SP16 → PC20 */
-    --fl:clamp(20px, 17.03px + 0.762vw, 28px);   /* 導入 SP20 → PC28 */
+    --gx:clamp(20px, 5.3vw, 76px);
+    --ng:clamp(40px, 3.9vw, 56px);
+    --col:760px;
+    --fs:clamp(16px, 14.51px + 0.381vw, 20px);
     --fm:"YakuHanMP","Shippori Mincho B1",serif;
-    /* 章高 = 本文高 ÷ 0.43。上 = 本文高 ×29/43、下 = 本文高 ×28/43 */
-    --up:0.674418; --dn:0.651163;
-    position:relative;overflow:hidden;isolation:isolate;   /* overflow:hidden で BFC 化し、章の余白が節の外へ抜けない */
+    --gap-in:1.3em;    /* 楽章の中の段落間 */
+    --gap-out:3.4em;   /* 楽章と楽章の間 */
+    position:relative;overflow:hidden;isolation:isolate;
     background:#6B1015;color:var(--cream);
-    padding:0 var(--gx)}
+    padding:clamp(64px,7vw,104px) var(--gx) clamp(64px,7vw,104px)}
 
   /* 地：専用アセット。減光もスクリムもかけない（アセット側で明度が確定している） */
   .cr::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
@@ -62,53 +57,25 @@
   .cr__spine::after{content:"";width:1px;height:clamp(60px,9vh,120px);
     background:linear-gradient(180deg,var(--foil1),rgba(241,213,125,0))}
 
-  .cr__in{position:relative;z-index:1;width:min(1288px,100%);margin:0 auto}
+  .cr__in{position:relative;z-index:1;width:min(1288px,100%);margin:0 auto;
+    padding-left:var(--ng)}
 
-  /* 導入＝信条そのもの */
-  .cr__lead{--lines:2;
-    font-family:var(--fm);font-weight:400;font-size:var(--fl);
-    line-height:1.9;letter-spacing:.08em;color:var(--cream);
-    max-width:var(--lcol);margin-left:var(--ng);
-    margin-top:calc(var(--lines) * 1.9em * var(--up));
-    margin-bottom:calc(var(--lines) * 1.9em * var(--dn))}
+  .cr__p{font-family:var(--fm);font-weight:400;font-size:var(--fs);
+    line-height:2;letter-spacing:.085em;color:var(--cream);
+    max-width:var(--col);margin-top:var(--gap-in)}
+  .cr__p:first-child{margin-top:0}
+  .cr__p--m{margin-top:var(--gap-out)}   /* 楽章の変わり目 */
 
-  /* 章：1章＝1主張。左右交互。柱は列の外側の余白に置く（高さに効かない） */
-  /* width:max-content ＝ 列を実際の行長まで縮める。760px固定のままだと右寄せ章で
-     柱が本文から400px離れて漂う（実測1440で本文は255pxしか使わない） */
-  .cr__ch{--lines:2;position:relative;font-size:var(--fs);
-    width:max-content;max-width:min(var(--col),100%);margin-left:var(--ng);
-    margin-top:calc(var(--lines) * 2em * var(--up));
-    margin-bottom:calc(var(--lines) * 2em * var(--dn))}
-  /* 左右交互は版面に余りがある幅でだけ。1200px未満だとずれが柱の幅程度で崩れて見える
-     （実測: 768pxでは章二が章一より左に出た） */
-  @media (min-width:1200px){
-    .cr__ch--r{margin-left:auto;margin-right:var(--ng)}
-  }
+  /* 引用は太字でなく大きさで立てる（高見え群は情緒コピーで700以上ゼロ件） */
+  .cr__q{display:block;font-size:1.45em;line-height:1.75;letter-spacing:.06em;
+    margin:.3em 0 .25em}
 
-  /* 番号は必ず本文の左上＝章の頭に置く。右へ出すと章の目印でなく取り残された記号に見える。
-     左右交互は本文の位置だけでやり、番号は本文について動く */
-  .cr__no{position:absolute;top:.2em;right:100%;margin-right:calc(var(--ng) - 1.55em);
-    writing-mode:vertical-rl;font-family:var(--fm);font-weight:400;
-    font-size:1em;letter-spacing:.42em;color:var(--cream)}
-
-  .cr__body{font-family:var(--fm);font-weight:400;font-size:1em;
-    line-height:2;letter-spacing:.085em;color:var(--cream)}
-
-  /* 導入の改行は3系統。引用「この金額で、ここまでできるんだ」を割らないのが原則だが、
-     820px未満だと28字=1行が段に入らないので、その帯だけ引用内で割る */
-  .b-sp,.b-xs,.b-md{display:none}
-  /* 導入は3系統。b-md=引用の内側で割る／b-lg=引用の外側で割る。
-     SPは5行に割るので両方いる。中間帯(761-819)だけ b-lg を止めて b-md に渡す */
-  @media (max-width:819px){ .b-md{display:inline} }
-  @media (min-width:761px) and (max-width:819px){ .b-lg{display:none} }
+  .b-sp{display:none}
 
   /* 入場: 実測1〜2s（0.3s前後の短いフェードは高級側に実例なし） */
   .cr__rv{opacity:0;transform:translateY(24px);
     transition:opacity 1.6s cubic-bezier(.16,1,.3,1),transform 1.6s cubic-bezier(.16,1,.3,1)}
   .cr__rv.is-in{opacity:1;transform:none}
-  .cr__rv:nth-of-type(2){transition-delay:.18s}
-  .cr__rv:nth-of-type(3){transition-delay:.36s}
-  .cr__rv:nth-of-type(4){transition-delay:.54s}
   @media (prefers-reduced-motion:reduce){
     .cr__rv{opacity:1!important;transform:none!important;transition:none!important}
   }
@@ -117,15 +84,7 @@
     .cr__spine{left:8px}
     .b-pc{display:none}
     .b-sp{display:inline}
-    .cr__lead{--lines:5}
-    .cr__ch--r{margin-left:var(--ng);margin-right:0}   /* SPは左右交互にしない */
-    .cr__ch--r .cr__no{right:100%;left:auto;
-      margin-right:calc(var(--ng) - 1.55em);margin-left:0}
-    #ch1{--lines:4} #ch2{--lines:3} #ch3{--lines:4}
-  }
-  @media (max-width:360px){
-    .b-xs{display:inline}
-    #ch1{--lines:5} #ch3{--lines:5}
+    .cr__in{padding-left:var(--ng)}
   }
 </style>
 </head>
@@ -135,22 +94,39 @@
   <p class="cr__spine" aria-hidden="true">信条</p>
   <div class="cr__in">
 
-    <p class="cr__lead cr__rv" id="crH">やまと不動産の信条は<br class="b-sp">「この金額で、<br class="b-md">ここまでできるんだ」と<br class="b-lg">驚いてもらえる<br class="b-sp">家づくりです。</p>
+    <p class="cr__p cr__rv" id="crH">やまと不動産が、<br class="b-sp">ずっと大切にしていることがあります。</p>
 
-    <div class="cr__ch cr__rv" id="ch1">
-      <p class="cr__no" aria-hidden="true">一</p>
-      <p class="cr__body">「この予算では無理かも」と<br class="b-sp">思っていた人にこそ、<br>もっといい家が、その予算で<br class="b-sp">建つことを<br class="b-xs">知っていただきたいです。</p>
-    </div>
+    <p class="cr__p cr__rv">それは、家を見たときに
+      <span class="cr__q">「この金額で、<br class="b-sp">ここまでできるんだ」</span>
+      と、少し驚いてもらえること。</p>
 
-    <div class="cr__ch cr__ch--r cr__rv" id="ch2">
-      <p class="cr__no" aria-hidden="true">二</p>
-      <p class="cr__body">毎日が楽しい暮らしを、<br class="b-sp">つくりたい。<br class="b-pc">そう考えて、<br class="b-sp">一軒ずつ設計しています。</p>
-    </div>
+    <p class="cr__p cr__p--m cr__rv">モデルハウスで心惹かれた設備も、<br>毎日の暮らしを考えた間取りも、<br>あとから追加費用を重ねて、<br class="b-sp">ようやく手に入るものには<br class="b-sp">したくありません。</p>
 
-    <div class="cr__ch cr__rv" id="ch3">
-      <p class="cr__no" aria-hidden="true">三</p>
-      <p class="cr__body">5年10年経っても<br class="b-sp">「やまと不動産にお願いして<br class="b-sp">良かった」と<br class="b-pc"><br class="b-xs">言ってもらえる家を、<br class="b-sp">私たちはつくっています。</p>
-    </div>
+    <p class="cr__p cr__rv">いいと思うものは、<br class="b-sp">できるだけ最初から。<br>私たちは、<br class="b-sp">それを「標準」にしています。</p>
+
+    <p class="cr__p cr__p--m cr__rv">「この予算では、<br class="b-sp">理想の家は難しいかもしれない」</p>
+
+    <p class="cr__p cr__rv">そう思っている方にこそ、<br class="b-sp">知ってほしいのです。</p>
+
+    <p class="cr__p cr__rv">諦めなくてもいいこと。<br>その予算の中でも、もっと心地よく、<br>もっと好きになれる家は<br class="b-sp">つくれるということを。</p>
+
+    <p class="cr__p cr__p--m cr__rv">家は、完成した日が<br class="b-sp">いちばん大切なのではありません。</p>
+
+    <p class="cr__p cr__rv">朝の光が差し込む洗面。<br>夜になると、間接照明が<br class="b-sp">石壁をやわらかく照らすリビング。<br>木の格子扉を開ける、何気ない毎日。</p>
+
+    <p class="cr__p cr__rv">そんな小さな景色のひとつひとつが、<br>そこで暮らす家族の<br class="b-sp">「楽しい毎日」になっていく。</p>
+
+    <p class="cr__p cr__rv">私たちは、そこまで想像しながら、<br>一軒ずつ家を設計しています。</p>
+
+    <p class="cr__p cr__p--m cr__rv">そして5年、10年と<br class="b-sp">暮らしたその先にも、</p>
+
+    <p class="cr__p cr__rv">「やまと不動産に<br class="b-sp">お願いして、よかった」</p>
+
+    <p class="cr__p cr__rv">そう言ってもらえる家でありたい。</p>
+
+    <p class="cr__p cr__rv">建てたときだけではなく、<br>暮らしてから、<br class="b-sp">もっと好きになる家を。</p>
+
+    <p class="cr__p cr__p--m cr__rv">それが、<br class="b-sp">やまと不動産の家づくりです。</p>
 
   </div>
 </section>
