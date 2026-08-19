@@ -8,7 +8,7 @@
 <meta name="description" content="FVのステップ送り（1操作=1シーン）図面。案B『花鳥風月・紙と金』適用版。">
 <!--
   ============================================================
-  FV図面: ステップ送り版 v4「紅の上質カタログ」 2026-08-19
+  FV図面: ステップ送り版 v5「上質なカタログ」 2026-08-19
   ------------------------------------------------------------
   機構 = v1のまま（1ジェスチャー=1シーン / GSAP Observer / 逃げ道6種）。
   本版はビジュアルの化粧直し（案B主軸＋案Aの舞台術）:
@@ -27,7 +27,8 @@
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Shippori+Mincho+B1:wght@500&family=Yuji+Syuku&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Shippori+Mincho+B1:wght@400;500&family=Yuji+Syuku&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
 <style>
   :root{
     --paper:#F4F1EA; --paper2:#EDE8DD; --sumi:#241E16; --sumi2:#5C5346; --sumi3:#8A8070;
@@ -39,6 +40,7 @@
     --fg:"Zen Kaku Gothic New",sans-serif;
     --fb:"Yuji Syuku",serif;
     --fn:"Inter",sans-serif;
+    --fm:"YakuHanMP","Shippori Mincho B1",serif;
     --mx:clamp(22px,5vw,72px);
   }
   *{margin:0;padding:0;box-sizing:border-box}
@@ -81,7 +83,7 @@
     background:radial-gradient(120% 100% at 50% 0%,transparent 58%,rgba(122,104,76,.14) 100%)}
   .paper__in{position:relative;z-index:2;width:min(1060px,100%)}
   .act{position:absolute;left:clamp(4px,1.6vw,26px);top:38%;z-index:2;
-    writing-mode:vertical-rl;font-family:"Shippori Mincho B1",serif;
+    writing-mode:vertical-rl;font-family:var(--fm);
     font-size:clamp(1rem,.95rem+.2vw,1.05rem);letter-spacing:.4em;
     color:var(--sumi3);display:flex;align-items:center;gap:14px}
   .act::after{content:"";width:1px;height:clamp(90px,24vh,240px);background:linear-gradient(180deg,rgba(176,138,60,.6),rgba(176,138,60,0))}
@@ -106,6 +108,16 @@
   .art--swallows{top:16%;right:4%;width:clamp(240px,32vw,500px)}
   .art--sw2{top:calc(env(safe-area-inset-top) + clamp(48px,9vh,110px));left:6%;
     width:clamp(120px,15vw,220px);transform:scaleX(-1);opacity:.9}
+
+  /* ============ 情緒コピー = 明朝（19事例実測: w400-500 / 字間+.06em / 行間1.8。
+       700以上・マイナス字間は高見え群にゼロ件） ============ */
+  .hline{font-family:var(--fm);font-weight:500;letter-spacing:.06em;line-height:1.8;
+    font-size:clamp(1.75rem,1.3rem + 2.6vw,3.2rem);color:var(--sumi)}
+  .hline--sm{font-size:clamp(1.4rem,1.1rem + 1.6vw,2.1rem)}
+  .hlead{font-family:var(--fm);font-weight:400;letter-spacing:.06em;line-height:1.9;
+    font-size:clamp(1rem,.94rem + .4vw,1.18rem);color:var(--sumi2)}
+  .fvs__scene--beni .hline,.fvs__scene--beni .hlead{color:var(--cream)}
+  .fvs__scene--beni .hlead{color:var(--cream2)}
 
   /* ============ 幕0: 表紙（Higgsfield生成・箔押しの原画） ============ */
   .fvs__scene--cover{padding:0;background:var(--shu)}
@@ -162,6 +174,10 @@
   .fvs__scene--beni .climax__sub{color:rgba(247,243,234,.85)}
   @media (max-width:700px){
     .foil--tl,.foil--br{display:none}
+    .encl--fin{width:min(94vw,80svh)}
+    .encl--fin .hline{font-size:clamp(1.15rem,1rem + 1vw,1.5rem);letter-spacing:.04em;line-height:1.75}
+    .encl--fin .open__sub{font-size:.9rem;line-height:1.85}
+    .encl .fvs__eyebrow{font-size:.8rem;letter-spacing:.2em}
     .encl .timg--t2{width:min(300px,84%)}
     .encl--fin .timg--t0s{width:min(280px,80%)}
   }
@@ -191,6 +207,15 @@
   }
   .ledger__note{margin-top:clamp(16px,2.6vh,26px);font-size:clamp(.875rem,.84rem + .2vw,.95rem);
     letter-spacing:.08em;color:var(--sumi2)}
+
+  /* 0円の証書（紅地×箔金の数字） */
+  .fvs__scene--ledger .ledger__row{border-bottom-color:rgba(243,238,227,.2)}
+  .fvs__scene--ledger .ledger__k{color:var(--cream)}
+  .fvs__scene--ledger .ledger__lead{border-bottom-color:rgba(243,238,227,.32)}
+  .fvs__scene--ledger .ledger__v{color:var(--foil1)}
+  .fvs__scene--ledger .ledger__chip{color:var(--cream2);border-color:rgba(243,238,227,.34)}
+  .fvs__scene--ledger .ledger__note{color:var(--cream2)}
+  .fvs__scene--ledger .paper__in{width:min(900px,100%)}
 
   /* 価格の祭壇（紙×朱の帯） */
   .fvs__scene--price{padding-right:calc(var(--mx) + clamp(90px,17vw,250px))}
@@ -248,6 +273,11 @@
     font-size:clamp(1.15rem,1rem + 1vw,1.7rem);letter-spacing:.12em;color:var(--sumi);
     padding-bottom:8px;border-bottom:2px solid transparent;
     border-image:url("assets/std/gold_washi.webp") 30 / 0 0 2px 0 / 0 stretch;width:fit-content}
+  .chaplead{font-family:var(--fm);font-weight:400;letter-spacing:.06em;line-height:1.9;
+    font-size:clamp(.95rem,.9rem + .35vw,1.1rem);margin-bottom:clamp(16px,3vh,28px);
+    padding-bottom:clamp(12px,2.2vh,20px);color:var(--cream2);
+    border-bottom:1px solid rgba(241,213,125,.45)}
+  .is-kinari .chaplead{color:var(--sumi2);border-bottom-color:rgba(176,138,60,.45)}
   .pled__note{margin-top:10px;font-size:clamp(.875rem,.83rem+.25vw,1rem);letter-spacing:.1em;color:var(--cream2)}
   .fvs__scene--climax{text-align:center}
   .climax__in{width:min(760px,100%);padding-top:clamp(70px,13vh,150px)}
@@ -398,45 +428,104 @@
     </div>
   </article>
 
-  <!-- 01 幕1: 理想（紙×燕。願望3例=クライアント実文の自由設計例を願望形に） -->
-  <article class="fvs__scene fvs__scene--paper" id="s01" data-name="理想" data-theme="paper">
-    <div class="spine" data-l></div>
-    <img class="art art--swallows" src="assets/std/art_swallows_t.webp" alt="" data-l>
+  <article class="fvs__scene fvs__scene--eq is-kinari" id="s06" data-name="キッチン" data-theme="paper">
     <p class="act" data-l>第一幕</p>
-    <div class="paper__in">
-      <p class="fvs__eyebrow" data-l>YAMATO FUDOSAN ── NARA</p>
-      <img class="timg timg--t1" src="assets/std/t_1.png" alt="「こんな暮らしがしたい」" data-l>
-      <hr class="kin" data-l>
-      <ul class="wish" data-l>
-        <li>吹き抜けのある家に住みたい。</li>
-        <li>天井をもっと高くしたい。</li>
-        <li>壁を曲線にしてみたい。</li>
-      </ul>
-      <p class="fvs__lead" data-l>その「したい」を、あきらめない家づくりの話です。</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/kitchen_sp_720.webp 720w, assets/std/kitchen_sp_1080.webp 1080w, assets/std/kitchen_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/kitchen_1920.webp" srcset="assets/std/kitchen_1100.webp 1100w, assets/std/kitchen_1920.webp 1920w, assets/std/kitchen_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="ウォールナットの折り下げ天井とクリナップ ステディアのキッチン" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Kitchen</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>クリナップ ステディア<em class="chip">標準</em></p>
     </div>
   </article>
 
-  <!-- 02 幕2: 約束（コピー=ユーザー指定文言・一字一句そのまま） -->
-  <article class="fvs__scene fvs__scene--beni" id="s02" data-name="約束" data-theme="dark">
-    <img class="foil foil--tl" src="assets/std/art_swallows_t.webp" alt="">
-    <img class="foil foil--tr" src="assets/std/art_swallows_t.webp" alt="">
-    <img class="foil foil--bl" src="assets/std/art_swallows_t.webp" alt="">
-    <img class="foil foil--br" src="assets/std/art_swallows_t.webp" alt="">
+  <article class="fvs__scene fvs__scene--eq is-right" id="s07" data-name="浴室" data-theme="dark">
+    <p class="act" data-l>第一幕</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/bath_sp_720.webp 720w, assets/std/bath_sp_1080.webp 1080w, assets/std/bath_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/bath_1920.webp" srcset="assets/std/bath_1100.webp 1100w, assets/std/bath_1920.webp 1920w, assets/std/bath_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="TOTO サザナの浴室" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Bath</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>TOTO サザナ<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-kinari" id="s08" data-name="洗面" data-theme="paper">
+    <p class="act" data-l>第一幕</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/vanity_sp_720.webp 720w, assets/std/vanity_sp_1080.webp 1080w, assets/std/vanity_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/vanity_1920.webp" srcset="assets/std/vanity_1100.webp 1100w, assets/std/vanity_1920.webp 1920w, assets/std/vanity_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="TOTO オクターブ Liteの洗面室" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Vanity</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>TOTO オクターブ Lite<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-right" id="s09" data-name="リビング" data-theme="dark">
+    <p class="act" data-l>第一幕</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/living_sp_720.webp 720w, assets/std/living_sp_1080.webp 1080w, assets/std/living_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/living_1920.webp" srcset="assets/std/living_1100.webp 1100w, assets/std/living_1920.webp 1920w, assets/std/living_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="ハイドア2.3mのリビング" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Living</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>天井高2.4m・ハイドア2.3m<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-kinari" id="s05" data-name="外壁" data-theme="paper">
+    <p class="act" data-l>第一幕</p>
+    <div class="fvs__media"><img src="assets/fv_cine/poster_wall.webp" alt="夕景のヘーベルパワーボードの外壁" decoding="async" loading="lazy"></div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Wall</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>旭化成 ヘーベルパワーボード<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-quiet" id="s10" data-name="和室" data-theme="dark">
+    <p class="act" data-l>第一幕</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/washitsu_sp_720.webp 720w, assets/std/washitsu_sp_1080.webp 1080w, assets/std/washitsu_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/washitsu_1920.webp" srcset="assets/std/washitsu_1100.webp 1100w, assets/std/washitsu_1920.webp 1920w, assets/std/washitsu_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="半畳縁なし畳の和室" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Tatami</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>DAIKEN 和紙畳 ここち和座<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-right is-kinari" id="s11" data-name="玄関" data-theme="paper">
+    <p class="act" data-l>第一幕</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/entrance_sp_720.webp 720w, assets/std/entrance_sp_1080.webp 1080w, assets/std/entrance_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/entrance_1920.webp" srcset="assets/std/entrance_1100.webp 1100w, assets/std/entrance_1920.webp 1920w, assets/std/entrance_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="木目の玄関ドア ジエスタ2と格子のポーチ" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Entrance</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>LIXIL ジエスタ2<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--beni fvs__scene--ledger" id="s03" data-name="0円の台帳" data-theme="dark">
     <p class="act" data-l>第二幕</p>
-    <div class="encl" data-l>
-      <p class="fvs__eyebrow">OUR PROMISE</p>
-      <img class="timg timg--t2 timg--inv" src="assets/std/t_2.png" alt="やまと不動産なら実現できるとお約束します。">
-      <hr class="rule-foil">
-      <p class="fvs__lead">吹き抜けも、高い天井も、<br class="spbr">曲線の壁もつくれます。</p>
-    </div>
-  </article>
-
-  <!-- 03 幕D: 0円の台帳（紙・150万→0円） -->
-  <article class="fvs__scene fvs__scene--paper" id="s03" data-name="0円の台帳" data-theme="paper">
-    <p class="act" data-l>第三幕</p>
     <div class="paper__in">
-      <p class="fvs__lead" data-l>標準装備のグレードが高いので、<br class="spbr">あとから設備を足す必要がありません。</p>
-      <img class="timg timg--d" src="assets/std/t_d.png" alt="他社ではかかる費用が、やまとでは0円です。" data-l>
+      <p class="hlead" data-l>標準装備のグレードが高いので、<br class="spbr">あとから設備を足す必要がありません。</p>
+      <p class="hline" data-l style="margin-top:clamp(10px,1.8vh,18px)">他社ではかかる費用が、<br>やまとでは0円です。</p>
       <div class="ledger">
         <div class="ledger__row" data-l>
           <span class="ledger__k">地盤改良費</span><span class="ledger__lead"></span>
@@ -454,137 +543,54 @@
           <em class="ledger__chip">すべて自社所有の土地</em>
         </div>
       </div>
-      <p class="reason__punch" data-l>浮いた費用は、オプションに回すこともできます。</p>
       <p class="ledger__note" data-l>土地測量費・土地造成費・水道工事変更費も0円です。<br>
       2,000万円規模の土地の場合、通常400万円〜470万円かかる費用が全て0円です。</p>
     </div>
   </article>
 
-  <!-- 06 Kitchen -->
-  <article class="fvs__scene fvs__scene--eq is-right" id="s06" data-name="キッチン" data-theme="dark">
-    <p class="act" data-l>第四幕</p>
+  <article class="fvs__scene fvs__scene--eq is-kinari" id="s20" data-name="吹き抜け" data-theme="paper">
+    <p class="act" data-l>第三幕</p>
     <div class="fvs__media">
       <picture>
-        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/kitchen_sp_720.webp 720w, assets/std/kitchen_sp_1080.webp 1080w, assets/std/kitchen_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
-        <img src="assets/std/kitchen_1920.webp" srcset="assets/std/kitchen_1100.webp 1100w, assets/std/kitchen_1920.webp 1920w, assets/std/kitchen_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="ウォールナットの折り下げ天井とクリナップ ステディアのキッチン" decoding="async">
-      </picture>
-    </div>
-    <span class="fvs__scrim"></span>
-    <div class="fvs__eqtxt">
-      <p class="fvs__room" data-l>Kitchen</p>
-      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>クリナップ ステディア<em class="chip">標準</em></p>
-    </div>
-  </article>
-
-  <!-- 07 Bath -->
-  <article class="fvs__scene fvs__scene--eq is-kinari" id="s07" data-name="浴室" data-theme="paper">
-    <p class="act" data-l>第四幕</p>
-    <div class="fvs__media">
-      <picture>
-        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/bath_sp_720.webp 720w, assets/std/bath_sp_1080.webp 1080w, assets/std/bath_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
-        <img src="assets/std/bath_1920.webp" srcset="assets/std/bath_1100.webp 1100w, assets/std/bath_1920.webp 1920w, assets/std/bath_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="TOTO サザナの浴室" decoding="async" loading="lazy">
-      </picture>
-    </div>
-    <span class="fvs__scrim"></span>
-    <div class="fvs__eqtxt">
-      <p class="fvs__room" data-l>Bath</p>
-      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>TOTO サザナ<em class="chip">標準</em></p>
-    </div>
-  </article>
-
-  <!-- 08 Vanity -->
-  <article class="fvs__scene fvs__scene--eq is-right" id="s08" data-name="洗面" data-theme="dark">
-    <p class="act" data-l>第四幕</p>
-    <div class="fvs__media">
-      <picture>
-        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/vanity_sp_720.webp 720w, assets/std/vanity_sp_1080.webp 1080w, assets/std/vanity_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
-        <img src="assets/std/vanity_1920.webp" srcset="assets/std/vanity_1100.webp 1100w, assets/std/vanity_1920.webp 1920w, assets/std/vanity_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="TOTO オクターブ Liteの洗面室" decoding="async" loading="lazy">
-      </picture>
-    </div>
-    <span class="fvs__scrim"></span>
-    <div class="fvs__eqtxt">
-      <p class="fvs__room" data-l>Vanity</p>
-      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>TOTO オクターブ Lite<em class="chip">標準</em></p>
-    </div>
-  </article>
-
-  <!-- 09 Living -->
-  <article class="fvs__scene fvs__scene--eq is-kinari" id="s09" data-name="リビング" data-theme="paper">
-    <p class="act" data-l>第四幕</p>
-    <div class="fvs__media">
-      <picture>
-        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/living_sp_720.webp 720w, assets/std/living_sp_1080.webp 1080w, assets/std/living_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
-        <img src="assets/std/living_1920.webp" srcset="assets/std/living_1100.webp 1100w, assets/std/living_1920.webp 1920w, assets/std/living_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="ハイドア2.3mのリビング" decoding="async" loading="lazy">
-      </picture>
-    </div>
-    <span class="fvs__scrim"></span>
-    <div class="fvs__eqtxt">
-      <p class="fvs__room" data-l>Living</p>
-      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>天井高2.4m・ハイドア2.3m<em class="chip">標準</em></p>
-    </div>
-  </article>
-
-  <!-- Wall（装備パレードに合流。ヘーベルパワーボード） -->
-  <article class="fvs__scene fvs__scene--eq is-right" id="s05" data-name="外壁" data-theme="dark">
-    <p class="act" data-l>第四幕</p>
-    <div class="fvs__media"><img src="assets/fv_cine/poster_wall.webp" alt="夕景のヘーベルパワーボードの外壁" decoding="async" loading="lazy"></div>
-    <span class="fvs__scrim"></span>
-    <div class="fvs__eqtxt">
-      <p class="fvs__room" data-l>Wall</p>
-      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>旭化成 ヘーベルパワーボード<em class="chip">標準</em></p>
-      <p class="pled__note" data-l>10年後、50年後に、違いがわかります。</p>
-    </div>
-  </article>
-
-  <!-- 10 Tatami -->
-  <article class="fvs__scene fvs__scene--eq is-quiet is-kinari" id="s10" data-name="和室" data-theme="paper">
-    <p class="act" data-l>第四幕</p>
-    <div class="fvs__media">
-      <picture>
-        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/washitsu_sp_720.webp 720w, assets/std/washitsu_sp_1080.webp 1080w, assets/std/washitsu_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
-        <img src="assets/std/washitsu_1920.webp" srcset="assets/std/washitsu_1100.webp 1100w, assets/std/washitsu_1920.webp 1920w, assets/std/washitsu_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="半畳縁なし畳の和室" decoding="async" loading="lazy">
-      </picture>
-    </div>
-    <span class="fvs__scrim"></span>
-    <div class="fvs__eqtxt">
-      <p class="fvs__room" data-l>Tatami</p>
-      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>DAIKEN 和紙畳 ここち和座<em class="chip">標準</em></p>
-    </div>
-  </article>
-
-  <!-- 11 Entrance -->
-  <article class="fvs__scene fvs__scene--eq" id="s11" data-name="玄関" data-theme="dark">
-    <p class="act" data-l>第四幕</p>
-    <div class="fvs__media">
-      <picture>
-        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/entrance_sp_720.webp 720w, assets/std/entrance_sp_1080.webp 1080w, assets/std/entrance_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
-        <img src="assets/std/entrance_1920.webp" srcset="assets/std/entrance_1100.webp 1100w, assets/std/entrance_1920.webp 1920w, assets/std/entrance_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="木目の玄関ドア ジエスタ2と格子のポーチ" decoding="async" loading="lazy">
-      </picture>
-    </div>
-    <span class="fvs__scrim"></span>
-    <div class="fvs__eqtxt">
-      <p class="fvs__room" data-l>Entrance</p>
-      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>LIXIL ジエスタ2<em class="chip">標準</em></p>
-    </div>
-  </article>
-
-  <!-- 12 Atrium -->
-  <article class="fvs__scene fvs__scene--eq is-right is-quiet is-kinari" id="s12" data-name="吹き抜け" data-theme="paper">
-    <p class="act" data-l>第四幕</p>
-    <div class="fvs__media">
-      <picture>
-        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/atrium_720.webp 720w, assets/std/atrium_1080.webp 1080w, assets/std/atrium_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/atrium_w_sp_720.webp 720w, assets/std/atrium_w_sp_1080.webp 1080w, assets/std/atrium_w_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
         <img src="assets/std/atrium_w_1920.webp" srcset="assets/std/atrium_w_1100.webp 1100w, assets/std/atrium_w_1920.webp 1920w, assets/std/atrium_w_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="吹き抜けの階段ホール" decoding="async" loading="lazy">
       </picture>
     </div>
-    <span class="fvs__scrim"></span>
     <div class="fvs__eqtxt">
+      <p class="chaplead" data-l>浮いた費用は、オプションに回すこともできます。</p>
       <p class="fvs__room" data-l>Atrium</p>
-      <p class="fvs__pled" data-l><span class="en">Design</span><span class="dash"></span>吹き抜け・天井を上げる<em class="chip">自由設計</em></p>
+      <p class="fvs__pled" data-l><span class="en">Option</span><span class="dash"></span>吹き抜け・天井を上げる<em class="chip">自由設計</em></p>
     </div>
   </article>
 
-  <!-- 12 クライマックス: 紙×花鳥風月×招待（コピー=クライアント実文） -->
+  <article class="fvs__scene fvs__scene--eq is-right" id="s21" data-name="造作カウンター" data-theme="dark">
+    <p class="act" data-l>第三幕</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/opt_counter_sp_720.webp 720w, assets/std/opt_counter_sp_1080.webp 1080w, assets/std/opt_counter_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/opt_counter_1920.webp" srcset="assets/std/opt_counter_1100.webp 1100w, assets/std/opt_counter_1920.webp 1920w, assets/std/opt_counter_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="一枚板のダイニングカウンターと折り下げ天井の間接照明" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Counter</p>
+      <p class="fvs__pled" data-l><span class="en">Option</span><span class="dash"></span>造作カウンター・折り下げ天井の間接照明<em class="chip">自由設計</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-quiet is-kinari" id="s22" data-name="玄関収納" data-theme="paper">
+    <p class="act" data-l>第三幕</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/opt_storage_sp_720.webp 720w, assets/std/opt_storage_sp_1080.webp 1080w, assets/std/opt_storage_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/opt_storage_1920.webp" srcset="assets/std/opt_storage_1100.webp 1100w, assets/std/opt_storage_1920.webp 1920w, assets/std/opt_storage_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="足元を照らす間接照明のある玄関の造作収納" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Storage</p>
+      <p class="fvs__pled" data-l><span class="en">Option</span><span class="dash"></span>玄関の造作収納・足元の間接照明<em class="chip">自由設計</em></p>
+    </div>
+  </article>
+
   <article class="fvs__scene fvs__scene--beni fvs__scene--climax" id="s13" data-name="招待" data-theme="dark">
     <img class="foil foil--tr" src="assets/std/art_swallows_t.webp" alt="">
     <img class="foil foil--bl" src="assets/std/art_swallows_t.webp" alt="">
@@ -592,7 +598,7 @@
     <div class="finwrap">
       <div class="encl encl--fin" data-l>
         <p class="fvs__eyebrow">花鳥風月 ── やまとの家</p>
-        <img class="timg timg--t0s timg--inv" src="assets/std/t_0s.png" alt="大手で諦めた家を、当社と一緒に叶えましょう。">
+        <p class="hline hline--sm">大手で諦めた家を、<br class="spbr">当社と一緒に叶えましょう。</p>
         <hr class="rule-foil">
         <p class="open__sub climax__sub">自由設計と、高水準な標準装備。<br class="spbr">夢を、あきらめないでください。</p>
       </div>
@@ -617,16 +623,16 @@
 
 <section class="after notes" id="notes">
   <div class="after__in">
-    <h2>図面メモ ── fv_step.html v4「紅の上質カタログ」</h2>
-    <p>1操作＝1シーンのステップ送りです。物語は、理想（こんな暮らしがしたい）→約束（実現できるとお約束します）→理由（標準の高さと0円の費用）→標準装備の実物8景→招待、の順で進みます。PCでは右端のドットで任意のシーンへ移動できます。最終シーンのあとは通常のスクロールに戻ります。</p>
+    <h2>図面メモ ── fv_step.html v5「上質なカタログ」</h2>
+    <p>1操作＝1シーンのステップ送りです。流れは、表紙 → 標準装備の実物7景 → 他社でかかる費用が0円 → 浮いた費用で叶うオプション3景 → 招待、の順です。標準の高さを先に見ていただき、その費用が0円であること、そしてその分をこだわりに回せることを、この順に置いています。PCでは右端のドットで任意のシーンへ移動できます。最終シーンのあとは通常のスクロールに戻ります。</p>
     <ul>
-      <li>幕2はご指定の文言を一字一句そのまま使用しています。<br>幕3の説明はご指定文の趣旨のまま文法を整えています。</li>
-      <li>幕1の願望3例は、クライアント実文の自由設計3例を<br>願望形に直したものです。</li>
-      <li>価格と「物価高」の宛名はFVから外しました。<br>トップ本文・商品ラインナップ側で扱う前提です。<br>標準装備の一覧グリッドも廃止しています。</li>
-      <li>表示行は実書体（DNP秀英角ゴシック銀B）を<br>Illustratorから画像化しています。<br>キット整備後にwebfontへ置換できます。</li>
-      <li>紙・金・牡丹・燕はAdobe Stockの正規ライセンス素材です。<br>原本は assets/stock_src（git管理外）にあります。</li>
-      <li>幕3の「150万円→0円」はシーン到達時に再生されます。</li>
-      <li>統合時のTODO: 設備景を承認済みclip動画へ、<br>Atriumの高解像度再ライトの2点です。</li>
+      <li>紅の頁と生成りの頁が交互に現れます。<br>紙をめくる感触を色で表しています。</li>
+      <li>表紙と頁の紙面は、パンフレット表紙を原図として<br>生成した箔押しの原画です。</li>
+      <li>情緒的な一行は明朝（Shippori Mincho B1）で組んでいます。<br>高級住宅・旅館19事例の実測では、この位置の書体は<br>細めのウェイトと広めの字間で組まれていました。</li>
+      <li>室名・型番・ラベルはゴシックのままです。<br>事実を述べる文字と、心情を述べる文字を分けています。</li>
+      <li>オプション3景は左京モデルハウスの実写です。<br>吹き抜け・造作カウンター・玄関の造作収納。</li>
+      <li>0円の「150万円→0円」はシーン到達時に再生されます。</li>
+      <li>統合時のTODO: 標準装備を承認済みclip動画へ、<br>吹き抜けの高解像度再ライトの2点です。</li>
     </ul>
     <p class="small">JSが無効の環境や、視差効果を減らす設定の環境では、<br>全シーンを縦に並べた静的表示になります。<br>URLに ?static=1 を付けても同じ表示を確認できます。</p>
   </div>
