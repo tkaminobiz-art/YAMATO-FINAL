@@ -10,8 +10,8 @@
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
 <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 <!-- LCP＝FVポスター：ビューポート別に先読み（SPは縦長版） -->
-<link rel="preload" as="image" href="assets/fv_cine/poster_exterior_sp.webp" media="(max-width:700px)">
-<link rel="preload" as="image" href="assets/fv_cine/poster_exterior.webp" media="(min-width:701px)">
+<link rel="preload" as="image" href="assets/std/cover_sp_1080.webp" media="(max-width:700px)">
+<link rel="preload" as="image" href="assets/std/cover_pc_1920.webp" media="(min-width:701px)">
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
@@ -26,7 +26,9 @@
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600;700&family=Shippori+Mincho+B1:wght@400;500&family=Yuji+Syuku&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- 約物半角（FVの和文組版。溝田/NOT A HOTEL が入れているプロの一手） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
 <style>
   :root{
     /* 面・文字 */
@@ -114,351 +116,311 @@
   .burger:hover span:first-child{width:14px}
   .burger:hover span:last-child{width:14px}
 
-  /* ===================== FV「あかりの物語・改」v4（2026-07-08 fv_cinema.html図面より統合） =====================
-     消灯した家のシルエット→宛名→金縁の緞帳→灯りの家→0円台帳→2プラン価格の祭壇→標準装備5景→10年50年の結び。
-     .st 層はGSAP成立時のみ表示（.hero.fv-cine .st）。GSAP不成立/reduced-motion時は下の .intro 静的表示のみ。 */
-  .hero{position:relative;height:100svh;min-height:560px;overflow:hidden;isolation:isolate;
-    background:var(--void);color:var(--cream)}
-  .hero__v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
-  .hero__scrim{position:absolute;inset:0;z-index:2;pointer-events:none;
-    background:linear-gradient(to bottom,rgba(8,10,5,.5) 0%,rgba(8,10,5,.06) 14%,transparent 26%),
-      linear-gradient(to top,rgba(8,10,5,.7) 0%,rgba(8,10,5,.16) 22%,transparent 42%)}
+  /* 変数は .fvs スコープに閉じる（index.htmlの:rootと8変数が衝突するため。
+     特に --fb は index=本文Inter / fv=毛筆Yuji Syuku で、漏らすと全ページの本文が毛筆になる） */
+  .fvs,.fvs__loader{
+    --paper:#F4F1EA; --paper2:#EDE8DD; --sumi:#241E16; --sumi2:#5C5346; --sumi3:#8A8070;
+    --gold:#C9A24B; --gold2:#B08A3C; --shu:#BD1B21; --beni-d:#951620;
+    --foil1:#F1D57D; --foil2:#B08A3C;
+    --void:#100D0A; --cream:#F3EEE3; --cream2:rgba(243,238,227,.72);
+    --amber:#C4851F; --amber-d:#A56C12;
+    --line-d:rgba(243,238,227,.18); --line-p:rgba(36,30,22,.22);
+    --fg:"Zen Kaku Gothic New",sans-serif;
+    --fb:"Yuji Syuku",serif;
+    --fn:"Inter",sans-serif;
+    --fm:"YakuHanMP","Shippori Mincho B1",serif;
+    --mx:clamp(22px,5vw,72px);
+  }
+  .fvs .spbr{display:none}
+  html.fvs-app{scroll-behavior:auto}
+  .fvs{color:var(--cream);font-family:var(--fg);font-weight:400;line-height:1.9}
+  .fvs img{display:block;max-width:100%}
+  .fvs a{color:inherit}
 
-  /* ---- 静的フォールバックのイントロ ---- */
-  .intro{position:absolute;left:0;right:auto;top:45%;transform:translateY(-50%);z-index:6;text-align:left;
-    padding:0 22px 0 var(--mx);pointer-events:none;
-    opacity:0;animation:intro 1.8s ease forwards .1s}
-  @keyframes intro{to{opacity:1}}
-  .intro h1{font-family:var(--fh);font-weight:500;color:var(--cream);text-shadow:0 3px 30px rgba(8,10,5,.72);
-    font-size:clamp(1.6rem,1rem + 2.9vw,3.6rem);letter-spacing:.09em;line-height:1.5}
-  .intro .in-sub{margin-top:clamp(16px,2.2vw,30px);
-    display:inline-flex;align-items:center;gap:14px;font-family:var(--fh);font-weight:500;
-    font-size:clamp(.95rem,.82rem + .7vw,1.4rem);letter-spacing:.1em;color:rgba(244,241,234,.92);
-    text-shadow:0 1px 20px rgba(10,12,6,.6)}
-  .intro .in-sub::before{content:"";width:clamp(22px,3vw,38px);height:1px;background:var(--gold);opacity:.85;flex:0 0 auto}
-  .intro .in-note{margin-top:10px;font-family:var(--fb);font-size:.72rem;letter-spacing:.06em;color:rgba(244,241,234,.6)}
 
-  /* ---- CTA（結び共通・静的でも表示） ---- */
-  .cta-wrap{position:absolute;right:clamp(20px,5vw,60px);left:auto;bottom:calc(env(safe-area-inset-bottom) + 42px);z-index:7;
-    display:flex;flex-direction:column;align-items:flex-end;gap:14px}
-  .cta-invite{font-family:var(--fh);font-weight:500;font-size:clamp(.95rem,.86rem + .5vw,1.2rem);
-    letter-spacing:.09em;color:rgba(244,241,234,.96);text-shadow:0 2px 18px rgba(10,12,6,.8)}
-  .cta-row{display:flex;gap:14px;align-items:center}
-  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--cta);color:#fff;text-decoration:none;border-radius:7px;
-    font-family:var(--fh);font-weight:500;font-size:1.02rem;letter-spacing:.03em;padding:16px 34px;min-height:54px;
-    box-shadow:0 14px 40px rgba(196,133,31,.44);transition:transform .5s var(--ease)}
-  .cta:hover{transform:translateY(-3px)}
-  .cta svg{width:15px;height:15px;stroke:currentColor;stroke-width:2;fill:none}
-  .cta-ghost{color:var(--cream);text-decoration:none;font-size:.95rem;letter-spacing:.04em;padding:14px 16px;border-bottom:1px solid rgba(244,241,234,.45)}
-  .cue{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 44px);transform:translateX(-50%);z-index:7;
-    font-family:var(--fb);font-size:.56rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(244,241,234,.7)}
-  .cue::after{content:"";display:block;width:1px;height:26px;margin:8px auto 0;
-    background:linear-gradient(rgba(244,241,234,.85),rgba(244,241,234,0));
-    animation:cue 2.4s cubic-bezier(.16,1,.3,1) infinite}
-  @keyframes cue{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}
-    55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+  /* ============ ローダー（朱赤×燕） ============ */
+  .fvs__loader{position:fixed;inset:0;z-index:200;background:var(--shu);display:grid;place-items:center;
+    animation:loaderOut .5s ease .95s forwards;pointer-events:none}
+  .fvs__loader img{width:clamp(150px,24vw,260px);opacity:.9;mix-blend-mode:luminosity;
+    animation:loaderIn .8s cubic-bezier(.16,1,.3,1) both}
+  .fvs__loader p{position:absolute;bottom:clamp(22px,6vh,48px);left:50%;transform:translateX(-50%);
+    font-family:var(--fb);font-size:clamp(1rem,.9rem + .8vw,1.4rem);letter-spacing:.34em;color:#F6E9D2}
+  @keyframes loaderIn{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:.9;transform:none}}
+  @keyframes loaderOut{to{opacity:0;visibility:hidden}}
+  html.fvs-static .fvs__loader{display:none}
+  @media (prefers-reduced-motion:reduce){.fvs__loader{display:none}}
 
-  /* ===== 物語層（st）: GSAP成立で .fv-cine が付いた時だけ現れる ===== */
-  .st{display:none}
-  .hero.fv-cine .st{display:block}
+  /* ============ ステージ ============ */
+  .fvs{position:relative;background:var(--void)}
+  html.fvs-app .fvs{height:100vh;height:100svh;overflow:hidden}
+  .fvs__scene{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;
+    overflow:hidden;padding:calc(env(safe-area-inset-top) + 56px) var(--mx) calc(env(safe-area-inset-bottom) + 72px)}
+  html.fvs-app .fvs__scene{position:absolute;inset:0;min-height:0;
+    box-shadow:0 -26px 64px rgba(24,4,6,.42)}
+  html.fvs-static .fvs__dots,html.fvs-static .fvs__count,html.fvs-static .fvs__hint{display:none}
 
-  /* ---- 緞帳（上下の幕布。下の動画が僅かに透ける=息づくシルエット） ---- */
-  .st__curT,.st__curB{position:absolute;left:0;right:0;z-index:3;pointer-events:none;
-    background:rgba(6,8,4,.955);will-change:transform}
-  .st__curT{top:0;height:50%}
-  .st__curB{top:calc(50% - 1px);height:calc(50% + 1px)}
-  .st__cur0{position:absolute;inset:0;z-index:3;pointer-events:none;background:rgba(6,8,4,.955)}
-  .st__curT::after,.st__curB::after{content:"";position:absolute;left:0;right:0;height:1px;opacity:0;
-    transition:opacity .6s var(--ease);
-    background:linear-gradient(90deg,transparent 4%,rgba(232,206,143,.85) 30%,var(--gold-hi) 50%,rgba(232,206,143,.85) 70%,transparent 96%);
-    box-shadow:0 0 18px 2px rgba(201,162,75,.5)}
-  .st__curT::after{bottom:0}
-  .st__curB::after{top:0}
-  .st__curT.is-glow::after,.st__curB.is-glow::after{opacity:1}
+  /* ============ 紙の幕（案B） ============ */
+  .fvs__scene--paper{background:url("assets/std/page_kinari.webp") center/cover var(--paper);color:var(--sumi)}
+  .fvs__scene--paper::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(120% 100% at 50% 0%,transparent 58%,rgba(122,104,76,.14) 100%)}
+  .paper__in{position:relative;z-index:2;width:min(1060px,100%)}
+  .act{position:absolute;left:clamp(4px,1.6vw,26px);top:38%;z-index:2;
+    writing-mode:vertical-rl;font-family:var(--fm);
+    font-size:clamp(1rem,.95rem+.2vw,1.05rem);letter-spacing:.4em;
+    color:var(--sumi3);display:flex;align-items:center;gap:14px}
+  .act::after{content:"";width:1px;height:clamp(90px,24vh,240px);background:linear-gradient(180deg,rgba(176,138,60,.6),rgba(176,138,60,0))}
+  .fvs__scene--eq .act{color:var(--cream2)}
+  .fvs__scene--eq .act::after{background:linear-gradient(180deg,rgba(232,199,125,.7),rgba(232,199,125,0))}
+  @media (max-width:700px){.act{left:8px;font-size:1rem;letter-spacing:.24em}}
+  .fvs__eyebrow{font-size:clamp(.9375rem,.86rem + .3vw,1.05rem);font-weight:400;
+    letter-spacing:.3em;color:var(--gold2);margin-bottom:clamp(16px,3vh,30px)}
 
-  /* 夕暮れの帳（D/P幕で明るい家を沈める） */
-  .st__veil{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;
-    background:linear-gradient(180deg,rgba(8,10,5,.92),rgba(8,10,5,.85) 50%,rgba(8,10,5,.93))}
+  /* ============ 情緒コピー = 明朝（19事例実測: w400-500 / 字間+.06em / 行間1.8。
+       700以上・マイナス字間は高見え群にゼロ件） ============ */
+  .hline{font-family:var(--fm);font-weight:500;letter-spacing:.06em;line-height:1.8;
+    font-size:clamp(1.75rem,1.3rem + 2.6vw,3.2rem);color:var(--sumi)}
+  .hline--sm{font-size:clamp(1.4rem,1.1rem + 1.6vw,2.1rem)}
+  .hlead{font-family:var(--fm);font-weight:400;letter-spacing:.06em;line-height:1.9;
+    font-size:clamp(1rem,.94rem + .4vw,1.18rem);color:var(--sumi2)}
+  .fvs__scene--beni .hline,.fvs__scene--beni .hlead{color:var(--cream)}
+  .fvs__scene--beni .hlead{color:var(--cream2)}
 
-  .st__grain{position:absolute;inset:0;z-index:6;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
-  .st__vig{position:absolute;inset:0;z-index:6;pointer-events:none;
-    background:radial-gradient(118% 96% at 50% 50%,transparent 58%,rgba(5,7,3,.4) 100%)}
-
-  /* ---- 章番号（右上・金の罫と 01/07） ---- */
-  .st__act{position:absolute;right:var(--mx);top:calc(var(--header-h) + clamp(14px,3vh,34px));z-index:7;
-    display:flex;align-items:center;gap:12px;font-family:var(--fn);font-variant-numeric:tabular-nums;
-    color:rgba(244,241,234,.85);text-shadow:0 1px 12px rgba(6,8,4,.7)}
-  .st__act::before{content:"";width:clamp(26px,3.4vw,44px);height:1px;background:var(--gold);opacity:.8}
-  .st__act b{font-weight:200;font-size:clamp(1.15rem,1rem + .8vw,1.7rem);letter-spacing:.06em}
-  .st__act i{font-style:normal;font-weight:300;font-size:.68rem;letter-spacing:.22em;color:rgba(244,241,234,.5)}
-
-  /* ---- 共通: 行マスク・eyebrow・台帳 ---- */
-  .lm{display:block;overflow:hidden}
-  .lm>span{display:block;will-change:transform}
-  .st__eye{display:inline-flex;align-items:center;gap:12px;font-family:var(--fn);font-weight:400;
-    font-size:.64rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);
-    text-shadow:0 1px 10px rgba(6,8,4,.6);margin-bottom:clamp(16px,2.4vw,28px)}
-  .st__eye::before{content:"";width:clamp(24px,3vw,40px);height:1px;background:var(--gold);opacity:.85}
-  .st__ledger{display:flex;align-items:center;gap:12px;
-    font-family:var(--fn);font-weight:400;font-size:clamp(.66rem,.62rem + .2vw,.8rem);letter-spacing:.18em;
-    color:rgba(244,241,234,.9);text-shadow:0 1px 12px rgba(6,8,4,.8);white-space:nowrap}
-  .st__ledger .en{text-transform:uppercase;color:var(--gold-hi)}
-  .st__ledger .dash{width:26px;height:1px;background:var(--gold);opacity:.9;flex:0 0 auto}
-  .st__std{font-family:var(--fh);font-style:normal;font-weight:500;font-size:.66rem;letter-spacing:.22em;
-    color:var(--lime);border:1px solid rgba(162,197,35,.8);border-radius:3px;
-    padding:4px 9px 4px 11px;margin-left:6px;box-shadow:0 0 14px rgba(162,197,35,.22)}
-
-  /* ---- 幕A: 宛名①（左下・段違い） ---- */
-  .st__a{position:absolute;left:var(--mx);right:22px;bottom:clamp(120px,22vh,220px);z-index:5;
-    opacity:0;visibility:hidden}
-  .st__a .l1,.st__b .l1{font-family:var(--fh);font-weight:500;color:var(--cream);
-    font-size:clamp(1.3rem,.95rem + 1.7vw,2.5rem);letter-spacing:.13em;line-height:1.4;
-    text-shadow:0 2px 28px rgba(0,0,0,.65)}
-  .st__a .l2,.st__b .l2{font-family:var(--fh);font-weight:500;color:var(--cream);
-    font-size:clamp(2rem,1.3rem + 3.6vw,4.7rem);letter-spacing:.1em;line-height:1.28;
-    margin-top:clamp(8px,1.2vw,16px);text-shadow:0 3px 34px rgba(0,0,0,.7)}
-  .st__a .l2{margin-left:clamp(1rem,.5rem + 2.4vw,3.4rem)}
-
-  /* ---- 幕B: 宛名②（右寄せ・位置回転） ---- */
-  .st__b{position:absolute;right:var(--mx);left:22px;bottom:clamp(120px,22vh,220px);z-index:5;
-    text-align:right;opacity:0;visibility:hidden}
-  .st__b .st__eye{flex-direction:row-reverse}
-  .st__b .l2{margin-right:clamp(1rem,.5rem + 2.4vw,3.4rem)}
-
-  /* ---- 幕C: 転回（中央・緞帳がひらく） ---- */
-  .st__c{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);z-index:5;
-    text-align:center;padding:0 var(--mx);opacity:0;visibility:hidden}
-  .st__c .l1{font-family:var(--fh);font-weight:500;color:#FBF8EF;
-    font-size:clamp(1.3rem,1rem + 1.6vw,2.4rem);letter-spacing:.16em;line-height:1.5;
-    text-shadow:0 2px 30px rgba(6,8,4,.85)}
-  .st__c .l2{font-family:var(--fh);font-weight:500;color:#FBF8EF;margin-top:clamp(10px,1.6vw,20px);
-    font-size:clamp(1.9rem,1.2rem + 3.4vw,4.4rem);letter-spacing:.1em;line-height:1.4;
-    text-shadow:0 3px 38px rgba(6,8,4,.9)}
-
-  /* ---- 幕D: 0円の台帳（左組・巨大な0） ---- */
-  .st__d{position:absolute;left:var(--mx);right:var(--mx);top:50%;transform:translateY(-50%);z-index:5;
-    max-width:880px;margin:0 auto;opacity:0;visibility:hidden}
-  .st__d .l1{font-family:var(--fh);font-weight:500;color:var(--cream);
-    font-size:clamp(1.15rem,.9rem + 1.3vw,2rem);letter-spacing:.12em;line-height:1.5;
-    text-shadow:0 2px 24px rgba(6,8,4,.8)}
-  .st__d .l2{font-family:var(--fh);font-weight:500;color:var(--cream);
-    font-size:clamp(1.9rem,1.25rem + 3vw,4.1rem);letter-spacing:.1em;line-height:1.35;
-    margin:clamp(6px,1vw,14px) 0 clamp(28px,4vw,52px) clamp(.9rem,.4rem + 2vw,2.8rem);
-    text-shadow:0 3px 32px rgba(6,8,4,.85)}
-  .st__rows{display:flex;flex-direction:column}
-  .st__row{display:flex;align-items:baseline;gap:clamp(14px,2vw,24px);
-    padding:clamp(15px,2.2vw,24px) 2px;opacity:0;visibility:hidden}
-  .st__row + .st__row{border-top:1px solid rgba(244,241,234,.13)}
-  .st__row .k{font-family:var(--fh);font-weight:500;font-size:clamp(.98rem,.9rem + .55vw,1.3rem);
-    letter-spacing:.1em;color:rgba(244,241,234,.95);white-space:nowrap}
-  .st__row .lead{flex:1;height:1px;background:linear-gradient(90deg,rgba(201,162,75,.6),rgba(201,162,75,.1));
-    min-width:24px;transform:scaleX(0);transform-origin:0 50%}
-  .st__row .v{font-family:var(--fn);font-weight:200;font-variant-numeric:tabular-nums;line-height:.9;
-    font-size:clamp(2.1rem,1.4rem + 3.4vw,4.3rem);letter-spacing:.01em;color:var(--cream);white-space:nowrap;
-    text-shadow:0 2px 26px rgba(6,8,4,.7)}
-  .st__row .v small{font-family:var(--fh);font-weight:500;font-size:.34em;letter-spacing:.1em;margin-left:.14em;color:var(--gold-hi)}
-  .st__row .v .nashi{font-family:var(--fh);font-weight:500;font-size:.62em;letter-spacing:.14em}
-  .st__chip{font-family:var(--fh);font-style:normal;font-weight:500;font-size:.64rem;letter-spacing:.18em;
-    color:var(--gold-hi);border:1px solid rgba(201,162,75,.7);border-radius:3px;
-    padding:4px 9px;white-space:nowrap;align-self:center;box-shadow:0 0 14px rgba(201,162,75,.18)}
-  .st__dnote{margin-top:clamp(14px,2vw,22px);font-family:var(--fb);font-size:.72rem;letter-spacing:.06em;
-    color:rgba(244,241,234,.5)}
-
-  /* ---- 幕P: 価格の祭壇（桁ごとに立ち上がる） ---- */
-  .st__p{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);z-index:5;
-    text-align:center;padding:0 var(--mx);opacity:0;visibility:hidden}
-  .st__pk{display:inline-flex;align-items:center;gap:14px;font-family:var(--fn);font-weight:400;
-    font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);
-    margin-bottom:clamp(18px,3vw,34px)}
-  .st__pk::before,.st__pk::after{content:"";width:clamp(24px,3.4vw,46px);height:1px;background:var(--gold);opacity:.8}
-  .st__ptwo{display:flex;flex-direction:column;gap:clamp(4px,.9vw,14px);align-items:center}
-  .st__pnum{display:flex;justify-content:center;align-items:baseline;color:var(--cream);line-height:.88;
-    font-variant-numeric:tabular-nums;text-shadow:0 4px 48px rgba(6,8,4,.8)}
-  .st__pnum .ser{font-family:var(--fh);font-weight:500;letter-spacing:.16em;color:var(--gold);
-    font-size:clamp(.86rem,.66rem + 1.05vw,1.5rem);margin-right:clamp(10px,1.4vw,22px)}
-  .st__pnum .dg{display:inline-block;overflow:hidden}
-  .st__pnum .dg>span{display:block;font-family:var(--fn);font-weight:100;
-    font-size:clamp(2.8rem,1.5rem + 6.4vw,7rem);letter-spacing:-.01em}
-  .st__pnum .un{font-family:var(--fh);font-weight:500;font-size:clamp(1.4rem,1rem + 2.4vw,3.2rem);
-    letter-spacing:.06em;margin-left:.14em;color:var(--gold-hi)}
-  .st__pline{display:block;width:min(340px,44vw);height:1px;margin:clamp(20px,3vw,32px) auto;
-    background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0)}
-  .st__ps{font-family:var(--fh);font-weight:500;color:var(--cream);
-    font-size:clamp(1.2rem,.95rem + 1.5vw,2.15rem);letter-spacing:.11em;line-height:1.6;
-    text-shadow:0 2px 26px rgba(6,8,4,.85)}
-  .st__pnote{margin-top:clamp(12px,1.8vw,18px);font-family:var(--fb);font-size:.72rem;
-    letter-spacing:.06em;color:rgba(244,241,234,.55)}
-
-  /* ---- 幕E: 標準装備＝フルブリード5景 ---- */
-  .st__e{position:absolute;inset:0;z-index:4;opacity:0;visibility:hidden}
-  .st__sc{position:absolute;inset:0;overflow:hidden;opacity:0;z-index:1;isolation:isolate}
-  .st__sc video,.st__sc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform}
-  .st__sc .scr{position:absolute;inset:0;pointer-events:none;
-    background:linear-gradient(to top,rgba(8,10,5,.74),rgba(8,10,5,.16) 40%,transparent 62%),
-      linear-gradient(to bottom,rgba(8,10,5,.6),rgba(8,10,5,.18) 18%,transparent 32%)}
-  .st__ehead{position:absolute;left:var(--mx);top:calc(var(--header-h) + clamp(14px,3vh,34px));z-index:5;
-    opacity:0;visibility:hidden}
-  .st__ehead .t{font-family:var(--fh);font-weight:500;color:var(--cream);
-    font-size:clamp(1.05rem,.9rem + .9vw,1.6rem);letter-spacing:.12em;
-    text-shadow:0 2px 22px rgba(6,8,4,.85)}
-  .st__ehead .s{margin-top:8px;font-family:var(--fh);font-weight:500;
-    font-size:clamp(.8rem,.74rem + .35vw,.98rem);letter-spacing:.1em;color:rgba(244,241,234,.78);
-    text-shadow:0 1px 16px rgba(6,8,4,.8)}
-  /* 巨大な室名（細身EN・景ごとに位置回転=is-left/is-right） */
-  .st__room{position:absolute;z-index:2;font-family:var(--fn);font-weight:100;text-transform:uppercase;
-    font-size:clamp(3.2rem,1.8rem + 8.5vw,9rem);letter-spacing:.14em;line-height:1;color:rgba(244,241,234,.95);
-    text-shadow:0 4px 44px rgba(6,8,4,.75)}
-  .st__room .lm>span{padding-right:.14em}
-  .st__pled{position:absolute;z-index:2}
-  .st__sc.is-left .st__room{left:var(--mx);bottom:clamp(112px,19vh,190px)}
-  .st__sc.is-left .st__pled{left:var(--mx);bottom:clamp(72px,12vh,126px)}
-  .st__sc.is-right .st__room{right:var(--mx);bottom:clamp(112px,19vh,190px)}
-  .st__sc.is-right .st__pled{right:var(--mx);bottom:clamp(72px,12vh,126px)}
-  /* Atrium: 縦長素材（1100x1971）をフルブリードcoverすると天地が大きく切れるため、
-     光の窓＋ガラス手すりの帯が収まる位置に寄せる（撮影意図に近い箇所） */
-  .st__sc--at img{object-position:center 58%}
-
-  /* ---- 幕F: 結び（左・大数字ロックアップ） ---- */
-  .st__f{position:absolute;left:var(--mx);right:22px;top:45%;transform:translateY(-50%);z-index:5;
-    opacity:0;visibility:hidden}
-  .st__f .fl1{display:flex;align-items:baseline;flex-wrap:wrap;gap:0 clamp(4px,.6vw,10px);
-    color:var(--cream);text-shadow:0 3px 34px rgba(8,10,5,.75)}
-  .st__f .fn{font-family:var(--fn);font-weight:200;font-variant-numeric:tabular-nums;line-height:.86;
-    font-size:clamp(3.6rem,2rem + 8vw,9rem);letter-spacing:-.02em}
-  .st__f .fw{font-family:var(--fh);font-weight:500;font-size:clamp(1.3rem,.95rem + 1.8vw,2.7rem);
-    letter-spacing:.1em;line-height:1.3}
-  .st__f .fl2{font-family:var(--fh);font-weight:500;color:var(--cream);
-    font-size:clamp(1.8rem,1.15rem + 3.2vw,4.2rem);letter-spacing:.09em;line-height:1.35;
-    margin:clamp(10px,1.6vw,22px) 0 0 clamp(1.6rem,.8rem + 4vw,6rem);
-    text-shadow:0 3px 34px rgba(8,10,5,.8)}
-  .st__f .st__ledger{margin:clamp(20px,3vw,34px) 0 0 clamp(1.6rem,.8rem + 4vw,6rem)}
-
-  /* ---- 物語の進捗（7点の灯・クリックで幕ジャンプ） ---- */
-  .st__dots{position:absolute;left:50%;transform:translateX(-50%);
-    bottom:calc(env(safe-area-inset-bottom) + 10px);z-index:8;display:flex;gap:2px;opacity:0}
-  .st__dot{position:relative;width:28px;height:28px;background:transparent;border:0;padding:0;
-    cursor:pointer;-webkit-tap-highlight-color:transparent}
-  .st__dot::after{content:"";position:absolute;left:50%;top:50%;width:5px;height:5px;margin:-2.5px 0 0 -2.5px;
-    border-radius:50%;background:rgba(244,241,234,.3);
-    transition:background .45s var(--ease),box-shadow .45s var(--ease),transform .45s var(--ease)}
-  .st__dot:hover::after{background:rgba(244,241,234,.66);transform:scale(1.3)}
-  .st__dot:focus-visible{outline:1px solid rgba(201,162,75,.8);outline-offset:2px;border-radius:50%}
-  .st__dot.is-on::after{background:var(--gold);box-shadow:0 0 10px rgba(201,162,75,.9)}
-
-  .spbr{display:none}
-
-  /* FVのSP調整（fv_cinema.html図面と同一値） */
+  /* ============ 幕0: 表紙（Higgsfield生成・箔押しの原画） ============ */
+  .fvs__scene--cover{padding:0;background:var(--shu)}
+  .cover__bg{position:absolute;inset:0}
+  .cover__bg img{width:100%;height:100%;object-fit:cover;object-position:52% 55%}
+  .cover__t{position:relative;z-index:2;text-align:center;color:#F6EFE2;
+    transform:translate(1%,4%)}
+  .cover__yamato{writing-mode:vertical-rl;margin:0 auto clamp(14px,2.6vh,26px);
+    font-family:"Shippori Mincho B1",serif;font-size:clamp(1rem,.9rem + .5vw,1.2rem);
+    letter-spacing:.42em;height:auto}
+  .cover__fude{font-family:var(--fb);font-size:clamp(2.6rem,1.8rem + 4.5vw,5.4rem);
+    line-height:1.3;letter-spacing:.18em;text-indent:.18em}
+  .cover__en{margin-top:clamp(12px,2.2vh,22px);font-family:var(--fn);font-weight:300;
+    font-size:clamp(.9375rem,.9rem + .2vw,1.05rem);letter-spacing:.3em;color:rgba(246,239,226,.85)}
   @media (max-width:700px){
-    .spbr{display:inline}
-    .cta-wrap{left:0;right:0;align-items:center;bottom:calc(env(safe-area-inset-bottom) + 34px);gap:12px}
-    .cta-row{flex-direction:column;gap:10px;width:100%;align-items:center}
-    .cta{width:min(88%,340px);justify-content:center}
-    .cta-ghost{order:2}
-    .cue{display:none}
-    .intro{top:calc(env(safe-area-inset-top,0px) + var(--header-h) + clamp(20px,5vh,48px));bottom:auto;transform:none}
-    .intro h1{text-shadow:0 2px 28px rgba(8,10,5,.92),0 0 12px rgba(8,10,5,.6)}
-    .st__act{top:calc(var(--header-h) + 10px);right:22px}
-    .st__a,.st__b{bottom:clamp(140px,24vh,240px)}
-    .st__b{text-align:left;right:22px;left:22px}
-    .st__b .st__eye{flex-direction:row}
-    .st__b .l2{margin-right:0;margin-left:clamp(.9rem,4vw,1.6rem)}
-    .st__d{left:22px;right:22px}
-    .st__row{flex-wrap:wrap;row-gap:8px}
-    .st__row .lead{min-width:14px}
-    .st__row .v{font-size:clamp(2rem,1.5rem + 4vw,2.9rem)}
-    .st__ehead{left:22px;right:22px}
-    .st__room{font-size:clamp(2.5rem,1.6rem + 9vw,4.4rem)}
-    .st__sc.is-left .st__room{left:22px;bottom:calc(env(safe-area-inset-bottom) + 30vh)}
-    .st__sc.is-right .st__room{right:22px;bottom:calc(env(safe-area-inset-bottom) + 30vh)}
-    .st__sc.is-left .st__pled{left:22px;right:22px;bottom:calc(env(safe-area-inset-bottom) + 23vh)}
-    .st__sc.is-right .st__pled{right:22px;left:22px;bottom:calc(env(safe-area-inset-bottom) + 23vh);justify-content:flex-end}
-    .st__pled{display:flex;flex-wrap:wrap;gap:8px 10px;white-space:normal}
-    .st__sc--at img{object-position:center 50%}
-    .st__f{left:22px;right:22px;top:42%}
-    .st__f .fl2{margin-left:.5rem}
-    .st__f .st__ledger{margin-left:.5rem;white-space:normal;flex-wrap:wrap;gap:8px 10px}
-    .st__dots{bottom:calc(env(safe-area-inset-bottom) + 8px)}
-  }
-  @media (prefers-reduced-motion:reduce){
-    .intro{animation:none;opacity:1}
-    .st{display:none!important}
-    .cue::after{animation:none}
+    .cover__t{transform:translate(0,-2%)}
   }
 
-  /* FVの横向きスマホ調整（高さが主制約＝フォント/位置をvh基準に圧縮。幅は760px超も対象=iPhone横持ち幅対策） */
-  @media (max-height:500px) and (orientation:landscape){
-    .hero{min-height:0}
-    .cue{display:none}
-    .st__act{top:calc(var(--header-h) + 4px);gap:8px}
-    .st__act::before{width:20px}
-    .st__act b{font-size:1.05rem}
-    .st__act i{font-size:.6rem}
-    .st__dots{bottom:4px}
-    .st__dot{width:22px;height:22px}
+  /* ============ 見返し（表紙の内側・深紅）============ */
+  .fvs__scene--mikaeshi{background:url("assets/std/page_beni.webp") center/cover var(--beni-d);color:var(--cream)}
+  .fvs__scene--mikaeshi::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:rgba(74,6,10,.46)}
+  .fvs__scene--mikaeshi::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(112% 88% at 50% 46%,transparent 44%,rgba(52,3,6,.55) 100%)}
+  .mikaeshi__in{text-align:center;width:min(760px,100%)}
+  .mikaeshi__in .fvs__eyebrow{color:var(--foil1);margin-bottom:clamp(18px,3.4vh,32px)}
+  .mikaeshi__in .hline{color:var(--cream)}
+  .mikaeshi__in .rule-foil{margin:clamp(22px,4vh,38px) auto}
+  .mikaeshi__in .hlead{color:rgba(243,238,227,.82);margin-bottom:0}
 
-    .intro{top:calc(env(safe-area-inset-top,0px) + var(--header-h) + 8px);bottom:auto;transform:none}
-    .intro h1{font-size:clamp(1.1rem,1rem + 3.2vh,1.6rem);line-height:1.4}
-    .intro .in-sub{margin-top:8px;font-size:clamp(.76rem,.7rem + .9vh,.92rem)}
-    .intro .in-note{margin-top:6px}
-
-    .cta-wrap{left:0;right:0;align-items:center;bottom:calc(env(safe-area-inset-bottom) + 8px);gap:6px}
-    .cta-invite{display:none}
-    .cta-row{gap:8px}
-    .cta{padding:9px 20px;min-height:36px;font-size:.82rem;border-radius:5px}
-    .cta svg{width:12px;height:12px}
-    .cta-ghost{padding:8px 10px;font-size:.76rem}
-
-    .st__eye{margin-bottom:8px;font-size:.56rem}
-    .st__eye::before{width:18px}
-
-    .st__a,.st__b{bottom:8vh}
-    .st__a .l1,.st__b .l1{font-size:clamp(.88rem,.7rem + 2.8vh,1.25rem);line-height:1.3}
-    .st__a .l2,.st__b .l2{font-size:clamp(1.5rem,1rem + 6vh,2.3rem);margin-top:4px;line-height:1.25}
-    .st__a .l2{margin-left:.6rem}
-    .st__b .l2{margin-right:.6rem}
-
-    .st__c .l1{font-size:clamp(.92rem,.7rem + 2.8vh,1.3rem);line-height:1.3}
-    .st__c .l2{font-size:clamp(1.6rem,1rem + 6.2vh,2.5rem);margin-top:6px}
-
-    .st__d{left:22px;right:22px;max-width:none}
-    .st__d .l1{font-size:clamp(.8rem,.65rem + 2.2vh,1.05rem);line-height:1.35}
-    .st__d .l2{font-size:clamp(1.3rem,.9rem + 4.4vh,1.9rem);margin:3px 0 8px .5rem;line-height:1.3}
-    .st__row{padding:5px 2px}
-    .st__row .k{font-size:clamp(.7rem,.6rem + 1.6vh,.88rem)}
-    .st__row .lead{min-width:12px}
-    .st__row .v{font-size:clamp(1.15rem,.8rem + 3.4vh,1.7rem)}
-    .st__chip{font-size:.54rem;padding:2px 6px}
-    .st__dnote{margin-top:6px;font-size:.6rem}
-
-    .st__pk{margin-bottom:8px;font-size:.56rem}
-    .st__ptwo{gap:2px}
-    .st__pnum .dg>span{font-size:clamp(1.5rem,.9rem + 5.4vh,2.4rem)}
-    .st__pnum .un{font-size:clamp(.75rem,.55rem + 1.9vh,1.05rem)}
-    .st__pnum .ser{font-size:clamp(.62rem,.5rem + 1.3vh,.84rem);margin-right:8px}
-    .st__pline{margin:8px auto}
-    .st__ps{font-size:clamp(.95rem,.7rem + 3.2vh,1.4rem);line-height:1.4}
-    .st__pnote{margin-top:6px;font-size:.6rem}
-
-    .st__ehead{left:22px;right:22px;top:calc(var(--header-h) + 6px)}
-    .st__ehead .t{font-size:clamp(.8rem,.7rem + 1.8vh,1rem)}
-    .st__ehead .s{margin-top:4px;font-size:.66rem}
-    .st__room{font-size:clamp(1.7rem,1rem + 9vh,3rem)}
-    .st__sc.is-left .st__room{left:22px;bottom:calc(env(safe-area-inset-bottom) + 15vh)}
-    .st__sc.is-right .st__room{right:22px;bottom:calc(env(safe-area-inset-bottom) + 15vh)}
-    .st__sc.is-left .st__pled{left:22px;right:22px;bottom:calc(env(safe-area-inset-bottom) + 8vh)}
-    .st__sc.is-right .st__pled{right:22px;left:22px;bottom:calc(env(safe-area-inset-bottom) + 8vh);justify-content:flex-end}
-    .st__pled{display:flex;flex-wrap:wrap;gap:6px 8px;white-space:normal}
-    .st__ledger{font-size:.62rem;gap:8px}
-    .st__std{font-size:.56rem;padding:3px 7px 3px 8px}
-    .st__sc--at img{object-position:center 50%}
-
-    .st__f{left:22px;right:22px;top:44%}
-    .st__f .fn{font-size:clamp(1.8rem,1rem + 8.4vh,3.2rem)}
-    .st__f .fw{font-size:clamp(.84rem,.65rem + 2.6vh,1.25rem)}
-    .st__f .fl2{font-size:clamp(1.35rem,.9rem + 5vh,2.1rem);margin:6px 0 0 .6rem;line-height:1.3}
-    .st__f .st__ledger{margin:8px 0 0 .6rem;white-space:normal;flex-wrap:wrap;gap:6px 8px}
+  /* ============ 紅の幕（包み・方向B） ============ */
+  .fvs__scene--beni{background:url("assets/std/page_beni.webp") center/cover var(--shu);color:var(--cream)}
+  .fvs__scene--beni::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(118% 92% at 50% 44%,transparent 52%,rgba(84,8,12,.32) 100%)}
+  .foil{position:absolute;pointer-events:none;z-index:1;opacity:.92;
+    filter:brightness(0) invert(.55) sepia(1) saturate(2.2) brightness(.98)}
+  .foil--tl{left:clamp(-140px,-11vw,-60px);top:clamp(-120px,-9vh,-40px);width:clamp(220px,34vw,520px);transform:rotate(188deg)}
+  .foil--tr{right:clamp(-150px,-11vw,-60px);top:clamp(-130px,-10vh,-50px);width:clamp(230px,36vw,560px);transform:scaleX(-1) rotate(7deg)}
+  .foil--bl{left:clamp(-150px,-12vw,-70px);bottom:clamp(-130px,-10vh,-50px);width:clamp(220px,35vw,540px);transform:scaleY(-1) rotate(6deg)}
+  .foil--br{right:clamp(-140px,-10vw,-60px);bottom:clamp(-140px,-10vh,-60px);width:clamp(200px,32vw,500px);transform:scale(-1,-1) rotate(4deg)}
+  .encl{position:relative;z-index:2;width:min(640px,92vw,84svh);aspect-ratio:1;border-radius:50%;
+    background:radial-gradient(circle at 38% 30%,#B7262B,#A01B20 66%,#951620);
+    box-shadow:0 0 0 1px rgba(201,162,75,.5),0 44px 130px rgba(66,5,9,.5);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:clamp(12px,2.4vh,24px);padding:clamp(22px,7vw,80px);text-align:center;margin:0 auto}
+  .encl .fvs__eyebrow{margin-bottom:0;color:var(--foil1)}
+  .encl .fvs__lead{margin-bottom:0;color:rgba(247,243,234,.9)}
+  .timg--inv{filter:brightness(0) invert(1) sepia(.16) saturate(1.6)}
+  .rule-foil{width:clamp(48px,6vw,68px);height:1px;border:0;
+    background:linear-gradient(90deg,var(--foil1),var(--foil2))}
+  .fvs__scene--beni .act{color:var(--foil1)}
+  .fvs__scene--beni .act::after{background:linear-gradient(180deg,rgba(241,213,125,.7),rgba(241,213,125,0))}
+  .finwrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;
+    gap:clamp(18px,3.2vh,32px)}
+  .encl--fin{width:min(690px,92vw,70svh);gap:clamp(14px,2.6vh,26px)}
+  .fvs__scene--climax{padding-top:calc(env(safe-area-inset-top) + 40px);
+    padding-bottom:calc(env(safe-area-inset-bottom) + 44px)}
+  .fincard{position:relative;z-index:2;background:url("assets/std/page_kinari.webp") center/cover var(--paper);
+    padding:clamp(16px,2.6vh,24px) clamp(18px,3.4vw,40px) clamp(6px,1.4vh,14px);
+    border:1px solid rgba(176,138,60,.4);box-shadow:0 22px 64px rgba(52,3,6,.55)}
+  .fincard .open__cta{margin-top:0}
+  .encl--fin .fvs__eyebrow{margin-bottom:clamp(4px,1vh,10px)}
+  .encl--fin{padding:clamp(18px,4vw,52px)}
+  .encl--fin .hline{font-size:clamp(1.45rem,1.1rem + 1.8vw,2.2rem)}
+  .encl--fin .rule-foil{margin:clamp(2px,.6vh,8px) auto}
+  .fvs__scene--beni .climax__sub{color:rgba(247,243,234,.85)}
+  @media (max-width:700px){
+    .foil--tl,.foil--br{display:none}
+    .encl--fin{width:min(94vw,78svh)}
+    .encl--fin .hline{font-size:clamp(1.15rem,1rem + 1vw,1.5rem);letter-spacing:.04em;line-height:1.75}
+    .encl--fin .open__sub{font-size:.9rem;line-height:1.85}
+    .encl .fvs__eyebrow{font-size:.8rem;letter-spacing:.2em}
   }
+
+  /* 0円の台帳 */
+  /* index.html の別セクションに同名の .ledger（2カラムgrid）が存在するため、
+     宣言していないプロパティが漏れてくる。FV側は明示的にリセットする */
+  .fvs .ledger{display:block;position:static;padding:0;gap:normal;
+    max-width:640px;margin:clamp(22px,3.6vh,40px) 0 0;text-align:left}
+  .fvs .ledger__row{display:grid;grid-template-columns:max-content 1fr max-content clamp(190px,21vw,230px);
+    align-items:baseline;gap:10px 14px;padding:clamp(12px,2vh,20px) 2px;
+    border-bottom:1px solid var(--line-p)}
+  .fvs .ledger__k{font-size:clamp(.95rem,.88rem + .4vw,1.12rem);letter-spacing:.12em;font-weight:500;white-space:nowrap}
+  .fvs .ledger__lead{flex:1;border-bottom:1px dotted rgba(36,30,22,.4);transform:translateY(-4px)}
+  .fvs .ledger__v{font-family:var(--fn);font-weight:300;font-size:clamp(1.5rem,1.2rem + 1.6vw,2.3rem);
+    letter-spacing:.02em;font-variant-numeric:tabular-nums;color:var(--shu)}
+  .fvs .ledger__v small{font-size:.5em;font-family:var(--fg);font-weight:500;letter-spacing:.1em;margin-left:2px}
+  .fvs .ledger__chip{display:inline-block;margin-left:0;font-size:.8rem;letter-spacing:.06em;color:var(--sumi2);
+    border:1px solid var(--line-p);border-radius:99px;padding:3px 10px;white-space:nowrap;
+    justify-self:end;text-align:center;width:100%}
+  .fvs .ledger__v{justify-self:end}
+  @media (max-width:700px){
+    .fvs .ledger__row{display:flex;flex-wrap:wrap;align-items:baseline}
+    .fvs .ledger__lead{display:none}
+    .fvs .ledger__k{flex:1}
+    .fvs .ledger__v{margin-left:auto}
+    .fvs .ledger__chip{width:100%;text-align:left;border:0;border-radius:0;padding:2px 0 0;
+      color:var(--sumi3);font-size:.78rem}
+    #s03 .act{display:none}
+  }
+  .fvs .ledger__note{margin-top:clamp(16px,2.6vh,26px);font-size:clamp(.875rem,.84rem + .2vw,.95rem);
+    letter-spacing:.08em;color:var(--sumi2)}
+
+  /* 0円の証書（紅地×箔金の数字） */
+  .fvs__scene--ledger .ledger__row{border-bottom-color:rgba(243,238,227,.2)}
+  .fvs__scene--ledger .ledger__k{color:var(--cream)}
+  .fvs__scene--ledger .ledger__lead{border-bottom-color:rgba(243,238,227,.32)}
+  .fvs__scene--ledger .ledger__v{color:var(--foil1)}
+  .fvs__scene--ledger .ledger__chip{color:var(--cream2);border-color:rgba(243,238,227,.34)}
+  .fvs__scene--ledger .ledger__note{color:var(--cream2)}
+  .fvs__scene--ledger .paper__in{width:min(900px,100%)}
+
+  /* ============ 写真の幕（紅の図版プレート＝上質カタログ） ============ */
+  .fvs__scene--eq{padding:0;background:url("assets/std/page_beni.webp") center/cover var(--shu)}
+  .fvs__scene--eq::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
+    background:radial-gradient(118% 92% at 50% 44%,transparent 52%,rgba(84,8,12,.3) 100%)}
+  .fvs__media{position:absolute;left:var(--mx);top:50%;transform:translateY(-50%);
+    width:min(56vw,980px);aspect-ratio:3/2;z-index:2;background:#1c0f0f;overflow:hidden;
+    border:clamp(10px,1.4vw,20px) solid #F6F2E8;outline:1px solid rgba(241,213,125,.45);
+    box-shadow:0 30px 90px rgba(60,5,8,.55)}
+  .fvs__media picture{position:absolute;inset:0}
+  .fvs__media img{width:100%;height:100%;object-fit:cover}
+  .fvs__scene--eq.is-right .fvs__media{left:auto;right:var(--mx)}
+  .fvs__eqtxt{position:absolute;right:var(--mx);top:50%;transform:translateY(-50%);z-index:2;
+    text-align:left;max-width:min(30vw,400px)}
+  .fvs__scene--eq.is-right .fvs__eqtxt{right:auto;left:var(--mx);text-align:left}
+  .fvs__room{font-family:var(--fn);font-weight:200;text-transform:uppercase;color:var(--cream);
+    font-size:clamp(2rem,1.4rem + 2.8vw,3.6rem);letter-spacing:.1em;line-height:1.1}
+  .fvs__room::after{content:"";display:block;width:clamp(44px,5vw,60px);height:1px;
+    background:linear-gradient(90deg,var(--foil1),var(--foil2));margin-top:clamp(12px,2vh,18px)}
+  .fvs__pled{margin-top:clamp(12px,2.2vh,20px);font-size:clamp(.875rem,.83rem + .25vw,1rem);
+    letter-spacing:.12em;display:flex;align-items:center;gap:12px;flex-wrap:wrap;color:var(--cream)}
+  .fvs__scene--eq.is-right .fvs__pled{justify-content:flex-start}
+  .fvs__pled .en{font-family:var(--fn);font-weight:300;letter-spacing:.26em;text-transform:uppercase;
+    font-size:.92em;color:#E8C77D}
+  .fvs__pled .dash{width:34px;height:1px;background:var(--gold);opacity:.8}
+  .chip{font-style:normal;font-weight:500;font-size:.8rem;letter-spacing:.2em;color:#E8C77D;
+    border:1px solid rgba(201,162,75,.65);padding:4px 10px 4px 12px;border-radius:2px;white-space:nowrap}
+  .wish{list-style:none;margin:clamp(20px,3.4vh,34px) 0 0}
+  .wish li{font-size:clamp(1rem,.94rem + .5vw,1.2rem);letter-spacing:.14em;color:var(--sumi2);
+    padding:clamp(6px,1.2vh,12px) 0}
+  .reason__punch{margin-top:clamp(18px,3vh,28px);font-weight:500;
+    font-size:clamp(1.15rem,1rem + 1vw,1.7rem);letter-spacing:.12em;color:var(--sumi);
+    padding-bottom:8px;border-bottom:2px solid transparent;
+    border-image:url("assets/std/gold_washi.webp") 30 / 0 0 2px 0 / 0 stretch;width:fit-content}
+  .chaplead{font-family:var(--fm);font-weight:400;letter-spacing:.06em;line-height:1.9;
+    font-size:clamp(.95rem,.9rem + .35vw,1.1rem);margin-bottom:clamp(16px,3vh,28px);
+    padding-bottom:clamp(12px,2.2vh,20px);color:var(--cream2);
+    border-bottom:1px solid rgba(241,213,125,.45)}
+  .is-kinari .chaplead{color:var(--sumi2);border-bottom-color:rgba(176,138,60,.45)}
+  .pled__note{margin-top:10px;font-size:clamp(.875rem,.83rem+.25vw,1rem);letter-spacing:.1em;color:var(--cream2)}
+  .fvs__scene--climax{text-align:center}
+  .climax__sub{color:var(--sumi2)}
+  .climax__cta{justify-content:center}
+  .art--swXL{width:clamp(170px,19vw,300px);top:calc(env(safe-area-inset-top) + clamp(20px,3.6vh,48px));
+    right:clamp(16px,6vw,110px)}
+  /* 静かな幕: 深紅トーン・オン・トーン＋中央図版 */
+  .fvs__scene--eq.is-quiet{background:var(--beni-d)}
+  .is-quiet .fvs__media,.fvs__scene--eq.is-right.is-quiet .fvs__media{left:50%;right:auto;top:44%;
+    transform:translate(-50%,-50%);width:min(46vw,780px)}
+  .is-quiet .fvs__eqtxt,.fvs__scene--eq.is-right.is-quiet .fvs__eqtxt{left:50%;right:auto;top:auto;
+    bottom:clamp(56px,10vh,110px);transform:translateX(-50%);text-align:center;max-width:min(80vw,600px)}
+  .is-quiet .fvs__room{font-size:clamp(1.15rem,1rem + 1vw,1.7rem);font-weight:200;letter-spacing:.34em}
+  .is-quiet .fvs__room::after{margin-left:auto;margin-right:auto}
+  .is-quiet .fvs__pled,.fvs__scene--eq.is-right.is-quiet .fvs__pled{font-size:clamp(.8rem,.78rem+.2vw,.9rem);justify-content:center}
+  /* 生成りの頁（紅と交互＝頁めくり） */
+  .fvs__scene--eq.is-kinari{background:url("assets/std/page_kinari.webp") center/cover var(--paper)}
+  .fvs__scene--eq.is-kinari::after{background:radial-gradient(120% 100% at 50% 0%,transparent 58%,rgba(122,104,76,.14) 100%)}
+  .fvs__scene--eq.is-quiet.is-kinari{background:linear-gradient(rgba(237,232,221,.45),rgba(237,232,221,.45)),url("assets/std/page_kinari.webp") center/cover var(--paper2)}
+  .is-kinari .fvs__media{border-color:#FCFAF5;outline-color:rgba(176,138,60,.5);
+    box-shadow:0 24px 70px rgba(60,48,28,.35)}
+  .is-kinari .fvs__room{color:var(--sumi)}
+  .is-kinari .fvs__pled,.is-kinari .pled__note{color:var(--sumi2);text-shadow:none}
+  .is-kinari .fvs__pled .en{color:var(--gold2)}
+  .is-kinari .chip{color:var(--gold2);border-color:rgba(176,138,60,.6)}
+  .is-kinari .act{color:var(--sumi3)}
+  .is-kinari .act::after{background:linear-gradient(180deg,rgba(176,138,60,.6),rgba(176,138,60,0))}
+  .timg--e{width:min(560px,80vw)}
+  .timg--o{width:min(620px,84vw)}
+  .open__sub{margin-top:clamp(12px,2vh,18px);font-size:clamp(.95rem,.9rem + .3vw,1.05rem);
+    letter-spacing:.1em;color:var(--cream2)}
+  .open__cta{margin-top:clamp(16px,2.8vh,26px);display:flex;gap:12px;flex-wrap:wrap}
+  .btn--ghost{border:1px solid rgba(36,30,22,.28);color:var(--sumi)}
+  .btn--ghost:hover{border-color:var(--gold2);color:var(--gold2)}
+  @media (max-width:700px){
+    .open__cta{gap:8px}
+    .open__cta .btn{display:inline-block;margin:0;padding:12px 18px;font-size:.85rem}
+  }
+
+  /* ============ ボタン ============ */
+  .btn{display:inline-block;font-size:.92rem;letter-spacing:.22em;text-decoration:none;
+    padding:17px 42px;border-radius:2px;margin:0 8px 10px;
+    transition:background .35s ease,border-color .35s ease,color .35s ease,box-shadow .35s ease}
+  .btn--fill{background:var(--amber);color:#fff;box-shadow:0 6px 18px rgba(122,84,18,.28)}
+  .btn--fill:hover{background:var(--amber-d);box-shadow:0 8px 22px rgba(122,84,18,.36)}
+
+  /* ============ 操作UI（テーマ連動） ============ */
+  .fvs__dots{position:fixed;right:clamp(2px,1vw,14px);top:50%;transform:translateY(-50%);z-index:60;
+    display:flex;flex-direction:column;gap:0}
+  html.fvs-released .fvs__dots,html.fvs-released .fvs__count,html.fvs-released .fvs__hint{opacity:0;pointer-events:none;transition:opacity .3s}
+  .fvs__dots button{appearance:none;border:0;background:none;cursor:pointer;padding:0;line-height:0;
+    width:44px;height:44px;display:grid;place-items:center}
+  .fvs__dots button::before{content:"";display:block;width:7px;height:7px;border-radius:50%;
+    background:rgba(243,238,227,.34);transition:transform .3s,background .3s}
+  .fvs__dots button[aria-current="true"]::before{background:var(--gold);transform:scale(1.5)}
+  .fvs__dots button:focus-visible{outline:1px solid var(--gold);outline-offset:2px;border-radius:50%}
+  html[data-fvstheme="paper"] .fvs__dots button::before{background:rgba(36,30,22,.28)}
+  html[data-fvstheme="paper"] .fvs__dots button[aria-current="true"]::before{background:var(--shu)}
+  .fvs__count{position:fixed;right:clamp(14px,2.2vw,30px);top:calc(env(safe-area-inset-top) + clamp(14px,2.6vh,24px));z-index:60;
+    font-family:var(--fn);font-weight:300;font-size:.9rem;letter-spacing:.24em;color:var(--cream2)}
+  html[data-fvstheme="paper"] .fvs__count{color:var(--sumi2)}
+  .fvs__hint{position:fixed;left:50%;bottom:clamp(12px,2.6vh,22px);transform:translateX(-50%);z-index:60;
+    font-size:1rem;letter-spacing:.18em;color:var(--cream2);display:flex;align-items:center;gap:10px;white-space:nowrap}
+  html[data-fvstheme="paper"] .fvs__hint{color:var(--sumi2)}
+  .fvs__hint::after{content:"";width:1px;height:26px;background:linear-gradient(180deg,var(--gold),transparent);
+    animation:cue 1.8s ease-in-out infinite}
+  html[data-fvstheme="paper"] .fvs__hint::after{background:linear-gradient(180deg,var(--shu),transparent)}
+  @keyframes cue{0%{transform:scaleY(.2);transform-origin:top}55%{transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
+
+
+  @media (max-width:700px){
+    .fvs .spbr{display:inline}
+    .fvs__dots{display:none}
+    .btn{display:block;margin:0 auto 12px;max-width:320px}
+    .fvs__eyebrow{margin-bottom:12px}
+    .fvs__media,.fvs__scene--eq.is-right .fvs__media,
+    .is-quiet .fvs__media,.fvs__scene--eq.is-right.is-quiet .fvs__media{
+      left:16px;right:16px;width:auto;top:calc(env(safe-area-inset-top) + 64px);
+      transform:none;aspect-ratio:auto;height:48svh}
+    .fvs__eqtxt,.fvs__scene--eq.is-right .fvs__eqtxt,
+    .is-quiet .fvs__eqtxt,.fvs__scene--eq.is-right.is-quiet .fvs__eqtxt{
+      left:20px;right:20px;top:auto;bottom:calc(env(safe-area-inset-bottom) + 84px);
+      transform:none;max-width:none;text-align:left}
+    .is-quiet .fvs__room::after{margin-left:0;margin-right:0}
+    .is-quiet .fvs__pled,.fvs__scene--eq.is-right.is-quiet .fvs__pled{justify-content:flex-start}
+  }
+  @media (prefers-reduced-motion:reduce){.fvs__hint::after{animation:none}}
 
   /* ===================== 実績（生きた図面・動画背景＋製図インデックスバナー） ===================== */
   .authority{position:relative;overflow:hidden;isolation:isolate;color:var(--cream);background:#100d09;
@@ -1109,169 +1071,230 @@
   </div>
 </header>
 
-<!-- ============ FV「あかりの物語・改」v4（2026-07-08 fv_cinema.html図面より統合） ============
-     消灯した家のシルエット→宛名→金縁の緞帳がひらいて灯りの家→0円の台帳→2プラン価格の祭壇
-     →フルブリード標準装備5景→10年後50年後。GSAP不成立時は下部.introの静的フォールバックのみ表示。
-     JSタイムラインはPREMIUM MOTION LAYER（本ファイル末尾）に統合済み。 -->
-<section class="hero" id="top">
-  <video class="hero__v" id="hv" poster="assets/fv_cine/poster_exterior.webp" muted loop playsinline preload="auto" autoplay>
-    <source src="assets/fv_cine/exterior_nb_sp.mp4" type="video/mp4" media="(max-width: 700px)">
-    <source src="assets/fv_cine/exterior_nb_pc.mp4" type="video/mp4">
-  </video>
-  <script>/* SPは縦長ポスター（LCP一致・パース直後に差し替え＝初期描画前） */
-  if(matchMedia('(max-width:700px)').matches){document.getElementById('hv').poster='assets/fv_cine/poster_exterior_sp.webp';}</script>
-  <div class="hero__scrim"></div>
+<!-- ============ FV「上質なカタログ」v5.4（2026-08-19 fv_step.html図面より統合・クライアント承認済み）
+     表紙 → 見返し → 標準装備7景 → 費用のこと(0円) → こだわり3景 → ご案内。
+     1操作=1シーンのステップ送り（GSAP Observer）。紅⇄生成りが交互に繰れる。
+     JS制御は PREMIUM MOTION LAYER（本ファイル末尾）の 4) ブロックに統合。 -->
+<div class="fvs__loader" aria-hidden="true">
+  <img src="assets/std/art_swallows_t.webp" alt="">
+  <p>花鳥風月</p>
+</div>
 
-  <!-- ===== 物語層（GSAP成立時のみ .fv-cine で出現） ===== -->
-  <div class="st">
-    <!-- 幕E: フルブリード5景（文字層より下）。位置はジグザグ: K左→B右→V左→L右→At左 -->
-    <div class="st__e">
-      <figure class="st__sc st__sc--k is-left" data-sc="kitchen">
-        <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_kitchen.webp"></video>
-        <span class="scr"></span>
-        <p class="st__room"><span class="lm"><span>Kitchen</span></span></p>
-        <p class="st__pled st__ledger"><span class="en">Standard</span><span class="dash"></span>クリナップ ステディア<em class="st__std">標準</em></p>
-      </figure>
-      <figure class="st__sc st__sc--b is-right" data-sc="bath">
-        <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_bath.webp"></video>
-        <span class="scr"></span>
-        <p class="st__room"><span class="lm"><span>Bath</span></span></p>
-        <p class="st__pled st__ledger"><span class="en">Standard</span><span class="dash"></span>TOTO サザナ<em class="st__std">標準</em></p>
-      </figure>
-      <figure class="st__sc st__sc--v is-left" data-sc="vanity">
-        <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_vanity.webp"></video>
-        <span class="scr"></span>
-        <p class="st__room"><span class="lm"><span>Vanity</span></span></p>
-        <p class="st__pled st__ledger"><span class="en">Standard</span><span class="dash"></span>三面鏡・広収納<em class="st__std">標準</em></p>
-      </figure>
-      <figure class="st__sc st__sc--l is-right" data-sc="living">
-        <video muted loop playsinline preload="none" poster="assets/fv_cine/poster_living.webp"></video>
-        <span class="scr"></span>
-        <p class="st__room"><span class="lm"><span>Living</span></span></p>
-        <p class="st__pled st__ledger"><span class="en">Standard</span><span class="dash"></span>天井高2.4m・ハイドア2.3m<em class="st__std">標準</em></p>
-      </figure>
-      <figure class="st__sc st__sc--at is-left" data-sc="atrium">
-        <img src="assets/video_cine/gh_atrium.webp" alt="夕刻の光が差し込む吹き抜けの階段ホール" loading="lazy" decoding="async">
-        <span class="scr"></span>
-        <p class="st__room"><span class="lm"><span>Atrium</span></span></p>
-        <p class="st__pled st__ledger"><span class="en">Design</span><span class="dash"></span>吹き抜け・天井を上げる<em class="st__std">自由設計</em></p>
-      </figure>
+<section class="fvs" id="top" role="region" aria-label="やまと不動産の紹介（1操作で1シーン進みます）">
+
+  <!-- 00 表紙: 花鳥風月（Higgsfield生成の箔押し原画。毛筆はパンフ入稿データ待ち=Yuji Syuku代替） -->
+  <article class="fvs__scene fvs__scene--cover" id="s00" data-name="表紙" data-theme="dark">
+    <div class="cover__bg">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/cover_sp_1080.webp 1080w, assets/std/cover_sp_1440.webp 1440w" sizes="100vw">
+        <img src="assets/std/cover_pc_1920.webp" srcset="assets/std/cover_pc_1920.webp 1920w, assets/std/cover_pc_2560.webp 2560w" sizes="100vw" alt="紅の地に箔押しの牡丹と燕の表紙" decoding="async">
+      </picture>
     </div>
-
-    <!-- 緞帳と帳（cur0=閉幕中の一枚布。開く瞬間だけT/Bの二枚に分かれる=合わせ目レス） -->
-    <span class="st__curT" aria-hidden="true"></span>
-    <span class="st__curB" aria-hidden="true"></span>
-    <span class="st__cur0" aria-hidden="true"></span>
-    <span class="st__veil" aria-hidden="true"></span>
-
-    <!-- 幕Eの見出し（景の上） -->
-    <div class="st__ehead">
-      <p class="t">標準装備が、充実しています。</p>
-      <p class="s">オプションだと思っていた設備が、はじめから付いています。仕様はシリーズにより異なります。</p>
+    <div class="cover__t" data-l>
+      <p class="cover__yamato">やまとの家</p>
+      <p class="cover__fude">花鳥風月</p>
+      <p class="cover__en">The House of Yamato</p>
     </div>
+  </article>
 
-    <!-- 幕A: 宛名①（左下段違い） -->
-    <div class="st__a">
-      <p class="st__eye">Yamato Fudosan ── Nara</p>
-      <p class="l1"><span class="lm"><span>最近の物価高に、</span></span></p>
-      <p class="l2"><span class="lm"><span>動揺した方へ。</span></span></p>
+  <!-- 01 見返し: 表紙の内側（コピーはパンフレット0723 p2 の実文をそのまま） -->
+  <article class="fvs__scene fvs__scene--mikaeshi" id="s01" data-name="ずっと、愛せる家。" data-theme="dark">
+    <div class="paper__in mikaeshi__in" data-l>
+      <p class="fvs__eyebrow">やまとの家</p>
+      <p class="hline">ずっと、愛せる家。</p>
+      <hr class="rule-foil">
+      <p class="hlead">「花鳥風月」自然の美しさを愛でる心のように、<br>住む人のこだわりを形にする「注文住宅」</p>
     </div>
+  </article>
 
-    <!-- 幕B: 宛名②（右寄せ） -->
-    <div class="st__b">
-      <p class="st__eye">To You</p>
-      <p class="l1"><span class="lm"><span>家を買う夢を、</span></span></p>
-      <p class="l2"><span class="lm"><span>あきらめた方へ。</span></span></p>
+  <article class="fvs__scene fvs__scene--eq is-kinari" id="s06" data-name="キッチン" data-theme="paper">
+    <p class="act" data-l>標準装備</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/kitchen_sp_720.webp 720w, assets/std/kitchen_sp_1080.webp 1080w, assets/std/kitchen_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/kitchen_1920.webp" srcset="assets/std/kitchen_1100.webp 1100w, assets/std/kitchen_1920.webp 1920w, assets/std/kitchen_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="ウォールナットの折り下げ天井とクリナップ ステディアのキッチン" decoding="async" loading="lazy">
+      </picture>
     </div>
-
-    <!-- 幕C: 転回（中央・緞帳がひらく） -->
-    <div class="st__c">
-      <p class="l1"><span class="lm"><span>やまと不動産なら、</span></span></p>
-      <p class="l2"><span class="lm"><span>お役に立てる<br class="spbr">かもしれません。</span></span></p>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Kitchen</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>クリナップ ステディア<em class="chip">標準</em></p>
     </div>
+  </article>
 
-    <!-- 幕D: 0円の台帳（費用ゼロ訴求。2026-08-04 クライアント指示で「増えません」から0円列挙へ） -->
-    <div class="st__d">
-      <p class="l1"><span class="lm"><span>他社ではかかる費用が、</span></span></p>
-      <p class="l2"><span class="lm"><span>やまとでは0円です。</span></span></p>
-      <ul class="st__rows">
-        <li class="st__row" data-row="1">
-          <span class="k">地盤改良費</span><span class="lead"></span>
-          <b class="v"><span id="stR1">150</span><small id="stR1u">万円</small></b>
-          <em class="st__chip">一般メーカーは120〜150万円</em>
-        </li>
-        <li class="st__row" data-row="2">
-          <span class="k">つなぎ融資</span><span class="lead"></span>
-          <b class="v">0<small>円</small></b>
-          <em class="st__chip">建物完成後に一括支払い</em>
-        </li>
-        <li class="st__row" data-row="3">
-          <span class="k">仲介手数料</span><span class="lead"></span>
-          <b class="v">0<small>円</small></b>
-          <em class="st__chip">すべて自社所有の土地</em>
-        </li>
-      </ul>
-      <p class="st__dnote">土地測量費・土地造成費・水道工事変更費も0円です。</p>
+  <article class="fvs__scene fvs__scene--eq is-right" id="s07" data-name="浴室" data-theme="dark">
+    <p class="act" data-l>標準装備</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/bath_sp_720.webp 720w, assets/std/bath_sp_1080.webp 1080w, assets/std/bath_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/bath_1920.webp" srcset="assets/std/bath_1100.webp 1100w, assets/std/bath_1920.webp 1920w, assets/std/bath_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="TOTO サザナの浴室" decoding="async" loading="lazy">
+      </picture>
     </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Bath</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>TOTO サザナ<em class="chip">標準</em></p>
+    </div>
+  </article>
 
-    <!-- 幕P: 価格の祭壇（2プラン明示。2026-08-04 クライアント指示で「〜」表記と「土地別途」を廃止） -->
-    <div class="st__p">
-      <p class="st__pk">Price ── 花鳥風月・やまとの家</p>
-      <div class="st__ptwo">
-        <p class="st__pnum" aria-label="京シリーズ 2,480万円 税込">
-          <span class="ser">京</span><span class="dg"><span>2</span></span><span class="dg"><span>,</span></span><span class="dg"><span>4</span></span><span class="dg"><span>8</span></span><span class="dg"><span>0</span></span><span class="un">万円</span>
-        </p>
-        <p class="st__pnum" aria-label="花・風シリーズ 2,680万円 税込">
-          <span class="ser">花・風</span><span class="dg"><span>2</span></span><span class="dg"><span>,</span></span><span class="dg"><span>6</span></span><span class="dg"><span>8</span></span><span class="dg"><span>0</span></span><span class="un">万円</span>
+  <article class="fvs__scene fvs__scene--eq is-kinari" id="s08" data-name="洗面" data-theme="paper">
+    <p class="act" data-l>標準装備</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/vanity_sp_720.webp 720w, assets/std/vanity_sp_1080.webp 1080w, assets/std/vanity_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/vanity_1920.webp" srcset="assets/std/vanity_1100.webp 1100w, assets/std/vanity_1920.webp 1920w, assets/std/vanity_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="TOTO オクターブ Liteの洗面室" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Vanity</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>TOTO オクターブ Lite<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-right" id="s09" data-name="リビング" data-theme="dark">
+    <p class="act" data-l>標準装備</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/living_sp_720.webp 720w, assets/std/living_sp_1080.webp 1080w, assets/std/living_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/living_1920.webp" srcset="assets/std/living_1100.webp 1100w, assets/std/living_1920.webp 1920w, assets/std/living_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="ハイドア2.3mのリビング" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Living</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>天井高2.4m・ハイドア2.3m<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-kinari" id="s05" data-name="外壁" data-theme="paper">
+    <p class="act" data-l>標準装備</p>
+    <div class="fvs__media"><img src="assets/fv_cine/poster_wall.webp" alt="夕景のヘーベルパワーボードの外壁" decoding="async" loading="lazy"></div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Wall</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>旭化成 ヘーベルパワーボード<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-quiet" id="s10" data-name="和室" data-theme="dark">
+    <p class="act" data-l>標準装備</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/washitsu_sp_720.webp 720w, assets/std/washitsu_sp_1080.webp 1080w, assets/std/washitsu_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/washitsu_1920.webp" srcset="assets/std/washitsu_1100.webp 1100w, assets/std/washitsu_1920.webp 1920w, assets/std/washitsu_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="半畳縁なし畳の和室" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Tatami</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>DAIKEN 和紙畳 ここち和座<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-right is-kinari" id="s11" data-name="玄関" data-theme="paper">
+    <p class="act" data-l>標準装備</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/entrance_sp_720.webp 720w, assets/std/entrance_sp_1080.webp 1080w, assets/std/entrance_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/entrance_1920.webp" srcset="assets/std/entrance_1100.webp 1100w, assets/std/entrance_1920.webp 1920w, assets/std/entrance_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="木目の玄関ドア ジエスタ2と格子のポーチ" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Entrance</p>
+      <p class="fvs__pled" data-l><span class="en">Standard</span><span class="dash"></span>LIXIL ジエスタ2<em class="chip">標準</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--beni fvs__scene--ledger" id="s03" data-name="0円の台帳" data-theme="dark">
+    <p class="act" data-l>費用のこと</p>
+    <div class="paper__in">
+      <p class="hlead" data-l>標準装備のグレードが高いので、<br class="spbr">あとから設備を足す必要がありません。</p>
+      <p class="hline" data-l style="margin-top:clamp(10px,1.8vh,18px)">他社ではかかる費用が、<br>やまとでは0円です。</p>
+      <div class="ledger">
+        <div class="ledger__row" data-l>
+          <span class="ledger__k">地盤改良費</span><span class="ledger__lead"></span>
+          <span class="ledger__v"><span id="cd1">0</span><small id="cd1u">円</small></span>
+          <em class="ledger__chip">一般メーカーは120〜150万円</em>
+        </div>
+        <div class="ledger__row" data-l>
+          <span class="ledger__k">つなぎ融資</span><span class="ledger__lead"></span>
+          <span class="ledger__v">0<small>円</small></span>
+          <em class="ledger__chip">建物完成後に一括支払い</em>
+        </div>
+        <div class="ledger__row" data-l>
+          <span class="ledger__k">仲介手数料</span><span class="ledger__lead"></span>
+          <span class="ledger__v">0<small>円</small></span>
+          <em class="ledger__chip">すべて自社所有の土地</em>
+        </div>
+      </div>
+      <p class="ledger__note" data-l>土地測量費・土地造成費・水道工事変更費も0円です。<br>
+      2,000万円規模の土地の場合、通常400万円〜470万円かかる費用が全て0円です。</p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-kinari" id="s20" data-name="吹き抜け" data-theme="paper">
+    <p class="act" data-l>こだわり</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/atrium_720.webp 720w, assets/std/atrium_1080.webp 1080w, assets/std/atrium_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/atrium_w_1920.webp" srcset="assets/std/atrium_w_1100.webp 1100w, assets/std/atrium_w_1920.webp 1920w, assets/std/atrium_w_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="吹き抜けの階段ホール" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="chaplead" data-l>浮いた費用は、オプションに回すこともできます。</p>
+      <p class="fvs__room" data-l>Atrium</p>
+      <p class="fvs__pled" data-l><span class="en">Option</span><span class="dash"></span>吹き抜け・天井を上げる<em class="chip">自由設計</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-right" id="s21" data-name="造作カウンター" data-theme="dark">
+    <p class="act" data-l>こだわり</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/opt_counter_sp_720.webp 720w, assets/std/opt_counter_sp_1080.webp 1080w, assets/std/opt_counter_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/opt_counter_1920.webp" srcset="assets/std/opt_counter_1100.webp 1100w, assets/std/opt_counter_1920.webp 1920w, assets/std/opt_counter_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="一枚板のダイニングカウンターと折り下げ天井の間接照明" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Counter</p>
+      <p class="fvs__pled" data-l><span class="en">Option</span><span class="dash"></span>造作カウンター・折り下げ天井の間接照明<em class="chip">自由設計</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--eq is-quiet is-kinari" id="s22" data-name="玄関収納" data-theme="paper">
+    <p class="act" data-l>こだわり</p>
+    <div class="fvs__media">
+      <picture>
+        <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/opt_storage_sp_720.webp 720w, assets/std/opt_storage_sp_1080.webp 1080w, assets/std/opt_storage_sp_1440.webp 1440w" sizes="(max-width:700px) 100vw, 60vw">
+        <img src="assets/std/opt_storage_1920.webp" srcset="assets/std/opt_storage_1100.webp 1100w, assets/std/opt_storage_1920.webp 1920w, assets/std/opt_storage_2560.webp 2560w" sizes="(max-width:700px) 100vw, 60vw" alt="足元を照らす間接照明のある玄関の造作収納" decoding="async" loading="lazy">
+      </picture>
+    </div>
+    <div class="fvs__eqtxt">
+      <p class="fvs__room" data-l>Storage</p>
+      <p class="fvs__pled" data-l><span class="en">Option</span><span class="dash"></span>玄関の造作収納・足元の間接照明<em class="chip">自由設計</em></p>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--beni fvs__scene--climax" id="s13" data-name="招待" data-theme="dark">
+    <img class="foil foil--tr" src="assets/std/art_swallows_t.webp" alt="">
+    <img class="foil foil--bl" src="assets/std/art_swallows_t.webp" alt="">
+    <p class="act" data-l>ご案内</p>
+    <div class="finwrap">
+      <div class="encl encl--fin" data-l>
+        <p class="fvs__eyebrow">花鳥風月 ── やまとの家</p>
+        <p class="hline hline--sm">大手で諦めた家を、<br>当社と一緒に叶えましょう。</p>
+        <hr class="rule-foil">
+        <p class="hlead climax__sub">自由設計と、高水準な標準装備。</p>
+      </div>
+      <div class="fincard" data-l>
+        <p class="open__cta climax__cta">
+          <a class="btn btn--fill" href="contact.html?type=reserve">モデルハウスを予約する</a>
+          <a class="btn btn--ghost" href="contact.html?type=docs">資料を請求する</a>
         </p>
       </div>
-      <span class="st__pline" aria-hidden="true"></span>
-      <p class="st__ps"><span class="lm"><span>この価格で、本当に高品質の<br class="spbr">家が建ちます。</span></span></p>
-      <p class="st__pnote">コミコミ価格・税込</p>
     </div>
+  </article>
 
-    <!-- 幕F: 結び（大数字ロックアップ） -->
-    <div class="st__f">
-      <p class="fl1" aria-label="10年後、50年後に、違いがわかります。">
-        <span class="lm"><span class="fn">10</span></span><span class="fw">年後、</span>
-        <span class="lm"><span class="fn">50</span></span><span class="fw">年後に、</span>
-      </p>
-      <p class="fl2"><span class="lm"><span>違いがわかります。</span></span></p>
-      <p class="st__ledger"><span class="en">Wall</span><span class="dash"></span>旭化成ヘーベル パワーボード<em class="st__std">標準</em></p>
-    </div>
-
-    <!-- 章番号・粒子・ビネット・進捗 -->
-    <p class="st__act" aria-hidden="true"><b id="stActN">01</b><i>/ 07</i></p>
-    <span class="st__grain" aria-hidden="true"></span>
-    <span class="st__vig" aria-hidden="true"></span>
-    <nav class="st__dots" aria-label="物語の進捗">
-      <button class="st__dot is-on" type="button" aria-label="第1幕へ"></button>
-      <button class="st__dot" type="button" aria-label="第2幕へ"></button>
-      <button class="st__dot" type="button" aria-label="第3幕へ"></button>
-      <button class="st__dot" type="button" aria-label="第4幕へ"></button>
-      <button class="st__dot" type="button" aria-label="第5幕へ"></button>
-      <button class="st__dot" type="button" aria-label="第6幕へ"></button>
-      <button class="st__dot" type="button" aria-label="第7幕へ"></button>
-    </nav>
-  </div>
-
-  <!-- ===== 静的フォールバック（シネマ不成立時はこのまま出る） ===== -->
-  <div class="intro" id="fvIntro">
-    <h1>やまと不動産なら、<br>お役に立てるかもしれません。</h1>
-    <p class="in-sub">京は2,480万円、花・風は2,680万円です。この価格で、高品質の家が建ちます。</p>
-    <p class="in-note">コミコミ価格・税込</p>
-  </div>
-
-  <div class="cta-wrap" id="ctaWrap">
-    <p class="cta-invite">やまと不動産の家を、見に来てください。</p>
-    <div class="cta-row">
-      <a class="cta" href="contact.html?type=reserve">モデルハウスを予約する
-        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="cta-ghost" href="contact.html?type=docs">資料を請求する</a>
-    </div>
-  </div>
-  <div class="cue" id="fvCue">Scroll</div>
+  <nav class="fvs__dots" aria-label="シーン移動"></nav>
+  <p class="fvs__count" aria-hidden="true"><span id="cNow">01</span> / <span id="cAll">13</span></p>
+  <p class="fvs__hint" aria-hidden="true">スクロール／スワイプで次へ</p>
 </section>
+
 
 <!-- ============ 実績（生きた図面・動画背景＋製図インデックスバナー） ============ -->
 <section class="authority" id="auth">
@@ -3034,24 +3057,7 @@
   closeBtn.addEventListener('click',closeMenu);
   menu.querySelectorAll('a[href="#"]').forEach(function(a){ a.addEventListener('click',function(e){e.preventDefault();closeMenu();}); });
 
-  /* --- FV動画 再生（スマホは縦版に確実に切替＋省データ/視差軽減で退避） --- */
-  var v=document.getElementById('hv');
-  if(v){
-    var mob=matchMedia('(max-width: 700px)').matches;
-    if(mob){
-      // media属性を無視するブラウザ向けの保険：モバイルは必ず縦版
-      if((v.currentSrc||'').indexOf('exterior_nb_sp')<0){
-        while(v.firstChild) v.removeChild(v.firstChild);
-        var so=document.createElement('source');
-        so.src='assets/fv_cine/exterior_nb_sp.mp4'; so.type='video/mp4';
-        v.appendChild(so); v.load();
-      }
-      v.poster='assets/fv_cine/poster_exterior_sp.webp';
-    }
-    var c=navigator.connection||{}; var save=c.saveData===true || /(^|-)2g/.test(c.effectiveType||'');
-    if(reduce||save){ try{ v.removeAttribute('autoplay'); v.pause(); }catch(e){} }
-    else { var p=v.play(); if(p&&p.catch) p.catch(function(){}); }
-  }
+  /* FV動画の保険ブロックは v5.4 で撤去（#hv は新FVに存在しない） */
 
   /* --- 実績（生きた図面）: 動画/カウント/リビール/注記/パララックス --- */
   (function(){
@@ -3167,6 +3173,7 @@
 <!-- ============ PREMIUM MOTION LAYER（GSAP + ScrollTrigger + Lenis / 失敗時は既存演出のまま動作） ============ -->
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Observer.min.js" integrity="sha384-KeRvMDjbVCiHOnTtiH71iO/kgJyOwgIrQXhyLo4qgVGDnw5aFdogZh34WVfj/D1q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.25/dist/lenis.min.js" integrity="sha384-ClD7pCgIUz5M81HT8aZmMxCsWmfsycmBiwL5gy1pUbdWHvICIbea22N9sTtAFotA" crossorigin="anonymous"></script>
 <script>
 (function(){
@@ -3234,284 +3241,146 @@
   }
 
   /* ==================================================================================
-     4) FV「あかりの物語・改」v4（2026-07-08 fv_cinema.html図面より統合）
-     消灯した家のシルエット→宛名→金縁の緞帳→灯りの家→0円台帳→2プラン価格の祭壇→標準装備5景→10年50年の結び。
-     外側IIFEの gsap/ScrollTrigger/fine/mobile/SCRUB/lenis/OFF() をそのまま再利用（二重初期化しない）。
+     4) FV「上質なカタログ」v5.4（2026-08-19 fv_step.html図面より統合・クライアント承認済み）
+     表紙 → 見返し → 標準装備7景 → 費用のこと(0円) → こだわり3景 → ご案内 の14シーン。
+     1ジェスチャー=1シーンのステップ送り。逃げ道: ドット/キーボード/reduced-motion/?pm=off。
+     外側IIFEの gsap/ScrollTrigger/lenis/OFF()/d/root をそのまま再利用（二重初期化しない）。
+     Lenis連携: 有効化でstop / release()でstart / reenter()でstop（統合設計 §3-1）。
      ================================================================================== */
-  var hero=d.getElementById('top');
-  hero.classList.add('fv-cine');
-  var hd=d.getElementById('siteHeader');
+  var fvsReduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fvsOK=!!(window.gsap && window.Observer) && !fvsReduce && !OFF('fvs');
+  if(!fvsOK){ root.classList.add('fvs-static'); }
+  else{
+  gsap.registerPlugin(Observer);
+  root.classList.add('fvs-app');
+  var hdr=d.getElementById('siteHeader');
+  if(lenis) lenis.stop();
 
-  /* ベース動画は静的markup+FV動画保険ブロックで既にexterior_nbを読み込み済み（緞帳の下で息づき、幕Cで全貌が現れる）。
-     ここでpause/removeChild/src再設定/load()をやり直すと旧B_loop→exterior_nbの二重リセットで
-     リロード時のチラつき・幕C到達前の描画未了(スクロール時の乱れ)を招くため、再生保証のみ行う。 */
-  var hv=d.getElementById('hv');
-  try{ if(hv.paused){ var p0=hv.play(); if(p0&&p0.catch)p0.catch(function(){}); } }catch(e){}
+  var scenes=[].slice.call(d.querySelectorAll('.fvs__scene'));
+  var N=scenes.length;
+  var dotsNav=d.querySelector('.fvs__dots');
+  var cNow=d.getElementById('cNow');
+  d.getElementById('cAll').textContent=String(N).padStart(2,'0');
 
-  /* 装備クリップ（preload=none。価格幕あたりで先読み）。Atriumは静止画のためsrc不要 */
-  var fvSRC={
-    kitchen:['assets/video_ab/clip_kitchen.mp4','assets/video_ab/sp_reframe/kitchen.mp4'],
-    bath:['assets/video_ab/clip_bath.mp4','assets/video_ab/sp_reframe/bath.mp4'],
-    vanity:['assets/video_ab/clip_vanity.mp4','assets/video_ab/sp_reframe/vanity.mp4'],
-    living:['assets/video_ab/clip_living.mp4','assets/video_ab/sp_reframe/living.mp4']
-  };
-  /* SPは横クロップでなくnano_banana_proで縦構図から作り直した専用ポスター(見切れ対策) */
-  var fvPOSTER={
-    kitchen:['assets/fv_cine/poster_kitchen.webp','assets/fv_cine/poster_kitchen_sp.webp'],
-    bath:['assets/fv_cine/poster_bath.webp','assets/fv_cine/poster_bath_sp.webp'],
-    vanity:['assets/fv_cine/poster_vanity.webp','assets/fv_cine/poster_vanity_sp.webp'],
-    living:['assets/fv_cine/poster_living.webp','assets/fv_cine/poster_living_sp.webp']
-  };
-  var fvScenes={};
-  [].slice.call(d.querySelectorAll('.st__sc')).forEach(function(sc){
-    var k=sc.getAttribute('data-sc');
-    fvScenes[k]={el:sc,v:sc.querySelector('video'),loaded:false}; /* atriumはvideo無し=v:null */
+  var dots=scenes.map(function(sc,idx){
+    var b=d.createElement('button');
+    b.type='button';
+    b.setAttribute('aria-label','シーン'+(idx+1)+'（'+(sc.getAttribute('data-name')||'')+'）へ');
+    b.addEventListener('click',function(){ go(idx); });
+    dotsNav.appendChild(b);
+    return b;
   });
-  function fvPrep(k){ var s=fvScenes[k]; if(!s||s.loaded||!s.v) return;
-    s.loaded=true; s.v.poster=fvPOSTER[k][mobile?1:0]; s.v.src=fvSRC[k][mobile?1:0]; s.v.preload='auto'; s.v.load(); }
-  var fvCurScene=null;
-  function fvPlayScene(k){
-    if(k===fvCurScene) return; fvCurScene=k;
-    for(var key in fvScenes){ var s=fvScenes[key];
-      if(key===k){ fvPrep(key); if(s.v){ var p=s.v.play(); if(p&&p.catch)p.catch(function(){}); } }
-      else{ if(s.v){ try{s.v.pause();}catch(e){} } } }
-    if(k){ try{hv.pause();}catch(e){} }
-    else{ if(hv.paused){ var q=hv.play(); if(q&&q.catch)q.catch(function(){}); } }
+
+  var i=0, animating=false, released=false, releasedAt=0;
+
+  gsap.set(scenes,{autoAlpha:0,zIndex:0});
+  gsap.set(scenes[0],{autoAlpha:1,zIndex:1});
+  sync();
+  introIn(scenes[0]);
+
+  function sync(){
+    dots.forEach(function(b,idx){ b.setAttribute('aria-current', idx===i ? 'true':'false'); });
+    cNow.textContent=String(i+1).padStart(2,'0');
+    root.setAttribute('data-fvstheme', scenes[i].getAttribute('data-theme')||'dark');
   }
-
-  var intro=d.getElementById('fvIntro'), ctaWrap=d.getElementById('ctaWrap'), cue=d.getElementById('fvCue');
-  var fvCurT=d.querySelector('.st__curT'), fvCurB=d.querySelector('.st__curB'),
-      fvCur0=d.querySelector('.st__cur0'), fvVeil=d.querySelector('.st__veil');
-  var fvA=d.querySelector('.st__a'), fvB=d.querySelector('.st__b'), fvC=d.querySelector('.st__c');
-  var fvD=d.querySelector('.st__d'), fvRows=d.querySelectorAll('.st__row'),
-      fvLeads=d.querySelectorAll('.st__row .lead'), fvChips=d.querySelectorAll('.st__d .st__chip');
-  var fvDnote=d.querySelector('.st__dnote');
-  var fvP=d.querySelector('.st__p'), fvPdgs=d.querySelectorAll('.st__pnum .dg>span'), fvPun=d.querySelectorAll('.st__pnum .un'),
-      fvPline=d.querySelector('.st__pline'), fvPs=d.querySelector('.st__ps .lm>span'),
-      fvPnote=d.querySelector('.st__pnote'), fvPk=d.querySelector('.st__pk');
-  var fvE=d.querySelector('.st__e'), fvEhead=d.querySelector('.st__ehead');
-  var fvF=d.querySelector('.st__f'), fvFLed=fvF.querySelector('.st__ledger'), fvFChip=fvF.querySelector('.st__std');
-  var fvDots=d.querySelectorAll('.st__dot'), fvDotsWrap=d.querySelector('.st__dots');
-  var fvActWrap=d.querySelector('.st__act'), fvActN=d.getElementById('stActN');
-  var fvR1=d.getElementById('stR1'), fvR1u=d.getElementById('stR1u');
-
-  intro.style.animation='none'; gsap.set(intro,{autoAlpha:0});
-  gsap.set(ctaWrap,{autoAlpha:0,y:26});
-  gsap.set(cue,{autoAlpha:0});
-
-  /* 初期状態 */
-  function fvHideBeat(el){ gsap.set(el,{autoAlpha:0});
-    gsap.set(el.querySelectorAll('.lm>span'),{yPercent:114}); }
-  fvHideBeat(fvA); fvHideBeat(fvB); fvHideBeat(fvC); fvHideBeat(fvD); fvHideBeat(fvF);
-  gsap.set([fvA.querySelector('.st__eye'),fvB.querySelector('.st__eye')],{autoAlpha:0,x:-14});
-  gsap.set(fvRows,{autoAlpha:0,y:18});
-  gsap.set(fvLeads,{scaleX:0});
-  gsap.set(fvChips,{scale:.5,autoAlpha:0,transformOrigin:'50% 50%'});
-  gsap.set(fvDnote,{autoAlpha:0});
-  gsap.set(fvP,{autoAlpha:0});
-  gsap.set(fvPdgs,{yPercent:114});
-  gsap.set(fvPun,{autoAlpha:0,y:14});
-  gsap.set(fvPk,{autoAlpha:0});
-  gsap.set(fvPs,{yPercent:114});
-  gsap.set(fvPnote,{autoAlpha:0});
-  gsap.set(fvE,{autoAlpha:0});
-  gsap.set(fvEhead,{autoAlpha:0,y:12});
-  gsap.set(fvFLed,{autoAlpha:0,y:14});
-  gsap.set(fvFChip,{scale:.5,autoAlpha:0,transformOrigin:'50% 50%'});
-  gsap.set(d.querySelectorAll('.st__room .lm>span'),{yPercent:114});
-  gsap.set(d.querySelectorAll('.st__pled'),{autoAlpha:0,y:14});
-  gsap.set(d.querySelectorAll('.st__pled .st__std'),{scale:.5,autoAlpha:0,transformOrigin:'50% 50%'});
-  gsap.set(fvActWrap,{autoAlpha:0});
-
-  /* ---- 開幕（時間軸）: 罫→宛名→章番号→cue ---- */
-  var fvOpen=gsap.timeline({delay:.3,defaults:{ease:'power4.out'}});
-  fvOpen.to(fvA,{autoAlpha:1,duration:.01},0)
-      .to(fvA.querySelector('.st__eye'),{autoAlpha:1,x:0,duration:.9},0)
-      .to(fvA.querySelectorAll('.lm>span'),{yPercent:0,duration:1.2,stagger:.14},.25)
-      .to(fvActWrap,{autoAlpha:1,duration:.8},.9)
-      .to(cue,{autoAlpha:1,duration:.7},1.15)
-      .to(fvDotsWrap,{autoAlpha:1,duration:.7},1.15);
-
-  function fvDot(i){
-    fvDots.forEach(function(o,j){ o.classList.toggle('is-on',j===i); });
-    var t='0'+(i+1);
-    if(fvActN.textContent!==t) fvActN.textContent=t;
+  function introIn(sc){
+    /* 紙に刷られた内容として、頁が着地する頃に墨が定着する程度の動き */
+    var parts=sc.querySelectorAll('[data-l]');
+    gsap.fromTo(parts,{y:12,autoAlpha:0},{y:0,autoAlpha:1,duration:.75,stagger:.055,
+      ease:'power2.out',delay:.22,overwrite:'auto'});
+    /* 図版は枠の内側で微速。枠(.fvs__media)のCSS transformには触らない。
+       表紙は印刷物として動かさない（拡大は解像度も落とす） */
+    var im=sc.querySelector('.fvs__media img');
+    if(im) gsap.fromTo(im,{scale:1.045},{scale:1,duration:1.8,ease:'power2.out',overwrite:'auto'});
+    if(sc.id==='s03') countdown();
   }
-
-  /* ---- タイムライン設計（総尺1.108相当。A〜Pは無改変、Vanity/Atrium新規挿入、Living/Finaleは平行移動）----
-     SNAPS/ACT_SNAPは「幕の開始位置」ではなく「内容が完成して見える安定点」（詳細はfv_cinema.html本体コメント参照） */
-  var fvCnt={n:150};
-  var fvSNAPS=[0,.1309,.3385,.5281,.6769,.7581,.8032,.8574,.9026,.9432,1];
-  var fvACT_SNAP=[0,.1309,.3385,.5281,.6769,.7581,1];
-  function fvSnapBeat(v,self){
-    var dir=(self&&self.direction)||1, i;
-    if(dir>0){ for(i=0;i<fvSNAPS.length;i++){ if(fvSNAPS[i]>=v-.012) return fvSNAPS[i]; } return 1; }
-    for(i=fvSNAPS.length-1;i>=0;i--){ if(fvSNAPS[i]<=v+.012) return fvSNAPS[i]; }
-    return 0;
+  /* 幕D: 150万円→0円（v4のカウントダウンを時間駆動で再現） */
+  var cdDone=false;
+  function countdown(){
+    if(cdDone) return; cdDone=true;
+    var el=d.getElementById('cd1'), un=d.getElementById('cd1u'), o={n:150};
+    el.textContent='150'; un.textContent='万円';
+    gsap.to(o,{n:0,duration:1.1,delay:.55,ease:'power3.inOut',onUpdate:function(){
+      var v=Math.round(o.n); el.textContent=v;
+      un.textContent=(v===0?'円':'万円');
+    }});
   }
-
-  var fvStCfg={trigger:hero,pin:true,scrub:SCRUB,start:'top top',end:'+=620%',
-    anticipatePin:1,invalidateOnRefresh:true,fastScrollEnd:true,preventOverlaps:true,
-    onLeave:function(){ hd.classList.add('is-solid'); },
-    onEnterBack:function(){ hd.classList.remove('is-solid'); }};
-  if(!lenis){ fvStCfg.snap={snapTo:fvSnapBeat,inertia:false,duration:{min:.35,max:1},ease:'power2.inOut',delay:.1}; }
-  var fvTl=gsap.timeline({defaults:{ease:'none'},scrollTrigger:fvStCfg});
-
-  /* 幕A→B: 宛名の交代（消灯の家のまま・左→右へ位置回転） */
-  fvTl.fromTo(fvA,{autoAlpha:1,y:0},{autoAlpha:0,y:-24,duration:.032,immediateRender:false},.05)
-    .fromTo(cue,{autoAlpha:1},{autoAlpha:0,duration:.025,immediateRender:false},.04)
-    .to(fvB,{autoAlpha:1,duration:.012},.10)
-    .to(fvB.querySelector('.st__eye'),{autoAlpha:1,x:0,duration:.03},.102)
-    .to(fvB.querySelectorAll('.lm>span'),{yPercent:0,duration:.045,ease:'power3.out',stagger:.012},.106)
-    .to(fvB,{autoAlpha:0,y:-24,duration:.032},.19)
-
-  /* 幕C: 転回 → 金縁の緞帳が上下にひらく */
-    .to(fvC,{autoAlpha:1,duration:.012},.225)
-    .to(fvC.querySelectorAll('.lm>span'),{yPercent:0,duration:.05,ease:'power3.out',stagger:.014},.228)
-    .set(fvCur0,{autoAlpha:0},.267)
-    .fromTo(fvCurT,{yPercent:0},{yPercent:-101,duration:.115,ease:'power2.inOut'},.268)
-    .fromTo(fvCurB,{yPercent:0},{yPercent:101,duration:.115,ease:'power2.inOut'},.268)
-    .fromTo(hv,{scale:1.05},{scale:1,duration:.16},.268)
-    .to(fvC,{autoAlpha:0,y:-28,duration:.035},.40)
-
-  /* 幕D: 帳を下ろし、0円の台帳 */
-    .to(fvVeil,{opacity:1,duration:.04},.415)
-    .to(fvD,{autoAlpha:1,duration:.012},.435)
-    .to(fvD.querySelectorAll('.l1 .lm>span, .l2 .lm>span'),{yPercent:0,duration:.045,ease:'power3.out',stagger:.012},.44)
-    .to(fvRows[0],{autoAlpha:1,y:0,duration:.022},.475)
-    .to(fvLeads[0],{scaleX:1,duration:.03},.478)
-    .to(fvCnt,{n:0,duration:.045,onUpdate:function(){ var v=Math.round(fvCnt.n); fvR1.textContent=v; if(fvR1u) fvR1u.textContent=(v===0?'円':'万円'); }},.482)
-    .to(fvChips[0],{scale:1,autoAlpha:1,duration:.018,ease:'back.out(2.2)'},.522)
-    .to(fvRows[1],{autoAlpha:1,y:0,duration:.022},.532)
-    .to(fvLeads[1],{scaleX:1,duration:.03},.535)
-    .to(fvChips[1],{scale:1,autoAlpha:1,duration:.018,ease:'back.out(2.2)'},.55)
-    .to(fvRows[2],{autoAlpha:1,y:0,duration:.022},.558)
-    .to(fvLeads[2],{scaleX:1,duration:.03},.561)
-    .to(fvChips[2],{scale:1,autoAlpha:1,duration:.018,ease:'back.out(2.2)'},.575)
-    .to(fvDnote,{autoAlpha:1,duration:.02},.582)
-    .to(fvD,{autoAlpha:0,y:-24,duration:.032},.615)
-    .set(fvD,{y:0},.648)
-
-  /* 幕P: 価格の祭壇（桁ごとに立ち上がる。京2,480／花・風2,680の2プラン） */
-    .to(fvP,{autoAlpha:1,duration:.012},.648)
-    .to(fvPk,{autoAlpha:1,duration:.025},.652)
-    .to(fvPdgs,{yPercent:0,duration:.05,ease:'power3.out',stagger:.008},.66)
-    .to(fvPun,{autoAlpha:1,y:0,duration:.03},.70)
-    .to(fvPline,{scaleX:1,duration:.028},.712)
-    .to(fvPs,{yPercent:0,duration:.04,ease:'power3.out'},.722)
-    .to(fvPnote,{autoAlpha:1,duration:.02},.742)
-    .to(fvP,{autoAlpha:0,y:-24,duration:.032},.775)
-    .set(fvP,{y:0},.806)
-
-  /* 幕E-1: Kitchen（.792開始） */
-    .to(fvE,{autoAlpha:1,duration:.01},.792)
-    .to(fvScenes.kitchen.el,{autoAlpha:1,duration:.02},.795)
-    .fromTo(fvScenes.kitchen.v,{scale:1.07},{scale:1.005,duration:.055,ease:'none'},.795)
-    .to(fvEhead,{autoAlpha:1,y:0,duration:.025},.802)
-    .to(d.querySelectorAll('.st__sc--k .st__room .lm>span'),{yPercent:0,duration:.036,ease:'power3.out'},.807)
-    .to(d.querySelectorAll('.st__sc--k .st__pled'),{autoAlpha:1,y:0,duration:.026},.82)
-    .to(d.querySelectorAll('.st__sc--k .st__pled .st__std'),{scale:1,autoAlpha:1,duration:.016,ease:'back.out(2.2)'},.834)
-
-  /* 幕E-2: Bath（.852開始） */
-    .to(fvScenes.bath.el,{autoAlpha:1,duration:.022},.852)
-    .fromTo(fvScenes.bath.v,{scale:1.07},{scale:1.005,duration:.052,ease:'none'},.852)
-    .to(d.querySelectorAll('.st__sc--b .st__room .lm>span'),{yPercent:0,duration:.036,ease:'power3.out'},.862)
-    .to(d.querySelectorAll('.st__sc--b .st__pled'),{autoAlpha:1,y:0,duration:.026},.875)
-    .to(d.querySelectorAll('.st__sc--b .st__pled .st__std'),{scale:1,autoAlpha:1,duration:.016,ease:'back.out(2.2)'},.889)
-
-  /* 幕E-3: Vanity（.906開始） */
-    .to(fvScenes.vanity.el,{autoAlpha:1,duration:.022},.906)
-    .fromTo(fvScenes.vanity.v,{scale:1.07},{scale:1.005,duration:.05,ease:'none'},.906)
-    .to(d.querySelectorAll('.st__sc--v .st__room .lm>span'),{yPercent:0,duration:.034,ease:'power3.out'},.916)
-    .to(d.querySelectorAll('.st__sc--v .st__pled'),{autoAlpha:1,y:0,duration:.025},.929)
-    .to(d.querySelectorAll('.st__sc--v .st__pled .st__std'),{scale:1,autoAlpha:1,duration:.015,ease:'back.out(2.2)'},.943)
-
-  /* 幕E-4: Living（.959開始） */
-    .to(fvScenes.living.el,{autoAlpha:1,duration:.022},.959)
-    .fromTo(fvScenes.living.v,{scale:1.07},{scale:1.005,duration:.046,ease:'none'},.959)
-    .to(d.querySelectorAll('.st__sc--l .st__room .lm>span'),{yPercent:0,duration:.034,ease:'power3.out'},.968)
-    .to(d.querySelectorAll('.st__sc--l .st__pled'),{autoAlpha:1,y:0,duration:.025},.98)
-    .to(d.querySelectorAll('.st__sc--l .st__pled .st__std'),{scale:1,autoAlpha:1,duration:.014,ease:'back.out(2.2)'},.991)
-
-  /* 幕E-5: Atrium（1.005開始・自由設計chip。静止画=Ken Burnsのみ） */
-    .to(fvScenes.atrium.el,{autoAlpha:1,duration:.022},1.005)
-    .fromTo(fvScenes.atrium.el.querySelector('img'),{scale:1.08},{scale:1.01,duration:.05,ease:'none'},1.005)
-    .to(d.querySelectorAll('.st__sc--at .st__room .lm>span'),{yPercent:0,duration:.034,ease:'power3.out'},1.014)
-    .to(d.querySelectorAll('.st__sc--at .st__pled'),{autoAlpha:1,y:0,duration:.025},1.026)
-    .to(d.querySelectorAll('.st__sc--at .st__pled .st__std'),{scale:1,autoAlpha:1,duration:.014,ease:'back.out(2.2)'},1.037)
-
-  /* 幕F: 5景が引いて、灯りの家と大数字の結び（1.06開始） */
-    .to([fvE,fvEhead],{autoAlpha:0,duration:.026},1.06)
-    .to(fvVeil,{opacity:0,duration:.03},1.06)
-    .to(fvActWrap,{autoAlpha:0,duration:.02},1.063)
-    .to(fvF,{autoAlpha:1,duration:.012},1.066)
-    .to(fvF.querySelectorAll('.fl1 .lm>span'),{yPercent:0,duration:.036,ease:'power3.out',stagger:.012},1.07)
-    .to(fvF.querySelectorAll('.fl2 .lm>span'),{yPercent:0,duration:.032,ease:'power3.out'},1.08)
-    .to(fvFLed,{autoAlpha:1,y:0,duration:.022},1.086)
-    .to(fvFChip,{scale:1,autoAlpha:1,duration:.014,ease:'back.out(2.2)'},1.094)
-    .to(ctaWrap,{autoAlpha:1,y:0,duration:.024},1.084)
-    .to(cue,{autoAlpha:1,duration:.014},1.094);
-
-  /* 章番号・進捗・5景の再生・緞帳金縁の状態管理 */
-  function fvActIdx(p){ return p<.0722?0:p<.1805?1:p<.3791?2:p<.5731?3:p<.713?4:p<.954?5:6; }
-  function fvStateSync(){
-    var p=fvTl.progress();
-    fvDot(fvActIdx(p));
-    if(p>=.7148 && p<.769){ fvPlayScene('kitchen'); }
-    else if(p>=.769 && p<.8177){ fvPlayScene('bath'); }
-    else if(p>=.8177 && p<.8656){ fvPlayScene('vanity'); }
-    else if(p>=.8656 && p<.9071){ fvPlayScene('living'); }
-    else if(p>=.9071 && p<.9567){ fvPlayScene('atrium'); }
-    else{ fvPlayScene(null); if(p>.55 && p<.7148) fvPrep('kitchen'); }
-    var glow=(p>.203 && p<.3791);
-    if(fvCurT.__glow!==glow){ fvCurT.__glow=glow;
-      fvCurT.classList.toggle('is-glow',glow); fvCurB.classList.toggle('is-glow',glow); }
-  }
-  fvTl.eventCallback('onUpdate',fvStateSync);
-
-  /* 途中復帰（リロード・戻る・アンカー）: 開幕演出を捨てて現在地の状態に同期する */
-  requestAnimationFrame(function(){ requestAnimationFrame(function(){
-    var p=fvTl.progress();
-    if(p>.03){
-      fvOpen.kill();
-      gsap.set(fvA.querySelectorAll('.lm>span'),{yPercent:0});
-      gsap.set(fvA.querySelector('.st__eye'),{autoAlpha:1,x:0});
-      gsap.set(fvDotsWrap,{autoAlpha:1});
-      if(p<.954) gsap.set(fvActWrap,{autoAlpha:1});
-      fvStateSync();
+  /* 頁を繰る: 溶かさず「重ねる」。次の紙が下から乗り、下の紙は僅かに退く */
+  var TURN=1.05, TURN_EASE='power4.out', RECEDE='-6%';
+  function go(n){
+    n=Math.max(0,Math.min(N-1,n));
+    if(n===i || animating) return;
+    animating=true;
+    var cur=scenes[i], nxt=scenes[n], fwd=n>i;
+    i=n; sync();
+    var tl=gsap.timeline({onComplete:function(){
+      gsap.set(cur,{autoAlpha:0,y:'0%',zIndex:0});
+      gsap.set(nxt,{zIndex:1});
+      animating=false;
+    }});
+    if(fwd){
+      gsap.set(nxt,{autoAlpha:1,zIndex:2,y:'100%'});
+      gsap.set(cur,{zIndex:1});
+      tl.to(nxt,{y:'0%',duration:TURN,ease:TURN_EASE},0)
+        .to(cur,{y:RECEDE,duration:TURN,ease:TURN_EASE},0);
+    }else{
+      gsap.set(nxt,{autoAlpha:1,zIndex:1,y:RECEDE});
+      gsap.set(cur,{zIndex:2});
+      tl.to(cur,{y:'100%',duration:TURN,ease:TURN_EASE},0)
+        .to(nxt,{y:'0%',duration:TURN,ease:TURN_EASE},0);
     }
-  }); });
+    introIn(nxt);
+  }
+  function next(){ if(animating) return; if(i>=N-1){ release(); return; } go(i+1); }
+  function prev(){ if(animating) return; go(i-1); }
 
-  /* ドット＝幕ジャンプ */
-  fvDots.forEach(function(o,i){
-    o.addEventListener('click',function(){
-      var st=fvTl.scrollTrigger;
-      var y=st.start+(st.end-st.start)*fvACT_SNAP[i];
-      if(lenis){ lenis.scrollTo(y,{duration:1.1}); }
-      else{ window.scrollTo({top:y,behavior:'smooth'}); }
-    });
+  function release(){
+    if(released) return;
+    released=true; releasedAt=Date.now();
+    obs.disable();
+    if(lenis) lenis.start();
+    if(hdr) hdr.classList.add('is-solid');
+    root.classList.add('fvs-released');
+    var nx=d.getElementById('auth'); if(nx) nx.scrollIntoView({behavior:'smooth'});
+  }
+  function reenter(){
+    released=false;
+    obs.enable();
+    if(lenis) lenis.stop();
+    if(hdr) hdr.classList.remove('is-solid');
+    root.classList.remove('fvs-released');
+  }
+  addEventListener('scroll',function(){
+    if(released && window.scrollY<=0 && Date.now()-releasedAt>800) reenter();
+  },{passive:true});
+
+  var obs=Observer.create({
+    target:window,
+    type:'wheel,touch,pointer',
+    wheelSpeed:-1,
+    tolerance:10,
+    preventDefault:true,
+    allowClicks:true,
+    onDown:function(){ prev(); },
+    onUp:function(){ next(); }
   });
 
-  /* Lenis用ビート・スナップ（惰性が収まったら方向追従で吸着） */
-  if(lenis){
-    var fvSnapping=false, fvIdleT=null, fvLastDir=1;
-    lenis.on('scroll',function(e){
-      if(e&&typeof e.direction==='number'&&e.direction!==0) fvLastDir=e.direction;
-      if(fvSnapping) return;
-      clearTimeout(fvIdleT);
-      fvIdleT=setTimeout(function(){
-        var st=fvTl.scrollTrigger; if(!st) return;
-        var y=window.scrollY;
-        if(y<st.start-2 || y>st.end+2) return;
-        var p=(y-st.start)/(st.end-st.start);
-        var t=fvSnapBeat(p,{direction:fvLastDir});
-        if(Math.abs(t-p)<.004) return;
-        fvSnapping=true;
-        lenis.scrollTo(st.start+(st.end-st.start)*t,{duration:.85,
-          easing:function(x){return 1-Math.pow(1-x,3);},
-          onComplete:function(){ fvSnapping=false; }});
-      },120);
-    });
+  addEventListener('keydown',function(e){
+    if(released) return;
+    var k=e.key;
+    if(k==='ArrowDown'||k==='PageDown'||k===' '){ e.preventDefault(); next(); }
+    else if(k==='ArrowUp'||k==='PageUp'){ e.preventDefault(); prev(); }
+    else if(k==='Home'){ e.preventDefault(); go(0); }
+    else if(k==='End'){ e.preventDefault(); go(N-1); }
+  });
+
+
+  if(window.scrollY>10){ released=true; releasedAt=Date.now(); obs.disable();
+    if(lenis) lenis.start(); if(hdr) hdr.classList.add('is-solid');
+    root.classList.add('fvs-released'); }
+  ScrollTrigger.refresh();
+
+  window.__fvs={ go:go, next:next, prev:prev, idx:function(){return i;}, release:release };
   }
 
   /* ---------- 5) 汎用カウントアップ（実績stats・土地facts。数字を含む要素だけ発火） ---------- */
