@@ -494,90 +494,71 @@
     .tr__stat{flex-basis:100%;padding:0}
     .tr__stat + .tr__stat{border-left:0;border-top:1px solid rgba(241,213,125,.28);padding-top:22px}
   }
-  /* ===================== 信条（散らしコラージュ・明朝／このセクションのみMincho） ===================== */
-  .heart{position:relative;isolation:isolate;overflow:hidden;
-    --font-head:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
-    --font-body:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
-    --font-en:"Inter",sans-serif;
-    --cream-soft:rgba(244,241,234,.84);--cream-faint:rgba(244,241,234,.5);--sand:#E0CBA0;
-    --ease-soft:cubic-bezier(.22,1,.36,1);--shadow:0 50px 90px -30px rgba(0,0,0,.66),0 14px 34px -18px rgba(0,0,0,.45);
-    padding:clamp(120px,18vh,224px) clamp(20px,5vw,72px) clamp(104px,14vh,188px);
-    background:radial-gradient(128% 92% at 50% 26%,#4C4237 0%,#3A332B 50%,#2B2620 100%)}
-  .heart::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-    background:radial-gradient(56% 42% at 84% 6%,rgba(224,203,160,.20),transparent 60%),radial-gradient(120% 80% at 50% 118%,rgba(0,0,0,.34),transparent 58%)}
-  .heart::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.055;mix-blend-mode:overlay;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-  .heart img{display:block;width:100%;height:100%;object-fit:cover}
-  .heart__inner{position:relative;z-index:2;max-width:1340px;margin:0 auto}
-  .heart__text{position:relative;z-index:3;width:min(920px,92vw);margin:0 auto;text-align:center}
-  .heart__text::before{content:"";position:absolute;z-index:-1;inset:-8% -14%;
-    background:radial-gradient(56% 54% at 50% 46%,rgba(28,24,19,.6),transparent 72%);filter:blur(10px)}
-  .heart .kicker{display:inline-block;font-family:var(--font-en);font-size:.62rem;font-weight:400;letter-spacing:.4em;text-transform:uppercase;color:var(--cream-faint);margin-bottom:34px}
-  .heart .kicker::before,.heart .kicker::after{content:"";display:inline-block;width:30px;height:1px;background:currentColor;vertical-align:middle;opacity:.6}
-  .heart .kicker::before{margin-right:14px}
-  .heart .kicker::after{margin-left:14px}
-  .heart .lead-in{font-family:var(--font-head);font-weight:400;letter-spacing:.24em;font-size:clamp(1.02rem,.92rem + .5vw,1.32rem);color:var(--cream-soft);margin-bottom:26px}
-  .heart__head{font-family:var(--font-head);font-weight:500;color:var(--cream);font-size:clamp(1.62rem,1.05rem + 2.05vw,2.5rem);line-height:1.74;letter-spacing:.08em}
-  .heart__head .q{display:block}
-  .heart__head .q em{font-style:normal;color:var(--sand)}
-  .heart__prose,.heart__close{margin-left:auto;margin-right:auto}
-  .heart__prose{max-width:640px;margin-top:clamp(52px,7vh,88px)}
-  .heart__prose p{font-family:var(--font-body);font-weight:400;color:var(--cream-soft);font-size:clamp(1rem,.95rem + .38vw,1.14rem);line-height:2.5;letter-spacing:.09em;text-align:center;text-align-last:center;text-wrap:pretty}
-  .heart__prose p + p{margin-top:clamp(34px,5vh,60px)}
-  .heart__prose .accent{color:var(--cream);font-weight:500}
-  .heart__close{max-width:660px;margin-top:clamp(60px,8vh,104px)}
-  .heart__close p{font-family:var(--font-head);font-weight:500;color:var(--cream);font-size:clamp(1.16rem,1rem + .92vw,1.62rem);line-height:2.15;letter-spacing:.08em;text-wrap:pretty}
-  .heart__rule{display:block;width:46px;height:1px;margin:clamp(38px,5vh,58px) auto 0;background:var(--lime);opacity:.55;transform:scaleX(0);transform-origin:center;transition:transform 1.1s var(--ease-soft) .2s}
-  .heart__close.is-in .heart__rule{transform:scaleX(1)}
-  .heart .reveal-up{opacity:0;transform:translateY(30px);transition:opacity 1.05s var(--ease-soft),transform 1.15s var(--ease-soft);transition-delay:calc(var(--i,0) * .09s)}
-  .heart .reveal-up.is-in{opacity:1;transform:none}
-  .heart .ph{position:absolute;z-index:1;opacity:0;transform:translateY(66px) scale(.97);filter:blur(6px);transition:opacity 1.3s var(--ease-soft),transform 1.5s var(--ease-soft),filter 1.2s var(--ease-soft);will-change:opacity,transform,filter}
-  .heart .ph.is-in{opacity:1;transform:none;filter:none}
-  .heart .ph__px{will-change:transform}
-  .heart .ph__f{position:relative;border-radius:8px;overflow:hidden;box-shadow:var(--shadow);will-change:transform;animation:floaty var(--fdur,9s) var(--ease) infinite;animation-delay:var(--fdel,0s)}
-  .heart .ph__f::after{content:"";position:absolute;inset:0;border-radius:8px;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(255,244,224,.05),transparent 30%,rgba(0,0,0,.06))}
-  .heart .ph img{transition:transform 1.6s var(--ease-soft),filter 1.6s var(--ease-soft);transform:scale(1.02)}
-  .heart .ph.is-in img{transform:scale(1)}
-  .heart .ph__f:hover img{transform:scale(1.05)}
-  @keyframes floaty{0%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-15px) rotate(.55deg)}100%{transform:translateY(0) rotate(0deg)}}
-  .heart .ph--kitchen{top:3%;left:-5%;width:20%;--fdur:8.5s;--fdel:-.4s}
-  .heart .ph--atrium{top:-4%;right:-2%;width:15.5%;--fdur:11s;--fdel:-2.2s}
-  .heart .ph--living{top:37%;left:-6%;width:30%;--fdur:9.5s;--fdel:-1.1s}
-  .heart .ph--vanity{top:44%;right:-7%;width:22.5%;--fdur:10.5s;--fdel:-3s}
-  .heart .ph--bath{top:79%;right:1%;width:26.5%;--fdur:9s;--fdel:-.8s}
-  .heart .ph--kitchen .ph__f{aspect-ratio:4/3}
-  .heart .ph--atrium .ph__f{aspect-ratio:3/4}
-  .heart .ph--living .ph__f{aspect-ratio:16/10}
-  .heart .ph--vanity .ph__f{aspect-ratio:3/2}
-  .heart .ph--bath .ph__f{aspect-ratio:16/10}
-  .heart .only-sp{display:none}
-  .heart .nowrap{white-space:nowrap}
-  @media (max-width:900px){
-    .heart .only-pc{display:none}
-    .heart{padding:clamp(88px,12vh,130px) 0}
-    .heart__inner{max-width:640px;padding:0 clamp(24px,6vw,44px)}
-    .heart__text{width:100%}
-    .heart__prose{margin-top:clamp(40px,7vh,64px)}
-    .heart .ph{position:relative!important;top:auto!important;left:auto!important;right:auto!important;width:auto!important;margin:clamp(34px,7vw,56px) 0;transform:translateY(44px) scale(.985)}
-    .heart .ph__px{transform:none!important}
-    .heart .ph--kitchen .ph__f{aspect-ratio:16/10}
-    .heart .ph--atrium{width:76%!important;margin-left:auto!important}
-    .heart .ph--atrium .ph__f{aspect-ratio:4/5}
-    .heart .ph--vanity{width:86%!important}
+  /* ===================== 信条（紅の頁・写真なし。図面 heart_mock.html / 仕様 design_heart_spec.md） ===================== */
+  .cr{
+    --cream:#F3EEE3; --foil1:#F1D57D;
+    --gx:clamp(20px, 5.3vw, 76px);
+    --ng:clamp(44px, 4.4vw, 64px);          /* 柱が入る内側の余白 */
+    --fs:clamp(15px, 13.6px + 0.36vw, 17px);
+    /* 26字。em は字間を含まないので 26 ではなく 26×1.085 を指定する
+       （素の 26em だと実質24字になり、行数が26→32行に増えた） */
+    --col:28.21em;
+    --fm:"YakuHanMP","Shippori Mincho B1",serif;
+    --gap-in:1.15em;                         /* 段落間 */
+    --gap-out:2.5em;                         /* 楽章の変わり目 */
+    position:relative;overflow:hidden;isolation:isolate;
+    background:#6B1015;color:var(--cream);
+    padding:clamp(56px,6vw,88px) var(--gx) clamp(56px,6vw,88px)}
+
+  /* 地：専用アセット。減光もスクリムもかけない（アセット側で明度が確定している） */
+  .cr::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:url("assets/std/page_beni_dark_1800.webp") center/cover}
+  @media (min-width:1441px){
+    .cr::before{background-image:url("assets/std/page_beni_dark_2400.webp")}
   }
-  @media (max-width:560px){
-    .heart .only-sp{display:inline}
-    .heart__head{font-size:1.44rem;letter-spacing:.045em;line-height:1.72}
-    .heart .ph{margin-left:calc(-1 * clamp(6px,3vw,18px));margin-right:calc(-1 * clamp(6px,3vw,18px))}
-    .heart .ph--atrium{width:84%!important}
-    .heart .ph--vanity{width:94%!important}
-    .heart__prose p{letter-spacing:.05em;line-height:2.3}
-    .heart__close p{font-size:1.05rem;line-height:2.05;letter-spacing:.02em}
+
+  /* 柱。字間は実測 0.15〜0.25em（旧 .42em は広すぎた）。太字の縦組みは実測ゼロ件 */
+  .cr__spine{position:absolute;left:clamp(6px,1.4vw,20px);top:clamp(40px,5vw,72px);
+    writing-mode:vertical-rl;font-family:var(--fm);font-weight:400;
+    font-size:clamp(16px,15px + .25vw,20px);letter-spacing:.22em;color:var(--cream);
+    display:flex;align-items:center;gap:16px}
+  .cr__spine::after{content:"";width:1px;height:clamp(60px,9vh,120px);
+    background:linear-gradient(180deg,var(--foil1),rgba(241,213,125,0))}
+
+  .cr__in{position:relative;z-index:1;width:min(1288px,100%);margin:0 auto;
+    padding-left:var(--ng)}
+
+  .cr__p{font-family:var(--fm);font-weight:400;font-size:var(--fs);
+    line-height:2;letter-spacing:.085em;color:var(--cream);
+    max-width:var(--col);margin-top:var(--gap-in);
+    /* 文節で折り返す。手動改行を外すと「心地よ／く、」のように行末に一文字残るため。
+       文節改行はテストした全行長で読み速度が向上（小林ほか2015・人工知能学会論文誌30(2)）。
+       Chrome 119+。非対応ブラウザは通常の折返しに落ちるだけで壊れない */
+    word-break:auto-phrase;
+    line-break:strict}
+  .cr__p:first-child{margin-top:0}
+  .cr__p--m{margin-top:var(--gap-out)}      /* 楽章の変わり目 */
+
+  /* 主題は太らせず、サイズと行間と字間だけで立てる（土と風 1.88×） */
+  .cr__q{display:block;font-size:1.88em;line-height:1.45;letter-spacing:.08em;
+    margin:.34em 0 .3em}
+  /* 主題は1.88倍なので本文の段には収まらない。この段落だけ広げる（土と風も主題は別置き） */
+  .cr__p--lead{max-width:calc(var(--col) * 1.42)}
+
+  /* 2段組み案：俵屋旅館型。436字を3段245pxに畳んでいる実例に倣う。
+     段の中では上から下へ読み、右段へ移る。塊が1画面に収まる高さでのみ成立する */
+  @media (min-width:1100px){
+    .cr__in{column-count:2;column-gap:clamp(48px,5vw,84px)}
+    /* 段が広いときも29字で頭打ち。30字超で読み心地が落ちる（小林ほか2016）。
+       29×1.085＝31.47em（em は字間を含まないので係数を掛ける） */
+    .cr__p{max-width:31.47em;break-inside:avoid}
+    .cr__p--lead{max-width:calc(31.47em * 1.42)}
+    .cr__q{font-size:1.62em}
   }
-  @media (prefers-reduced-motion:reduce){
-    .heart .reveal-up,.heart .ph{transition:opacity .5s ease;transform:none!important;filter:none!important}
-    .heart .ph__f{animation:none!important}
-    .heart__rule{transition:none}
+
+  @media (max-width:760px){
+    .cr__spine{left:8px}
+    .cr{--ng:clamp(38px,9.5vw,44px)}
   }
 
   /* ===================== 商品ライン 花・風・京（白系ドラフティングテーブル×動く図面） ===================== */
@@ -948,14 +929,6 @@
   .pm-motion .authority.is-in .track .tile:nth-child(9){--pmtd:1.86s}
   .pm-motion .authority.is-in .track .tile:nth-child(10){--pmtd:1.98s}
 
-  /* 信条：本文の墨入れ（ink-fill）＝文字がスクロールに合わせて濃くなる（JSが .pm-ch を生成） */
-  .pm-ch{opacity:.14}
-  /* 信条：accent の砂金下線スイープ */
-  .pm-motion .heart__prose p .accent{background-image:linear-gradient(90deg,rgba(224,203,160,.9),rgba(224,203,160,.3));
-    background-repeat:no-repeat;background-position:0 100%;background-size:0% 1px;
-    transition:background-size 1.3s var(--ease) .5s;padding-bottom:2px}
-  .pm-motion .heart__prose p.is-in .accent{background-size:100% 1px}
-
   /* 花風京：タイトルが製図机の上で左→右にドラフトされる（data-riseの縦揺れは無効化して置換） */
   .pm-motion .lineup .lp-title[data-rise]{opacity:1;transform:none;
     clip-path:inset(-12% 100% -12% 0);transition:clip-path 1.5s var(--ease) .15s}
@@ -1017,8 +990,6 @@
     .pm-progress{display:none}
     .pm-motion .cue::after{animation:none}
     .pm-motion .authority .tile{clip-path:none;transition:none}
-    .pm-ch{opacity:1}
-    .pm-motion .heart__prose p .accent{background-size:100% 1px;transition:none}
     .pm-motion .lineup .lp-title[data-rise]{clip-path:none;transition:none}
     .pm-motion .naze .chk svg path{stroke-dashoffset:0;transition:none}
     .pm-motion .lt-areas .a{opacity:1;transform:none;transition:none}
@@ -1322,51 +1293,46 @@
   </div>
 
 </section>
-<section class="heart" id="heart">
-  <div class="heart__inner">
-    <div class="m-flow">
-      <figure class="ph ph--kitchen" data-rise><div class="ph__px" data-amp="-150"><div class="ph__f"><img src="assets/video_cine/gh_kitchen.webp" loading="lazy" decoding="async" alt="ウォールナットの天井と一枚板カウンターのあるキッチン" style="object-position:center 58%"></div></div></figure>
-      <figure class="ph ph--atrium"  data-rise><div class="ph__px" data-amp="118"><div class="ph__f"><img src="assets/video_cine/gh_atrium.webp" loading="lazy" decoding="async" alt="夕刻の光が差し込む階段ホール" style="object-position:center 40%"></div></div></figure>
+<section class="heart cr" id="heart" aria-labelledby="crH">
+  <p class="cr__spine" aria-hidden="true">信条</p>
+  <div class="cr__in">
 
-      <div class="heart__text">
-        <span class="kicker reveal-up" style="--i:0">Our philosophy</span>
-        <p class="lead-in reveal-up" style="--i:1">やまと不動産の信条は</p>
-        <h2 class="heart__head reveal-up" style="--i:2">
-          <span class="q">「この金額で、<br class="only-sp"><em>ここまでできるんだ</em>」と</span>
-          <span>驚いてもらえる家づくりです。</span>
-        </h2>
+    <p class="cr__p" id="crH">やまと不動産が、ずっと大切にしていることがあります。</p>
 
-        <div class="heart__prose">
-          <p class="reveal-up">
-            モデルハウスで見た設備も、暮らしやすい間取りも、<br class="only-pc">
-            あとから追加費用がどんどん増えていくものではありません。<br class="only-pc">
-            <span class="accent">最初から、いいものを標準で入れています。</span>
-          </p>
-          <p class="reveal-up">
-            「この予算では無理かも」と思っていた人にこそ、<br class="only-pc">
-            もっといい家が、その予算で建つことを知っていただきたいです。
-          </p>
-          <p class="reveal-up">
-            <span class="accent">毎日が楽しい暮らしを、つくりたい。</span><br class="only-pc">
-            そう考えて、一軒ずつ設計しています。
-          </p>
-        </div>
-      </div>
+    <p class="cr__p cr__p--lead">それは、家を見たときに<span class="cr__q">「この金額で、ここまでできるんだ」</span>と、少し驚いてもらえること。</p>
 
-      <figure class="ph ph--living" data-rise><div class="ph__px" data-amp="-190"><div class="ph__f"><img src="assets/video_cine/gh_living.webp" loading="lazy" decoding="async" alt="間接照明が灯る石壁のリビング" style="object-position:center 62%"></div></div></figure>
-      <figure class="ph ph--vanity" data-rise><div class="ph__px" data-amp="92"><div class="ph__f"><img src="assets/video_cine/gh_vanity.webp" loading="lazy" decoding="async" alt="木の格子扉と朝の光が差す洗面" style="object-position:center 60%"></div></div></figure>
+    <p class="cr__p cr__p--m">モデルハウスで心惹かれた設備も、毎日の暮らしを考えた間取りも、あとから追加費用を重ねて、ようやく手に入るものにはしたくありません。</p>
 
-      <div class="heart__close reveal-up">
-        <p>長く住んだあとも、5年10年経っても<br><span class="nowrap">「やまと不動産にお願いして良かった」</span><br>と言ってもらえる家を<br>私たちはつくっています。</p>
-        <span class="heart__rule"></span>
-      </div>
+    <p class="cr__p">いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
 
-      <figure class="ph ph--bath" data-rise><div class="ph__px" data-amp="-120"><div class="ph__f"><img src="assets/video_cine/gh_bath.webp" loading="lazy" decoding="async" alt="湯気と西日のあたたかな浴室" style="object-position:center 46%"></div></div></figure>
-    </div>
+    <p class="cr__p cr__p--m">「この予算では、理想の家は難しいかもしれない」</p>
+
+    <p class="cr__p">そう思っている方にこそ、知ってほしいのです。</p>
+
+    <p class="cr__p">諦めなくてもいいこと。その予算の中でも、もっと心地よく、もっと好きになれる家はつくれるということを。</p>
+
+    <p class="cr__p cr__p--m">家は、完成した日がいちばん大切なのではありません。</p>
+
+    <p class="cr__p">朝の光が差し込む洗面。夜になると、間接照明が石壁をやわらかく照らすリビング。木の格子扉を開ける、何気ない毎日。</p>
+
+    <p class="cr__p">そんな小さな景色のひとつひとつが、そこで暮らす家族の「楽しい毎日」になっていく。</p>
+
+    <p class="cr__p">私たちは、そこまで想像しながら、一軒ずつ家を設計しています。</p>
+
+    <p class="cr__p cr__p--m">そして5年、10年と暮らしたその先にも、</p>
+
+    <p class="cr__p">「やまと不動産にお願いして、よかった」</p>
+
+    <p class="cr__p">そう言ってもらえる家でありたい。</p>
+
+    <p class="cr__p">建てたときだけではなく、暮らしてから、もっと好きになる家を。</p>
+
+    <p class="cr__p cr__p--m">それが、やまと不動産の家づくりです。</p>
+
   </div>
 </section>
 
-<!-- ============ 商品ライン 花・風・京（動く図面・ドラフティングテーブル） ============ -->
+<!-- ============ 商品ライン 花・風・京 ============ -->
 <section class="lineup" id="lineup">
   <video class="lineup__bg" id="lpBg" autoplay muted loop playsinline preload="metadata" poster="assets/products/bp_white_poster.webp">
     <source src="assets/products/blueprint_white_loop.mp4" type="video/mp4">
@@ -3058,33 +3024,6 @@
     io.observe(document.querySelector('.tr__num--sumi')||els[0]);
     }
   })();
-  /* --- 信条（散らしコラージュ）: リビール＋パララックス --- */
-  (function(){
-    var revealEls=document.querySelectorAll('.heart .ph, .heart .reveal-up, .heart .heart__close');
-    if('IntersectionObserver' in window){
-      var io=new IntersectionObserver(function(es){
-        es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
-      },{threshold:.14,rootMargin:'0px 0px -6% 0px'});
-      revealEls.forEach(function(el){ io.observe(el); });
-    }else{ revealEls.forEach(function(el){ el.classList.add('is-in'); }); }
-    if(reduce) return;
-    var section=document.getElementById('heart'); if(!section) return;
-    var pxEls=[].slice.call(document.querySelectorAll('.heart .ph__px'));
-    var isDesktop=matchMedia('(min-width:901px)').matches;
-    var targetP=0.5,curP=0.5,running=false;
-    function computeTarget(){ var r=section.getBoundingClientRect();
-      var vh=window.innerHeight||document.documentElement.clientHeight;
-      var p=(vh - r.top)/(vh + r.height); targetP=p<0?0:(p>1?1:p);
-      if(!running){ running=true; requestAnimationFrame(frame); } }
-    function frame(){ curP += (targetP - curP) * 0.085; var d=curP - 0.5;
-      for(var i=0;i<pxEls.length;i++){ var amp=parseFloat(pxEls[i].getAttribute('data-amp'))||0;
-        pxEls[i].style.transform='translate3d(0,'+(d*amp).toFixed(2)+'px,0)'; }
-      if(Math.abs(targetP-curP) > 0.0005){ requestAnimationFrame(frame); } else { running=false; } }
-    function onResize(){ isDesktop=matchMedia('(min-width:901px)').matches; computeTarget(); }
-    if(isDesktop){ computeTarget(); window.addEventListener('scroll', computeTarget, {passive:true}); window.addEventListener('resize', onResize); }
-    else { window.addEventListener('resize', onResize); }
-  })();
-
   /* --- 商品ライン 花・風・京: 動画/リビール/カウント/視差 --- */
   (function(){
     var sec=document.getElementById('lineup'); if(!sec) return;
@@ -3365,46 +3304,6 @@
   ScrollTrigger.create({trigger:'#lots .lt-facts',start:'top 88%',once:true,
     onEnter:function(){ [].slice.call(d.querySelectorAll('#lots .lt-fact .n')).forEach(function(el,i){
       gsap.delayedCall(.45+i*.14,function(){ countUp(el,1.5); }); }); }});
-
-  /* ---------- 6) 信条：見出しの行マスク＋本文の墨入れ（ink-fill scrub） ---------- */
-  var heartHead=d.querySelector('.heart__head');
-  if(heartHead){
-    var qs=[].slice.call(heartHead.querySelectorAll('.q'));
-    var qInners=qs.map(function(q){
-      var inner=d.createElement('span'); inner.style.display='block';
-      while(q.firstChild) inner.appendChild(q.firstChild);
-      q.appendChild(inner); q.style.overflow='hidden'; return inner;
-    });
-    gsap.set(qInners,{yPercent:118});
-    ScrollTrigger.create({trigger:heartHead,start:'top 82%',once:true,onEnter:function(){
-      gsap.to(qInners,{yPercent:0,duration:1.2,ease:EASE,stagger:.15});
-    }});
-  }
-  var prose=d.querySelector('.heart__prose');
-  if(prose){
-    /* 文字単位に分割して .pm-ch を生成（<br>・.accent はそのまま維持） */
-    [].slice.call(prose.querySelectorAll('p')).forEach(function(p){
-      (function walk(node){
-        [].slice.call(node.childNodes).forEach(function(n){
-          if(n.nodeType===3){
-            var frag=d.createDocumentFragment(), s=n.textContent;
-            for(var i=0;i<s.length;i++){
-              var ch=s[i];
-              if(/\s/.test(ch)){ frag.appendChild(d.createTextNode(ch)); continue; }
-              var sp=d.createElement('span'); sp.className='pm-ch'; sp.textContent=ch;
-              frag.appendChild(sp);
-            }
-            node.replaceChild(frag,n);
-          } else if(n.nodeType===1&&n.tagName!=='BR'){ walk(n); }
-        });
-      })(p);
-    });
-    var chs=prose.querySelectorAll('.pm-ch');
-    if(chs.length){
-      gsap.to(chs,{opacity:1,ease:'none',stagger:{each:.012},
-        scrollTrigger:{trigger:prose,start:'top 80%',end:'bottom 58%',scrub:SCRUB}});
-    }
-  }
 
   /* ---------- 7) 花風京：漢字ウォーターマークの製図ドリフト（カード毎スクラブ） ---------- */
   [].slice.call(d.querySelectorAll('.pcard')).forEach(function(card){
