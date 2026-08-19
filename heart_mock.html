@@ -36,7 +36,8 @@
     --cream:#F3EEE3; --foil1:#F1D57D;
     --gx:clamp(20px, 5.3vw, 76px);      /* 版面の左右（群言堂 5.27vw） */
     --ng:clamp(40px, 3.9vw, 56px);      /* 柱（一二三）が入る内側の余白 */
-    --col:760px;                        /* 段幅。最長29字≒629pxに対し余裕がある */
+    --col:760px;                        /* 本文の段幅。20pxで最長29字≒629px */
+    --lcol:900px;                       /* 導入だけ広い段。28pxで28字＝847pxを1行に収め引用を割らない */
     --fs:clamp(16px, 14.51px + 0.381vw, 20px);   /* 本文 SP16 → PC20 */
     --fl:clamp(20px, 17.03px + 0.762vw, 28px);   /* 導入 SP20 → PC28 */
     --fm:"YakuHanMP","Shippori Mincho B1",serif;
@@ -67,7 +68,7 @@
   .cr__lead{--lines:2;
     font-family:var(--fm);font-weight:400;font-size:var(--fl);
     line-height:1.9;letter-spacing:.08em;color:var(--cream);
-    max-width:var(--col);margin-left:var(--ng);
+    max-width:var(--lcol);margin-left:var(--ng);
     margin-top:calc(var(--lines) * 1.9em * var(--up));
     margin-bottom:calc(var(--lines) * 1.9em * var(--dn))}
 
@@ -92,7 +93,13 @@
   .cr__body{font-family:var(--fm);font-weight:400;font-size:1em;
     line-height:2;letter-spacing:.085em;color:var(--cream)}
 
-  .b-sp,.b-xs{display:none}
+  /* 導入の改行は3系統。引用「この金額で、ここまでできるんだ」を割らないのが原則だが、
+     820px未満だと28字=1行が段に入らないので、その帯だけ引用内で割る */
+  .b-sp,.b-xs,.b-md{display:none}
+  /* 導入は3系統。b-md=引用の内側で割る／b-lg=引用の外側で割る。
+     SPは5行に割るので両方いる。中間帯(761-819)だけ b-lg を止めて b-md に渡す */
+  @media (max-width:819px){ .b-md{display:inline} }
+  @media (min-width:761px) and (max-width:819px){ .b-lg{display:none} }
 
   /* 入場: 実測1〜2s（0.3s前後の短いフェードは高級側に実例なし） */
   .cr__rv{opacity:0;transform:translateY(24px);
@@ -127,7 +134,7 @@
   <p class="cr__spine" aria-hidden="true">信条</p>
   <div class="cr__in">
 
-    <p class="cr__lead cr__rv" id="crH">やまと不動産の信条は<br class="b-sp">「この金額で、<br>ここまでできるんだ」と<br class="b-sp">驚いてもらえる<br class="b-sp">家づくりです。</p>
+    <p class="cr__lead cr__rv" id="crH">やまと不動産の信条は<br class="b-sp">「この金額で、<br class="b-md">ここまでできるんだ」と<br class="b-lg">驚いてもらえる<br class="b-sp">家づくりです。</p>
 
     <div class="cr__ch cr__rv" id="ch1">
       <p class="cr__no" aria-hidden="true">一</p>
