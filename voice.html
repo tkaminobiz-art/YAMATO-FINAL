@@ -158,8 +158,9 @@
     .menu{grid-template-rows:26svh 1fr}
     .menu__nav{grid-template-columns:1fr}
   }
-  .colo__nav{display:flex;flex-wrap:wrap;gap:10px 22px;margin-bottom:16px;font-size:.78rem;letter-spacing:.04em}
-  .colo__nav a{color:rgba(244,241,234,.72);transition:color .25s var(--ease)}
+  .colo__nav{display:flex;flex-wrap:wrap;gap:0 22px;margin-bottom:16px;font-size:.78rem;letter-spacing:.04em}
+  .colo__nav a{color:rgba(244,241,234,.72);transition:color .25s var(--ease);
+    display:inline-flex;align-items:center;min-height:44px}  /* タップ領域44px(Apple HIG/WCAG AAA) */
   .colo__nav a:hover{color:var(--gold)}
 
   /* ============ ① 扉（便箋の上に置かれた見出し） ============ */
@@ -322,8 +323,9 @@
   /* ============ ⑥ 奥付 ============ */
   .colo{background:var(--dark);color:rgba(244,241,234,.6);border-top:1px solid rgba(244,241,234,.1)}
   .colo__in{max-width:1220px;margin:0 auto;padding:clamp(30px,4vw,44px) clamp(20px,5vw,64px) calc(clamp(34px,4vw,48px) + env(safe-area-inset-bottom))}
-  .colo__t{font-family:var(--fn);font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);opacity:.85;margin-bottom:14px}
-  .colo p{font-size:.7rem;line-height:2.1;letter-spacing:.05em}
+  .colo__t{font-family:var(--fn);font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);opacity:.85;margin-bottom:14px}
+  .colo small{display:block;font-size:.75rem;line-height:2.1;letter-spacing:.05em;
+    max-width:42em}  /* 法定注記=small(意味論的に正)。42emで行長を35〜45字に収める */
   .colo b{font-weight:500;color:rgba(244,241,234,.8)}
 
   /* ============ モバイル追従CV ============ */
@@ -350,6 +352,19 @@
   .colo__brand{display:flex;align-items:center;gap:11px;margin-bottom:16px}
   .colo__brand img{height:24px;width:auto;display:block}
   .colo__brand b{font-family:var(--fh);font-weight:500;font-size:.88rem;letter-spacing:.1em;color:rgba(244,241,234,.88)}
+
+  /* ============================================================
+     表示規格のフロア（2026-08-19）
+     セクション改修で毎回同じ指摘を再生産しないための既定値。
+     個別に上書きしてよいが、下回る場合は意図を持って行うこと。
+     基準: タップ領域44px(Apple HIG/WCAG AAA) / 装飾ラベル9px下限・12px推奨
+     ============================================================ */
+  @media (pointer:coarse){
+    a[href],button,[role="button"],summary,label[for],
+    input:not([type="hidden"]),select,textarea{min-height:44px}
+    a[href]:not(p a):not(li a):not(dd a):not(td a):not(figcaption a):not(small a){
+      display:inline-flex;align-items:center}
+  }
 </style>
 </head>
 <body>
@@ -508,12 +523,12 @@
       <a href="company.html">会社案内</a>
       <a href="contact.html">お問い合わせ</a>
     </nav>
-    <p class="colo__t">Colophon ／ 掲載について</p>
-    <p>
+    <div class="colo__t">Colophon ／ 掲載について</div>
+    <small>
       掲載の声は、お引き渡し後のアンケートにお答えいただいた内容を<b>原文のまま</b>掲載しています。<br>
       表紙の写真は、やまとの家の実例写真です（各ご家庭の住まいの写真とは限りません）。<br>
       <b>株式会社やまと不動産</b>（奈良県奈良市大宮町1丁目6番21）　宅地建物取引業 国土交通大臣（1）第10516号
-    </p>
+    </small>
   </div>
 </footer>
 

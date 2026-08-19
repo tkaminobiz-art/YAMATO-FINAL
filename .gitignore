@@ -18,3 +18,5 @@ assets/fv_candidates/
 # Adobe Stock 原本(ライセンス素材の再配布防止。リモートがpublicのため)
 assets/stock_src/
 index.backup_preStep_*.html
+works.backup_*.html
+*.backup_*.html

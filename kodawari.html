@@ -160,8 +160,9 @@
     .menu{grid-template-rows:26svh 1fr}
     .menu__nav{grid-template-columns:1fr}
   }
-  .colo__nav{display:flex;flex-wrap:wrap;gap:10px 22px;margin-bottom:16px;font-size:.78rem;letter-spacing:.04em}
-  .colo__nav a{color:rgba(244,241,234,.72);transition:color .25s var(--ease)}
+  .colo__nav{display:flex;flex-wrap:wrap;gap:0 22px;margin-bottom:16px;font-size:.78rem;letter-spacing:.04em}
+  .colo__nav a{color:rgba(244,241,234,.72);transition:color .25s var(--ease);
+    display:inline-flex;align-items:center;min-height:44px}  /* タップ領域44px(Apple HIG/WCAG AAA) */
   .colo__nav a:hover{color:var(--gold)}
 
   /* ============ ① ヒーロー（宵のLDK） ============ */
@@ -363,7 +364,8 @@
   /* ============ 奥付 ============ */
   .colo{background:var(--dark);color:rgba(244,241,234,.6);border-top:1px solid rgba(244,241,234,.1)}
   .colo__in{max-width:1240px;margin:0 auto;padding:clamp(26px,3.6vw,40px) clamp(20px,5vw,64px) calc(clamp(30px,3.6vw,44px) + env(safe-area-inset-bottom))}
-  .colo p{font-size:.7rem;line-height:2.1;letter-spacing:.05em}
+  .colo small{display:block;font-size:.75rem;line-height:2.1;letter-spacing:.05em;
+    max-width:42em}  /* 法定注記=small(意味論的に正)。42emで行長を35〜45字に収める */
   .colo b{font-weight:500;color:rgba(244,241,234,.8)}
 
   /* モバイル追従CV */
@@ -392,7 +394,20 @@
     padding-top:clamp(20px,2.8vw,28px);margin-bottom:13px}
   .colo__brand img{height:24px;width:auto;display:block}
   .colo__brand b{font-family:var(--fh);font-weight:500;font-size:.88rem;letter-spacing:.1em;color:rgba(244,241,234,.88)}
-  .colo p{border-top:none!important;padding-top:0!important}
+  .colo small{border-top:none!important;padding-top:0!important}
+
+  /* ============================================================
+     表示規格のフロア（2026-08-19）
+     セクション改修で毎回同じ指摘を再生産しないための既定値。
+     個別に上書きしてよいが、下回る場合は意図を持って行うこと。
+     基準: タップ領域44px(Apple HIG/WCAG AAA) / 装飾ラベル9px下限・12px推奨
+     ============================================================ */
+  @media (pointer:coarse){
+    a[href],button,[role="button"],summary,label[for],
+    input:not([type="hidden"]),select,textarea{min-height:44px}
+    a[href]:not(p a):not(li a):not(dd a):not(td a):not(figcaption a):not(small a){
+      display:inline-flex;align-items:center}
+  }
 </style>
 </head>
 <body>
@@ -660,11 +675,11 @@
       <a href="company.html">会社案内</a>
       <a href="contact.html">お問い合わせ</a>
     </nav>
-    <p>
+    <small>
       <b>株式会社やまと不動産</b>（奈良県奈良市大宮町1丁目6番21）　宅地建物取引業 国土交通大臣（1）第10516号<br>
       掲載の仕様・保証内容は変更となる場合があります。保証の期間・条件は保証書に定めます。詳しくはお問い合わせください。<br>
       お電話：0742-36-1123（受付 9:00〜19:00｜定休日：火曜・水曜）
-    </p>
+    </small>
   </div>
 </footer>
 

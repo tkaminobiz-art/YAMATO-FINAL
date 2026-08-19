@@ -78,7 +78,7 @@
     padding:12px 10px;margin:-12px -10px} /* タップ領域44px級を維持 */
   .brand__mark{height:clamp(26px,3.4vw,32px);width:auto;display:block}
   .brand__kk{display:flex;flex-direction:column;gap:3px;font-family:var(--font-head);font-weight:500;
-    font-size:.5rem;letter-spacing:.16em;opacity:.85}
+    font-size:.6rem;letter-spacing:.16em;opacity:.85}  /* 8px→9.6px: 下限9pxを確保 */
   .brand__jp{font-family:var(--font-head);font-weight:500;letter-spacing:.10em;white-space:nowrap;
     font-size:clamp(1.02rem,.9rem + .7vw,1.32rem)}
   .brand__en{font-family:"Inter",sans-serif;font-weight:400;letter-spacing:.30em;
@@ -2883,7 +2883,8 @@
   .ft__of{display:flex;flex-direction:column;gap:6px}
   .ft__of b{font-family:var(--fh);font-weight:500;font-size:.72rem;letter-spacing:.2em;color:var(--gold)}
   .ft__of span{font-size:.8rem;letter-spacing:.05em;line-height:1.9;color:rgba(244,241,234,.75)}
-  .ft__of a{font-family:"Inter","Noto Sans JP",sans-serif;font-weight:500;font-size:1.05rem;letter-spacing:.04em;color:var(--cream)}
+  .ft__of a{font-family:"Inter","Noto Sans JP",sans-serif;font-weight:500;font-size:1.05rem;letter-spacing:.04em;color:var(--cream);
+    display:inline-flex;align-items:center;min-height:44px;width:fit-content}  /* タップ領域44px */
   .ft__hours{margin-top:14px;font-size:.74rem;letter-spacing:.08em;color:rgba(244,241,234,.55)}
   .ft__sns{margin-top:clamp(24px,3vw,34px);display:flex;justify-content:center;gap:16px}
   .ft__sns a{display:block;width:40px;height:40px;border-radius:10px;overflow:hidden;
@@ -2896,6 +2897,19 @@
   @media(max-width:640px){
     .ft__legal{justify-content:center;text-align:center}
     .ft__offices{gap:18px}
+  }
+
+  /* ============================================================
+     表示規格のフロア（2026-08-19）
+     セクション改修で毎回同じ指摘を再生産しないための既定値。
+     個別に上書きしてよいが、下回る場合は意図を持って行うこと。
+     基準: タップ領域44px(Apple HIG/WCAG AAA) / 装飾ラベル9px下限・12px推奨
+     ============================================================ */
+  @media (pointer:coarse){
+    a[href],button,[role="button"],summary,label[for],
+    input:not([type="hidden"]),select,textarea{min-height:44px}
+    a[href]:not(p a):not(li a):not(dd a):not(td a):not(figcaption a):not(small a){
+      display:inline-flex;align-items:center}
   }
 </style>
 <footer class="ft" id="footer">
