@@ -40,7 +40,7 @@
     --num:clamp(104px, 66px + 14.9vw, 280px);
     --mid:clamp(25px, 16px + 2.2vw, 48px);
     --sub:15px;
-    position:relative;background:var(--paper);color:var(--sumi);
+    position:relative;background:url("assets/std/page_kinari.webp") center/cover var(--paper);color:var(--sumi);
     font-family:"Zen Kaku Gothic New",sans-serif;line-height:1.9;isolation:isolate}
 
   .tr__top{display:grid;grid-template-columns:minmax(0,1fr) clamp(240px,29.9vw,430px);
@@ -71,7 +71,8 @@
   .tr__num--foil i{color:var(--cream)}
 
   /* 紅バンド（暗部支配・単色。写真は入れない） */
-  .tr__band{position:relative;overflow:hidden;background:var(--shu);
+  .tr__band{position:relative;overflow:hidden;
+    background:url("assets/std/page_beni.webp") center/cover var(--shu);
     padding:clamp(150px,17vw,240px) var(--gx) clamp(40px,5vw,72px)}
   .tr__sw{position:absolute;right:clamp(16px,7vw,150px);top:clamp(60px,8vw,96px);
     width:clamp(96px,14.6vw,210px);opacity:.95;pointer-events:none}
