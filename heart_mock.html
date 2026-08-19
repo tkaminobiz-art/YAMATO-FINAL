@@ -85,10 +85,11 @@
     .cr__ch--r{margin-left:auto;margin-right:var(--ng)}
   }
 
+  /* 番号は必ず本文の左上＝章の頭に置く。右へ出すと章の目印でなく取り残された記号に見える。
+     左右交互は本文の位置だけでやり、番号は本文について動く */
   .cr__no{position:absolute;top:.2em;right:100%;margin-right:calc(var(--ng) - 1.55em);
     writing-mode:vertical-rl;font-family:var(--fm);font-weight:400;
     font-size:1em;letter-spacing:.42em;color:var(--cream)}
-  .cr__ch--r .cr__no{right:auto;left:100%;margin-right:0;margin-left:calc(var(--ng) - 1.55em)}
 
   .cr__body{font-family:var(--fm);font-weight:400;font-size:1em;
     line-height:2;letter-spacing:.085em;color:var(--cream)}
