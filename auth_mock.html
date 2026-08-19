@@ -62,7 +62,8 @@
   .tr__num{display:flex;align-items:baseline;gap:clamp(8px,1.25vw,18px);white-space:nowrap;
     font-size:var(--num);line-height:.86}   /* ← em の基準をここに置く（またぎの要） */
   .tr__num b{font-family:"Inter",sans-serif;font-weight:200;font-size:1em;
-    line-height:.86;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+    line-height:.86;letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+    display:inline-block;min-width:3ch}  /* 0→770で桁が増えても「棟超」を動かさない */
   .tr__num i{font-family:"YakuHanMP","Shippori Mincho B1",serif;font-style:normal;font-weight:500;
     font-size:var(--mid);line-height:.86;letter-spacing:.06em}
   .tr__num--sumi{margin:clamp(40px,5vw,72px) 0 -.503em var(--gx);color:var(--sumi)}
@@ -136,10 +137,10 @@
     </figure>
   </div>
 
-  <p class="tr__num tr__num--sumi" aria-hidden="true"><b>770</b><i>棟超</i></p>
+  <p class="tr__num tr__num--sumi" aria-hidden="true"><b data-count="770">770</b><i>棟超</i></p>
 
   <div class="tr__band">
-    <p class="tr__num tr__num--foil"><b>770</b><i>棟超</i></p>
+    <p class="tr__num tr__num--foil"><b data-count="770">770</b><i>棟超</i></p>
     <img class="tr__sw" src="assets/std/auth_swallow_foil.png" alt="" aria-hidden="true">
     <p><span class="tr__note">※2026年7月10日現在</span></p>
     <div class="tr__stats">
@@ -188,6 +189,33 @@
 (function(){var e=document.getElementById('trY');if(!e)return;
   var n=new Date(),full=n.getFullYear()-2011-((n.getMonth()<10||(n.getMonth()===10&&n.getDate()<30))?1:0),y=full+1;
   if(y>0&&String(y)!==e.textContent)e.textContent=y;})();
+
+/* 770のカウントアップ。墨と箔の2枚は同じ数字なので1本のrAFで同期させる。
+   到達時に1回だけ。reduced-motion では即座に確定値を出す。 */
+(function(){
+  var els=[].slice.call(document.querySelectorAll('[data-count]'));
+  if(!els.length) return;
+  var target=parseInt(els[0].getAttribute('data-count'),10)||0;
+  var done=false;
+  function paint(v){ var t=String(v); for(var i=0;i<els.length;i++) els[i].textContent=t; }
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){ paint(target); return; }
+  paint(0);
+  function run(){
+    if(done) return; done=true;
+    var dur=1600, t0=performance.now();
+    (function step(now){
+      var p=Math.min(1,(now-t0)/dur);
+      var e=1-Math.pow(1-p,4);            /* power4.out ＝ 終盤で静かに着地 */
+      paint(Math.round(target*e));
+      if(p<1) requestAnimationFrame(step); else paint(target);
+    })(t0);
+  }
+  if(!('IntersectionObserver' in window)){ run(); return; }
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(x){ if(x.isIntersecting){ run(); io.disconnect(); } });
+  },{threshold:.35});
+  io.observe(document.querySelector('.tr__num--sumi')||els[0]);
+})();
 </script>
 </body>
 </html>
