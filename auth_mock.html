@@ -63,7 +63,7 @@
     font-size:var(--num);line-height:.86}   /* ← em の基準をここに置く（またぎの要） */
   .tr__num b{font-family:"Inter",sans-serif;font-weight:200;font-size:1em;
     line-height:.86;letter-spacing:-.03em;font-variant-numeric:tabular-nums;
-    display:inline-block;min-width:3ch}  /* 0→770で桁が増えても「棟超」を動かさない */
+    display:inline-block}  /* 幅の予約は script 側で実測して行う（ch は letter-spacing を含まないため） */
   .tr__num i{font-family:"YakuHanMP","Shippori Mincho B1",serif;font-style:normal;font-weight:500;
     font-size:var(--mid);line-height:.86;letter-spacing:.06em}
   .tr__num--sumi{margin:clamp(40px,5vw,72px) 0 -.503em var(--gx);color:var(--sumi)}
@@ -195,10 +195,17 @@
 (function(){
   var els=[].slice.call(document.querySelectorAll('[data-count]'));
   if(!els.length) return;
+  /* Webフォント読込前に測るとフォールバック書体の幅（実測+9.4px）を予約してしまい、
+     着地時に縮んで跳ねる。fonts.ready を待ってから初期化する */
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(init); } else { init(); }
+  function init(){
   var target=parseInt(els[0].getAttribute('data-count'),10)||0;
   var done=false;
   function paint(v){ var t=String(v); for(var i=0;i<els.length;i++) els[i].textContent=t; }
   if(matchMedia('(prefers-reduced-motion: reduce)').matches){ paint(target); return; }
+  /* 確定値を出したままの実幅を予約してから0に戻す。
+     ch は letter-spacing を含まず実測で 3ch < 実幅 だったため、着地時に跳ねる */
+  for(var k=0;k<els.length;k++) els[k].style.minWidth=els[k].getBoundingClientRect().width+'px';
   paint(0);
   function run(){
     if(done) return; done=true;
@@ -207,7 +214,8 @@
       var p=Math.min(1,(now-t0)/dur);
       var e=1-Math.pow(1-p,4);            /* power4.out ＝ 終盤で静かに着地 */
       paint(Math.round(target*e));
-      if(p<1) requestAnimationFrame(step); else paint(target);
+      if(p<1) requestAnimationFrame(step);
+      else { paint(target); for(var k=0;k<els.length;k++) els[k].style.minWidth=''; }  /* 予約を解除＝以後のリサイズに追従 */
     })(t0);
   }
   if(!('IntersectionObserver' in window)){ run(); return; }
@@ -215,6 +223,7 @@
     en.forEach(function(x){ if(x.isIntersecting){ run(); io.disconnect(); } });
   },{threshold:.35});
   io.observe(document.querySelector('.tr__num--sumi')||els[0]);
+  }
 })();
 </script>
 </body>
