@@ -422,92 +422,94 @@
   }
   @media (prefers-reduced-motion:reduce){.fvs__hint::after{animation:none}}
 
-  /* ===================== 実績（生きた図面・動画背景＋製図インデックスバナー） ===================== */
-  .authority{position:relative;overflow:hidden;isolation:isolate;color:var(--cream);background:#100d09;
-    --gold:#D8B25A;--gold-hi:#FFF3D0;
-    padding:clamp(104px,15vw,224px) 0 clamp(72px,9vw,120px)}
-  .authority__bg{position:absolute;inset:-16% 0;z-index:0;width:100%;height:132%;object-fit:cover;display:block;
-    transform:scale(1.12);will-change:transform;filter:brightness(1.06) contrast(1.02)}
-  .authority__scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
-    background:linear-gradient(180deg,rgba(12,10,7,.72),rgba(16,13,9,.52) 42%,rgba(12,10,7,.8)),
-      radial-gradient(72% 58% at 50% 42%,rgba(9,7,4,.46),rgba(9,7,4,0) 72%)}
-  .authority__grain{position:absolute;inset:-30px;z-index:2;pointer-events:none;opacity:.13;mix-blend-mode:soft-light;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:150px;animation:agrain 1.05s steps(5) infinite}
-  @keyframes agrain{0%{transform:translate(0,0)}20%{transform:translate(-14px,9px)}40%{transform:translate(9px,-12px)}60%{transform:translate(-8px,13px)}80%{transform:translate(12px,7px)}100%{transform:translate(0,0)}}
-  .authority__anno{position:absolute;z-index:2;top:0;left:50%;transform:translateX(-50%);width:min(1180px,92vw);pointer-events:none;will-change:transform}
-  .authority__anno svg{width:100%;height:auto;overflow:visible}
-  .authority .anno-line{fill:none;stroke:var(--gold);stroke-width:1;opacity:.7;vector-effect:non-scaling-stroke;
-    stroke-dasharray:1600;stroke-dashoffset:1600;transition:stroke-dashoffset 1.8s var(--ease)}
-  .authority.is-in .anno-line{stroke-dashoffset:0}
-  .authority.is-in .anno-line.a2{transition-delay:.5s}
-  .authority.is-in .anno-line.a3{transition-delay:.9s}
-  .authority .anno-txt{fill:var(--gold);font-family:var(--fn);font-size:12px;letter-spacing:.18em;opacity:0;transition:opacity .8s ease 1.2s}
-  .authority.is-in .anno-txt{opacity:.82}
-  .authority .wrap{position:relative;z-index:3;max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,56px);text-align:center;display:flex;flex-direction:column;align-items:center}
-  .authority .eyebrow{font-family:var(--fn);font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);
-    display:inline-flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3.4vw,40px)}
-  .authority .eyebrow::before,.authority .eyebrow::after{content:"";width:36px;height:1px;background:currentColor;opacity:.55}
-  .authority .numwrap{position:relative;display:flex;align-items:baseline;justify-content:center;gap:.04em;line-height:.84}
-  .authority .numwrap::before{content:"";position:absolute;left:50%;top:48%;width:88%;height:130%;transform:translate(-50%,-50%);z-index:-1;
-    background:radial-gradient(closest-side,rgba(216,178,90,.28),rgba(216,178,90,0) 72%);filter:blur(10px);animation:aglow 6.5s ease-in-out infinite}
-  @keyframes aglow{0%,100%{opacity:.55;transform:translate(-50%,-50%) scale(1)}50%{opacity:.85;transform:translate(-50%,-50%) scale(1.07)}}
-  .authority .count{font-family:var(--fn);font-weight:900;font-size:clamp(7rem,23vw,18.5rem);letter-spacing:-.03em;font-variant-numeric:tabular-nums;
-    background-image:linear-gradient(96deg,#B98B34 0%,#E4C877 26%,#FFF6DE 46%,#F0DCA9 56%,#CFA24B 74%,#B98B34 100%);
-    background-size:260% 100%;background-position:0% 0;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
-    filter:drop-shadow(0 0 42px rgba(216,178,90,.4)) drop-shadow(0 12px 36px rgba(0,0,0,.6));animation:asheen 6.5s ease-in-out infinite}
-  @keyframes asheen{0%{background-position:0% 0}54%{background-position:100% 0}100%{background-position:0% 0}}
-  .authority .unit{font-family:var(--fh);font-weight:700;font-size:clamp(2rem,5.4vw,4.1rem);color:var(--gold);transform:translateY(-.12em);text-shadow:0 2px 22px rgba(0,0,0,.5)}
-  .authority .lead{font-family:var(--fh);font-weight:700;font-size:clamp(1.55rem,3.6vw,2.7rem);letter-spacing:.03em;color:#F8F3E7;
-    line-height:1.5;margin-top:clamp(18px,2.4vw,30px);text-wrap:balance;text-shadow:0 2px 28px rgba(0,0,0,.6)}
-  .authority .numnote{font-family:var(--fb);font-size:.72rem;letter-spacing:.06em;color:rgba(244,241,234,.55);
-    margin-top:6px;text-shadow:0 1px 12px rgba(0,0,0,.6)}
-  .authority .sub{font-family:var(--fb);font-size:clamp(.95rem,1.4vw,1.1rem);color:rgba(244,241,234,.8);margin-top:16px;text-shadow:0 1px 18px rgba(0,0,0,.6)}
-  .authority .stats{display:flex;justify-content:center;flex-wrap:wrap;margin-top:clamp(40px,5vw,64px)}
-  .authority .stat{padding:6px clamp(20px,3.2vw,46px);position:relative}
-  .authority .stat + .stat::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:1px;height:42px;background:currentColor;opacity:.26}
-  .authority .stat .n{font-family:var(--fn);font-weight:700;font-size:clamp(1.6rem,3vw,2.25rem);color:#F8F3E7;font-variant-numeric:tabular-nums;display:block;text-shadow:0 1px 16px rgba(0,0,0,.5)}
-  .authority .stat .l{font-family:var(--fb);font-size:12px;color:rgba(244,241,234,.72);letter-spacing:.04em;margin-top:5px;display:block}
-  /* バナー：製図インデックス帳（A hybrid） */
-  .authority .marquee{position:relative;z-index:3;margin-top:clamp(56px,7vw,96px);width:100%;overflow:hidden;
-    cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;
-    -webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
-  .authority .marquee.is-grab{cursor:grabbing}
-  .authority .track{display:flex;gap:20px;width:max-content;padding:10px clamp(11px,1.5vw,22px);will-change:transform}
-  /* タイル＝生成したプレミアム画像＋テキストのみ（統一グレーディング） */
-  .authority .tile{position:relative;flex:0 0 auto;width:clamp(258px,27vw,298px);aspect-ratio:3/4;border-radius:14px;overflow:hidden;isolation:isolate;
-    text-decoration:none;color:var(--cream);display:block;border:1px solid transparent;
-    background:linear-gradient(#0d0a06,#0d0a06) padding-box,linear-gradient(180deg,rgba(216,178,90,.5),rgba(216,178,90,.06) 60%,rgba(216,178,90,.02)) border-box;
-    box-shadow:0 20px 44px -18px rgba(0,0,0,.7);transition:transform .7s var(--ease),box-shadow .7s var(--ease)}
-  .authority .tile:hover{transform:translateY(-5px);box-shadow:0 28px 60px -20px rgba(0,0,0,.8)}
-  .authority .tile__img{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;
-    filter:brightness(.84) saturate(.9) contrast(1.03);transform:scale(1.03);transition:transform .9s var(--ease)}
-  .authority .tile:hover .tile__img{transform:scale(1.09)}
-  .authority .tile::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-    background:linear-gradient(180deg,rgba(13,10,6,.18) 0%,rgba(13,10,6,.06) 30%,rgba(13,10,6,.5) 62%,rgba(13,10,6,.92) 100%)}
-  .authority .tile__no{position:absolute;z-index:2;left:18px;top:12px;font-family:var(--fn);font-weight:600;
-    font-size:clamp(40px,6vw,54px);line-height:.8;color:var(--gold);font-variant-numeric:tabular-nums;letter-spacing:-.02em;text-shadow:0 2px 14px rgba(0,0,0,.75)}
-  .authority .tile__vcap{position:absolute;z-index:2;right:11px;top:15px;writing-mode:vertical-rl;
-    font-family:var(--fn);font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:rgba(244,241,234,.66);text-shadow:0 1px 8px rgba(0,0,0,.7)}
-  .authority .tile__body{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;display:flex;flex-direction:column;gap:6px;text-align:left}
-  .authority .tile__en{font-family:var(--fn);font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(244,241,234,.62);transition:color .5s var(--ease);text-shadow:0 1px 10px rgba(0,0,0,.7)}
-  .authority .tile:hover .tile__en{color:var(--gold)}
-  .authority .tile__jp{font-family:var(--fh);font-weight:700;font-size:clamp(1.2rem,1.7vw,1.42rem);letter-spacing:.04em;color:var(--cream);display:flex;align-items:center;gap:10px;text-shadow:0 2px 16px rgba(0,0,0,.75)}
-  .authority .tile__jp::before{content:"";width:15px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);flex:0 0 auto}
-  .authority .tile__fact{font-family:var(--fb);font-size:12px;color:rgba(244,241,234,.72);letter-spacing:.02em;padding-top:9px;position:relative;text-shadow:0 1px 10px rgba(0,0,0,.7)}
-  .authority .tile__fact::before{content:"";position:absolute;left:0;top:0;height:1px;width:26px;background:rgba(216,178,90,.4)}
-  .authority .tile__fact::after{content:"";position:absolute;left:0;top:0;height:1px;width:0;background:linear-gradient(90deg,var(--gold),transparent);transition:width .7s var(--ease)}
-  .authority .tile:hover .tile__fact::after{width:100%}
-  .authority .cap{position:relative;z-index:3;text-align:center;font-family:var(--fb);font-size:11.5px;color:rgba(244,241,234,.5);letter-spacing:.08em;margin-top:24px}
-  .authority [data-reveal]{opacity:0;transform:translateY(46px);filter:blur(9px);transition:opacity 1s var(--ease),transform 1.15s var(--ease),filter 1s var(--ease);transition-delay:var(--d,0s)}
-  .authority.is-in [data-reveal]{opacity:1;transform:none;filter:none}
-  .authority .marquee[data-reveal]{transform:translateY(56px)}
-  @media (prefers-reduced-motion:reduce){
-    .authority [data-reveal]{opacity:1!important;transform:none!important;filter:none!important;transition:none}
-    .authority .track,.authority__grain,.authority .count,.authority .numwrap::before{animation:none}
-    .authority .anno-line{stroke-dashoffset:0!important;transition:none}.authority .anno-txt{opacity:.82!important;transition:none}
-    .authority__bg{transform:scale(1.04)!important}
-  }
+  /* ===================== 実績「三帯の明度リズム」（2026-08-19 auth_mock.html図面より統合） =====================
+     明部(見出し+証拠写真) → 紅バンド(暗部支配・単色) → 明部(番号付き索引)。
+     770は紅バンドの上端をまたぐ（同座標2枚・バンド側を overflow:hidden で切る）。
+     ※mix-blend-mode:difference は紅#BD1B21 上で #42E4DE のシアンになるため使えない。 */
+  .tr{
+    --paper:#F4F1EA; --sumi:#241E16; --sumi2:#5C5346; --sumi3:#8A8070; --sumi4:#6E655A;
+    --shu:#BD1B21; --foil1:#F1D57D; --foil2:#B08A3C; --cream:#F3EEE3;
+    --gx:clamp(20px, 12.36vw, 178px);
+    --num:clamp(104px, 66px + 14.9vw, 280px);
+    --mid:clamp(25px, 16px + 2.2vw, 48px);
+    --sub:15px;
+    position:relative;background:url("assets/std/page_kinari.webp") center/cover var(--paper);color:var(--sumi);
+    font-family:"Zen Kaku Gothic New",sans-serif;line-height:1.9;isolation:isolate}
 
+  .tr__top{display:grid;grid-template-columns:minmax(0,1fr) clamp(240px,29.9vw,430px);
+    gap:clamp(24px,4vw,60px);align-items:start;
+    padding:clamp(56px,6.4vw,92px) var(--gx) 0}
+  .tr__eye{font-size:var(--sub);letter-spacing:.3em;color:var(--foil2);margin-bottom:24px}
+  .tr__h{font-family:"YakuHanMP","Shippori Mincho B1",serif;font-weight:500;
+    font-size:var(--mid);letter-spacing:.06em;line-height:1.8;color:var(--sumi)}
+  .tr__rule{width:62px;height:1px;border:0;margin:30px 0;
+    background:linear-gradient(90deg,var(--foil1),var(--foil2))}
+  .tr__lead{font-family:"YakuHanMP","Shippori Mincho B1",serif;font-weight:400;
+    font-size:var(--sub);letter-spacing:.06em;line-height:1.9;color:var(--sumi2)}
+  .tr__ph{margin:0}
+  .tr__ph img{width:100%;aspect-ratio:430/336;object-fit:cover;object-position:50% 56%;
+    box-shadow:0 40px 80px -30px rgba(30,14,6,.6)}
+  .tr__cap{margin-top:14px;font-size:var(--sub);letter-spacing:.06em;color:var(--sumi3)}
+
+  /* またぎの数字（同座標2枚。バンド側は overflow で切る） */
+  .tr__num{display:flex;align-items:baseline;gap:clamp(8px,1.25vw,18px);white-space:nowrap;
+    font-size:var(--num);line-height:.86}   /* ← em の基準をここに置く（またぎの要） */
+  .tr__num b{font-family:"Inter",sans-serif;font-weight:200;font-size:1em;
+    line-height:.86;letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+    display:inline-block}  /* 幅の予約は script 側で実測して行う（ch は letter-spacing を含まないため） */
+  .tr__num i{font-family:"YakuHanMP","Shippori Mincho B1",serif;font-style:normal;font-weight:500;
+    font-size:var(--mid);line-height:.86;letter-spacing:.06em}
+  .tr__num--sumi{margin:clamp(40px,5vw,72px) 0 -.503em var(--gx);color:var(--sumi)}
+  .tr__num--sumi i{color:var(--sumi)}
+  .tr__num--foil{position:absolute;left:var(--gx);top:-.357em;color:var(--foil1)}
+  .tr__num--foil i{color:var(--cream)}
+
+  /* 紅バンド（暗部支配・単色。写真は入れない） */
+  .tr__band{position:relative;overflow:hidden;
+    background:url("assets/std/page_beni.webp") center/cover var(--shu);
+    padding:clamp(150px,17vw,240px) var(--gx) clamp(40px,5vw,72px)}
+  .tr__sw{position:absolute;right:clamp(16px,7vw,150px);top:clamp(60px,8vw,96px);
+    width:clamp(96px,14.6vw,210px);opacity:.95;pointer-events:none}
+  .tr__note{display:inline-block;font-size:var(--sub);letter-spacing:.04em;
+    color:rgba(243,238,227,.72);border:1px solid rgba(241,213,125,.5);
+    border-radius:2px;padding:5px 11px}
+  .tr__stats{display:flex;flex-wrap:wrap;margin-top:clamp(38px,5.4vw,78px)}
+  .tr__stat{display:flex;flex-direction:column;gap:8px;padding:0 clamp(18px,2.8vw,40px)}
+  .tr__stat:first-child{padding-left:0}
+  .tr__stat + .tr__stat{border-left:1px solid rgba(241,213,125,.42)}
+  .tr__sv{display:flex;align-items:baseline;gap:8px}
+  .tr__sv b{font-family:"Inter",sans-serif;font-weight:300;font-size:var(--mid);
+    line-height:.86;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--cream)}
+  .tr__sv i{font-family:"YakuHanMP","Shippori Mincho B1",serif;font-style:normal;
+    font-weight:500;font-size:var(--sub);letter-spacing:.08em;color:var(--cream)}
+  .tr__sl{font-size:var(--sub);color:rgba(243,238,227,.66)}
+
+  /* 明部下：番号付きインデックス行（安藤型 24:62:11） */
+  .tr__idx{padding:clamp(40px,5vw,56px) var(--gx) clamp(56px,6.4vw,92px)}
+  .tr__idxh{font-size:var(--sub);letter-spacing:.06em;color:var(--sumi3);margin-bottom:40px}
+  .tr__row{display:grid;grid-template-columns:clamp(120px,19.7vw,284px) minmax(0,1fr);
+    align-items:baseline;gap:0 clamp(12px,2vw,24px);padding:22px 0;
+    border-top:1px solid rgba(176,138,60,.38);text-decoration:none;color:inherit;
+    transition:background .3s}
+  .tr__row:last-child{border-bottom:1px solid rgba(176,138,60,.38)}
+  .tr__row:hover{background:rgba(176,138,60,.07)}
+  .tr__no{font-family:"Inter",sans-serif;font-weight:400;font-size:13px;
+    letter-spacing:.24em;color:var(--foil2)}
+  .tr__rb{display:flex;align-items:baseline;gap:clamp(10px,1.4vw,20px);flex-wrap:wrap}
+  .tr__rt{font-family:"YakuHanMP","Shippori Mincho B1",serif;font-weight:500;
+    font-size:clamp(21px,17px + .6vw,25px);line-height:1.6;letter-spacing:.06em;color:var(--sumi)}
+  .tr__rf{font-size:var(--sub);color:var(--sumi4)}
+  .tr__row:hover .tr__rt{color:var(--foil2)}
+
+  @media (max-width:760px){
+    .tr__top{grid-template-columns:1fr}
+    .tr__ph{order:-1}
+    .tr__stats{gap:22px 0}
+    .tr__stat{flex-basis:100%;padding:0}
+    .tr__stat + .tr__stat{border-left:0;border-top:1px solid rgba(241,213,125,.28);padding-top:22px}
+    .tr__row{grid-template-columns:1fr;gap:6px}
+  }
+  @media (pointer:coarse){ a.tr__row{min-height:44px} }
   /* ===================== 信条（散らしコラージュ・明朝／このセクションのみMincho） ===================== */
   .heart{position:relative;isolation:isolate;overflow:hidden;
     --font-head:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
@@ -1297,86 +1299,68 @@
 
 
 <!-- ============ 実績（生きた図面・動画背景＋製図インデックスバナー） ============ -->
-<section class="authority" id="auth">
-  <video class="authority__bg" id="authBg" autoplay muted loop playsinline preload="metadata" poster="assets/authority/blueprint.webp">
-    <source src="assets/authority/bp_bg.mp4" type="video/mp4">
-  </video>
-  <div class="authority__scrim"></div>
-  <div class="authority__anno" id="anno" aria-hidden="true">
-    <svg viewBox="0 0 1180 640" preserveAspectRatio="xMidYMid meet">
-      <path class="anno-line a1" d="M40 66 h30 M40 66 v30"/>
-      <path class="anno-line a1" d="M1140 66 h-30 M1140 66 v30"/>
-      <path class="anno-line a1" d="M40 574 h30 M40 574 v-30"/>
-      <path class="anno-line a1" d="M1140 574 h-30 M1140 574 v-30"/>
-      <path class="anno-line a1" d="M360 96 H820"/>
-      <path class="anno-line a1" d="M360 88 V104 M820 88 V104 M590 90 V102"/>
-      <text class="anno-txt" x="590" y="82" text-anchor="middle">TRACK RECORD</text>
-      <path class="anno-line a2" d="M372 372 H808"/>
-      <path class="anno-line a2" d="M372 364 V380 M808 364 V380"/>
-      <text class="anno-txt" x="590" y="402" text-anchor="middle">770 棟 ／ BUILT IN NARA</text>
-      <path class="anno-line a3" d="M840 250 L980 196 H1090"/>
-      <circle class="anno-line a3" cx="840" cy="250" r="4"/>
-      <text class="anno-txt" x="984" y="188" text-anchor="start">自社設計 ／ 自社施工</text>
-      <circle class="anno-line a3" cx="150" cy="452" r="26"/>
-      <path class="anno-line a3" d="M176 452 H250"/>
-      <text class="anno-txt" x="150" y="456" text-anchor="middle" style="font-size:11px">03</text>
-      <text class="anno-txt" x="258" y="456" text-anchor="start" style="font-size:11px">DETAIL</text>
-    </svg>
-  </div>
-  <div class="authority__grain"></div>
-
-  <div class="wrap">
-    <p class="eyebrow" data-reveal style="--d:.05s;white-space:nowrap">Track Record ／ 創業からの実績</p>
-    <div class="numwrap" data-reveal style="--d:.2s"><span class="count" id="count" data-target="770">0</span><span class="unit">棟超</span></div>
-    <p class="numnote" data-reveal style="--d:.3s">※2026年7月10日現在</p>
-    <h2 class="lead" data-reveal style="--d:.42s">選ばれる理由は、価格だけではありません。</h2>
-    <p class="sub" data-reveal style="--d:.54s">創業から、奈良でこれだけの家をつくってきました。設計も施工も、外注せず自社で手がけています。</p>
-    <div class="stats" data-reveal style="--d:.68s">
-      <div class="stat"><span class="n">150</span><span class="l">区画以上｜自社分譲（保有）</span></div>
-      <div class="stat"><span class="n">50</span><span class="l">組｜お客様の声</span></div>
-      <div class="stat"><span class="n" id="foundY">15</span><span class="l">年目｜創業</span></div>
+<section class="tr" id="auth" aria-labelledby="trH">
+  <div class="tr__top">
+    <div>
+      <p class="tr__eye">Track Record</p>
+      <h2 class="tr__h" id="trH">選ばれる理由は、<br>価格だけではありません。</h2>
+      <hr class="tr__rule">
+      <p class="tr__lead">創業から、奈良でこれだけの家をつくってきました。<br>設計も施工も、外注せず自社で手がけています。</p>
     </div>
-    <script>
-    /* 創業2011-11-30からの「〜年目」（周年を跨いだら自動繰上げ。JS無効時は静的値のまま） */
-    (function(){var e=document.getElementById('foundY');if(!e)return;
-      var n=new Date(),full=n.getFullYear()-2011-((n.getMonth()<10||(n.getMonth()===10&&n.getDate()<30))?1:0),y=full+1;
-      if(y>0&&String(y)!==e.textContent)e.textContent=y;})();
-    </script>
+    <figure class="tr__ph">
+      <img src="assets/std/auth_ext_1920.webp"
+           srcset="assets/std/auth_ext_1100.webp 1100w, assets/std/auth_ext_1920.webp 1920w, assets/std/auth_ext_2560.webp 2560w"
+           sizes="(max-width:760px) 100vw, 32vw" alt="奈良市の実邸 外観" decoding="async">
+      <figcaption class="tr__cap">奈良市・実邸　外観</figcaption>
+    </figure>
   </div>
 
-  <div class="marquee" data-reveal style="--d:.84s" aria-label="関連ページ">
-    <div class="track" id="track">
-      <a class="tile" href="works.html" aria-label="施工事例">
-        <span class="tile__img" style="background-image:url(assets/authority/tile_works.webp)"></span>
-        <span class="tile__no">01</span><span class="tile__vcap">Built in Nara</span>
-        <span class="tile__body"><span class="tile__en">Works</span><span class="tile__jp">施工事例</span><span class="tile__fact">770棟の設計図</span></span>
-      </a>
-      <a class="tile" href="model.html" aria-label="モデルハウス">
-        <span class="tile__img" style="background-image:url(assets/authority/tile_model.webp)"></span>
-        <span class="tile__no">02</span><span class="tile__vcap">Model House</span>
-        <span class="tile__body"><span class="tile__en">Model House</span><span class="tile__jp">モデルハウス</span><span class="tile__fact">暮らしを見にきませんか</span></span>
-      </a>
-      <a class="tile" href="#voice" aria-label="お客様の声">
-        <span class="tile__img" style="background-image:url(assets/authority/tile_voice.webp)"></span>
-        <span class="tile__no">03</span><span class="tile__vcap">Customer Voice</span>
-        <span class="tile__body"><span class="tile__en">Voice</span><span class="tile__jp">お客様の声</span><span class="tile__fact">実際に建てた方の声</span></span>
-      </a>
-      <a class="tile" href="lots.html" aria-label="土地・分譲地">
-        <span class="tile__img" style="background-image:url(assets/authority/tile_land.webp)"></span>
-        <span class="tile__no">04</span><span class="tile__vcap">Land ／ Lots</span>
-        <span class="tile__body"><span class="tile__en">Land</span><span class="tile__jp">土地・分譲地</span><span class="tile__fact">分譲中の区画があります</span></span>
-      </a>
-      <a class="tile" href="kodawari.html#standard" aria-label="標準装備">
-        <span class="tile__img" style="background-image:url(assets/authority/tile_equipment.webp)"></span>
-        <span class="tile__no">05</span><span class="tile__vcap">Standard Spec</span>
-        <span class="tile__body"><span class="tile__en">Equipment</span><span class="tile__jp">標準装備</span><span class="tile__fact">地盤改良費は当社負担</span></span>
-      </a>
+  <p class="tr__num tr__num--sumi" aria-hidden="true"><b data-count="770">770</b><i>棟超</i></p>
+
+  <div class="tr__band">
+    <p class="tr__num tr__num--foil"><b data-count="770">770</b><i>棟超</i></p>
+    <img class="tr__sw" src="assets/std/auth_swallow_foil.png" alt="" aria-hidden="true">
+    <p><span class="tr__note">※2026年7月10日現在</span></p>
+    <div class="tr__stats">
+      <div class="tr__stat">
+        <span class="tr__sv"><b>150</b><i>区画以上</i></span>
+        <span class="tr__sl">自社分譲（保有）</span>
+      </div>
+      <div class="tr__stat">
+        <span class="tr__sv"><b>50</b><i>組</i></span>
+        <span class="tr__sl">お客様の声</span>
+      </div>
+      <div class="tr__stat">
+        <span class="tr__sv"><b id="trY">15</b><i>年目</i></span>
+        <span class="tr__sl">創業</span>
+      </div>
     </div>
   </div>
-  <p class="cap" data-reveal style="--d:.92s">ドラッグ／スワイプで動かせます — 各バナーから、詳しいページへ</p>
+
+  <div class="tr__idx">
+    <p class="tr__idxh">索引</p>
+    <a class="tr__row" href="works.html">
+      <span class="tr__no">01　WORKS</span>
+      <span class="tr__rb"><span class="tr__rt">施工事例</span><span class="tr__rf">770棟の設計図</span></span>
+    </a>
+    <a class="tr__row" href="model.html">
+      <span class="tr__no">02　MODEL HOUSE</span>
+      <span class="tr__rb"><span class="tr__rt">モデルハウス</span><span class="tr__rf">暮らしを見にきませんか</span></span>
+    </a>
+    <a class="tr__row" href="#voice">
+      <span class="tr__no">03　VOICE</span>
+      <span class="tr__rb"><span class="tr__rt">お客様の声</span><span class="tr__rf">実際に建てた方の声</span></span>
+    </a>
+    <a class="tr__row" href="lots.html">
+      <span class="tr__no">04　LAND</span>
+      <span class="tr__rb"><span class="tr__rt">土地・分譲地</span><span class="tr__rf">分譲中の区画があります</span></span>
+    </a>
+    <a class="tr__row" href="kodawari.html#standard">
+      <span class="tr__no">05　EQUIPMENT</span>
+      <span class="tr__rb"><span class="tr__rt">標準装備</span><span class="tr__rf">地盤改良費は当社負担</span></span>
+    </a>
+  </div>
 </section>
-
-<!-- ============ 信条（散らしコラージュ・明朝） ============ -->
 <section class="heart" id="heart">
   <div class="heart__inner">
     <div class="m-flow">
@@ -3073,37 +3057,46 @@
 
   /* FV動画の保険ブロックは v5.4 で撤去（#hv は新FVに存在しない） */
 
-  /* --- 実績（生きた図面）: 動画/カウント/リビール/注記/パララックス --- */
+  /* ==================================================================================
+     4b) 実績の770カウントアップ（2026-08-19 auth_mock.html図面より統合）
+     墨と箔の2枚は同じ数字なので1本のrAFで同期させる。到達時1回のみ。
+     3指標(150/50/15)には付けない＝4つ動かすと「実績カウンター」の記号に寄るため。
+     ================================================================================== */
+  /* 770のカウントアップ。墨と箔の2枚は同じ数字なので1本のrAFで同期させる。
+     到達時に1回だけ。reduced-motion では即座に確定値を出す。 */
   (function(){
-    var sec=document.getElementById('auth'); if(!sec) return;
-    var bg=document.getElementById('authBg'), anno=document.getElementById('anno'),
-        count=document.getElementById('count'), atrack=document.getElementById('track');
-    if(reduce && bg && bg.pause){ try{bg.pause();}catch(e){} }
-    /* trackの複製・自動流し・スワイプは authority バナー帯スクリプトが担当（旧CSS marquee用の複製は撤去） */
-    function runCount(){ if(!count) return; var t=+count.getAttribute('data-target');
-      if(reduce){ count.textContent=t; return; }
-      var dur=1900,s=null; function tick(n){ if(!s)s=n; var p=Math.min((n-s)/dur,1);
-        count.textContent=Math.round((1-Math.pow(1-p,3))*t); if(p<1)requestAnimationFrame(tick);} requestAnimationFrame(tick); }
-    var fired=false;
-    function fire(){ if(fired) return; fired=true; sec.classList.add('is-in'); runCount(); }
-    if('IntersectionObserver' in window){
-      new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) fire(); }); },{threshold:0,rootMargin:'0px 0px -12% 0px'}).observe(sec);
-    } else { fire(); }
-    function checkInView(){ if(fired) return; var r=sec.getBoundingClientRect(); if(r.top < innerHeight*0.9 && r.bottom > 0) fire(); }
-    setTimeout(checkInView,300); window.addEventListener('scroll',checkInView,{passive:true,once:true});
-    if(!reduce && bg){
-      var prog=0,mx=0,my=0,ticking=false;
-      function render(){ ticking=false;
-        bg.style.transform='scale(1.12) translate('+(mx*-16)+'px,'+(prog*82 + my*-12)+'px)';
-        if(anno) anno.style.transform='translateX(-50%) translate('+(mx*24)+'px,'+(my*16)+'px)'; }
-      function req(){ if(!ticking){ ticking=true; requestAnimationFrame(render); } }
-      window.addEventListener('scroll',function(){ var r=sec.getBoundingClientRect(),vh=innerHeight;
-        prog=Math.max(-1,Math.min(1,(vh-(r.top+r.height/2))/(vh+r.height/2))); req(); },{passive:true});
-      window.addEventListener('mousemove',function(e){ mx=(e.clientX/innerWidth-.5); my=(e.clientY/innerHeight-.5); req(); },{passive:true});
-      render();
+    var els=[].slice.call(document.querySelectorAll('[data-count]'));
+    if(!els.length) return;
+    /* Webフォント読込前に測るとフォールバック書体の幅（実測+9.4px）を予約してしまい、
+       着地時に縮んで跳ねる。fonts.ready を待ってから初期化する */
+    if(document.fonts && document.fonts.ready){ document.fonts.ready.then(init); } else { init(); }
+    function init(){
+    var target=parseInt(els[0].getAttribute('data-count'),10)||0;
+    var done=false;
+    function paint(v){ var t=String(v); for(var i=0;i<els.length;i++) els[i].textContent=t; }
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){ paint(target); return; }
+    /* 確定値を出したままの実幅を予約してから0に戻す。
+       ch は letter-spacing を含まず実測で 3ch < 実幅 だったため、着地時に跳ねる */
+    for(var k=0;k<els.length;k++) els[k].style.minWidth=els[k].getBoundingClientRect().width+'px';
+    paint(0);
+    function run(){
+      if(done) return; done=true;
+      var dur=1600, t0=performance.now();
+      (function step(now){
+        var p=Math.min(1,(now-t0)/dur);
+        var e=1-Math.pow(1-p,4);            /* power4.out ＝ 終盤で静かに着地 */
+        paint(Math.round(target*e));
+        if(p<1) requestAnimationFrame(step);
+        else { paint(target); for(var k=0;k<els.length;k++) els[k].style.minWidth=''; }  /* 予約を解除＝以後のリサイズに追従 */
+      })(t0);
+    }
+    if(!('IntersectionObserver' in window)){ run(); return; }
+    var io=new IntersectionObserver(function(en){
+      en.forEach(function(x){ if(x.isIntersecting){ run(); io.disconnect(); } });
+    },{threshold:.35});
+    io.observe(document.querySelector('.tr__num--sumi')||els[0]);
     }
   })();
-
   /* --- 信条（散らしコラージュ）: リビール＋パララックス --- */
   (function(){
     var revealEls=document.querySelectorAll('.heart .ph, .heart .reveal-up, .heart .heart__close');
@@ -3408,9 +3401,6 @@
       el.textContent=pre+(comma?n.toLocaleString('ja-JP'):String(n))+suf;
     }});
   }
-  ScrollTrigger.create({trigger:'#auth .stats',start:'top 88%',once:true,
-    onEnter:function(){ [].slice.call(d.querySelectorAll('#auth .stat .n')).forEach(function(el,i){
-      gsap.delayedCall(i*.12,function(){ countUp(el,1.4); }); }); }});
   ScrollTrigger.create({trigger:'#lots .lt-facts',start:'top 88%',once:true,
     onEnter:function(){ [].slice.call(d.querySelectorAll('#lots .lt-fact .n')).forEach(function(el,i){
       gsap.delayedCall(.45+i*.14,function(){ countUp(el,1.5); }); }); }});
