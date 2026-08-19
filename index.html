@@ -343,7 +343,8 @@
   .art--swXL{width:clamp(170px,19vw,300px);top:calc(env(safe-area-inset-top) + clamp(20px,3.6vh,48px));
     right:clamp(16px,6vw,110px)}
   /* 静かな幕: 深紅トーン・オン・トーン＋中央図版 */
-  .fvs__scene--eq.is-quiet{background:var(--beni-d)}
+  .fvs__scene--eq.is-quiet{background:linear-gradient(rgba(83,8,13,.46),rgba(83,8,13,.46)),
+    url("assets/std/page_beni.webp") center/cover var(--beni-d)}  /* 単色塗りだと紙が切れる */
   .is-quiet .fvs__media,.fvs__scene--eq.is-right.is-quiet .fvs__media{left:50%;right:auto;top:44%;
     transform:translate(-50%,-50%);width:min(46vw,780px)}
   .is-quiet .fvs__eqtxt,.fvs__scene--eq.is-right.is-quiet .fvs__eqtxt{left:50%;right:auto;top:auto;
