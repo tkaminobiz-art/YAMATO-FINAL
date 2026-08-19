@@ -74,7 +74,8 @@
   html.fvs-app .fvs{height:100vh;height:100svh;overflow:hidden}
   .fvs__scene{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;
     overflow:hidden;padding:calc(env(safe-area-inset-top) + 56px) var(--mx) calc(env(safe-area-inset-bottom) + 72px)}
-  html.fvs-app .fvs__scene{position:absolute;inset:0;min-height:0}
+  html.fvs-app .fvs__scene{position:absolute;inset:0;min-height:0;
+    box-shadow:0 -26px 64px rgba(24,4,6,.42)}
   html.fvs-static .fvs__dots,html.fvs-static .fvs__count,html.fvs-static .fvs__hint{display:none}
 
   /* ============ 紙の幕（案B） ============ */
@@ -216,7 +217,7 @@
   .fvs__scene--eq::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
     background:radial-gradient(118% 92% at 50% 44%,transparent 52%,rgba(84,8,12,.3) 100%)}
   .fvs__media{position:absolute;left:var(--mx);top:50%;transform:translateY(-50%);
-    width:min(56vw,980px);aspect-ratio:3/2;z-index:2;background:#1c0f0f;
+    width:min(56vw,980px);aspect-ratio:3/2;z-index:2;background:#1c0f0f;overflow:hidden;
     border:clamp(10px,1.4vw,20px) solid #F6F2E8;outline:1px solid rgba(241,213,125,.45);
     box-shadow:0 30px 90px rgba(60,5,8,.55)}
   .fvs__media picture{position:absolute;inset:0}
@@ -627,8 +628,8 @@
 
   var i=0, animating=false, released=false, releasedAt=0;
 
-  gsap.set(scenes,{autoAlpha:0});
-  gsap.set(scenes[0],{autoAlpha:1});
+  gsap.set(scenes,{autoAlpha:0,zIndex:0});
+  gsap.set(scenes[0],{autoAlpha:1,zIndex:1});
   sync();
   introIn(scenes[0]);
 
@@ -638,10 +639,14 @@
     root.setAttribute('data-fvstheme', scenes[i].getAttribute('data-theme')||'dark');
   }
   function introIn(sc){
+    /* 紙に刷られた内容として、頁が着地する頃に墨が定着する程度の動き */
     var parts=sc.querySelectorAll('[data-l]');
-    gsap.fromTo(parts,{y:34,autoAlpha:0},{y:0,autoAlpha:1,duration:.9,stagger:.07,ease:'power3.out',delay:.1,overwrite:'auto'});
-    var m=sc.querySelector('.fvs__media');
-    if(m) gsap.fromTo(m,{scale:1.05},{scale:1,duration:1.4,ease:'power2.out',overwrite:'auto'});
+    gsap.fromTo(parts,{y:12,autoAlpha:0},{y:0,autoAlpha:1,duration:.75,stagger:.055,
+      ease:'power2.out',delay:.22,overwrite:'auto'});
+    /* 図版は枠の内側で微速。枠(.fvs__media)のCSS transformには触らない。
+       表紙は印刷物として動かさない（拡大は解像度も落とす） */
+    var im=sc.querySelector('.fvs__media img');
+    if(im) gsap.fromTo(im,{scale:1.045},{scale:1,duration:1.8,ease:'power2.out',overwrite:'auto'});
     if(sc.id==='s03') countdown();
   }
   /* 幕D: 150万円→0円（v4のカウントダウンを時間駆動で再現） */
@@ -655,17 +660,30 @@
       un.textContent=(v===0?'円':'万円');
     }});
   }
+  /* 頁を繰る: 溶かさず「重ねる」。次の紙が下から乗り、下の紙は僅かに退く */
+  var TURN=1.05, TURN_EASE='power4.out', RECEDE='-6%';
   function go(n){
     n=Math.max(0,Math.min(N-1,n));
     if(n===i || animating) return;
     animating=true;
-    var cur=scenes[i], nxt=scenes[n], dir=n>i?1:-1;
+    var cur=scenes[i], nxt=scenes[n], fwd=n>i;
     i=n; sync();
-    gsap.timeline({onComplete:function(){ animating=false; }})
-      .set(nxt,{autoAlpha:1},0)
-      .fromTo(nxt,{y:26*dir},{y:0,duration:.85,ease:'power3.out'},0)
-      .to(cur,{autoAlpha:0,duration:.5,ease:'power1.inOut'},0)
-      .set(cur,{y:0});
+    var tl=gsap.timeline({onComplete:function(){
+      gsap.set(cur,{autoAlpha:0,y:'0%',zIndex:0});
+      gsap.set(nxt,{zIndex:1});
+      animating=false;
+    }});
+    if(fwd){
+      gsap.set(nxt,{autoAlpha:1,zIndex:2,y:'100%'});
+      gsap.set(cur,{zIndex:1});
+      tl.to(nxt,{y:'0%',duration:TURN,ease:TURN_EASE},0)
+        .to(cur,{y:RECEDE,duration:TURN,ease:TURN_EASE},0);
+    }else{
+      gsap.set(nxt,{autoAlpha:1,zIndex:1,y:RECEDE});
+      gsap.set(cur,{zIndex:2});
+      tl.to(cur,{y:'100%',duration:TURN,ease:TURN_EASE},0)
+        .to(nxt,{y:'0%',duration:TURN,ease:TURN_EASE},0);
+    }
     introIn(nxt);
   }
   function next(){ if(animating) return; if(i>=N-1){ release(); return; } go(i+1); }
