@@ -30,21 +30,21 @@
     padding:clamp(20px,4vw,56px) clamp(16px,4vw,56px) 96px}
   .head{max-width:1100px;margin:0 auto clamp(28px,5vh,52px)}
   .head h1{font-size:clamp(1.25rem,1rem + 1.4vw,1.9rem);font-weight:500;letter-spacing:.12em}
-  .head p{margin-top:10px;font-size:clamp(.875rem,.85rem+.2vw,1rem);color:#6B6154;max-width:40em}
+  .head p{margin-top:10px;font-size:clamp(.875rem,.85rem + .2vw,1rem);color:#6B6154;max-width:40em}
   .unit{max-width:1100px;margin:0 auto clamp(40px,7vh,72px)}
   .unit h2{font-size:clamp(1rem,.9rem + .6vw,1.25rem);font-weight:500;letter-spacing:.1em;margin-bottom:6px}
-  .unit .note{font-size:clamp(.8rem,.78rem+.15vw,.9rem);color:#6B6154;margin-bottom:14px;max-width:44em}
+  .unit .note{font-size:clamp(.8rem,.78rem + .15vw,.9rem);color:#6B6154;margin-bottom:14px;max-width:44em}
   .stage{position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;
     box-shadow:0 10px 40px rgba(30,24,14,.14)}
   @media (max-width:700px){.stage{aspect-ratio:3/4}}
   .stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 
   /* ---- 共通の文字部品 ---- */
-  .eyebrow{font-family:var(--fg);font-weight:400;font-size:clamp(.72rem,.68rem+.3vw,.9rem);
+  .eyebrow{font-family:var(--fg);font-weight:400;font-size:clamp(.72rem,.68rem + .3vw,.9rem);
     letter-spacing:.3em;color:var(--gold)}
   .line{font-family:var(--fg);font-weight:500;letter-spacing:.1em;line-height:1.7;
     font-size:clamp(1.15rem,.7rem + 2.6vw,2.6rem)}
-  .chip{display:inline-block;font-size:clamp(.66rem,.62rem+.2vw,.78rem);letter-spacing:.22em;color:var(--gold2);
+  .chip{display:inline-block;font-size:clamp(.66rem,.62rem + .2vw,.78rem);letter-spacing:.22em;color:var(--gold2);
     border:1px solid rgba(201,162,75,.65);padding:4px 12px;border-radius:2px}
 
   /* ============ A 夜の劇場 ============ */
@@ -57,7 +57,7 @@
   .A .in{position:absolute;inset:0;z-index:3;display:grid;place-items:center;text-align:center;color:var(--cream);padding:6%}
   .A .rule{width:56px;height:1px;background:var(--gold);margin:14px auto}
   .A .act{position:absolute;top:5%;right:5%;z-index:3;font-family:var(--fn);font-weight:200;color:var(--cream2);
-    font-size:clamp(.8rem,.75rem+.3vw,1rem);letter-spacing:.24em}
+    font-size:clamp(.8rem,.75rem + .3vw,1rem);letter-spacing:.24em}
 
   /* ============ B 紙と金 ============ */
   .B{background:var(--paper)}
@@ -72,14 +72,14 @@
   .B .eyebrow{color:#8A6D4B}
   .B .line{color:#241E16}
   .B .kin{width:64px;height:1px;background:var(--gold);margin:16px 0}
-  .B .lead{font-size:clamp(.8rem,.76rem+.3vw,1rem);letter-spacing:.1em;color:#5C5346}
+  .B .lead{font-size:clamp(.8rem,.76rem + .3vw,1rem);letter-spacing:.1em;color:#5C5346}
   @media (max-width:700px){.B .in{padding:8% 30% 8% 7%}}
 
   /* ============ C 引き算 ============ */
   .C .scrim{position:absolute;inset:0;background:linear-gradient(200deg,rgba(12,10,7,.05) 40%,rgba(12,10,7,.62) 100%)}
   .C .in{position:absolute;left:6%;bottom:9%;color:var(--cream)}
   .C .line{font-weight:300;letter-spacing:.14em;font-size:clamp(1rem,.7rem + 1.6vw,1.7rem)}
-  .C .sub{margin-top:8px;font-size:clamp(.72rem,.68rem+.2vw,.85rem);letter-spacing:.3em;color:var(--cream2)}
+  .C .sub{margin-top:8px;font-size:clamp(.72rem,.68rem + .2vw,.85rem);letter-spacing:.3em;color:var(--cream2)}
 
   /* ============ D golden連続＋ガラス ============ */
   .D .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,10,7,.2),rgba(12,10,7,.45))}
@@ -96,14 +96,14 @@
     display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:5% 0}
   .E .band::after{content:"";position:absolute;top:0;bottom:0;right:0;width:1px;background:rgba(201,162,75,.5)}
   .E .sho{writing-mode:vertical-rl;font-family:var(--fm);font-weight:600;color:#241E16;
-    font-size:clamp(.9rem,.8rem+.6vw,1.3rem);letter-spacing:.3em}
-  .E .num{font-family:var(--fn);font-weight:200;color:#8A6D4B;font-size:clamp(.78rem,.74rem+.2vw,.9rem);letter-spacing:.2em}
+    font-size:clamp(.9rem,.8rem + .6vw,1.3rem);letter-spacing:.3em}
+  .E .num{font-family:var(--fn);font-weight:200;color:#8A6D4B;font-size:clamp(.78rem,.74rem + .2vw,.9rem);letter-spacing:.2em}
   .E .ph{position:absolute;inset:0 0 0 17%}
   .E .ph img{opacity:.9}
   .E .scrim{position:absolute;inset:0 0 0 17%;background:linear-gradient(190deg,rgba(12,10,7,.1),rgba(12,10,7,.6))}
   .E .in{position:absolute;left:24%;bottom:10%;color:var(--cream);z-index:2}
 
-  .cap{margin-top:12px;font-size:clamp(.8rem,.78rem+.15vw,.9rem);color:#6B6154;max-width:46em}
+  .cap{margin-top:12px;font-size:clamp(.8rem,.78rem + .15vw,.9rem);color:#6B6154;max-width:46em}
   .cap b{color:#241E16;font-weight:500}
 </style>
 </head>

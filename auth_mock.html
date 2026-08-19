@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>実績セクション図面（auth_mock）｜やまと不動産</title>
+<!--
+  ============================================================
+  実績セクション 図面 2026-08-19
+  中心アイデア: 770を「言う」のをやめて「見せる」。
+  自社ロゴ(家が連なる形)を金の小紋として770個敷き、その上に
+  770を空押し(エンボス)で置く。数字が風景になる。
+  A=整列の面 / B=遠近の面 の2案を並べて比較する図面。
+  ============================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Shippori+Mincho+B1:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
+<style>
+  :root{
+    --paper:#F4F1EA; --paper2:#EDE8DD; --sumi:#241E16; --sumi2:#5C5346; --sumi3:#8A8070;
+    --gold:#C9A24B; --gold2:#B08A3C; --foil1:#F1D57D; --foil2:#A9822F;
+    --shu:#BD1B21; --amber:#C4851F;
+    --fg:"Zen Kaku Gothic New",sans-serif;
+    --fn:"Inter",sans-serif;
+    --fm:"YakuHanMP","Shippori Mincho B1",serif;
+    --mx:clamp(22px,5vw,72px);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#2A2620;color:var(--sumi);font-family:var(--fg);line-height:1.9;
+    -webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  .lbl{color:#C9C0AE;font-size:.8rem;letter-spacing:.2em;padding:22px var(--mx) 10px}
+  .lbl b{color:#F1D57D;font-weight:500}
+
+  /* ============ 実績の頁（共通） ============ */
+  .rec{position:relative;overflow:hidden;padding:clamp(70px,9vh,110px) var(--mx) clamp(60px,8vh,96px);
+    background:url("assets/std/page_kinari.webp") center/cover var(--paper)}
+  .rec::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(120% 100% at 50% 0%,transparent 55%,rgba(122,104,76,.16) 100%)}
+
+  /* 770軒の面 */
+  .field{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    width:min(1500px,104%);pointer-events:none;z-index:1;
+    mix-blend-mode:multiply;opacity:.42}
+  .rec--b .field{top:46%}
+
+  .rec__in{position:relative;z-index:2;width:min(1180px,100%);margin:0 auto;text-align:center}
+  .eyebrow{font-family:var(--fn);font-weight:300;font-size:clamp(.9375rem,.9rem + .2vw,1.02rem);
+    letter-spacing:.3em;color:var(--gold2)}
+  .eyebrow span{font-family:var(--fg);letter-spacing:.16em}
+
+  /* 空押しの巨大数字（紙が凹んで斜光を受ける） */
+  .num{margin:clamp(14px,2.4vh,26px) 0 0;display:flex;align-items:baseline;justify-content:center;gap:.14em}
+  .num__n{font-family:var(--fn);font-weight:200;font-size:clamp(6rem,4rem + 16vw,17rem);
+    line-height:.92;letter-spacing:.01em;font-variant-numeric:tabular-nums;
+    color:#E4DCC9;
+    text-shadow:
+      -3px -3px 3px rgba(255,255,255,1),
+      3px 4px 7px rgba(96,78,52,.75),
+      1px 1px 0 rgba(255,255,255,.6);}
+  .num__u{font-family:var(--fm);font-weight:500;font-size:clamp(1.3rem,.9rem + 2vw,2.5rem);
+    letter-spacing:.1em;color:var(--sumi2)}
+  .note{margin-top:6px;font-size:.75rem;letter-spacing:.08em;color:var(--sumi3)}
+
+  .kin{width:clamp(52px,6vw,78px);height:1px;border:0;margin:clamp(26px,4vh,40px) auto;
+    background:linear-gradient(90deg,var(--foil1),var(--foil2))}
+
+  .lead{font-family:var(--fm);font-weight:500;letter-spacing:.06em;line-height:1.8;
+    font-size:clamp(1.5rem,1.1rem + 2vw,2.6rem);color:var(--sumi)}
+  .sub{font-family:var(--fm);font-weight:400;letter-spacing:.06em;line-height:1.95;
+    font-size:clamp(1rem,.94rem + .4vw,1.15rem);color:var(--sumi2);margin-top:clamp(14px,2.4vh,22px)}
+
+  /* 証書の記載事項として組む3数字 */
+  .entries{max-width:620px;margin:clamp(34px,5vh,54px) auto 0;text-align:left}
+  .entry{display:grid;grid-template-columns:max-content 1fr max-content;align-items:baseline;
+    gap:0 14px;padding:clamp(11px,1.8vh,16px) 2px;border-bottom:1px solid rgba(36,30,22,.2)}
+  .entry__k{font-size:.95rem;letter-spacing:.12em;font-weight:500;white-space:nowrap}
+  .entry__d{border-bottom:1px dotted rgba(36,30,22,.34);transform:translateY(-4px)}
+  .entry__v{font-family:var(--fn);font-weight:300;font-size:clamp(1.35rem,1.1rem + 1vw,1.9rem);
+    font-variant-numeric:tabular-nums;color:var(--sumi);justify-self:end}
+  .entry__v small{font-size:.5em;font-family:var(--fg);font-weight:500;letter-spacing:.1em;margin-left:3px;color:var(--sumi2)}
+
+  /* 朱の落款（角印）— 権威の記号は西洋バッジでなく日本の印 */
+  .seal{position:absolute;right:clamp(20px,5vw,72px);bottom:clamp(20px,5vh,60px);z-index:3;
+    width:clamp(64px,7vw,92px);aspect-ratio:1;border:2px solid var(--shu);border-radius:3px;
+    display:grid;place-items:center;transform:rotate(-4deg);opacity:.9}
+  .seal span{writing-mode:vertical-rl;font-family:var(--fm);font-weight:500;
+    font-size:clamp(.72rem,.6rem + .5vw,.9rem);letter-spacing:.22em;color:var(--shu);line-height:1.15}
+
+  /* 導線5枚：同寸の写真サムネ横並び（却下済み）ではなく、目次の体裁 */
+  .index{position:relative;z-index:2;width:min(1180px,100%);margin:clamp(46px,6vh,68px) auto 0;
+    border-top:1px solid rgba(176,138,60,.45);padding-top:clamp(20px,3vh,30px)}
+  .index__h{font-family:var(--fn);font-weight:300;font-size:.8rem;letter-spacing:.28em;
+    color:var(--gold2);text-align:center;margin-bottom:clamp(14px,2.4vh,22px)}
+  .idx{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,1.6vw,22px)}
+  .idx a{text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:8px;
+    padding:12px 6px;border-radius:2px;transition:background .3s}
+  .idx a:hover{background:rgba(176,138,60,.09)}
+  .idx__no{font-family:var(--fn);font-weight:300;font-size:.72rem;letter-spacing:.2em;color:var(--gold2)}
+  .idx__jp{font-family:var(--fm);font-weight:500;font-size:clamp(.95rem,.9rem + .3vw,1.1rem);letter-spacing:.08em}
+  .idx__f{font-size:.78rem;letter-spacing:.04em;color:var(--sumi2);line-height:1.7}
+
+
+  /* ============ 案C: 数字が家でできている ============ */
+  .rec--c .field{display:none}
+  .numC{position:relative;z-index:2;display:flex;align-items:baseline;justify-content:center;gap:.1em;
+    margin:clamp(14px,2.4vh,26px) 0 0}
+  .numC__n{font-family:var(--fn);font-weight:400;font-size:clamp(7rem,4rem + 19vw,20rem);
+    line-height:.88;letter-spacing:-.01em;font-variant-numeric:tabular-nums;
+    background-image:url("assets/std/houses770_tile.png");
+    background-size:clamp(26px,2.4vw,40px) auto;background-position:center;
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    -webkit-text-stroke:1px rgba(176,138,60,.45);
+    filter:drop-shadow(0 2px 3px rgba(112,94,66,.28))}
+  .numC__u{font-family:var(--fm);font-weight:500;font-size:clamp(1.3rem,.9rem + 2vw,2.5rem);
+    letter-spacing:.1em;color:var(--sumi2)}
+  .capC{position:relative;z-index:2;margin-top:10px;font-size:.78rem;letter-spacing:.1em;color:var(--sumi3)}
+  .capC b{color:var(--gold2);font-weight:500}
+
+  @media (max-width:700px){
+    .idx{grid-template-columns:1fr 1fr}
+    .idx a:last-child{grid-column:1/-1}
+    .seal{width:56px;right:16px;bottom:16px}
+    .field{width:150%}
+  }
+</style>
+</head>
+<body>
+
+<p class="lbl">案A ─ <b>整列の面</b>（770軒を均等に敷く。図録・標本の秩序）</p>
+<section class="rec rec--a">
+  <img class="field" src="assets/std/houses770.png" alt="" aria-hidden="true">
+  <div class="rec__in">
+    <p class="eyebrow">TRACK RECORD　<span>創業からの実績</span></p>
+    <p class="num"><span class="num__n">770</span><span class="num__u">棟超</span></p>
+    <p class="note">※2026年7月10日現在</p>
+    <hr class="kin">
+    <p class="lead">選ばれる理由は、価格だけではありません。</p>
+    <p class="sub">創業から、奈良でこれだけの家をつくってきました。<br>設計も施工も、外注せず自社で手がけています。</p>
+    <div class="entries">
+      <div class="entry"><span class="entry__k">自社分譲（保有）</span><span class="entry__d"></span><span class="entry__v">150<small>区画以上</small></span></div>
+      <div class="entry"><span class="entry__k">お客様の声</span><span class="entry__d"></span><span class="entry__v">50<small>組</small></span></div>
+      <div class="entry"><span class="entry__k">創業</span><span class="entry__d"></span><span class="entry__v">15<small>年目</small></span></div>
+    </div>
+  </div>
+  <div class="index">
+    <p class="index__h">RELATED</p>
+    <div class="idx">
+      <a href="works.html"><span class="idx__no">01</span><span class="idx__jp">施工事例</span><span class="idx__f">770棟の設計図</span></a>
+      <a href="model.html"><span class="idx__no">02</span><span class="idx__jp">モデルハウス</span><span class="idx__f">暮らしを見にきませんか</span></a>
+      <a href="voice.html"><span class="idx__no">03</span><span class="idx__jp">お客様の声</span><span class="idx__f">実際に建てた方の声</span></a>
+      <a href="lots.html"><span class="idx__no">04</span><span class="idx__jp">土地・分譲地</span><span class="idx__f">分譲中の区画があります</span></a>
+      <a href="kodawari.html"><span class="idx__no">05</span><span class="idx__jp">標準装備</span><span class="idx__f">地盤改良費は当社負担</span></a>
+    </div>
+  </div>
+  <div class="seal"><span>奈良 実績</span></div>
+</section>
+
+<p class="lbl">案B ─ <b>遠近の面</b>（奥ほど小さく密。ロゴの「連なり」の理屈をそのまま面に）</p>
+<section class="rec rec--b">
+  <img class="field" src="assets/std/houses770_persp.png" alt="" aria-hidden="true">
+  <div class="rec__in">
+    <p class="eyebrow">TRACK RECORD　<span>創業からの実績</span></p>
+    <p class="num"><span class="num__n">770</span><span class="num__u">棟超</span></p>
+    <p class="note">※2026年7月10日現在</p>
+    <hr class="kin">
+    <p class="lead">選ばれる理由は、価格だけではありません。</p>
+    <p class="sub">創業から、奈良でこれだけの家をつくってきました。<br>設計も施工も、外注せず自社で手がけています。</p>
+    <div class="entries">
+      <div class="entry"><span class="entry__k">自社分譲（保有）</span><span class="entry__d"></span><span class="entry__v">150<small>区画以上</small></span></div>
+      <div class="entry"><span class="entry__k">お客様の声</span><span class="entry__d"></span><span class="entry__v">50<small>組</small></span></div>
+      <div class="entry"><span class="entry__k">創業</span><span class="entry__d"></span><span class="entry__v">15<small>年目</small></span></div>
+    </div>
+  </div>
+  <div class="index">
+    <p class="index__h">RELATED</p>
+    <div class="idx">
+      <a href="works.html"><span class="idx__no">01</span><span class="idx__jp">施工事例</span><span class="idx__f">770棟の設計図</span></a>
+      <a href="model.html"><span class="idx__no">02</span><span class="idx__jp">モデルハウス</span><span class="idx__f">暮らしを見にきませんか</span></a>
+      <a href="voice.html"><span class="idx__no">03</span><span class="idx__jp">お客様の声</span><span class="idx__f">実際に建てた方の声</span></a>
+      <a href="lots.html"><span class="idx__no">04</span><span class="idx__jp">土地・分譲地</span><span class="idx__f">分譲中の区画があります</span></a>
+      <a href="kodawari.html"><span class="idx__no">05</span><span class="idx__jp">標準装備</span><span class="idx__f">地盤改良費は当社負担</span></a>
+    </div>
+  </div>
+  <div class="seal"><span>奈良 実績</span></div>
+</section>
+
+<p class="lbl">案C ─ <b>数字が家でできている</b>（770の字面そのものを770軒で充填。数字＝風景）</p>
+<section class="rec rec--c">
+  <img class="field" src="assets/std/houses770_persp.png" alt="" aria-hidden="true">
+  <div class="rec__in">
+    <p class="eyebrow">TRACK RECORD　<span>創業からの実績</span></p>
+    <p class="numC"><span class="numC__n">770</span><span class="numC__u">棟超</span></p>
+    <p class="capC">※2026年7月10日現在　／　<b>この数字は、実際に建てた770軒でできています</b></p>
+    <hr class="kin">
+    <p class="lead">選ばれる理由は、価格だけではありません。</p>
+    <p class="sub">創業から、奈良でこれだけの家をつくってきました。<br>設計も施工も、外注せず自社で手がけています。</p>
+    <div class="entries">
+      <div class="entry"><span class="entry__k">自社分譲（保有）</span><span class="entry__d"></span><span class="entry__v">150<small>区画以上</small></span></div>
+      <div class="entry"><span class="entry__k">お客様の声</span><span class="entry__d"></span><span class="entry__v">50<small>組</small></span></div>
+      <div class="entry"><span class="entry__k">創業</span><span class="entry__d"></span><span class="entry__v">15<small>年目</small></span></div>
+    </div>
+  </div>
+  <div class="index">
+    <p class="index__h">RELATED</p>
+    <div class="idx">
+      <a href="works.html"><span class="idx__no">01</span><span class="idx__jp">施工事例</span><span class="idx__f">770棟の設計図</span></a>
+      <a href="model.html"><span class="idx__no">02</span><span class="idx__jp">モデルハウス</span><span class="idx__f">暮らしを見にきませんか</span></a>
+      <a href="voice.html"><span class="idx__no">03</span><span class="idx__jp">お客様の声</span><span class="idx__f">実際に建てた方の声</span></a>
+      <a href="lots.html"><span class="idx__no">04</span><span class="idx__jp">土地・分譲地</span><span class="idx__f">分譲中の区画があります</span></a>
+      <a href="kodawari.html"><span class="idx__no">05</span><span class="idx__jp">標準装備</span><span class="idx__f">地盤改良費は当社負担</span></a>
+    </div>
+  </div>
+  <div class="seal"><span>奈良 実績</span></div>
+</section>
+
+
+</body>
+</html>
