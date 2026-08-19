@@ -156,11 +156,21 @@
   .fvs__scene--beni .act::after{background:linear-gradient(180deg,rgba(241,213,125,.7),rgba(241,213,125,0))}
   .finwrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;
     gap:clamp(18px,3.2vh,32px)}
-  .encl--fin{width:min(600px,92vw,74svh)}
+  .encl--fin{width:min(690px,92vw,70svh);gap:clamp(14px,2.6vh,26px)}
+  .fvs__scene--climax{padding-top:calc(env(safe-area-inset-top) + 40px);
+    padding-bottom:calc(env(safe-area-inset-bottom) + 44px)}
+  .fincard{position:relative;z-index:2;background:url("assets/std/page_kinari.webp") center/cover var(--paper);
+    padding:clamp(16px,2.6vh,24px) clamp(18px,3.4vw,40px) clamp(6px,1.4vh,14px);
+    border:1px solid rgba(176,138,60,.4);box-shadow:0 22px 64px rgba(52,3,6,.55)}
+  .fincard .open__cta{margin-top:0}
+  .encl--fin .fvs__eyebrow{margin-bottom:clamp(4px,1vh,10px)}
+  .encl--fin{padding:clamp(18px,4vw,52px)}
+  .encl--fin .hline{font-size:clamp(1.45rem,1.1rem + 1.8vw,2.2rem)}
+  .encl--fin .rule-foil{margin:clamp(2px,.6vh,8px) auto}
   .fvs__scene--beni .climax__sub{color:rgba(247,243,234,.85)}
   @media (max-width:700px){
     .foil--tl,.foil--br{display:none}
-    .encl--fin{width:min(94vw,80svh)}
+    .encl--fin{width:min(94vw,78svh)}
     .encl--fin .hline{font-size:clamp(1.15rem,1rem + 1vw,1.5rem);letter-spacing:.04em;line-height:1.75}
     .encl--fin .open__sub{font-size:.9rem;line-height:1.85}
     .encl .fvs__eyebrow{font-size:.8rem;letter-spacing:.2em}
@@ -271,18 +281,19 @@
   .open__sub{margin-top:clamp(12px,2vh,18px);font-size:clamp(.95rem,.9rem + .3vw,1.05rem);
     letter-spacing:.1em;color:var(--cream2)}
   .open__cta{margin-top:clamp(16px,2.8vh,26px);display:flex;gap:12px;flex-wrap:wrap}
-  .btn--ghostD{border:1px solid rgba(243,238,227,.45);color:var(--cream)}
-  .btn--ghostD:hover{border-color:var(--gold)}
+  .btn--ghost{border:1px solid rgba(36,30,22,.28);color:var(--sumi)}
+  .btn--ghost:hover{border-color:var(--gold2);color:var(--gold2)}
   @media (max-width:700px){
     .open__cta{gap:8px}
     .open__cta .btn{display:inline-block;margin:0;padding:12px 18px;font-size:.85rem}
   }
 
   /* ============ ボタン ============ */
-  .btn{display:inline-block;font-size:.9rem;letter-spacing:.2em;text-decoration:none;
-    padding:14px 34px;border-radius:2px;margin:0 8px 10px}
-  .btn--fill{background:var(--amber);color:#fff}
-  .btn--fill:hover{background:var(--amber-d)}
+  .btn{display:inline-block;font-size:.92rem;letter-spacing:.22em;text-decoration:none;
+    padding:17px 42px;border-radius:2px;margin:0 8px 10px;
+    transition:background .35s ease,border-color .35s ease,color .35s ease,box-shadow .35s ease}
+  .btn--fill{background:var(--amber);color:#fff;box-shadow:0 6px 18px rgba(122,84,18,.28)}
+  .btn--fill:hover{background:var(--amber-d);box-shadow:0 8px 22px rgba(122,84,18,.36)}
 
   /* ============ 操作UI（テーマ連動） ============ */
   .fvs__dots{position:fixed;right:clamp(2px,1vw,14px);top:50%;transform:translateY(-50%);z-index:60;
@@ -543,14 +554,16 @@
     <div class="finwrap">
       <div class="encl encl--fin" data-l>
         <p class="fvs__eyebrow">花鳥風月 ── やまとの家</p>
-        <p class="hline hline--sm">大手で諦めた家を、<br class="spbr">当社と一緒に叶えましょう。</p>
+        <p class="hline hline--sm">大手で諦めた家を、<br>当社と一緒に叶えましょう。</p>
         <hr class="rule-foil">
-        <p class="open__sub climax__sub">自由設計と、高水準な標準装備。<br class="spbr">夢を、あきらめないでください。</p>
+        <p class="hlead climax__sub">自由設計と、高水準な標準装備。<br>夢を、あきらめないでください。</p>
       </div>
-      <p class="open__cta climax__cta" data-l>
-        <a class="btn btn--fill" href="contact.html?type=reserve">モデルハウスを予約する</a>
-        <a class="btn btn--ghostD" href="contact.html?type=docs">資料を請求する</a>
-      </p>
+      <div class="fincard" data-l>
+        <p class="open__cta climax__cta">
+          <a class="btn btn--fill" href="contact.html?type=reserve">モデルハウスを予約する</a>
+          <a class="btn btn--ghost" href="contact.html?type=docs">資料を請求する</a>
+        </p>
+      </div>
     </div>
   </article>
 
