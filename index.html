@@ -3779,6 +3779,23 @@
   /* ---------- 11) 計測の作法：フォント/読込完了後にトリガー位置を再計測 ---------- */
   if(d.fonts&&d.fonts.ready) d.fonts.ready.then(function(){ ScrollTrigger.refresh(); });
   window.addEventListener('load',function(){ ScrollTrigger.refresh(); });
+
+  /* --- <details> の開閉でページ高が変わったら ScrollTrigger を測り直す ---
+     これが無いと、起動時に固定したピクセル座標のまま pin が発火する。
+     実測（2026-08-20 本番）: #lineup 章末の「詳しく見る」を開くと
+     ページが +2,293px 伸びて #iju は 8,880 → 11,173 へ動くが、
+     iju の pin は start=8,880 のまま。結果、まだ #lineup の中にいる地点で
+     pin が発火し、口コミを飛ばして iju の途中へ飛ぶ。
+     refresh は開閉が終わってから呼ぶ（アニメ中に呼ぶと途中の高さを拾う）。 */
+  (function(){
+    var raf=0;
+    function later(){ if(raf) cancelAnimationFrame(raf);
+      raf=requestAnimationFrame(function(){ raf=requestAnimationFrame(function(){
+        if(window.ScrollTrigger&&ScrollTrigger.refresh) ScrollTrigger.refresh(); }); }); }
+    d.querySelectorAll('details').forEach(function(dt){
+      dt.addEventListener('toggle', later);
+    });
+  })();
 })();
 </script>
 </body>
