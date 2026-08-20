@@ -41,7 +41,12 @@
     --sumi:#241E16; --sumi2:#5C5346; --shu:#BD1B21; --foil1:#F1D57D;
     --gx:clamp(20px, 5.3vw, 76px);
     --fs:clamp(15px, 13.2px + 0.45vw, 18px);
-    --col:29.30em;                      /* 27字。em は字間を含まないので 27×1.085 */
+    /* 段幅。em は字間を含まないので 字数×1.085 を書く。
+       この em は .cr__in の継承font-size(16px)基準なので、18pxの本文では実測が下振れする。
+       実測34.1字/行 ＝ JIS X 4051 参考値34字とほぼ一致、WCAG AAA 上限40字の内側。
+       実サイト実測（自前で12ページ計測）: 楓工務店58.0 / いがみ37.8 / 群言堂35.8 /
+       ハウスイズム35.1 / 安成35.0 / 福光屋31.3 / 根津30.9 / 星のや24.0 / 中川政七20.4 …中央値31字 */
+    --col:43.40em;
     --fm:"YakuHanMP","Shippori Mincho B1",serif;
     --gap-in:1.3em; --gap-out:2.9em;
     --band-top:clamp(72px,8vw,124px);   /* 額装なので上にも紅の余白を取る */
@@ -52,7 +57,7 @@
     padding:var(--band-top) clamp(24px,7vw,120px) var(--band-bot)}
 
   /* 生成りの手紙 */
-  .cr__sheet{position:relative;width:min(880px,100%);margin:0 auto;
+  .cr__sheet{position:relative;width:min(1100px,100%);margin:0 auto;
     background:url("assets/std/page_kinari_letter_1800.webp") center/cover #F4EEE0;
     padding:clamp(80px,8.5vw,132px) clamp(32px,5vw,86px) clamp(80px,8.5vw,132px);
     /* 影は使わない。実測でアート側の面/線は Herzog 0・SANAA 0・BESS 1・Pace 1・SCAI 2 で、
