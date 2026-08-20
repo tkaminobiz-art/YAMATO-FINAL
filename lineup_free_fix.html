@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>#lineup 折りたたみの中 組み直し図面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Shippori+Mincho+B1:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:#E8E4DA;font-family:"Zen Kaku Gothic New",sans-serif;font-feature-settings:"palt"}
+  .mk__lab{max-width:1440px;margin:0 auto;padding:28px 22px 10px;font-size:15px;letter-spacing:.1em;color:#6E655A}
+  .mk{max-width:1440px;margin:0 auto}
+
+  /* ══ index.html にそのまま移せる ══ */
+  .lineup{position:relative;isolation:isolate;overflow:hidden;padding:0;
+    --lu-paper:#F4F1EA; --lu-sumi:#241E16; --lu-sumi2:#5C5346; --lu-sumi3:#8A8070;
+    --lu-fm:"Shippori Mincho B1","Hiragino Mincho ProN",serif;
+    --lu-fg:"Zen Kaku Gothic New",sans-serif;
+    --lu-fn:"Inter",sans-serif;
+    --lu-gx:clamp(22px,5vw,88px);
+    --lu-ground:linear-gradient(rgba(244,241,234,.62),rgba(244,241,234,.62)),
+      url("assets/std/page_kinari_letter_2400.webp");
+    color:var(--lu-sumi);background:var(--lu-paper);font-family:var(--lu-fg);font-weight:300}
+  .lu-cl{position:relative;padding:clamp(56px,7vw,96px) var(--lu-gx) clamp(64px,8vw,110px);
+    background:var(--lu-ground) center/cover var(--lu-paper);background-size:auto,62% auto}
+  .lu-cl__in{max-width:1180px;margin:0 auto}
+
+  .lu-doors{position:relative;margin:clamp(30px,3.6vw,44px) 0 0;
+    border-top:1px solid rgba(36,30,22,.14);border-bottom:1px solid rgba(36,30,22,.14)}
+  .lu-more{border:0}
+  .lu-more summary{list-style:none;cursor:pointer;display:flex;align-items:center;
+    justify-content:flex-start;gap:12px;min-height:44px;
+    padding:clamp(18px,2.4vw,26px) 4px;padding-right:clamp(200px,20vw,300px);
+    font-family:var(--lu-fg);font-weight:400;font-size:clamp(.98rem,.94rem + .35vw,1.14rem);
+    letter-spacing:.04em;line-height:1.8;color:var(--lu-sumi);transition:color .25s}
+  .lu-more summary::-webkit-details-marker{display:none}
+  .lu-more summary:hover{color:#2E4600}
+  .lu-more summary::after{content:"";width:11px;height:11px;flex:0 0 auto;align-self:center;
+    border-right:1.5px solid #8D857A;border-bottom:1.5px solid #8D857A;
+    transform:translateY(-3px) rotate(45deg);transition:transform .3s cubic-bezier(.33,1,.68,1)}
+  .lu-more[open] summary::after{transform:translateY(2px) rotate(-135deg)}
+  .lu-more summary .lu-more__close{display:none}
+  .lu-more[open] summary .lu-more__open{display:none}
+  .lu-more[open] summary .lu-more__close{display:inline}
+  .lu-doors__cta{position:absolute;right:4px;top:0;display:inline-flex;align-items:center;
+    min-height:44px;height:calc(clamp(18px,2.4vw,26px) * 2 + 1.8em);
+    font-family:var(--lu-fg);font-weight:400;font-size:.92rem;letter-spacing:.09em;
+    color:var(--lu-sumi);text-decoration:none;white-space:nowrap;
+    box-shadow:inset 0 -1px 0 var(--lu-sumi3)}
+  .lu-doors__cta:hover{box-shadow:inset 0 -1px 0 var(--lu-sumi)}
+  @media (max-width:700px){
+    .lu-more summary{padding-right:4px}
+    .lu-doors__cta{position:static;height:auto;padding:16px 0 20px;
+      border-top:1px solid rgba(36,30,22,.14);width:100%}
+  }
+
+  /* ───── 直したところ ─────
+     ① 46em の左寄せ一列をやめ、対になるものを二列に置いて版面の右半分を使う
+     ② 1〜2行ごとの <p> をやめ、意味の単位で段落にまとめる
+     ③ <br class="pcbr"> を外し、段幅で自然に折る（1行33字）
+     ④ ラベル 12.8px グレー → 明朝 1.14rem。本文より大きくして見出しにする */
+  .lu-more__in{padding:0 4px clamp(28px,3.4vw,40px)}
+  .lu-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+    column-gap:clamp(40px,4.6vw,64px);row-gap:clamp(30px,3.4vw,44px);
+    margin:clamp(26px,3vw,38px) 0 0;padding:clamp(24px,2.8vw,34px) 0 0;
+    border-top:1px solid rgba(36,30,22,.14)}
+  .lu-blk__n{display:block;margin:0 0 6px;font-family:var(--lu-fn);font-weight:400;
+    font-size:.8rem;letter-spacing:.18em;color:var(--lu-sumi3)}
+  .lu-blk__h{margin:0 0 clamp(12px,1.4vw,16px);font-family:var(--lu-fm);font-weight:400;
+    text-wrap:balance;line-break:strict;
+    font-size:clamp(1.04rem,.96rem + .34vw,1.2rem);line-height:1.7;letter-spacing:.08em;
+    color:var(--lu-sumi)}
+  .lu-blk__r{display:block;margin:-8px 0 clamp(12px,1.4vw,16px);
+    font-size:.85rem;line-height:1.8;letter-spacing:.06em;color:var(--lu-sumi3)}
+  .lu-b{margin:0 0 clamp(14px,1.6vw,20px);line-break:strict;word-break:auto-phrase;
+    text-wrap:pretty;
+    font-size:clamp(.95rem,.92rem + .1vw,.99rem);line-height:2.0;letter-spacing:.045em;
+    color:var(--lu-sumi2)}
+  .lu-b:last-child{margin-bottom:0}
+  .lu-b b{font-weight:400;color:var(--lu-sumi)}
+  /* 例示だけは箇条なので改行を残す */
+  .lu-ex{padding-left:1em;box-shadow:inset 2px 0 0 rgba(36,30,22,.14);color:var(--lu-sumi3)}
+  .lu-pair--step .lu-blk{align-self:start}
+  @media (max-width:760px){
+    .lu-pair{grid-template-columns:minmax(0,1fr);row-gap:clamp(26px,3vw,34px)}
+  }
+  @media (prefers-reduced-motion:reduce){ .lu-more summary::after{transition:none} }
+</style>
+</head>
+<body>
+<p class="mk__lab">折りたたみの中だけを組み直した図面です。文字は一字も変えていません。変えたのは段落の切り方と、<code>&lt;br class="pcbr"&gt;</code> を外したことだけです。</p>
+<div class="mk">
+  <section class="lineup"><div class="lu-cl"><div class="lu-cl__in">
+    <div class="lu-doors">
+      <details class="lu-more" open>
+        <summary><span class="lu-more__open">詳しく見る</span><span class="lu-more__close">閉じる</span></summary>
+        <div class="lu-more__in"><div class="lu-pair"><div class="lu-blk"><h3 class="lu-blk__h">変わらないもの</h3><p class="lu-b">家の性能に関わる、構造や断熱。外壁や屋根、そして標準で入る設備。この部分は、最初からきちんと決めています。</p><p class="lu-b">三つのプランで違うのは、基準となる家の広さと、標準設備の内容です。</p><p class="lu-b">見えないところの品質まで含めて、家づくりの土台になる部分は、変えません。</p></div><div class="lu-blk"><h3 class="lu-blk__h">変えられるもの</h3><p class="lu-b">広さは、ご家族に合わせて変えることができます。基準の広さから、<b>1坪あたり64万円〜</b>で広げることができます。この金額には、建物だけでなく、広くなった分の基礎3.3㎡も含まれています。</p><p class="lu-b">必要なものを、必要なぶんだけ。無理に大きくするのではなく、暮らしにちょうどいい広さを一緒に考えていきます。</p></div></div><div class="lu-pair lu-pair--step"><div class="lu-blk"><span class="lu-blk__n">01</span><h3 class="lu-blk__h">敷地を読むところから始めます</h3><p class="lu-b">同じように見える分譲地でも、ひとつとして同じ敷地はありません。隣の建物の位置や高さによって、光の入り方も、風の通り道も、視線が抜ける方向も変わります。</p><p class="lu-b">まずは、その土地をきちんと見ること。その敷地だからこそできる暮らしを考えてから、間取りを描きはじめます。</p></div><div class="lu-blk"><span class="lu-blk__n">02</span><h3 class="lu-blk__h">いまの暮らしも、設計のヒントです</h3><p class="lu-b">「どんな家に住みたいですか？」もちろん、それも大切なことです。でも私たちは、いまのお住まいで感じている不満や、「こうしておけばよかった」ということも伺います。</p><p class="lu-b lu-ex">洗濯がしづらい。<br>収納が足りない。<br>朝、家族が同じ場所に集まってしまう。</p><p class="lu-b">そんな日常の小さな不便の中に、新しい家を良くするヒントがたくさんあります。理想と、いまの暮らし。その両方を一緒に整理しながら、ご家族に合った間取りをつくっていきます。</p></div></div><div class="lu-pair"><div class="lu-blk"><h3 class="lu-blk__h">栗野 佑也</h3><span class="lu-blk__r">KURINO Yuya / 設計士</span><p class="lu-b">家族が違えば、心地いい暮らし方も違います。だからこそ、そのご家族の生活や過ごし方をきちんと知り、そこに合った住まいをご提案したいと思っています。</p><p class="lu-b">家に帰ることが楽しみになる。そこで過ごす時間に、自然と笑顔が増えていく。そんな住まいを、一緒につくれたらと思っています。</p></div><div class="lu-blk"><h3 class="lu-blk__h">岩佐 篤志</h3><span class="lu-blk__r">IWASA Atsushi / 住宅デザイナー</span><p class="lu-b">現場監督や営業設計として、たくさんの家づくりに関わってきました。その経験も活かしながら、見た目だけではなく、暮らしやすさや施工まで考えた住まいをご提案します。</p><p class="lu-b">最初から、上手に希望を伝えなくても大丈夫です。何気ない会話の中から、まだ言葉になっていない「こんな家が好き」を一緒に見つけていけたらと思っています。</p></div></div></div>
+      </details>
+      <a class="lu-doors__cta" href="madori.html#plans">三つの仕様をくらべる　→</a>
+    </div>
+  </div></div></section>
+</div>
+<script>
+(function(){
+  document.querySelectorAll('.lu-more').forEach(function(dt){
+    var sum=dt.querySelector('summary'), ans=dt.querySelector('.lu-more__in');
+    if(!sum||!ans) return;
+    sum.addEventListener('click',function(e){
+      e.preventDefault();
+      if(dt.classList.contains('is-anim')) return;
+      dt.classList.add('is-anim');
+      if(!dt.open){
+        dt.open=true;
+        var h=ans.scrollHeight; ans.style.overflow='hidden';
+        ans.animate([{height:'0px',opacity:0},{height:h+'px',opacity:1}],{duration:340,easing:'cubic-bezier(.25,1,.5,1)'})
+          .onfinish=function(){ ans.style.overflow=''; dt.classList.remove('is-anim'); };
+      } else {
+        var h2=ans.scrollHeight; ans.style.overflow='hidden';
+        ans.animate([{height:h2+'px',opacity:1},{height:'0px',opacity:0}],{duration:280,easing:'cubic-bezier(.5,0,.75,0)'})
+          .onfinish=function(){ ans.style.overflow=''; dt.open=false; dt.classList.remove('is-anim'); };
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
