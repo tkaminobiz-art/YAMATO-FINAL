@@ -157,7 +157,7 @@
     overflow:hidden;padding:calc(env(safe-area-inset-top) + 56px) var(--mx) calc(env(safe-area-inset-bottom) + 72px)}
   html.fvs-app .fvs__scene{position:absolute;inset:0;min-height:0;
     box-shadow:0 -26px 64px rgba(24,4,6,.42)}
-  html.fvs-static .fvs__dots,html.fvs-static .fvs__count,html.fvs-static .fvs__hint{display:none}
+  html.fvs-static .fvs__dots,html.fvs-static .fvs__count,html.fvs-static .fvs__hint,html.fvs-static .fvs__skip{display:none}
 
   /* ============ 紙の幕（案B） ============ */
   .fvs__scene--paper{background:url("assets/std/page_kinari.webp") center/cover var(--paper);color:var(--sumi)}
@@ -386,7 +386,7 @@
   /* ============ 操作UI（テーマ連動） ============ */
   .fvs__dots{position:fixed;right:clamp(2px,1vw,14px);top:50%;transform:translateY(-50%);z-index:60;
     display:flex;flex-direction:column;gap:0}
-  html.fvs-released .fvs__dots,html.fvs-released .fvs__count,html.fvs-released .fvs__hint{opacity:0;pointer-events:none;transition:opacity .3s}
+  html.fvs-released .fvs__dots,html.fvs-released .fvs__count,html.fvs-released .fvs__hint,html.fvs-released .fvs__skip{opacity:0;pointer-events:none;transition:opacity .3s}
   .fvs__dots button{appearance:none;border:0;background:none;cursor:pointer;padding:0;line-height:0;
     width:44px;height:44px;display:grid;place-items:center}
   .fvs__dots button::before{content:"";display:block;width:7px;height:7px;border-radius:50%;
@@ -398,6 +398,34 @@
   .fvs__count{position:fixed;right:clamp(14px,2.2vw,30px);top:calc(env(safe-area-inset-top) + clamp(14px,2.6vh,24px));z-index:60;
     font-family:var(--fn);font-weight:300;font-size:.9rem;letter-spacing:.24em;color:var(--cream2)}
   html[data-fvstheme="paper"] .fvs__count{color:var(--sumi2)}
+  /* SKIP＝最後の幕（ご案内＋CTA）へ飛ぶ。FVを抜けさせるのではなく最終幕へ送るので、
+     急いでいる人もCTAは見る。位置は左下＝カウンタ(右上)・ドット(右中央)・
+     ヒント(下中央)のいずれとも当たらない唯一の空き。SPでも親指が届く */
+  .fvs__skip{position:fixed;left:clamp(14px,2.2vw,30px);
+    bottom:calc(env(safe-area-inset-bottom) + clamp(12px,2.6vh,22px));z-index:60;
+    appearance:none;border:0;background:none;cursor:pointer;padding:0 6px;
+    font-family:var(--fn);font-weight:300;font-size:.9rem;letter-spacing:.24em;
+    color:var(--cream2);min-height:44px;display:inline-flex;align-items:center;gap:10px;
+    transition:color .3s,opacity .3s}
+  .fvs__skip::after{content:"";width:18px;height:1px;background:currentColor;opacity:.65;
+    transition:width .3s}
+  .fvs__skip:hover::after{width:28px}
+  html[data-fvstheme="paper"] .fvs__skip{color:var(--sumi2)}
+  .fvs__skip[hidden]{display:none}
+  .fvs__skip:focus-visible{outline:1px solid var(--gold);outline-offset:4px}
+  /* ヒントは幅を詰める。SPでは「スクロール」しないので文言としても正しく、
+     かつ左下のSKIPと重ならなくなる（実測: 併記のままだとSP 390pxで重なった） */
+  .fvs__hint-t{display:none}
+  @media (max-width:760px){
+    .fvs__hint-w{display:none}
+    .fvs__hint-t{display:inline}
+  }
+  /* 360px以下では罫を落として幅を詰める（実測: 320pxで残していると
+     中央のヒントと16px重なった）。タップ領域の44pxは維持する */
+  @media (max-width:360px){
+    .fvs__skip{gap:0}
+    .fvs__skip::after{display:none}
+  }
   .fvs__hint{position:fixed;left:50%;bottom:clamp(12px,2.6vh,22px);transform:translateX(-50%);z-index:60;
     font-size:1rem;letter-spacing:.18em;color:var(--cream2);display:flex;align-items:center;gap:10px;white-space:nowrap}
   html[data-fvstheme="paper"] .fvs__hint{color:var(--sumi2)}
@@ -1256,7 +1284,8 @@
 
   <nav class="fvs__dots" aria-label="シーン移動"></nav>
   <p class="fvs__count" aria-hidden="true"><span id="cNow">01</span> / <span id="cAll">13</span></p>
-  <p class="fvs__hint" aria-hidden="true">スクロール／スワイプで次へ</p>
+  <button type="button" class="fvs__skip" id="fvSkip" aria-label="最後のご案内へ進む">SKIP</button>
+  <p class="fvs__hint" aria-hidden="true"><span class="fvs__hint-w">スクロール</span><span class="fvs__hint-t">スワイプ</span>で次へ</p>
 </section>
 
 
@@ -3199,9 +3228,14 @@
   sync();
   introIn(scenes[0]);
 
+  var skipBtn=d.getElementById('fvSkip');
+  if(skipBtn) skipBtn.addEventListener('click',function(){ go(N-1); });
+
   function sync(){
     dots.forEach(function(b,idx){ b.setAttribute('aria-current', idx===i ? 'true':'false'); });
     cNow.textContent=String(i+1).padStart(2,'0');
+    /* 最終幕では行き先が無いので隠す */
+    if(skipBtn) skipBtn.hidden = (i >= N-1);
     root.setAttribute('data-fvstheme', scenes[i].getAttribute('data-theme')||'dark');
   }
   function introIn(sc){
