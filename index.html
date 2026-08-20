@@ -3255,13 +3255,15 @@
   function next(){ if(animating) return; if(i>=N-1){ release(); return; } go(i+1); }
   function prev(){ if(animating) return; go(i-1); }
 
-  function release(){
+  /* noScroll=true: 既に別の場所へ運ばれている場合。#auth へ引き戻さない */
+  function release(noScroll){
     if(released) return;
     released=true; releasedAt=Date.now();
     obs.disable();
     if(lenis) lenis.start();
     if(hdr) hdr.classList.add('is-solid');
     root.classList.add('fvs-released');
+    if(noScroll) return;
     var nx=d.getElementById('auth'); if(nx) nx.scrollIntoView({behavior:'smooth'});
   }
   function reenter(){
@@ -3272,7 +3274,16 @@
     root.classList.remove('fvs-released');
   }
   addEventListener('scroll',function(){
-    if(released && window.scrollY<=0 && Date.now()-releasedAt>800) reenter();
+    if(released){
+      if(window.scrollY<=0 && Date.now()-releasedAt>800) reenter();
+      return;
+    }
+    /* FV中は Observer が preventDefault するので scrollY は 0 のまま。
+       0 でなくなったのは、メニューのアンカー等でFVの外へ運ばれたということ。
+       ここで解放しないと、ドット・カウンタ・「スクロール／スワイプで次へ」が
+       下層セクションの上に貼り付いたまま残る（実測で再現）。
+       既に移動済みなので #auth へは引き戻さない */
+    if(window.scrollY>10) release(true);
   },{passive:true});
 
   var obs=Observer.create({
