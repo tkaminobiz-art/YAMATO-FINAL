@@ -839,6 +839,47 @@
     .lu-pair{grid-template-columns:minmax(0,1fr);row-gap:clamp(26px,3vw,34px)}
   }
 
+  /* ── 実際に建てた6軒の間取り ──
+     「間取りは決まっていません」を文字で言う代わりに、実物を並べて示す。
+     6枚とも縦600pxで幅が 305〜650px と違うので、高さを揃えるだけで
+     「ひとつとして同じ形がない」が一目で分かる。並べ方が主張そのもの。
+     色もここから来る（畳の緑・床の木目・子供室の色）。 */
+  /* ── 本文の隣に、居場所の写真を1枚 ──
+     この節の主張は「この家は自分のものになる」。図面は証明にはなるが感情は運ばない。
+     書斎＝標準仕様に無い、頼んだから存在する部屋。帯の小図版と同じ額装（生成りの縁＋金の毛罫）で、
+     商品の4本目に見えないようにしている。 */
+  .lu-freewrap{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(30px,3.4vw,44px)}
+  @media (min-width:960px){
+    .lu-freewrap{grid-template-columns:minmax(0,46%) minmax(0,1fr);
+      column-gap:clamp(38px,4.2vw,64px);align-items:start}
+    .lu-shot{order:2}
+  }
+  .lu-shot{margin:0}
+  .lu-shot img{display:block;width:100%;height:auto;
+    box-shadow:0 0 0 clamp(7px,.85vw,12px) var(--lu-paper),
+      0 0 0 calc(clamp(7px,.85vw,12px) + 1px) rgba(201,162,75,.55),
+      0 18px 40px rgba(36,30,22,.13)}
+  .lu-shot figcaption{margin:clamp(20px,2.4vw,30px) 0 0;
+    font-size:clamp(.95rem,.92rem + .1vw,.99rem);line-height:2.0;letter-spacing:.045em;
+    color:var(--lu-sumi3)}
+
+  .lu-plans{margin:clamp(40px,4.6vw,64px) 0 0}
+  .lu-plans__rail{display:flex;align-items:flex-end;gap:clamp(12px,1.6vw,22px);
+    overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+    padding-bottom:6px;margin:0 calc(-1 * var(--lu-gx));padding-left:var(--lu-gx);padding-right:var(--lu-gx)}
+  .lu-plans__rail::-webkit-scrollbar{display:none}
+  .lu-plan{margin:0;flex:0 0 auto;background:#fff;
+    box-shadow:0 0 0 1px rgba(36,30,22,.09), 0 10px 26px rgba(36,30,22,.10)}
+  .lu-plan img{display:block;height:clamp(150px,17vw,232px);width:auto}
+  .lu-plans__cap{margin:clamp(16px,1.9vw,24px) 0 0;
+    font-size:clamp(.95rem,.92rem + .1vw,.99rem);line-height:2.0;letter-spacing:.045em;
+    color:var(--lu-sumi3)}
+  @media (min-width:1100px){
+    /* 収まる幅では横スクロールをやめて、6枚を一息に見せる */
+    .lu-plans__rail{overflow:visible;margin:0;padding-left:0;padding-right:0;flex-wrap:nowrap}
+    .lu-plan img{height:clamp(150px,15.6vw,206px)}
+  }
+
   .lu-free{max-width:46em}
   /* ユーザー指定コピー（2026-08-20）。一字一句そのまま。行の分け方も指定どおり。
      1〜2行目を見出し格、3〜7行目を本文、最終行を着地として組む。 */
@@ -1677,6 +1718,11 @@
 
   <div class="lu-cl">
     <div class="lu-cl__in">
+      <div class="lu-freewrap">
+        <figure class="lu-shot">
+          <img src="assets/lineup/hero/study.webp" alt="窓際に造り付けた書斎の机" loading="lazy" decoding="async">
+          <figcaption>奈良市左京のモデルハウス。窓際に机を造り付けた書斎です。</figcaption>
+        </figure>
       <div class="lu-free">
         <p class="lu-free__lead">三つのプランで決まっているのは、家の広さと、標準で入る設備だけ。</p>
         <p class="lu-free__lead">間取りは、まだ何も決まっていません。</p>
@@ -1687,6 +1733,20 @@
         <p class="lu-free__p">急いで決めるのではなく、納得できるまで話して、考えて、自分たちの暮らしに合う家をつくっていく。</p>
         <p class="lu-free__end">やまと不動産の家づくりは、そこから始まります。</p>
       </div>
+      </div>
+
+      <div class="lu-plans">
+        <div class="lu-plans__rail">
+          <figure class="lu-plan"><img src="assets/madori/madori_ex01.webp" alt="実際に建てた家の間取り例 LDK22帖・土間収納・パントリー" loading="lazy" decoding="async"></figure>
+          <figure class="lu-plan"><img src="assets/madori/madori_ex02.webp" alt="実際に建てた家の間取り例 LDK20帖・和室4.5帖・吹き抜け" loading="lazy" decoding="async"></figure>
+          <figure class="lu-plan"><img src="assets/madori/madori_ex03.webp" alt="実際に建てた家の間取り例 LDK21帖・家事室・大空間収納" loading="lazy" decoding="async"></figure>
+          <figure class="lu-plan"><img src="assets/madori/madori_ex04.webp" alt="実際に建てた家の間取り例 LDK19.9帖・和室4.5帖・ランドリールーム" loading="lazy" decoding="async"></figure>
+          <figure class="lu-plan"><img src="assets/madori/madori_ex05.webp" alt="実際に建てた家の間取り例 LDK24.5帖・書斎・ウッドデッキ" loading="lazy" decoding="async"></figure>
+          <figure class="lu-plan"><img src="assets/madori/kyo_example.webp" alt="実際に建てた家の間取り例 LDK18.7帖・コンパクト設計" loading="lazy" decoding="async"></figure>
+        </div>
+        <p class="lu-plans__cap">やまと不動産が実際に建てた家の間取りです。</p>
+      </div>
+
       <div class="lu-doors">
         <details class="lu-more">
           <summary><span class="lu-more__open">詳しく見る</span><span class="lu-more__close">閉じる</span></summary>
