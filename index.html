@@ -637,7 +637,10 @@
        参照しているので変更しないこと。 */
   .lineup{position:relative;isolation:isolate;overflow:hidden;padding:0;
     --lu-paper:#F4F1EA; --lu-sumi:#241E16; --lu-sumi2:#5C5346; --lu-sumi3:#8A8070;
-    --lu-hana:#C64A00; --lu-kyo:#7D4B4F; --lu-kaze:#908600;
+    --lu-hana:#C64A00; --lu-kyo:#9E2B2F; --lu-kaze:#908600;
+    /* 京 はパンフ実測 #7D4B4F（彩度40%）だが、花・風が彩度100%のため画面では京だけ褪せて見える。
+       色相はほぼ同じまま彩度を72%へ上げた（355°→358°）。コントラストも 6.22→6.37 で改善。
+       サイトの紅 #BD1B21 は FV とブランドの主役なので取らない。※印刷物とは色が一致しない。*/
     --lu-fm:"Shippori Mincho B1","Hiragino Mincho ProN",serif;
     --lu-fg:"Zen Kaku Gothic New",sans-serif;
     --lu-fn:"Inter",sans-serif;
@@ -676,8 +679,18 @@
 
   /* ───── 帯 ───── */
   .lu-band{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-    align-items:stretch;border-top:1px solid rgba(36,30,22,.10)}
-  .lu-band:last-of-type{border-bottom:1px solid rgba(36,30,22,.10)}
+    align-items:stretch}
+  /* 帯の境界＝細い紅金の毛罫。三つの境界すべてに等しくかかるので序列を生まない。
+     両端をゼロへ落として断ち切らず、中央で金が最も強い（表紙の紅×金と同じ関係）。*/
+  .lu-band::before,.lu-band--kaze::after{content:"";position:absolute;
+    left:0;right:0;height:2px;z-index:4;pointer-events:none;
+    background:linear-gradient(90deg,
+      rgba(189,27,33,0) 0%, rgba(189,27,33,.92) 9%, rgba(189,27,33,.92) 38%,
+      rgba(201,162,75,1) 50%,
+      rgba(189,27,33,.92) 62%, rgba(189,27,33,.92) 91%, rgba(189,27,33,0) 100%)}
+  .lu-band::before{top:0}
+    /* :last-of-type は効かない（帯の後に .lu-cl の div が続くため）。最後の帯を明示する */
+  .lu-band--kaze::after{bottom:0}
   /* 高さは行側で与える。media に aspect-ratio を置くと stretch で確定した高さから
      幅を逆算して列を超え(実測1022px/列720px)、パネルの文字を覆う。 */
   .lu-band--hana,.lu-band--kaze{min-height:clamp(420px,46vw,660px)}
