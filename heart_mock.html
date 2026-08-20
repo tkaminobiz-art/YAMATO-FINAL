@@ -7,98 +7,90 @@
 <title>信条セクション図面（heart_mock）｜やまと不動産</title>
 <!--
   ============================================================
-  信条（Our philosophy）図面 2026-08-19
+  信条 ─ 紅の台紙に貼られた、生成りの手紙   2026-08-20
   ------------------------------------------------------------
+  クライアント指示: 紅を続けない／背景と書体にこだわる／PCは1段・縦長。
   コピーはクライアント指定の全文519字。一字一句そのまま。
-  段落の区切り（16個）は保つ。段落の中の手動改行だけ外し、行長で流す。
 
-  実測15サイトから採った値（出典つき）:
-   - 段幅 460〜590px / 22〜31字/行  … 群言堂490-510・福光屋460・ハウスイズム590
-     ・中川政七412・安成510-590。うちは760px/18.5字で外れていた
-     （参考: 奈良の楓工務店は1040px/40-48字＝「普通」の側）
-   - 行間 2.0〜2.25 / 字間 0.05〜0.107em / weight 400
-   - 柱は縦組み w400・字間 +0.15〜0.25em（群言堂0.25・ベネッセ0.2・うなぎ0.15）
-     太字の縦組みは実測ゼロ件。うちの .42em は広すぎたので詰めた
-   - 主題と本文のサイズ比 1.88×（土と風。書体もウェイトも変えずサイズと位置だけで立てる）
-   - 入場アニメーションは15件中9件が無し。入れている6件も opacity のみで、
-     transform を伴う入場は1件も実測されなかった → 本文には掛けない
-   - 暗地に長文は前例あり（Snøhetta #000 21:1 / Olson Kundig #3B3735 11.8:1 /
-     群言堂 実効16.3:1）。無いのは彩度の高い赤を本文の下地にする例
+  地の設計（実測に基づく）
+   - 本文は生成りの紙に墨。長文を載せている実例は全て明るい地×濃い文字だった
+     （俵屋21.0 / 福光屋16.8 / いがみ21.0 / Olson Kundig 11.8）。
+     紅地に長文を載せた実例は検査2通りで0件
+   - 紙は tools/make_page_kinari_letter.py で生成。墨#241E16 に対し
+     最悪画素で 11.07（床7.83）。符号化後の実測で保証
+   - 既存の page_kinari.webp は縁を除いても最暗 L=0.030（金砂子・繊維の陰）で
+     本文を載せると読めない。専用に作り直した理由
+
+  前後の境界（実測）
+     実績 #auth  下端 L=0.064 紅
+     信条        生成りの紙 → 下端に紅の帯
+     商品ライン    上端 L=0.807 生成り
+   → 上は「紅→生成り」で立ち、下は「紅の帯→生成り」で立つ。両側とも成立する
   ============================================================
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400&family=Zen+Kaku+Gothic+New:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:#2A2620;font-family:"Zen Kaku Gothic New",sans-serif}
 
-  /* ============ 信条（紅の頁） ============ */
+  /* ============ 信条（紅の台紙／生成りの手紙） ============ */
   .cr{
-    --cream:#F3EEE3; --foil1:#F1D57D;
+    --sumi:#241E16; --sumi2:#5C5346; --shu:#BD1B21; --foil1:#F1D57D;
     --gx:clamp(20px, 5.3vw, 76px);
-    --ng:clamp(44px, 4.4vw, 64px);          /* 柱が入る内側の余白 */
-    --fs:clamp(15px, 13.6px + 0.36vw, 17px);
-    /* 26字。em は字間を含まないので 26 ではなく 26×1.085 を指定する
-       （素の 26em だと実質24字になり、行数が26→32行に増えた） */
-    --col:28.21em;
+    --fs:clamp(15px, 13.2px + 0.45vw, 18px);
+    --col:29.30em;                      /* 27字。em は字間を含まないので 27×1.085 */
     --fm:"YakuHanMP","Shippori Mincho B1",serif;
-    --gap-in:1.15em;                         /* 段落間 */
-    --gap-out:2.5em;                         /* 楽章の変わり目 */
+    --gap-in:1.3em; --gap-out:2.9em;
+    --band-top:clamp(72px,8vw,124px);   /* 額装なので上にも紅の余白を取る */
+    --band-bot:clamp(96px,11vw,168px);  /* 下の紅の帯＝次の生成りへの落差を作る */
     position:relative;overflow:hidden;isolation:isolate;
-    background:#6B1015;color:var(--cream);
-    padding:clamp(56px,6vw,88px) var(--gx) clamp(56px,6vw,88px)}
+    background:url("assets/std/page_beni.webp") center/cover var(--shu);
+    color:var(--sumi);
+    padding:var(--band-top) clamp(24px,7vw,120px) var(--band-bot)}
 
-  /* 地：専用アセット。減光もスクリムもかけない（アセット側で明度が確定している） */
-  .cr::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
-    background:url("assets/std/page_beni_dark_1800.webp") center/cover}
+  /* 生成りの手紙 */
+  .cr__sheet{position:relative;width:min(880px,100%);margin:0 auto;
+    background:url("assets/std/page_kinari_letter_1800.webp") center/cover #F4EEE0;
+    padding:clamp(80px,8.5vw,132px) clamp(32px,5vw,86px) clamp(80px,8.5vw,132px);
+    box-shadow:0 26px 64px -28px rgba(40,4,8,.62), 0 4px 14px -8px rgba(40,4,8,.35)}
   @media (min-width:1441px){
-    .cr::before{background-image:url("assets/std/page_beni_dark_2400.webp")}
+    .cr__sheet{background-image:url("assets/std/page_kinari_letter_2400.webp")}
   }
 
-  /* 柱。字間は実測 0.15〜0.25em（旧 .42em は広すぎた）。太字の縦組みは実測ゼロ件 */
-  .cr__spine{position:absolute;left:clamp(6px,1.4vw,20px);top:clamp(40px,5vw,72px);
-    writing-mode:vertical-rl;font-family:var(--fm);font-weight:400;
-    font-size:clamp(16px,15px + .25vw,20px);letter-spacing:.22em;color:var(--cream);
-    display:flex;align-items:center;gap:16px}
-  .cr__spine::after{content:"";width:1px;height:clamp(60px,9vh,120px);
-    background:linear-gradient(180deg,var(--foil1),rgba(241,213,125,0))}
-
-  .cr__in{position:relative;z-index:1;width:min(1288px,100%);margin:0 auto;
-    padding-left:var(--ng)}
+  .cr__in{position:relative;width:min(var(--col),100%);margin:0 auto}
 
   .cr__p{font-family:var(--fm);font-weight:400;font-size:var(--fs);
-    line-height:2;letter-spacing:.085em;color:var(--cream);
-    max-width:var(--col);margin-top:var(--gap-in);
-    /* 文節で折り返す。手動改行を外すと「心地よ／く、」のように行末に一文字残るため。
-       文節改行はテストした全行長で読み速度が向上（小林ほか2015・人工知能学会論文誌30(2)）。
-       Chrome 119+。非対応ブラウザは通常の折返しに落ちるだけで壊れない */
-    word-break:auto-phrase;
-    line-break:strict}
+    line-height:2.05;letter-spacing:.085em;color:var(--sumi);
+    margin-top:var(--gap-in);word-break:auto-phrase;line-break:strict}
   .cr__p:first-child{margin-top:0}
-  .cr__p--m{margin-top:var(--gap-out)}      /* 楽章の変わり目 */
+  .cr__p--m{margin-top:var(--gap-out)}
 
-  /* 主題は太らせず、サイズと行間と字間だけで立てる（土と風 1.88×） */
-  .cr__q{display:block;font-size:1.88em;line-height:1.45;letter-spacing:.08em;
-    margin:.34em 0 .3em}
-  /* 主題は1.88倍なので本文の段には収まらない。この段落だけ広げる（土と風も主題は別置き） */
-  .cr__p--lead{max-width:calc(var(--col) * 1.42)}
+  /* 主題は太らせず、大きさと行間と字間だけで立てる */
+  .cr__q{display:block;font-size:1.86em;line-height:1.5;letter-spacing:.06em;
+    margin:.4em 0 .34em;color:var(--sumi)}
 
-  /* 2段組み案：俵屋旅館型。436字を3段245pxに畳んでいる実例に倣う。
-     段の中では上から下へ読み、右段へ移る。塊が1画面に収まる高さでのみ成立する */
-  @media (min-width:1100px){
-    .cr__in{column-count:2;column-gap:clamp(48px,5vw,84px)}
-    /* 段が広いときも29字で頭打ち。30字超で読み心地が落ちる（小林ほか2016）。
-       29×1.085＝31.47em（em は字間を含まないので係数を掛ける） */
-    .cr__p{max-width:31.47em;break-inside:avoid}
-    .cr__p--lead{max-width:calc(31.47em * 1.42)}
-    .cr__q{font-size:1.62em}
-  }
+  /* 差出人 */
+  .cr__sign{margin-top:clamp(52px,6vw,88px);font-family:var(--fm);font-weight:400;
+    font-size:max(15px, calc(var(--fs) * .94));letter-spacing:.16em;color:var(--sumi2);
+    display:flex;align-items:center;gap:14px;white-space:nowrap}
+  /* 罫を縮ませる。320pxで「株式会社やまと不動|産」と割れたため */
+  .cr__sign::before{content:"";flex:0 1 clamp(28px,4vw,56px);min-width:10px;
+    height:1px;background:var(--sumi2);opacity:.5}
+
+  /* 柱（台紙側に置く。紙の外なので本文の可読性に影響しない） */
+  .cr__spine{position:absolute;left:clamp(8px,1.6vw,22px);top:clamp(30px,4vw,56px);z-index:2;
+    writing-mode:vertical-rl;font-family:var(--fm);font-weight:400;
+    font-size:clamp(15px,14px + .2vw,18px);letter-spacing:.24em;color:#F3EEE3;
+    display:flex;align-items:center;gap:14px}
+  .cr__spine::after{content:"";width:1px;height:clamp(48px,7vh,96px);
+    background:linear-gradient(180deg,var(--foil1),rgba(241,213,125,0))}
 
   @media (max-width:760px){
-    .cr__spine{left:8px}
-    .cr{--ng:clamp(38px,9.5vw,44px)}
+    .cr{--band-bot:clamp(72px,16vw,110px)}
+    .cr__spine{left:8px;top:18px}
   }
 </style>
 </head>
@@ -106,40 +98,44 @@
 
 <section class="cr" id="heart" aria-labelledby="crH">
   <p class="cr__spine" aria-hidden="true">信条</p>
-  <div class="cr__in">
+  <div class="cr__sheet">
+    <div class="cr__in">
 
-    <p class="cr__p" id="crH">やまと不動産が、ずっと大切にしていることがあります。</p>
+      <p class="cr__p" id="crH">やまと不動産が、ずっと大切にしていることがあります。</p>
 
-    <p class="cr__p cr__p--lead">それは、家を見たときに<span class="cr__q">「この金額で、ここまでできるんだ」</span>と、少し驚いてもらえること。</p>
+      <p class="cr__p">それは、家を見たときに<span class="cr__q">「この金額で、ここまでできるんだ」</span>と、少し驚いてもらえること。</p>
 
-    <p class="cr__p cr__p--m">モデルハウスで心惹かれた設備も、毎日の暮らしを考えた間取りも、あとから追加費用を重ねて、ようやく手に入るものにはしたくありません。</p>
+      <p class="cr__p cr__p--m">モデルハウスで心惹かれた設備も、毎日の暮らしを考えた間取りも、あとから追加費用を重ねて、ようやく手に入るものにはしたくありません。</p>
 
-    <p class="cr__p">いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
+      <p class="cr__p">いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
 
-    <p class="cr__p cr__p--m">「この予算では、理想の家は難しいかもしれない」</p>
+      <p class="cr__p cr__p--m">「この予算では、理想の家は難しいかもしれない」</p>
 
-    <p class="cr__p">そう思っている方にこそ、知ってほしいのです。</p>
+      <p class="cr__p">そう思っている方にこそ、知ってほしいのです。</p>
 
-    <p class="cr__p">諦めなくてもいいこと。その予算の中でも、もっと心地よく、もっと好きになれる家はつくれるということを。</p>
+      <p class="cr__p">諦めなくてもいいこと。その予算の中でも、もっと心地よく、もっと好きになれる家はつくれるということを。</p>
 
-    <p class="cr__p cr__p--m">家は、完成した日がいちばん大切なのではありません。</p>
+      <p class="cr__p cr__p--m">家は、完成した日がいちばん大切なのではありません。</p>
 
-    <p class="cr__p">朝の光が差し込む洗面。夜になると、間接照明が石壁をやわらかく照らすリビング。木の格子扉を開ける、何気ない毎日。</p>
+      <p class="cr__p">朝の光が差し込む洗面。夜になると、間接照明が石壁をやわらかく照らすリビング。木の格子扉を開ける、何気ない毎日。</p>
 
-    <p class="cr__p">そんな小さな景色のひとつひとつが、そこで暮らす家族の「楽しい毎日」になっていく。</p>
+      <p class="cr__p">そんな小さな景色のひとつひとつが、そこで暮らす家族の「楽しい毎日」になっていく。</p>
 
-    <p class="cr__p">私たちは、そこまで想像しながら、一軒ずつ家を設計しています。</p>
+      <p class="cr__p">私たちは、そこまで想像しながら、一軒ずつ家を設計しています。</p>
 
-    <p class="cr__p cr__p--m">そして5年、10年と暮らしたその先にも、</p>
+      <p class="cr__p cr__p--m">そして5年、10年と暮らしたその先にも、</p>
 
-    <p class="cr__p">「やまと不動産にお願いして、よかった」</p>
+      <p class="cr__p">「やまと不動産にお願いして、よかった」</p>
 
-    <p class="cr__p">そう言ってもらえる家でありたい。</p>
+      <p class="cr__p">そう言ってもらえる家でありたい。</p>
 
-    <p class="cr__p">建てたときだけではなく、暮らしてから、もっと好きになる家を。</p>
+      <p class="cr__p">建てたときだけではなく、暮らしてから、もっと好きになる家を。</p>
 
-    <p class="cr__p cr__p--m">それが、やまと不動産の家づくりです。</p>
+      <p class="cr__p cr__p--m">それが、やまと不動産の家づくりです。</p>
 
+      <p class="cr__sign">株式会社やまと不動産</p>
+
+    </div>
   </div>
 </section>
 
