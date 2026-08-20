@@ -20,3 +20,4 @@ assets/stock_src/
 index.backup_preStep_*.html
 works.backup_*.html
 *.backup_*.html
+assets/std/_atrium_old_*/
