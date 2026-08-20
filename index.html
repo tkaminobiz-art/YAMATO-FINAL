@@ -807,6 +807,25 @@
     font-size:clamp(.95rem,.92rem + .1vw,.99rem);line-height:2.0;letter-spacing:.045em;color:var(--lu-sumi2)}
   @media (prefers-reduced-motion:reduce){ .lu-more summary::after{transition:none} }
 
+  /* ── ユーザー指定コピー（2026-08-20 折りたたみ本文）。一字一句そのまま ──
+     改行はPCでのリズム指示として <br class="pcbr"> で入れ、SPでは流す。
+     SPは21字/行なので文中改行を残すと行が崩れる。 */
+  .pcbr{display:none}
+  @media (min-width:768px){ .pcbr{display:inline} }
+  .lu-blk{max-width:40em}
+  .lu-blk__b{margin:0;line-break:strict;word-break:auto-phrase;
+    font-size:clamp(.95rem,.92rem + .1vw,.99rem);line-height:2.0;letter-spacing:.045em;
+    color:var(--lu-sumi2)}
+  .lu-blk__b b{font-weight:400;color:var(--lu-sumi)}
+  /* 段落が複数になったので、段の間に息を入れる */
+  .lu-blk__b + .lu-blk__b,
+  .lu-step__b + .lu-step__b,
+  .lu-ppl__c + .lu-ppl__c{margin-top:clamp(13px,1.5vw,19px)}
+  .lu-step__h + .lu-step__b,
+  .lu-ppl__r + .lu-ppl__c{margin-top:clamp(13px,1.5vw,19px)}
+  /* 日常の不便の3つ。ここだけは幅に関係なく積む（並べると意味が変わる） */
+  .lu-ex{color:var(--lu-sumi)}
+
   .lu-free{max-width:46em}
   /* ユーザー指定コピー（2026-08-20）。一字一句そのまま。行の分け方も指定どおり。
      1〜2行目を見出し格、3〜7行目を本文、最終行を着地として組む。 */
@@ -1659,29 +1678,59 @@
         <details class="lu-more">
           <summary><span class="lu-more__open">詳しく見る</span><span class="lu-more__close">閉じる</span></summary>
           <div class="lu-more__in">
-            <span class="lu-sec">決まっていること</span>
-            <dl class="lu-led">
-              <div class="lu-led__row"><dt>変わらないもの</dt>
-                <dd><b>構造と断熱、外壁と屋根、それに標準で入る設備です。</b>もうひとつ、基準になる広さも決まっています。三つのプランで違うのは、この広さと、設備をどこまで載せるかだけです。</dd></div>
-              <div class="lu-led__row"><dt>変えられるもの</dt>
-                <dd><b>広さです。</b>1坪あたり64万円から増やせます。この金額には、増えた分の基礎3.3㎡も含まれています。</dd></div>
-            </dl>
+
+            <span class="lu-sec">変わらないもの</span>
+            <div class="lu-blk">
+              <p class="lu-blk__b">家の性能に関わる、構造や断熱。<br class="pcbr">外壁や屋根、そして標準で入る設備。</p>
+              <p class="lu-blk__b">この部分は、最初からきちんと決めています。</p>
+              <p class="lu-blk__b">三つのプランで違うのは、<br class="pcbr">基準となる家の広さと、標準設備の内容です。</p>
+              <p class="lu-blk__b">見えないところの品質まで含めて、<br class="pcbr">家づくりの土台になる部分は、変えません。</p>
+            </div>
+
+            <span class="lu-sec">変えられるもの</span>
+            <div class="lu-blk">
+              <p class="lu-blk__b">広さは、ご家族に合わせて変えることができます。</p>
+              <p class="lu-blk__b">基準の広さから、<br class="pcbr"><b>1坪あたり64万円〜</b>で広げることができます。</p>
+              <p class="lu-blk__b">この金額には、建物だけでなく、<br class="pcbr">広くなった分の基礎3.3㎡も含まれています。</p>
+              <p class="lu-blk__b">必要なものを、必要なぶんだけ。</p>
+              <p class="lu-blk__b">無理に大きくするのではなく、<br class="pcbr">暮らしにちょうどいい広さを一緒に考えていきます。</p>
+            </div>
+
             <span class="lu-sec">間取りの決め方</span>
             <div class="lu-step__grid">
               <div class="lu-step"><span class="lu-step__n">01</span>
                 <p class="lu-step__h">敷地を読むところから始めます</p>
-                <p class="lu-step__b">同じ形に見える分譲地でも、隣の敷地の状況で、光の入り方も視線の抜ける方向も変わります。その敷地の特徴をつかんでから、間取りを考えはじめます。</p></div>
+                <p class="lu-step__b">同じように見える分譲地でも、<br class="pcbr">ひとつとして同じ敷地はありません。</p>
+                <p class="lu-step__b">隣の建物の位置や高さによって、<br class="pcbr">光の入り方も、風の通り道も、<br class="pcbr">視線が抜ける方向も変わります。</p>
+                <p class="lu-step__b">まずは、その土地をきちんと見ること。</p>
+                <p class="lu-step__b">その敷地だからこそできる暮らしを考えてから、<br class="pcbr">間取りを描きはじめます。</p>
+              </div>
               <div class="lu-step is-lead"><span class="lu-step__n">02</span>
-                <p class="lu-step__h">いまの住まいの不満も、一緒に整理します</p>
-                <p class="lu-step__b">どんな家にしたいかをうかがいます。あわせて、いまのお住まいで不満に思っているところや、後悔されていることも一緒に整理していきます。理想だけを聞くより、そのほうが早く形になります。</p></div>
+                <p class="lu-step__h">いまの暮らしも、設計のヒントです</p>
+                <p class="lu-step__b">「どんな家に住みたいですか？」</p>
+                <p class="lu-step__b">もちろん、それも大切なことです。</p>
+                <p class="lu-step__b">でも私たちは、<br class="pcbr">いまのお住まいで感じている不満や、<br class="pcbr">「こうしておけばよかった」ということも伺います。</p>
+                <p class="lu-step__b lu-ex">洗濯がしづらい。<br>収納が足りない。<br>朝、家族が同じ場所に集まってしまう。</p>
+                <p class="lu-step__b">そんな日常の小さな不便の中に、<br class="pcbr">新しい家を良くするヒントがたくさんあります。</p>
+                <p class="lu-step__b">理想と、いまの暮らし。</p>
+                <p class="lu-step__b">その両方を一緒に整理しながら、<br class="pcbr">ご家族に合った間取りをつくっていきます。</p>
+              </div>
             </div>
+
             <span class="lu-sec">設計を担当する二人</span>
             <div class="lu-ppl">
-              <div class="lu-ppl__i"><p class="lu-ppl__n">栗野 佑也</p><span class="lu-ppl__r">KURINO Yuya／設計士</span>
-                <p class="lu-ppl__c">それぞれのご家族の暮らし・生活スタイルに沿ったプランをご提案。そこに住まうご家族が笑顔で楽しく過ごせる。そんな住まいの設計をしたいと思っております。</p></div>
-              <div class="lu-ppl__i"><p class="lu-ppl__n">岩佐 篤志</p><span class="lu-ppl__r">IWASA Atsushi／住宅デザイナー</span>
-                <p class="lu-ppl__c">現場監督や、営業設計の経験を活かして、みなさんの理想のお家をご提案します。そのためにも、お客様の心の傘を大きく開いていただけるように、がんばります！</p></div>
+              <div class="lu-ppl__i"><p class="lu-ppl__n">栗野 佑也</p><span class="lu-ppl__r">KURINO Yuya / 設計士</span>
+                <p class="lu-ppl__c">家族が違えば、<br class="pcbr">心地いい暮らし方も違います。</p>
+                <p class="lu-ppl__c">だからこそ、そのご家族の生活や過ごし方をきちんと知り、<br class="pcbr">そこに合った住まいをご提案したいと思っています。</p>
+                <p class="lu-ppl__c">家に帰ることが楽しみになる。<br class="pcbr">そこで過ごす時間に、自然と笑顔が増えていく。</p>
+                <p class="lu-ppl__c">そんな住まいを、一緒につくれたらと思っています。</p></div>
+              <div class="lu-ppl__i"><p class="lu-ppl__n">岩佐 篤志</p><span class="lu-ppl__r">IWASA Atsushi / 住宅デザイナー</span>
+                <p class="lu-ppl__c">現場監督や営業設計として、<br class="pcbr">たくさんの家づくりに関わってきました。</p>
+                <p class="lu-ppl__c">その経験も活かしながら、<br class="pcbr">見た目だけではなく、暮らしやすさや施工まで考えた<br class="pcbr">住まいをご提案します。</p>
+                <p class="lu-ppl__c">最初から、上手に希望を伝えなくても大丈夫です。</p>
+                <p class="lu-ppl__c">何気ない会話の中から、<br class="pcbr">まだ言葉になっていない「こんな家が好き」を<br class="pcbr">一緒に見つけていけたらと思っています。</p></div>
             </div>
+
           </div>
         </details>
         <a class="lu-doors__cta" href="madori.html#plans">三つの仕様をくらべる　→</a>
