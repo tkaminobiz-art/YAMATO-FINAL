@@ -109,6 +109,30 @@
     .cr{--band-bot:clamp(72px,16vw,110px)}
     .cr__spine{left:8px;top:18px}
   }
+  /* ── SP ──────────────────────────────────────────────
+     390px・本文15px（検査の下限）では、余白ゼロでも1行23.9字が上限。
+     30〜40字はSPでは物理的に達成できないので、狙いを変える:
+      ① 台紙を左右から外して紙を全幅にし、段幅を271→342pxへ（16.5→21字）
+      ② 引用は本文比を下げる。1.86倍のままだと3行に割れ、
+         クライアントの言葉「この金額で、ここまでできるんだ」が壊れて見えた
+      ③ 柱は紙の上へ移す（台紙が無くなるため）
+     紅は上下の帯として残るので、前後の境界は変わらない */
+  @media (max-width:560px){
+    .cr{--band-top:clamp(40px,9vw,64px);padding-left:0;padding-right:0}
+    .cr__sheet{width:100%;padding:clamp(64px,13vw,88px) clamp(20px,6vw,26px)}
+    .cr__q{font-size:1.36em;line-height:1.62;letter-spacing:.04em}
+    /* 柱は紙の中へ。SPでは台紙が左右に無く、紅の帯(40-64px)には縦組みの柱が入らない。
+       生成り文字のまま紙に重ねると見えなくなるので墨に変え、横組みで紙の天に置く */
+    .cr__spine{left:clamp(20px,6vw,26px);right:auto;
+      top:calc(var(--band-top) + clamp(24px,5.6vw,32px));
+      writing-mode:horizontal-tb;font-size:15px;letter-spacing:.34em;
+      color:var(--sumi2);gap:12px}
+    .cr__spine::after{width:clamp(26px,7vw,38px);height:1px;
+      background:var(--sumi2);opacity:.45}
+    /* 罫の前後が53px×2=106px(3.4行分)あり、細い罫に対して空きすぎだった。
+       楽章間(44px)と同程度に寄せる */
+    .cr__rule{margin:calc(var(--gap-out) * .62) auto}
+  }
 </style>
 </head>
 <body>
