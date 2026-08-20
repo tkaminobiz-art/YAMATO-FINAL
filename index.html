@@ -808,6 +808,17 @@
   @media (prefers-reduced-motion:reduce){ .lu-more summary::after{transition:none} }
 
   .lu-free{max-width:46em}
+  /* ユーザー指定コピー（2026-08-20）。一字一句そのまま。行の分け方も指定どおり。
+     1〜2行目を見出し格、3〜7行目を本文、最終行を着地として組む。 */
+  .lu-free__lead{margin:0 0 clamp(10px,1.2vw,16px);text-wrap:balance;line-break:strict;word-break:auto-phrase;
+    font-family:var(--lu-fm);font-weight:400;
+    font-size:clamp(1.22rem,1.02rem + .84vw,1.72rem);line-height:1.76;letter-spacing:.06em}
+  .lu-free__lead + .lu-free__p{margin-top:clamp(28px,3.2vw,40px)}
+  .lu-free__p{margin:0 0 clamp(14px,1.7vw,22px);line-break:strict;word-break:auto-phrase;
+    font-size:clamp(.98rem,.94rem + .2vw,1.06rem);line-height:2.06;letter-spacing:.045em;color:var(--lu-sumi2)}
+  .lu-free__end{margin:clamp(28px,3.2vw,40px) 0 0;line-break:strict;word-break:auto-phrase;
+    font-family:var(--lu-fm);font-weight:400;
+    font-size:clamp(1.06rem,.98rem + .38vw,1.28rem);line-height:1.86;letter-spacing:.06em;color:var(--lu-sumi)}
   /* 台帳＝決まっている／決まっていない／変えられる の三段。
      「自由設計」は語として無価値化しており（大阪府が契約トラブルに警告を出す水準）、
      賢い読者ほど疑って読む。だから語を強めず、線引きを先に開示する。
@@ -1633,9 +1644,14 @@
   <div class="lu-cl">
     <div class="lu-cl__in">
       <div class="lu-free">
-        <p class="lu-free__h">三つとも、間取りは<span>これから考えます。</span></p>
-        <p class="lu-free__b">決まっているのは、基準になる広さと、標準で入る設備です。間取りは白紙のまま、専属の設計士と一緒に決めていきます。</p>
-        <p class="lu-free__sig"><b>決めるのは、建物の契約より先です。</b>間取りがまとまってから、建物の請負契約を結びます。ここまでに約3か月かけます。</p>
+        <p class="lu-free__lead">三つのプランで決まっているのは、家の広さと、標準で入る設備だけ。</p>
+        <p class="lu-free__lead">間取りは、まだ何も決まっていません。</p>
+        <p class="lu-free__p">家族の人数も、暮らし方も、好きな時間の過ごし方も、それぞれ違うから。</p>
+        <p class="lu-free__p">最初の打ち合わせから設計士が入り、「どんな家に住みたいか」を一緒に考えるところから始めます。</p>
+        <p class="lu-free__p">そして、間取りがきちんと決まってから、はじめて建物のご契約へ進みます。</p>
+        <p class="lu-free__p">ここまでにかける時間は、およそ3か月。</p>
+        <p class="lu-free__p">急いで決めるのではなく、納得できるまで話して、考えて、自分たちの暮らしに合う家をつくっていく。</p>
+        <p class="lu-free__end">やまと不動産の家づくりは、そこから始まります。</p>
       </div>
       <div class="lu-doors">
         <details class="lu-more">
@@ -1645,8 +1661,6 @@
             <dl class="lu-led">
               <div class="lu-led__row"><dt>変わらないもの</dt>
                 <dd><b>構造と断熱、外壁と屋根、それに標準で入る設備です。</b>もうひとつ、基準になる広さも決まっています。三つのプランで違うのは、この広さと、設備をどこまで載せるかだけです。</dd></div>
-              <div class="lu-led__row"><dt>これから決めるもの</dt>
-                <dd><b>間取りです。</b>部屋の数も配置も決まっていません。専属の設計士が、打ち合わせの最初から同席して考えます。</dd></div>
               <div class="lu-led__row"><dt>変えられるもの</dt>
                 <dd><b>広さです。</b>1坪あたり64万円から増やせます。この金額には、増えた分の基礎3.3㎡も含まれています。</dd></div>
             </dl>
