@@ -191,6 +191,8 @@
   .cmp{margin-top:clamp(30px,4vw,52px);overflow-x:auto;-webkit-overflow-scrolling:touch}
   .cmp table{width:100%;min-width:560px;border-collapse:collapse;font-family:var(--fb)}
   .cmp th,.cmp td{padding:clamp(12px,1.6vw,18px) clamp(12px,1.8vw,22px);text-align:left;border-bottom:1px solid var(--line);vertical-align:baseline}
+  /* 狭い列で最終行に1字だけ残るのを防ぐ（「〜設計した|家」等）*/
+  .cmp td{text-wrap:balance;line-break:strict;word-break:auto-phrase}
   .cmp thead th{font-family:var(--fserif);font-weight:600;font-size:1.4rem;letter-spacing:.02em;color:var(--ink);border-bottom:1px solid var(--line2)}
   .cmp thead th small{display:block;font-family:var(--fn);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin-top:4px;font-weight:400}
   .cmp thead th:first-child{font-family:var(--fn);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:500}
@@ -241,7 +243,7 @@
   .komi .z{font-family:var(--fn);font-weight:300;font-variant-numeric:tabular-nums;font-size:1.5rem;line-height:1;color:var(--green);flex:0 0 auto}
   .komi .z.txt{font-family:var(--fh);font-weight:500;font-size:.95rem;color:var(--green)}
   .komi .t{font-family:var(--fh);font-weight:500;font-size:.86rem;letter-spacing:.03em;color:var(--ink);line-height:1.6}
-  .komi .t small{display:block;font-family:var(--fb);font-weight:400;font-size:.72rem;color:var(--ink2);margin-top:3px;letter-spacing:.02em}
+  .komi .t small{display:block;font-family:var(--fb);font-weight:400;font-size:.72rem;color:var(--ink2);margin-top:3px;letter-spacing:.02em;text-wrap:balance;line-break:strict;word-break:auto-phrase}
 
   /* ============ CTA ============ */
   .invite{max-width:1280px;margin:clamp(72px,10vw,140px) auto 0;padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px);border-top:1px solid var(--line);text-align:center}
