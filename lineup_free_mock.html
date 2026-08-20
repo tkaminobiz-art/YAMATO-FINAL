@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>#lineup 自由設計ブロック 折りたたみ図面 v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Shippori+Mincho+B1:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:#E8E4DA;font-family:"Zen Kaku Gothic New",sans-serif;font-feature-settings:"palt"}
+  .mk{max-width:1440px;margin:0 auto}
+  .mk__lab{padding:30px 22px 10px;font-size:15px;letter-spacing:.1em;color:#6E655A}
+
+  /* ══ ここから下は index.html にそのまま移せる ══ */
+  .lineup{position:relative;isolation:isolate;overflow:hidden;padding:0;
+    --lu-paper:#F4F1EA; --lu-sumi:#241E16; --lu-sumi2:#5C5346; --lu-sumi3:#8A8070;
+    --lu-fm:"Shippori Mincho B1","Hiragino Mincho ProN",serif;
+    --lu-fg:"Zen Kaku Gothic New",sans-serif;
+    --lu-fn:"Inter",sans-serif;
+    --lu-gx:clamp(22px,5vw,88px);
+    --lu-ground:linear-gradient(rgba(244,241,234,.62),rgba(244,241,234,.62)),
+      url("assets/std/page_kinari_letter_2400.webp");
+    color:var(--lu-sumi);background:var(--lu-paper);font-family:var(--lu-fg);font-weight:300}
+  .lu-cl{position:relative;padding:clamp(56px,7vw,96px) var(--lu-gx) clamp(64px,8vw,110px);
+    background:var(--lu-ground) center/cover var(--lu-paper);background-size:auto,62% auto}
+  .lu-cl__in{max-width:1180px;margin:0 auto}
+  .lu-free{max-width:46em}
+  .lu-free__h{margin:0;font-family:var(--lu-fm);font-weight:400;text-wrap:balance;line-break:strict;
+    font-size:clamp(1.18rem,1rem + .72vw,1.6rem);line-height:1.68;letter-spacing:.06em}
+  .lu-free__h span{display:inline-block}
+  .lu-free__b{margin:clamp(18px,2.2vw,26px) 0 0;line-break:strict;word-break:auto-phrase;text-wrap:balance;
+    font-size:clamp(.95rem,.92rem + .16vw,1.02rem);line-height:2.04;letter-spacing:.045em;color:var(--lu-sumi2)}
+  .lu-free__sig{margin:clamp(20px,2.4vw,28px) 0 0;line-break:strict;word-break:auto-phrase;text-wrap:balance;
+    font-size:clamp(.95rem,.92rem + .16vw,1.02rem);line-height:2.02;letter-spacing:.045em;color:var(--lu-sumi2)}
+  .lu-free__sig b{font-weight:400;color:var(--lu-sumi)}
+
+  /* ───── 一本の罫に、扉を二つ ─────
+     左＝その場で開く（シェブロン）／右＝別ページへ（矢印）。
+     <summary> の中に <a> は置けないので、CTA は details の兄弟にして
+     summary 行へ重ねている。SPでは重ねずに下へ落とす。 */
+  .lu-doors{position:relative;margin:clamp(30px,3.6vw,44px) 0 0;
+    border-top:1px solid rgba(36,30,22,.14);border-bottom:1px solid rgba(36,30,22,.14)}
+  .lu-more{border:0}
+  .lu-more summary{list-style:none;cursor:pointer;display:flex;align-items:center;
+    justify-content:flex-start;gap:12px;min-height:44px;
+    padding:clamp(18px,2.4vw,26px) 4px;padding-right:clamp(200px,20vw,300px);
+    font-family:var(--lu-fg);font-weight:400;font-size:clamp(.98rem,.94rem + .35vw,1.14rem);
+    letter-spacing:.04em;line-height:1.8;color:var(--lu-sumi);transition:color .25s}
+  .lu-more summary::-webkit-details-marker{display:none}
+  .lu-more summary:hover{color:#2E4600}
+  .lu-more summary::after{content:"";width:11px;height:11px;flex:0 0 auto;align-self:center;
+    border-right:1.5px solid #8D857A;border-bottom:1.5px solid #8D857A;
+    transform:translateY(-3px) rotate(45deg);transition:transform .3s cubic-bezier(.33,1,.68,1)}
+  .lu-more[open] summary::after{transform:translateY(2px) rotate(-135deg)}
+  .lu-more summary .lu-more__close{display:none}
+  .lu-more[open] summary .lu-more__open{display:none}
+  .lu-more[open] summary .lu-more__close{display:inline}
+  .lu-doors__cta{position:absolute;right:4px;top:0;display:inline-flex;align-items:center;
+    min-height:44px;height:calc(clamp(18px,2.4vw,26px) * 2 + 1.8em);
+    font-family:var(--lu-fg);font-weight:400;font-size:.92rem;letter-spacing:.09em;
+    color:var(--lu-sumi);text-decoration:none;white-space:nowrap;
+    box-shadow:inset 0 -1px 0 var(--lu-sumi3)}
+  .lu-doors__cta:hover{box-shadow:inset 0 -1px 0 var(--lu-sumi)}
+  @media (max-width:700px){
+    .lu-more summary{padding-right:4px}
+    .lu-doors__cta{position:static;height:auto;padding:16px 0 20px;
+      border-top:1px solid rgba(36,30,22,.14);width:100%}
+  }
+
+  .lu-more__in{padding:0 4px clamp(24px,3vw,34px)}
+  .lu-more__in{max-width:46em}
+  .lu-sec{display:block;margin:clamp(28px,3.4vw,40px) 0 clamp(14px,1.8vw,20px);font-family:var(--lu-fn);
+    font-weight:400;font-size:.8rem;letter-spacing:.26em;color:var(--lu-sumi3);text-transform:uppercase}
+  .lu-sec:first-child{margin-top:clamp(4px,1vw,10px)}
+
+  .lu-led{margin:0;padding:0;border-top:1px solid rgba(36,30,22,.14)}
+  .lu-led__row{display:grid;grid-template-columns:minmax(0,14em) minmax(0,1fr);
+    gap:clamp(14px,2.4vw,40px);padding:clamp(20px,2.4vw,30px) 0;
+    border-bottom:1px solid rgba(36,30,22,.14)}
+  .lu-led dt{font-family:var(--lu-fm);font-weight:400;font-size:clamp(1rem,.94rem + .3vw,1.14rem);
+    line-height:1.7;letter-spacing:.08em;color:var(--lu-sumi)}
+  .lu-led dd{margin:0;line-break:strict;word-break:auto-phrase;text-wrap:balance;
+    font-size:clamp(.95rem,.92rem + .16vw,1.02rem);line-height:2.02;letter-spacing:.045em;color:var(--lu-sumi2)}
+  .lu-led dd b{font-weight:400;color:var(--lu-sumi)}
+
+  /* 設計の5手順 */
+  /* 手順と二人は一列・40em（1行およそ39字）。二列にすると28字で和文本文の下限30字を割る */
+  .lu-step__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(26px,3vw,38px);
+    max-width:40em}
+  .lu-step__n{display:block;margin:0 0 6px;font-family:var(--lu-fn);font-weight:400;font-size:.8rem;
+    letter-spacing:.18em;color:var(--lu-sumi3)}
+  .lu-step__h{margin:0 0 8px;font-family:var(--lu-fm);font-weight:400;text-wrap:balance;line-break:strict;
+    font-size:clamp(1rem,.94rem + .3vw,1.14rem);line-height:1.7;letter-spacing:.07em;color:var(--lu-sumi)}
+  .lu-step__b{margin:0;line-break:strict;word-break:auto-phrase;text-wrap:balance;
+    font-size:clamp(.95rem,.92rem + .1vw,.99rem);line-height:2.0;letter-spacing:.045em;color:var(--lu-sumi2)}
+  /* 02 だけ立てる。新しい装飾は足さず、章の中で使っている細罫と余白で差をつける */
+  .lu-step.is-lead{padding-top:clamp(20px,2.4vw,28px);border-top:1px solid rgba(36,30,22,.14)}
+
+  /* 設計担当の二人。写真は無いので枠を作らない */
+  .lu-ppl{display:grid;grid-template-columns:minmax(0,1fr);max-width:40em;
+    row-gap:clamp(26px,3vw,36px);
+    border-top:1px solid rgba(36,30,22,.14);padding-top:clamp(20px,2.4vw,28px)}
+  .lu-ppl__n{margin:0;font-family:var(--lu-fm);font-weight:400;
+    font-size:clamp(1rem,.94rem + .3vw,1.14rem);line-height:1.7;letter-spacing:.08em;color:var(--lu-sumi)}
+  .lu-ppl__r{display:block;margin:2px 0 10px;font-size:.85rem;line-height:1.8;letter-spacing:.06em;color:var(--lu-sumi3)}
+  .lu-ppl__c{margin:0;line-break:strict;word-break:auto-phrase;text-wrap:balance;
+    font-size:clamp(.95rem,.92rem + .1vw,.99rem);line-height:2.0;letter-spacing:.045em;color:var(--lu-sumi2)}
+  @media (max-width:640px){
+    .lu-led__row{grid-template-columns:minmax(0,1fr);gap:10px}
+  }
+  @media (prefers-reduced-motion:reduce){ .lu-more summary::after{transition:none} }
+</style>
+</head>
+<body>
+<div class="mk">
+
+  <p class="mk__lab">閉じた状態（扉は二つ：左＝その場で開く／右＝別ページへ）</p>
+  <section class="lineup"><div class="lu-cl"><div class="lu-cl__in">
+    <div class="lu-free">
+      <p class="lu-free__h">どこまでが決まっていて、<span>どこからが自由か。</span></p>
+      <p class="lu-free__b">「自由設計」という言葉は、会社によって指すものが違います。だから、やまとの線引きを先に書いておきます。</p>
+      <p class="lu-free__sig"><b>間取りが決まってから、建物の請負契約です。</b>打ち合わせには約3か月かけます。</p>
+    </div>
+    <div class="lu-doors">
+      <details class="lu-more">
+        <summary><span class="lu-more__open">詳しく見る</span><span class="lu-more__close">閉じる</span></summary>
+        <div class="lu-more__in"><span class="lu-sec">線引き</span><dl class="lu-led"><div class="lu-led__row"><dt>決まっているもの</dt><dd><b>構造と断熱、外壁と屋根、それに標準の設備です。</b>もうひとつ、基準になる広さも決まっています。三つのプランで違うのは、この広さと、設備をどこまで載せるかだけです。</dd></div><div class="lu-led__row"><dt>決まっていないもの</dt><dd><b>間取り。</b>部屋の数も配置も決まっていません。専属の設計士が打ち合わせの最初から同席して、一から考えます。同じ形に見える分譲地でも、隣の敷地しだいで光の入り方や視線の抜ける方向は変わるからです。</dd></div><div class="lu-led__row"><dt>変えられるもの</dt><dd><b>広さ。</b>1坪あたり64万円から増やせます。この金額には、増えた分の基礎3.3㎡も含まれています。</dd></div></dl><span class="lu-sec">設計の進め方</span><div class="lu-step__grid"><div class="lu-step"><span class="lu-step__n">01</span><p class="lu-step__h">敷地を読み解く</p><p class="lu-step__b">全ての住宅は必ず敷地の上に建っており、この敷地はお客様だけの、たった一つのものになります。同じ形の敷地が並んでいるように見える分譲地であっても、隣地の状況によっては、光の入り方、視線が抜ける方向などが違います。まずは敷地の特徴をつかむ事が設計の第1歩と考えております。</p></div><div class="lu-step is-lead"><span class="lu-step__n">02</span><p class="lu-step__h">要望と向き合い整理する</p><p class="lu-step__b">住宅の設計はお客様にとってのオンリーワンを作りだすものです。そのためにはお客様より多くの要望を聞き取ることが重要になります。新しい家には夢があふれ、様々なご要望があるかと思っております。理想の家がどんなものなのか、現在のお住まいの不満点や後悔された内容も一緒に整理していきます。</p></div><div class="lu-step"><span class="lu-step__n">03</span><p class="lu-step__h">様々な条件をまとめ整える</p><p class="lu-step__b">お客様にとって使いやすい間取りを考え、ゾーニング計画から動線、採光計画、キッチンやリビング、子ども部屋、水まわりなど部屋毎に暮らしやすさにこだわって要望をまとめていきます。</p></div><div class="lu-step"><span class="lu-step__n">04</span><p class="lu-step__h">耐震・災害に強い家について考える</p><p class="lu-step__b">お客様にとって動線や、暮らしやすさだけでは快適な家であるとは思っておりません。地震や災害にも強い家にすることも、大切なポイントであると考えております。</p></div><div class="lu-step"><span class="lu-step__n">05</span><p class="lu-step__h">あそびゴコロをプラスして</p><p class="lu-step__b">暮らしに彩りを演出する事で毎日が楽しく、自然と家族がコミュニケーションをとれるような、あそびゴコロも感じていただきたいと考えております。</p></div></div><span class="lu-sec">設計を担当する二人</span><div class="lu-ppl"><div class="lu-ppl__i"><p class="lu-ppl__n">栗野 佑也</p><span class="lu-ppl__r">KURINO Yuya／設計士</span><p class="lu-ppl__c">それぞれのご家族の暮らし・生活スタイルに沿ったプランをご提案。そこに住まうご家族が笑顔で楽しく過ごせる。そんな住まいの設計をしたいと思っております。</p></div><div class="lu-ppl__i"><p class="lu-ppl__n">岩佐 篤志</p><span class="lu-ppl__r">IWASA Atsushi／住宅デザイナー</span><p class="lu-ppl__c">現場監督や、営業設計の経験を活かして、みなさんの理想のお家をご提案します。そのためにも、お客様の心の傘を大きく開いていただけるように、がんばります！</p></div></div></div>
+      </details>
+      <a class="lu-doors__cta" href="madori.html#plans">三つの仕様をくらべる　→</a>
+    </div>
+  </div></div></section>
+
+  <p class="mk__lab">開いた状態</p>
+  <section class="lineup"><div class="lu-cl"><div class="lu-cl__in">
+    <div class="lu-free">
+      <p class="lu-free__h">どこまでが決まっていて、<span>どこからが自由か。</span></p>
+      <p class="lu-free__b">「自由設計」という言葉は、会社によって指すものが違います。だから、やまとの線引きを先に書いておきます。</p>
+      <p class="lu-free__sig"><b>間取りが決まってから、建物の請負契約です。</b>打ち合わせには約3か月かけます。</p>
+    </div>
+    <div class="lu-doors">
+      <details class="lu-more" open>
+        <summary><span class="lu-more__open">詳しく見る</span><span class="lu-more__close">閉じる</span></summary>
+        <div class="lu-more__in"><span class="lu-sec">線引き</span><dl class="lu-led"><div class="lu-led__row"><dt>決まっているもの</dt><dd><b>構造と断熱、外壁と屋根、それに標準の設備です。</b>もうひとつ、基準になる広さも決まっています。三つのプランで違うのは、この広さと、設備をどこまで載せるかだけです。</dd></div><div class="lu-led__row"><dt>決まっていないもの</dt><dd><b>間取り。</b>部屋の数も配置も決まっていません。専属の設計士が打ち合わせの最初から同席して、一から考えます。同じ形に見える分譲地でも、隣の敷地しだいで光の入り方や視線の抜ける方向は変わるからです。</dd></div><div class="lu-led__row"><dt>変えられるもの</dt><dd><b>広さ。</b>1坪あたり64万円から増やせます。この金額には、増えた分の基礎3.3㎡も含まれています。</dd></div></dl><span class="lu-sec">設計の進め方</span><div class="lu-step__grid"><div class="lu-step"><span class="lu-step__n">01</span><p class="lu-step__h">敷地を読み解く</p><p class="lu-step__b">全ての住宅は必ず敷地の上に建っており、この敷地はお客様だけの、たった一つのものになります。同じ形の敷地が並んでいるように見える分譲地であっても、隣地の状況によっては、光の入り方、視線が抜ける方向などが違います。まずは敷地の特徴をつかむ事が設計の第1歩と考えております。</p></div><div class="lu-step is-lead"><span class="lu-step__n">02</span><p class="lu-step__h">要望と向き合い整理する</p><p class="lu-step__b">住宅の設計はお客様にとってのオンリーワンを作りだすものです。そのためにはお客様より多くの要望を聞き取ることが重要になります。新しい家には夢があふれ、様々なご要望があるかと思っております。理想の家がどんなものなのか、現在のお住まいの不満点や後悔された内容も一緒に整理していきます。</p></div><div class="lu-step"><span class="lu-step__n">03</span><p class="lu-step__h">様々な条件をまとめ整える</p><p class="lu-step__b">お客様にとって使いやすい間取りを考え、ゾーニング計画から動線、採光計画、キッチンやリビング、子ども部屋、水まわりなど部屋毎に暮らしやすさにこだわって要望をまとめていきます。</p></div><div class="lu-step"><span class="lu-step__n">04</span><p class="lu-step__h">耐震・災害に強い家について考える</p><p class="lu-step__b">お客様にとって動線や、暮らしやすさだけでは快適な家であるとは思っておりません。地震や災害にも強い家にすることも、大切なポイントであると考えております。</p></div><div class="lu-step"><span class="lu-step__n">05</span><p class="lu-step__h">あそびゴコロをプラスして</p><p class="lu-step__b">暮らしに彩りを演出する事で毎日が楽しく、自然と家族がコミュニケーションをとれるような、あそびゴコロも感じていただきたいと考えております。</p></div></div><span class="lu-sec">設計を担当する二人</span><div class="lu-ppl"><div class="lu-ppl__i"><p class="lu-ppl__n">栗野 佑也</p><span class="lu-ppl__r">KURINO Yuya／設計士</span><p class="lu-ppl__c">それぞれのご家族の暮らし・生活スタイルに沿ったプランをご提案。そこに住まうご家族が笑顔で楽しく過ごせる。そんな住まいの設計をしたいと思っております。</p></div><div class="lu-ppl__i"><p class="lu-ppl__n">岩佐 篤志</p><span class="lu-ppl__r">IWASA Atsushi／住宅デザイナー</span><p class="lu-ppl__c">現場監督や、営業設計の経験を活かして、みなさんの理想のお家をご提案します。そのためにも、お客様の心の傘を大きく開いていただけるように、がんばります！</p></div></div></div>
+      </details>
+      <a class="lu-doors__cta" href="madori.html#plans">三つの仕様をくらべる　→</a>
+    </div>
+  </div></div></section>
+</div>
+<script>
+(function(){
+  document.querySelectorAll('.lu-more').forEach(function(dt){
+    var sum=dt.querySelector('summary'), ans=dt.querySelector('.lu-more__in');
+    if(!sum||!ans) return;
+    sum.addEventListener('click',function(e){
+      e.preventDefault();
+      if(dt.classList.contains('is-anim')) return;
+      dt.classList.add('is-anim');
+      if(!dt.open){
+        dt.open=true;
+        var h=ans.scrollHeight; ans.style.overflow='hidden';
+        ans.animate([{height:'0px',opacity:0},{height:h+'px',opacity:1}],{duration:340,easing:'cubic-bezier(.25,1,.5,1)'})
+          .onfinish=function(){ ans.style.overflow=''; dt.classList.remove('is-anim'); };
+      } else {
+        var h2=ans.scrollHeight; ans.style.overflow='hidden';
+        ans.animate([{height:h2+'px',opacity:1},{height:'0px',opacity:0}],{duration:280,easing:'cubic-bezier(.5,0,.75,0)'})
+          .onfinish=function(){ ans.style.overflow=''; dt.open=false; dt.classList.remove('is-anim'); };
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>

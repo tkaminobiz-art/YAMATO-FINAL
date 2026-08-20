@@ -747,6 +747,66 @@
   /* 自由設計の断り。三つの帯が「決まった商品が三つ」に読めるので、
      間取りは型ではないことをここで言う。新しい視覚言語は足さず、
      章の出口の中に二段で置く（説明 → 比較への導線）。*/
+  /* ───── 一本の罫に、扉を二つ ─────
+     左＝その場で開く（シェブロン）／右＝別ページへ（矢印）。
+     <summary> の中に <a> は置けないので、CTA は details の兄弟にして
+     summary 行へ重ねている。SPでは重ねずに下へ落とす。 */
+  .lu-doors{position:relative;margin:clamp(30px,3.6vw,44px) 0 0;
+    border-top:1px solid rgba(36,30,22,.14);border-bottom:1px solid rgba(36,30,22,.14)}
+  .lu-more{border:0}
+  .lu-more summary{list-style:none;cursor:pointer;display:flex;align-items:center;
+    justify-content:flex-start;gap:12px;min-height:44px;
+    padding:clamp(18px,2.4vw,26px) 4px;padding-right:clamp(200px,20vw,300px);
+    font-family:var(--lu-fg);font-weight:400;font-size:clamp(.98rem,.94rem + .35vw,1.14rem);
+    letter-spacing:.04em;line-height:1.8;color:var(--lu-sumi);transition:color .25s}
+  .lu-more summary::-webkit-details-marker{display:none}
+  .lu-more summary:hover{color:#2E4600}
+  .lu-more summary::after{content:"";width:11px;height:11px;flex:0 0 auto;align-self:center;
+    border-right:1.5px solid #8D857A;border-bottom:1.5px solid #8D857A;
+    transform:translateY(-3px) rotate(45deg);transition:transform .3s cubic-bezier(.33,1,.68,1)}
+  .lu-more[open] summary::after{transform:translateY(2px) rotate(-135deg)}
+  .lu-more summary .lu-more__close{display:none}
+  .lu-more[open] summary .lu-more__open{display:none}
+  .lu-more[open] summary .lu-more__close{display:inline}
+  .lu-doors__cta{position:absolute;right:4px;top:0;display:inline-flex;align-items:center;
+    min-height:44px;height:calc(clamp(18px,2.4vw,26px) * 2 + 1.8em);
+    font-family:var(--lu-fg);font-weight:400;font-size:.92rem;letter-spacing:.09em;
+    color:var(--lu-sumi);text-decoration:none;white-space:nowrap;
+    box-shadow:inset 0 -1px 0 var(--lu-sumi3)}
+  .lu-doors__cta:hover{box-shadow:inset 0 -1px 0 var(--lu-sumi)}
+  @media (max-width:700px){
+    .lu-more summary{padding-right:4px}
+    .lu-doors__cta{position:static;height:auto;padding:16px 0 20px;
+      border-top:1px solid rgba(36,30,22,.14);width:100%}
+  }
+  .lu-more__in{padding:0 4px clamp(24px,3vw,34px)}
+  .lu-more__in{max-width:46em}
+  .lu-sec{display:block;margin:clamp(28px,3.4vw,40px) 0 clamp(14px,1.8vw,20px);font-family:var(--lu-fn);
+    font-weight:400;font-size:.8rem;letter-spacing:.26em;color:var(--lu-sumi3);text-transform:uppercase}
+  .lu-sec:first-child{margin-top:clamp(4px,1vw,10px)}
+  /* 設計の5手順 */
+  /* 手順と二人は一列・40em（1行およそ39字）。二列にすると28字で和文本文の下限30字を割る */
+  .lu-step__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(26px,3vw,38px);
+    max-width:40em}
+  .lu-step__n{display:block;margin:0 0 6px;font-family:var(--lu-fn);font-weight:400;font-size:.8rem;
+    letter-spacing:.18em;color:var(--lu-sumi3)}
+  .lu-step__h{margin:0 0 8px;font-family:var(--lu-fm);font-weight:400;text-wrap:balance;line-break:strict;
+    font-size:clamp(1rem,.94rem + .3vw,1.14rem);line-height:1.7;letter-spacing:.07em;color:var(--lu-sumi)}
+  .lu-step__b{margin:0;line-break:strict;word-break:auto-phrase;text-wrap:balance;
+    font-size:clamp(.95rem,.92rem + .1vw,.99rem);line-height:2.0;letter-spacing:.045em;color:var(--lu-sumi2)}
+  /* 02 だけ立てる。新しい装飾は足さず、章の中で使っている細罫と余白で差をつける */
+  .lu-step.is-lead{padding-top:clamp(20px,2.4vw,28px);border-top:1px solid rgba(36,30,22,.14)}
+  /* 設計担当の二人。写真は無いので枠を作らない */
+  .lu-ppl{display:grid;grid-template-columns:minmax(0,1fr);max-width:40em;
+    row-gap:clamp(26px,3vw,36px);
+    border-top:1px solid rgba(36,30,22,.14);padding-top:clamp(20px,2.4vw,28px)}
+  .lu-ppl__n{margin:0;font-family:var(--lu-fm);font-weight:400;
+    font-size:clamp(1rem,.94rem + .3vw,1.14rem);line-height:1.7;letter-spacing:.08em;color:var(--lu-sumi)}
+  .lu-ppl__r{display:block;margin:2px 0 10px;font-size:.85rem;line-height:1.8;letter-spacing:.06em;color:var(--lu-sumi3)}
+  .lu-ppl__c{margin:0;line-break:strict;word-break:auto-phrase;text-wrap:balance;
+    font-size:clamp(.95rem,.92rem + .1vw,.99rem);line-height:2.0;letter-spacing:.045em;color:var(--lu-sumi2)}
+  @media (prefers-reduced-motion:reduce){ .lu-more summary::after{transition:none} }
+
   .lu-free{max-width:46em}
   /* 台帳＝決まっている／決まっていない／変えられる の三段。
      「自由設計」は語として無価値化しており（大阪府が契約トラブルに警告を出す水準）、
@@ -1573,27 +1633,42 @@
   <div class="lu-cl">
     <div class="lu-cl__in">
       <div class="lu-free">
-        <p class="lu-free__h">どこまでが決まっていて、<span>どこからが自由か。</span></p>
-        <p class="lu-free__b">「自由設計」という言葉は、会社によって指すものが違います。だから、やまとの線引きを先に書いておきます。</p>
-        <dl class="lu-led">
-          <div class="lu-led__row">
-            <dt>決まっているもの</dt>
-            <dd><b>構造と断熱、外壁と屋根、それに標準の設備です。</b>もうひとつ、基準になる広さも決まっています。三つのプランで違うのは、この広さと、設備をどこまで載せるかだけです。</dd>
-          </div>
-          <div class="lu-led__row">
-            <dt>決まっていないもの</dt>
-            <dd><b>間取り。</b>部屋の数も配置も決まっていません。専属の設計士が打ち合わせの最初から同席して、一から考えます。同じ形に見える分譲地でも、隣の敷地しだいで光の入り方や視線の抜ける方向は変わるからです。</dd>
-          </div>
-          <div class="lu-led__row">
-            <dt>変えられるもの</dt>
-            <dd><b>広さ。</b>1坪あたり64万円から増やせます。この金額には、増えた分の基礎3.3㎡も含まれています。</dd>
-          </div>
-        </dl>
-        <p class="lu-free__sig"><b>間取りが決まってから、建物の請負契約です。</b>打ち合わせには約3か月かけます。設計を担当するのは、栗野佑也と岩佐篤志の二人です。</p>
+        <p class="lu-free__h">三つとも、間取りは<span>これから考えます。</span></p>
+        <p class="lu-free__b">決まっているのは、基準になる広さと、標準で入る設備です。間取りは白紙のまま、専属の設計士と一緒に決めていきます。</p>
+        <p class="lu-free__sig"><b>決めるのは、建物の契約より先です。</b>間取りがまとまってから、建物の請負契約を結びます。ここまでに約3か月かけます。</p>
       </div>
-      <div class="lu-cl__row">
-        <p class="lu-cl__t">三つの仕様は、坪数から標準装備まで一覧でくらべられます。</p>
-        <a class="lu-cl__a" href="madori.html#plans">三つの仕様をくらべる　→</a>
+      <div class="lu-doors">
+        <details class="lu-more">
+          <summary><span class="lu-more__open">詳しく見る</span><span class="lu-more__close">閉じる</span></summary>
+          <div class="lu-more__in">
+            <span class="lu-sec">決まっていること</span>
+            <dl class="lu-led">
+              <div class="lu-led__row"><dt>変わらないもの</dt>
+                <dd><b>構造と断熱、外壁と屋根、それに標準で入る設備です。</b>もうひとつ、基準になる広さも決まっています。三つのプランで違うのは、この広さと、設備をどこまで載せるかだけです。</dd></div>
+              <div class="lu-led__row"><dt>これから決めるもの</dt>
+                <dd><b>間取りです。</b>部屋の数も配置も決まっていません。専属の設計士が、打ち合わせの最初から同席して考えます。</dd></div>
+              <div class="lu-led__row"><dt>変えられるもの</dt>
+                <dd><b>広さです。</b>1坪あたり64万円から増やせます。この金額には、増えた分の基礎3.3㎡も含まれています。</dd></div>
+            </dl>
+            <span class="lu-sec">間取りの決め方</span>
+            <div class="lu-step__grid">
+              <div class="lu-step"><span class="lu-step__n">01</span>
+                <p class="lu-step__h">敷地を読むところから始めます</p>
+                <p class="lu-step__b">同じ形に見える分譲地でも、隣の敷地の状況で、光の入り方も視線の抜ける方向も変わります。その敷地の特徴をつかんでから、間取りを考えはじめます。</p></div>
+              <div class="lu-step is-lead"><span class="lu-step__n">02</span>
+                <p class="lu-step__h">いまの住まいの不満も、一緒に整理します</p>
+                <p class="lu-step__b">どんな家にしたいかをうかがいます。あわせて、いまのお住まいで不満に思っているところや、後悔されていることも一緒に整理していきます。理想だけを聞くより、そのほうが早く形になります。</p></div>
+            </div>
+            <span class="lu-sec">設計を担当する二人</span>
+            <div class="lu-ppl">
+              <div class="lu-ppl__i"><p class="lu-ppl__n">栗野 佑也</p><span class="lu-ppl__r">KURINO Yuya／設計士</span>
+                <p class="lu-ppl__c">それぞれのご家族の暮らし・生活スタイルに沿ったプランをご提案。そこに住まうご家族が笑顔で楽しく過ごせる。そんな住まいの設計をしたいと思っております。</p></div>
+              <div class="lu-ppl__i"><p class="lu-ppl__n">岩佐 篤志</p><span class="lu-ppl__r">IWASA Atsushi／住宅デザイナー</span>
+                <p class="lu-ppl__c">現場監督や、営業設計の経験を活かして、みなさんの理想のお家をご提案します。そのためにも、お客様の心の傘を大きく開いていただけるように、がんばります！</p></div>
+            </div>
+          </div>
+        </details>
+        <a class="lu-doors__cta" href="madori.html#plans">三つの仕様をくらべる　→</a>
       </div>
     </div>
   </div>
