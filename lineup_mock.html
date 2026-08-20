@@ -19,7 +19,7 @@
    ------------------------------------------------------------------ */
 :root{
   --paper:#F4F1EA; --paper2:#EAE4D7; --sumi:#241E16; --sumi2:#5C5346; --sumi3:#8A8070;
-  --shu:#BD1B21;
+  --shu:#BD1B21; --gold:#C9A24B; --gold2:#B08A3C;
   --c-hana:#C64A00; --c-kyo:#7D4B4F; --c-kaze:#908600;   /* パンフ p36 実測 */
   --fm:"Shippori Mincho B1",serif;
   --fg:"Zen Kaku Gothic New",sans-serif;
@@ -33,7 +33,19 @@ body{margin:0;background:var(--paper);color:var(--sumi);
 img{display:block;max-width:100%}
 
 /* ───── 章の入り口 ───── */
-.op{padding:clamp(88px,13vw,190px) var(--gx) clamp(64px,9vw,120px)}
+.op{position:relative;overflow:hidden;padding:clamp(88px,13vw,190px) var(--gx) clamp(64px,9vw,120px);
+  background:linear-gradient(rgba(244,241,234,.62),rgba(244,241,234,.62)),
+    url("assets/std/page_kinari_letter_2400.webp") center/cover var(--paper);
+  background-size:auto, 62% auto}
+/* 箔の燕 — 表紙が隅から文様を食い込ませていたのと同じ働き。
+   表紙は紅の面で金が立つ。こちらは生成りの面なので、同じ金を囁く強さで置く。*/
+.op::after{content:"";position:absolute;z-index:0;pointer-events:none;
+  right:clamp(-90px,-6vw,-40px);top:clamp(-40px,-3vw,-16px);
+  width:clamp(210px,26vw,420px);aspect-ratio:1400/1337;
+  background:url("assets/std/swallow1_foil.png") center/contain no-repeat;
+  opacity:.26;filter:saturate(.86) brightness(1.06)
+    drop-shadow(0 1px 0 rgba(255,255,255,.8))}
+.op__inner{position:relative;z-index:1}
 .op__inner{max-width:1180px;margin:0 auto}
 .op__eyebrow{display:block;margin:0 0 clamp(26px,3.4vw,44px);font-family:var(--fn);font-weight:400;
   font-size:.8rem;letter-spacing:.3em;color:var(--sumi3);text-transform:uppercase}
@@ -51,9 +63,10 @@ img{display:block;max-width:100%}
 .seal{display:grid;place-items:center;width:44px;height:44px;
   font-family:var(--fm);font-weight:400;font-size:1.28rem;line-height:1;
   padding-top:.06em;letter-spacing:0}
-.seal--hana{color:var(--c-hana);box-shadow:inset 0 0 0 1.5px var(--c-hana)}
-.seal--kyo {color:var(--c-kyo); box-shadow:inset 0 0 0 1.5px var(--c-kyo)}
-.seal--kaze{color:var(--c-kaze);box-shadow:inset 0 0 0 1.5px var(--c-kaze)}
+.seal{box-shadow:inset 0 0 0 1.5px currentColor, inset 0 1px 2px rgba(36,30,22,.10), 0 1px 0 rgba(255,255,255,.7)}
+.seal--hana{color:var(--c-hana)}
+.seal--kyo {color:var(--c-kyo)}
+.seal--kaze{color:var(--c-kaze)}
 .seals__note{margin-left:6px;font-size:.86rem;letter-spacing:.05em;color:var(--sumi3)}
 
 /* ───── 帯 ───── */
@@ -74,17 +87,23 @@ img{display:block;max-width:100%}
 /* 小図版 — 版面の境界をまたいで置く。パンフレットが写真をノドに
    食い込ませていたのと同じ働き。大小の差が版に奥行きを作る。 */
 .band__detail{position:absolute;z-index:2;left:50%;transform:translateX(-84%);
-  bottom:clamp(-26px,-2vw,-18px);
+  bottom:clamp(58px,6.2vw,88px);
   width:clamp(148px,15.5vw,228px);aspect-ratio:3/4;overflow:hidden;
-  box-shadow:0 0 0 clamp(7px,.85vw,12px) var(--paper), 0 18px 40px rgba(36,30,22,.13)}
+  box-shadow:0 0 0 clamp(7px,.85vw,12px) var(--paper),
+    0 0 0 calc(clamp(7px,.85vw,12px) + 1px) rgba(201,162,75,.55),
+    0 18px 40px rgba(36,30,22,.13)}
 .band__detail img{width:100%;height:100%;object-fit:cover}
 .band--flip .band__detail{transform:translateX(-16%)}
-.band--flip .band__cap{transform:translateX(-16%)}
-.band__cap{position:absolute;z-index:2;left:50%;bottom:clamp(-56px,-4.4vw,-44px);
-  transform:translateX(-84%);white-space:nowrap;
+.band--flip .band__cap{left:auto;right:calc(50% + clamp(10px,1.1vw,18px))}
+/* キャプションは必ず紙の側へ。写真に乗せると暗部で読めなくなる */
+.band__cap{position:absolute;z-index:3;bottom:clamp(28px,3.2vw,46px);
+  left:calc(50% + clamp(10px,1.1vw,18px));white-space:nowrap;
   font-family:var(--fn);font-weight:400;font-size:.8rem;letter-spacing:.16em;color:var(--sumi3)}
 
-.band__panel{display:flex;flex-direction:column;justify-content:center;
+.band__panel{position:relative;display:flex;flex-direction:column;justify-content:center;
+  background:linear-gradient(rgba(244,241,234,.62),rgba(244,241,234,.62)),
+    url("assets/std/page_kinari_letter_2400.webp") center/cover var(--paper);
+  background-size:auto, 62% auto;
   padding:clamp(52px,6.4vw,96px) clamp(28px,5vw,86px)}
 .band__panel-in{max-width:30em}
 
@@ -122,7 +141,10 @@ img{display:block;max-width:100%}
 .band--kaze .band__rule{background:var(--c-kaze)}
 
 /* ───── 章の出口 ───── */
-.cl{padding:clamp(76px,10vw,140px) var(--gx)}
+.cl{position:relative;overflow:hidden;padding:clamp(76px,10vw,140px) var(--gx);
+  background:linear-gradient(rgba(244,241,234,.62),rgba(244,241,234,.62)),
+    url("assets/std/page_kinari_letter_2400.webp") center/cover var(--paper);
+  background-size:auto, 62% auto}
 .cl__inner{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;
   align-items:baseline;justify-content:space-between;gap:clamp(22px,3vw,44px)}
 .cl__t{margin:0;text-wrap:balance;line-break:strict;word-break:auto-phrase;font-family:var(--fm);font-weight:400;
