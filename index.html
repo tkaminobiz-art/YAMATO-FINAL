@@ -747,7 +747,31 @@
   /* 自由設計の断り。三つの帯が「決まった商品が三つ」に読めるので、
      間取りは型ではないことをここで言う。新しい視覚言語は足さず、
      章の出口の中に二段で置く（説明 → 比較への導線）。*/
-  .lu-free{max-width:38em}
+  .lu-free{max-width:46em}
+  /* 台帳＝決まっている／決まっていない／変えられる の三段。
+     「自由設計」は語として無価値化しており（大阪府が契約トラブルに警告を出す水準）、
+     賢い読者ほど疑って読む。だから語を強めず、線引きを先に開示する。
+     kodawari.html の「正直の台帳」と同じ姿勢。 */
+  .lu-led{margin:clamp(34px,4vw,52px) 0 0;padding:0;
+    border-top:1px solid rgba(36,30,22,.14)}
+  .lu-led__row{display:grid;grid-template-columns:minmax(0,14em) minmax(0,1fr);
+    gap:clamp(14px,2.4vw,40px);
+    padding:clamp(20px,2.4vw,30px) 0;border-bottom:1px solid rgba(36,30,22,.14)}
+  .lu-led dt{font-family:var(--lu-fm);font-weight:400;
+    font-size:clamp(1rem,.94rem + .3vw,1.14rem);line-height:1.7;letter-spacing:.08em;
+    color:var(--lu-sumi)}
+  .lu-led dd{margin:0;line-break:strict;word-break:auto-phrase;
+    font-size:clamp(.95rem,.92rem + .16vw,1.02rem);line-height:2.02;letter-spacing:.045em;
+    color:var(--lu-sumi2)}
+  .lu-led dd b{font-weight:400;color:var(--lu-sumi)}
+  .lu-free__sig{margin:clamp(26px,3vw,36px) 0 0;
+    font-size:clamp(.95rem,.92rem + .16vw,1.02rem);line-height:2.02;letter-spacing:.045em;
+    color:var(--lu-sumi2)}
+  .lu-free__sig b{font-weight:400;color:var(--lu-sumi)}
+  .lu-free__h span{display:inline-block}
+  @media (max-width:640px){
+    .lu-led__row{grid-template-columns:minmax(0,1fr);gap:10px}
+  }
   .lu-free__h{margin:0;font-family:var(--lu-fm);font-weight:400;text-wrap:balance;line-break:strict;
     font-size:clamp(1.18rem,1rem + .72vw,1.6rem);line-height:1.68;letter-spacing:.06em}
   .lu-free__b{margin:clamp(18px,2.2vw,26px) 0 0;line-break:strict;word-break:auto-phrase;
@@ -1549,8 +1573,23 @@
   <div class="lu-cl">
     <div class="lu-cl__in">
       <div class="lu-free">
-        <p class="lu-free__h">三つとも、間取りは決まっていません。</p>
-        <p class="lu-free__b">決まっているのは、基準になる広さと標準の設備です。間取りは、専属の設計士が打ち合わせの最初から同席して、一から考えます。同じ形に見える分譲地でも、隣の敷地しだいで光の入り方や視線の抜ける方向は変わります。設計を担当するのは、栗野佑也と岩佐篤志の二人です。</p>
+        <p class="lu-free__h">どこまでが決まっていて、<span>どこからが自由か。</span></p>
+        <p class="lu-free__b">「自由設計」という言葉は、会社によって指すものが違います。だから、やまとの線引きを先に書いておきます。</p>
+        <dl class="lu-led">
+          <div class="lu-led__row">
+            <dt>決まっているもの</dt>
+            <dd><b>構造と断熱、外壁と屋根、それに標準の設備です。</b>もうひとつ、基準になる広さも決まっています。三つのプランで違うのは、この広さと、設備をどこまで載せるかだけです。</dd>
+          </div>
+          <div class="lu-led__row">
+            <dt>決まっていないもの</dt>
+            <dd><b>間取り。</b>部屋の数も配置も決まっていません。専属の設計士が打ち合わせの最初から同席して、一から考えます。同じ形に見える分譲地でも、隣の敷地しだいで光の入り方や視線の抜ける方向は変わるからです。</dd>
+          </div>
+          <div class="lu-led__row">
+            <dt>変えられるもの</dt>
+            <dd><b>広さ。</b>1坪あたり64万円から増やせます。この金額には、増えた分の基礎3.3㎡も含まれています。</dd>
+          </div>
+        </dl>
+        <p class="lu-free__sig">設計を担当するのは、<b>栗野佑也</b>と<b>岩佐篤志</b>の二人です。</p>
       </div>
       <div class="lu-cl__row">
         <p class="lu-cl__t">三つの仕様は、坪数から標準装備まで一覧でくらべられます。</p>
