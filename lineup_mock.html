@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>商品ラインナップ 図面 v1 — 三つの帯</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Shippori+Mincho+B1:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ───────── 図面 v1「三つの帯」 ─────────
+   文法はクライアント自身のパンフレット（2026-07）から:
+   ・写真はフルブリード、紙の端まで余白ゼロ
+   ・向かいは白く静かな面。文字は小さく、大きいのは表示語ひとつ
+   ・三シリーズは「角印」で呼ぶ（列でもカードでもない）
+   ・紅と各シリーズ色は「罫」だけ。面には使わない
+   順序 花→京→風 はパンフ2026-07に合わせた。価格が 2,680→2,480→2,680 と
+   下って戻るので、上から下への梯子に読めない。
+   ------------------------------------------------------------------ */
+:root{
+  --paper:#F4F1EA; --paper2:#EAE4D7; --sumi:#241E16; --sumi2:#5C5346; --sumi3:#8A8070;
+  --shu:#BD1B21;
+  --c-hana:#C64A00; --c-kyo:#7D4B4F; --c-kaze:#908600;   /* パンフ p36 実測 */
+  --fm:"Shippori Mincho B1",serif;
+  --fg:"Zen Kaku Gothic New",sans-serif;
+  --fn:"Inter",sans-serif;
+  --gx:clamp(22px,5vw,88px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--sumi);
+  font-family:var(--fg);font-weight:300;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+
+/* ───── 章の入り口 ───── */
+.op{padding:clamp(88px,13vw,190px) var(--gx) clamp(64px,9vw,120px)}
+.op__inner{max-width:1180px;margin:0 auto}
+.op__eyebrow{display:block;margin:0 0 clamp(26px,3.4vw,44px);font-family:var(--fn);font-weight:400;
+  font-size:.8rem;letter-spacing:.3em;color:var(--sumi3);text-transform:uppercase}
+.op__h{margin:0;line-break:strict;font-family:var(--fm);font-weight:400;
+  font-size:clamp(1.5rem,1.02rem + 2.05vw,2.72rem);
+  line-height:1.62;letter-spacing:.055em}
+/* 句ごとに inline-block。句の途中で折れて1〜2字が孤立するのを防ぐ */
+.op__h span{display:inline-block}
+@media (min-width:861px){ .op__h span:nth-child(2){display:inline} }
+.op__lead{margin:clamp(30px,3.6vw,48px) 0 0;max-width:44em;line-break:strict;word-break:auto-phrase;
+  font-size:clamp(.94rem,.88rem + .22vw,1.03rem);line-height:2.06;letter-spacing:.045em;
+  color:var(--sumi2)}
+/* 角印 — ブランド自身の三シリーズの呼び方 */
+.seals{display:flex;gap:12px;align-items:center;margin:clamp(34px,4.2vw,52px) 0 0}
+.seal{display:grid;place-items:center;width:44px;height:44px;
+  font-family:var(--fm);font-weight:400;font-size:1.28rem;line-height:1;
+  padding-top:.06em;letter-spacing:0}
+.seal--hana{color:var(--c-hana);box-shadow:inset 0 0 0 1.5px var(--c-hana)}
+.seal--kyo {color:var(--c-kyo); box-shadow:inset 0 0 0 1.5px var(--c-kyo)}
+.seal--kaze{color:var(--c-kaze);box-shadow:inset 0 0 0 1.5px var(--c-kaze)}
+.seals__note{margin-left:6px;font-size:.86rem;letter-spacing:.05em;color:var(--sumi3)}
+
+/* ───── 帯 ───── */
+.band{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;
+  border-top:1px solid rgba(36,30,22,.10)}
+.band:last-of-type{border-bottom:1px solid rgba(36,30,22,.10)}
+.band__media{position:relative;overflow:hidden}
+/* 帯ごとに行の高さが違う。高さの差は序列ではなくリズム。
+   京は撮影距離の都合で家が横位置に収まらないので、行を高くして縦のまま見せる。
+   ※ media に aspect-ratio を置くと、stretch で確定した高さから幅を逆算して
+     列をはみ出す（実測1022px／列は720px）。高さは行側で与えること。 */
+.band--hana,.band--kaze{min-height:clamp(420px,46vw,660px)}
+.band--kyo{min-height:clamp(480px,62vw,900px)}
+.band__media img{width:100%;height:100%;object-fit:cover}
+/* 偶数帯は写真を右へ。梯子に読ませないための交互 */
+.band--flip .band__media{order:2}
+
+/* 小図版 — 版面の境界をまたいで置く。パンフレットが写真をノドに
+   食い込ませていたのと同じ働き。大小の差が版に奥行きを作る。 */
+.band__detail{position:absolute;z-index:2;left:50%;transform:translateX(-84%);
+  bottom:clamp(-26px,-2vw,-18px);
+  width:clamp(148px,15.5vw,228px);aspect-ratio:3/4;overflow:hidden;
+  box-shadow:0 0 0 clamp(7px,.85vw,12px) var(--paper), 0 18px 40px rgba(36,30,22,.13)}
+.band__detail img{width:100%;height:100%;object-fit:cover}
+.band--flip .band__detail{transform:translateX(-16%)}
+.band--flip .band__cap{transform:translateX(-16%)}
+.band__cap{position:absolute;z-index:2;left:50%;bottom:clamp(-56px,-4.4vw,-44px);
+  transform:translateX(-84%);white-space:nowrap;
+  font-family:var(--fn);font-weight:400;font-size:.8rem;letter-spacing:.16em;color:var(--sumi3)}
+
+.band__panel{display:flex;flex-direction:column;justify-content:center;
+  padding:clamp(52px,6.4vw,96px) clamp(28px,5vw,86px)}
+.band__panel-in{max-width:30em}
+
+.band__mark{display:flex;align-items:baseline;gap:clamp(14px,1.6vw,22px)}
+.band__kanji{font-family:var(--fm);font-weight:400;line-height:1;
+  font-size:clamp(2.9rem,2rem + 3.9vw,4.6rem);letter-spacing:.02em}
+.band__romaji{font-family:var(--fn);font-weight:400;font-size:.8rem;
+  letter-spacing:.34em;color:var(--sumi3);text-transform:uppercase}
+.band__rule{width:clamp(40px,5vw,70px);height:2px;margin:clamp(24px,2.8vw,34px) 0 0}
+
+.band__label{margin:clamp(22px,2.6vw,32px) 0 0;text-wrap:balance;line-break:strict;word-break:auto-phrase;font-family:var(--fm);font-weight:400;
+  font-size:clamp(1.12rem,.98rem + .58vw,1.46rem);line-height:1.72;letter-spacing:.06em}
+.band__body{margin:clamp(18px,2.1vw,26px) 0 0;
+  font-size:clamp(.95rem,.92rem + .16vw,1.02rem);line-height:2.04;letter-spacing:.045em;
+  line-break:strict;word-break:auto-phrase;
+  color:var(--sumi2)}
+
+.band__facts{display:flex;flex-wrap:wrap;gap:0 clamp(26px,3.2vw,46px);
+  margin:clamp(30px,3.4vw,42px) 0 0;padding:0;list-style:none}
+.band__facts li{display:flex;flex-direction:column;gap:7px}
+.band__facts dt,.band__facts .k{font-family:var(--fn);font-weight:400;font-size:.8rem;
+  letter-spacing:.2em;color:var(--sumi3);text-transform:uppercase}
+.band__facts .v{font-family:var(--fm);font-weight:400;font-size:1.06rem;letter-spacing:.05em}
+
+.band__price{margin:clamp(30px,3.4vw,42px) 0 0;display:flex;align-items:baseline;gap:12px}
+.band__price b{font-family:var(--fm);font-weight:400;font-size:clamp(1.36rem,1.1rem + 1.05vw,1.92rem);
+  letter-spacing:.03em}
+.band__price span{font-size:.8rem;letter-spacing:.06em;color:var(--sumi3)}
+
+.band--hana .band__kanji{color:var(--c-hana)}
+.band--hana .band__rule{background:var(--c-hana)}
+.band--kyo  .band__kanji{color:var(--c-kyo)}
+.band--kyo  .band__rule{background:var(--c-kyo)}
+.band--kaze .band__kanji{color:var(--c-kaze)}
+.band--kaze .band__rule{background:var(--c-kaze)}
+
+/* ───── 章の出口 ───── */
+.cl{padding:clamp(76px,10vw,140px) var(--gx)}
+.cl__inner{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;
+  align-items:baseline;justify-content:space-between;gap:clamp(22px,3vw,44px)}
+.cl__t{margin:0;text-wrap:balance;line-break:strict;word-break:auto-phrase;font-family:var(--fm);font-weight:400;
+  font-size:clamp(1.08rem,.96rem + .5vw,1.34rem);line-height:1.78;letter-spacing:.055em}
+.cl__a{display:inline-flex;align-items:center;min-height:44px;
+  font-family:var(--fg);font-weight:400;font-size:.92rem;letter-spacing:.09em;
+  color:var(--sumi);text-decoration:none;white-space:nowrap;
+  box-shadow:inset 0 -1px 0 var(--sumi3)}
+.cl__a:hover{box-shadow:inset 0 -1px 0 var(--sumi)}
+
+@media (max-width:860px){
+  .band{grid-template-columns:minmax(0,1fr)}
+  /* SP: 図版は写真の右下へ寄せる。中央だと本文の頭に被る */
+  .band__detail{left:auto;right:var(--gx);transform:none;
+    width:clamp(96px,26vw,140px);bottom:auto;top:clamp(180px,46vw,300px)}
+  .band__cap{display:none}
+  .band--flip .band__media{order:0}
+  .band--hana,.band--kaze,.band--kyo{min-height:0}
+  .band--hana .band__media,.band--kaze .band__media{height:clamp(240px,60vw,400px)}
+  .band--kyo .band__media{height:clamp(340px,86vw,560px)}
+  .band__panel{padding:clamp(44px,9vw,64px) var(--gx) clamp(56px,10vw,72px)}
+  .op__lead{max-width:none}
+}
+</style>
+</head>
+<body>
+
+<section class="op">
+  <div class="op__inner">
+    <span class="op__eyebrow">Lineup ／ 商品ラインナップ</span>
+    <h2 class="op__h"><span>構造も断熱も外壁も、</span><span>三つとも同じものが</span><span>入ります。</span></h2>
+    <p class="op__lead">耐震と制震、アクアフォームLITEの断熱、ヘーベルパワーボードの外壁、ニスクカラーProの屋根。ここまでは三つとも同じです。違うのは広さと、設備と性能のどちらに費用をかけるかです。</p>
+    <div class="seals">
+      <span class="seal seal--hana">花</span>
+      <span class="seal seal--kyo">京</span>
+      <span class="seal seal--kaze">風</span>
+      <span class="seals__note">やまとの家「花鳥風月」の3つのシリーズです。</span>
+    </div>
+  </div>
+</section>
+
+<section class="band band--hana">
+  <div class="band__detail"><img src="assets/lineup/hero/hana_det.webp" alt="玄関ポーチと木目の軒天"></div>
+  <span class="band__cap">PORCH ／ 軒天 ニチハ木目12mm</span>
+  <div class="band__media"><img src="assets/lineup/hero/hana_ext.webp" alt="花のモデルハウス外観"></div>
+  <div class="band__panel"><div class="band__panel-in">
+    <p class="band__mark"><span class="band__kanji">花</span><span class="band__romaji">Hana</span></p>
+    <div class="band__rule"></div>
+    <p class="band__label">天井を高くとり、設備を整えた家</p>
+    <p class="band__body">玄関ドアは顔認証で開きます。軒天にはニチハの木目12mmを使い、窓はワイドサッシです。もう少し広くしたいときは、1坪あたり64万円で増やせます。</p>
+    <ul class="band__facts">
+      <li><span class="k">延床</span><span class="v">31坪</span></li>
+      <li><span class="k">1階天井高</span><span class="v">2,500mm</span></li>
+      <li><span class="k">玄関</span><span class="v">親子ドア</span></li>
+    </ul>
+    <p class="band__price"><b>2,680万円</b><span>コミコミ価格・税込</span></p>
+  </div></div>
+</section>
+
+<section class="band band--kyo band--flip">
+  <div class="band__detail"><img src="assets/lineup/hero/kyo_det.webp" alt="京の玄関ドア"></div>
+  <span class="band__cap">ENTRANCE ／ ジエスタ2 片開き</span>
+  <div class="band__media"><img src="assets/lineup/hero/kyo_ext.webp" alt="京のモデルハウス外観"></div>
+  <div class="band__panel"><div class="band__panel-in">
+    <p class="band__mark"><span class="band__kanji">京</span><span class="band__romaji">Miyako</span></p>
+    <div class="band__rule"></div>
+    <p class="band__label">限られた敷地のために設計した家</p>
+    <p class="band__body">奈良のように広く土地を使えない場所でも建てられるよう、28坪3LDKにまとめています。もう少し広くしたいときは、1坪あたり68万円で増やせます。</p>
+    <ul class="band__facts">
+      <li><span class="k">延床</span><span class="v">28坪</span></li>
+      <li><span class="k">間取り</span><span class="v">3LDK</span></li>
+      <li><span class="k">玄関</span><span class="v">FamiLock</span></li>
+    </ul>
+    <p class="band__price"><b>2,480万円</b><span>コミコミ価格・税込</span></p>
+  </div></div>
+</section>
+
+<section class="band band--kaze">
+  <div class="band__detail"><img src="assets/lineup/hero/kaze_det.webp" alt="風の玄関"></div>
+  <span class="band__cap">ENTRANCE ／ 玄関土間とホール</span>
+  <div class="band__media"><img src="assets/lineup/hero/kaze_ext.webp" alt="風のモデルハウス外観"></div>
+  <div class="band__panel"><div class="band__panel-in">
+    <p class="band__mark"><span class="band__kanji">風</span><span class="band__romaji">Kaze</span></p>
+    <div class="band__rule"></div>
+    <p class="band__label">長く住むための性能を備えた家</p>
+    <p class="band__body">3帖のベランダと電動シャッターが標準です。防犯ガラスは掃き出し窓2か所と腰窓2か所に入ります。もう少し広くしたいときは、1坪あたり68万円で増やせます。</p>
+    <ul class="band__facts">
+      <li><span class="k">延床</span><span class="v">30坪</span></li>
+      <li><span class="k">面積基準</span><span class="v">長期優良住宅</span></li>
+      <li><span class="k">玄関</span><span class="v">FamiLock</span></li>
+    </ul>
+    <p class="band__price"><b>2,680万円</b><span>コミコミ価格・税込</span></p>
+  </div></div>
+</section>
+
+<section class="cl">
+  <div class="cl__inner">
+    <p class="cl__t">三つの仕様は、坪数・間取り・標準装備まで一覧でくらべられます。</p>
+    <a class="cl__a" href="madori.html#plans">花・風・京をくらべる →</a>
+  </div>
+</section>
+
+</body>
+</html>
