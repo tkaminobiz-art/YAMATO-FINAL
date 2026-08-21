@@ -1,0 +1,92 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>図面 — 二枚の扉（お客様の声／分譲地・物件）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Shippori+Mincho+B1:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
+<style>
+:root{--kinari:#F7F2E8;--sumi:#241E16;--gold:#C9A24B;
+ --fm:"YakuHanMP","Shippori Mincho B1",serif;--fn:Inter,sans-serif;
+ --out:cubic-bezier(.22,1,.36,1);--press:cubic-bezier(.4,0,.2,1)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--kinari);font-family:"Zen Kaku Gothic New",sans-serif}
+img{display:block;max-width:100%}
+.xnote{background:#1A1713;color:#E8E2D4;padding:20px clamp(20px,4vw,56px);
+ font-family:var(--fn);font-size:.86rem;line-height:1.9;letter-spacing:.03em;
+ line-break:strict;word-break:auto-phrase}
+.xnote b{color:#E3C572;font-weight:500;font-size:.95rem}
+
+/* ═══ 二枚の扉 ═══ */
+.dg{background:var(--kinari);padding:clamp(64px,8vw,132px) clamp(20px,4.2vw,64px)}
+.dg__grid{max-width:1920px;margin:0 auto;display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,26px)}
+.dg__c{position:relative;display:block;overflow:hidden;text-decoration:none;
+ aspect-ratio:16/9;isolation:isolate;
+ transition:transform .5s var(--out)}
+.dg__c:active{transform:scale(.994)}
+.dg__c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+ /* 動くのは写真だけ。器は動かさない＝落ち着いて見える */
+ transition:transform 1.05s var(--out), filter .6s var(--out);
+ transform:scale(1.005)}
+.dg__c:hover img{transform:scale(1.045)}
+/* スクリム: 中央の文字が乗る帯だけ濃く、四隅は写真を残す */
+.dg__c::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+ background:
+   radial-gradient(72% 58% at 50% 50%, rgba(18,14,10,.52), rgba(18,14,10,.14) 74%),
+   linear-gradient(180deg, rgba(18,14,10,.28), rgba(18,14,10,.10) 34%, rgba(18,14,10,.34));
+ transition:opacity .6s var(--out)}
+.dg__c:hover::after{opacity:.86}
+.dg__in{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;
+ align-items:center;justify-content:center;gap:clamp(14px,1.8vw,26px);
+ padding:clamp(20px,3vw,48px);text-align:center}
+.dg__eye{display:block;font-family:var(--fn);font-weight:400;
+ font-size:max(12px,.78rem);letter-spacing:.24em;color:rgba(255,250,242,.86);
+ text-shadow:0 1px 14px rgba(0,0,0,.5)}
+.dg__h{margin:0;font-family:var(--fm);font-weight:400;color:#FFFAF2;
+ font-size:clamp(1.5rem,1.02rem + 2.1vw,2.86rem);line-height:1.4;letter-spacing:.12em;
+ white-space:nowrap;text-shadow:0 2px 26px rgba(0,0,0,.44)}
+/* 丸い矢印。hoverで塗りが起きる＝押せることが分かる */
+.dg__go{display:grid;place-items:center;width:clamp(46px,4.4vw,62px);aspect-ratio:1;
+ border-radius:50%;border:1px solid rgba(255,250,242,.72);color:#FFFAF2;
+ font-family:var(--fn);font-size:1rem;
+ transition:background .42s var(--out), color .42s var(--out), border-color .42s var(--out)}
+.dg__go span{display:block;transition:transform .42s var(--out)}
+.dg__c:hover .dg__go{background:#FFFAF2;color:var(--sumi);border-color:#FFFAF2}
+.dg__c:hover .dg__go span{transform:translateX(3px)}
+@media (max-width:760px){
+ .dg__grid{grid-template-columns:minmax(0,1fr);gap:14px}
+ .dg__c{aspect-ratio:4/3}
+}
+@media (prefers-reduced-motion:reduce){
+ .dg__c,.dg__c img,.dg__c::after,.dg__go,.dg__go span{transition:none}
+ .dg__c:hover img{transform:scale(1.005)}
+}
+</style></head><body>
+<div class="xnote"><b>図面 ─「二枚の扉」（お客様の声 ／ 分譲地・物件）</b><br>
+参照デザインの文法をそのまま: <b>フルブリード写真＋中央スクリム＋英字eyebrow＋明朝の見出し＋丸い矢印</b>。<br>
+画像は<b>実写ベースのリライト</b>（実邸リビング→夕方の光 ／ 奈良の実空撮→ブルーアワー）。
+架空空間のtext-to-imageは使っていません。左=暖色・右=寒色で対を作っています。<br>
+※ラベルは<b>サイトの既存名に合わせました</b>（口コミ→「お客様の声」、分譲地情報→「分譲地・物件」）。
+ナビ・voice.html・lots.html と揃えるためです。変えたい場合は言ってください。</div>
+
+<section class="dg" aria-label="お客様の声と分譲地・物件">
+  <div class="dg__grid">
+    <a class="dg__c" href="../voice.html">
+      <img src="voices.webp" alt="夕方の光が差し込む、やまとの家のリビング">
+      <span class="dg__in">
+        <span class="dg__eye">Voices</span>
+        <h2 class="dg__h">お客様の声</h2>
+        <span class="dg__go"><span>→</span></span>
+      </span>
+    </a>
+    <a class="dg__c" href="../lots.html">
+      <img src="lots.webp" alt="ブルーアワーの奈良市街を見下ろす空撮">
+      <span class="dg__in">
+        <span class="dg__eye">Lots</span>
+        <h2 class="dg__h">分譲地・物件</h2>
+        <span class="dg__go"><span>→</span></span>
+      </span>
+    </a>
+  </div>
+</section>
+</body></html>
