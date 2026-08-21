@@ -549,109 +549,58 @@
     .tr__stat{flex-basis:100%;padding:0}
     .tr__stat + .tr__stat{border-left:0;border-top:1px solid rgba(241,213,125,.28);padding-top:22px}
   }
-  /* ===================== 信条「紅の台紙に貼られた、生成りの手紙」（図面 heart_mock.html / 仕様 design_heart_spec.md） ===================== */
-  .cr{
-    --sumi:#241E16; --sumi2:#5C5346; --shu:#BD1B21; --foil1:#F1D57D;
-    --gx:clamp(20px, 5.3vw, 76px);
-    --fs:clamp(15px, 13.2px + 0.45vw, 18px);
-    /* 段幅。em は字間を含まないので 字数×1.085 を書く。
-       この em は .cr__in の継承font-size(16px)基準なので、18pxの本文では実測が下振れする。
-       実測34.1字/行 ＝ JIS X 4051 参考値34字とほぼ一致、WCAG AAA 上限40字の内側。
-       実サイト実測（自前で12ページ計測）: 楓工務店58.0 / いがみ37.8 / 群言堂35.8 /
-       ハウスイズム35.1 / 安成35.0 / 福光屋31.3 / 根津30.9 / 星のや24.0 / 中川政七20.4 …中央値31字 */
-    --col:43.40em;
-    --fm:"YakuHanMP","Shippori Mincho B1",serif;
-    --gap-in:1.2em; --gap-out:2.35em;
-    --band-top:clamp(64px,7vw,100px);   /* 額装なので上にも紅の余白を取る */
-    --band-bot:clamp(84px,9.5vw,136px);  /* 下の紅の帯＝次の生成りへの落差を作る */
-    position:relative;overflow:hidden;isolation:isolate;
-    background:url("assets/std/page_beni.webp") center/cover var(--shu);
-    color:var(--sumi);
-    padding:var(--band-top) clamp(24px,7vw,120px) var(--band-bot)}
-
-  /* 生成りの手紙 */
-  .cr__sheet{position:relative;width:min(1100px,100%);margin:0 auto;
-    background:url("assets/std/page_kinari_letter_1800.webp") center/cover #F4EEE0;
-    padding:clamp(80px,8.5vw,132px) clamp(32px,5vw,86px) clamp(80px,8.5vw,132px);
-    /* 影は使わない。実測でアート側の面/線は Herzog 0・SANAA 0・BESS 1・Pace 1・SCAI 2 で、
-       影付きの矩形は一般住宅群（平均6.8）の語彙だった。Hermès は影でなく
-       生成り3段(#FFFCF7/#FCF7F1/#FFFFFF)の色差だけで層を作っている。
-       ここも紅との明度差と、縁1本の暗さだけで紙を立てる */
-    box-shadow:0 0 0 1px rgba(74,10,14,.30)}
-  @media (min-width:1441px){
-    .cr__sheet{background-image:url("assets/std/page_kinari_letter_2400.webp")}
+/* ===================== 信条「粒子が言葉になる」（図面 02_tabuchi_shogo / 2026-08-21 採用）
+   前身は「紅の台紙に貼られた、生成りの手紙」（519字・2.29画面）。
+   手紙の全文は company.html#creed へ移し、ここは発話1行＋3文（145字）に絞った。
+   密度を面積ではなく時間で稼ぐ ＝ 粒子が集まって言葉を結ぶ。1画面固定。
+   ------------------------------------------------------------------ */
+  .tb{position:relative;overflow:hidden;isolation:isolate;
+    background:#3A070B;color:#FFF4E2;
+    min-height:100svh;display:grid;place-items:center;
+    padding:clamp(70px,9vw,130px) clamp(20px,5vw,72px)}
+  .tb::before{content:"";position:absolute;inset:0;z-index:0;
+    background:radial-gradient(72% 58% at 50% 44%, rgba(189,27,33,.85), rgba(36,4,8,.98) 78%)}
+  .tb__cv{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+  .tb__in{position:relative;z-index:2;max-width:900px;text-align:center}
+  .tb__eye{display:block;margin:0 0 clamp(26px,3.4vw,42px);font-family:var(--fh);font-weight:400;
+    font-size:max(12px,.76rem);letter-spacing:.34em;color:rgba(255,240,220,.56)}
+  /* 抽象(粒子)→具体(言葉)。文字は粒子が結んだ結果として現れる */
+  .tb__q{margin:0;font-family:var(--fm);font-weight:500;color:#FFF4E2;
+    font-size:clamp(1.6rem,1.05rem + 2.5vw,3.3rem);line-height:1.62;letter-spacing:.05em;
+    text-wrap:balance;line-break:strict;
+    text-shadow:0 0 34px rgba(255,190,150,.34), 0 0 90px rgba(189,27,33,.5)}
+  .tb__q span{display:inline-block;opacity:0;filter:blur(13px);
+    transform:translateY(16px) scale(.97);
+    transition:opacity 1.15s ease, filter 1.15s ease, transform 1.15s cubic-bezier(.16,1,.3,1)}
+  .tb__q span:nth-child(2){transition-delay:.16s}
+  .tb.is-lit .tb__q span{opacity:1;filter:none;transform:none}
+  .tb__body{margin:clamp(30px,3.8vw,52px) auto 0;max-width:32em;
+    font-family:var(--fb);font-weight:300;color:rgba(255,240,224,.82);
+    font-size:clamp(.95rem,.9rem + .22vw,1.02rem);line-height:2.1;letter-spacing:.06em;
+    line-break:strict;word-break:auto-phrase;
+    opacity:0;transition:opacity 1.4s ease 1.05s}
+  /* 中央揃えは最終行が短いと弱く見える。balance で行数を均し、
+     「家を見た|ときに」のような句の途中の折れも同時に潰す */
+  .tb__body p{text-wrap:balance}
+  .tb.is-lit .tb__body{opacity:1}
+  .tb__body p{margin:0} .tb__body p+p{margin-top:1.15em}
+  .tb__sign{margin:clamp(32px,3.8vw,50px) 0 0;font-family:var(--fm);font-weight:400;
+    font-size:max(15px,.92rem);letter-spacing:.2em;color:rgba(255,240,224,.6);
+    opacity:0;transition:opacity 1.2s ease 1.45s}
+  .tb.is-lit .tb__sign{opacity:1}
+  /* 出口。紅の頁にボタンは置かない＝墨ではなく生成りの下線1本 */
+  .tb__go{display:inline-flex;align-items:center;min-height:44px;
+    margin:clamp(22px,2.6vw,32px) 0 0;font-family:var(--fb);font-weight:300;
+    font-size:max(15px,.92rem);letter-spacing:.06em;color:rgba(255,240,224,.78);
+    text-decoration:none;box-shadow:inset 0 -1px 0 rgba(255,240,224,.42);
+    opacity:0;transition:opacity 1.2s ease 1.7s, color .35s, box-shadow .35s}
+  .tb.is-lit .tb__go{opacity:1}
+  .tb__go:hover{color:#FFF4E2;box-shadow:inset 0 -1px 0 #FFF4E2}
+  @media (prefers-reduced-motion:reduce){
+    .tb__cv{display:none}
+    .tb__q span,.tb__body,.tb__sign,.tb__go{opacity:1;filter:none;transform:none;transition:none}
   }
 
-  .cr__in{position:relative;width:min(var(--col),100%);margin:0 auto}
-
-  .cr__p{font-family:var(--fm);font-weight:400;font-size:var(--fs);
-    line-height:1.95;letter-spacing:.085em;color:var(--sumi);
-    margin-top:var(--gap-in);word-break:auto-phrase;line-break:strict}
-  .cr__p:first-child{margin-top:0}
-  .cr__p--m{margin-top:var(--gap-out)}
-
-  /* 主題は太らせず、大きさと行間と字間だけで立てる */
-  .cr__q{display:block;font-size:1.86em;line-height:1.5;letter-spacing:.06em;
-    margin:.4em 0 .34em;color:var(--sumi)}
-
-  /* 楽章の切れ目に置く短い罫。Craig Mod は10.45画面を見出しゼロ・罫だけで持たせており、
-     罫は段幅の20%(149px)×3px、間隔の中央値583px(0.65画面)。ここもその比率に合わせる。
-     全ての切れ目に入れると平均370px間隔になり密すぎるので3本に絞る */
-  .cr__rule{border:0;width:20%;height:1px;background:var(--sumi2);opacity:.42;
-    margin:calc(var(--gap-out) * 1.15) auto}
-
-  /* 差出人 */
-  /* 手紙の追伸=出口。紙の上の墨文字＋細い下線だけ（紅の頁にボタンは置かない） */
-  .cr__go{display:inline-flex;align-items:center;min-height:44px;margin-top:clamp(22px,2.6vw,34px);
-    font-family:var(--fm);font-weight:400;font-size:max(15px,calc(var(--fs) * .9));
-    letter-spacing:.08em;color:var(--sumi2);text-decoration:none;
-    box-shadow:inset 0 -1px 0 rgba(92,83,70,.45)}
-  .cr__go:hover{color:var(--sumi);box-shadow:inset 0 -1px 0 var(--sumi)}
-  .cr__sign{margin-top:clamp(40px,4.6vw,64px);font-family:var(--fm);font-weight:400;
-    font-size:max(15px, calc(var(--fs) * .94));letter-spacing:.16em;color:var(--sumi2);
-    display:flex;align-items:center;gap:14px;white-space:nowrap}
-  /* 罫を縮ませる。320pxで「株式会社やまと不動|産」と割れたため */
-  .cr__sign::before{content:"";flex:0 1 clamp(28px,4vw,56px);min-width:10px;
-    height:1px;background:var(--sumi2);opacity:.5}
-
-  /* 柱（台紙側に置く。紙の外なので本文の可読性に影響しない） */
-  /* 柱＝章題。紙の外（紅の台紙の上）に置く。外に出して初めて台紙が意味を持つ。
-     実測: 根津美術館 vertical-rl 32.11px ls 3px / 群言堂 vertical-rl 24px ls 6px */
-  .cr__spine{position:absolute;left:clamp(10px,2.2vw,34px);top:clamp(34px,4.6vw,72px);z-index:2;
-    writing-mode:vertical-rl;font-family:var(--fm);font-weight:400;
-    font-size:clamp(19px,15px + .9vw,32px);letter-spacing:.22em;color:#F3EEE3;
-    display:flex;align-items:center;gap:20px}
-  .cr__spine::after{content:"";width:1px;height:clamp(72px,12vh,180px);
-    background:linear-gradient(180deg,var(--foil1),rgba(241,213,125,0))}
-
-  @media (max-width:760px){
-    .cr{--band-bot:clamp(72px,16vw,110px)}
-    .cr__spine{left:8px;top:18px}
-  }
-  /* ── SP ──────────────────────────────────────────────
-     390px・本文15px（検査の下限）では、余白ゼロでも1行23.9字が上限。
-     30〜40字はSPでは物理的に達成できないので、狙いを変える:
-      ① 台紙を左右から外して紙を全幅にし、段幅を271→342pxへ（16.5→21字）
-      ② 引用は本文比を下げる。1.86倍のままだと3行に割れ、
-         クライアントの言葉「この金額で、ここまでできるんだ」が壊れて見えた
-      ③ 柱は紙の上へ移す（台紙が無くなるため）
-     紅は上下の帯として残るので、前後の境界は変わらない */
-  @media (max-width:560px){
-    .cr{--band-top:clamp(40px,9vw,64px);padding-left:0;padding-right:0}
-    .cr__sheet{width:100%;padding:clamp(64px,13vw,88px) clamp(20px,6vw,26px)}
-    .cr__q{font-size:1.36em;line-height:1.62;letter-spacing:.04em}
-    /* 柱は紙の中へ。SPでは台紙が左右に無く、紅の帯(40-64px)には縦組みの柱が入らない。
-       生成り文字のまま紙に重ねると見えなくなるので墨に変え、横組みで紙の天に置く */
-    .cr__spine{left:clamp(20px,6vw,26px);right:auto;
-      top:calc(var(--band-top) + clamp(24px,5.6vw,32px));
-      writing-mode:horizontal-tb;font-size:15px;letter-spacing:.34em;
-      color:var(--sumi2);gap:12px}
-    .cr__spine::after{width:clamp(26px,7vw,38px);height:1px;
-      background:var(--sumi2);opacity:.45}
-    /* 罫の前後が53px×2=106px(3.4行分)あり、細い罫に対して空きすぎだった。
-       楽章間(44px)と同程度に寄せる */
-    .cr__rule{margin:calc(var(--gap-out) * .62) auto}
-  }
 
   /* ===================== 商品ライン 花・京・風（三つの帯：紙と箔） =====================
      文法はクライアント自身のパンフレット(2026-07)から:
@@ -1718,51 +1667,18 @@
   </div>
 
 </section>
-<section class="heart cr" id="heart" aria-labelledby="crH">
-  <p class="cr__spine" aria-hidden="true">信条</p>
-  <div class="cr__sheet">
-    <div class="cr__in">
-
-      <p class="cr__p" id="crH">やまと不動産が、ずっと大切にしていることがあります。</p>
-
-      <p class="cr__p">それは、家を見たときに<span class="cr__q">「この金額で、ここまでできるんだ」</span>と、少し驚いてもらえること。</p>
-
-      <hr class="cr__rule">
-      <p class="cr__p cr__p--m">モデルハウスで心惹かれた設備も、毎日の暮らしを考えた間取りも、あとから追加費用を重ねて、ようやく手に入るものにはしたくありません。</p>
-
-      <p class="cr__p">いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
-
-      <p class="cr__p cr__p--m">「この予算では、理想の家は難しいかもしれない」</p>
-
-      <p class="cr__p">そう思っている方にこそ、知ってほしいのです。</p>
-
-      <p class="cr__p">諦めなくてもいいこと。その予算の中でも、もっと心地よく、もっと好きになれる家はつくれるということを。</p>
-
-      <hr class="cr__rule">
-      <p class="cr__p cr__p--m">家は、完成した日がいちばん大切なのではありません。</p>
-
-      <p class="cr__p">朝の光が差し込む洗面。夜になると、間接照明が石壁をやわらかく照らすリビング。木の格子扉を開ける、何気ない毎日。</p>
-
-      <p class="cr__p">そんな小さな景色のひとつひとつが、そこで暮らす家族の「楽しい毎日」になっていく。</p>
-
-      <p class="cr__p">私たちは、そこまで想像しながら、一軒ずつ家を設計しています。</p>
-
-      <hr class="cr__rule">
-      <p class="cr__p cr__p--m">そして5年、10年と暮らしたその先にも、</p>
-
-      <p class="cr__p">「やまと不動産にお願いして、よかった」</p>
-
-      <p class="cr__p">そう言ってもらえる家でありたい。</p>
-
-      <p class="cr__p">建てたときだけではなく、暮らしてから、もっと好きになる家を。</p>
-
-      <p class="cr__p cr__p--m">それが、やまと不動産の家づくりです。</p>
-
-      <p class="cr__sign">株式会社やまと不動産</p>
-        <!-- 出口（2026-08-21 監査: 2.42画面のリンク0節だった）。手紙の追伸の位置 -->
-        <a class="cr__go" href="company.html">私たちのことは、会社案内でもご覧いただけます　→</a>
-
+<section class="heart tb" id="heart" aria-labelledby="tbH">
+  <canvas class="tb__cv" id="tbCanvas" aria-hidden="true"></canvas>
+  <div class="tb__in">
+    <span class="tb__eye">Our Creed ／ 信条</span>
+    <h2 class="tb__q" id="tbH"><span>「この金額で、</span><span>ここまでできるんだ」</span></h2>
+    <div class="tb__body">
+      <p>やまと不動産が、ずっと大切にしていることがあります。それは、家を見たときに、少し驚いてもらえること。</p>
+      <p>いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
+      <p>建てたときだけではなく、暮らしてから、もっと好きになる家を。</p>
     </div>
+    <p class="tb__sign">株式会社やまと不動産</p>
+    <a class="tb__go" href="company.html#creed">私たちのことは、会社案内でもご覧いただけます　→</a>
   </div>
 </section>
 
@@ -3988,6 +3904,68 @@
       dt.addEventListener('toggle', later);
     });
   })();
+})();
+</script>
+
+<script>
+/* ── 信条「粒子が言葉になる」（2026-08-21）────────────────────────
+   粒子＝まだ形になっていない経験。中央へ寄るほど密度と輝度が上がる。
+   ゲート設計: 画面外・タブ非表示・reduced-motion では RAF を回さない。
+   JSが死んでも .tb.is-lit が付かないだけなので、文字は CSS 側の
+   フォールバックで見える（下の1行で先に is-lit を付ける）。 */
+(function(){
+  var sec=document.getElementById('heart'), cv=document.getElementById('tbCanvas');
+  if(!sec) return;
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+  /* 文字の出現は IO で。視界に入る前に読めてしまわないよう .is-lit を使うが、
+     IO 非対応環境では即座に点灯させる */
+  if(!('IntersectionObserver' in window)){ sec.classList.add('is-lit'); }
+  else {
+    var lio=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ sec.classList.add('is-lit'); lio.disconnect(); } });
+    },{threshold:.32});
+    lio.observe(sec);
+  }
+  if(!cv || reduce || !cv.getContext) return;
+  var x=cv.getContext('2d'); if(!x) return;
+  var W=0,H=0,DPR=Math.min(window.devicePixelRatio||1,2),ps=[],raf=0,vis=false,t=0;
+  function size(){
+    var r=sec.getBoundingClientRect();
+    W=r.width; H=r.height;
+    cv.width=Math.round(W*DPR); cv.height=Math.round(H*DPR);
+    x.setTransform(DPR,0,0,DPR,0,0);
+  }
+  for(var i=0;i<190;i++) ps.push({
+    x:Math.random(), y:Math.random(),
+    r:Math.random()*1.9+.35, s:Math.random()*.00028+.00007,
+    a:Math.random()*.5+.14, ph:Math.random()*6.28
+  });
+  function frame(){
+    raf=0;
+    if(!vis || document.hidden) return;
+    t+=1; x.clearRect(0,0,W,H);
+    for(var i=0;i<ps.length;i++){
+      var p=ps[i];
+      p.y-=p.s*1.9; if(p.y<-.05) p.y=1.05;
+      var px=(p.x+Math.sin(t*.0042+p.ph)*.022)*W, py=p.y*H;
+      var dx=px/W-.5, dy=py/H-.5, d=Math.sqrt(dx*dx+dy*dy);
+      var glow=Math.max(0,1-d*2.1);
+      x.beginPath(); x.arc(px,py,p.r*(1+glow*.9),0,6.2832);
+      x.fillStyle='rgba(255,'+(214+Math.round(glow*30))+','+(150+Math.round(glow*70))+','+(p.a*(.3+glow*.7))+')';
+      x.fill();
+    }
+    raf=requestAnimationFrame(frame);
+  }
+  function start(){ if(!raf && vis && !document.hidden){ raf=requestAnimationFrame(frame); } }
+  function stop(){ if(raf){ cancelAnimationFrame(raf); raf=0; } }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      es.forEach(function(e){ vis=e.isIntersecting; if(vis){ size(); start(); } else { stop(); } });
+    },{rootMargin:'120px 0px'}).observe(sec);
+  } else { vis=true; size(); start(); }
+  document.addEventListener('visibilitychange',function(){ document.hidden?stop():start(); });
+  var rz=0;
+  addEventListener('resize',function(){ clearTimeout(rz); rz=setTimeout(function(){ if(vis){size();} },180); });
 })();
 </script>
 </body>

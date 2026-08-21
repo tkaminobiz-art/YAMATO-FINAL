@@ -410,6 +410,25 @@
     a[href]:not(p a):not(li a):not(dd a):not(td a):not(figcaption a):not(small a){
       display:inline-flex;align-items:center}
   }
+
+/* ───── 信条の全文（TOPから移した手紙の正本・2026-08-21） ───── */
+.creed{--cfs:clamp(15px,13.2px + .45vw,17px);
+  padding:clamp(64px,7vw,104px) 0 clamp(72px,8vw,116px);
+  background:#FAF8F3}
+.creed__sheet{max-width:min(43.4em,100%);margin:clamp(32px,4vw,52px) auto 0;
+  font-size:var(--cfs)}
+.creed__p{margin:1.2em 0 0;font-family:"YakuHanMP","Shippori Mincho B1",serif;font-weight:400;
+  font-size:var(--cfs);line-height:1.95;letter-spacing:.085em;color:#241E16;
+  word-break:auto-phrase;line-break:strict}
+.creed__p:first-of-type{margin-top:0}
+.creed__p--m{margin-top:2.35em}
+.creed__q{color:#BD1B21}
+.creed__rule{width:clamp(48px,7vw,88px);height:1px;border:0;background:rgba(36,30,22,.3);
+  margin:2.35em auto}
+.creed__sign{margin:clamp(40px,4.6vw,64px) 0 0;font-family:"Shippori Mincho B1",serif;
+  font-weight:400;font-size:max(15px,calc(var(--cfs) * .94));letter-spacing:.16em;color:#5C5346;
+  display:flex;align-items:center;gap:14px;white-space:nowrap}
+.creed__sign::before{content:"";width:clamp(24px,5vw,44px);height:1px;background:rgba(92,83,70,.5);flex:none}
 </style>
 </head>
 <body>
@@ -571,6 +590,38 @@
         <img src="assets/company/msg_stairs.jpg" alt="やまとの家の階段。上階からの光が差し込む" loading="lazy">
         <figcaption class="msg__cap">写真はすべて、やまとが実際に建てた家です。</figcaption>
       </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 信条の全文。TOPは発話1行に絞ったので、手紙はここが正本になる（2026-08-21） -->
+<section class="creed" id="creed" aria-labelledby="creedH">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow">Our Creed ／ 信条</span>
+      <h2 id="creedH"><span class="nw">建てたときだけではなく、</span><span class="nw">暮らしてから、</span><span class="nw">もっと好きになる家を。</span></h2>
+    </div>
+    <div class="creed__sheet rv">
+      <p class="creed__p">やまと不動産が、ずっと大切にしていることがあります。</p>
+      <p class="creed__p">それは、家を見たときに<span class="creed__q">「この金額で、ここまでできるんだ」</span>と、少し驚いてもらえること。</p>
+      <hr class="creed__rule">
+      <p class="creed__p creed__p--m">モデルハウスで心惹かれた設備も、毎日の暮らしを考えた間取りも、あとから追加費用を重ねて、ようやく手に入るものにはしたくありません。</p>
+      <p class="creed__p">いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
+      <p class="creed__p creed__p--m">「この予算では、理想の家は難しいかもしれない」</p>
+      <p class="creed__p">そう思っている方にこそ、知ってほしいのです。</p>
+      <p class="creed__p">諦めなくてもいいこと。その予算の中でも、もっと心地よく、もっと好きになれる家はつくれるということを。</p>
+      <hr class="creed__rule">
+      <p class="creed__p creed__p--m">家は、完成した日がいちばん大切なのではありません。</p>
+      <p class="creed__p">朝の光が差し込む洗面。夜になると、間接照明が石壁をやわらかく照らすリビング。木の格子扉を開ける、何気ない毎日。</p>
+      <p class="creed__p">そんな小さな景色のひとつひとつが、そこで暮らす家族の「楽しい毎日」になっていく。</p>
+      <p class="creed__p">私たちは、そこまで想像しながら、一軒ずつ家を設計しています。</p>
+      <hr class="creed__rule">
+      <p class="creed__p creed__p--m">そして5年、10年と暮らしたその先にも、</p>
+      <p class="creed__p">「やまと不動産にお願いして、よかった」</p>
+      <p class="creed__p">そう言ってもらえる家でありたい。</p>
+      <p class="creed__p">建てたときだけではなく、暮らしてから、もっと好きになる家を。</p>
+      <p class="creed__p creed__p--m">それが、やまと不動産の家づくりです。</p>
+      <p class="creed__sign">株式会社やまと不動産</p>
     </div>
   </div>
 </section>
