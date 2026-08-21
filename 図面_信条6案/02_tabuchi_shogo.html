@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>信条 — 田渕将吾案「粒子が言葉になる」</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Shippori+Mincho+B1:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
+<style>*{box-sizing:border-box}body{margin:0;background:#D9D4CA}
+img{display:block;max-width:100%}
+
+:root{--beni:#8E1218;--sumi:#241E16;--kinari:#F4F1EA;--gold:#C9A24B;
+  --fm:"YakuHanMP","Shippori Mincho B1",serif;--fg:"Zen Kaku Gothic New",sans-serif;--fn:Inter,sans-serif}
+.tb{position:relative;overflow:hidden;background:#3A070B;
+  min-height:100svh;display:grid;place-items:center;
+  padding:clamp(70px,9vw,130px) clamp(20px,5vw,72px)}
+.tb::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(72% 58% at 50% 44%, rgba(189,27,33,.85), rgba(36,4,8,.98) 78%)}
+.tb__cv{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.tb__in{position:relative;z-index:2;max-width:900px;text-align:center}
+.tb__eye{display:block;font-family:var(--fn);font-weight:300;font-size:.7rem;letter-spacing:.44em;
+  color:rgba(255,240,220,.5);text-transform:uppercase;margin:0 0 clamp(26px,3.4vw,42px)}
+/* 抽象(粒子)→具体(言葉)。文字は粒子が結んだ結果として現れる */
+.tb__q{margin:0;font-family:var(--fm);font-weight:500;color:#FFF4E2;
+  font-size:clamp(1.6rem,1.05rem + 2.5vw,3.3rem);line-height:1.62;letter-spacing:.05em;
+  text-wrap:balance;line-break:strict;
+  text-shadow:0 0 34px rgba(255,190,150,.34), 0 0 90px rgba(189,27,33,.5)}
+.tb__q i{font-style:normal;display:inline-block;opacity:0;filter:blur(13px);transform:translateY(16px) scale(.97);
+  transition:opacity 1.15s ease, filter 1.15s ease, transform 1.15s cubic-bezier(.16,1,.3,1)}
+.tb.is-in .tb__q i{opacity:1;filter:none;transform:none}
+.tb__body{margin:clamp(30px,3.8vw,52px) auto 0;max-width:34em;
+  font-family:var(--fg);font-weight:300;color:rgba(255,240,224,.8);
+  font-size:clamp(.94rem,.9rem + .22vw,1.02rem);line-height:2.1;letter-spacing:.06em;
+  line-break:strict;word-break:auto-phrase;opacity:0;transition:opacity 1.4s ease 1.1s}
+.tb.is-in .tb__body{opacity:1}
+.tb__body p{margin:0} .tb__body p+p{margin-top:1.15em}
+.tb__sign{margin:clamp(34px,4vw,54px) 0 0;font-family:var(--fm);font-weight:400;
+  font-size:.9rem;letter-spacing:.2em;color:rgba(255,240,224,.55);
+  opacity:0;transition:opacity 1.2s ease 1.5s}
+.tb.is-in .tb__sign{opacity:1}
+
+</style></head><body>
+<div class="xnote"><b>田渕将吾案 ─「粒子が言葉になる」</b><br>根拠: 本人「いままで経験してきたことをそのまま可視化することができればそれが自分らしさに繋がる」（JDN）。WebGL空間で<b>抽象から具体へ解像度が上がる</b>ストーリー構造が定型（S5 Studios / Webby 2025受賞）。<br>手つき: 手紙を読ませない。紅の闇に光の粒子が漂い、視界に入った瞬間<b>粒子が集まって一行の発話を結ぶ</b>。残りは3文だけ。519字→<b>約120字</b>、面積は1画面に固定して<b>密度を時間で稼ぐ</b>。</div>
+<style>.xnote{background:#1A1713;color:#E8E2D4;padding:20px clamp(20px,4vw,56px);
+font-family:Inter,"Zen Kaku Gothic New",sans-serif;font-size:.86rem;line-height:1.9;letter-spacing:.03em;
+line-break:strict;word-break:auto-phrase}
+.xnote b{color:#E3C572;font-weight:500;font-size:.95rem}</style>
+<section class="tb" id="tb">
+  <canvas class="tb__cv" id="tbcv"></canvas>
+  <div class="tb__in">
+    <span class="tb__eye">Our Creed</span>
+    <p class="tb__q"><i>「この金額で、</i><i>ここまでできるんだ」</i></p>
+    <div class="tb__body">
+      <p>やまと不動産が、ずっと大切にしていることがあります。それは、家を見たときに、少し驚いてもらえること。</p>
+      <p>いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
+      <p>建てたときだけではなく、暮らしてから、もっと好きになる家を。</p>
+    </div>
+    <p class="tb__sign">株式会社やまと不動産</p>
+  </div>
+</section>
+<script>
+(function(){
+  var c=document.getElementById('tbcv'),x=c.getContext('2d'),sec=document.getElementById('tb');
+  var W,H,ps=[],DPR=Math.min(devicePixelRatio||1,2);
+  function size(){var r=sec.getBoundingClientRect();W=r.width;H=r.height;
+    c.width=W*DPR;c.height=H*DPR;x.setTransform(DPR,0,0,DPR,0,0);}
+  size();addEventListener('resize',size);
+  // 粒子＝まだ形になっていない「経験」。中央へ集まるほど密度と輝度が上がる
+  for(var i=0;i<190;i++)ps.push({x:Math.random(),y:Math.random(),
+    r:Math.random()*1.9+.35,s:Math.random()*.00028+.00007,
+    a:Math.random()*.5+.14,ph:Math.random()*6.28});
+  var t=0,on=false;
+  var io=new IntersectionObserver(function(e){e.forEach(function(v){
+    if(v.isIntersecting){sec.classList.add('is-in');on=true;}});},{threshold:.35});
+  io.observe(sec);
+  (function loop(){
+    t+=1;x.clearRect(0,0,W,H);
+    for(var i=0;i<ps.length;i++){var p=ps[i];
+      p.y-=p.s*(on?1.9:1); if(p.y<-.05)p.y=1.05;
+      var px=(p.x+Math.sin(t*.0042+p.ph)*.022)*W, py=p.y*H;
+      var d=Math.hypot(px/W-.5,py/H-.5), glow=Math.max(0,1-d*2.1);
+      x.beginPath();x.arc(px,py,p.r*(1+glow*.9),0,6.2832);
+      x.fillStyle='rgba('+(255)+','+(214+Math.round(glow*30))+','+(150+Math.round(glow*70))+','+(p.a*(.3+glow*.7))+')';
+      x.fill();
+    }
+    requestAnimationFrame(loop);
+  })();
+})();
+</script>
+</body></html>

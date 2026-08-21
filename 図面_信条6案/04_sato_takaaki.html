@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>信条 — 佐藤タカアキ案「三つの景色」</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Shippori+Mincho+B1:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
+<style>*{box-sizing:border-box}body{margin:0;background:#D9D4CA}
+img{display:block;max-width:100%}
+
+:root{--beni:#BD1B21;--sumi:#241E16;--sumi2:#5C5346;--sumi3:#8A8070;--kinari:#F7F4ED;
+  --fm:"YakuHanMP","Shippori Mincho B1",serif;--fg:"Zen Kaku Gothic New",sans-serif;--fn:Inter,sans-serif}
+.st{background:var(--kinari);padding:clamp(64px,7.5vw,110px) clamp(20px,5vw,72px) clamp(72px,8vw,120px)}
+.st__in{max-width:1180px;margin:0 auto}
+.st__eye{display:block;font-family:var(--fn);font-weight:500;font-size:.7rem;letter-spacing:.32em;
+  color:var(--beni);text-transform:uppercase;margin:0 0 14px}
+.st__h{margin:0;font-family:var(--fm);font-weight:600;color:var(--sumi);
+  font-size:clamp(1.5rem,1.14rem + 1.6vw,2.44rem);line-height:1.56;letter-spacing:.03em;text-wrap:balance}
+.st__lead{margin:clamp(18px,2.2vw,28px) 0 0;max-width:40em;font-family:var(--fg);font-weight:300;
+  color:var(--sumi2);font-size:1rem;line-height:2;letter-spacing:.05em;line-break:strict;word-break:auto-phrase}
+/* 写真が主役。3つの景色＝手紙の一文を、実写に分解して見せる */
+.st__scenes{margin:clamp(38px,4.6vw,64px) 0 0;display:grid;gap:clamp(16px,2vw,28px);
+  grid-template-columns:repeat(3,minmax(0,1fr))}
+.st__sc{position:relative;background:#fff;padding:12px 12px 0;
+  box-shadow:0 1px 0 rgba(36,30,22,.1), 0 22px 46px -24px rgba(36,30,22,.42)}
+.st__sc figure{margin:0;position:relative;overflow:hidden;aspect-ratio:4/3}
+.st__sc img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.st__sc:hover img{transform:scale(1.045)}
+.st__tag{position:absolute;left:0;top:14px;z-index:2;background:var(--beni);color:#fff;
+  font-family:var(--fn);font-weight:500;font-size:.62rem;letter-spacing:.22em;padding:6px 12px}
+.st__txt{padding:clamp(16px,1.8vw,22px) clamp(6px,.8vw,10px) clamp(20px,2.2vw,28px)}
+.st__t{margin:0;font-family:var(--fm);font-weight:600;color:var(--sumi);
+  font-size:clamp(1.02rem,.96rem + .34vw,1.2rem);line-height:1.66;letter-spacing:.04em;text-wrap:balance}
+.st__d{margin:10px 0 0;font-family:var(--fg);font-weight:300;color:var(--sumi2);
+  font-size:.88rem;line-height:1.92;letter-spacing:.04em;line-break:strict;word-break:auto-phrase}
+/* 結び＝紅の帯。合成レイヤーで写真の上に乗せる（LIG仕込みのビジュアルメイキング） */
+.st__band{position:relative;margin:clamp(36px,4.4vw,60px) 0 0;overflow:hidden;
+  min-height:clamp(230px,26vw,320px);display:grid;align-items:center}
+.st__band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.st__band::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(92deg,rgba(120,10,16,.94) 0 42%,rgba(120,10,16,.55) 68%,rgba(120,10,16,.24))}
+.st__bin{position:relative;z-index:2;padding:clamp(28px,3.4vw,48px) clamp(24px,3.6vw,56px);max-width:34em}
+.st__bh{margin:0;font-family:var(--fm);font-weight:600;color:#FFF6EC;
+  font-size:clamp(1.16rem,1rem + .78vw,1.62rem);line-height:1.66;letter-spacing:.05em;text-wrap:balance}
+.st__bp{margin:14px 0 0;font-family:var(--fg);font-weight:300;color:rgba(255,246,236,.85);
+  font-size:.94rem;line-height:1.98;letter-spacing:.05em}
+.st__go{display:inline-flex;align-items:center;gap:10px;margin:clamp(20px,2.4vw,28px) 0 0;
+  min-height:46px;padding:0 22px;background:#FFF6EC;color:var(--sumi);text-decoration:none;
+  font-family:var(--fg);font-weight:500;font-size:.9rem;letter-spacing:.08em}
+@media (max-width:900px){.st__scenes{grid-template-columns:minmax(0,1fr)}}
+
+</style></head><body>
+<div class="xnote"><b>佐藤タカアキ案 ─「三つの景色」</b><br>根拠: LIG出身、<b>撮影×レタッチ合成のビジュアルメイキング</b>が武器。現在はBtoB/採用の「見やすい・伝わる」AD。本人「見やすいデザイン・伝わるデザインを心がけて活動中」（才流）。<br>手つき: 手紙の一文「朝の光が差し込む洗面／間接照明が石壁を照らすリビング／木の格子扉」を<b>そのまま実写3枚に分解</b>。文章で想像させず、写真で見せる。結びは紅の帯に合成して<b>標準仕様への出口</b>を1本。文字量は約1/3。</div>
+<style>.xnote{background:#1A1713;color:#E8E2D4;padding:20px clamp(20px,4vw,56px);
+font-family:Inter,"Zen Kaku Gothic New",sans-serif;font-size:.86rem;line-height:1.9;letter-spacing:.03em;
+line-break:strict;word-break:auto-phrase}
+.xnote b{color:#E3C572;font-weight:500;font-size:.95rem}</style>
+<section class="st">
+  <div class="st__in">
+    <span class="st__eye">Our Creed / 信条</span>
+    <h2 class="st__h">家は、完成した日が<br>いちばん大切なのではありません。</h2>
+    <p class="st__lead">そんな小さな景色のひとつひとつが、そこで暮らす家族の「楽しい毎日」になっていく。私たちは、そこまで想像しながら、一軒ずつ家を設計しています。</p>
+    <div class="st__scenes">
+      <article class="st__sc">
+        <figure><span class="st__tag">MORNING</span><img src="../assets/video_cine/gh_vanity.webp" alt="朝の光が差し込む洗面" loading="lazy"></figure>
+        <div class="st__txt"><h3 class="st__t">朝の光が差し込む洗面</h3><p class="st__d">一日が始まる場所に、いちばんいい光が入るようにしています。</p></div>
+      </article>
+      <article class="st__sc">
+        <figure><span class="st__tag">NIGHT</span><img src="../assets/video_cine/gh_living.webp" alt="間接照明が石壁をやわらかく照らすリビング" loading="lazy"></figure>
+        <div class="st__txt"><h3 class="st__t">間接照明が石壁を照らすリビング</h3><p class="st__d">夜になると、やわらかい光が石の表情を変えていきます。</p></div>
+      </article>
+      <article class="st__sc">
+        <figure><span class="st__tag">EVERYDAY</span><img src="../assets/video_cine/gh_kitchen.webp" alt="木の格子扉のある暮らし" loading="lazy"></figure>
+        <div class="st__txt"><h3 class="st__t">木の格子扉を開ける、何気ない毎日</h3><p class="st__d">特別な日ではなく、毎日のほうを設計しています。</p></div>
+      </article>
+    </div>
+    <div class="st__band">
+      <img src="../assets/video_cine/gh_atrium.webp" alt="吹き抜けの実邸">
+      <div class="st__bin">
+        <h3 class="st__bh">「この金額で、ここまでできるんだ」と、<br>少し驚いてもらえること。</h3>
+        <p class="st__bp">いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
+        <a class="st__go" href="kodawari.html#standard">標準仕様を見る<span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body></html>

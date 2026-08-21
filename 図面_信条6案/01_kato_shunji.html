@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>信条 — 加藤俊司案「三章の栞」</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Shippori+Mincho+B1:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
+<style>*{box-sizing:border-box}body{margin:0;background:#D9D4CA}
+img{display:block;max-width:100%}
+
+:root{--beni:#BD1B21;--sumi:#241E16;--sumi2:#5C5346;--sumi3:#8A8070;--kinari:#F4F1EA;--gold:#C9A24B;
+  --fm:"YakuHanMP","Shippori Mincho B1",serif;--fg:"Zen Kaku Gothic New",sans-serif;--fn:Inter,sans-serif}
+.kt{background:url("../assets/std/page_beni.webp") center/cover var(--beni);
+  padding:clamp(64px,7vw,104px) clamp(20px,5vw,72px) clamp(80px,9vw,128px)}
+.kt__hd{max-width:1180px;margin:0 auto clamp(34px,4vw,54px);
+  display:flex;align-items:baseline;justify-content:space-between;gap:20px;
+  border-bottom:1px solid rgba(255,252,246,.34);padding-bottom:16px}
+.kt__ttl{margin:0;font-family:var(--fm);font-weight:500;color:#FFFCF6;
+  font-size:clamp(1.2rem,1rem + .9vw,1.72rem);letter-spacing:.22em}
+.kt__en{font-family:var(--fn);font-weight:400;font-size:.72rem;letter-spacing:.34em;color:rgba(255,252,246,.66)}
+/* 3章を横に。IAが目で見える。各章＝1枚の紙 */
+.kt__grid{max-width:1180px;margin:0 auto;display:grid;gap:clamp(14px,1.6vw,22px);
+  grid-template-columns:repeat(3,minmax(0,1fr))}
+.kt__ch{background:url("../assets/std/page_kinari_letter_1800.webp") center/cover var(--kinari);
+  padding:clamp(26px,2.6vw,40px) clamp(22px,2.2vw,34px) clamp(30px,3vw,44px);
+  display:flex;flex-direction:column;
+  box-shadow:0 0 0 1px rgba(201,162,75,.42), 0 20px 44px -22px rgba(20,8,8,.6);
+  opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+.kt__ch.is-in{opacity:1;transform:none}
+.kt__ch:nth-child(2){transition-delay:.12s} .kt__ch:nth-child(3){transition-delay:.24s}
+.kt__no{display:flex;align-items:baseline;gap:10px;
+  font-family:var(--fn);font-weight:400;font-size:.68rem;letter-spacing:.3em;color:var(--sumi3)}
+.kt__no b{font-family:var(--fm);font-weight:500;font-size:1.5rem;letter-spacing:0;color:var(--beni)}
+/* 力強い見出し＝章の要旨。本人「端的でわかりやすいテキストとグラフィックがあれば、パッパッと見て理解しやすい」*/
+.kt__h{margin:clamp(16px,1.8vw,24px) 0 0;font-family:var(--fm);font-weight:600;color:var(--sumi);
+  font-size:clamp(1.28rem,1.02rem + 1.05vw,1.86rem);line-height:1.5;letter-spacing:.03em;
+  text-wrap:balance;line-break:strict}
+.kt__bar{width:44px;height:3px;background:var(--beni);margin:clamp(16px,1.8vw,22px) 0 0}
+.kt__p{margin:clamp(16px,1.8vw,22px) 0 0;font-family:var(--fg);font-weight:300;color:var(--sumi2);
+  font-size:.94rem;line-height:1.96;letter-spacing:.045em;line-break:strict;word-break:auto-phrase}
+.kt__p+.kt__p{margin-top:.9em}
+.kt__foot{max-width:1180px;margin:clamp(34px,4vw,54px) auto 0;
+  display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  border-top:1px solid rgba(255,252,246,.34);padding-top:20px}
+.kt__lead{margin:0;font-family:var(--fm);font-weight:400;color:#FFFCF6;
+  font-size:clamp(1.02rem,.94rem + .4vw,1.24rem);letter-spacing:.1em;line-height:1.8}
+.kt__go{display:inline-flex;align-items:center;gap:12px;min-height:48px;padding:0 26px;
+  background:#FFFCF6;color:var(--sumi);text-decoration:none;
+  font-family:var(--fg);font-weight:500;font-size:.92rem;letter-spacing:.08em;
+  transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.kt__go:hover{transform:translateX(5px)}
+@media (max-width:900px){.kt__grid{grid-template-columns:minmax(0,1fr)}}
+
+</style></head><body>
+<div class="xnote"><b>加藤俊司案 ─「三章の栞」</b><br>根拠: 本人「力強いタイポグラフィで、端的でわかりやすいテキストとグラフィックがあれば、パッパッと見て理解しやすい」（クライマークス インタビュー）。IA職人＝情報構造で解く人。<br>手つき: 519字の一続きの手紙を<b>3章に構造化</b>し、各章に大見出し＋本文2行。読む量ではなく<b>掴む速度</b>を設計。紅の台紙は残し、紙を3枚に割る。2.3画面→<b>約1画面</b>。</div>
+<style>.xnote{background:#1A1713;color:#E8E2D4;padding:20px clamp(20px,4vw,56px);
+font-family:Inter,"Zen Kaku Gothic New",sans-serif;font-size:.86rem;line-height:1.9;letter-spacing:.03em;
+line-break:strict;word-break:auto-phrase}
+.xnote b{color:#E3C572;font-weight:500;font-size:.95rem}</style>
+<section class="kt">
+  <div class="kt__hd"><h2 class="kt__ttl">信条</h2><span class="kt__en">OUR CREED / 三つの約束</span></div>
+  <div class="kt__grid">
+      <article class="kt__ch">
+        <p class="kt__no"><b>01</b><span>Standard</span></p>
+        <h3 class="kt__h">「この金額で、ここまでできるんだ」</h3>
+        <div class="kt__bar"></div>
+        <p class="kt__p">モデルハウスで心惹かれた設備も、毎日の暮らしを考えた間取りも、あとから追加費用を重ねて、ようやく手に入るものにはしたくありません。</p><p class="kt__p">いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
+      </article>
+      <article class="kt__ch">
+        <p class="kt__no"><b>02</b><span>Design</span></p>
+        <h3 class="kt__h">諦めなくても、いい</h3>
+        <div class="kt__bar"></div>
+        <p class="kt__p">「この予算では、理想の家は難しいかもしれない」そう思っている方にこそ、知ってほしいのです。</p><p class="kt__p">その予算の中でも、もっと心地よく、もっと好きになれる家はつくれるということを。</p>
+      </article>
+      <article class="kt__ch">
+        <p class="kt__no"><b>03</b><span>After</span></p>
+        <h3 class="kt__h">暮らしてから、もっと好きになる</h3>
+        <div class="kt__bar"></div>
+        <p class="kt__p">朝の光が差し込む洗面。夜になると、間接照明が石壁をやわらかく照らすリビング。木の格子扉を開ける、何気ない毎日。</p><p class="kt__p">そんな小さな景色のひとつひとつが、そこで暮らす家族の「楽しい毎日」になっていく。</p>
+      </article>
+  </div>
+  <div class="kt__foot">
+    <p class="kt__lead">建てたときだけではなく、暮らしてから、もっと好きになる家を。</p>
+    <a class="kt__go" href="company.html">やまと不動産について<span>→</span></a>
+  </div>
+</section>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target);}});},{threshold:.25});
+document.querySelectorAll('.kt__ch').forEach(function(e){io.observe(e);});
+</script>
+</body></html>

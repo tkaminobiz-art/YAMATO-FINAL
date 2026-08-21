@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>信条 — 平尾誠案「Code is Design」</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Shippori+Mincho+B1:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
+<style>*{box-sizing:border-box}body{margin:0;background:#D9D4CA}
+img{display:block;max-width:100%}
+
+:root{--beni:#BD1B21;--sumi:#1C1814;--sumi2:#57503F;--sumi3:#9A917E;--paper:#EFEBE1;--line:rgba(28,24,20,.16);
+  --fm:"YakuHanMP","Shippori Mincho B1",serif;--fg:"Zen Kaku Gothic New",sans-serif;--fn:Inter,sans-serif}
+.hr{background:var(--paper);color:var(--sumi);padding:clamp(58px,6.5vw,96px) 0 clamp(64px,7vw,104px);
+  position:relative}
+/* グリッドが見える＝Code is Design。版面の骨格を意匠にする */
+.hr__grid{position:absolute;inset:0;pointer-events:none;max-width:1240px;margin:0 auto;
+  padding:0 clamp(20px,5vw,72px);display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(14px,1.6vw,24px)}
+.hr__grid i{display:block;border-left:1px solid var(--line)}
+.hr__grid i:last-child{border-right:1px solid var(--line)}
+.hr__in{position:relative;z-index:2;max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,72px)}
+.hr__meta{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  border-bottom:1px solid var(--sumi);padding-bottom:10px;
+  font-family:var(--fn);font-weight:400;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase}
+.hr__meta span:last-child{color:var(--sumi3)}
+/* 縦組みの柱＋横組みの本文。級数差を大胆に */
+.hr__body{margin:clamp(34px,4.2vw,58px) 0 0;display:grid;
+  grid-template-columns:auto minmax(0,1fr);gap:clamp(26px,4vw,64px);align-items:start}
+.hr__spine{writing-mode:vertical-rl;font-family:var(--fm);font-weight:700;
+  font-size:clamp(2.4rem,1.6rem + 3.4vw,4.4rem);letter-spacing:.24em;line-height:1;
+  color:var(--sumi);padding-top:.1em}
+.hr__spine em{font-style:normal;color:var(--beni)}
+.hr__st{margin:0;font-family:var(--fm);font-weight:600;
+  font-size:clamp(1.44rem,1.06rem + 1.8vw,2.62rem);line-height:1.58;letter-spacing:.04em;
+  text-wrap:balance;line-break:strict}
+.hr__st b{font-weight:700;color:var(--beni);
+  box-shadow:inset 0 -.34em 0 rgba(189,27,33,.1)}
+.hr__cols{margin:clamp(28px,3.4vw,46px) 0 0;
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,2.6vw,44px)}
+.hr__c{border-top:2px solid var(--sumi);padding-top:14px}
+.hr__k{margin:0 0 10px;font-family:var(--fn);font-weight:500;font-size:.62rem;letter-spacing:.26em;
+  color:var(--beni);text-transform:uppercase}
+.hr__p{margin:0;font-family:var(--fg);font-weight:300;color:var(--sumi2);
+  font-size:.92rem;line-height:2.02;letter-spacing:.055em;line-break:strict;word-break:auto-phrase}
+.hr__p+.hr__p{margin-top:.95em}
+.hr__end{margin:clamp(34px,4vw,56px) 0 0;border-top:1px solid var(--sumi);padding-top:clamp(18px,2.2vw,28px);
+  display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.hr__endh{margin:0;font-family:var(--fm);font-weight:600;
+  font-size:clamp(1.06rem,.98rem + .44vw,1.32rem);letter-spacing:.08em;line-height:1.7}
+.hr__sig{font-family:var(--fn);font-weight:400;font-size:.66rem;letter-spacing:.3em;color:var(--sumi3)}
+@media (max-width:820px){
+  .hr__body{grid-template-columns:minmax(0,1fr);gap:22px}
+  .hr__spine{writing-mode:horizontal-tb;font-size:clamp(1.5rem,4.6vw,2rem);letter-spacing:.4em}
+  .hr__cols{grid-template-columns:minmax(0,1fr)}
+  .hr__grid{grid-template-columns:repeat(2,1fr)}
+}
+
+</style></head><body>
+<div class="xnote"><b>平尾誠案 ─「Code is Design」</b><br>根拠: ポートフォリオの標語が<b>「Code is Design」</b>。文字組と実装を不可分に扱う人。ARUTEGA行動原則「『そもそも』たぐって本質へ」「劇的な一手より、着実な一手」。CSS Design Awards 審査員。<br>手つき: <b>版面のグリッドそのものを意匠として出す</b>（6カラムの罫を見せる）。縦組みの「信条」を柱に立て、級数差を大胆に取る。手紙を<b>ステートメント＋2つの節</b>に整理。装飾は一切足さず、<b>組みだけで格を作る</b>。</div>
+<style>.xnote{background:#1A1713;color:#E8E2D4;padding:20px clamp(20px,4vw,56px);
+font-family:Inter,"Zen Kaku Gothic New",sans-serif;font-size:.86rem;line-height:1.9;letter-spacing:.03em;
+line-break:strict;word-break:auto-phrase}
+.xnote b{color:#E3C572;font-weight:500;font-size:.95rem}</style>
+<section class="hr">
+  <div class="hr__grid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="hr__in">
+    <div class="hr__meta"><span>Creed — 001</span><span>Yamato Fudosan / Nara</span></div>
+    <div class="hr__body">
+      <p class="hr__spine" aria-hidden="true">信<em>条</em></p>
+      <div>
+        <h2 class="hr__st">それは、家を見たときに<br><b>「この金額で、ここまでできるんだ」</b><br>と、少し驚いてもらえること。</h2>
+        <div class="hr__cols">
+          <div class="hr__c">
+            <p class="hr__k">01 — Standard</p>
+            <p class="hr__p">モデルハウスで心惹かれた設備も、毎日の暮らしを考えた間取りも、あとから追加費用を重ねて、ようやく手に入るものにはしたくありません。</p>
+            <p class="hr__p">いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
+          </div>
+          <div class="hr__c">
+            <p class="hr__k">02 — Everyday</p>
+            <p class="hr__p">家は、完成した日がいちばん大切なのではありません。朝の光が差し込む洗面。木の格子扉を開ける、何気ない毎日。</p>
+            <p class="hr__p">私たちは、そこまで想像しながら、一軒ずつ家を設計しています。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hr__end">
+      <h3 class="hr__endh">建てたときだけではなく、暮らしてから、もっと好きになる家を。</h3>
+      <span class="hr__sig">株式会社やまと不動産</span>
+    </div>
+  </div>
+</section>
+
+</body></html>
