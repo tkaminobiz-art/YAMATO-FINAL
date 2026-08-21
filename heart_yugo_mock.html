@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>図面 — 信条「手紙に、陽が当たっている」</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Shippori+Mincho+B1:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#DDD8CE;font-family:"Zen Kaku Gothic New",sans-serif}
+.note{background:#242018;color:#E8E2D4;padding:22px clamp(20px,4vw,60px);font-size:.88rem;
+  line-height:1.9;letter-spacing:.03em;font-family:Inter,"Zen Kaku Gothic New",sans-serif}
+.note b{color:#E3C572}
+/* ─── index.html から抽出した信条CSS（原寸） ─── */
+  /* ===================== 信条「紅の台紙に貼られた、生成りの手紙」（図面 heart_mock.html / 仕様 design_heart_spec.md） ===================== */
+  .cr{
+    --sumi:#241E16; --sumi2:#5C5346; --shu:#BD1B21; --foil1:#F1D57D;
+    --gx:clamp(20px, 5.3vw, 76px);
+    --fs:clamp(15px, 13.2px + 0.45vw, 18px);
+    /* 段幅。em は字間を含まないので 字数×1.085 を書く。
+       この em は .cr__in の継承font-size(16px)基準なので、18pxの本文では実測が下振れする。
+       実測34.1字/行 ＝ JIS X 4051 参考値34字とほぼ一致、WCAG AAA 上限40字の内側。
+       実サイト実測（自前で12ページ計測）: 楓工務店58.0 / いがみ37.8 / 群言堂35.8 /
+       ハウスイズム35.1 / 安成35.0 / 福光屋31.3 / 根津30.9 / 星のや24.0 / 中川政七20.4 …中央値31字 */
+    --col:43.40em;
+    --fm:"YakuHanMP","Shippori Mincho B1",serif;
+    --gap-in:1.2em; --gap-out:2.35em;
+    --band-top:clamp(64px,7vw,100px);   /* 額装なので上にも紅の余白を取る */
+    --band-bot:clamp(84px,9.5vw,136px);  /* 下の紅の帯＝次の生成りへの落差を作る */
+    position:relative;overflow:hidden;isolation:isolate;
+    background:url("assets/std/page_beni.webp") center/cover var(--shu);
+    color:var(--sumi);
+    padding:var(--band-top) clamp(24px,7vw,120px) var(--band-bot)}
+
+  /* 生成りの手紙 */
+  .cr__sheet{position:relative;width:min(1100px,100%);margin:0 auto;
+    background:url("assets/std/page_kinari_letter_1800.webp") center/cover #F4EEE0;
+    padding:clamp(80px,8.5vw,132px) clamp(32px,5vw,86px) clamp(80px,8.5vw,132px);
+    /* 影は使わない。実測でアート側の面/線は Herzog 0・SANAA 0・BESS 1・Pace 1・SCAI 2 で、
+       影付きの矩形は一般住宅群（平均6.8）の語彙だった。Hermès は影でなく
+       生成り3段(#FFFCF7/#FCF7F1/#FFFFFF)の色差だけで層を作っている。
+       ここも紅との明度差と、縁1本の暗さだけで紙を立てる */
+    box-shadow:0 0 0 1px rgba(74,10,14,.30)}
+  @media (min-width:1441px){
+    .cr__sheet{background-image:url("assets/std/page_kinari_letter_2400.webp")}
+  }
+
+  .cr__in{position:relative;width:min(var(--col),100%);margin:0 auto}
+
+  .cr__p{font-family:var(--fm);font-weight:400;font-size:var(--fs);
+    line-height:1.95;letter-spacing:.085em;color:var(--sumi);
+    margin-top:var(--gap-in);word-break:auto-phrase;line-break:strict}
+  .cr__p:first-child{margin-top:0}
+  .cr__p--m{margin-top:var(--gap-out)}
+
+  /* 主題は太らせず、大きさと行間と字間だけで立てる */
+  .cr__q{display:block;font-size:1.86em;line-height:1.5;letter-spacing:.06em;
+    margin:.4em 0 .34em;color:var(--sumi)}
+
+  /* 楽章の切れ目に置く短い罫。Craig Mod は10.45画面を見出しゼロ・罫だけで持たせており、
+     罫は段幅の20%(149px)×3px、間隔の中央値583px(0.65画面)。ここもその比率に合わせる。
+     全ての切れ目に入れると平均370px間隔になり密すぎるので3本に絞る */
+  .cr__rule{border:0;width:20%;height:1px;background:var(--sumi2);opacity:.42;
+    margin:calc(var(--gap-out) * 1.15) auto}
+
+  /* 差出人 */
+  /* 手紙の追伸=出口。紙の上の墨文字＋細い下線だけ（紅の頁にボタンは置かない） */
+  .cr__go{display:inline-flex;align-items:center;min-height:44px;margin-top:clamp(22px,2.6vw,34px);
+    font-family:var(--fm);font-weight:400;font-size:max(15px,calc(var(--fs) * .9));
+    letter-spacing:.08em;color:var(--sumi2);text-decoration:none;
+    box-shadow:inset 0 -1px 0 rgba(92,83,70,.45)}
+  .cr__go:hover{color:var(--sumi);box-shadow:inset 0 -1px 0 var(--sumi)}
+  .cr__sign{margin-top:clamp(40px,4.6vw,64px);font-family:var(--fm);font-weight:400;
+    font-size:max(15px, calc(var(--fs) * .94));letter-spacing:.16em;color:var(--sumi2);
+    display:flex;align-items:center;gap:14px;white-space:nowrap}
+  /* 罫を縮ませる。320pxで「株式会社やまと不動|産」と割れたため */
+  .cr__sign::before{content:"";flex:0 1 clamp(28px,4vw,56px);min-width:10px;
+    height:1px;background:var(--sumi2);opacity:.5}
+
+  /* 柱（台紙側に置く。紙の外なので本文の可読性に影響しない） */
+  /* 柱＝章題。紙の外（紅の台紙の上）に置く。外に出して初めて台紙が意味を持つ。
+     実測: 根津美術館 vertical-rl 32.11px ls 3px / 群言堂 vertical-rl 24px ls 6px */
+  .cr__spine{position:absolute;left:clamp(10px,2.2vw,34px);top:clamp(34px,4.6vw,72px);z-index:2;
+    writing-mode:vertical-rl;font-family:var(--fm);font-weight:400;
+    font-size:clamp(19px,15px + .9vw,32px);letter-spacing:.22em;color:#F3EEE3;
+    display:flex;align-items:center;gap:20px}
+  .cr__spine::after{content:"";width:1px;height:clamp(72px,12vh,180px);
+    background:linear-gradient(180deg,var(--foil1),rgba(241,213,125,0))}
+
+  @media (max-width:760px){
+    .cr{--band-bot:clamp(72px,16vw,110px)}
+    .cr__spine{left:8px;top:18px}
+  }
+  /* ── SP ──────────────────────────────────────────────
+     390px・本文15px（検査の下限）では、余白ゼロでも1行23.9字が上限。
+     30〜40字はSPでは物理的に達成できないので、狙いを変える:
+      ① 台紙を左右から外して紙を全幅にし、段幅を271→342pxへ（16.5→21字）
+      ② 引用は本文比を下げる。1.86倍のままだと3行に割れ、
+         クライアントの言葉「この金額で、ここまでできるんだ」が壊れて見えた
+      ③ 柱は紙の上へ移す（台紙が無くなるため）
+     紅は上下の帯として残るので、前後の境界は変わらない */
+  @media (max-width:560px){
+    .cr{--band-top:clamp(40px,9vw,64px);padding-left:0;padding-right:0}
+    .cr__sheet{width:100%;padding:clamp(64px,13vw,88px) clamp(20px,6vw,26px)}
+    .cr__q{font-size:1.36em;line-height:1.62;letter-spacing:.04em}
+    /* 柱は紙の中へ。SPでは台紙が左右に無く、紅の帯(40-64px)には縦組みの柱が入らない。
+       生成り文字のまま紙に重ねると見えなくなるので墨に変え、横組みで紙の天に置く */
+    .cr__spine{left:clamp(20px,6vw,26px);right:auto;
+      top:calc(var(--band-top) + clamp(24px,5.6vw,32px));
+      writing-mode:horizontal-tb;font-size:15px;letter-spacing:.34em;
+      color:var(--sumi2);gap:12px}
+    .cr__spine::after{width:clamp(26px,7vw,38px);height:1px;
+      background:var(--sumi2);opacity:.45}
+    /* 罫の前後が53px×2=106px(3.4行分)あり、細い罫に対して空きすぎだった。
+       楽章間(44px)と同程度に寄せる */
+    .cr__rule{margin:calc(var(--gap-out) * .62) auto}
+  }
+
+.heart{margin-top:0}
+
+/* ═══════════ 勇吾の系（1ルールだけ）: 手紙に、陽が当たっている ═══════════
+   文中の「朝の光」「木の格子扉」を、紙の上で実際に起こす。
+   スクロールに縛らない。実時間 140秒で影が紙を渡る（気づく人だけ気づく速度）。
+   JSゼロで動き、reduced-motion で消える。 */
+.yg-sun{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.cr__in{position:relative;z-index:2}
+.yg-sun i{position:absolute;inset:-12% -18%;display:block}
+/* 格子扉の影: 桟のリズム＋柔らかい半影。multiplyで紙の目に沈む */
+.yg-sun__lattice{
+  /* 影は光のある場所にしか無い。格子は左上の陽だまりの中だけに落とし、
+     全面を覆わない（覆うとカーテンの襞になる） */
+  background:
+    repeating-linear-gradient(99deg,
+      rgba(56,36,18,0) 0 96px, rgba(56,36,18,.15) 116px 148px,
+      rgba(56,36,18,0) 168px 246px);
+  -webkit-mask-image:radial-gradient(72% 62% at 32% 26%, #000 0 40%, transparent 82%);
+  mask-image:radial-gradient(72% 62% at 32% 26%, #000 0 40%, transparent 82%);
+  filter:blur(10px);mix-blend-mode:multiply;opacity:.72;
+  animation:yg-drift var(--yg-t,140s) ease-in-out infinite alternate}
+/* 陽だまり: 薄い金の光斑がゆっくり呼吸する */
+.yg-sun__warm{
+  background:radial-gradient(58% 46% at 30% 26%, rgba(241,213,125,.18), rgba(241,213,125,0) 72%);
+  mix-blend-mode:soft-light;
+  animation:yg-breathe calc(var(--yg-t,140s) * .64) ease-in-out infinite alternate}
+@keyframes yg-drift{from{transform:translateX(-5.5%) }to{transform:translateX(5.5%)}}
+@keyframes yg-breathe{from{opacity:.55;transform:translateX(-3%)}to{opacity:1;transform:translateX(4%)}}
+/* 発話は、発される: 「この金額で、ここまでできるんだ」だけ、初見時に光が文字を通る。
+   .yg-ready はJSが生きている時だけ付く＝JS死でも文字は最初から見えている */
+.cr__q{display:inline-block;vertical-align:baseline}
+.yg-ready .cr__q{clip-path:inset(-8% 101% -8% -1%)}
+.yg-ready .cr__q.is-lit{clip-path:inset(-6% -2% -6% -1%);
+  transition:clip-path 1.6s cubic-bezier(.45,0,.18,1) .3s}
+@media (prefers-reduced-motion:reduce){
+  .yg-sun{display:none}
+  .yg-ready .cr__q{clip-path:none}
+}
+</style>
+</head>
+<body>
+<div class="note">
+  <b>図面 — 勇吾の系「手紙に、陽が当たっている」</b><br>
+  手紙は 朝の光・格子扉 の話をしているのに、紙面だけが光っていなかった。言うことと、やることを分けない。<br>
+  格子扉の影が実時間140秒で紙を渡る（スクロールに縛らない）。「この金額で、ここまでできるんだ」だけ、初見時に光が文字を通って現れる。<br>
+  JS無しでも動く／reduced-motionで消える／本文・行長・組みは承認済みのまま一切不変。<b>?fast=1</b> で9秒に短縮して確認可。
+</div>
+<section class="heart cr" id="heart" aria-labelledby="crH">
+  <p class="cr__spine" aria-hidden="true">信条</p>
+  <div class="cr__sheet">
+    <div class="yg-sun" aria-hidden="true"><i class="yg-sun__lattice"></i><i class="yg-sun__warm"></i></div>
+    <div class="cr__in">
+
+      <p class="cr__p" id="crH">やまと不動産が、ずっと大切にしていることがあります。</p>
+
+      <p class="cr__p">それは、家を見たときに<span class="cr__q">「この金額で、ここまでできるんだ」</span>と、少し驚いてもらえること。</p>
+
+      <hr class="cr__rule">
+      <p class="cr__p cr__p--m">モデルハウスで心惹かれた設備も、毎日の暮らしを考えた間取りも、あとから追加費用を重ねて、ようやく手に入るものにはしたくありません。</p>
+
+      <p class="cr__p">いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
+
+      <p class="cr__p cr__p--m">「この予算では、理想の家は難しいかもしれない」</p>
+
+      <p class="cr__p">そう思っている方にこそ、知ってほしいのです。</p>
+
+      <p class="cr__p">諦めなくてもいいこと。その予算の中でも、もっと心地よく、もっと好きになれる家はつくれるということを。</p>
+
+      <hr class="cr__rule">
+      <p class="cr__p cr__p--m">家は、完成した日がいちばん大切なのではありません。</p>
+
+      <p class="cr__p">朝の光が差し込む洗面。夜になると、間接照明が石壁をやわらかく照らすリビング。木の格子扉を開ける、何気ない毎日。</p>
+
+      <p class="cr__p">そんな小さな景色のひとつひとつが、そこで暮らす家族の「楽しい毎日」になっていく。</p>
+
+      <p class="cr__p">私たちは、そこまで想像しながら、一軒ずつ家を設計しています。</p>
+
+      <hr class="cr__rule">
+      <p class="cr__p cr__p--m">そして5年、10年と暮らしたその先にも、</p>
+
+      <p class="cr__p">「やまと不動産にお願いして、よかった」</p>
+
+      <p class="cr__p">そう言ってもらえる家でありたい。</p>
+
+      <p class="cr__p">建てたときだけではなく、暮らしてから、もっと好きになる家を。</p>
+
+      <p class="cr__p cr__p--m">それが、やまと不動産の家づくりです。</p>
+
+      <p class="cr__sign">株式会社やまと不動産</p>
+        <!-- 出口（2026-08-21 監査: 2.42画面のリンク0節だった）。手紙の追伸の位置 -->
+        <a class="cr__go" href="company.html">私たちのことは、会社案内でもご覧いただけます　→</a>
+
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var fast=/[?&]fast=1/.test(location.search);
+  if(fast) document.documentElement.style.setProperty('--yg-t','9s');
+  document.body.classList.add('yg-ready');
+  var q=document.querySelector('.cr__q'); if(!q) return;
+  /* clip-pathで隠した要素自身は可視面積0でIOが発火しない。親の段落を観測する */
+  var host=q.closest('p')||q.parentElement;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ q.classList.add('is-lit'); io.disconnect(); } });
+  },{threshold:.6});
+  io.observe(host);
+})();
+</script>
+</body>
+</html>
