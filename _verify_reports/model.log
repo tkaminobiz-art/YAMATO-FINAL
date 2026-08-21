@@ -1,0 +1,430 @@
+❌ webkit 320px  FAIL:16 WARN:5
+   ✗ [orphan-last-line] 「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 15px 「大きな展示場は持たず、分譲地に建」 @ body > section.vow > div.vow__in > p
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   ✗ [font-floor] 14.9px 「家族団らんが実現できる、広々とし」 @ main#tour > section.room.is-in > div.room__body > p.room__txt
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+❌ webkit 360px  FAIL:15 WARN:5
+   ✗ [orphan-last-line] 「この家の標準仕|様」 (start) @ body > section.ledger > div.ledger__in > h2.ledger__t
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   ✗ [font-floor] 15px 「家族団らんが実現できる、広々とし」 @ main#tour > section.room.is-in > div.room__body > p.room__txt
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ webkit 375px  FAIL:14 WARN:6
+   ✗ [orphan-last-line] 「この家の標準仕|様」 (start) @ body > section.ledger > div.ledger__in > h2.ledger__t
+   △ [tap-target] 118×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ webkit 390px  FAIL:13 WARN:6
+   △ [tap-target] 133×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ webkit 414px  FAIL:14 WARN:6
+   ✗ [orphan-last-line] 「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 157×34px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ webkit 768px  FAIL:16 WARN:17
+   △ [tap-target] 206×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 96×34px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+❌ webkit 1024px  FAIL:16 WARN:11
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+   ✗ [line-length] 56字/行 「※掲載の仕様は現サイト公開情報にもと…」 @ body > section.ledger > div.ledger__in > p.ledger__note（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [line-length] 60字/行 「モデルハウス：奈良県奈良市左京1-8…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）
+   △ [image-resolution] 表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）
+   △ [image-resolution] 表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）
+❌ webkit 1280px  FAIL:16 WARN:12
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+   ✗ [line-length] 56字/行 「※掲載の仕様は現サイト公開情報にもと…」 @ body > section.ledger > div.ledger__in > p.ledger__note（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [line-length] 60字/行 「モデルハウス：奈良県奈良市左京1-8…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）
+   △ [image-resolution] 表示 1364px に対し実解像度 1920px @ section#hero > div.hero__bg > img（Retina 2x で甘くなる）
+   △ [image-resolution] 表示 1178px に対し実解像度 1600px @ main#tour > figure.breath > img（Retina 2x で甘くなる）
+❌ webkit 1440px  FAIL:16 WARN:12
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+   ✗ [line-length] 56字/行 「※掲載の仕様は現サイト公開情報にもと…」 @ body > section.ledger > div.ledger__in > p.ledger__note（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [line-length] 60字/行 「モデルハウス：奈良県奈良市左京1-8…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）
+   △ [image-resolution] 表示 1536px に対し実解像度 1920px @ section#hero > div.hero__bg > img（Retina 2x で甘くなる）
+   △ [image-resolution] 表示 1168px に対し実解像度 1600px @ main#tour > figure.breath > img（Retina 2x で甘くなる）
+❌ webkit 1920px  FAIL:17 WARN:11
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+   ✗ [line-length] 56字/行 「※掲載の仕様は現サイト公開情報にもと…」 @ body > section.ledger > div.ledger__in > p.ledger__note（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [line-length] 60字/行 「モデルハウス：奈良県奈良市左京1-8…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [image-resolution] 表示 2046px に対し実解像度 1920px @ section#hero > div.hero__bg > img（1x でも引き伸ばしボケ）
+   △ [image-resolution] 表示 1168px に対し実解像度 1600px @ main#tour > figure.breath > img（Retina 2x で甘くなる）
+❌ chromium 320px  FAIL:16 WARN:5
+   ✗ [orphan-last-line] 「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 15px 「大きな展示場は持たず、分譲地に建」 @ body > section.vow > div.vow__in > p
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   ✗ [font-floor] 14.9px 「家族団らんが実現できる、広々とし」 @ main#tour > section.room.is-in > div.room__body > p.room__txt
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+❌ chromium 360px  FAIL:15 WARN:5
+   ✗ [orphan-last-line] 「この家の標準仕|様」 (start) @ body > section.ledger > div.ledger__in > h2.ledger__t
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   ✗ [font-floor] 15px 「家族団らんが実現できる、広々とし」 @ main#tour > section.room.is-in > div.room__body > p.room__txt
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ chromium 375px  FAIL:14 WARN:6
+   ✗ [orphan-last-line] 「この家の標準仕|様」 (start) @ body > section.ledger > div.ledger__in > h2.ledger__t
+   △ [tap-target] 118×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ chromium 390px  FAIL:13 WARN:6
+   △ [tap-target] 133×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ chromium 414px  FAIL:14 WARN:6
+   ✗ [orphan-last-line] 「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 157×34px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ chromium 768px  FAIL:16 WARN:17
+   △ [tap-target] 205×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 95×34px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+❌ chromium 1024px  FAIL:16 WARN:11
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+   ✗ [line-length] 56字/行 「※掲載の仕様は現サイト公開情報にもと…」 @ body > section.ledger > div.ledger__in > p.ledger__note（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [line-length] 60字/行 「モデルハウス：奈良県奈良市左京1-8…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）
+   △ [image-resolution] 表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）
+   △ [image-resolution] 表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）
+❌ chromium 1280px  FAIL:16 WARN:12
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+   ✗ [line-length] 56字/行 「※掲載の仕様は現サイト公開情報にもと…」 @ body > section.ledger > div.ledger__in > p.ledger__note（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [line-length] 60字/行 「モデルハウス：奈良県奈良市左京1-8…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）
+   △ [image-resolution] 表示 1364px に対し実解像度 1920px @ section#hero > div.hero__bg > img（Retina 2x で甘くなる）
+   △ [image-resolution] 表示 1178px に対し実解像度 1600px @ main#tour > figure.breath > img（Retina 2x で甘くなる）
+❌ chromium 1440px  FAIL:16 WARN:12
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+   ✗ [line-length] 56字/行 「※掲載の仕様は現サイト公開情報にもと…」 @ body > section.ledger > div.ledger__in > p.ledger__note（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [line-length] 60字/行 「モデルハウス：奈良県奈良市左京1-8…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）
+   △ [image-resolution] 表示 1535px に対し実解像度 1920px @ section#hero > div.hero__bg > img（Retina 2x で甘くなる）
+   △ [image-resolution] 表示 1168px に対し実解像度 1600px @ main#tour > figure.breath > img（Retina 2x で甘くなる）
+❌ chromium 1920px  FAIL:17 WARN:11
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Model House ／ モデ」 @ section#hero > div.hero__in > span.eyebrow
+   ✗ [font-floor] 8.6px 「Living / Dining」 @ div.room__body > span.plate > span.plate__t > span.plate__en
+   △ [font-floor] 9.6px 「これも標準」 @ section.room.is-in > div.room__body > div.std > span.std__k
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ body > section.ledger > div.ledger__in > p.ledger__note
+   ✗ [font-floor] 8.6px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [font-floor] 11.2px 「当日のご案内が難しい場合がありま」 @ section.access > div.access__grid > div.adesk > p.adesk__note
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+   ✗ [line-length] 56字/行 「※掲載の仕様は現サイト公開情報にもと…」 @ body > section.ledger > div.ledger__in > p.ledger__note（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [line-length] 60字/行 「モデルハウス：奈良県奈良市左京1-8…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [image-resolution] 表示 2043px に対し実解像度 1920px @ section#hero > div.hero__bg > img（1x でも引き伸ばしボケ）
+   △ [image-resolution] 表示 1168px に対し実解像度 1600px @ main#tour > figure.breath > img（Retina 2x で甘くなる）
+
+──────────────────────────────────────────────────
+❌ FAIL 306件 / WARN 182件 — 全緑になるまで完成として提示しない
+report: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify/report.json / screenshots: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify

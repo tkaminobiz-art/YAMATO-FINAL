@@ -1,0 +1,436 @@
+❌ webkit 320px  FAIL:13 WARN:19
+   ✗ [orphan-last-line] 「奈良本社・京都支|店」 (start) @ div#facts > div.facts__in > div.fact > span.fact__v
+   ✗ [orphan-last-line] 「株式会社やまと不動|産」 (start) @ div.prof__grid > dl.rv.is-in > div.prow > dd.fx
+   △ [tap-target] 113×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+❌ webkit 360px  FAIL:11 WARN:19
+   △ [tap-target] 115×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+❌ webkit 375px  FAIL:11 WARN:19
+   △ [tap-target] 117×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+❌ webkit 390px  FAIL:11 WARN:19
+   △ [tap-target] 132×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+❌ webkit 414px  FAIL:12 WARN:19
+   ✗ [orphan-last-line] 「鉄「近鉄奈良駅」から10|分」 (start) @ div.offices > div.office.rv > div.orow > span
+   △ [tap-target] 156×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+❌ webkit 768px  FAIL:12 WARN:35
+   △ [tap-target] 206×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 96×34px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+❌ webkit 1024px  FAIL:12 WARN:22
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+   ✗ [font-floor] 14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p
+   △ [font-floor] 10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co
+   △ [font-floor] 11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap
+   △ [font-floor] 11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow
+   △ [font-floor] 10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small
+   ✗ [font-floor] 14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2
+❌ webkit 1280px  FAIL:12 WARN:22
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+   ✗ [font-floor] 14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p
+   △ [font-floor] 10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co
+   △ [font-floor] 11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap
+   △ [font-floor] 11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow
+   △ [font-floor] 10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small
+   ✗ [font-floor] 14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2
+❌ webkit 1440px  FAIL:12 WARN:22
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+   ✗ [font-floor] 14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p
+   △ [font-floor] 10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co
+   △ [font-floor] 11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap
+   △ [font-floor] 11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow
+   △ [font-floor] 10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small
+   ✗ [font-floor] 14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2
+❌ webkit 1920px  FAIL:15 WARN:19
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+   ✗ [font-floor] 14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p
+   △ [font-floor] 10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co
+   △ [font-floor] 11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap
+   △ [font-floor] 11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow
+   △ [font-floor] 10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small
+   ✗ [font-floor] 14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2
+❌ chromium 320px  FAIL:13 WARN:19
+   ✗ [orphan-last-line] 「奈良本社・京都支|店」 (start) @ div#facts > div.facts__in > div.fact > span.fact__v
+   ✗ [orphan-last-line] 「株式会社やまと不動|産」 (start) @ div.prof__grid > dl.rv > div.prow > dd.fx
+   △ [tap-target] 113×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+❌ chromium 360px  FAIL:11 WARN:19
+   △ [tap-target] 115×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+❌ chromium 375px  FAIL:11 WARN:19
+   △ [tap-target] 117×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 105×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 71×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 63×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 75×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+❌ chromium 390px  FAIL:11 WARN:19
+   △ [tap-target] 132×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+❌ chromium 414px  FAIL:12 WARN:19
+   ✗ [orphan-last-line] 「鉄「近鉄奈良駅」から10|分」 (start) @ div.offices > div.office.rv > div.orow > span
+   △ [tap-target] 156×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+❌ chromium 768px  FAIL:12 WARN:34
+   △ [tap-target] 205×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 95×34px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 150×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2
+   △ [tap-target] 30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in
+   △ [tap-target] 30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+❌ chromium 1024px  FAIL:12 WARN:22
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+   ✗ [font-floor] 14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p
+   △ [font-floor] 10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co
+   △ [font-floor] 11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap
+   △ [font-floor] 11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow
+   △ [font-floor] 10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small
+   ✗ [font-floor] 14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2
+❌ chromium 1280px  FAIL:12 WARN:22
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+   ✗ [font-floor] 14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p
+   △ [font-floor] 10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co
+   △ [font-floor] 11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap
+   △ [font-floor] 11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow
+   △ [font-floor] 10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small
+   ✗ [font-floor] 14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2
+❌ chromium 1440px  FAIL:12 WARN:22
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+   ✗ [font-floor] 14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p
+   △ [font-floor] 10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co
+   △ [font-floor] 11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap
+   △ [font-floor] 11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow
+   △ [font-floor] 10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small
+   ✗ [font-floor] 14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2
+❌ chromium 1920px  FAIL:14 WARN:20
+   ✗ [tap-target] 37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv
+   △ [font-floor] 9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k
+   △ [font-floor] 11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n
+   △ [font-floor] 11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span
+   △ [font-floor] 11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow
+   ✗ [font-floor] 14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p
+   △ [font-floor] 10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co
+   △ [font-floor] 11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap
+   △ [font-floor] 11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow
+   △ [font-floor] 10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small
+   ✗ [font-floor] 14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2
+
+──────────────────────────────────────────────────
+❌ FAIL 241件 / WARN 430件 — 全緑になるまで完成として提示しない
+report: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify/report.json / screenshots: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify

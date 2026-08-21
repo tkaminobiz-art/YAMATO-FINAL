@@ -1,0 +1,424 @@
+❌ webkit 320px  FAIL:10 WARN:28
+   ✗ [orphan-last-line] 「通勤の目|安」 (start) @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figttl
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 117×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 85×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 86×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 76×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+❌ webkit 360px  FAIL:9 WARN:28
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   △ [tap-target] 40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a
+❌ webkit 375px  FAIL:9 WARN:28
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   △ [tap-target] 40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a
+❌ webkit 390px  FAIL:9 WARN:28
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   △ [tap-target] 40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a
+❌ webkit 414px  FAIL:9 WARN:28
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 119×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 88×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   △ [tap-target] 40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a
+❌ webkit 768px  FAIL:11 WARN:28
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 125×43px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 90×43px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 92×43px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 81×43px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 67×43px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 94×43px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   △ [tap-target] 40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a
+❌ webkit 1024px  FAIL:11 WARN:9
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [font-floor] 8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span
+   ✗ [font-floor] 10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye
+   ✗ [font-floor] 9px 「Scroll」 @ div#fvCue
+   ✗ [font-floor] 12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow
+   ✗ [font-floor] 11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote
+   △ [font-floor] 9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap
+   △ [font-floor] 10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en
+   ✗ [font-floor] 11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap
+   △ [font-floor] 9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up
+   ✗ [font-floor] 12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow
+   △ [font-floor] 11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx
+   △ [font-floor] 11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small
+   ✗ [font-floor] 11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot
+   △ [font-floor] 10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow
+   △ [line-length] 46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）
+   △ [image-resolution] 表示 1024px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）
+   △ [image-resolution] 表示 1188px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（Retina 2x で甘くなる）
+❌ webkit 1280px  FAIL:12 WARN:8
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [font-floor] 8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span
+   ✗ [font-floor] 10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye
+   ✗ [font-floor] 9px 「Scroll」 @ div#fvCue
+   ✗ [font-floor] 12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow
+   ✗ [font-floor] 11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote
+   △ [font-floor] 9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap
+   △ [font-floor] 10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en
+   ✗ [font-floor] 11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap
+   △ [font-floor] 9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up
+   ✗ [font-floor] 12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow
+   △ [font-floor] 11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx
+   △ [font-floor] 11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small
+   ✗ [font-floor] 11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot
+   △ [font-floor] 10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow
+   △ [line-length] 46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）
+   △ [image-resolution] 表示 1280px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）
+   ✗ [image-resolution] 表示 1485px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）
+❌ webkit 1440px  FAIL:13 WARN:7
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [font-floor] 8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span
+   ✗ [font-floor] 10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye
+   ✗ [font-floor] 9px 「Scroll」 @ div#fvCue
+   ✗ [font-floor] 12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow
+   ✗ [font-floor] 11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote
+   △ [font-floor] 9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap
+   △ [font-floor] 10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en
+   ✗ [font-floor] 11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap
+   △ [font-floor] 9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up
+   ✗ [font-floor] 12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow
+   △ [font-floor] 11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx
+   △ [font-floor] 11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small
+   ✗ [font-floor] 11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot
+   △ [font-floor] 10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow
+   △ [line-length] 46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [image-resolution] 表示 1440px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）
+   ✗ [image-resolution] 表示 1670px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）
+❌ webkit 1920px  FAIL:13 WARN:7
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [font-floor] 8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span
+   ✗ [font-floor] 10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye
+   ✗ [font-floor] 9px 「Scroll」 @ div#fvCue
+   ✗ [font-floor] 12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow
+   ✗ [font-floor] 11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote
+   △ [font-floor] 9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap
+   △ [font-floor] 10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en
+   ✗ [font-floor] 11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap
+   △ [font-floor] 9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up
+   ✗ [font-floor] 12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow
+   △ [font-floor] 11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx
+   △ [font-floor] 11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small
+   ✗ [font-floor] 11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot
+   △ [font-floor] 10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow
+   △ [line-length] 46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [image-resolution] 表示 1920px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）
+   ✗ [image-resolution] 表示 2227px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）
+❌ chromium 320px  FAIL:10 WARN:28
+   ✗ [orphan-last-line] 「通勤の目|安」 (start) @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figttl
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 117×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 85×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 86×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 76×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+❌ chromium 360px  FAIL:9 WARN:28
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   △ [tap-target] 40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a
+❌ chromium 375px  FAIL:9 WARN:28
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   △ [tap-target] 40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a
+❌ chromium 390px  FAIL:9 WARN:28
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   △ [tap-target] 40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a
+❌ chromium 414px  FAIL:9 WARN:28
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 119×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   △ [tap-target] 40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a
+❌ chromium 768px  FAIL:11 WARN:28
+   △ [tap-target] 28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on
+   △ [tap-target] 28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot
+   △ [tap-target] 245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more
+   △ [tap-target] 109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost
+   △ [tap-target] 162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line
+   △ [tap-target] 164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink
+   △ [tap-target] 124×43px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 90×43px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 92×43px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 81×43px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 67×43px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   △ [tap-target] 94×43px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   △ [tap-target] 40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a
+❌ chromium 1024px  FAIL:11 WARN:9
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [font-floor] 8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span
+   ✗ [font-floor] 10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye
+   ✗ [font-floor] 9px 「Scroll」 @ div#fvCue
+   ✗ [font-floor] 12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow
+   ✗ [font-floor] 11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote
+   △ [font-floor] 9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap
+   △ [font-floor] 10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en
+   ✗ [font-floor] 11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap
+   △ [font-floor] 9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up
+   ✗ [font-floor] 12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow
+   △ [font-floor] 11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx
+   △ [font-floor] 11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small
+   ✗ [font-floor] 11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot
+   △ [font-floor] 10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow
+   △ [line-length] 46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）
+   △ [image-resolution] 表示 1024px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）
+   △ [image-resolution] 表示 1188px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（Retina 2x で甘くなる）
+❌ chromium 1280px  FAIL:12 WARN:8
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [font-floor] 8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span
+   ✗ [font-floor] 10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye
+   ✗ [font-floor] 9px 「Scroll」 @ div#fvCue
+   ✗ [font-floor] 12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow
+   ✗ [font-floor] 11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote
+   △ [font-floor] 9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap
+   △ [font-floor] 10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en
+   ✗ [font-floor] 11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap
+   △ [font-floor] 9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up
+   ✗ [font-floor] 12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow
+   △ [font-floor] 11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx
+   △ [font-floor] 11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small
+   ✗ [font-floor] 11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot
+   △ [font-floor] 10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow
+   △ [line-length] 46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）
+   △ [image-resolution] 表示 1280px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）
+   ✗ [image-resolution] 表示 1485px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）
+❌ chromium 1440px  FAIL:13 WARN:7
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [font-floor] 8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span
+   ✗ [font-floor] 10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye
+   ✗ [font-floor] 9px 「Scroll」 @ div#fvCue
+   ✗ [font-floor] 12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow
+   ✗ [font-floor] 11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote
+   △ [font-floor] 9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap
+   △ [font-floor] 10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en
+   ✗ [font-floor] 11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap
+   △ [font-floor] 9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up
+   ✗ [font-floor] 12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow
+   △ [font-floor] 11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx
+   △ [font-floor] 11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small
+   ✗ [font-floor] 11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot
+   △ [font-floor] 10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow
+   △ [line-length] 46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [image-resolution] 表示 1440px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）
+   ✗ [image-resolution] 表示 1670px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）
+❌ chromium 1920px  FAIL:13 WARN:7
+   ✗ [tap-target] 267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [tap-target] 179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a
+   ✗ [font-floor] 8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span
+   ✗ [font-floor] 10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye
+   ✗ [font-floor] 9px 「Scroll」 @ div#fvCue
+   ✗ [font-floor] 12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow
+   ✗ [font-floor] 11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote
+   △ [font-floor] 9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap
+   △ [font-floor] 10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en
+   ✗ [font-floor] 11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap
+   △ [font-floor] 9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up
+   ✗ [font-floor] 12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow
+   △ [font-floor] 11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx
+   △ [font-floor] 11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small
+   ✗ [font-floor] 11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot
+   △ [font-floor] 10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow
+   △ [line-length] 46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）
+   ✗ [image-resolution] 表示 1920px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）
+   ✗ [image-resolution] 表示 2227px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）
+
+──────────────────────────────────────────────────
+❌ FAIL 212件 / WARN 398件 — 全緑になるまで完成として提示しない
+report: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify/report.json / screenshots: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify

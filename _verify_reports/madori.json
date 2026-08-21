@@ -1,0 +1,2682 @@
+{
+  "target": "http://localhost:8000/madori.html",
+  "ranAt": "2026-08-12T01:29:59.272Z",
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "engines": [
+    "webkit",
+    "chromium"
+  ],
+  "results": [
+    {
+      "engine": "webkit",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.2px 「下の設備はオプションではありませ」 @ section#plans > div.stdblock > p.stdblock__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「やまと不動産が実際に建てた家の間」 @ section#floorplans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「「コミコミ」の中身です。あとから」 @ main#main > section.sec > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.7px 「花・風・京の標準仕様は、奈良のモ」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 360,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.3px 「下の設備はオプションではありませ」 @ section#plans > div.stdblock > p.stdblock__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「やまと不動産が実際に建てた家の間」 @ section#floorplans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「「コミコミ」の中身です。あとから」 @ main#main > section.sec > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.8px 「花・風・京の標準仕様は、奈良のモ」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "119×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「下の設備はオプションではありませ」 @ section#plans > div.stdblock > p.stdblock__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「やまと不動産が実際に建てた家の間」 @ section#floorplans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「「コミコミ」の中身です。あとから」 @ main#main > section.sec > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「花・風・京の標準仕様は、奈良のモ」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "134×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「下の設備はオプションではありませ」 @ section#plans > div.stdblock > p.stdblock__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「やまと不動産が実際に建てた家の間」 @ section#floorplans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「「コミコミ」の中身です。あとから」 @ main#main > section.sec > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「花・風・京の標準仕様は、奈良のモ」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 414,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "158×34px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.6px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「下の設備はオプションではありませ」 @ section#plans > div.stdblock > p.stdblock__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.6px 「やまと不動産が実際に建てた家の間」 @ section#floorplans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.6px 「「コミコミ」の中身です。あとから」 @ main#main > section.sec > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「aze／標準・長期優良対|応」 (left) @ thead > tr > th > small"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "201×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "91×40px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "65字/行 「価格・面積・間取りは確定値（2026…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 308px に対し実解像度 401px @ div#fpGrid > button.fp > span.fp__img > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 305px に対し実解像度 305px @ div#fpGrid > button.fp > span.fp__img > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「花・風・京。やまと不動産の3つのプラ…」 @ main#main > section.whero > p.whero__lead（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "72字/行 「価格・面積・間取りは確定値（2026…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 255px に対し実解像度 305px @ div#fpGrid > button.fp > span.fp__img > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「花・風・京。やまと不動産の3つのプラ…」 @ main#main > section.whero > p.whero__lead（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "72字/行 「価格・面積・間取りは確定値（2026…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 321px に対し実解像度 401px @ div#fpGrid > button.fp > span.fp__img > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 305px に対し実解像度 305px @ div#fpGrid > button.fp > span.fp__img > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「花・風・京。やまと不動産の3つのプラ…」 @ main#main > section.whero > p.whero__lead（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "72字/行 「価格・面積・間取りは確定値（2026…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 321px に対し実解像度 401px @ div#fpGrid > button.fp > span.fp__img > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 305px に対し実解像度 305px @ div#fpGrid > button.fp > span.fp__img > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「花・風・京。やまと不動産の3つのプラ…」 @ main#main > section.whero > p.whero__lead（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "72字/行 「価格・面積・間取りは確定値（2026…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 321px に対し実解像度 401px @ div#fpGrid > button.fp > span.fp__img > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 305px に対し実解像度 305px @ div#fpGrid > button.fp > span.fp__img > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.2px 「下の設備はオプションではありませ」 @ section#plans > div.stdblock > p.stdblock__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「やまと不動産が実際に建てた家の間」 @ section#floorplans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「「コミコミ」の中身です。あとから」 @ main#main > section.sec > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.7px 「花・風・京の標準仕様は、奈良のモ」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 360,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.3px 「下の設備はオプションではありませ」 @ section#plans > div.stdblock > p.stdblock__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「やまと不動産が実際に建てた家の間」 @ section#floorplans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「「コミコミ」の中身です。あとから」 @ main#main > section.sec > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.8px 「花・風・京の標準仕様は、奈良のモ」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "119×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「下の設備はオプションではありませ」 @ section#plans > div.stdblock > p.stdblock__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「やまと不動産が実際に建てた家の間」 @ section#floorplans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「「コミコミ」の中身です。あとから」 @ main#main > section.sec > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「花・風・京の標準仕様は、奈良のモ」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "134×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「下の設備はオプションではありませ」 @ section#plans > div.stdblock > p.stdblock__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「やまと不動産が実際に建てた家の間」 @ section#floorplans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.5px 「「コミコミ」の中身です。あとから」 @ main#main > section.sec > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「花・風・京の標準仕様は、奈良のモ」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 414,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "158×34px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.6px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「下の設備はオプションではありませ」 @ section#plans > div.stdblock > p.stdblock__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.6px 「やまと不動産が実際に建てた家の間」 @ section#floorplans > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.6px 「「コミコミ」の中身です。あとから」 @ main#main > section.sec > p.sec__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「aze／標準・長期優良対|応」 (left) @ thead > tr > th > small"
+        },
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「風がとおる、長く住める|家」 (left) @ table > tbody > tr > td"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "201×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "91×40px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「見学のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "65字/行 「価格・面積・間取りは確定値（2026…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「花・風・京。やまと不動産の3つのプラ…」 @ main#main > section.whero > p.whero__lead（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "72字/行 「価格・面積・間取りは確定値（2026…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「花・風・京。やまと不動産の3つのプラ…」 @ main#main > section.whero > p.whero__lead（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "72字/行 「価格・面積・間取りは確定値（2026…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「花・風・京。やまと不動産の3つのプラ…」 @ main#main > section.whero > p.whero__lead（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "72字/行 「価格・面積・間取りは確定値（2026…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "105×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "71×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "75×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「花・風・京。やまと不動産の3つのプラ…」 @ main#main > section.whero > p.whero__lead（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "72字/行 「価格・面積・間取りは確定値（2026…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+❌ webkit 320px  FAIL:20 WARN:37
+   ✗ [orphan-last-line] 「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   ✗ [orphan-last-line] 「1|件」 (start) @ section#chap-Yamatokoriyama > header.chap__head > span.chap__count
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 79×20px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 72×20px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×20px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 72×20px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 72×20px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 88×20px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 57×20px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 88×20px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 62×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+❌ webkit 360px  FAIL:18 WARN:37
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 80×20px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 105×20px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 89×20px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 58×20px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 89×20px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 74×20px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 62×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+   △ [tap-target] 87×38px 「〜2,000万」 @ div#fPrice > button.fbtn
+   △ [tap-target] 87×38px 「〜2,500万」 @ div#fPrice > button.fbtn
+❌ webkit 375px  FAIL:18 WARN:38
+   △ [tap-target] 118×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 81×20px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 106×20px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 89×20px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 58×20px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 89×20px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 75×20px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 62×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+   △ [tap-target] 87×38px 「〜2,000万」 @ div#fPrice > button.fbtn
+❌ webkit 390px  FAIL:18 WARN:38
+   △ [tap-target] 133×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 81×20px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 106×20px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 90×20px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 58×20px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 90×20px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 75×20px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 62×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+   △ [tap-target] 87×38px 「〜2,000万」 @ div#fPrice > button.fbtn
+❌ webkit 414px  FAIL:18 WARN:39
+   ✗ [orphan-last-line] 「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 157×34px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 82×20px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 74×20px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 107×20px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 74×20px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 74×20px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 91×20px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 59×20px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 91×20px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 76×20px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 62×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+❌ webkit 768px  FAIL:19 WARN:47
+   △ [tap-target] 206×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 96×34px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 91×22px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 82×22px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 119×22px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 82×22px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 82×22px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 101×22px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 65×22px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 101×22px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 84×22px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 62×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+❌ webkit 1024px  FAIL:19 WARN:24
+   ✗ [tap-target] 94×23px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 124×23px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 68×23px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 87×23px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 41×11px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 51×11px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Lots ／ 自社分譲物件一覧」 @ section#cover > div.cover__in > span.eyebrow
+   △ [font-floor] 11.8px 「公開」 @ div.cover__in > div.cover__facts > span.cfact > span.pre
+❌ webkit 1280px  FAIL:19 WARN:24
+   ✗ [tap-target] 94×23px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 124×23px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 68×23px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 87×23px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 41×11px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 51×11px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Lots ／ 自社分譲物件一覧」 @ section#cover > div.cover__in > span.eyebrow
+   △ [font-floor] 11.8px 「公開」 @ div.cover__in > div.cover__facts > span.cfact > span.pre
+❌ webkit 1440px  FAIL:19 WARN:24
+   ✗ [tap-target] 94×23px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 124×23px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 68×23px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 87×23px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 41×11px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 51×11px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Lots ／ 自社分譲物件一覧」 @ section#cover > div.cover__in > span.eyebrow
+   △ [font-floor] 11.8px 「公開」 @ div.cover__in > div.cover__facts > span.cfact > span.pre
+❌ webkit 1920px  FAIL:19 WARN:24
+   ✗ [tap-target] 94×23px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 124×23px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 68×23px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 87×23px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 41×11px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 51×11px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Lots ／ 自社分譲物件一覧」 @ section#cover > div.cover__in > span.eyebrow
+   △ [font-floor] 11.8px 「公開」 @ div.cover__in > div.cover__facts > span.cfact > span.pre
+❌ chromium 320px  FAIL:20 WARN:37
+   ✗ [orphan-last-line] 「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   ✗ [orphan-last-line] 「1|件」 (start) @ section#chap-Yamatokoriyama > header.chap__head > span.chap__count
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 79×20px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 72×20px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×20px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 72×20px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 72×20px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 88×20px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 57×20px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 88×20px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 60×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 60×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+❌ chromium 360px  FAIL:18 WARN:37
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 80×20px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 105×20px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 89×20px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 58×20px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 89×20px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 74×20px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 60×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 60×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+   △ [tap-target] 87×38px 「〜2,000万」 @ div#fPrice > button.fbtn
+   △ [tap-target] 87×38px 「〜2,500万」 @ div#fPrice > button.fbtn
+❌ chromium 375px  FAIL:18 WARN:38
+   △ [tap-target] 118×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 81×20px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 106×20px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 89×20px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 58×20px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 89×20px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 75×20px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 60×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 60×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+   △ [tap-target] 87×38px 「〜2,000万」 @ div#fPrice > button.fbtn
+❌ chromium 390px  FAIL:18 WARN:38
+   △ [tap-target] 133×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 81×20px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 106×20px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 73×20px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 90×20px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 58×20px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 90×20px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 75×20px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 60×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 60×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+   △ [tap-target] 87×38px 「〜2,000万」 @ div#fPrice > button.fbtn
+❌ chromium 414px  FAIL:18 WARN:39
+   ✗ [orphan-last-line] 「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 157×34px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 82×20px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 74×20px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 107×20px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 74×20px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 74×20px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 91×20px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 59×20px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 91×20px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 76×20px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 60×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 60×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+❌ chromium 768px  FAIL:19 WARN:47
+   △ [tap-target] 205×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 95×34px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 91×22px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 82×22px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 119×22px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 82×22px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 82×22px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 101×22px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 66×22px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 101×22px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 84×22px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   △ [tap-target] 60×38px 「すべて」 @ div#fArea > button.fbtn.is-on
+   △ [tap-target] 62×38px 「奈良市」 @ div#fArea > button.fbtn
+   △ [tap-target] 62×38px 「生駒市」 @ div#fArea > button.fbtn
+   △ [tap-target] 145×38px 「橿原・天理・田原本」 @ div#fArea > button.fbtn
+   △ [tap-target] 117×38px 「斑鳩・大和郡山」 @ div#fArea > button.fbtn
+   △ [tap-target] 75×38px 「京都南部」 @ div#fArea > button.fbtn
+   △ [tap-target] 60×38px 「すべて」 @ div#fPrice > button.fbtn.is-on
+   △ [tap-target] 84×38px 「〜1,500万」 @ div#fPrice > button.fbtn
+❌ chromium 1024px  FAIL:19 WARN:24
+   ✗ [tap-target] 93×23px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 123×23px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 68×23px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 87×23px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 41×11px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 51×11px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 105×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 71×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 63×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 75×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Lots ／ 自社分譲物件一覧」 @ section#cover > div.cover__in > span.eyebrow
+   △ [font-floor] 11.8px 「公開」 @ div.cover__in > div.cover__facts > span.cfact > span.pre
+❌ chromium 1280px  FAIL:19 WARN:24
+   ✗ [tap-target] 94×23px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 124×23px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 68×23px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 87×23px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 41×11px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 51×11px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Lots ／ 自社分譲物件一覧」 @ section#cover > div.cover__in > span.eyebrow
+   △ [font-floor] 11.8px 「公開」 @ div.cover__in > div.cover__facts > span.cfact > span.pre
+❌ chromium 1440px  FAIL:19 WARN:24
+   ✗ [tap-target] 94×23px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 124×23px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 68×23px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 87×23px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 41×11px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 51×11px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Lots ／ 自社分譲物件一覧」 @ section#cover > div.cover__in > span.eyebrow
+   △ [font-floor] 11.8px 「公開」 @ div.cover__in > div.cover__facts > span.cfact > span.pre
+❌ chromium 1920px  FAIL:19 WARN:24
+   ✗ [tap-target] 94×23px 「奈良市17」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「生駒市6」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 124×23px 「大和郡山市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「斑鳩町3」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 85×23px 「天理市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「田原本町1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 68×23px 「橿原市4」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 104×23px 「木津川市2」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 87×23px 「京田辺市1」 @ div#idxRows > div.irow > span.irow__cities > a
+   ✗ [tap-target] 41×11px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 51×11px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Lots ／ 自社分譲物件一覧」 @ section#cover > div.cover__in > span.eyebrow
+   △ [font-floor] 11.8px 「公開」 @ div.cover__in > div.cover__facts > span.cfact > span.pre
+
+──────────────────────────────────────────────────
+❌ FAIL 374件 / WARN 664件 — 全緑になるまで完成として提示しない
+report: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify/report.json / screenshots: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify

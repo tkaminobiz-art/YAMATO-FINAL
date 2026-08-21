@@ -1,0 +1,436 @@
+❌ webkit 320px  FAIL:19 WARN:9
+   ✗ [orphan-last-line] 「ジエスタ2親子＋顔認|証」 (left) @ table > tbody > tr > td.col-top
+   △ [tap-target] 109×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [font-floor] 14.4px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+❌ webkit 360px  FAIL:19 WARN:9
+   ✗ [orphan-last-line] 「ジエスタ2親子＋顔認|証」 (left) @ table > tbody > tr > td.col-top
+   △ [tap-target] 111×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [font-floor] 14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+❌ webkit 375px  FAIL:19 WARN:9
+   ✗ [orphan-last-line] 「ジエスタ2親子＋顔認|証」 (left) @ table > tbody > tr > td.col-top
+   △ [tap-target] 119×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [font-floor] 14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+❌ webkit 390px  FAIL:19 WARN:9
+   ✗ [orphan-last-line] 「ジエスタ2親子＋顔認|証」 (left) @ table > tbody > tr > td.col-top
+   △ [tap-target] 134×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [font-floor] 14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+❌ webkit 414px  FAIL:18 WARN:9
+   ✗ [orphan-last-line] 「ジエスタ2親子＋顔認|証」 (left) @ table > tbody > tr > td.col-top
+   △ [tap-target] 158×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [font-floor] 14.6px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+❌ webkit 768px  FAIL:17 WARN:13
+   ✗ [orphan-last-line] 「aze／標準・長期優良対|応」 (left) @ thead > tr > th > small
+   ✗ [orphan-last-line] 「風がとおる、長く住める|家」 (left) @ table > tbody > tr > td
+   △ [tap-target] 201×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 91×40px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+❌ webkit 1024px  FAIL:15 WARN:8
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+   △ [font-floor] 9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k
+   △ [font-floor] 10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li
+   △ [font-floor] 11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ webkit 1280px  FAIL:15 WARN:9
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+   △ [font-floor] 9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k
+   △ [font-floor] 10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li
+   △ [font-floor] 11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ webkit 1440px  FAIL:15 WARN:9
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+   △ [font-floor] 9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k
+   △ [font-floor] 10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li
+   △ [font-floor] 11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ webkit 1920px  FAIL:15 WARN:9
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+   △ [font-floor] 9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k
+   △ [font-floor] 10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li
+   △ [font-floor] 11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ chromium 320px  FAIL:19 WARN:9
+   ✗ [orphan-last-line] 「ジエスタ2片開|き」 (left) @ table > tbody > tr > td
+   △ [tap-target] 109×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [font-floor] 14.4px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+❌ chromium 360px  FAIL:19 WARN:9
+   ✗ [orphan-last-line] 「ジエスタ2片開|き」 (left) @ table > tbody > tr > td
+   △ [tap-target] 111×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [font-floor] 14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+❌ chromium 375px  FAIL:19 WARN:9
+   ✗ [orphan-last-line] 「ジエスタ2片開|き」 (left) @ table > tbody > tr > td
+   △ [tap-target] 119×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [font-floor] 14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+❌ chromium 390px  FAIL:19 WARN:9
+   ✗ [orphan-last-line] 「ジエスタ2片開|き」 (left) @ table > tbody > tr > td
+   △ [tap-target] 134×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [font-floor] 14.5px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+❌ chromium 414px  FAIL:18 WARN:9
+   ✗ [orphan-last-line] 「ジエスタ2片開|き」 (left) @ table > tbody > tr > td
+   △ [tap-target] 158×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [font-floor] 14.6px 「同じ標準仕様のまま、暮らし方に合」 @ section#plans > p.sec__note
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+❌ chromium 768px  FAIL:18 WARN:11
+   ✗ [orphan-last-line] 「aze／標準・長期優良対|応」 (left) @ thead > tr > th > small
+   ✗ [orphan-last-line] 「井が高く、光のよくまわる|家」 (left) @ table > tbody > tr > td.col-top
+   ✗ [orphan-last-line] 「風がとおる、長く住める|家」 (left) @ table > tbody > tr > td
+   △ [tap-target] 201×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 91×40px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 148×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [tap-target] 172×32px 「標準仕様のすべてを見る」 @ section#plans > div.stdblock > a.std__more
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+❌ chromium 1024px  FAIL:15 WARN:7
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+   △ [font-floor] 9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k
+   △ [font-floor] 10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li
+   △ [font-floor] 11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ chromium 1280px  FAIL:15 WARN:7
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+   △ [font-floor] 9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k
+   △ [font-floor] 10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li
+   △ [font-floor] 11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ chromium 1440px  FAIL:15 WARN:7
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 91×18px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×18px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+   △ [font-floor] 9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k
+   △ [font-floor] 10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li
+   △ [font-floor] 11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+❌ chromium 1920px  FAIL:15 WARN:7
+   ✗ [tap-target] 36×16px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 91×22px 「施工事例を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 111×22px 「分譲地・土地を見る」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「施工事例」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   ✗ [font-floor] 11.2px 「HOME/商品ラインナップ」 @ main#main > section.whero > p.crumb
+   △ [font-floor] 11.2px 「HOME」 @ main#main > section.whero > p.crumb > a
+   △ [font-floor] 9.3px 「Hana ／ 最上位」 @ thead > tr > th.col-top > small
+   △ [font-floor] 9.3px 「Kaze ／ 標準・長期優良対応」 @ thead > tr > th > small
+   ✗ [font-floor] 11.5px 「※ 価格・面積・間取りは確定値（」 @ section#plans > p.cmp__cap
+   △ [font-floor] 9.3px 「Kitchen」 @ div.stdblock > div.std > div.stditem > span.k
+   △ [font-floor] 10.9px 「LDK 23.5帖」 @ button.fp > span.fp__body > ul.fp__meta > li
+   △ [font-floor] 11.5px 「自社分譲だから不要」 @ div.komi > div > span.t > small
+   ✗ [font-floor] 11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p
+
+──────────────────────────────────────────────────
+❌ FAIL 343件 / WARN 177件 — 全緑になるまで完成として提示しない
+report: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify/report.json / screenshots: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify

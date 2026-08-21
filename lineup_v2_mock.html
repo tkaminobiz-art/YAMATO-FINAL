@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>図面 v2 — ラインナップの組み替え（26社実測より）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Shippori+Mincho+B1:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ───────── 図面 v2 ─────────
+   出典: 出典資料/リサーチ_中堅ハウスメーカー26社のTOP全景実測_20260821.md
+   実測でうちが外れ値だったのは3つ:
+     ページ全高 21.4画面（26社中1位）／ link 3.22/画面（最下位）／ カードグリッド 0節
+   文字数は中央値並み（216 vs 258）。つまり「情報が薄い」のではなく
+   「同じ量を2.2倍の高さに、1/4の出口で置いている」。
+   紅×生成り×金の世界は動かさず、器だけを組み替える図面。
+   ------------------------------------------------------------------ */
+:root{
+  --paper:#F4F1EA; --sumi:#241E16; --sumi2:#5C5346; --sumi3:#8A8070;
+  --shu:#BD1B21; --gold:#C9A24B;
+  --hana:#C64A00; --kyo:#9E2B2F; --kaze:#908600;
+  --fm:"Shippori Mincho B1",serif;
+  --fg:"Zen Kaku Gothic New",sans-serif;
+  --fn:"Inter",sans-serif;
+  --mount:url("assets/std/lineup_mount_2400.webp");
+  --sheet:url("assets/std/page_kinari_letter_2400.webp");
+  --gx:clamp(22px,5vw,88px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:#DDD8CE;color:var(--sumi);font-family:var(--fg);font-weight:300;
+  -webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+/* 図面の注記（実装には持ち込まない） */
+.note{background:#242018;color:#E8E2D4;padding:clamp(20px,3vw,34px) var(--gx);
+  font-family:var(--fn);font-size:.9rem;line-height:1.9;letter-spacing:.03em;
+  line-break:strict;word-break:auto-phrase}
+.note b{color:#E3C572;font-weight:500}
+.note code{background:rgba(255,255,255,.09);padding:1px 6px;border-radius:3px}
+.tag{display:inline-block;background:var(--shu);color:#fff;font-family:var(--fn);
+  font-size:.7rem;letter-spacing:.16em;padding:5px 12px;margin:0 0 14px}
+
+/* ══════════ ① 機能ナビ（スウェーデンハウス型） ══════════ */
+.nav4{background:var(--mount) center/cover #EFE7D8;padding:clamp(26px,3.4vw,44px) var(--gx)}
+.nav4__in{max-width:1180px;margin:0 auto;
+  background:var(--sheet) center/cover var(--paper);
+  box-shadow:0 0 0 1px rgba(201,162,75,.5), inset 0 1px 0 rgba(255,255,255,.65),
+    0 18px 40px -18px rgba(36,30,22,.3);
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.nav4__i{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;
+  padding:clamp(20px,2.6vw,32px) 10px;text-decoration:none;
+  border-right:1px solid rgba(36,30,22,.13);transition:background .3s}
+.nav4__i:last-child{border-right:0}
+.nav4__i:hover{background:rgba(201,162,75,.12)}
+.nav4__i svg{width:30px;height:30px;stroke:var(--shu);stroke-width:1.1;fill:none}
+.nav4__i b{font-family:var(--fm);font-weight:400;font-size:clamp(.88rem,.8rem + .28vw,1.0rem);
+    letter-spacing:.06em;white-space:nowrap}
+.nav4__i span{font-family:var(--fn);font-size:.66rem;letter-spacing:.22em;color:var(--sumi3)}
+@media (max-width:720px){
+  .nav4__in{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nav4__i:nth-child(2){border-right:0}
+  .nav4__i:nth-child(-n+2){border-bottom:1px solid rgba(36,30,22,.13)}
+}
+
+/* ══════════ 共通：章の台紙 ══════════ */
+.mount{background:var(--mount) center/cover #EFE7D8;padding:clamp(52px,6.4vw,96px) var(--gx)}
+.mount__in{max-width:1180px;margin:0 auto}
+.eyebrow{display:block;font-family:var(--fn);font-weight:400;font-size:.76rem;
+  letter-spacing:.3em;color:var(--sumi3);text-transform:uppercase;margin:0 0 18px}
+.h2{margin:0;font-family:var(--fm);font-weight:400;line-height:1.6;letter-spacing:.055em;
+  font-size:clamp(1.34rem,1.02rem + 1.4vw,2.05rem)}
+
+/* ══════════ 案A：三菱地所ホーム型（3列カードグリッド） ══════════ */
+.A{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,28px);
+  margin:clamp(30px,3.6vw,48px) 0 0}
+.A__c{position:relative;display:flex;flex-direction:column;text-decoration:none;
+  background:var(--sheet) center/cover var(--paper);
+  box-shadow:0 0 0 1px rgba(201,162,75,.5), inset 0 1px 0 rgba(255,255,255,.6),
+    0 16px 34px -16px rgba(36,30,22,.28);
+  transition:transform .45s cubic-bezier(.16,1,.3,1), box-shadow .45s}
+.A__c:hover{transform:translateY(-5px);
+  box-shadow:0 0 0 1px rgba(201,162,75,.8), 0 26px 48px -18px rgba(36,30,22,.36)}
+.A__f{position:relative;aspect-ratio:4/3;overflow:hidden;margin:0}
+.A__f img{width:100%;height:100%;object-fit:cover}
+.A__f::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 46%,rgba(20,14,8,.55) 100%)}
+.A__k{position:absolute;left:16px;bottom:11px;z-index:2;display:flex;align-items:baseline;gap:11px;
+  color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.A__k b{font-family:var(--fm);font-weight:400;font-size:2.1rem;line-height:1;letter-spacing:.02em}
+.A__k i{font-style:normal;font-family:var(--fn);font-size:.68rem;letter-spacing:.3em;opacity:.9}
+.A__b{padding:clamp(18px,2vw,26px) clamp(16px,1.8vw,24px);display:flex;flex-direction:column;flex:1}
+/* 「…設備を整えた|家」で最終行に1字だけ残るのを潰す。
+   auto-phrase は句を守るだけで行数を均さないので balance を併用する */
+.A__lab{margin:0;font-family:var(--fm);font-weight:400;letter-spacing:.05em;line-height:1.66;
+  line-break:strict;text-wrap:balance;
+  font-size:clamp(1.0rem,.94rem + .3vw,1.14rem)}
+.A__rule{width:38px;height:2px;margin:13px 0 0}
+.A--hana .A__rule{background:var(--hana)} .A--kyo .A__rule{background:var(--kyo)}
+.A--kaze .A__rule{background:var(--kaze)}
+.A--hana .A__k b{color:#FFE7D2} .A--kyo .A__k b{color:#FFDCDC} .A--kaze .A__k b{color:#F2F0CE}
+.A__t{margin:14px 0 0;font-size:.95rem;line-height:1.94;letter-spacing:.04em;color:var(--sumi2);
+  line-break:strict;word-break:auto-phrase}
+.A__d{margin:16px 0 0;display:flex;gap:0 18px;flex-wrap:wrap;padding:0;list-style:none}
+.A__d li{display:flex;flex-direction:column;gap:4px}
+.A__d .k{font-family:var(--fn);font-size:.64rem;letter-spacing:.18em;color:var(--sumi3)}
+.A__d .v{font-family:var(--fm);font-size:.92rem;letter-spacing:.04em}
+.A__p{margin:auto 0 0;padding:15px 0 0;display:flex;align-items:baseline;justify-content:space-between;
+  flex-wrap:wrap;gap:4px 10px;border-top:1px solid rgba(36,30,22,.14)}
+.A__p b,.A__p>span:not(.A__go){white-space:nowrap}
+.A__p b{font-family:var(--fm);font-weight:400;font-size:1.24rem;letter-spacing:.03em}
+.A__p span{font-size:.68rem;letter-spacing:.05em;color:var(--sumi3)}
+.A__go{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;
+  border:1px solid rgba(36,30,22,.34);font-family:var(--fn);font-size:.8rem;flex:none}
+.A__c:hover .A__go{background:var(--sumi);color:var(--paper);border-color:var(--sumi)}
+@media (max-width:820px){ .A{grid-template-columns:minmax(0,1fr)} .A__f{aspect-ratio:16/9} }
+
+/* ══════════ 案B：土屋ホーム型（写真フルブリード＋差し込み名札） ══════════ */
+.B{margin:clamp(30px,3.6vw,48px) calc(var(--gx) * -1) 0;}
+.B__b{position:relative;display:block;text-decoration:none;overflow:hidden;
+  height:clamp(300px,34vw,420px)}
+.B__b img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* うちの外観写真は明るく彩度が低い（土屋の暗い室内写真とは前提が違う）。
+   .5 のスクリムでは文字が沈んだので、左半分は .78 まで落として brightness も併用する。 */
+.B__b img{filter:brightness(.86)}
+.B__b::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(96deg,rgba(20,13,8,.80) 0 34%,rgba(20,13,8,.50) 58%,
+    rgba(20,13,8,.20) 78%,rgba(20,13,8,.46) 100%)}
+.B__b + .B__b{border-top:2px solid var(--gold)}
+/* 名札 = 紙葉。台紙（写真）の上に紙を差し込む＝信条と同じ文法 */
+.B__pl{position:absolute;z-index:2;left:0;top:clamp(38px,5vw,64px);
+  background:var(--sheet) center/cover var(--paper);
+  box-shadow:0 0 0 1px rgba(201,162,75,.55), inset 0 1px 0 rgba(255,255,255,.7),
+    0 14px 34px -14px rgba(20,14,8,.5);
+  padding:clamp(16px,2vw,24px) clamp(24px,3.2vw,44px) clamp(16px,2vw,24px) var(--gx);
+  display:flex;align-items:baseline;gap:clamp(12px,1.6vw,20px)}
+.B__pl b{font-family:var(--fm);font-weight:400;line-height:1;letter-spacing:.02em;
+  font-size:clamp(1.9rem,1.4rem + 1.8vw,2.7rem)}
+.B__pl i{font-style:normal;font-family:var(--fn);font-size:.7rem;letter-spacing:.3em;color:var(--sumi3)}
+.B--hana .B__pl b{color:var(--hana)} .B--kyo .B__pl b{color:var(--kyo)}
+.B--kaze .B__pl b{color:var(--kaze)}
+.B__cp{position:absolute;z-index:2;left:var(--gx);top:calc(clamp(38px,5vw,64px) + clamp(76px,9vw,104px));
+  color:#fff;max-width:30em}
+.B__cp p{margin:0;font-family:var(--fm);font-weight:400;letter-spacing:.06em;line-height:1.68;
+  font-size:clamp(1.02rem,.94rem + .4vw,1.24rem);text-shadow:0 1px 14px rgba(0,0,0,.55)}
+.B__cp small{display:block;margin:11px 0 0;font-family:var(--fg);font-size:.95rem;line-height:1.9;
+  letter-spacing:.04em;color:rgba(255,255,255,.86);text-shadow:0 1px 12px rgba(0,0,0,.6)}
+.B__d{position:absolute;z-index:2;left:var(--gx);bottom:clamp(24px,3vw,36px);
+  display:flex;gap:0 clamp(20px,2.6vw,34px);padding:0;list-style:none;color:#fff}
+.B__d li{display:flex;flex-direction:column;gap:4px}
+.B__d .k{font-family:var(--fn);font-size:.63rem;letter-spacing:.18em;color:rgba(255,255,255,.72)}
+.B__d .v{font-family:var(--fm);font-size:.95rem;letter-spacing:.04em;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.B__pr{position:absolute;z-index:2;right:calc(var(--gx) + 66px);bottom:clamp(24px,3vw,36px);
+  text-align:right;color:#fff}
+.B__pr b{white-space:nowrap;font-family:var(--fm);font-weight:400;font-size:clamp(1.2rem,1.02rem + .7vw,1.56rem);
+  letter-spacing:.03em;text-shadow:0 1px 12px rgba(0,0,0,.55)}
+.B__pr span{display:block;white-space:nowrap;font-size:.66rem;letter-spacing:.05em;color:rgba(255,255,255,.75)}
+.B__go{position:absolute;z-index:3;right:var(--gx);bottom:clamp(24px,3vw,36px);
+  display:grid;place-items:center;width:46px;height:46px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.7);color:#fff;font-family:var(--fn);font-size:.95rem;
+  transition:background .35s,color .35s}
+.B__b:hover .B__go{background:#fff;color:var(--sumi)}
+@media (max-width:760px){
+  .B__b{height:auto;min-height:0;display:block}
+  .B__b img{position:relative;height:230px}
+  .B__b::after{bottom:auto;height:230px}
+  .B__pl{position:relative;top:0;margin-top:-46px}
+  .B__cp{position:relative;top:0;left:0;padding:18px var(--gx) 0;color:var(--sumi);max-width:none}
+  .B__cp p{text-shadow:none} .B__cp small{color:var(--sumi2);text-shadow:none}
+  .B__b{background:var(--sheet) center/cover var(--paper)}
+  .B__d{position:relative;left:0;bottom:0;padding:18px var(--gx) 0;color:var(--sumi);flex-wrap:wrap;gap:0 22px}
+  .B__d .k{color:var(--sumi3)} .B__d .v{text-shadow:none}
+  .B__pr{position:relative;right:0;bottom:0;text-align:left;padding:16px var(--gx) 0;color:var(--sumi);
+    display:flex;align-items:baseline;gap:10px}
+  .B__pr b{text-shadow:none} .B__pr span{color:var(--sumi3)}
+  .B__go{position:relative;right:0;bottom:0;margin:18px var(--gx) 22px;border-color:rgba(36,30,22,.35);color:var(--sumi)}
+}
+</style>
+</head>
+<body>
+
+<div class="note">
+  <span class="tag">図面 v2</span><br>
+  26社実測で、やまとが<b>外れ値</b>だったのは3つだけ。<br>
+  ・ページ全高 <b>21.4画面（26社中1位）</b>　・リンク <b>3.22/画面（26社中最下位）</b>　・カードグリッド <b>0節</b><br>
+  1節あたりの文字数は <b>216 vs 中央値258</b> で正常。<br>
+  ＝ <b>情報が薄いのではなく、同じ量を2.2倍の高さに、1/4の出口で置いている。</b><br>
+  紅×生成り×金の世界と「台紙と紙葉」の文法は動かさず、<b>器だけ</b>を組み替えた図面。
+</div>
+
+<!-- ══════ ① 機能ナビ（FV直下） ══════ -->
+<div class="note">
+  <span class="tag">① 機能ナビ</span><br>
+  出典：スウェーデンハウスは FV 直下に4本の近道を置く。<br>
+  やまとは <code>最初の出口が5.5画面目</code>（FV→実績帯[リンク0]→信条[リンク0]→入口[リンク0]）。<br>
+  これを <b>1画面目</b>に引き上げる。紙葉1枚を4分割しただけ＝新しい視覚言語を増やさない。
+</div>
+<nav class="nav4"><div class="nav4__in">
+  <a class="nav4__i" href="kodawari.html">
+    <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+    <b>家づくりのこだわり</b><span>OUR WORK</span></a>
+  <a class="nav4__i" href="madori.html#plans">
+    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18"/><path d="M3 10h18M13 10v11"/></svg>
+    <b>商品ラインナップ</b><span>LINEUP</span></a>
+  <a class="nav4__i" href="model.html">
+    <svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/><circle cx="12" cy="11" r="1"/></svg>
+    <b>モデルハウス</b><span>MODEL HOUSE</span></a>
+  <a class="nav4__i" href="lots.html">
+    <svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+    <b>分譲地・物件</b><span>LOTS</span></a>
+</div></nav>
+
+<!-- ══════ 案A ══════ -->
+<div class="note">
+  <span class="tag">案A　三菱地所ホーム型</span><br>
+  三菱地所ホーム（明朝・広い余白・上質な写真＝<b>うちと同じ register</b>）は
+  LINEUP を <b>3列カードグリッド</b>で組む。1段 0.35画面。<br>
+  「横に並べる＝安っぽい」は成立していない、の実証。カードそのものが紙葉＝台紙の上に3枚並べる。<br>
+  <b>高さ：3つで約0.8画面（現行2.2画面）</b>／ <b>出口：3本（現行3本だが視覚的に弱い）</b>
+</div>
+<section class="mount"><div class="mount__in">
+  <span class="eyebrow">Lineup ／ 商品ラインナップ</span>
+  <h2 class="h2">暮らし方も、家にかけたいお金も、家族によって違います。<br>やまと不動産では三つの住まいをご用意しました。</h2>
+  <div class="A">
+    <a class="A__c A--hana" href="madori.html#plans">
+      <figure class="A__f"><img src="assets/lineup/hero/hana_ext.webp" alt="花のモデルハウス外観">
+        <span class="A__k"><b>花</b><i>Hana</i></span></figure>
+      <div class="A__b">
+        <p class="A__lab">天井を高くとり、設備を整えた家</p>
+        <div class="A__rule"></div>
+        <p class="A__t">玄関ドアは顔認証で開きます。軒天にはニチハの木目12mmを使い、窓はワイドサッシです。</p>
+        <ul class="A__d"><li><span class="k">延床</span><span class="v">31坪</span></li>
+          <li><span class="k">1階天井高</span><span class="v">2,500mm</span></li>
+          <li><span class="k">玄関</span><span class="v">親子ドア</span></li></ul>
+        <p class="A__p"><b>2,680万円</b><span>コミコミ価格・税込</span><span class="A__go">→</span></p>
+      </div></a>
+    <a class="A__c A--kyo" href="madori.html#plans">
+      <figure class="A__f"><img src="assets/lineup/hero/kyo_ext.webp" alt="京のモデルハウス外観">
+        <span class="A__k"><b>京</b><i>Miyako</i></span></figure>
+      <div class="A__b">
+        <p class="A__lab">限られた敷地のために設計した家</p>
+        <div class="A__rule"></div>
+        <p class="A__t">奈良のように広く土地を使えない場所でも建てられるよう、28坪3LDKにまとめています。</p>
+        <ul class="A__d"><li><span class="k">延床</span><span class="v">28坪</span></li>
+          <li><span class="k">間取り</span><span class="v">3LDK</span></li>
+          <li><span class="k">玄関</span><span class="v">FamiLock</span></li></ul>
+        <p class="A__p"><b>2,480万円</b><span>コミコミ価格・税込</span><span class="A__go">→</span></p>
+      </div></a>
+    <a class="A__c A--kaze" href="madori.html#plans">
+      <figure class="A__f"><img src="assets/lineup/hero/kaze_ext.webp" alt="風のモデルハウス外観">
+        <span class="A__k"><b>風</b><i>Kaze</i></span></figure>
+      <div class="A__b">
+        <p class="A__lab">長く住むための性能を備えた家</p>
+        <div class="A__rule"></div>
+        <p class="A__t">3帖のベランダと電動シャッターが標準です。防犯ガラスは掃き出し窓2か所と腰窓2か所に入ります。</p>
+        <ul class="A__d"><li><span class="k">延床</span><span class="v">30坪</span></li>
+          <li><span class="k">長期優良</span><span class="v">対応</span></li>
+          <li><span class="k">玄関</span><span class="v">FamiLock</span></li></ul>
+        <p class="A__p"><b>2,680万円</b><span>コミコミ価格・税込</span><span class="A__go">→</span></p>
+      </div></a>
+  </div>
+</div></section>
+
+<!-- ══════ 案B ══════ -->
+<div class="note">
+  <span class="tag">案B　土屋ホーム型</span><br>
+  土屋ホーム（編集的・写真主導・低リンク密度＝<b>うちの美学に一番近い</b>）は、
+  ブランド帯を <b>「写真フルブリード＋左端から差し込む白い名札」</b>で組み、1本 0.35〜0.4画面。<br>
+  現行の「写真半分＋紙葉半分」を、<b>「写真全面＋紙葉を名札として差し込む」</b>に変えるだけ。<br>
+  信条の<b>「台紙と手紙」</b>と同じ解で、視覚言語を1つも増やさない。<br>
+  <b>高さ：3つで約1.2画面（現行2.2画面）</b>／ <b>出口：丸い→で視覚化</b>
+</div>
+<section class="mount"><div class="mount__in">
+  <span class="eyebrow">Lineup ／ 商品ラインナップ</span>
+  <h2 class="h2">暮らし方も、家にかけたいお金も、家族によって違います。<br>やまと不動産では三つの住まいをご用意しました。</h2>
+  <div class="B">
+    <a class="B__b B--hana" href="madori.html#plans">
+      <img src="assets/lineup/hero/hana_ext.webp" alt="花のモデルハウス外観">
+      <span class="B__pl"><b>花</b><i>Hana</i></span>
+      <span class="B__cp"><p>天井を高くとり、設備を整えた家</p>
+        <small>玄関ドアは顔認証で開きます。軒天にはニチハの木目12mmを使い、窓はワイドサッシです。</small></span>
+      <ul class="B__d"><li><span class="k">延床</span><span class="v">31坪</span></li>
+        <li><span class="k">1階天井高</span><span class="v">2,500mm</span></li>
+        <li><span class="k">玄関</span><span class="v">親子ドア</span></li></ul>
+      <span class="B__pr"><b>2,680万円</b><span>コミコミ価格・税込</span></span>
+      <span class="B__go">→</span></a>
+    <a class="B__b B--kyo" href="madori.html#plans">
+      <img src="assets/lineup/hero/kyo_ext.webp" alt="京のモデルハウス外観">
+      <span class="B__pl"><b>京</b><i>Miyako</i></span>
+      <span class="B__cp"><p>限られた敷地のために設計した家</p>
+        <small>奈良のように広く土地を使えない場所でも建てられるよう、28坪3LDKにまとめています。</small></span>
+      <ul class="B__d"><li><span class="k">延床</span><span class="v">28坪</span></li>
+        <li><span class="k">間取り</span><span class="v">3LDK</span></li>
+        <li><span class="k">玄関</span><span class="v">FamiLock</span></li></ul>
+      <span class="B__pr"><b>2,480万円</b><span>コミコミ価格・税込</span></span>
+      <span class="B__go">→</span></a>
+    <a class="B__b B--kaze" href="madori.html#plans">
+      <img src="assets/lineup/hero/kaze_ext.webp" alt="風のモデルハウス外観">
+      <span class="B__pl"><b>風</b><i>Kaze</i></span>
+      <span class="B__cp"><p>長く住むための性能を備えた家</p>
+        <small>3帖のベランダと電動シャッターが標準です。防犯ガラスは掃き出し窓2か所に入ります。</small></span>
+      <ul class="B__d"><li><span class="k">延床</span><span class="v">30坪</span></li>
+        <li><span class="k">長期優良</span><span class="v">対応</span></li>
+        <li><span class="k">玄関</span><span class="v">FamiLock</span></li></ul>
+      <span class="B__pr"><b>2,680万円</b><span>コミコミ価格・税込</span></span>
+      <span class="B__go">→</span></a>
+  </div>
+</div></section>
+
+<div class="note" style="padding-bottom:clamp(40px,6vw,80px)">
+  <span class="tag">まだ触っていないこと</span><br>
+  ・<b>#3 信条（2.42画面・リンク0）</b>と <b>#11 奈良に住むという選択（3.80画面・リンク0）</b>。
+  合わせて<b>6.2画面＝ページの29%が出口ゼロ</b>。<br>
+  ・<b>#voice（50通）</b>と施工事例が縦1本。スウェーデンハウス型の横スクロールカードが効く。<br>
+  ・<b>バナー並びは採らない</b>。機能としては正しいが（更新可能な出口）、
+  キャンペーン告知の見た目で、紅×生成り×金と両立しない。
+</div>
+
+</body>
+</html>

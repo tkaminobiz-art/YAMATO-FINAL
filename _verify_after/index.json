@@ -1,0 +1,3192 @@
+{
+  "target": "http://localhost:8000/index.html",
+  "ranAt": "2026-08-12T04:24:22.323Z",
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "engines": [
+    "webkit",
+    "chromium"
+  ],
+  "results": [
+    {
+      "engine": "webkit",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「通勤の目|安」 (start) @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figttl"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "117×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "85×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "76×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「To You」 @ section#top > div.st > div.st__b > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「奈良市・S様邸」 @ div#vcFan > a.vc__card > span.vc__body > span.vc__who"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 360,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「To You」 @ section#top > div.st > div.st__b > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「奈良市・S様邸」 @ div#vcFan > a.vc__card > span.vc__body > span.vc__who"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「To You」 @ section#top > div.st > div.st__b > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「奈良市・S様邸」 @ div#vcFan > a.vc__card > span.vc__body > span.vc__who"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「To You」 @ section#top > div.st > div.st__b > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「奈良市・S様邸」 @ div#vcFan > a.vc__card > span.vc__body > span.vc__who"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 414,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "119×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "88×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「To You」 @ section#top > div.st > div.st__b > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「奈良市・S様邸」 @ div#vcFan > a.vc__card > span.vc__body > span.vc__who"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "125×43px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×43px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "92×43px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "81×43px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "67×43px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "94×43px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「Scroll」 @ div#fvCue"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 891px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「Scroll」 @ div#fvCue"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1024px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1188px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「Scroll」 @ div#fvCue"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1485px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「Scroll」 @ div#fvCue"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1440px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1670px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「Scroll」 @ div#fvCue"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1920px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 2227px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「通勤の目|安」 (start) @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figttl"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "117×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "85×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "76×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「To You」 @ section#top > div.st > div.st__b > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「奈良市・S様邸」 @ div#vcFan > a.vc__card > span.vc__body > span.vc__who"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 360,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「To You」 @ section#top > div.st > div.st__b > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「奈良市・S様邸」 @ div#vcFan > a.vc__card > span.vc__body > span.vc__who"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「To You」 @ section#top > div.st > div.st__b > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「奈良市・S様邸」 @ div#vcFan > a.vc__card > span.vc__body > span.vc__who"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「To You」 @ section#top > div.st > div.st__b > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「奈良市・S様邸」 @ div#vcFan > a.vc__card > span.vc__body > span.vc__who"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 414,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "119×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「To You」 @ section#top > div.st > div.st__b > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「奈良市・S様邸」 @ div#vcFan > a.vc__card > span.vc__body > span.vc__who"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第1幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第2幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第3幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第4幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第5幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第6幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "28×28px 「第7幕へ」 @ section#top > div.st > nav.st__dots > button.st__dot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "124×43px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×43px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "92×43px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "81×43px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "67×43px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "94×43px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「Scroll」 @ div#fvCue"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 891px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「Scroll」 @ div#fvCue"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1024px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1188px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「Scroll」 @ div#fvCue"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1485px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「Scroll」 @ div#fvCue"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1440px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1670px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "267×20px 「0742-36-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "179×20px 「0774-25-1123」 @ div.ft__in > div.ft__offices > div.ft__of > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.2px 「Yamato Fudosan ─」 @ section#top > div.st > div.st__a > p.st__eye"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「Scroll」 @ div#fvCue"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Track Record ／ 創」 @ section#auth > div.wrap > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※2026年7月10日現在」 @ section#auth > div.wrap > p.numnote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9px 「Built in Nara」 @ div#track > a.tile > span.tile__vcap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Works」 @ div#track > a.tile > span.tile__body > span.tile__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「ドラッグ／スワイプで動かせます 」 @ section#auth > p.cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Our philosophy」 @ div.heart__inner > div.m-flow > div.heart__text > span.kicker.reveal-up"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12px 「Product Lineup ／」 @ section#lineup > div.lineup__inner > header.lineup__head > p.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「PLAN 01」 @ div.lp-cards > article.pcard.is-in > div.pcard__plan > span.pcard__idx"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「Hana」 @ article.pcard.is-in > div.pcard__block > h3.pcard__name > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「コミコミ価格・税込」 @ div.lp-cards > article.pcard.is-in > div.pcard__block > p.pcard__incl"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「※ 価格・面積・間取りは確定値（」 @ section#lineup > p.lp-foot"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「創業から、奈良でこれだけの家をつくっ…」 @ section#auth > div.wrap > p.sub（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1920px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 2227px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
+        }
+      ]
+    }
+  ]
+}

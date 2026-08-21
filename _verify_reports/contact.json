@@ -1,0 +1,3142 @@
+{
+  "target": "http://localhost:8000/contact.html",
+  "ranAt": "2026-08-12T01:34:37.338Z",
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "engines": [
+    "webkit",
+    "chromium"
+  ],
+  "results": [
+    {
+      "engine": "webkit",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「来場のご予|約」 (center) @ form#fm > div.types > button.type.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "139×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.2px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 360,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「土地の希望条|件」 (center) @ form#fm > div.types > button.type"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "141×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.3px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 375,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「土地の希望条|件」 (center) @ form#fm > div.types > button.type"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "126×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "141×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「土地の希望条|件」 (center) @ form#fm > div.types > button.type"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "140×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "142×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "249×39px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 414,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "143×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "251×39px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "206×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "96×34px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "157×32px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "592×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "289×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "289×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "289×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "289×35px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "592×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 805px に対し実解像度 1050px @ div.desk > aside.porch > div.porch__img > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "428×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "207×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "207×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "207×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "428×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "536×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "261×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "261×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "261×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "536×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "558×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "558×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "558×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "558×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 886px に対し実解像度 1050px @ div.desk > aside.porch > div.porch__img > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「来場のご予|約」 (center) @ form#fm > div.types > button.type.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "113×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "238×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.2px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 360,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「土地の希望条|件」 (center) @ form#fm > div.types > button.type"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "134×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "278×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.3px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「土地の希望条|件」 (center) @ form#fm > div.types > button.type"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "142×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "293×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「0〜19:00｜火・水定|休」 (start) @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「土地の希望条|件」 (center) @ form#fm > div.types > button.type"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "249×39px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "308×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 414,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "143×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "251×39px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "332×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "205×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "95×34px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "157×32px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "247×43px 「LINEで友だち追加\n         」 @ a#lineBtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "592×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "289×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "289×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "289×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "289×36px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "592×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 805px に対し実解像度 1050px @ div.desk > aside.porch > div.porch__img > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "428×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "207×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "207×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "207×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "428×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "536×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "261×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "261×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "261×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "536×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "558×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "558×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "558×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「お電話番号 どちらか必須」 @ div#fldTel > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「メールアドレス どちらか必須」 @ div#fldMail > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "272×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "558×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「準備中」 @ span#lineSoon"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「QR準備中」 @ div#lineQr > span.ph"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "12.8px 「3分ほどで送れます。いただいた内」 @ form#fm > p.fm__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「必須」 @ div.fields > div.fld > label > span.req"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldTel > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「どちらか必須」 @ div#fldMail > label > span.opt"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「任意」 @ div.duo > div.fld > label > span.opt"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 885px に対し実解像度 1050px @ div.desk > aside.porch > div.porch__img > img（Retina 2x で甘くなる）"
+        }
+      ]
+    }
+  ]
+}

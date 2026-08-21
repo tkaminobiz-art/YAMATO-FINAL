@@ -1,0 +1,2742 @@
+{
+  "target": "http://localhost:8000/kodawari.html",
+  "ranAt": "2026-08-12T01:28:28.459Z",
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "engines": [
+    "webkit",
+    "chromium"
+  ],
+  "results": [
+    {
+      "engine": "webkit",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「自由設計・間取|り」 (start) @ div.idx__in > div.idx__nav > a.idx__a > span.idx__t"
+        },
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「1案の裏側にある検|討」 (start) @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「やまとの自由設計は、最初から設計」 @ section#design > div.design > div > p.design__txt.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 360,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「来工法比・ハイブリッド工|法」 (center) @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "15px 「やまとの自由設計は、最初から設計」 @ section#design > div.design > div > p.design__txt.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.4px 「保険期間中に床が傾いたり、雨漏り」 @ section#after > div.hosho.rv > div.ho > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "133×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.4px 「保険期間中に床が傾いたり、雨漏り」 @ section#after > div.hosho.rv > div.ho > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 414,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "157×34px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.4px 「保険期間中に床が傾いたり、雨漏り」 @ section#after > div.hosho.rv > div.ho > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "206×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "96×34px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "400×26px 「この標準は、モデルハウス「やまとランド」」 @ section#standard > a.gomodel.rv"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "50字/行 「保険期間中に床が傾いたり、雨漏りのよ…」 @ section#after > div.hosho.rv > div.ho > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "50字/行 「建物の土台とその1メートル上までの部…」 @ section#after > div.hosho.rv > div.ho > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "48字/行 「地盤が不均一に沈下して建物に損害が生…」 @ section#after > div.hosho.rv > div.ho > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「こんなことにも対応しております。「こ…」 @ section#after > div.trouble.rv > p.trouble__d（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「掲載の仕様・保証内容は現サイト公開情…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「デメリットもご説|明」 (left) @ section#design > ol.steps.rv > li.step > span"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "48字/行 「モデルハウスは、標準仕様のまま建てた…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "47字/行 「地盤調査の結果、改良が必要になった場…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「建物の打ち合わせでは、リクシル・TO…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "50字/行 「ます。また、お引き渡し後のインターネ…」 @ section#price > dl.facts.rv > div.frow.hon > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「こんなことにも対応しております。「こ…」 @ section#after > div.trouble.rv > p.trouble__d（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「掲載の仕様・保証内容は現サイト公開情…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "59字/行 「モデルハウスは、標準仕様のまま建てた…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "58字/行 「地盤調査の結果、改良が必要になった場…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "62字/行 「建物の打ち合わせでは、リクシル・TO…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「カーテンレールと居室の照明は、標準設…」 @ section#price > dl.facts.rv > div.frow.hon > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「こんなことにも対応しております。「こ…」 @ section#after > div.trouble.rv > p.trouble__d（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「掲載の仕様・保証内容は現サイト公開情…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1361px に対し実解像度 1920px @ section#hero > div.hero__bg > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "59字/行 「モデルハウスは、標準仕様のまま建てた…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "58字/行 「地盤調査の結果、改良が必要になった場…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "62字/行 「建物の打ち合わせでは、リクシル・TO…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「カーテンレールと居室の照明は、標準設…」 @ section#price > dl.facts.rv > div.frow.hon > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「こんなことにも対応しております。「こ…」 @ section#after > div.trouble.rv > p.trouble__d（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「掲載の仕様・保証内容は現サイト公開情…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1529px に対し実解像度 1920px @ section#hero > div.hero__bg > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "59字/行 「モデルハウスは、標準仕様のまま建てた…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "58字/行 「地盤調査の結果、改良が必要になった場…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "62字/行 「建物の打ち合わせでは、リクシル・TO…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「カーテンレールと居室の照明は、標準設…」 @ section#price > dl.facts.rv > div.frow.hon > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「こんなことにも対応しております。「こ…」 @ section#after > div.trouble.rv > p.trouble__d（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「掲載の仕様・保証内容は現サイト公開情…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 2040px に対し実解像度 1920px @ section#hero > div.hero__bg > img（1x でも引き伸ばしボケ）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「自由設計・間取|り」 (start) @ div.idx__in > div.idx__nav > a.idx__a > span.idx__t"
+        },
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「1案の裏側にある検|討」 (start) @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「やまとの自由設計は、最初から設計」 @ section#design > div.design > div > p.design__txt.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 360,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「来工法比・ハイブリッド工|法」 (center) @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "15px 「やまとの自由設計は、最初から設計」 @ section#design > div.design > div > p.design__txt.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.4px 「保険期間中に床が傾いたり、雨漏り」 @ section#after > div.hosho.rv > div.ho > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "133×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.4px 「保険期間中に床が傾いたり、雨漏り」 @ section#after > div.hosho.rv > div.ho > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 414,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "157×34px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.4px 「保険期間中に床が傾いたり、雨漏り」 @ section#after > div.hosho.rv > div.ho > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "205×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "95×34px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "398×26px 「この標準は、モデルハウス「やまとランド」」 @ section#standard > a.gomodel.rv"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "50字/行 「保険期間中に床が傾いたり、雨漏りのよ…」 @ section#after > div.hosho.rv > div.ho > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "50字/行 「建物の土台とその1メートル上までの部…」 @ section#after > div.hosho.rv > div.ho > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "49字/行 「地盤が不均一に沈下して建物に損害が生…」 @ section#after > div.hosho.rv > div.ho > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「こんなことにも対応しております。「こ…」 @ section#after > div.trouble.rv > p.trouble__d（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「掲載の仕様・保証内容は現サイト公開情…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「デメリットもご説|明」 (start) @ section#design > ol.steps.rv > li.step > span"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "48字/行 「モデルハウスは、標準仕様のまま建てた…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "47字/行 「地盤調査の結果、改良が必要になった場…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「建物の打ち合わせでは、リクシル・TO…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "50字/行 「ます。また、お引き渡し後のインターネ…」 @ section#price > dl.facts.rv > div.frow.hon > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「こんなことにも対応しております。「こ…」 @ section#after > div.trouble.rv > p.trouble__d（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「掲載の仕様・保証内容は現サイト公開情…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "59字/行 「モデルハウスは、標準仕様のまま建てた…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "58字/行 「地盤調査の結果、改良が必要になった場…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "62字/行 「建物の打ち合わせでは、リクシル・TO…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「カーテンレールと居室の照明は、標準設…」 @ section#price > dl.facts.rv > div.frow.hon > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「こんなことにも対応しております。「こ…」 @ section#after > div.trouble.rv > p.trouble__d（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「掲載の仕様・保証内容は現サイト公開情…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1357px に対し実解像度 1920px @ section#hero > div.hero__bg > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "59字/行 「モデルハウスは、標準仕様のまま建てた…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "58字/行 「地盤調査の結果、改良が必要になった場…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "62字/行 「建物の打ち合わせでは、リクシル・TO…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「カーテンレールと居室の照明は、標準設…」 @ section#price > dl.facts.rv > div.frow.hon > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「こんなことにも対応しております。「こ…」 @ section#after > div.trouble.rv > p.trouble__d（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「掲載の仕様・保証内容は現サイト公開情…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1527px に対し実解像度 1920px @ section#hero > div.hero__bg > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Warranty / After」 @ section#after > header.chap__head.rv > div.chap__tw > span.chap__en"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "59字/行 「モデルハウスは、標準仕様のまま建てた…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "58字/行 「地盤調査の結果、改良が必要になった場…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "62字/行 「建物の打ち合わせでは、リクシル・TO…」 @ section#price > dl.facts.rv > div.frow > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「カーテンレールと居室の照明は、標準設…」 @ section#price > dl.facts.rv > div.frow.hon > dd（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「こんなことにも対応しております。「こ…」 @ section#after > div.trouble.rv > p.trouble__d（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "FAIL",
+          "detail": "60字/行 「掲載の仕様・保証内容は現サイト公開情…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 2036px に対し実解像度 1920px @ section#hero > div.hero__bg > img（1x でも引き伸ばしボケ）"
+        }
+      ]
+    }
+  ]
+}

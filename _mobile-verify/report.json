@@ -1,0 +1,1562 @@
+{
+  "target": "file:///Users/takahirokamino/Downloads/%E6%9C%80%E7%B5%82%E3%82%84%E3%81%BE%E3%81%A8%E4%B8%8D%E5%8B%95%E7%94%A3%E7%94%BB%E5%83%8F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%9B%B3%E9%9D%A2_20260703/lineup_v2_mock.html",
+  "ranAt": "2026-08-21T03:46:28.994Z",
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "engines": [
+    "webkit",
+    "chromium"
+  ],
+  "results": [
+    {
+      "engine": "webkit",
+      "width": 320,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 360,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 375,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 414,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1024px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1324px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1324px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1324px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1356px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1356px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1356px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 360,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 414,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1024px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1324px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1324px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1324px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1356px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1356px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1356px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+        }
+      ]
+    }
+  ]
+}

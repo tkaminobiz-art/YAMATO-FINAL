@@ -1,0 +1,432 @@
+❌ webkit 320px  FAIL:29 WARN:4
+   ✗ [orphan-last-line] 「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ webkit 360px  FAIL:29 WARN:4
+   ✗ [orphan-last-line] 「不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ webkit 375px  FAIL:28 WARN:5
+   △ [tap-target] 119×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ webkit 390px  FAIL:28 WARN:5
+   △ [tap-target] 134×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ webkit 414px  FAIL:28 WARN:5
+   ✗ [orphan-last-line] 「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 158×34px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ webkit 768px  FAIL:27 WARN:7
+   △ [tap-target] 201×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 91×40px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ webkit 1024px  FAIL:27 WARN:4
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ webkit 1280px  FAIL:27 WARN:4
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ webkit 1440px  FAIL:27 WARN:4
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ webkit 1920px  FAIL:27 WARN:4
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ chromium 320px  FAIL:29 WARN:4
+   ✗ [orphan-last-line] 「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ chromium 360px  FAIL:29 WARN:4
+   ✗ [orphan-last-line] 「不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ chromium 375px  FAIL:28 WARN:5
+   △ [tap-target] 119×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ chromium 390px  FAIL:28 WARN:5
+   △ [tap-target] 134×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ chromium 414px  FAIL:28 WARN:5
+   ✗ [orphan-last-line] 「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 158×34px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ chromium 768px  FAIL:27 WARN:7
+   △ [tap-target] 201×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 91×40px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 148×36px 「見学のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ chromium 1024px  FAIL:27 WARN:4
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ chromium 1280px  FAIL:27 WARN:4
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ chromium 1440px  FAIL:27 WARN:4
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+❌ chromium 1920px  FAIL:27 WARN:4
+   ✗ [tap-target] 37×14px 「HOME」 @ main#main > section.whero > p.crumb > a
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on
+   ✗ [tap-target] 8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot
+   ✗ [tap-target] 102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+
+──────────────────────────────────────────────────
+❌ FAIL 554件 / WARN 92件 — 全緑になるまで完成として提示しない
+report: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify/report.json / screenshots: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify

@@ -1,0 +1,432 @@
+❌ webkit 320px  FAIL:12 WARN:13
+   ✗ [orphan-last-line] 「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   ✗ [orphan-last-line] 「自由設計・間取|り」 (start) @ div.idx__in > div.idx__nav > a.idx__a > span.idx__t
+   ✗ [orphan-last-line] 「1案の裏側にある検|討」 (start) @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+❌ webkit 360px  FAIL:10 WARN:13
+   ✗ [orphan-last-line] 「来工法比・ハイブリッド工|法」 (center) @ section#standard > div.board.rv > div.bnum > small
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+❌ webkit 375px  FAIL:9 WARN:14
+   △ [tap-target] 118×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+❌ webkit 390px  FAIL:9 WARN:14
+   △ [tap-target] 133×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+❌ webkit 414px  FAIL:10 WARN:14
+   ✗ [orphan-last-line] 「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 157×34px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+❌ webkit 768px  FAIL:10 WARN:20
+   △ [tap-target] 206×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 96×34px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 400×26px 「この標準は、モデルハウス「やまとランド」」 @ section#standard > a.gomodel.rv
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+❌ webkit 1024px  FAIL:11 WARN:17
+   ✗ [orphan-last-line] 「デメリットもご説|明」 (left) @ section#design > ol.steps.rv > li.step > span
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+❌ webkit 1280px  FAIL:14 WARN:14
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+   △ [font-floor] 9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag
+❌ webkit 1440px  FAIL:14 WARN:14
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+   △ [font-floor] 9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag
+❌ webkit 1920px  FAIL:15 WARN:13
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+   △ [font-floor] 9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag
+❌ chromium 320px  FAIL:12 WARN:13
+   ✗ [orphan-last-line] 「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   ✗ [orphan-last-line] 「自由設計・間取|り」 (start) @ div.idx__in > div.idx__nav > a.idx__a > span.idx__t
+   ✗ [orphan-last-line] 「1案の裏側にある検|討」 (start) @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+❌ chromium 360px  FAIL:10 WARN:13
+   ✗ [orphan-last-line] 「来工法比・ハイブリッド工|法」 (center) @ section#standard > div.board.rv > div.bnum > small
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+❌ chromium 375px  FAIL:9 WARN:14
+   △ [tap-target] 118×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+❌ chromium 390px  FAIL:9 WARN:14
+   △ [tap-target] 133×33px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+❌ chromium 414px  FAIL:10 WARN:14
+   ✗ [orphan-last-line] 「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp
+   △ [tap-target] 157×34px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+❌ chromium 768px  FAIL:10 WARN:20
+   △ [tap-target] 205×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 95×34px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 149×36px 「来場のご予約」 @ header#hd > a.hd__cta
+   △ [tap-target] 398×26px 「この標準は、モデルハウス「やまとランド」」 @ section#standard > a.gomodel.rv
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+❌ chromium 1024px  FAIL:11 WARN:17
+   ✗ [orphan-last-line] 「デメリットもご説|明」 (start) @ section#design > ol.steps.rv > li.step > span
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+❌ chromium 1280px  FAIL:14 WARN:14
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+   △ [font-floor] 9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag
+❌ chromium 1440px  FAIL:14 WARN:14
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+   △ [font-floor] 9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag
+❌ chromium 1920px  FAIL:15 WARN:13
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 10.2px 「Quality ／ 家づくりのこ」 @ section#hero > div.hero__in > span.eyebrow
+   △ [font-floor] 11.8px 「01」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__no
+   △ [font-floor] 11.2px 「追加費用なしのコミコミ税込」 @ div.idx__in > div.idx__nav > a.idx__a > span.idx__d
+   △ [font-floor] 11.2px 「コミコミ税込」 @ div.idx__nav > a.idx__a > span.idx__d > span
+   △ [font-floor] 9.6px 「Honest pricing」 @ section#price > header.chap__head.rv > div.chap__tw > span.chap__en
+   ✗ [font-floor] 9px 「ここも正直に」 @ dl.facts.rv > div.frow.hon > dt > span.hon__k
+   △ [font-floor] 9.6px 「Standard specifi」 @ section#standard > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 10.6px 「内装建具の標準高さ」 @ section#standard > div.board.rv > div.bnum > small
+   ✗ [font-floor] 11.2px 「※ 掲載の仕様は現サイト公開情報」 @ section#standard > p.chap__note.rv
+   △ [font-floor] 9.6px 「Free design」 @ section#design > header.chap__head.rv > div.chap__tw > span.chap__en
+   △ [font-floor] 9.6px 「検討案 A」 @ div.design > div.plans > figure.plan.plan--1 > span.plan__tag
+   △ [font-floor] 9.6px 「検討案 B」 @ div.design > div.plans > figure.plan.plan--2 > span.plan__tag
+   △ [font-floor] 9.6px 「ご提案」 @ div.design > div.plans > figure.plan.plan--3 > span.plan__tag
+
+──────────────────────────────────────────────────
+❌ FAIL 228件 / WARN 292件 — 全緑になるまで完成として提示しない
+report: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify/report.json / screenshots: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify

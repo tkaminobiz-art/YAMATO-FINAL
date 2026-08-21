@@ -1,0 +1,3362 @@
+{
+  "target": "http://localhost:8000/works.html",
+  "ranAt": "2026-08-12T04:13:21.616Z",
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "engines": [
+    "webkit",
+    "chromium"
+  ],
+  "results": [
+    {
+      "engine": "webkit",
+      "width": 320,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.2px 「2016年に撮影した、過去の施工」 @ section#arch > p.arch__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.7px 「木の質感も、光の入り方も、空間の」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 360,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "111×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.3px 「2016年に撮影した、過去の施工」 @ section#arch > p.arch__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.8px 「木の質感も、光の入り方も、空間の」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "119×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「2016年に撮影した、過去の施工」 @ section#arch > p.arch__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「木の質感も、光の入り方も、空間の」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "134×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「2016年に撮影した、過去の施工」 @ section#arch > p.arch__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「木の質感も、光の入り方も、空間の」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 414,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "158×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「2016年に撮影した、過去の施工」 @ section#arch > p.arch__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "201×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "91×40px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.2px 「2016年に撮影した、過去の施工」 @ section#arch > p.arch__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.7px 「木の質感も、光の入り方も、空間の」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 360,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "111×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.3px 「2016年に撮影した、過去の施工」 @ section#arch > p.arch__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.8px 「木の質感も、光の入り方も、空間の」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "119×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「2016年に撮影した、過去の施工」 @ section#arch > p.arch__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「木の質感も、光の入り方も、空間の」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "134×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「2016年に撮影した、過去の施工」 @ section#arch > p.arch__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「木の質感も、光の入り方も、空間の」 @ main#main > section.invite > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 414,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "158×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「2016年に撮影した、過去の施工」 @ section#arch > p.arch__note"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "201×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "91×40px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "148×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×14px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「5枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "10×10px 「1枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「2枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「3枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "8×8px 「4枚目を表示」 @ article.pcard.is-in > div.pcard__media > div.pdots > button.pdot"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "102×18px 「資料請求はこちら」 @ main#main > section.invite > span.invite__sub > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「HOME/施工事例」 @ main#main > section.whero > p.crumb"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「HOME」 @ main#main > section.whero > p.crumb > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "10.6px 「House注文住宅」 @ div.works__grid > article.pcard.is-in > div.pcard__body > p.pcard__cat"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「注文住宅」 @ article.pcard.is-in > div.pcard__body > ul.pcard__tags > li"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「玄関」 @ div#archGrid > button.acell > span.acell__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「株式会社やまと不動産（奈良県奈良」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    }
+  ]
+}

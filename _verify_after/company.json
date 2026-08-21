@@ -1,0 +1,3497 @@
+{
+  "target": "http://localhost:8000/company.html",
+  "ranAt": "2026-08-12T04:30:25.688Z",
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "engines": [
+    "webkit",
+    "chromium"
+  ],
+  "results": [
+    {
+      "engine": "webkit",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「奈良本社・京都支|店」 (start) @ div#facts > div.facts__in > div.fact > span.fact__v"
+        },
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「株式会社やまと不動|産」 (start) @ div.prof__grid > dl.rv.is-in > div.prow > dd.fx"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "113×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv.is-in > div.prow > dd.fx > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「0742-36-1123」 @ div.prow > dd.fx > small > span.num"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 360,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "115×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv.is-in > div.prow > dd.fx > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「0742-36-1123」 @ div.prow > dd.fx > small > span.num"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "117×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv.is-in > div.prow > dd.fx > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「0742-36-1123」 @ div.prow > dd.fx > small > span.num"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "132×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv.is-in > div.prow > dd.fx > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「0742-36-1123」 @ div.prow > dd.fx > small > span.num"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 414,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「鉄「近鉄奈良駅」から10|分」 (start) @ div.offices > div.office.rv > div.orow > span"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "156×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv.is-in > div.prow > dd.fx > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「0742-36-1123」 @ div.prow > dd.fx > small > span.num"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "206×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "96×34px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath.is-in > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv.is-in > div.prow > dd.fx > small"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "47字/行 「私たちは、お客様に嘘をつかないと決め…」 @ div.msg__grid > div > div.msg__body.rv > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "48字/行 「目指しているのは、ご友人を家に招いた…」 @ div.msg__grid > div > div.msg__body.rv > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "48字/行 「家は、売って終わりではありません。建…」 @ div.msg__grid > div > div.msg__body.rv > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「か。メリットだけでなくデメリットも正…」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「SNSやモデルハウスで見つけた理想を…」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「土地の仕入れから分譲、設計、施工、ア…」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 668px に対し実解像度 933px @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv.is-in > div.prow > dd.fx > small"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv.is-in > div.prow > dd.fx > small"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 1600px @ section#promises > article.oath.is-in > figure.oath__band.rvf > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 1600px @ section#promises > article.oath.is-in > figure.oath__band.rvf > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 1600px @ section#promises > article.oath.is-in > figure.oath__band.rvf > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv.is-in > div.prow > dd.fx > small"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1440px に対し実解像度 1600px @ section#promises > article.oath.is-in > figure.oath__band.rvf > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1440px に対し実解像度 1600px @ section#promises > article.oath.is-in > figure.oath__band.rvf > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1440px に対し実解像度 1600px @ section#promises > article.oath.is-in > figure.oath__band.rvf > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "50×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath.is-in > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv.is-in > div.prow > dd.fx > small"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1920px に対し実解像度 1600px @ section#promises > article.oath.is-in > figure.oath__band.rvf > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1920px に対し実解像度 1600px @ section#promises > article.oath.is-in > figure.oath__band.rvf > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1920px に対し実解像度 1600px @ section#promises > article.oath.is-in > figure.oath__band.rvf > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「奈良本社・京都支|店」 (start) @ div#facts > div.facts__in > div.fact > span.fact__v"
+        },
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「株式会社やまと不動|産」 (start) @ div.prof__grid > dl.rv > div.prow > dd.fx"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "113×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv > div.prow > dd.fx > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「0742-36-1123」 @ div.prow > dd.fx > small > span.num"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 360,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "115×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv > div.prow > dd.fx > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「0742-36-1123」 @ div.prow > dd.fx > small > span.num"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "117×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "105×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "71×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "63×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "75×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv > div.prow > dd.fx > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「0742-36-1123」 @ div.prow > dd.fx > small > span.num"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "132×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv > div.prow > dd.fx > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「0742-36-1123」 @ div.prow > dd.fx > small > span.num"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 414,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「鉄「近鉄奈良駅」から10|分」 (start) @ div.offices > div.office.rv > div.orow > span"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "156×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv > div.prow > dd.fx > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「0742-36-1123」 @ div.prow > dd.fx > small > span.num"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "205×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "95×34px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "150×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "165×30px 「価格の正直な中身を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "153×30px 「設計検討の裏側を見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "147×30px 「保証とアフターを見る」 @ article.oath > div.wrap > div.oath__panel > a.oath__more.o2"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「+」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-in"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "30×30px 「−」 @ div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-control-zoom.leaflet-bar > a.leaflet-control-zoom-out"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv > div.prow > dd.fx > small"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "47字/行 「私たちは、お客様に嘘をつかないと決め…」 @ div.msg__grid > div > div.msg__body.rv > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "48字/行 「目指しているのは、ご友人を家に招いた…」 @ div.msg__grid > div > div.msg__body.rv > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "48字/行 「家は、売って終わりではありません。建…」 @ div.msg__grid > div > div.msg__body.rv > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "47字/行 「か。メリットだけでなくデメリットも正…」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "46字/行 「土地の仕入れから分譲、設計、施工、ア…」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 668px に対し実解像度 933px @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv > div.prow > dd.fx > small"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv > div.prow > dd.fx > small"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 1600px @ section#promises > article.oath > figure.oath__band.rvf > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1280px に対し実解像度 1600px @ section#promises > article.oath > figure.oath__band.rvf > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv > div.prow > dd.fx > small"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1440px に対し実解像度 1600px @ section#promises > article.oath > figure.oath__band.rvf > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1440px に対し実解像度 1600px @ section#promises > article.oath > figure.oath__band.rvf > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "37×10px 「Leaflet」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "49×10px 「地理院タイル」 @ div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div.leaflet-control-attribution.leaflet-control > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「About Yamato ／ 会」 @ section#hero > div.hero__in > div.hero__txt > span.eyebrow.hrv"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.6px 「Founded」 @ div#facts > div.facts__in > div.fact > span.fact__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「今年で創業15年目です。」 @ div#facts > div.facts__in > div.fact > span.fact__n"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.5px 「対応しています。」 @ div.facts__in > div.fact > span.fact__n > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Message ／ 代表メッセー」 @ section#message > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「私たちは、お客様に嘘をつかないと」 @ div.msg__grid > div > div.msg__body.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「株式会社やまと不動産」 @ div > div.msg__body.rv > div.msg__sign > span.msg__co"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「写真はすべて、やまとが実際に建て」 @ div.wrap.spine > div.msg__grid > figure.msg__ph.rv > figcaption.msg__cap"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Three Promises ／」 @ section#promises > div.wrap.spine > div.shead.rv > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「― 小林社長」 @ div.wrap > div.oath__panel > p.oath__quote.o2 > small"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.4px 「無理に契約をお勧めすることはあり」 @ article.oath > div.wrap > div.oath__panel > p.oath__body.o2"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「Profile ／ 会社概要」 @ div.prof__grid > div.prof__side.rv > div.shead > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "13.1px 「記載の内容は変更となる場合があり」 @ div.wrap.spine > div.prof__grid > div.prof__side.rv > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.8px 「今年で創業15年目です。」 @ dl.rv > div.prow > dd.fx > small"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1920px に対し実解像度 1600px @ section#promises > article.oath > figure.oath__band.rvf > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1920px に対し実解像度 1600px @ section#promises > article.oath > figure.oath__band.rvf > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 256px に対し実解像度 256px @ div.leaflet-pane.leaflet-tile-pane > div.leaflet-layer > div.leaflet-tile-container.leaflet-zoom-animated > img.leaflet-tile.leaflet-tile-loaded（Retina 2x で甘くなる）"
+        }
+      ]
+    }
+  ]
+}

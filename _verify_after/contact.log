@@ -1,0 +1,448 @@
+❌ webkit 320px  FAIL:23 WARN:9
+   ✗ [orphan-last-line] 「来場のご予|約」 (center) @ form#fm > div.types > button.type.is-on
+   △ [tap-target] 113×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 139×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel
+   △ [tap-target] 247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 238×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 238×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 238×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 238×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 238×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 238×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   ✗ [font-floor] 14.2px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead
+❌ webkit 360px  FAIL:23 WARN:9
+   ✗ [orphan-last-line] 「土地の希望条|件」 (center) @ form#fm > div.types > button.type
+   △ [tap-target] 115×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 141×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel
+   △ [tap-target] 247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 278×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 278×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 278×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 278×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 278×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 278×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   ✗ [font-floor] 14.3px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead
+❌ webkit 375px  FAIL:23 WARN:9
+   ✗ [orphan-last-line] 「土地の希望条|件」 (center) @ form#fm > div.types > button.type
+   △ [tap-target] 126×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 141×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel
+   △ [tap-target] 247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 293×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 293×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 293×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 293×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 293×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 293×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   ✗ [font-floor] 14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead
+❌ webkit 390px  FAIL:23 WARN:9
+   ✗ [orphan-last-line] 「土地の希望条|件」 (center) @ form#fm > div.types > button.type
+   △ [tap-target] 140×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 142×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel
+   △ [tap-target] 249×39px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 308×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 308×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 308×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 308×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 308×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 308×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   ✗ [font-floor] 14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead
+❌ webkit 414px  FAIL:22 WARN:9
+   △ [tap-target] 162×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 143×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel
+   △ [tap-target] 251×39px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 332×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 332×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 332×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 332×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 332×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 332×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   ✗ [font-floor] 14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+❌ webkit 768px  FAIL:21 WARN:12
+   △ [tap-target] 206×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 96×34px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 157×32px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 592×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 289×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 289×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 289×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   △ [tap-target] 289×35px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 592×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+❌ webkit 1024px  FAIL:21 WARN:6
+   ✗ [tap-target] 428×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 207×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 207×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 207×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 428×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+   ✗ [font-floor] 11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours
+   △ [font-floor] 10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k
+   ✗ [font-floor] 9px 「準備中」 @ span#lineSoon
+   ✗ [font-floor] 10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote
+   △ [font-floor] 10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span
+❌ webkit 1280px  FAIL:21 WARN:6
+   ✗ [tap-target] 536×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 261×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 261×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 261×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 536×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+   ✗ [font-floor] 11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours
+   △ [font-floor] 10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k
+   ✗ [font-floor] 9px 「準備中」 @ span#lineSoon
+   ✗ [font-floor] 10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote
+   △ [font-floor] 10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span
+❌ webkit 1440px  FAIL:21 WARN:6
+   ✗ [tap-target] 558×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 272×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 272×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 272×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 558×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+   ✗ [font-floor] 11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours
+   △ [font-floor] 10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k
+   ✗ [font-floor] 9px 「準備中」 @ span#lineSoon
+   ✗ [font-floor] 10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote
+   △ [font-floor] 10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span
+❌ webkit 1920px  FAIL:21 WARN:7
+   ✗ [tap-target] 558×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 272×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 272×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 272×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 558×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+   ✗ [font-floor] 11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours
+   △ [font-floor] 10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k
+   ✗ [font-floor] 9px 「準備中」 @ span#lineSoon
+   ✗ [font-floor] 10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote
+   △ [font-floor] 10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span
+❌ chromium 320px  FAIL:23 WARN:8
+   ✗ [orphan-last-line] 「来場のご予|約」 (center) @ form#fm > div.types > button.type.is-on
+   △ [tap-target] 113×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 238×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 238×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 238×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 238×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 238×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 238×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   ✗ [font-floor] 14.2px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+❌ chromium 360px  FAIL:23 WARN:8
+   ✗ [orphan-last-line] 「土地の希望条|件」 (center) @ form#fm > div.types > button.type
+   △ [tap-target] 134×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 278×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 278×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 278×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 278×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 278×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 278×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   ✗ [font-floor] 14.3px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+❌ chromium 375px  FAIL:23 WARN:8
+   ✗ [orphan-last-line] 「土地の希望条|件」 (center) @ form#fm > div.types > button.type
+   △ [tap-target] 142×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 247×38px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 293×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 293×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 293×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 293×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 293×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 293×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   ✗ [font-floor] 14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+❌ chromium 390px  FAIL:24 WARN:8
+   ✗ [orphan-last-line] 「0〜19:00｜火・水定|休」 (start) @ header#hd > a.hd__tel > span
+   ✗ [orphan-last-line] 「土地の希望条|件」 (center) @ form#fm > div.types > button.type
+   △ [tap-target] 150×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 249×39px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 308×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 308×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 308×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 308×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 308×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 308×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   ✗ [font-floor] 14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead
+❌ chromium 414px  FAIL:22 WARN:9
+   △ [tap-target] 162×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 143×30px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel
+   △ [tap-target] 251×39px 「0742-36-1123」 @ aside.porch > div.porch__in > div.porch__tel > a
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 332×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 332×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 332×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 332×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 332×21px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 332×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   ✗ [font-floor] 14.4px 「モデルハウスは標準仕様のまま建て」 @ div.desk > aside.porch > div.porch__in > p.porch__lead
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+❌ chromium 768px  FAIL:21 WARN:12
+   △ [tap-target] 205×26px 「株式会社
+    やまと不動産」 @ header#hd > a.hd__brand
+   △ [tap-target] 95×34px 「トップへ戻る」 @ header#hd > a.hd__back
+   △ [tap-target] 157×32px 「0742-36-1123受付 9:00〜」 @ header#hd > a.hd__tel
+   △ [tap-target] 247×43px 「LINEで友だち追加
+         」 @ a#lineBtn
+   ✗ [tap-target] 592×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 289×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 289×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 289×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   △ [tap-target] 289×36px 「時間帯 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 592×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+❌ chromium 1024px  FAIL:21 WARN:6
+   ✗ [tap-target] 428×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 207×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 207×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 207×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 428×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+   ✗ [font-floor] 11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours
+   △ [font-floor] 10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k
+   ✗ [font-floor] 9px 「準備中」 @ span#lineSoon
+   ✗ [font-floor] 10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote
+   △ [font-floor] 10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span
+❌ chromium 1280px  FAIL:21 WARN:6
+   ✗ [tap-target] 536×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 261×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 261×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 261×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 536×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+   ✗ [font-floor] 11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours
+   △ [font-floor] 10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k
+   ✗ [font-floor] 9px 「準備中」 @ span#lineSoon
+   ✗ [font-floor] 10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote
+   △ [font-floor] 10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span
+❌ chromium 1440px  FAIL:21 WARN:6
+   ✗ [tap-target] 558×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 272×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 272×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 272×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 558×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+   ✗ [font-floor] 11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours
+   △ [font-floor] 10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k
+   ✗ [font-floor] 9px 「準備中」 @ span#lineSoon
+   ✗ [font-floor] 10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote
+   △ [font-floor] 10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span
+❌ chromium 1920px  FAIL:21 WARN:7
+   ✗ [tap-target] 558×21px 「お名前 必須」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 272×21px 「お電話番号 どちらか必須」 @ div#fldTel > label
+   ✗ [tap-target] 272×21px 「メールアドレス どちらか必須」 @ div#fldMail > label
+   ✗ [tap-target] 272×21px 「ご希望日 任意」 @ div.fields > div.duo > div.fld > label
+   ✗ [tap-target] 558×21px 「メッセージ 任意」 @ form#fm > div.fields > div.fld > label
+   ✗ [tap-target] 32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 64×18px 「お客様の声」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [tap-target] 52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a
+   ✗ [font-floor] 8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span
+   △ [font-floor] 9.3px 「受付 9:00〜19:00｜火・」 @ header#hd > a.hd__tel > span
+   △ [font-floor] 9.9px 「Contact ／ ご予約・お問」 @ div.desk > aside.porch > div.porch__in > span.porch__eyebrow
+   △ [font-floor] 10.6px 「お急ぎの方はお電話で」 @ aside.porch > div.porch__in > div.porch__tel > span.k
+   ✗ [font-floor] 11.2px 「受付 9:00〜19:00｜定休」 @ aside.porch > div.porch__in > div.porch__tel > p.porch__hours
+   △ [font-floor] 10.6px 「LINEでもご相談いただけます」 @ div#line > div.porch__linebody > span.k
+   ✗ [font-floor] 9px 「準備中」 @ span#lineSoon
+   ✗ [font-floor] 10.6px 「夜間や移動中でも、お気軽にどうぞ」 @ div#line > div.porch__linebody > p.porch__linenote
+   △ [font-floor] 10.6px 「お返事は営業時間内にいたします。」 @ div#line > div.porch__linebody > p.porch__linenote > span
+
+──────────────────────────────────────────────────
+❌ FAIL 439件 / WARN 160件 — 全緑になるまで完成として提示しない
+report: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify/report.json / screenshots: /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/_mobile-verify

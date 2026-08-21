@@ -1,0 +1,2362 @@
+{
+  "target": "http://localhost:8000/voice.html",
+  "ranAt": "2026-08-12T01:32:26.834Z",
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "engines": [
+    "webkit",
+    "chromium"
+  ],
+  "results": [
+    {
+      "engine": "webkit",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.7px 「やまとの家を建てられたお客様に、」 @ section#top > div.cover__in > div > p.cover__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.7px 「モデルハウスは標準仕様のまま建て」 @ body > section.close > div.close__in > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 360,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.8px 「やまとの家を建てられたお客様に、」 @ section#top > div.cover__in > div > p.cover__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.8px 「モデルハウスは標準仕様のまま建て」 @ body > section.close > div.close__in > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「やまとの家を建てられたお客様に、」 @ section#top > div.cover__in > div > p.cover__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「モデルハウスは標準仕様のまま建て」 @ body > section.close > div.close__in > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "133×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "33×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "105×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "75×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「やまとの家を建てられたお客様に、」 @ section#top > div.cover__in > div > p.cover__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「モデルハウスは標準仕様のまま建て」 @ body > section.close > div.close__in > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 414,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "157×34px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "15px 「モデルハウスは標準仕様のまま建て」 @ body > section.close > div.close__in > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "206×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "96×34px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "60×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.7px 「やまとの家を建てられたお客様に、」 @ section#top > div.cover__in > div > p.cover__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.7px 「モデルハウスは標準仕様のまま建て」 @ body > section.close > div.close__in > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 360,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "60×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.8px 「やまとの家を建てられたお客様に、」 @ section#top > div.cover__in > div > p.cover__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.8px 「モデルハウスは標準仕様のまま建て」 @ body > section.close > div.close__in > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 375,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "60×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「やまとの家を建てられたお客様に、」 @ section#top > div.cover__in > div > p.cover__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「モデルハウスは標準仕様のまま建て」 @ body > section.close > div.close__in > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "133×33px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "60×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「やまとの家を建てられたお客様に、」 @ section#top > div.cover__in > div > p.cover__lead"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "14.9px 「モデルハウスは標準仕様のまま建て」 @ body > section.close > div.close__in > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 414,
+      "issues": [
+        {
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「やまと不動|産」 (start) @ header#hd > a.hd__brand > span.hd__jp"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "157×34px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "60×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "15px 「モデルハウスは標準仕様のまま建て」 @ body > section.close > div.close__in > p"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "205×26px 「株式会社\n    やまと不動産」 @ header#hd > a.hd__brand"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "95×34px 「トップへ戻る」 @ header#hd > a.hd__back"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "149×36px 「来場のご予約」 @ header#hd > a.hd__cta"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "60×38px 「すべて」 @ div#fArea > button.fbtn.is-on"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「奈良市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×38px 「大和郡山市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「天理市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「田原本町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「生駒市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「木津川市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「斑鳩町」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "75×38px 「京田辺市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "62×38px 「橿原市」 @ div#fArea > button.fbtn"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "issues": [
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "32×18px 「トップ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "106×18px 「家づくりのこだわり」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "73×18px 「モデルハウス」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "72×18px 「分譲地・物件」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "52×18px 「会社案内」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "FAIL",
+          "detail": "76×18px 「お問い合わせ」 @ footer.colo > div.colo__in > nav.colo__nav > a"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "8px 「株式」 @ header#hd > a.hd__brand > span.hd__kk > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#top > div.cover__in > div > span.eyebrow"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.6px 「Area」 @ div#fArea > span.bar__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.9px 「担当：田中(ぐっさん）」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__staff"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11.2px 「手紙を読む」 @ article.vo.is-in > div.vo__body > footer.vo__meta > span.vo__open"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "9.9px 「Model House」 @ body > section.close > div.close__in > span.close__k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「Colophon ／ 掲載につい」 @ body > footer.colo > div.colo__in > p.colo__t"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.2px 「掲載の声は、お引き渡し後のアンケ」 @ body > footer.colo > div.colo__in > p"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "51字/行 「株式会社やまと不動産（奈良県奈良市大…」 @ body > footer.colo > div.colo__in > p（規格 35〜45字/行。rem キャップ不足の疑い）"
+        }
+      ]
+    }
+  ]
+}
