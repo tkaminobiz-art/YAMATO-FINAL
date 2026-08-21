@@ -662,12 +662,12 @@
   /* 入り口: 台紙の上に紙葉。牡丹の環は縁が濃く中央が静かなので、
      紙葉が中央を覆っても縁の装飾が生きる。 */
   .lu-op{position:relative;overflow:hidden;
-    padding:clamp(72px,10vw,150px) var(--lu-gx) clamp(56px,7vw,104px);
+    padding:clamp(60px,8vw,120px) var(--lu-gx) clamp(44px,5.6vw,84px);
     background:var(--lu-mount) center top/cover var(--lu-paper)}
   .lu-op__in{position:relative;z-index:1;max-width:1180px;margin:0 auto;
     background:var(--lu-sheet-bg) center/cover #F4EEE0;
     box-shadow:var(--lu-sheet-edge);
-    padding:clamp(40px,5vw,80px) clamp(24px,4.2vw,72px)}
+    padding:clamp(32px,4vw,60px) clamp(24px,3.6vw,60px)}
   .lu-eyebrow{display:block;margin:0 0 clamp(26px,3.4vw,44px);font-family:var(--lu-fn);
     font-weight:400;font-size:.8rem;letter-spacing:.3em;color:var(--lu-sumi3);text-transform:uppercase}
   .lu-h{margin:0;line-break:strict;font-family:var(--lu-fm);font-weight:400;
@@ -684,7 +684,7 @@
   /* 角印 — ブランド自身の三シリーズの呼び方（パンフ p2） */
   /* ユーザー指定コピー（2026-08-21 章の入り口）。一字一句そのまま。
      「花・京・風」の一行は角印そのものが担うので、注記は置かない。 */
-  .lu-oplead{margin:clamp(30px,3.6vw,46px) 0 0;max-width:calc(40 * 1.045em)}
+  .lu-oplead{margin:clamp(22px,2.6vw,34px) 0 0;max-width:calc(40 * 1.045em)}
   .lu-oplead .lu-lead{margin:0 0 clamp(16px,1.9vw,24px)}
   .lu-oplead .lu-lead:last-child{margin-bottom:0}
   .lu-lead--end{font-family:var(--lu-fm);font-weight:400;color:var(--lu-sumi);
@@ -692,7 +692,7 @@
     margin-top:clamp(24px,2.8vw,34px)}
   .lu-seals{margin-bottom:0}
 
-  .lu-seals{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:clamp(34px,4.2vw,52px) 0 0}
+  .lu-seals{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:clamp(22px,2.8vw,36px) 0 0}
   .lu-seal{display:grid;place-items:center;width:44px;height:44px;font-family:var(--lu-fm);
     font-weight:400;font-size:1.28rem;line-height:1;padding-top:.06em;letter-spacing:0;
     box-shadow:inset 0 0 0 1.5px currentColor, inset 0 1px 2px rgba(36,30,22,.10), 0 1px 0 rgba(255,255,255,.7)}
@@ -715,14 +715,18 @@
   .lu-band--kaze::after{bottom:0}
   /* 高さは行側で与える。media に aspect-ratio を置くと stretch で確定した高さから
      幅を逆算して列を超え(実測1022px/列720px)、パネルの文字を覆う。 */
-  .lu-band--hana,.lu-band--kaze{min-height:clamp(420px,46vw,660px)}
-  .lu-band--kyo{min-height:clamp(480px,62vw,900px)}
+  /* 密度設計（2026-08-21 八芳園・星のや実測より）: 器を内容準拠に詰める。
+     1節0.7〜0.8画面が上位の相場。帯1枚1画面は長すぎた */
+  .lu-band--hana,.lu-band--kaze{min-height:clamp(340px,36vw,520px)}
+  .lu-band--kyo{min-height:clamp(400px,46vw,680px)}
   .lu-band__media{position:relative;overflow:hidden}
-  .lu-band__media img{width:100%;height:100%;object-fit:cover}
+  /* height:100% は不定高の親では自然高に解決し、縦位置写真（京）が行を895pxまで
+     押し広げていた。絶対配置で行の高さ＝パネル駆動にする */
+  .lu-band__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .lu-band--flip .lu-band__media{order:2}
   /* 小図版 — 版面の縦の境界をまたぐ。大小の差が版に奥行きを作る */
   .lu-band__detail{position:absolute;z-index:2;left:50%;transform:translateX(-84%);
-    bottom:clamp(58px,6.2vw,88px);width:clamp(148px,15.5vw,228px);aspect-ratio:3/4;overflow:hidden;
+    bottom:clamp(44px,5vw,64px);width:clamp(120px,12.5vw,184px);aspect-ratio:3/4;overflow:hidden;
     box-shadow:0 0 0 clamp(7px,.85vw,12px) var(--lu-paper),
       0 0 0 calc(clamp(7px,.85vw,12px) + 1px) rgba(201,162,75,.55),
       0 18px 40px rgba(36,30,22,.13)}
@@ -738,44 +742,50 @@
   .lu-band__panel{position:relative;display:flex;flex-direction:column;justify-content:center;
     background:linear-gradient(rgba(244,241,234,.30),rgba(244,241,234,.30)),
       var(--lu-mount) center/cover var(--lu-paper);
-    padding:clamp(40px,5vw,76px) clamp(22px,3.6vw,64px)}
+    padding:clamp(26px,3.2vw,48px) clamp(20px,3vw,52px)}
   .lu-band--hana .lu-band__panel{background-position:center, right top}
   .lu-band--kyo  .lu-band__panel{background-position:center, left center}
   .lu-band--kaze .lu-band__panel{background-position:center, right bottom}
   .lu-band__in{max-width:34em;
     background:var(--lu-sheet-bg) center/cover #F4EEE0;
     box-shadow:var(--lu-sheet-edge);
-    padding:clamp(28px,3.4vw,48px) clamp(22px,3vw,44px)}
+    padding:clamp(22px,2.6vw,36px) clamp(20px,2.8vw,40px)}
   .lu-mark{display:flex;align-items:baseline;gap:clamp(14px,1.6vw,22px);margin:0}
   .lu-kanji{font-family:var(--lu-fm);font-weight:400;line-height:1;
     text-shadow:0 -1px 0 rgba(36,30,22,.16), 0 1px 0 rgba(255,255,255,.7);
-    font-size:clamp(2.9rem,2rem + 3.9vw,4.6rem);letter-spacing:.02em}
+    font-size:clamp(2.4rem,1.8rem + 2.6vw,3.6rem);letter-spacing:.02em}
   .lu-romaji{font-family:var(--lu-fn);font-weight:400;font-size:.8rem;letter-spacing:.34em;
     color:var(--lu-sumi3);text-transform:uppercase}
-  .lu-rule{width:clamp(40px,5vw,70px);height:2px;margin:clamp(24px,2.8vw,34px) 0 0}
-  .lu-label{margin:clamp(22px,2.6vw,32px) 0 0;text-wrap:balance;line-break:strict;word-break:auto-phrase;
+  .lu-rule{width:clamp(40px,5vw,70px);height:2px;margin:clamp(16px,1.9vw,24px) 0 0}
+  .lu-label{margin:clamp(16px,1.9vw,24px) 0 0;text-wrap:balance;line-break:strict;word-break:auto-phrase;
     font-family:var(--lu-fm);font-weight:400;font-size:clamp(1.12rem,.98rem + .58vw,1.46rem);
     line-height:1.72;letter-spacing:.06em}
   .lu-body{margin:clamp(18px,2.1vw,26px) 0 0;line-break:strict;word-break:auto-phrase;
     font-size:clamp(.95rem,.92rem + .16vw,1.02rem);line-height:2.04;letter-spacing:.045em;color:var(--lu-sumi2)}
   .lu-facts{display:flex;flex-wrap:wrap;gap:0 clamp(26px,3.2vw,46px);
-    margin:clamp(30px,3.4vw,42px) 0 0;padding:0;list-style:none}
+    margin:clamp(20px,2.4vw,30px) 0 0;padding:0;list-style:none}
   .lu-facts li{display:flex;flex-direction:column;gap:7px}
   .lu-facts .k{font-family:var(--lu-fn);font-weight:400;font-size:.8rem;letter-spacing:.2em;
     color:var(--lu-sumi3);text-transform:uppercase}
   .lu-facts .v{font-family:var(--lu-fm);font-weight:400;font-size:1.06rem;letter-spacing:.05em}
-  .lu-price{margin:clamp(30px,3.4vw,42px) 0 0;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+  .lu-price{margin:clamp(18px,2.2vw,28px) 0 0;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
   /* 320pxで「2,680万|円」と数字の途中で割れた。金額と注記は語として不可分 */
   .lu-price b,.lu-price span{white-space:nowrap}
   .lu-price b{font-family:var(--lu-fm);font-weight:400;
     font-size:clamp(1.36rem,1.1rem + 1.05vw,1.92rem);letter-spacing:.03em}
   .lu-price span{font-size:.8rem;letter-spacing:.06em;color:var(--lu-sumi3)}
+    /* 各帯の出口。読者が帯単位で離脱できる（密度設計②） */
+  .lu-band__go{display:inline-flex;align-items:center;min-height:44px;
+    margin-top:clamp(16px,2vw,24px);
+    font-family:var(--lu-fg);font-weight:400;font-size:.92rem;letter-spacing:.08em;
+    color:var(--lu-sumi);text-decoration:none;box-shadow:inset 0 -1px 0 var(--lu-sumi3)}
+  .lu-band__go:hover{box-shadow:inset 0 -1px 0 var(--lu-sumi)}
   .lu-band--hana .lu-kanji{color:var(--lu-hana)} .lu-band--hana .lu-rule{background:var(--lu-hana)}
   .lu-band--kyo  .lu-kanji{color:var(--lu-kyo)}  .lu-band--kyo  .lu-rule{background:var(--lu-kyo)}
   .lu-band--kaze .lu-kanji{color:var(--lu-kaze)} .lu-band--kaze .lu-rule{background:var(--lu-kaze)}
 
   /* ───── 章の出口 ───── */
-  .lu-cl{position:relative;overflow:hidden;padding:clamp(64px,8vw,120px) var(--lu-gx);
+  .lu-cl{position:relative;overflow:hidden;padding:clamp(52px,6.4vw,96px) var(--lu-gx);
     background:var(--lu-mount) center bottom/cover var(--lu-paper)}
   .lu-cl__in{max-width:1180px;margin:0 auto}
   /* 自由設計の断り。三つの帯が「決まった商品が三つ」に読めるので、
@@ -785,7 +795,24 @@
      左＝その場で開く（シェブロン）／右＝別ページへ（矢印）。
      <summary> の中に <a> は置けないので、CTA は details の兄弟にして
      summary 行へ重ねている。SPでは重ねずに下へ落とす。 */
-  .lu-doors{position:relative;margin:clamp(30px,3.6vw,44px) 0 0;
+  /* 共通仕様のデータ層（密度設計③・星のや「基本情報」型）。
+     共通仕様なので3列比較の問題は起きない。dt/ddは構造データ扱い */
+  .lu-common{margin:clamp(34px,4vw,52px) 0 0;
+    background:var(--lu-sheet-bg) center/cover #F4EEE0;
+    box-shadow:var(--lu-sheet-edge);
+    padding:clamp(26px,3.2vw,44px) clamp(22px,3vw,44px)}
+  .lu-common__h{margin:0 0 clamp(16px,2vw,24px);font-family:var(--lu-fm);font-weight:400;
+    font-size:clamp(1.06rem,.98rem + .34vw,1.26rem);letter-spacing:.08em;color:var(--lu-sumi)}
+  .lu-common__dl{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+    column-gap:clamp(28px,3.6vw,56px)}
+  .lu-common__dl>div{display:flex;align-items:baseline;justify-content:space-between;gap:14px;
+    padding:clamp(9px,1.1vw,13px) 0;border-bottom:1px solid rgba(36,30,22,.12)}
+  .lu-common__dl dt{font-family:var(--lu-fg);font-weight:400;font-size:.88rem;
+    letter-spacing:.05em;color:var(--lu-sumi2);white-space:nowrap}
+  .lu-common__dl dd{margin:0;font-family:var(--lu-fm);font-weight:400;font-size:.95rem;
+    letter-spacing:.04em;color:var(--lu-sumi);text-align:right}
+  @media (max-width:640px){ .lu-common__dl{grid-template-columns:minmax(0,1fr)} }
+    .lu-doors{position:relative;margin:clamp(30px,3.6vw,44px) 0 0;
     background:var(--lu-sheet-bg) center/cover #F4EEE0;
     box-shadow:var(--lu-sheet-edge);
     padding:0 clamp(16px,2vw,28px)}
@@ -914,7 +941,7 @@
   .lu-freewrap{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(30px,3.4vw,44px);
     background:var(--lu-sheet-bg) center/cover #F4EEE0;
     box-shadow:var(--lu-sheet-edge);
-    padding:clamp(32px,4vw,64px) clamp(24px,3.6vw,60px)}
+    padding:clamp(26px,3.2vw,48px) clamp(22px,3vw,48px)}
   @media (min-width:960px){
     .lu-freewrap{grid-template-columns:minmax(0,46%) minmax(0,1fr);
       column-gap:clamp(38px,4.2vw,64px);align-items:start}
@@ -1738,7 +1765,6 @@
 
   <div class="lu-band lu-band--hana">
     <div class="lu-band__detail"><img src="assets/lineup/hero/hana_det.webp" alt="花の玄関ポーチと木目の軒天" loading="lazy" decoding="async"></div>
-    <span class="lu-cap">PORCH ／ 軒天 ニチハ木目12mm</span>
     <div class="lu-band__media"><img src="assets/lineup/hero/hana_ext.webp" alt="花のモデルハウス外観" loading="lazy" decoding="async"></div>
     <div class="lu-band__panel"><div class="lu-band__in">
       <p class="lu-mark"><span class="lu-kanji">花</span><span class="lu-romaji">Hana</span></p>
@@ -1751,12 +1777,12 @@
         <li><span class="k">玄関</span><span class="v">親子ドア</span></li>
       </ul>
       <p class="lu-price"><b>2,680万円</b><span>コミコミ価格・税込</span></p>
+      <a class="lu-band__go" href="madori.html#plans">花の仕様・間取り　→</a>
     </div></div>
   </div>
 
   <div class="lu-band lu-band--kyo lu-band--flip">
     <div class="lu-band__detail"><img src="assets/lineup/hero/kyo_det.webp" alt="京の玄関ドア" loading="lazy" decoding="async"></div>
-    <span class="lu-cap">ENTRANCE ／ ジエスタ2 片開き</span>
     <div class="lu-band__media"><img src="assets/lineup/hero/kyo_ext.webp" alt="京のモデルハウス外観" loading="lazy" decoding="async"></div>
     <div class="lu-band__panel"><div class="lu-band__in">
       <p class="lu-mark"><span class="lu-kanji">京</span><span class="lu-romaji">Miyako</span></p>
@@ -1769,12 +1795,12 @@
         <li><span class="k">玄関</span><span class="v">FamiLock</span></li>
       </ul>
       <p class="lu-price"><b>2,480万円</b><span>コミコミ価格・税込</span></p>
+      <a class="lu-band__go" href="madori.html#plans">京の仕様・間取り　→</a>
     </div></div>
   </div>
 
   <div class="lu-band lu-band--kaze">
     <div class="lu-band__detail"><img src="assets/lineup/hero/kaze_det.webp" alt="風の玄関土間とホール" loading="lazy" decoding="async"></div>
-    <span class="lu-cap">ENTRANCE ／ 玄関土間とホール</span>
     <div class="lu-band__media"><img src="assets/lineup/hero/kaze_ext.webp" alt="風のモデルハウス外観" loading="lazy" decoding="async"></div>
     <div class="lu-band__panel"><div class="lu-band__in">
       <p class="lu-mark"><span class="lu-kanji">風</span><span class="lu-romaji">Kaze</span></p>
@@ -1787,6 +1813,7 @@
         <li><span class="k">玄関</span><span class="v">FamiLock</span></li>
       </ul>
       <p class="lu-price"><b>2,680万円</b><span>コミコミ価格・税込</span></p>
+      <a class="lu-band__go" href="madori.html#plans">風の仕様・間取り　→</a>
     </div></div>
   </div>
 
@@ -1811,14 +1838,30 @@
 
       <div class="lu-plans">
         <div class="lu-plans__rail">
-          <figure class="lu-plan"><img src="assets/madori/madori_ex01.webp" alt="実際に建てた家の間取り例 LDK22帖・土間収納・パントリー" loading="lazy" decoding="async"></figure>
-          <figure class="lu-plan"><img src="assets/madori/madori_ex02.webp" alt="実際に建てた家の間取り例 LDK20帖・和室4.5帖・吹き抜け" loading="lazy" decoding="async"></figure>
-          <figure class="lu-plan"><img src="assets/madori/madori_ex03.webp" alt="実際に建てた家の間取り例 LDK21帖・家事室・大空間収納" loading="lazy" decoding="async"></figure>
-          <figure class="lu-plan"><img src="assets/madori/madori_ex04.webp" alt="実際に建てた家の間取り例 LDK19.9帖・和室4.5帖・ランドリールーム" loading="lazy" decoding="async"></figure>
-          <figure class="lu-plan"><img src="assets/madori/madori_ex05.webp" alt="実際に建てた家の間取り例 LDK24.5帖・書斎・ウッドデッキ" loading="lazy" decoding="async"></figure>
-          <figure class="lu-plan"><img src="assets/madori/kyo_example.webp" alt="実際に建てた家の間取り例 LDK18.7帖・コンパクト設計" loading="lazy" decoding="async"></figure>
+          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/madori_ex01.webp" alt="実際に建てた家の間取り例 LDK22帖・土間収納・パントリー" loading="lazy" decoding="async"></a></figure>
+          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/madori_ex02.webp" alt="実際に建てた家の間取り例 LDK20帖・和室4.5帖・吹き抜け" loading="lazy" decoding="async"></a></figure>
+          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/madori_ex03.webp" alt="実際に建てた家の間取り例 LDK21帖・家事室・大空間収納" loading="lazy" decoding="async"></a></figure>
+          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/madori_ex04.webp" alt="実際に建てた家の間取り例 LDK19.9帖・和室4.5帖・ランドリールーム" loading="lazy" decoding="async"></a></figure>
+          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/madori_ex05.webp" alt="実際に建てた家の間取り例 LDK24.5帖・書斎・ウッドデッキ" loading="lazy" decoding="async"></a></figure>
+          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/kyo_example.webp" alt="実際に建てた家の間取り例 LDK18.7帖・コンパクト設計" loading="lazy" decoding="async"></a></figure>
         </div>
         <p class="lu-plans__cap">やまと不動産が実際に建てた家の間取りです。</p>
+      </div>
+
+      <div class="lu-common">
+        <h3 class="lu-common__h">三つとも同じもの</h3>
+        <dl class="lu-common__dl">
+          <div><dt>耐震・制震</dt><dd>住友ゴム ミライエ</dd></div>
+          <div><dt>断熱</dt><dd>アクアフォーム LITE</dd></div>
+          <div><dt>外壁</dt><dd>旭化成 ヘーベルパワーボード</dd></div>
+          <div><dt>屋根</dt><dd>ニスクカラー Pro.</dd></div>
+          <div><dt>軒の出</dt><dd>450mmまで</dd></div>
+          <div><dt>2階の天井高</dt><dd>2,400mm</dd></div>
+          <div><dt>玄関・ポーチのタイル</dt><dd>2坪</dd></div>
+          <div><dt>キッチン</dt><dd>カップボード付き</dd></div>
+          <div><dt>洗面台</dt><dd>TOTO オクターブ</dd></div>
+          <div><dt>増床</dt><dd>1坪単位でできます</dd></div>
+        </dl>
       </div>
 
       <div class="lu-doors">
