@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>アイデア — セクション境界の型</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Shippori+Mincho+B1:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css">
+<style>
+:root{--beni:#BD1B21;--beni-d:#3A070B;--sumi:#241E16;--sumi2:#5C5346;--sumi3:#8A8070;
+ --kinari:#F4F1EA;--paper:#FAF8F3;--gold:#C9A24B;--midori:#1E2A18;
+ --fm:"YakuHanMP","Shippori Mincho B1",serif;--fg:"Zen Kaku Gothic New",sans-serif;--fn:Inter,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:#D9D4CA;font-family:var(--fg);color:var(--sumi)}
+.hd{background:#1A1713;color:#E8E2D4;padding:26px clamp(20px,5vw,64px)}
+.hd h1{margin:0;font-family:var(--fm);font-weight:500;font-size:clamp(1.1rem,.96rem + .7vw,1.5rem);letter-spacing:.1em;color:#E3C572}
+.hd p{margin:12px 0 0;font-size:.88rem;line-height:1.94;letter-spacing:.03em;
+ line-break:strict;word-break:auto-phrase;max-width:56em}
+.hd b{color:#E3C572}
+.wrap{max-width:1180px;margin:0 auto;padding:clamp(30px,4vw,56px) clamp(20px,5vw,64px) 80px}
+/* 診断表 */
+.dx{width:100%;border-collapse:collapse;margin:0 0 clamp(34px,4.4vw,60px);background:var(--paper);
+ font-size:.88rem;box-shadow:0 1px 0 rgba(36,30,22,.1),0 16px 34px -22px rgba(36,30,22,.3)}
+.dx th,.dx td{padding:11px 13px;border-bottom:1px solid rgba(36,30,22,.13);text-align:left;letter-spacing:.03em}
+.dx th{font-family:var(--fn);font-weight:500;font-size:.68rem;letter-spacing:.2em;color:var(--sumi3);
+ text-transform:uppercase;background:#F1EDE4}
+.dx td b{color:var(--beni)}
+.dx tr.ok td{background:rgba(201,162,75,.1)}
+.dx tr.ng td:first-child{box-shadow:inset 3px 0 0 var(--beni)}
+h2.sec{margin:clamp(34px,4.4vw,60px) 0 clamp(16px,2vw,26px);font-family:var(--fm);font-weight:600;
+ font-size:clamp(1.1rem,1rem + .6vw,1.44rem);letter-spacing:.08em;
+ border-bottom:2px solid var(--sumi);padding-bottom:10px}
+/* 標本 */
+.spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,2.4vw,34px)}
+.card{background:var(--paper);box-shadow:0 1px 0 rgba(36,30,22,.1),0 18px 38px -24px rgba(36,30,22,.34)}
+.card__t{padding:15px 18px 0}
+.card__k{margin:0;font-family:var(--fn);font-weight:500;font-size:.62rem;letter-spacing:.24em;color:var(--beni);text-transform:uppercase}
+.card__h{margin:7px 0 0;font-family:var(--fm);font-weight:600;font-size:1.06rem;letter-spacing:.05em}
+.card__d{margin:8px 0 14px;font-size:.83rem;line-height:1.86;letter-spacing:.04em;color:var(--sumi2);
+ line-break:strict;word-break:auto-phrase}
+.demo{position:relative;height:240px;overflow:hidden}
+.up,.dn{position:absolute;left:0;right:0;height:120px}
+.up{top:0} .dn{bottom:0}
+.lbl{position:absolute;z-index:9;font-family:var(--fn);font-size:.58rem;letter-spacing:.18em;padding:3px 7px}
+.lbl--u{left:10px;top:8px} .lbl--d{left:10px;bottom:8px}
+/* 面のパターン */
+.f-kinari{background:url("assets/std/page_kinari_letter_1800.webp") center/cover var(--kinari)}
+.f-beni{background:url("assets/std/page_beni.webp") center/cover var(--beni)}
+.f-benid{background:radial-gradient(70% 120% at 50% 50%,rgba(150,18,26,.9),#2C0509 78%)}
+.f-paper{background:var(--paper)}
+.f-midori{background:var(--midori)}
+.f-photo{background:url("assets/std/auth_ext_1920.webp") center/cover #333}
+.w{color:rgba(255,244,226,.72)} .b{color:rgba(36,30,22,.5)}
+
+/* ── A 紙を重ねる（現行・明↔暗で正解） ── */
+.A .dn{border-top-left-radius:34px;border-top-right-radius:34px;
+ box-shadow:0 -30px 60px -26px rgba(0,0,0,.55);z-index:3}
+/* ── B 綴じ目（同極どうし） ── */
+.B .dn{z-index:3;box-shadow:0 -1px 0 rgba(36,30,22,.16), 0 -14px 26px -18px rgba(36,30,22,.5)}
+.B .dn::before{content:"";position:absolute;left:0;right:0;top:0;height:26px;
+ background:linear-gradient(180deg,rgba(36,30,22,.09),rgba(36,30,22,0))}
+/* ── C 見出しが跨ぐ ── */
+.C .cross{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:5;
+ font-family:var(--fm);font-weight:600;font-size:4.6rem;line-height:1;letter-spacing:.02em;
+ white-space:nowrap;
+ background:linear-gradient(178deg,#FFF3CE 8%,#E8C670 44%,#B98F35 76%,#F4DFA4 100%);
+ -webkit-background-clip:text;background-clip:text;color:transparent}
+/* ── D 金の一本罫（紅⇄紅） ── */
+.D .rule{position:absolute;left:0;right:0;top:50%;height:2px;z-index:5;transform:translateY(-1px);
+ background:linear-gradient(90deg,rgba(201,162,75,0) 0%,rgba(201,162,75,.95) 18%,
+  #F4DFA4 50%,rgba(201,162,75,.95) 82%,rgba(201,162,75,0) 100%)}
+/* ── E 余白で切る（同極どうし） ── */
+.E .up{height:86px} .E .dn{height:86px}
+.E .gap{position:absolute;left:0;right:0;top:86px;height:68px;background:var(--paper);z-index:2;
+ display:grid;place-items:center}
+.E .gap i{display:block;width:44px;height:1px;background:rgba(36,30,22,.28)}
+/* ── F 断ち落とし（写真⇄写真） ── */
+.F .dn{z-index:3}
+.F .cut{position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(255,255,255,.34);z-index:5}
+/* ── G 前の面が指を残す（差し込み） ── */
+.G .dn{z-index:3;border-top-left-radius:34px;border-top-right-radius:34px;
+ box-shadow:0 -26px 54px -26px rgba(0,0,0,.5)}
+.G .tab{position:absolute;left:9%;top:calc(50% - 46px);width:132px;height:78px;z-index:6;
+ background:url("assets/std/page_kinari_letter_1800.webp") center/cover var(--kinari);
+ box-shadow:0 0 0 1px rgba(201,162,75,.55),0 14px 30px -14px rgba(20,8,8,.6);
+ display:grid;place-items:center;font-family:var(--fm);font-weight:500;font-size:.9rem;letter-spacing:.14em}
+@media (max-width:760px){.spec{grid-template-columns:minmax(0,1fr)}}
+</style></head><body>
+<div class="hd">
+  <h1>アイデア ─ セクション境界の型を、明度差で使い分ける</h1>
+  <p>全10境界を本番から実測した結論: <b>現行の「紙を重ねる」（丸角＋上向きの影）は、明↔暗の落差があるときだけ効く</b>。
+  丸角のノッチが下の面の色を覗かせて初めて境界が立つので、<b>同極どうしの境界では何も起きていない</b>。
+  実際、信条→ラインナップ（暗→明）は効いていて、実績→信条（紅→紅）・ラインナップ→声（明→明）・流れ→FAQ（明→明）は消えている。
+  <b>ひとつの型で全部を賄おうとしたのが原因</b>で、必要なのは型の使い分け。以下は未実装のアイデアです。</p>
+</div>
+<div class="wrap">
+  <h2 class="sec">診断 ─ 本番の全10境界</h2>
+  <table class="dx">
+    <thead><tr><th>境界</th><th>上の面</th><th>下の面</th><th>関係</th><th>いま起きていること</th><th>案</th></tr></thead>
+    <tbody>
+      <tr class=""><td>top → auth</td><td>紅（暗27.5%）</td><td>生成り（78.1%）</td><td>明↔暗</td><td>○ 効いている</td><td><b>A 維持</b></td></tr>
+      <tr class="ng"><td>auth → heart</td><td>紅の帯</td><td>暗紅（12.9%）</td><td><b>同極（紅⇄紅）</b></td><td><b>丸角が見えない</b></td><td><b>C か D か G</b></td></tr>
+      <tr class="ok"><td>heart → lineup</td><td>暗紅（12.9%）</td><td>生成り（81.2%）</td><td>明↔暗</td><td>◎ <b>ユーザー承認</b></td><td><b>A 維持</b></td></tr>
+      <tr class="ng"><td>lineup → voice</td><td>生成り（81.2%）</td><td>白（93.0%）</td><td><b>同極（明⇄明）</b></td><td><b>境界が消えている</b></td><td><b>B</b></td></tr>
+      <tr class=""><td>voice → iju</td><td>白（93.0%）</td><td>写真（3.6%）</td><td>明↔暗</td><td>△ 丸角なしで硬い</td><td><b>A を付ける</b></td></tr>
+      <tr class=""><td>iju → lots</td><td>写真（3.6%）</td><td>写真（3.0%）</td><td><b>同極（暗⇄暗）</b></td><td>ハードカット</td><td><b>F そのまま</b></td></tr>
+      <tr class=""><td>lots → flow</td><td>写真（3.0%）</td><td>生成り（92.9%）</td><td>明↔暗</td><td>○ 効いている</td><td><b>A 維持</b></td></tr>
+      <tr class="ng"><td>flow → faq</td><td>生成り（92.9%）</td><td>生成り（97.3%）</td><td><b>同極（明⇄明）</b></td><td><b>境界が消えている</b></td><td><b>E</b></td></tr>
+      <tr class=""><td>faq → final-cta</td><td>生成り（97.3%）</td><td>暗緑（16.1%）</td><td>明↔暗</td><td>○ 効いている</td><td><b>A 維持</b></td></tr>
+    </tbody>
+  </table>
+  <h2 class="sec">境界の型 ─ 7種</h2>
+  <div class="spec">
+    <div class="card">
+      <div class="card__t"><p class="card__k">A</p><h3 class="card__h">現行 ─ 紙を重ねる</h3><p class="card__d">丸い上端＋上向きの影で、次の面が前へ乗り上げる。<b>明↔暗の落差があるときだけ丸角のノッチが下の色を覗かせて効く</b>。信条→ラインナップがこれ。<b>維持。</b></p></div>
+<div class="demo A">
+      <div class="up f-benid"></div><div class="dn f-kinari"></div>
+      <span class="lbl lbl--u w">信条（暗紅）</span>
+      <span class="lbl lbl--d b">ラインナップ（生成り）</span>
+    </div>
+    </div>
+    <div class="card">
+      <div class="card__t"><p class="card__k">B</p><h3 class="card__h">綴じ目 ─ 折りの影</h3><p class="card__d">同極どうし用。丸角を使わず、<b>1pxの罫＋上向きのごく浅い影</b>だけで「紙が折れている」ことを示す。製本の折り。ラインナップ→声、流れ→FAQ に。</p></div>
+<div class="demo B">
+      <div class="up f-kinari"></div><div class="dn f-paper"></div>
+      <span class="lbl lbl--u b">ラインナップ（生成り）</span>
+      <span class="lbl lbl--d b">お客様の声（白）</span>
+    </div>
+    </div>
+    <div class="card">
+      <div class="card__t"><p class="card__k">C</p><h3 class="card__h">見出しが跨ぐ</h3><p class="card__d"><b>実績の770が帯の上端をまたいでいるのと同じ原理</b>を、境界の意匠として一般化する。次の節の数字か章題が前の面に食い込む。紅⇄紅のように色で切れない場所に効く。</p></div>
+<div class="demo C">
+      <div class="up f-beni"></div><div class="dn f-benid"></div><span class="cross">信条</span>
+      <span class="lbl lbl--u w">実績（紅）</span>
+      <span class="lbl lbl--d w">信条（暗紅）</span>
+    </div>
+    </div>
+    <div class="card">
+      <div class="card__t"><p class="card__k">D</p><h3 class="card__h">金の一本罫</h3><p class="card__d">紅⇄紅の境界に、FVと同じ<b>金の毛罫を1本</b>。両端をゼロへ落として断ち切らない。ブランド語彙の一貫。ラインナップの帯境界で既に使っている手の再利用。</p></div>
+<div class="demo D">
+      <div class="up f-beni"></div><div class="dn f-benid"></div><span class="rule"></span>
+      <span class="lbl lbl--u w">実績（紅）</span>
+      <span class="lbl lbl--d w">信条（暗紅）</span>
+    </div>
+    </div>
+    <div class="card">
+      <div class="card__t"><p class="card__k">E</p><h3 class="card__h">余白で切る</h3><p class="card__d">境界を<b>作らない</b>。代わりに上下68pxの余白と細い罫だけを置き、「章が変わった」ことを間で示す。流れ→FAQ のように地色が同じで内容が変わる場所に。</p></div>
+<div class="demo E">
+      <div class="up f-kinari"></div><div class="dn f-kinari"></div><span class="gap"><i></i></span>
+      <span class="lbl lbl--u b">家づくりの流れ</span>
+      <span class="lbl lbl--d b">よくあるご質問</span>
+    </div>
+    </div>
+    <div class="card">
+      <div class="card__t"><p class="card__k">F</p><h3 class="card__h">断ち落とし</h3><p class="card__d">写真⇄写真は<b>何もしないのが正解</b>。丸角も影も入れない。必要なら白の毛罫1本だけ。奈良に住む→分譲地がこれ。</p></div>
+<div class="demo F">
+      <div class="up f-photo"></div><div class="dn f-midori"></div><span class="cut"></span>
+      <span class="lbl lbl--u w">奈良に住むという選択</span>
+      <span class="lbl lbl--d w">分譲地・物件</span>
+    </div>
+    </div>
+    <div class="card">
+      <div class="card__t"><p class="card__k">G</p><h3 class="card__h">栞が差さる</h3><p class="card__d">前の面の紙が<b>指のように次の面へ差し込まれる</b>。受付の栞と同じ文法。章の連続を明示したい場所（実績→信条のように話が繋がる箇所）に。</p></div>
+<div class="demo G">
+      <div class="up f-kinari"></div><div class="dn f-benid"></div><span class="tab">信条</span>
+      <span class="lbl lbl--u b">実績（生成り）</span>
+      <span class="lbl lbl--d w">信条（暗紅）</span>
+    </div>
+    </div>
+  </div>
+</div>
+</body></html>
