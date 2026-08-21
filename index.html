@@ -699,31 +699,46 @@
     padding:clamp(32px,4vw,60px) clamp(24px,3.6vw,60px)}
   .lu-eyebrow{display:block;margin:0 0 clamp(26px,3.4vw,44px);font-family:var(--lu-fn);
     font-weight:400;font-size:.8rem;letter-spacing:.3em;color:var(--lu-sumi3);text-transform:uppercase}
-  .lu-h{margin:0;line-break:strict;font-family:var(--lu-fm);font-weight:400;
-    font-size:clamp(1.5rem,1.02rem + 2.05vw,2.72rem);line-height:1.62;letter-spacing:.055em}
+  /* 2026-08-21 組み直し: 42字の説明文を43.5px×3行で組んでいたのが「やぼったい」の真因。
+     見出しは第1文だけの宣言にして auth と同じ格（w500）へ。第2文は右段の受けの行に降ろす */
+  .lu-h{margin:0;line-break:strict;font-family:var(--lu-fm);font-weight:500;
+    font-size:clamp(1.42rem,1.08rem + 1.32vw,2.1rem);line-height:1.74;letter-spacing:.065em}
   /* 句ごとに inline-block。句の途中で折れて1〜2字が孤立するのを防ぐ。
      SPでは span 自体が器より広くなり中で折れてしまうので、通常フローに戻して
      word-break:auto-phrase の文節折りに任せる */
+  /* 左に見出し・右にリード（26社実測で6節反復の定石組み）。中央は髪線 */
+  .lu-op__cols{display:grid;grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);
+    column-gap:clamp(36px,4.6vw,72px);position:relative}
+  .lu-op__cols::before{content:"";position:absolute;top:6px;bottom:6px;
+    left:calc(48.5% - 1px);width:1px;background:rgba(36,30,22,.22)}
+  .lu-op__r{padding-top:.5em} /* 見出し1行目と右段1行目の頭を光学で揃える */
+  .lu-opstate{margin:0;font-family:var(--lu-fm);font-weight:500;
+    font-size:clamp(1.02rem,.96rem + .3vw,1.18rem);line-height:1.9;letter-spacing:.06em;
+    color:var(--lu-sumi);line-break:strict;word-break:auto-phrase}
+  @media (max-width:860px){
+    .lu-op__cols{grid-template-columns:minmax(0,1fr);row-gap:clamp(22px,4vw,32px)}
+    .lu-op__cols::before{content:none}
+  }
   .lu-h{word-break:auto-phrase}
   .lu-h span{display:inline-block}
-  @media (max-width:640px){ .lu-h span{display:inline} }
+  /* 句折り(inline-block)は384px以上で維持。「家にかけたいお金も、」(10字)は390pxで入る。
+     それ未満は器を越えて溢れるので通常フロー+文節折りへ */
+  @media (max-width:383px){ .lu-h span{display:inline} }
   /* 旧3分割見出し用の指定。いまの構成では句の途中で折れる原因になるため撤去 */
-  .lu-lead{margin:clamp(30px,3.6vw,48px) 0 0;max-width:44em;line-break:strict;word-break:auto-phrase;
-    font-size:clamp(.94rem,.88rem + .22vw,1.03rem);line-height:2.06;letter-spacing:.045em;color:var(--lu-sumi2)}
+  .lu-lead{margin:.85em 0 0;line-break:strict;word-break:auto-phrase;
+    font-size:clamp(.95rem,.9rem + .2vw,1.02rem);line-height:1.94;letter-spacing:.045em;color:var(--lu-sumi2)}
   /* 角印 — ブランド自身の三シリーズの呼び方（パンフ p2） */
   /* ユーザー指定コピー（2026-08-21 章の入り口）。一字一句そのまま。
      「花・京・風」の一行は角印そのものが担うので、注記は置かない。 */
-  .lu-oplead{margin:clamp(22px,2.6vw,34px) 0 0;max-width:calc(40 * 1.045em)}
+  .lu-oplead{margin:clamp(14px,1.8vw,22px) 0 0}
   .lu-oplead .lu-lead{margin:0 0 clamp(16px,1.9vw,24px)}
   .lu-oplead .lu-lead:last-child{margin-bottom:0}
-  .lu-lead--end{font-family:var(--lu-fm);font-weight:400;color:var(--lu-sumi);
-    font-size:clamp(1.02rem,.96rem + .3vw,1.2rem);line-height:1.96;letter-spacing:.055em;
-    margin-top:clamp(24px,2.8vw,34px)}
+  .lu-lead--end{color:var(--lu-sumi)}
   .lu-seals{margin-bottom:0}
 
-  .lu-seals{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:clamp(22px,2.8vw,36px) 0 0}
-  .lu-seal{display:grid;place-items:center;width:44px;height:44px;font-family:var(--lu-fm);
-    font-weight:400;font-size:1.28rem;line-height:1;padding-top:.06em;letter-spacing:0;
+  .lu-seals{display:flex;gap:14px;align-items:center;margin:clamp(24px,3vw,38px) 0 0}
+  .lu-seal{display:grid;place-items:center;width:48px;height:48px;
+    font-family:var(--lu-fm);font-weight:400;font-size:1.36rem;line-height:1;padding-top:.06em;
     box-shadow:inset 0 0 0 1.5px currentColor, inset 0 1px 2px rgba(36,30,22,.10), 0 1px 0 rgba(255,255,255,.7)}
   .lu-seal--hana{color:var(--lu-hana)} .lu-seal--kyo{color:var(--lu-kyo)} .lu-seal--kaze{color:var(--lu-kaze)}
   .lu-seals__note{margin-left:6px;font-size:.86rem;letter-spacing:.05em;color:var(--lu-sumi3)}
@@ -1757,16 +1772,21 @@
   <div class="lu-op">
     <div class="lu-op__in">
       <span class="lu-eyebrow" data-rise style="--d:.05">Lineup ／ 商品ラインナップ</span>
-      <h2 class="lu-h" data-rise style="--d:.14"><span>暮らし方も、家にかけたいお金も、</span><span>家族によって違います。</span><br><span>やまと不動産では三つの住まいをご用意しました。</span></h2>
-      <div class="lu-seals" data-rise style="--d:.26">
-        <span class="lu-seal lu-seal--hana">花</span>
-        <span class="lu-seal lu-seal--kyo">京</span>
-        <span class="lu-seal lu-seal--kaze">風</span>
-      </div>
-      <div class="lu-oplead" data-rise style="--d:.36">
-        <p class="lu-lead">三つのラインナップで変わるのは、広さと、設備・性能へのこだわり方。</p>
-        <p class="lu-lead">構造・断熱・外壁・屋根など、家の基本性能はすべて共通です。</p>
-        <p class="lu-lead lu-lead--end">暮らし方や予算に合わせて選べる、やまと不動産の三つの住まいです。</p>
+      <div class="lu-op__cols">
+        <div class="lu-op__l">
+          <h2 class="lu-h"><span>暮らし方も、</span><span>家にかけたいお金も、</span><br><span>家族によって違います。</span></h2>
+          <div class="lu-seals" aria-hidden="true">
+            <span class="lu-seal lu-seal--hana">花</span><span class="lu-seal lu-seal--kyo">京</span><span class="lu-seal lu-seal--kaze">風</span>
+          </div>
+        </div>
+        <div class="lu-op__r">
+          <p class="lu-opstate">やまと不動産では三つの住まいをご用意しました。</p>
+          <div class="lu-oplead">
+            <p class="lu-lead">三つのラインナップで変わるのは、広さと、設備・性能へのこだわり方。</p>
+            <p class="lu-lead">構造・断熱・外壁・屋根など、家の基本性能はすべて共通です。</p>
+            <p class="lu-lead lu-lead--end">暮らし方や予算に合わせて選べる、やまと不動産の三つの住まいです。</p>
+          </div>
+        </div>
       </div>
       </div>
   <div class="lu-cards">
