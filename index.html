@@ -645,6 +645,13 @@
     --lu-fg:"Zen Kaku Gothic New",sans-serif;
     --lu-fn:"Inter",sans-serif;
     --lu-gx:clamp(22px,5vw,88px);
+    /* 台紙（貼り込みカタログ 2026-08-21）: 装飾は台紙で全開、文字は紙葉の上。
+       面を分けたので台紙側に可読性の制約が無い（信条の「台紙と手紙」と同じ解）。 */
+    --lu-mount:url("assets/std/lineup_mount_2400.webp");
+    --lu-sheet-bg:url("assets/std/page_kinari_letter_2400.webp");
+    --lu-sheet-edge:0 0 0 1px rgba(201,162,75,.5),
+      inset 0 1px 0 rgba(255,255,255,.65),
+      0 18px 40px -18px rgba(36,30,22,.30);
     --lu-ground:linear-gradient(rgba(244,241,234,.62),rgba(244,241,234,.62)),
       url("assets/std/page_kinari_letter_2400.webp");
     color:var(--lu-sumi);background:var(--lu-paper);
@@ -652,20 +659,25 @@
   .lineup img{display:block;max-width:100%}
 
   /* ───── 章の入り口 ───── */
-  /* 入り口だけ、牡丹と燕を空押しした生成り紙（Higgsfield生成・FV表紙の対）。
-     モチーフは右上なので right top で固定する。全ブロックに敷くと牡丹が
-     5回繰り返して壁紙になるので、ここ一度だけ。
-     文字が乗る左側は床を80%にクランプ済み（最暗76%＝墨に対し9.25、下限7.83）。*/
+  /* 入り口: 台紙の上に紙葉。牡丹の環は縁が濃く中央が静かなので、
+     紙葉が中央を覆っても縁の装飾が生きる。 */
   .lu-op{position:relative;overflow:hidden;
-    padding:clamp(88px,13vw,190px) var(--lu-gx) clamp(64px,9vw,120px);
-    background:url("assets/std/lineup_paper_2400.webp") right top/cover var(--lu-paper)}
-  .lu-op__in{position:relative;z-index:1;max-width:1180px;margin:0 auto}
+    padding:clamp(72px,10vw,150px) var(--lu-gx) clamp(56px,7vw,104px);
+    background:var(--lu-mount) center top/cover var(--lu-paper)}
+  .lu-op__in{position:relative;z-index:1;max-width:1180px;margin:0 auto;
+    background:var(--lu-sheet-bg) center/cover #F4EEE0;
+    box-shadow:var(--lu-sheet-edge);
+    padding:clamp(40px,5vw,80px) clamp(24px,4.2vw,72px)}
   .lu-eyebrow{display:block;margin:0 0 clamp(26px,3.4vw,44px);font-family:var(--lu-fn);
     font-weight:400;font-size:.8rem;letter-spacing:.3em;color:var(--lu-sumi3);text-transform:uppercase}
   .lu-h{margin:0;line-break:strict;font-family:var(--lu-fm);font-weight:400;
     font-size:clamp(1.5rem,1.02rem + 2.05vw,2.72rem);line-height:1.62;letter-spacing:.055em}
-  /* 句ごとに inline-block。句の途中で折れて1〜2字が孤立するのを防ぐ */
+  /* 句ごとに inline-block。句の途中で折れて1〜2字が孤立するのを防ぐ。
+     SPでは span 自体が器より広くなり中で折れてしまうので、通常フローに戻して
+     word-break:auto-phrase の文節折りに任せる */
+  .lu-h{word-break:auto-phrase}
   .lu-h span{display:inline-block}
+  @media (max-width:640px){ .lu-h span{display:inline} }
   /* 旧3分割見出し用の指定。いまの構成では句の途中で折れる原因になるため撤去 */
   .lu-lead{margin:clamp(30px,3.6vw,48px) 0 0;max-width:44em;line-break:strict;word-break:auto-phrase;
     font-size:clamp(.94rem,.88rem + .22vw,1.03rem);line-height:2.06;letter-spacing:.045em;color:var(--lu-sumi2)}
@@ -721,12 +733,22 @@
     font-family:var(--lu-fn);font-weight:400;font-size:.8rem;letter-spacing:.16em;color:var(--lu-sumi3)}
   .lu-band--flip .lu-cap{left:auto;right:calc(50% + clamp(10px,1.1vw,18px))}
 
+  /* パネルの台紙: cover で拡大されると金箔が巨大化するので薄膜で半歩引かせ、
+     帯ごとに切り取る位置を変えて「同じ紙の繰り返し」に見せない */
   .lu-band__panel{position:relative;display:flex;flex-direction:column;justify-content:center;
-    background:var(--lu-ground) center/cover var(--lu-paper);background-size:auto,62% auto;
-    padding:clamp(52px,6.4vw,96px) clamp(28px,5vw,86px)}
-  .lu-band__in{max-width:30em}
+    background:linear-gradient(rgba(244,241,234,.30),rgba(244,241,234,.30)),
+      var(--lu-mount) center/cover var(--lu-paper);
+    padding:clamp(40px,5vw,76px) clamp(22px,3.6vw,64px)}
+  .lu-band--hana .lu-band__panel{background-position:center, right top}
+  .lu-band--kyo  .lu-band__panel{background-position:center, left center}
+  .lu-band--kaze .lu-band__panel{background-position:center, right bottom}
+  .lu-band__in{max-width:34em;
+    background:var(--lu-sheet-bg) center/cover #F4EEE0;
+    box-shadow:var(--lu-sheet-edge);
+    padding:clamp(28px,3.4vw,48px) clamp(22px,3vw,44px)}
   .lu-mark{display:flex;align-items:baseline;gap:clamp(14px,1.6vw,22px);margin:0}
   .lu-kanji{font-family:var(--lu-fm);font-weight:400;line-height:1;
+    text-shadow:0 -1px 0 rgba(36,30,22,.16), 0 1px 0 rgba(255,255,255,.7);
     font-size:clamp(2.9rem,2rem + 3.9vw,4.6rem);letter-spacing:.02em}
   .lu-romaji{font-family:var(--lu-fn);font-weight:400;font-size:.8rem;letter-spacing:.34em;
     color:var(--lu-sumi3);text-transform:uppercase}
@@ -742,7 +764,9 @@
   .lu-facts .k{font-family:var(--lu-fn);font-weight:400;font-size:.8rem;letter-spacing:.2em;
     color:var(--lu-sumi3);text-transform:uppercase}
   .lu-facts .v{font-family:var(--lu-fm);font-weight:400;font-size:1.06rem;letter-spacing:.05em}
-  .lu-price{margin:clamp(30px,3.4vw,42px) 0 0;display:flex;align-items:baseline;gap:12px}
+  .lu-price{margin:clamp(30px,3.4vw,42px) 0 0;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+  /* 320pxで「2,680万|円」と数字の途中で割れた。金額と注記は語として不可分 */
+  .lu-price b,.lu-price span{white-space:nowrap}
   .lu-price b{font-family:var(--lu-fm);font-weight:400;
     font-size:clamp(1.36rem,1.1rem + 1.05vw,1.92rem);letter-spacing:.03em}
   .lu-price span{font-size:.8rem;letter-spacing:.06em;color:var(--lu-sumi3)}
@@ -751,8 +775,8 @@
   .lu-band--kaze .lu-kanji{color:var(--lu-kaze)} .lu-band--kaze .lu-rule{background:var(--lu-kaze)}
 
   /* ───── 章の出口 ───── */
-  .lu-cl{position:relative;overflow:hidden;padding:clamp(76px,10vw,140px) var(--lu-gx);
-    background:var(--lu-ground) center/cover var(--lu-paper);background-size:auto,62% auto}
+  .lu-cl{position:relative;overflow:hidden;padding:clamp(64px,8vw,120px) var(--lu-gx);
+    background:var(--lu-mount) center bottom/cover var(--lu-paper)}
   .lu-cl__in{max-width:1180px;margin:0 auto}
   /* 自由設計の断り。三つの帯が「決まった商品が三つ」に読めるので、
      間取りは型ではないことをここで言う。新しい視覚言語は足さず、
@@ -762,7 +786,9 @@
      <summary> の中に <a> は置けないので、CTA は details の兄弟にして
      summary 行へ重ねている。SPでは重ねずに下へ落とす。 */
   .lu-doors{position:relative;margin:clamp(30px,3.6vw,44px) 0 0;
-    border-top:1px solid rgba(36,30,22,.14);border-bottom:1px solid rgba(36,30,22,.14)}
+    background:var(--lu-sheet-bg) center/cover #F4EEE0;
+    box-shadow:var(--lu-sheet-edge);
+    padding:0 clamp(16px,2vw,28px)}
   .lu-more{border:0}
   .lu-more summary{list-style:none;cursor:pointer;display:flex;align-items:center;
     justify-content:flex-start;gap:12px;min-height:44px;
@@ -879,7 +905,10 @@
   /* 二人は写真が無いので名前で立てる */
   .lu-pair:last-of-type .lu-blk__h{font-size:clamp(1.28rem,1.1rem + .78vw,1.72rem)}
 
-  .lu-freewrap{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(30px,3.4vw,44px)}
+  .lu-freewrap{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(30px,3.4vw,44px);
+    background:var(--lu-sheet-bg) center/cover #F4EEE0;
+    box-shadow:var(--lu-sheet-edge);
+    padding:clamp(32px,4vw,64px) clamp(24px,3.6vw,60px)}
   @media (min-width:960px){
     .lu-freewrap{grid-template-columns:minmax(0,46%) minmax(0,1fr);
       column-gap:clamp(38px,4.2vw,64px);align-items:start}
@@ -902,7 +931,9 @@
   .lu-plan{margin:0;flex:0 0 auto;background:#fff;
     box-shadow:0 0 0 1px rgba(36,30,22,.09), 0 10px 26px rgba(36,30,22,.10)}
   .lu-plan img{display:block;height:clamp(150px,17vw,232px);width:auto}
-  .lu-plans__cap{margin:clamp(16px,1.9vw,24px) 0 0;
+  .lu-plans__cap{display:inline-block;margin:clamp(16px,1.9vw,24px) 0 0;
+    background:var(--lu-sheet-bg) center/cover #F4EEE0;box-shadow:0 0 0 1px rgba(201,162,75,.4);
+    padding:6px 14px;
     font-size:clamp(.95rem,.92rem + .1vw,.99rem);line-height:2.0;letter-spacing:.045em;
     color:var(--lu-sumi3)}
   @media (min-width:1100px){
@@ -965,9 +996,11 @@
     white-space:nowrap;box-shadow:inset 0 -1px 0 var(--lu-sumi3)}
   .lu-cl__a:hover{box-shadow:inset 0 -1px 0 var(--lu-sumi)}
   /* ※注記は装飾ラベルではなく本文。15px下限を守る */
-  .lu-foot{margin:0;padding:0 var(--lu-gx) clamp(56px,7vw,90px);max-width:1180px;
+  .lu-foot{margin:0;padding:clamp(20px,2.4vw,32px) var(--lu-gx) clamp(56px,7vw,90px);
     font-size:.95rem;line-height:1.9;letter-spacing:.04em;color:var(--lu-sumi3);
-    background:var(--lu-ground) center/cover var(--lu-paper);background-size:auto,62% auto}
+    background:var(--lu-mount) center bottom/cover var(--lu-paper);background-size:auto,62% auto}
+  .lu-foot span{display:inline-block;background:var(--lu-sheet-bg) center/cover #F4EEE0;
+    box-shadow:0 0 0 1px rgba(201,162,75,.4);padding:6px 14px}
 
   .lineup [data-rise]{opacity:0;transform:translateY(26px);
     transition:opacity 1s var(--ease-soft,cubic-bezier(.22,1,.36,1)),transform 1.1s var(--ease-soft,cubic-bezier(.22,1,.36,1));
@@ -1791,7 +1824,7 @@
       </div>
     </div>
   </div>
-  <p class="lu-foot">※ 価格・面積・間取りは確定値（2026年改定・コミコミ価格・税込）です。</p>
+  <p class="lu-foot"><span>※ 価格・面積・間取りは確定値（2026年改定・コミコミ価格・税込）です。</span></p>
 </section>
 
 <!-- ============ なぜ、この値段で（施工断面×正直な二列） ============ -->
