@@ -1,6 +1,6 @@
 {
-  "target": "file:///Users/takahirokamino/Downloads/%E6%9C%80%E7%B5%82%E3%82%84%E3%81%BE%E3%81%A8%E4%B8%8D%E5%8B%95%E7%94%A3%E7%94%BB%E5%83%8F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%9B%B3%E9%9D%A2_20260703/lineup_v2_mock.html",
-  "ranAt": "2026-08-21T03:46:28.994Z",
+  "target": "file:///Users/takahirokamino/Downloads/%E6%9C%80%E7%B5%82%E3%82%84%E3%81%BE%E3%81%A8%E4%B8%8D%E5%8B%95%E7%94%A3%E7%94%BB%E5%83%8F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%9B%B3%E9%9D%A2_20260703/index.html",
+  "ranAt": "2026-08-21T04:17:00.704Z",
   "widths": [
     320,
     360,
@@ -23,64 +23,149 @@
       "width": 320,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「通勤の目|安」 (start) @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figttl"
+        },
+        {
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "117×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "85×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "76×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11.5px 「難波」 @ div#ijuStage > div.iju__prog > span.iju__pst"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         }
       ]
     },
@@ -89,64 +174,144 @@
       "width": 360,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11.6px 「難波」 @ div#ijuStage > div.iju__prog > span.iju__pst"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         }
       ]
     },
@@ -155,64 +320,144 @@
       "width": 375,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11.6px 「難波」 @ div#ijuStage > div.iju__prog > span.iju__pst"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         }
       ]
     },
@@ -221,64 +466,144 @@
       "width": 390,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11.7px 「難波」 @ div#ijuStage > div.iju__prog > span.iju__pst"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         }
       ]
     },
@@ -287,64 +612,144 @@
       "width": 414,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "119×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "88×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11.7px 「難波」 @ div#ijuStage > div.iju__prog > span.iju__pst"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         }
       ]
     },
@@ -353,64 +758,164 @@
       "width": 768,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "125×43px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×43px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "92×43px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "81×43px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "67×43px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "94×43px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "9.6px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 768px に対し実解像度 768px @ article#s00 > div.cover__bg > picture > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 240px に対し実解像度 245px @ section#auth > div.tr__top > figure.tr__ph > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 768px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 891px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（Retina 2x で甘くなる）"
         }
       ]
     },
@@ -421,82 +926,147 @@
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "9.6px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "14字/行 「と、少し驚いてもらえること。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "23字/行 「「この予算では、理想の家は難しいかも…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "22字/行 「そう思っている方にこそ、知ってほしい…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "20字/行 「そして5年、10年と暮らしたその先に…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「「やまと不動産にお願いして、よかった…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "16字/行 「そう言ってもらえる家でありたい。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "18字/行 「それが、やまと不動産の家づくりです。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "10字/行 「株式会社やまと不動産…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__sign（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "22字/行 「そして、間取りがきちんと決まってから…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「ここまでにかける時間は、およそ3か月…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1024px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+          "detail": "表示 1024px に対し実解像度 1024px @ article#s00 > div.cover__bg > picture > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 306px に対し実解像度 327px @ section#auth > div.tr__top > figure.tr__ph > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1024px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1188px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（Retina 2x で甘くなる）"
         }
       ]
     },
@@ -507,92 +1077,147 @@
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "9.6px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "14字/行 「と、少し驚いてもらえること。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "23字/行 「「この予算では、理想の家は難しいかも…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "22字/行 「そう思っている方にこそ、知ってほしい…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "20字/行 「そして5年、10年と暮らしたその先に…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「「やまと不動産にお願いして、よかった…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "16字/行 「そう言ってもらえる家でありたい。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "18字/行 「それが、やまと不動産の家づくりです。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "10字/行 「株式会社やまと不動産…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__sign（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「ここまでにかける時間は、およそ3か月…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "21字/行 「やまと不動産の家づくりは、そこから始…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__end（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1280px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+          "detail": "表示 1280px に対し実解像度 1280px @ article#s00 > div.cover__bg > picture > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1280px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+          "detail": "表示 383px に対し実解像度 409px @ section#auth > div.tr__top > figure.tr__ph > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1280px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+          "detail": "表示 1280px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1485px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
         }
       ]
     },
@@ -603,92 +1228,147 @@
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "9.6px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "14字/行 「と、少し驚いてもらえること。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "23字/行 「「この予算では、理想の家は難しいかも…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "22字/行 「そう思っている方にこそ、知ってほしい…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "20字/行 「そして5年、10年と暮らしたその先に…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「「やまと不動産にお願いして、よかった…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "16字/行 「そう言ってもらえる家でありたい。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "18字/行 「それが、やまと不動産の家づくりです。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "10字/行 「株式会社やまと不動産…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__sign（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「ここまでにかける時間は、およそ3か月…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "23字/行 「やまと不動産の家づくりは、そこから始…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__end（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1324px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+          "detail": "表示 1440px に対し実解像度 1440px @ article#s00 > div.cover__bg > picture > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1324px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+          "detail": "表示 430px に対し実解像度 460px @ section#auth > div.tr__top > figure.tr__ph > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
-          "severity": "WARN",
-          "detail": "表示 1324px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+          "severity": "FAIL",
+          "detail": "表示 1440px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1670px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
         }
       ]
     },
@@ -699,92 +1379,147 @@
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "9.6px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "14字/行 「と、少し驚いてもらえること。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "23字/行 「「この予算では、理想の家は難しいかも…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "22字/行 「そう思っている方にこそ、知ってほしい…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "20字/行 「そして5年、10年と暮らしたその先に…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「「やまと不動産にお願いして、よかった…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "16字/行 「そう言ってもらえる家でありたい。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "18字/行 「それが、やまと不動産の家づくりです。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "10字/行 「株式会社やまと不動産…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__sign（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「ここまでにかける時間は、およそ3か月…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "21字/行 「やまと不動産の家づくりは、そこから始…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__end（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1356px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+          "detail": "表示 1920px に対し実解像度 1920px @ article#s00 > div.cover__bg > picture > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1356px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+          "detail": "表示 430px に対し実解像度 614px @ section#auth > div.tr__top > figure.tr__ph > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
-          "severity": "WARN",
-          "detail": "表示 1356px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+          "severity": "FAIL",
+          "detail": "表示 1920px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 2227px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
         }
       ]
     },
@@ -793,64 +1528,149 @@
       "width": 320,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "orphan-last-line",
+          "severity": "FAIL",
+          "detail": "「通勤の目|安」 (start) @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figttl"
+        },
+        {
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "117×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "85×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "76×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11.5px 「難波」 @ div#ijuStage > div.iju__prog > span.iju__pst"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         }
       ]
     },
@@ -859,64 +1679,144 @@
       "width": 360,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "89×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11.6px 「難波」 @ div#ijuStage > div.iju__prog > span.iju__pst"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         }
       ]
     },
@@ -925,64 +1825,144 @@
       "width": 375,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11.6px 「難波」 @ div#ijuStage > div.iju__prog > span.iju__pst"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         }
       ]
     },
@@ -991,64 +1971,144 @@
       "width": 390,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "118×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11.7px 「難波」 @ div#ijuStage > div.iju__prog > span.iju__pst"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         }
       ]
     },
@@ -1057,64 +2117,144 @@
       "width": 414,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "119×41px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "86×41px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "87×41px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "77×41px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "64×41px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×41px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11.7px 「難波」 @ div#ijuStage > div.iju__prog > span.iju__pst"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         }
       ]
     },
@@ -1123,64 +2263,164 @@
       "width": 768,
       "issues": [
         {
-          "check": "font-floor",
+          "check": "tap-target",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "245×39px 「価格・設計・アフターのこだわりを見る」 @ section#flow > div.fl__in > div.fl__links.fl-rv > a.fl__more"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "109×41px 「資料請求はこちら」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__ghost"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "162×40px 「LINEで気軽に聞く」 @ section#final-cta > div.fin__in > div.fin__cv.fin-rv > a.fin__line"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "124×43px 「家づくりのこだわり」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "90×43px 「モデルハウス」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "92×43px 「分譲地・物件」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "81×43px 「お客様の声」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "67×43px 「会社案内」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "94×43px 「お問い合わせ」 @ footer#footer > div.ft__in > nav.ft__nav > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「Instagram」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「YouTube」 @ footer#footer > div.ft__in > div.ft__sns > a"
+        },
+        {
+          "check": "tap-target",
+          "severity": "WARN",
+          "detail": "40×40px 「TikTok」 @ footer#footer > div.ft__in > div.ft__sns > a"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "9.6px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 768px に対し実解像度 768px @ article#s00 > div.cover__bg > picture > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 240px に対し実解像度 245px @ section#auth > div.tr__top > figure.tr__ph > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 768px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 891px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（Retina 2x で甘くなる）"
         }
       ]
     },
@@ -1191,82 +2431,147 @@
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "9.6px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "14字/行 「と、少し驚いてもらえること。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "23字/行 「「この予算では、理想の家は難しいかも…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "22字/行 「そう思っている方にこそ、知ってほしい…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "20字/行 「そして5年、10年と暮らしたその先に…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「「やまと不動産にお願いして、よかった…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "16字/行 「そう言ってもらえる家でありたい。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "18字/行 「それが、やまと不動産の家づくりです。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "10字/行 「株式会社やまと不動産…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__sign（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「そして、間取りがきちんと決まってから…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「ここまでにかける時間は、およそ3か月…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1024px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+          "detail": "表示 1024px に対し実解像度 1024px @ article#s00 > div.cover__bg > picture > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 306px に対し実解像度 327px @ section#auth > div.tr__top > figure.tr__ph > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1024px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "WARN",
+          "detail": "表示 1188px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（Retina 2x で甘くなる）"
         }
       ]
     },
@@ -1277,92 +2582,147 @@
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "9.6px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "14字/行 「と、少し驚いてもらえること。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "23字/行 「「この予算では、理想の家は難しいかも…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "22字/行 「そう思っている方にこそ、知ってほしい…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "20字/行 「そして5年、10年と暮らしたその先に…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「「やまと不動産にお願いして、よかった…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "16字/行 「そう言ってもらえる家でありたい。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "18字/行 「それが、やまと不動産の家づくりです。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "10字/行 「株式会社やまと不動産…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__sign（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「ここまでにかける時間は、およそ3か月…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "17字/行 「やまと不動産の家づくりは、そこから…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__end（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1280px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+          "detail": "表示 1280px に対し実解像度 1280px @ article#s00 > div.cover__bg > picture > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1280px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+          "detail": "表示 383px に対し実解像度 409px @ section#auth > div.tr__top > figure.tr__ph > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1280px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+          "detail": "表示 1280px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（Retina 2x で甘くなる）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1485px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
         }
       ]
     },
@@ -1373,92 +2733,147 @@
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "9.6px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "14字/行 「と、少し驚いてもらえること。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "23字/行 「「この予算では、理想の家は難しいかも…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "22字/行 「そう思っている方にこそ、知ってほしい…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "20字/行 「そして5年、10年と暮らしたその先に…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「「やまと不動産にお願いして、よかった…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "16字/行 「そう言ってもらえる家でありたい。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "18字/行 「それが、やまと不動産の家づくりです。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "10字/行 「株式会社やまと不動産…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__sign（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「ここまでにかける時間は、およそ3か月…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "23字/行 「やまと不動産の家づくりは、そこから始…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__end（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1324px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+          "detail": "表示 1440px に対し実解像度 1440px @ article#s00 > div.cover__bg > picture > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1324px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+          "detail": "表示 430px に対し実解像度 460px @ section#auth > div.tr__top > figure.tr__ph > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
-          "severity": "WARN",
-          "detail": "表示 1324px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+          "severity": "FAIL",
+          "detail": "表示 1440px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 1670px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
         }
       ]
     },
@@ -1469,92 +2884,147 @@
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "11.2px 「図面 v2」 @ html > body > div.note > span.tag"
+          "detail": "9.6px 「株式」 @ header#siteHeader > a.brand > span.brand__kk > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「OUR WORK」 @ nav.nav4 > div.nav4__in > a.nav4__i > span"
+          "detail": "10.2px 「Lineup」 @ section#auth > nav.qn > a.qn__i > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.2px 「延床」 @ div.A__b > ul.A__d > li > span.k"
+          "detail": "10.2px 「延床」 @ div.lu-card__b > ul.lu-facts > li > span.k"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--hana > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--hana > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kyo > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kyo > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.9px 「コミコミ価格・税込」 @ a.A__c.A--kaze > div.A__b > p.A__p > span"
+          "detail": "10.9px 「コミコミ価格・税込」 @ a.lu-card.lu-card--kaze > div.lu-card__b > p.lu-card__p > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--hana > ul.B__d > li > span.k"
+          "detail": "10.2px 「Voice ／ お客様の声」 @ section#voice > div.vc__in > div > span.vc__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--hana > span.B__pr > span"
+          "detail": "10.6px 「Move to Nara ／ 奈」 @ div#ijuStage > div.iju__hud > span.iju__eyebrow"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kyo > ul.B__d > li > span.k"
+          "detail": "11px 「図 01」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__fignm"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kyo > span.B__pr > span"
+          "detail": "10px 「Minutes to the c」 @ div.iju__bin > div.iju-rv.is-in > div.iju__figline > span.iju__figleg"
+        },
+        {
+          "check": "font-floor",
+          "severity": "FAIL",
+          "detail": "11.5px 「所要時間はおおよその目安です。列」 @ div.iju__board > div.iju__bin > div.iju-rv.is-in > p.iju__note"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.1px 「延床」 @ a.B__b.B--kaze > ul.B__d > li > span.k"
+          "detail": "11.5px 「変わります。」 @ div.iju__bin > div.iju-rv.is-in > p.iju__note > span"
         },
         {
           "check": "font-floor",
           "severity": "WARN",
-          "detail": "10.6px 「コミコミ価格・税込」 @ div.B > a.B__b.B--kaze > span.B__pr > span"
+          "detail": "11px 「図 02」 @ div.iju__bin > div.iju__eco.iju-rv > div.iju__figline > span.iju__fignm"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10px 「Areas」 @ div.iju__bin > div.iju__foot.iju-rv > div.iju__areas > span.k"
+        },
+        {
+          "check": "font-floor",
+          "severity": "WARN",
+          "detail": "10.4px 「Lots ／ 分譲地・物件」 @ section#lots > div.lt-inner > span.lt-eyebrow"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「天井を高くとり、設備を整えた家…」 @ div.B > a.B__b.B--hana > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "14字/行 「と、少し驚いてもらえること。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "15字/行 「限られた敷地のために設計した家…」 @ div.B > a.B__b.B--kyo > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "23字/行 「「この予算では、理想の家は難しいかも…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "line-length",
           "severity": "WARN",
-          "detail": "14字/行 「長く住むための性能を備えた家…」 @ div.B > a.B__b.B--kaze > span.B__cp > p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+          "detail": "22字/行 「そう思っている方にこそ、知ってほしい…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "20字/行 「そして5年、10年と暮らしたその先に…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「「やまと不動産にお願いして、よかった…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "16字/行 「そう言ってもらえる家でありたい。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "18字/行 「それが、やまと不動産の家づくりです。…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__p.cr__p--m（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "10字/行 「株式会社やまと不動産…」 @ section#heart > div.cr__sheet > div.cr__in > p.cr__sign（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "19字/行 「ここまでにかける時間は、およそ3か月…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__p（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
+        },
+        {
+          "check": "line-length",
+          "severity": "WARN",
+          "detail": "17字/行 「やまと不動産の家づくりは、そこから…」 @ div.lu-cl__in > div.lu-freewrap > div.lu-free > p.lu-free__end（規格 30〜40字/行。左右の帯に何も無く版面が空いている。狭いなら狭いなりに何を置くか設計したか確認）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1356px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--hana > img（Retina 2x で甘くなる）"
+          "detail": "表示 1920px に対し実解像度 1920px @ article#s00 > div.cover__bg > picture > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
           "severity": "WARN",
-          "detail": "表示 1356px に対し実解像度 1800px @ div.mount__in > div.B > a.B__b.B--kyo > img（Retina 2x で甘くなる）"
+          "detail": "表示 430px に対し実解像度 614px @ section#auth > div.tr__top > figure.tr__ph > img（Retina 2x で甘くなる）"
         },
         {
           "check": "image-resolution",
-          "severity": "WARN",
-          "detail": "表示 1356px に対し実解像度 2200px @ div.mount__in > div.B > a.B__b.B--kaze > img（Retina 2x で甘くなる）"
+          "severity": "FAIL",
+          "detail": "表示 1920px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sA > img（1x でも引き伸ばしボケ）"
+        },
+        {
+          "check": "image-resolution",
+          "severity": "FAIL",
+          "detail": "表示 2227px に対し実解像度 1320px @ div#ijuStage > div.iju__scenes > figure.iju__scene.iju__sB > img（1x でも引き伸ばしボケ）"
         }
       ]
     }

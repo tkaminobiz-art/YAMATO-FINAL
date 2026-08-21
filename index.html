@@ -461,6 +461,29 @@
      明部(見出し+証拠写真) → 紅バンド(暗部支配・単色) → 明部(番号付き索引)。
      770は紅バンドの上端をまたぐ（同座標2枚・バンド側を overflow:hidden で切る）。
      ※mix-blend-mode:difference は紅#BD1B21 上で #42E4DE のシアンになるため使えない。 */
+
+  /* ── 受付の栞（機能ナビ4本・qn-名前空間） ── */
+  .qn{max-width:1180px;margin:0 auto clamp(40px,5vw,72px);
+    background:url("assets/std/page_kinari_letter_2400.webp") center/cover #F4EEE0;
+    box-shadow:0 0 0 1px rgba(201,162,75,.5), inset 0 1px 0 rgba(255,255,255,.65),
+      0 18px 40px -18px rgba(36,30,22,.30);
+    display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+  .qn__i{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+    padding:clamp(18px,2.4vw,30px) 10px;text-decoration:none;
+    border-right:1px solid rgba(36,30,22,.13);transition:background .3s}
+  .qn__i:last-child{border-right:0}
+  .qn__i:hover{background:rgba(201,162,75,.12)}
+  .qn__i svg{width:28px;height:28px;stroke:#BD1B21;stroke-width:1.1;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .qn__i b{font-family:var(--fs,"Shippori Mincho B1",serif);font-weight:500;
+    font-size:clamp(.88rem,.8rem + .28vw,1.0rem);letter-spacing:.06em;white-space:nowrap;color:#241E16}
+  .qn__i span{font-family:"Inter",sans-serif;font-weight:400;font-size:.64rem;
+    letter-spacing:.22em;color:#8A8070;text-transform:uppercase}
+  @media (max-width:720px){
+    .qn{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .qn__i:nth-child(2){border-right:0}
+    .qn__i:nth-child(-n+2){border-bottom:1px solid rgba(36,30,22,.13)}
+  }
+
   .tr{
     --paper:#F4F1EA; --sumi:#241E16; --sumi2:#5C5346; --sumi3:#8A8070; --sumi4:#6E655A;
     --shu:#BD1B21; --foil1:#F1D57D; --foil2:#B08A3C; --cream:#F3EEE3;
@@ -578,6 +601,12 @@
     margin:calc(var(--gap-out) * 1.15) auto}
 
   /* 差出人 */
+  /* 手紙の追伸=出口。紙の上の墨文字＋細い下線だけ（紅の頁にボタンは置かない） */
+  .cr__go{display:inline-flex;align-items:center;min-height:44px;margin-top:clamp(22px,2.6vw,34px);
+    font-family:var(--fm);font-weight:400;font-size:max(15px,calc(var(--fs) * .9));
+    letter-spacing:.08em;color:var(--sumi2);text-decoration:none;
+    box-shadow:inset 0 -1px 0 rgba(92,83,70,.45)}
+  .cr__go:hover{color:var(--sumi);box-shadow:inset 0 -1px 0 var(--sumi)}
   .cr__sign{margin-top:clamp(52px,6vw,88px);font-family:var(--fm);font-weight:400;
     font-size:max(15px, calc(var(--fs) * .94));letter-spacing:.16em;color:var(--sumi2);
     display:flex;align-items:center;gap:14px;white-space:nowrap}
@@ -699,90 +728,60 @@
   .lu-seal--hana{color:var(--lu-hana)} .lu-seal--kyo{color:var(--lu-kyo)} .lu-seal--kaze{color:var(--lu-kaze)}
   .lu-seals__note{margin-left:6px;font-size:.86rem;letter-spacing:.05em;color:var(--lu-sumi3)}
 
-  /* ───── 帯 ───── */
-  .lu-band{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-    align-items:stretch}
-  /* 帯の境界＝細い紅金の毛罫。三つの境界すべてに等しくかかるので序列を生まない。
-     両端をゼロへ落として断ち切らず、中央で金が最も強い（表紙の紅×金と同じ関係）。*/
-  .lu-band::before,.lu-band--kaze::after{content:"";position:absolute;
-    left:0;right:0;height:2px;z-index:4;pointer-events:none;
-    background:linear-gradient(90deg,
-      rgba(189,27,33,0) 0%, rgba(189,27,33,.92) 9%, rgba(189,27,33,.92) 38%,
-      rgba(201,162,75,1) 50%,
-      rgba(189,27,33,.92) 62%, rgba(189,27,33,.92) 91%, rgba(189,27,33,0) 100%)}
-  .lu-band::before{top:0}
-    /* :last-of-type は効かない（帯の後に .lu-cl の div が続くため）。最後の帯を明示する */
-  .lu-band--kaze::after{bottom:0}
-  /* 高さは行側で与える。media に aspect-ratio を置くと stretch で確定した高さから
-     幅を逆算して列を超え(実測1022px/列720px)、パネルの文字を覆う。 */
-  /* 密度設計（2026-08-21 八芳園・星のや実測より）: 器を内容準拠に詰める。
-     1節0.7〜0.8画面が上位の相場。帯1枚1画面は長すぎた */
-  .lu-band--hana,.lu-band--kaze{min-height:clamp(340px,36vw,520px)}
-  .lu-band--kyo{min-height:clamp(400px,46vw,680px)}
-  .lu-band__media{position:relative;overflow:hidden}
-  /* height:100% は不定高の親では自然高に解決し、縦位置写真（京）が行を895pxまで
-     押し広げていた。絶対配置で行の高さ＝パネル駆動にする */
-  .lu-band__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .lu-band--flip .lu-band__media{order:2}
-  /* 小図版 — 版面の縦の境界をまたぐ。大小の差が版に奥行きを作る */
-  .lu-band__detail{position:absolute;z-index:2;left:50%;transform:translateX(-84%);
-    bottom:clamp(44px,5vw,64px);width:clamp(120px,12.5vw,184px);aspect-ratio:3/4;overflow:hidden;
-    box-shadow:0 0 0 clamp(7px,.85vw,12px) var(--lu-paper),
-      0 0 0 calc(clamp(7px,.85vw,12px) + 1px) rgba(201,162,75,.55),
-      0 18px 40px rgba(36,30,22,.13)}
-  .lu-band--flip .lu-band__detail{transform:translateX(-16%)}
-  /* キャプションは必ず紙の側へ。写真に乗せると暗部で読めない */
-  .lu-cap{position:absolute;z-index:3;bottom:clamp(28px,3.2vw,46px);
-    left:calc(50% + clamp(10px,1.1vw,18px));white-space:nowrap;
-    font-family:var(--lu-fn);font-weight:400;font-size:.8rem;letter-spacing:.16em;color:var(--lu-sumi3)}
-  .lu-band--flip .lu-cap{left:auto;right:calc(50% + clamp(10px,1.1vw,18px))}
-
-  /* パネルの台紙: cover で拡大されると金箔が巨大化するので薄膜で半歩引かせ、
-     帯ごとに切り取る位置を変えて「同じ紙の繰り返し」に見せない */
-  .lu-band__panel{position:relative;display:flex;flex-direction:column;justify-content:center;
-    background:linear-gradient(rgba(244,241,234,.30),rgba(244,241,234,.30)),
-      var(--lu-mount) center/cover var(--lu-paper);
-    padding:clamp(26px,3.2vw,48px) clamp(20px,3vw,52px)}
-  .lu-band--hana .lu-band__panel{background-position:center, right top}
-  .lu-band--kyo  .lu-band__panel{background-position:center, left center}
-  .lu-band--kaze .lu-band__panel{background-position:center, right bottom}
-  .lu-band__in{max-width:34em;
+  /* ───── 三枚のカード（2026-08-21 タスク別監査で帯から組み替え） ─────
+     根拠: 26社実測でカードグリッドは全社が持つ唯一の普遍部品。
+     register の同じ三菱地所ホームが LINEUP を3列カードで組む（横に並べる≠安っぽい）。
+     帯3本=2.2画面 → カード3枚=0.65画面。価格3つが同時に見える。
+     カード自体を紙葉にする＝台紙と紙葉の文法は帯時代と同じ。 */
+  .lu-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,28px);
+    margin:clamp(30px,3.6vw,48px) auto 0;max-width:1180px}
+  .lu-card{position:relative;display:flex;flex-direction:column;text-decoration:none;
     background:var(--lu-sheet-bg) center/cover #F4EEE0;
     box-shadow:var(--lu-sheet-edge);
-    padding:clamp(22px,2.6vw,36px) clamp(20px,2.8vw,40px)}
-  .lu-mark{display:flex;align-items:baseline;gap:clamp(14px,1.6vw,22px);margin:0}
-  .lu-kanji{font-family:var(--lu-fm);font-weight:400;line-height:1;
-    text-shadow:0 -1px 0 rgba(36,30,22,.16), 0 1px 0 rgba(255,255,255,.7);
-    font-size:clamp(2.4rem,1.8rem + 2.6vw,3.6rem);letter-spacing:.02em}
-  .lu-romaji{font-family:var(--lu-fn);font-weight:400;font-size:.8rem;letter-spacing:.34em;
-    color:var(--lu-sumi3);text-transform:uppercase}
-  .lu-rule{width:clamp(40px,5vw,70px);height:2px;margin:clamp(16px,1.9vw,24px) 0 0}
-  .lu-label{margin:clamp(16px,1.9vw,24px) 0 0;text-wrap:balance;line-break:strict;word-break:auto-phrase;
-    font-family:var(--lu-fm);font-weight:400;font-size:clamp(1.12rem,.98rem + .58vw,1.46rem);
-    line-height:1.72;letter-spacing:.06em}
-  .lu-body{margin:clamp(18px,2.1vw,26px) 0 0;line-break:strict;word-break:auto-phrase;
-    font-size:clamp(.95rem,.92rem + .16vw,1.02rem);line-height:2.04;letter-spacing:.045em;color:var(--lu-sumi2)}
-  .lu-facts{display:flex;flex-wrap:wrap;gap:0 clamp(26px,3.2vw,46px);
-    margin:clamp(20px,2.4vw,30px) 0 0;padding:0;list-style:none}
-  .lu-facts li{display:flex;flex-direction:column;gap:7px}
-  .lu-facts .k{font-family:var(--lu-fn);font-weight:400;font-size:.8rem;letter-spacing:.2em;
-    color:var(--lu-sumi3);text-transform:uppercase}
-  .lu-facts .v{font-family:var(--lu-fm);font-weight:400;font-size:1.06rem;letter-spacing:.05em}
-  .lu-price{margin:clamp(18px,2.2vw,28px) 0 0;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
-  /* 320pxで「2,680万|円」と数字の途中で割れた。金額と注記は語として不可分 */
-  .lu-price b,.lu-price span{white-space:nowrap}
-  .lu-price b{font-family:var(--lu-fm);font-weight:400;
-    font-size:clamp(1.36rem,1.1rem + 1.05vw,1.92rem);letter-spacing:.03em}
-  .lu-price span{font-size:.8rem;letter-spacing:.06em;color:var(--lu-sumi3)}
-    /* 各帯の出口。読者が帯単位で離脱できる（密度設計②） */
-  .lu-band__go{display:inline-flex;align-items:center;min-height:44px;
-    margin-top:clamp(16px,2vw,24px);
-    font-family:var(--lu-fg);font-weight:400;font-size:.92rem;letter-spacing:.08em;
-    color:var(--lu-sumi);text-decoration:none;box-shadow:inset 0 -1px 0 var(--lu-sumi3)}
-  .lu-band__go:hover{box-shadow:inset 0 -1px 0 var(--lu-sumi)}
-  .lu-band--hana .lu-kanji{color:var(--lu-hana)} .lu-band--hana .lu-rule{background:var(--lu-hana)}
-  .lu-band--kyo  .lu-kanji{color:var(--lu-kyo)}  .lu-band--kyo  .lu-rule{background:var(--lu-kyo)}
-  .lu-band--kaze .lu-kanji{color:var(--lu-kaze)} .lu-band--kaze .lu-rule{background:var(--lu-kaze)}
+    transition:transform .45s cubic-bezier(.16,1,.3,1), box-shadow .45s}
+  .lu-card:hover{transform:translateY(-5px);
+    box-shadow:0 0 0 1px rgba(201,162,75,.8), 0 26px 48px -18px rgba(36,30,22,.36)}
+  .lu-card__f{position:relative;aspect-ratio:4/3;overflow:hidden;margin:0}
+  .lu-card__f img{width:100%;height:100%;object-fit:cover}
+  .lu-card__f::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(0,0,0,0) 46%,rgba(20,14,8,.55) 100%)}
+  .lu-card__k{position:absolute;left:16px;bottom:11px;z-index:2;display:flex;align-items:baseline;gap:11px;
+    color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+  .lu-card__k b{font-family:var(--lu-fm);font-weight:400;font-size:2.1rem;line-height:1;letter-spacing:.02em}
+  .lu-card__k i{font-style:normal;font-family:var(--lu-fn);font-weight:400;font-size:.68rem;
+    letter-spacing:.3em;opacity:.9;text-transform:uppercase}
+  .lu-card--hana .lu-card__k b{color:#FFE7D2}
+  .lu-card--kyo  .lu-card__k b{color:#FFDCDC}
+  .lu-card--kaze .lu-card__k b{color:#F2F0CE}
+  .lu-card__b{padding:clamp(18px,2vw,26px) clamp(16px,1.8vw,24px);display:flex;flex-direction:column;flex:1}
+  /* 一行ラベル: 帯の .lu-label をカード寸に。「…整えた|家」の1字残りは balance で潰す */
+  .lu-card .lu-label{margin:0;text-wrap:balance;line-break:strict;
+    font-size:clamp(1.0rem,.94rem + .3vw,1.14rem);line-height:1.66}
+  .lu-card .lu-rule{margin:13px 0 0;width:38px}
+  .lu-card__t{margin:14px 0 0;font-size:.95rem;line-height:1.94;letter-spacing:.04em;color:var(--lu-sumi2);
+    line-break:strict;word-break:auto-phrase}
+  /* facts の基底定義は帯CSSと共に消したので、カード用にここで完結させる */
+  .lu-card .lu-facts{display:flex;flex-wrap:wrap;gap:6px clamp(16px,1.6vw,24px);
+    margin:16px 0 0;padding:0;list-style:none}
+  .lu-card .lu-facts li{display:flex;flex-direction:column;gap:4px}
+  .lu-card .lu-facts .k{font-family:var(--lu-fn);font-weight:400;font-size:.64rem;
+    letter-spacing:.18em;color:var(--lu-sumi3);text-transform:uppercase}
+  .lu-card .lu-facts .v{font-family:var(--lu-fm);font-weight:400;font-size:.95rem;letter-spacing:.04em}
+  .lu-card__p{margin:auto 0 0;padding:15px 0 0;display:flex;align-items:baseline;justify-content:space-between;
+    flex-wrap:wrap;gap:4px 10px;border-top:1px solid rgba(36,30,22,.14)}
+  .lu-card__p b,.lu-card__p>span:not(.lu-card__go){white-space:nowrap}
+  .lu-card__p b{font-family:var(--lu-fm);font-weight:400;font-size:1.24rem;letter-spacing:.03em}
+  .lu-card__p>span{font-size:.68rem;letter-spacing:.05em;color:var(--lu-sumi3)}
+  .lu-card__go{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;
+    border:1px solid rgba(36,30,22,.34);font-family:var(--lu-fn);font-size:.8rem;flex:none;color:var(--lu-sumi)}
+  .lu-card:hover .lu-card__go{background:var(--lu-sumi);color:#F4F1EA;border-color:var(--lu-sumi)}
+  .lu-card--hana .lu-rule{background:var(--lu-hana)}
+  .lu-card--kyo  .lu-rule{background:var(--lu-kyo)}
+  .lu-card--kaze .lu-rule{background:var(--lu-kaze)}
+  @media (max-width:820px){
+    .lu-cards{grid-template-columns:minmax(0,1fr)}
+    .lu-card__f{aspect-ratio:16/9}
+  }
 
   /* ───── 章の出口 ───── */
   .lu-cl{position:relative;overflow:hidden;padding:clamp(52px,6.4vw,96px) var(--lu-gx);
@@ -1041,16 +1040,7 @@
   .lineup.is-in [data-rise]{opacity:1;transform:none}
 
   @media (max-width:860px){
-    .lu-band{grid-template-columns:minmax(0,1fr)}
-    .lu-band--flip .lu-band__media{order:0}
-    .lu-band--hana,.lu-band--kaze,.lu-band--kyo{min-height:0}
-    .lu-band--hana .lu-band__media,.lu-band--kaze .lu-band__media{height:clamp(240px,60vw,400px)}
-    .lu-band--kyo .lu-band__media{height:clamp(340px,86vw,560px)}
-    .lu-band__panel{padding:clamp(44px,9vw,64px) var(--lu-gx) clamp(56px,10vw,72px)}
-    .lu-lead{max-width:none}
-    /* SP: 図版は写真の右下へ。中央だと本文の頭に被る */
-    .lu-band__detail,.lu-band--flip .lu-band__detail{left:auto;right:var(--lu-gx);transform:none;
-      width:clamp(96px,26vw,140px);bottom:auto;top:clamp(180px,46vw,300px)}
+
     .lu-cap{display:none}
   }
   @media (prefers-reduced-motion:reduce){
@@ -1448,7 +1438,8 @@
         <source media="(orientation:portrait)" type="image/webp" srcset="assets/std/cover_sp_1080.webp 1080w, assets/std/cover_sp_1440.webp 1440w" sizes="100vw">
         <img src="assets/std/cover_pc_1920.webp" srcset="assets/std/cover_pc_1920.webp 1920w, assets/std/cover_pc_2560.webp 2560w" sizes="100vw" alt="紅の地に箔押しの牡丹と燕の表紙" decoding="async">
       </picture>
-    </div>
+    
+  </div>
     <div class="cover__t" data-l>
       <p class="cover__yamato">やまとの家</p>
       <p class="cover__fude">花鳥風月</p>
@@ -1658,6 +1649,22 @@
 
 <!-- ============ 実績（生きた図面・動画背景＋製図インデックスバナー） ============ -->
 <section class="tr" id="auth" aria-labelledby="trH">
+  <!-- 受付の栞（2026-08-21 タスク別監査より）: 最初の出口が5.5画面目だったのを1画面目へ。
+       SP(≤1180px)はヘッダーナビが無いので、面内の近道はここだけになる。 -->
+  <nav class="qn" aria-label="よく見られるページ">
+    <a class="qn__i" href="#lineup">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><path d="M3 10h18M13 10v11"/></svg>
+      <b>商品ラインナップ</b><span>Lineup</span></a>
+    <a class="qn__i" href="works.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="M3 15l5-5 4 4 3-3 6 6"/><circle cx="9" cy="9" r="1.4"/></svg>
+      <b>施工事例</b><span>Works</span></a>
+    <a class="qn__i" href="model.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg>
+      <b>モデルハウス</b><span>Model House</span></a>
+    <a class="qn__i" href="lots.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+      <b>分譲地・物件</b><span>Lots</span></a>
+  </nav>
   <div class="tr__top">
     <div>
       <p class="tr__eye">Track Record</p>
@@ -1737,6 +1744,8 @@
       <p class="cr__p cr__p--m">それが、やまと不動産の家づくりです。</p>
 
       <p class="cr__sign">株式会社やまと不動産</p>
+        <!-- 出口（2026-08-21 監査: 2.42画面のリンク0節だった）。手紙の追伸の位置 -->
+        <a class="cr__go" href="company.html">私たちのことは、会社案内でもご覧いただけます　→</a>
 
     </div>
   </div>
@@ -1760,62 +1769,55 @@
         <p class="lu-lead lu-lead--end">暮らし方や予算に合わせて選べる、やまと不動産の三つの住まいです。</p>
       </div>
       </div>
+  <div class="lu-cards">
+    <a class="lu-card lu-card--hana" href="madori.html#plans">
+      <figure class="lu-card__f"><img src="assets/lineup/hero/hana_ext.webp" alt="花のモデルハウス外観" loading="lazy" decoding="async">
+        <span class="lu-card__k"><b>花</b><i>Hana</i></span></figure>
+      <div class="lu-card__b">
+        <p class="lu-label">天井を高くとり、設備を整えた家</p>
+        <div class="lu-rule"></div>
+        <p class="lu-card__t">玄関ドアは顔認証で開きます。軒天にはニチハの木目12mmを使い、窓はワイドサッシです。</p>
+        <ul class="lu-facts">
+          <li><span class="k">延床</span><span class="v">31坪</span></li>
+          <li><span class="k">1階天井高</span><span class="v">2,500mm</span></li>
+          <li><span class="k">玄関</span><span class="v">親子ドア</span></li>
+        </ul>
+        <p class="lu-card__p"><b>2,680万円</b><span>コミコミ価格・税込</span><span class="lu-card__go" aria-hidden="true">→</span></p>
+      </div></a>
+    <a class="lu-card lu-card--kyo" href="madori.html#plans">
+      <figure class="lu-card__f"><img src="assets/lineup/hero/kyo_ext.webp" alt="京のモデルハウス外観" loading="lazy" decoding="async">
+        <span class="lu-card__k"><b>京</b><i>Miyako</i></span></figure>
+      <div class="lu-card__b">
+        <p class="lu-label">限られた敷地のために設計した家</p>
+        <div class="lu-rule"></div>
+        <p class="lu-card__t">奈良のように広く土地を使えない場所でも建てられるよう、28坪3LDKにまとめています。</p>
+        <ul class="lu-facts">
+          <li><span class="k">延床</span><span class="v">28坪</span></li>
+          <li><span class="k">間取り</span><span class="v">3LDK</span></li>
+          <li><span class="k">玄関</span><span class="v">FamiLock</span></li>
+        </ul>
+        <p class="lu-card__p"><b>2,480万円</b><span>コミコミ価格・税込</span><span class="lu-card__go" aria-hidden="true">→</span></p>
+      </div></a>
+    <a class="lu-card lu-card--kaze" href="madori.html#plans">
+      <figure class="lu-card__f"><img src="assets/lineup/hero/kaze_ext.webp" alt="風のモデルハウス外観" loading="lazy" decoding="async">
+        <span class="lu-card__k"><b>風</b><i>Kaze</i></span></figure>
+      <div class="lu-card__b">
+        <p class="lu-label">長く住むための性能を備えた家</p>
+        <div class="lu-rule"></div>
+        <p class="lu-card__t">3帖のベランダと電動シャッターが標準です。防犯ガラスは掃き出し窓2か所と腰窓2か所に入ります。</p>
+        <ul class="lu-facts">
+          <li><span class="k">延床</span><span class="v">30坪</span></li>
+          <li><span class="k">長期優良</span><span class="v">対応</span></li>
+          <li><span class="k">玄関</span><span class="v">FamiLock</span></li>
+        </ul>
+        <p class="lu-card__p"><b>2,680万円</b><span>コミコミ価格・税込</span><span class="lu-card__go" aria-hidden="true">→</span></p>
+      </div></a>
+  </div>
+  
     </div>
   </div>
 
-  <div class="lu-band lu-band--hana">
-    <div class="lu-band__detail"><img src="assets/lineup/hero/hana_det.webp" alt="花の玄関ポーチと木目の軒天" loading="lazy" decoding="async"></div>
-    <div class="lu-band__media"><img src="assets/lineup/hero/hana_ext.webp" alt="花のモデルハウス外観" loading="lazy" decoding="async"></div>
-    <div class="lu-band__panel"><div class="lu-band__in">
-      <p class="lu-mark"><span class="lu-kanji">花</span><span class="lu-romaji">Hana</span></p>
-      <div class="lu-rule"></div>
-      <p class="lu-label">天井を高くとり、設備を整えた家</p>
-      <p class="lu-body">玄関ドアは顔認証で開きます。軒天にはニチハの木目12mmを使い、窓はワイドサッシです。もう少し広くしたいときは、1坪あたり64万円で増やせます。</p>
-      <ul class="lu-facts">
-        <li><span class="k">延床</span><span class="v">31坪</span></li>
-        <li><span class="k">1階天井高</span><span class="v">2,500mm</span></li>
-        <li><span class="k">玄関</span><span class="v">親子ドア</span></li>
-      </ul>
-      <p class="lu-price"><b>2,680万円</b><span>コミコミ価格・税込</span></p>
-      <a class="lu-band__go" href="madori.html#plans">花の仕様・間取り　→</a>
-    </div></div>
-  </div>
-
-  <div class="lu-band lu-band--kyo lu-band--flip">
-    <div class="lu-band__detail"><img src="assets/lineup/hero/kyo_det.webp" alt="京の玄関ドア" loading="lazy" decoding="async"></div>
-    <div class="lu-band__media"><img src="assets/lineup/hero/kyo_ext.webp" alt="京のモデルハウス外観" loading="lazy" decoding="async"></div>
-    <div class="lu-band__panel"><div class="lu-band__in">
-      <p class="lu-mark"><span class="lu-kanji">京</span><span class="lu-romaji">Miyako</span></p>
-      <div class="lu-rule"></div>
-      <p class="lu-label">限られた敷地のために設計した家</p>
-      <p class="lu-body">奈良のように広く土地を使えない場所でも建てられるよう、28坪3LDKにまとめています。もう少し広くしたいときは、1坪あたり68万円で増やせます。</p>
-      <ul class="lu-facts">
-        <li><span class="k">延床</span><span class="v">28坪</span></li>
-        <li><span class="k">間取り</span><span class="v">3LDK</span></li>
-        <li><span class="k">玄関</span><span class="v">FamiLock</span></li>
-      </ul>
-      <p class="lu-price"><b>2,480万円</b><span>コミコミ価格・税込</span></p>
-      <a class="lu-band__go" href="madori.html#plans">京の仕様・間取り　→</a>
-    </div></div>
-  </div>
-
-  <div class="lu-band lu-band--kaze">
-    <div class="lu-band__detail"><img src="assets/lineup/hero/kaze_det.webp" alt="風の玄関土間とホール" loading="lazy" decoding="async"></div>
-    <div class="lu-band__media"><img src="assets/lineup/hero/kaze_ext.webp" alt="風のモデルハウス外観" loading="lazy" decoding="async"></div>
-    <div class="lu-band__panel"><div class="lu-band__in">
-      <p class="lu-mark"><span class="lu-kanji">風</span><span class="lu-romaji">Kaze</span></p>
-      <div class="lu-rule"></div>
-      <p class="lu-label">長く住むための性能を備えた家</p>
-      <p class="lu-body">3帖のベランダと電動シャッターが標準です。防犯ガラスは掃き出し窓2か所と腰窓2か所に入ります。もう少し広くしたいときは、1坪あたり68万円で増やせます。</p>
-      <ul class="lu-facts">
-        <li><span class="k">延床</span><span class="v">30坪</span></li>
-        <li><span class="k">面積基準</span><span class="v">長期優良住宅</span></li>
-        <li><span class="k">玄関</span><span class="v">FamiLock</span></li>
-      </ul>
-      <p class="lu-price"><b>2,680万円</b><span>コミコミ価格・税込</span></p>
-      <a class="lu-band__go" href="madori.html#plans">風の仕様・間取り　→</a>
-    </div></div>
-  </div>
+  
 
   <div class="lu-cl">
     <div class="lu-cl__in">
@@ -3762,11 +3764,7 @@
 
   /* ---------- 7) 花京風：帯の写真がゆっくり流れる（帯毎スクラブ） ----------
      写真は object-fit:cover。scale で余白を作ってから動かさないと端が抜ける。 */
-  [].slice.call(d.querySelectorAll('.lu-band')).forEach(function(band){
-    var im=band.querySelector('.lu-band__media img'); if(!im) return;
-    gsap.fromTo(im,{scale:1.09,yPercent:-3.4},{scale:1.09,yPercent:3.4,ease:'none',
-      scrollTrigger:{trigger:band,start:'top bottom',end:'bottom top',scrub:SCRUB}});
-  });
+  /* 帯→カード化(2026-08-21)でパララックス対象消滅。ブロックごと撤去 */
 
   /* ---------- 8) なぜ：鍵括弧のポップ（back.out＝現場の一声が弾む） ---------- */
   var qms=d.querySelectorAll('.naze__quote .qm');
