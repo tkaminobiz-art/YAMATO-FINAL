@@ -484,6 +484,57 @@
     .qn__i:nth-child(-n+2){border-bottom:1px solid rgba(36,30,22,.13)}
   }
 
+  /* ═══ 二枚の扉（dg-）2026-08-21 ═══
+     参照デザインの文法: フルブリード写真＋中央スクリム＋英字eyebrow＋明朝＋丸い矢印。
+     画像は実写ベースのリライト（実邸リビング→日没直後 / 奈良の実空撮→ブルーアワー）。
+     左=暖色・右=寒色で対を作る。明度はほぼ同値（44.5 / 45.0 実測）。 */
+  /* 生成りを広く取る。参照デザインも余白が広く、かつ明度リズム上
+     ここが暗いと FV(27.5)→auth→信条(13.0) で暗が3連続になる（同極3連続はゼロが規範） */
+  .dg{padding:clamp(90px,11.5vw,200px) clamp(32px,8.4vw,168px) clamp(104px,13vw,228px)}
+  .dg__grid{max-width:1420px;margin:0 auto;display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,34px)}
+  .dg__c{position:relative;display:block;overflow:hidden;text-decoration:none;
+    aspect-ratio:16/9;isolation:isolate;
+    transition:transform .5s var(--ease,cubic-bezier(.22,1,.36,1))}
+  .dg__c:active{transform:scale(.994)}
+  /* 動くのは写真だけ。器は動かさない */
+  .dg__c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    transform:scale(1.005);
+    transition:transform 1.05s cubic-bezier(.22,1,.36,1)}
+  .dg__c:hover img{transform:scale(1.045)}
+  .dg__c::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:
+      radial-gradient(72% 58% at 50% 50%, rgba(18,14,10,.52), rgba(18,14,10,.14) 74%),
+      linear-gradient(180deg, rgba(18,14,10,.28), rgba(18,14,10,.10) 34%, rgba(18,14,10,.34));
+    transition:opacity .6s cubic-bezier(.22,1,.36,1)}
+  .dg__c:hover::after{opacity:.86}
+  .dg__in{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:clamp(14px,1.8vw,26px);
+    padding:clamp(20px,3vw,48px);text-align:center}
+  .dg__eye{display:block;font-family:var(--fh);font-weight:400;
+    font-size:max(12px,.78rem);letter-spacing:.24em;color:rgba(255,250,242,.86);
+    text-shadow:0 1px 14px rgba(0,0,0,.5)}
+  .dg__h{display:block;font-family:var(--fm);font-weight:400;color:#FFFAF2;
+    font-size:clamp(1.5rem,1.02rem + 2.1vw,2.86rem);line-height:1.4;letter-spacing:.12em;
+    white-space:nowrap;text-shadow:0 2px 26px rgba(0,0,0,.44)}
+  .dg__go{display:grid;place-items:center;width:clamp(46px,4.4vw,62px);aspect-ratio:1;
+    border-radius:50%;border:1px solid rgba(255,250,242,.72);color:#FFFAF2;
+    font-family:var(--fh);font-size:1rem;
+    transition:background .42s cubic-bezier(.22,1,.36,1), color .42s cubic-bezier(.22,1,.36,1),
+      border-color .42s cubic-bezier(.22,1,.36,1)}
+  .dg__go span{display:block;transition:transform .42s cubic-bezier(.22,1,.36,1)}
+  .dg__c:hover .dg__go{background:#FFFAF2;color:#241E16;border-color:#FFFAF2}
+  .dg__c:hover .dg__go span{transform:translateX(3px)}
+  @media (max-width:760px){
+    .dg__grid{grid-template-columns:minmax(0,1fr);gap:14px}
+    .dg__c{aspect-ratio:4/3}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .dg__c,.dg__c img,.dg__c::after,.dg__go,.dg__go span{transition:none}
+    .dg__c:hover img{transform:scale(1.005)}
+  }
+
+
   .tr{
     --paper:#F4F1EA; --sumi:#241E16; --sumi2:#5C5346; --sumi3:#8A8070; --sumi4:#6E655A;
     --shu:#BD1B21; --foil1:#F1D57D; --foil2:#B08A3C; --cream:#F3EEE3;
@@ -494,60 +545,43 @@
     position:relative;background:url("assets/std/page_kinari.webp") center/cover var(--paper);color:var(--sumi);
     font-family:"Zen Kaku Gothic New",sans-serif;line-height:1.9;isolation:isolate}
 
-  .tr__top{display:grid;grid-template-columns:minmax(0,1fr) clamp(240px,29.9vw,430px);
-    gap:clamp(24px,4vw,60px);align-items:start;
-    padding:clamp(56px,6.4vw,92px) var(--gx) 0}
-  .tr__eye{font-size:var(--sub);letter-spacing:.3em;color:var(--foil2);margin-bottom:24px}
-  .tr__h{font-family:"YakuHanMP","Shippori Mincho B1",serif;font-weight:500;
-    font-size:var(--mid);letter-spacing:.06em;line-height:1.8;color:var(--sumi)}
-  .tr__rule{width:62px;height:1px;border:0;margin:30px 0;
-    background:linear-gradient(90deg,var(--foil1),var(--foil2))}
-  .tr__lead{font-family:"YakuHanMP","Shippori Mincho B1",serif;font-weight:400;
-    font-size:var(--sub);letter-spacing:.06em;line-height:1.9;color:var(--sumi2)}
-  .tr__ph{margin:0}
-  .tr__ph img{width:100%;aspect-ratio:430/336;object-fit:cover;object-position:50% 56%;
-    box-shadow:0 40px 80px -30px rgba(30,14,6,.6)}
-  .tr__cap{margin-top:14px;font-size:var(--sub);letter-spacing:.06em;color:var(--sumi3)}
+
+
+
+
+
+
+
+
 
   /* またぎの数字（同座標2枚。バンド側は overflow で切る） */
-  .tr__num{display:flex;align-items:baseline;gap:clamp(8px,1.25vw,18px);white-space:nowrap;
-    font-size:var(--num);line-height:.86}   /* ← em の基準をここに置く（またぎの要） */
-  .tr__num b{font-family:"Inter",sans-serif;font-weight:200;font-size:1em;
-    line-height:.86;letter-spacing:-.03em;font-variant-numeric:tabular-nums;
-    display:inline-block}  /* 幅の予約は script 側で実測して行う（ch は letter-spacing を含まないため） */
-  .tr__num i{font-family:"YakuHanMP","Shippori Mincho B1",serif;font-style:normal;font-weight:500;
-    font-size:var(--mid);line-height:.86;letter-spacing:.06em}
-  .tr__num--sumi{margin:clamp(40px,5vw,72px) 0 -.503em var(--gx);color:var(--sumi)}
-  .tr__num--sumi i{color:var(--sumi)}
-  .tr__num--foil{position:absolute;left:var(--gx);top:-.357em;color:var(--foil1)}
-  .tr__num--foil i{color:var(--cream)}
+   /* ← em の基準をここに置く（またぎの要） */
+  /* 幅の予約は script 側で実測して行う（ch は letter-spacing を含まないため） */
+
+
+
+
+
 
   /* 紅バンド（暗部支配・単色。写真は入れない） */
-  .tr__band{position:relative;overflow:hidden;
-    background:url("assets/std/page_beni.webp") center/cover var(--shu);
-    padding:clamp(150px,17vw,240px) var(--gx) clamp(40px,5vw,72px)}
-  .tr__sw{position:absolute;right:clamp(16px,7vw,150px);top:clamp(60px,8vw,96px);
-    width:clamp(96px,14.6vw,210px);opacity:.95;pointer-events:none}
-  .tr__note{display:inline-block;font-size:var(--sub);letter-spacing:.04em;
-    color:rgba(243,238,227,.72);border:1px solid rgba(241,213,125,.5);
-    border-radius:2px;padding:5px 11px}
-  .tr__stats{display:flex;flex-wrap:wrap;margin-top:clamp(38px,5.4vw,78px)}
-  .tr__stat{display:flex;flex-direction:column;gap:8px;padding:0 clamp(18px,2.8vw,40px)}
-  .tr__stat:first-child{padding-left:0}
-  .tr__stat + .tr__stat{border-left:1px solid rgba(241,213,125,.42)}
-  .tr__sv{display:flex;align-items:baseline;gap:8px}
-  .tr__sv b{font-family:"Inter",sans-serif;font-weight:300;font-size:var(--mid);
-    line-height:.86;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--cream)}
-  .tr__sv i{font-family:"YakuHanMP","Shippori Mincho B1",serif;font-style:normal;
-    font-weight:500;font-size:var(--sub);letter-spacing:.08em;color:var(--cream)}
-  .tr__sl{font-size:var(--sub);color:rgba(243,238,227,.66)}
+
+
+
+
+
+
+
+
+
+
+
 
   @media (max-width:760px){
-    .tr__top{grid-template-columns:1fr}
-    .tr__ph{order:-1}
-    .tr__stats{gap:22px 0}
-    .tr__stat{flex-basis:100%;padding:0}
-    .tr__stat + .tr__stat{border-left:0;border-top:1px solid rgba(241,213,125,.28);padding-top:22px}
+
+
+
+
+
   }
 /* ===================== 信条「粒子が言葉になる」（図面 02_tabuchi_shogo / 2026-08-21 採用）
    前身は「紅の台紙に貼られた、生成りの手紙」（519字・2.29画面）。
@@ -1625,47 +1659,33 @@
     <a class="qn__i" href="model.html">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg>
       <b>モデルハウス</b><span>Model House</span></a>
-    <a class="qn__i" href="lots.html">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
-      <b>分譲地・物件</b><span>Lots</span></a>
+    <a class="qn__i" href="kodawari.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6L12 16.8 6.6 19.6l1.2-6L3.3 9.4l6.1-.8z"/></svg>
+      <b>家づくりのこだわり</b><span>Our Work</span></a>
   </nav>
-  <div class="tr__top">
-    <div>
-      <p class="tr__eye">Track Record</p>
-      <h2 class="tr__h" id="trH">選ばれる理由は、<br>価格だけではありません。</h2>
-      <hr class="tr__rule">
-      <p class="tr__lead">創業から、奈良でこれだけの家をつくってきました。<br>設計も施工も、外注せず自社で手がけています。</p>
-    </div>
-    <figure class="tr__ph">
-      <img src="assets/std/auth_ext_1920.webp"
-           srcset="assets/std/auth_ext_1100.webp 1100w, assets/std/auth_ext_1920.webp 1920w, assets/std/auth_ext_2560.webp 2560w"
-           sizes="(max-width:760px) 100vw, 32vw" alt="奈良市の実邸 外観" decoding="async">
-      <figcaption class="tr__cap">奈良市・実邸　外観</figcaption>
-    </figure>
-  </div>
 
-  <p class="tr__num tr__num--sumi" aria-hidden="true"><b data-count="770">770</b><i>棟超</i></p>
-
-  <div class="tr__band">
-    <p class="tr__num tr__num--foil"><b data-count="770">770</b><i>棟超</i></p>
-    <img class="tr__sw" src="assets/std/auth_swallow_foil.png" alt="" aria-hidden="true">
-    <p><span class="tr__note">※2026年7月10日現在</span></p>
-    <div class="tr__stats">
-      <div class="tr__stat">
-        <span class="tr__sv"><b>150</b><i>区画以上</i></span>
-        <span class="tr__sl">自社分譲（保有）</span>
-      </div>
-      <div class="tr__stat">
-        <span class="tr__sv"><b>50</b><i>組</i></span>
-        <span class="tr__sl">お客様の声</span>
-      </div>
-      <div class="tr__stat">
-        <span class="tr__sv"><b id="trY">15</b><i>年目</i></span>
-        <span class="tr__sl">創業</span>
-      </div>
+  <!-- 二枚の扉（2026-08-21 差し替え）: 実績帯は保留。参照デザインの文法で
+       お客様の声／分譲地・物件 への大きな入口を2枚。画像は実写ベースのリライト。 -->
+  <div class="dg">
+    <div class="dg__grid">
+      <a class="dg__c" href="voice.html">
+        <img src="assets/doors/voices.webp" alt="夕方の光が差し込む、やまとの家のリビング" loading="lazy" decoding="async">
+        <span class="dg__in">
+          <span class="dg__eye">Voices</span>
+          <span class="dg__h">お客様の声</span>
+          <span class="dg__go"><span>→</span></span>
+        </span>
+      </a>
+      <a class="dg__c" href="lots.html">
+        <img src="assets/doors/lots.webp" alt="ブルーアワーの奈良市街を見下ろす空撮" loading="lazy" decoding="async">
+        <span class="dg__in">
+          <span class="dg__eye">Lots</span>
+          <span class="dg__h">分譲地・物件</span>
+          <span class="dg__go"><span>→</span></span>
+        </span>
+      </a>
     </div>
   </div>
-
 </section>
 <section class="heart tb" id="heart" aria-labelledby="tbH">
   <canvas class="tb__cv" id="tbCanvas" aria-hidden="true"></canvas>
@@ -3386,41 +3406,7 @@
      墨と箔の2枚は同じ数字なので1本のrAFで同期させる。到達時1回のみ。
      3指標(150/50/15)には付けない＝4つ動かすと「実績カウンター」の記号に寄るため。
      ================================================================================== */
-  /* 770のカウントアップ。墨と箔の2枚は同じ数字なので1本のrAFで同期させる。
-     到達時に1回だけ。reduced-motion では即座に確定値を出す。 */
-  (function(){
-    var els=[].slice.call(document.querySelectorAll('[data-count]'));
-    if(!els.length) return;
-    /* Webフォント読込前に測るとフォールバック書体の幅（実測+9.4px）を予約してしまい、
-       着地時に縮んで跳ねる。fonts.ready を待ってから初期化する */
-    if(document.fonts && document.fonts.ready){ document.fonts.ready.then(init); } else { init(); }
-    function init(){
-    var target=parseInt(els[0].getAttribute('data-count'),10)||0;
-    var done=false;
-    function paint(v){ var t=String(v); for(var i=0;i<els.length;i++) els[i].textContent=t; }
-    if(matchMedia('(prefers-reduced-motion: reduce)').matches){ paint(target); return; }
-    /* 確定値を出したままの実幅を予約してから0に戻す。
-       ch は letter-spacing を含まず実測で 3ch < 実幅 だったため、着地時に跳ねる */
-    for(var k=0;k<els.length;k++) els[k].style.minWidth=els[k].getBoundingClientRect().width+'px';
-    paint(0);
-    function run(){
-      if(done) return; done=true;
-      var dur=1600, t0=performance.now();
-      (function step(now){
-        var p=Math.min(1,(now-t0)/dur);
-        var e=1-Math.pow(1-p,4);            /* power4.out ＝ 終盤で静かに着地 */
-        paint(Math.round(target*e));
-        if(p<1) requestAnimationFrame(step);
-        else { paint(target); for(var k=0;k<els.length;k++) els[k].style.minWidth=''; }  /* 予約を解除＝以後のリサイズに追従 */
-      })(t0);
-    }
-    if(!('IntersectionObserver' in window)){ run(); return; }
-    var io=new IntersectionObserver(function(en){
-      en.forEach(function(x){ if(x.isIntersecting){ run(); io.disconnect(); } });
-    },{threshold:.35});
-    io.observe(document.querySelector('.tr__num--sumi')||els[0]);
-    }
-  })();
+  /* 770カウントアップは実績帯の差し替え(2026-08-21)で対象消滅。撤去 */
   /* --- 商品ライン 花・京・風: 入場リビール（.is-in で data-rise を出す） --- */
   (function(){
     var sec=document.getElementById('lineup'); if(!sec) return;
