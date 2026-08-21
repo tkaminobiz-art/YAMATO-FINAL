@@ -1,6 +1,6 @@
 {
   "target": "file:///Users/takahirokamino/Downloads/%E6%9C%80%E7%B5%82%E3%82%84%E3%81%BE%E3%81%A8%E4%B8%8D%E5%8B%95%E7%94%A3%E7%94%BB%E5%83%8F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%9B%B3%E9%9D%A2_20260703/index.html",
-  "ranAt": "2026-08-21T05:01:10.003Z",
+  "ranAt": "2026-08-21T05:20:24.915Z",
   "widths": [
     320,
     360,
@@ -483,7 +483,7 @@
         {
           "check": "tap-target",
           "severity": "WARN",
-          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head.is-sbin > a.sb-morelink"
+          "detail": "164×25px 「家づくりの強みを見る」 @ div.sb-inner > div.sb-grid > div.sb-head > a.sb-morelink"
         },
         {
           "check": "tap-target",

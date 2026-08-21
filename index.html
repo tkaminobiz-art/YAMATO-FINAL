@@ -561,9 +561,9 @@
        ハウスイズム35.1 / 安成35.0 / 福光屋31.3 / 根津30.9 / 星のや24.0 / 中川政七20.4 …中央値31字 */
     --col:43.40em;
     --fm:"YakuHanMP","Shippori Mincho B1",serif;
-    --gap-in:1.3em; --gap-out:2.9em;
-    --band-top:clamp(72px,8vw,124px);   /* 額装なので上にも紅の余白を取る */
-    --band-bot:clamp(96px,11vw,168px);  /* 下の紅の帯＝次の生成りへの落差を作る */
+    --gap-in:1.2em; --gap-out:2.35em;
+    --band-top:clamp(64px,7vw,100px);   /* 額装なので上にも紅の余白を取る */
+    --band-bot:clamp(84px,9.5vw,136px);  /* 下の紅の帯＝次の生成りへの落差を作る */
     position:relative;overflow:hidden;isolation:isolate;
     background:url("assets/std/page_beni.webp") center/cover var(--shu);
     color:var(--sumi);
@@ -585,7 +585,7 @@
   .cr__in{position:relative;width:min(var(--col),100%);margin:0 auto}
 
   .cr__p{font-family:var(--fm);font-weight:400;font-size:var(--fs);
-    line-height:2.05;letter-spacing:.085em;color:var(--sumi);
+    line-height:1.95;letter-spacing:.085em;color:var(--sumi);
     margin-top:var(--gap-in);word-break:auto-phrase;line-break:strict}
   .cr__p:first-child{margin-top:0}
   .cr__p--m{margin-top:var(--gap-out)}
@@ -607,7 +607,7 @@
     letter-spacing:.08em;color:var(--sumi2);text-decoration:none;
     box-shadow:inset 0 -1px 0 rgba(92,83,70,.45)}
   .cr__go:hover{color:var(--sumi);box-shadow:inset 0 -1px 0 var(--sumi)}
-  .cr__sign{margin-top:clamp(52px,6vw,88px);font-family:var(--fm);font-weight:400;
+  .cr__sign{margin-top:clamp(40px,4.6vw,64px);font-family:var(--fm);font-weight:400;
     font-size:max(15px, calc(var(--fs) * .94));letter-spacing:.16em;color:var(--sumi2);
     display:flex;align-items:center;gap:14px;white-space:nowrap}
   /* 罫を縮ませる。320pxで「株式会社やまと不動|産」と割れたため */
