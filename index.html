@@ -666,10 +666,20 @@
     font-size:clamp(1.5rem,1.02rem + 2.05vw,2.72rem);line-height:1.62;letter-spacing:.055em}
   /* 句ごとに inline-block。句の途中で折れて1〜2字が孤立するのを防ぐ */
   .lu-h span{display:inline-block}
-  @media (min-width:861px){ .lu-h span:nth-child(2){display:inline} }
+  /* 旧3分割見出し用の指定。いまの構成では句の途中で折れる原因になるため撤去 */
   .lu-lead{margin:clamp(30px,3.6vw,48px) 0 0;max-width:44em;line-break:strict;word-break:auto-phrase;
     font-size:clamp(.94rem,.88rem + .22vw,1.03rem);line-height:2.06;letter-spacing:.045em;color:var(--lu-sumi2)}
   /* 角印 — ブランド自身の三シリーズの呼び方（パンフ p2） */
+  /* ユーザー指定コピー（2026-08-21 章の入り口）。一字一句そのまま。
+     「花・京・風」の一行は角印そのものが担うので、注記は置かない。 */
+  .lu-oplead{margin:clamp(30px,3.6vw,46px) 0 0;max-width:calc(40 * 1.045em)}
+  .lu-oplead .lu-lead{margin:0 0 clamp(16px,1.9vw,24px)}
+  .lu-oplead .lu-lead:last-child{margin-bottom:0}
+  .lu-lead--end{font-family:var(--lu-fm);font-weight:400;color:var(--lu-sumi);
+    font-size:clamp(1.02rem,.96rem + .3vw,1.2rem);line-height:1.96;letter-spacing:.055em;
+    margin-top:clamp(24px,2.8vw,34px)}
+  .lu-seals{margin-bottom:0}
+
   .lu-seals{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:clamp(34px,4.2vw,52px) 0 0}
   .lu-seal{display:grid;place-items:center;width:44px;height:44px;font-family:var(--lu-fm);
     font-weight:400;font-size:1.28rem;line-height:1;padding-top:.06em;letter-spacing:0;
@@ -815,7 +825,6 @@
      ② 1〜2行ごとの <p> をやめ、意味の単位で段落にまとめる
      ③ <br class="pcbr"> を外し、段幅で自然に折る（1行33字）
      ④ ラベル 12.8px グレー → 明朝 1.14rem。本文より大きくして見出しにする */
-  .lu-more__in{padding:0 4px clamp(28px,3.4vw,40px)}
   .lu-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
     column-gap:clamp(40px,4.6vw,64px);row-gap:clamp(30px,3.4vw,44px);
     margin:clamp(26px,3vw,38px) 0 0;padding:clamp(24px,2.8vw,34px) 0 0;
@@ -848,6 +857,28 @@
      この節の主張は「この家は自分のものになる」。図面は証明にはなるが感情は運ばない。
      書斎＝標準仕様に無い、頼んだから存在する部屋。帯の小図版と同じ額装（生成りの縁＋金の毛罫）で、
      商品の4本目に見えないようにしている。 */
+  /* ── 開いたら紙が変わる ──
+     いままで折りたたみの中も外と同じ平らな生成りで、開いても面が変わらなかった。
+     中だけ紙を一段深くし、上端に内影を入れて「引き出しを開けた別の面」にする。 */
+  .lu-more__in{position:relative;
+    margin:0 calc(-1 * clamp(18px,2.4vw,40px));
+    padding:0 clamp(18px,2.4vw,40px) clamp(28px,3.4vw,40px);
+    background:linear-gradient(rgba(238,232,219,.55),rgba(238,232,219,.55)),
+      url("assets/std/page_kinari_letter_2400.webp") center/cover #EAE3D5;
+    background-size:auto, 62% auto;
+    box-shadow:inset 0 15px 28px -20px rgba(36,30,22,.42),
+      inset 0 -1px 0 rgba(36,30,22,.10)}
+  /* 段の話の実物を1枚ずつ。装飾ではなく被写体 */
+  .lu-figband{margin:clamp(30px,3.6vw,46px) 0 0}
+  .lu-figband img{display:block;width:100%;height:clamp(120px,15vw,190px);object-fit:cover;
+    box-shadow:0 0 0 1px rgba(36,30,22,.10)}
+  .lu-figband figcaption{margin:clamp(12px,1.5vw,18px) 0 0;
+    font-size:clamp(.95rem,.92rem + .1vw,.99rem);line-height:2.0;letter-spacing:.045em;
+    color:var(--lu-sumi3)}
+  .lu-figband + .lu-pair{margin-top:clamp(18px,2.2vw,28px);padding-top:0;border-top:0}
+  /* 二人は写真が無いので名前で立てる */
+  .lu-pair:last-of-type .lu-blk__h{font-size:clamp(1.28rem,1.1rem + .78vw,1.72rem)}
+
   .lu-freewrap{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(30px,3.4vw,44px)}
   @media (min-width:960px){
     .lu-freewrap{grid-template-columns:minmax(0,46%) minmax(0,1fr);
@@ -1651,13 +1682,19 @@
   <div class="lu-op">
     <div class="lu-op__in">
       <span class="lu-eyebrow" data-rise style="--d:.05">Lineup ／ 商品ラインナップ</span>
-      <h2 class="lu-h" data-rise style="--d:.14"><span>構造も断熱も外壁も、</span><span>三つとも同じものが</span><span>入ります。</span></h2>
-      <p class="lu-lead" data-rise style="--d:.26">耐震と制震、アクアフォームLITEの断熱、ヘーベルパワーボードの外壁、ニスクカラーProの屋根が入ります。違うのは広さと、費用を設備と性能のどちらにかけるかです。</p>
-      <div class="lu-seals" data-rise style="--d:.38">
+      <h2 class="lu-h" data-rise style="--d:.14"><span>暮らし方も、家にかけたいお金も、</span><span>家族によって違います。</span><br><span>やまと不動産では三つの住まいをご用意しました。</span></h2>
+      <div class="lu-seals" data-rise style="--d:.26">
         <span class="lu-seal lu-seal--hana">花</span>
         <span class="lu-seal lu-seal--kyo">京</span>
         <span class="lu-seal lu-seal--kaze">風</span>
-        <span class="lu-seals__note">やまとの家「花鳥風月」の三つのシリーズです。</span>
+      </div>
+      <div class="lu-oplead" data-rise style="--d:.36">
+        <p class="lu-lead">広さや、設備・性能へのお金のかけ方はそれぞれ違います。でも、家の基本となる品質は変えません。</p>
+        <p class="lu-lead">耐震・制震性能、アクアフォームLITEによる断熱、ヘーベルパワーボードの外壁、ニスクカラーProの屋根。</p>
+        <p class="lu-lead">構造も、断熱も、外壁も。三つすべてに、同じ基準のものを採用しています。</p>
+        <p class="lu-lead">違うのは、どれくらいの広さで暮らすか。そして、設備と性能のどこに重きを置くか。</p>
+        <p class="lu-lead lu-lead--end">家族に合った一棟を選べる、やまと不動産の三つのラインナップです。</p>
+      </div>
       </div>
     </div>
   </div>
@@ -1750,7 +1787,7 @@
       <div class="lu-doors">
         <details class="lu-more">
           <summary><span class="lu-more__open">詳しく見る</span><span class="lu-more__close">閉じる</span></summary>
-          <div class="lu-more__in"><div class="lu-pair"><div class="lu-blk"><h3 class="lu-blk__h">変わらないもの</h3><p class="lu-b">家の性能に関わる、構造や断熱。外壁や屋根、そして標準で入る設備。この部分は、最初からきちんと決めています。</p><p class="lu-b">三つのプランで違うのは、基準となる家の広さと、標準設備の内容です。</p><p class="lu-b">見えないところの品質まで含めて、家づくりの土台になる部分は、変えません。</p></div><div class="lu-blk"><h3 class="lu-blk__h">変えられるもの</h3><p class="lu-b">広さは、ご家族に合わせて変えることができます。基準の広さから、<b>1坪あたり64万円〜</b>で広げることができます。この金額には、建物だけでなく、広くなった分の基礎3.3㎡も含まれています。</p><p class="lu-b">必要なものを、必要なぶんだけ。無理に大きくするのではなく、暮らしにちょうどいい広さを一緒に考えていきます。</p></div></div><div class="lu-pair lu-pair--step"><div class="lu-blk"><span class="lu-blk__n">01</span><h3 class="lu-blk__h">敷地を読むところから始めます</h3><p class="lu-b">同じように見える分譲地でも、ひとつとして同じ敷地はありません。隣の建物の位置や高さによって、光の入り方も、風の通り道も、視線が抜ける方向も変わります。</p><p class="lu-b">まずは、その土地をきちんと見ること。その敷地だからこそできる暮らしを考えてから、間取りを描きはじめます。</p></div><div class="lu-blk"><span class="lu-blk__n">02</span><h3 class="lu-blk__h">いまの暮らしも、設計のヒントです</h3><p class="lu-b">「どんな家に住みたいですか？」もちろん、それも大切なことです。でも私たちは、いまのお住まいで感じている不満や、「こうしておけばよかった」ということも伺います。</p><p class="lu-b lu-ex">洗濯がしづらい。<br>収納が足りない。<br>朝、家族が同じ場所に集まってしまう。</p><p class="lu-b">そんな日常の小さな不便の中に、新しい家を良くするヒントがたくさんあります。理想と、いまの暮らし。その両方を一緒に整理しながら、ご家族に合った間取りをつくっていきます。</p></div></div><div class="lu-pair"><div class="lu-blk"><h3 class="lu-blk__h">栗野 佑也</h3><span class="lu-blk__r">KURINO Yuya / 設計士</span><p class="lu-b">家族が違えば、心地いい暮らし方も違います。だからこそ、そのご家族の生活や過ごし方をきちんと知り、そこに合った住まいをご提案したいと思っています。</p><p class="lu-b">家に帰ることが楽しみになる。そこで過ごす時間に、自然と笑顔が増えていく。そんな住まいを、一緒につくれたらと思っています。</p></div><div class="lu-blk"><h3 class="lu-blk__h">岩佐 篤志</h3><span class="lu-blk__r">IWASA Atsushi / 住宅デザイナー</span><p class="lu-b">現場監督や営業設計として、たくさんの家づくりに関わってきました。その経験も活かしながら、見た目だけではなく、暮らしやすさや施工まで考えた住まいをご提案します。</p><p class="lu-b">最初から、上手に希望を伝えなくても大丈夫です。何気ない会話の中から、まだ言葉になっていない「こんな家が好き」を一緒に見つけていけたらと思っています。</p></div></div></div>
+          <div class="lu-more__in"><figure class="lu-figband"><img src="assets/lineup/hero/wall.webp" alt="外壁ヘーベルパワーボードと木のルーバー" loading="lazy" decoding="async"><figcaption>外壁は三つとも同じ、ヘーベルパワーボードです。</figcaption></figure><div class="lu-pair"><div class="lu-blk"><h3 class="lu-blk__h">変わらないもの</h3><p class="lu-b">家の性能に関わる、構造や断熱。外壁や屋根、そして標準で入る設備。この部分は、最初からきちんと決めています。</p><p class="lu-b">三つのプランで違うのは、基準となる家の広さと、標準設備の内容です。</p><p class="lu-b">見えないところの品質まで含めて、家づくりの土台になる部分は、変えません。</p></div><div class="lu-blk"><h3 class="lu-blk__h">変えられるもの</h3><p class="lu-b">広さは、ご家族に合わせて変えることができます。基準の広さから、<b>1坪あたり64万円〜</b>で広げることができます。この金額には、建物だけでなく、広くなった分の基礎3.3㎡も含まれています。</p><p class="lu-b">必要なものを、必要なぶんだけ。無理に大きくするのではなく、暮らしにちょうどいい広さを一緒に考えていきます。</p></div></div><figure class="lu-figband"><img src="assets/lineup/hero/aerial.webp" alt="夕暮れの奈良。屋根が並ぶ住宅地を上空から" loading="lazy" decoding="async"><figcaption>同じように見えて、ひとつとして同じ敷地はありません。</figcaption></figure><div class="lu-pair lu-pair--step"><div class="lu-blk"><span class="lu-blk__n">01</span><h3 class="lu-blk__h">敷地を読むところから始めます</h3><p class="lu-b">同じように見える分譲地でも、ひとつとして同じ敷地はありません。隣の建物の位置や高さによって、光の入り方も、風の通り道も、視線が抜ける方向も変わります。</p><p class="lu-b">まずは、その土地をきちんと見ること。その敷地だからこそできる暮らしを考えてから、間取りを描きはじめます。</p></div><div class="lu-blk"><span class="lu-blk__n">02</span><h3 class="lu-blk__h">いまの暮らしも、設計のヒントです</h3><p class="lu-b">「どんな家に住みたいですか？」もちろん、それも大切なことです。でも私たちは、いまのお住まいで感じている不満や、「こうしておけばよかった」ということも伺います。</p><p class="lu-b lu-ex">洗濯がしづらい。<br>収納が足りない。<br>朝、家族が同じ場所に集まってしまう。</p><p class="lu-b">そんな日常の小さな不便の中に、新しい家を良くするヒントがたくさんあります。理想と、いまの暮らし。その両方を一緒に整理しながら、ご家族に合った間取りをつくっていきます。</p></div></div><div class="lu-pair"><div class="lu-blk"><h3 class="lu-blk__h">栗野 佑也</h3><span class="lu-blk__r">KURINO Yuya / 設計士</span><p class="lu-b">家族が違えば、心地いい暮らし方も違います。だからこそ、そのご家族の生活や過ごし方をきちんと知り、そこに合った住まいをご提案したいと思っています。</p><p class="lu-b">家に帰ることが楽しみになる。そこで過ごす時間に、自然と笑顔が増えていく。そんな住まいを、一緒につくれたらと思っています。</p></div><div class="lu-blk"><h3 class="lu-blk__h">岩佐 篤志</h3><span class="lu-blk__r">IWASA Atsushi / 住宅デザイナー</span><p class="lu-b">現場監督や営業設計として、たくさんの家づくりに関わってきました。その経験も活かしながら、見た目だけではなく、暮らしやすさや施工まで考えた住まいをご提案します。</p><p class="lu-b">最初から、上手に希望を伝えなくても大丈夫です。何気ない会話の中から、まだ言葉になっていない「こんな家が好き」を一緒に見つけていけたらと思っています。</p></div></div></div>
         </details>
         <a class="lu-doors__cta" href="madori.html#plans">三つの仕様をくらべる　→</a>
       </div>
