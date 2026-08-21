@@ -1,0 +1,132 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>実績 v2-A 画像テクスチャ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Shippori+Mincho+B1:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanmp.min.css"><style>:root{--beni:#BD1B21;--beni-d:#8E1218;--sumi:#241E16;--sumi2:#5C5346;--sumi3:#8A8070;
+ --kinari:#F4F1EA;--gold:#C9A24B;
+ --fm:"YakuHanMP","Shippori Mincho B1",serif;--fg:"Zen Kaku Gothic New",sans-serif;--fn:Inter,sans-serif;
+ /* Emil: 正確なカーブを1箇所に束ねる。all は使わない */
+ --out:cubic-bezier(.22,1,.36,1); --press:cubic-bezier(.4,0,.2,1)}
+*{box-sizing:border-box}
+body{margin:0;background:#D9D4CA;font-family:var(--fg);color:var(--sumi)}
+.xnote{background:#1A1713;color:#E8E2D4;padding:20px clamp(20px,4vw,56px);
+ font-family:var(--fn);font-size:.86rem;line-height:1.9;letter-spacing:.03em;
+ line-break:strict;word-break:auto-phrase}
+.xnote b{color:#E3C572;font-weight:500;font-size:.95rem}
+
+.tr{position:relative;isolation:isolate;overflow:hidden;
+ padding:clamp(58px,6.5vw,92px) clamp(20px,5vw,72px) clamp(66px,7.5vw,108px)}
+.tr__bg{position:absolute;inset:0;z-index:0;pointer-events:none}
+.tr__in{position:relative;z-index:2;max-width:1180px;margin:0 auto}
+.tr__hd{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;
+ border-bottom:2px solid var(--sumi);padding-bottom:18px}
+.tr__eye{display:block;font-family:var(--fn);font-weight:500;font-size:max(12px,.7rem);
+ letter-spacing:.3em;color:var(--beni);text-transform:uppercase;margin:0 0 12px;white-space:nowrap}
+.tr__h{margin:0;font-family:var(--fm);font-weight:600;color:var(--sumi);
+ font-size:clamp(1.4rem,1.08rem + 1.5vw,2.3rem);line-height:1.52;letter-spacing:.03em;text-wrap:balance}
+.tr__note{font-family:var(--fn);font-weight:400;font-size:max(12px,.66rem);letter-spacing:.14em;
+ color:var(--sumi3);white-space:nowrap}
+
+/* 数字＝扉（加藤案の骨格を継承） */
+.tr__grid{margin:clamp(28px,3.2vw,44px) 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+ gap:1px;background:rgba(36,30,22,.22)}
+.tr__c{background:rgba(244,241,234,.92);backdrop-filter:blur(2px);
+ padding:clamp(22px,2.4vw,32px) clamp(16px,1.8vw,24px) clamp(18px,2vw,26px);
+ display:flex;flex-direction:column;text-decoration:none;color:inherit;
+ /* Emil: プロパティを名指しする。all 禁止 */
+ transition:background .34s var(--out), transform .18s var(--press)}
+.tr__c:hover{background:rgba(251,249,244,.98)}
+/* Emil: 押せる面には必ず :active。押した手応えが無い面は磨きようがない */
+.tr__c:active{transform:scale(.985)}
+.tr__k{display:block;margin:0;font-family:var(--fn);font-weight:500;font-size:max(12px,.6rem);
+ letter-spacing:.22em;color:var(--sumi3);text-transform:uppercase}
+.tr__v{display:flex;align-items:baseline;gap:6px;margin:clamp(12px,1.4vw,18px) 0 0}
+.tr__v b{font-family:var(--fm);font-weight:700;color:var(--beni);line-height:.9;letter-spacing:-.01em;
+ font-size:clamp(2.7rem,1.9rem + 3.4vw,4.5rem);
+ /* Emil: 数は「増えない」。到着する。scale(0)からではなく .96 から＝無から現れない */
+ opacity:0;transform:translateY(10px) scale(.96);
+ transition:opacity .5s var(--out), transform .62s var(--out)}
+.tr.is-in .tr__v b{opacity:1;transform:none}
+.tr__v i{font-style:normal;font-family:var(--fm);font-weight:500;font-size:.94rem;
+ letter-spacing:.06em;color:var(--sumi);
+ opacity:0;transform:translateY(6px);
+ transition:opacity .44s var(--out) .13s, transform .44s var(--out) .13s}
+.tr.is-in .tr__v i{opacity:1;transform:none}
+.tr__l{margin:clamp(12px,1.4vw,18px) 0 0;font-family:var(--fg);font-weight:400;color:var(--sumi);
+ font-size:max(15px,.95rem);line-height:1.72;letter-spacing:.05em}
+.tr__go{margin:auto 0 0;padding-top:14px;display:flex;align-items:center;justify-content:space-between;
+ font-family:var(--fg);font-weight:400;font-size:.84rem;letter-spacing:.06em;color:var(--sumi2);
+ border-top:1px solid rgba(36,30,22,.16);
+ transition:color .3s var(--out)}
+.tr__c:hover .tr__go{color:var(--beni)}
+/* Emil: 動くのは矢印だけ。カード全体を持ち上げない＝主役は数字 */
+.tr__go span{display:inline-block;transition:transform .34s var(--out)}
+.tr__c:hover .tr__go span{transform:translateX(5px)}
+/* 段差 = 読み順。4枚が同時に着地すると「並んでいる」だけになる */
+.tr__c:nth-child(1) .tr__v b{transition-delay:.02s}
+.tr__c:nth-child(2) .tr__v b{transition-delay:.10s}
+.tr__c:nth-child(3) .tr__v b{transition-delay:.18s}
+.tr__c:nth-child(4) .tr__v b{transition-delay:.26s}
+.tr__c:nth-child(2) .tr__v i{transition-delay:.21s}
+.tr__c:nth-child(3) .tr__v i{transition-delay:.29s}
+.tr__c:nth-child(4) .tr__v i{transition-delay:.37s}
+
+.tr__foot{margin:clamp(26px,3vw,40px) 0 0;display:grid;
+ grid-template-columns:minmax(0,1fr) minmax(0,.62fr);gap:clamp(22px,3vw,46px);align-items:center}
+.tr__lead{margin:0;font-family:var(--fg);font-weight:300;color:var(--sumi2);
+ font-size:.98rem;line-height:2;letter-spacing:.05em;line-break:strict;word-break:auto-phrase}
+.tr__ph{margin:0;position:relative;overflow:hidden;aspect-ratio:16/10}
+.tr__ph img{width:100%;height:100%;object-fit:cover}
+@media (max-width:900px){.tr__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .tr__foot{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){.tr__grid{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){
+ .tr__v b,.tr__v i{opacity:1;transform:none;transition:none}
+ .tr__c,.tr__go span{transition:none}
+ .tr__bg canvas{display:none}}
+.tr__bg{background:url("../assets/std/page_kinari_letter_1800.webp") center/cover #F4EEE0}
+</style></head><body>
+<div class="xnote"><b>実績 v2 ─「数字は、到着する」</b><br>
+3つのレンズで再考した結果。<b>骨格は加藤案（数字＝扉）のまま、変えたのはモーションだけ</b>。<br>
+・<b>カウントアップを廃止</b>。0→770は嘘（1.6秒で770棟建てていない）。数は増えず、<b>scale(.96)から到着</b>する（Nothing appears from nothing）<br>
+・4枚に80msずつの段差＝<b>読み順</b>。同時着地は「並んでいる」だけになる<br>
+・<b>:active{scale(.985)}</b> を全カードに。押せる面が無い節はEmilの意味で磨けない<br>
+・hoverで動くのは<b>矢印だけ</b>。カードごと持ち上げない＝主役は数字<br>
+・<b>質感は既存の和紙のまま</b>（シェーダは不採用・下の実測による）</div>
+<section class="tr" id="tr">
+  <div class="tr__bg" id="bg" aria-hidden="true"></div>
+  <div class="tr__in">
+    <div class="tr__hd">
+      <div><span class="tr__eye">Track Record ／ 実績</span>
+        <h2 class="tr__h">選ばれる理由は、価格だけではありません。</h2></div>
+      <span class="tr__note">※2026年7月10日現在</span>
+    </div>
+    <div class="tr__grid">
+      <a class="tr__c" href="works.html"><span class="tr__k">Built</span>
+        <p class="tr__v"><b>770</b><i>棟超</i></p>
+        <p class="tr__l">奈良でつくってきた家</p>
+        <span class="tr__go">施工事例を見る<span>→</span></span></a>
+      <a class="tr__c" href="lots.html"><span class="tr__k">Lots</span>
+        <p class="tr__v"><b>150</b><i>区画以上</i></p>
+        <p class="tr__l">自社で保有する分譲地</p>
+        <span class="tr__go">分譲地・物件を見る<span>→</span></span></a>
+      <a class="tr__c" href="voice.html"><span class="tr__k">Voices</span>
+        <p class="tr__v"><b>50</b><i>組</i></p>
+        <p class="tr__l">いただいたお客様の声</p>
+        <span class="tr__go">お客様の声を読む<span>→</span></span></a>
+      <a class="tr__c" href="company.html"><span class="tr__k">Years</span>
+        <p class="tr__v"><b>15</b><i>年目</i></p>
+        <p class="tr__l">創業から数えて</p>
+        <span class="tr__go">会社案内を見る<span>→</span></span></a>
+    </div>
+    <div class="tr__foot">
+      <p class="tr__lead">創業から、奈良でこれだけの家をつくってきました。設計も施工も、外注せず自社で手がけています。</p>
+      <figure class="tr__ph"><img src="../assets/std/auth_ext_1920.webp" alt="奈良市の実邸 外観"></figure>
+    </div>
+  </div>
+</section>
+<script>
+new IntersectionObserver(function(e){e.forEach(function(v){
+ if(v.isIntersecting){v.target.classList.add('is-in');}});},{threshold:.28})
+ .observe(document.getElementById('tr'));
+</script></body></html>
