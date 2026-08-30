@@ -1,0 +1,163 @@
+{
+  "version": 2,
+  "project": {
+    "subject": "やまと不動産サイトのファーストビューから始まる13ページのデジタル住宅カタログ",
+    "audience": "大阪・京都から奈良への移住と注文住宅を検討し、スマートフォンで短時間に情報を確かめる人",
+    "jobToBeDone": "やまとの家で選べる仕様、設計の考え方、構造と保証を写真中心で把握し、サイト本編の実績・商品・相談導線へ進む",
+    "decisionStage": "初回訪問者が物件検索へ行く前に、やまとの家を詳しく見る価値があるかを判断する段階",
+    "namedEntity": true,
+    "categoryArchetype": "注文住宅会社のデジタル建築誌"
+  },
+  "evidence": [
+    {
+      "id": "yamato-interview",
+      "claim": "物件をFVに出さず、写真・動画を主役にし、スマートフォンで読みやすく、主要点を3〜5項目に絞る",
+      "source": "first-party-evidence.md",
+      "type": "first-party",
+      "capturedAt": "2026-08-30T14:30:00+09:00",
+      "confidence": "high",
+      "observation": "社長インタビューとサイトレビューの一次メモに、脱物件押し出し、写真・動画中心、スマホ優先、品質優先が明記されている"
+    },
+    {
+      "id": "brochure-ledger",
+      "claim": "2026年7月版パンフレットは、花・京・風の色、共通仕様、自由設計、設備差、保証の最新の基準資料である",
+      "source": "first-party-evidence.md",
+      "type": "first-party",
+      "capturedAt": "2026-08-30T14:30:00+09:00",
+      "confidence": "high",
+      "observation": "比較表と自由設計ページから、シリーズ色、共通ブロック、5つの設計観点、設備仕様が抽出・照合されている"
+    },
+    {
+      "id": "mersi-case-study",
+      "claim": "建築サイトを印刷物とデジタルの中間として設計し、画像をブロックではなく素材として組み、表紙の反転を遷移オブジェクトにできる",
+      "source": "https://tympanus.net/codrops/2026/07/27/between-print-and-digital-the-making-of-mersis-website/",
+      "type": "third-party",
+      "capturedAt": "2026-08-30T14:31:00+09:00",
+      "confidence": "high",
+      "observation": "余白・写真・書体の編集リズムと、表紙が次の内容へつながる物理的な遷移が解説されている"
+    },
+    {
+      "id": "vipp-live",
+      "claim": "全景と制作ディテールを同格で並べる分割画面は、空間とものづくりを少ないUIで同時に伝えられる",
+      "source": "https://vipp.com/en",
+      "type": "live-primary",
+      "capturedAt": "2026-08-30T14:30:00+09:00",
+      "confidence": "high",
+      "observation": "現在のトップ画面は左右の大判写真と最小限のナビゲーションで、空間写真と手元の工程写真を並置している"
+    },
+    {
+      "id": "sekisui-live",
+      "claim": "日本の高級注文住宅カテゴリでは、設計行為の実写、短い直接見出し、作品索引を組み合わせる構成が使われている",
+      "source": "https://www.sekisuihouse.co.jp/kodate/shc/designoffice/",
+      "type": "live-primary",
+      "capturedAt": "2026-08-30T14:30:00+09:00",
+      "confidence": "high",
+      "observation": "設計相談の実写を主役にし、その直下でチームの役割を説明し、後段を作品索引へつないでいる"
+    }
+  ],
+  "research": {
+    "required": true,
+    "reason": "高級注文住宅とデジタル建築誌の現行表現を確認し、既視感の強い豪邸動画や汎用カードUIを避けるため",
+    "referenceEvidenceIds": ["mersi-case-study", "vipp-live", "sekisui-live"],
+    "minimumPrimarySources": 1
+  },
+  "constraints": [
+    "YAMATOFUDOUSANV2は参照しない",
+    "FVに物件・土地を出さない",
+    "縦スクロールを奪わず、ページ送りは明示ボタンで任意操作にする",
+    "未解決の棟数、検査回数、MIRAIE標準採用範囲は断定しない",
+    "Adobe Stockはライセンス取得前に本番素材として組み込まない",
+    "生成AIで実邸、実在人物、ロゴ、日本語本文を作らない"
+  ],
+  "materials": {
+    "required": ["2026年7月版パンフレット", "既存の表紙原画", "実邸・設備写真", "シリーズ比較表", "自由設計の実写・水彩図面", "PC/SPの操作状態"],
+    "available": ["表紙のPC/SP画像", "設備・室内・外観のレスポンシブ画像", "花・京・風の色", "自由設計の打ち合わせ写真と図面", "比較表の抽出画像"],
+    "gaps": ["Adobe Stock連携が403で、補助テクスチャ候補の直接プレビューと購入が未実施", "Higgsfield表紙モーションは生成中で目視承認前"],
+    "rightsStatus": "partial",
+    "identityCriticalAssets": ["やまと不動産の表紙原画", "実邸写真", "花・京・風の仕様", "パンフレット由来の図面・比較表"],
+    "identityAssetStatus": "verified",
+    "placeholderPolicy": "not-used"
+  },
+  "alternatives": [
+    {
+      "name": "紅箔のデジタル建築誌",
+      "thesis": "やまとの家を、一冊の上質な建築誌として開き、全景・ディテール・図面・事実を編集して読む",
+      "composition": "紅い表紙から、生成りの見開きと深紅の章扉を交互にめくる13ページ構成",
+      "assetStrategy": "実邸の全景を主役にし、同じ所有写真の意味あるディテールクロップとパンフレットの図面・仕様を添える",
+      "differentiator": "表紙そのものが操作対象になり、誌面は1枚貼りではなく編集された見開きとして成立する",
+      "visualProof": "既存の紅い箔押し表紙と、Vipp型の二面構成を使った設備ページのブラウザ実装",
+      "strengths": ["既存の強い表紙資産を活かせる", "パンフレット内容との整合が高い", "写真と事実を同時に扱える", "スマートフォンでは1ページへ自然に変換できる"],
+      "risks": ["ページめくりを過剰にすると玩具的になる", "誌面の文字量を増やすとパンフレットPDFの再掲になる"],
+      "rejectReason": ""
+    },
+    {
+      "name": "一邸を歩くシネマ",
+      "thesis": "一軒の家を映画のように進み、設備と暮らしを空間体験として見せる",
+      "composition": "全画面動画と短い章見出しを連続させる縦長の映画構成",
+      "assetStrategy": "実邸動画または生成補助した空間動画を中心にする",
+      "differentiator": "写真誌ではなく時間軸で家を理解させる",
+      "visualProof": "表紙から一邸の室内へ連続する15秒プロトタイプ",
+      "strengths": ["感情的な没入が強い", "文字を減らせる"],
+      "risks": ["一邸が全シリーズの代表に見える", "映像品質と通信量への依存が大きい", "物件をFVに出さない方針と衝突しやすい"],
+      "rejectReason": "やまとの家全体を説明する目的に対して、一邸の映像へ意味が偏り、一次方針と資産真実性を損なうため"
+    },
+    {
+      "name": "仕様のアーカイブ",
+      "thesis": "設備と性能を整然と索引化し、違いと共通項を素早く確認できる",
+      "composition": "タイプ、仕様、保証を分類したタイポグラフィ中心の索引",
+      "assetStrategy": "メーカー製品写真と比較表を中心にする",
+      "differentiator": "閲覧速度と検索性を最優先する",
+      "visualProof": "花・京・風の仕様をフィルターで切り替える一覧",
+      "strengths": ["情報確認は速い", "将来更新しやすい"],
+      "risks": ["SUUMO的な比較の土俵へ戻る", "京・風の劣位が数で目立つ", "住宅の情緒と設計思想が薄い"],
+      "rejectReason": "冷たい比較表になり、写真中心・主要点を絞って深く見せる一次方針から外れるため"
+    }
+  ],
+  "selectedAlternative": "紅箔のデジタル建築誌",
+  "thesis": {
+    "statement": "やまとの家を、全景・細部・図面・確かな仕様が一つの見開きでつながるデジタル建築誌として見せる。",
+    "designPromise": "短時間でも全体像がつかめ、気になるページだけ自分の速度で確かめ、そのままサイト本編へ進める。",
+    "visualPosture": "静かで触覚的。写真を飾るのではなく、意味のある順序と寸法で編集する。",
+    "signatureMove": "深紅の箔押し表紙を開くと、紙の厚みを感じる見開きへ変わる一度だけのページターン。",
+    "nonGoals": ["全ページ閲覧の強制", "汎用豪邸ストックで実在感を補う", "派手な3Dめくりや音", "仕様を三列で冷たく比較する"]
+  },
+  "styleFingerprint": {
+    "paletteRole": "深紅は表紙と章の節目、生成りは情報、金は罫線と現在位置、墨は本文。シリーズ色は花・京・風の識別だけに使う。",
+    "typographyPosture": "明朝は見出しを少ない行数で組み、ゴシックは事実とUI、Interはページ番号と英字索引に限定する。",
+    "geometry": "角丸カードを避け、直線、裁ち落とし、細い罫、綴じ代、紙端の影で構成する。",
+    "imageTreatment": "実邸写真を暖色寄りの中立トーンで大判表示し、同じ写真の別クロップや図面を小さく添える。白枠へ一枚だけ貼らない。",
+    "layoutArchetype": "PCは左右の見開き、SPは縦一枚の編集ページ。全景とディテール、情緒と仕様を対にする。",
+    "motionRole": "ボタン操作の因果を示す短いページターンと、表紙金箔の斜光だけ。縦スクロールは常にサイト移動として保持する。",
+    "subjectEvidence": [
+      {"axis": "imageTreatment", "evidenceIds": ["brochure-ledger", "vipp-live"]},
+      {"axis": "layoutArchetype", "evidenceIds": ["mersi-case-study", "yamato-interview"]},
+      {"axis": "typographyPosture", "evidenceIds": ["brochure-ledger", "mersi-case-study"]}
+    ]
+  },
+  "system": {
+    "hierarchy": "表紙、各ページの日本語見出し、主写真、短い説明、仕様・ページ番号、操作UIの順。",
+    "composition": "12列相当の見開き。主写真は6〜8列、文章は3〜4列、補助図版は2〜4列。1ページの本文は概ね90字以内。",
+    "typography": "Shippori Mincho B1を見出し、Zen Kaku Gothic Newを本文、Interを英字と数字、Yuji Syukuは表紙題字に限定する。",
+    "color": "#8E121Bと#BD1B21を紅、#F3EFE6を紙、#241E16を墨、#D8B75Bを箔。シリーズ色は花#C64A00、京#7D4B4F、風#908600。",
+    "imagery": "所有する住宅・設備・水彩・図面が主役。Adobe Stockは紙、箔、光の補助だけ。人物・家・ロゴは生成しない。",
+    "motion": "ページターンは650ms以内。表紙光は5秒の無音ループ候補。reduced-motionでは即時フェードし、動画を表示しない。",
+    "responsive": "1024px以上は見開き、768px以下は1ページ。操作は前へ・次へ・目次を下部に固定し、縦スクロールを妨げない。"
+  },
+  "humanInputs": {
+    "missingDecisions": ["Higgsfield表紙モーションの目視採否", "Adobe Stock候補のライセンス承認"],
+    "stakeholderAssumptions": ["13ページ構成はパンフレット内容をWeb向けに再編集する探索版として進める"],
+    "userResearchGaps": ["各ページの読了率と、任意ページ送りの利用率は公開後の計測が必要"]
+  },
+  "decision": {
+    "status": "conditional",
+    "productionClaimAllowed": false,
+    "rationale": "方向と所有素材は実装可能だが、Adobe Stock連携が403で未取得、Higgsfield表紙動画も目視承認前のため。静止画版の実装と検証は進められる。"
+  },
+  "verification": {
+    "successSignals": ["初見で本の表紙と任意操作のカタログだと分かる", "各ページで全景・細部・仕様の関係が一画面に収まる", "縦スクロールでカタログを飛ばして次セクションへ進める", "390pxでボタンと日本語が重ならない"],
+    "failureSignals": ["白枠に写真を一枚置いただけに見える", "ページを全部見ないとサイト本編へ進めない", "生成素材が実邸または実際の仕様に見える", "ページターンが玩具的または重い"],
+    "requiredViewports": [1440, 1024, 768, 390],
+    "requiredStates": ["表紙", "写真見開き", "仕様見開き", "目次", "最終ページ", "reduced-motion", "縦スクロール退出"],
+    "gates": ["横スクロールなし", "縦スクロールをpreventDefaultしない", "44px以上の操作領域", "実装後の4幅スクリーンショット", "日本語の一読理解", "コンソールと画像読み込みエラーの確認"]
+  }
+}

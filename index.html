@@ -116,346 +116,238 @@
   .burger:hover span:first-child{width:14px}
   .burger:hover span:last-child{width:14px}
 
-  /* 変数は .fvs スコープに閉じる（index.htmlの:rootと8変数が衝突するため。
-     特に --fb は index=本文Inter / fv=毛筆Yuji Syuku で、漏らすと全ページの本文が毛筆になる） */
-  .fvs,.fvs__loader{
-    --paper:#F4F1EA; --paper2:#EDE8DD; --sumi:#241E16; --sumi2:#5C5346; --sumi3:#8A8070;
-    --gold:#C9A24B; --gold2:#B08A3C; --shu:#BD1B21; --beni-d:#951620;
-    --foil1:#F1D57D; --foil2:#B08A3C;
-    --void:#100D0A; --cream:#F3EEE3; --cream2:rgba(243,238,227,.72);
-    --amber:#C4851F; --amber-d:#A56C12;
-    --line-d:rgba(243,238,227,.18); --line-p:rgba(36,30,22,.22);
-    --fg:"Zen Kaku Gothic New",sans-serif;
-    --fb:"Yuji Syuku",serif;
-    --fn:"Inter",sans-serif;
-    --fm:"YakuHanMP","Shippori Mincho B1",serif;
-    --mx:clamp(22px,5vw,72px);
+  /* ═══ FV / 紅箔のデジタル建築誌 2026-08-30 ═══ */
+  .fvs,.fvs__loader,.fvs__toc{
+    --cat-paper:#F3EFE6;--cat-paper-2:#E8E0D2;--cat-ink:#241E16;--cat-muted:#675D50;
+    --cat-red:#8E121B;--cat-red-2:#BD1B21;--cat-gold:#D8B75B;--cat-gold-hi:#F1D57D;
+    --cat-night:#120D0B;--cat-cream:#F7F1E5;--cat-line:rgba(62,48,30,.22);
+    --cat-mincho:"YakuHanMP","Shippori Mincho B1",serif;
+    --cat-gothic:"Zen Kaku Gothic New",sans-serif;--cat-latin:"Inter",sans-serif;
   }
-  .fvs .spbr{display:none}
-  html.fvs-app{scroll-behavior:auto}
-  .fvs{color:var(--cream);font-family:var(--fg);font-weight:400;line-height:1.9}
-  .fvs img{display:block;max-width:100%}
+  .fvs__loader{position:fixed;inset:0;z-index:200;background:var(--cat-red);display:grid;place-items:center;
+    animation:catLoaderOut .45s ease .82s forwards;pointer-events:none}
+  .fvs__loader img{width:clamp(120px,18vw,220px);filter:brightness(0) invert(92%) sepia(42%);opacity:.8}
+  .fvs__loader p{position:absolute;bottom:clamp(24px,5vh,48px);font-family:"Yuji Syuku",serif;
+    font-size:clamp(1rem,.8rem + .8vw,1.35rem);letter-spacing:.34em;color:var(--cat-cream)}
+  @keyframes catLoaderOut{to{opacity:0;visibility:hidden}}
+  .fvs{position:relative;height:100vh;height:100svh;overflow:hidden;isolation:isolate;
+    color:var(--cat-ink);font-family:var(--cat-gothic);background:
+    radial-gradient(90% 120% at 50% 26%,#3b211b 0,#1d1210 42%,#0e0b09 100%);touch-action:pan-y}
+  .fvs img{display:block;width:100%;height:100%;object-fit:cover}
   .fvs a{color:inherit}
+  .fvs__scene{position:absolute;inset:0;display:grid;place-items:center;padding:clamp(74px,8svh,106px) clamp(18px,4vw,68px) clamp(92px,11svh,126px);
+    opacity:0;visibility:hidden;pointer-events:none;overflow:hidden;perspective:1800px}
+  .fvs__scene.is-active{opacity:1;visibility:visible;pointer-events:auto;z-index:2}
+  .fvs__scene.is-leaving{visibility:visible;z-index:3}
+  .catalog-sheet{position:relative;width:min(1320px,92vw);height:min(78svh,780px);overflow:hidden;
+    background:url("assets/std/page_kinari_letter_2400.webp") center/cover var(--cat-paper);
+    box-shadow:0 34px 110px rgba(0,0,0,.5),0 0 0 1px rgba(221,190,116,.34);
+    transform-style:preserve-3d;backface-visibility:hidden}
+  .catalog-sheet::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;z-index:8;
+    background:linear-gradient(180deg,transparent,rgba(56,38,21,.18) 14%,rgba(255,255,255,.55) 48%,rgba(56,38,21,.18) 86%,transparent);
+    box-shadow:-11px 0 24px rgba(43,28,17,.08),11px 0 24px rgba(255,255,255,.18);pointer-events:none}
+  .catalog-sheet::after{content:"";position:absolute;inset:0;z-index:9;pointer-events:none;
+    background:radial-gradient(100% 120% at 50% 30%,transparent 62%,rgba(65,45,27,.12) 100%)}
+  .catalog-sheet--red{color:var(--cat-cream);background:url("assets/std/page_beni_dark_2400.webp") center/cover var(--cat-red)}
+  .catalog-sheet--red::before{background:linear-gradient(180deg,transparent,rgba(10,0,0,.3) 18%,rgba(255,222,154,.16) 50%,rgba(10,0,0,.3) 82%,transparent)}
+  .catalog-kicker{font-family:var(--cat-latin);font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:#9a7b3e}
+  .catalog-title{font-family:var(--cat-mincho);font-weight:500;font-size:clamp(1.7rem,1.05rem + 2.1vw,3.45rem);
+    line-height:1.5;letter-spacing:.05em;color:var(--cat-ink)}
+  .catalog-sheet--red .catalog-title{color:var(--cat-cream)}
+  .catalog-copy{font-size:clamp(.84rem,.78rem + .22vw,.98rem);line-height:2;letter-spacing:.055em;color:var(--cat-muted)}
+  .catalog-sheet--red .catalog-copy{color:rgba(247,241,229,.75)}
+  .catalog-rule{display:block;width:54px;height:1px;margin:18px 0;background:linear-gradient(90deg,var(--cat-gold-hi),#9b6d25)}
+  .catalog-no{position:absolute;right:22px;bottom:16px;z-index:10;font-family:var(--cat-latin);font-size:.64rem;letter-spacing:.24em;color:rgba(60,43,27,.54)}
+  .catalog-sheet--red .catalog-no{color:rgba(247,241,229,.52)}
+  .catalog-photo{position:relative;overflow:hidden;background:#bcb4a7}
+  .catalog-photo img{filter:saturate(.88) contrast(.97) brightness(.98)}
+  .catalog-photo::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.16);pointer-events:none}
+  .catalog-caption{position:absolute;z-index:2;left:12px;bottom:9px;font-family:var(--cat-latin);font-size:.56rem;
+    letter-spacing:.2em;text-transform:uppercase;color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.8)}
+  .catalog-fact{display:grid;grid-template-columns:26px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--cat-line)}
+  .catalog-fact b{font-family:var(--cat-latin);font-size:.6rem;letter-spacing:.12em;color:#9a7b3e}
+  .catalog-fact span{font-size:.78rem;line-height:1.7;letter-spacing:.04em;color:var(--cat-muted)}
+  .catalog-sheet--red .catalog-fact{border-color:rgba(241,213,125,.2)}
+  .catalog-sheet--red .catalog-fact span{color:rgba(247,241,229,.8)}
 
+  /* 表紙は一冊の物体として見せる。強い演出はここだけ。 */
+  .fvs__scene--cover{padding-top:clamp(66px,7svh,92px);padding-bottom:clamp(90px,10svh,116px)}
+  .catalog-cover{position:relative;width:min(1240px,89vw);height:min(76svh,700px);transform:rotateX(.6deg) rotateY(-1deg);
+    box-shadow:-7px 5px 0 #5d080d,-11px 9px 0 #d4c7ad,0 44px 120px rgba(0,0,0,.64);background:var(--cat-red);overflow:hidden}
+  .catalog-cover picture{position:absolute;inset:0}
+  .catalog-cover__motion{position:absolute;z-index:2;inset:0;width:100%;height:100%;object-fit:cover;background:var(--cat-red)}
+  .catalog-cover--motion::before{display:none}
+  .catalog-cover::before{content:"";position:absolute;z-index:4;inset:0;pointer-events:none;
+    background:linear-gradient(108deg,transparent 21%,rgba(255,235,174,.24) 36%,transparent 48%);
+    transform:translateX(-120%);animation:coverFoil 7s 1.1s ease-in-out infinite}
+  .catalog-cover::after{content:"";position:absolute;z-index:5;left:0;top:0;bottom:0;width:clamp(10px,1.2vw,18px);
+    background:linear-gradient(90deg,rgba(45,0,3,.75),rgba(255,220,148,.18),rgba(45,0,3,.4));mix-blend-mode:multiply}
+  @keyframes coverFoil{0%,18%{transform:translateX(-120%)}52%,100%{transform:translateX(150%)}}
+  .catalog-cover__title{position:absolute;z-index:6;left:50%;top:50%;transform:translate(-50%,-46%);text-align:center;color:#FAF1DE;
+    text-shadow:0 2px 18px rgba(83,4,9,.46)}
+  .catalog-cover__title small{display:block;font-family:var(--cat-mincho);font-size:clamp(.72rem,.58rem + .45vw,1rem);
+    letter-spacing:.42em;margin-bottom:clamp(10px,1.8vh,18px)}
+  .catalog-cover__title strong{display:block;font-family:"Yuji Syuku",serif;font-weight:400;font-size:clamp(2.4rem,1.25rem + 4.2vw,5.1rem);
+    line-height:1.25;letter-spacing:.16em;text-indent:.16em}
+  .catalog-cover__title i{display:block;margin-top:clamp(8px,1.5vh,16px);font-family:var(--cat-latin);font-style:normal;font-size:.58rem;
+    letter-spacing:.34em;text-transform:uppercase;color:rgba(255,241,214,.76)}
+  .catalog-cover__label{position:absolute;z-index:6;right:18px;bottom:14px;font-family:var(--cat-latin);font-size:.58rem;
+    letter-spacing:.24em;text-transform:uppercase;color:rgba(255,241,214,.72)}
 
-  /* ============ ローダー（朱赤×燕） ============ */
-  .fvs__loader{position:fixed;inset:0;z-index:200;background:var(--shu);display:grid;place-items:center;
-    animation:loaderOut .5s ease .95s forwards;pointer-events:none}
-  .fvs__loader img{width:clamp(150px,24vw,260px);opacity:.9;mix-blend-mode:luminosity;
-    animation:loaderIn .8s cubic-bezier(.16,1,.3,1) both}
-  .fvs__loader p{position:absolute;bottom:clamp(22px,6vh,48px);left:50%;transform:translateX(-50%);
-    font-family:var(--fb);font-size:clamp(1rem,.9rem + .8vw,1.4rem);letter-spacing:.34em;color:#F6E9D2}
-  @keyframes loaderIn{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:.9;transform:none}}
-  @keyframes loaderOut{to{opacity:0;visibility:hidden}}
-  html.fvs-static .fvs__loader{display:none}
-  @media (prefers-reduced-motion:reduce){.fvs__loader{display:none}}
+  /* 見開きの編集パターン */
+  .spread{position:relative;z-index:2;width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr}
+  .spread__half{position:relative;min-width:0;min-height:0}
+  .spread__copy{padding:clamp(28px,4vw,68px);display:flex;flex-direction:column;justify-content:center}
+  .spread--message .spread__copy{padding-right:clamp(38px,5vw,78px)}
+  .spread--message .catalog-photo--detail{position:absolute;right:clamp(22px,3vw,46px);bottom:clamp(22px,3vw,46px);
+    width:42%;height:28%;box-shadow:0 16px 40px rgba(31,20,12,.25);border:7px solid var(--cat-paper)}
+  .spread--message .catalog-photo--detail img{object-position:75% 62%;transform:scale(1.65)}
+  .series-grid{position:relative;z-index:2;height:100%;display:grid;grid-template-columns:repeat(3,1fr)}
+  .series-card{position:relative;overflow:hidden;isolation:isolate}
+  .series-card::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.02) 42%,rgba(12,8,5,.8) 100%)}
+  .series-card + .series-card{border-left:1px solid rgba(255,255,255,.35)}
+  .series-card__body{position:absolute;z-index:2;left:clamp(18px,2vw,34px);right:18px;bottom:clamp(24px,3vw,46px);color:#fff}
+  .series-card__name{font-family:var(--cat-mincho);font-size:clamp(2.2rem,1.6rem + 2vw,4.2rem);line-height:1}
+  .series-card__en{font-family:var(--cat-latin);font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;margin-top:12px}
+  .series-card__line{width:36px;height:3px;margin-top:14px;background:var(--series-color)}
+  .series-card__note{font-size:.74rem;line-height:1.7;letter-spacing:.04em;margin-top:12px;max-width:24ch}
+  .equipment{position:relative;z-index:2;width:100%;height:100%;display:grid;grid-template-columns:1.2fr .8fr}
+  .equipment__hero{min-height:0}
+  .equipment__side{padding:clamp(24px,3.5vw,58px);display:grid;grid-template-rows:auto 1fr auto;gap:clamp(14px,2vh,24px)}
+  .equipment__detail{min-height:0;max-height:34svh}
+  .equipment__detail img{transform:scale(1.52);object-position:57% 64%}
+  .water-grid{position:relative;z-index:2;height:100%;display:grid;grid-template-columns:1.18fr .82fr;grid-template-rows:1fr auto}
+  .water-grid>.catalog-photo:first-child{grid-row:1/3}
+  .water-grid>.catalog-photo:nth-child(2){min-height:0}
+  .water-grid__copy{padding:clamp(18px,2.4vw,38px);align-self:end}
+  .interior-grid{position:relative;z-index:2;height:100%;display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:1.05fr .95fr}
+  .interior-grid__lead{grid-row:1/3;position:relative}
+  .interior-grid__title{position:absolute;z-index:3;left:clamp(20px,3vw,48px);bottom:clamp(24px,3vw,48px);color:#fff;max-width:22rem}
+  .interior-grid__title .catalog-title{color:#fff;text-shadow:0 3px 24px rgba(0,0,0,.42)}
+  .interior-grid__small{min-height:0}
+  .entrance-grid{position:relative;z-index:2;height:100%;display:grid;grid-template-columns:1.18fr .82fr;grid-template-rows:.58fr .42fr}
+  .entrance-grid__lead{grid-row:1/3}
+  .entrance-grid__copy{padding:clamp(20px,3vw,46px)}
+  .entrance-grid__detail{min-height:0}
+  .structure-grid{position:relative;z-index:2;height:100%;display:grid;grid-template-columns:.86fr 1.14fr}
+  .structure-grid__copy{padding:clamp(26px,3.6vw,58px);display:flex;flex-direction:column;justify-content:center}
+  .structure-grid__visual{position:relative;display:grid;grid-template-columns:1fr .72fr;grid-template-rows:1fr .54fr;padding:clamp(22px,3vw,44px);gap:12px}
+  .structure-grid__visual .catalog-photo:first-child{grid-row:1/3}
+  .design-grid{position:relative;z-index:2;height:100%;display:grid;grid-template-columns:1.12fr .88fr;grid-template-rows:1fr .54fr}
+  .design-grid__meeting{grid-row:1/3}
+  .design-grid__copy{padding:clamp(22px,3vw,44px)}
+  .design-grid__plans{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(56,42,28,.18);min-height:0}
+  .design-grid__plans img{object-fit:contain;background:#f5efe3;padding:8px}
+  .process-grid{position:relative;z-index:2;height:100%;display:grid;grid-template-columns:.9fr 1.1fr}
+  .process-grid__left{display:grid;grid-template-rows:.58fr .42fr;min-height:0}
+  .process-grid__left img{object-fit:cover}
+  .process-grid__left .is-plan img{object-fit:contain;background:#eee5d7;padding:12px}
+  .process-grid__copy{padding:clamp(24px,3.8vw,62px);display:flex;flex-direction:column;justify-content:center}
+  .process-steps{display:grid;grid-template-columns:repeat(3,1fr);margin-top:20px;border-top:1px solid var(--cat-line)}
+  .process-step{padding:14px 10px 0 0}
+  .process-step b{display:block;font-family:var(--cat-latin);font-size:.58rem;letter-spacing:.18em;color:#9a7b3e}
+  .process-step span{font-size:.72rem;line-height:1.6;letter-spacing:.03em}
+  .warranty-grid{position:relative;z-index:2;height:100%;display:grid;grid-template-columns:1.08fr .92fr}
+  .warranty-grid__copy{padding:clamp(24px,3.6vw,58px);display:flex;flex-direction:column;justify-content:center}
+  .warranty-facts{margin-top:18px;border-bottom:1px solid var(--cat-line)}
+  .spec-grid{position:relative;z-index:2;height:100%;display:grid;grid-template-columns:.82fr 1.18fr}
+  .spec-grid__intro{padding:clamp(26px,3.8vw,62px);display:flex;flex-direction:column;justify-content:center}
+  .spec-grid__series{display:grid;grid-template-rows:repeat(3,1fr);padding:clamp(18px,2.6vw,40px)}
+  .spec-line{display:grid;grid-template-columns:68px 1fr;gap:18px;align-items:center;border-top:1px solid var(--cat-line);padding:10px 0}
+  .spec-line:last-child{border-bottom:1px solid var(--cat-line)}
+  .spec-line__name{font-family:var(--cat-mincho);font-size:2rem;color:var(--series-color);text-align:center}
+  .spec-line__text{font-size:.76rem;line-height:1.75;letter-spacing:.035em;color:var(--cat-muted)}
+  .closing{position:relative;z-index:2;height:100%;display:grid;place-items:center;text-align:center;padding:clamp(30px,6vw,90px)}
+  .closing__art{position:absolute;width:min(34vw,470px);height:auto;right:-4%;top:-10%;opacity:.48;filter:sepia(1) saturate(1.4)}
+  .closing__body{position:relative;z-index:2;max-width:720px}
+  .closing__actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:26px}
+  .catalog-cta{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border:1px solid rgba(241,213,125,.55);
+    text-decoration:none;font-size:.8rem;letter-spacing:.08em;color:var(--cat-cream)}
+  .catalog-cta--fill{background:#B67A20;border-color:#B67A20;color:#fff}
 
-  /* ============ ステージ ============ */
-  .fvs{position:relative;background:var(--void)}
-  html.fvs-app .fvs{height:100vh;height:100svh;overflow:hidden}
-  .fvs__scene{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;
-    overflow:hidden;padding:calc(env(safe-area-inset-top) + 56px) var(--mx) calc(env(safe-area-inset-bottom) + 72px)}
-  html.fvs-app .fvs__scene{position:absolute;inset:0;min-height:0;
-    box-shadow:0 -26px 64px rgba(24,4,6,.42)}
-  html.fvs-static .fvs__dots,html.fvs-static .fvs__count,html.fvs-static .fvs__hint,html.fvs-static .fvs__skip{display:none}
+  /* 操作UI: 頁送りとサイトスクロールを分離する */
+  .fvs__count{position:absolute;z-index:20;left:clamp(18px,3vw,44px);bottom:calc(env(safe-area-inset-bottom) + clamp(22px,2.7vh,30px));
+    font-family:var(--cat-latin);font-size:.7rem;letter-spacing:.24em;color:rgba(247,241,229,.78)}
+  .fvs__exit{position:absolute;z-index:20;right:clamp(18px,3vw,44px);bottom:calc(env(safe-area-inset-bottom) + clamp(18px,2.5vh,28px));
+    display:inline-flex;align-items:center;min-height:44px;text-decoration:none;font-size:.72rem;letter-spacing:.12em;color:rgba(247,241,229,.86)!important}
+  .fvs__exit::after{content:"";width:24px;height:1px;margin-left:10px;background:currentColor}
+  .fvs__ui{position:absolute;z-index:20;left:50%;bottom:calc(env(safe-area-inset-bottom) + clamp(14px,2.2vh,24px));transform:translateX(-50%);
+    display:grid;grid-template-columns:54px minmax(126px,auto) 54px;align-items:center;background:rgba(19,13,11,.82);color:#fff;
+    border:1px solid rgba(241,213,125,.25);box-shadow:0 12px 38px rgba(0,0,0,.32)}
+  .fvs__ui button{appearance:none;border:0;background:transparent;color:inherit;min-width:48px;min-height:48px;cursor:pointer;font:inherit}
+  .fvs__ui button:disabled{opacity:.28;cursor:default}
+  .fvs__navbtn{display:grid;place-items:center;font-family:var(--cat-latin);font-size:1.15rem}
+  .fvs__tocbtn{border-left:1px solid rgba(255,255,255,.16)!important;border-right:1px solid rgba(255,255,255,.16)!important;
+    font-size:.72rem!important;letter-spacing:.16em}
+  .fvs__scrollcue{display:none}
+  .fvs button:focus-visible,.fvs a:focus-visible,.fvs__toc button:focus-visible{outline:2px solid var(--cat-gold-hi);outline-offset:3px}
+  .fvs__toc{width:min(760px,calc(100vw - 28px));max-height:min(82svh,760px);padding:0;border:1px solid rgba(216,183,91,.5);
+    background:url("assets/std/page_kinari_letter_2400.webp") center/cover var(--cat-paper);color:var(--cat-ink);box-shadow:0 30px 100px rgba(0,0,0,.55)}
+  .fvs__toc::backdrop{background:rgba(15,9,7,.72)}
+  .fvs__tochead{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:18px 22px;
+    background:rgba(243,239,230,.95);border-bottom:1px solid var(--cat-line)}
+  .fvs__tochead h2{font-family:var(--cat-mincho);font-size:1.15rem;letter-spacing:.08em}
+  .fvs__tocclose{appearance:none;border:0;background:none;min-width:44px;min-height:44px;cursor:pointer;font-size:1.3rem}
+  .fvs__toclist{list-style:none;padding:8px 22px 24px;display:grid;grid-template-columns:1fr 1fr}
+  .fvs__toclist button{width:100%;min-height:52px;display:grid;grid-template-columns:34px 1fr;align-items:center;text-align:left;
+    border:0;border-bottom:1px solid var(--cat-line);background:none;cursor:pointer;color:var(--cat-ink)}
+  .fvs__toclist b{font-family:var(--cat-latin);font-size:.64rem;color:#9a7b3e}
+  .fvs__toclist span{font-size:.82rem;letter-spacing:.04em}
 
-  /* ============ 紙の幕（案B） ============ */
-  .fvs__scene--paper{background:url("assets/std/page_kinari.webp") center/cover var(--paper);color:var(--sumi)}
-  .fvs__scene--paper::after{content:"";position:absolute;inset:0;pointer-events:none;
-    background:radial-gradient(120% 100% at 50% 0%,transparent 58%,rgba(122,104,76,.14) 100%)}
-  .paper__in{position:relative;z-index:2;width:min(1060px,100%)}
-  .act{position:absolute;left:clamp(4px,1.6vw,26px);top:38%;z-index:2;
-    writing-mode:vertical-rl;font-family:var(--fm);
-    font-size:clamp(1rem,.95rem + .2vw,1.05rem);letter-spacing:.4em;
-    color:var(--sumi3);display:flex;align-items:center;gap:14px}
-  .act::after{content:"";width:1px;height:clamp(90px,24vh,240px);background:linear-gradient(180deg,rgba(176,138,60,.6),rgba(176,138,60,0))}
-  .fvs__scene--eq .act{color:var(--cream2)}
-  .fvs__scene--eq .act::after{background:linear-gradient(180deg,rgba(232,199,125,.7),rgba(232,199,125,0))}
-  @media (max-width:700px){.act{left:8px;font-size:1rem;letter-spacing:.24em}}
-  .fvs__eyebrow{font-size:clamp(.9375rem,.86rem + .3vw,1.05rem);font-weight:400;
-    letter-spacing:.3em;color:var(--gold2);margin-bottom:clamp(16px,3vh,30px)}
-
-  /* ============ 情緒コピー = 明朝（19事例実測: w400-500 / 字間+.06em / 行間1.8。
-       700以上・マイナス字間は高見え群にゼロ件） ============ */
-  .hline{font-family:var(--fm);font-weight:500;letter-spacing:.06em;line-height:1.8;
-    font-size:clamp(1.75rem,1.3rem + 2.6vw,3.2rem);color:var(--sumi)}
-  .hline--sm{font-size:clamp(1.4rem,1.1rem + 1.6vw,2.1rem)}
-  .hlead{font-family:var(--fm);font-weight:400;letter-spacing:.06em;line-height:1.9;
-    font-size:clamp(1rem,.94rem + .4vw,1.18rem);color:var(--sumi2)}
-  .fvs__scene--beni .hline,.fvs__scene--beni .hlead{color:var(--cream)}
-  .fvs__scene--beni .hlead{color:var(--cream2)}
-
-  /* ============ 幕0: 表紙（Higgsfield生成・箔押しの原画） ============ */
-  .fvs__scene--cover{padding:0;background:var(--shu)}
-  .cover__bg{position:absolute;inset:0}
-  .cover__bg img{width:100%;height:100%;object-fit:cover;object-position:52% 55%}
-  .cover__t{position:relative;z-index:2;text-align:center;color:#F6EFE2;
-    transform:translate(1%,4%)}
-  .cover__yamato{writing-mode:vertical-rl;margin:0 auto clamp(14px,2.6vh,26px);
-    font-family:"Shippori Mincho B1",serif;font-size:clamp(1rem,.9rem + .5vw,1.2rem);
-    letter-spacing:.42em;height:auto}
-  .cover__fude{font-family:var(--fb);font-size:clamp(2.6rem,1.8rem + 4.5vw,5.4rem);
-    line-height:1.3;letter-spacing:.18em;text-indent:.18em}
-  .cover__en{margin-top:clamp(12px,2.2vh,22px);font-family:var(--fn);font-weight:300;
-    font-size:clamp(.9375rem,.9rem + .2vw,1.05rem);letter-spacing:.3em;color:rgba(246,239,226,.85)}
-  @media (max-width:700px){
-    .cover__t{transform:translate(0,-2%)}
+  @media (max-width:820px){
+    .fvs__scene{padding:62px 0 86px}
+    .catalog-sheet,.catalog-cover{width:calc(100vw - 28px);height:calc(100svh - 164px)}
+    .catalog-sheet::before{display:none}
+    .catalog-cover{transform:none;box-shadow:-4px 5px 0 #5d080d,-7px 8px 0 #d4c7ad,0 28px 70px rgba(0,0,0,.58)}
+    .spread,.equipment,.water-grid,.interior-grid,.entrance-grid,.structure-grid,.design-grid,.process-grid,.warranty-grid,.spec-grid{grid-template-columns:1fr}
+    .spread__half:first-child{min-height:45%}
+    .spread__copy{padding:22px 24px;justify-content:flex-start}
+    .spread--message .spread__copy{padding-right:24px}
+    .spread--message .catalog-photo--detail{width:34%;height:19%;right:16px;bottom:16px;border-width:4px}
+    .series-grid{grid-template-columns:1fr;grid-template-rows:repeat(3,1fr)}
+    .series-card + .series-card{border-left:0;border-top:1px solid rgba(255,255,255,.35)}
+    .series-card__body{left:18px;bottom:14px}
+    .series-card__name{font-size:2rem}.series-card__en{display:inline;margin-left:10px}.series-card__line{display:inline-block;margin:0 0 4px 12px}
+    .series-card__note{position:absolute;left:72px;bottom:2px;max-width:26ch;font-size:.64rem}
+    .equipment{grid-template-rows:48% 52%}.equipment__side{padding:18px 22px;grid-template-columns:1fr .72fr;grid-template-rows:auto 1fr;gap:12px}
+    .equipment__side .catalog-copy{grid-column:1/2}.equipment__detail{grid-column:2/3;grid-row:1/3;max-height:none}
+    .water-grid{grid-template-columns:1.12fr .88fr;grid-template-rows:62% 38%}.water-grid>.catalog-photo:first-child{grid-row:1/2}
+    .water-grid>.catalog-photo:nth-child(2){grid-column:2;grid-row:1}.water-grid__copy{grid-column:1/3;padding:16px 20px}
+    .interior-grid{grid-template-columns:1.2fr .8fr;grid-template-rows:62% 38%}.interior-grid__lead{grid-row:1/3}
+    .interior-grid__title{left:18px;bottom:18px}.interior-grid__title .catalog-copy{display:none}
+    .entrance-grid{grid-template-columns:1.16fr .84fr;grid-template-rows:58% 42%}.entrance-grid__lead{grid-row:1/3}.entrance-grid__copy{padding:16px 18px}
+    .structure-grid{grid-template-rows:46% 54%}.structure-grid__copy{padding:18px 22px}.structure-grid__visual{padding:14px;grid-template-columns:1.15fr 1fr .65fr;grid-template-rows:1fr}
+    .structure-grid__visual .catalog-photo:first-child{grid-row:auto}
+    .design-grid{grid-template-columns:1.08fr .92fr;grid-template-rows:62% 38%}.design-grid__meeting{grid-row:1/3}.design-grid__copy{padding:16px}.design-grid__plans{grid-column:2}
+    .process-grid{grid-template-columns:.9fr 1.1fr}.process-grid__copy{padding:18px}.process-steps{grid-template-columns:1fr}.process-step{padding:5px 0}.process-step span{font-size:.68rem}
+    .warranty-grid{grid-template-columns:1fr;grid-template-rows:44% 56%}.warranty-grid__copy{padding:18px 22px}
+    .spec-grid{grid-template-columns:1fr;grid-template-rows:38% 62%}.spec-grid__intro{padding:18px 22px}.spec-grid__series{padding:6px 18px 16px}
+    .catalog-title{font-size:clamp(1.35rem,6vw,2rem)}.catalog-copy{font-size:.75rem;line-height:1.8}.catalog-kicker{font-size:.56rem}
+    .catalog-fact{padding:6px 0}.catalog-fact span{font-size:.7rem}.catalog-no{right:12px;bottom:8px}
+    .closing{padding:28px 20px}.closing__art{width:70vw;right:-22%;top:-4%}
+    .fvs__exit{right:12px;bottom:calc(env(safe-area-inset-bottom) + 22px);font-size:.64rem}.fvs__count{left:14px;bottom:calc(env(safe-area-inset-bottom) + 25px)}
+    .fvs__scrollcue{display:none}.fvs__ui{bottom:calc(env(safe-area-inset-bottom) + 12px)}
   }
-
-  /* ============ 見返し（表紙の内側・深紅）============ */
-  .fvs__scene--mikaeshi{background:url("assets/std/page_beni.webp") center/cover var(--beni-d);color:var(--cream)}
-  .fvs__scene--mikaeshi::before{content:"";position:absolute;inset:0;pointer-events:none;
-    background:rgba(74,6,10,.46)}
-  .fvs__scene--mikaeshi::after{content:"";position:absolute;inset:0;pointer-events:none;
-    background:radial-gradient(112% 88% at 50% 46%,transparent 44%,rgba(52,3,6,.55) 100%)}
-  .mikaeshi__in{text-align:center;width:min(760px,100%)}
-  .mikaeshi__in .fvs__eyebrow{color:var(--foil1);margin-bottom:clamp(18px,3.4vh,32px)}
-  .mikaeshi__in .hline{color:var(--cream)}
-  .mikaeshi__in .rule-foil{margin:clamp(22px,4vh,38px) auto}
-  .mikaeshi__in .hlead{color:rgba(243,238,227,.82);margin-bottom:0}
-
-  /* ============ 紅の幕（包み・方向B） ============ */
-  .fvs__scene--beni{background:url("assets/std/page_beni.webp") center/cover var(--shu);color:var(--cream)}
-  .fvs__scene--beni::after{content:"";position:absolute;inset:0;pointer-events:none;
-    background:radial-gradient(118% 92% at 50% 44%,transparent 52%,rgba(84,8,12,.32) 100%)}
-  .foil{position:absolute;pointer-events:none;z-index:1;opacity:.92;
-    filter:brightness(0) invert(.55) sepia(1) saturate(2.2) brightness(.98)}
-  .foil--tl{left:clamp(-140px,-11vw,-60px);top:clamp(-120px,-9vh,-40px);width:clamp(220px,34vw,520px);transform:rotate(188deg)}
-  .foil--tr{right:clamp(-150px,-11vw,-60px);top:clamp(-130px,-10vh,-50px);width:clamp(230px,36vw,560px);transform:scaleX(-1) rotate(7deg)}
-  .foil--bl{left:clamp(-150px,-12vw,-70px);bottom:clamp(-130px,-10vh,-50px);width:clamp(220px,35vw,540px);transform:scaleY(-1) rotate(6deg)}
-  .foil--br{right:clamp(-140px,-10vw,-60px);bottom:clamp(-140px,-10vh,-60px);width:clamp(200px,32vw,500px);transform:scale(-1,-1) rotate(4deg)}
-  .encl{position:relative;z-index:2;width:min(640px,92vw,84svh);aspect-ratio:1;border-radius:50%;
-    background:radial-gradient(circle at 38% 30%,#B7262B,#A01B20 66%,#951620);
-    box-shadow:0 0 0 1px rgba(201,162,75,.5),0 44px 130px rgba(66,5,9,.5);
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-    gap:clamp(12px,2.4vh,24px);padding:clamp(22px,7vw,80px);text-align:center;margin:0 auto}
-  .encl .fvs__eyebrow{margin-bottom:0;color:var(--foil1)}
-  .encl .fvs__lead{margin-bottom:0;color:rgba(247,243,234,.9)}
-  .timg--inv{filter:brightness(0) invert(1) sepia(.16) saturate(1.6)}
-  .rule-foil{width:clamp(48px,6vw,68px);height:1px;border:0;
-    background:linear-gradient(90deg,var(--foil1),var(--foil2))}
-  .fvs__scene--beni .act{color:var(--foil1)}
-  .fvs__scene--beni .act::after{background:linear-gradient(180deg,rgba(241,213,125,.7),rgba(241,213,125,0))}
-  .finwrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;
-    gap:clamp(18px,3.2vh,32px)}
-  .encl--fin{width:min(690px,92vw,70svh);gap:clamp(14px,2.6vh,26px)}
-  .fvs__scene--climax{padding-top:calc(env(safe-area-inset-top) + 40px);
-    padding-bottom:calc(env(safe-area-inset-bottom) + 44px)}
-  .fincard{position:relative;z-index:2;background:url("assets/std/page_kinari.webp") center/cover var(--paper);
-    padding:clamp(16px,2.6vh,24px) clamp(18px,3.4vw,40px) clamp(6px,1.4vh,14px);
-    border:1px solid rgba(176,138,60,.4);box-shadow:0 22px 64px rgba(52,3,6,.55)}
-  .fincard .open__cta{margin-top:0}
-  .encl--fin .fvs__eyebrow{margin-bottom:clamp(4px,1vh,10px)}
-  .encl--fin{padding:clamp(18px,4vw,52px)}
-  /* 円は 70svh でも縮むため、文字も svh に連動させないと低い画面で溢れる。
-     最長行「当社と一緒に叶えましょう。」13字が円の内寸に収まる上限で頭打ちにする */
-  .encl--fin .hline{font-size:clamp(1.2rem,min(1.1rem + 1.8vw, 3.6svh),2.2rem)}
-  .encl--fin .rule-foil{margin:clamp(2px,.6vh,8px) auto}
-  .fvs__scene--beni .climax__sub{color:rgba(247,243,234,.85)}
-  @media (max-width:700px){
-    .foil--tl,.foil--br{display:none}
-    .encl--fin{width:min(94vw,78svh)}
-    .encl--fin .hline{font-size:clamp(1.15rem,1rem + 1vw,1.5rem);letter-spacing:.04em;line-height:1.75}
-    .encl--fin .open__sub{font-size:.9rem;line-height:1.85}
-    .encl .fvs__eyebrow{font-size:.8rem;letter-spacing:.2em}
+  @media (max-width:430px){
+    .catalog-sheet,.catalog-cover{width:calc(100vw - 18px);height:calc(100svh - 148px)}
+    .catalog-title{font-size:clamp(1.16rem,5.6vw,1.55rem);line-height:1.42}.catalog-copy{font-size:.69rem;line-height:1.7}
+    .catalog-rule{margin:10px 0}.catalog-kicker{letter-spacing:.2em}
+    .spread__copy{padding:16px 18px}.series-card__note{font-size:.58rem;left:64px;max-width:22ch}
+    .equipment__side{padding:13px 15px}.water-grid__copy,.entrance-grid__copy,.structure-grid__copy,.warranty-grid__copy,.spec-grid__intro{padding:13px 15px}
+    .structure-grid{grid-template-rows:44% 56%}.structure-grid__visual{padding:9px;gap:7px;grid-template-columns:1fr 1fr}.structure-grid__visual .catalog-photo:last-child{display:none}
+    .design-grid__copy{padding:12px}.design-grid__plans img{padding:3px}.process-grid__copy{padding:12px}.process-steps{margin-top:8px}
+    .spec-line{grid-template-columns:44px 1fr;gap:10px;padding:6px 0}.spec-line__name{font-size:1.45rem}.spec-line__text{font-size:.64rem;line-height:1.55}
+    .warranty-facts{margin-top:8px}.catalog-fact{grid-template-columns:22px 1fr;gap:6px}
+    .closing__actions{margin-top:16px}.catalog-cta{min-height:44px;padding:9px 14px;font-size:.7rem}
+    .fvs__ui{grid-template-columns:48px 112px 48px}.fvs__ui button{min-height:46px}
+    .fvs__toclist{grid-template-columns:1fr;padding:4px 16px 20px}.fvs__toclist button{min-height:46px}
+    .catalog-cover__title{transform:translate(-50%,-50%);text-shadow:0 1px 3px rgba(83,4,9,.46);-webkit-font-smoothing:antialiased}
+    .catalog-cover__title strong{font-family:var(--cat-mincho);font-size:clamp(2.35rem,12vw,2.95rem);font-weight:500;writing-mode:vertical-rl;letter-spacing:.1em;max-height:43svh}
+    .catalog-cover__title small{font-size:.7rem;letter-spacing:.3em}.catalog-cover__title i{font-size:.5rem;letter-spacing:.22em}
   }
-
-  /* 0円の台帳 */
-  /* index.html の別セクションに同名の .ledger（2カラムgrid）が存在するため、
-     宣言していないプロパティが漏れてくる。FV側は明示的にリセットする */
-  .fvs .ledger{display:block;position:static;padding:0;gap:normal;
-    max-width:640px;margin:clamp(22px,3.6vh,40px) 0 0;text-align:left}
-  .fvs .ledger__row{display:grid;grid-template-columns:max-content 1fr max-content clamp(190px,21vw,230px);
-    align-items:baseline;gap:10px 14px;padding:clamp(12px,2vh,20px) 2px;
-    border-bottom:1px solid var(--line-p)}
-  .fvs .ledger__k{font-size:clamp(.95rem,.88rem + .4vw,1.12rem);letter-spacing:.12em;font-weight:500;white-space:nowrap}
-  .fvs .ledger__lead{flex:1;border-bottom:1px dotted rgba(36,30,22,.4);transform:translateY(-4px)}
-  .fvs .ledger__v{font-family:var(--fn);font-weight:300;font-size:clamp(1.5rem,1.2rem + 1.6vw,2.3rem);
-    letter-spacing:.02em;font-variant-numeric:tabular-nums;color:var(--shu)}
-  .fvs .ledger__v small{font-size:.5em;font-family:var(--fg);font-weight:500;letter-spacing:.1em;margin-left:2px}
-  .fvs .ledger__chip{display:inline-block;margin-left:0;font-size:.8rem;letter-spacing:.06em;color:var(--sumi2);
-    border:1px solid var(--line-p);border-radius:99px;padding:3px 10px;white-space:nowrap;
-    justify-self:end;text-align:center;width:100%}
-  .fvs .ledger__v{justify-self:end}
-  @media (max-width:700px){
-    .fvs .ledger__row{display:flex;flex-wrap:wrap;align-items:baseline}
-    .fvs .ledger__lead{display:none}
-    .fvs .ledger__k{flex:1}
-    .fvs .ledger__v{margin-left:auto}
-    .fvs .ledger__chip{width:100%;text-align:left;border:0;border-radius:0;padding:2px 0 0;
-      color:var(--sumi3);font-size:.78rem}
-    #s03 .act{display:none}
+  @media (prefers-reduced-motion:reduce){
+    .fvs__loader{display:none}.catalog-cover::before{animation:none;display:none}.catalog-cover__motion{display:none}
   }
-  .fvs .ledger__note{margin-top:clamp(16px,2.6vh,26px);font-size:clamp(.875rem,.84rem + .2vw,.95rem);
-    letter-spacing:.08em;color:var(--sumi2)}
-
-  /* 0円の証書（紅地×箔金の数字） */
-  .fvs__scene--ledger .ledger__row{border-bottom-color:rgba(243,238,227,.2)}
-  .fvs__scene--ledger .ledger__k{color:var(--cream)}
-  .fvs__scene--ledger .ledger__lead{border-bottom-color:rgba(243,238,227,.32)}
-  .fvs__scene--ledger .ledger__v{color:var(--foil1)}
-  .fvs__scene--ledger .ledger__chip{color:var(--cream2);border-color:rgba(243,238,227,.34)}
-  .fvs__scene--ledger .ledger__note{color:var(--cream2)}
-  .fvs__scene--ledger .paper__in{width:min(900px,100%)}
-
-  /* ============ 写真の幕（紅の図版プレート＝上質カタログ） ============ */
-  .fvs__scene--eq{padding:0;background:url("assets/std/page_beni.webp") center/cover var(--shu)}
-  .fvs__scene--eq::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
-    background:radial-gradient(118% 92% at 50% 44%,transparent 52%,rgba(84,8,12,.3) 100%)}
-  .fvs__media{position:absolute;left:var(--mx);top:50%;transform:translateY(-50%);
-    width:min(56vw,980px);aspect-ratio:3/2;z-index:2;background:#1c0f0f;overflow:hidden;
-    border:clamp(10px,1.4vw,20px) solid #F6F2E8;outline:1px solid rgba(241,213,125,.45);
-    box-shadow:0 30px 90px rgba(60,5,8,.55)}
-  .fvs__media picture{position:absolute;inset:0}
-  .fvs__media img{width:100%;height:100%;object-fit:cover}
-  /* 吹き抜けの幕だけ、SPの箱(約0.88:1)に9:16の縦画像を中央で入れると
-     上端の抜け(2階の手すり)が切れる。見出しが「吹き抜け・天井を上げる」なので
-     そこが落ちると幕が成立しない。上寄せにする */
-  #s20 .fvs__media img{object-position:center 16%}
-  .fvs__scene--eq.is-right .fvs__media{left:auto;right:var(--mx)}
-  .fvs__eqtxt{position:absolute;right:var(--mx);top:50%;transform:translateY(-50%);z-index:2;
-    text-align:left;max-width:min(30vw,400px)}
-  .fvs__scene--eq.is-right .fvs__eqtxt{right:auto;left:var(--mx);text-align:left}
-  .fvs__room{font-family:var(--fn);font-weight:200;text-transform:uppercase;color:var(--cream);
-    font-size:clamp(2rem,1.4rem + 2.8vw,3.6rem);letter-spacing:.1em;line-height:1.1}
-  .fvs__room::after{content:"";display:block;width:clamp(44px,5vw,60px);height:1px;
-    background:linear-gradient(90deg,var(--foil1),var(--foil2));margin-top:clamp(12px,2vh,18px)}
-  .fvs__pled{margin-top:clamp(12px,2.2vh,20px);font-size:clamp(.875rem,.83rem + .25vw,1rem);
-    letter-spacing:.12em;display:flex;align-items:center;gap:12px;flex-wrap:wrap;color:var(--cream)}
-  .fvs__scene--eq.is-right .fvs__pled{justify-content:flex-start}
-  .fvs__pled .en{font-family:var(--fn);font-weight:300;letter-spacing:.26em;text-transform:uppercase;
-    font-size:.92em;color:#E8C77D}
-  .fvs__pled .dash{width:34px;height:1px;background:var(--gold);opacity:.8}
-  .chip{font-style:normal;font-weight:500;font-size:.8rem;letter-spacing:.2em;color:#E8C77D;
-    border:1px solid rgba(201,162,75,.65);padding:4px 10px 4px 12px;border-radius:2px;white-space:nowrap}
-  .wish{list-style:none;margin:clamp(20px,3.4vh,34px) 0 0}
-  .wish li{font-size:clamp(1rem,.94rem + .5vw,1.2rem);letter-spacing:.14em;color:var(--sumi2);
-    padding:clamp(6px,1.2vh,12px) 0}
-  .reason__punch{margin-top:clamp(18px,3vh,28px);font-weight:500;
-    font-size:clamp(1.15rem,1rem + 1vw,1.7rem);letter-spacing:.12em;color:var(--sumi);
-    padding-bottom:8px;border-bottom:2px solid transparent;
-    border-image:url("assets/std/gold_washi.webp") 30 / 0 0 2px 0 / 0 stretch;width:fit-content}
-  .chaplead{font-family:var(--fm);font-weight:400;letter-spacing:.06em;line-height:1.9;
-    font-size:clamp(.95rem,.9rem + .35vw,1.1rem);margin-bottom:clamp(16px,3vh,28px);
-    padding-bottom:clamp(12px,2.2vh,20px);color:var(--cream2);
-    border-bottom:1px solid rgba(241,213,125,.45)}
-  .is-kinari .chaplead{color:var(--sumi2);border-bottom-color:rgba(176,138,60,.45)}
-  .pled__note{margin-top:10px;font-size:clamp(.875rem,.83rem + .25vw,1rem);letter-spacing:.1em;color:var(--cream2)}
-  .fvs__scene--climax{text-align:center}
-  .climax__sub{color:var(--sumi2)}
-  .climax__cta{justify-content:center}
-  .art--swXL{width:clamp(170px,19vw,300px);top:calc(env(safe-area-inset-top) + clamp(20px,3.6vh,48px));
-    right:clamp(16px,6vw,110px)}
-  /* 静かな幕: 深紅トーン・オン・トーン＋中央図版 */
-  .fvs__scene--eq.is-quiet{background:linear-gradient(rgba(83,8,13,.46),rgba(83,8,13,.46)),
-    url("assets/std/page_beni.webp") center/cover var(--beni-d)}  /* 単色塗りだと紙が切れる */
-  .is-quiet .fvs__media,.fvs__scene--eq.is-right.is-quiet .fvs__media{left:50%;right:auto;top:44%;
-    transform:translate(-50%,-50%);width:min(46vw,780px)}
-  .is-quiet .fvs__eqtxt,.fvs__scene--eq.is-right.is-quiet .fvs__eqtxt{left:50%;right:auto;top:auto;
-    bottom:clamp(56px,10vh,110px);transform:translateX(-50%);text-align:center;max-width:min(80vw,600px)}
-  .is-quiet .fvs__room{font-size:clamp(1.15rem,1rem + 1vw,1.7rem);font-weight:200;letter-spacing:.34em}
-  .is-quiet .fvs__room::after{margin-left:auto;margin-right:auto}
-  .is-quiet .fvs__pled,.fvs__scene--eq.is-right.is-quiet .fvs__pled{font-size:clamp(.8rem,.78rem + .2vw,.9rem);justify-content:center}
-  /* 生成りの頁（紅と交互＝頁めくり） */
-  .fvs__scene--eq.is-kinari{background:url("assets/std/page_kinari.webp") center/cover var(--paper)}
-  .fvs__scene--eq.is-kinari::after{background:radial-gradient(120% 100% at 50% 0%,transparent 58%,rgba(122,104,76,.14) 100%)}
-  .fvs__scene--eq.is-quiet.is-kinari{background:linear-gradient(rgba(237,232,221,.45),rgba(237,232,221,.45)),url("assets/std/page_kinari.webp") center/cover var(--paper2)}
-  .is-kinari .fvs__media{border-color:#FCFAF5;outline-color:rgba(176,138,60,.5);
-    box-shadow:0 24px 70px rgba(60,48,28,.35)}
-  .is-kinari .fvs__room{color:var(--sumi)}
-  .is-kinari .fvs__pled,.is-kinari .pled__note{color:var(--sumi2);text-shadow:none}
-  .is-kinari .fvs__pled .en{color:var(--gold2)}
-  .is-kinari .chip{color:var(--gold2);border-color:rgba(176,138,60,.6)}
-  .is-kinari .act{color:var(--sumi3)}
-  .is-kinari .act::after{background:linear-gradient(180deg,rgba(176,138,60,.6),rgba(176,138,60,0))}
-  .timg--e{width:min(560px,80vw)}
-  .timg--o{width:min(620px,84vw)}
-  .open__sub{margin-top:clamp(12px,2vh,18px);font-size:clamp(.95rem,.9rem + .3vw,1.05rem);
-    letter-spacing:.1em;color:var(--cream2)}
-  .open__cta{margin-top:clamp(16px,2.8vh,26px);display:flex;gap:12px;flex-wrap:wrap}
-  .btn--ghost{border:1px solid rgba(36,30,22,.28);color:var(--sumi)}
-  .btn--ghost:hover{border-color:var(--gold2);color:var(--gold2)}
-  @media (max-width:700px){
-    .open__cta{gap:8px}
-    .open__cta .btn{display:inline-block;margin:0;padding:12px 18px;font-size:.85rem}
-  }
-
-  /* ============ ボタン ============ */
-  .btn{display:inline-block;font-size:.92rem;letter-spacing:.22em;text-decoration:none;
-    padding:17px 42px;border-radius:2px;margin:0 8px 10px;
-    transition:background .35s ease,border-color .35s ease,color .35s ease,box-shadow .35s ease}
-  .btn--fill{background:var(--amber);color:#fff;box-shadow:0 6px 18px rgba(122,84,18,.28)}
-  .btn--fill:hover{background:var(--amber-d);box-shadow:0 8px 22px rgba(122,84,18,.36)}
-
-  /* ============ 操作UI（テーマ連動） ============ */
-  .fvs__dots{position:fixed;right:clamp(2px,1vw,14px);top:50%;transform:translateY(-50%);z-index:60;
-    display:flex;flex-direction:column;gap:0}
-  html.fvs-released .fvs__dots,html.fvs-released .fvs__count,html.fvs-released .fvs__hint,html.fvs-released .fvs__skip{opacity:0;pointer-events:none;transition:opacity .3s}
-  .fvs__dots button{appearance:none;border:0;background:none;cursor:pointer;padding:0;line-height:0;
-    width:44px;height:44px;display:grid;place-items:center}
-  .fvs__dots button::before{content:"";display:block;width:7px;height:7px;border-radius:50%;
-    background:rgba(243,238,227,.34);transition:transform .3s,background .3s}
-  .fvs__dots button[aria-current="true"]::before{background:var(--gold);transform:scale(1.5)}
-  .fvs__dots button:focus-visible{outline:1px solid var(--gold);outline-offset:2px;border-radius:50%}
-  html[data-fvstheme="paper"] .fvs__dots button::before{background:rgba(36,30,22,.28)}
-  html[data-fvstheme="paper"] .fvs__dots button[aria-current="true"]::before{background:var(--shu)}
-  .fvs__count{position:fixed;right:clamp(14px,2.2vw,30px);top:calc(env(safe-area-inset-top) + clamp(14px,2.6vh,24px));z-index:60;
-    font-family:var(--fn);font-weight:300;font-size:.9rem;letter-spacing:.24em;color:var(--cream2)}
-  html[data-fvstheme="paper"] .fvs__count{color:var(--sumi2)}
-  /* SKIP＝最後の幕（ご案内＋CTA）へ飛ぶ。FVを抜けさせるのではなく最終幕へ送るので、
-     急いでいる人もCTAは見る。位置は左下＝カウンタ(右上)・ドット(右中央)・
-     ヒント(下中央)のいずれとも当たらない唯一の空き。SPでも親指が届く */
-  .fvs__skip{position:fixed;left:clamp(14px,2.2vw,30px);
-    bottom:calc(env(safe-area-inset-bottom) + clamp(12px,2.6vh,22px));z-index:60;
-    appearance:none;border:0;background:none;cursor:pointer;padding:0 6px;
-    font-family:var(--fn);font-weight:300;font-size:.9rem;letter-spacing:.24em;
-    color:var(--cream2);min-height:44px;display:inline-flex;align-items:center;gap:10px;
-    transition:color .3s,opacity .3s}
-  .fvs__skip::after{content:"";width:18px;height:1px;background:currentColor;opacity:.65;
-    transition:width .3s}
-  .fvs__skip:hover::after{width:28px}
-  html[data-fvstheme="paper"] .fvs__skip{color:var(--sumi2)}
-  .fvs__skip[hidden]{display:none}
-  .fvs__skip:focus-visible{outline:1px solid var(--gold);outline-offset:4px}
-  /* ヒントは幅を詰める。SPでは「スクロール」しないので文言としても正しく、
-     かつ左下のSKIPと重ならなくなる（実測: 併記のままだとSP 390pxで重なった） */
-  .fvs__hint-t{display:none}
-  @media (max-width:760px){
-    .fvs__hint-w{display:none}
-    .fvs__hint-t{display:inline}
-  }
-  /* 360px以下では罫を落として幅を詰める（実測: 320pxで残していると
-     中央のヒントと16px重なった）。タップ領域の44pxは維持する */
-  @media (max-width:360px){
-    .fvs__skip{gap:0}
-    .fvs__skip::after{display:none}
-  }
-  .fvs__hint{position:fixed;left:50%;bottom:clamp(12px,2.6vh,22px);transform:translateX(-50%);z-index:60;
-    font-size:1rem;letter-spacing:.18em;color:var(--cream2);display:flex;align-items:center;gap:10px;white-space:nowrap}
-  html[data-fvstheme="paper"] .fvs__hint{color:var(--sumi2)}
-  .fvs__hint::after{content:"";width:1px;height:26px;background:linear-gradient(180deg,var(--gold),transparent);
-    animation:cue 1.8s ease-in-out infinite}
-  html[data-fvstheme="paper"] .fvs__hint::after{background:linear-gradient(180deg,var(--shu),transparent)}
-  @keyframes cue{0%{transform:scaleY(.2);transform-origin:top}55%{transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
-
-
-  @media (max-width:700px){
-    .fvs .spbr{display:inline}
-    .fvs__dots{display:none}
-    .btn{display:block;margin:0 auto 12px;max-width:320px}
-    .fvs__eyebrow{margin-bottom:12px}
-    .fvs__media,.fvs__scene--eq.is-right .fvs__media,
-    .is-quiet .fvs__media,.fvs__scene--eq.is-right.is-quiet .fvs__media{
-      left:16px;right:16px;width:auto;top:calc(env(safe-area-inset-top) + 64px);
-      transform:none;aspect-ratio:auto;height:48svh}
-    .fvs__eqtxt,.fvs__scene--eq.is-right .fvs__eqtxt,
-    .is-quiet .fvs__eqtxt,.fvs__scene--eq.is-right.is-quiet .fvs__eqtxt{
-      left:20px;right:20px;top:auto;bottom:calc(env(safe-area-inset-bottom) + 84px);
-      transform:none;max-width:none;text-align:left}
-    .is-quiet .fvs__room::after{margin-left:0;margin-right:0}
-    .is-quiet .fvs__pled,.fvs__scene--eq.is-right.is-quiet .fvs__pled{justify-content:flex-start}
-  }
-  @media (prefers-reduced-motion:reduce){.fvs__hint::after{animation:none}}
 
   /* ===================== 実績「三帯の明度リズム」（2026-08-19 auth_mock.html図面より統合） =====================
      明部(見出し+証拠写真) → 紅バンド(暗部支配・単色) → 明部(番号付き索引)。
@@ -1427,7 +1319,7 @@
   <p>花鳥風月</p>
 </div>
 
-<section class="fvs" id="top" role="region" aria-label="やまと不動産の紹介（1操作で1シーン進みます）">
+<template id="fvsLegacy">
 
   <!-- 00 表紙: 花鳥風月（Higgsfield生成の箔押し原画。毛筆はパンフ入稿データ待ち=Yuji Syuku代替） -->
   <article class="fvs__scene fvs__scene--cover" id="s00" data-name="表紙" data-theme="dark">
@@ -1642,7 +1534,225 @@
   <p class="fvs__count" aria-hidden="true"><span id="cNow">01</span> / <span id="cAll">13</span></p>
   <button type="button" class="fvs__skip" id="fvSkip" aria-label="最後のご案内へ進む">SKIP</button>
   <p class="fvs__hint" aria-hidden="true"><span class="fvs__hint-w">スクロール</span><span class="fvs__hint-t">スワイプ</span>で次へ</p>
+</template>
+
+<section class="fvs" id="top" role="region" aria-label="花鳥風月 やまとの家 デジタルカタログ">
+  <article class="fvs__scene fvs__scene--cover is-active" data-name="表紙" aria-hidden="false">
+    <div class="catalog-cover catalog-cover--motion">
+      <picture>
+        <source media="(max-width:820px)" type="image/webp" srcset="assets/std/cover_sp_1080.webp 1080w, assets/std/cover_sp_1440.webp 1440w" sizes="calc(100vw - 18px)">
+        <img src="assets/std/cover_pc_1920.webp" srcset="assets/std/cover_pc_1920.webp 1920w, assets/std/cover_pc_2560.webp 2560w" sizes="89vw" alt="深紅の和紙に金の牡丹と燕を箔押しした、花鳥風月 やまとの家の表紙" fetchpriority="high" decoding="async">
+      </picture>
+      <video class="catalog-cover__motion" autoplay muted playsinline preload="metadata" aria-hidden="true" poster="assets/std/cover_pc_1920.webp"><source media="(max-width:820px)" src="assets/catalog/cover-foil-light-mobile.mp4" type="video/mp4"><source media="(min-width:821px)" src="assets/catalog/cover-foil-light-desktop.mp4" type="video/mp4"></video>
+      <div class="catalog-cover__title" aria-hidden="true"><small>やまとの家</small><strong>花鳥風月</strong><i>Yamato House</i></div>
+      <span class="catalog-cover__label">Yamato House Collection</span>
+    </div>
+  </article>
+
+  <article class="fvs__scene" data-name="やまとの家" aria-hidden="true">
+    <div class="catalog-sheet">
+      <div class="spread spread--message">
+        <div class="spread__half catalog-photo"><img src="assets/std/living_1920.webp" srcset="assets/std/living_1100.webp 1100w, assets/std/living_1920.webp 1920w, assets/std/living_2560.webp 2560w" sizes="46vw" alt="木目の天井と建具をそろえたリビング" decoding="async"><span class="catalog-caption">Living / Standard &amp; Design</span></div>
+        <div class="spread__half spread__copy"><p class="catalog-kicker">01 — Message</p><h2 class="catalog-title">見せたものを、<br>そのまま住まいへ。</h2><span class="catalog-rule"></span><p class="catalog-copy">設備、構造、設計、保証。やまとの家に入るものを、写真と確かな仕様で一冊にまとめました。</p><div class="catalog-photo catalog-photo--detail" aria-hidden="true"><img src="assets/std/living_1100.webp" alt=""></div></div>
+      </div><span class="catalog-no">02 / 13</span>
+    </div>
+  </article>
+
+  <article class="fvs__scene" data-name="花・京・風" aria-hidden="true">
+    <div class="catalog-sheet"><div class="series-grid">
+      <section class="series-card" style="--series-color:#C64A00"><img src="assets/lineup/hero/hana_ext.webp" alt="深い軒と木の質感を生かした花シリーズの外観" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">花</h2><span class="series-card__en">Hana</span><i class="series-card__line"></i><p class="series-card__note">設備と外装の選択肢を広く備えたシリーズ。</p></div></section>
+      <section class="series-card" style="--series-color:#7D4B4F"><img src="assets/lineup/hero/kyo_det.webp" alt="京シリーズの素材と設備のディテール" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">京</h2><span class="series-card__en">Miyako</span><i class="series-card__line"></i><p class="series-card__note">限られた敷地を生かす、端正な住まい。</p></div></section>
+      <section class="series-card" style="--series-color:#908600"><img src="assets/lineup/hero/kaze_ext.webp" alt="切妻屋根と赤い玄関ドアが印象的な風シリーズの外観" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">風</h2><span class="series-card__en">Kaze</span><i class="series-card__line"></i><p class="series-card__note">暮らしに必要な仕様を端的にまとめたシリーズ。</p></div></section>
+    </div><span class="catalog-no">03 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene" data-name="キッチン" aria-hidden="true">
+    <div class="catalog-sheet"><div class="equipment">
+      <div class="catalog-photo equipment__hero"><picture><source type="image/avif" srcset="assets/std/kitchen_1100.avif 1100w, assets/std/kitchen_1920.avif 1920w, assets/std/kitchen_2560.avif 2560w" sizes="58vw"><img src="assets/std/kitchen_1920.webp" alt="間接照明と木目の下がり天井を備えた対面キッチン" loading="lazy" decoding="async"></picture><span class="catalog-caption">Kitchen / Cleanup</span></div>
+      <div class="equipment__side"><div><p class="catalog-kicker">02 — Equipment</p><h2 class="catalog-title">料理する場所も、<br>空間の一部として。</h2></div><div class="catalog-photo equipment__detail" aria-hidden="true"><img src="assets/std/kitchen_1100.webp" alt=""></div><p class="catalog-copy">花・京はSTEDIA、風はESを基準に、シリーズごとの選択肢を用意しています。</p></div>
+    </div><span class="catalog-no">04 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene" data-name="水まわり" aria-hidden="true">
+    <div class="catalog-sheet"><div class="water-grid">
+      <div class="catalog-photo"><img src="assets/std/bath_1920.webp" srcset="assets/std/bath_1100.webp 1100w, assets/std/bath_1920.webp 1920w, assets/std/bath_2560.webp 2560w" sizes="55vw" alt="木目調の壁と横長ミラーを備えた浴室" loading="lazy" decoding="async"><span class="catalog-caption">Bathroom</span></div>
+      <div class="catalog-photo"><picture><source type="image/avif" srcset="assets/std/vanity_1100.avif 1100w, assets/std/vanity_1920.avif 1920w"><img src="assets/std/vanity_1920.webp" alt="三面鏡と収納を備えた洗面化粧台" loading="lazy" decoding="async"></picture><span class="catalog-caption">Vanity</span></div>
+      <div class="water-grid__copy"><p class="catalog-kicker">03 — Water Area</p><h2 class="catalog-title">毎日使う場所こそ、<br>選びやすく。</h2><p class="catalog-copy">浴室、洗面、トイレはシリーズごとの仕様を確認しながら選べます。</p></div>
+    </div><span class="catalog-no">05 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene" data-name="内装" aria-hidden="true">
+    <div class="catalog-sheet"><div class="interior-grid">
+      <div class="interior-grid__lead catalog-photo"><img src="assets/std/living_1920.webp" alt="木目の建具と床をそろえたリビング" loading="lazy" decoding="async"><div class="interior-grid__title"><p class="catalog-kicker" style="color:#F1D57D">04 — Interior</p><h2 class="catalog-title">扉、床、畳。<br>触れる部分を整える。</h2><p class="catalog-copy" style="color:rgba(255,255,255,.82)">建具と床はシリーズごとの組み合わせ。和室には、和紙畳の選択肢もあります。</p></div></div>
+      <div class="interior-grid__small catalog-photo"><img src="assets/std/walltex_1920.webp" alt="陰影のある外壁材のディテール" loading="lazy" decoding="async"><span class="catalog-caption">Material Detail</span></div>
+      <div class="interior-grid__small catalog-photo"><img src="assets/std/washitsu_1920.webp" alt="半畳縁なし畳を敷いた和室" loading="lazy" decoding="async"><span class="catalog-caption">Tatami</span></div>
+    </div><span class="catalog-no">06 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene" data-name="玄関・外装" aria-hidden="true">
+    <div class="catalog-sheet"><div class="entrance-grid">
+      <div class="entrance-grid__lead catalog-photo"><img src="assets/std/entrance_1920.webp" srcset="assets/std/entrance_1100.webp 1100w, assets/std/entrance_1920.webp 1920w, assets/std/entrance_2560.webp 2560w" sizes="58vw" alt="木目の玄関ドアと格子を組み合わせたポーチ" loading="lazy" decoding="async"><span class="catalog-caption">Entrance / GIESTA2</span></div>
+      <div class="entrance-grid__copy"><p class="catalog-kicker">05 — Exterior</p><h2 class="catalog-title">迎える表情まで、<br>標準仕様から。</h2><span class="catalog-rule"></span><p class="catalog-copy">玄関ドア、窓、外壁、屋根、軒天。外から見える部分も、三シリーズの仕様に含まれます。</p></div>
+      <div class="entrance-grid__detail catalog-photo"><img src="assets/std/nokiten_1920.webp" alt="木目の軒天と外壁の取り合い" loading="lazy" decoding="async"><span class="catalog-caption">Eaves Detail</span></div>
+    </div><span class="catalog-no">07 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene" data-name="構造・断熱" aria-hidden="true">
+    <div class="catalog-sheet catalog-sheet--red"><div class="structure-grid">
+      <div class="structure-grid__copy"><p class="catalog-kicker" style="color:#F1D57D">06 — Performance</p><h2 class="catalog-title">見えない部分も、<br>三つに共通。</h2><span class="catalog-rule"></span><p class="catalog-copy">耐震等級3相当。wallstatで倒壊リスクを確認し、断熱にはアクアフォームLITEを採用しています。</p><div class="catalog-fact"><b>01</b><span>耐震・制振を設計段階から検討</span></div><div class="catalog-fact"><b>02</b><span>断熱・耐久性と長期保証を共通仕様へ</span></div></div>
+      <div class="structure-grid__visual"><div class="catalog-photo"><img src="assets/std/walltex_1920.webp" alt="ヘーベルパワーボード外壁の深い陰影" loading="lazy" decoding="async"><span class="catalog-caption">Hebel Powerboard</span></div><div class="catalog-photo"><img src="assets/std/miraie_1920.webp" alt="耐震・制振を検討するための構造部材" loading="lazy" decoding="async"><span class="catalog-caption">Seismic Design</span></div><div class="catalog-photo"><img src="assets/std/houses770_persp.png" alt="家づくりの積み重ねを表す金箔の家型図版" loading="lazy" decoding="async"></div></div>
+    </div><span class="catalog-no">08 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene" data-name="完全自由設計" aria-hidden="true">
+    <div class="catalog-sheet"><div class="design-grid">
+      <div class="design-grid__meeting catalog-photo"><img src="assets/jiyu/meeting.webp" alt="設計士と図面を囲む打ち合わせ" loading="lazy" decoding="async"><span class="catalog-caption">Planning Meeting</span></div>
+      <div class="design-grid__copy"><p class="catalog-kicker">07 — Free Design</p><h2 class="catalog-title">設計士が、最初の<br>打ち合わせから同席。</h2><span class="catalog-rule"></span><p class="catalog-copy">同じ分譲地でも、光の入り方と視線の抜け方は敷地ごとに違います。まず敷地を読み、間取りを一から考えます。</p></div>
+      <div class="design-grid__plans"><img src="assets/jiyu/wc_plan_1f.webp" alt="1階の水彩平面図" loading="lazy" decoding="async"><img src="assets/jiyu/wc_plan_2f.webp" alt="2階の水彩平面図" loading="lazy" decoding="async"></div>
+    </div><span class="catalog-no">09 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene" data-name="土地・設計・施工" aria-hidden="true">
+    <div class="catalog-sheet"><div class="process-grid">
+      <div class="process-grid__left"><div class="catalog-photo"><img src="assets/jiyu/wc_exterior.webp" alt="実在する花シリーズの家を描いた水彩外観" loading="lazy" decoding="async"><span class="catalog-caption">Built House / Watercolor</span></div><div class="catalog-photo is-plan"><img src="assets/jiyu/wc_site_sketch.webp" alt="敷地の光と視線を検討するための概念図" loading="lazy" decoding="async"><span class="catalog-caption" style="color:#4b4033;text-shadow:none">Concept Sketch</span></div></div>
+      <div class="process-grid__copy"><p class="catalog-kicker">08 — One Team</p><h2 class="catalog-title">土地から設計、施工まで。<br>ひとつのチームで進める。</h2><span class="catalog-rule"></span><p class="catalog-copy">敷地条件と希望を分けずに考え、設計と施工へつなぎます。</p><div class="process-steps"><div class="process-step"><b>01 / LAND</b><span>敷地と周辺環境を確認</span></div><div class="process-step"><b>02 / DESIGN</b><span>動線、採光、要望を整理</span></div><div class="process-step"><b>03 / BUILD</b><span>設計意図を施工へ共有</span></div></div><p class="catalog-copy" style="margin-top:12px;font-size:.68rem">※敷地図は考え方を示す概念図です。</p></div>
+    </div><span class="catalog-no">10 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene" data-name="保証・アフター" aria-hidden="true">
+    <div class="catalog-sheet"><div class="warranty-grid">
+      <div class="catalog-photo"><img src="assets/std/auth_ext_1920.webp" srcset="assets/std/auth_ext_1100.webp 1100w, assets/std/auth_ext_1920.webp 1920w, assets/std/auth_ext_2560.webp 2560w" sizes="52vw" alt="やまと不動産が手がけた住宅の外観" loading="lazy" decoding="async"><span class="catalog-caption">Aftercare &amp; Warranty</span></div>
+      <div class="warranty-grid__copy"><p class="catalog-kicker">09 — Warranty</p><h2 class="catalog-title">建てたあとも、<br>確認できる仕組みを。</h2><span class="catalog-rule"></span><p class="catalog-copy">保証と点検の内容を、契約前から確認できます。</p><div class="warranty-facts"><div class="catalog-fact"><b>01</b><span>しろあり保証10年・上限1,000万円。延長で最長30年。</span></div><div class="catalog-fact"><b>02</b><span>施工中に第三者機関が2回検査。</span></div><div class="catalog-fact"><b>03</b><span>売却や相続の際も保証を引き継げます。</span></div></div></div>
+    </div><span class="catalog-no">11 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene" data-name="3シリーズの仕様" aria-hidden="true">
+    <div class="catalog-sheet"><div class="spec-grid">
+      <div class="spec-grid__intro"><p class="catalog-kicker">10 — Specification</p><h2 class="catalog-title">共通する強さと、<br>選べる設備。</h2><span class="catalog-rule"></span><p class="catalog-copy">三列の比較表をそのまま並べず、共通仕様と各シリーズの特徴を順に読める形へ再編集しました。</p><div class="catalog-fact"><b>ALL</b><span>外壁、屋根、断熱、給湯、耐震・制振、地盤・建物保証、アフターフォローは三シリーズ共通。</span></div></div>
+      <div class="spec-grid__series"><div class="spec-line" style="--series-color:#C64A00"><div class="spec-line__name">花</div><p class="spec-line__text">STEDIA デュアルトップ／I型／KT。ジエスタ2 親子ドア＋顔認証。選択肢を広く備えます。</p></div><div class="spec-line" style="--series-color:#7D4B4F"><div class="spec-line__name">京</div><p class="spec-line__text">STEDIA I型／KT。ジエスタ2 片開き＋FamiLock。限られた敷地にも合わせやすい構成です。</p></div><div class="spec-line" style="--series-color:#908600"><div class="spec-line__name">風</div><p class="spec-line__text">ES、ジエスタ2 片開き＋FamiLock、サーモスL＋シャッター付を基準にまとめています。</p></div></div>
+    </div><span class="catalog-no">12 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene" data-name="次のご案内" aria-hidden="true">
+    <div class="catalog-sheet catalog-sheet--red"><div class="closing"><img class="closing__art" src="assets/std/art_swallows_t.webp" alt=""><div class="closing__body"><p class="catalog-kicker" style="color:#F1D57D">Yamato House Collection</p><h2 class="catalog-title">写真で見た仕様を、<br>モデルハウスで確かめる。</h2><span class="catalog-rule" style="margin:20px auto"></span><p class="catalog-copy">花・京・風の違い、自由設計の進め方、総額の考え方をご案内します。</p><div class="closing__actions"><a class="catalog-cta catalog-cta--fill" href="contact.html?type=reserve">モデルハウスを予約</a><a class="catalog-cta" href="contact.html?type=docs">資料を請求</a><a class="catalog-cta" href="#auth">サイト本編を見る</a></div></div></div><span class="catalog-no">13 / 13</span></div>
+  </article>
+
+  <a class="fvs__exit" href="#auth">サイトへ</a>
+  <p class="fvs__count" aria-live="polite"><span id="catNow">01</span> / <span id="catAll">13</span></p>
+  <div class="fvs__ui" aria-label="カタログ操作"><button class="fvs__navbtn" id="catPrev" type="button" aria-label="前のページ" disabled>←</button><button class="fvs__tocbtn" id="catTocOpen" type="button" aria-haspopup="dialog" aria-controls="catToc">目次</button><button class="fvs__navbtn" id="catNext" type="button" aria-label="次のページ">→</button></div>
+  <p class="fvs__scrollcue" aria-hidden="true">縦スクロールでサイトへ</p>
 </section>
+
+<dialog class="fvs__toc" id="catToc" aria-labelledby="catTocTitle">
+  <div class="fvs__tochead"><h2 id="catTocTitle">カタログ目次</h2><button class="fvs__tocclose" id="catTocClose" type="button" aria-label="目次を閉じる">×</button></div>
+  <ol class="fvs__toclist" id="catTocList"></ol>
+</dialog>
+
+<script>
+(function(){
+  'use strict';
+  var catalog=document.querySelector('section.fvs');
+  if(!catalog) return;
+  var scenes=[].slice.call(catalog.querySelectorAll(':scope > .fvs__scene'));
+  var countNow=document.getElementById('catNow');
+  var countAll=document.getElementById('catAll');
+  var prevBtn=document.getElementById('catPrev');
+  var nextBtn=document.getElementById('catNext');
+  var toc=document.getElementById('catToc');
+  var tocOpen=document.getElementById('catTocOpen');
+  var tocClose=document.getElementById('catTocClose');
+  var tocList=document.getElementById('catTocList');
+  var coverMotion=catalog.querySelector('.catalog-cover__motion');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var index=0,animating=false,startX=0,startY=0,pointerDown=false;
+  if(countAll) countAll.textContent=String(scenes.length).padStart(2,'0');
+
+  scenes.forEach(function(scene,i){
+    scene.classList.toggle('is-active',i===0);
+    scene.setAttribute('aria-hidden',i===0?'false':'true');
+    var li=document.createElement('li');
+    var button=document.createElement('button');
+    var no=document.createElement('b');
+    var label=document.createElement('span');
+    button.type='button';
+    no.textContent=String(i+1).padStart(2,'0');
+    label.textContent=scene.getAttribute('data-name')||('ページ'+(i+1));
+    button.appendChild(no);button.appendChild(label);li.appendChild(button);tocList.appendChild(li);
+    button.addEventListener('click',function(){ if(toc.open) toc.close(); go(i); });
+  });
+
+  function sync(){
+    if(countNow) countNow.textContent=String(index+1).padStart(2,'0');
+    prevBtn.disabled=index===0;
+    nextBtn.disabled=index===scenes.length-1;
+    prevBtn.setAttribute('aria-label',index===0?'前のページはありません':'前のページ');
+    nextBtn.setAttribute('aria-label',index===scenes.length-1?'次のページはありません':'次のページ');
+  }
+
+  function settle(current,next){
+    current.classList.remove('is-active','is-leaving');
+    current.setAttribute('aria-hidden','true');
+    next.classList.add('is-active');
+    next.setAttribute('aria-hidden','false');
+    animating=false;
+  }
+
+  function go(to){
+    to=Math.max(0,Math.min(scenes.length-1,to));
+    if(to===index||animating) return;
+    var current=scenes[index],next=scenes[to],forward=to>index;
+    var currentVisual=current.querySelector('.catalog-sheet,.catalog-cover')||current;
+    var nextVisual=next.querySelector('.catalog-sheet,.catalog-cover')||next;
+    if(index===0&&coverMotion) coverMotion.pause();
+    index=to;sync();
+    if(index===0&&coverMotion&&!reduce){coverMotion.currentTime=0;coverMotion.play().catch(function(){});}
+    next.classList.add('is-active');next.setAttribute('aria-hidden','false');
+    current.classList.add('is-leaving');animating=true;
+    if(reduce||!currentVisual.animate){settle(current,next);return;}
+    var sign=forward?1:-1;
+    var duration=640;
+    var outgoing=currentVisual.animate([
+      {opacity:1,transform:'translateX(0) rotateY(0deg)'},
+      {opacity:.25,transform:'translateX('+(-7*sign)+'%) rotateY('+(5*sign)+'deg)'}
+    ],{duration:duration,easing:'cubic-bezier(.22,1,.36,1)',fill:'forwards'});
+    var incoming=nextVisual.animate([
+      {opacity:.62,clipPath:sign>0?'inset(0 0 0 100%)':'inset(0 100% 0 0)',transform:'translateX('+(7*sign)+'%) rotateY('+(-4*sign)+'deg)'},
+      {opacity:1,clipPath:'inset(0 0 0 0)',transform:'translateX(0) rotateY(0deg)'}
+    ],{duration:duration,easing:'cubic-bezier(.22,1,.36,1)',fill:'forwards'});
+    Promise.allSettled([outgoing.finished,incoming.finished]).then(function(){outgoing.cancel();incoming.cancel();settle(current,next);});
+  }
+
+  prevBtn.addEventListener('click',function(){go(index-1);});
+  nextBtn.addEventListener('click',function(){go(index+1);});
+  tocOpen.addEventListener('click',function(){if(typeof toc.showModal==='function')toc.showModal();else toc.setAttribute('open','');});
+  tocClose.addEventListener('click',function(){toc.close();});
+  toc.addEventListener('click',function(e){if(e.target===toc)toc.close();});
+
+  document.addEventListener('keydown',function(e){
+    if(toc.open) return;
+    var target=e.target;
+    if(target&&(/^(INPUT|TEXTAREA|SELECT)$/).test(target.tagName)) return;
+    var rect=catalog.getBoundingClientRect();
+    if(rect.bottom<=0||rect.top>=innerHeight) return;
+    if(e.key==='ArrowRight'){e.preventDefault();go(index+1);}
+    else if(e.key==='ArrowLeft'){e.preventDefault();go(index-1);}
+  });
+  catalog.addEventListener('pointerdown',function(e){
+    if(e.target.closest('button,a')) return;
+    pointerDown=true;startX=e.clientX;startY=e.clientY;
+  },{passive:true});
+  catalog.addEventListener('pointerup',function(e){
+    if(!pointerDown) return;pointerDown=false;
+    var dx=e.clientX-startX,dy=e.clientY-startY;
+    if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.35) go(index+(dx<0?1:-1));
+  },{passive:true});
+  catalog.addEventListener('pointercancel',function(){pointerDown=false;},{passive:true});
+  catalog.addEventListener('dragstart',function(e){if(e.target.tagName==='IMG')e.preventDefault();});
+  if(coverMotion&&reduce){coverMotion.removeAttribute('autoplay');coverMotion.pause();}
+  sync();
+  window.__fvs={go:go,next:function(){go(index+1);},prev:function(){go(index-1);},idx:function(){return index;}};
+})();
+</script>
 
 
 <!-- ============ 実績（生きた図面・動画背景＋製図インデックスバナー） ============ -->
@@ -3239,6 +3349,39 @@
     a[href]:not(p a):not(li a):not(dd a):not(td a):not(figcaption a):not(small a){
       display:inline-flex;align-items:center}
   }
+
+  /* ============================================================
+     v6.1 セクション境界：通常の縦積み
+     カタログを唯一の大きな演出とし、サイト本編の各セクションは
+     負の余白・乗り上げ・角丸・境界影・境界アニメーションを使わない。
+     セクション内部の写真／文字／シネマ演出は対象外。
+     ============================================================ */
+  .authority,.heart,.lineup,.naze,.usp,.vc,.iju,.lt-lots,.fl,.fq,.fin,.sb-social,.ft,
+  html.pm-motion .authority,html.pm-motion .heart,html.pm-motion .lineup,html.pm-motion .naze,
+  html.pm-motion .usp,html.pm-motion .vc,html.pm-motion .iju,html.pm-motion .lt-lots,
+  html.pm-motion .fl,html.pm-motion .fq,html.pm-motion .fin,html.pm-motion .sb-social,html.pm-motion .ft{
+    margin-top:0!important;
+    border-radius:0!important;
+    border-top-left-radius:0!important;
+    border-top-right-radius:0!important;
+    border-bottom-right-radius:0!important;
+    border-bottom-left-radius:0!important;
+    box-shadow:none!important;
+    z-index:0!important;
+    transform:none!important;
+    filter:none!important;
+    animation:none!important;
+  }
+  .usp{padding-bottom:clamp(96px,13vw,190px)!important}
+  .iju__stage{border-radius:0!important}
+  .iju__bin{padding-bottom:clamp(56px,7vw,96px)!important}
+  .fl__in{padding-bottom:clamp(72px,9vw,120px)!important}
+  .fq__in{padding-bottom:clamp(100px,13vw,180px)!important}
+  .fin__in{padding-bottom:clamp(80px,10vw,130px)!important}
+  .sb-social{padding-bottom:clamp(58px,8vh,100px)!important}
+  @media(max-width:560px){
+    .sb-social{padding-bottom:clamp(52px,8vh,80px)!important}
+  }
 </style>
 <footer class="ft" id="footer">
   <div class="ft__in">
@@ -3518,7 +3661,8 @@
      Lenis連携: 有効化でstop / release()でstart / reenter()でstop（統合設計 §3-1）。
      ================================================================================== */
   var fvsReduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var fvsOK=!!(window.gsap && window.Observer) && !fvsReduce && !OFF('fvs');
+  /* v6.0 はFV直後のVanilla JSで制御。旧Observer版はスクロールを奪うため停止。 */
+  var fvsOK=false;
   if(!fvsOK){ root.classList.add('fvs-static'); }
   else{
   gsap.registerPlugin(Observer);
@@ -3666,7 +3810,7 @@
     root.classList.add('fvs-released'); }
   ScrollTrigger.refresh();
 
-  window.__fvs={ go:go, next:next, prev:prev, idx:function(){return i;}, release:release };
+  window.__fvsLegacy={ go:go, next:next, prev:prev, idx:function(){return i;}, release:release };
   }
 
   /* ---------- 5) 汎用カウントアップ（実績stats・土地facts。数字を含む要素だけ発火） ---------- */
