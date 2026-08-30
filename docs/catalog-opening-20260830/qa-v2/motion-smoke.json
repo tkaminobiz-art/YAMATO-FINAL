@@ -1,0 +1,143 @@
+{
+  "url": "http://127.0.0.1:4173/index.html?v=20260830-opening-v2-motion",
+  "results": [
+    {
+      "width": 1440,
+      "early": {
+        "innerWidth": 1440,
+        "currentSrc": "http://127.0.0.1:4173/assets/catalog/cover-opening-desktop-v2.mp4",
+        "currentTime": 5.708333,
+        "paused": true,
+        "ended": true,
+        "videoOpacity": "0",
+        "titleOpacity": "1",
+        "classes": "catalog-cover catalog-cover--motion is-title-in is-motion-settled",
+        "horizontalOverflow": false
+      },
+      "end": {
+        "innerWidth": 1440,
+        "currentSrc": "http://127.0.0.1:4173/assets/catalog/cover-opening-desktop-v2.mp4",
+        "currentTime": 5.708333,
+        "paused": true,
+        "ended": true,
+        "videoOpacity": "0",
+        "titleOpacity": "1",
+        "classes": "catalog-cover catalog-cover--motion is-title-in is-motion-settled",
+        "horizontalOverflow": false
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [
+        {
+          "url": "http://127.0.0.1:4173/assets/lots/aerial_loop.mp4",
+          "error": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "early": {
+        "innerWidth": 1024,
+        "currentSrc": "http://127.0.0.1:4173/assets/catalog/cover-opening-desktop-v2.mp4",
+        "currentTime": 5.708333,
+        "paused": true,
+        "ended": true,
+        "videoOpacity": "0",
+        "titleOpacity": "1",
+        "classes": "catalog-cover catalog-cover--motion is-title-in is-motion-settled",
+        "horizontalOverflow": false
+      },
+      "end": {
+        "innerWidth": 1024,
+        "currentSrc": "http://127.0.0.1:4173/assets/catalog/cover-opening-desktop-v2.mp4",
+        "currentTime": 5.708333,
+        "paused": true,
+        "ended": true,
+        "videoOpacity": "0",
+        "titleOpacity": "1",
+        "classes": "catalog-cover catalog-cover--motion is-title-in is-motion-settled",
+        "horizontalOverflow": false
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [
+        {
+          "url": "http://127.0.0.1:4173/assets/lots/aerial_loop.mp4",
+          "error": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "early": {
+        "innerWidth": 768,
+        "currentSrc": "http://127.0.0.1:4173/assets/catalog/cover-opening-mobile-v2.mp4",
+        "currentTime": 5.708333,
+        "paused": true,
+        "ended": true,
+        "videoOpacity": "0",
+        "titleOpacity": "1",
+        "classes": "catalog-cover catalog-cover--motion is-title-in is-motion-settled",
+        "horizontalOverflow": false
+      },
+      "end": {
+        "innerWidth": 768,
+        "currentSrc": "http://127.0.0.1:4173/assets/catalog/cover-opening-mobile-v2.mp4",
+        "currentTime": 5.708333,
+        "paused": true,
+        "ended": true,
+        "videoOpacity": "0",
+        "titleOpacity": "1",
+        "classes": "catalog-cover catalog-cover--motion is-title-in is-motion-settled",
+        "horizontalOverflow": false
+      },
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_CONNECTION_TIMED_OUT"
+      ],
+      "pageErrors": [],
+      "failedRequests": [
+        {
+          "url": "http://127.0.0.1:4173/assets/brand/sns/tiktok.svg",
+          "error": "net::ERR_CONNECTION_TIMED_OUT"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/lots/aerial_loop.mp4",
+          "error": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "early": {
+        "innerWidth": 390,
+        "currentSrc": "http://127.0.0.1:4173/assets/catalog/cover-opening-mobile-v2.mp4",
+        "currentTime": 5.708333,
+        "paused": true,
+        "ended": true,
+        "videoOpacity": "0",
+        "titleOpacity": "1",
+        "classes": "catalog-cover catalog-cover--motion is-title-in is-motion-settled",
+        "horizontalOverflow": false
+      },
+      "end": {
+        "innerWidth": 390,
+        "currentSrc": "http://127.0.0.1:4173/assets/catalog/cover-opening-mobile-v2.mp4",
+        "currentTime": 5.708333,
+        "paused": true,
+        "ended": true,
+        "videoOpacity": "0",
+        "titleOpacity": "1",
+        "classes": "catalog-cover catalog-cover--motion is-title-in is-motion-settled",
+        "horizontalOverflow": false
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [
+        {
+          "url": "http://127.0.0.1:4173/assets/lots/aerial_loop.mp4",
+          "error": "net::ERR_ABORTED"
+        }
+      ]
+    }
+  ]
+}

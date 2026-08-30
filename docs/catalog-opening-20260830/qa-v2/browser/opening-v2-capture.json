@@ -1,0 +1,116 @@
+{
+  "version": 2,
+  "capturedAt": "2026-08-30T09:50:44.613Z",
+  "url": "http://127.0.0.1:4173/index.html?v=20260830-opening-v2",
+  "label": "opening-v2",
+  "browserVersion": "151.0.7922.34",
+  "browserChannel": null,
+  "browserExecutable": null,
+  "locale": "en-US",
+  "timezoneId": "UTC",
+  "colorScheme": "light",
+  "reducedMotion": "reduce",
+  "fullPage": true,
+  "stabilized": true,
+  "hiddenSelectors": [],
+  "widths": [
+    1440,
+    1024,
+    768,
+    390
+  ],
+  "scrollYs": [
+    0
+  ],
+  "failures": [],
+  "results": [
+    {
+      "width": 1440,
+      "viewportHeight": 900,
+      "requestedScrollY": 0,
+      "screenshot": "opening-v2-1440.png",
+      "actualScrollY": 0,
+      "pageSize": {
+        "width": 1440,
+        "height": 14261
+      },
+      "horizontalOverflow": false,
+      "textLength": 3850,
+      "visibleElementCount": 632,
+      "paintedElementCount": 97,
+      "imageCount": 56,
+      "emptyEvidence": false,
+      "header": null,
+      "overlaps": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "width": 1024,
+      "viewportHeight": 900,
+      "requestedScrollY": 0,
+      "screenshot": "opening-v2-1024.png",
+      "actualScrollY": 0,
+      "pageSize": {
+        "width": 1024,
+        "height": 12847
+      },
+      "horizontalOverflow": false,
+      "textLength": 3803,
+      "visibleElementCount": 625,
+      "paintedElementCount": 98,
+      "imageCount": 56,
+      "emptyEvidence": false,
+      "header": null,
+      "overlaps": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "width": 768,
+      "viewportHeight": 900,
+      "requestedScrollY": 0,
+      "screenshot": "opening-v2-768.png",
+      "actualScrollY": 0,
+      "pageSize": {
+        "width": 768,
+        "height": 14680
+      },
+      "horizontalOverflow": false,
+      "textLength": 3801,
+      "visibleElementCount": 623,
+      "paintedElementCount": 97,
+      "imageCount": 56,
+      "emptyEvidence": false,
+      "header": null,
+      "overlaps": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "width": 390,
+      "viewportHeight": 900,
+      "requestedScrollY": 0,
+      "screenshot": "opening-v2-390.png",
+      "actualScrollY": 0,
+      "pageSize": {
+        "width": 390,
+        "height": 15415
+      },
+      "horizontalOverflow": false,
+      "textLength": 3796,
+      "visibleElementCount": 620,
+      "paintedElementCount": 97,
+      "imageCount": 56,
+      "emptyEvidence": false,
+      "header": null,
+      "overlaps": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    }
+  ]
+}

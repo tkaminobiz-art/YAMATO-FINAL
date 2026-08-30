@@ -117,19 +117,13 @@
   .burger:hover span:last-child{width:14px}
 
   /* ═══ FV / 紅箔のデジタル建築誌 2026-08-30 ═══ */
-  .fvs,.fvs__loader,.fvs__toc{
+  .fvs,.fvs__toc{
     --cat-paper:#F3EFE6;--cat-paper-2:#E8E0D2;--cat-ink:#241E16;--cat-muted:#675D50;
     --cat-red:#8E121B;--cat-red-2:#BD1B21;--cat-gold:#D8B75B;--cat-gold-hi:#F1D57D;
     --cat-night:#120D0B;--cat-cream:#F7F1E5;--cat-line:rgba(62,48,30,.22);
     --cat-mincho:"YakuHanMP","Shippori Mincho B1",serif;
     --cat-gothic:"Zen Kaku Gothic New",sans-serif;--cat-latin:"Inter",sans-serif;
   }
-  .fvs__loader{position:fixed;inset:0;z-index:200;background:var(--cat-red);display:grid;place-items:center;
-    animation:catLoaderOut .45s ease .82s forwards;pointer-events:none}
-  .fvs__loader img{width:clamp(120px,18vw,220px);filter:brightness(0) invert(92%) sepia(42%);opacity:.8}
-  .fvs__loader p{position:absolute;bottom:clamp(24px,5vh,48px);font-family:"Yuji Syuku",serif;
-    font-size:clamp(1rem,.8rem + .8vw,1.35rem);letter-spacing:.34em;color:var(--cat-cream)}
-  @keyframes catLoaderOut{to{opacity:0;visibility:hidden}}
   .fvs{position:relative;height:100vh;height:100svh;overflow:hidden;isolation:isolate;
     color:var(--cat-ink);font-family:var(--cat-gothic);background:
     radial-gradient(90% 120% at 50% 26%,#3b211b 0,#1d1210 42%,#0e0b09 100%);touch-action:pan-y}
@@ -139,6 +133,7 @@
     opacity:0;visibility:hidden;pointer-events:none;overflow:hidden;perspective:1800px}
   .fvs__scene.is-active{opacity:1;visibility:visible;pointer-events:auto;z-index:2}
   .fvs__scene.is-leaving{visibility:visible;z-index:3}
+  .fvs__scene--sp{display:none}
   .catalog-sheet{position:relative;width:min(1320px,92vw);height:min(78svh,780px);overflow:hidden;
     background:url("assets/std/page_kinari_letter_2400.webp") center/cover var(--cat-paper);
     box-shadow:0 34px 110px rgba(0,0,0,.5),0 0 0 1px rgba(221,190,116,.34);
@@ -156,6 +151,7 @@
   .catalog-sheet--red .catalog-title{color:var(--cat-cream)}
   .catalog-copy{font-size:clamp(.84rem,.78rem + .22vw,.98rem);line-height:2;letter-spacing:.055em;color:var(--cat-muted)}
   .catalog-sheet--red .catalog-copy{color:rgba(247,241,229,.75)}
+  .catalog-note{display:block;margin-top:10px;font-size:.68em;line-height:1.65;letter-spacing:.035em;color:inherit;opacity:.82}
   .catalog-rule{display:block;width:54px;height:1px;margin:18px 0;background:linear-gradient(90deg,var(--cat-gold-hi),#9b6d25)}
   .catalog-no{position:absolute;right:22px;bottom:16px;z-index:10;font-family:var(--cat-latin);font-size:.64rem;letter-spacing:.24em;color:rgba(60,43,27,.54)}
   .catalog-sheet--red .catalog-no{color:rgba(247,241,229,.52)}
@@ -175,7 +171,14 @@
   .catalog-cover{position:relative;width:min(1240px,89vw);height:min(76svh,700px);transform:rotateX(.6deg) rotateY(-1deg);
     box-shadow:-7px 5px 0 #5d080d,-11px 9px 0 #d4c7ad,0 44px 120px rgba(0,0,0,.64);background:var(--cat-red);overflow:hidden}
   .catalog-cover picture{position:absolute;inset:0}
-  .catalog-cover__motion{position:absolute;z-index:2;inset:0;width:100%;height:100%;object-fit:cover;background:var(--cat-red)}
+  /* 動画読込み前に完成表紙の燕が一瞬見えるFOUCを防ぐ。動画終了／エラー時だけ正本を出す。 */
+  .catalog-cover--motion>picture{opacity:0;transition:opacity .42s cubic-bezier(.22,1,.36,1);animation:coverStillFallback 0s 7s forwards}
+  .catalog-cover--motion.is-motion-settled>picture{opacity:1;animation:none}
+  @keyframes coverStillFallback{to{opacity:1}}
+  .catalog-cover__motion{position:absolute;z-index:2;inset:0;width:100%;height:100%;object-fit:cover;
+    background:var(--cat-red) url("assets/catalog/cover-opening-start-desktop.webp") center/cover no-repeat;
+    opacity:1;transition:opacity .42s cubic-bezier(.22,1,.36,1)}
+  .catalog-cover.is-motion-settled .catalog-cover__motion{opacity:0}
   .catalog-cover--motion::before{display:none}
   .catalog-cover::before{content:"";position:absolute;z-index:4;inset:0;pointer-events:none;
     background:linear-gradient(108deg,transparent 21%,rgba(255,235,174,.24) 36%,transparent 48%);
@@ -183,8 +186,10 @@
   .catalog-cover::after{content:"";position:absolute;z-index:5;left:0;top:0;bottom:0;width:clamp(10px,1.2vw,18px);
     background:linear-gradient(90deg,rgba(45,0,3,.75),rgba(255,220,148,.18),rgba(45,0,3,.4));mix-blend-mode:multiply}
   @keyframes coverFoil{0%,18%{transform:translateX(-120%)}52%,100%{transform:translateX(150%)}}
-  .catalog-cover__title{position:absolute;z-index:6;left:50%;top:50%;transform:translate(-50%,-46%);text-align:center;color:#FAF1DE;
-    text-shadow:0 2px 18px rgba(83,4,9,.46)}
+  .catalog-cover__title{position:absolute;z-index:6;left:50%;top:50%;transform:translate(-50%,-42%);text-align:center;color:#FAF1DE;
+    text-shadow:0 2px 18px rgba(83,4,9,.46);opacity:0;
+    transition:opacity .9s cubic-bezier(.22,1,.36,1),transform 1.1s cubic-bezier(.22,1,.36,1)}
+  .catalog-cover.is-title-in .catalog-cover__title{opacity:1;transform:translate(-50%,-46%)}
   .catalog-cover__title small{display:block;font-family:var(--cat-mincho);font-size:clamp(.72rem,.58rem + .45vw,1rem);
     letter-spacing:.42em;margin-bottom:clamp(10px,1.8vh,18px)}
   .catalog-cover__title strong{display:block;font-family:"Yuji Syuku",serif;font-weight:400;font-size:clamp(2.4rem,1.25rem + 4.2vw,5.1rem);
@@ -192,7 +197,15 @@
   .catalog-cover__title i{display:block;margin-top:clamp(8px,1.5vh,16px);font-family:var(--cat-latin);font-style:normal;font-size:.58rem;
     letter-spacing:.34em;text-transform:uppercase;color:rgba(255,241,214,.76)}
   .catalog-cover__label{position:absolute;z-index:6;right:18px;bottom:14px;font-family:var(--cat-latin);font-size:.58rem;
-    letter-spacing:.24em;text-transform:uppercase;color:rgba(255,241,214,.72)}
+    letter-spacing:.24em;text-transform:uppercase;color:rgba(255,241,214,.72);opacity:0;
+    transition:opacity .9s cubic-bezier(.22,1,.36,1) .12s}
+  .catalog-cover.is-title-in .catalog-cover__label{opacity:1}
+  .catalog-cover__skip,.catalog-cover__replay{position:absolute;z-index:12;right:14px;appearance:none;min-height:44px;padding:8px 13px;
+    border:1px solid rgba(255,241,214,.46);background:rgba(41,5,8,.42);color:#fff;font-family:var(--cat-gothic);font-size:.68rem;
+    letter-spacing:.1em;cursor:pointer;backdrop-filter:blur(8px)}
+  .catalog-cover__skip{bottom:14px}.catalog-cover__replay{top:14px;display:none}
+  .catalog-cover.is-motion-settled .catalog-cover__skip{display:none}
+  .catalog-cover.is-motion-settled .catalog-cover__replay{display:block}
 
   /* 見開きの編集パターン */
   .spread{position:relative;z-index:2;width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr}
@@ -295,6 +308,9 @@
   .fvs__toclist span{font-size:.82rem;letter-spacing:.04em}
 
   @media (max-width:820px){
+    .fvs__scene--pc{display:none}
+    .fvs__scene--sp{display:grid}
+    .catalog-cover__motion{background-image:url("assets/catalog/cover-opening-start-mobile.webp")}
     .fvs__scene{padding:62px 0 86px}
     .catalog-sheet,.catalog-cover{width:calc(100vw - 28px);height:calc(100svh - 164px)}
     .catalog-sheet::before{display:none}
@@ -325,6 +341,50 @@
     .catalog-title{font-size:clamp(1.35rem,6vw,2rem)}.catalog-copy{font-size:.75rem;line-height:1.8}.catalog-kicker{font-size:.56rem}
     .catalog-fact{padding:6px 0}.catalog-fact span{font-size:.7rem}.catalog-no{right:12px;bottom:8px}
     .closing{padding:28px 20px}.closing__art{width:70vw;right:-22%;top:-4%}
+    .spcat-sheet{background:url("assets/std/page_kinari_letter_2400.webp") center/cover var(--cat-paper)}
+    .spcat{position:relative;z-index:2;width:100%;height:100%;display:grid;min-height:0;overflow:hidden}
+    .spcat--photo-copy{grid-template-rows:minmax(0,1fr) auto}.spcat--photo-copy.spcat--copy-first{grid-template-rows:auto minmax(0,1fr)}
+    .spcat__media{position:relative;min-width:0;min-height:0;overflow:hidden;background:#b8aa98}
+    .spcat__media picture,.spcat__media img{width:100%;height:100%}.spcat__media img{object-fit:cover;filter:saturate(.88) contrast(.98) brightness(.98)}
+    .spcat__media::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.16);pointer-events:none}
+    .spcat__copy{position:relative;padding:clamp(17px,2.7svh,25px) 22px clamp(20px,3svh,29px);background:rgba(247,243,234,.96)}
+    .spcat__kicker{display:block;margin-bottom:8px;font-family:var(--cat-latin);font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:#8f6e30}
+    .spcat__title{font-family:var(--cat-mincho);font-size:clamp(1.45rem,6.3vw,1.9rem);font-weight:500;line-height:1.46;letter-spacing:.05em;color:var(--cat-ink)}
+    .spcat__body{margin-top:10px;font-size:clamp(.88rem,3.75vw,.98rem);line-height:1.82;letter-spacing:.035em;color:#5c5246}
+    .spcat__rule{display:block;width:42px;height:1px;margin:12px 0;background:linear-gradient(90deg,var(--cat-gold-hi),#9b6d25)}
+    .spcat__caption{position:absolute;left:12px;bottom:10px;z-index:2;font-family:var(--cat-latin);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;text-shadow:0 1px 8px #000}
+    .spcat--series{display:block;background:#17110f}.spcat--series .spcat__media{position:absolute;inset:0}
+    .spcat--series .spcat__media::before{content:"";position:absolute;z-index:1;inset:32% 0 0;background:linear-gradient(180deg,transparent,rgba(11,7,5,.92))}
+    .spcat--series .spcat__copy{position:absolute;z-index:3;left:0;right:0;bottom:0;padding:28px 24px 30px;background:transparent;color:#fff}
+    .spcat--series .spcat__title,.spcat--series .spcat__body{color:#fff}.spcat--series .spcat__body{color:rgba(255,255,255,.84)}
+    .spcat__series-mark{display:flex;align-items:end;gap:12px}.spcat__series-mark strong{font-family:var(--cat-mincho);font-size:3.4rem;font-weight:500;line-height:1;color:var(--series-color)}
+    .spcat__series-mark span{padding-bottom:5px;font-family:var(--cat-latin);font-size:.66rem;letter-spacing:.28em;text-transform:uppercase}
+    .spcat--index{grid-template-rows:auto 1fr;background:rgba(247,243,234,.97)}
+    .spcat__indexhead{padding:28px 24px 20px}.spcat__index{display:grid;grid-template-rows:repeat(3,1fr);margin:0 18px 24px;border-top:1px solid var(--cat-line)}
+    .spcat__indexrow{display:grid;grid-template-columns:58px 1fr;align-items:center;border-bottom:1px solid var(--cat-line);text-decoration:none}
+    .spcat__indexrow b{font-family:var(--cat-mincho);font-size:2.15rem;font-weight:500;text-align:center;color:var(--series-color)}
+    .spcat__indexrow span{font-size:.88rem;line-height:1.7;letter-spacing:.04em;color:#4f473e}
+    .spcat--chapter{place-items:center;text-align:center;padding:34px 28px;background:url("assets/std/page_beni_dark_2400.webp") center/cover var(--cat-red);color:var(--cat-cream)}
+    .spcat--chapter .spcat__title{color:var(--cat-cream);font-size:clamp(1.8rem,7.3vw,2.35rem)}.spcat--chapter .spcat__body{max-width:25rem;color:rgba(247,241,229,.78)}
+    .spcat__foil{position:absolute;width:78%;height:auto!important;right:-28%;top:-10%;opacity:.28;filter:sepia(1) saturate(1.3)}
+    .spcat--evidence{grid-template-rows:54% 46%}.spcat--evidence .spcat__copy{padding-top:18px}
+    .spcat__facts{margin-top:10px;border-bottom:1px solid var(--cat-line)}
+    .spcat__fact{display:grid;grid-template-columns:28px 1fr;gap:8px;padding:7px 0;border-top:1px solid var(--cat-line)}
+    .spcat__fact b{font-family:var(--cat-latin);font-size:.62rem;letter-spacing:.12em;color:#947136}.spcat__fact span{font-size:.875rem;line-height:1.55;letter-spacing:.02em;color:#51483e}
+    .spcat--plans{grid-template-rows:42% 58%}.spcat__plans{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#c9bda9;min-height:0}
+    .spcat__plans figure{position:relative;margin:0;background:#f6f0e5;min-width:0;min-height:0}.spcat__plans img{object-fit:contain;padding:7px}
+    .spcat__plans figcaption{position:absolute;left:9px;bottom:7px;font-family:var(--cat-latin);font-size:.56rem;letter-spacing:.12em;color:#5f5549}
+    .spcat--process{grid-template-rows:42% 58%}.spcat__pair{display:grid;grid-template-columns:1fr 1fr;gap:1px;min-height:0;background:#baa993}.spcat__pair .spcat__media{min-height:0}
+    .spcat__steps{display:grid;margin-top:9px;border-top:1px solid var(--cat-line)}
+    .spcat__step{display:grid;grid-template-columns:84px 1fr;gap:6px;padding:6px 0;border-bottom:1px solid var(--cat-line)}
+    .spcat__step b{font-family:var(--cat-latin);font-size:.6rem;letter-spacing:.1em;color:#947136}.spcat__step span{font-size:.875rem;line-height:1.5}
+    .spcat--spec{grid-template-rows:auto 1fr}.spcat__spec{display:grid;grid-template-rows:repeat(4,1fr);margin:0 18px 24px;border-top:1px solid var(--cat-line)}
+    .spcat__specrow{display:grid;grid-template-columns:52px 1fr;gap:10px;align-items:center;border-bottom:1px solid var(--cat-line)}
+    .spcat__specrow b{font-family:var(--cat-mincho);font-size:1.75rem;font-weight:500;text-align:center;color:var(--series-color,#8f6e30)}
+    .spcat__specrow span{font-size:.875rem;line-height:1.58;letter-spacing:.02em;color:#51483e}
+    .spcat--closing{place-items:center;text-align:center;padding:32px 22px;background:url("assets/std/page_beni_dark_2400.webp") center/cover var(--cat-red);color:#fff}
+    .spcat--closing .spcat__title,.spcat--closing .spcat__body{color:#fff}.spcat--closing .spcat__body{color:rgba(255,255,255,.8)}
+    .spcat__actions{display:grid;gap:9px;width:min(100%,280px);margin:20px auto 0}.spcat__actions .catalog-cta{width:100%;font-size:.78rem}
     .fvs__exit{right:12px;bottom:calc(env(safe-area-inset-bottom) + 22px);font-size:.64rem}.fvs__count{left:14px;bottom:calc(env(safe-area-inset-bottom) + 25px)}
     .fvs__scrollcue{display:none}.fvs__ui{bottom:calc(env(safe-area-inset-bottom) + 12px)}
   }
@@ -341,12 +401,29 @@
     .closing__actions{margin-top:16px}.catalog-cta{min-height:44px;padding:9px 14px;font-size:.7rem}
     .fvs__ui{grid-template-columns:48px 112px 48px}.fvs__ui button{min-height:46px}
     .fvs__toclist{grid-template-columns:1fr;padding:4px 16px 20px}.fvs__toclist button{min-height:46px}
-    .catalog-cover__title{transform:translate(-50%,-50%);text-shadow:0 1px 3px rgba(83,4,9,.46);-webkit-font-smoothing:antialiased}
-    .catalog-cover__title strong{font-family:var(--cat-mincho);font-size:clamp(2.35rem,12vw,2.95rem);font-weight:500;writing-mode:vertical-rl;letter-spacing:.1em;max-height:43svh}
+    .catalog-cover__title{display:flex;flex-direction:column;align-items:center;transform:translate(-50%,-50%);text-shadow:0 1px 3px rgba(83,4,9,.46);-webkit-font-smoothing:antialiased}
+    .catalog-cover.is-title-in .catalog-cover__title{transform:translate(-50%,-50%)}
+    .catalog-cover__title strong{width:max-content;font-family:var(--cat-mincho);font-size:clamp(2.35rem,12vw,2.95rem);font-weight:500;writing-mode:vertical-rl;letter-spacing:.1em;max-height:43svh}
     .catalog-cover__title small{font-size:.7rem;letter-spacing:.3em}.catalog-cover__title i{font-size:.5rem;letter-spacing:.22em}
   }
+  @media (max-width:820px) and (max-height:650px){
+    .spcat--photo-copy{grid-template-rows:48% 52%}.spcat--photo-copy.spcat--copy-first{grid-template-rows:52% 48%}
+    .spcat__copy{padding:10px 16px 12px}.spcat__kicker{margin-bottom:4px}
+    .spcat__title{font-size:clamp(1.12rem,5.8vw,1.42rem);line-height:1.35}.spcat__body{margin-top:6px;line-height:1.55}
+    .spcat--series .spcat__copy{padding:17px 18px 19px}.spcat__series-mark strong{font-size:2.7rem}
+    .spcat__indexhead{padding:14px 18px 8px}.spcat__index{margin:0 14px 12px}
+    .spcat--chapter{padding:20px 22px}.spcat--chapter .spcat__title{font-size:clamp(1.55rem,7vw,1.9rem)}
+    .spcat--evidence{grid-template-rows:42% 58%}.spcat--evidence .spcat__copy{padding-top:10px}
+    .spcat__facts{margin-top:5px}.spcat__fact{padding:4px 0}
+    .spcat--plans{grid-template-rows:43% 57%}.spcat--process{grid-template-rows:36% 64%}
+    .spcat__steps{margin-top:5px}.spcat__step{padding:3px 0}
+    .spcat__spec{margin:0 14px 12px}.spcat__specrow{grid-template-columns:44px 1fr;gap:7px}.spcat__specrow b{font-size:1.48rem}
+    .spcat--closing{padding:18px 18px}.spcat__actions{gap:6px;margin-top:10px}
+  }
   @media (prefers-reduced-motion:reduce){
-    .fvs__loader{display:none}.catalog-cover::before{animation:none;display:none}.catalog-cover__motion{display:none}
+    .catalog-cover::before{animation:none;display:none}.catalog-cover__motion{display:none}
+    .catalog-cover__title{opacity:1;transition:none}
+    .catalog-cover__label{opacity:1;transition:none}
   }
 
   /* ===================== 実績「三帯の明度リズム」（2026-08-19 auth_mock.html図面より統合） =====================
@@ -376,15 +453,54 @@
     .qn__i:nth-child(-n+2){border-bottom:1px solid rgba(36,30,22,.13)}
   }
 
-  /* ═══ 二枚の扉（dg-）2026-08-21 ═══
+  /* ── NEWS（SUUMO新着・更新順と同期する物件トピック） ── */
+  .nw{max-width:1180px;margin:0 auto;padding:clamp(38px,4.8vw,68px) 0 0}
+  .nw__head{display:flex;align-items:baseline;gap:clamp(14px,2vw,28px);margin-bottom:clamp(20px,2.8vw,34px)}
+  .nw__head h2{font-family:var(--fh,"Inter",sans-serif);font-size:clamp(2rem,1.25rem + 2.2vw,3.7rem);
+    font-weight:300;line-height:1;letter-spacing:.16em;color:#241E16}
+  .nw__head p{font-family:var(--fs,"Shippori Mincho B1",serif);font-size:.78rem;letter-spacing:.18em;color:#8A8070}
+  .nw__list{border-top:1px solid rgba(36,30,22,.22)}
+  .nw__row{display:grid;grid-template-columns:112px 86px minmax(0,1fr) 30px;align-items:center;gap:clamp(10px,1.8vw,24px);
+    min-height:70px;padding:14px 4px;border-bottom:1px solid rgba(36,30,22,.16);color:#241E16;text-decoration:none;
+    transition:background .3s cubic-bezier(.22,1,.36,1),padding .3s cubic-bezier(.22,1,.36,1)}
+  .nw__row:hover{padding-left:12px;padding-right:12px;background:rgba(201,162,75,.08)}
+  .nw__date{font-family:"Inter",sans-serif;font-size:.7rem;letter-spacing:.12em;color:#7A7165}
+  .nw__tag{display:inline-flex;align-items:center;justify-content:center;min-height:25px;border:1px solid rgba(189,27,33,.52);
+    font-family:"Zen Kaku Gothic New",sans-serif;font-size:.65rem;letter-spacing:.1em;color:#A51920}
+  .nw__title{font-family:var(--fs,"Shippori Mincho B1",serif);font-size:clamp(.9rem,.84rem + .18vw,1rem);line-height:1.75;letter-spacing:.045em}
+  .nw__arrow{font-family:"Inter",sans-serif;font-size:.9rem;text-align:center;color:#A51920;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+  .nw__row:hover .nw__arrow{transform:translateX(4px)}
+  .nw__extra[hidden]{display:none}
+  .nw__more{display:flex;justify-content:center;margin-top:clamp(26px,3vw,42px)}
+  .nw__morebtn{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-width:220px;min-height:52px;padding:10px 24px;
+    border:1px solid rgba(36,30,22,.34);background:rgba(255,252,245,.38);color:#241E16;cursor:pointer;
+    font-family:var(--fs,"Shippori Mincho B1",serif);font-size:.82rem;letter-spacing:.16em;
+    transition:color .32s cubic-bezier(.22,1,.36,1),background .32s cubic-bezier(.22,1,.36,1),border-color .32s cubic-bezier(.22,1,.36,1)}
+  .nw__morebtn::after{content:"＋";font-family:"Zen Kaku Gothic New",sans-serif;font-size:1rem;font-weight:300;color:#A51920}
+  .nw__morebtn[aria-expanded="true"]::after{content:"－"}
+  .nw__morebtn:hover{border-color:#A51920;background:rgba(189,27,33,.06);color:#A51920}
+  .nw__morebtn:focus-visible{outline:2px solid #A51920;outline-offset:4px}
+  @media (max-width:720px){
+    .nw{padding:34px 18px 0}.nw__head{margin-bottom:18px}
+    .nw__row{grid-template-columns:88px 72px minmax(0,1fr) 20px;gap:8px;min-height:78px;padding:12px 0}
+    .nw__date{font-size:.61rem;letter-spacing:.06em}.nw__tag{font-size:.58rem;letter-spacing:.06em}
+    .nw__title{font-size:.86rem;line-height:1.65}.nw__row:hover{padding-left:0;padding-right:0;background:transparent}
+    .nw__more{margin-top:24px}.nw__morebtn{min-width:200px;min-height:50px}
+  }
+  @media (max-width:430px){
+    .nw__row{grid-template-columns:78px 1fr 18px;gap:7px}
+    .nw__tag{grid-column:1;grid-row:2;justify-self:start;min-width:64px;padding:0 7px}
+    .nw__title{grid-column:2;grid-row:1 / span 2}.nw__arrow{grid-column:3;grid-row:1 / span 2}
+  }
+
+  /* ═══ 三枚の扉（dg-）2026-08-30 ═══
      参照デザインの文法: フルブリード写真＋中央スクリム＋英字eyebrow＋明朝＋丸い矢印。
-     画像は実写ベースのリライト（実邸リビング→日没直後 / 奈良の実空撮→ブルーアワー）。
-     左=暖色・右=寒色で対を作る。明度はほぼ同値（44.5 / 45.0 実測）。 */
+     家づくりのこだわり／物件一覧／お支払いシミュレーションの3導線。 */
   /* 生成りを広く取る。参照デザインも余白が広く、かつ明度リズム上
      ここが暗いと FV(27.5)→auth→信条(13.0) で暗が3連続になる（同極3連続はゼロが規範） */
-  .dg{padding:clamp(90px,11.5vw,200px) clamp(32px,8.4vw,168px) clamp(104px,13vw,228px)}
+  .dg{padding:clamp(56px,6vw,92px) clamp(32px,8.4vw,168px) clamp(104px,13vw,228px)}
   .dg__grid{max-width:1420px;margin:0 auto;display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,34px)}
+    grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,26px)}
   .dg__c{position:relative;display:block;overflow:hidden;text-decoration:none;
     aspect-ratio:16/9;isolation:isolate;
     transition:transform .5s var(--ease,cubic-bezier(.22,1,.36,1))}
@@ -407,8 +523,11 @@
     font-size:max(12px,.78rem);letter-spacing:.24em;color:rgba(255,250,242,.86);
     text-shadow:0 1px 14px rgba(0,0,0,.5)}
   .dg__h{display:block;font-family:var(--fm);font-weight:400;color:#FFFAF2;
-    font-size:clamp(1.5rem,1.02rem + 2.1vw,2.86rem);line-height:1.4;letter-spacing:.12em;
-    white-space:nowrap;text-shadow:0 2px 26px rgba(0,0,0,.44)}
+    font-size:clamp(1.35rem,.92rem + 1.35vw,2.25rem);line-height:1.55;letter-spacing:.1em;
+    text-wrap:balance;text-shadow:0 2px 26px rgba(0,0,0,.44)}
+  .dg__status{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:5px 14px;
+    border:1px solid rgba(255,250,242,.64);font-family:"Zen Kaku Gothic New",sans-serif;font-size:.66rem;
+    letter-spacing:.14em;color:#FFFAF2;background:rgba(36,30,22,.28);backdrop-filter:blur(5px)}
   .dg__go{display:grid;place-items:center;width:clamp(46px,4.4vw,62px);aspect-ratio:1;
     border-radius:50%;border:1px solid rgba(255,250,242,.72);color:#FFFAF2;
     font-family:var(--fh);font-size:1rem;
@@ -417,6 +536,10 @@
   .dg__go span{display:block;transition:transform .42s cubic-bezier(.22,1,.36,1)}
   .dg__c:hover .dg__go{background:#FFFAF2;color:#241E16;border-color:#FFFAF2}
   .dg__c:hover .dg__go span{transform:translateX(3px)}
+  .dg__c--planned{cursor:default}
+  .dg__c--planned .dg__h{font-size:clamp(1.2rem,.8rem + 1.05vw,1.85rem);letter-spacing:.07em;white-space:nowrap}
+  .dg__c--planned:hover img{transform:scale(1.005)}
+  .dg__c--planned::after{background:linear-gradient(145deg,rgba(92,11,18,.72),rgba(36,30,22,.48))}
   @media (max-width:760px){
     .dg__grid{grid-template-columns:minmax(0,1fr);gap:14px}
     .dg__c{aspect-ratio:4/3}
@@ -1314,11 +1437,6 @@
      表紙 → 見返し → 標準装備7景 → 費用のこと(0円) → こだわり3景 → ご案内。
      1操作=1シーンのステップ送り（GSAP Observer）。紅⇄生成りが交互に繰れる。
      JS制御は PREMIUM MOTION LAYER（本ファイル末尾）の 4) ブロックに統合。 -->
-<div class="fvs__loader" aria-hidden="true">
-  <img src="assets/std/art_swallows_t.webp" alt="">
-  <p>花鳥風月</p>
-</div>
-
 <template id="fvsLegacy">
 
   <!-- 00 表紙: 花鳥風月（Higgsfield生成の箔押し原画。毛筆はパンフ入稿データ待ち=Yuji Syuku代替） -->
@@ -1543,68 +1661,70 @@
         <source media="(max-width:820px)" type="image/webp" srcset="assets/std/cover_sp_1080.webp 1080w, assets/std/cover_sp_1440.webp 1440w" sizes="calc(100vw - 18px)">
         <img src="assets/std/cover_pc_1920.webp" srcset="assets/std/cover_pc_1920.webp 1920w, assets/std/cover_pc_2560.webp 2560w" sizes="89vw" alt="深紅の和紙に金の牡丹と燕を箔押しした、花鳥風月 やまとの家の表紙" fetchpriority="high" decoding="async">
       </picture>
-      <video class="catalog-cover__motion" autoplay muted playsinline preload="metadata" aria-hidden="true" poster="assets/std/cover_pc_1920.webp"><source media="(max-width:820px)" src="assets/catalog/cover-foil-light-mobile.mp4" type="video/mp4"><source media="(min-width:821px)" src="assets/catalog/cover-foil-light-desktop.mp4" type="video/mp4"></video>
+      <video class="catalog-cover__motion" autoplay muted playsinline preload="auto" aria-hidden="true"><source media="(max-width:820px)" src="assets/catalog/cover-opening-mobile-v3.mp4?v=clean-alpha-20260830" type="video/mp4"><source media="(min-width:821px)" src="assets/catalog/cover-opening-desktop-v3.mp4?v=clean-alpha-20260830" type="video/mp4"></video>
       <div class="catalog-cover__title" aria-hidden="true"><small>やまとの家</small><strong>花鳥風月</strong><i>Yamato House</i></div>
       <span class="catalog-cover__label">Yamato House Collection</span>
+      <button class="catalog-cover__skip" id="catOpeningSkip" type="button">表紙を見る</button>
+      <button class="catalog-cover__replay" id="catOpeningReplay" type="button">もう一度見る</button>
     </div>
   </article>
 
-  <article class="fvs__scene" data-name="やまとの家" aria-hidden="true">
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="やまとの家" aria-hidden="true">
     <div class="catalog-sheet">
       <div class="spread spread--message">
         <div class="spread__half catalog-photo"><img src="assets/std/living_1920.webp" srcset="assets/std/living_1100.webp 1100w, assets/std/living_1920.webp 1920w, assets/std/living_2560.webp 2560w" sizes="46vw" alt="木目の天井と建具をそろえたリビング" decoding="async"><span class="catalog-caption">Living / Standard &amp; Design</span></div>
-        <div class="spread__half spread__copy"><p class="catalog-kicker">01 — Message</p><h2 class="catalog-title">見せたものを、<br>そのまま住まいへ。</h2><span class="catalog-rule"></span><p class="catalog-copy">設備、構造、設計、保証。やまとの家に入るものを、写真と確かな仕様で一冊にまとめました。</p><div class="catalog-photo catalog-photo--detail" aria-hidden="true"><img src="assets/std/living_1100.webp" alt=""></div></div>
+        <div class="spread__half spread__copy"><p class="catalog-kicker">01 — Message</p><h2 class="catalog-title">見せた仕様を、<br>見せた価格で。</h2><span class="catalog-rule"></span><p class="catalog-copy">標準仕様と建物本体価格を最初から明確に。設備・構造・設計・保証を含め、家づくりの内容を一冊にまとめました。<small class="catalog-note">※掲載写真にはシリーズ別仕様・選択仕様を含みます。実際の仕様は各ページと打ち合わせでご確認ください。</small></p><div class="catalog-photo catalog-photo--detail" aria-hidden="true"><img src="assets/std/living_1100.webp" alt=""></div></div>
       </div><span class="catalog-no">02 / 13</span>
     </div>
   </article>
 
-  <article class="fvs__scene" data-name="花・京・風" aria-hidden="true">
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="花・京・風" aria-hidden="true">
     <div class="catalog-sheet"><div class="series-grid">
-      <section class="series-card" style="--series-color:#C64A00"><img src="assets/lineup/hero/hana_ext.webp" alt="深い軒と木の質感を生かした花シリーズの外観" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">花</h2><span class="series-card__en">Hana</span><i class="series-card__line"></i><p class="series-card__note">設備と外装の選択肢を広く備えたシリーズ。</p></div></section>
-      <section class="series-card" style="--series-color:#7D4B4F"><img src="assets/lineup/hero/kyo_det.webp" alt="京シリーズの素材と設備のディテール" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">京</h2><span class="series-card__en">Miyako</span><i class="series-card__line"></i><p class="series-card__note">限られた敷地を生かす、端正な住まい。</p></div></section>
-      <section class="series-card" style="--series-color:#908600"><img src="assets/lineup/hero/kaze_ext.webp" alt="切妻屋根と赤い玄関ドアが印象的な風シリーズの外観" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">風</h2><span class="series-card__en">Kaze</span><i class="series-card__line"></i><p class="series-card__note">暮らしに必要な仕様を端的にまとめたシリーズ。</p></div></section>
+      <section class="series-card" style="--series-color:#C64A00"><img src="assets/lineup/hero/hana_ext.webp" alt="深い軒と木の質感を生かした花シリーズの外観" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">花</h2><span class="series-card__en">Hana</span><i class="series-card__line"></i><p class="series-card__note">31坪・4LDKの最上位モデル。建物本体価格2,680万円（税込・土地別途）。</p></div></section>
+      <section class="series-card" style="--series-color:#7D4B4F"><img src="assets/lineup/hero/kyo_det.webp" alt="京シリーズの素材と設備のディテール" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">京</h2><span class="series-card__en">Miyako</span><i class="series-card__line"></i><p class="series-card__note">限られた敷地を生かす28坪・3LDK。建物本体価格2,480万円（税込・土地別途）。</p></div></section>
+      <section class="series-card" style="--series-color:#908600"><img src="assets/lineup/hero/kaze_ext.webp" alt="切妻屋根と赤い玄関ドアが印象的な風シリーズの外観" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">風</h2><span class="series-card__en">Kaze</span><i class="series-card__line"></i><p class="series-card__note">30坪・4LDKの標準モデル。建物本体価格2,680万円（税込・土地別途）。</p></div></section>
     </div><span class="catalog-no">03 / 13</span></div>
   </article>
 
-  <article class="fvs__scene" data-name="キッチン" aria-hidden="true">
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="キッチン" aria-hidden="true">
     <div class="catalog-sheet"><div class="equipment">
       <div class="catalog-photo equipment__hero"><picture><source type="image/avif" srcset="assets/std/kitchen_1100.avif 1100w, assets/std/kitchen_1920.avif 1920w, assets/std/kitchen_2560.avif 2560w" sizes="58vw"><img src="assets/std/kitchen_1920.webp" alt="間接照明と木目の下がり天井を備えた対面キッチン" loading="lazy" decoding="async"></picture><span class="catalog-caption">Kitchen / Cleanup</span></div>
-      <div class="equipment__side"><div><p class="catalog-kicker">02 — Equipment</p><h2 class="catalog-title">料理する場所も、<br>空間の一部として。</h2></div><div class="catalog-photo equipment__detail" aria-hidden="true"><img src="assets/std/kitchen_1100.webp" alt=""></div><p class="catalog-copy">花・京はSTEDIA、風はESを基準に、シリーズごとの選択肢を用意しています。</p></div>
+      <div class="equipment__side"><div><p class="catalog-kicker">02 — Equipment</p><h2 class="catalog-title">キッチンの<br>標準仕様。</h2></div><div class="catalog-photo equipment__detail" aria-hidden="true"><img src="assets/std/kitchen_1100.webp" alt=""></div><p class="catalog-copy">花・京はクリナップ STEDIA、風はクリナップ ES。シリーズごとにレイアウトを設定しています。</p></div>
     </div><span class="catalog-no">04 / 13</span></div>
   </article>
 
-  <article class="fvs__scene" data-name="水まわり" aria-hidden="true">
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="水まわり" aria-hidden="true">
     <div class="catalog-sheet"><div class="water-grid">
       <div class="catalog-photo"><img src="assets/std/bath_1920.webp" srcset="assets/std/bath_1100.webp 1100w, assets/std/bath_1920.webp 1920w, assets/std/bath_2560.webp 2560w" sizes="55vw" alt="木目調の壁と横長ミラーを備えた浴室" loading="lazy" decoding="async"><span class="catalog-caption">Bathroom</span></div>
       <div class="catalog-photo"><picture><source type="image/avif" srcset="assets/std/vanity_1100.avif 1100w, assets/std/vanity_1920.avif 1920w"><img src="assets/std/vanity_1920.webp" alt="三面鏡と収納を備えた洗面化粧台" loading="lazy" decoding="async"></picture><span class="catalog-caption">Vanity</span></div>
-      <div class="water-grid__copy"><p class="catalog-kicker">03 — Water Area</p><h2 class="catalog-title">毎日使う場所こそ、<br>選びやすく。</h2><p class="catalog-copy">浴室、洗面、トイレはシリーズごとの仕様を確認しながら選べます。</p></div>
+      <div class="water-grid__copy"><p class="catalog-kicker">03 — Water Area</p><h2 class="catalog-title">浴室・洗面・トイレの<br>標準仕様。</h2><p class="catalog-copy">浴室・洗面・トイレは、シリーズごとに設備と選択肢を設定しています。</p></div>
     </div><span class="catalog-no">05 / 13</span></div>
   </article>
 
-  <article class="fvs__scene" data-name="内装" aria-hidden="true">
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="内装" aria-hidden="true">
     <div class="catalog-sheet"><div class="interior-grid">
-      <div class="interior-grid__lead catalog-photo"><img src="assets/std/living_1920.webp" alt="木目の建具と床をそろえたリビング" loading="lazy" decoding="async"><div class="interior-grid__title"><p class="catalog-kicker" style="color:#F1D57D">04 — Interior</p><h2 class="catalog-title">扉、床、畳。<br>触れる部分を整える。</h2><p class="catalog-copy" style="color:rgba(255,255,255,.82)">建具と床はシリーズごとの組み合わせ。和室には、和紙畳の選択肢もあります。</p></div></div>
+      <div class="interior-grid__lead catalog-photo"><img src="assets/std/living_1920.webp" alt="木目の建具と床をそろえたリビング" loading="lazy" decoding="async"><div class="interior-grid__title"><p class="catalog-kicker" style="color:#F1D57D">04 — Interior</p><h2 class="catalog-title">建具・床・畳の<br>標準仕様。</h2><p class="catalog-copy" style="color:rgba(255,255,255,.82)">建具と床はシリーズごとに組み合わせが異なります。和室には和紙畳も選べます。</p></div></div>
       <div class="interior-grid__small catalog-photo"><img src="assets/std/walltex_1920.webp" alt="陰影のある外壁材のディテール" loading="lazy" decoding="async"><span class="catalog-caption">Material Detail</span></div>
       <div class="interior-grid__small catalog-photo"><img src="assets/std/washitsu_1920.webp" alt="半畳縁なし畳を敷いた和室" loading="lazy" decoding="async"><span class="catalog-caption">Tatami</span></div>
     </div><span class="catalog-no">06 / 13</span></div>
   </article>
 
-  <article class="fvs__scene" data-name="玄関・外装" aria-hidden="true">
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="玄関・外装" aria-hidden="true">
     <div class="catalog-sheet"><div class="entrance-grid">
       <div class="entrance-grid__lead catalog-photo"><img src="assets/std/entrance_1920.webp" srcset="assets/std/entrance_1100.webp 1100w, assets/std/entrance_1920.webp 1920w, assets/std/entrance_2560.webp 2560w" sizes="58vw" alt="木目の玄関ドアと格子を組み合わせたポーチ" loading="lazy" decoding="async"><span class="catalog-caption">Entrance / GIESTA2</span></div>
-      <div class="entrance-grid__copy"><p class="catalog-kicker">05 — Exterior</p><h2 class="catalog-title">迎える表情まで、<br>標準仕様から。</h2><span class="catalog-rule"></span><p class="catalog-copy">玄関ドア、窓、外壁、屋根、軒天。外から見える部分も、三シリーズの仕様に含まれます。</p></div>
+      <div class="entrance-grid__copy"><p class="catalog-kicker">05 — Exterior</p><h2 class="catalog-title">玄関・窓・外壁・屋根の<br>標準仕様。</h2><span class="catalog-rule"></span><p class="catalog-copy">玄関ドア・窓・外壁・屋根・軒天は、シリーズごとに仕様を設定しています。</p></div>
       <div class="entrance-grid__detail catalog-photo"><img src="assets/std/nokiten_1920.webp" alt="木目の軒天と外壁の取り合い" loading="lazy" decoding="async"><span class="catalog-caption">Eaves Detail</span></div>
     </div><span class="catalog-no">07 / 13</span></div>
   </article>
 
-  <article class="fvs__scene" data-name="構造・断熱" aria-hidden="true">
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="構造・断熱" aria-hidden="true">
     <div class="catalog-sheet catalog-sheet--red"><div class="structure-grid">
-      <div class="structure-grid__copy"><p class="catalog-kicker" style="color:#F1D57D">06 — Performance</p><h2 class="catalog-title">見えない部分も、<br>三つに共通。</h2><span class="catalog-rule"></span><p class="catalog-copy">耐震等級3相当。wallstatで倒壊リスクを確認し、断熱にはアクアフォームLITEを採用しています。</p><div class="catalog-fact"><b>01</b><span>耐震・制振を設計段階から検討</span></div><div class="catalog-fact"><b>02</b><span>断熱・耐久性と長期保証を共通仕様へ</span></div></div>
-      <div class="structure-grid__visual"><div class="catalog-photo"><img src="assets/std/walltex_1920.webp" alt="ヘーベルパワーボード外壁の深い陰影" loading="lazy" decoding="async"><span class="catalog-caption">Hebel Powerboard</span></div><div class="catalog-photo"><img src="assets/std/miraie_1920.webp" alt="耐震・制振を検討するための構造部材" loading="lazy" decoding="async"><span class="catalog-caption">Seismic Design</span></div><div class="catalog-photo"><img src="assets/std/houses770_persp.png" alt="家づくりの積み重ねを表す金箔の家型図版" loading="lazy" decoding="async"></div></div>
+      <div class="structure-grid__copy"><p class="catalog-kicker" style="color:#F1D57D">06 — Performance</p><h2 class="catalog-title">三シリーズ共通の<br>構造・断熱性能。</h2><span class="catalog-rule"></span><p class="catalog-copy">耐震等級3相当。wallstatで全棟の倒壊リスクを確認します。断熱にはアクアフォームLITEを採用しています。</p><div class="catalog-fact"><b>01</b><span>耐震または制振を設計段階で検討</span></div><div class="catalog-fact"><b>02</b><span>外壁通気工法・パワーボードを共通仕様に採用</span></div></div>
+      <div class="structure-grid__visual"><div class="catalog-photo"><img src="assets/std/walltex_1920.webp" alt="ヘーベルパワーボード外壁の深い陰影" loading="lazy" decoding="async"><span class="catalog-caption">Hebel Powerboard</span></div><div class="catalog-photo"><img src="assets/std/miraie_1920.webp" alt="耐震または制振を検討するための構造部材" loading="lazy" decoding="async"><span class="catalog-caption">Seismic Design</span></div><div class="catalog-photo"><img src="assets/std/houses770_persp.png" alt="家づくりの積み重ねを表す金箔の家型図版" loading="lazy" decoding="async"></div></div>
     </div><span class="catalog-no">08 / 13</span></div>
   </article>
 
-  <article class="fvs__scene" data-name="完全自由設計" aria-hidden="true">
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="完全自由設計" aria-hidden="true">
     <div class="catalog-sheet"><div class="design-grid">
       <div class="design-grid__meeting catalog-photo"><img src="assets/jiyu/meeting.webp" alt="設計士と図面を囲む打ち合わせ" loading="lazy" decoding="async"><span class="catalog-caption">Planning Meeting</span></div>
       <div class="design-grid__copy"><p class="catalog-kicker">07 — Free Design</p><h2 class="catalog-title">設計士が、最初の<br>打ち合わせから同席。</h2><span class="catalog-rule"></span><p class="catalog-copy">同じ分譲地でも、光の入り方と視線の抜け方は敷地ごとに違います。まず敷地を読み、間取りを一から考えます。</p></div>
@@ -1612,35 +1732,163 @@
     </div><span class="catalog-no">09 / 13</span></div>
   </article>
 
-  <article class="fvs__scene" data-name="土地・設計・施工" aria-hidden="true">
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="土地・設計・施工" aria-hidden="true">
     <div class="catalog-sheet"><div class="process-grid">
       <div class="process-grid__left"><div class="catalog-photo"><img src="assets/jiyu/wc_exterior.webp" alt="実在する花シリーズの家を描いた水彩外観" loading="lazy" decoding="async"><span class="catalog-caption">Built House / Watercolor</span></div><div class="catalog-photo is-plan"><img src="assets/jiyu/wc_site_sketch.webp" alt="敷地の光と視線を検討するための概念図" loading="lazy" decoding="async"><span class="catalog-caption" style="color:#4b4033;text-shadow:none">Concept Sketch</span></div></div>
-      <div class="process-grid__copy"><p class="catalog-kicker">08 — One Team</p><h2 class="catalog-title">土地から設計、施工まで。<br>ひとつのチームで進める。</h2><span class="catalog-rule"></span><p class="catalog-copy">敷地条件と希望を分けずに考え、設計と施工へつなぎます。</p><div class="process-steps"><div class="process-step"><b>01 / LAND</b><span>敷地と周辺環境を確認</span></div><div class="process-step"><b>02 / DESIGN</b><span>動線、採光、要望を整理</span></div><div class="process-step"><b>03 / BUILD</b><span>設計意図を施工へ共有</span></div></div><p class="catalog-copy" style="margin-top:12px;font-size:.68rem">※敷地図は考え方を示す概念図です。</p></div>
+      <div class="process-grid__copy"><p class="catalog-kicker">08 — One Team</p><h2 class="catalog-title">土地から設計、施工まで。<br>ひとつのチームで進める。</h2><span class="catalog-rule"></span><p class="catalog-copy">土地の仕入れ・区画づくりから、設計・施工まで自社で担います。敷地条件とご希望を一つのチームで共有します。</p><div class="process-steps"><div class="process-step"><b>01 / LAND</b><span>敷地と周辺環境を確認</span></div><div class="process-step"><b>02 / DESIGN</b><span>動線、採光、要望を整理</span></div><div class="process-step"><b>03 / BUILD</b><span>設計意図を施工へ共有</span></div></div><p class="catalog-copy" style="margin-top:12px;font-size:.68rem">※敷地図は考え方を示す概念図です。</p></div>
     </div><span class="catalog-no">10 / 13</span></div>
   </article>
 
-  <article class="fvs__scene" data-name="保証・アフター" aria-hidden="true">
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="保証・アフター" aria-hidden="true">
     <div class="catalog-sheet"><div class="warranty-grid">
       <div class="catalog-photo"><img src="assets/std/auth_ext_1920.webp" srcset="assets/std/auth_ext_1100.webp 1100w, assets/std/auth_ext_1920.webp 1920w, assets/std/auth_ext_2560.webp 2560w" sizes="52vw" alt="やまと不動産が手がけた住宅の外観" loading="lazy" decoding="async"><span class="catalog-caption">Aftercare &amp; Warranty</span></div>
-      <div class="warranty-grid__copy"><p class="catalog-kicker">09 — Warranty</p><h2 class="catalog-title">建てたあとも、<br>確認できる仕組みを。</h2><span class="catalog-rule"></span><p class="catalog-copy">保証と点検の内容を、契約前から確認できます。</p><div class="warranty-facts"><div class="catalog-fact"><b>01</b><span>しろあり保証10年・上限1,000万円。延長で最長30年。</span></div><div class="catalog-fact"><b>02</b><span>施工中に第三者機関が2回検査。</span></div><div class="catalog-fact"><b>03</b><span>売却や相続の際も保証を引き継げます。</span></div></div></div>
+      <div class="warranty-grid__copy"><p class="catalog-kicker">09 — Warranty</p><h2 class="catalog-title">保証・検査・<br>アフターフォロー。</h2><span class="catalog-rule"></span><p class="catalog-copy">保証年数、検査時期、延長条件を契約前にご説明します。</p><div class="warranty-facts"><div class="catalog-fact"><b>01</b><span>10年ごとの有償延長。所定の点検・メンテナンス等を条件に最長30年。</span></div><div class="catalog-fact"><b>02</b><span>しろあり保証10年。</span></div><div class="catalog-fact"><b>03</b><span>第三者機関が基礎配筋・躯体構造を2回検査。</span></div><div class="catalog-fact"><b>04</b><span>売却・相続時の保証承継に対応（有償）。</span></div></div></div>
     </div><span class="catalog-no">11 / 13</span></div>
   </article>
 
-  <article class="fvs__scene" data-name="3シリーズの仕様" aria-hidden="true">
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="3シリーズの仕様" aria-hidden="true">
     <div class="catalog-sheet"><div class="spec-grid">
-      <div class="spec-grid__intro"><p class="catalog-kicker">10 — Specification</p><h2 class="catalog-title">共通する強さと、<br>選べる設備。</h2><span class="catalog-rule"></span><p class="catalog-copy">三列の比較表をそのまま並べず、共通仕様と各シリーズの特徴を順に読める形へ再編集しました。</p><div class="catalog-fact"><b>ALL</b><span>外壁、屋根、断熱、給湯、耐震・制振、地盤・建物保証、アフターフォローは三シリーズ共通。</span></div></div>
-      <div class="spec-grid__series"><div class="spec-line" style="--series-color:#C64A00"><div class="spec-line__name">花</div><p class="spec-line__text">STEDIA デュアルトップ／I型／KT。ジエスタ2 親子ドア＋顔認証。選択肢を広く備えます。</p></div><div class="spec-line" style="--series-color:#7D4B4F"><div class="spec-line__name">京</div><p class="spec-line__text">STEDIA I型／KT。ジエスタ2 片開き＋FamiLock。限られた敷地にも合わせやすい構成です。</p></div><div class="spec-line" style="--series-color:#908600"><div class="spec-line__name">風</div><p class="spec-line__text">ES、ジエスタ2 片開き＋FamiLock、サーモスL＋シャッター付を基準にまとめています。</p></div></div>
+      <div class="spec-grid__intro"><p class="catalog-kicker">10 — Specification</p><h2 class="catalog-title">三シリーズの<br>共通仕様と選択設備。</h2><span class="catalog-rule"></span><p class="catalog-copy">共通の構造・断熱・外装と、シリーズごとに異なる設備を確認できます。</p><div class="catalog-fact"><b>ALL</b><span>外壁・屋根・断熱・給湯・地盤保証・建物保証・アフターフォローは三シリーズ共通。地震対策は耐震または制振から検討します。</span></div></div>
+      <div class="spec-grid__series"><div class="spec-line" style="--series-color:#C64A00"><div class="spec-line__name">花</div><p class="spec-line__text">STEDIA デュアルトップ／I型／KT。ジエスタ2 親子ドア＋顔認証。選択肢を広く備えます。</p></div><div class="spec-line" style="--series-color:#7D4B4F"><div class="spec-line__name">京</div><p class="spec-line__text">STEDIA I型／KT。ジエスタ2 片開き＋FamiLock。限られた敷地にも合わせやすい構成です。</p></div><div class="spec-line" style="--series-color:#908600"><div class="spec-line__name">風</div><p class="spec-line__text">ES、ジエスタ2片開き＋FamiLock、サーモスL＋シャッター付。</p></div></div>
     </div><span class="catalog-no">12 / 13</span></div>
   </article>
 
-  <article class="fvs__scene" data-name="次のご案内" aria-hidden="true">
-    <div class="catalog-sheet catalog-sheet--red"><div class="closing"><img class="closing__art" src="assets/std/art_swallows_t.webp" alt=""><div class="closing__body"><p class="catalog-kicker" style="color:#F1D57D">Yamato House Collection</p><h2 class="catalog-title">写真で見た仕様を、<br>モデルハウスで確かめる。</h2><span class="catalog-rule" style="margin:20px auto"></span><p class="catalog-copy">花・京・風の違い、自由設計の進め方、総額の考え方をご案内します。</p><div class="closing__actions"><a class="catalog-cta catalog-cta--fill" href="contact.html?type=reserve">モデルハウスを予約</a><a class="catalog-cta" href="contact.html?type=docs">資料を請求</a><a class="catalog-cta" href="#auth">サイト本編を見る</a></div></div></div><span class="catalog-no">13 / 13</span></div>
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="次のご案内" aria-hidden="true">
+    <div class="catalog-sheet catalog-sheet--red"><div class="closing"><img class="closing__art" src="assets/std/art_swallows_t.webp" alt=""><div class="closing__body"><p class="catalog-kicker" style="color:#F1D57D">Yamato House Collection</p><h2 class="catalog-title">標準仕様を、<br>モデルハウスで確認。</h2><span class="catalog-rule" style="margin:20px auto"></span><p class="catalog-copy">モデルハウスは標準仕様。各シリーズの違いと、自由設計・建物本体価格をご案内します。</p><div class="closing__actions"><a class="catalog-cta catalog-cta--fill" href="contact.html?type=reserve">モデルハウスを予約</a><a class="catalog-cta" href="contact.html?type=docs">資料を請求</a><a class="catalog-cta" href="#auth">サイト本編を見る</a></div></div></div><span class="catalog-no">13 / 13</span></div>
   </article>
 
-  <a class="fvs__exit" href="#auth">サイトへ</a>
+  <!-- SP専用編集版: PC見開きを縮小せず、一面一メッセージで20面へ再編集 -->
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-message" data-toc="やまとの家" data-name="やまとの家" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/message-living-sp-1080.avif"><img src="assets/catalog/mobile/message-living-sp-1080.webp" alt="木目の建具と間接照明を備えたリビング" loading="lazy" decoding="async"></picture><span class="spcat__caption">Living / Standard &amp; Design</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">01 — Message</span><h2 class="spcat__title">見せた仕様を、<br>見せた価格で。</h2><p class="spcat__body">標準仕様と建物本体価格を最初から明確に。設備・構造・設計・保証を含め、家づくりの内容をまとめました。<small class="catalog-note">※掲載写真にはシリーズ別仕様・選択仕様を含みます。実際の仕様は各ページと打ち合わせでご確認ください。</small></p></div>
+    </div><span class="catalog-no">02 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-series-index" data-toc="花・京・風" data-name="花・京・風" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--index">
+      <div class="spcat__indexhead"><span class="spcat__kicker">Yamato House Collection</span><h2 class="spcat__title">花・京・風。<br>三つの住宅シリーズ。</h2><p class="spcat__body">広さ・間取り・設備・建物本体価格の違いから選べます。</p></div>
+      <div class="spcat__index"><div class="spcat__indexrow" style="--series-color:#C64A00"><b>花</b><span>31坪・4LDK／最上位モデル</span></div><div class="spcat__indexrow" style="--series-color:#7D4B4F"><b>京</b><span>28坪・3LDK／限られた敷地に</span></div><div class="spcat__indexrow" style="--series-color:#908600"><b>風</b><span>30坪・4LDK／標準モデル</span></div></div>
+    </div><span class="catalog-no">03 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-series-hana" data-toc-child data-name="花" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--series" style="--series-color:#C64A00">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/series-hana-sp-1080.avif"><img src="assets/catalog/mobile/series-hana-sp-1080.webp" alt="深い軒と木の質感を生かした花シリーズの外観" loading="lazy" decoding="async"></picture></div>
+      <div class="spcat__copy"><div class="spcat__series-mark"><strong>花</strong><span>Hana</span></div><p class="spcat__body">31坪・4LDKの最上位モデル。建物本体価格2,680万円（税込・土地別途）。</p></div>
+    </div><span class="catalog-no">04 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-series-kyo" data-toc-child data-name="京" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--series" style="--series-color:#7D4B4F">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/series-kyo-sp-1080.avif"><img src="assets/catalog/mobile/series-kyo-sp-1080.webp" alt="京シリーズで選べる木目の玄関ドアのディテール" loading="lazy" decoding="async"></picture></div>
+      <div class="spcat__copy"><div class="spcat__series-mark"><strong>京</strong><span>Miyako</span></div><p class="spcat__body">限られた敷地を生かす28坪・3LDK。建物本体価格2,480万円（税込・土地別途）。</p></div>
+    </div><span class="catalog-no">05 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-series-kaze" data-toc-child data-name="風" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--series" style="--series-color:#908600">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/series-kaze-sp-1080.avif"><img src="assets/catalog/mobile/series-kaze-sp-1080.webp" alt="切妻屋根と赤い玄関ドアが印象的な風シリーズの外観" loading="lazy" decoding="async"></picture></div>
+      <div class="spcat__copy"><div class="spcat__series-mark"><strong>風</strong><span>Kaze</span></div><p class="spcat__body">30坪・4LDKの標準モデル。建物本体価格2,680万円（税込・土地別途）。</p></div>
+    </div><span class="catalog-no">06 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-kitchen" data-toc="設備" data-name="キッチン" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/equipment-kitchen-sp-1080.avif"><img src="assets/catalog/mobile/equipment-kitchen-sp-1080.webp" alt="間接照明と木目の下がり天井を備えた対面キッチン" loading="lazy" decoding="async"></picture><span class="spcat__caption">Kitchen / Cleanup</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">02 — Equipment</span><h2 class="spcat__title">キッチンの<br>標準仕様。</h2><p class="spcat__body">花・京はクリナップ STEDIA、風はクリナップ ES。シリーズごとにレイアウトを設定しています。</p></div>
+    </div><span class="catalog-no">07 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-bath" data-toc-child data-name="浴室" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/water-bath-sp-1080.avif"><img src="assets/catalog/mobile/water-bath-sp-1080.webp" alt="木目調の壁と横長ミラーを備えた浴室" loading="lazy" decoding="async"></picture><span class="spcat__caption">Bathroom</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">03 — Water Area</span><h2 class="spcat__title">浴室の<br>標準仕様。</h2><p class="spcat__body">シリーズごとに浴槽、壁柄、カウンターなどの仕様を設定しています。</p></div>
+    </div><span class="catalog-no">08 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-vanity" data-toc-child data-name="洗面・トイレ" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/water-vanity-sp-1080.avif"><img src="assets/catalog/mobile/water-vanity-sp-1080.webp" alt="三面鏡と収納を備えた洗面化粧台" loading="lazy" decoding="async"></picture><span class="spcat__caption">Vanity</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">03 — Water Area</span><h2 class="spcat__title">洗面・トイレの<br>標準仕様。</h2><p class="spcat__body">洗面化粧台とトイレは、シリーズごとに設備仕様を設定しています。</p></div>
+    </div><span class="catalog-no">09 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-interior" data-toc="内装・外装" data-name="内装" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/interior-tatami-sp-1080.avif"><img src="assets/catalog/mobile/interior-tatami-sp-1080.webp" alt="半畳縁なし畳と縦長窓を備えた和室" loading="lazy" decoding="async"></picture><span class="spcat__caption">Interior / Tatami</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">04 — Interior</span><h2 class="spcat__title">建具・床・畳の<br>標準仕様。</h2><p class="spcat__body">建具と床はシリーズごとに組み合わせが異なります。和室には和紙畳も選べます。</p></div>
+    </div><span class="catalog-no">10 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-exterior" data-toc-child data-name="玄関・外装" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/exterior-entrance-sp-1080.avif"><img src="assets/catalog/mobile/exterior-entrance-sp-1080.webp" alt="木目の軒天と格子、玄関ドアを組み合わせたポーチ" loading="lazy" decoding="async"></picture><span class="spcat__caption">Entrance / GIESTA2</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">05 — Exterior</span><h2 class="spcat__title">玄関・窓・外壁・屋根の<br>標準仕様。</h2><p class="spcat__body">玄関ドア・窓・外壁・屋根・軒天は、シリーズごとに仕様を設定しています。</p></div>
+    </div><span class="catalog-no">11 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-performance-door" data-toc="性能" data-name="性能" aria-hidden="true">
+    <div class="catalog-sheet catalog-sheet--red"><div class="spcat spcat--chapter"><img class="spcat__foil" src="assets/std/art_swallows_t.webp" alt=""><div><span class="spcat__kicker" style="color:#F1D57D">06 — Performance</span><h2 class="spcat__title">三シリーズ共通の<br>構造・断熱性能。</h2><span class="spcat__rule" style="margin:18px auto"></span><p class="spcat__body">耐震または制振、断熱・外壁など、完成後に見えにくい部分の仕様を確認できます。</p></div></div><span class="catalog-no">12 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-seismic" data-toc-child data-name="地震対策" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--evidence">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/performance-structure-sp-1080.avif"><img src="assets/catalog/mobile/performance-structure-sp-1080.webp" alt="耐震または制振を検討するための構造部材" loading="lazy" decoding="async"></picture><span class="spcat__caption">Seismic Design</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">Structure</span><h2 class="spcat__title">耐震または制振を、<br>設計士と検討。</h2><p class="spcat__body">耐震等級3相当。wallstatで全棟の倒壊リスクを確認します。</p><p class="spcat__body" style="font-size:.875rem">※掲載部材の標準範囲は契約前に確認します。</p></div>
+    </div><span class="catalog-no">13 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-common-performance" data-toc-child data-name="断熱・共通仕様" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--evidence">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/performance-wall-sp-1080.avif"><img src="assets/catalog/mobile/performance-wall-sp-1080.webp" alt="ヘーベルパワーボード外壁の深い陰影" loading="lazy" decoding="async"></picture><span class="spcat__caption">Hebel Powerboard</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">Common Standard</span><h2 class="spcat__title">三シリーズ共通の<br>断熱・外壁仕様。</h2><div class="spcat__facts"><div class="spcat__fact"><b>01</b><span>断熱材 アクアフォームLITE</span></div><div class="spcat__fact"><b>02</b><span>外壁通気工法・パワーボード</span></div><div class="spcat__fact"><b>03</b><span>地盤保証・建物保証・アフターフォロー</span></div></div></div>
+    </div><span class="catalog-no">14 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-free-design" data-toc="自由設計" data-name="完全自由設計" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/design-meeting-sp-1080.avif"><img src="assets/catalog/mobile/design-meeting-sp-1080.webp" alt="設計士と図面を囲む打ち合わせ" loading="lazy" decoding="async"></picture><span class="spcat__caption">Planning Meeting</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">07 — Free Design</span><h2 class="spcat__title">設計士が、最初の<br>打ち合わせから同席。</h2><p class="spcat__body">敷地ごとに異なる光の入り方と、視線の抜け方から間取りを考えます。</p></div>
+    </div><span class="catalog-no">15 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-plans" data-toc-child data-name="敷地と間取り" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--plans spcat--copy-first">
+      <div class="spcat__copy"><span class="spcat__kicker">Site Planning</span><h2 class="spcat__title">敷地を読み、<br>間取りを一から。</h2><p class="spcat__body">同じ分譲地でも、隣地によって光と視線は変わります。</p></div>
+      <div class="spcat__plans"><figure><img src="assets/jiyu/wc_plan_1f.webp" alt="1階の水彩平面図" loading="lazy" decoding="async"><figcaption>1F Plan</figcaption></figure><figure><img src="assets/jiyu/wc_plan_2f.webp" alt="2階の水彩平面図" loading="lazy" decoding="async"><figcaption>2F Plan</figcaption></figure></div>
+    </div><span class="catalog-no">16 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-one-team" data-toc="土地・設計・施工" data-name="土地・設計・施工" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--process">
+      <div class="spcat__pair"><div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/process-exterior-sp-1080.avif"><img src="assets/catalog/mobile/process-exterior-sp-1080.webp" alt="実在する花シリーズの家を描いた水彩外観" loading="lazy" decoding="async"></picture></div><div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/process-site-sp-1080.avif"><img src="assets/catalog/mobile/process-site-sp-1080.webp" alt="敷地の光と視線を検討する概念図" loading="lazy" decoding="async"></picture></div></div>
+      <div class="spcat__copy"><span class="spcat__kicker">08 — One Team</span><h2 class="spcat__title">土地から設計、施工まで。</h2><p class="spcat__body">土地の仕入れ・区画づくりから設計・施工まで自社で担います。</p><div class="spcat__steps"><div class="spcat__step"><b>01 / LAND</b><span>敷地と周辺環境を確認</span></div><div class="spcat__step"><b>02 / DESIGN</b><span>動線、採光、要望を整理</span></div><div class="spcat__step"><b>03 / BUILD</b><span>設計意図を施工へ共有</span></div></div><p class="spcat__body" style="font-size:.875rem">※右図は考え方を示す概念図です。</p></div>
+    </div><span class="catalog-no">17 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-warranty" data-toc="保証・仕様" data-name="保証・アフター" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--evidence">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/warranty-house-sp-1080.avif"><img src="assets/catalog/mobile/warranty-house-sp-1080.webp" alt="やまと不動産が手がけた住宅の外観" loading="lazy" decoding="async"></picture><span class="spcat__caption">Aftercare &amp; Warranty</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">09 — Warranty</span><h2 class="spcat__title">保証・検査・<br>アフターフォロー。</h2><div class="spcat__facts"><div class="spcat__fact"><b>01</b><span>10年ごとの有償延長と所定の点検等を条件に最長30年</span></div><div class="spcat__fact"><b>02</b><span>しろあり保証10年</span></div><div class="spcat__fact"><b>03</b><span>第三者機関が基礎配筋・躯体構造を2回検査</span></div><div class="spcat__fact"><b>04</b><span>売却・相続時の保証承継に対応（有償）</span></div></div></div>
+    </div><span class="catalog-no">18 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-specification" data-toc-child data-name="3シリーズの仕様" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--spec">
+      <div class="spcat__indexhead"><span class="spcat__kicker">10 — Specification</span><h2 class="spcat__title">三シリーズの<br>共通仕様と選択設備。</h2></div>
+      <div class="spcat__spec"><div class="spcat__specrow"><b>共通</b><span>外壁・屋根・断熱・給湯・保証・アフターフォロー。地震対策は耐震または制振。</span></div><div class="spcat__specrow" style="--series-color:#C64A00"><b>花</b><span>STEDIA各種、ジエスタ2親子ドア＋顔認証。</span></div><div class="spcat__specrow" style="--series-color:#7D4B4F"><b>京</b><span>STEDIA I型／KT、ジエスタ2片開き＋FamiLock。</span></div><div class="spcat__specrow" style="--series-color:#908600"><b>風</b><span>ES、ジエスタ2片開き＋FamiLock、サーモスL＋シャッター付。</span></div></div>
+    </div><span class="catalog-no">19 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-closing" data-toc="次のご案内" data-name="次のご案内" aria-hidden="true">
+    <div class="catalog-sheet catalog-sheet--red"><div class="spcat spcat--closing"><img class="spcat__foil" src="assets/std/art_swallows_t.webp" alt=""><div><span class="spcat__kicker" style="color:#F1D57D">Yamato House Collection</span><h2 class="spcat__title">標準仕様を、<br>モデルハウスで確認。</h2><span class="spcat__rule" style="margin:16px auto"></span><p class="spcat__body">モデルハウスは標準仕様。各シリーズの違いと、自由設計・建物本体価格をご案内します。</p><div class="spcat__actions"><a class="catalog-cta catalog-cta--fill" href="contact.html?type=reserve">モデルハウスを予約</a><a class="catalog-cta" href="contact.html?type=docs">資料を請求</a><a class="catalog-cta" href="#auth">サイト本編を見る</a></div></div></div><span class="catalog-no">20 / 20</span></div>
+  </article>
+
+  <a class="fvs__exit" href="#auth" aria-label="サイト本編へ進む">本編へ</a>
   <p class="fvs__count" aria-live="polite"><span id="catNow">01</span> / <span id="catAll">13</span></p>
   <div class="fvs__ui" aria-label="カタログ操作"><button class="fvs__navbtn" id="catPrev" type="button" aria-label="前のページ" disabled>←</button><button class="fvs__tocbtn" id="catTocOpen" type="button" aria-haspopup="dialog" aria-controls="catToc">目次</button><button class="fvs__navbtn" id="catNext" type="button" aria-label="次のページ">→</button></div>
-  <p class="fvs__scrollcue" aria-hidden="true">縦スクロールでサイトへ</p>
+  <p class="fvs__scrollcue" aria-hidden="true">縦スクロールで本編へ</p>
 </section>
 
 <dialog class="fvs__toc" id="catToc" aria-labelledby="catTocTitle">
@@ -1651,9 +1899,13 @@
 <script>
 (function(){
   'use strict';
+  try{
   var catalog=document.querySelector('section.fvs');
   if(!catalog) return;
-  var scenes=[].slice.call(catalog.querySelectorAll(':scope > .fvs__scene'));
+  var compactMedia=matchMedia('(max-width:820px)');
+  var layoutMode=compactMedia.matches?'sp':'pc';
+  var allScenes=[].slice.call(catalog.querySelectorAll(':scope > .fvs__scene'));
+  var scenes=allScenes.filter(function(scene){var layout=scene.getAttribute('data-catalog-layout');return !layout||layout===layoutMode;});
   var countNow=document.getElementById('catNow');
   var countAll=document.getElementById('catAll');
   var prevBtn=document.getElementById('catPrev');
@@ -1663,20 +1915,26 @@
   var tocClose=document.getElementById('catTocClose');
   var tocList=document.getElementById('catTocList');
   var coverMotion=catalog.querySelector('.catalog-cover__motion');
+  var coverShell=catalog.querySelector('.catalog-cover');
+  var openingSkip=document.getElementById('catOpeningSkip');
+  var openingReplay=document.getElementById('catOpeningReplay');
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var openingSeen=false;
+  try{openingSeen=sessionStorage.getItem('yamatoCatalogOpeningSeen')==='1';}catch(ignore){}
   var index=0,animating=false,startX=0,startY=0,pointerDown=false;
   if(countAll) countAll.textContent=String(scenes.length).padStart(2,'0');
 
   scenes.forEach(function(scene,i){
     scene.classList.toggle('is-active',i===0);
     scene.setAttribute('aria-hidden',i===0?'false':'true');
+    if(layoutMode==='sp'&&scene.hasAttribute('data-toc-child')) return;
     var li=document.createElement('li');
     var button=document.createElement('button');
     var no=document.createElement('b');
     var label=document.createElement('span');
     button.type='button';
     no.textContent=String(i+1).padStart(2,'0');
-    label.textContent=scene.getAttribute('data-name')||('ページ'+(i+1));
+    label.textContent=scene.getAttribute('data-toc')||scene.getAttribute('data-name')||('ページ'+(i+1));
     button.appendChild(no);button.appendChild(label);li.appendChild(button);tocList.appendChild(li);
     button.addEventListener('click',function(){ if(toc.open) toc.close(); go(i); });
   });
@@ -1705,17 +1963,24 @@
     var nextVisual=next.querySelector('.catalog-sheet,.catalog-cover')||next;
     if(index===0&&coverMotion) coverMotion.pause();
     index=to;sync();
-    if(index===0&&coverMotion&&!reduce){coverMotion.currentTime=0;coverMotion.play().catch(function(){});}
+    if(index===0) playOpening(false);
     next.classList.add('is-active');next.setAttribute('aria-hidden','false');
     current.classList.add('is-leaving');animating=true;
     if(reduce||!currentVisual.animate){settle(current,next);return;}
     var sign=forward?1:-1;
-    var duration=640;
-    var outgoing=currentVisual.animate([
+    var compact=compactMedia.matches;
+    var duration=compact?300:420;
+    var outgoing=currentVisual.animate(compact?[
+      {opacity:1,transform:'translateX(0)'},
+      {opacity:.52,transform:'translateX('+(-20*sign)+'px)'}
+    ]:[
       {opacity:1,transform:'translateX(0) rotateY(0deg)'},
       {opacity:.25,transform:'translateX('+(-7*sign)+'%) rotateY('+(5*sign)+'deg)'}
     ],{duration:duration,easing:'cubic-bezier(.22,1,.36,1)',fill:'forwards'});
-    var incoming=nextVisual.animate([
+    var incoming=nextVisual.animate(compact?[
+      {opacity:.7,clipPath:sign>0?'inset(0 0 0 100%)':'inset(0 100% 0 0)',transform:'translateX('+(20*sign)+'px)'},
+      {opacity:1,clipPath:'inset(0 0 0 0)',transform:'translateX(0)'}
+    ]:[
       {opacity:.62,clipPath:sign>0?'inset(0 0 0 100%)':'inset(0 100% 0 0)',transform:'translateX('+(7*sign)+'%) rotateY('+(-4*sign)+'deg)'},
       {opacity:1,clipPath:'inset(0 0 0 0)',transform:'translateX(0) rotateY(0deg)'}
     ],{duration:duration,easing:'cubic-bezier(.22,1,.36,1)',fill:'forwards'});
@@ -1748,9 +2013,45 @@
   },{passive:true});
   catalog.addEventListener('pointercancel',function(){pointerDown=false;},{passive:true});
   catalog.addEventListener('dragstart',function(e){if(e.target.tagName==='IMG')e.preventDefault();});
-  if(coverMotion&&reduce){coverMotion.removeAttribute('autoplay');coverMotion.pause();}
+  function rememberOpening(){
+    openingSeen=true;
+    try{sessionStorage.setItem('yamatoCatalogOpeningSeen','1');}catch(ignore){}
+  }
+  function settleCover(){
+    if(coverShell) coverShell.classList.add('is-motion-settled','is-title-in');
+  }
+  function playOpening(force){
+    if(!coverMotion||reduce||(!force&&openingSeen)){
+      if(coverMotion) coverMotion.pause();
+      settleCover();
+      return;
+    }
+    if(coverShell) coverShell.classList.remove('is-motion-settled','is-title-in');
+    coverMotion.currentTime=0;
+    var playback=coverMotion.play();
+    if(playback&&playback.catch) playback.catch(settleCover);
+  }
+  window.__fvs={go:go,next:function(){go(index+1);},prev:function(){go(index-1);},idx:function(){return index;},pages:function(){return scenes.length;},mode:function(){return layoutMode;}};
+  if(coverMotion){
+    if(reduce){
+      coverMotion.removeAttribute('autoplay');coverMotion.pause();settleCover();
+    }else{
+      coverMotion.addEventListener('timeupdate',function(){
+        if(coverMotion.currentTime>=4.45&&coverShell) coverShell.classList.add('is-title-in');
+      });
+      coverMotion.addEventListener('ended',function(){rememberOpening();settleCover();});
+      coverMotion.addEventListener('error',settleCover);
+      playOpening(false);
+    }
+  }
+  if(openingSkip) openingSkip.addEventListener('click',function(){if(coverMotion)coverMotion.pause();rememberOpening();settleCover();});
+  if(openingReplay) openingReplay.addEventListener('click',function(){playOpening(true);});
+  if(compactMedia.addEventListener) compactMedia.addEventListener('change',function(){location.reload();});
   sync();
-  window.__fvs={go:go,next:function(){go(index+1);},prev:function(){go(index-1);},idx:function(){return index;}};
+  }catch(error){
+    window.__fvsInitError={name:error&&error.name,message:error&&error.message};
+    console.error('catalog init failed',error);
+  }
 })();
 </script>
 
@@ -1774,26 +2075,85 @@
       <b>家づくりのこだわり</b><span>Our Work</span></a>
   </nav>
 
-  <!-- 二枚の扉（2026-08-21 差し替え）: 実績帯は保留。参照デザインの文法で
-       お客様の声／分譲地・物件 への大きな入口を2枚。画像は実写ベースのリライト。 -->
+  <!-- SUUMOの「新着・更新順」先頭10件を、当サイトへの反映日とともに掲載。初期表示は5件。 -->
+  <section class="nw" aria-labelledby="newsH">
+    <div class="nw__head"><h2 id="newsH">NEWS</h2><p>新着情報</p></div>
+    <div class="nw__list">
+      <a class="nw__row" href="https://suumo.jp/tochi/nara/sc_nara/nc_74822856/" target="_blank" rel="noopener">
+        <time class="nw__date" datetime="2026-08-30">2026.08.30</time><span class="nw__tag">物件情報</span>
+        <span class="nw__title">「花鳥風月やまとの家～法蓮町～」販売情報を更新しました</span><span class="nw__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="nw__row" href="https://suumo.jp/tochi/nara/sc_nara/nc_77151281/" target="_blank" rel="noopener">
+        <time class="nw__date" datetime="2026-08-30">2026.08.30</time><span class="nw__tag">物件情報</span>
+        <span class="nw__title">「花鳥風月やまとの家～船橋町～」全3区画の販売情報を更新しました</span><span class="nw__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="nw__row" href="https://suumo.jp/tochi/nara/sc_nara/nc_76905419/" target="_blank" rel="noopener">
+        <time class="nw__date" datetime="2026-08-30">2026.08.30</time><span class="nw__tag">物件情報</span>
+        <span class="nw__title">「花鳥風月やまとの家～法華寺町～」全8区画の販売情報を更新しました</span><span class="nw__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="nw__row" href="https://suumo.jp/tochi/nara/sc_nara/nc_20586171/" target="_blank" rel="noopener">
+        <time class="nw__date" datetime="2026-08-30">2026.08.30</time><span class="nw__tag">物件情報</span>
+        <span class="nw__title">「花鳥風月やまとの家～敷島町～」全4区画の販売情報を更新しました</span><span class="nw__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="nw__row" href="https://suumo.jp/tochi/nara/sc_nara/nc_20499832/" target="_blank" rel="noopener">
+        <time class="nw__date" datetime="2026-08-30">2026.08.30</time><span class="nw__tag">物件情報</span>
+        <span class="nw__title">「花鳥風月やまとの家～四条大路1丁目～」全2区画の販売情報を更新しました</span><span class="nw__arrow" aria-hidden="true">→</span>
+      </a>
+      <div class="nw__extra" id="newsExtra" hidden>
+        <a class="nw__row" href="https://suumo.jp/tochi/nara/sc_nara/nc_21320158/" target="_blank" rel="noopener">
+          <time class="nw__date" datetime="2026-08-30">2026.08.30</time><span class="nw__tag">物件情報</span>
+          <span class="nw__title">「花鳥風月やまとの家～佐保台西町～」全2区画の販売情報を更新しました</span><span class="nw__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="nw__row" href="https://suumo.jp/tochi/nara/sc_nara/nc_20746650/" target="_blank" rel="noopener">
+          <time class="nw__date" datetime="2026-08-30">2026.08.30</time><span class="nw__tag">物件情報</span>
+          <span class="nw__title">「花鳥風月やまとの家～大安寺5丁目～」全5区画の販売情報を更新しました</span><span class="nw__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="nw__row" href="https://suumo.jp/tochi/nara/sc_nara/nc_78316608/" target="_blank" rel="noopener">
+          <time class="nw__date" datetime="2026-08-30">2026.08.30</time><span class="nw__tag">物件情報</span>
+          <span class="nw__title">「花鳥風月やまとの家～四条大路3丁目～」全2区画の販売情報を更新しました</span><span class="nw__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="nw__row" href="https://suumo.jp/ikkodate/nara/sc_tenri/nc_21318994/" target="_blank" rel="noopener">
+          <time class="nw__date" datetime="2026-08-30">2026.08.30</time><span class="nw__tag">新築戸建</span>
+          <span class="nw__title">「花鳥風月やまとの家～前栽町～」花仕様の販売情報を更新しました</span><span class="nw__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="nw__row" href="https://suumo.jp/tochi/nara/sc_ikoma/nc_77151550/" target="_blank" rel="noopener">
+          <time class="nw__date" datetime="2026-08-30">2026.08.30</time><span class="nw__tag">物件情報</span>
+          <span class="nw__title">「花鳥風月やまとの家～小明町～」全3区画の販売情報を更新しました</span><span class="nw__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+    <div class="nw__more">
+      <button class="nw__morebtn" id="newsMore" type="button" aria-expanded="false" aria-controls="newsExtra"><span>もっと見る</span></button>
+    </div>
+  </section>
+
+  <!-- 大型カードは指定の3導線へ整理。シミュレーション本体は別セッションで実装する。 -->
   <div class="dg">
     <div class="dg__grid">
-      <a class="dg__c" href="voice.html">
-        <img src="assets/doors/voices.webp" alt="夕方の光が差し込む、やまとの家のリビング" loading="lazy" decoding="async">
+      <a class="dg__c" href="kodawari.html">
+        <img src="assets/kodawari/hero_evening.jpg" alt="照明と素材の質感を丁寧に整えた、やまとの家のキッチン" loading="lazy" decoding="async">
         <span class="dg__in">
-          <span class="dg__eye">Voices</span>
-          <span class="dg__h">お客様の声</span>
+          <span class="dg__eye">Our Craft</span>
+          <span class="dg__h">家づくりのこだわり</span>
           <span class="dg__go"><span>→</span></span>
         </span>
       </a>
       <a class="dg__c" href="lots.html">
         <img src="assets/doors/lots.webp" alt="ブルーアワーの奈良市街を見下ろす空撮" loading="lazy" decoding="async">
         <span class="dg__in">
-          <span class="dg__eye">Lots</span>
-          <span class="dg__h">分譲地・物件</span>
+          <span class="dg__eye">Properties</span>
+          <span class="dg__h">物件一覧</span>
           <span class="dg__go"><span>→</span></span>
         </span>
       </a>
+      <div class="dg__c dg__c--planned" aria-label="お支払いシミュレーション（準備中）" aria-disabled="true">
+        <img src="assets/stock_src/AdobeStock_1829766889_gold_washi.jpg" alt="" loading="lazy" decoding="async">
+        <span class="dg__in">
+          <span class="dg__eye">Payment Simulation</span>
+          <span class="dg__h">お支払い<br>シミュレーション</span>
+          <span class="dg__status">準備中</span>
+        </span>
+      </div>
     </div>
   </div>
 </section>
@@ -4034,6 +4394,25 @@
       dt.addEventListener('toggle', later);
     });
   })();
+})();
+</script>
+
+<script>
+/* NEWS追加表示。高さ変更後は後続のスクロール演出位置も再計測する。 */
+(function(){
+  var button=document.getElementById('newsMore');
+  var extra=document.getElementById('newsExtra');
+  if(!button||!extra) return;
+  button.addEventListener('click',function(){
+    var open=button.getAttribute('aria-expanded')!=='true';
+    button.setAttribute('aria-expanded',String(open));
+    extra.hidden=!open;
+    var label=button.querySelector('span');
+    if(label) label.textContent=open?'閉じる':'もっと見る';
+    requestAnimationFrame(function(){
+      if(window.ScrollTrigger&&ScrollTrigger.refresh) ScrollTrigger.refresh();
+    });
+  });
 })();
 </script>
 

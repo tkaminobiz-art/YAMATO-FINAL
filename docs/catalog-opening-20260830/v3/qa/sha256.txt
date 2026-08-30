@@ -1,0 +1,2 @@
+6f3aa7d9bde114b8c72c02ab1ce1e302a8b32fb733c8739d8909e9cd95653b16  assets/catalog/cover-opening-desktop-v3.mp4
+728f817a319b3f604a6fc6741b3247010683de5c9fcbc8d3bd233a0ab52b45ba  assets/catalog/cover-opening-mobile-v3.mp4

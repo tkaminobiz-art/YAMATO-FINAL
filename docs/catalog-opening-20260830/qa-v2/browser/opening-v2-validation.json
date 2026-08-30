@@ -1,0 +1,78 @@
+{
+  "valid": true,
+  "errors": [],
+  "results": [
+    {
+      "width": 1440,
+      "requestedScrollY": 0,
+      "actualScrollY": 0,
+      "screenshot": "docs/catalog-opening-20260830/qa-v2/browser/opening-v2-1440.png",
+      "image": {
+        "width": 1440,
+        "height": 14261,
+        "whiteRatio": 0.009766,
+        "luminanceMean": 159.081,
+        "luminanceStdDev": 94.737,
+        "channelStdDev": [
+          92.492,
+          97.033,
+          95.111
+        ]
+      }
+    },
+    {
+      "width": 1024,
+      "requestedScrollY": 0,
+      "actualScrollY": 0,
+      "screenshot": "docs/catalog-opening-20260830/qa-v2/browser/opening-v2-1024.png",
+      "image": {
+        "width": 1024,
+        "height": 12847,
+        "whiteRatio": 0.010337,
+        "luminanceMean": 158.075,
+        "luminanceStdDev": 94.213,
+        "channelStdDev": [
+          91.317,
+          96.992,
+          94.791
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "requestedScrollY": 0,
+      "actualScrollY": 0,
+      "screenshot": "docs/catalog-opening-20260830/qa-v2/browser/opening-v2-768.png",
+      "image": {
+        "width": 768,
+        "height": 14680,
+        "whiteRatio": 0.0125,
+        "luminanceMean": 156.536,
+        "luminanceStdDev": 94.118,
+        "channelStdDev": [
+          91.336,
+          96.978,
+          94.396
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "requestedScrollY": 0,
+      "actualScrollY": 0,
+      "screenshot": "docs/catalog-opening-20260830/qa-v2/browser/opening-v2-390.png",
+      "image": {
+        "width": 390,
+        "height": 15415,
+        "whiteRatio": 0.010156,
+        "luminanceMean": 163.43,
+        "luminanceStdDev": 89.596,
+        "channelStdDev": [
+          86.262,
+          92.616,
+          90.365
+        ]
+      }
+    }
+  ]
+}
