@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>奈良の注文住宅｜株式会社やまと不動産</title>
-<meta name="description" content="奈良と京都で770棟超。京2,480万円／花・風2,680万円の建物本体価格（税込・土地別途）。自社分譲地150区画以上を保有する、やまと不動産の注文住宅。">
+<meta name="description" content="奈良と京都で600棟。京2,480万円／花・風2,680万円の建物本体価格（税込・土地別途）。自社分譲地150区画以上を保有する、やまと不動産の注文住宅。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
@@ -403,7 +403,9 @@
     .fvs__toclist{grid-template-columns:1fr;padding:4px 16px 20px}.fvs__toclist button{min-height:46px}
     .catalog-cover__title{display:flex;flex-direction:column;align-items:center;transform:translate(-50%,-50%);text-shadow:0 1px 3px rgba(83,4,9,.46);-webkit-font-smoothing:antialiased}
     .catalog-cover.is-title-in .catalog-cover__title{transform:translate(-50%,-50%)}
-    .catalog-cover__title strong{width:max-content;font-family:var(--cat-mincho);font-size:clamp(2.35rem,12vw,2.95rem);font-weight:500;writing-mode:vertical-rl;letter-spacing:.1em;max-height:43svh}
+    .catalog-cover__title strong{width:max-content;height:max-content;max-height:none;white-space:nowrap;
+      font-family:var(--cat-mincho);font-size:clamp(2.35rem,12vw,2.95rem);font-weight:500;
+      -webkit-writing-mode:vertical-rl;writing-mode:vertical-rl;text-orientation:mixed;letter-spacing:.1em}
     .catalog-cover__title small{font-size:.7rem;letter-spacing:.3em}.catalog-cover__title i{font-size:.5rem;letter-spacing:.22em}
   }
   @media (max-width:820px) and (max-height:650px){
@@ -1609,7 +1611,7 @@
       <p class="fvs__eyebrow">やまとの家</p>
       <p class="hline">ずっと、愛せる家。</p>
       <hr class="rule-foil">
-      <p class="hlead">「花鳥風月」自然の美しさを愛でる心のように、<br>住む人のこだわりを形にする「注文住宅」</p>
+      <p class="hlead">花・京・風の3商品と、<br>標準仕様・価格・保証をご案内します。</p>
     </div>
   </article>
 
@@ -1706,30 +1708,30 @@
     </div>
   </article>
 
-  <article class="fvs__scene fvs__scene--beni fvs__scene--ledger" id="s03" data-name="0円の台帳" data-theme="dark">
+  <article class="fvs__scene fvs__scene--beni fvs__scene--ledger" id="s03" data-name="費用の確認" data-theme="dark">
     <p class="act" data-l>費用のこと</p>
     <div class="paper__in">
-      <p class="hlead" data-l>標準装備のグレードが高いので、<br class="spbr">あとから設備を足す必要がありません。</p>
-      <p class="hline" data-l style="margin-top:clamp(10px,1.8vh,18px)">一般的にはかかる費用が、<br>やまとでは0円です。</p>
+      <p class="hlead" data-l>標準仕様と別途費用を、<br class="spbr">ご契約前のお見積もりで明示します。</p>
+      <p class="hline" data-l style="margin-top:clamp(10px,1.8vh,18px)">条件により当社が負担する費用も、<br>項目ごとにご説明します。</p>
       <div class="ledger">
         <div class="ledger__row" data-l>
           <span class="ledger__k">地盤改良費</span><span class="ledger__lead"></span>
           <span class="ledger__v"><span id="cd1">0</span><small id="cd1u">円</small></span>
-          <em class="ledger__chip">一般的には120〜150万円</em>
+          <em class="ledger__chip">当社基準で地盤改良が必要な場合</em>
         </div>
         <div class="ledger__row" data-l>
           <span class="ledger__k">つなぎ融資</span><span class="ledger__lead"></span>
           <span class="ledger__v">0<small>円</small></span>
-          <em class="ledger__chip">建物完成後に一括支払い</em>
+          <em class="ledger__chip">支払時期と融資条件を個別に確認</em>
         </div>
         <div class="ledger__row" data-l>
-          <span class="ledger__k">仲介手数料</span><span class="ledger__lead"></span>
+          <span class="ledger__k">自社分譲地の仲介手数料</span><span class="ledger__lead"></span>
           <span class="ledger__v">0<small>円</small></span>
-          <em class="ledger__chip">すべて自社所有の土地</em>
+          <em class="ledger__chip">当社から直接購入する場合</em>
         </div>
       </div>
-      <p class="ledger__note" data-l>土地測量費・土地造成費・水道工事変更費も0円です。<br>
-      2,000万円規模の土地の場合、通常400万円〜470万円かかる費用が全て0円です。</p>
+      <p class="ledger__note" data-l>敷地条件や選択する仕様で費用が変わる項目は、<br>
+      ご契約前のお見積もりで金額と適用条件をご説明します。</p>
     </div>
   </article>
 
@@ -1742,7 +1744,7 @@
       </picture>
     </div>
     <div class="fvs__eqtxt">
-      <p class="chaplead" data-l>浮いた費用は、オプションに回すこともできます。</p>
+      <p class="chaplead" data-l>吹き抜け・造作家具などは、別途費用の選択仕様です。</p>
       <p class="fvs__room" data-l>Atrium</p>
       <p class="fvs__pled" data-l><span class="en">Option</span><span class="dash"></span>吹き抜け・天井を上げる<em class="chip">自由設計</em></p>
     </div>
@@ -1783,9 +1785,9 @@
     <div class="finwrap">
       <div class="encl encl--fin" data-l>
         <p class="fvs__eyebrow">花鳥風月 ── やまとの家</p>
-        <p class="hline hline--sm">大手で諦めた家を、<br>当社と一緒に叶えましょう。</p>
+        <p class="hline hline--sm">間取り・仕様・建物本体価格を、<br>商品別にご確認いただけます。</p>
         <hr class="rule-foil">
-        <p class="hlead climax__sub">自由設計と、高水準な標準装備。</p>
+        <p class="hlead climax__sub">自由設計と、商品別の標準仕様。</p>
       </div>
       <div class="fincard" data-l>
         <p class="open__cta climax__cta">
@@ -1821,7 +1823,7 @@
     <div class="catalog-sheet">
       <div class="spread spread--message">
         <div class="spread__half catalog-photo"><img src="assets/std/living_1920.webp" srcset="assets/std/living_1100.webp 1100w, assets/std/living_1920.webp 1920w, assets/std/living_2560.webp 2560w" sizes="46vw" alt="木目の天井と建具をそろえたリビング" decoding="async"><span class="catalog-caption">Living / Standard &amp; Design</span></div>
-        <div class="spread__half spread__copy"><p class="catalog-kicker">01 — Message</p><h2 class="catalog-title">見せた仕様を、<br>見せた価格で。</h2><span class="catalog-rule"></span><p class="catalog-copy">標準仕様と建物本体価格を最初から明確に。設備・構造・設計・保証を含め、家づくりの内容を一冊にまとめました。<small class="catalog-note">※掲載写真にはシリーズ別仕様・選択仕様を含みます。実際の仕様は各ページと打ち合わせでご確認ください。</small></p><div class="catalog-photo catalog-photo--detail" aria-hidden="true"><img src="assets/std/living_1100.webp" alt=""></div></div>
+        <div class="spread__half spread__copy"><p class="catalog-kicker">01 — Price &amp; Standard</p><h2 class="catalog-title">標準仕様と建物本体価格を、<br>ご契約前に確認。</h2><span class="catalog-rule"></span><p class="catalog-copy">商品別の標準仕様、設備、構造、保証、建物本体価格をまとめました。お見積もりでは、選択内容と別途費用もご契約前にご説明します。<small class="catalog-note">※掲載写真にはシリーズ別仕様・選択仕様を含みます。実際の仕様は各ページと打ち合わせでご確認ください。</small></p><div class="catalog-photo catalog-photo--detail" aria-hidden="true"><img src="assets/std/living_1100.webp" alt=""></div></div>
       </div><span class="catalog-no">02 / 13</span>
     </div>
   </article>
@@ -1875,7 +1877,7 @@
   <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="完全自由設計" aria-hidden="true">
     <div class="catalog-sheet"><div class="design-grid">
       <div class="design-grid__meeting catalog-photo"><img src="assets/jiyu/meeting.webp" alt="設計士と図面を囲む打ち合わせ" loading="lazy" decoding="async"><span class="catalog-caption">Planning Meeting</span></div>
-      <div class="design-grid__copy"><p class="catalog-kicker">07 — Free Design</p><h2 class="catalog-title">設計士が、最初の<br>打ち合わせから同席。</h2><span class="catalog-rule"></span><p class="catalog-copy">同じ分譲地でも、光の入り方と視線の抜け方は敷地ごとに違います。まず敷地を読み、間取りを一から考えます。</p></div>
+      <div class="design-grid__copy"><p class="catalog-kicker">07 — Free Design</p><h2 class="catalog-title">設計士が、最初の<br>打ち合わせから同席。</h2><span class="catalog-rule"></span><p class="catalog-copy">敷地の形状、隣地、採光、動線を確認し、ご希望に合わせて間取りを設計します。</p></div>
       <div class="design-grid__plans"><img src="assets/jiyu/wc_plan_1f.webp" alt="1階の水彩平面図" loading="lazy" decoding="async"><img src="assets/jiyu/wc_plan_2f.webp" alt="2階の水彩平面図" loading="lazy" decoding="async"></div>
     </div><span class="catalog-no">09 / 13</span></div>
   </article>
@@ -1909,7 +1911,7 @@
   <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-message" data-toc="やまとの家" data-name="やまとの家" aria-hidden="true">
     <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
       <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/message-living-sp-1080.avif"><img src="assets/catalog/mobile/message-living-sp-1080.webp" alt="木目の建具と間接照明を備えたリビング" loading="lazy" decoding="async"></picture><span class="spcat__caption">Living / Standard &amp; Design</span></div>
-      <div class="spcat__copy"><span class="spcat__kicker">01 — Message</span><h2 class="spcat__title">見せた仕様を、<br>見せた価格で。</h2><p class="spcat__body">標準仕様と建物本体価格を最初から明確に。設備・構造・設計・保証を含め、家づくりの内容をまとめました。<small class="catalog-note">※掲載写真にはシリーズ別仕様・選択仕様を含みます。実際の仕様は各ページと打ち合わせでご確認ください。</small></p></div>
+      <div class="spcat__copy"><span class="spcat__kicker">01 — Price &amp; Standard</span><h2 class="spcat__title">標準仕様と建物本体価格を、<br>ご契約前に確認。</h2><p class="spcat__body">商品別の標準仕様、設備、構造、保証、建物本体価格をまとめました。お見積もりでは、選択内容と別途費用もご契約前にご説明します。<small class="catalog-note">※掲載写真にはシリーズ別仕様・選択仕様を含みます。実際の仕様は各ページと打ち合わせでご確認ください。</small></p></div>
     </div><span class="catalog-no">02 / 20</span></div>
   </article>
 
@@ -1997,13 +1999,13 @@
   <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-free-design" data-toc="自由設計" data-name="完全自由設計" aria-hidden="true">
     <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
       <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/design-meeting-sp-1080.avif"><img src="assets/catalog/mobile/design-meeting-sp-1080.webp" alt="設計士と図面を囲む打ち合わせ" loading="lazy" decoding="async"></picture><span class="spcat__caption">Planning Meeting</span></div>
-      <div class="spcat__copy"><span class="spcat__kicker">07 — Free Design</span><h2 class="spcat__title">設計士が、最初の<br>打ち合わせから同席。</h2><p class="spcat__body">敷地ごとに異なる光の入り方と、視線の抜け方から間取りを考えます。</p></div>
+      <div class="spcat__copy"><span class="spcat__kicker">07 — Free Design</span><h2 class="spcat__title">設計士が、最初の<br>打ち合わせから同席。</h2><p class="spcat__body">敷地の形状、隣地、採光、動線を確認し、ご希望に合わせて間取りを設計します。</p></div>
     </div><span class="catalog-no">15 / 20</span></div>
   </article>
 
   <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-plans" data-toc-child data-name="敷地と間取り" aria-hidden="true">
     <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--plans spcat--copy-first">
-      <div class="spcat__copy"><span class="spcat__kicker">Site Planning</span><h2 class="spcat__title">敷地を読み、<br>間取りを一から。</h2><p class="spcat__body">同じ分譲地でも、隣地によって光と視線は変わります。</p></div>
+      <div class="spcat__copy"><span class="spcat__kicker">Site Planning</span><h2 class="spcat__title">敷地条件に合わせた<br>間取り設計。</h2><p class="spcat__body">敷地の形状、隣地、採光、動線を確認して設計します。</p></div>
       <div class="spcat__plans"><figure><img src="assets/jiyu/wc_plan_1f.webp" alt="1階の水彩平面図" loading="lazy" decoding="async"><figcaption>1F Plan</figcaption></figure><figure><img src="assets/jiyu/wc_plan_2f.webp" alt="2階の水彩平面図" loading="lazy" decoding="async"><figcaption>2F Plan</figcaption></figure></div>
     </div><span class="catalog-no">16 / 20</span></div>
   </article>
@@ -2308,15 +2310,14 @@
 <section class="heart tb" id="heart" aria-labelledby="tbH">
   <canvas class="tb__cv" id="tbCanvas" aria-hidden="true"></canvas>
   <div class="tb__in">
-    <span class="tb__eye">Our Creed ／ 信条</span>
-    <h2 class="tb__q" id="tbH"><span>「この金額で、</span><span>ここまでできるんだ」</span></h2>
+    <span class="tb__eye">Price &amp; Standard ／ 価格・標準仕様</span>
+    <h2 class="tb__q" id="tbH"><span>標準仕様と建物本体価格を、</span><span>ご契約前に確認できます。</span></h2>
     <div class="tb__body">
-      <p>やまと不動産が、ずっと大切にしていることがあります。それは、家を見たときに、少し驚いてもらえること。</p>
-      <p>いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
-      <p>建てたときだけではなく、暮らしてから、もっと好きになる家を。</p>
+      <p>商品ごとに、建物本体価格と標準仕様を設定しています。</p>
+      <p>間取り・仕様・金額は、お打ち合わせとお見積もりでご契約前に確認します。</p>
+      <p>ご契約時に確定した内容から変更がない限り、追加料金は発生しません。</p>
     </div>
-    <p class="tb__sign">株式会社やまと不動産</p>
-    <a class="tb__go" href="company.html#creed">私たちのことは、会社案内でもご覧いただけます　→</a>
+    <a class="tb__go" href="madori.html#plans">商品別の標準仕様を見る　→</a>
   </div>
 </section>
 
@@ -2339,10 +2340,10 @@
         </figure>
         <div class="ln-card__body">
           <div class="ln-card__title-row"><h3 class="ln-card__name">花</h3><p class="ln-card__en">HANA</p></div>
-          <p class="ln-card__lead">天井を高くとり、設備を整えた家</p>
+          <p class="ln-card__lead">31坪・4LDKの最上位モデル</p>
           <p class="ln-card__detail">玄関ドアは顔認証で開きます。軒天にはニチハの木目12mmを使い、窓はワイドサッシです。</p>
           <ul class="ln-card__facts"><li><b>延床</b><span>31坪</span></li><li><b>1階天井高</b><span>2,500mm</span></li><li><b>玄関</b><span>親子ドア</span></li></ul>
-          <div class="ln-card__foot"><p class="ln-card__price">2,680万円<small>建物本体価格（税込・土地別途）</small></p><span class="ln-card__action">詳細ページへ</span></div>
+          <div class="ln-card__foot"><p class="ln-card__price">2,680万円<small>建物本体価格（税込・土地別途）</small></p><span class="ln-card__action">間取り・仕様を見る</span></div>
         </div>
       </a>
 
@@ -2353,10 +2354,10 @@
         </figure>
         <div class="ln-card__body">
           <div class="ln-card__title-row"><h3 class="ln-card__name">京</h3><p class="ln-card__en">KYOU</p></div>
-          <p class="ln-card__lead">限られた敷地のために設計した家</p>
-          <p class="ln-card__detail">奈良のように広く土地を使えない場所でも建てられるよう、28坪3LDKにまとめています。</p>
+          <p class="ln-card__lead">28坪・3LDKの狭小地対応モデル</p>
+          <p class="ln-card__detail">間口や敷地面積に制約がある土地でも計画しやすい、28坪・3LDKです。</p>
           <ul class="ln-card__facts"><li><b>延床</b><span>28坪</span></li><li><b>間取り</b><span>3LDK</span></li><li><b>玄関</b><span>FamiLock</span></li></ul>
-          <div class="ln-card__foot"><p class="ln-card__price">2,480万円<small>建物本体価格（税込・土地別途）</small></p><span class="ln-card__action">詳細ページへ</span></div>
+          <div class="ln-card__foot"><p class="ln-card__price">2,480万円<small>建物本体価格（税込・土地別途）</small></p><span class="ln-card__action">間取り・仕様を見る</span></div>
         </div>
       </a>
 
@@ -2367,10 +2368,10 @@
         </figure>
         <div class="ln-card__body">
           <div class="ln-card__title-row"><h3 class="ln-card__name">風</h3><p class="ln-card__en">KAZE</p></div>
-          <p class="ln-card__lead">長く住むための性能を備えた家</p>
+          <p class="ln-card__lead">30坪・4LDKの標準モデル</p>
           <p class="ln-card__detail">3帖のベランダと電動シャッターが標準です。防犯ガラスは掃き出し窓2か所と腰窓2か所に入ります。</p>
           <ul class="ln-card__facts"><li><b>延床</b><span>30坪</span></li><li><b>長期優良</b><span>対応</span></li><li><b>玄関</b><span>FamiLock</span></li></ul>
-          <div class="ln-card__foot"><p class="ln-card__price">2,680万円<small>建物本体価格（税込・土地別途）</small></p><span class="ln-card__action">詳細ページへ</span></div>
+          <div class="ln-card__foot"><p class="ln-card__price">2,680万円<small>建物本体価格（税込・土地別途）</small></p><span class="ln-card__action">間取り・仕様を見る</span></div>
         </div>
       </a>
     </div>
@@ -3234,14 +3235,12 @@
   <!-- 緑PINは今回は不使用（構成が合わないため撤去。CSS .lt-pin/.lt-hazescrim は残置＝将来復帰可） -->
   <div class="lt-inner">
     <span class="lt-eyebrow">Lots ／ 分譲地・物件</span>
-    <h2 class="lt-title">選べる土地が、<br><em>こんなに</em>あります。</h2>
+    <h2 class="lt-title">奈良・京都南部の<br><em>自社分譲地</em></h2>
 
     <div class="lt-facts">
       <span class="lt-fact"><span class="n">150</span><span class="u">区画以上を保有</span></span>
       <span class="lt-fdiv" aria-hidden="true"></span>
       <span class="lt-fact"><span class="u wide">奈良県・京都府 全域</span></span>
-      <span class="lt-fdiv" aria-hidden="true"></span>
-      <span class="lt-fact"><span class="n">216</span><span class="u">区画</span><span class="tag">展開中</span></span>
     </div>
 
     <div class="lt-register">
@@ -3257,8 +3256,8 @@
     </div>
 
     <div class="lt-foot">
-      <p class="lt-lead">奈良と京都南部、この広がりの中から、ご希望に合う一区画がきっと見つかります。</p>
-      <a class="lt-cta" href="lots.html">自社分譲物件一覧を見る
+      <p class="lt-lead">販売中の所在地・区画数・価格を、物件一覧でご確認いただけます。</p>
+      <a class="lt-cta" href="lots.html">販売中の分譲地を見る
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
@@ -3474,106 +3473,118 @@
         <p class="fl__count" aria-hidden="true">01<i>—</i>03</p>
       </div>
       <div class="fl-rv">
-        <h2 class="fl__h2s">ご契約前に、<br>間取り・仕様・金額を確認します。</h2>
-        <p class="fl__lead">土地と資金の計画から、間取り・仕様の確認、着工、お引渡しまで。各段階で確認する内容を、順を追ってご説明します。</p>
-        <p class="fl__statement"><b>CONTRACT CHECK</b>内容と金額に納得いただいてから、ご契約へ進みます。</p>
+        <h2 class="fl__h2s">ご契約前に、<br>明瞭で正確なお見積もり。</h2>
+        <p class="fl__lead">ご契約時のお見積もり確定後、内容の変更がない限り、追加料金は発生しません。</p>
+        <p class="fl__statement">ご契約後にお客様のご希望で内容を変更・追加する場合は、別途費用が必要です。</p>
       </div>
     </div>
     <div class="fl__stages fl-rv">
-      <article class="fl__stage"><span class="fl__no">01</span><h3 class="fl__t">土地と資金を、<br>先に整える。</h3><p class="fl__d">土地探し・モデルハウス見学と、住宅ローンの事前審査から。自社分譲地でも、お探しの土地でも始められます。</p></article>
-      <article class="fl__stage"><span class="fl__no">02</span><h3 class="fl__t">間取り・仕様・金額を、<br>契約前に確認する。</h3><p class="fl__d">設計士と間取りを、ショールームで仕様を確認。内容と金額に納得いただいてからご契約へ進みます。</p></article>
-      <article class="fl__stage"><span class="fl__no">03</span><h3 class="fl__t">建てて、確かめて、<br>お引渡し。</h3><p class="fl__d">地盤調査・地盤改良、着工、完成チェックを経てお引渡し。住み始めてからのお付き合いも、ここから続きます。</p><p class="fl__proof">完成時は、お客様と一緒に仕上がりを確認</p></article>
+      <article class="fl__stage"><span class="fl__no">01</span><h3 class="fl__t">土地探し・<br>資金計画</h3><p class="fl__d">土地のご希望を確認し、住宅ローンの事前審査と資金計画を進めます。自社分譲地以外の土地もご相談いただけます。</p></article>
+      <article class="fl__stage"><span class="fl__no">02</span><h3 class="fl__t">間取り・仕様・<br>お見積もり</h3><p class="fl__d">設計士と間取りを検討し、ショールームで仕様を確認します。内容と金額を確認してからご契約へ進みます。</p></article>
+      <article class="fl__stage"><span class="fl__no">03</span><h3 class="fl__t">着工・完成確認・<br>お引渡し</h3><p class="fl__d">地盤調査、着工、上棟、完成確認を経てお引渡しします。</p><p class="fl__proof">完成時は、お客様と一緒に仕上がりを確認</p></article>
     </div>
     <div class="fl__foot fl-rv">
-      <a class="fl__cta" href="contact.html?type=reserve">土地探しから相談する<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="fl__cta" href="contact.html?type=reserve">土地・資金計画のご相談<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <details class="fl__all"><summary>全10工程を確認する</summary><ol><li>土地探し・モデルハウス見学</li><li>住宅ローン事前審査</li><li>土地の売買契約</li><li>間取りの打ち合わせ</li><li>建物工事の請負契約</li><li>仕様の打ち合わせ</li><li>地盤調査・地盤改良</li><li>着工・上棟</li><li>完成・建物チェック</li><li>お引渡し</li></ol></details>
     </div>
   </div>
 </section>
 
-<!-- ============ P4 よくあるご質問（fq- 出口前の不安解消） ============ -->
+<!-- ============ P4 よくある質問（fq- 出口前の不安解消） ============ -->
 <style>
-  .fq{position:relative;isolation:isolate;background:#FAFAF7;color:#241F1B;
-    z-index:7;margin-top:clamp(-78px,-5.6vw,-46px);
-    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
-    box-shadow:0 -46px 88px -32px rgba(0,0,0,.35)}
-  @media(max-width:560px){ .fq{margin-top:-32px;border-top-left-radius:20px;border-top-right-radius:20px} }
-  .fq__in{max-width:880px;margin:0 auto;
-    padding:clamp(72px,9vw,130px) clamp(20px,5vw,64px) calc(clamp(100px,13vw,180px) + clamp(46px,5.6vw,78px))} /* 転換点(最終CTAの前)=余白最大 */
-  /* 入口グラマーC系: 宣言が先に語る */
-  .fq__label{font-family:var(--fh);font-weight:500;font-size:.78rem;letter-spacing:.26em;color:#8D857A}
-  .fq__decl{margin-top:14px;font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;font-weight:600;
-    font-size:clamp(1.5rem,1.15rem + 1.7vw,2.5rem);letter-spacing:.08em;line-height:1.9;color:#241F1B}
-  .fq__decl .qm{color:var(--gold)}
-  .fq__decl br{display:none}
-  @media(max-width:560px){ .fq__decl br{display:block} }
-  .fq__list{margin-top:clamp(30px,4vw,46px);border-top:1px solid rgba(36,31,27,.16)}
+  .fq{position:relative;isolation:isolate;z-index:7;margin:0;scroll-margin-top:84px;
+    background:#F5F4F0;color:#241F1B;border-top:1px solid rgba(36,31,27,.12);
+    border-bottom:1px solid rgba(36,31,27,.12)}
+  .fq__in{max-width:1180px;margin:0 auto;padding:clamp(64px,7vw,96px) clamp(22px,5vw,68px);
+    display:grid;grid-template-columns:minmax(220px,.38fr) minmax(0,1fr);
+    column-gap:clamp(42px,7vw,100px);align-items:start}
+  .fq__intro{position:sticky;top:calc(var(--header-h) + 24px)}
+  .fq__label{font-family:var(--fn,"Inter",sans-serif);font-weight:500;font-size:.7rem;
+    letter-spacing:.22em;text-transform:uppercase;color:#8D3A2D}
+  .fq__decl{margin-top:16px;font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;font-weight:500;
+    font-size:clamp(1.65rem,1.34rem + 1.05vw,2.2rem);letter-spacing:.05em;line-height:1.55;color:#241F1B}
+  .fq__lead{max-width:28em;margin-top:18px;font-size:.88rem;line-height:2;letter-spacing:.035em;color:#615B54}
+  .fq__list{margin:0;border-top:1px solid rgba(36,31,27,.2)}
   .fq details{border-bottom:1px solid rgba(36,31,27,.16)}
-  .fq summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:16px;
-    padding:clamp(18px,2.4vw,26px) 4px;
-    font-family:var(--fh);font-weight:500;font-size:clamp(.98rem,.94rem + .35vw,1.14rem);
-    letter-spacing:.04em;line-height:1.8;transition:color .25s}
+  .fq summary{list-style:none;cursor:pointer;display:flex;align-items:flex-start;gap:16px;
+    min-height:72px;padding:21px 4px;
+    font-family:var(--fh);font-weight:500;font-size:clamp(.95rem,.91rem + .22vw,1.05rem);
+    letter-spacing:.035em;line-height:1.75;transition:color .25s}
   .fq summary::-webkit-details-marker{display:none}
   .fq summary:hover{color:#2E4600}
   .fq summary::before{content:"Q";font-family:var(--fn,"Inter",sans-serif);font-weight:500;
-    font-size:.95rem;color:var(--gold);flex:0 0 auto}
+    font-size:.78rem;line-height:2.2;color:#8D3A2D;flex:0 0 auto}
   .fq summary::after{content:"";width:11px;height:11px;margin-left:auto;flex:0 0 auto;align-self:center;
     border-right:1.5px solid #8D857A;border-bottom:1.5px solid #8D857A;
     transform:rotate(45deg);transition:transform .3s cubic-bezier(.33,1,.68,1)}
   .fq details[open] summary::after{transform:rotate(-135deg)}
-  .fq__a{padding:0 4px clamp(20px,2.6vw,28px) calc(16px + 1em);
-    font-size:.92rem;line-height:2.25;letter-spacing:.03em;color:#5A544C;max-width:42em}
-  .fq__foot{margin-top:clamp(24px,3.2vw,36px);font-size:.88rem;line-height:2.1;letter-spacing:.03em;color:#5A544C}
+  .fq__a{position:relative;padding:0 28px clamp(23px,2.6vw,30px) 32px;
+    font-size:.9rem;line-height:2.1;letter-spacing:.03em;color:#5A544C;max-width:48em}
+  .fq__a::before{content:"A";position:absolute;left:4px;top:.05em;
+    font-family:var(--fn,"Inter",sans-serif);font-size:.76rem;line-height:2;color:#2E4600}
+  .fq__foot{grid-column:2;margin-top:clamp(24px,3vw,34px);font-size:.84rem;line-height:2;letter-spacing:.03em;color:#5A544C}
   .fq__foot a{color:#2E4600;border-bottom:1px solid rgba(72,107,0,.35);padding-bottom:2px;transition:border-color .25s}
   .fq__foot a:hover{border-bottom-color:#2E4600}
   .fq-rv{opacity:0;transform:translateY(14px)}
   .fq-rv.is-in{opacity:1;transform:none;transition:opacity .6s cubic-bezier(.25,1,.5,1),transform .6s cubic-bezier(.25,1,.5,1)}
-  @media(max-width:760px){ .fq-rv{transform:translateY(8px)} }
+  @media(max-width:800px){
+    .fq__in{grid-template-columns:1fr;row-gap:32px;padding:56px 22px 64px}
+    .fq__intro{position:static}
+    .fq__decl{font-size:1.65rem}
+    .fq__lead{font-size:.84rem;line-height:1.9}
+    .fq__foot{grid-column:1;margin-top:-2px}
+    .fq summary{min-height:68px;padding:19px 0;gap:13px}
+    .fq__a{padding-right:4px;padding-left:28px;font-size:.9rem;line-height:2}
+    .fq-rv{transform:translateY(8px)}
+  }
   @media(prefers-reduced-motion:reduce){ .fq-rv{opacity:1!important;transform:none!important;transition:none!important} }
 </style>
-<section class="fq" id="faq" aria-label="よくあるご質問">
+<section class="fq" id="faq" aria-labelledby="fq-title">
   <div class="fq__in">
-    <p class="fq__label fq-rv">よくあるご質問</p>
-    <h2 class="fq__decl fq-rv"><span class="qm">「</span>聞きにくいことから、<br>答えます。<span class="qm">」</span></h2>
+    <div class="fq__intro fq-rv">
+      <p class="fq__label">FAQ</p>
+      <h2 class="fq__decl" id="fq-title">よくある質問</h2>
+      <p class="fq__lead">お見積もり、土地、見学、保証について、よくいただくご質問をまとめています。</p>
+    </div>
     <div class="fq__list fq-rv">
       <details>
-        <summary>本当に、あとから追加費用はかかりませんか？</summary>
-        <p class="fq__a">お見積もりは税込のコミコミ価格です。地盤改良費・つなぎ融資・仲介手数料・土地測量費・土地造成費・水道工事変更費は、いずれも0円です。2,000万円規模の土地なら、通常400万円〜470万円かかる費用がかかりません。正直にお伝えすると、カーテンレールと居室の照明は標準に含まれないため、事前のご用意をお願いしています。</p>
+        <summary>見積もり確定後に追加料金は発生しますか？</summary>
+        <p class="fq__a">ご契約時に確定した内容から変更がない限り、追加料金は発生しません。ご契約後にお客様のご希望で間取り・仕様を変更または追加する場合は、別途費用が必要です。</p>
+      </details>
+      <details>
+        <summary>建物本体価格に含まれないものはありますか？</summary>
+        <p class="fq__a">カーテンレールと居室の照明は標準仕様に含まれません。敷地条件や選択する仕様によって費用が変わる項目は、ご契約前のお見積もりでご説明します。</p>
       </details>
       <details>
         <summary>土地だけの相談もできますか？</summary>
-        <p class="fq__a">できます。奈良県・京都府全域に自社分譲地を150区画以上を保有しています。土地探しからのご相談も、土地が決まっている方のご相談も承ります。</p>
+        <p class="fq__a">できます。自社分譲地からの土地探しも、すでに土地をお持ちの場合の家づくりもご相談いただけます。</p>
       </details>
       <details>
-        <summary>京都でも建てられますか？</summary>
-        <p class="fq__a">建てられます。京都府南部（木津川市・京田辺市など）にも自社分譲地があり、宇治の京都支店でもご相談いただけます。</p>
+        <summary>京都府南部でも建てられますか？</summary>
+        <p class="fq__a">木津川市・京田辺市など、京都府南部でも対応しています。宇治市の京都支店でもご相談いただけます。</p>
       </details>
       <details>
-        <summary>見学や相談に費用はかかりますか？</summary>
-        <p class="fq__a">かかりません。モデルハウス「やまとランド」の見学は無料です。予約制のため、ご来場前にご予約をお願いします。</p>
+        <summary>モデルハウスの見学に費用はかかりますか？</summary>
+        <p class="fq__a">見学は無料です。予約制のため、ご来場前にご予約ください。</p>
       </details>
       <details>
-        <summary>見学したら、営業されませんか？</summary>
-        <p class="fq__a">無理におすすめすることはありません。その土地やプランがお客様に本当に合っているか、メリットもデメリットも正直にお話しします。合っていなければ、別の案をご提案します。</p>
+        <summary>見学後に営業連絡はありますか？</summary>
+        <p class="fq__a">ご希望や検討状況を確認したうえで、必要な情報をご案内します。ご契約を急がせる対応は行いません。</p>
       </details>
       <details>
-        <summary>なぜ高品質・高仕様なのに低価格なのですか？</summary>
-        <p class="fq__a">設計・建築・造成・開発・販売を、すべて自社で手がけているからです。間に入る会社がないので、中間マージンが乗りません。展示場専用の建物も持たず、分譲地に建てた家をそのままモデルハウスにしています。素材は旭化成・住友ゴム・クリナップ・TOTOなど、大手と同じものを使っています。</p>
+        <summary>建物本体価格を抑えられる理由は何ですか？</summary>
+        <p class="fq__a">土地の仕入れ・造成から、設計・施工・販売までを自社で行い、中間工程を減らしています。建材・設備はまとめて仕入れ、商品ごとに標準仕様を設定しています。</p>
       </details>
       <details>
-        <summary>なぜやまと不動産は自社所有の土地が多いのですか？</summary>
-        <p class="fq__a">創業から奈良で、土地の仕入れと宅地造成を自社で続けてきたからです。現在は奈良県・京都府全域で150区画以上を保有し、216区画を展開しています。仕入れから造成、設計、施工、販売までを一社で行っています。</p>
+        <summary>自社分譲地では仲介手数料がかかりますか？</summary>
+        <p class="fq__a">自社所有の土地を直接販売するため、仲介手数料はかかりません。地盤改良が必要な場合の費用は当社が負担します。土地・建物の支払時期や住宅ローンの条件は、資金計画で個別にご説明します。</p>
       </details>
       <details>
-        <summary>自社所有の土地と仲介の土地に、差はありますか？</summary>
-        <p class="fq__a">あります。自社所有の土地なら仲介手数料がかかりません。土地と建物をセットでご提供するため、建物完成後の一括支払いとなり、建築中の住宅ローンや金利のご負担も発生しません。土地の造成状況や地盤の履歴を当社が把握しているため、地盤改良が必要になった場合も当社が費用を負担します。</p>
-      </details>
-      <details>
-        <summary>引き渡し後のフォローはありますか？</summary>
-        <p class="fq__a">あります。定期点検は1年目・5年目・10年目・20年目に無料でうかがいます。初期保証は10年間で、10年ごとの延長により最長30年まで継続できます。地盤保証は20年、しろあり保証は10年です。蛇口の水漏れや網戸の張替えなど、日常の小さなお困りごともお電話でご相談いただけます。</p>
+        <summary>引き渡し後の保証はありますか？</summary>
+        <p class="fq__a">保証があります。保証の期間・対象・延長条件は、ご契約前に書面でご説明します。</p>
       </details>
     </div>
-    <p class="fq__foot fq-rv">このほかのご質問は、<a href="contact.html">お問い合わせフォーム</a>からお気軽にどうぞ。</p>
+    <p class="fq__foot fq-rv">このほかのご質問は、<a href="contact.html">お問い合わせ</a>からお送りください。</p>
   </div>
 </section>
 
@@ -3620,12 +3631,12 @@
 <section class="fin" id="final-cta" aria-label="ご相談・ご予約">
   <div class="fin__in">
     <span class="fin__k fin-rv">Contact ／ ご相談・ご予約</span>
-    <h2 class="fin-rv"><span class="fin__nw">次のお休みに、</span><span class="fin__nw">実物を見にきませんか。</span></h2>
-    <p class="fin-rv">モデルハウス「やまとランド」の見学は、無料・予約制です。ご見学の場で、契約を迫ることはありません。資料だけ、LINEだけのご相談も歓迎です。</p>
+    <h2 class="fin-rv"><span class="fin__nw">モデルハウスで、</span><span class="fin__nw">標準仕様をご確認ください。</span></h2>
+    <p class="fin-rv">商品ごとの標準仕様と設備の違い、お見積もりの考え方をご説明します。見学は無料・予約制です。</p>
     <div class="fin__cv fin-rv">
       <a class="fin__btn" href="contact.html?type=reserve">来場のご予約<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="fin__ghost" href="contact.html?type=docs">資料請求はこちら</a>
-      <a class="fin__line" href="contact.html#line">LINEで気軽に聞く</a>
+      <a class="fin__ghost" href="contact.html?type=docs">資料請求</a>
+      <a class="fin__line" href="contact.html#line">LINEで相談</a>
     </div>
     <p class="fin__meta fin-rv"><span class="fin__nw">株式会社やまと不動産（奈良県奈良市大宮町1丁目6番21）</span>　<span class="fin__nw">宅地建物取引業 国土交通大臣（1）第10516号</span><br><span class="fin__nw">お電話：0742-36-1123</span><span class="fin__nw">（受付 9:00〜19:00｜定休日：火曜・水曜）</span></p>
   </div>
@@ -3737,10 +3748,10 @@
       <div class="sb-head" data-sbreveal>
         <span class="sb-eyebrow">Follow us</span>
         <h2 class="sb-title">
-          <span class="sb-line"><span>やまと不動産のことを、</span></span>
-          <span class="sb-line"><span>もっと<span class="sb-accent">詳しく</span>。</span></span>
+          <span class="sb-line"><span>施工事例と</span></span>
+          <span class="sb-line"><span>家づくりの<span class="sb-accent">情報</span></span></span>
         </h2>
-        <p class="sb-lead">家づくりの裏側や、暮らしの様子を、<br class="sb-onlypc">それぞれの場所でお届けしています。</p>
+        <p class="sb-lead">Instagram、YouTube、TikTokで、<br class="sb-onlypc">施工事例やモデルハウスをご紹介しています。</p>
         <a class="sb-morelink" href="kodawari.html">
           家づくりの強みを見る <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -3984,7 +3995,7 @@
   @media (pointer:coarse){
     a[href],button,[role="button"],summary,label[for],
     input:not([type="hidden"]),select,textarea{min-height:44px}
-    a[href]:not(p a):not(li a):not(dd a):not(td a):not(figcaption a):not(small a){
+    a[href]:not(p a):not(li a):not(dd a):not(td a):not(figcaption a):not(small a):not(.ln-card){
       display:inline-flex;align-items:center}
   }
 
@@ -4090,7 +4101,7 @@
         <a class="lead" href="#heart">私たちについて</a>
         <a class="lead" href="kodawari.html">家づくりのこだわり</a>
         <div class="subnav">
-          <a href="kodawari.html#price">価格・コミコミの中身</a>
+          <a href="kodawari.html#price">価格・お見積もり</a>
           <a href="kodawari.html#standard">標準仕様（モデルハウス＝標準）</a>
           <a href="kodawari.html#design">自由設計・間取り</a>
           <a href="kodawari.html#after">保証・アフターフォロー</a>
