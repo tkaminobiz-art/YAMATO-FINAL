@@ -285,13 +285,44 @@
     display:inline-flex;align-items:center;min-height:44px;text-decoration:none;font-size:.72rem;letter-spacing:.12em;color:rgba(247,241,229,.86)!important}
   .fvs__exit::after{content:"";width:24px;height:1px;margin-left:10px;background:currentColor}
   .fvs__ui{position:absolute;z-index:20;left:50%;bottom:calc(env(safe-area-inset-bottom) + clamp(14px,2.2vh,24px));transform:translateX(-50%);
-    display:grid;grid-template-columns:54px minmax(126px,auto) 54px;align-items:center;background:rgba(19,13,11,.82);color:#fff;
-    border:1px solid rgba(241,213,125,.25);box-shadow:0 12px 38px rgba(0,0,0,.32)}
-  .fvs__ui button{appearance:none;border:0;background:transparent;color:inherit;min-width:48px;min-height:48px;cursor:pointer;font:inherit}
-  .fvs__ui button:disabled{opacity:.28;cursor:default}
-  .fvs__navbtn{display:grid;place-items:center;font-family:var(--cat-latin);font-size:1.15rem}
-  .fvs__tocbtn{border-left:1px solid rgba(255,255,255,.16)!important;border-right:1px solid rgba(255,255,255,.16)!important;
-    font-size:.72rem!important;letter-spacing:.16em}
+    display:grid;grid-template-columns:58px minmax(126px,auto) 68px;align-items:stretch;color:#fff;
+    background:linear-gradient(180deg,rgba(35,25,21,.94),rgba(14,9,8,.94));
+    border:1px solid rgba(241,213,125,.38);box-shadow:0 16px 46px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.1)}
+  .fvs__ui button{position:relative;appearance:none;border:0;background:transparent;color:inherit;min-width:48px;min-height:54px;cursor:pointer;font:inherit}
+  .fvs__ui button:disabled{opacity:.34;cursor:default}
+  .fvs__navbtn{display:flex;align-items:center;justify-content:center;gap:5px;isolation:isolate;overflow:hidden;
+    font-family:var(--cat-latin);font-size:1.2rem;transition:color .22s ease,background-color .22s ease,box-shadow .22s ease}
+  .fvs__ui .fvs__navbtn--prev:not(:disabled){color:#F1D57D;background:rgba(241,213,125,.055);box-shadow:inset -1px 0 rgba(241,213,125,.18)}
+  .fvs__nav-arrow{position:relative;z-index:2;display:inline-block;line-height:1;transform:translateZ(0)}
+  .fvs__nav-word{position:relative;z-index:2;font-family:var(--cat-sans);font-size:.56rem;font-weight:600;line-height:1;
+    letter-spacing:.08em;white-space:nowrap}
+  .fvs__tocbtn{color:#fff!important;background:linear-gradient(145deg,#B8202D 0%,#981522 58%,#76101A 100%)!important;
+    border-left:1px solid rgba(255,226,202,.2)!important;border-right:1px solid rgba(255,226,202,.2)!important;
+    box-shadow:inset 0 1px 0 rgba(255,235,220,.34),inset 0 -1px 0 rgba(55,0,7,.5),0 8px 22px rgba(80,0,8,.22);
+    font-size:.72rem!important;font-weight:600;letter-spacing:.18em;text-shadow:0 1px 1px rgba(46,0,5,.55);transition:filter .2s ease,box-shadow .2s ease}
+  .fvs__tocbtn:hover{filter:brightness(1.08);box-shadow:inset 0 1px 0 rgba(255,235,220,.42),inset 0 -1px 0 rgba(55,0,7,.5),0 9px 26px rgba(80,0,8,.32)}
+  .fvs__ui .fvs__navbtn--next{color:#21150B;background:linear-gradient(135deg,#F7E4A5 0%,#D9AF4B 52%,#B77D20 100%);
+    box-shadow:inset 1px 0 rgba(255,250,225,.62),inset 0 1px 0 rgba(255,255,255,.68),inset 0 -1px 0 rgba(91,50,4,.4),0 0 0 1px rgba(245,208,101,.16)}
+  .fvs__navbtn--next::before{content:"";position:absolute;z-index:1;top:-45%;bottom:-45%;left:-70%;width:38%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent);transform:translate3d(0,0,0) skewX(-18deg);will-change:transform,opacity;pointer-events:none;
+    animation:fvs-next-sheen 3.8s cubic-bezier(.22,1,.36,1) infinite}
+  .fvs__navbtn--next::after{content:"";position:absolute;z-index:0;inset:0;border:1px solid rgba(255,246,206,.68);pointer-events:none;
+    animation:fvs-next-halo 3.8s ease-in-out infinite}
+  .fvs__navbtn--next .fvs__nav-arrow{animation:fvs-next-arrow 3.8s cubic-bezier(.22,1,.36,1) infinite}
+  .fvs__ui .fvs__navbtn--next:hover{background:linear-gradient(135deg,#FFF0BA 0%,#E4BC58 52%,#C68A29 100%);box-shadow:inset 1px 0 rgba(255,250,225,.72),inset 0 1px 0 #fff,inset 0 -1px 0 rgba(91,50,4,.42),0 0 24px rgba(224,181,76,.32)}
+  .fvs__ui .fvs__navbtn--next:disabled{color:#fff;background:rgba(255,255,255,.07);box-shadow:inset 1px 0 rgba(255,255,255,.08)}
+  .fvs__navbtn--next:disabled::before,.fvs__navbtn--next:disabled::after,.fvs__navbtn--next:disabled .fvs__nav-arrow{animation:none}
+  @keyframes fvs-next-sheen{
+    0%,62%{transform:translate3d(0,0,0) skewX(-18deg);opacity:0}68%{opacity:.88}
+    82%{transform:translate3d(550%,0,0) skewX(-18deg);opacity:.28}83%,100%{transform:translate3d(550%,0,0) skewX(-18deg);opacity:0}
+  }
+  @keyframes fvs-next-halo{
+    0%,58%,100%{box-shadow:0 0 0 0 rgba(234,193,88,0),inset 0 0 0 rgba(255,255,255,0)}
+    72%{box-shadow:0 0 0 1px rgba(246,218,137,.5),0 0 22px rgba(224,181,76,.38),inset 0 0 12px rgba(255,255,255,.2)}
+  }
+  @keyframes fvs-next-arrow{
+    0%,58%,100%{transform:translateX(0)}70%{transform:translateX(4px)}79%{transform:translateX(0)}
+  }
   .fvs__scrollcue{display:none}
   .fvs button:focus-visible,.fvs a:focus-visible,.fvs__toc button:focus-visible{outline:2px solid var(--cat-gold-hi);outline-offset:3px}
   .fvs__toc{width:min(760px,calc(100vw - 28px));max-height:min(82svh,760px);padding:0;border:1px solid rgba(216,183,91,.5);
@@ -399,7 +430,8 @@
     .spec-line{grid-template-columns:44px 1fr;gap:10px;padding:6px 0}.spec-line__name{font-size:1.45rem}.spec-line__text{font-size:.64rem;line-height:1.55}
     .warranty-facts{margin-top:8px}.catalog-fact{grid-template-columns:22px 1fr;gap:6px}
     .closing__actions{margin-top:16px}.catalog-cta{min-height:44px;padding:9px 14px;font-size:.7rem}
-    .fvs__ui{grid-template-columns:48px 112px 48px}.fvs__ui button{min-height:46px}
+    .fvs__ui{grid-template-columns:50px 108px 64px}.fvs__ui button{min-height:50px}
+    .fvs__count{bottom:calc(env(safe-area-inset-bottom) + 76px)}.fvs__exit{bottom:calc(env(safe-area-inset-bottom) + 67px)}
     .fvs__toclist{grid-template-columns:1fr;padding:4px 16px 20px}.fvs__toclist button{min-height:46px}
     .catalog-cover__title{display:flex;flex-direction:column;align-items:center;transform:translate(-50%,-50%);text-shadow:0 1px 3px rgba(83,4,9,.46);-webkit-font-smoothing:antialiased}
     .catalog-cover.is-title-in .catalog-cover__title{transform:translate(-50%,-50%)}
@@ -426,6 +458,7 @@
     .catalog-cover::before{animation:none;display:none}.catalog-cover__motion{display:none}
     .catalog-cover__title{opacity:1;transition:none}
     .catalog-cover__label{opacity:1;transition:none}
+    .fvs__navbtn--next::before,.fvs__navbtn--next::after,.fvs__navbtn--next .fvs__nav-arrow{animation:none}
   }
 
   /* ===================== 実績「三帯の明度リズム」（2026-08-19 auth_mock.html図面より統合） =====================
@@ -2037,7 +2070,7 @@
 
   <a class="fvs__exit" href="#auth" aria-label="サイト本編へ進む">本編へ</a>
   <p class="fvs__count" aria-live="polite"><span id="catNow">01</span> / <span id="catAll">13</span></p>
-  <div class="fvs__ui" aria-label="カタログ操作"><button class="fvs__navbtn" id="catPrev" type="button" aria-label="前のページ" disabled>←</button><button class="fvs__tocbtn" id="catTocOpen" type="button" aria-haspopup="dialog" aria-controls="catToc">目次</button><button class="fvs__navbtn" id="catNext" type="button" aria-label="次のページ">→</button></div>
+  <div class="fvs__ui" role="group" aria-label="カタログ操作"><button class="fvs__navbtn fvs__navbtn--prev" id="catPrev" type="button" aria-label="前のページ" disabled><span class="fvs__nav-arrow" aria-hidden="true">←</span></button><button class="fvs__tocbtn" id="catTocOpen" type="button" aria-haspopup="dialog" aria-controls="catToc">目次</button><button class="fvs__navbtn fvs__navbtn--next" id="catNext" type="button" aria-label="次のページ"><span class="fvs__nav-word" aria-hidden="true">次へ</span><span class="fvs__nav-arrow" aria-hidden="true">→</span></button></div>
   <p class="fvs__scrollcue" aria-hidden="true">縦スクロールで本編へ</p>
 </section>
 
