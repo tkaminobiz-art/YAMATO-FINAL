@@ -1,0 +1,26 @@
+{
+  "role": "generated concept background for Osaka-Namba to Tsuruhashi rail transition",
+  "generator": "Higgsfield Soul Location",
+  "generated_at": "2026-08-31",
+  "commercial_claim_boundary": "Concept imagery only. It does not prove the exact train, timetable, location, or route conditions.",
+  "jobs": {
+    "desktop": {
+      "id": "ad7e9177-5f86-4b04-8656-54e132ac2147",
+      "source_dimensions": "2048x1152",
+      "aspect_ratio": "16:9",
+      "files": [
+        "urban-rail-osaka-pc-20260831.avif",
+        "urban-rail-osaka-pc-20260831.webp"
+      ]
+    },
+    "mobile": {
+      "id": "21250212-2d5f-4727-b1f6-69bf2c48d8aa",
+      "source_dimensions": "1152x2048",
+      "aspect_ratio": "9:16",
+      "files": [
+        "urban-rail-osaka-sp-20260831.avif",
+        "urban-rail-osaka-sp-20260831.webp"
+      ]
+    }
+  }
+}

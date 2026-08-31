@@ -2640,13 +2640,15 @@
   .iju__scene img,.iju.is-cine .iju__scene img{display:block;width:100%;height:100%;aspect-ratio:auto;border-radius:0;object-fit:cover;will-change:transform}
   .iju__sA{z-index:1;opacity:1;visibility:visible}
   .iju__sA img{object-position:50% 44%}
-  .iju__sRide{z-index:2}
+  .iju__sUrban{z-index:2}
+  .iju__sUrban img{object-position:50% 50%;filter:saturate(.86) brightness(.78)}
+  .iju__sRide{z-index:3}
   .iju__sRide img{object-position:56% 50%}
-  .iju__sRoad{z-index:3;background:var(--night)}
+  .iju__sRoad{z-index:4;background:var(--night)}
   .iju__sRoad img{object-position:56% 50%;filter:saturate(.82) brightness(.72)}
-  .iju__sApproach{z-index:4;background:var(--night)}
+  .iju__sApproach{z-index:5;background:var(--night)}
   .iju__sApproach img{object-position:58% 50%;filter:saturate(.8) brightness(.7)}
-  .iju__sNara{z-index:5;background:var(--night)}
+  .iju__sNara{z-index:6;background:var(--night)}
   .iju__sNara img{object-position:58% 50%;filter:saturate(.8) brightness(.72)}
   .iju__scene::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(5,12,20,.68) 0%,rgba(5,12,20,.2) 49%,rgba(5,12,20,.12) 72%,rgba(5,12,20,.38) 100%),linear-gradient(0deg,rgba(5,12,20,.62),transparent 43%,rgba(5,12,20,.2))}
   .iju__sRoad::after,.iju__sApproach::after,.iju__sNara::after{background:linear-gradient(90deg,rgba(4,12,22,.82),rgba(8,20,36,.36) 54%,rgba(7,16,29,.48)),linear-gradient(0deg,rgba(3,8,15,.68),transparent 48%,rgba(3,8,15,.22))}
@@ -2664,11 +2666,18 @@
   .iju__nobr{white-space:nowrap}
   .iju__journey-deck{max-width:34em;margin:17px 0 0;font-family:var(--fb);font-size:clamp(.92rem,.86rem + .28vw,1.08rem);font-weight:400;line-height:1.9;letter-spacing:.05em;color:rgba(244,241,234,.82)}
   .iju__journey-title.is-compact + .iju__journey-deck{max-width:30em}
-  .iju__concept-note{position:absolute;z-index:7;left:clamp(24px,5vw,72px);bottom:clamp(126px,14vh,158px);font-family:var(--fn);font-size:9px;letter-spacing:.14em;color:rgba(244,241,234,.52);opacity:0}
+  .iju__concept-note{position:absolute;z-index:7;left:clamp(24px,5vw,72px);bottom:clamp(158px,18vh,194px);font-family:var(--fn);font-size:10px;line-height:1.6;letter-spacing:.11em;color:rgba(244,241,234,.82);opacity:0}
   .iju__skip{position:absolute;z-index:9;right:clamp(24px,5vw,72px);top:calc(var(--header-h) + clamp(82px,11vh,112px));display:inline-flex;align-items:center;gap:11px;min-height:44px;padding:0 16px;border:1px solid rgba(244,241,234,.28);border-radius:2px;background:rgba(8,17,29,.34);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:rgba(244,241,234,.82);font-family:var(--fn);font-size:10px;font-weight:500;letter-spacing:.12em;text-decoration:none;transition:border-color .3s ease,background .3s ease,color .3s ease}
   .iju__skip::after{content:"↓";font-family:Georgia,serif;font-size:15px;color:var(--amber)}
   .iju__skip:hover,.iju__skip:focus-visible{border-color:rgba(244,241,234,.58);background:rgba(8,17,29,.58);color:var(--cr)}
   .iju__journey{position:absolute;z-index:8;left:50%;bottom:clamp(28px,5vh,48px);width:min(1040px,86vw);transform:translateX(-50%);color:var(--cr)}
+  .iju__mode{display:flex;align-items:center;gap:18px;margin:0 0 13px;font-family:var(--fn);font-size:8px;font-weight:600;letter-spacing:.16em;color:rgba(244,241,234,.42)}
+  .iju__mode span{display:inline-flex;align-items:center;gap:8px;transition:color .3s ease,opacity .3s ease}
+  .iju__mode span::before{content:"";width:5px;height:5px;border:1px solid currentColor;border-radius:50%;transition:background .3s ease,box-shadow .3s ease}
+  .iju__mode b{font-family:var(--fmin);font-size:.68rem;font-weight:500;letter-spacing:.1em}
+  .iju__mode span.is-active{color:rgba(244,241,234,.9)}
+  .iju__mode span.is-active::before{border-color:var(--amber);background:var(--amber);box-shadow:0 0 0 4px rgba(208,173,98,.12)}
+  .iju__rail-journey{position:relative;transition:opacity .38s ease,transform .38s ease}
   .iju__route-line{position:absolute;left:4px;right:4px;top:4px;height:1px;background:rgba(244,241,234,.25)}
   .iju__route-fill{display:block;width:100%;height:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--amber),var(--jade))}
   .iju__stops{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin:0;padding:0;list-style:none}
@@ -2684,6 +2693,15 @@
   .iju__stop.is-active::before{border-color:var(--cr);background:var(--amber);transform:translateX(-50%) scale(1.4);box-shadow:0 0 0 5px rgba(208,173,98,.12)}
   .iju__stop:first-child.is-active::before{transform:translateX(-50%) scale(1.4)}
   .iju__stop:last-child.is-active::before{transform:scale(1.4)}
+  .iju__car-journey{position:absolute;left:0;right:0;top:34px;display:grid;grid-template-columns:auto minmax(80px,1fr) auto auto;align-items:center;gap:18px;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .38s ease,visibility .38s ease,transform .38s ease}
+  .iju__car-point{font-family:var(--fmin);font-size:clamp(.72rem,.66rem + .2vw,.86rem);font-weight:500;letter-spacing:.08em;white-space:nowrap}
+  .iju__car-line{position:relative;height:1px;background:rgba(244,241,234,.24)}
+  .iju__car-line::before,.iju__car-line::after{content:"";position:absolute;top:50%;width:7px;height:7px;border:1px solid rgba(244,241,234,.54);border-radius:50%;background:var(--night);transform:translateY(-50%)}
+  .iju__car-line::before{left:0}.iju__car-line::after{right:0}
+  .iju__car-fill{display:block;width:100%;height:1px;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--amber),var(--jade))}
+  .iju__car-journey strong{font-family:var(--fn);font-size:clamp(1rem,.9rem + .45vw,1.3rem);font-weight:300;letter-spacing:.02em;white-space:nowrap}
+  .iju__journey.is-car .iju__rail-journey{opacity:0;transform:translateY(-6px)}
+  .iju__journey.is-car .iju__car-journey{opacity:1;visibility:visible;transform:none}
   .iju__sr{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
   .iju__board{scroll-margin-top:var(--header-h)}
   .iju__note a{color:inherit;text-underline-offset:4px}
@@ -2746,13 +2764,15 @@
     .iju__journey-title.is-compact{font-size:clamp(1.5rem,7.1vw,2.08rem);line-height:1.58}
     .iju__mobile-break{display:block}
     .iju__journey-deck{margin-top:12px;font-size:.84rem;line-height:1.8}
-    .iju__concept-note{left:18px;bottom:118px;font-size:8px}
+    .iju__concept-note{left:18px;right:18px;bottom:118px;font-size:9px;line-height:1.55;letter-spacing:.075em}
     .iju__journey{bottom:28px;width:calc(100vw - 36px)}
+    .iju__mode{gap:14px;margin-bottom:11px;font-size:7px}.iju__mode b{font-size:.61rem}
     .iju__stop{padding-top:17px}
     .iju__stop time,.iju__stop span{display:none}
     .iju__stop:first-child time,.iju__stop:first-child span,.iju__stop:last-child time,.iju__stop:last-child span{display:block}
     .iju__stop time{font-size:.62rem}.iju__stop span{font-size:.67rem;margin-top:5px}
-    .iju__sA img{object-position:50% 50%}.iju__sRide img,.iju__sRoad img,.iju__sApproach img,.iju__sNara img{object-position:53% 50%}
+    .iju__sA img{object-position:50% 50%}.iju__sUrban img{object-position:50% 50%}.iju__sRide img,.iju__sRoad img,.iju__sApproach img,.iju__sNara img{object-position:53% 50%}
+    .iju__car-journey{top:31px;grid-template-columns:auto minmax(38px,1fr) auto;gap:9px}.iju__car-journey strong{grid-column:3;text-align:right;font-size:1.02rem}.iju__car-point{font-size:.66rem}.iju__car-point:nth-of-type(2){text-align:right}
     .iju__bin{padding:50px 20px 58px}
     .iju__intro{margin-bottom:28px;text-align:left}
     .iju__intro-kicker{font-size:9px}.iju__intro h2{margin-top:14px;font-size:1.38rem;line-height:1.68}
@@ -2777,7 +2797,7 @@
     .iju__concept-note{bottom:72px}.iju__journey{bottom:12px}.iju__stop{padding-top:14px}.iju__stop span{margin-top:3px}
   }
   @media(prefers-reduced-motion:reduce){
-    .iju__scene,.iju__scene img,.iju__stop,.iju__stop::before,.iju__skip{transition:none!important}
+    .iju__scene,.iju__scene img,.iju__stop,.iju__stop::before,.iju__skip,.iju__mode span,.iju__rail-journey,.iju__car-journey{transition:none!important}
     .iju__skip{display:none}
   }
 </style>
@@ -2793,6 +2813,14 @@
     <div class="iju__scenes">
       <figure class="iju__scene iju__sA">
         <img src="assets/iju/duo_osaka.webp" alt="薄暮の道頓堀・なんばのネオンと運河" loading="lazy" decoding="async" width="1320" height="990">
+      </figure>
+      <figure class="iju__scene iju__sUrban" aria-hidden="true">
+        <picture>
+          <source media="(max-width:700px)" type="image/avif" srcset="assets/iju/urban-rail-osaka-sp-20260831.avif">
+          <source media="(max-width:700px)" type="image/webp" srcset="assets/iju/urban-rail-osaka-sp-20260831.webp">
+          <source type="image/avif" srcset="assets/iju/urban-rail-osaka-pc-20260831.avif">
+          <img src="assets/iju/urban-rail-osaka-pc-20260831.webp" alt="" loading="lazy" decoding="async" width="2048" height="1152">
+        </picture>
       </figure>
       <figure class="iju__scene iju__sRide" aria-hidden="true">
         <picture>
@@ -2834,18 +2862,30 @@
       <p class="iju__journey-deck" id="ijuDeck">平日の快速急行は、乗り換えなしです。</p>
     </div>
 
-    <p class="iju__concept-note" id="ijuConcept" aria-hidden="true">車窓・道路・駅周辺の背景は、移動を表現した生成コンセプトです。</p>
+    <p class="iju__concept-note" id="ijuConcept">車窓・道路・駅周辺の背景は、移動を表現した生成コンセプトです。</p>
     <a class="iju__skip" href="#ijuDetails">旅程を飛ばして、暮らしを見る</a>
 
-    <div class="iju__journey" aria-hidden="true">
-      <span class="iju__route-line"><i class="iju__route-fill" id="ijuRouteFill"></i></span>
-      <ol class="iju__stops">
-        <li class="iju__stop is-active"><time>18:27</time><span>大阪難波</span></li>
-        <li class="iju__stop"><time>18:33</time><span>鶴橋</span></li>
-        <li class="iju__stop"><time>18:50</time><span>生駒</span></li>
-        <li class="iju__stop"><time>19:02</time><span>大和西大寺</span></li>
-        <li class="iju__stop"><time>19:08</time><span>近鉄奈良</span></li>
-      </ol>
+    <div class="iju__journey" id="ijuJourney" aria-hidden="true">
+      <div class="iju__mode">
+        <span class="is-active" data-iju-mode="rail">TRAIN <b>快速急行</b></span>
+        <span data-iju-mode="car">CAR <b>第二阪奈道路</b></span>
+      </div>
+      <div class="iju__rail-journey">
+        <span class="iju__route-line"><i class="iju__route-fill" id="ijuRouteFill"></i></span>
+        <ol class="iju__stops">
+          <li class="iju__stop is-active"><time>18:27</time><span>大阪難波</span></li>
+          <li class="iju__stop"><time>18:33</time><span>鶴橋</span></li>
+          <li class="iju__stop"><time>18:50</time><span>生駒</span></li>
+          <li class="iju__stop"><time>19:02</time><span>大和西大寺</span></li>
+          <li class="iju__stop"><time>19:08</time><span>近鉄奈良</span></li>
+        </ol>
+      </div>
+      <div class="iju__car-journey">
+        <span class="iju__car-point">中町IC</span>
+        <span class="iju__car-line"><i class="iju__car-fill" id="ijuCarFill"></i></span>
+        <span class="iju__car-point">なんば出口</span>
+        <strong>約30分</strong>
+      </div>
     </div>
     <p class="iju__sr">平日18時27分に大阪難波駅を出発する快速急行は、鶴橋、生駒、大和西大寺を経て、19時08分に近鉄奈良駅へ到着します。所要時間は41分です。自動車では、第二阪奈道路と阪神高速を利用し、中町インターチェンジから阪神高速なんば出口まで約30分が目安です。</p>
     <span class="iju__grain" aria-hidden="true"></span>
@@ -2862,7 +2902,7 @@
 
       <div class="iju__compact iju-rv">
         <section class="iju__access" aria-labelledby="ijuAccessLabel">
-          <p class="iju__micro" id="ijuAccessLabel"><span>Weekday Rapid Express</span><span>Direct ／ 乗換なし</span></p>
+          <p class="iju__micro" id="ijuAccessLabel"><span>鉄道 ／ 平日快速急行</span><span>Direct ／ 乗換なし</span></p>
           <div class="iju__route-summary">
             <div class="iju__station"><b>大阪難波</b><time datetime="18:27">18:27</time></div>
             <span class="iju__route-rule" aria-hidden="true"></span>
@@ -2874,7 +2914,7 @@
             <li><time datetime="18:50">18:50</time>生駒</li>
             <li><time datetime="19:02">19:02</time>大和西大寺</li>
           </ol>
-          <div class="iju__car-access" role="group" aria-label="自動車でのアクセス目安"><span>Car Access</span><b>中町IC → 阪神高速 なんば出口</b><strong>約30分</strong></div>
+          <div class="iju__car-access" role="group" aria-label="自動車でのアクセス目安"><span>自動車</span><b>中町IC → 阪神高速 なんば出口</b><strong>約30分</strong></div>
           <p class="iju__compact-note">鉄道は近鉄公式ダイヤ（2026年3月14日変更）で確認。<a href="https://eki.kintetsu.co.jp/norikae/T7?dw=0&amp;sf=5213&amp;tx=1-5226" target="_blank" rel="noopener noreferrer">近鉄公式で確認</a>。車は第二阪奈道路・阪神高速経由の標準所要時間（約27分）を30分に丸めた目安です。一般道・渋滞時間は含みません。</p>
         </section>
 
@@ -4423,24 +4463,25 @@
   }
 
   /* ---------- 9.55) iju: 鉄道41分＋中町ICから難波約30分。
-       強制スナップは使わず、5背景・7情報ビートを連続スクラブで同期する。 ---------- */
+       強制スナップは使わず、6背景・7情報ビート・2交通モードを連続スクラブで同期する。 ---------- */
   var iju=d.getElementById('iju'), ijuStage=d.getElementById('ijuStage');
   if(iju&&ijuStage){
     iju.classList.add('is-cine');
-    var jA=ijuStage.querySelector('.iju__sA'), jRide=ijuStage.querySelector('.iju__sRide'), jRoad=ijuStage.querySelector('.iju__sRoad'), jApproach=ijuStage.querySelector('.iju__sApproach'), jNara=ijuStage.querySelector('.iju__sNara');
-    var jAimg=jA&&jA.querySelector('img'), jRideImg=jRide&&jRide.querySelector('img'), jRoadImg=jRoad&&jRoad.querySelector('img'), jApproachImg=jApproach&&jApproach.querySelector('img'), jNaraImg=jNara&&jNara.querySelector('img');
+    var jA=ijuStage.querySelector('.iju__sA'), jUrban=ijuStage.querySelector('.iju__sUrban'), jRide=ijuStage.querySelector('.iju__sRide'), jRoad=ijuStage.querySelector('.iju__sRoad'), jApproach=ijuStage.querySelector('.iju__sApproach'), jNara=ijuStage.querySelector('.iju__sNara');
+    var jAimg=jA&&jA.querySelector('img'), jUrbanImg=jUrban&&jUrban.querySelector('img'), jRideImg=jRide&&jRide.querySelector('img'), jRoadImg=jRoad&&jRoad.querySelector('img'), jApproachImg=jApproach&&jApproach.querySelector('img'), jNaraImg=jNara&&jNara.querySelector('img');
     var jClock=d.getElementById('ijuClock'), jCap=d.getElementById('ijuClockCap');
     var jPhase=d.getElementById('ijuPhase'), jTitle=d.getElementById('ijuTitle'), jDeck=d.getElementById('ijuDeck');
-    var jConcept=d.getElementById('ijuConcept'), jFill=d.getElementById('ijuRouteFill');
+    var jConcept=d.getElementById('ijuConcept'), jFill=d.getElementById('ijuRouteFill'), jCarFill=d.getElementById('ijuCarFill');
+    var jJourney=d.getElementById('ijuJourney'), jModes=[].slice.call(ijuStage.querySelectorAll('[data-iju-mode]'));
     var jStops=[].slice.call(ijuStage.querySelectorAll('.iju__stop'));
     var jBeats=[
-      {at:0,phase:'Osaka Namba ／ Departure',title:'大阪難波から、近鉄奈良へ。',deck:'平日の快速急行は、乗り換えなしです。',cap:'大阪難波 ／ 出発',clock:'18:27',stop:0},
-      {at:.13,phase:'Rail Access ／ 41 Minutes',title:'近鉄奈良まで、41分。',deck:'大阪で働きながら、奈良の一戸建てを検討できます。',cap:'快速急行 ／ 乗換なし',clock:'18:27',stop:0},
-      {at:.28,phase:'Tsuruhashi ／ First Stop',title:'鶴橋まで、6分。',deck:'快速急行は、そのまま近鉄奈良方面へ進みます。',cap:'鶴橋 ／ 到着',clock:'18:33',stop:1},
-      {at:.44,phase:'Ikoma ／ 23 Minutes',title:'生駒まで、23分。',deck:'大阪難波から、乗り換えはありません。',cap:'生駒 ／ 到着',clock:'18:50',stop:2},
-      {at:.58,phase:'Car Access ／ Another Option',title:'中町ICから、なんば出口まで約30分。',titleHtml:'中町ICから、<br class="iju__mobile-break"><span class="iju__nobr">なんば出口まで約30分。</span>',deck:'第二阪奈道路・阪神高速を利用する目安です。一般道・渋滞時間は含みません。',cap:'自動車 ／ 目安',clock:'約30分',stop:2,compact:true},
-      {at:.74,phase:'Yamato-Saidaiji ／ 6 Minutes Left',title:'大和西大寺から近鉄奈良まで、6分。',deck:'快速急行は、乗り換えなしです。',cap:'大和西大寺 ／ 到着',clock:'19:02',stop:3,compact:true},
-      {at:.9,phase:'Kintetsu Nara ／ Arrival',title:'近鉄奈良に到着。',deck:'大阪難波から41分。平日の快速急行の一例です。',cap:'近鉄奈良 ／ 到着',clock:'19:08',stop:4}
+      {at:0,phase:'Osaka Namba ／ Departure',title:'大阪難波から、近鉄奈良へ。',deck:'平日の快速急行は、乗り換えなしです。',cap:'大阪難波 ／ 出発',clock:'18:27',stop:0,mode:'rail'},
+      {at:.13,phase:'Rail Access ／ 41 Minutes',title:'近鉄奈良まで、41分。',deck:'大阪で働きながら、奈良の一戸建てを検討できます。',cap:'快速急行 ／ 乗換なし',clock:'18:27',stop:0,mode:'rail'},
+      {at:.28,phase:'Tsuruhashi ／ First Stop',title:'鶴橋まで、6分。',deck:'快速急行は、そのまま近鉄奈良方面へ進みます。',cap:'鶴橋 ／ 到着',clock:'18:33',stop:1,mode:'rail'},
+      {at:.44,phase:'Ikoma ／ 23 Minutes',title:'生駒まで、23分。',deck:'大阪難波から、乗り換えはありません。',cap:'生駒 ／ 到着',clock:'18:50',stop:2,mode:'rail'},
+      {at:.58,phase:'Car Access ／ Another Option',title:'中町ICから、なんば出口まで約30分。',titleHtml:'中町ICから、<br class="iju__mobile-break"><span class="iju__nobr">なんば出口まで約30分。</span>',deck:'第二阪奈道路・阪神高速を利用する目安です。一般道・渋滞時間は含みません。',cap:'自動車 ／ 目安',clock:'約30分',stop:2,mode:'car',compact:true},
+      {at:.74,phase:'Yamato-Saidaiji ／ 6 Minutes Left',title:'大和西大寺から近鉄奈良まで、6分。',deck:'快速急行は、乗り換えなしです。',cap:'大和西大寺 ／ 到着',clock:'19:02',stop:3,mode:'rail',compact:true},
+      {at:.9,phase:'Kintetsu Nara ／ Arrival',title:'近鉄奈良に到着。',deck:'大阪難波から41分。平日の快速急行の一例です。',cap:'近鉄奈良 ／ 到着',clock:'19:08',stop:4,mode:'rail'}
     ];
     var jBeat=-1;
     function jClamp(v){ return Math.max(0,Math.min(1,v)); }
@@ -4453,23 +4494,36 @@
       if(jTitle) jTitle.classList.toggle('is-compact',!!b.compact);
       if(jDeck) jDeck.textContent=b.deck;
       if(jCap) jCap.textContent=b.cap;
+      if(jJourney) jJourney.classList.toggle('is-car',b.mode==='car');
+      jModes.forEach(function(mode){ mode.classList.toggle('is-active',mode.getAttribute('data-iju-mode')===b.mode); });
       gsap.fromTo([jPhase,jTitle,jDeck],{autoAlpha:0,y:10},{autoAlpha:1,y:0,duration:.42,ease:'power2.out',stagger:.035,overwrite:true});
+    }
+    function jRailProgress(p){
+      var points=[[0,0],[.28,.146],[.44,.561],[.58,.561],[.74,.854],[.9,1],[1,1]],i;
+      for(i=1;i<points.length;i++) if(p<=points[i][0]){
+        var a=points[i-1],b=points[i],t=(p-a[0])/(b[0]-a[0]);
+        return a[1]+(b[1]-a[1])*jClamp(t);
+      }
+      return 1;
     }
     function jRender(p){
       p=jClamp(p);
-      var leaveOsaka=jSmooth(.09,.13,p), enterRoad=jSmooth(.54,.58,p), enterApproach=jSmooth(.7,.74,p), arriveNara=jSmooth(.86,.9,p);
+      var leaveOsaka=jSmooth(.09,.13,p), enterCountry=jSmooth(.4,.44,p), enterRoad=jSmooth(.54,.58,p), enterApproach=jSmooth(.7,.74,p), arriveNara=jSmooth(.86,.9,p);
       gsap.set(jA,{autoAlpha:1-leaveOsaka});
-      gsap.set(jRide,{autoAlpha:leaveOsaka*(1-enterRoad)});
+      gsap.set(jUrban,{autoAlpha:leaveOsaka*(1-enterCountry)});
+      gsap.set(jRide,{autoAlpha:enterCountry*(1-enterRoad)});
       gsap.set(jRoad,{autoAlpha:enterRoad*(1-enterApproach)});
       gsap.set(jApproach,{autoAlpha:enterApproach*(1-arriveNara)});
       gsap.set(jNara,{autoAlpha:arriveNara});
       gsap.set(jAimg,{scale:1+.052*Math.min(1,p/.22)});
-      gsap.set(jRideImg,{scale:1.045-.02*jClamp((p-.12)/.38),xPercent:-1.1*jClamp((p-.15)/.34)});
+      gsap.set(jUrbanImg,{scale:1.045-.018*jClamp((p-.12)/.22),xPercent:-.8*jClamp((p-.14)/.2)});
+      gsap.set(jRideImg,{scale:1.045-.02*jClamp((p-.34)/.22),xPercent:-1.1*jClamp((p-.36)/.2)});
       gsap.set(jRoadImg,{scale:1.055-.025*jClamp((p-.54)/.2),xPercent:-.8});
       gsap.set(jApproachImg,{scale:1.06-.03*jClamp((p-.7)/.2),xPercent:-.7});
       gsap.set(jNaraImg,{scale:1.055-.035*arriveNara,xPercent:-.8});
-      gsap.set(jFill,{scaleX:p});
-      gsap.set(jConcept,{opacity:.58*jSmooth(.14,.26,p)});
+      gsap.set(jFill,{scaleX:jRailProgress(p)});
+      gsap.set(jCarFill,{scaleX:jSmooth(.56,.64,p)});
+      gsap.set(jConcept,{opacity:.78*jSmooth(.14,.26,p)});
 
       var bi=0, si=0, i;
       for(i=1;i<jBeats.length;i++) if(p>=jBeats[i].at) bi=i;
@@ -4482,7 +4536,7 @@
       });
     }
 
-    gsap.set([jRide,jRoad,jApproach,jNara],{autoAlpha:0});
+    gsap.set([jUrban,jRide,jRoad,jApproach,jNara],{autoAlpha:0});
     gsap.set(jA,{autoAlpha:1});
     jRender(0);
     ScrollTrigger.create({
