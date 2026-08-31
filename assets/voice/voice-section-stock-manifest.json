@@ -1,0 +1,23 @@
+{
+  "project": "やまと不動産 TOP Voice section",
+  "mode": "licensed",
+  "direction": "実在のお客様の声を主役にする、ゴシック体のコンパクトな詳細ページ導線。背景は証拠でなく、明るいグレージュの紙・繊維感で上質な静けさだけを補助する。",
+  "assets": [
+    {
+      "asset_id": "1520375586",
+      "query": "Japanese paper texture gray elegant background minimal",
+      "preview_url": "https://stock.adobe.com/jp/images/%E5%92%8C%E7%B4%99%E3%81%AE%E8%83%8C%E6%99%AF%E3%80%80%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3/1520375586",
+      "role": "texture",
+      "intended_use": "Voice セクションの背景。画像自体は住まい・お客様・実績を示さない。",
+      "crop": "PCはcover、SPは中央寄せ。文字領域は上からグレーの半透明面を重ねる。",
+      "score": 47,
+      "strengths": ["6000 x 4000px", "グレーと白の和紙質感", "文字を支える十分な余白", "住宅写真や人物を代替しない"],
+      "risks": ["実物プレビューで繊維密度と明度を最終確認する必要がある"],
+      "license_state": "purchased",
+      "watermark_expected": false,
+      "delivery_status": "integrated",
+      "source_file": "assets/voice/voice-section-adobe-stock-1520375586-2560.webp",
+      "license_route": "Adobe Stock Chrome session / プランに含まれるライセンスで 2026-08-31 にダウンロード確認"
+    }
+  ]
+}

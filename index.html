@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>奈良の注文住宅｜株式会社やまと不動産</title>
-<meta name="description" content="奈良と京都で770棟超。京2,480万円／花・風2,680万円のコミコミ価格・税込。地盤改良費・つなぎ融資・仲介手数料は0円。自社分譲地150区画以上を保有する、やまと不動産の注文住宅。">
+<meta name="description" content="奈良と京都で770棟超。京2,480万円／花・風2,680万円の建物本体価格（税込・土地別途）。自社分譲地150区画以上を保有する、やまと不動産の注文住宅。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
@@ -1058,6 +1058,154 @@
   }
   @media (prefers-reduced-motion:reduce){
     .lineup [data-rise]{opacity:1!important;transform:none!important;transition:none}
+  }
+
+  /* ===================== 商品ラインナップ：濃灰左官 × スモークガラス =====================
+     確認済みモック lineup_navy_red_preview_20260830.html を本番へ移植。
+     背景は Adobe Stock #1876146463、住宅写真は Seedream のコンセプト表現。
+     価格・仕様・導線は一次情報に基づく既存の本番内容を維持する。 */
+  .lineup.lineup--graphite{
+    --ln-bg:#1B1C1E;--ln-bg-soft:#25272A;--ln-ink:#F2F0EB;--ln-muted:#BEBCB6;
+    --ln-line:rgba(242,240,235,.24);--ln-red:#DF2337;
+    --ln-serif:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+    --ln-roman:"Inter",sans-serif;
+    --ln-display:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    position:relative;min-height:100svh;overflow:hidden;isolation:isolate;scroll-margin-top:84px;
+    padding:clamp(58px,7vw,104px) clamp(20px,5vw,80px) clamp(48px,6vw,82px);
+    color:var(--ln-ink);background:var(--ln-bg);font-family:var(--ln-display);font-weight:400}
+  .lineup--graphite::before{content:"";position:absolute;z-index:0;inset:0;
+    background:
+      linear-gradient(90deg,rgba(18,19,21,.72) 0%,rgba(23,24,26,.35) 48%,rgba(18,19,21,.78) 100%),
+      radial-gradient(ellipse at 51% 42%,rgba(232,230,225,.115),transparent 34rem),
+      url("assets/lineup/lineup-graphite-plaster-adobe-stock-1876146463-2560.webp") 50% 48%/cover no-repeat;
+    filter:saturate(.48) contrast(1.03) brightness(.72);pointer-events:none}
+  .lineup--graphite::after{content:"";position:absolute;z-index:0;top:0;right:7.5%;bottom:0;width:1px;
+    background:rgba(242,240,235,.1);pointer-events:none}
+  .ln-wrap{position:relative;z-index:1;max-width:1320px;margin:0 auto}
+  .ln-masthead{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(220px,.6fr);gap:32px;
+    align-items:end;padding-bottom:clamp(28px,4vw,54px)}
+  .ln-kicker{display:flex;align-items:center;gap:12px;margin:0 0 16px;color:var(--ln-red);
+    font-family:var(--ln-roman);font-size:11px;font-weight:400;letter-spacing:.18em}
+  .ln-kicker::before{content:"";width:28px;height:2px;background:currentColor}
+  .ln-title{max-width:800px;margin:0;font-family:var(--ln-display);font-size:clamp(1.29rem,2.4vw,2.55rem);
+    font-weight:500;line-height:1.3;letter-spacing:.1em;text-wrap:balance}
+  .ln-intro{margin:0;padding:0 0 2px 22px;border-left:2px solid var(--ln-red);color:var(--ln-muted);
+    font-size:clamp(.82rem,.76rem + .2vw,.98rem);line-height:1.9;letter-spacing:.035em}
+  .ln-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+  .ln-card{position:relative;display:grid;grid-template-rows:auto 1fr;min-width:0;overflow:hidden;
+    color:inherit;text-decoration:none;border:1px solid rgba(242,240,235,.29);border-radius:3px;
+    background:linear-gradient(132deg,rgba(255,255,255,.12),rgba(255,255,255,.025) 34%,rgba(255,255,255,.055) 100%),rgba(30,32,35,.72);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.43),inset 1px 0 0 rgba(255,255,255,.12),
+      inset 0 -1px 0 rgba(4,5,7,.68),0 3px 5px rgba(0,0,0,.2),0 28px 56px rgba(0,0,0,.22);
+    -webkit-backdrop-filter:blur(24px) saturate(88%);backdrop-filter:blur(24px) saturate(88%);
+    transition:border-color .35s ease,box-shadow .35s ease,background .35s ease,transform .35s ease;
+    outline-offset:4px}
+  .ln-card::before{content:"";position:absolute;z-index:3;top:0;left:0;width:100%;height:3px;
+    transform:scaleX(0);transform-origin:left;background:var(--ln-red);transition:transform .35s ease}
+  .ln-card::after{content:"";position:absolute;z-index:0;inset:0;
+    background:linear-gradient(118deg,rgba(255,255,255,.17) 0%,rgba(255,255,255,.055) 12%,transparent 29%,transparent 72%,rgba(255,255,255,.045) 100%),
+      radial-gradient(ellipse at 8% 0%,rgba(255,255,255,.13),transparent 34%);
+    opacity:.7;pointer-events:none;transition:opacity .35s ease}
+  .ln-card:hover,.ln-card:focus-visible{border-color:rgba(242,240,235,.52);
+    background:linear-gradient(132deg,rgba(255,255,255,.16),rgba(255,255,255,.035) 34%,rgba(255,255,255,.08) 100%),rgba(39,42,45,.73);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.62),inset 1px 0 0 rgba(255,255,255,.19),
+      inset 0 -1px 0 rgba(4,5,7,.58),0 5px 8px rgba(0,0,0,.23),0 34px 66px rgba(0,0,0,.31);
+    transform:translateY(-3px)}
+  .ln-card:hover::before,.ln-card:focus-visible::before{transform:scaleX(1)}
+  .ln-card:hover::after,.ln-card:focus-visible::after{opacity:.95}
+  .ln-card__figure{position:relative;z-index:1;aspect-ratio:1.42/1;margin:clamp(14px,1.65vw,24px) clamp(14px,1.65vw,24px) 0;
+    overflow:hidden;border:1px solid rgba(255,255,255,.18);background:#2E3033;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+  .ln-card__figure::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(4,13,24,.52));pointer-events:none}
+  .ln-card__figure img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.82) contrast(1.04) brightness(.92);
+    transition:filter .5s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
+  .ln-card--hana .ln-card__figure img{object-position:50% 56%}
+  .ln-card--kyo .ln-card__figure img{object-position:50% 62%}
+  .ln-card--kaze .ln-card__figure img{object-position:48% 58%}
+  .ln-card:hover .ln-card__figure img,.ln-card:focus-visible .ln-card__figure img{filter:saturate(.94) contrast(1.04) brightness(.97);transform:scale(1.035)}
+  .ln-card__number{position:absolute;z-index:2;top:14px;left:14px;color:var(--ln-ink);font-family:var(--ln-roman);
+    font-size:10px;font-weight:400;letter-spacing:.16em}
+  .ln-card__concept{position:absolute;z-index:2;right:10px;bottom:9px;padding:4px 7px;border:1px solid rgba(242,240,235,.28);
+    background:rgba(18,19,21,.58);color:rgba(242,240,235,.84);font-family:var(--ln-roman);font-size:8px;letter-spacing:.13em}
+  .ln-card__body{position:relative;z-index:1;display:flex;flex-direction:column;min-height:320px;
+    padding:clamp(20px,2.2vw,32px) clamp(18px,2vw,30px) 26px}
+  .ln-card__title-row{display:flex;align-items:end;justify-content:space-between;gap:18px}
+  .ln-card__name{margin:0;font-family:var(--ln-serif);font-size:2.1rem;font-weight:400;line-height:1;letter-spacing:.02em}
+  .ln-card__en{margin:0 0 2px;color:var(--ln-muted);font-family:var(--ln-roman);font-size:.68rem;font-weight:400;letter-spacing:.3em;text-transform:uppercase}
+  .ln-card__lead{margin:22px 0 0;color:var(--ln-ink);font-size:clamp(.86rem,.79rem + .16vw,.98rem);line-height:1.75;letter-spacing:.04em}
+  .ln-card__detail{margin:12px 0 0;color:var(--ln-muted);font-size:.76rem;line-height:1.75;letter-spacing:.03em;line-break:strict;word-break:auto-phrase}
+  .ln-card__facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:16px 0 0;padding:0;list-style:none}
+  .ln-card__facts li{min-width:0;padding-left:9px;border-left:1px solid var(--ln-line)}
+  .ln-card__facts b{display:block;color:var(--ln-muted);font-family:var(--ln-roman);font-size:.57rem;font-weight:400;line-height:1.35;letter-spacing:.1em}
+  .ln-card__facts span{display:block;margin-top:5px;color:var(--ln-ink);font-family:var(--ln-serif);font-size:.82rem;line-height:1.35;letter-spacing:.02em}
+  .ln-card__foot{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-top:auto;padding-top:18px;border-top:1px solid var(--ln-line)}
+  .ln-card__price{margin:0;font-family:var(--ln-serif);font-size:clamp(1.45rem,2.1vw,2.15rem);font-weight:400;letter-spacing:.04em;line-height:1;white-space:nowrap}
+  .ln-card__price small{display:block;margin-top:8px;color:var(--ln-muted);font-family:var(--ln-display);font-size:10px;line-height:1.5;letter-spacing:.03em}
+  .ln-card__action{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:space-between;gap:12px;
+    min-height:44px;padding:0 7px 0 14px;overflow:hidden;border:1px solid rgba(244,243,239,.42);border-radius:2px;
+    background:linear-gradient(135deg,rgba(255,255,255,.15),rgba(255,255,255,.035) 42%,rgba(255,255,255,.075)),rgba(18,20,23,.42);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 1px 0 0 rgba(255,255,255,.12),inset 0 -1px 0 rgba(0,0,0,.68),
+      0 3px 6px rgba(0,0,0,.24),0 12px 26px rgba(0,0,0,.2);
+    -webkit-backdrop-filter:blur(14px) saturate(108%);backdrop-filter:blur(14px) saturate(108%);
+    color:var(--ln-ink);font-size:11px;font-weight:500;letter-spacing:.08em;line-height:1;white-space:nowrap;text-shadow:0 1px 8px rgba(0,0,0,.42);
+    transition:border-color .35s ease,background .35s ease,box-shadow .35s ease,transform .35s ease}
+  .ln-card__action::before{content:"";position:absolute;z-index:-1;top:-60%;left:-48%;width:44%;height:220%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);transform:rotate(19deg) translateX(-140%);
+    transition:transform .65s cubic-bezier(.2,.8,.2,1);pointer-events:none}
+  .ln-card__action::after{content:"→";display:grid;place-items:center;width:29px;height:29px;flex:none;
+    border:1px solid rgba(244,243,239,.38);background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(8,9,11,.18));
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 3px 8px rgba(0,0,0,.22);
+    color:var(--ln-red);font-family:Georgia,serif;font-size:17px;font-weight:400}
+  .ln-card:hover .ln-card__action,.ln-card:focus-visible .ln-card__action{border-color:rgba(244,243,239,.7);
+    background:linear-gradient(135deg,rgba(255,255,255,.21),rgba(255,255,255,.05) 42%,rgba(223,35,55,.1)),rgba(25,27,30,.52);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.68),inset 1px 0 0 rgba(255,255,255,.18),inset 0 -1px 0 rgba(0,0,0,.58),
+      0 5px 9px rgba(0,0,0,.28),0 16px 32px rgba(0,0,0,.27);transform:translateY(-1px)}
+  .ln-card:hover .ln-card__action::before,.ln-card:focus-visible .ln-card__action::before{transform:rotate(19deg) translateX(440%)}
+  .ln-disclaimer{margin:14px 0 0;color:rgba(242,240,235,.66);font-size:.7rem;line-height:1.75;letter-spacing:.03em}
+  .ln-common{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:22px;align-items:center;padding:22px 0 0}
+  .ln-common__label{margin:0;color:var(--ln-red);font-family:var(--ln-roman);font-size:10px;font-weight:400;letter-spacing:.16em}
+  .ln-common__copy{margin:0;color:var(--ln-muted);font-size:12px;line-height:1.7;letter-spacing:.04em}
+  .ln-common__link{display:inline-flex;align-items:center;min-height:44px;width:max-content;color:var(--ln-ink);font-size:11px;letter-spacing:.08em;text-underline-offset:6px}
+  @media (max-width:820px){
+    .lineup.lineup--graphite{padding:62px 18px 38px}
+    .lineup--graphite::after{right:18px}
+    .ln-masthead{grid-template-columns:1fr;gap:23px;padding-bottom:29px}
+    .ln-title{font-size:clamp(1.2rem,6vw,1.62rem);letter-spacing:.04em}
+    .ln-intro{max-width:38em;padding-left:16px}
+    .ln-grid{display:block}
+    .ln-card{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);grid-template-rows:auto}
+    .ln-card+.ln-card{margin-top:12px}
+    .ln-card::before{width:3px;height:100%;transform:scaleY(0);transform-origin:top}
+    .ln-card:hover::before,.ln-card:focus-visible::before{transform:scaleY(1)}
+    .ln-card__figure{aspect-ratio:auto;min-height:224px;margin:14px 0 14px 14px}
+    .ln-card__body{min-height:0;padding:20px 16px 20px 18px}
+    .ln-card__lead{margin-top:13px;font-size:12px;line-height:1.65}
+    .ln-card__detail{display:none}
+    .ln-card__facts{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:12px}
+    .ln-card__facts li:nth-child(3){grid-column:1/-1}
+    .ln-card__foot{display:block;margin-top:18px;padding-top:13px}
+    .ln-card__price{font-size:1.45rem}
+    .ln-card__price small{margin-top:6px}
+    .ln-card__action{margin-top:12px;min-height:42px;padding-left:12px;font-size:10.5px}
+    .ln-card__action::after{width:27px;height:27px;font-size:15px}
+    .ln-common{grid-template-columns:1fr;gap:8px;padding-top:18px}
+    .ln-common__link{margin-top:6px}
+  }
+  @media (max-width:560px){
+    .ln-card{grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr}
+    .ln-card::before{width:100%;height:3px;transform:scaleX(0);transform-origin:left}
+    .ln-card:hover::before,.ln-card:focus-visible::before{transform:scaleX(1)}
+    .ln-card__figure{aspect-ratio:16/9;min-height:0;margin:12px 12px 0}
+    .ln-card__body{padding:20px 18px 22px}
+    .ln-card__title-row{gap:12px}
+    .ln-card__detail{display:block}
+    .ln-card__facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+    .ln-card__facts li:nth-child(3){grid-column:auto}
+    .ln-card__foot{display:flex}
+    .ln-card__action{margin-top:0;min-height:44px;font-size:10.5px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .ln-card,.ln-card::before,.ln-card::after,.ln-card__figure img{transition:none}
+    .ln-card:hover,.ln-card:focus-visible{transform:none}
   }
 
   /* ===================== なぜ、この値段で（施工断面×正直な二列・深緑アクセント） ===================== */
@@ -2172,133 +2320,68 @@
   </div>
 </section>
 
-<!-- ============ 商品ライン 花・風・京 ============ -->
-<section class="lineup" id="lineup" aria-label="商品ラインナップ 花・京・風">
-
-  <div class="lu-op">
-    <div class="lu-op__in">
-      <span class="lu-eyebrow" data-rise style="--d:.05">Lineup ／ 商品ラインナップ</span>
-      <div class="lu-op__cols">
-        <div class="lu-op__l">
-          <h2 class="lu-h"><span>暮らし方も、</span><span>家にかけたいお金も、</span><br><span>家族によって違います。</span></h2>
-          <div class="lu-seals" aria-hidden="true">
-            <span class="lu-seal lu-seal--hana">花</span><span class="lu-seal lu-seal--kyo">京</span><span class="lu-seal lu-seal--kaze">風</span>
-          </div>
-        </div>
-        <div class="lu-op__r">
-          <p class="lu-opstate">やまと不動産では三つの住まいをご用意しました。</p>
-          <div class="lu-oplead">
-            <p class="lu-lead">三つのラインナップで変わるのは、広さと、設備・性能へのこだわり方。</p>
-            <p class="lu-lead">構造・断熱・外壁・屋根など、家の基本性能はすべて共通です。</p>
-            <p class="lu-lead lu-lead--end">暮らし方や予算に合わせて選べる、やまと不動産の三つの住まいです。</p>
-          </div>
-        </div>
+<!-- ============ 商品ラインナップ：濃灰左官 × スモークガラス ============ -->
+<section class="lineup lineup--graphite" id="lineup" aria-labelledby="lineupTitle">
+  <div class="ln-wrap">
+    <header class="ln-masthead" data-rise style="--d:.05">
+      <div>
+        <p class="ln-kicker">PRODUCT LINEUP</p>
+        <h2 class="ln-title" id="lineupTitle">広さ・間取り・設備から選べる３タイプ</h2>
       </div>
-      </div>
-  <div class="lu-cards">
-    <a class="lu-card lu-card--hana" href="madori.html#plans">
-      <figure class="lu-card__f"><img src="assets/lineup/hero/hana_ext.webp" alt="花のモデルハウス外観" loading="lazy" decoding="async">
-        <span class="lu-card__k"><b>花</b><i>Hana</i></span></figure>
-      <div class="lu-card__b">
-        <p class="lu-label">天井を高くとり、設備を整えた家</p>
-        <div class="lu-rule"></div>
-        <p class="lu-card__t">玄関ドアは顔認証で開きます。軒天にはニチハの木目12mmを使い、窓はワイドサッシです。</p>
-        <ul class="lu-facts">
-          <li><span class="k">延床</span><span class="v">31坪</span></li>
-          <li><span class="k">1階天井高</span><span class="v">2,500mm</span></li>
-          <li><span class="k">玄関</span><span class="v">親子ドア</span></li>
-        </ul>
-        <p class="lu-card__p"><b>2,680万円</b><span>コミコミ価格・税込</span><span class="lu-card__go" aria-hidden="true">→</span></p>
-      </div></a>
-    <a class="lu-card lu-card--kyo" href="madori.html#plans">
-      <figure class="lu-card__f"><img src="assets/lineup/hero/kyo_ext.webp" alt="京のモデルハウス外観" loading="lazy" decoding="async">
-        <span class="lu-card__k"><b>京</b><i>Miyako</i></span></figure>
-      <div class="lu-card__b">
-        <p class="lu-label">限られた敷地のために設計した家</p>
-        <div class="lu-rule"></div>
-        <p class="lu-card__t">奈良のように広く土地を使えない場所でも建てられるよう、28坪3LDKにまとめています。</p>
-        <ul class="lu-facts">
-          <li><span class="k">延床</span><span class="v">28坪</span></li>
-          <li><span class="k">間取り</span><span class="v">3LDK</span></li>
-          <li><span class="k">玄関</span><span class="v">FamiLock</span></li>
-        </ul>
-        <p class="lu-card__p"><b>2,480万円</b><span>コミコミ価格・税込</span><span class="lu-card__go" aria-hidden="true">→</span></p>
-      </div></a>
-    <a class="lu-card lu-card--kaze" href="madori.html#plans">
-      <figure class="lu-card__f"><img src="assets/lineup/hero/kaze_ext.webp" alt="風のモデルハウス外観" loading="lazy" decoding="async">
-        <span class="lu-card__k"><b>風</b><i>Kaze</i></span></figure>
-      <div class="lu-card__b">
-        <p class="lu-label">長く住むための性能を備えた家</p>
-        <div class="lu-rule"></div>
-        <p class="lu-card__t">3帖のベランダと電動シャッターが標準です。防犯ガラスは掃き出し窓2か所と腰窓2か所に入ります。</p>
-        <ul class="lu-facts">
-          <li><span class="k">延床</span><span class="v">30坪</span></li>
-          <li><span class="k">長期優良</span><span class="v">対応</span></li>
-          <li><span class="k">玄関</span><span class="v">FamiLock</span></li>
-        </ul>
-        <p class="lu-card__p"><b>2,680万円</b><span>コミコミ価格・税込</span><span class="lu-card__go" aria-hidden="true">→</span></p>
-      </div></a>
-  </div>
-  
-    </div>
-  </div>
+      <p class="ln-intro">延床面積、間取り、標準設備の違いを比べて選べます。気になる商品から、詳しい間取りと仕様をご確認ください。</p>
+    </header>
 
-  
-
-  <div class="lu-cl">
-    <div class="lu-cl__in">
-      <div class="lu-freewrap">
-        <figure class="lu-shot">
-          <img src="assets/lineup/hero/study.webp" alt="窓際に造り付けた書斎の机" loading="lazy" decoding="async">
-          <figcaption>奈良市左京のモデルハウス。窓際に机を造り付けた書斎です。</figcaption>
+    <div class="ln-grid" role="group" aria-label="商品ラインナップ 花・京・風">
+      <a class="ln-card ln-card--hana" href="madori.html#plans" aria-label="花の間取りと仕様を見る" data-rise style="--d:.12">
+        <figure class="ln-card__figure">
+          <img src="assets/lineup/concept/hana-clear-sky-v1.webp" alt="花を表現した生成コンセプト外観。実物件や仕様を示す写真ではありません" loading="lazy" decoding="async">
+          <span class="ln-card__number">01 / LINEUP</span><span class="ln-card__concept">CONCEPT VISUAL</span>
         </figure>
-      <div class="lu-free">
-        <p class="lu-free__lead">三つのプランで決まっているのは、家の広さと、標準で入る設備だけ。</p>
-        <p class="lu-free__lead">間取りは、まだ何も決まっていません。</p>
-        <p class="lu-free__p">家族の人数も、暮らし方も、好きな時間の過ごし方も、それぞれ違うから。</p>
-        <p class="lu-free__p">最初の打ち合わせから設計士が入り、「どんな家に住みたいか」を一緒に考えるところから始めます。</p>
-        <p class="lu-free__p">そして、間取りがきちんと決まってから、はじめて建物のご契約へ進みます。</p>
-        <p class="lu-free__p">ここまでにかける時間は、およそ3か月。</p>
-        <p class="lu-free__p">急いで決めるのではなく、納得できるまで話して、考えて、自分たちの暮らしに合う家をつくっていく。</p>
-        <p class="lu-free__end">やまと不動産の家づくりは、そこから始まります。</p>
-      </div>
-      </div>
-
-      <div class="lu-plans">
-        <div class="lu-plans__rail">
-          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/madori_ex01.webp" alt="実際に建てた家の間取り例 LDK22帖・土間収納・パントリー" loading="lazy" decoding="async"></a></figure>
-          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/madori_ex02.webp" alt="実際に建てた家の間取り例 LDK20帖・和室4.5帖・吹き抜け" loading="lazy" decoding="async"></a></figure>
-          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/madori_ex03.webp" alt="実際に建てた家の間取り例 LDK21帖・家事室・大空間収納" loading="lazy" decoding="async"></a></figure>
-          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/madori_ex04.webp" alt="実際に建てた家の間取り例 LDK19.9帖・和室4.5帖・ランドリールーム" loading="lazy" decoding="async"></a></figure>
-          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/madori_ex05.webp" alt="実際に建てた家の間取り例 LDK24.5帖・書斎・ウッドデッキ" loading="lazy" decoding="async"></a></figure>
-          <figure class="lu-plan"><a href="madori.html#floorplans"><img src="assets/madori/kyo_example.webp" alt="実際に建てた家の間取り例 LDK18.7帖・コンパクト設計" loading="lazy" decoding="async"></a></figure>
+        <div class="ln-card__body">
+          <div class="ln-card__title-row"><h3 class="ln-card__name">花</h3><p class="ln-card__en">HANA</p></div>
+          <p class="ln-card__lead">天井を高くとり、設備を整えた家</p>
+          <p class="ln-card__detail">玄関ドアは顔認証で開きます。軒天にはニチハの木目12mmを使い、窓はワイドサッシです。</p>
+          <ul class="ln-card__facts"><li><b>延床</b><span>31坪</span></li><li><b>1階天井高</b><span>2,500mm</span></li><li><b>玄関</b><span>親子ドア</span></li></ul>
+          <div class="ln-card__foot"><p class="ln-card__price">2,680万円<small>建物本体価格（税込・土地別途）</small></p><span class="ln-card__action">詳細ページへ</span></div>
         </div>
-        <p class="lu-plans__cap">やまと不動産が実際に建てた家の間取りです。</p>
-      </div>
+      </a>
 
-      <div class="lu-common">
-        <h3 class="lu-common__h">三つとも同じもの</h3>
-        <dl class="lu-common__dl">
-          <div><dt>耐震・制震</dt><dd>住友ゴム ミライエ</dd></div>
-          <div><dt>断熱</dt><dd>アクアフォーム LITE</dd></div>
-          <div><dt>外壁</dt><dd>旭化成 ヘーベルパワーボード</dd></div>
-          <div><dt>屋根</dt><dd>ニスクカラー Pro.</dd></div>
-          <div><dt>軒の出</dt><dd>450mmまで</dd></div>
-          <div><dt>2階の天井高</dt><dd>2,400mm</dd></div>
-          <div><dt>玄関・ポーチのタイル</dt><dd>2坪</dd></div>
-          <div><dt>キッチン</dt><dd>カップボード付き</dd></div>
-          <div><dt>洗面台</dt><dd>TOTO オクターブ</dd></div>
-          <div><dt>増床</dt><dd>1坪単位でできます</dd></div>
-        </dl>
-      </div>
+      <a class="ln-card ln-card--kyo" href="madori.html#plans" aria-label="京の間取りと仕様を見る" data-rise style="--d:.2">
+        <figure class="ln-card__figure">
+          <img src="assets/lineup/concept/kyo-clear-sky-v1.webp" alt="京を表現した生成コンセプト外観。実物件や仕様を示す写真ではありません" loading="lazy" decoding="async">
+          <span class="ln-card__number">02 / LINEUP</span><span class="ln-card__concept">CONCEPT VISUAL</span>
+        </figure>
+        <div class="ln-card__body">
+          <div class="ln-card__title-row"><h3 class="ln-card__name">京</h3><p class="ln-card__en">KYOU</p></div>
+          <p class="ln-card__lead">限られた敷地のために設計した家</p>
+          <p class="ln-card__detail">奈良のように広く土地を使えない場所でも建てられるよう、28坪3LDKにまとめています。</p>
+          <ul class="ln-card__facts"><li><b>延床</b><span>28坪</span></li><li><b>間取り</b><span>3LDK</span></li><li><b>玄関</b><span>FamiLock</span></li></ul>
+          <div class="ln-card__foot"><p class="ln-card__price">2,480万円<small>建物本体価格（税込・土地別途）</small></p><span class="ln-card__action">詳細ページへ</span></div>
+        </div>
+      </a>
 
-      <div class="lu-doors">
-        <a class="lu-doors__go" href="jiyusekkei.html">完全自由設計について<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="lu-doors__cta" href="madori.html#plans">三つの仕様をくらべる　→</a>
-      </div>
+      <a class="ln-card ln-card--kaze" href="madori.html#plans" aria-label="風の間取りと仕様を見る" data-rise style="--d:.28">
+        <figure class="ln-card__figure">
+          <img src="assets/lineup/concept/kaze-clear-sky-v1.webp" alt="風を表現した生成コンセプト外観。実物件や仕様を示す写真ではありません" loading="lazy" decoding="async">
+          <span class="ln-card__number">03 / LINEUP</span><span class="ln-card__concept">CONCEPT VISUAL</span>
+        </figure>
+        <div class="ln-card__body">
+          <div class="ln-card__title-row"><h3 class="ln-card__name">風</h3><p class="ln-card__en">KAZE</p></div>
+          <p class="ln-card__lead">長く住むための性能を備えた家</p>
+          <p class="ln-card__detail">3帖のベランダと電動シャッターが標準です。防犯ガラスは掃き出し窓2か所と腰窓2か所に入ります。</p>
+          <ul class="ln-card__facts"><li><b>延床</b><span>30坪</span></li><li><b>長期優良</b><span>対応</span></li><li><b>玄関</b><span>FamiLock</span></li></ul>
+          <div class="ln-card__foot"><p class="ln-card__price">2,680万円<small>建物本体価格（税込・土地別途）</small></p><span class="ln-card__action">詳細ページへ</span></div>
+        </div>
+      </a>
     </div>
+
+    <p class="ln-disclaimer">※ 外観画像は商品イメージを表現する生成コンセプトビジュアルです。実際の物件・建物・標準仕様を示す写真ではありません。表示価格は建物本体価格（税込・土地別途）です。価格・面積・仕様は2026年7月2日確認時点の情報です。</p>
+    <footer class="ln-common">
+      <p class="ln-common__label">COMMON SPEC</p>
+      <p class="ln-common__copy">構造・断熱・外壁・屋根など、家の基本性能は三つの商品で共通です。</p>
+      <a class="ln-common__link" href="madori.html#plans">三つの仕様をくらべる</a>
+    </footer>
   </div>
-  <p class="lu-foot"><span>※ 価格・面積・間取りは確定値（2026年改定・コミコミ価格・税込）です。</span></p>
 </section>
 
 <!-- ============ なぜ、この値段で（施工断面×正直な二列） ============ -->
@@ -2406,41 +2489,82 @@
     .vc__card{opacity:1!important;transform:rotate(var(--r,0deg))!important;transition:box-shadow .3s}
   }
 </style>
+<!-- Voice refresh 2026-08-30: Adobe Stock #1520375586（和紙の背景 テクスチャ）をライセンス取得・Web最適化して使用。
+     お客様の声の事実性を補うものではなく、文字を支える背景テクスチャとしてのみ使用する。 -->
+<style>
+  .vc{--vc-ink:#20201e;--vc-soft:#686761;--vc-line:rgba(32,32,30,.15);--vc-accent:#9b312d;
+    --vc-sheet:rgba(249,248,244,.91);--vc-stock:url("assets/voice/voice-section-adobe-stock-1520375586-2560.webp");position:relative;z-index:6;isolation:isolate;overflow:hidden;
+    margin:0;border-radius:0;box-shadow:none;scroll-margin-top:84px;padding:0;color:var(--vc-ink);background:#dbdbd8;
+    font-family:var(--fh)}
+  .vc::before{content:"";position:absolute;inset:0;z-index:-2;opacity:1;
+    background:linear-gradient(105deg,rgba(247,247,244,.86),rgba(220,220,216,.68)),var(--vc-stock) center/cover no-repeat}
+  .vc::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.39;
+    background:repeating-linear-gradient(0deg,transparent 0 76px,rgba(32,32,30,.035) 76px 77px),radial-gradient(ellipse at 77% 26%,rgba(255,255,255,.72),transparent 33rem)}
+  .vc__rail{position:relative;overflow:hidden;border-top:1px solid var(--vc-line);border-bottom:1px solid var(--vc-line);padding:17px 0 19px;background:rgba(244,244,240,.36)}
+  .vc__rail::before,.vc__rail::after{content:"";position:absolute;z-index:2;top:0;bottom:0;width:clamp(28px,8vw,130px);pointer-events:none}
+  .vc__rail::before{left:0;background:linear-gradient(90deg,#e5e4df,transparent)}
+  .vc__rail::after{right:0;background:linear-gradient(270deg,#dddcd7,transparent)}
+  .vc__track{display:flex;width:max-content;align-items:stretch;gap:12px;animation:vcMarquee 72s linear infinite}
+  .vc__track-group{display:flex;align-items:stretch;gap:12px;flex:none}
+  .vc__quote{display:flex;flex-direction:column;justify-content:space-between;gap:13px;width:clamp(270px,27vw,410px);min-height:132px;padding:17px 18px 15px;
+    border:1px solid var(--vc-line);background:var(--vc-sheet);color:inherit;box-shadow:0 8px 22px rgba(42,41,38,.06);text-decoration:none;transition:background .28s ease,border-color .28s ease,transform .28s ease}
+  .vc__quote:hover,.vc__quote:focus-visible{border-color:rgba(155,49,45,.52);background:#fff;transform:translateY(-3px)}
+  .vc__quote p{margin:0;font-size:clamp(.75rem,.69rem + .16vw,.9rem);font-weight:500;line-height:1.82;letter-spacing:.045em;text-wrap:pretty;word-break:auto-phrase}
+  .vc__quote p::before{content:"“";margin-right:4px;color:var(--vc-accent);font-size:1.2em;font-family:"Inter",sans-serif}
+  .vc__quote small{display:flex;justify-content:space-between;gap:16px;padding-top:9px;border-top:1px solid var(--vc-line);color:var(--vc-soft);font-family:var(--font-head);font-size:.62rem;font-weight:500;letter-spacing:.1em}
+  .vc__quote small b{color:var(--vc-accent);font-weight:500;letter-spacing:.16em}
+  @keyframes vcMarquee{to{transform:translateX(calc(-50% - 6px))}}
+  .vc__rail:hover .vc__track,.vc__rail:focus-within .vc__track{animation-play-state:paused}
+  .vc__in{position:relative;display:block;max-width:1040px;margin:0 auto;padding:clamp(58px,7.2vw,96px) clamp(22px,5vw,68px) clamp(62px,7.8vw,106px);text-align:center}
+  .vc__content{max-width:690px;margin:0 auto}
+  .vc__eyebrow{display:inline-flex;align-items:center;gap:12px;margin:0;color:var(--vc-accent);font-family:var(--font-head);font-size:.66rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+  .vc__eyebrow::before{content:"";width:32px;height:1px;background:currentColor;opacity:.75}
+  .vc h2{margin:23px 0 0;color:var(--vc-ink);font-family:var(--fh);font-size:clamp(1.15rem,.8rem + .9vw,1.65rem);font-weight:500;line-height:1.7;letter-spacing:.065em}
+  .vc h2 span{display:block;white-space:nowrap}
+  .vc__lead{max-width:550px;margin:19px auto 0;color:var(--vc-soft);font-size:clamp(.76rem,.71rem + .18vw,.91rem);font-weight:400;line-height:2;letter-spacing:.07em}
+  .vc__cta{position:relative;display:inline-flex;align-items:center;justify-content:space-between;gap:38px;min-width:min(100%,315px);margin-top:31px;padding:5px 6px 5px 20px;border:1px solid var(--vc-ink);border-radius:0;background:rgba(250,249,246,.62);color:var(--vc-ink);font-family:var(--font-head);font-size:.78rem;font-weight:600;letter-spacing:.1em;line-height:1;text-decoration:none;transition:background .32s ease,color .32s ease,transform .32s ease,box-shadow .32s ease}
+  .vc__cta::before{content:"";position:absolute;inset:4px;border:1px solid rgba(32,32,30,.18);pointer-events:none}
+  .vc__cta:hover,.vc__cta:focus-visible{background:var(--vc-ink);color:#fff;transform:translateY(-2px);box-shadow:0 13px 24px rgba(32,32,30,.16)}
+  .vc__cta svg{display:grid;place-items:center;box-sizing:content-box;width:17px;height:17px;padding:10px;border:1px solid currentColor;stroke:currentColor;stroke-width:1.6;fill:none;transition:transform .32s ease}
+  .vc__cta:hover svg,.vc__cta:focus-visible svg{transform:translateX(3px)}
+  @media(max-width:680px){
+    .vc__rail{padding:12px 0 14px}
+    .vc__track,.vc__track-group{gap:9px}.vc__track{animation-duration:82s}
+    .vc__quote{width:268px;min-height:126px;padding:14px 15px 13px}.vc__quote p{font-size:.73rem;line-height:1.76}.vc__quote small{font-size:.56rem}
+    .vc__in{padding:52px 22px 62px}.vc h2{font-size:.9rem;line-height:1.75;letter-spacing:.02em}.vc__lead{font-size:.72rem;line-height:1.95;letter-spacing:.045em}.vc__cta{min-width:290px;gap:22px;font-size:.72rem}
+  }
+  @media(prefers-reduced-motion:reduce){.vc__track{animation:none}.vc__rail{overflow-x:auto}.vc__quote{transform:none!important}}
+</style>
 <section class="vc" id="voice" aria-label="お客様の声">
+  <div class="vc__rail" role="group" aria-label="お客様の声、5件の抜粋">
+    <div class="vc__track" id="vcTrack"><!-- JSが原文の抜粋を5件、2組描画 --></div>
+  </div>
   <div class="vc__in">
-    <div>
-      <span class="vc__eyebrow">Voice ／ お客様の声</span>
-      <h2><em>50通</em>の声が、<br>届いています。</h2><!-- copywriterパス済（50家族はリード文で補足） -->
-      <p class="vc__lead">やまとの家を建てられたお客様に、お引き渡し後のアンケートでいただいた言葉です。原文のまま載せています。</p>
-      <a class="vc__cta" href="voice.html">50通すべてを読む<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="vc__content">
+      <p class="vc__eyebrow">Owner's Voice</p>
+      <h2><span>お客様の声</span></h2>
+      <p class="vc__lead">やまと不動産で家を建てた理由と、暮らし始めてからの感想をご紹介します。</p>
+      <a class="vc__cta" href="voice.html">お客様の声をすべて見る<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
-    <div class="vc__fan" id="vcFan" aria-label="お客様の声（抜粋）"><!-- JSが3通を描画 --></div>
   </div>
 </section>
 <script>
 (function(){
   var sec=document.getElementById('voice'); if(!sec) return;
-  var FEATURED=['v01','v05','v06'];
+  var FEATURED=['v01','v02','v03','v04','v05'];
   function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
   fetch('data/voices.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(data){
     var vs=data.voices||[]; if(!vs.length) return;
     var picks=FEATURED.map(function(id){ return vs.find(function(v){return v.id===id;}); }).filter(Boolean);
-    if(picks.length<3) picks=vs.slice(0,3);
+    if(picks.length<5) picks=vs.slice(0,5);
     var html='';
     picks.forEach(function(v){
-      html+='<a class="vc__card" href="voice.html#'+esc(v.id)+'" aria-label="'+esc(v.area)+' '+esc(v.family)+'の声を読む">'+
-        '<span class="vc__ph"><img src="'+esc(v.cover)+'" alt="'+esc(v.coverAlt||'やまとの家の実例写真')+'" loading="lazy" decoding="async">'+
-        '<span class="vc__mark" aria-hidden="true"><span><i>Yamato Voice</i><b>'+esc(v.area)+'</b><i>No.'+String(v.no).padStart(2,'0')+'</i></span></span></span>'+
-        '<span class="vc__body"><span class="vc__pull">'+esc(v.pull)+'</span>'+
-        '<span class="vc__who">'+esc(v.area)+'・'+esc(v.family)+'</span></span></a>';
+      html+='<a class="vc__quote" href="voice.html#'+esc(v.id)+'" aria-label="'+esc(v.area)+' '+esc(v.family)+'の声を詳しく見る">'+
+        '<p>'+esc(v.pull)+'</p><small><span>'+esc(v.area)+'・'+esc(v.family)+'</span><b>VOICE '+String(v.no).padStart(2,'0')+'</b></small></a>';
     });
-    document.getElementById('vcFan').innerHTML=html;
+    var track=document.getElementById('vcTrack');
+    if(track) track.innerHTML='<div class="vc__track-group">'+html+'</div><div class="vc__track-group" aria-hidden="true" inert>'+html+'</div>';
   }).catch(function(){});
-  if('IntersectionObserver' in window){
-    new IntersectionObserver(function(es,io){
-      es.forEach(function(e){ if(e.isIntersecting){ sec.classList.add('is-vcin'); io.unobserve(sec); } });
-    },{threshold:.2,rootMargin:'0px 0px -8% 0px'}).observe(sec);
-  } else { sec.classList.add('is-vcin'); }
 })();
 </script>
 
@@ -3291,81 +3415,78 @@
     from{--sbsr:10px;box-shadow:0 -6px 16px -12px rgba(60,50,30,.12)}
     to  {--sbsr:clamp(24px,3vw,46px);box-shadow:0 -46px 88px -34px rgba(60,50,30,.18)}}
 </style>
-<!-- ============ P3 家づくりの流れ 1→10（fl- 工程の道のり／横スクロールストリップ） ============ -->
+<!-- ============ P3 家づくりの流れ（fl- 契約前の納得をつくる3段階） ============ -->
 <style>
-  .fl{position:relative;isolation:isolate;background:#F4F1EA;color:#241F1B;
-    z-index:7;margin-top:clamp(-78px,-5.6vw,-46px);
-    border-top-left-radius:clamp(24px,3vw,46px);border-top-right-radius:clamp(24px,3vw,46px);
-    box-shadow:0 -46px 88px -32px rgba(0,0,0,.45)}
-  @media(max-width:560px){ .fl{margin-top:-32px;border-top-left-radius:20px;border-top-right-radius:20px} }
-  .fl__in{max-width:1240px;margin:0 auto;
-    padding:clamp(72px,9vw,130px) 0 calc(clamp(72px,9vw,120px) + clamp(46px,5.6vw,78px))}
-  .fl__head{padding:0 clamp(20px,5vw,64px)}
-  /* 入口グラマーB系: 数字が先に立つ */
-  .fl__big{display:flex;align-items:baseline;gap:clamp(10px,1.6vw,22px);color:#2E4600}
-  .fl__big b{font-family:var(--fn,"Inter",sans-serif);font-weight:200;
-    font-size:clamp(4rem,2.4rem + 7vw,8.2rem);line-height:.9;letter-spacing:-.02em}
-  .fl__big svg{width:clamp(30px,4vw,52px);height:auto;color:var(--gold);align-self:center}
-  .fl__bigl{margin-left:clamp(8px,1.6vw,20px);font-family:var(--fh);font-weight:500;
-    font-size:clamp(.86rem,.8rem + .4vw,1.05rem);letter-spacing:.22em;color:#5A544C;align-self:center}
-  .fl__h2s{margin-top:clamp(18px,2.4vw,28px);font-family:var(--fh);font-weight:500;
-    font-size:clamp(1.05rem,.95rem + .6vw,1.4rem);letter-spacing:.06em;line-height:1.9;color:#241F1B}
-  .fl__lead{margin-top:clamp(14px,2vw,22px);max-width:640px;font-size:.95rem;line-height:2.2;letter-spacing:.03em;color:#5A544C}
-  .fl__nw{display:inline-block}
-  /* 道のりストリップ */
-  .fl__scroller{margin-top:clamp(36px,4.8vw,58px);overflow-x:auto;overscroll-behavior-x:contain;
-    scroll-snap-type:x proximity;scroll-padding-left:clamp(20px,5vw,64px);-webkit-overflow-scrolling:touch;
-    scrollbar-width:thin;scrollbar-color:rgba(72,107,0,.4) transparent}
-  .fl__track{display:flex;gap:0;padding:0 clamp(20px,5vw,64px) 18px;width:max-content}
-  .fl__step{position:relative;scroll-snap-align:start;flex:0 0 auto;width:clamp(218px,24vw,264px);
-    padding:0 clamp(18px,2vw,26px) 0 0;display:flex;flex-direction:column;gap:10px}
-  /* 道: 番号の高さを貫く緑の線 */
-  .fl__step::before{content:"";position:absolute;left:0;right:0;top:21px;height:2px;
-    background:linear-gradient(to right,rgba(72,107,0,.35),rgba(72,107,0,.18))}
-  .fl__step:last-child::before{right:40%}
-  .fl__no{position:relative;z-index:1;width:44px;height:44px;border-radius:50%;
-    background:#F4F1EA;border:2px solid #486B00;display:grid;place-items:center;
-    font-family:var(--fn,"Inter",sans-serif);font-weight:500;font-size:1rem;color:#2E4600}
-  .fl__t{font-family:var(--fh);font-weight:500;font-size:clamp(.98rem,.94rem + .3vw,1.1rem);letter-spacing:.04em;line-height:1.6}
-  .fl__d{font-size:.8rem;line-height:1.95;letter-spacing:.02em;color:#5A544C;padding-right:8px}
-  .fl__d b{font-weight:500;color:#8a6a1f}
-  .fl__hint{margin-top:10px;padding:0 clamp(20px,5vw,64px);font-family:var(--fn,"Inter",sans-serif);
-    font-size:.62rem;letter-spacing:.18em;color:#8D857A;text-transform:uppercase}
-  .fl__links{margin-top:clamp(26px,3.4vw,38px);padding:0 clamp(20px,5vw,64px)}
-  .fl__more{display:inline-flex;align-items:center;gap:8px;font-family:var(--fh);font-weight:500;
-    font-size:.88rem;letter-spacing:.04em;color:#2E4600;padding:5px 0;
-    border-bottom:1px solid rgba(72,107,0,.35);transition:border-color .25s}
-  .fl__more:hover{border-bottom-color:#2E4600}
-  .fl__more svg{width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none}
+  .fl{--fl-paper:#F6F4EE;--fl-muted:rgba(246,244,238,.68);--fl-line:rgba(246,244,238,.19);--fl-red:#DE2638;
+    position:relative;isolation:isolate;overflow:hidden;scroll-margin-top:84px;background:#161719;color:var(--fl-paper);font-family:var(--fh);font-synthesis:none}
+  .fl::before{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;
+    background:linear-gradient(90deg,rgba(13,14,16,.92) 0%,rgba(19,20,22,.66) 48%,rgba(12,13,15,.91) 100%),
+      radial-gradient(ellipse at 72% 18%,rgba(222,38,56,.12),transparent 35rem),
+      url("assets/lineup/lineup-graphite-plaster-adobe-stock-1876146463-2560.webp") center/cover no-repeat;
+    filter:saturate(.48) contrast(1.04) brightness(.71)}
+  .fl::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.42;
+    background:linear-gradient(90deg,transparent 0 8.1%,rgba(246,244,238,.2) 8.1% calc(8.1% + 1px),transparent calc(8.1% + 1px) 100%),
+      linear-gradient(90deg,transparent 0 91.9%,rgba(246,244,238,.16) 91.9% calc(91.9% + 1px),transparent calc(91.9% + 1px) 100%)}
+  .fl__in{max-width:1320px;margin:0 auto;padding:clamp(56px,5vw,72px) clamp(20px,5vw,72px) clamp(52px,5vw,72px)}
+  .fl__head{display:grid;grid-template-columns:minmax(150px,.43fr) minmax(0,1.25fr);gap:clamp(26px,6vw,94px);align-items:end}
+  .fl__eyebrow{display:flex;align-items:center;gap:10px;margin:0;color:var(--fl-red);font-family:var(--font-head);font-size:.68rem;font-weight:500;letter-spacing:.18em}
+  .fl__eyebrow::before{content:"";display:block;width:26px;height:2px;background:currentColor}
+  .fl__count{margin:clamp(18px,2vw,28px) 0 0;font-family:"Inter",sans-serif;font-size:clamp(2.5rem,2rem + 2.8vw,4.6rem);font-weight:300;letter-spacing:-.055em;line-height:.9;color:rgba(246,244,238,.94)}
+  .fl__count i{font-style:normal;color:var(--fl-red);font-size:.36em;vertical-align:middle;margin:0 .24em}
+  .fl__h2s{max-width:760px;margin:0;font-family:var(--fh);font-size:clamp(1.5rem,1.14rem + 1.6vw,2.4rem);font-weight:500;letter-spacing:.07em;line-height:1.48}
+  .fl__lead{max-width:670px;margin:clamp(14px,1.5vw,20px) 0 0;color:var(--fl-muted);font-size:clamp(.8rem,.76rem + .16vw,.94rem);font-weight:400;letter-spacing:.065em;line-height:1.9}
+  .fl__statement{margin:clamp(19px,2vw,28px) 0 0;padding-top:12px;border-top:1px solid var(--fl-line);font-family:var(--font-head);font-size:clamp(.73rem,.68rem + .15vw,.84rem);font-weight:500;letter-spacing:.12em;color:rgba(246,244,238,.88)}
+  .fl__statement b{color:var(--fl-red);font-family:"Inter",sans-serif;font-size:.72em;letter-spacing:.18em;margin-right:10px}
+  .fl__stages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:clamp(38px,4vw,52px);border-top:1px solid var(--fl-line);border-bottom:1px solid var(--fl-line)}
+  .fl__stage{position:relative;min-height:206px;padding:clamp(22px,2vw,28px) clamp(18px,2.2vw,30px) clamp(22px,2vw,28px);display:flex;flex-direction:column}
+  .fl__stage+.fl__stage{border-left:1px solid var(--fl-line)}
+  .fl__stage::after{content:"";position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--fl-red),transparent 72%);opacity:.86}
+  .fl__no{display:block;font-family:"Inter",sans-serif;font-size:.68rem;font-weight:500;letter-spacing:.18em;color:var(--fl-red)}
+  .fl__t{display:block;max-width:16em;margin-top:18px;font-family:var(--fh);font-size:clamp(.98rem,.89rem + .34vw,1.16rem);font-weight:500;letter-spacing:.07em;line-height:1.65}
+  .fl__d{display:block;max-width:31em;margin-top:10px;color:var(--fl-muted);font-size:clamp(.72rem,.68rem + .12vw,.8rem);font-weight:400;letter-spacing:.045em;line-height:1.82}
+  .fl__proof{margin-top:auto;padding-top:13px;font-size:.68rem;font-weight:500;letter-spacing:.06em;line-height:1.6;color:rgba(246,244,238,.88)}
+  .fl__proof::before{content:"";display:inline-block;width:5px;height:5px;margin:0 7px 1px 0;border-radius:50%;background:var(--fl-red)}
+  .fl__foot{display:flex;align-items:center;justify-content:space-between;gap:26px;margin-top:clamp(22px,2.5vw,32px)}
+  .fl__cta{display:inline-flex;align-items:center;gap:12px;min-height:48px;padding:0 0 2px;border-bottom:1px solid rgba(246,244,238,.5);font-family:var(--fh);font-size:clamp(.86rem,.82rem + .16vw,.96rem);font-weight:500;letter-spacing:.07em;transition:border-color .25s,color .25s}
+  .fl__cta:hover{border-bottom-color:var(--fl-red);color:#fff}
+  .fl__cta svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8}
+  .fl__all{color:var(--fl-muted);font-family:var(--font-head);font-size:.74rem;letter-spacing:.07em}
+  .fl__all summary{display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none;padding:12px 0;user-select:none}
+  .fl__all summary::-webkit-details-marker{display:none}
+  .fl__all summary::after{content:"＋";font-size:1.05rem;color:var(--fl-red)}
+  .fl__all[open] summary::after{content:"−"}
+  .fl__all ol{display:grid;grid-template-columns:repeat(2,max-content);gap:7px 24px;margin:5px 0 0;padding:15px 0 0;border-top:1px solid var(--fl-line);list-style-position:inside;color:rgba(246,244,238,.83);line-height:1.7}
   .fl-rv{opacity:0;transform:translateY(14px)}
   .fl-rv.is-in{opacity:1;transform:none;transition:opacity .6s cubic-bezier(.25,1,.5,1),transform .6s cubic-bezier(.25,1,.5,1)}
+  @media(max-width:780px){
+    .fl__in{padding-top:64px}.fl__head{grid-template-columns:1fr;gap:28px}.fl__count{margin-top:14px}.fl__h2s{max-width:15em}
+    .fl__stages{grid-template-columns:1fr;margin-top:44px}.fl__stage{min-height:0;padding:25px 4px 28px}.fl__stage+.fl__stage{border-left:0;border-top:1px solid var(--fl-line)}
+    .fl__t{margin-top:16px}.fl__proof{margin-top:16px}.fl__foot{align-items:flex-start;flex-direction:column;gap:10px}.fl__all ol{grid-template-columns:1fr;gap:5px}
+  }
   @media(max-width:760px){ .fl-rv{transform:translateY(8px)} }
   @media(prefers-reduced-motion:reduce){ .fl-rv{opacity:1!important;transform:none!important;transition:none!important} }
 </style>
 <section class="fl" id="flow" aria-label="家づくりの流れ">
   <div class="fl__in">
     <div class="fl__head">
-      <div class="fl__big fl-rv" aria-hidden="true"><b>1</b><svg viewBox="0 0 46 16"><path d="M0 8h42M36 2l7 6-7 6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg><b>10</b><span class="fl__bigl">家づくりの流れ</span></div>
-      <h2 class="fl__h2s fl-rv"><span class="fl__nw">土地探しからお引き渡しまで、</span><span class="fl__nw">この順番で進みます。</span></h2>
-      <p class="fl__lead fl-rv"><span class="fl__nw">はじめての方がイメージしやすいように、10の段階にまとめました。</span><span class="fl__nw">それぞれの段階で何をするかは、</span><span class="fl__nw">担当者が毎回ご説明します。</span></p>
-    </div>
-    <div class="fl__scroller fl-rv"><!-- 工程・期間=現サイト「やまとの家づくり」原文 -->
-      <div class="fl__track">
-        <div class="fl__step"><span class="fl__no">1</span><span class="fl__t"><span class="fl__nw">土地探し・</span><span class="fl__nw">モデルハウス見学</span></span><span class="fl__d">自社分譲地からも、お探しの土地からも始められます。</span></div>
-        <div class="fl__step"><span class="fl__no">2</span><span class="fl__t">住宅ローン事前審査</span><span class="fl__d">無理のない資金計画を先に<span style="display:inline-block;white-space:nowrap">固めます。</span></span></div>
-        <div class="fl__step"><span class="fl__no">3</span><span class="fl__t">土地の売買契約</span><span class="fl__d">土地を押さえて、家づくりの土台を確保します。</span></div>
-        <div class="fl__step"><span class="fl__no">4</span><span class="fl__t">間取りの打ち合わせ</span><span class="fl__d"><b>期間：約3ヶ月。</b>当社の設計士と一緒に進めます。</span></div>
-        <div class="fl__step"><span class="fl__no">5</span><span class="fl__t">建物工事の請負契約</span><span class="fl__d">プランと金額に納得いただいてから契約します。</span></div>
-        <div class="fl__step"><span class="fl__no">6</span><span class="fl__t">仕様の打ち合わせ</span><span class="fl__d"><b>期間：約2ヶ月。</b>ショールームで実物を見て選びます。</span></div>
-        <div class="fl__step"><span class="fl__no">7</span><span class="fl__t">地盤調査・地盤改良</span><span class="fl__d">改良が必要になった場合、<b>費用は当社負担</b>です。</span></div>
-        <div class="fl__step"><span class="fl__no">8</span><span class="fl__t">着工・上棟</span><span class="fl__d"><b>工事は3ヶ月以内。</b>並行して外構の打ち合わせも始まります。</span></div>
-        <div class="fl__step"><span class="fl__no">9</span><span class="fl__t">完成・建物チェック</span><span class="fl__d">お客様と一緒に、仕上がりを確認します。</span></div>
-        <div class="fl__step"><span class="fl__no">10</span><span class="fl__t">お引き渡し</span><span class="fl__d">ここからが、本当のお付き合いの<span style="display:inline-block;white-space:nowrap">始まりです。</span></span></div>
+      <div class="fl-rv">
+        <p class="fl__eyebrow">PROCESS ／ 家づくりの流れ</p>
+        <p class="fl__count" aria-hidden="true">01<i>—</i>03</p>
+      </div>
+      <div class="fl-rv">
+        <h2 class="fl__h2s">ご契約前に、<br>間取り・仕様・金額を確認します。</h2>
+        <p class="fl__lead">土地と資金の計画から、間取り・仕様の確認、着工、お引渡しまで。各段階で確認する内容を、順を追ってご説明します。</p>
+        <p class="fl__statement"><b>CONTRACT CHECK</b>内容と金額に納得いただいてから、ご契約へ進みます。</p>
       </div>
     </div>
-    <p class="fl__hint">Drag / Scroll →</p>
-    <div class="fl__links fl-rv">
-      <a class="fl__more" href="kodawari.html">価格・設計・アフターのこだわりを見る<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="fl__stages fl-rv">
+      <article class="fl__stage"><span class="fl__no">01</span><h3 class="fl__t">土地と資金を、<br>先に整える。</h3><p class="fl__d">土地探し・モデルハウス見学と、住宅ローンの事前審査から。自社分譲地でも、お探しの土地でも始められます。</p></article>
+      <article class="fl__stage"><span class="fl__no">02</span><h3 class="fl__t">間取り・仕様・金額を、<br>契約前に確認する。</h3><p class="fl__d">設計士と間取りを、ショールームで仕様を確認。内容と金額に納得いただいてからご契約へ進みます。</p></article>
+      <article class="fl__stage"><span class="fl__no">03</span><h3 class="fl__t">建てて、確かめて、<br>お引渡し。</h3><p class="fl__d">地盤調査・地盤改良、着工、完成チェックを経てお引渡し。住み始めてからのお付き合いも、ここから続きます。</p><p class="fl__proof">完成時は、お客様と一緒に仕上がりを確認</p></article>
+    </div>
+    <div class="fl__foot fl-rv">
+      <a class="fl__cta" href="contact.html?type=reserve">土地探しから相談する<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <details class="fl__all"><summary>全10工程を確認する</summary><ol><li>土地探し・モデルハウス見学</li><li>住宅ローン事前審査</li><li>土地の売買契約</li><li>間取りの打ち合わせ</li><li>建物工事の請負契約</li><li>仕様の打ち合わせ</li><li>地盤調査・地盤改良</li><li>着工・上棟</li><li>完成・建物チェック</li><li>お引渡し</li></ol></details>
     </div>
   </div>
 </section>
@@ -3528,13 +3649,6 @@
 <!-- ============ enh- 新設5セクションの演出層（JS死亡/reduced-motionで無傷・?pm=offで停止） ============ -->
 <style>
   /* ---- ゲート: html.enh が付いた時だけ初期状態を仕込む（基礎のqp-rv等は温存） ---- */
-  /* fl: 工程の点灯とドラッグ */
-  .fl__scroller{cursor:grab}
-  .fl__scroller.is-grab{cursor:grabbing;scroll-snap-type:none}
-  .fl__no{transition:background .45s,color .45s,border-color .45s}
-  .fl__step.is-on .fl__no{background:#486B00;border-color:#486B00;color:#F4F1EA}
-  .fl__step::before{transition:opacity .45s;opacity:.55}
-  .fl__step.is-on::before{opacity:1}
   /* fin: 字間の着地・呼吸する光・ボタン光沢 */
   html.enh .fin h2{letter-spacing:.22em;transition:opacity .9s cubic-bezier(.25,1,.5,1),transform .9s cubic-bezier(.25,1,.5,1),letter-spacing 1.2s cubic-bezier(.25,1,.5,1)}
   html.enh .fin h2.is-in{letter-spacing:.1em}
@@ -3590,47 +3704,6 @@
         setTimeout(function(){ count(tn,parseInt(m[2],10),0,900,m[1]); }, i*140);
       });
     },{threshold:.5}).observe(ltf);
-  }
-
-  /* ---- fl: 通過点灯＋入場ナッジ＋ドラッグスクロール ---- */
-  var sc=document.querySelector('.fl__scroller');
-  if(sc){
-    var track=sc.querySelector('.fl__track');
-    var steps=sc.querySelectorAll('.fl__step');
-    var touched=false, nudging=false;
-    function paint(){
-      var r=sc.getBoundingClientRect(), mid=r.left+r.width*.55;
-      steps.forEach(function(st){
-        var no=st.querySelector('.fl__no').getBoundingClientRect();
-        st.classList.toggle('is-on', no.left < mid);
-      });
-    }
-    sc.addEventListener('scroll',function(){ if(!nudging) touched=true; requestAnimationFrame(paint); },{passive:true});
-    new IntersectionObserver(function(es,o){
-      if(!es[0].isIntersecting) return; o.disconnect();
-      paint();
-      /* ひと撫でのナッジ（触られる前だけ） */
-      setTimeout(function(){
-        if(touched || sc.scrollLeft>4) return;
-        /* ネイティブsmoothの往復＝scroll-snapと衝突しない */
-        nudging=true;
-        sc.scrollTo({left:76,behavior:'smooth'});
-        setTimeout(function(){ if(!touched) sc.scrollTo({left:0,behavior:'smooth'}); },650);
-        /* 終端保証: smoothが環境要因で完走しなくても必ず原点へ */
-        setTimeout(function(){ if(!touched) sc.scrollLeft=0; nudging=false; },1500);
-      },700);
-    },{threshold:.4}).observe(sc);
-    /* ドラッグ（|dx|>5でキャプチャ=クリック温存の教訓） */
-    var down=false,cap=false,sx=0,sl=0,pid=null;
-    sc.addEventListener('pointerdown',function(e){ down=true;cap=false;sx=e.clientX;sl=sc.scrollLeft;pid=e.pointerId; });
-    sc.addEventListener('pointermove',function(e){
-      if(!down) return;
-      var dx=e.clientX-sx;
-      if(!cap && Math.abs(dx)>5){ cap=true; sc.classList.add('is-grab'); try{sc.setPointerCapture(pid);}catch(_){}}
-      if(cap){ sc.scrollLeft=sl-dx; touched=true; }
-    });
-    function up(){ down=false; if(cap){ cap=false; sc.classList.remove('is-grab'); } }
-    sc.addEventListener('pointerup',up); sc.addEventListener('pointercancel',up);
   }
 
   /* ---- fq: 開閉の高さアニメ ---- */
@@ -3940,7 +4013,7 @@
   .usp{padding-bottom:clamp(96px,13vw,190px)!important}
   .iju__stage{border-radius:0!important}
   .iju__bin{padding-bottom:clamp(56px,7vw,96px)!important}
-  .fl__in{padding-bottom:clamp(72px,9vw,120px)!important}
+  .fl__in{padding-bottom:clamp(56px,5vw,80px)!important}
   .fq__in{padding-bottom:clamp(100px,13vw,180px)!important}
   .fin__in{padding-bottom:clamp(80px,10vw,130px)!important}
   .sb-social{padding-bottom:clamp(58px,8vh,100px)!important}
@@ -4416,50 +4489,9 @@
       scrollTrigger:{trigger:'#lots',start:'top bottom',end:'bottom top',scrub:SCRUB}});
   }
 
-  /* ---------- 9.5) お客様の声：投函の所作（左列の静かな入場＋「50通」カウント＋朱印スタンプ） ---------- */
+  /* ---------- 9.5) お客様の声：可読性を優先。バナーはCSSだけでループし、本文は常時表示 ---------- */
   var vc=d.getElementById('voice');
-  if(vc){
-    var vcLeft=vc.querySelector('.vc__in > div:first-child');
-    var vcEls=vcLeft?[].slice.call(vcLeft.children):[];
-    if(vcEls.length) gsap.set(vcEls,{autoAlpha:0,y:26});
-    var vcEm=vc.querySelector('h2 em');
-    var vcEntered=false, vcStamped=false;
-    /* カードはfetch描画＝マークが存在した時点で初期隠し（未描画なら何もしない＝JS競合安全） */
-    var vcHideMarks=function(){
-      var ms=vc.querySelectorAll('.vc__mark');
-      if(ms.length && !vcStamped) gsap.set(ms,{autoAlpha:0,scale:1.45,rotation:7,transformOrigin:'50% 50%'});
-      return ms;
-    };
-    var vcStamp=function(){
-      if(vcStamped) return;
-      var ms=vcHideMarks(); if(!ms.length) return;
-      vcStamped=true;
-      /* 判子の所作：加速して落ち、わずかに沈んで戻る（跳ねない） */
-      gsap.to(ms,{keyframes:[
-        {autoAlpha:1,scale:.96,rotation:0,duration:.42,ease:'power3.in'},
-        {scale:1,duration:.26,ease:'power2.out'}
-      ],stagger:.18,delay:.55});
-    };
-    var fan=d.getElementById('vcFan');
-    if(fan){
-      if(fan.children.length){ vcHideMarks(); }
-      else if('MutationObserver' in window){
-        var fanMo=new MutationObserver(function(){
-          if(!fan.children.length) return;
-          fanMo.disconnect();
-          vcHideMarks();
-          if(vcEntered) vcStamp();
-        });
-        fanMo.observe(fan,{childList:true});
-      }
-    }
-    ScrollTrigger.create({trigger:vc,start:'top 76%',once:true,onEnter:function(){
-      vcEntered=true;
-      if(vcEls.length) gsap.to(vcEls,{autoAlpha:1,y:0,duration:1.05,ease:EASE,stagger:.12});
-      if(vcEm) gsap.delayedCall(.4,function(){ countUp(vcEm,1.25); });
-      vcStamp();
-    }});
-  }
+  if(vc) vc.classList.add('is-vcin');
 
   /* ---------- 9.55) iju: 平日の鉄道41分を一つの連続した帰路として見せる。
        車はスクロール旅程に混ぜず、到着後の「休日の移動」情報面へ分離する。 ---------- */
