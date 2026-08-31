@@ -2833,7 +2833,7 @@
   .iju__rail-journey{position:relative;transition:opacity .38s ease,transform .38s ease}
   .iju__route-line{position:absolute;left:4px;right:4px;top:4px;height:1px;background:rgba(244,241,234,.25)}
   .iju__route-fill{display:block;width:100%;height:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--amber),var(--jade))}
-  .iju__stops{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin:0;padding:0;list-style:none}
+  .iju__stops{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;margin:0;padding:0;list-style:none}
   .iju__stop{position:relative;padding:19px 8px 0;text-align:center;color:rgba(244,241,234,.48);transition:color .25s ease}
   .iju__stop:first-child{text-align:left;padding-left:0}
   .iju__stop:last-child{text-align:right;padding-right:0}
@@ -2883,7 +2883,7 @@
   .iju__duration strong{color:var(--inkB);font-family:var(--fn);font-size:clamp(3.5rem,2.7rem + 3.2vw,5.1rem);font-weight:300;line-height:.82;letter-spacing:-.045em}
   .iju__duration span{padding-bottom:2px;color:var(--grn);font-family:var(--fmin);font-size:.72rem;font-weight:500;line-height:1.7;letter-spacing:.08em}
   .iju__duration small{display:block;color:var(--ea);font-family:var(--fn);font-size:8px;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
-  .iju__waypoints{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:25px 0 0;padding:0;border-top:1px solid rgba(36,31,27,.14);list-style:none}
+  .iju__waypoints{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:25px 0 0;padding:0;border-top:1px solid rgba(36,31,27,.14);list-style:none}
   .iju__waypoints li{padding:12px 10px 0;color:#504A43;font-family:var(--fmin);font-size:.74rem;line-height:1.55;letter-spacing:.04em}
   .iju__waypoints li:first-child{padding-left:0}.iju__waypoints li+li{border-left:1px solid rgba(36,31,27,.12)}
   .iju__waypoints time{display:block;color:var(--inkB);font-family:var(--fn);font-size:.76rem;font-variant-numeric:tabular-nums;letter-spacing:.06em}
@@ -2953,6 +2953,9 @@
     .iju__copy{bottom:105px}.iju__phase{margin-bottom:8px}.iju__journey-title{font-size:clamp(1.35rem,4.8vh,2rem)}.iju__journey-deck{margin-top:6px;line-height:1.5}
     .iju__concept-note{bottom:72px}.iju__journey{bottom:12px}.iju__stop{padding-top:14px}.iju__stop span{margin-top:3px}
   }
+  @media(max-width:350px){
+    .iju__intro h2{font-size:1.24rem;letter-spacing:.045em}
+  }
   @media(prefers-reduced-motion:reduce){
     .iju__scene,.iju__scene img,.iju__stop,.iju__stop::before,.iju__skip,.iju__rail-journey{transition:none!important}
     .iju__skip{display:none}
@@ -2960,7 +2963,7 @@
 </style>
 <section class="iju" id="iju" aria-label="奈良に住むという選択・大阪京都への通勤">
 
-  <!-- 幕1: 大阪難波から近鉄奈良へ。スクロールを奪わず、41分の帰路を連続して見せる -->
+  <!-- 幕1: 大阪難波から近鉄奈良へ。スクロールを奪わず、快速急行の運行例を連続して見せる -->
   <div class="iju__stage" id="ijuStage">
     <div class="iju__hud">
       <span class="iju__eyebrow">Move to Nara ／ 奈良に住むという選択</span>
@@ -3008,53 +3011,55 @@
     <div class="iju__copy" aria-hidden="true">
       <p class="iju__phase" id="ijuPhase">Osaka Namba ／ Departure</p>
       <h2 class="iju__journey-title" id="ijuTitle">大阪難波から、近鉄奈良へ。</h2>
-      <p class="iju__journey-deck" id="ijuDeck">平日の快速急行は、乗り換えなしです。</p>
+      <p class="iju__journey-deck" id="ijuDeck">快速急行なら、乗り換えなしです。</p>
     </div>
 
     <p class="iju__concept-note" id="ijuConcept">車窓・駅周辺の背景は、鉄道移動を表現した生成コンセプトです。</p>
     <a class="iju__skip" href="#ijuDetails">電車の旅程を飛ばして、移動情報を見る</a>
 
     <div class="iju__journey" id="ijuJourney" aria-hidden="true">
-      <div class="iju__mode">TRAIN <b>平日・快速急行</b></div>
+      <div class="iju__mode">TRAIN <b>快速急行・乗換なし</b></div>
       <div class="iju__rail-journey">
         <span class="iju__route-line"><i class="iju__route-fill" id="ijuRouteFill"></i></span>
         <ol class="iju__stops">
           <li class="iju__stop is-active"><time>18:27</time><span>大阪難波</span></li>
-          <li class="iju__stop"><time>18:33</time><span>鶴橋</span></li>
-          <li class="iju__stop"><time>18:50</time><span>生駒</span></li>
-          <li class="iju__stop"><time>19:02</time><span>大和西大寺</span></li>
+          <li class="iju__stop"><time>18:32</time><span>鶴橋</span></li>
+          <li class="iju__stop"><time>18:49</time><span>生駒</span></li>
+          <li class="iju__stop"><time>19:00</time><span>大和西大寺</span></li>
+          <li class="iju__stop"><time>19:05</time><span>新大宮</span></li>
           <li class="iju__stop"><time>19:08</time><span>近鉄奈良</span></li>
         </ol>
       </div>
     </div>
-    <p class="iju__sr">平日18時27分に大阪難波駅を出発する快速急行は、鶴橋、生駒、大和西大寺を経て、19時08分に近鉄奈良駅へ到着します。所要時間は41分です。</p>
+    <p class="iju__sr">18時27分に大阪難波駅を出発する快速急行の一例では、鶴橋、生駒、大和西大寺、新大宮を経て、19時08分に近鉄奈良駅へ到着します。所要時間は41分です。</p>
     <span class="iju__grain" aria-hidden="true"></span>
   </div>
 
-  <!-- 幕2: 平日の電車通勤と休日の車移動を、目的別に明確に分ける -->
+  <!-- 幕2: 電車通勤と休日の車移動を、目的別に明確に分ける -->
   <div class="iju__board" id="ijuDetails">
     <div class="iju__bin">
       <header class="iju__intro iju-rv">
-        <p class="iju__intro-kicker">Weekday &amp; Weekend Access</p>
-        <h2><span>平日の大阪通勤は電車。</span><span>休日の移動は車。</span></h2>
-        <p class="iju__intro-lead">大阪難波から近鉄奈良までは、平日の快速急行で41分。休日は中町ICから第二阪奈道路を利用して大阪方面へ移動できます。</p>
+        <p class="iju__intro-kicker">Train &amp; Car Access</p>
+        <h2><span>大阪方面への通勤は電車。</span><span>休日の移動は車。</span></h2>
+        <p class="iju__intro-lead">大阪難波から近鉄奈良までは、快速急行で乗り換えなし。掲載の列車例は41分です。車では、中町IC・宝来ICから第二阪奈道路を利用できます。</p>
       </header>
 
       <div class="iju__compact iju-rv">
         <section class="iju__access" aria-labelledby="ijuAccessLabel">
-          <p class="iju__micro" id="ijuAccessLabel"><span>平日の通勤 ／ 電車</span><span>Direct ／ 乗換なし</span></p>
+          <p class="iju__micro" id="ijuAccessLabel"><span>通勤 ／ 電車</span><span>Direct ／ 乗換なし</span></p>
           <div class="iju__route-summary">
             <div class="iju__station"><b>大阪難波</b><time datetime="18:27">18:27</time></div>
             <span class="iju__route-rule" aria-hidden="true"></span>
             <div class="iju__station"><b>近鉄奈良</b><time datetime="19:08">19:08</time></div>
           </div>
-          <div class="iju__duration"><strong>41</strong><span><small>Minutes</small>分 ／ 平日の一例</span></div>
+          <div class="iju__duration"><strong>41</strong><span><small>Minutes</small>分 ／ 運行例</span></div>
           <ol class="iju__waypoints" aria-label="途中駅の到着時刻">
-            <li><time datetime="18:33">18:33</time>鶴橋</li>
-            <li><time datetime="18:50">18:50</time>生駒</li>
-            <li><time datetime="19:02">19:02</time>大和西大寺</li>
+            <li><time datetime="18:32">18:32</time>鶴橋</li>
+            <li><time datetime="18:49">18:49</time>生駒</li>
+            <li><time datetime="19:00">19:00</time>大和西大寺</li>
+            <li><time datetime="19:05">19:05</time>新大宮</li>
           </ol>
-          <p class="iju__compact-note">近鉄公式ダイヤ（2026年3月14日変更）で確認した平日の一例です。列車種別・運行状況により変わります。<a href="https://eki.kintetsu.co.jp/norikae/T7?dw=0&amp;sf=5213&amp;tx=1-5226" target="_blank" rel="noopener noreferrer">近鉄公式で確認</a></p>
+          <p class="iju__compact-note">掲載時刻は、近鉄公式ダイヤで確認した快速急行の一例です。時刻・運行状況はご利用前に公式情報をご確認ください。<a href="https://eki.kintetsu.co.jp/norikae/T7?dw=0&amp;sf=5213&amp;tx=1-5226" target="_blank" rel="noopener noreferrer">近鉄公式で確認</a></p>
         </section>
 
         <section class="iju__drive" aria-labelledby="ijuDriveTitle">
@@ -3068,9 +3073,9 @@
             </picture>
           </div>
           <div class="iju__drive-body">
-            <h3 id="ijuDriveTitle"><span class="iju__nobr">中町ICから、</span><br><span class="iju__nobr">なんば出口まで約30分。</span></h3>
-            <p class="iju__drive-copy">第二阪奈道路・阪神高速を利用する目安です。一般道の所要時間と渋滞時間は含みません。</p>
-            <p class="iju__compact-note">標準所要時間（約27分）を30分に丸めた目安です。道路画像は移動場面を表現した生成コンセプトです。</p>
+            <h3 id="ijuDriveTitle"><span class="iju__nobr">中町IC・宝来ICから、</span><br><span class="iju__nobr">第二阪奈道路で大阪方面へ。</span></h3>
+            <p class="iju__drive-copy">奈良市内では中町IC・宝来ICを利用できます。中町ICからなんば出口までは、第二阪奈道路・阪神高速を利用して約30分が目安です。</p>
+            <p class="iju__compact-note">所要時間は出発地点・交通状況により変わります。一般道の移動時間は含みません。道路画像は移動場面を表現した生成コンセプトです。</p>
           </div>
         </section>
       </div>
@@ -4537,7 +4542,7 @@
   var vc=d.getElementById('voice');
   if(vc) vc.classList.add('is-vcin');
 
-  /* ---------- 9.55) iju: 平日の鉄道41分を一つの連続した帰路として見せる。
+  /* ---------- 9.55) iju: 快速急行の運行例を一つの連続した帰路として見せる。
        車はスクロール旅程に混ぜず、到着後の「休日の移動」情報面へ分離する。 ---------- */
   var iju=d.getElementById('iju'), ijuStage=d.getElementById('ijuStage');
   if(iju&&ijuStage){
@@ -4561,12 +4566,13 @@
       jWarm.observe(ijuStage);
     }
     var jBeats=[
-      {at:0,phase:'Osaka Namba ／ Departure',title:'大阪難波から、近鉄奈良へ。',deck:'平日の快速急行は、乗り換えなしです。',cap:'大阪難波',clock:'18:27',stop:0},
+      {at:0,phase:'Osaka Namba ／ Departure',title:'大阪難波から、近鉄奈良へ。',deck:'快速急行なら、乗り換えなしです。',cap:'大阪難波',clock:'18:27',stop:0},
       {at:.15,phase:'Rail Access ／ 41 Minutes',title:'近鉄奈良まで、41分。',deck:'大阪で働きながら、奈良の一戸建てを検討できます。',cap:'乗換なし',clock:'18:27',stop:0},
-      {at:.32,phase:'Tsuruhashi ／ First Stop',title:'鶴橋まで、6分。',deck:'快速急行は、そのまま近鉄奈良方面へ進みます。',cap:'鶴橋',clock:'18:33',stop:1},
-      {at:.5,phase:'Ikoma ／ 23 Minutes',title:'生駒まで、23分。',deck:'大阪難波から、乗り換えはありません。',cap:'生駒',clock:'18:50',stop:2},
-      {at:.68,phase:'Yamato-Saidaiji ／ 6 Minutes Left',title:'大和西大寺から近鉄奈良まで、6分。',deck:'近鉄奈良まで、あと一駅です。',cap:'大和西大寺',clock:'19:02',stop:3,compact:true},
-      {at:.84,phase:'Kintetsu Nara ／ Arrival',title:'近鉄奈良に到着。',deck:'大阪難波から41分。平日ダイヤの一例です。',cap:'近鉄奈良',clock:'19:08',stop:4}
+      {at:.32,phase:'Tsuruhashi ／ 5 Minutes',title:'鶴橋まで、5分。',deck:'快速急行は、そのまま近鉄奈良方面へ進みます。',cap:'鶴橋',clock:'18:32',stop:1},
+      {at:.5,phase:'Ikoma ／ 22 Minutes',title:'生駒まで、22分。',deck:'大阪難波から、乗り換えはありません。',cap:'生駒',clock:'18:49',stop:2},
+      {at:.66,phase:'Yamato-Saidaiji ／ 8 Minutes Left',title:'大和西大寺から近鉄奈良まで、8分。',deck:'新大宮に停車して、近鉄奈良へ向かいます。',cap:'大和西大寺',clock:'19:00',stop:3,compact:true},
+      {at:.77,phase:'Shin-Omiya ／ 3 Minutes Left',title:'新大宮から近鉄奈良まで、3分。',deck:'次が近鉄奈良です。',cap:'新大宮',clock:'19:05',stop:4,compact:true},
+      {at:.88,phase:'Kintetsu Nara ／ Arrival',title:'近鉄奈良に到着。',deck:'大阪難波から41分。快速急行の運行例です。',cap:'近鉄奈良',clock:'19:08',stop:5}
     ];
     var jBeat=-1;
     function jClamp(v){ return Math.max(0,Math.min(1,v)); }
@@ -4582,7 +4588,7 @@
       gsap.fromTo([jPhase,jTitle,jDeck],{autoAlpha:0,y:10},{autoAlpha:1,y:0,duration:.42,ease:'power2.out',stagger:.035,overwrite:true});
     }
     function jRailProgress(p){
-      var points=[[0,0],[.32,.146],[.5,.561],[.68,.854],[.84,1],[1,1]],i;
+      var points=[[0,0],[.32,.122],[.5,.537],[.66,.805],[.77,.927],[.88,1],[1,1]],i;
       for(i=1;i<points.length;i++) if(p<=points[i][0]){
         var a=points[i-1],b=points[i],t=(p-a[0])/(b[0]-a[0]);
         return a[1]+(b[1]-a[1])*jClamp(t);
