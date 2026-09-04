@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preload" as="image" href="assets/std/cover_sp_1080.webp" media="(max-width:820px)">
+<link rel="preload" as="image" href="assets/std/cover_pc_1920.webp" media="(min-width:821px)">
 <title>家づくりのこだわり｜株式会社やまと不動産</title>
 <meta name="description" content="ご契約の金額のまま、家が建ちます。標準仕様、間取りの決め方、建てたあとの保証まで。やまとの家づくりの中身を、良いことも気をつけたい点も正直にまとめました。">
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
@@ -65,7 +67,17 @@
     box-shadow:0 6px 22px rgba(196,133,31,.28);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
   .hd__cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(196,133,31,.36)}
   .hd__cta svg{width:13px;height:13px;stroke:#fff;stroke-width:2;fill:none}
-  @media(max-width:560px){ .hd__back{display:none} .hd__kk{display:none} }
+  @media(max-width:560px){
+    .hd{padding-right:10px;padding-left:12px;gap:7px}
+    .hd__back{display:none}
+    .hd__kk{display:none}
+    .hd__brand{gap:7px}
+    .hd__mark{height:24px}
+    .hd__jp{font-size:.92rem;letter-spacing:.06em}
+    .hd__cta{min-height:44px;margin-left:auto;padding:10px 11px;font-size:.72rem;gap:6px}
+    .hd__cta svg{display:none}
+    .hd__burger{width:44px;height:44px;flex-basis:44px}
+  }
 
   /* ============ ハンバーガー＋サイトメニュー（index.htmlの.menuを移植） ============ */
   body.is-locked{overflow:hidden}
@@ -409,6 +421,7 @@
       display:inline-flex;align-items:center}
   }
 </style>
+<link rel="stylesheet" href="assets/catalog/catalog-hero.css">
 </head>
 <body>
 
@@ -506,16 +519,249 @@
   </div>
 </div>
 
-<!-- ヒーロー -->
-<section class="hero" id="hero">
-  <div class="hero__bg" aria-hidden="true"><img src="assets/kodawari/hero_evening.jpg" alt="" fetchpriority="high"></div>
-  <div class="hero__scrim" aria-hidden="true"></div>
-  <div class="hero__in">
-    <span class="eyebrow">Quality ／ 家づくりのこだわり</span>
-    <h1><span style="display:inline-block">良いことも、</span><span style="display:inline-block">悪いことも、</span><br><em>正直にお伝えします。</em></h1>
-    <p class="hero__lead">やまとの家づくりの中身を、このページにまとめました。価格の考え方から標準仕様、間取りの決め方、そして建てたあとのことまで、順にご紹介します。良いことばかりでなく、気をつけていただきたい点も、隠さず書いています。</p>
-  </div>
+<!-- デジタルカタログFV -->
+<section class="fvs" id="top" role="region" aria-label="花鳥風月 やまとの家 デジタルカタログ">
+  <h1 class="fvs__sr-only">やまと不動産の家づくりのこだわり</h1>
+  <article class="fvs__scene fvs__scene--cover is-active" data-name="表紙" aria-hidden="false">
+    <div class="catalog-cover catalog-cover--motion">
+      <picture>
+        <source media="(max-width:820px)" type="image/webp" srcset="assets/std/cover_sp_1080.webp 1080w, assets/std/cover_sp_1440.webp 1440w" sizes="calc(100vw - 18px)">
+        <img src="assets/std/cover_pc_1920.webp" srcset="assets/std/cover_pc_1920.webp 1920w, assets/std/cover_pc_2560.webp 2560w" sizes="89vw" alt="深紅の和紙に金の牡丹と燕を箔押しした、花鳥風月 やまとの家の表紙" fetchpriority="high" decoding="async">
+      </picture>
+      <video class="catalog-cover__motion" autoplay muted playsinline preload="auto" aria-hidden="true"><source media="(max-width:820px)" src="assets/catalog/cover-opening-mobile-v3.mp4?v=clean-alpha-20260830" type="video/mp4"><source media="(min-width:821px)" src="assets/catalog/cover-opening-desktop-v3.mp4?v=clean-alpha-20260830" type="video/mp4"></video>
+      <div class="catalog-cover__title" aria-hidden="true"><small>やまとの家</small><strong>花鳥風月</strong><i>Yamato House</i></div>
+      <span class="catalog-cover__label">Yamato House Collection</span>
+      <button class="catalog-cover__skip" id="catOpeningSkip" type="button">表紙を見る</button>
+      <button class="catalog-cover__replay" id="catOpeningReplay" type="button">もう一度見る</button>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="やまとの家" aria-hidden="true">
+    <div class="catalog-sheet">
+      <div class="spread spread--message">
+        <div class="spread__half catalog-photo"><img src="assets/std/living_1920.webp" srcset="assets/std/living_1100.webp 1100w, assets/std/living_1920.webp 1920w, assets/std/living_2560.webp 2560w" sizes="46vw" alt="木目の天井と建具をそろえたリビング" decoding="async"><span class="catalog-caption">Living / Standard &amp; Design</span></div>
+        <div class="spread__half spread__copy"><p class="catalog-kicker">01 — Price &amp; Standard</p><h2 class="catalog-title">建物本体価格と<br>標準仕様を確認。</h2><span class="catalog-rule"></span><p class="catalog-copy">標準仕様・設備・構造・保証・建物本体価格を商品別に掲載。選択内容と別途費用は、ご契約前のお見積もりで確認します。<small class="catalog-note">※写真にはシリーズ別仕様・選択仕様を含みます。実際の仕様は商品ページと打ち合わせでご確認ください。</small></p><div class="catalog-photo catalog-photo--detail" aria-hidden="true"><img src="assets/std/living_1100.webp" alt=""></div></div>
+      </div><span class="catalog-no">02 / 13</span>
+    </div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="花・京・風" aria-hidden="true">
+    <div class="catalog-sheet"><div class="series-grid">
+      <section class="series-card" style="--series-color:#C64A00"><img src="assets/lineup/hero/hana_ext.webp" alt="深い軒と木の質感を生かした花シリーズの外観" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">花</h2><span class="series-card__en">HANA</span><i class="series-card__line"></i><p class="series-card__note">31坪・4LDKの最上位モデル。建物本体価格2,680万円（税込・土地別途）。</p></div></section>
+      <section class="series-card" style="--series-color:#7D4B4F"><img src="assets/lineup/hero/kyo_det.webp" alt="京シリーズの素材と設備のディテール" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">京</h2><span class="series-card__en">KYOU</span><i class="series-card__line"></i><p class="series-card__note">限られた敷地を生かす28坪・3LDK。建物本体価格2,480万円（税込・土地別途）。</p></div></section>
+      <section class="series-card" style="--series-color:#908600"><img src="assets/lineup/hero/kaze_ext.webp" alt="切妻屋根と赤い玄関ドアが印象的な風シリーズの外観" loading="lazy" decoding="async"><div class="series-card__body"><h2 class="series-card__name">風</h2><span class="series-card__en">KAZE</span><i class="series-card__line"></i><p class="series-card__note">30坪・4LDKの標準モデル。建物本体価格2,680万円（税込・土地別途）。</p></div></section>
+    </div><span class="catalog-no">03 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="キッチン" aria-hidden="true">
+    <div class="catalog-sheet"><div class="equipment">
+      <div class="catalog-photo equipment__hero"><picture><source type="image/avif" srcset="assets/std/kitchen_1100.avif 1100w, assets/std/kitchen_1920.avif 1920w, assets/std/kitchen_2560.avif 2560w" sizes="58vw"><img src="assets/std/kitchen_1920.webp" alt="間接照明と木目の下がり天井を備えた対面キッチン" loading="lazy" decoding="async"></picture><span class="catalog-caption">Kitchen / Cleanup</span></div>
+      <div class="equipment__side"><div><p class="catalog-kicker">02 — Equipment</p><h2 class="catalog-title">キッチンの<br>標準仕様。</h2></div><div class="catalog-photo equipment__detail" aria-hidden="true"><img src="assets/std/kitchen_1100.webp" alt=""></div><p class="catalog-copy">花・京はクリナップ STEDIA、風はES。レイアウトは商品別です。</p></div>
+    </div><span class="catalog-no">04 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="水まわり" aria-hidden="true">
+    <div class="catalog-sheet"><div class="water-grid">
+      <div class="catalog-photo"><img src="assets/std/bath_1920.webp" srcset="assets/std/bath_1100.webp 1100w, assets/std/bath_1920.webp 1920w, assets/std/bath_2560.webp 2560w" sizes="55vw" alt="木目調の壁と横長ミラーを備えた浴室" loading="lazy" decoding="async"><span class="catalog-caption">Bathroom</span></div>
+      <div class="catalog-photo"><picture><source type="image/avif" srcset="assets/std/vanity_1100.avif 1100w, assets/std/vanity_1920.avif 1920w"><img src="assets/std/vanity_1920.webp" alt="三面鏡と収納を備えた洗面化粧台" loading="lazy" decoding="async"></picture><span class="catalog-caption">Vanity</span></div>
+      <div class="water-grid__copy"><p class="catalog-kicker">03 — Water Area</p><h2 class="catalog-title">浴室・洗面・トイレの<br>標準仕様。</h2><p class="catalog-copy">設備と選択肢は商品別です。</p></div>
+    </div><span class="catalog-no">05 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="内装" aria-hidden="true">
+    <div class="catalog-sheet"><div class="interior-grid">
+      <div class="interior-grid__lead catalog-photo"><img src="assets/std/living_1920.webp" alt="木目の建具と床をそろえたリビング" loading="lazy" decoding="async"><div class="interior-grid__title"><p class="catalog-kicker" style="color:#F1D57D">04 — Interior</p><h2 class="catalog-title">建具・床・畳の<br>標準仕様。</h2><p class="catalog-copy" style="color:rgba(255,255,255,.82)">建具・床の組み合わせは商品別。和紙畳も選べます。</p></div></div>
+      <div class="interior-grid__small catalog-photo"><img src="assets/std/walltex_1920.webp" alt="陰影のある外壁材のディテール" loading="lazy" decoding="async"><span class="catalog-caption">Material Detail</span></div>
+      <div class="interior-grid__small catalog-photo"><img src="assets/std/washitsu_1920.webp" alt="半畳縁なし畳を敷いた和室" loading="lazy" decoding="async"><span class="catalog-caption">Tatami</span></div>
+    </div><span class="catalog-no">06 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="玄関・外装" aria-hidden="true">
+    <div class="catalog-sheet"><div class="entrance-grid">
+      <div class="entrance-grid__lead catalog-photo"><img src="assets/std/entrance_1920.webp" srcset="assets/std/entrance_1100.webp 1100w, assets/std/entrance_1920.webp 1920w, assets/std/entrance_2560.webp 2560w" sizes="58vw" alt="木目の玄関ドアと格子を組み合わせたポーチ" loading="lazy" decoding="async"><span class="catalog-caption">Entrance / GIESTA2</span></div>
+      <div class="entrance-grid__copy"><p class="catalog-kicker">05 — Exterior</p><h2 class="catalog-title">玄関・窓・外壁・屋根の<br>標準仕様。</h2><span class="catalog-rule"></span><p class="catalog-copy">玄関ドア・窓・外壁・屋根・軒天は商品別です。</p></div>
+      <div class="entrance-grid__detail catalog-photo"><img src="assets/std/nokiten_1920.webp" alt="木目の軒天と外壁の取り合い" loading="lazy" decoding="async"><span class="catalog-caption">Eaves Detail</span></div>
+    </div><span class="catalog-no">07 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="構造・断熱" aria-hidden="true">
+    <div class="catalog-sheet catalog-sheet--red"><div class="structure-grid">
+      <div class="structure-grid__copy"><p class="catalog-kicker" style="color:#F1D57D">06 — Performance</p><h2 class="catalog-title">三シリーズ共通の<br>構造・断熱性能。</h2><span class="catalog-rule"></span><p class="catalog-copy">耐震等級3相当。全棟をwallstatで検証。断熱材はアクアフォームLITEです。</p><div class="catalog-fact"><b>01</b><span>耐震または制振を設計段階で検討</span></div><div class="catalog-fact"><b>02</b><span>外壁通気工法・パワーボードを共通仕様に採用</span></div></div>
+      <div class="structure-grid__visual"><div class="catalog-photo"><img src="assets/std/walltex_1920.webp" alt="ヘーベルパワーボード外壁の深い陰影" loading="lazy" decoding="async"><span class="catalog-caption">Hebel Powerboard</span></div><div class="catalog-photo"><img src="assets/std/miraie_1920.webp" alt="耐震または制振を検討するための構造部材" loading="lazy" decoding="async"><span class="catalog-caption">Seismic Design</span></div><div class="catalog-photo"><img src="assets/std/houses770_persp.png" alt="家づくりの積み重ねを表す金箔の家型図版" loading="lazy" decoding="async"></div></div>
+    </div><span class="catalog-no">08 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="完全自由設計" aria-hidden="true">
+    <div class="catalog-sheet"><div class="design-grid">
+      <div class="design-grid__meeting catalog-photo"><img src="assets/jiyu/meeting.webp" alt="設計士と図面を囲む打ち合わせ" loading="lazy" decoding="async"><span class="catalog-caption">Planning Meeting</span></div>
+      <div class="design-grid__copy"><p class="catalog-kicker">07 — Free Design</p><h2 class="catalog-title">設計士が、初回から同席。</h2><span class="catalog-rule"></span><p class="catalog-copy">敷地・隣地・採光・動線とご要望をもとに、間取りを設計します。</p></div>
+      <div class="design-grid__plans"><img src="assets/jiyu/wc_plan_1f.webp" alt="1階の水彩平面図" loading="lazy" decoding="async"><img src="assets/jiyu/wc_plan_2f.webp" alt="2階の水彩平面図" loading="lazy" decoding="async"></div>
+    </div><span class="catalog-no">09 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="土地・設計・施工・アフター" aria-hidden="true">
+    <div class="catalog-sheet"><div class="process-grid">
+      <div class="process-grid__left"><div class="catalog-photo"><img src="assets/jiyu/wc_exterior.webp" alt="実在する花シリーズの家を描いた水彩外観" loading="lazy" decoding="async"><span class="catalog-caption">Built House / Watercolor</span></div><div class="catalog-photo is-plan"><img src="assets/jiyu/wc_site_sketch.webp" alt="敷地の光と視線を検討するための概念図" loading="lazy" decoding="async"><span class="catalog-caption" style="color:#4b4033;text-shadow:none">Concept Sketch</span></div></div>
+      <div class="process-grid__copy"><p class="catalog-kicker">08 — One Team</p><h2 class="catalog-title">土地の仕入れから、<br>設計・施工・アフターまで。</h2><span class="catalog-rule"></span><p class="catalog-copy">各担当が一つのチームで情報を共有します。</p><div class="process-steps"><div class="process-step"><b>01 / LAND</b><span>敷地と周辺環境を確認</span></div><div class="process-step"><b>02 / DESIGN</b><span>動線、採光、要望を整理</span></div><div class="process-step"><b>03 / BUILD</b><span>設計意図を施工へ共有</span></div><div class="process-step"><b>04 / AFTER</b><span>保証・点検へ情報を引き継ぐ</span></div></div><p class="catalog-copy" style="margin-top:12px;font-size:.68rem">※敷地図は考え方を示す概念図です。</p></div>
+    </div><span class="catalog-no">10 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="保証・アフター" aria-hidden="true">
+    <div class="catalog-sheet"><div class="warranty-grid">
+      <div class="catalog-photo"><img src="assets/std/auth_ext_1920.webp" srcset="assets/std/auth_ext_1100.webp 1100w, assets/std/auth_ext_1920.webp 1920w, assets/std/auth_ext_2560.webp 2560w" sizes="52vw" alt="やまと不動産が手がけた住宅の外観" loading="lazy" decoding="async"><span class="catalog-caption">Aftercare &amp; Warranty</span></div>
+      <div class="warranty-grid__copy"><p class="catalog-kicker">09 — Warranty</p><h2 class="catalog-title">保証・検査・<br>アフターフォロー。</h2><span class="catalog-rule"></span><p class="catalog-copy">保証年数・検査時期・延長条件は契約前に明示します。</p><div class="warranty-facts"><div class="catalog-fact"><b>01</b><span>10年ごとの有償延長。所定の点検・メンテナンス等を条件に最長30年。</span></div><div class="catalog-fact"><b>02</b><span>しろあり保証10年。</span></div><div class="catalog-fact"><b>03</b><span>第三者機関が基礎配筋・躯体構造を2回検査。</span></div><div class="catalog-fact"><b>04</b><span>売却・相続時の保証承継に対応（有償）。</span></div></div></div>
+    </div><span class="catalog-no">11 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="3シリーズの仕様" aria-hidden="true">
+    <div class="catalog-sheet"><div class="spec-grid">
+      <div class="spec-grid__intro"><p class="catalog-kicker">10 — Specification</p><h2 class="catalog-title">三シリーズの<br>共通仕様と選択設備。</h2><span class="catalog-rule"></span><p class="catalog-copy">共通仕様と商品別設備を比較できます。</p><div class="catalog-fact"><b>ALL</b><span>外壁・屋根・断熱・給湯・地盤保証・建物保証・アフターフォローは三シリーズ共通。地震対策は耐震または制振から検討します。</span></div></div>
+      <div class="spec-grid__series"><div class="spec-line" style="--series-color:#C64A00"><div class="spec-line__name">花</div><p class="spec-line__text">STEDIA デュアルトップ／I型／KT、ジエスタ2 親子ドア＋顔認証。</p></div><div class="spec-line" style="--series-color:#7D4B4F"><div class="spec-line__name">京</div><p class="spec-line__text">STEDIA I型／KT、ジエスタ2 片開き＋FamiLock。</p></div><div class="spec-line" style="--series-color:#908600"><div class="spec-line__name">風</div><p class="spec-line__text">ES、ジエスタ2片開き＋FamiLock、サーモスL＋シャッター付。</p></div></div>
+    </div><span class="catalog-no">12 / 13</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--pc" data-catalog-layout="pc" data-name="次のご案内" aria-hidden="true">
+    <div class="catalog-sheet catalog-sheet--red"><div class="closing"><img class="closing__art" src="assets/std/art_swallows_t.webp" alt=""><div class="closing__body"><p class="catalog-kicker" style="color:#F1D57D">Yamato House Collection</p><h2 class="catalog-title">標準仕様を、<br>モデルハウスで確認。</h2><span class="catalog-rule" style="margin:20px auto"></span><p class="catalog-copy">標準仕様・自由設計・建物本体価格を確認できます。</p><div class="closing__actions"><a class="catalog-cta catalog-cta--fill" href="contact.html?type=reserve">モデルハウスを予約</a><a class="catalog-cta" href="contact.html?type=docs">資料を請求</a><a class="catalog-cta" href="#price">サイト本編を見る</a></div></div></div><span class="catalog-no">13 / 13</span></div>
+  </article>
+
+  <!-- SP専用編集版: PC見開きを縮小せず、一面一メッセージで20面へ再編集 -->
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-message" data-toc="やまとの家" data-name="やまとの家" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/message-living-sp-1080.avif"><img src="assets/catalog/mobile/message-living-sp-1080.webp" alt="木目の建具と間接照明を備えたリビング" loading="lazy" decoding="async"></picture><span class="spcat__caption">Living / Standard &amp; Design</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">01 — Price &amp; Standard</span><h2 class="spcat__title">建物本体価格と<br>標準仕様を確認。</h2><p class="spcat__body">標準仕様・設備・構造・保証・建物本体価格を商品別に掲載。選択内容と別途費用は、ご契約前のお見積もりで確認します。<small class="catalog-note">※写真にはシリーズ別仕様・選択仕様を含みます。実際の仕様は商品ページと打ち合わせでご確認ください。</small></p></div>
+    </div><span class="catalog-no">02 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-series-index" data-toc="花・京・風" data-name="花・京・風" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--index">
+      <div class="spcat__indexhead"><span class="spcat__kicker">Yamato House Collection</span><h2 class="spcat__title">花・京・風。<br>三つの住宅シリーズ。</h2><p class="spcat__body">広さ・間取り・設備・建物本体価格で選べます。</p></div>
+      <div class="spcat__index"><div class="spcat__indexrow" style="--series-color:#C64A00"><b>花</b><span>31坪・4LDK／最上位モデル</span></div><div class="spcat__indexrow" style="--series-color:#7D4B4F"><b>京</b><span>28坪・3LDK／限られた敷地に</span></div><div class="spcat__indexrow" style="--series-color:#908600"><b>風</b><span>30坪・4LDK／標準モデル</span></div></div>
+    </div><span class="catalog-no">03 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-series-hana" data-toc-child data-name="花" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--series" style="--series-color:#C64A00">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/series-hana-sp-1080.avif"><img src="assets/catalog/mobile/series-hana-sp-1080.webp" alt="深い軒と木の質感を生かした花シリーズの外観" loading="lazy" decoding="async"></picture></div>
+      <div class="spcat__copy"><div class="spcat__series-mark"><strong>花</strong><span>HANA</span></div><p class="spcat__body">31坪・4LDKの最上位モデル。建物本体価格2,680万円（税込・土地別途）。</p></div>
+    </div><span class="catalog-no">04 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-series-kyo" data-toc-child data-name="京" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--series" style="--series-color:#7D4B4F">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/series-kyo-sp-1080.avif"><img src="assets/catalog/mobile/series-kyo-sp-1080.webp" alt="京シリーズで選べる木目の玄関ドアのディテール" loading="lazy" decoding="async"></picture></div>
+      <div class="spcat__copy"><div class="spcat__series-mark"><strong>京</strong><span>KYOU</span></div><p class="spcat__body">限られた敷地を生かす28坪・3LDK。建物本体価格2,480万円（税込・土地別途）。</p></div>
+    </div><span class="catalog-no">05 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-series-kaze" data-toc-child data-name="風" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--series" style="--series-color:#908600">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/series-kaze-sp-1080.avif"><img src="assets/catalog/mobile/series-kaze-sp-1080.webp" alt="切妻屋根と赤い玄関ドアが印象的な風シリーズの外観" loading="lazy" decoding="async"></picture></div>
+      <div class="spcat__copy"><div class="spcat__series-mark"><strong>風</strong><span>KAZE</span></div><p class="spcat__body">30坪・4LDKの標準モデル。建物本体価格2,680万円（税込・土地別途）。</p></div>
+    </div><span class="catalog-no">06 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-kitchen" data-toc="設備" data-name="キッチン" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/equipment-kitchen-sp-1080.avif"><img src="assets/catalog/mobile/equipment-kitchen-sp-1080.webp" alt="間接照明と木目の下がり天井を備えた対面キッチン" loading="lazy" decoding="async"></picture><span class="spcat__caption">Kitchen / Cleanup</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">02 — Equipment</span><h2 class="spcat__title">キッチンの<br>標準仕様。</h2><p class="spcat__body">花・京はクリナップ STEDIA、風はES。レイアウトは商品別です。</p></div>
+    </div><span class="catalog-no">07 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-bath" data-toc-child data-name="浴室" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/water-bath-sp-1080.avif"><img src="assets/catalog/mobile/water-bath-sp-1080.webp" alt="木目調の壁と横長ミラーを備えた浴室" loading="lazy" decoding="async"></picture><span class="spcat__caption">Bathroom</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">03 — Water Area</span><h2 class="spcat__title">浴室の<br>標準仕様。</h2><p class="spcat__body">浴槽・壁柄・カウンターは商品別です。</p></div>
+    </div><span class="catalog-no">08 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-vanity" data-toc-child data-name="洗面・トイレ" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/water-vanity-sp-1080.avif"><img src="assets/catalog/mobile/water-vanity-sp-1080.webp" alt="三面鏡と収納を備えた洗面化粧台" loading="lazy" decoding="async"></picture><span class="spcat__caption">Vanity</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">03 — Water Area</span><h2 class="spcat__title">洗面・トイレの<br>標準仕様。</h2><p class="spcat__body">洗面化粧台とトイレは商品別です。</p></div>
+    </div><span class="catalog-no">09 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-interior" data-toc="内装・外装" data-name="内装" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/interior-tatami-sp-1080.avif"><img src="assets/catalog/mobile/interior-tatami-sp-1080.webp" alt="半畳縁なし畳と縦長窓を備えた和室" loading="lazy" decoding="async"></picture><span class="spcat__caption">Interior / Tatami</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">04 — Interior</span><h2 class="spcat__title">建具・床・畳の<br>標準仕様。</h2><p class="spcat__body">建具・床の組み合わせは商品別。和紙畳も選べます。</p></div>
+    </div><span class="catalog-no">10 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-exterior" data-toc-child data-name="玄関・外装" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/exterior-entrance-sp-1080.avif"><img src="assets/catalog/mobile/exterior-entrance-sp-1080.webp" alt="木目の軒天と格子、玄関ドアを組み合わせたポーチ" loading="lazy" decoding="async"></picture><span class="spcat__caption">Entrance / GIESTA2</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">05 — Exterior</span><h2 class="spcat__title">玄関・窓・外壁・屋根の<br>標準仕様。</h2><p class="spcat__body">玄関ドア・窓・外壁・屋根・軒天は商品別です。</p></div>
+    </div><span class="catalog-no">11 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-performance-door" data-toc="性能" data-name="性能" aria-hidden="true">
+    <div class="catalog-sheet catalog-sheet--red"><div class="spcat spcat--chapter"><img class="spcat__foil" src="assets/std/art_swallows_t.webp" alt=""><div><span class="spcat__kicker" style="color:#F1D57D">06 — Performance</span><h2 class="spcat__title">三シリーズ共通の<br>構造・断熱性能。</h2><span class="spcat__rule" style="margin:18px auto"></span><p class="spcat__body">耐震・制振、断熱、外壁の共通仕様を掲載します。</p></div></div><span class="catalog-no">12 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-seismic" data-toc-child data-name="地震対策" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--evidence">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/performance-structure-sp-1080.avif"><img src="assets/catalog/mobile/performance-structure-sp-1080.webp" alt="耐震または制振を検討するための構造部材" loading="lazy" decoding="async"></picture><span class="spcat__caption">Seismic Design</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">Structure</span><h2 class="spcat__title">耐震または制振を、<br>設計士と検討。</h2><p class="spcat__body">耐震等級3相当。wallstatで全棟の倒壊リスクを確認します。</p><p class="spcat__body" style="font-size:.875rem">※掲載部材の標準範囲は契約前に確認します。</p></div>
+    </div><span class="catalog-no">13 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-common-performance" data-toc-child data-name="断熱・共通仕様" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--evidence">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/performance-wall-sp-1080.avif"><img src="assets/catalog/mobile/performance-wall-sp-1080.webp" alt="ヘーベルパワーボード外壁の深い陰影" loading="lazy" decoding="async"></picture><span class="spcat__caption">Hebel Powerboard</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">Common Standard</span><h2 class="spcat__title">三シリーズ共通の<br>断熱・外壁仕様。</h2><div class="spcat__facts"><div class="spcat__fact"><b>01</b><span>断熱材 アクアフォームLITE</span></div><div class="spcat__fact"><b>02</b><span>外壁通気工法・パワーボード</span></div><div class="spcat__fact"><b>03</b><span>地盤保証・建物保証・アフターフォロー</span></div></div></div>
+    </div><span class="catalog-no">14 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-free-design" data-toc="自由設計" data-name="完全自由設計" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--photo-copy">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/design-meeting-sp-1080.avif"><img src="assets/catalog/mobile/design-meeting-sp-1080.webp" alt="設計士と図面を囲む打ち合わせ" loading="lazy" decoding="async"></picture><span class="spcat__caption">Planning Meeting</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">07 — Free Design</span><h2 class="spcat__title">設計士が、初回から同席。</h2><p class="spcat__body">敷地・隣地・採光・動線とご要望をもとに、間取りを設計します。</p></div>
+    </div><span class="catalog-no">15 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-plans" data-toc-child data-name="敷地と間取り" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--plans spcat--copy-first">
+      <div class="spcat__copy"><span class="spcat__kicker">Site Planning</span><h2 class="spcat__title">敷地条件に合わせた<br>間取り設計。</h2><p class="spcat__body">敷地の形状、隣地、採光、動線を確認して設計します。</p></div>
+      <div class="spcat__plans"><figure><img src="assets/jiyu/wc_plan_1f.webp" alt="1階の水彩平面図" loading="lazy" decoding="async"><figcaption>1F Plan</figcaption></figure><figure><img src="assets/jiyu/wc_plan_2f.webp" alt="2階の水彩平面図" loading="lazy" decoding="async"><figcaption>2F Plan</figcaption></figure></div>
+    </div><span class="catalog-no">16 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-one-team" data-toc="土地・設計・施工・アフター" data-name="土地・設計・施工・アフター" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--process">
+      <div class="spcat__pair"><div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/process-exterior-sp-1080.avif"><img src="assets/catalog/mobile/process-exterior-sp-1080.webp" alt="実在する花シリーズの家を描いた水彩外観" loading="lazy" decoding="async"></picture></div><div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/process-site-sp-1080.avif"><img src="assets/catalog/mobile/process-site-sp-1080.webp" alt="敷地の光と視線を検討する概念図" loading="lazy" decoding="async"></picture></div></div>
+      <div class="spcat__copy"><span class="spcat__kicker">08 — One Team</span><h2 class="spcat__title">土地の仕入れから、<br>設計・施工・アフターまで。</h2><p class="spcat__body">各担当が一つのチームで情報を共有します。</p><div class="spcat__steps"><div class="spcat__step"><b>01 / LAND</b><span>敷地と周辺環境を確認</span></div><div class="spcat__step"><b>02 / DESIGN</b><span>動線、採光、要望を整理</span></div><div class="spcat__step"><b>03 / BUILD</b><span>設計意図を施工へ共有</span></div><div class="spcat__step"><b>04 / AFTER</b><span>保証・点検へ情報を引き継ぐ</span></div></div><p class="spcat__body" style="font-size:.875rem">※右図は考え方を示す概念図です。</p></div>
+    </div><span class="catalog-no">17 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-warranty" data-toc="保証・仕様" data-name="保証・アフター" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--evidence">
+      <div class="spcat__media"><picture><source type="image/avif" srcset="assets/catalog/mobile/warranty-house-sp-1080.avif"><img src="assets/catalog/mobile/warranty-house-sp-1080.webp" alt="やまと不動産が手がけた住宅の外観" loading="lazy" decoding="async"></picture><span class="spcat__caption">Aftercare &amp; Warranty</span></div>
+      <div class="spcat__copy"><span class="spcat__kicker">09 — Warranty</span><h2 class="spcat__title">保証・検査・<br>アフターフォロー。</h2><div class="spcat__facts"><div class="spcat__fact"><b>01</b><span>10年ごとの有償延長と所定の点検等を条件に最長30年</span></div><div class="spcat__fact"><b>02</b><span>しろあり保証10年</span></div><div class="spcat__fact"><b>03</b><span>第三者機関が基礎配筋・躯体構造を2回検査</span></div><div class="spcat__fact"><b>04</b><span>売却・相続時の保証承継に対応（有償）</span></div></div></div>
+    </div><span class="catalog-no">18 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-specification" data-toc-child data-name="3シリーズの仕様" aria-hidden="true">
+    <div class="catalog-sheet spcat-sheet"><div class="spcat spcat--spec">
+      <div class="spcat__indexhead"><span class="spcat__kicker">10 — Specification</span><h2 class="spcat__title">三シリーズの<br>共通仕様と選択設備。</h2></div>
+      <div class="spcat__spec"><div class="spcat__specrow"><b>共通</b><span>外壁・屋根・断熱・給湯・保証・アフターフォロー。地震対策は耐震または制振。</span></div><div class="spcat__specrow" style="--series-color:#C64A00"><b>花</b><span>STEDIA各種、ジエスタ2親子ドア＋顔認証。</span></div><div class="spcat__specrow" style="--series-color:#7D4B4F"><b>京</b><span>STEDIA I型／KT、ジエスタ2片開き＋FamiLock。</span></div><div class="spcat__specrow" style="--series-color:#908600"><b>風</b><span>ES、ジエスタ2片開き＋FamiLock、サーモスL＋シャッター付。</span></div></div>
+    </div><span class="catalog-no">19 / 20</span></div>
+  </article>
+
+  <article class="fvs__scene fvs__scene--sp" data-catalog-layout="sp" data-page-id="sp-closing" data-toc="次のご案内" data-name="次のご案内" aria-hidden="true">
+    <div class="catalog-sheet catalog-sheet--red"><div class="spcat spcat--closing"><img class="spcat__foil" src="assets/std/art_swallows_t.webp" alt=""><div><span class="spcat__kicker" style="color:#F1D57D">Yamato House Collection</span><h2 class="spcat__title">標準仕様を、<br>モデルハウスで確認。</h2><span class="spcat__rule" style="margin:16px auto"></span><p class="spcat__body">標準仕様・自由設計・建物本体価格を確認できます。</p><div class="spcat__actions"><a class="catalog-cta catalog-cta--fill" href="contact.html?type=reserve">モデルハウスを予約</a><a class="catalog-cta" href="contact.html?type=docs">資料を請求</a><a class="catalog-cta" href="#price">サイト本編を見る</a></div></div></div><span class="catalog-no">20 / 20</span></div>
+  </article>
+
+  <a class="fvs__exit" href="#price" aria-label="サイト本編へ進む">本編へ</a>
+  <p class="fvs__count" aria-live="polite"><span id="catNow">01</span> / <span id="catAll">13</span></p>
+  <div class="fvs__ui" role="group" aria-label="カタログ操作"><button class="fvs__navbtn fvs__navbtn--prev" id="catPrev" type="button" aria-label="前のページ" disabled><span class="fvs__nav-arrow" aria-hidden="true">←</span></button><button class="fvs__tocbtn" id="catTocOpen" type="button" aria-haspopup="dialog" aria-controls="catToc">目次</button><button class="fvs__navbtn fvs__navbtn--next" id="catNext" type="button" aria-label="次のページ"><span class="fvs__nav-word" aria-hidden="true">次へ</span><span class="fvs__nav-arrow" aria-hidden="true">→</span></button></div>
+  <p class="fvs__scrollcue" aria-hidden="true">縦スクロールで本編へ</p>
 </section>
+
+<dialog class="fvs__toc" id="catToc" aria-labelledby="catTocTitle">
+  <div class="fvs__tochead"><h2 id="catTocTitle">カタログ目次</h2><button class="fvs__tocclose" id="catTocClose" type="button" aria-label="目次を閉じる">×</button></div>
+  <ol class="fvs__toclist" id="catTocList"></ol>
+</dialog>
 
 <!-- 章インデックス -->
 <nav class="idx" aria-label="章">
@@ -704,12 +950,11 @@
   }
 
   /* ヘッダー透過⇄白地 */
-  var hd=d.getElementById('hd'), hero=d.getElementById('hero');
+  var hd=d.getElementById('hd'), hero=d.querySelector('section.fvs');
   if('IntersectionObserver' in window){
     new IntersectionObserver(function(es){ hd.classList.toggle('is-solid',!es[0].isIntersecting); },
       {rootMargin:'-70px 0px 0px 0px'}).observe(hero);
   }
-  requestAnimationFrame(function(){ requestAnimationFrame(function(){ hero.classList.add('is-hin'); }); });
 
   /* 章・要素リビール */
   if('IntersectionObserver' in window && !reduce){
@@ -751,5 +996,6 @@
   menu.querySelectorAll('a[href="#"]').forEach(function(a){ a.addEventListener('click',function(e){e.preventDefault();closeMenu();}); });
 })();
 </script>
+<script src="assets/catalog/catalog-hero.js" defer></script>
 </body>
 </html>
