@@ -1,0 +1,23 @@
+/* Concept illustrations, intentionally separate from the actual kitchen photograph. */
+.art-preview .entry-card__visual--maquette {
+  position: relative;
+  background: #eee8df;
+}
+.art-preview .entry-card__visual--maquette img {
+  display: block;
+  object-position: center;
+}
+.art-preview .entry-card__art-label {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 3px 6px;
+  color: #57534d;
+  background: #f5f0e6;
+  font: 400 11px/1.35 'Noto Sans JP', sans-serif;
+  letter-spacing: .02em;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .art-preview .entry-card__visual--maquette img { transition: none; }
+}

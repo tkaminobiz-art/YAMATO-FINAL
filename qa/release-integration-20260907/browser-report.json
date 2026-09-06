@@ -1,0 +1,240 @@
+{
+  "base": "http://127.0.0.1:4175",
+  "date": "2026-09-06T23:11:02.694Z",
+  "screens": [
+    {
+      "engine": "chromium",
+      "width": 320,
+      "route": "/",
+      "viewport": 320,
+      "document": 320
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "route": "/works.html",
+      "viewport": 320,
+      "document": 320
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "route": "/kodawari.html",
+      "viewport": 320,
+      "document": 320
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "route": "/",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "route": "/works.html",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "route": "/kodawari.html",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "route": "/",
+      "viewport": 768,
+      "document": 768
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "route": "/works.html",
+      "viewport": 768,
+      "document": 768
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "route": "/kodawari.html",
+      "viewport": 768,
+      "document": 768
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "route": "/",
+      "viewport": 1024,
+      "document": 1024
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "route": "/works.html",
+      "viewport": 1024,
+      "document": 1024
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "route": "/kodawari.html",
+      "viewport": 1024,
+      "document": 1024
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "route": "/",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "route": "/works.html",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "route": "/kodawari.html",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "route": "/",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "route": "/works.html",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "route": "/kodawari.html",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "route": "/",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "route": "/works.html",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "route": "/kodawari.html",
+      "viewport": 1440,
+      "document": 1440
+    }
+  ],
+  "interactions": [
+    {
+      "engine": "chromium",
+      "width": 320,
+      "rail": "autoplay, touch pause, previous/next, reduced motion",
+      "atlas": "origin switch and source disclosure"
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "works": "viewer, next, Escape, room filter",
+      "kodawari": "spec tabs, plan pins, catalog contents, next page"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "rail": "autoplay, touch pause, previous/next, reduced motion",
+      "atlas": "origin switch and source disclosure"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "works": "viewer, next, Escape, room filter",
+      "kodawari": "spec tabs, plan pins, catalog contents, next page"
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "rail": "autoplay, touch pause, previous/next, reduced motion",
+      "atlas": "origin switch and source disclosure"
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "works": "viewer, next, Escape, room filter",
+      "kodawari": "spec tabs, plan pins, catalog contents, next page"
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "rail": "autoplay, touch pause, previous/next, reduced motion",
+      "atlas": "origin switch and source disclosure"
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "works": "viewer, next, Escape, room filter",
+      "kodawari": "spec tabs, plan pins, catalog contents, next page"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "rail": "autoplay, touch pause, previous/next, reduced motion",
+      "atlas": "origin switch and source disclosure"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "works": "viewer, next, Escape, room filter",
+      "kodawari": "spec tabs, plan pins, catalog contents, next page"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "rail": "autoplay, touch pause, previous/next, reduced motion",
+      "atlas": "origin switch and source disclosure"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "works": "viewer, next, Escape, room filter",
+      "kodawari": "spec tabs, plan pins, catalog contents, next page"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "rail": "autoplay, touch pause, previous/next, reduced motion",
+      "atlas": "origin switch and source disclosure"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "works": "viewer, next, Escape, room filter",
+      "kodawari": "spec tabs, plan pins, catalog contents, next page"
+    }
+  ],
+  "errors": []
+}

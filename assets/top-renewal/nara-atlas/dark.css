@@ -1,0 +1,54 @@
+/* Approved palette refinement. Scoped to the separate Nara preview. */
+.nara-atlas {
+  --na-surface: #232625;
+  --na-text: #f5f0e6;
+  --na-muted: #c4bfb7;
+  --na-line: #8a8274;
+  --na-accent: #d8c39a;
+  --na-number: #e66350;
+  --na-action: #aa1f24;
+  --na-action-edge: #cb706a;
+  --na-paper: var(--na-surface);
+  --na-ink: var(--na-text);
+  --na-gold: var(--na-accent);
+  --na-red: var(--na-action);
+  color-scheme: dark;
+}
+.nara-atlas::before { mix-blend-mode: soft-light; opacity: .045; }
+.nara-atlas .nara-atlas__eyebrow,
+.nara-atlas .nara-atlas__static-origin,
+.nara-atlas__connection,
+.nara-atlas__source summary span,
+.nara-atlas__secondary svg { color: var(--na-accent); }
+.nara-atlas__switch span { color: var(--na-muted); border-color: var(--na-line); }
+.nara-atlas__switch input:checked + span { color: var(--na-accent); border-color: var(--na-accent); }
+.nara-atlas__switch label:hover span { color: var(--na-text); }
+.nara-atlas__duration { color: var(--na-number); }
+.nara-atlas__duration > span { color: var(--na-muted); }
+.nara-atlas__stations li::before { border-color: var(--na-accent); }
+.nara-atlas__from::before { background: var(--na-accent); }
+.nara-atlas__from::after,
+.nara-atlas__stations::before,
+.nara-atlas.is-spacious-text .nara-atlas__stations { border-color: var(--na-accent); }
+.nara-atlas .nara-atlas__train,
+.nara-atlas__scope > p,
+.nara-atlas__scope .nara-atlas__diagram-note,
+.nara-atlas__home figcaption { color: var(--na-muted); }
+.nara-atlas__source summary,
+.nara-atlas__secondary,
+.nara-atlas.is-spacious-text .nara-atlas__stations li { border-color: var(--na-line); }
+.nara-atlas__source a { color: var(--na-text); }
+.nara-atlas__source a:hover { color: var(--na-accent); }
+.nara-atlas__photo { background: #303432; }
+.nara-atlas__photo-fallback { color: var(--na-text); }
+.nara-atlas__primary {
+  color: var(--na-text);
+  outline: 1px solid var(--na-action-edge);
+  outline-offset: -1px;
+}
+.nara-atlas__primary:hover { background: #b6262c; }
+.nara-atlas__secondary:hover { color: var(--na-accent); }
+.nara-atlas a:focus-visible,
+.nara-atlas summary:focus-visible,
+.nara-atlas__switch input:focus-visible + span { outline: 2px solid var(--na-accent); outline-offset: 5px; }
+.nara-atlas ::selection { background: var(--na-accent); color: var(--na-surface); }

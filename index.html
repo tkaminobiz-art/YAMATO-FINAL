@@ -10,12 +10,23 @@
   <link rel="stylesheet" href="assets/fv_research_20260904/approved-hero.css"><link rel="stylesheet" href="assets/top-renewal/top.css">
   <link rel="stylesheet" href="assets/top-renewal/brand-polish.css">
   <link rel="stylesheet" href="assets/top-renewal/art-direction.css">
+  <link rel="stylesheet" href="assets/top-renewal/material-craft.css?v=20260907-release">
+  <link rel="stylesheet" href="assets/top-renewal/quiet-rails.css?v=20260907-release">
+  <link rel="stylesheet" href="assets/top-renewal/washi-motion.css?v=20260907-release">
+  <link rel="stylesheet" href="assets/top-renewal/deep-photos.css?v=20260907-release">
+  <link rel="stylesheet" href="assets/top-renewal/nara-atlas/atlas.css?v=20260907-release">
+  <link rel="stylesheet" href="assets/top-renewal/nara-atlas/dark.css?v=20260907-release">
+  <link rel="stylesheet" href="assets/top-renewal/guide-maquette/guide.css?v=20260907-release">
+  <script src="assets/top-renewal/quiet-rails.js?v=20260907-release" defer></script>
+  <script src="assets/top-renewal/washi-motion.js?v=20260907-release" defer></script>
+  <script src="assets/top-renewal/deep-photos.js?v=20260907-release" defer></script>
+  <script src="assets/top-renewal/nara-atlas/atlas.js?v=20260907-release" defer></script>
   <link rel="stylesheet" href="assets/top-renewal/voice-proof.css?v=20260906">
   <script src="assets/top-renewal/art-direction.js" defer></script>
   <script src="assets/top-renewal/hero.js" defer></script><script src="assets/top-renewal/top.js" defer></script>
   <link rel="stylesheet" href="assets/top-renewal/built-yamato-evidence.css?v=20260907">
 </head>
-<body class="brand-preview art-preview">
+<body class="brand-preview art-preview material-preview release-integrated" data-quiet-rails data-washi-motion data-top-depth>
 <a class="skip" href="#main">本文へ進む</a>
 <header class="site-header">
   <a class="brand" href="#top" aria-label="株式会社やまと不動産 トップへ"><img src="assets/brand/yamato_mark.svg" alt="" width="53" height="33"><span>やまと不動産</span></a>
@@ -192,12 +203,12 @@
    <a href="model.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11M9 20v-6h6v6"/></svg><b>モデルハウス</b><span>MODEL HOUSE</span></a>
    <a href="kodawari.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-2.8-5.4 2.8 1.2-6L3.3 9.4l6.1-.8Z"/></svg><b>家づくりのこだわり</b><span>OUR WORK</span></a>
   </nav>
-  <div class="entry-heading"><p>家づくりのご案内</p><button class="motion-toggle" id="cardMotion" aria-pressed="false" type="button">動くカードを試す</button></div>
-  <div class="entry-grid" id="entryCards">
+  <div class="entry-heading"><p>家づくりのご案内</p><button class="motion-toggle" id="cardMotion" aria-pressed="false" type="button">自動スクロールを停止</button></div>
+  <div class="entry-grid quiet-rail" id="entryCards" tabindex="0" role="region" aria-label="家づくりのご案内。左右キーでも移動できます">
    <a class="entry-card" href="kodawari.html"><div class="entry-card__visual"><img src="assets/top-renewal/sakyo-kitchen-560.webp" srcset="assets/top-renewal/sakyo-kitchen-560.webp 560w,assets/top-renewal/sakyo-kitchen-840.webp 840w" sizes="(max-width:767px) 46vw,25vw" alt="左京モデルハウスのキッチン" width="840" height="560" loading="lazy"></div><div class="entry-card__body"><span class="eyebrow">OUR CRAFT</span><h3>家づくりのこだわり</h3><p>標準仕様と、費用の仕組み。</p></div></a>
-   <a class="entry-card" href="lots-preview.html?view=list"><div class="entry-card__visual"><div class="entry-diagram" aria-hidden="true"><svg viewBox="0 0 240 140"><path d="m23 84 87-55 107 33-85 58Z M49 68l105 33M79 48l105 34M147 41 64 96M179 52l-86 55"/><path d="m26 104 105 31 87-52M20 93l4 1M214 74l4-2"/><path d="M125 49V30l18-10 21 7v18m-39-15 21 7 18-10m-18 10v17"/></svg></div></div><div class="entry-card__body"><span class="eyebrow">LAND &amp; HOMES</span><h3>物件一覧</h3><p>奈良・京都南部の土地を探す。</p></div></a>
-   <a class="entry-card" href="lots-preview.html?view=estimate"><div class="entry-card__visual"><div class="entry-diagram entry-diagram--estimate" aria-hidden="true"><svg viewBox="0 0 240 140"><rect x="68" y="12" width="102" height="116" rx="3"/><path d="M81 28h76v26H81zM82 72h14m16 0h14m16 0h14M82 92h14m16 0h14m16 0h14M82 112h14m16 0h14m16 0h14"/><path d="M35 41v36m-18-18h36M190 79h28m-28 10h28"/></svg></div></div><div class="entry-card__body"><span class="eyebrow">PAYMENT PLAN</span><h3>お支払い<br>シミュレーション</h3><p>土地と建物の、月々の返済額を試算。</p></div></a>
-   <a class="entry-card" href="move-to-nara-preview.html"><div class="entry-card__visual"><div class="entry-diagram entry-diagram--train" aria-hidden="true"><svg viewBox="0 0 240 140"><path d="M23 97h194"/><circle cx="32" cy="97" r="5" fill="#e1e5df"/><circle cx="92" cy="97" r="5" fill="#e1e5df"/><circle cx="151" cy="97" r="5" fill="#e1e5df"/><circle cx="210" cy="97" r="5" fill="#e1e5df"/><rect x="83" y="19" width="73" height="62" rx="9"/><path d="M93 32h53v23H93zM98 67h9m25 0h9M99 81l-10 11m50-11 10 11M110 25h20"/></svg></div></div><div class="entry-card__body"><span class="eyebrow">MOVE TO NARA</span><h3>奈良からの通勤</h3><p>大阪への電車と、休日の車移動。</p></div></a>
+   <a class="entry-card" href="lots-preview.html?view=list"><div class="entry-card__visual entry-card__visual--maquette"><img src="assets/top-renewal/guide-maquette/land-640.webp" srcset="assets/top-renewal/guide-maquette/land-320.webp 320w, assets/top-renewal/guide-maquette/land-640.webp 640w, assets/top-renewal/guide-maquette/land-960.webp 960w" sizes="(max-width:767px) 76.3vw, (max-width:1200px) 45vw, 300px" alt="土地選びを表す、敷地と住宅の模型風イラスト" width="1448" height="1086" loading="lazy" decoding="async"><span class="entry-card__art-label">イラスト</span></div><div class="entry-card__body"><span class="eyebrow">LAND &amp; HOMES</span><h3>物件一覧</h3><p>奈良・京都南部の土地を探す。</p></div></a>
+   <a class="entry-card" href="lots-preview.html?view=estimate"><div class="entry-card__visual entry-card__visual--maquette"><img src="assets/top-renewal/guide-maquette/payment-640.webp" srcset="assets/top-renewal/guide-maquette/payment-320.webp 320w, assets/top-renewal/guide-maquette/payment-640.webp 640w, assets/top-renewal/guide-maquette/payment-960.webp 960w" sizes="(max-width:767px) 76.3vw, (max-width:1200px) 45vw, 300px" alt="住宅の支払い試算を表す、家と電卓の模型風イラスト" width="1448" height="1086" loading="lazy" decoding="async"><span class="entry-card__art-label">イラスト</span></div><div class="entry-card__body"><span class="eyebrow">PAYMENT PLAN</span><h3>お支払い<br>シミュレーション</h3><p>土地と建物の、月々の返済額を試算。</p></div></a>
+   <a class="entry-card" href="move-to-nara-preview.html"><div class="entry-card__visual entry-card__visual--maquette"><img src="assets/top-renewal/guide-maquette/commute-640.webp" srcset="assets/top-renewal/guide-maquette/commute-320.webp 320w, assets/top-renewal/guide-maquette/commute-640.webp 640w, assets/top-renewal/guide-maquette/commute-960.webp 960w" sizes="(max-width:767px) 76.3vw, (max-width:1200px) 45vw, 300px" alt="都市と住宅地を結ぶ鉄道の模型風イラスト" width="1448" height="1086" loading="lazy" decoding="async"><span class="entry-card__art-label">イラスト</span></div><div class="entry-card__body"><span class="eyebrow">MOVE TO NARA</span><h3>奈良からの通勤</h3><p>大阪への電車と、休日の車移動。</p></div></a>
   </div>
   <div class="entry-controls" aria-label="家づくりのご案内の操作"><span id="entryCount">01 / 04</span><button type="button" id="entryPrev" aria-label="前の案内へ">←</button><button type="button" id="entryNext" aria-label="次の案内へ">→</button></div>
   <div class="commute-entry"><p>大阪で働く方へ。奈良の土地と通勤を、一緒に確認できます。</p><a class="link-arrow" href="move-to-nara-preview.html">奈良からのアクセスを見る</a></div>
@@ -205,10 +216,10 @@
 </section>
 <section class="reason section" id="reason" aria-labelledby="reasonTitle"><span id="heart" aria-hidden="true"></span><div class="wrap split">
  <figure><img class="reason__image" src="assets/top-renewal/art-direction/sakyo-living-800.webp" srcset="assets/top-renewal/art-direction/sakyo-living-480.webp 480w,assets/top-renewal/art-direction/sakyo-living-800.webp 800w,assets/top-renewal/art-direction/sakyo-living-1200.webp 1200w,assets/top-renewal/art-direction/sakyo-living-1600.webp 1600w,assets/top-renewal/art-direction/sakyo-living-2000.webp 2000w" sizes="(max-width:767px) 90vw, (max-width:1440px) 50vw, 680px" alt="左京モデルハウスのリビングとダイニング" width="6169" height="4113" loading="lazy" decoding="async"><figcaption class="photo-caption">左京モデルハウス ／ リビング・ダイニング</figcaption></figure>
- <div class="reason__body"><p class="eyebrow">THE YAMATO WAY</p><h2 id="reasonTitle">土地から、設計・施工まで。<br>自社で一貫対応。</h2><p>中間コストを抑え、その分を住まいの設備と仕様に。家づくりに必要な内容を、ご契約前に確認できます。</p><ol class="reason-list"><li><span>01</span>土地の仕入れから販売まで、自社で対応</li><li><span>02</span>建材・設備の一括仕入れ</li><li><span>03</span>間取り・仕様・見積もりを契約前に確認</li></ol><a class="link-arrow" href="kodawari.html">家づくりのこだわりを見る</a></div>
+<div class="reason__body"><p class="eyebrow">THE YAMATO WAY</p><h2 id="reasonTitle">土地・設計・施工の<br>自社一貫体制</h2><p>中間コストを抑え、その分を住まいの設備と仕様に。家づくりに必要な内容を、ご契約前に確認できます。</p><ol class="reason-list"><li><span>01</span>土地の仕入れから販売まで、自社で対応</li><li><span>02</span>建材・設備の一括仕入れ</li><li><span>03</span>間取り・仕様・見積もりを契約前に確認</li></ol><a class="link-arrow" href="kodawari.html">家づくりのこだわりを見る</a></div>
 </div></section>
 <section class="lineup section" id="lineup" aria-labelledby="lineupTitle"><div class="wrap">
- <header class="section-head"><div><p class="eyebrow">PRODUCT LINEUP</p><h2 id="lineupTitle">暮らし方と予算で<span style="white-space:nowrap">選べる3タイプ</span></h2></div><p>延床面積・間取り・標準設備を<span style="white-space:nowrap">比較できます。</span></p></header>
+<header class="section-head"><div><p class="eyebrow">PRODUCT LINEUP</p><h2 id="lineupTitle">商品ラインナップ</h2></div><p>延床面積・間取り・標準設備を<span style="white-space:nowrap">比較できます。</span></p></header>
  <div class="product-grid">
   <article class="product"><figure class="product__photo"><img src="assets/top-renewal/hana-concept-840.webp" srcset="assets/top-renewal/hana-concept-560.webp 560w,assets/top-renewal/hana-concept-840.webp 840w" sizes="(max-width:767px) 90vw,33vw" alt="花の生成コンセプト外観" width="840" height="560" loading="lazy"><span>生成コンセプト</span></figure><div class="product__body"><div class="product__name"><h3>花</h3><span>HANA</span></div><p class="product__lead">31坪・4LDKの最上位モデル</p><p class="product__detail">顔認証玄関ドア、ニチハ木目12mm軒天、ワイドサッシを採用。</p><dl class="product__facts"><div><dt>延床</dt><dd>31坪</dd></div><div><dt>1階天井高</dt><dd>2,500mm</dd></div><div><dt>玄関</dt><dd>親子ドア</dd></div></dl><p class="product__price">2,680万円<small>建物本体価格（税込・土地別途）</small></p><a class="glass-button" href="madori.html#plans" aria-label="花の間取り・仕様を見る">間取り・仕様を見る</a></div></article>
   <article class="product"><figure class="product__photo"><img src="assets/top-renewal/kyo-concept-840.webp" srcset="assets/top-renewal/kyo-concept-560.webp 560w,assets/top-renewal/kyo-concept-840.webp 840w" sizes="(max-width:767px) 90vw,33vw" alt="京の生成コンセプト外観" width="840" height="560" loading="lazy"><span>生成コンセプト</span></figure><div class="product__body"><div class="product__name"><h3>京</h3><span>KYOU</span></div><p class="product__lead">28坪・3LDKの狭小地対応モデル</p><p class="product__detail">間口や敷地面積に制約がある土地にも対応します。</p><dl class="product__facts"><div><dt>延床</dt><dd>28坪</dd></div><div><dt>間取り</dt><dd>3LDK</dd></div><div><dt>玄関</dt><dd>FamiLock</dd></div></dl><p class="product__price">2,480万円<small>建物本体価格（税込・土地別途）</small></p><a class="glass-button" href="madori.html#plans" aria-label="京の間取り・仕様を見る">間取り・仕様を見る</a></div></article>
@@ -219,7 +230,7 @@
 </div></section>
 <div class="wrap"><a class="catalog" href="kodawari.html#top"><div class="catalog__cover" aria-hidden="true"><strong>花鳥風月</strong><span>やまとの家</span></div><div class="catalog__body"><div><h3>花・京・風を、<span>一冊で見る。</span></h3><p>やまとの家 デジタルカタログ</p></div><span aria-hidden="true">→</span></div></a></div>
 <section class="works section" id="works" aria-labelledby="worksTitle"><div class="wrap">
- <header class="section-head"><div><p class="eyebrow">WORKS</p><h2 id="worksTitle">写真で見る、やまとの家。</h2></div><a class="link-arrow" href="works.html">施工事例をすべて見る</a></header>
+ <header class="section-head"><div><p class="eyebrow">WORKS</p><h2 id="worksTitle">施工事例</h2></div><a class="link-arrow" href="works.html">施工事例をすべて見る</a></header>
  <div class="works-grid">
 <a class="work work--main" href="works.html"><figure><img src="assets/top-renewal/art-direction/garden-exterior-800.webp" srcset="assets/top-renewal/art-direction/garden-exterior-480.webp 480w,assets/top-renewal/art-direction/garden-exterior-800.webp 800w,assets/top-renewal/art-direction/garden-exterior-1200.webp 1200w,assets/top-renewal/art-direction/garden-exterior-1600.webp 1600w,assets/top-renewal/art-direction/garden-exterior-2000.webp 2000w" sizes="(max-width:767px) 90vw,(max-width:1440px) 60vw, 810px" alt="外観・外構" width="4032" height="3024" loading="lazy" decoding="async"><figcaption><div><b>外観・外構</b><span>やまとの家 施工写真</span></div></figcaption></figure></a>
 <a class="work work--side" href="works.html"><figure><img src="assets/top-renewal/art-direction/living-wide-800.webp" srcset="assets/top-renewal/art-direction/living-wide-480.webp 480w,assets/top-renewal/art-direction/living-wide-800.webp 800w,assets/top-renewal/art-direction/living-wide-1200.webp 1200w" sizes="(max-width:767px) 90vw, (max-width:1440px) 30vw, 405px" alt="リビング・ダイニング" width="2250" height="1500" loading="lazy" decoding="async"><figcaption><div><b>リビング・ダイニング</b><span>やまとの家 施工写真</span></div></figcaption></figure></a>
@@ -255,10 +266,64 @@
  </div>
  <div class="voice-proof__foot"><p>50組すべてのアンケートを掲載しています。</p><a class="link-arrow" href="voice.html">お客様の声をすべて見る</a></div>
 </div></section>
-<section class="nara section" id="nara" aria-labelledby="naraTitle"><div class="wrap nara__grid">
- <div><p class="eyebrow">MOVE TO NARA</p><h2 id="naraTitle">大阪で働き、<br>奈良で戸建てを考える。</h2><p>大阪難波から近鉄奈良へ、快速急行で41分。電車での通勤と、駅から住まいまでの移動を確認できます。</p><div class="nara__actions"><a class="button" href="move-to-nara-preview.html">奈良からのアクセスを見る</a><a class="link-arrow" href="lots-preview.html?view=list">土地を探す</a></div></div>
- <div class="nara__routes"><div class="route-heading"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="15" rx="3"/><path d="M5 12h14M12 3v9M8 18l-3 4m11-4 3 4M8 15h1m6 0h1"/></svg><span>大阪から奈良への帰宅例</span></div><ol class="mini-route" aria-label="経路の概要。途中駅は一部省略"><li>大阪難波<small>OSAKA-NAMBA</small></li><li>生駒<small>IKOMA</small></li><li>近鉄奈良<small>KINTETSU-NARA</small></li></ol><p class="route-note">平日夕方の一例：18:27発 → 19:08着。2026年9月5日<a href="https://eki.kintetsu.co.jp/norikae/T7?dw=0&amp;sf=5213&amp;tx=1-5226" target="_blank" rel="noopener" style="text-decoration:underline">近鉄公式時刻表</a>確認。列車・時間帯で異なります。駅から住まいまでの移動時間は含みません。</p></div>
-</div></section>
+<section class="nara-atlas" id="nara" aria-labelledby="naraTitle">
+  <div class="nara-atlas__inner">
+    <header class="nara-atlas__head">
+      <p class="nara-atlas__eyebrow">MOVE TO NARA</p>
+      <h2 id="naraTitle"><span>奈良から大阪への</span><span><em>通勤</em></span></h2>
+    </header>
+    <div class="nara-atlas__composition">
+      <div class="nara-atlas__origin">
+        <p class="nara-atlas__route-title">大阪から奈良への電車</p>
+        <fieldset class="nara-atlas__switch" hidden>
+          <legend>出発駅</legend>
+          <label><input type="radio" name="nara-origin" value="namba" checked><span>大阪難波</span></label>
+          <label><input type="radio" name="nara-origin" value="tsuruhashi"><span>鶴橋</span></label>
+        </fieldset>
+        <p class="nara-atlas__static-origin">大阪難波発</p>
+        <p class="nara-atlas__direct">乗り換えなし</p>
+        <p class="nara-atlas__train">快速急行・平日夕方の一例</p>
+      </div>
+      <div class="nara-atlas__diagram" aria-describedby="naraScope">
+        <svg class="nara-atlas__connection" viewBox="0 0 1120 155" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <path class="nara-atlas__line-base" d="M25 124 H228 C290 124 290 70 360 70 H1090"/>
+          <path class="nara-atlas__line" pathLength="1" d="M25 124 H228 C290 124 290 70 360 70 H1090"/>
+          <circle class="nara-atlas__origin-dot" cx="25" cy="124" r="5"/>
+        </svg>
+        <p class="nara-atlas__from"><span data-origin-label>大阪難波</span>から</p>
+        <ol class="nara-atlas__stations" aria-label="大阪難波から奈良方面の主な駅までの所要時間" data-station-list>
+          <li><span class="nara-atlas__station">生駒</span><span class="nara-atlas__duration"><b data-minutes="0">22</b><span>分</span></span></li>
+          <li><span class="nara-atlas__station">学園前</span><span class="nara-atlas__duration"><b data-minutes="1">28</b><span>分</span></span></li>
+          <li><span class="nara-atlas__station">近鉄奈良</span><span class="nara-atlas__duration"><b data-minutes="2">41</b><span>分</span></span></li>
+        </ol>
+      </div>
+      <div class="nara-atlas__scope" id="naraScope">
+        <p>列車・時間帯で異なります。<br>駅の前後の移動時間は含みません。</p>
+        <details class="nara-atlas__source">
+          <summary>時刻・出典を確認<span aria-hidden="true">＋</span></summary>
+          <div>
+            <p><span data-source-origin>大阪難波18:27発</span> → 生駒18:49着 → 学園前18:55着 → 近鉄奈良19:08着。</p>
+            <p>主な駅を抜粋した概略図です。縮尺は実際と異なります。朝の通勤や最速の所要時間を示すものではありません。</p>
+            <a href="https://eki.kintetsu.co.jp/norikae/T7?dw=0&amp;sf=5213&amp;tx=1-5226" target="_blank" rel="noopener">近鉄公式時刻表<span aria-hidden="true"> ↗</span></a>
+            <p>2026年9月6日確認</p>
+          </div>
+        </details>
+      </div>
+      <figure class="nara-atlas__home">
+        <div class="nara-atlas__photo">
+          <img src="assets/top-renewal/material-craft/gable-house-800.webp" srcset="assets/top-renewal/material-craft/gable-house-480.webp 480w, assets/top-renewal/material-craft/gable-house-800.webp 800w, assets/top-renewal/material-craft/gable-house-1200.webp 1200w" sizes="(max-width:767px) calc(100vw - 40px), (max-width:1200px) 62vw, 740px" alt="切妻屋根と朱色の玄関ドアのある、やまとの家の外観" width="1200" height="900" loading="lazy" decoding="async">
+          <p class="nara-atlas__photo-fallback" hidden>やまとの家の写真は、施工事例ページでご覧いただけます。</p>
+        </div>
+        <figcaption><span>やまとの家 施工事例</span><span>写真の住宅までの所要時間を示すものではありません。</span></figcaption>
+      </figure>
+      <div class="nara-atlas__actions">
+        <a class="nara-atlas__primary" href="move-to-nara-preview.html#train"><span>大阪・奈良の<br class="nara-atlas__pc-break"><wbr><em>アクセスを見る</em></span><svg viewBox="0 0 32 20" aria-hidden="true"><path d="M1 10h28M21 2l8 8-8 8"/></svg></a>
+        <a class="nara-atlas__secondary" href="lots-preview.html?view=list"><span>奈良の土地を探す</span><svg viewBox="0 0 32 20" aria-hidden="true"><path d="M1 10h28M21 2l8 8-8 8"/></svg></a>
+      </div>
+    </div>
+    <p class="nara-atlas__status" aria-live="polite" aria-atomic="true"></p>
+  </div>
+</section>
 <section class="section" id="faq" aria-labelledby="faqTitle"><div class="wrap faq-grid"><div><p class="eyebrow">FAQ</p><h2 id="faqTitle">よくある質問</h2></div><div class="faq-list">
  <details><summary>見積もり確定後に追加料金は発生しますか？</summary><p>ご契約内容の変更がなければ、追加料金は発生しません。ご契約後の間取り・仕様の変更・追加には、別途費用がかかります。</p></details>
  <details><summary>建物本体価格に含まれないものはありますか？</summary><p>土地代は別途必要です。カーテンレールと居室照明は含みません。敷地条件や選択仕様による別途費用は、ご契約前のお見積もりに明示します。</p></details>
@@ -279,11 +344,11 @@
  <div class="instagram__status"><p class="note" id="igStatus" role="status">公式投稿を読み込みます。</p><button class="text-button" id="igPreview" type="button">投稿を読み込む</button><a class="link-arrow" href="https://www.instagram.com/yamatonoie/" target="_blank" rel="noopener">Instagramを見る</a></div>
 </div></section>
 <section class="news" aria-labelledby="newsTitle"><div class="wrap news-grid"><div><p class="eyebrow">NEWS</p><h2 id="newsTitle">新着情報</h2><p class="note">当サイトへの反映日を掲載しています。</p></div><div><div class="news-list" id="newsList"><a href="https://suumo.jp/tochi/nara/sc_nara/nc_74822856/" target="_blank" rel="noopener"><time datetime="2026-08-30">2026.08.30</time><span>「花鳥風月やまとの家～法蓮町～」販売情報を更新しました</span></a><a href="https://suumo.jp/tochi/nara/sc_nara/nc_77151281/" target="_blank" rel="noopener"><time datetime="2026-08-30">2026.08.30</time><span>「花鳥風月やまとの家～船橋町～」全3区画の販売情報を更新しました</span></a><a href="https://suumo.jp/tochi/nara/sc_nara/nc_76905419/" target="_blank" rel="noopener"><time datetime="2026-08-30">2026.08.30</time><span>「花鳥風月やまとの家～法華寺町～」全8区画の販売情報を更新しました</span></a><div id="newsExtra" hidden><a href="https://suumo.jp/tochi/nara/sc_nara/nc_20586171/" target="_blank" rel="noopener"><time datetime="2026-08-30">2026.08.30</time><span>「花鳥風月やまとの家～敷島町～」全4区画の販売情報を更新しました</span></a><a href="https://suumo.jp/tochi/nara/sc_nara/nc_20499832/" target="_blank" rel="noopener"><time datetime="2026-08-30">2026.08.30</time><span>「花鳥風月やまとの家～四条大路1丁目～」全2区画の販売情報を更新しました</span></a><a href="https://suumo.jp/tochi/nara/sc_nara/nc_21320158/" target="_blank" rel="noopener"><time datetime="2026-08-30">2026.08.30</time><span>「花鳥風月やまとの家～佐保台西町～」全2区画の販売情報を更新しました</span></a><a href="https://suumo.jp/tochi/nara/sc_nara/nc_20746650/" target="_blank" rel="noopener"><time datetime="2026-08-30">2026.08.30</time><span>「花鳥風月やまとの家～大安寺5丁目～」全5区画の販売情報を更新しました</span></a><a href="https://suumo.jp/tochi/nara/sc_nara/nc_78316608/" target="_blank" rel="noopener"><time datetime="2026-08-30">2026.08.30</time><span>「花鳥風月やまとの家～四条大路3丁目～」全2区画の販売情報を更新しました</span></a><a href="https://suumo.jp/ikkodate/nara/sc_tenri/nc_21318994/" target="_blank" rel="noopener"><time datetime="2026-08-30">2026.08.30</time><span>「花鳥風月やまとの家～前栽町～」花仕様の販売情報を更新しました</span></a><a href="https://suumo.jp/tochi/nara/sc_ikoma/nc_77151550/" target="_blank" rel="noopener"><time datetime="2026-08-30">2026.08.30</time><span>「花鳥風月やまとの家～小明町～」全3区画の販売情報を更新しました</span></a></div></div><div class="center-action"><button class="text-button" type="button" data-expand="newsExtra" data-closed="もっと見る" data-open="追加のお知らせを閉じる" aria-controls="newsExtra" aria-expanded="false">もっと見る</button></div></div></div></section>
-<section class="visit section" id="visit" aria-labelledby="visitTitle"><div class="wrap visit__grid"><figure><img class="visit__photo" src="assets/top-renewal/sakyo-living-1440.webp" srcset="assets/top-renewal/sakyo-living-840.webp 840w,assets/top-renewal/sakyo-living-1440.webp 1440w" sizes="(max-width:767px) 90vw,55vw" alt="左京モデルハウスのリビング" width="1440" height="960" loading="lazy"><figcaption class="photo-caption">左京モデルハウスの写真。ご案内する会場は予約時に確認します。</figcaption></figure><div class="visit__body"><p class="eyebrow">VISIT &amp; CONTACT</p><h2 id="visitTitle">モデルハウスで、<br>標準仕様を確認。</h2><p>商品別の設備・仕様と、お見積もりの考え方をご案内します。見学は無料・予約制です。</p><div class="visit__actions"><a class="button" href="#contactDialog" data-contact="reserve">来場を予約する</a><a class="link-arrow" href="#contactDialog" data-contact="docs">資料請求</a></div><p class="note">お電話でのご相談：<a href="tel:0742361123">0742-36-1123</a><br>9:00〜19:00 ／ 火曜・水曜定休</p></div></div></section>
+<section class="visit section" id="visit" aria-labelledby="visitTitle"><div class="wrap visit__grid"><figure><img class="visit__photo" src="assets/top-renewal/sakyo-living-1440.webp" srcset="assets/top-renewal/sakyo-living-840.webp 840w,assets/top-renewal/sakyo-living-1440.webp 1440w" sizes="(max-width:767px) 90vw,55vw" alt="左京モデルハウスのリビング" width="1440" height="960" loading="lazy"><figcaption class="photo-caption">左京モデルハウスの写真。ご案内する会場は予約時に確認します。</figcaption></figure><div class="visit__body"><p class="eyebrow">VISIT &amp; CONTACT</p><h2 id="visitTitle">モデルハウス見学</h2><p>商品別の設備・仕様と、お見積もりの考え方をご案内します。見学は無料・予約制です。</p><div class="visit__actions"><a class="button" href="#contactDialog" data-contact="reserve">来場を予約する</a><a class="link-arrow" href="#contactDialog" data-contact="docs">資料請求</a></div><p class="note">お電話でのご相談：<a href="tel:0742361123">0742-36-1123</a><br>9:00〜19:00 ／ 火曜・水曜定休</p></div></div></section>
 </main>
 <footer class="site-footer"><div class="wrap"><div class="footer-grid"><div><a class="brand" href="#top"><img src="assets/brand/yamato_mark.svg" width="53" height="33" alt=""><span>やまと不動産</span></a><p class="footer-address">株式会社やまと不動産<br>〒630-8115 奈良県奈良市大宮町1丁目6番21<br><a href="tel:0742361123">0742-36-1123</a></p></div><nav class="footer-links" aria-label="フッターナビゲーション"><a href="kodawari.html">家づくりのこだわり</a><a href="madori.html#plans">商品ラインナップ</a><a href="works.html">施工事例</a><a href="model.html">モデルハウス</a><a href="lots-preview.html?view=list">分譲地・物件</a><a href="move-to-nara-preview.html">奈良からの通勤</a><a href="voice.html">お客様の声</a><a href="company.html">会社案内</a><a href="#contactDialog" data-contact="reserve">ご相談・ご予約</a></nav></div><div class="footer-bottom"><span>宅地建物取引業 国土交通大臣（1）第10516号<br>© 株式会社やまと不動産</span><div class="footer-social"><a href="https://www.instagram.com/yamatonoie/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.youtube.com/@user-ed2cw4tx9o" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.tiktok.com/@yamatofudosan" target="_blank" rel="noopener">TikTok ↗</a></div></div></div></footer>
 <p class="preview-note">制作確認用プレビュー ／ 返済額は入力条件に基づく概算です。予約送信は未接続。<a href="#previewInfo" data-dialog="previewInfo">確認範囲を見る</a></p>
 <dialog id="contactDialog" aria-labelledby="contactTitle"><div class="dialog__close"><button type="button" data-close aria-label="閉じる">×</button></div><div class="dialog__body"><p class="eyebrow">CONTACT PREVIEW</p><h2 id="contactTitle">ご予約・資料請求のご案内</h2><p>この画面は制作確認用です。フォームからの予約・資料請求はまだ送信できません。</p><p>実際の見学や資料については、やまと不動産へお電話ください。</p><a class="button" href="tel:0742361123">0742-36-1123</a><p class="note">9:00〜19:00 ／ 火曜・水曜定休<br>このプレビューでは個人情報を入力・送信しません。</p></div></dialog>
-<dialog id="previewInfo" aria-labelledby="previewTitle"><div class="dialog__close"><button type="button" data-close aria-label="閉じる">×</button></div><div class="dialog__body"><p class="eyebrow">DESIGN REVIEW</p><h2 id="previewTitle">今回の確認範囲</h2><p>TOPの構成・デザインと、土地選び・通勤ページへのつながりをご確認ください。現在の公開サイトは変更していません。</p><ul class="dialog__steps"><li>Instagram：公式投稿をサーバー経由で取得します。取得できない場合は公式アカウントへご案内します。</li><li>試算：土地・建物・諸費用と返済条件から計算します。確定した物件見積もり・借入審査ではありません。</li><li>予約・資料請求：送信機能は未接続です。</li><li>FVの第1・2章と商品外観は生成コンセプトです。実在の分譲地・社員・建物を示す写真ではありません。</li><li>価格・物件情報は記載された基準日時点の参考情報です。</li></ul></div></dialog>
+<dialog id="previewInfo" aria-labelledby="previewTitle"><div class="dialog__close"><button type="button" data-close aria-label="閉じる">×</button></div><div class="dialog__body"><p class="eyebrow">DESIGN REVIEW</p><h2 id="previewTitle">今回の確認範囲</h2><p>TOPの構成・デザインと、土地選び・通勤ページへのつながりをご確認ください。予約・資料請求の送信機能は準備中です。</p><ul class="dialog__steps"><li>Instagram：公式投稿をサーバー経由で取得します。取得できない場合は公式アカウントへご案内します。</li><li>試算：土地・建物・諸費用と返済条件から計算します。確定した物件見積もり・借入審査ではありません。</li><li>予約・資料請求：送信機能は未接続です。</li><li>FVの第1・2章と商品外観は生成コンセプトです。実在の分譲地・社員・建物を示す写真ではありません。</li><li>価格・物件情報は記載された基準日時点の参考情報です。</li></ul></div></dialog>
 <dialog class="ig-dialog" id="igDialog" aria-labelledby="igDialogTitle"><div class="dialog__close"><span id="igPostCount"></span><button type="button" data-close aria-label="投稿の拡大表示を閉じる">×</button></div><div class="ig-dialog__content"><div class="ig-dialog__stage"><div class="ig-dialog__image" id="igDialogMedia"></div><div class="ig-photo-nav" id="igPhotoNav" hidden><button type="button" id="igPhotoPrev" aria-label="この投稿の前の画像">←</button><span id="igPhotoCount" aria-live="polite"></span><button type="button" id="igPhotoNext" aria-label="この投稿の次の画像">→</button></div></div><div class="ig-dialog__body"><p class="eyebrow">INSTAGRAM</p><h2 id="igDialogTitle">@yamatonoie</h2><time id="igDialogDate"></time><p id="igDialogCaption"></p><a class="link-arrow" id="igDialogLink" href="https://www.instagram.com/yamatonoie/" target="_blank" rel="noopener">Instagramでこの投稿を見る</a><div class="ig-post-nav"><button type="button" id="igPostPrev">← 前の投稿</button><button type="button" id="igPostNext">次の投稿 →</button></div></div></div></dialog>
 </body></html>

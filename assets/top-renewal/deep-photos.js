@@ -45,7 +45,7 @@
  document.querySelectorAll('.product__photo').forEach(frame=>register(frame,'product'));
  document.querySelectorAll('.nara-editorial__photo').forEach(frame=>register(frame,'editorial'));
  // quiet-rails.js runs first; include its visual repeats without adding new links or focus targets.
- document.querySelectorAll('.entry-card__visual').forEach(frame=>{if(frame.querySelector(':scope>img'))register(frame,'entry');});
+ document.querySelectorAll('.entry-card__visual:not(.entry-card__visual--maquette)').forEach(frame=>{if(frame.querySelector(':scope>img'))register(frame,'entry');});
  const gallery=document.getElementById('igGallery');
  if(gallery){const refresh=()=>gallery.querySelectorAll('.ig-post__frame').forEach(frame=>{if(frame.querySelector(':scope>img'))register(frame,'instagram');});new MutationObserver(refresh).observe(gallery,{childList:true,subtree:true});refresh();}
  if(hero&&media)new IntersectionObserver(entries=>{heroVisible=entries[0].isIntersecting;schedule();}).observe(hero);

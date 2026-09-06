@@ -1,747 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>施工事例｜株式会社やまと不動産</title>
-<meta name="description" content="やまと不動産が実際に建てた住まいの記録。奈良市内にお引き渡しした実邸と、標準仕様のまま建てたモデルハウスを、一邸ずつご紹介します。">
-<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
-<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
-<script>
-  (function(d) {
-    var config = { kitId: 'ftb5hqp', scriptTimeout: 3000, async: true },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-  /* ============ 施工事例（works.html 図面 v3 ── muku.co.jp/works 参照の静謐ギャラリー型 2026-07-09）============
-     方針転換: v2の暗色×金の華美を全撤去。muku流の「白・広い余白・セリフ見出し・大判写真・
-     統一トーンの写真」で品格を作る。写真は全点に同一の温暖ナチュラル・グレードを一括適用済み
-     (assets/works=graded / works_ungraded_backup=原版)。
-     構成: 白のWORKS見出し → 実在3邸の大判カード(ドット式カルーセル+LOCATION+TAGS) →
-     過去の施工から(2016部屋別ギャラリー・絞り込み) → 静かなCTA。件数の水増し(捏造)はしない。 */
-  :root{
-    --paper:#FFFFFF; --paper2:#FFFFFF; --panel:#F1EEE7;
-    --ink:#1F1B17; --ink2:#6B655C; --ink3:#9A9389;
-    --line:rgba(31,27,23,.13); --line2:rgba(31,27,23,.24);
-    --amber:#C4851F; --amber-deep:#A56C12;
-    --fserif:"Cormorant Garamond","Noto Serif JP",Georgia,serif;
-    --fh:"dnp-shuei-gothic-gin-std","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
-    --fb:"Inter","Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
-    --fn:"Inter","Noto Sans JP",sans-serif;
-    --ease:cubic-bezier(.22,1,.36,1);
-    --header-h:clamp(58px,7vw,78px);
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{background:var(--paper);-webkit-text-size-adjust:100%}
-  html,body{word-break:normal;overflow-wrap:normal;line-break:strict}
-  body{font-family:var(--fb);color:var(--ink);background:var(--paper);
-    -webkit-font-smoothing:antialiased;font-feature-settings:"palt";overflow-x:hidden}
-  body.is-locked{overflow:hidden}
-  a{color:inherit;text-decoration:none}
-  img{display:block;max-width:100%}
-  button{font:inherit;color:inherit}
-  ::selection{background:#E8E2D4}
-  .only-sp{display:none}
-  @media(max-width:640px){ .only-sp{display:inline} .only-pc{display:none} }
-  .skip{position:fixed;top:-60px;left:16px;z-index:200;background:var(--ink);color:#fff;
-    font-family:var(--fh);font-weight:500;font-size:.85rem;padding:12px 20px;border-radius:4px;transition:top .3s var(--ease)}
-  .skip:focus{top:calc(env(safe-area-inset-top,0px) + 12px)}
-  :focus-visible{outline:2px solid var(--amber);outline-offset:3px}
-
-  /* ============ ヘッダー（この頁は白地＝常にsolid） ============ */
-  .hd{position:fixed;top:0;left:0;right:0;z-index:80;height:var(--header-h);
-    display:flex;align-items:center;gap:clamp(14px,2vw,26px);
-    padding:0 clamp(16px,3vw,40px) 0 clamp(20px,4.5vw,60px);
-    background:rgba(255,255,255,.9);color:var(--ink);
-    -webkit-backdrop-filter:saturate(1.05) blur(10px);backdrop-filter:saturate(1.05) blur(10px);
-    border-bottom:1px solid var(--line)}
-  .hd__brand{display:flex;align-items:center;gap:11px;line-height:1}
-  .hd__mark{height:clamp(26px,3.4vw,32px);width:auto;display:block}
-  .hd__kk{display:flex;flex-direction:column;gap:3px;font-family:var(--fh);font-weight:500;font-size:.5rem;letter-spacing:.16em;opacity:.85}
-  .hd__jp{font-family:var(--fh);font-weight:500;letter-spacing:.1em;font-size:clamp(1rem,.9rem + .6vw,1.26rem);white-space:nowrap}
-  .hd__back{margin-left:auto;font-family:var(--fh);font-weight:500;font-size:.82rem;letter-spacing:.05em;
-    opacity:.9;display:inline-flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid transparent;transition:.3s var(--ease)}
-  .hd__back:hover{opacity:1;border-bottom-color:currentColor}
-  .hd__back svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;fill:none;transform:rotate(180deg)}
-  .hd__cta{display:inline-flex;align-items:center;gap:9px;background:var(--amber);color:#fff;
-    font-family:var(--fh);font-weight:500;font-size:.85rem;letter-spacing:.04em;
-    padding:11px 22px;border-radius:4px;line-height:1;white-space:nowrap;
-    box-shadow:0 6px 22px rgba(196,133,31,.24);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
-  .hd__cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(196,133,31,.32)}
-  .hd__cta svg{width:13px;height:13px;stroke:#fff;stroke-width:2;fill:none}
-  @media(max-width:560px){ .hd__back{display:none} .hd__kk{display:none} }
-  .hd__burger{width:clamp(44px,4vw,52px);height:clamp(44px,4vw,52px);border-radius:50%;
-    display:inline-flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;
-    background:#fff;border:1px solid var(--line2);cursor:pointer;color:var(--ink);flex:0 0 auto;
-    transition:background .4s var(--ease),border-color .4s var(--ease)}
-  .hd__burger span{display:block;width:20px;height:1.6px;background:currentColor;border-radius:2px;transition:width .4s var(--ease)}
-  .hd__burger:hover span:first-child{width:14px}
-  .hd__burger:hover span:last-child{width:14px}
-
-  /* ============ サイトメニュー ============ */
-  .menu{position:fixed;inset:0;z-index:120;display:grid;grid-template-columns:40% 60%;visibility:hidden;pointer-events:none;overflow:hidden}
-  .menu.is-open{visibility:visible;pointer-events:auto}
-  .menu__media{position:relative;overflow:hidden;background:#12160c;transform:scale(1.06);opacity:0;transition:transform .9s var(--ease),opacity .7s var(--ease)}
-  .menu.is-open .menu__media{transform:scale(1);opacity:1}
-  .menu__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
-  .menu__media::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(16,20,10,.5),rgba(16,20,10,.05) 34%,rgba(16,20,10,.28))}
-  .menu__brand{position:absolute;top:clamp(24px,3vw,40px);left:clamp(24px,3vw,48px);z-index:2;color:#F4F1EA;display:flex;flex-direction:column;gap:6px}
-  .menu__brand .jp{font-family:var(--fh);font-weight:700;letter-spacing:.08em;font-size:clamp(1.1rem,.9rem + .8vw,1.4rem)}
-  .menu__brand .mk{height:30px;width:auto;display:block;margin-bottom:2px}
-  .menu__addr{position:absolute;left:clamp(24px,3vw,48px);bottom:clamp(24px,3vw,40px);z-index:2;color:rgba(244,241,234,.82);font-size:.72rem;letter-spacing:.06em;line-height:1.9}
-  .menu__addr .lic{display:block;font-size:.62rem;letter-spacing:.1em;opacity:.7;margin-top:6px}
-  .menu__panel{position:relative;background:#F5EEE2;color:var(--ink);overflow-y:auto;
-    padding:clamp(70px,8vh,96px) clamp(30px,4.5vw,80px) clamp(30px,4vh,48px);display:flex;flex-direction:column;
-    transform:translateX(100%);transition:transform .8s var(--ease)}
-  .menu.is-open .menu__panel{transform:translateX(0)}
-  .menu__panel::before{content:"";position:absolute;top:0;left:0;right:0;height:56px;background:linear-gradient(#F5EEE2,rgba(245,238,226,0));pointer-events:none;z-index:3}
-  .menu__close{position:absolute;top:clamp(20px,2.4vw,30px);right:clamp(24px,3.4vw,48px);z-index:5;
-    width:clamp(48px,4.4vw,58px);height:clamp(48px,4.4vw,58px);border-radius:50%;border:none;cursor:pointer;
-    background:#7D4427;color:#F4F1EA;display:inline-flex;align-items:center;justify-content:center;transition:transform .5s var(--ease),background .3s var(--ease)}
-  .menu__close:hover{transform:rotate(90deg);background:#2E4600}
-  .menu__close svg{width:18px;height:18px;stroke:currentColor;stroke-width:1.6;fill:none}
-  .menu__nav{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,52px);padding-bottom:clamp(28px,4vh,44px);border-bottom:1px solid #E4DDCE}
-  .navcol{display:flex;flex-direction:column}
-  .navcol__label{font-family:"Inter",sans-serif;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:#486B00;opacity:.95;margin-bottom:16px}
-  .navcol a.lead{font-family:var(--fh);font-weight:700;font-size:clamp(1.05rem,1rem + .3vw,1.22rem);letter-spacing:.04em;line-height:1.5;padding:9px 0;position:relative;display:inline-flex;width:fit-content;transition:color .3s var(--ease),padding-left .35s var(--ease)}
-  .navcol a.lead::before{content:"";position:absolute;left:-14px;top:50%;width:6px;height:1px;background:#7D4427;transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
-  .navcol a.lead:hover{color:#486B00;padding-left:12px}
-  .navcol a.lead:hover::before{transform:scaleX(1)}
-  .navcol a.lead[aria-current="page"]{opacity:.45;pointer-events:none}
-  .subnav{margin:4px 0 6px;padding-left:2px;display:flex;flex-direction:column;gap:2px}
-  .subnav a{font-size:.82rem;letter-spacing:.03em;line-height:1.5;color:#6B6B6B;padding:5px 0;transition:color .25s var(--ease),transform .3s var(--ease)}
-  .subnav a:hover{color:#7D4427;transform:translateX(4px)}
-  .menu__contact{margin-top:clamp(24px,3.4vh,38px);border:1px solid #E4DDCE;border-radius:8px;background:rgba(255,255,255,.5)}
-  .contact-row{display:flex;align-items:center;gap:clamp(16px,2.4vw,32px);padding:clamp(18px,2.4vh,26px) clamp(20px,2.6vw,34px)}
-  .contact-row + .contact-row{border-top:1px solid #E4DDCE}
-  .contact-row__label{font-family:var(--fh);font-weight:700;font-size:.88rem;letter-spacing:.04em;flex:0 0 auto;min-width:150px;line-height:1.5}
-  .contact-row__label small{display:block;font-family:var(--fb);font-weight:400;font-size:.68rem;letter-spacing:.04em;color:#6B6B6B;margin-top:5px}
-  .contact-row__action{margin-left:auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:flex-end}
-  .btn-form{display:inline-flex;align-items:center;gap:12px;background:var(--amber);color:#fff;font-family:var(--fh);font-weight:500;font-size:.92rem;letter-spacing:.04em;padding:15px 28px;border-radius:4px;line-height:1;white-space:nowrap;box-shadow:0 6px 22px rgba(196,133,31,.26);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
-  .btn-form:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(196,133,31,.34)}
-  .btn-form svg{width:14px;height:14px;stroke:#fff;stroke-width:2;fill:none}
-  .doc-link{font-family:var(--fh);font-weight:500;font-size:.82rem;letter-spacing:.04em;color:#2E4600;border-bottom:1px solid rgba(46,70,0,.35);padding-bottom:3px;transition:.3s var(--ease)}
-  .doc-link:hover{color:#486B00;border-bottom-color:#486B00}
-  .tel{font-family:var(--fn);font-weight:300;font-variant-numeric:tabular-nums;font-size:clamp(1.7rem,1.3rem + 1.4vw,2.35rem);letter-spacing:.01em;color:#7D4427;line-height:1;display:inline-flex;align-items:center;gap:12px}
-  .tel svg{width:20px;height:20px;stroke:#7D4427;stroke-width:1.5;fill:none;flex:0 0 auto}
-  .tel-hours{font-size:.7rem;letter-spacing:.05em;color:#6B6B6B;margin-top:8px;line-height:1.6}
-  .menu__foot{margin-top:auto;padding-top:clamp(22px,3vh,32px);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-  .sns{display:flex;gap:16px}
-  .sns a{width:38px;height:38px;border-radius:10px;overflow:hidden;display:block;transition:.3s var(--ease)}
-  .sns a img{display:block;width:100%;height:100%}
-  .sns a:hover{transform:translateY(-2px)}
-  .foot-links{display:flex;gap:20px;font-size:.72rem;letter-spacing:.05em;color:#6B6B6B}
-  .foot-links a:hover{color:#486B00}
-  .menu .stagger{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
-  .menu.is-open .stagger{opacity:1;transform:translateY(0);transition-delay:calc(.28s + var(--i,0)*.05s)}
-  @media (max-width:900px){
-    .menu{grid-template-columns:1fr;grid-template-rows:34svh 1fr}
-    .menu__media{transform:scale(1.04)}
-    .menu__panel{transform:translateY(40px);transition:transform .8s var(--ease),opacity .6s var(--ease);opacity:0;padding-top:clamp(30px,5vh,48px);padding-bottom:calc(env(safe-area-inset-bottom,0px) + 34px)}
-    .menu.is-open .menu__panel{transform:translateY(0);opacity:1}
-    .menu__addr{display:none}
-    .menu__brand{top:calc(env(safe-area-inset-top,0px) + 18px)}
-    .menu__close{top:calc(env(safe-area-inset-top,0px) + 16px)}
-    .menu__nav{grid-template-columns:1fr 1fr;gap:22px 28px}
-    .contact-row{flex-direction:column;align-items:flex-start;gap:14px}
-    .contact-row__action{margin-left:0;justify-content:flex-start}
-  }
-  @media (pointer:coarse){
-    .subnav a{display:block;padding:12px 0}.sns a{width:44px;height:44px}
-    .doc-link{display:inline-block;padding:12px 0 3px;margin-top:-12px}
-    .tel{padding-block:6px;margin-block:-6px}.menu__foot a{display:inline-block;padding:12px 4px;margin:-12px -4px}
-  }
-  @media (max-width:560px){ .menu{grid-template-rows:26svh 1fr} .menu__nav{grid-template-columns:1fr} }
-
-  /* ============ ヒーロー（白・エディトリアル） ============ */
-  .whero{max-width:1280px;margin:0 auto;padding:calc(var(--header-h) + clamp(40px,7vw,96px)) clamp(20px,5vw,64px) clamp(28px,4vw,52px)}
-  .crumb{font-family:var(--fn);font-size:.7rem;letter-spacing:.08em;color:var(--ink3);margin-bottom:clamp(28px,5vw,64px)}
-  .crumb a{color:var(--ink3);transition:color .3s}
-  .crumb a:hover{color:var(--ink)}
-  .crumb span{margin:0 .5em}
-  .whero__t{display:flex;align-items:baseline;gap:clamp(10px,1.4vw,18px);flex-wrap:wrap}
-  .whero__en{font-family:var(--fserif);font-weight:500;font-size:clamp(2.2rem,1.6rem + 3.2vw,4rem);letter-spacing:.02em;line-height:1;color:var(--ink)}
-  .whero__slash{font-family:var(--fserif);font-weight:400;font-size:clamp(1.3rem,1rem + 1.8vw,2.2rem);line-height:1;color:var(--ink3)}
-  .whero__jp{font-family:var(--fh);font-weight:500;font-size:clamp(1rem,.9rem + .5vw,1.3rem);letter-spacing:.14em;color:var(--ink)}
-  .whero__rule{margin-top:clamp(28px,4vw,48px);height:1px;background:var(--line)}
-
-  /* ============ 実在3邸 大判カード ============ */
-  .works{max-width:1280px;margin:0 auto;padding:clamp(36px,5vw,64px) clamp(20px,5vw,64px) 0}
-  .works__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,3.4vw,52px) clamp(22px,2.6vw,36px)}
-  @media(max-width:1000px){ .works__grid{grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,44px) clamp(20px,3vw,30px)} }
-  @media(max-width:680px){ .works__grid{grid-template-columns:1fr;gap:clamp(44px,9vw,60px)} }
-  .pcard{display:flex;flex-direction:column;opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform 1s var(--ease)}
-  .pcard.is-in{opacity:1;transform:none}
-  .pcard__media{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:2px;background:var(--panel);isolation:isolate}
-  .pslide{position:absolute;inset:0;opacity:0;transition:opacity 1.1s var(--ease);will-change:opacity}
-  .pslide.is-on{opacity:1}
-  .pslide img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.02);transition:transform 6s ease}
-  .pcard__media:hover .pslide.is-on img{transform:scale(1.08)}
-  .pcard__open{position:absolute;inset:0;z-index:2;border:0;background:transparent;cursor:zoom-in;width:100%;height:100%}
-  .pcard__idx{position:absolute;left:14px;top:12px;z-index:3;pointer-events:none;
-    font-family:var(--fserif);font-weight:500;font-size:1.5rem;color:#fff;line-height:1;
-    text-shadow:0 1px 12px rgba(0,0,0,.5);mix-blend-mode:screen;opacity:.9}
-  .pdots{position:absolute;right:12px;bottom:12px;z-index:4;display:flex;gap:7px}
-  .pdot{width:8px;height:8px;border-radius:50%;border:0;padding:0;cursor:pointer;
-    background:rgba(255,255,255,.5);box-shadow:0 1px 4px rgba(0,0,0,.35);transition:background .3s,transform .3s}
-  .pdot.is-on{background:#fff;transform:scale(1.25)}
-  @media(pointer:coarse){ .pdot{width:11px;height:11px} }
-  .pcard__cat{margin-top:clamp(16px,1.8vw,20px);font-family:var(--fn);font-size:.66rem;font-weight:500;
-    letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);display:flex;align-items:center;gap:9px}
-  .pcard__cat b{font-family:var(--fh);font-weight:500;font-size:.72rem;letter-spacing:.06em;text-transform:none;color:var(--ink2)}
-  .pcard__cat b::before{content:"｜";color:var(--line2);margin-right:5px}
-  .pcard__title{margin-top:9px;font-family:var(--fh);font-weight:500;font-size:clamp(1.08rem,1rem + .5vw,1.32rem);
-    letter-spacing:.03em;line-height:1.6;color:var(--ink)}
-  .pcard__meta{margin-top:clamp(14px,1.8vw,18px);border-top:1px solid var(--line);padding-top:12px;
-    display:flex;align-items:baseline;gap:12px}
-  .pcard__meta dt{font-family:var(--fn);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);flex:0 0 auto;width:70px}
-  .pcard__meta dd{font-family:var(--fh);font-weight:500;font-size:.86rem;letter-spacing:.03em;color:var(--ink);line-height:1.6}
-  .pcard__tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:7px 8px;list-style:none}
-  .pcard__tags li{font-family:var(--fn);font-size:.7rem;letter-spacing:.04em;color:var(--ink2);
-    border:1px solid var(--line2);border-radius:2px;padding:5px 10px;line-height:1}
-
-  /* ============ 過去の施工から（2016部屋別ギャラリー） ============ */
-  .arch{max-width:1280px;margin:0 auto;padding:clamp(72px,10vw,150px) clamp(20px,5vw,64px) 0}
-  .arch__head{display:flex;align-items:baseline;gap:clamp(14px,2vw,22px);flex-wrap:wrap;
-    padding-bottom:clamp(16px,2vw,22px);border-bottom:1px solid var(--line)}
-  .arch__en{font-family:var(--fserif);font-weight:500;font-size:clamp(1.8rem,1.3rem + 2.4vw,3rem);letter-spacing:.02em;line-height:1;color:var(--ink)}
-  .arch__jp{font-family:var(--fh);font-weight:500;font-size:clamp(.86rem,.8rem + .3vw,1rem);letter-spacing:.12em;color:var(--ink2)}
-  .arch__note{margin-top:clamp(18px,2.4vw,26px);max-width:40em;font-size:clamp(.88rem,.85rem + .2vw,.98rem);line-height:2;letter-spacing:.03em;color:var(--ink2)}
-  .arch__filter{margin-top:clamp(22px,2.8vw,32px);display:flex;flex-wrap:wrap;gap:8px 9px}
-  .fbtn{font-family:var(--fh);font-weight:500;font-size:.78rem;letter-spacing:.03em;color:var(--ink2);
-    background:var(--paper2);border:1px solid var(--line);border-radius:999px;padding:9px 17px;cursor:pointer;
-    transition:background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease)}
-  .fbtn:hover{border-color:var(--line2)}
-  .fbtn[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
-  @media(pointer:coarse){ .fbtn{min-height:44px;padding-block:12px} }
-  .arch__grid{margin-top:clamp(26px,3.2vw,40px);display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.2vw,16px)}
-  @media(max-width:900px){ .arch__grid{grid-template-columns:repeat(3,1fr)} }
-  @media(max-width:560px){ .arch__grid{grid-template-columns:repeat(2,1fr)} }
-  .acell{position:relative;aspect-ratio:1/1;overflow:hidden;border-radius:2px;background:var(--panel);
-    border:0;padding:0;width:100%;display:block;cursor:zoom-in;isolation:isolate}
-  .acell img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s var(--ease)}
-  .acell:hover img{transform:scale(1.07)}
-  .acell::after{content:"";position:absolute;inset:0;background:rgba(31,27,23,0);transition:background .4s;z-index:1}
-  .acell:hover::after{background:rgba(31,27,23,.06)}
-  .acell__cap{position:absolute;left:0;bottom:0;z-index:2;font-family:var(--fh);font-weight:500;font-size:.68rem;
-    letter-spacing:.06em;color:#fff;background:rgba(31,27,23,.55);padding:4px 9px;border-radius:0 3px 0 0;
-    opacity:0;transform:translateY(4px);transition:opacity .35s,transform .35s;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
-  .acell:hover .acell__cap{opacity:1;transform:none}
-  @media(pointer:coarse){ .acell__cap{opacity:1;transform:none} }
-  .acell[data-hidden="1"]{display:none}
-  .arch__empty{display:none;padding:56px 0;text-align:center;color:var(--ink2);font-size:.88rem}
-  .arch__empty.is-show{display:block}
-
-  /* ============ CTA（静かな招待） ============ */
-  .invite{max-width:1280px;margin:clamp(80px,11vw,150px) auto 0;padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px);
-    border-top:1px solid var(--line);text-align:center}
-  .invite__en{font-family:var(--fserif);font-weight:500;font-size:clamp(2rem,1.4rem + 2.6vw,3.2rem);letter-spacing:.02em;line-height:1;color:var(--ink)}
-  .invite h2{margin-top:clamp(18px,2.4vw,26px);font-family:var(--fh);font-weight:500;
-    font-size:clamp(1.15rem,1rem + .8vw,1.6rem);letter-spacing:.05em;line-height:1.7;color:var(--ink)}
-  .invite p{margin-top:clamp(14px,2vw,20px);max-width:36em;margin-left:auto;margin-right:auto;
-    font-size:clamp(.9rem,.86rem + .3vw,1rem);line-height:2.05;letter-spacing:.04em;color:var(--ink2)}
-  .invite__btn{display:inline-flex;align-items:center;gap:12px;margin-top:clamp(28px,3.6vw,40px);
-    font-family:var(--fh);font-weight:500;font-size:1rem;letter-spacing:.04em;color:#fff;background:var(--amber);
-    padding:16px 38px;border-radius:4px;box-shadow:0 14px 36px -14px rgba(196,133,31,.5);
-    transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
-  .invite__btn:hover{transform:translateY(-3px);box-shadow:0 20px 46px -16px rgba(196,133,31,.6)}
-  .invite__btn svg{width:15px;height:15px;stroke:#fff;stroke-width:2;fill:none}
-  .invite__sub{display:block;margin-top:16px;font-size:.8rem;letter-spacing:.04em;color:var(--ink3)}
-  .invite__sub a{color:var(--ink2);border-bottom:1px solid var(--line2);padding-bottom:2px}
-  .invite__sub a:hover{color:var(--ink)}
-
-  /* ============ ライトボックス ============ */
-  .lightbox{position:fixed;inset:0;z-index:200;background:rgba(20,17,13,.95);
-    display:flex;align-items:center;justify-content:center;padding:clamp(16px,4vw,48px);
-    opacity:0;visibility:hidden;transition:opacity .4s var(--ease);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
-  .lightbox.is-open{opacity:1;visibility:visible}
-  .lightbox__fig{position:relative;max-width:min(1200px,92vw);max-height:88vh;display:flex;flex-direction:column;align-items:center;gap:14px}
-  .lightbox__fig img{max-width:100%;max-height:76vh;width:auto;height:auto;object-fit:contain;border-radius:2px;
-    box-shadow:0 40px 90px -30px rgba(0,0,0,.7);opacity:0;transform:scale(.98);transition:opacity .35s var(--ease),transform .35s var(--ease)}
-  .lightbox.is-open .lightbox__fig img{opacity:1;transform:none}
-  .lightbox__cap{font-family:var(--fh);font-weight:500;font-size:.82rem;letter-spacing:.04em;color:rgba(244,241,234,.85);text-align:center}
-  .lightbox__count{font-family:var(--fn);font-size:.68rem;letter-spacing:.14em;color:rgba(244,241,234,.6)}
-  .lightbox__close,.lightbox__nav{position:fixed;width:clamp(44px,4.6vw,56px);height:clamp(44px,4.6vw,56px);border-radius:50%;
-    border:1px solid rgba(244,241,234,.3);background:rgba(20,16,10,.5);color:#F4F1EA;cursor:pointer;
-    display:inline-flex;align-items:center;justify-content:center;transition:background .3s var(--ease),transform .3s var(--ease)}
-  .lightbox__close:hover,.lightbox__nav:hover{background:rgba(196,133,31,.6);transform:translateY(-1px)}
-  .lightbox__close svg,.lightbox__nav svg{width:18px;height:18px;stroke:currentColor;stroke-width:1.8;fill:none}
-  .lightbox__close{top:clamp(16px,3vw,32px);right:clamp(16px,3vw,32px)}
-  .lightbox__prev{left:clamp(10px,2.4vw,32px);top:50%;transform:translateY(-50%)}
-  .lightbox__next{right:clamp(10px,2.4vw,32px);top:50%;transform:translateY(-50%)}
-  @media(max-width:700px){
-    .lightbox__prev{left:12px;bottom:calc(env(safe-area-inset-bottom) + 20px);top:auto;transform:none}
-    .lightbox__next{right:12px;bottom:calc(env(safe-area-inset-bottom) + 20px);top:auto;transform:none}
-  }
-
-  /* ============ 奥付 ============ */
-  .colo{margin-top:clamp(72px,9vw,120px);background:#14180d;color:rgba(244,241,234,.6);border-top:1px solid rgba(244,241,234,.1)}
-  .colo__in{max-width:1280px;margin:0 auto;padding:clamp(26px,3.6vw,40px) clamp(20px,5vw,64px) calc(clamp(30px,3.6vw,44px) + env(safe-area-inset-bottom))}
-  .colo small{display:block;font-size:.75rem;line-height:2.1;letter-spacing:.05em;
-    max-width:42em}  /* 法定注記=small(意味論的に正)。42emで行長を35〜45字に収める */
-  .colo b{font-weight:500;color:rgba(244,241,234,.8)}
-  .colo__brand{display:flex;align-items:center;gap:11px;padding-top:clamp(4px,1vw,8px);margin-bottom:13px}
-  .colo__brand img{height:24px;width:auto;display:block}
-  .colo__brand b{font-family:var(--fh);font-weight:500;font-size:.88rem;letter-spacing:.1em;color:rgba(244,241,234,.88)}
-  .colo__nav{display:flex;flex-wrap:wrap;gap:0 22px;margin-bottom:16px;font-size:.78rem;letter-spacing:.04em}
-  .colo__nav a{color:rgba(244,241,234,.72);transition:color .25s var(--ease);
-    display:inline-flex;align-items:center;min-height:44px}  /* タップ領域44px(Apple HIG/WCAG AAA) */
-  .colo__nav a:hover{color:#C9A24B}
-
-  /* ============ モバイル追従CV ============ */
-  .stickycv{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;
-    padding:10px clamp(14px,4vw,20px) calc(10px + env(safe-area-inset-bottom));
-    background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px);
-    box-shadow:0 -8px 30px rgba(20,16,10,.12);visibility:hidden;
-    transform:translateY(110%);transition:transform .55s var(--ease),visibility 0s linear .55s}
-  .stickycv.is-show{transform:none;visibility:visible;transition:transform .55s var(--ease),visibility 0s}
-  .stickycv a{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
-    background:var(--amber);color:#fff;font-family:var(--fh);font-weight:500;font-size:.95rem;
-    letter-spacing:.04em;padding:15px 20px;border-radius:4px;box-shadow:0 10px 26px -10px rgba(196,133,31,.5)}
-  .stickycv a svg{width:14px;height:14px;stroke:#fff;stroke-width:2;fill:none}
-  @media(max-width:900px){ .stickycv{display:block} }
-
-  @media (prefers-reduced-motion:reduce){
-    *{animation-duration:.001ms!important}
-    .pcard{opacity:1!important;transform:none!important;transition:none}
-    .pslide img,.acell img,.pcard__media:hover .pslide.is-on img{transition:none;transform:none}
-    .menu__panel,.menu__media,.lightbox__fig img{transition:none}
-    .stickycv{transition:none}
-  }
-
-  /* ============================================================
-     表示規格のフロア（2026-08-19）
-     セクション改修で毎回同じ指摘を再生産しないための既定値。
-     個別に上書きしてよいが、下回る場合は意図を持って行うこと。
-     基準: タップ領域44px(Apple HIG/WCAG AAA) / 装飾ラベル9px下限・12px推奨
-     ============================================================ */
-  @media (pointer:coarse){
-    a[href],button,[role="button"],summary,label[for],
-    input:not([type="hidden"]),select,textarea{min-height:44px}
-    a[href]:not(p a):not(li a):not(dd a):not(td a):not(figcaption a):not(small a){
-      display:inline-flex;align-items:center}
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>施工事例｜株式会社やまと不動産</title>
+  <meta name="description" content="やまと不動産の注文住宅・モデルハウスの施工写真。外観やリビング、キッチン、部屋別の施工写真をご覧いただけます。">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans+JP:wght@400;500&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/works/works-yellow.css?v=20260906">
+  <script src="assets/works/works-yellow.js?v=20260906" defer></script>
 </head>
-<body>
-
-<a class="skip" href="#main">本文へスキップ</a>
-
-<header class="hd" id="hd">
-  <a class="hd__brand" href="index.html" aria-label="やまと不動産 トップへ">
-    <img class="hd__mark" src="assets/brand/yamato_mark.svg" alt="">
-    <span class="hd__kk"><span>株式</span><span>会社</span></span>
-    <span class="hd__jp">やまと不動産</span>
-  </a>
-  <a class="hd__back" href="index.html"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>トップへ戻る</a>
-  <a class="hd__cta" href="contact.html?type=reserve">来場のご予約<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-  <button class="hd__burger" id="hdBurger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="hdMenu">
-    <span></span><span></span>
-  </button>
+<body class="works-page">
+<svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+  <symbol id="expand" viewBox="0 0 24 24"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></symbol>
+  <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+</defs></svg>
+<a class="skip-link" href="#main">本文へ進む</a>
+<header class="works-header">
+  <a class="works-brand" href="index.html" aria-label="株式会社やまと不動産 トップへ"><img src="assets/brand/yamato_mark.svg" alt="" width="53" height="33"><span>やまと不動産</span></a>
+  <nav class="desktop-nav" aria-label="グローバルナビゲーション"><a href="kodawari.html">家づくりのこだわり</a><a href="index.html#lineup">商品ラインナップ</a><a href="works.html" aria-current="page">施工事例</a><a href="lots-preview.html?view=list">分譲地・物件</a></nav>
+  <a class="button button--red header-reserve" href="contact.html?type=reserve">来場予約<span class="desktop-arrow"><svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></span></a>
+  <button class="menu-toggle enhanced" type="button" aria-label="メニューを開く" aria-controls="siteMenu" aria-expanded="false"><span></span><span></span></button>
 </header>
-
-<div class="menu" id="hdMenu" role="dialog" aria-modal="true" aria-label="サイトメニュー" aria-hidden="true">
-  <div class="menu__media">
-    <img src="assets/menu_photo.webp" alt="">
-    <div class="menu__brand">
-      <img class="mk" src="assets/brand/yamato_mark.svg" alt="">
-      <span class="jp">株式会社やまと不動産</span>
-    </div>
-    <div class="menu__addr">
-      奈良県奈良市大宮町1丁目6番21<br>
-      9:00〜19:00｜定休日：火曜・水曜
-      <span class="lic">宅地建物取引業 国土交通大臣（1）第10516号</span>
-    </div>
-  </div>
-  <div class="menu__panel">
-    <button class="menu__close" id="hdMenuClose" type="button" aria-label="メニューを閉じる">
-      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
-    </button>
-    <nav class="menu__nav" aria-label="サイトメニュー">
-      <div class="navcol stagger" style="--i:0">
-        <span class="navcol__label">Understand</span>
-        <a class="lead" href="index.html">トップページ</a>
-        <a class="lead" href="index.html#heart">私たちについて</a>
-        <a class="lead" href="kodawari.html">家づくりのこだわり</a>
-        <div class="subnav">
-          <a href="kodawari.html#price">価格・コミコミの中身</a>
-          <a href="kodawari.html#standard">標準仕様（モデルハウス＝標準）</a>
-          <a href="kodawari.html#design">自由設計・間取り</a>
-          <a href="kodawari.html#after">保証・アフターフォロー</a>
-        </div>
-      </div>
-      <div class="navcol stagger" style="--i:1">
-        <span class="navcol__label">See &amp; Choose</span>
-        <a class="lead" href="madori.html">間取り・花風京</a>
-        <a class="lead" href="works.html" aria-current="page">施工事例</a>
-        <a class="lead" href="model.html">モデルハウス</a>
-        <a class="lead" href="lots.html">分譲地・土地情報</a>
-        <a class="lead" href="voice.html">お客様の声</a>
-      </div>
-      <div class="navcol stagger" style="--i:2">
-        <span class="navcol__label">Company</span>
-        <a class="lead" href="company.html">会社案内</a>
-        <a class="lead" href="company.html#access">アクセス</a>
-      </div>
-    </nav>
-    <div class="menu__contact stagger" style="--i:3">
-      <div class="contact-row">
-        <div class="contact-row__label">来場・ご相談のご予約<small>WEBから 24時間受付</small></div>
-        <div class="contact-row__action">
-          <a class="doc-link" href="contact.html?type=docs">資料請求はこちら</a>
-          <a class="btn-form" href="contact.html?type=reserve">ご予約フォームへ<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </div>
-      <div class="contact-row">
-        <div class="contact-row__label">お電話でのお問い合わせ</div>
-        <div class="contact-row__action">
-          <div>
-            <a class="tel" href="tel:0742361123"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>0742-36-1123</a>
-            <div class="tel-hours">受付 9:00〜19:00｜定休日：火曜・水曜</div>
-          </div>
-        </div>
-      </div>
-      <div class="contact-row">
-        <div class="contact-row__label">LINEでのご相談<small>夜間もお気軽にどうぞ</small></div>
-        <div class="contact-row__action">
-          <a class="btn-form" style="background:#06C755;box-shadow:0 6px 22px rgba(6,199,85,.3)" href="contact.html#line">LINEで友だち追加<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </div>
-    </div>
-    <div class="menu__foot stagger" style="--i:4">
-      <div class="sns">
-        <a href="https://www.instagram.com/yamatonoie/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/brand/sns/instagram.svg" alt="Instagram" loading="lazy"></a>
-        <a href="https://www.youtube.com/@user-ed2cw4tx9o" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="assets/brand/sns/youtube.svg" alt="YouTube" loading="lazy"></a>
-        <a href="https://www.tiktok.com/@yamatofudosan" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="assets/brand/sns/tiktok.svg" alt="TikTok" loading="lazy"></a>
-      </div>
-      <div class="foot-links">
-        <a href="company.html#about">会社概要</a>
-      </div>
-    </div>
-  </div>
-</div>
-
 <main id="main">
-<!-- ヒーロー -->
-<section class="whero">
-  <p class="crumb"><a href="index.html">HOME</a><span>/</span>施工事例</p>
-  <h1 class="whero__t"><span class="whero__en">Works</span><span class="whero__slash">／</span><span class="whero__jp">施工事例</span></h1>
-  <div class="whero__rule"></div>
-</section>
-
-<!-- 実在3邸 -->
-<section class="works" aria-label="建築実例">
-  <div class="works__grid">
-
-    <!-- 01 実邸 -->
-    <article class="pcard" data-project="実際にお引き渡ししたお宅">
-      <div class="pcard__media">
-        <span class="pcard__idx">01</span>
-        <span class="pslide is-on"><img src="assets/works/jittei_ext_01.webp" width="1125" height="2000" alt="お引き渡しした奈良市内の住宅の外観" fetchpriority="high"></span>
-        <span class="pslide"><img src="assets/works/jittei_living_02.webp" width="2200" height="1238" alt="実邸のLDK。アイランドキッチンを中心にした広い空間" loading="lazy"></span>
-        <span class="pslide"><img src="assets/works/jittei_kitchen_01.webp" width="2200" height="1238" alt="実邸のアイランドキッチン。黒い面材とグレーの天板" loading="lazy"></span>
-        <span class="pslide"><img src="assets/works/jittei_living_03.webp" width="1400" height="788" alt="実邸のダイニング。一枚板のカウンターテーブル" loading="lazy"></span>
-        <span class="pslide"><img src="assets/works/jittei_living_01.webp" width="1125" height="2000" alt="実邸のリビング。掃き出し窓から光が入る空間" loading="lazy"></span>
-        <button class="pcard__open" type="button" aria-label="「実際にお引き渡ししたお宅」の写真を拡大して見る"></button>
-        <div class="pdots" role="tablist" aria-label="写真を切り替え"></div>
+  <section class="works-opening" aria-labelledby="worksTitle">
+    <div class="works-wrap">
+      <nav class="breadcrumb" aria-label="パンくずリスト"><a href="index.html">ホーム</a><span aria-hidden="true">／</span><span aria-current="page">施工事例</span></nav>
+      <div class="works-title-row">
+        <div><p class="eyebrow">WORKS</p><h1 id="worksTitle">施工事例</h1></div>
+        <nav class="page-index" aria-label="施工事例ページ内"><a href="#home">注文住宅</a><a href="#models">モデルハウス</a><a href="#arch">部屋別の写真</a></nav>
       </div>
-      <div class="pcard__body">
-        <p class="pcard__cat">House<b>注文住宅</b></p>
-        <h2 class="pcard__title">黒で引き締めた、<br class="only-sp">木の質感の大空間LDKの家</h2>
-        <dl class="pcard__meta"><div style="display:flex;align-items:baseline;gap:12px"><dt>Location</dt><dd>奈良県奈良市（詳細住所は非公開）</dd></div></dl>
-        <ul class="pcard__tags"><li>注文住宅</li><li>アイランドキッチン</li><li>無垢の質感の床</li><li>標準仕様のまま</li></ul>
+      <article class="featured-home" id="home" aria-labelledby="homeTitle">
+        <a class="photo-link featured-photo" href="assets/works/jittei_living_02.webp" data-gallery="home" aria-label="実際にお引き渡ししたお宅の写真を見る"><img src="assets/works/jittei_living_02.webp" width="2200" height="1238" alt="奈良市の注文住宅。黒いキッチンと木の床" fetchpriority="high" decoding="async"><span class="photo-open" aria-hidden="true"><svg class="icon"><use href="#expand"/></svg></span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+        <div class="featured-copy">
+          <p class="project-category"><span>注文住宅</span><span>奈良市</span></p>
+          <h2 id="homeTitle">黒いキッチンと木の床</h2>
+          <p class="featured-note">お引き渡しした住まいの施工写真です。</p>
+          <a class="photo-action" href="assets/works/jittei_living_02.webp" data-gallery="home"><span>写真を見る<small>5枚</small></span><svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="model-section works-wrap" id="models" aria-labelledby="modelTitle">
+    <div class="section-heading"><h2 id="modelTitle">モデルハウス</h2></div>
+    <div class="models-grid">
+      <article class="model-card" aria-labelledby="sakyoTitle">
+        <a class="photo-link model-photo" href="assets/works/sakyo_living_03.webp" data-gallery="sakyo" aria-label="左京モデルハウス やまとランドの写真を見る"><img src="assets/works/sakyo_living_03.webp" width="2200" height="1467" alt="左京モデルハウスの吹き抜けリビング" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true"><svg class="icon"><use href="#expand"/></svg></span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+        <div class="model-caption">
+          <p class="project-category"><span>モデルハウス</span><span>奈良市</span></p>
+          <h3 id="sakyoTitle">左京モデルハウス</h3>
+          <p class="model-description">吹き抜けと木格子のあるリビング</p>
+          <a class="text-action" href="assets/works/sakyo_living_03.webp" data-gallery="sakyo"><span>写真を見る<small>5枚</small></span><svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="model-card" aria-labelledby="miyamakiTitle">
+        <a class="photo-link model-photo" href="assets/works/miyamaki_living_01.webp" data-gallery="miyamaki" aria-label="三山木モデルハウスの写真を見る"><img src="assets/works/miyamaki_living_01.webp" width="2200" height="1467" alt="三山木モデルハウスのLDK。黒いソファと隣接する和室" loading="lazy" decoding="async"><span class="photo-open" aria-hidden="true"><svg class="icon"><use href="#expand"/></svg></span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+        <div class="model-caption">
+          <p class="project-category"><span>モデルハウス</span></p>
+          <h3 id="miyamakiTitle">三山木モデルハウス</h3>
+          <p class="model-description">和室とつながるリビング</p>
+          <a class="text-action" href="assets/works/miyamaki_living_01.webp" data-gallery="miyamaki"><span>写真を見る<small>4枚</small></span><svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="archive-section" id="arch" aria-labelledby="archiveTitle">
+    <div class="works-wrap">
+      <div class="archive-heading"><div><p class="eyebrow">PHOTO ARCHIVE</p><h2 id="archiveTitle">部屋別の施工写真</h2></div><p>2016年撮影の施工事例です。</p></div>
+      <div class="archive-controls enhanced">
+        <div class="room-filters" role="group" aria-label="部屋を選ぶ"><button type="button" class="room-filter" data-filter="all" aria-pressed="true"><span class="filter-check" aria-hidden="true">✓</span>すべて</button><button type="button" class="room-filter" data-filter="entrance" aria-pressed="false"><span class="filter-check" aria-hidden="true">✓</span>玄関</button><button type="button" class="room-filter" data-filter="stair" aria-pressed="false"><span class="filter-check" aria-hidden="true">✓</span>階段</button><button type="button" class="room-filter" data-filter="bath" aria-pressed="false"><span class="filter-check" aria-hidden="true">✓</span>浴室</button><button type="button" class="room-filter" data-filter="wash" aria-pressed="false"><span class="filter-check" aria-hidden="true">✓</span>洗面所</button><button type="button" class="room-filter" data-filter="storage" aria-pressed="false"><span class="filter-check" aria-hidden="true">✓</span>収納</button><button type="button" class="room-filter" data-filter="washitsu" aria-pressed="false"><span class="filter-check" aria-hidden="true">✓</span>和室</button><button type="button" class="room-filter" data-filter="toilet" aria-pressed="false"><span class="filter-check" aria-hidden="true">✓</span>トイレ</button></div>
+        <p id="archiveStatus" class="archive-status" role="status" aria-live="polite"></p>
       </div>
-    </article>
-
-    <!-- 02 左京モデルハウス -->
-    <article class="pcard" data-project="左京モデルハウス やまとランド">
-      <div class="pcard__media">
-        <span class="pcard__idx">02</span>
-        <span class="pslide is-on"><img src="assets/works/sakyo_ext_01.webp" width="2200" height="1466" alt="左京モデルハウスの外観。黒い外壁と木格子" loading="lazy"></span>
-        <span class="pslide"><img src="assets/works/sakyo_living_03.webp" width="2200" height="1467" alt="左京モデルハウスの吹き抜けリビング" loading="lazy"></span>
-        <span class="pslide"><img src="assets/works/sakyo_kitchen_01.webp" width="2200" height="1467" alt="左京モデルハウスのアイランドキッチン" loading="lazy"></span>
-        <span class="pslide"><img src="assets/works/sakyo_stair_01.webp" width="2200" height="1467" alt="左京モデルハウスの吹き抜けと階段" loading="lazy"></span>
-        <span class="pslide"><img src="assets/works/sakyo_washitsu_03.webp" alt="左京モデルハウスの和室からLDKを見る" loading="lazy"></span>
-        <button class="pcard__open" type="button" aria-label="「左京モデルハウス やまとランド」の写真を拡大して見る"></button>
-        <div class="pdots" role="tablist" aria-label="写真を切り替え"></div>
+      <div class="archive-grid"><a class="archive-photo photo-link" href="assets/works/archive/archive_entrance_03.webp" data-archive="0" data-room="entrance" aria-label="玄関の施工写真を拡大する"><img src="assets/works/archive/archive_entrance_03.webp" alt="2016年に撮影した施工事例の玄関" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">玄関</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_entrance_06.webp" data-archive="1" data-room="entrance" aria-label="玄関の施工写真を拡大する"><img src="assets/works/archive/archive_entrance_06.webp" alt="2016年に撮影した施工事例の玄関と廊下" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">玄関</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_stair_02.webp" data-archive="2" data-room="stair" aria-label="階段の施工写真を拡大する"><img src="assets/works/archive/archive_stair_02.webp" alt="2016年に撮影した施工事例の階段" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">階段</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_stair_04.webp" data-archive="3" data-room="stair" aria-label="階段の施工写真を拡大する"><img src="assets/works/archive/archive_stair_04.webp" alt="2016年に撮影した施工事例の階段まわり" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">階段</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_stair_06.webp" data-archive="4" data-room="stair" aria-label="階段の施工写真を拡大する"><img src="assets/works/archive/archive_stair_06.webp" alt="2016年に撮影した施工事例の階段の別カット" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">階段</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_bath_02.webp" data-archive="5" data-room="bath" aria-label="浴室の施工写真を拡大する"><img src="assets/works/archive/archive_bath_02.webp" alt="2016年に撮影した施工事例の浴室" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">浴室</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_bath_04.webp" data-archive="6" data-room="bath" aria-label="浴室の施工写真を拡大する"><img src="assets/works/archive/archive_bath_04.webp" alt="2016年に撮影した施工事例の浴室の別カット" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">浴室</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_bath_06.webp" data-archive="7" data-room="bath" aria-label="浴室の施工写真を拡大する"><img src="assets/works/archive/archive_bath_06.webp" alt="2016年に撮影した施工事例の浴室の水栓まわり" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">浴室</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_wash_02.webp" data-archive="8" data-room="wash" aria-label="洗面所の施工写真を拡大する"><img src="assets/works/archive/archive_wash_02.webp" alt="2016年に撮影した施工事例の洗面所" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">洗面所</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_wash_04.webp" data-archive="9" data-room="wash" aria-label="洗面所の施工写真を拡大する"><img src="assets/works/archive/archive_wash_04.webp" alt="2016年に撮影した施工事例の洗面所の別カット" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">洗面所</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_wash_06.webp" data-archive="10" data-room="wash" aria-label="洗面所の施工写真を拡大する"><img src="assets/works/archive/archive_wash_06.webp" alt="2016年に撮影した施工事例の洗面化粧台" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">洗面所</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_storage_02.webp" data-archive="11" data-room="storage" aria-label="収納の施工写真を拡大する"><img src="assets/works/archive/archive_storage_02.webp" alt="2016年に撮影した施工事例の収納" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">収納</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_storage_03.webp" data-archive="12" data-room="storage" aria-label="収納の施工写真を拡大する"><img src="assets/works/archive/archive_storage_03.webp" alt="2016年に撮影した施工事例の収納の別カット" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">収納</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_storage_05.webp" data-archive="13" data-room="storage" aria-label="収納の施工写真を拡大する"><img src="assets/works/archive/archive_storage_05.webp" alt="2016年に撮影した施工事例の棚を備えた収納スペース" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">収納</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_storage_08.webp" data-archive="14" data-room="storage" aria-label="収納の施工写真を拡大する"><img src="assets/works/archive/archive_storage_08.webp" alt="2016年に撮影した施工事例の棚を備えた収納スペース" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">収納</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_washitsu_03.webp" data-archive="15" data-room="washitsu" aria-label="和室の施工写真を拡大する"><img src="assets/works/archive/archive_washitsu_03.webp" alt="2016年に撮影した施工事例の和室" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">和室</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_washitsu_05.webp" data-archive="16" data-room="washitsu" aria-label="和室の施工写真を拡大する"><img src="assets/works/archive/archive_washitsu_05.webp" alt="2016年に撮影した施工事例の和室の別カット" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">和室</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_toilet_01.webp" data-archive="17" data-room="toilet" aria-label="トイレの施工写真を拡大する"><img src="assets/works/archive/archive_toilet_01.webp" alt="2016年に撮影した施工事例のトイレ" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">トイレ</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_toilet_03.webp" data-archive="18" data-room="toilet" aria-label="トイレの施工写真を拡大する"><img src="assets/works/archive/archive_toilet_03.webp" alt="2016年に撮影した施工事例のトイレの別カット" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">トイレ</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
+<a class="archive-photo photo-link" href="assets/works/archive/archive_toilet_05.webp" data-archive="19" data-room="toilet" aria-label="トイレの施工写真を拡大する"><img src="assets/works/archive/archive_toilet_05.webp" alt="2016年に撮影した施工事例の黄色い壁のトイレ" loading="lazy" decoding="async" width="800" height="800"><span class="archive-caption">トイレ</span><span class="photo-unavailable" hidden>写真を読み込めませんでした</span></a>
       </div>
-      <div class="pcard__body">
-        <p class="pcard__cat">Model House<b>モデルハウス</b></p>
-        <h2 class="pcard__title">吹き抜けと木格子の、<br class="only-sp">光あふれる家「やまとランド」</h2>
-        <dl class="pcard__meta"><div style="display:flex;align-items:baseline;gap:12px"><dt>Location</dt><dd>奈良県奈良市左京1丁目8-8</dd></div></dl>
-        <ul class="pcard__tags"><li>モデルハウス</li><li>25坪</li><li>吹き抜け</li><li>木格子</li><li>ハイドア</li></ul>
-      </div>
-    </article>
-
-    <!-- 03 三山木モデルハウス -->
-    <article class="pcard" data-project="三山木モデルハウス">
-      <div class="pcard__media">
-        <span class="pcard__idx">03</span>
-        <span class="pslide is-on"><img src="assets/works/miyamaki_living_01.webp" width="2200" height="1467" alt="三山木モデルハウスのLDK。黒いソファと隣接する和室" loading="lazy"></span>
-        <span class="pslide"><img src="assets/works/miyamaki_entrance_01.webp" alt="三山木モデルハウスの玄関。街並み柄のアクセントクロス" loading="lazy"></span>
-        <span class="pslide"><img src="assets/works/miyamaki_living_02.webp" alt="三山木モデルハウスのダイニングを見下ろした眺め" loading="lazy"></span>
-        <span class="pslide"><img src="assets/works/miyamaki_bedroom_01.webp" alt="三山木モデルハウスのスタディコーナー" loading="lazy"></span>
-        <button class="pcard__open" type="button" aria-label="「三山木モデルハウス」の写真を拡大して見る"></button>
-        <div class="pdots" role="tablist" aria-label="写真を切り替え"></div>
-      </div>
-      <div class="pcard__body">
-        <p class="pcard__cat">Model House<b>モデルハウス</b></p>
-        <h2 class="pcard__title">和室とつながる、<br class="only-sp">明るいリビングの家</h2>
-        <dl class="pcard__meta"><div style="display:flex;align-items:baseline;gap:12px"><dt>Location</dt><dd>三山木モデルハウス</dd></div></dl>
-        <ul class="pcard__tags"><li>モデルハウス</li><li>和室</li><li>対面キッチン</li><li>スタディコーナー</li></ul>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<!-- 過去の施工から（2016アーカイブ・部屋別） -->
-<section class="arch" id="arch" aria-label="過去の施工から">
-  <div class="arch__head">
-    <span class="arch__en">Archive</span>
-    <span class="arch__jp">過去の施工から</span>
-  </div>
-  <p class="arch__note">2016年に撮影した、過去の施工事例の記録です。部屋ごとにご覧いただけます。掲載の写真は、実際にやまと不動産が建てた住まいです。</p>
-
-  <div class="arch__filter" role="group" aria-label="部屋で絞り込む">
-    <button class="fbtn" type="button" data-room="all" aria-pressed="true">すべて</button>
-    <button class="fbtn" type="button" data-room="entrance" aria-pressed="false">玄関</button>
-    <button class="fbtn" type="button" data-room="stair" aria-pressed="false">階段</button>
-    <button class="fbtn" type="button" data-room="bath" aria-pressed="false">浴室</button>
-    <button class="fbtn" type="button" data-room="wash" aria-pressed="false">洗面所</button>
-    <button class="fbtn" type="button" data-room="storage" aria-pressed="false">収納</button>
-    <button class="fbtn" type="button" data-room="washitsu" aria-pressed="false">和室</button>
-    <button class="fbtn" type="button" data-room="toilet" aria-pressed="false">トイレ</button>
-  </div>
-
-  <div class="arch__grid" id="archGrid">
-    <button class="acell" data-room="entrance" type="button"><img src="assets/works/archive/archive_entrance_03.webp" alt="2016年に撮影した施工事例の玄関" loading="lazy"><span class="acell__cap">玄関</span></button>
-    <button class="acell" data-room="entrance" type="button"><img src="assets/works/archive/archive_entrance_06.webp" alt="2016年に撮影した施工事例の玄関収納" loading="lazy"><span class="acell__cap">玄関</span></button>
-    <button class="acell" data-room="stair" type="button"><img src="assets/works/archive/archive_stair_02.webp" alt="2016年に撮影した施工事例の階段" loading="lazy"><span class="acell__cap">階段</span></button>
-    <button class="acell" data-room="stair" type="button"><img src="assets/works/archive/archive_stair_04.webp" alt="2016年に撮影した施工事例の階段まわり" loading="lazy"><span class="acell__cap">階段</span></button>
-    <button class="acell" data-room="stair" type="button"><img src="assets/works/archive/archive_stair_06.webp" alt="2016年に撮影した施工事例の階段の別カット" loading="lazy"><span class="acell__cap">階段</span></button>
-    <button class="acell" data-room="bath" type="button"><img src="assets/works/archive/archive_bath_02.webp" alt="2016年に撮影した施工事例の浴室" loading="lazy"><span class="acell__cap">浴室</span></button>
-    <button class="acell" data-room="bath" type="button"><img src="assets/works/archive/archive_bath_04.webp" alt="2016年に撮影した施工事例の浴室の別カット" loading="lazy"><span class="acell__cap">浴室</span></button>
-    <button class="acell" data-room="bath" type="button"><img src="assets/works/archive/archive_bath_06.webp" alt="2016年に撮影した施工事例の浴室の水栓まわり" loading="lazy"><span class="acell__cap">浴室</span></button>
-    <button class="acell" data-room="wash" type="button"><img src="assets/works/archive/archive_wash_02.webp" alt="2016年に撮影した施工事例の洗面所" loading="lazy"><span class="acell__cap">洗面所</span></button>
-    <button class="acell" data-room="wash" type="button"><img src="assets/works/archive/archive_wash_04.webp" alt="2016年に撮影した施工事例の洗面所の別カット" loading="lazy"><span class="acell__cap">洗面所</span></button>
-    <button class="acell" data-room="wash" type="button"><img src="assets/works/archive/archive_wash_06.webp" alt="2016年に撮影した施工事例の洗面化粧台" loading="lazy"><span class="acell__cap">洗面所</span></button>
-    <button class="acell" data-room="storage" type="button"><img src="assets/works/archive/archive_storage_02.webp" alt="2016年に撮影した施工事例の収納" loading="lazy"><span class="acell__cap">収納</span></button>
-    <button class="acell" data-room="storage" type="button"><img src="assets/works/archive/archive_storage_03.webp" alt="2016年に撮影した施工事例の収納の別カット" loading="lazy"><span class="acell__cap">収納</span></button>
-    <button class="acell" data-room="storage" type="button"><img src="assets/works/archive/archive_storage_05.webp" alt="2016年に撮影した施工事例のクローゼット収納" loading="lazy"><span class="acell__cap">収納</span></button>
-    <button class="acell" data-room="storage" type="button"><img src="assets/works/archive/archive_storage_08.webp" alt="2016年に撮影した施工事例のクローゼット収納" loading="lazy"><span class="acell__cap">収納</span></button>
-    <button class="acell" data-room="washitsu" type="button"><img src="assets/works/archive/archive_washitsu_03.webp" alt="2016年に撮影した施工事例の和室" loading="lazy"><span class="acell__cap">和室</span></button>
-    <button class="acell" data-room="washitsu" type="button"><img src="assets/works/archive/archive_washitsu_05.webp" alt="2016年に撮影した施工事例の和室の別カット" loading="lazy"><span class="acell__cap">和室</span></button>
-    <button class="acell" data-room="toilet" type="button"><img src="assets/works/archive/archive_toilet_01.webp" alt="2016年に撮影した施工事例のトイレ" loading="lazy"><span class="acell__cap">トイレ</span></button>
-    <button class="acell" data-room="toilet" type="button"><img src="assets/works/archive/archive_toilet_03.webp" alt="2016年に撮影した施工事例のトイレの別カット" loading="lazy"><span class="acell__cap">トイレ</span></button>
-    <button class="acell" data-room="toilet" type="button"><img src="assets/works/archive/archive_toilet_05.webp" alt="2016年に撮影した施工事例のトイレの手洗いまわり" loading="lazy"><span class="acell__cap">トイレ</span></button>
-  </div>
-  <p class="arch__empty" id="archEmpty" role="status" aria-live="polite">この部屋の写真は、現在準備中です。</p>
-</section>
-
-<!-- CTA -->
-<section class="invite">
-  <span class="invite__en">Model House</span>
-  <h2>写真の続きは、実物でご覧ください。</h2>
-  <p>木の質感も、光の入り方も、空間の広さも、写真だけでは伝わりきらないものばかりです。奈良のモデルハウスは、標準仕様のまま建てています。ご見学の場で、契約を迫ることはありません。</p>
-  <a class="invite__btn" href="contact.html?type=reserve">見学を予約する<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-  <span class="invite__sub"><a href="contact.html?type=docs">資料請求はこちら</a></span>
-</section>
+      <p class="archive-empty" hidden>この部屋の写真はありません。ほかの部屋をお選びください。</p>
+      <div class="archive-more-wrap enhanced"><button class="button button--outline" id="archiveMore" type="button">残り12枚を見る<span aria-hidden="true">＋</span></button></div>
+    </div>
+  </section>
+  <section class="visit-section" id="visit" aria-labelledby="visitTitle">
+    <div class="works-wrap visit-inner">
+      <div class="visit-copy"><p class="eyebrow">MODEL HOUSE</p><h2 id="visitTitle"><span>モデルハウスで、</span><span>広さと使いやすさを確認。</span></h2><p>ご案内する会場・日時は、ご予約時に確認します。</p></div>
+      <div class="visit-actions"><a class="button button--red" href="contact.html?type=reserve">見学を予約する<svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a><a class="secondary-action" href="contact.html?type=docs">資料請求<svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+    </div>
+    <div class="works-wrap visit-phone"><span>お電話でのご相談</span><a href="tel:0742361123">0742-36-1123</a><small>9:00〜19:00 ／ 火曜・水曜定休</small></div>
+  </section>
 </main>
-
-<footer class="colo">
-  <div class="colo__in">
-    <div class="colo__brand"><img src="assets/brand/yamato_mark.svg" alt=""><b>株式会社やまと不動産</b></div>
-    <nav class="colo__nav" aria-label="フッターナビゲーション">
-      <a href="index.html">トップ</a>
-      <a href="kodawari.html">家づくりのこだわり</a>
-      <a href="model.html">モデルハウス</a>
-      <a href="lots.html">分譲地・物件</a>
-      <a href="voice.html">お客様の声</a>
-      <a href="company.html">会社案内</a>
-      <a href="contact.html">お問い合わせ</a>
-    </nav>
-    <small>
-      <b>株式会社やまと不動産</b>（奈良県奈良市大宮町1丁目6番21）　宅地建物取引業 国土交通大臣（1）第10516号<br>
-      掲載の写真は、実際にやまと不動産が建てた住宅です。一部、2016年に撮影した施工事例を含みます。<br>
-      お電話：0742-36-1123（受付 9:00〜19:00｜定休日：火曜・水曜）
-    </small>
+<footer class="works-footer">
+  <div class="works-wrap">
+    <div class="footer-top"><a class="works-brand" href="index.html"><img src="assets/brand/yamato_mark.svg" alt="" width="53" height="33"><span>やまと不動産</span></a><a class="back-to-top" href="#main">ページの先頭へ<span aria-hidden="true">↑</span></a></div>
+    <nav class="footer-nav" aria-label="フッターナビゲーション"><a href="kodawari.html">家づくりのこだわり</a><a href="model.html">モデルハウス</a><a href="lots-preview.html?view=list">分譲地・物件</a><a href="voice.html">お客様の声</a><a href="company.html">会社案内</a><a href="contact.html">お問い合わせ</a></nav>
+    <p class="footer-legal">株式会社やまと不動産<br>〒630-8115 奈良県奈良市大宮町1丁目6番21<br>宅地建物取引業 国土交通大臣（1）第10516号</p>
+    <p class="footer-note">掲載の写真は、当社が建築した注文住宅・モデルハウスです。部屋別の写真は2016年の施工記録です。</p>
+    <small class="copyright">© 株式会社やまと不動産</small>
   </div>
 </footer>
-
-<div class="stickycv" id="stickycv" aria-hidden="true">
-  <a href="contact.html?type=reserve">見学を予約する<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-</div>
-
-<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="写真を拡大表示">
-  <button class="lightbox__close" id="lbClose" type="button" aria-label="閉じる"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-  <button class="lightbox__nav lightbox__prev" id="lbPrev" type="button" aria-label="前の写真"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
-  <button class="lightbox__nav lightbox__next" id="lbNext" type="button" aria-label="次の写真"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
-  <figure class="lightbox__fig">
-    <img id="lbImg" src="" alt="">
-    <figcaption class="lightbox__cap"><span id="lbCap"></span> <span class="lightbox__count" id="lbCount"></span></figcaption>
-  </figure>
-</div>
-
-<script>
-(function(){
-  var d=document;
-  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
-
-  /* 追従CV（rAFスロットル） */
-  var cv=d.getElementById('stickycv'), cvTick=false;
-  window.addEventListener('scroll',function(){
-    if(cvTick) return; cvTick=true;
-    requestAnimationFrame(function(){
-      var on=window.scrollY>window.innerHeight*.6;
-      cv.classList.toggle('is-show',on); cv.setAttribute('aria-hidden',on?'false':'true'); cvTick=false;
-    });
-  },{passive:true});
-
-  /* カードのリビール */
-  if('IntersectionObserver' in window && !reduce){
-    var io=new IntersectionObserver(function(es){
-      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
-    },{threshold:.14,rootMargin:'0px 0px -6% 0px'});
-    d.querySelectorAll('.pcard').forEach(function(c){ io.observe(c); });
-  } else {
-    d.querySelectorAll('.pcard').forEach(function(c){ c.classList.add('is-in'); });
-  }
-
-  /* 邸カードのカルーセル（ドット＋自動送り。hover/focusで一時停止・reduced-motionで自動送りなし） */
-  d.querySelectorAll('.pcard__media').forEach(function(media){
-    var slides=Array.prototype.slice.call(media.querySelectorAll('.pslide'));
-    var dotsWrap=media.querySelector('.pdots');
-    if(slides.length<2){ return; }
-    var idx=0, timer=null, paused=false;
-    slides.forEach(function(s,i){
-      var b=d.createElement('button'); b.className='pdot'+(i===0?' is-on':''); b.type='button';
-      b.setAttribute('role','tab'); b.setAttribute('aria-label',(i+1)+'枚目を表示');
-      b.addEventListener('click',function(ev){ ev.stopPropagation(); go(i); restart(); });
-      dotsWrap.appendChild(b);
-    });
-    var dots=Array.prototype.slice.call(dotsWrap.querySelectorAll('.pdot'));
-    function go(i){ slides[idx].classList.remove('is-on'); dots[idx].classList.remove('is-on');
-      idx=(i+slides.length)%slides.length; slides[idx].classList.add('is-on'); dots[idx].classList.add('is-on'); }
-    function tick(){ if(!paused) go(idx+1); }
-    function start(){ if(reduce) return; timer=setInterval(tick,4200); }
-    function restart(){ if(timer) clearInterval(timer); start(); }
-    media.addEventListener('mouseenter',function(){ paused=true; });
-    media.addEventListener('mouseleave',function(){ paused=false; });
-    media.addEventListener('focusin',function(){ paused=true; });
-    media.addEventListener('focusout',function(){ paused=false; });
-    start();
-  });
-
-  /* アーカイブ 部屋フィルター */
-  var fbtns=d.querySelectorAll('.arch__filter .fbtn');
-  var cells=d.querySelectorAll('#archGrid .acell');
-  var archEmpty=d.getElementById('archEmpty');
-  fbtns.forEach(function(b){
-    b.addEventListener('click',function(){
-      fbtns.forEach(function(x){ x.setAttribute('aria-pressed', x===b?'true':'false'); });
-      var r=b.getAttribute('data-room'), vis=0;
-      cells.forEach(function(c){ var show=(r==='all'||c.getAttribute('data-room')===r);
-        c.setAttribute('data-hidden',show?'0':'1'); if(show) vis++; });
-      archEmpty.classList.toggle('is-show',vis===0);
-    });
-  });
-
-  /* ===== フォーカストラップ／inert 共通 ===== */
-  var FOCUSABLE='a[href],button:not([disabled]),input,select,textarea,[tabindex]:not([tabindex="-1"])';
-  function pageEls(){ return [d.getElementById('main'), d.querySelector('.hd'), d.querySelector('.colo'), d.getElementById('stickycv')]; }
-  function setInert(v){ pageEls().forEach(function(e){ if(e){ if(v) e.setAttribute('inert',''); else e.removeAttribute('inert'); } }); }
-  function trap(container,e){
-    if(e.key!=='Tab') return;
-    var f=Array.prototype.slice.call(container.querySelectorAll(FOCUSABLE)).filter(function(el){return el.offsetParent!==null;});
-    if(!f.length) return; var first=f[0], last=f[f.length-1];
-    if(e.shiftKey && d.activeElement===first){ e.preventDefault(); last.focus(); }
-    else if(!e.shiftKey && d.activeElement===last){ e.preventDefault(); first.focus(); }
-  }
-
-  /* ライトボックス（画像配列駆動） */
-  var lb=d.getElementById('lightbox'), lbImg=d.getElementById('lbImg'), lbCap=d.getElementById('lbCap'),
-      lbCount=d.getElementById('lbCount'), lbClose=d.getElementById('lbClose'),
-      lbPrev=d.getElementById('lbPrev'), lbNext=d.getElementById('lbNext');
-  var list=[], idx=0, lastFocus=null;
-  function showAt(i){
-    if(!list.length) return; idx=(i+list.length)%list.length;
-    lbImg.src=list[idx].src; lbImg.alt=list[idx].alt;
-    lbCap.textContent=list[idx].cap||''; lbCount.textContent=(idx+1)+' / '+list.length;
-  }
-  function openLb(arr,start){
-    lastFocus=d.activeElement; list=arr; showAt(start||0);
-    lb.classList.add('is-open'); lb.setAttribute('aria-hidden','false');
-    d.body.classList.add('is-locked'); setInert(true);
-    setTimeout(function(){ lbClose.focus(); },40);
-    d.addEventListener('keydown',onLbKey);
-  }
-  function closeLb(){
-    lb.classList.remove('is-open'); lb.setAttribute('aria-hidden','true');
-    d.body.classList.remove('is-locked'); setInert(false);
-    d.removeEventListener('keydown',onLbKey); if(lastFocus) lastFocus.focus();
-  }
-  function onLbKey(e){
-    if(e.key==='Escape') closeLb();
-    else if(e.key==='ArrowRight') showAt(idx+1);
-    else if(e.key==='ArrowLeft') showAt(idx-1);
-    else if(e.key==='Tab') trap(lb,e);
-  }
-  /* 邸カード → その邸の全スライドをライトボックスへ */
-  d.querySelectorAll('.pcard').forEach(function(card){
-    var proj=card.getAttribute('data-project')||'';
-    var imgs=Array.prototype.slice.call(card.querySelectorAll('.pslide img')).map(function(im){
-      return {src:im.currentSrc||im.src, alt:im.alt, cap:proj}; });
-    card.querySelector('.pcard__open').addEventListener('click',function(){ openLb(imgs,0); });
-  });
-  /* アーカイブ → 表示中セルの集合をライトボックスへ */
-  d.querySelectorAll('#archGrid .acell').forEach(function(cell){
-    cell.addEventListener('click',function(){
-      var visible=Array.prototype.slice.call(cells).filter(function(c){ return c.getAttribute('data-hidden')!=='1'; });
-      var arr=visible.map(function(c){ var im=c.querySelector('img'); var cap=c.querySelector('.acell__cap');
-        return {src:im.currentSrc||im.src, alt:im.alt, cap:cap?cap.textContent:''}; });
-      openLb(arr, visible.indexOf(cell));
-    });
-  });
-  lbClose.addEventListener('click',closeLb);
-  lb.addEventListener('click',function(e){ if(e.target===lb) closeLb(); });
-  lbPrev.addEventListener('click',function(){ showAt(idx-1); });
-  lbNext.addEventListener('click',function(){ showAt(idx+1); });
-  var tx=0;
-  lb.addEventListener('touchstart',function(e){ tx=e.changedTouches[0].clientX; },{passive:true});
-  lb.addEventListener('touchend',function(e){ var dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>50) showAt(idx+(dx<0?1:-1)); },{passive:true});
-})();
-</script>
-<script>
-(function(){
-  var d=document;
-  var menu=d.getElementById('hdMenu'), burger=d.getElementById('hdBurger'), closeBtn=d.getElementById('hdMenuClose'), lastFocus=null;
-  if(!menu||!burger||!closeBtn) return;
-  var FOCUSABLE='a[href],button:not([disabled]),input,select,textarea,[tabindex]:not([tabindex="-1"])';
-  function pageEls(){ return [d.getElementById('main'), d.querySelector('.hd'), d.querySelector('.colo'), d.getElementById('stickycv')]; }
-  function setInert(v){ pageEls().forEach(function(e){ if(e){ if(v) e.setAttribute('inert',''); else e.removeAttribute('inert'); } }); }
-  function onKey(e){
-    if(e.key==='Escape'){ closeMenu(); return; }
-    if(e.key==='Tab'){
-      var f=Array.prototype.slice.call(menu.querySelectorAll(FOCUSABLE)).filter(function(el){return el.offsetParent!==null;});
-      if(!f.length) return; var first=f[0], last=f[f.length-1];
-      if(e.shiftKey && d.activeElement===first){ e.preventDefault(); last.focus(); }
-      else if(!e.shiftKey && d.activeElement===last){ e.preventDefault(); first.focus(); }
-    }
-  }
-  function openMenu(){ lastFocus=d.activeElement; menu.classList.add('is-open');
-    menu.setAttribute('aria-hidden','false'); burger.setAttribute('aria-expanded','true');
-    d.body.classList.add('is-locked'); setInert(true); setTimeout(function(){closeBtn.focus();},60); d.addEventListener('keydown',onKey); }
-  function closeMenu(){ menu.classList.remove('is-open'); menu.setAttribute('aria-hidden','true');
-    burger.setAttribute('aria-expanded','false'); d.body.classList.remove('is-locked'); setInert(false);
-    d.removeEventListener('keydown',onKey); if(lastFocus)lastFocus.focus(); }
-  burger.addEventListener('click',openMenu);
-  closeBtn.addEventListener('click',closeMenu);
-  menu.querySelectorAll('a[href="#"]').forEach(function(a){ a.addEventListener('click',function(e){e.preventDefault();closeMenu();}); });
-})();
-</script>
+<dialog id="siteMenu" class="site-menu" aria-labelledby="menuTitle">
+  <div class="menu-top"><p id="menuTitle">メニュー</p><form method="dialog"><button class="icon-button" aria-label="メニューを閉じる"><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button></form></div>
+  <nav class="menu-links" aria-label="サイトメニュー"><a href="index.html">トップページ</a><a href="kodawari.html">家づくりのこだわり</a><a href="index.html#lineup">商品ラインナップ</a><a href="works.html" aria-current="page">施工事例</a><a href="model.html">モデルハウス</a><a href="lots-preview.html?view=list">分譲地・物件</a><a href="voice.html">お客様の声</a><a href="company.html">会社案内</a></nav>
+  <div class="menu-actions"><a class="button button--red" href="contact.html?type=reserve">来場予約<svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a><a class="button button--outline" href="contact.html?type=docs">資料請求<svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+</dialog>
+<dialog id="photoViewer" class="photo-viewer" aria-labelledby="viewerTitle">
+  <div class="viewer-header"><div><p class="viewer-kind" id="viewerKind"></p><h2 id="viewerTitle">施工写真</h2></div><form method="dialog"><button class="icon-button" aria-label="写真を閉じる" autofocus><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button></form></div>
+  <div class="viewer-stage" aria-busy="false">
+    <img class="viewer-image" alt="" hidden>
+    <p class="viewer-loading" role="status" hidden>写真を読み込んでいます</p>
+    <div class="viewer-error" hidden><p role="alert">写真を読み込めませんでした。</p><button class="button button--outline" type="button" id="retryPhoto">もう一度読み込む</button></div>
+  </div>
+  <div class="viewer-bottom">
+    <p class="viewer-caption" id="viewerCaption"></p>
+    <div class="viewer-controls"><button class="icon-button viewer-prev" type="button" aria-label="前の写真"><svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></button><p class="viewer-count" aria-live="polite" aria-atomic="true"></p><button class="icon-button viewer-next" type="button" aria-label="次の写真"><svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></button></div>
+  </div>
+</dialog>
+<script id="worksPhotoData" type="application/json">{"galleries":{"home":{"title":"実際にお引き渡ししたお宅","images":[{"src":"assets/works/jittei_living_02.webp","alt":"奈良市の注文住宅。黒いキッチンと木の床"},{"src":"assets/works/jittei_ext_01.webp","alt":"お引き渡しした奈良市内の住宅の外観"},{"src":"assets/works/jittei_kitchen_01.webp","alt":"実邸のキッチン。シンクと作業台"},{"src":"assets/works/jittei_living_03.webp","alt":"実邸のダイニング。キッチン前のカウンターテーブル"},{"src":"assets/works/jittei_living_01.webp","alt":"実邸のリビング。掃き出し窓から光が入る空間"}]},"sakyo":{"title":"左京モデルハウス やまとランド","images":[{"src":"assets/works/sakyo_living_03.webp","alt":"左京モデルハウスの吹き抜けリビング"},{"src":"assets/works/sakyo_ext_01.webp","alt":"左京モデルハウスの外観。黒い外壁とガラス手すりのバルコニー"},{"src":"assets/works/sakyo_kitchen_01.webp","alt":"左京モデルハウスのキッチンからリビングを見る"},{"src":"assets/works/sakyo_stair_01.webp","alt":"左京モデルハウスの吹き抜けと階段"},{"src":"assets/works/sakyo_washitsu_03.webp","alt":"左京モデルハウスの和室からLDKを見る"}]},"miyamaki":{"title":"三山木モデルハウス","images":[{"src":"assets/works/miyamaki_living_01.webp","alt":"三山木モデルハウスのLDK。黒いソファと隣接する和室"},{"src":"assets/works/miyamaki_entrance_01.webp","alt":"三山木モデルハウスの玄関。街並み柄のアクセントクロス"},{"src":"assets/works/miyamaki_living_02.webp","alt":"三山木モデルハウスの吹き抜けとダイニング"},{"src":"assets/works/miyamaki_bedroom_01.webp","alt":"三山木モデルハウスのスタディコーナー"}]}},"archive":[{"room":"entrance","src":"assets/works/archive/archive_entrance_03.webp","alt":"2016年に撮影した施工事例の玄関","label":"玄関"},{"room":"entrance","src":"assets/works/archive/archive_entrance_06.webp","alt":"2016年に撮影した施工事例の玄関と廊下","label":"玄関"},{"room":"stair","src":"assets/works/archive/archive_stair_02.webp","alt":"2016年に撮影した施工事例の階段","label":"階段"},{"room":"stair","src":"assets/works/archive/archive_stair_04.webp","alt":"2016年に撮影した施工事例の階段まわり","label":"階段"},{"room":"stair","src":"assets/works/archive/archive_stair_06.webp","alt":"2016年に撮影した施工事例の階段の別カット","label":"階段"},{"room":"bath","src":"assets/works/archive/archive_bath_02.webp","alt":"2016年に撮影した施工事例の浴室","label":"浴室"},{"room":"bath","src":"assets/works/archive/archive_bath_04.webp","alt":"2016年に撮影した施工事例の浴室の別カット","label":"浴室"},{"room":"bath","src":"assets/works/archive/archive_bath_06.webp","alt":"2016年に撮影した施工事例の浴室の水栓まわり","label":"浴室"},{"room":"wash","src":"assets/works/archive/archive_wash_02.webp","alt":"2016年に撮影した施工事例の洗面所","label":"洗面所"},{"room":"wash","src":"assets/works/archive/archive_wash_04.webp","alt":"2016年に撮影した施工事例の洗面所の別カット","label":"洗面所"},{"room":"wash","src":"assets/works/archive/archive_wash_06.webp","alt":"2016年に撮影した施工事例の洗面化粧台","label":"洗面所"},{"room":"storage","src":"assets/works/archive/archive_storage_02.webp","alt":"2016年に撮影した施工事例の収納","label":"収納"},{"room":"storage","src":"assets/works/archive/archive_storage_03.webp","alt":"2016年に撮影した施工事例の収納の別カット","label":"収納"},{"room":"storage","src":"assets/works/archive/archive_storage_05.webp","alt":"2016年に撮影した施工事例の棚を備えた収納スペース","label":"収納"},{"room":"storage","src":"assets/works/archive/archive_storage_08.webp","alt":"2016年に撮影した施工事例の棚を備えた収納スペース","label":"収納"},{"room":"washitsu","src":"assets/works/archive/archive_washitsu_03.webp","alt":"2016年に撮影した施工事例の和室","label":"和室"},{"room":"washitsu","src":"assets/works/archive/archive_washitsu_05.webp","alt":"2016年に撮影した施工事例の和室の別カット","label":"和室"},{"room":"toilet","src":"assets/works/archive/archive_toilet_01.webp","alt":"2016年に撮影した施工事例のトイレ","label":"トイレ"},{"room":"toilet","src":"assets/works/archive/archive_toilet_03.webp","alt":"2016年に撮影した施工事例のトイレの別カット","label":"トイレ"},{"room":"toilet","src":"assets/works/archive/archive_toilet_05.webp","alt":"2016年に撮影した施工事例の黄色い壁のトイレ","label":"トイレ"}]}</script>
 </body>
 </html>

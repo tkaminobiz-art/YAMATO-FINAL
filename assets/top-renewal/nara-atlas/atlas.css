@@ -1,0 +1,91 @@
+/* MOVE TO NARA: an open, connected paper composition. Preview only. */
+.nara-atlas{--na-paper:#f5f0e6;--na-ink:#40372f;--na-red:#aa1f24;--na-gold:#d8c39a;position:relative;isolation:isolate;background:var(--na-paper);color:var(--na-ink);padding:38px 0;scroll-margin-top:84px}
+.nara-atlas::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('../770-editorial/cotton-paper-960.webp') repeat;background-size:480px;mix-blend-mode:multiply;opacity:.16}
+.nara-atlas__inner{width:calc(100% - 112px);max-width:1120px;margin:auto}
+.nara-atlas .nara-atlas__head{margin:0 0 28px}
+.nara-atlas .nara-atlas__eyebrow{font:500 11px/1.4 var(--latin,Arial,sans-serif);letter-spacing:.16em;color:var(--na-red);margin:0 0 15px}
+.nara-atlas #naraTitle{font:500 32px/1.55 var(--serif,'Shippori Mincho',serif);letter-spacing:.02em;color:var(--na-ink);margin:0;word-break:normal;overflow-wrap:normal}
+.nara-atlas #naraTitle span{display:inline-block}
+.nara-atlas #naraTitle em{font:inherit;display:inline-block;white-space:nowrap}
+.nara-atlas__composition{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);grid-template-rows:auto auto auto;column-gap:60px;position:relative}
+.nara-atlas__origin{grid-column:1;grid-row:1;position:relative;z-index:2;padding-bottom:32px}
+.nara-atlas .nara-atlas__route-title{font-size:14px;line-height:1.6;letter-spacing:.03em;margin:0 0 20px}
+.nara-atlas__switch{border:0;padding:0;margin:0 0 12px;display:flex;flex-wrap:wrap;gap:8px 24px;min-width:0}
+.nara-atlas__switch[hidden],.nara-atlas [hidden]{display:none!important}
+.nara-atlas__switch legend{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+.nara-atlas__switch label{position:relative;cursor:pointer;min-width:0}
+.nara-atlas__switch input{position:absolute;width:1px;height:1px;opacity:0}
+.nara-atlas__switch span{display:flex;align-items:center;min-width:44px;min-height:44px;border-bottom:1px solid #baaea0;font-size:16px;padding:0 2px;color:#73685e;white-space:nowrap;transition:color .18s,border-color .18s}
+.nara-atlas__switch input:checked+span{color:var(--na-red);border-bottom:2px solid var(--na-red)}
+.nara-atlas__switch input:focus-visible+span{outline:2px solid var(--na-red);outline-offset:5px}
+.nara-atlas .nara-atlas__direct{font:500 21px/1.5 var(--serif,'Shippori Mincho',serif);margin:15px 0 8px;letter-spacing:.02em}
+.nara-atlas .nara-atlas__train{font-size:13px;line-height:1.7;margin:0;color:#655b52}
+.nara-atlas .nara-atlas__static-origin{font-size:16px;padding:8px 0;color:var(--na-red)}
+.nara-atlas__diagram{grid-column:1/-1;grid-row:1;display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);column-gap:60px;position:relative;align-self:end;padding-bottom:16px;pointer-events:none}
+.nara-atlas__connection{position:absolute;left:0;bottom:0;width:100%;height:155px;overflow:visible;color:var(--na-red);pointer-events:none}
+.nara-atlas__line-base,.nara-atlas__line{fill:none;stroke:currentColor;stroke-width:1.7;vector-effect:non-scaling-stroke}
+.nara-atlas__line-base{opacity:.22}
+.nara-atlas__origin-dot{fill:var(--na-paper);stroke:currentColor;stroke-width:2;vector-effect:non-scaling-stroke}
+.nara-atlas .nara-atlas__from{grid-column:1;align-self:end;margin:0 0 -6px 40px;font-size:13px;line-height:1.4}
+.nara-atlas__stations{grid-column:2;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));list-style:none;padding:0;margin:0;text-align:center;gap:0;align-self:end}
+.nara-atlas__stations li{position:relative;padding:0 0 12px;display:flex;flex-direction:column;align-items:center;min-width:0}
+.nara-atlas__stations li::before{content:"";width:10px;height:10px;border:2px solid var(--na-red);background:var(--na-paper);border-radius:50%;display:block;position:absolute;top:34px;left:calc(50% - 5px);box-sizing:border-box}
+.nara-atlas__station{font-size:16px;line-height:1.4;white-space:nowrap;letter-spacing:.025em}
+.nara-atlas__duration{display:flex;align-items:baseline;gap:5px;margin-top:27px;color:var(--na-red)}
+.nara-atlas__duration b{font:400 46px/1 Georgia,'Times New Roman',serif;font-variant-numeric:tabular-nums;letter-spacing:-.04em}
+.nara-atlas__duration>span{font-size:14px}
+.nara-atlas__scope{grid-column:1;grid-row:2;align-self:start;padding-top:28px}
+.nara-atlas__scope>p{font-size:13px;line-height:1.9;margin:0 0 13px;color:#655b52}
+.nara-atlas__scope .nara-atlas__diagram-note{font-size:12px;color:#73675c;line-height:1.7}
+.nara-atlas__source{font-size:13px;line-height:1.8;position:relative}
+.nara-atlas__source summary{display:flex;align-items:center;justify-content:space-between;list-style:none;min-height:44px;border-bottom:1px solid #c6bbae;cursor:pointer;gap:12px}
+.nara-atlas__source summary::-webkit-details-marker{display:none}
+.nara-atlas__source summary span{color:var(--na-red);font-size:17px}
+.nara-atlas__source[open] summary span{transform:rotate(45deg)}
+.nara-atlas__source>div{padding:14px 0 6px}
+.nara-atlas__source p{margin:0 0 10px}
+.nara-atlas__source a{text-decoration:underline;text-underline-offset:4px;display:inline-flex;align-items:center;min-height:44px}
+.nara-atlas__home{grid-column:2;grid-row:2/4;margin:0;align-self:start;min-width:0}
+.nara-atlas__photo{position:relative;aspect-ratio:1.92;background:#e4ded2;overflow:hidden}
+.nara-atlas__photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 38%;transform:none!important;filter:none}
+.nara-atlas__photo-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1.9;padding:30px;text-align:center}
+.nara-atlas__home figcaption{font-size:12px;line-height:1.75;color:#6d6258;display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 20px;margin-top:12px}
+.nara-atlas__home figcaption>span:first-child{color:var(--na-ink);white-space:nowrap}
+.nara-atlas__actions{grid-column:1;grid-row:3;align-self:end;padding-top:25px;display:flex;flex-direction:column;gap:4px}
+.nara-atlas__primary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:82px;background:var(--na-red);color:#fff9ee;padding:17px 20px;position:relative;isolation:isolate;font-size:15px;font-weight:500;line-height:1.65;letter-spacing:.02em;text-decoration:none;transition:background .2s}
+.nara-atlas__primary::before{content:"";position:absolute;inset:0;z-index:-1;background:url('../770-editorial/cotton-paper-960.webp') repeat;background-size:300px;mix-blend-mode:multiply;opacity:.2}
+.nara-atlas__primary:hover{background:#8e191e}
+.nara-atlas__primary em{font:inherit;display:inline-block;white-space:nowrap}
+.nara-atlas__primary svg,.nara-atlas__secondary svg{flex:0 0 28px;width:28px;height:20px;fill:none;stroke:currentColor;stroke-width:1.2;transition:transform .2s}
+.nara-atlas__secondary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;font-size:14px;padding:6px 0;border-bottom:1px solid #b9aa98;text-decoration:none}
+.nara-atlas__secondary svg{width:24px;flex-basis:24px;color:var(--na-red)}
+.nara-atlas__primary:hover svg,.nara-atlas__secondary:hover svg{transform:translateX(3px)}
+.nara-atlas a:focus-visible,.nara-atlas summary:focus-visible{outline:2px solid var(--na-red);outline-offset:5px}
+.nara-atlas__status{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+.nara-atlas.is-entering .nara-atlas__line{animation:nara-route-in .65s ease-out both}
+@keyframes nara-route-in{from{stroke-dasharray:1;stroke-dashoffset:1}to{stroke-dasharray:1;stroke-dashoffset:0}}
+@media(min-width:768px) and (max-width:1050px){.nara-atlas__inner{width:calc(100% - 72px)}.nara-atlas__composition,.nara-atlas__diagram{grid-template-columns:minmax(0,3.5fr) minmax(0,6.5fr);column-gap:35px}.nara-atlas__photo{aspect-ratio:1.6}.nara-atlas__source{font-size:13px}.nara-atlas__home figcaption{display:block}.nara-atlas__home figcaption>span{display:block}.nara-atlas__primary{padding-inline:15px}.nara-atlas__stations li::before{top:34px}}
+@media(max-width:767px){
+ .nara-atlas{padding:28px 0;scroll-margin-top:74px}.nara-atlas__inner{width:calc(100% - 40px)}
+ .nara-atlas .nara-atlas__head{margin-bottom:20px}.nara-atlas .nara-atlas__eyebrow{font-size:10px;margin-bottom:13px}.nara-atlas #naraTitle{font-size:26px;line-height:1.6;letter-spacing:.015em}.nara-atlas #naraTitle span{display:block}
+ .nara-atlas__composition{display:flex;flex-direction:column;gap:0}.nara-atlas__origin{padding:0;display:grid;grid-template-columns:1fr auto;gap:0 12px;align-items:end}.nara-atlas .nara-atlas__route-title{grid-column:1/-1;font-size:13px;margin:0 0 10px}.nara-atlas__switch{margin:0;gap:20px}.nara-atlas__switch span{font-size:15px}.nara-atlas .nara-atlas__direct{font:500 14px/1.5 var(--sans,'Noto Sans JP',sans-serif);margin:0 0 12px}.nara-atlas .nara-atlas__train{grid-column:1/-1;font-size:12px;margin-top:13px}.nara-atlas__static-origin{margin:0}
+ .nara-atlas__diagram{display:flex;flex-direction:column;align-self:stretch;width:100%;margin:18px 0 0;padding:0}.nara-atlas__connection{display:none}.nara-atlas .nara-atlas__from{align-self:flex-start;font-size:12px;margin:0 0 14px;padding-left:14px;position:relative}.nara-atlas__from::before{content:"";position:absolute;width:5px;height:5px;background:var(--na-red);border-radius:50%;left:0;top:6px}.nara-atlas__from::after{content:"";position:absolute;left:2px;top:10px;height:53px;border-left:1.5px solid var(--na-red)}
+ .nara-atlas__stations{width:100%;position:relative;margin-bottom:0}.nara-atlas__stations::before{content:"";position:absolute;left:2px;right:16.66%;top:34px;border-top:1.5px solid var(--na-red)}.nara-atlas__station{font-size:15px}.nara-atlas__stations li::before{top:30px}.nara-atlas__duration{margin-top:25px}.nara-atlas__duration b{font-size:42px}.nara-atlas__duration>span{font-size:13px}.nara-atlas__stations li{padding-bottom:0}
+ .nara-atlas__origin{order:1}.nara-atlas__diagram{order:2}.nara-atlas__scope{display:contents}.nara-atlas__scope>p{order:3;font-size:13px;line-height:1.7;margin:14px 0 16px}.nara-atlas__scope>p br{display:none}.nara-atlas__scope .nara-atlas__diagram-note{font-size:12px;line-height:1.6;margin-bottom:0}.nara-atlas__source{order:5;margin-top:10px}.nara-atlas__source summary{min-height:44px;font-size:12px}.nara-atlas__source>div{font-size:13px}.nara-atlas__home{order:4}.nara-atlas__actions{order:6}
+ .nara-atlas__photo{aspect-ratio:1.65}.nara-atlas__photo img{object-position:50% 38%}.nara-atlas__home figcaption{display:block;font-size:12px;margin-top:9px;line-height:1.6}.nara-atlas__home figcaption span{display:block}.nara-atlas__home figcaption span+span{margin-top:3px}.nara-atlas__actions{align-self:stretch;width:100%;padding-top:18px;gap:6px}.nara-atlas__primary{min-height:60px;padding:16px 19px;font-size:14px}.nara-atlas__pc-break{display:none}.nara-atlas__secondary{font-size:14px;min-height:50px}
+}
+.nara-atlas.is-spacious-text .nara-atlas__composition{display:flex;flex-direction:column;gap:0}
+.nara-atlas.is-spacious-text .nara-atlas__origin{display:block;padding:0}
+.nara-atlas.is-spacious-text .nara-atlas__direct{margin:16px 0 8px}
+.nara-atlas.is-spacious-text .nara-atlas__diagram{display:block;width:100%;align-self:stretch;margin-top:28px;padding:0}
+.nara-atlas.is-spacious-text .nara-atlas__connection,.nara-atlas.is-spacious-text .nara-atlas__from::before,.nara-atlas.is-spacious-text .nara-atlas__from::after,.nara-atlas.is-spacious-text .nara-atlas__stations::before{display:none}
+.nara-atlas.is-spacious-text .nara-atlas__from{margin:0 0 16px;padding:0}
+.nara-atlas.is-spacious-text .nara-atlas__stations{display:flex;flex-direction:column;border-left:2px solid var(--na-red);gap:0}
+.nara-atlas.is-spacious-text .nara-atlas__stations li{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 18px;padding:16px 0 16px 22px;text-align:left;border-bottom:1px solid #d6cbbd}
+.nara-atlas.is-spacious-text .nara-atlas__stations li::before{top:30px;left:-6px}
+.nara-atlas.is-spacious-text .nara-atlas__station{white-space:normal}
+.nara-atlas.is-spacious-text .nara-atlas__duration{margin:0}
+.nara-atlas.is-spacious-text .nara-atlas__home{width:100%;margin-top:20px}
+.nara-atlas.is-spacious-text .nara-atlas__actions{width:100%;align-self:stretch;margin-top:20px}
+@media(max-width:359px){.nara-atlas #naraTitle{font-size:24px}.nara-atlas__origin{grid-template-columns:1fr}.nara-atlas .nara-atlas__direct{margin-top:12px;margin-bottom:0}.nara-atlas__duration b{font-size:38px}}
+@media(prefers-reduced-motion:reduce){.nara-atlas *,.nara-atlas *::before,.nara-atlas *::after{animation:none!important;transition:none!important}}

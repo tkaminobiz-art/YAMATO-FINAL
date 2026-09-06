@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const folder='qa/release-integration-20260907';
+const hash=path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')});
+const paths=['index.html','works.html','kodawari.html','assets/top-renewal/material-craft.css','assets/top-renewal/quiet-rails.js','assets/top-renewal/deep-photos.js','scripts/verify-homepage.mjs'];
+const records={};
+for(const [key,file] of Object.entries({brief:'brief.md',copy:'copy-review.md',assets:'asset-decisions.md',visual:'visual-review.md',interaction:'interaction-review.md'}))if(fs.existsSync(`${folder}/${file}`))records[key]=hash(`${folder}/${file}`);
+const screenshots=[['pc',1440,900],['sp',390,900]].filter(([name])=>fs.existsSync(`${folder}/after-${name}.png`)).map(([viewport,width,height])=>({viewport,width,height,...hash(`${folder}/after-${viewport}.png`)}));
+const receipt={version:1,scope:paths.map(hash),records,screenshots};
+fs.writeFileSync(`${folder}/receipt.json`,JSON.stringify(receipt,null,2)+'\n');

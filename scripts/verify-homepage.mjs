@@ -45,6 +45,15 @@ export function verifyHomepage(html){
 
 const html=readFileSync('index.html','utf8');
 const result=verifyHomepage(html);
+// Release integration: verify the canonical pages, not only donor preview routes.
+const integrationAssets=['nara-atlas/atlas.css','nara-atlas/dark.css','nara-atlas/atlas.js','guide-maquette/guide.css','quiet-rails.css','quiet-rails.js','washi-motion.css','washi-motion.js','deep-photos.css','deep-photos.js'];
+for(const asset of integrationAssets)assert(html.includes(`assets/top-renewal/${asset}`),`Missing integrated dependency: ${asset}`);
+assert.equal((html.match(/class="nara-atlas"/g)||[]).length,1,'Atlas must be integrated once');
+assert.equal((html.match(/entry-card__visual--maquette/g)||[]).length,3,'All three guide illustrations must be integrated');
+for(const attr of ['data-quiet-rails','data-washi-motion','data-top-depth'])assert(html.includes(attr),`Missing motion activation: ${attr}`);
+assert(!html.includes('動くカードを試す'),'Guide rail should start without opt-in');
+assert(readFileSync('works.html','utf8').includes('assets/works/works-yellow.css'),'Canonical works route must use the yellow design');
+assert(readFileSync('kodawari.html','utf8').includes('assets/kodawari/editorial.css'),'Canonical kodawari route must use the editorial design');
 if(process.argv.includes('--self-test')){
   assert.throws(()=>verifyHomepage(html.replace(readSection(html,builtOpening),'')));
   assert.throws(()=>verifyHomepage(html.replace('>770</strong>','>600</strong>')));

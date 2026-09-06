@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "aa6973fc8d82de04ad166f830e29ba26f141ada9a79fcb8c651721734ebac77d"
+    },
+    {
+      "path": "works.html",
+      "sha256": "9a613a01e7b356a03a75633ecb0d6e0e044cb3ac0a904db94751db97e659ea80"
+    },
+    {
+      "path": "kodawari.html",
+      "sha256": "7b07ed3f567efa0becc860ae9e918909a579edc8521ef269ca139eedb8f5561e"
+    },
+    {
+      "path": "assets/top-renewal/material-craft.css",
+      "sha256": "c69ba705808368cd4716398459e33ceb55e3ffc62489b7a6c9bf75e1778d31ab"
+    },
+    {
+      "path": "assets/top-renewal/quiet-rails.js",
+      "sha256": "c66f9ccaeaabf149687bcc1f7868bfd2768ac51ce8c5ff5513d9d07abd0723b3"
+    },
+    {
+      "path": "assets/top-renewal/deep-photos.js",
+      "sha256": "a0fda9c53c917001d77c45a83266cc9b648a638e8ef5a9650bbf1ac0039e7639"
+    },
+    {
+      "path": "scripts/verify-homepage.mjs",
+      "sha256": "8efd6d01af4be178e42ddb010711736c84ee174d28859d2e608209e3ddf4fee9"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/release-integration-20260907/brief.md",
+      "sha256": "a081c8d77eb90c0eea67689c541be28c6d1ff36215a2f04b8d9e4b98d15edfb2"
+    },
+    "copy": {
+      "path": "qa/release-integration-20260907/copy-review.md",
+      "sha256": "45a67b4fc046e2bc66fd650563396f370ee10a0ece0997197fcf6d105322cde6"
+    },
+    "assets": {
+      "path": "qa/release-integration-20260907/asset-decisions.md",
+      "sha256": "8fa99dbf7e85ae25f8a2c5e8cdfcb8f690f28e9bb8e7f7d9aef95105c1b8b84e"
+    },
+    "visual": {
+      "path": "qa/release-integration-20260907/visual-review.md",
+      "sha256": "170a5f9bf342926e2e1b483f25ef93e16ad8d9abe86a7820ddecba4de66f6388"
+    },
+    "interaction": {
+      "path": "qa/release-integration-20260907/interaction-review.md",
+      "sha256": "b0b9a1984ee7e99b10171d75433362eb2d47c9b99a1b1beb1761fbddf7aa0c03"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/release-integration-20260907/after-pc.png",
+      "sha256": "304ab0f4d8c6ef389cdacdc2c9759ba44b114be31b9343b4f1a02471ef2254f8"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 900,
+      "path": "qa/release-integration-20260907/after-sp.png",
+      "sha256": "c218750fae6395b4c160da9775b822611a8116966cb61d65a17d7a3397fff2bb"
+    }
+  ]
+}
