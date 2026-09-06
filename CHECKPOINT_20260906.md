@@ -27,6 +27,13 @@ node --test qa/connections-20260905/mortgage.test.mjs qa/connections-20260905/in
 
 ## Remaining release gates
 
+Production integration update: the approved catalog-style 770-home section from
+`index-770-preview.html` is now integrated directly into `index.html`, immediately
+after the hero. The existing four quick links and four guide cards are retained.
+`scripts/verify-homepage.mjs` verifies both before each build. Other design-review
+pages remain separate. The existing Instagram sensitive variable now targets
+both Preview and Production; its value is not copied into this repository.
+
 - Contact form delivery is not connected.
 - Latest warranty and periodic-inspection conditions require confirmation.
 - A design-review URL is not a final production-release approval.
