@@ -1,0 +1,361 @@
+/* Four kinds of information, four reading experiences. Catalog styles remain separate. */
+.koda-preview{--k-red:#aa1f24;--k-paper:#f5f0e6;--k-white:#fcfaf5;--k-ink:#302923;--k-muted:#665f56;--k-gold:#e4d0a5;--k-line:#d9d0c2;--k-serif:"Shippori Mincho","Hiragino Mincho ProN",serif;--k-sans:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;--header-h:72px;overflow-x:clip}
+.koda-preview .hd{height:72px;background:#fcfaf5;color:var(--k-ink);border-bottom:1px solid var(--k-line);padding-inline:32px;gap:24px;box-shadow:none}
+.koda-preview .hd::before{display:none}
+.koda-preview .hd__cta:hover{box-shadow:none;transform:none;background:#941b20}
+.koda-preview .hd__cta{background:var(--k-red);border:1px solid #8c2124;border-radius:0;color:#fff9ee;box-shadow:none;height:42px;font-size:13px;white-space:nowrap}
+.koda-preview .hd__burger{border:1px solid #bfb7aa;border-radius:0;background:none;width:42px;height:42px}
+.koda-preview .hd__back{white-space:nowrap;font-size:12px}
+.koda-preview .hd__jp{font-family:var(--k-serif);font-weight:500}
+.koda-preview .menu{background:var(--k-white)}
+.koda-preview .menu .lead{font-family:var(--k-sans);font-size:20px}
+.koda-preview .menu [aria-current=page]{color:var(--k-red)}
+.koda-preview .menu__nav a:hover{color:var(--k-red)}
+.koda-preview .menu__cta{background:var(--k-red)}
+.koda-skip{position:fixed;top:-100px;left:16px;background:var(--k-white);color:var(--k-ink);padding:16px;z-index:250;font-size:14px}
+.koda-skip:focus{top:8px}
+.koda{font:400 15px/1.9 var(--k-sans);color:var(--k-ink);background:var(--k-white);letter-spacing:.025em}
+.koda *, .koda-footer *{box-sizing:border-box}
+.koda img{display:block;max-width:100%;height:auto}
+.koda button{font:inherit;color:inherit;cursor:pointer;border-radius:0;-webkit-tap-highlight-color:transparent}
+.koda button:focus-visible,.koda a:focus-visible,.koda summary:focus-visible,.koda-preview .hd a:focus-visible,.koda-preview .hd button:focus-visible,.koda-footer a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
+.koda [hidden]{display:none!important}
+.koda h2,.koda h3,.koda h4,.koda p,.koda figure{margin:0}
+.koda h2{font:500 32px/1.65 var(--k-serif);letter-spacing:.035em;font-style:normal}
+.koda h2>span{display:inline-block;white-space:nowrap}
+.koda h3{font:500 19px/1.8 var(--k-serif);letter-spacing:.02em;font-style:normal}
+.koda h4{font-size:14px;font-weight:500;line-height:1.8}
+.koda-page-title{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.koda-wrap{width:calc(100% - 112px);max-width:1200px;margin-inline:auto}
+.koda-section{scroll-margin-top:142px;padding-block:80px 86px}
+.koda-head{margin-bottom:40px}
+.koda-kicker{font:500 10px/1.5 "Inter",sans-serif;letter-spacing:.17em;color:var(--k-muted);margin-bottom:18px!important}
+.koda-kicker>span{display:inline-block;margin-right:17px;padding-right:17px;border-right:1px solid currentColor;font-variant-numeric:tabular-nums}
+.koda-head--split{display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.koda-head--split>p{font-size:14px;line-height:1.9;color:var(--k-muted);padding-bottom:7px}
+.koda-note{font-size:12px;line-height:1.85;letter-spacing:.01em;color:var(--k-muted)}
+.koda-link{display:flex;align-items:center;justify-content:space-between;gap:24px;width:fit-content;min-width:260px;min-height:52px;border-bottom:1px solid var(--k-ink);font-size:13px;font-weight:500;text-decoration:none;transition:color .2s}
+.koda-link>span{font-size:23px;font-weight:400;color:var(--k-red);transition:transform .2s}
+.koda-link:hover{color:var(--k-red)}
+.koda-link:hover>span{transform:translate(2px,-2px)}
+.koda-link--light{color:var(--k-white);border-color:#ead7b47d}
+.koda-link--light>span,.koda-link--light:hover{color:var(--k-gold)}
+.koda-nav{position:sticky;top:72px;z-index:60;display:grid;grid-template-columns:repeat(4,1fr);padding-inline:max(56px,calc((100% - 1200px)/2));height:64px;background:#fcfaf5;border-bottom:1px solid var(--k-line)}
+.koda-nav a{position:relative;display:flex;align-items:center;justify-content:center;gap:14px;font-size:13px;color:var(--k-muted);text-decoration:none;white-space:nowrap}
+.koda-nav a:after{content:"";position:absolute;bottom:-1px;left:15%;right:15%;height:2px;background:var(--k-red);transform:scaleX(0);transition:transform .25s}
+.koda-nav a[aria-current=true]{color:var(--k-red)}
+.koda-nav a[aria-current=true]:after{transform:scaleX(1)}
+.koda-nav span{font:400 12px/1 "Inter",sans-serif}
+.koda-price{position:relative;isolation:isolate;background:var(--k-red);color:#fcf5e8;overflow:clip}
+.koda-price:before,.koda-design:before,.koda-visit:before{content:"";position:absolute;inset:0;background:url("../top-renewal/770-editorial/cotton-paper-960.webp") repeat;background-size:480px;mix-blend-mode:multiply;opacity:.19;pointer-events:none;z-index:-1}
+.koda-price .koda-head{position:relative;z-index:1}
+.koda-price .koda-kicker{color:var(--k-gold)}
+.price-spread{display:grid;grid-template-columns:1fr 1fr;gap:76px;position:relative;z-index:1}
+.price-story{padding-top:3px}
+.price-story>p{margin-top:19px;max-width:31em;line-height:2;color:#f9ead8}
+.price-process{display:grid;grid-template-columns:repeat(3,1fr);list-style:none;border-block:1px solid #e4d0a54d;margin-top:26px;padding-block:17px;gap:10px}
+.price-process li{position:relative;display:flex;align-items:center;justify-content:center;font-size:13px;line-height:1.6;text-align:center}
+.price-process li+li:before{content:"→";position:absolute;left:-13px;font-size:17px;color:var(--k-gold)}
+.price-numbers{margin-top:34px}
+.price-numbers__label{display:flex;align-items:baseline;gap:20px;font-size:14px}
+.price-numbers__label>span{font-size:12px;color:#fae8d9}
+.price-numbers dl{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0 18px}
+.price-numbers dt{font:500 24px/1.4 var(--k-serif)}
+.price-numbers dt>span{font:400 9px/1 "Inter",sans-serif;letter-spacing:.13em;display:inline-block;margin-left:7px;color:var(--k-gold)}
+.price-numbers dd{margin:9px 0 0;font-size:11px;white-space:nowrap}
+.price-numbers strong{font:400 34px/1.25 "Inter",sans-serif;letter-spacing:-.03em;padding-right:4px}
+.price-numbers .koda-note{color:#f7e6d2;font-size:11px}
+.price-story>.koda-link{margin-top:20px}
+.cost-sheet{background:var(--k-paper);color:var(--k-ink);padding:36px 38px 28px;border-top:1px solid #fff7e8;border-bottom:2px solid #d0bc9e;box-shadow:0 12px 24px -21px #390c09}
+.cost-sheet .koda-kicker{color:#796547;margin-bottom:8px!important}
+.cost-sheet>h3{margin-bottom:19px;font-size:21px}
+.cost-ledger>div{display:grid;grid-template-columns:125px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--k-line)}
+.cost-ledger dt{font-size:13px;line-height:1.8;padding-top:2px;font-weight:500}
+.cost-ledger b{color:var(--k-red);font-size:17px;font-weight:500}
+.cost-ledger .is-extra{color:var(--k-ink)}
+.cost-ledger p{font-size:12px;line-height:1.8;margin-top:5px;color:var(--k-muted)}
+.estimate-note{border-top:1px solid var(--k-line);padding-top:19px;margin-top:0}
+.estimate-note p{font-size:12px;line-height:1.9;margin-top:8px;color:#585047}
+.price-swallow{position:absolute;left:max(28px,calc(50% - 610px));bottom:10px;width:85px;opacity:.2;z-index:0;pointer-events:none}
+.koda-details{border-top:1px solid var(--k-line);font-size:13px}
+.koda-details summary{display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:64px;padding-block:16px;list-style:none;cursor:pointer;font-size:14px;font-weight:500;line-height:1.7}
+.koda-details summary::-webkit-details-marker{display:none}
+.koda-details summary>span{font:300 24px/1 "Inter",sans-serif;flex-shrink:0;color:var(--k-red);transition:transform .2s}
+.koda-details[open]>summary>span{transform:rotate(45deg)}
+.koda-details>div{padding:0 0 22px;font-size:13px;line-height:1.9;color:var(--k-muted)}
+.koda-details>div p+p{margin-top:12px}
+.koda-details h4{color:var(--k-ink);margin:20px 0 6px}
+.cost-sheet .koda-details{margin-top:20px}
+.cost-sheet .koda-details summary{font-size:12px;min-height:50px}
+.koda-standard{background:var(--k-white)}
+.spec-tabs{display:none;border-bottom:1px solid var(--k-line);margin-bottom:27px}
+.spec-tabs.is-interactive{display:flex}
+.spec-tabs button{border:0;background:none;border-bottom:2px solid transparent;min-width:166px;min-height:56px;font:400 10px/1.5 "Inter",sans-serif;text-align:left;letter-spacing:.1em;padding:14px 30px 14px 0;display:flex;align-items:center;gap:15px;color:var(--k-muted)}
+.spec-tabs button span{font:500 14px/1.6 var(--k-sans);letter-spacing:.025em}
+.spec-tabs button[aria-selected=true]{color:var(--k-red);border-bottom-color:var(--k-red)}
+.spec-panel{display:grid;grid-template-columns:minmax(0,2fr) minmax(265px,1fr);gap:0;align-items:start;margin-bottom:24px}
+.spec-tabs.is-interactive+.spec-display .spec-panel:not([hidden]){animation:koda-spec-in .22s ease-out both}
+@keyframes koda-spec-in{from{opacity:.55;transform:translateY(5px)}to{opacity:1;transform:none}}
+.spec-photo{min-width:0}
+.spec-photo>img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.spec-photo figcaption{font-size:11px;color:var(--k-muted);padding-top:11px}
+.spec-copy{padding:10px 0 0 38px}
+.spec-copy>.koda-kicker{margin-bottom:14px!important}
+.spec-copy>h3{font-size:22px;line-height:1.65}
+.spec-copy>h3>span{display:inline-block;white-space:nowrap}
+.spec-copy>p:not(.koda-kicker){font-size:13px;line-height:1.9;margin-top:16px}
+.spec-copy>.koda-note{font-size:11px!important;line-height:1.8!important}
+.spec-table{margin-top:22px}
+.spec-table>div{display:grid;grid-template-columns:70px 1fr;gap:8px;border-top:1px solid var(--k-line);padding:11px 0;font-size:13px;line-height:1.65}
+.spec-table dt{font-size:12px;color:var(--k-muted)}
+.standard-foot{display:grid;grid-template-columns:2fr 1fr;gap:38px;align-items:start;margin-top:28px}
+.standard-foot>.koda-link{justify-self:end}
+.spec-more{display:grid;grid-template-columns:1fr 1fr;gap:0 26px}
+.spec-more>div{display:grid;grid-template-columns:90px 1fr;gap:10px;padding:12px 0;border-top:1px solid var(--k-line);font-size:13px}
+.spec-more dt{color:var(--k-ink)}
+.spec-more+.koda-note{margin-top:13px}
+.koda-design{position:relative;isolation:isolate;background:var(--k-paper);border-block:1px solid var(--k-line)}
+.design-spread{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+.design-work>.work-photo{width:100%;max-width:340px;margin-bottom:25px}
+.work-photo>img{width:100%}
+.work-photo figcaption{font-size:11px;color:var(--k-muted);margin-top:10px}
+.design-work>p{margin-top:14px;font-size:14px;line-height:2;max-width:31em}
+.site-work{display:grid;grid-template-columns:140px 1fr;gap:21px;align-items:start;margin-top:35px;padding-top:24px;border-top:1px solid #d4c5af}
+.site-work img{width:140px}
+.site-work h3{font:500 14px/1.8 var(--k-sans)}
+.site-work p{font-size:12px;line-height:1.85;margin-top:10px}
+.plan-sheet{background:#fdfbf6;border:1px solid #e0d7c9;padding:27px 27px 22px;box-shadow:0 3px 0 -1px #efe8db,0 4px 0 -1px #d9cdb9}
+.plan-sheet__head{display:flex;justify-content:space-between;align-items:center;gap:18px;font-size:12px;padding-bottom:20px;border-bottom:1px solid var(--k-line)}
+.plan-sheet__head>span{font-size:10px;color:var(--k-muted);white-space:nowrap}
+.plan-drawing{position:relative;margin:16px 0 17px}
+.plan-drawing>img{width:100%;mix-blend-mode:multiply}
+.plan-pins{display:none}
+.plan-pins.is-interactive{display:block}
+.plan-pins button{position:absolute;left:var(--px);top:var(--py);transform:translate(-50%,-50%);background:var(--k-white);width:42px;height:42px;border:1px solid var(--k-red);border-radius:50%;font:500 11px/1 "Inter",sans-serif;color:var(--k-red);box-shadow:0 0 0 5px #f9f3eac4;transition:background .18s,color .18s}
+.plan-pins button[aria-pressed=true]{background:var(--k-red);color:var(--k-white)}
+.plan-points{border-top:1px solid var(--k-line);padding-top:18px}
+.plan-points>div{position:relative;padding-left:38px;min-height:116px}
+.plan-points>div>span{position:absolute;left:0;top:3px;color:var(--k-red);font:400 12px/1.5 "Inter",sans-serif}
+.plan-points h3{font-size:17px}
+.plan-points p{font-size:13px;line-height:1.9;margin-top:9px}
+.plan-sheet>.koda-note{font-size:10px;margin:14px 0 4px}
+.plan-sheet>.koda-link{width:100%;font-size:12px;min-height:46px}
+.design-process{margin-top:37px;border-bottom:1px solid var(--k-line)}
+.design-process>div>ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.design-process b{font-weight:500;color:var(--k-ink)}
+.design-process p{margin-top:8px}
+.after-spread{display:grid;grid-template-columns:1fr 1fr;gap:76px}
+.warranty-overview{padding:30px 32px;background:var(--k-paper);align-self:start}
+.warranty-range{display:flex;align-items:center;justify-content:space-between;margin-top:30px;margin-bottom:18px}
+.warranty-range>div>span{font-size:12px;color:var(--k-muted)}
+.warranty-range>div>p{display:flex;align-items:baseline;gap:5px;font-size:15px;margin-top:3px}
+.warranty-range strong{font:400 68px/1.15 "Inter",sans-serif;letter-spacing:-.045em;color:var(--k-red)}
+.range-arrow{font-size:22px;color:#897454}
+.warranty-line{display:grid;grid-template-columns:1fr 2fr;font-size:10px;line-height:1.6;margin-bottom:20px;gap:4px}
+.warranty-line>span{border-top:4px solid var(--k-red);padding-top:9px}
+.warranty-line>span+span{border-color:#b7a487;border-top-style:dashed}
+.warranty-overview>p{font-size:13px;line-height:1.9}
+.inspection-years{margin-top:29px;padding-top:20px;border-top:1px solid #d4c5af}
+.inspection-years ol{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);margin-top:14px;gap:5px}
+.inspection-years li{padding-top:8px;font-size:12px;color:var(--k-muted);border-top:1px solid #aa9677}
+.inspection-years b{font:400 23px/1.7 "Inter",sans-serif;margin-right:5px;color:var(--k-ink)}
+.warranty-overview>.koda-note{margin-top:23px;font-size:11px}
+.warranty-details>.koda-details{border-color:var(--k-line)}
+.warranty-details>.koda-details:nth-child(3){border-bottom:1px solid var(--k-line)}
+.after-contact{margin-top:30px;padding:25px 0 0}
+.after-contact>.koda-kicker{margin-bottom:9px!important}
+.after-contact>h3{font-size:20px}
+.after-contact>p:not(.koda-kicker){font-size:13px;margin-top:12px}
+.after-contact>a{display:flex;align-items:center;justify-content:space-between;margin-top:16px;min-height:52px;font:400 26px/1.6 "Inter",sans-serif;letter-spacing:.025em;border-bottom:1px solid var(--k-line);color:var(--k-red)}
+.after-contact>a>span{font-size:22px}
+.after-contact .koda-details{margin-top:20px}
+.after-contact .koda-details summary{font-size:12px;min-height:48px}
+.koda-visit{position:relative;isolation:isolate;background:var(--k-red);color:var(--k-white);padding:64px 0;overflow:clip}
+.visit-spread{display:grid;grid-template-columns:1.1fr 1fr;gap:75px;align-items:center}
+.koda-visit .koda-kicker{color:var(--k-gold)}
+.koda-visit h2{font-size:28px}
+.koda-visit p:not(.koda-kicker){font-size:14px;line-height:1.9;margin-top:19px}
+.koda-visit figure{max-width:470px;justify-self:end}
+.koda-visit figure img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.koda-visit figcaption{text-align:right;font-size:10px;margin-top:9px;color:#f2dfc8}
+.koda-visit-link{display:flex;align-items:center;justify-content:space-between;gap:32px;border:1px solid #e4d0a582;min-height:58px;max-width:335px;padding:13px 22px;margin-top:25px;font-size:14px;color:var(--k-white)}
+.koda-visit-link>span{font-size:22px;color:var(--k-gold)}
+.koda-visit-link:hover{background:#ffffff0d}
+.koda-footer{padding:50px 0 35px;background:var(--k-white);color:var(--k-muted);font:400 12px/1.9 var(--k-sans)}
+.koda-footer__brand{display:flex;align-items:center;gap:14px;font:500 18px/1.7 var(--k-serif);color:var(--k-ink)}
+.koda-footer__brand img{width:48px;height:auto}
+.koda-footer nav{display:flex;flex-wrap:wrap;gap:4px 24px;margin:20px 0}
+.koda-footer nav>a{min-height:38px;display:flex;align-items:center}
+.koda-footer small{font-size:10px;display:block;margin-top:22px}
+.preview-info{margin-top:22px;border-top:1px solid var(--k-line);padding-top:15px;font-size:11px}
+.preview-info summary{cursor:pointer;min-height:32px}
+.preview-info>p{max-width:68em}
+.preview-info>a{text-decoration:underline;display:inline-flex;min-height:36px;align-items:center}
+@media(min-width:768px) and (max-width:1199px){
+ .koda-wrap{width:calc(100% - 72px)}
+ .koda-nav{padding-inline:36px}
+ .price-spread,.after-spread{gap:38px}
+ .cost-sheet{padding:28px}
+ .cost-ledger>div{grid-template-columns:90px 1fr;gap:16px}
+ .price-numbers strong{font-size:28px}
+ .price-numbers dt>span{display:block;margin:6px 0 0}
+ .spec-panel{grid-template-columns:minmax(0,1.5fr) minmax(235px,1fr)}
+ .spec-copy{padding:0 0 0 26px}
+ .spec-copy>h3{font-size:20px}
+ .spec-copy>.koda-kicker{margin-bottom:8px!important}
+ .spec-table{margin-top:15px}
+ .spec-table>div{padding:8px 0}
+ .design-spread{gap:36px;grid-template-columns:.9fr 1.1fr}
+ .site-work{grid-template-columns:1fr;gap:14px}
+ .site-work img{width:180px}
+ .plan-sheet{padding:22px}
+ .plan-sheet__head{display:block}
+ .plan-sheet__head>span{display:block;margin-top:5px}
+ .standard-foot{grid-template-columns:1.4fr 1fr;gap:30px}
+ .spec-more{grid-template-columns:1fr}
+ .warranty-overview{padding:26px}
+ .warranty-range strong{font-size:58px}
+ .visit-spread{gap:36px}
+ .koda h2{font-size:28px}
+ .koda-head--split{align-items:start}
+ .koda-head--split>p{min-width:180px;font-size:12px}
+}
+@media(max-width:767px){
+ .koda-preview{--header-h:64px}
+ .koda-preview .hd{height:64px;padding-inline:16px;gap:12px}
+ .koda-preview .hd__back{display:none}
+ .koda-preview .hd__mark{width:34px}
+ .koda-preview .hd__jp{font-size:18px;letter-spacing:.06em}
+ .koda-preview .hd__kk{display:none}
+ .koda-preview .hd__brand{gap:8px;margin-right:auto}
+ .koda-preview .hd__cta{font-size:11px;height:38px;padding:0 10px;gap:7px}
+ .koda-preview .hd__cta svg{width:15px}
+ .koda-preview .hd__burger{width:36px;height:38px;flex-shrink:0}
+ .koda-preview .menu .lead{font-size:17px}
+ .koda{font-size:14px;letter-spacing:.015em}
+ .koda-wrap{width:calc(100% - 40px)}
+ .koda-section{padding-block:44px 46px;scroll-margin-top:120px}
+ .koda h2{font-size:24px;line-height:1.65;letter-spacing:.015em}
+ .koda h3{font-size:18px}
+ .koda-head{margin-bottom:28px}
+ .koda-head--split{display:block}
+ .koda-head--split>p{padding:0;margin-top:15px;font-size:12px;line-height:1.9}
+ .koda-kicker{font-size:9px;margin-bottom:14px!important}
+ .koda-kicker>span{margin-right:11px;padding-right:11px}
+ .koda-nav{top:64px;padding-inline:12px;height:54px}
+ .koda-nav a{font-size:11px;gap:0;flex-direction:column;line-height:1.5}
+ .koda-nav a>span{font-size:9px;margin-bottom:4px}
+ .koda-nav a:after{left:8%;right:8%}
+ .price-spread{grid-template-columns:1fr;gap:30px}
+ .price-story>p{font-size:13px;line-height:1.95;margin-top:14px}
+ .price-process{margin-top:20px;padding-block:14px}
+ .price-process li{font-size:12px}
+ .price-numbers{margin-top:24px}
+ .price-numbers__label{font-size:13px;gap:15px}
+ .price-numbers__label>span{font-size:11px}
+ .price-numbers dl{gap:9px;margin:18px 0 13px}
+ .price-numbers dt{font-size:23px}
+ .price-numbers dt>span{font-size:8px;margin-left:4px}
+ .price-numbers strong{font-size:28px;padding-right:2px}
+ .price-numbers dd{font-size:10px;margin-top:8px}
+ .price-numbers .koda-note{font-size:10px}
+ .price-story>.koda-link{margin-top:12px;font-size:12px;min-height:46px}
+ .cost-sheet{padding:25px 22px 16px}
+ .cost-sheet>h3{font-size:19px;margin-bottom:16px}
+ .cost-ledger>div{grid-template-columns:99px 1fr;gap:16px;padding:15px 0}
+ .cost-ledger dt{font-size:12px}
+ .cost-ledger b{font-size:16px}
+ .cost-ledger p,.estimate-note p{font-size:12px}
+ .estimate-note h4{font-size:13px}
+ .estimate-note{padding-top:16px}
+ .cost-sheet .koda-details{margin-top:16px}
+ .price-swallow{display:none}
+ .spec-tabs{margin-bottom:18px}
+ .spec-tabs button{min-width:0;flex:1;gap:9px;padding:12px 0;min-height:48px;font-size:9px}
+ .spec-tabs button>span{font-size:12px}
+ .spec-panel{grid-template-columns:1fr;margin-bottom:25px}
+ .spec-photo{margin-inline:-20px!important}
+ .spec-photo figcaption{padding:9px 20px 0;font-size:10px}
+ .spec-copy{padding:23px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;align-items:start}
+ .spec-copy>.koda-kicker{grid-column:1/-1;margin-bottom:0!important}
+ .spec-copy>h3{font-size:18px;line-height:1.65;grid-column:1/-1}
+ .spec-copy>p:not(.koda-kicker):not(.koda-note){font-size:12px;line-height:1.8;grid-column:1;margin:0}
+ .spec-copy>.spec-table{grid-column:2;grid-row:3;margin:0}
+ .spec-copy>.koda-note{grid-column:1/-1;font-size:10px!important;margin:2px 0 0!important}
+ .spec-table>div{grid-template-columns:1fr;gap:3px;padding:8px 0;font-size:12px}
+ .spec-table dt{font-size:10px}
+ .standard-foot{display:block;margin-top:18px}
+ .standard-foot>.koda-link{margin-top:6px;min-width:0;width:100%;font-size:12px}
+ .koda-details summary{font-size:13px;min-height:59px}
+ .koda-details>div{font-size:12px}
+ .spec-more{grid-template-columns:1fr}
+ .spec-more>div{grid-template-columns:95px 1fr;font-size:12px}
+ .design-spread{grid-template-columns:1fr;gap:30px}
+ .design-work>.work-photo{width:76%;max-width:290px;margin-bottom:19px}
+ .design-work>p{font-size:13px;line-height:1.95;margin-top:10px}
+ .site-work{grid-template-columns:122px 1fr;gap:18px;padding-top:20px;margin-top:23px}
+ .site-work img{width:122px;margin-top:2px}
+ .site-work h3{font-size:13px}
+ .site-work p{font-size:12px;margin-top:8px}
+ .plan-sheet{padding:20px 18px 17px}
+ .plan-sheet__head{display:block;font-size:12px;padding-bottom:14px}
+ .plan-sheet__head>span{display:block;margin-top:4px;font-size:10px}
+ .plan-drawing{margin:13px -8px 16px}
+ .plan-pins button{width:44px;height:44px;font-size:10px;box-shadow:0 0 0 4px #f9f3ead9}
+ .plan-points>div{min-height:142px;padding-left:29px}
+ .plan-points h3{font-size:16px}
+ .plan-points p{font-size:12px;margin-top:8px}
+ .plan-points>div>span{font-size:10px;top:5px}
+ .plan-sheet>.koda-note{font-size:10px;margin-top:8px}
+ .plan-sheet>.koda-link{font-size:11px;min-width:0}
+ .design-process{margin-top:26px}
+ .design-process>div>ol{grid-template-columns:1fr;gap:18px}
+ .after-spread{grid-template-columns:1fr;gap:26px}
+ .warranty-overview{padding:24px}
+ .warranty-overview>h3{font-size:18px}
+ .warranty-range{margin-top:23px}
+ .warranty-range strong{font-size:62px}
+ .warranty-range>div>span{font-size:11px}
+ .warranty-overview>p{font-size:12px}
+ .warranty-overview>.koda-note{font-size:10px;margin-top:18px}
+ .warranty-line{font-size:9px}
+ .inspection-years{margin-top:21px;padding-top:17px}
+ .after-contact{margin-top:9px;padding-top:25px}
+ .after-contact>h3{font-size:19px}
+ .after-contact>p:not(.koda-kicker){font-size:12px}
+ .after-contact>a{font-size:25px}
+ .koda-visit{padding:40px 0}
+ .visit-spread{grid-template-columns:1fr;gap:27px}
+ .koda-visit h2{font-size:23px}
+ .koda-visit p:not(.koda-kicker){font-size:12px;margin-top:15px}
+ .koda-visit-link{font-size:13px;max-width:none;min-height:54px;margin-top:23px}
+ .koda-visit figure{width:76%;justify-self:end}
+ .koda-footer{padding:35px 0 25px;font-size:11px}
+ .koda-footer__brand{font-size:16px}
+ .koda-footer nav{column-gap:20px}
+}
+@media(max-width:359px){
+ .koda-preview .hd{padding-inline:10px;gap:8px}
+ .koda-preview .hd__jp{font-size:16px}
+ .koda-preview .hd__cta{font-size:10px;padding:0 8px}
+ .koda-preview .hd__cta svg{display:none}
+ .koda-wrap{width:calc(100% - 32px)}
+ .koda h2{font-size:22px}
+ .koda h3{font-size:17px}
+ .cost-sheet{padding-inline:17px}
+ .cost-ledger>div{grid-template-columns:85px 1fr;gap:12px}
+ .price-numbers dt>span{display:block;margin:5px 0 0}
+ .price-numbers strong{font-size:26px}
+ .spec-photo{margin-inline:-16px!important}
+ .spec-photo figcaption{padding-inline:16px}
+ .spec-copy{gap:10px 14px}
+ .spec-copy>h3{font-size:16px}
+ .site-work{grid-template-columns:100px 1fr;gap:15px}
+ .site-work img{width:100px}
+ .plan-points>div{min-height:161px}
+ .warranty-overview{padding:20px}
+ .koda-visit h2{font-size:21px}
+}
+@media(prefers-reduced-motion:reduce){
+ .koda *, .koda-preview .hd *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+}

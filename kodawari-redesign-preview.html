@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="preload" as="image" href="assets/std/cover_sp_1080.webp" media="(max-width:820px)">
 <link rel="preload" as="image" href="assets/std/cover_pc_1920.webp" media="(min-width:821px)">
-<title>価格・標準仕様・保証｜株式会社やまと不動産</title>
+<title>家づくりのこだわり｜デザインプレビュー｜株式会社やまと不動産</title>
 <meta name="description" content="やまと不動産の建物本体価格、標準仕様、自由設計、保証・アフターフォローをご案内します。">
+<meta name="robots" content="noindex,nofollow">
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
 <link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Shippori+Mincho:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <style>
   /* ============ 正直の台帳（kodawari.html 図面 v1）============
      コンセプト:「良いことも、悪いことも、正直に。」(打ち合わせ資料§14 原文)
@@ -23,7 +24,7 @@
     --ink:#241F1B; --ink2:#5A544C; --ink3:#8D857A;
     --line:rgba(36,31,27,.12); --line2:rgba(36,31,27,.2);
     --gold:#C9A24B; --goldhair:rgba(201,162,75,.5);
-    --green:#486B00; --green-deep:#2E4600; --lime:#A2C523; --amber:#C4851F;
+    --green:#486B00; --green-deep:#2E4600; --lime:#A2C523; --amber:#9A620F;
     --cream:#F4F1EA;
     --fh:"dnp-shuei-gothic-gin-std","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
     --fb:"Inter","Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
@@ -40,6 +41,10 @@
   a{color:inherit;text-decoration:none}
   img{display:block;max-width:100%}
   ::selection{background:#EDF2D5}
+  .skip-link{position:fixed;top:10px;left:10px;z-index:200;max-width:calc(100vw - 20px);padding:12px 18px;
+    border-radius:4px;background:#fff;color:#171814;font:500 .88rem/1.4 var(--fh);box-shadow:0 8px 28px rgba(0,0,0,.24);
+    transform:translateY(-160%);transition:transform .2s ease}
+  .skip-link:focus{transform:translateY(0);outline:3px solid #9A620F;outline-offset:2px}
 
   /* ============ ヘッダー（透過→白地） ============ */
   .hd{position:fixed;top:0;left:0;right:0;z-index:80;height:var(--header-h);
@@ -156,7 +161,7 @@
     .menu.is-open .menu__panel{transform:translateY(0);opacity:1}
     .menu__addr{display:none}
     .menu__brand{top:calc(env(safe-area-inset-top,0px) + 18px)}
-    .menu__close{top:calc(env(safe-area-inset-top,0px) + 16px)}
+    .menu__close{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);margin:-18px 0 -38px auto;z-index:8}
     .menu__nav{grid-template-columns:1fr 1fr;gap:22px 28px}
     .contact-row{flex-direction:column;align-items:flex-start;gap:14px}
     .contact-row__action{margin-left:0;justify-content:flex-start}
@@ -420,10 +425,186 @@
     a[href]:not(p a):not(li a):not(dd a):not(td a):not(figcaption a):not(small a){
       display:inline-flex;align-items:center}
   }
+
+  /* ============================================================
+     2026-09-04 redesign preview — Quiet Architectural Editorial
+     現行ページを維持したまま、標準仕様章で方向性を検証する。
+     ============================================================ */
+  .hd.is-dark-section{
+    background:rgba(17,18,16,.9);color:var(--cream);
+    -webkit-backdrop-filter:blur(16px) saturate(1.05);backdrop-filter:blur(16px) saturate(1.05);
+    box-shadow:0 1px 0 rgba(244,241,234,.12)
+  }
+  .hd.is-dark-section::before{opacity:0}
+  .hd.is-dark-section .hd__burger{border-color:rgba(244,241,234,.28);background:rgba(244,241,234,.04)}
+  .hd.is-dark-section .hd__burger span{background:var(--cream)}
+
+  .idx{position:sticky;top:var(--header-h);z-index:58;margin-top:0;border-radius:0;
+    background:rgba(16,17,15,.94);color:var(--cream);box-shadow:none;
+    -webkit-backdrop-filter:blur(18px) saturate(1.05);backdrop-filter:blur(18px) saturate(1.05)}
+  .idx__in{max-width:1440px;padding:0 clamp(12px,4vw,56px)}
+  .idx__nav{grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-inline-start:1px solid rgba(244,241,234,.12)}
+  .idx__nav{display:grid;list-style:none}
+  .idx__nav>li{min-width:0}
+  .idx__a{position:relative;min-height:72px;justify-content:center;gap:3px;padding:12px clamp(12px,2vw,24px);
+    width:100%;height:100%;border:0;border-inline-end:1px solid rgba(244,241,234,.12);border-radius:0;background:transparent;box-shadow:none;
+    transition:background .45s var(--ease),color .45s var(--ease)}
+  .idx__a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:#A61E27;
+    transition:right .55s var(--ease)}
+  .idx__a:hover,.idx__a.is-active{transform:none;box-shadow:none;border-color:rgba(244,241,234,.12);background:rgba(244,241,234,.045)}
+  .idx__a.is-active::after{right:0}
+  .idx__no{color:var(--gold);font-size:.65rem}
+  .idx__t{color:var(--cream);font-size:clamp(.78rem,.74rem + .22cqi,.92rem)}
+  .idx__d{color:rgba(244,241,234,.52);font-size:.64rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+  #standard.specx{position:relative;isolation:isolate;max-width:none;padding:clamp(88px,10vw,152px) 0;
+    color:var(--cream);background:#111310;overflow:clip}
+  #standard.specx::before{content:"";position:absolute;inset:0;z-index:-2;
+    background-image:linear-gradient(rgba(13,14,12,.9),rgba(13,14,12,.94)),
+      url("assets/lineup/lineup-graphite-plaster-adobe-stock-1876146463-2560.webp");
+    background-size:cover;background-position:center;opacity:.98}
+  #standard.specx::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:radial-gradient(70% 54% at 83% 15%,rgba(183,35,43,.13),transparent 70%),
+      linear-gradient(90deg,rgba(201,162,75,.025),transparent 40%)}
+  .specx__shell{width:min(100%,1440px);margin-inline:auto;padding-inline:clamp(20px,5vw,72px);container-type:inline-size}
+  .specx__heading{display:grid;grid-template-columns:minmax(0,.75fr) minmax(320px,1.25fr);gap:clamp(32px,7vw,112px);
+    align-items:end;padding-bottom:clamp(32px,4vw,56px);border-bottom:1px solid rgba(244,241,234,.18)}
+  .specx__titleline{display:flex;align-items:flex-start;gap:clamp(14px,2vw,24px)}
+  .specx__no{font-family:var(--fn);font-size:clamp(2.5rem,1.9rem + 2.8cqi,4.6rem);font-weight:200;
+    line-height:.88;color:var(--gold);font-variant-numeric:tabular-nums}
+  .specx__eyebrow{font-family:var(--fn);font-size:.875rem;letter-spacing:.16em;text-transform:uppercase;
+    color:rgba(244,241,234,.52);margin-bottom:10px}
+  .specx__title{font-family:var(--fh);font-size:clamp(1.5rem,1.15rem + 1.5cqi,2.55rem);font-weight:500;
+    line-height:1.35;letter-spacing:.06em;color:var(--cream)}
+  @media(min-width:901px){.specx__title{font-size:clamp(1.5rem,1.15rem + 1.05cqi,2.1rem);white-space:nowrap}}
+  .specx__lead{max-width:42rem;font-size:clamp(.9375rem,.9rem + .35cqi,1.0625rem);line-height:1.95;
+    letter-spacing:.04em;color:rgba(244,241,234,.74);text-align:left}
+
+  .specx__tabs{display:flex;gap:0;margin-top:clamp(30px,4vw,48px);border-bottom:1px solid rgba(244,241,234,.18);
+    overflow-x:auto;scrollbar-width:none}
+  .specx__tabs::-webkit-scrollbar{display:none}
+  .specx__tab{position:relative;flex:0 0 auto;min-width:clamp(132px,15vw,190px);min-height:52px;padding:12px 18px;
+    border:0;background:transparent;color:rgba(244,241,234,.52);cursor:pointer;text-align:left;
+    font:500 clamp(.8rem,.76rem + .2cqi,.92rem)/1.4 var(--fh);letter-spacing:.08em;
+    transition:color .4s var(--ease),background .4s var(--ease)}
+  .specx__tab span{display:block;margin-bottom:5px;font:400 .8rem/1 var(--fn);letter-spacing:.14em;color:var(--gold)}
+  .specx__tab::after{content:"";position:absolute;left:0;right:100%;bottom:-1px;height:2px;background:#A61E27;
+    transition:right .55s var(--ease)}
+  .specx__tab[aria-selected="true"]{color:var(--cream);background:rgba(244,241,234,.035)}
+  .specx__tab[aria-selected="true"]::after{right:0}
+  .specx__tab:focus-visible{outline:2px solid var(--gold);outline-offset:-3px}
+
+  .specx__viewer{margin-top:clamp(24px,3vw,40px)}
+  .specx__panel[hidden]{display:none}
+  .specx__panel{display:grid;grid-template-columns:minmax(0,1.72fr) minmax(300px,.72fr);min-height:clamp(520px,54vw,760px);
+    border:1px solid rgba(244,241,234,.16);background:rgba(7,8,7,.38);box-shadow:0 34px 80px rgba(0,0,0,.34)}
+  .specx__media{position:relative;overflow:hidden;min-height:100%}
+  .specx__media::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(90deg,transparent 70%,rgba(7,8,7,.22)),linear-gradient(0deg,rgba(7,8,7,.22),transparent 32%)}
+  .specx__media picture,.specx__media img{display:block;width:100%;height:100%}
+  .specx__media img{object-fit:cover;object-position:center;filter:saturate(.88) contrast(1.03) brightness(.94);
+    transform:scale(1.015);animation:specx-enter .75s var(--ease) both}
+  .specx__panel--kitchen .specx__media img{object-position:center 48%}
+  .specx__panel--bath .specx__media img{object-position:center 52%}
+  .specx__panel--wall .specx__media img{object-position:center}
+  @keyframes specx-enter{from{opacity:.15;transform:scale(1.035)}to{opacity:1;transform:scale(1.015)}}
+  .specx__caption{position:absolute;left:clamp(16px,2.5vw,32px);bottom:clamp(14px,2vw,26px);z-index:2;
+    font-family:var(--fn);font-size:.875rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,241,234,.82)}
+  .specx__info{display:flex;flex-direction:column;justify-content:space-between;padding:clamp(30px,4vw,58px) clamp(24px,3.5vw,48px);
+    background:linear-gradient(150deg,rgba(244,241,234,.07),rgba(244,241,234,.018));
+    border-inline-start:1px solid rgba(244,241,234,.12)}
+  .specx__kind{font-family:var(--fn);font-size:.875rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+  .specx__name{margin-top:clamp(16px,2vw,24px);font-family:var(--fh);font-size:clamp(1.35rem,1.1rem + 1.2cqi,2rem);
+    font-weight:500;line-height:1.5;letter-spacing:.06em;color:var(--cream)}
+  .specx__desc{margin-top:clamp(18px,2vw,26px);font-size:clamp(.9375rem,.9rem + .25cqi,1rem);line-height:1.95;
+    letter-spacing:.04em;color:rgba(244,241,234,.7);text-align:left}
+  .specx__data{margin-top:clamp(30px,4vw,48px);border-top:1px solid rgba(244,241,234,.16)}
+  .specx__data div{display:grid;grid-template-columns:7.2em minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid rgba(244,241,234,.11)}
+  .specx__data dt{font-size:.72rem;line-height:1.7;letter-spacing:.08em;color:rgba(244,241,234,.45)}
+  .specx__data dd{font-size:.82rem;line-height:1.7;letter-spacing:.04em;color:rgba(244,241,234,.86);text-align:left}
+  .specx__panelcount{font-family:var(--fn);font-size:.875rem;letter-spacing:.14em;color:rgba(244,241,234,.5)}
+  .specx__panelcount b{font-weight:300;color:var(--gold)}
+
+  .specx__ledger{display:grid;grid-template-columns:1fr 1fr;margin-top:clamp(64px,8vw,112px);
+    border-top:1px solid rgba(244,241,234,.18);border-bottom:1px solid rgba(244,241,234,.18)}
+  .specx__ledgerhead{grid-column:1/-1;display:flex;align-items:baseline;justify-content:space-between;gap:24px;
+    padding:0 0 20px;border-bottom:1px solid rgba(244,241,234,.18)}
+  .specx__ledgerhead h3{font-family:var(--fh);font-size:clamp(1.1rem,1rem + .5cqi,1.4rem);font-weight:500;
+    letter-spacing:.06em;color:var(--cream)}
+  .specx__ledgerhead span{font-family:var(--fn);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+  .specx__row{display:grid;grid-template-columns:minmax(7em,.55fr) minmax(0,1fr);gap:24px;padding:18px 0;
+    border-bottom:1px solid rgba(244,241,234,.1)}
+  .specx__row:nth-of-type(even){padding-inline-end:clamp(18px,3vw,48px);border-inline-end:1px solid rgba(244,241,234,.12)}
+  .specx__row:nth-of-type(odd){padding-inline-start:clamp(18px,3vw,48px)}
+  .specx__row dt{font-size:.72rem;letter-spacing:.08em;color:rgba(244,241,234,.45)}
+  .specx__row dd{font-size:.88rem;line-height:1.75;letter-spacing:.04em;color:rgba(244,241,234,.86);text-align:left}
+  .specx__row dd b{display:block;margin-bottom:3px;font-family:var(--fn);font-size:clamp(1.12rem,1rem + .6cqi,1.45rem);
+    font-weight:300;color:var(--cream);font-variant-numeric:tabular-nums}
+  .specx__foot{display:flex;align-items:flex-end;justify-content:space-between;gap:clamp(28px,5vw,72px);margin-top:clamp(40px,5vw,72px)}
+  .specx__note{max-width:44rem;font-size:.78rem;line-height:1.9;letter-spacing:.04em;color:rgba(244,241,234,.48);text-align:left}
+  .specx__cta{display:inline-flex;align-items:center;justify-content:space-between;gap:32px;min-width:min(100%,300px);min-height:52px;
+    padding:14px 18px 14px 22px;border:1px solid rgba(201,162,75,.56);border-radius:4px;
+    background:rgba(244,241,234,.045);color:var(--cream);font:500 .9rem/1.4 var(--fh);letter-spacing:.06em;
+    -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+    transition:background .45s var(--ease),border-color .45s var(--ease),transform .45s var(--ease)}
+  .specx__cta::after{content:"→";display:grid;place-items:center;width:34px;height:34px;border:1px solid rgba(201,162,75,.45);color:var(--gold)}
+  .specx__cta:hover{transform:translateY(-2px);background:rgba(201,162,75,.1);border-color:var(--gold)}
+  .specx__cta:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+
+  @media(max-width:900px){
+    .idx__in{padding-inline:0}
+    .idx__nav{display:flex;overflow-x:auto;scrollbar-width:none;border-inline-start:0;scroll-snap-type:x proximity}
+    .idx__nav::-webkit-scrollbar{display:none}
+    .idx__nav>li{flex:0 0 154px;scroll-snap-align:start}
+    .idx__a{min-height:64px}
+    .idx__d{display:none}
+    .specx__heading{grid-template-columns:1fr;gap:24px}
+    .specx__panel{grid-template-columns:1fr;min-height:0}
+    .specx__media{min-height:clamp(390px,112vw,640px)}
+    .specx__media::after{background:linear-gradient(0deg,rgba(7,8,7,.36),transparent 35%)}
+    .specx__info{border-inline-start:0;border-top:1px solid rgba(244,241,234,.12)}
+    .specx__panel--wall .specx__media{min-height:72vw}
+    .specx__ledgerhead{padding-bottom:16px}
+    .specx__foot{align-items:stretch;flex-direction:column}
+    .specx__cta{width:100%}
+    .stickycv{display:none!important}
+  }
+  @media(max-width:560px){
+    .hd__back{display:none!important}
+    #standard.specx{padding-block:80px}
+    .specx__shell{padding-inline:18px}
+    .specx__titleline{gap:12px}
+    .specx__tabs{margin-inline:-18px;padding-inline:18px}
+    .specx__tab{min-width:138px}
+    .specx__media{min-height:112vw}
+    .specx__panel--kitchen .specx__media img{object-position:center 50%}
+    .specx__panel--bath .specx__media img{object-position:center 52%}
+    .specx__panel--wall .specx__media{min-height:88vw}
+    .specx__info{padding:28px 22px 30px}
+    .specx__data div{grid-template-columns:6.4em minmax(0,1fr)}
+    .specx__ledger{margin-top:64px}
+    .specx__ledgerhead{align-items:flex-start;flex-direction:column;gap:6px}
+    .specx__row{grid-template-columns:1fr;gap:6px;min-height:116px;padding:16px 12px}
+    .specx__row:nth-of-type(even){padding-inline:0 12px;border-inline-end:1px solid rgba(244,241,234,.12)}
+    .specx__row:nth-of-type(odd){padding-inline:12px 0}
+    .specx__row dd{font-size:.78rem;line-height:1.55}
+    .specx__row dd b{font-size:1rem}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .specx__media img{animation:none;transform:none}
+    .specx__tab::after,.idx__a::after{transition:none}
+    .menu__media,.menu__panel,.menu .stagger{transition:none!important;transform:none!important}
+  }
+
+  .stickycv{visibility:hidden;pointer-events:none}
+  .stickycv.is-show{visibility:visible;pointer-events:auto}
+  .stickycv.is-yield{visibility:hidden;pointer-events:none;transform:translateY(calc(100% + 24px))}
 </style>
 <link rel="stylesheet" href="assets/catalog/catalog-hero.css">
 </head>
 <body>
+
+<a class="skip-link" href="#price">カタログを飛ばして本文へ</a>
 
 <header class="hd" id="hd">
   <a class="hd__brand" href="index.html" aria-label="やまと不動産 トップへ">
@@ -462,10 +643,10 @@
         <a class="lead" href="index.html#heart">私たちについて</a>
         <a class="lead" href="kodawari.html" aria-current="page">家づくりのこだわり</a>
         <div class="subnav">
-          <a href="kodawari.html#price">価格・お見積もり</a>
-          <a href="kodawari.html#standard">商品別の標準仕様</a>
-          <a href="kodawari.html#design">自由設計・間取り</a>
-          <a href="kodawari.html#after">保証・アフターフォロー</a>
+          <a href="kodawari-redesign-preview.html#price">価格・お見積もり</a>
+          <a href="kodawari-redesign-preview.html#standard">商品別の標準仕様</a>
+          <a href="kodawari-redesign-preview.html#design">自由設計・間取り</a>
+          <a href="kodawari-redesign-preview.html#after">保証・アフターフォロー</a>
         </div>
       </div>
       <div class="navcol stagger" style="--i:1">
@@ -520,6 +701,7 @@
 </div>
 
 <!-- デジタルカタログFV -->
+<main id="main">
 <section class="fvs" id="top" role="region" aria-label="花鳥風月 やまとの家 デジタルカタログ">
   <h1 class="fvs__sr-only">やまと不動産の価格・標準仕様・保証</h1>
   <article class="fvs__scene fvs__scene--cover is-active" data-name="表紙" aria-hidden="false">
@@ -764,14 +946,14 @@
 </dialog>
 
 <!-- 章インデックス -->
-<nav class="idx" aria-label="章">
+<nav class="idx" aria-label="このページの目次">
   <div class="idx__in">
-    <div class="idx__nav">
-      <a class="idx__a" href="#price"><span class="idx__no">01</span><span class="idx__t">価格・お見積もり</span><span class="idx__d">契約前に内容と金額を確認</span></a>
-      <a class="idx__a" href="#standard"><span class="idx__no">02</span><span class="idx__t">標準仕様</span><span class="idx__d">商品別の設備・性能</span></a>
-      <a class="idx__a" href="#design"><span class="idx__no">03</span><span class="idx__t">自由設計・間取り</span><span class="idx__d">設計士と進める間取りづくり</span></a>
-      <a class="idx__a" href="#after"><span class="idx__no">04</span><span class="idx__t">保証・<span style="display:inline-block;white-space:nowrap">アフターフォロー</span></span><span class="idx__d">保証内容と定期点検</span></a>
-    </div>
+    <ol class="idx__nav">
+      <li><a class="idx__a" href="#price"><span class="idx__no">01</span><span class="idx__t">価格・お見積もり</span><span class="idx__d">契約前に内容と金額を確認</span></a></li>
+      <li><a class="idx__a" href="#standard"><span class="idx__no">02</span><span class="idx__t">標準仕様</span><span class="idx__d">商品別の設備・性能</span></a></li>
+      <li><a class="idx__a" href="#design"><span class="idx__no">03</span><span class="idx__t">自由設計・間取り</span><span class="idx__d">設計士と進める間取りづくり</span></a></li>
+      <li><a class="idx__a" href="#after"><span class="idx__no">04</span><span class="idx__t">保証・<span style="display:inline-block;white-space:nowrap">アフターフォロー</span></span><span class="idx__d">保証内容と定期点検</span></a></li>
+    </ol>
   </div>
 </nav>
 
@@ -789,36 +971,115 @@
   </dl>
 </section>
 
-<!-- ② 標準仕様 -->
-<section class="chap" id="standard">
-  <header class="chap__head rv"><span class="chap__no">02</span>
-    <div class="chap__tw"><h2 class="chap__t">商品別の標準仕様</h2><span class="chap__en">Standard specifications</span></div>
-  </header>
-  <p class="chap__lead rv">キッチン、浴室、建具、断熱、制震など、商品ごとの標準仕様を掲載しています。モデルハウスでは、設備と素材を実物で確認できます。</p>
-  <div class="board rv">
-    <div class="bnum"><b>2.3<i>m</i></b><span>ハイドア</span><small>内装建具の標準高さ</small></div>
-    <div class="bnum"><b>1.25<i>坪</i></b><span>TOTO サザナ</span><small>浴室の最大サイズ（花）</small></div>
-    <div class="bnum"><b>約1.5<i>倍</i></b><span>構造強度</span><small>在来工法比・ハイブリッド工法</small></div>
-    <div class="bnum"><b>6<i>色</i></b><span>軽量瓦</span><small>屋根材の標準カラー</small></div>
+<!-- ② 標準仕様：デザイン検証章 -->
+<section class="chap specx" id="standard">
+  <div class="specx__shell">
+    <header class="specx__heading rv">
+      <div class="specx__titleline">
+        <span class="specx__no">02</span>
+        <div>
+          <p class="specx__eyebrow">Standard specifications</p>
+          <h2 class="specx__title">商品別の標準仕様</h2>
+        </div>
+      </div>
+      <p class="specx__lead">キッチン、浴室、建具、断熱、制震など、商品ごとの標準仕様を掲載しています。モデルハウスでは、設備と素材を実物で確認できます。</p>
+    </header>
+
+    <div class="specx__tabs rv" role="tablist" aria-label="標準仕様の写真を切り替える">
+      <button class="specx__tab" id="specTabKitchen" type="button" role="tab" aria-selected="true" aria-controls="specPanelKitchen" tabindex="0" data-spec-tab="kitchen"><span>01</span>キッチン</button>
+      <button class="specx__tab" id="specTabBath" type="button" role="tab" aria-selected="false" aria-controls="specPanelBath" tabindex="-1" data-spec-tab="bath"><span>02</span>浴室</button>
+      <button class="specx__tab" id="specTabWall" type="button" role="tab" aria-selected="false" aria-controls="specPanelWall" tabindex="-1" data-spec-tab="wall"><span>03</span>外壁</button>
+    </div>
+
+    <div class="specx__viewer rv">
+      <article class="specx__panel specx__panel--kitchen" id="specPanelKitchen" role="tabpanel" aria-labelledby="specTabKitchen" data-spec-panel="kitchen">
+        <figure class="specx__media">
+          <picture>
+            <source media="(max-width:900px)" type="image/avif" srcset="assets/std/kitchen_sp_1080.avif 1080w, assets/std/kitchen_sp_1440.avif 1440w" sizes="100vw">
+            <source media="(max-width:900px)" type="image/webp" srcset="assets/std/kitchen_sp_1080.webp 1080w, assets/std/kitchen_sp_1440.webp 1440w" sizes="100vw">
+            <source type="image/avif" srcset="assets/std/kitchen_1100.avif 1100w, assets/std/kitchen_1920.avif 1920w, assets/std/kitchen_2560.avif 2560w" sizes="(max-width:1440px) 68vw, 980px">
+            <img src="assets/std/kitchen_1920.webp" srcset="assets/std/kitchen_1100.webp 1100w, assets/std/kitchen_1920.webp 1920w, assets/std/kitchen_2560.webp 2560w" sizes="(max-width:1440px) 68vw, 980px" width="2560" height="1440" loading="lazy" decoding="async" alt="やまと不動産のモデルハウスに設置された対面キッチン">
+          </picture>
+          <figcaption class="specx__caption">Actual model house / Kitchen</figcaption>
+        </figure>
+        <div class="specx__info">
+          <div>
+            <p class="specx__kind">Kitchen</p>
+            <h3 class="specx__name">クリナップ<br>ステディア</h3>
+            <p class="specx__desc">花・京の標準キッチンです。風はクリナップ ESを採用しています。カップボードも標準仕様に含まれます。</p>
+            <dl class="specx__data">
+              <div><dt>対象商品</dt><dd>花・京</dd></div>
+              <div><dt>カップボード</dt><dd>標準仕様</dd></div>
+              <div><dt>風の商品仕様</dt><dd>クリナップ ES</dd></div>
+            </dl>
+          </div>
+          <p class="specx__panelcount"><b>01</b> / 03</p>
+        </div>
+      </article>
+
+      <article class="specx__panel specx__panel--bath" id="specPanelBath" role="tabpanel" aria-labelledby="specTabBath" data-spec-panel="bath" hidden>
+        <figure class="specx__media">
+          <picture>
+            <source type="image/avif" srcset="assets/std/bath_1100.avif 1100w, assets/std/bath_1920.avif 1920w, assets/std/bath_2560.avif 2560w" sizes="(max-width:1440px) 68vw, 980px">
+            <img src="assets/std/bath_1920.webp" srcset="assets/std/bath_1100.webp 1100w, assets/std/bath_1920.webp 1920w, assets/std/bath_2560.webp 2560w" sizes="(max-width:1440px) 68vw, 980px" width="2560" height="1440" loading="lazy" decoding="async" alt="やまと不動産のモデルハウスに設置されたTOTOサザナの浴室">
+          </picture>
+          <figcaption class="specx__caption">Actual model house / Bathroom</figcaption>
+        </figure>
+        <div class="specx__info">
+          <div>
+            <p class="specx__kind">Bathroom</p>
+            <h3 class="specx__name">TOTO<br>サザナ</h3>
+            <p class="specx__desc">保温構造の浴槽を採用しています。花は1.25坪まで、京・風は1坪が標準です。</p>
+            <dl class="specx__data">
+              <div><dt>花</dt><dd>最大1.25坪</dd></div>
+              <div><dt>京・風</dt><dd>1坪</dd></div>
+              <div><dt>浴槽</dt><dd>保温構造</dd></div>
+            </dl>
+          </div>
+          <p class="specx__panelcount"><b>02</b> / 03</p>
+        </div>
+      </article>
+
+      <article class="specx__panel specx__panel--wall" id="specPanelWall" role="tabpanel" aria-labelledby="specTabWall" data-spec-panel="wall" hidden>
+        <figure class="specx__media">
+          <picture>
+            <source media="(max-width:900px)" type="image/avif" srcset="assets/catalog/mobile/performance-wall-sp-1080.avif" sizes="100vw">
+            <source media="(max-width:900px)" type="image/webp" srcset="assets/catalog/mobile/performance-wall-sp-1080.webp" sizes="100vw">
+            <img src="assets/std/walltex_1920.webp" srcset="assets/std/walltex_1100.webp 1100w, assets/std/walltex_1920.webp 1920w, assets/std/walltex_2560.webp 2560w" sizes="(max-width:1440px) 68vw, 980px" width="2560" height="1440" loading="lazy" decoding="async" alt="モデルハウスの木調部材と陰影のある外壁材">
+          </picture>
+          <figcaption class="specx__caption">Actual material / Exterior wall</figcaption>
+        </figure>
+        <div class="specx__info">
+          <div>
+            <p class="specx__kind">Exterior wall</p>
+            <h3 class="specx__name">旭化成<br>ヘーベルパワーボード</h3>
+            <p class="specx__desc">断熱・遮音・防火に配慮した外壁材です。素材の凹凸と木調部材の組み合わせを、実物で確認できます。</p>
+            <dl class="specx__data">
+              <div><dt>外壁材</dt><dd>ヘーベルパワーボード</dd></div>
+              <div><dt>配慮する性能</dt><dd>断熱・遮音・防火</dd></div>
+              <div><dt>確認方法</dt><dd>モデルハウスで実物確認</dd></div>
+            </dl>
+          </div>
+          <p class="specx__panelcount"><b>03</b> / 03</p>
+        </div>
+      </article>
+    </div>
+
+    <dl class="specx__ledger rv">
+      <div class="specx__ledgerhead"><h3>標準仕様の要点</h3><span>Specification ledger</span></div>
+      <div class="specx__row"><dt>内装建具</dt><dd><b>2.3m</b>ハイドアの標準高さ</dd></div>
+      <div class="specx__row"><dt>構造</dt><dd><b>約1.5倍</b>在来工法比・ハイブリッド工法</dd></div>
+      <div class="specx__row"><dt>断熱</dt><dd><b>アクアフォーム</b>吹付断熱</dd></div>
+      <div class="specx__row"><dt>サッシ</dt><dd><b>Low-E</b>複層ガラス</dd></div>
+      <div class="specx__row"><dt>制震</dt><dd><b>ミライエ</b>住友ゴム</dd></div>
+      <div class="specx__row"><dt>屋根</dt><dd><b>6色</b>軽量瓦の標準カラー</dd></div>
+    </dl>
+
+    <div class="specx__foot rv">
+      <p class="specx__note">掲載の仕様は、時期により変更となる場合があります。商品ごとの標準仕様と選択できる内容は、モデルハウスまたはお見積もり時にご確認ください。</p>
+      <a class="specx__cta" href="model.html">モデルハウスで確認する</a>
+    </div>
   </div>
-  <div class="stdgrid rv">
-    <figure class="stdcard"><img src="assets/kodawari/std01.jpg" alt="標準仕様のキッチン" loading="lazy">
-      <figcaption><span class="n">クリナップ ステディア</span><span class="d">花・京の標準キッチン（風はES）。カップボードも標準です。</span></figcaption></figure>
-    <figure class="stdcard"><img src="assets/kodawari/std03.jpg" alt="標準仕様の浴室" loading="lazy">
-      <figcaption><span class="n">TOTO サザナ</span><span class="d">保温構造の浴槽。花は1.25坪まで、京・風は1坪が標準です。</span></figcaption></figure>
-    <figure class="stdcard"><img src="assets/kodawari/std02.jpg" alt="ヘーベルパワーボードの外壁" loading="lazy">
-      <figcaption><span class="n">旭化成 ヘーベルパワーボード</span><span class="d">断熱・遮音・防火に配慮した外壁材。</span></figcaption></figure>
-  </div>
-  <dl class="speclist rv">
-    <div class="srow"><dt>断熱</dt><dd>吹付 アクアフォーム</dd></div>
-    <div class="srow"><dt>サッシ</dt><dd>Low-E複層ガラス</dd></div>
-    <div class="srow"><dt>制震</dt><dd>住友ゴム ミライエ</dd></div>
-    <div class="srow"><dt>洗面化粧台</dt><dd>三面鏡・広収納</dd></div>
-    <div class="srow"><dt>玄関ドア</dt><dd>親子ドア・採光機能</dd></div>
-    <div class="srow"><dt>電気</dt><dd>オール電化／ガス 選択可</dd></div>
-  </dl>
-  <p class="chap__note rv">※ 掲載の仕様は、時期により変更となる場合があります。</p>
-  <a class="gomodel rv" href="model.html">モデルハウスで標準仕様を確認<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </section>
 
 <!-- ③ 自由設計 -->
@@ -908,6 +1169,7 @@
     <a class="close__btn" href="contact.html?type=reserve">モデルハウスの見学を予約<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
 </section>
+</main>
 
 <!-- 奥付 -->
 <footer class="colo">
@@ -929,8 +1191,8 @@
   </div>
 </footer>
 
-<div class="stickycv" id="stickycv" aria-hidden="true">
-  <a href="contact.html?type=reserve">見学を予約する<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<div class="stickycv" id="stickycv" aria-hidden="true" inert>
+  <a href="contact.html?type=reserve" tabindex="-1">見学を予約する<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.25/dist/lenis.min.js" integrity="sha384-ClD7pCgIUz5M81HT8aZmMxCsWmfsycmBiwL5gy1pUbdWHvICIbea22N9sTtAFotA" crossorigin="anonymous"></script>
@@ -971,11 +1233,26 @@
   }
 
   /* 追従CV */
-  var cv=d.getElementById('stickycv');
-  window.addEventListener('scroll',function(){
-    var on=window.scrollY>innerHeight*.7;
-    cv.classList.toggle('is-show',on); cv.setAttribute('aria-hidden',on?'false':'true');
-  },{passive:true});
+  var cv=d.getElementById('stickycv'),cvLink=cv&&cv.querySelector('a'),cvYield=false;
+  function updateCv(){
+    if(!cv||!cvLink) return;
+    var on=window.scrollY>innerHeight*.7&&!cvYield;
+    cv.classList.toggle('is-show',on);
+    cv.classList.toggle('is-yield',cvYield);
+    cv.setAttribute('aria-hidden',on?'false':'true');
+    cvLink.tabIndex=on?0:-1;
+    if(on) cv.removeAttribute('inert'); else cv.setAttribute('inert','');
+  }
+  window.addEventListener('scroll',updateCv,{passive:true});
+  if('IntersectionObserver' in window){
+    var cvStops=new Set();
+    var cvStopObserver=new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){if(entry.isIntersecting)cvStops.add(entry.target);else cvStops.delete(entry.target);});
+      cvYield=cvStops.size>0;updateCv();
+    },{threshold:.04});
+    d.querySelectorAll('.close,.colo').forEach(function(stop){cvStopObserver.observe(stop);});
+  }
+  updateCv();
 })();
 </script>
 <script>
@@ -983,17 +1260,89 @@
   var menu=document.getElementById('hdMenu'), burger=document.getElementById('hdBurger'),
       closeBtn=document.getElementById('hdMenuClose'), lastFocus=null;
   if(!menu||!burger||!closeBtn) return;
-  function onKey(e){ if(e.key==='Escape') closeMenu(); }
+  var backgroundEls=[document.querySelector('.skip-link'),document.getElementById('hd'),
+    document.getElementById('main'),document.querySelector('.colo'),document.getElementById('stickycv')].filter(Boolean);
+  function setBackgroundInert(on){backgroundEls.forEach(function(el){if(on)el.setAttribute('inert','');else el.removeAttribute('inert');});}
+  function focusables(){return Array.prototype.slice.call(menu.querySelectorAll('a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])')).filter(function(el){return !el.hasAttribute('hidden');});}
+  function onKey(e){
+    if(e.key==='Escape'){closeMenu();return;}
+    if(e.key!=='Tab') return;
+    var items=focusables(),first=items[0],last=items[items.length-1];
+    if(!first) return;
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  }
   function openMenu(){ lastFocus=document.activeElement; menu.classList.add('is-open');
     menu.setAttribute('aria-hidden','false'); burger.setAttribute('aria-expanded','true');
-    document.body.classList.add('is-locked'); setTimeout(function(){closeBtn.focus();},60);
+    document.body.classList.add('is-locked');setBackgroundInert(true);setTimeout(function(){closeBtn.focus();},60);
     document.addEventListener('keydown',onKey); }
   function closeMenu(){ menu.classList.remove('is-open'); menu.setAttribute('aria-hidden','true');
     burger.setAttribute('aria-expanded','false'); document.body.classList.remove('is-locked');
-    document.removeEventListener('keydown',onKey); if(lastFocus)lastFocus.focus(); }
+    setBackgroundInert(false);document.removeEventListener('keydown',onKey); if(lastFocus)lastFocus.focus(); }
   burger.addEventListener('click',openMenu);
   closeBtn.addEventListener('click',closeMenu);
   menu.querySelectorAll('a[href="#"]').forEach(function(a){ a.addEventListener('click',function(e){e.preventDefault();closeMenu();}); });
+})();
+</script>
+<script>
+(function(){
+  var tabs=Array.prototype.slice.call(document.querySelectorAll('[data-spec-tab]'));
+  var panels=Array.prototype.slice.call(document.querySelectorAll('[data-spec-panel]'));
+  if(tabs.length&&panels.length){
+    function selectTab(next,moveFocus){
+      var key=next.getAttribute('data-spec-tab');
+      tabs.forEach(function(tab){
+        var active=tab===next;
+        tab.setAttribute('aria-selected',active?'true':'false');
+        tab.tabIndex=active?0:-1;
+      });
+      panels.forEach(function(panel){panel.hidden=panel.getAttribute('data-spec-panel')!==key;});
+      if(moveFocus) next.focus();
+    }
+    tabs.forEach(function(tab,index){
+      tab.addEventListener('click',function(){selectTab(tab,false);});
+      tab.addEventListener('keydown',function(event){
+        var nextIndex=null;
+        if(event.key==='ArrowRight'||event.key==='ArrowDown') nextIndex=(index+1)%tabs.length;
+        if(event.key==='ArrowLeft'||event.key==='ArrowUp') nextIndex=(index-1+tabs.length)%tabs.length;
+        if(event.key==='Home') nextIndex=0;
+        if(event.key==='End') nextIndex=tabs.length-1;
+        if(nextIndex!==null){event.preventDefault();selectTab(tabs[nextIndex],true);}
+      });
+    });
+  }
+
+  var header=document.getElementById('hd');
+  var darkSection=document.getElementById('standard');
+  var chapterNav=document.querySelector('.idx');
+  if(header&&darkSection){
+    function syncDarkHeader(){
+      var rect=darkSection.getBoundingClientRect();
+      var threshold=header.offsetHeight+(chapterNav?chapterNav.offsetHeight:0)+16;
+      header.classList.toggle('is-dark-section',rect.top<=threshold&&rect.bottom>header.offsetHeight);
+    }
+    window.addEventListener('scroll',syncDarkHeader,{passive:true});
+    window.addEventListener('resize',syncDarkHeader,{passive:true});
+    window.addEventListener('hashchange',syncDarkHeader);
+    window.addEventListener('pageshow',syncDarkHeader);
+    requestAnimationFrame(function(){requestAnimationFrame(syncDarkHeader);});
+  }
+
+  var chapterLinks=Array.prototype.slice.call(document.querySelectorAll('.idx__a'));
+  var chapters=Array.prototype.slice.call(document.querySelectorAll('#price,#standard,#design,#after'));
+  function markChapter(id){
+    chapterLinks.forEach(function(link){
+      var active=link.getAttribute('href')==='#'+id;
+      link.classList.toggle('is-active',active);
+      if(active) link.setAttribute('aria-current','location'); else link.removeAttribute('aria-current');
+    });
+  }
+  if(chapterLinks.length&&chapters.length&&'IntersectionObserver' in window){
+    var chapterObserver=new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){if(entry.isIntersecting) markChapter(entry.target.id);});
+    },{rootMargin:'-34% 0px -58% 0px',threshold:0});
+    chapters.forEach(function(chapter){chapterObserver.observe(chapter);});
+  }
 })();
 </script>
 <script src="assets/catalog/catalog-hero.js" defer></script>

@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import{previewPreset,previewDefaults}from'../../assets/top-renewal/loan-preview-presets.mjs';
+import{calculateMortgage}from'../../assets/top-renewal/mortgage.mjs';
+test('Illustrative configuration is explicit; defaults are not zero-filled costs',()=>{assert.equal(previewDefaults.feesMan,200);assert.match(previewDefaults.version,/illustration/);assert.match(previewPreset('variable').description,/仮定/);assert.match(previewPreset('long').description,/仮設定/);assert.match(previewPreset('flat').description,/融資率9割超/);});
+test('Switching terms also switches assumed rate; unsupported terms rejected',()=>{assert.equal(previewPreset('long',40).rate,1.07);assert.equal(previewPreset('long',50).rate,1.15);assert.throws(()=>previewPreset('long',45),RangeError);assert.throws(()=>previewPreset('other'),RangeError);});
+test('Same borrowing amount produces independent consistent comparisons',()=>{const results=['variable','flat','long'].map(key=>{const p=previewPreset(key,50);return calculateMortgage({principalYen:41800000,annualRatePercent:p.rate,months:p.years*12,method:'annuity'});});assert.ok(results[2].firstPaymentYen<results[0].firstPaymentYen);assert.ok(results[2].totalInterestYen>results[0].totalInterestYen);for(const r of results)assert.equal(r.schedule.at(-1).balanceYen,0);});

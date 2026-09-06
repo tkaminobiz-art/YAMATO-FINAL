@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>新ファーストビュー確認｜やまと不動産</title>
+  <meta name="description" content="やまと不動産の新ファーストビュー確認用プレビューです。">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/fv_research_20260904/yamato-exterior-day-sp-1440.webp" media="(max-width: 900px)">
+  <link rel="preload" as="image" href="assets/fv_research_20260904/yamato-exterior-day-pc-2560.webp" media="(min-width: 901px)">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Shippori+Mincho:wght@400;500;600&amp;family=Zen+Kaku+Gothic+New:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #24251f;
+      --paper: #f5f2e9;
+      --white: #fff;
+      --green: #31562d;
+      --red: #c42b35;
+      --amber: #c8871a;
+      --line-light: rgba(255, 255, 255, .34);
+      --serif: "Shippori Mincho", "Yu Mincho", "Hiragino Mincho ProN", serif;
+      --sans: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      --latin: "Inter", sans-serif;
+      --header: 76px;
+      --ease: cubic-bezier(.22, 1, .36, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { background: var(--ink); scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--sans);
+      font-feature-settings: "palt";
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    body.menu-open { overflow: hidden; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    img { display: block; width: 100%; }
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+    :focus-visible { outline: 3px solid #f2bf55; outline-offset: 4px; }
+    .skip {
+      position: fixed;
+      z-index: 300;
+      top: 10px;
+      left: 10px;
+      padding: 10px 14px;
+      color: var(--white);
+      background: var(--ink);
+      transform: translateY(-150%);
+      transition: transform .2s;
+    }
+    .skip:focus { transform: translateY(0); }
+
+    .site-header {
+      position: fixed;
+      z-index: 100;
+      inset: 0 0 auto;
+      height: calc(var(--header) + env(safe-area-inset-top));
+      padding: env(safe-area-inset-top) clamp(16px, 3.5vw, 52px) 0;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: var(--white);
+      border-bottom: 1px solid rgba(255, 255, 255, .22);
+      background: linear-gradient(180deg, rgba(7, 8, 6, .38), rgba(7, 8, 6, .04));
+      pointer-events: none;
+    }
+    .site-header > * { pointer-events: auto; }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: auto;
+      min-height: 42px;
+      padding: 0;
+      color: var(--white);
+      text-shadow: 0 1px 14px rgba(0, 0, 0, .55);
+    }
+    .brand-mark {
+      width: clamp(45px, 3.7vw, 54px);
+      height: auto;
+      opacity: .96;
+      filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .38)) grayscale(1) brightness(0) invert(1);
+    }
+    .brand-wordmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+      font-family: var(--serif);
+      font-size: clamp(16px, 1.35vw, 19px);
+      font-weight: 500;
+      letter-spacing: .055em;
+    }
+    .brand-wordmark small {
+      font-family: var(--sans);
+      font-size: 7px;
+      font-weight: 500;
+      letter-spacing: .04em;
+    }
+    .nav { display: flex; align-items: center; gap: clamp(18px, 2vw, 32px); margin-left: auto; }
+    .nav a {
+      position: relative;
+      padding: 12px 0;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: .05em;
+      text-shadow: 0 1px 18px rgba(0, 0, 0, .55);
+      white-space: nowrap;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      right: 100%;
+      bottom: 7px;
+      left: 0;
+      height: 1px;
+      background: var(--white);
+      transition: right .35s var(--ease);
+    }
+    .nav a:hover::after { right: 0; }
+    .header-actions { display: flex; align-items: center; gap: 10px; }
+    .docs-link {
+      padding: 12px 6px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: .06em;
+      text-shadow: 0 1px 18px rgba(0, 0, 0, .55);
+    }
+    .reserve-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 0 3px 3px;
+      border-bottom: 1px solid rgba(255, 255, 255, .7);
+      color: #fff;
+      background: transparent;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-shadow: 0 1px 18px rgba(0, 0, 0, .6);
+      transition: opacity .25s;
+    }
+    .reserve-link:hover { opacity: .62; }
+    .menu-button {
+      display: none;
+      place-items: center;
+      position: relative;
+      width: 48px;
+      height: var(--header);
+      padding: 0;
+      border: 0;
+      border-left: 1px solid rgba(255, 255, 255, .24);
+      border-radius: 0;
+      color: var(--white);
+      background: transparent;
+      cursor: pointer;
+    }
+    .menu-button span,
+    .menu-button::before,
+    .menu-button::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: currentColor;
+      transition: transform .3s, opacity .3s;
+    }
+    .menu-button span { display: none; }
+    .menu-button::before { transform: translateY(-4px); }
+    .menu-button::after { transform: translateY(4px); }
+    .menu-button[aria-expanded="true"]::before { transform: rotate(45deg); }
+    .menu-button[aria-expanded="true"]::after { transform: rotate(-45deg); }
+
+    .mobile-menu {
+      position: fixed;
+      z-index: 95;
+      inset: 0;
+      padding: calc(var(--header) + env(safe-area-inset-top) + 18px) 24px 40px;
+      display: grid;
+      align-content: start;
+      color: var(--ink);
+      background: var(--paper);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-14px);
+      transition: .35s var(--ease);
+    }
+    .mobile-menu.is-open { opacity: 1; visibility: visible; transform: none; }
+    .mobile-menu a {
+      display: flex;
+      align-items: center;
+      min-height: 59px;
+      border-bottom: 1px solid rgba(36, 37, 31, .16);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: .05em;
+    }
+
+    .preview-note {
+      position: fixed;
+      z-index: 110;
+      top: calc(var(--header) + env(safe-area-inset-top) + 9px);
+      right: 14px;
+      padding: 7px 11px;
+      border: 1px solid rgba(255, 255, 255, .24);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, .9);
+      background: rgba(10, 12, 8, .58);
+      backdrop-filter: blur(10px);
+      font-family: var(--latin);
+      font-size: 9px;
+      letter-spacing: .13em;
+      pointer-events: none;
+    }
+
+    .new-hero {
+      position: relative;
+      min-height: 100svh;
+      overflow: hidden;
+      isolation: isolate;
+      color: var(--white);
+      background: #10120f;
+      touch-action: pan-y;
+    }
+    .new-hero__media,
+    .new-hero__scene,
+    .new-hero__scene picture,
+    .new-hero__scene img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .new-hero__media { z-index: -3; }
+    .new-hero__scene {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .95s ease, visibility .95s;
+    }
+    .new-hero__scene.is-active { opacity: 1; visibility: visible; }
+    .new-hero__scene img {
+      object-fit: cover;
+      object-position: var(--scene-position, center);
+    }
+    .new-hero__shade {
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(7, 9, 7, .48) 0%, rgba(7, 9, 7, .05) 26%, rgba(7, 9, 7, .22) 67%, rgba(7, 9, 7, .72) 100%),
+        linear-gradient(90deg, rgba(7, 9, 7, .76) 0%, rgba(7, 9, 7, .54) 29%, rgba(7, 9, 7, .12) 57%, rgba(7, 9, 7, 0) 76%);
+      pointer-events: none;
+    }
+    .new-hero__inner {
+      min-height: 100svh;
+      padding: calc(var(--header) + env(safe-area-inset-top) + clamp(42px, 8vh, 92px)) clamp(28px, 6vw, 92px) clamp(144px, 17vh, 186px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .new-hero__copy {
+      width: min(690px, 52vw);
+      text-shadow: 0 2px 30px rgba(0, 0, 0, .5);
+    }
+    .new-hero__story-stack {
+      display: grid;
+      align-items: end;
+      min-height: 184px;
+    }
+    .new-hero__story {
+      grid-area: 1 / 1;
+      align-self: end;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: opacity .28s ease, visibility .28s, transform .38s var(--ease);
+    }
+    .new-hero__story.is-active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: none;
+    }
+    .new-hero__kicker {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 0 0 17px;
+      color: rgba(255, 255, 255, .76);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .09em;
+    }
+    .new-hero__kicker::before { content: ""; width: 36px; height: 1px; background: var(--red); }
+    .new-hero h2 {
+      max-width: 14.5em;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(38px, 3.25vw, 47px);
+      font-weight: 400;
+      letter-spacing: .045em;
+      line-height: 1.4;
+      text-wrap: balance;
+    }
+    .sp-break { display: none; }
+    .new-hero__lead {
+      max-width: 38em;
+      margin: 16px 0 0;
+      font-size: clamp(13px, 1vw, 15px);
+      font-weight: 400;
+      letter-spacing: .045em;
+      line-height: 1.9;
+    }
+    .new-hero__cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 34px;
+      width: fit-content;
+      min-width: 230px;
+      min-height: 48px;
+      margin-top: 21px;
+      padding: 0 3px;
+      border-top: 1px solid rgba(255, 255, 255, .54);
+      border-bottom: 1px solid rgba(255, 255, 255, .54);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: .1em;
+      transition: gap .35s var(--ease), opacity .25s;
+    }
+    .new-hero__cta::after { content: "→"; font-family: var(--latin); font-size: 15px; }
+    .new-hero__cta:hover { gap: 46px; opacity: .75; }
+    .new-hero__chapters {
+      position: absolute;
+      bottom: clamp(25px, 4vh, 42px);
+      left: clamp(28px, 6vw, 92px);
+      width: min(610px, 52vw);
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .new-hero__chapter {
+      position: relative;
+      min-width: 0;
+      min-height: 58px;
+      padding: 10px 14px 12px;
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      align-content: center;
+      align-items: center;
+      gap: 4px 10px;
+      border: 0;
+      border-top: 1px solid rgba(255, 255, 255, .34);
+      border-bottom: 1px solid rgba(255, 255, 255, .34);
+      border-left: 1px solid rgba(255, 255, 255, .18);
+      color: rgba(255, 255, 255, .62);
+      background: rgba(8, 11, 8, .08);
+      text-align: left;
+      cursor: pointer;
+      transition: color .25s, background .25s;
+    }
+    .new-hero__chapter:last-child { border-right: 1px solid rgba(255, 255, 255, .18); }
+    .new-hero__chapter:hover,
+    .new-hero__chapter.is-active { color: var(--white); background: rgba(8, 11, 8, .34); }
+    .new-hero__chapter-num {
+      font-family: var(--latin);
+      font-size: 8px;
+      letter-spacing: .14em;
+    }
+    .new-hero__chapter-title {
+      min-width: 0;
+      overflow: hidden;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .055em;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .new-hero__chapter-short { display: none; }
+    .new-hero__chapter-progress {
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      left: 0;
+      height: 2px;
+      overflow: hidden;
+      background: transparent;
+    }
+    .new-hero__chapter-progress i {
+      display: block;
+      width: 0;
+      height: 100%;
+      background: var(--red);
+      transition: width .45s var(--ease);
+    }
+    .new-hero__controls {
+      position: absolute;
+      right: clamp(28px, 5vw, 76px);
+      bottom: clamp(25px, 4vh, 42px);
+      display: flex;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, .34);
+      border-bottom: 1px solid rgba(255, 255, 255, .34);
+      background: #111510;
+    }
+    .new-hero__count {
+      min-width: 132px;
+      padding: 0 14px 0 2px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--latin);
+      font-size: 9px;
+      letter-spacing: .14em;
+    }
+    .new-hero__track { position: relative; width: 58px; height: 1px; overflow: hidden; background: rgba(255, 255, 255, .28); }
+    .new-hero__track i { position: absolute; inset: 0 auto 0 0; width: 12.5%; background: var(--white); transition: width .5s var(--ease); }
+    .new-hero__control {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: 0;
+      border-left: 1px solid rgba(255, 255, 255, .22);
+      color: #fff;
+      background: #111510;
+      font-family: var(--latin);
+      font-size: 14px;
+      cursor: pointer;
+      transition: background .25s, color .25s;
+    }
+    .new-hero__control:hover { color: var(--ink); background: rgba(255, 255, 255, .88); }
+    .new-hero__icon { width: 15px; height: 15px; }
+    .new-hero__icon--pause { display: none; }
+    .new-hero__control--play.is-playing .new-hero__icon--play { display: none; }
+    .new-hero__control--play.is-playing .new-hero__icon--pause { display: block; }
+    .next-section {
+      padding: clamp(84px, 10vw, 140px) clamp(22px, 7vw, 110px);
+      color: var(--ink);
+      background: var(--paper);
+    }
+    .next-inner { max-width: 1180px; margin: 0 auto; }
+    .next-kicker { margin: 0 0 18px; color: var(--green); font-family: var(--latin); font-size: 10px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; }
+    .next-section h2 { max-width: 12em; margin: 0; font-family: var(--serif); font-size: clamp(30px, 3.5vw, 44px); font-weight: 400; letter-spacing: .05em; line-height: 1.45; }
+    .next-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: clamp(46px, 7vw, 78px); border-top: 1px solid rgba(36, 37, 31, .18); border-bottom: 1px solid rgba(36, 37, 31, .18); }
+    .next-item { padding: 28px clamp(16px, 3vw, 38px); border-left: 1px solid rgba(36, 37, 31, .18); }
+    .next-item:last-child { border-right: 1px solid rgba(36, 37, 31, .18); }
+    .next-item small { color: var(--green); font-family: var(--latin); font-size: 9px; font-weight: 600; letter-spacing: .17em; text-transform: uppercase; }
+    .next-item strong { display: block; margin-top: 10px; font-size: 16px; font-weight: 500; letter-spacing: .05em; }
+
+    @media (max-width: 1100px) {
+      .nav { display: none; }
+      .header-actions { margin-left: auto; }
+      .menu-button { display: grid; }
+    }
+
+    @media (min-width: 768px) and (max-width: 900px) {
+      .new-hero__scene img { object-position: var(--scene-position-sp, center); }
+      .new-hero__shade {
+        background:
+          linear-gradient(180deg, rgba(7, 9, 7, .44) 0%, rgba(7, 9, 7, .03) 26%, rgba(7, 9, 7, .3) 52%, rgba(7, 9, 7, .92) 83%, rgba(7, 9, 7, .98) 100%);
+      }
+      .new-hero__inner {
+        padding: calc(var(--header) + env(safe-area-inset-top) + 44px) 46px 202px;
+      }
+      .new-hero__copy { width: min(610px, 82vw); }
+      .sp-break { display: inline; }
+      .new-hero h2 { max-width: 12em; font-size: 39px; line-height: 1.43; }
+      .new-hero__lead { margin-top: 17px; font-size: 14px; line-height: 1.9; }
+      .new-hero__cta { min-width: 280px; margin-top: 22px; }
+      .new-hero__chapters {
+        right: 46px;
+        left: 46px;
+        width: auto;
+        bottom: 88px;
+      }
+      .new-hero__chapter { min-height: 58px; }
+      .new-hero__controls { right: 46px; bottom: 32px; }
+    }
+
+    @media (max-width: 767px) {
+      :root { --header: 68px; }
+      .site-header { padding-right: 0; padding-left: 16px; gap: 0; }
+      .brand { gap: 8px; width: auto; min-height: 40px; padding: 0; }
+      .brand-mark { width: 39px; }
+      .brand-wordmark { gap: 4px; font-size: 15px; letter-spacing: .045em; }
+      .brand-wordmark small { font-size: 6px; }
+      .docs-link { display: none; }
+      .reserve-link { display: none; }
+      .header-actions { margin-left: auto; }
+      .menu-button { width: 54px; height: var(--header); }
+      .menu-button::before, .menu-button::after { left: 17px; }
+      .new-hero { min-height: 100svh; }
+      .new-hero__scene img { object-position: var(--scene-position-sp, center); }
+      .new-hero__shade {
+        background:
+          linear-gradient(180deg, rgba(7, 9, 7, .48) 0%, rgba(7, 9, 7, .02) 27%, rgba(7, 9, 7, .24) 49%, rgba(7, 9, 7, .9) 76%, rgba(7, 9, 7, .98) 100%);
+      }
+      .new-hero__inner {
+        min-height: 100svh;
+        padding: calc(var(--header) + env(safe-area-inset-top) + 46px) 18px calc(145px + env(safe-area-inset-bottom));
+      }
+      .new-hero__copy { width: 100%; }
+      .new-hero__story-stack { min-height: 154px; }
+      .sp-break { display: inline; }
+      .new-hero__kicker { gap: 10px; margin-bottom: 12px; font-size: 9px; letter-spacing: .065em; }
+      .new-hero__kicker::before { width: 26px; }
+      .new-hero h2 { max-width: 12em; font-size: clamp(27px, 7.7vw, 30px); line-height: 1.44; }
+      .new-hero__lead { max-width: 27em; margin-top: 12px; font-size: 12px; line-height: 1.75; }
+      .new-hero__cta { width: 100%; min-width: 0; min-height: 44px; margin-top: 16px; font-size: 11px; }
+      .new-hero__chapters {
+        right: 18px;
+        left: 18px;
+        width: auto;
+        bottom: calc(69px + env(safe-area-inset-bottom));
+      }
+      .new-hero__chapter { min-height: 48px; padding: 8px 9px 10px; gap: 2px 7px; }
+      .new-hero__chapter-num { font-size: 8px; }
+      .new-hero__chapter-title { font-size: 10px; }
+      .new-hero__chapter-long { display: none; }
+      .new-hero__chapter-short { display: inline; }
+      .new-hero__controls {
+        right: 18px;
+        bottom: calc(17px + env(safe-area-inset-bottom));
+      }
+      .new-hero__count { min-width: 108px; padding-right: 9px; gap: 8px; }
+      .new-hero__track { width: 43px; }
+      .new-hero__control { width: 42px; height: 42px; }
+      .next-section { padding: 82px 20px 92px; }
+      .next-section h2 { font-size: 28px; }
+      .next-grid { grid-template-columns: 1fr; }
+      .next-item { padding: 22px 18px; border-right: 1px solid rgba(36, 37, 31, .18); border-bottom: 1px solid rgba(36, 37, 31, .18); }
+      .next-item:last-child { border-bottom: 0; }
+      .next-item strong { font-size: 14px; }
+    }
+
+    @media (max-width: 360px) {
+      .brand-mark { width: 36px; }
+      .brand-wordmark { font-size: 14px; }
+      .new-hero__inner { padding-right: 17px; padding-left: 17px; }
+      .new-hero__chapters { right: 15px; left: 15px; }
+      .new-hero__chapter { padding-right: 7px; padding-left: 7px; }
+      .new-hero__chapter-title { font-size: 9px; }
+    }
+
+    @media (max-height: 520px) {
+      :root { --header: 58px; }
+      .site-header { padding-left: 22px; }
+      .brand-mark { width: 40px; }
+      .brand-wordmark { font-size: 15px; }
+      .new-hero__inner {
+        padding: calc(var(--header) + env(safe-area-inset-top) + 12px) 24px calc(74px + env(safe-area-inset-bottom));
+      }
+      .new-hero__copy { width: min(560px, 64vw); }
+      .new-hero__story-stack { min-height: 126px; }
+      .new-hero__kicker { gap: 9px; margin-bottom: 7px; font-size: 8px; }
+      .new-hero__kicker::before { width: 24px; }
+      .new-hero h2 { max-width: 14em; font-size: 30px; line-height: 1.28; }
+      .new-hero__lead { margin-top: 7px; font-size: 11px; line-height: 1.45; }
+      .new-hero__cta { min-width: 206px; min-height: 34px; margin-top: 8px; font-size: 10px; }
+      .new-hero__chapters { bottom: 8px; left: 24px; width: min(460px, 58vw); }
+      .new-hero__chapter { min-height: 42px; padding: 6px 9px 8px; }
+      .new-hero__controls { right: 18px; bottom: 8px; }
+      .new-hero__control { width: 40px; height: 40px; }
+    }
+
+    @media (max-height: 520px) and (max-width: 900px) {
+      .new-hero__inner {
+        padding-right: 18px;
+        padding-bottom: calc(113px + env(safe-area-inset-bottom));
+        padding-left: 18px;
+      }
+      .new-hero__copy { width: min(600px, 88vw); }
+      .new-hero h2 { font-size: 28px; }
+      .new-hero__chapters {
+        right: 18px;
+        bottom: calc(57px + env(safe-area-inset-bottom));
+        left: 18px;
+        width: auto;
+      }
+      .new-hero__chapter-long { display: none; }
+      .new-hero__chapter-short { display: inline; }
+      .new-hero__chapter-title { font-size: 9px; }
+      .new-hero__controls { bottom: calc(8px + env(safe-area-inset-bottom)); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .new-hero__scene:not(.is-active) { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <a class="brand" href="https://yamato-final.vercel.app/" aria-label="株式会社やまと不動産 トップへ">
+      <img class="brand-mark" src="assets/brand/yamato_mark.svg" width="1110" height="630" alt="" aria-hidden="true">
+      <span class="brand-wordmark"><small>株式<br>会社</small>やまと不動産</span>
+    </a>
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <a href="https://yamato-final.vercel.app/company.html">私たちについて</a>
+      <a href="https://yamato-final.vercel.app/kodawari.html">家づくりのこだわり</a>
+      <a href="https://yamato-final.vercel.app/works.html">施工事例</a>
+      <a href="https://yamato-final.vercel.app/model.html">モデルハウス</a>
+      <a href="https://yamato-final.vercel.app/lots.html">分譲地・物件</a>
+    </nav>
+    <div class="header-actions">
+      <a class="docs-link" href="https://yamato-final.vercel.app/contact.html?type=docs">資料請求</a>
+      <a class="reserve-link" href="https://yamato-final.vercel.app/contact.html?type=reserve">来場予約&nbsp;→</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="メニューを開く"><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="モバイルメニュー" hidden>
+    <a href="https://yamato-final.vercel.app/company.html">私たちについて</a>
+    <a href="https://yamato-final.vercel.app/kodawari.html">家づくりのこだわり</a>
+    <a href="https://yamato-final.vercel.app/works.html">施工事例</a>
+    <a href="https://yamato-final.vercel.app/model.html">モデルハウス</a>
+    <a href="https://yamato-final.vercel.app/lots.html">分譲地・物件</a>
+    <a href="https://yamato-final.vercel.app/index.html#top">デジタルカタログ</a>
+    <a href="https://yamato-final.vercel.app/contact.html?type=docs">資料請求</a>
+  </nav>
+
+  <main id="main">
+    <section class="new-hero" id="researchHero" aria-label="やまと不動産 ファーストビュー">
+      <h1 class="sr-only">やまと不動産の家づくり</h1>
+      <div class="new-hero__media" aria-hidden="true">
+        <div class="new-hero__scene is-active" data-chapter="0" style="--scene-position: center; --scene-position-sp: center;">
+          <picture>
+            <source media="(max-width: 900px)" srcset="assets/fv_research_20260904/yamato-exterior-day-sp-1440.webp">
+            <img src="assets/fv_research_20260904/yamato-exterior-day-pc-2560.webp" width="2560" height="1440" alt="" loading="eager" fetchpriority="high">
+          </picture>
+        </div>
+        <div class="new-hero__scene" data-chapter="0" style="--scene-position: center; --scene-position-sp: center;">
+          <picture>
+            <source media="(max-width: 900px)" srcset="assets/fv_research_20260904/yamato-exterior-dusk-sp-1440.webp">
+            <img src="assets/fv_research_20260904/yamato-exterior-dusk-pc-2560.webp" width="2560" height="1440" alt="" loading="lazy">
+          </picture>
+        </div>
+        <div class="new-hero__scene" data-chapter="1" style="--scene-position: center; --scene-position-sp: center;">
+          <picture>
+            <source media="(max-width: 900px)" srcset="assets/fv_research_20260904/reason-land-sp-2k.webp">
+            <img src="assets/fv_research_20260904/reason-land-pc-2k.webp" width="2688" height="1536" alt="" loading="lazy">
+          </picture>
+        </div>
+        <div class="new-hero__scene" data-chapter="1" style="--scene-position: center; --scene-position-sp: center;">
+          <picture>
+            <source media="(max-width: 900px)" srcset="assets/fv_research_20260904/reason-design-sp-2k.webp">
+            <img src="assets/fv_research_20260904/reason-design-pc-2k.webp" width="2688" height="1536" alt="" loading="lazy">
+          </picture>
+        </div>
+        <div class="new-hero__scene" data-chapter="1" style="--scene-position: center; --scene-position-sp: center;">
+          <picture>
+            <source media="(max-width: 900px)" srcset="assets/fv_research_20260904/reason-build-sp-2k.webp">
+            <img src="assets/fv_research_20260904/reason-build-pc-2k.webp" width="2688" height="1536" alt="" loading="lazy">
+          </picture>
+        </div>
+        <div class="new-hero__scene" data-chapter="2" style="--scene-position: center; --scene-position-sp: center;">
+          <picture>
+            <source media="(max-width: 900px)" srcset="assets/std/kitchen_sp_1440.webp">
+            <img src="assets/std/kitchen_1920.webp" width="1920" height="1080" alt="" loading="lazy">
+          </picture>
+        </div>
+        <div class="new-hero__scene" data-chapter="2" style="--scene-position: center; --scene-position-sp: center;">
+          <picture>
+            <source media="(max-width: 900px)" srcset="assets/std/bath_sp_1440.webp">
+            <img src="assets/std/bath_1920.webp" width="1920" height="1080" alt="" loading="lazy">
+          </picture>
+        </div>
+        <div class="new-hero__scene" data-chapter="2" style="--scene-position: center; --scene-position-sp: center;">
+          <picture>
+            <source media="(max-width: 900px)" srcset="assets/std/living_sp_1440.webp">
+            <img src="assets/std/living_1920.webp" width="1920" height="1080" alt="" loading="lazy">
+          </picture>
+        </div>
+      </div>
+      <div class="new-hero__shade" aria-hidden="true"></div>
+
+      <div class="new-hero__inner">
+        <div class="new-hero__copy">
+          <div class="new-hero__story-stack">
+            <div class="new-hero__story is-active" data-chapter="0" aria-hidden="false">
+              <p class="new-hero__kicker">01　家づくりの約束</p>
+              <h2>物価高でも、<br>戸建てをあきらめない。</h2>
+            </div>
+            <div class="new-hero__story" data-chapter="1" aria-hidden="true">
+              <p class="new-hero__kicker">02　費用を抑える仕組み</p>
+              <h2>土地の仕入れから、<br>設計・施工まで、<br>自社で一貫対応。</h2>
+              <p class="new-hero__lead">中間コストを減らし、余計な費用を抑えます。</p>
+            </div>
+            <div class="new-hero__story" data-chapter="2" aria-hidden="true">
+              <p class="new-hero__kicker">03　商品ごとの標準仕様</p>
+              <h2>商品ごとに、<br>高水準の標準仕様。</h2>
+              <p class="new-hero__lead">モデルハウスも、標準仕様で建てています。</p>
+            </div>
+          </div>
+          <a class="new-hero__cta" href="https://yamato-final.vercel.app/kodawari.html">家づくりの中身を見る</a>
+        </div>
+      </div>
+
+      <div class="new-hero__chapters" role="group" aria-label="表示するメッセージを選ぶ">
+        <button class="new-hero__chapter is-active" type="button" data-chapter="0" aria-pressed="true" aria-label="第1章 家づくりの約束を表示">
+          <span class="new-hero__chapter-num">01</span>
+          <span class="new-hero__chapter-title"><span class="new-hero__chapter-long">家づくりの約束</span><span class="new-hero__chapter-short">約束</span></span>
+          <span class="new-hero__chapter-progress" aria-hidden="true"><i></i></span>
+        </button>
+        <button class="new-hero__chapter" type="button" data-chapter="1" aria-pressed="false" aria-label="第2章 費用を抑える仕組みを表示">
+          <span class="new-hero__chapter-num">02</span>
+          <span class="new-hero__chapter-title"><span class="new-hero__chapter-long">費用を抑える仕組み</span><span class="new-hero__chapter-short">仕組み</span></span>
+          <span class="new-hero__chapter-progress" aria-hidden="true"><i></i></span>
+        </button>
+        <button class="new-hero__chapter" type="button" data-chapter="2" aria-pressed="false" aria-label="第3章 商品ごとの標準仕様を表示">
+          <span class="new-hero__chapter-num">03</span>
+          <span class="new-hero__chapter-title"><span class="new-hero__chapter-long">商品ごとの標準仕様</span><span class="new-hero__chapter-short">標準仕様</span></span>
+          <span class="new-hero__chapter-progress" aria-hidden="true"><i></i></span>
+        </button>
+      </div>
+
+        <div class="new-hero__controls" role="group" aria-label="新ファーストビューの写真操作">
+          <div class="new-hero__count" id="newHeroCount" role="img" aria-label="写真 1 / 8">
+          <span id="newHeroCurrent">01</span>
+          <span class="new-hero__track" aria-hidden="true"><i id="newHeroProgress"></i></span>
+          <span>08</span>
+        </div>
+        <button class="new-hero__control new-hero__control--play is-playing" id="newHeroPlay" type="button" aria-label="自動切替を停止">
+          <svg class="new-hero__icon new-hero__icon--play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.2 13 8l-9 5.8Z" fill="currentColor"/></svg>
+          <svg class="new-hero__icon new-hero__icon--pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2h2.7v12H4Zm5.3 0H12v12H9.3Z" fill="currentColor"/></svg>
+        </button>
+        <button class="new-hero__control" id="newHeroPrev" type="button" aria-label="前の写真">
+          <svg class="new-hero__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13 8H3m0 0 4-4M3 8l4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="new-hero__control" id="newHeroNext" type="button" aria-label="次の写真">
+          <svg class="new-hero__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10m0 0-4-4m4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <p class="sr-only" id="newHeroLive" aria-live="polite" aria-atomic="true"></p>
+    </section>
+
+    <section class="next-section" aria-labelledby="nextTitle">
+      <div class="next-inner">
+        <p class="next-kicker">Yamato House</p>
+        <h2 id="nextTitle">やまとの家づくり</h2>
+        <div class="next-grid">
+          <div class="next-item"><small>Estimate</small><strong>ご契約前に、正確なお見積もり</strong></div>
+          <div class="next-item"><small>One stop</small><strong>土地・設計・施工を自社で対応</strong></div>
+          <div class="next-item"><small>Area</small><strong>奈良・京都南部に対応</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      const menuButton = document.querySelector('.menu-button');
+      const menu = document.getElementById('mobileMenu');
+      const closeMenu = () => {
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'メニューを開く');
+        menu.classList.remove('is-open');
+        menu.hidden = true;
+        document.body.classList.remove('menu-open');
+      };
+      menuButton.addEventListener('click', () => {
+        const open = menuButton.getAttribute('aria-expanded') === 'true';
+        if (open) return closeMenu();
+        menu.hidden = false;
+        requestAnimationFrame(() => menu.classList.add('is-open'));
+        menuButton.setAttribute('aria-expanded', 'true');
+        menuButton.setAttribute('aria-label', 'メニューを閉じる');
+        document.body.classList.add('menu-open');
+      });
+      menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    })();
+
+    (() => {
+      const hero = document.getElementById('researchHero');
+      const scenes = [...hero.querySelectorAll('.new-hero__scene')];
+      const stories = [...hero.querySelectorAll('.new-hero__story')];
+      const chapterButtons = [...hero.querySelectorAll('.new-hero__chapter')];
+      const prev = document.getElementById('newHeroPrev');
+      const next = document.getElementById('newHeroNext');
+      const play = document.getElementById('newHeroPlay');
+      const count = document.getElementById('newHeroCount');
+      const currentNo = document.getElementById('newHeroCurrent');
+      const progress = document.getElementById('newHeroProgress');
+      const live = document.getElementById('newHeroLive');
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+      const interval = 5200;
+      const chapterRanges = chapterButtons.map((button, chapterIndex) => {
+        const indexes = scenes.reduce((matches, scene, sceneIndex) => {
+          if (Number(scene.dataset.chapter) === chapterIndex) matches.push(sceneIndex);
+          return matches;
+        }, []);
+        return { start: indexes[0], end: indexes[indexes.length - 1], length: indexes.length };
+      });
+      let current = 0;
+      let playing = !reduced.matches;
+      let visible = false;
+      let timer = 0;
+      let transitionToken = 0;
+      let pointerStart = null;
+      let chapterStartsPrepared = false;
+
+      const clearTimer = () => window.clearTimeout(timer);
+      const updatePlay = () => {
+        play.classList.toggle('is-playing', playing);
+        play.setAttribute('aria-label', playing ? '自動切替を停止' : '自動切替を再生');
+        play.disabled = reduced.matches;
+        play.setAttribute('aria-disabled', String(reduced.matches));
+      };
+      const schedule = () => {
+        clearTimer();
+        if (!playing || !visible || document.hidden || reduced.matches) return;
+        if (current === scenes.length - 1) {
+          playing = false;
+          updatePlay();
+          return;
+        }
+        timer = window.setTimeout(() => go(current + 1), current === 0 ? 6000 : interval);
+      };
+
+      const prepare = async index => {
+        const image = scenes[index].querySelector('img');
+        if (!image) return;
+        image.loading = 'eager';
+        if (!image.complete) {
+          await new Promise(resolve => {
+            image.addEventListener('load', resolve, { once: true });
+            image.addEventListener('error', resolve, { once: true });
+          });
+        }
+        if (image.decode) await image.decode().catch(() => {});
+      };
+
+      const render = index => {
+        current = index;
+        const activeChapter = Number(scenes[current].dataset.chapter);
+        hero.dataset.chapter = String(activeChapter);
+        scenes.forEach((scene, sceneIndex) => scene.classList.toggle('is-active', sceneIndex === current));
+        stories.forEach((story, storyIndex) => {
+          const active = storyIndex === activeChapter;
+          story.classList.toggle('is-active', active);
+          story.setAttribute('aria-hidden', String(!active));
+        });
+        chapterButtons.forEach((button, chapterIndex) => {
+          const range = chapterRanges[chapterIndex];
+          const active = chapterIndex === activeChapter;
+          let amount = 0;
+          if (current > range.end) amount = 100;
+          else if (current >= range.start) amount = ((current - range.start + 1) / range.length) * 100;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', String(active));
+          button.querySelector('.new-hero__chapter-progress i').style.width = `${amount}%`;
+        });
+        currentNo.textContent = String(current + 1).padStart(2, '0');
+        count.setAttribute('aria-label', `写真 ${current + 1} / ${scenes.length}`);
+        progress.style.width = `${((current + 1) / scenes.length) * 100}%`;
+        prepare(Math.min(current + 1, scenes.length - 1));
+        schedule();
+      };
+
+      const go = async (index, manual = false) => {
+        const target = (index + scenes.length) % scenes.length;
+        if (manual) {
+          playing = false;
+          updatePlay();
+        }
+        const token = ++transitionToken;
+        await prepare(target);
+        if (token !== transitionToken) return;
+        render(target);
+        if (manual) {
+          const chapter = stories[Number(scenes[target].dataset.chapter)];
+          const label = chapter.querySelector('.new-hero__kicker').textContent.replace(/\s+/g, ' ').trim();
+          live.textContent = `写真 ${target + 1} / ${scenes.length}。${label}`;
+        }
+      };
+
+      prev.addEventListener('click', () => go(current - 1, true));
+      next.addEventListener('click', () => go(current + 1, true));
+      chapterButtons.forEach((button, chapterIndex) => {
+        button.addEventListener('click', () => go(chapterRanges[chapterIndex].start, true));
+      });
+      play.addEventListener('click', () => {
+        if (reduced.matches) return;
+        const restarting = !playing && current === scenes.length - 1;
+        playing = !playing;
+        updatePlay();
+        if (restarting) go(0);
+        else schedule();
+      });
+      hero.addEventListener('pointerdown', event => {
+        if (event.target.closest('button, a')) return;
+        pointerStart = { x: event.clientX, y: event.clientY };
+      }, { passive: true });
+      hero.addEventListener('pointerup', event => {
+        if (!pointerStart || event.target.closest('button, a')) { pointerStart = null; return; }
+        const dx = event.clientX - pointerStart.x;
+        const dy = event.clientY - pointerStart.y;
+        pointerStart = null;
+        if (Math.abs(dx) < 48 || Math.abs(dx) <= Math.abs(dy) * 1.25) return;
+        go(current + (dx < 0 ? 1 : -1), true);
+      }, { passive: true });
+      hero.addEventListener('pointercancel', () => { pointerStart = null; }, { passive: true });
+      document.addEventListener('visibilitychange', schedule);
+      window.addEventListener('pagehide', clearTimer);
+      window.addEventListener('pageshow', schedule);
+      reduced.addEventListener('change', () => {
+        if (reduced.matches) {
+          playing = false;
+          go(0);
+        }
+        updatePlay();
+        schedule();
+      });
+      new IntersectionObserver(entries => {
+        const ratio = entries[0].intersectionRatio;
+        if (ratio >= .35 && !chapterStartsPrepared) {
+          chapterStartsPrepared = true;
+          chapterRanges.forEach(({ start }) => prepare(start));
+        }
+        if (ratio >= .65) visible = true;
+        if (ratio <= .35) visible = false;
+        schedule();
+      }, { threshold: [0, .35, .65, 1] }).observe(hero);
+
+      render(0);
+      updatePlay();
+    })();
+  </script>
+</body>
+</html>

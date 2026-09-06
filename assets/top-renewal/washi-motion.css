@@ -1,0 +1,53 @@
+/* Current material preview only. Pigmented paper, not a glossy red plastic surface. */
+[data-washi-motion] {--beni-paper:url('material-craft/beni-720.webp');--paper-ease:cubic-bezier(.22,1,.36,1)}
+[data-washi-motion].material-preview :is(.reserve-link,.button:not(.button--light),.mobile-direct a:last-child,.entry-diagram--estimate) {
+ background-color:#81121c;
+ background-image:linear-gradient(135deg,#ffffff0a,transparent 38%,#31030732),var(--beni-paper);
+ background-position:center; background-size:100% 100%,720px auto;
+ border-color:#b3746b #6c1119 #4e0b12 #a85954;
+ box-shadow:inset 0 1px 0 #f4d6b647,inset 1px 0 0 #f4d6b621,inset 0 -2px 0 #39081066,0 3px 0 #460a131f,0 8px 18px -13px #32040899;
+ color:#fff8ed;
+}
+[data-washi-motion].material-preview :is(.reserve-link,.button:not(.button--light),.mobile-direct a:last-child):hover {
+ background-image:linear-gradient(135deg,#ffffff14,transparent 40%,#31030726),var(--beni-paper);
+}
+/* A light paper button stays light against the red consultation section. */
+[data-washi-motion].material-preview.art-preview .visit .button,
+[data-washi-motion].material-preview.art-preview .visit .button:hover {
+ color:#68151e;background:linear-gradient(140deg,#fffef8ea,#e9dfcaf5),var(--craft-paper) center/500px;
+ border-color:#f4e8c8;box-shadow:inset 0 1px #fff,0 2px 0 #3c081948,0 12px 25px -16px #29080c;
+}
+[data-washi-motion].material-preview.art-preview .visit {
+ background-color:#81121c;background-image:linear-gradient(115deg,#47071228,#83111b12 48%,#35060e32),url('../std/page_beni_dark_1800.webp');
+ background-size:cover;background-position:center;box-shadow:inset 0 1px #edc2a73b,inset 0 -3px #3f091752;
+}
+[data-washi-motion] :is(.reserve-link,.button,.glass-button,.text-button,.mobile-direct a) {
+ transition:transform .3s var(--paper-ease),box-shadow .3s,border-color .3s;
+}
+/* Remove intrinsic percentage-height ambiguity in WebKit when reduced motion changes live. */
+[data-washi-motion] .product__photo {width:calc(100% - 24px);flex:none;margin-inline:12px}
+[data-washi-motion] .product__photo img {position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+ [data-washi-motion] :is(.reserve-link,.button,.glass-button):hover {transform:translateY(-2px)}
+ [data-washi-motion] .link-arrow::after {transition:transform .35s var(--paper-ease)}
+ [data-washi-motion] .link-arrow:hover::after {transform:translateX(4px)}
+}
+@media(prefers-reduced-motion:no-preference) {
+ [data-washi-motion] :is(.reserve-link,.button,.glass-button,.text-button,.mobile-direct a):active {transform:translateY(1px) scale(.985)}
+ /* Natural image width: no zoom. Sky/foreground supply the travel allowance. */
+ [data-washi-motion] .product__photo[data-depth] {aspect-ratio:16/9;margin-top:24px;margin-bottom:12px;--depth-start:.1;--depth-end:.98;--float-start:10px;--float-end:-10px}
+ [data-washi-motion] #product-kaze .product__photo[data-depth] {--depth-start:.35;--depth-end:.69}
+ [data-washi-motion] .product__photo[data-depth] img {display:block;width:100%;height:auto;min-height:100%;max-width:none;transform:translateY(var(--depth-y,0px));transition:none;object-fit:cover}
+ [data-washi-motion] .product__photo[data-depth] span {z-index:1}
+ @supports(animation-timeline:view()) {
+  [data-washi-motion] .product__photo[data-depth] {view-timeline-name:--product-view;view-timeline-axis:block;animation:paper-float linear both;animation-timeline:--product-view;animation-range:entry 0% exit 100%}
+  [data-washi-motion] .product__photo[data-depth] img {animation:paper-depth linear both;animation-timeline:--product-view;animation-range:entry 0% exit 100%}
+ }
+}
+@keyframes paper-depth {from{transform:translateY(calc(var(--depth-overflow,0px) * var(--depth-start) * -1))}to{transform:translateY(calc(var(--depth-overflow,0px) * var(--depth-end) * -1))}}
+@keyframes paper-float {from{transform:translateY(var(--float-start))}to{transform:translateY(var(--float-end))}}
+@media(max-width:767px){[data-washi-motion] .product__photo[data-depth]{--float-start:8px;--float-end:-8px}}
+@media(prefers-reduced-motion:reduce) {
+ [data-washi-motion] :is(.reserve-link,.button,.glass-button,.text-button,.mobile-direct a){transition:none;transform:none}
+ [data-washi-motion] .product__photo[data-depth], [data-washi-motion] .product__photo[data-depth] img {animation:none!important;transform:none!important}
+}

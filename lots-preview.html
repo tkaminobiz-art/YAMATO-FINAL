@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="same-origin">
+  <title>物件・お支払いシミュレーション｜やまと不動産</title>
+  <meta name="description" content="土地と花・京・風を選び、月々の返済額と総費用を試算できます。入力した条件に基づく概算です。">
+  <link rel="stylesheet" href="assets/top-renewal/lots-preview.css">
+  <link rel="stylesheet" href="assets/top-renewal/simulation.css">
+  <link rel="stylesheet" href="assets/top-renewal/simulation-friendly.css">
+  <script src="assets/top-renewal/lots-preview.js" type="module"></script>
+</head>
+<body class="lp">
+  <a class="lp-skip" href="#main">本文へ移動</a>
+  <header class="lp-header">
+    <a class="lp-brand" href="index-art-preview.html"><img src="assets/brand/yamato_mark.svg" width="38" height="38" alt=""><span>やまと不動産<small>物件・お支払いシミュレーション</small></span></a>
+    <a class="lp-back" href="index-art-preview.html">TOPへ戻る <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main" class="lp-shell">
+    <section class="lp-intro" aria-labelledby="page-title">
+      <p class="lp-eyebrow">お支払いシミュレーション</p>
+      <h1 id="page-title">土地と家を選んで、<br>月々の目安を。</h1>
+      <p>花・京・風と気になる土地。3つの返済条件で比べられます。</p>
+      <p class="lp-preview-note"><span>制作プレビュー</span> 金利・諸費用には仮設定を使っています。実際のお見積もり・融資条件ではありません。</p>
+    </section>
+    <nav class="lp-modes" aria-label="検討する内容">
+      <a id="mode-list" href="lots-preview.html?view=list" data-mode="list" aria-current="page">物件を探す<span aria-hidden="true">↗</span></a>
+      <a id="mode-estimate" href="lots-preview.html?view=estimate" data-mode="estimate">支払いを試算する<span aria-hidden="true">↗</span></a>
+    </nav>
+    <p id="route-notice" class="lp-route-note" role="status" hidden></p>
+    <div class="lp-layout">
+      <div class="lp-main-column">
+        <section id="list-panel" aria-labelledby="list-title">
+          <div class="lp-section-heading"><div><p class="lp-eyebrow">01 / 土地</p><h2 id="list-title" tabindex="-1">分譲地を探す</h2></div><span id="result-count" class="lp-count" aria-live="polite"></span></div>
+          <p class="lp-source-note">2026年7月6日時点の旧サイト索引です。現在の販売状況・区画ごとの価格は確認が必要です。</p>
+          <div class="lp-filters">
+            <label>エリア<select id="city-filter"><option value="">すべてのエリア</option></select></label>
+            <label>掲載時の土地価格<select id="price-filter"><option value="">指定なし</option><option value="under1500">1,500万円未満</option><option value="1500to2500">1,500〜2,500万円未満</option><option value="over2500">2,500万円以上</option><option value="unknown">価格確認中</option></select></label>
+            <button class="lp-text-button" id="reset-filters" type="button">条件を解除</button>
+          </div>
+          <div id="load-state" class="lp-empty" role="status"><p>分譲地を読み込んでいます。</p></div>
+          <button id="retry-load" type="button" class="lp-button lp-button--outline" hidden>もう一度読み込む</button>
+          <div id="lot-grid" class="lp-lot-grid"></div>
+          <button id="more-lots" type="button" class="lp-button lp-button--outline lp-more" hidden>さらに分譲地を見る</button>
+        </section>
+
+        <section id="estimate-panel" aria-labelledby="estimate-title" hidden>
+          <div class="lp-section-heading"><div><p class="lp-eyebrow">選んで比較</p><h2 id="estimate-title" tabindex="-1">月々の支払いを見てみる</h2></div><button type="button" id="load-example" class="lp-text-button">仮の組み合わせで試す</button></div>
+          <p class="lp-source-note">土地と商品を選ぶと、返済の目安が表示されます。</p>
+          <p id="example-note" class="lp-inline-notice" hidden>仮の入力例です。実物件の見積もりや、おすすめの金利・返済期間ではありません。</p>
+          <ol class="lp-steps" aria-label="入力の順序"><li><b>01</b> 土地</li><li><b>02</b> 商品</li><li><b>03</b> 返済条件</li></ol>
+
+          <section class="lp-input-section" aria-labelledby="land-title">
+            <div class="lp-step-heading"><span>01</span><h3 id="land-title">気になる土地</h3></div>
+            <p id="privacy-note" class="lp-source-note">入力内容はこのページ内でのみ保持します。再読み込みや別ページへの移動で消去されます。</p>
+            <div class="lp-land-switch" role="group" aria-label="土地の選び方">
+              <button type="button" id="choose-land" class="lp-button lp-button--outline">土地を選ぶ <span aria-hidden="true">↗</span></button>
+              <button type="button" id="manual-land" class="lp-button lp-button--outline" aria-pressed="false">土地価格を入力する</button>
+              <button type="button" id="owned-land" class="lp-text-button">土地を持っている</button>
+            </div>
+            <div id="selected-land" class="lp-selection-box"><p>土地はまだ選ばれていません。</p></div>
+            <div id="manual-land-fields" class="lp-manual-fields" hidden>
+              <label for="land-price">土地価格 <span>試算用の金額</span></label>
+              <div class="lp-unit-input"><input id="land-price" type="text" inputmode="decimal" autocomplete="off" data-financial="land" aria-describedby="land-price-note land-price-error"><span>万円</span></div>
+              <p id="land-price-note" class="lp-source-note">希望する区画の金額をご入力ください。土地をお持ちの場合は0円で試算できます。</p>
+              <p id="land-price-error" class="lp-field-error" hidden></p>
+            </div>
+            <p class="lp-inline-notice">掲載時の価格は分譲地の下限額です。現在の区画価格・建築できる商品は個別に確認します。</p>
+          </section>
+
+          <section class="lp-input-section" aria-labelledby="product-title">
+            <div class="lp-step-heading"><span>02</span><h3 id="product-title">気になる商品</h3></div>
+            <p class="lp-source-note">建物本体価格（税込・土地別途）。掲載中の商品価格を試算の初期値に使います。</p>
+            <div class="lp-products" role="group" aria-label="検討する商品">
+              <button class="lp-product" type="button" data-product="hana" aria-pressed="false"><img src="assets/top-renewal/hana-concept-840.webp" srcset="assets/top-renewal/hana-concept-560.webp 560w,assets/top-renewal/hana-concept-840.webp 840w" sizes="(max-width:540px) 42vw,(max-width:800px) 30vw,260px" width="840" height="560" alt="花の外観コンセプト" loading="lazy" decoding="async"><span class="lp-product-name">花<small>HANA</small></span><span class="lp-product-check">検討する <span aria-hidden="true">＋</span></span></button>
+              <button class="lp-product" type="button" data-product="kyo" aria-pressed="false"><img src="assets/top-renewal/kyo-concept-840.webp" srcset="assets/top-renewal/kyo-concept-560.webp 560w,assets/top-renewal/kyo-concept-840.webp 840w" sizes="(max-width:540px) 42vw,(max-width:800px) 30vw,260px" width="840" height="560" alt="京の外観コンセプト" loading="lazy" decoding="async"><span class="lp-product-name">京<small>KYOU</small></span><span class="lp-product-check">検討する <span aria-hidden="true">＋</span></span></button>
+              <button class="lp-product" type="button" data-product="kaze" aria-pressed="false"><img src="assets/top-renewal/kaze-concept-840.webp" srcset="assets/top-renewal/kaze-concept-560.webp 560w,assets/top-renewal/kaze-concept-840.webp 840w" sizes="(max-width:540px) 42vw,(max-width:800px) 30vw,260px" width="840" height="560" alt="風の外観コンセプト" loading="lazy" decoding="async"><span class="lp-product-name">風<small>KAZE</small></span><span class="lp-product-check">検討する <span aria-hidden="true">＋</span></span></button>
+            </div>
+            <p class="lp-source-note">画像は生成コンセプトです。実在物件や確定した建築仕様を示すものではありません。</p>
+            <details class="sf-details" id="building-details"><summary>建物価格を変更する</summary><div class="lp-manual-fields"><label for="building-price">建物本体価格（税込） <span>商品を選ぶと入力されます</span></label><div class="lp-unit-input"><input id="building-price" type="text" inputmode="decimal" autocomplete="off" data-financial="building" aria-describedby="building-price-note building-price-error"><span>万円</span></div><p id="building-price-note" class="lp-source-note">間取り・仕様による変更分があれば調整できます。</p><p id="building-price-error" class="lp-field-error" hidden></p></div></details>
+            <p class="lp-source-note">制作確認：商品価格に含まれる工事の範囲は、詳細ページと照合中です。試算にはお手元の見積もりの金額をご使用ください。</p>
+            <a class="lp-inline-link" href="madori.html#plans">商品の仕様を見る（価格条件は照合中） <span aria-hidden="true">↗</span></a>
+          </section>
+
+          <section class="lp-input-section" aria-labelledby="finance-title">
+            <div class="lp-step-heading"><span>03</span><h3 id="finance-title">支払いを比べる</h3></div>
+            <fieldset class="sf-plans"><legend class="lp-sr-only">比較する返済条件</legend>
+              <label><input type="radio" name="loan-plan" value="variable" checked><span><b>変動金利・35年</b><small>年0.875％ · 条件付き参考例</small></span></label>
+              <label><input type="radio" name="loan-plan" value="flat"><span><b>フラット35</b><small>年3.570％ · 参考例</small></span></label>
+              <label><input type="radio" name="loan-plan" value="long"><span><b>長期返済で比較</b><small>40年・50年 · 仮設定</small></span></label>
+            </fieldset>
+            <fieldset class="sf-years" id="long-years" hidden><legend>返済期間を選ぶ</legend><label><input type="radio" name="long-years" value="40" checked>40年</label><label><input type="radio" name="long-years" value="50">50年</label></fieldset>
+            <div id="quick-result" class="sf-quick-result" hidden><span id="quick-label">月々の目安・仮試算</span><p><span>約</span><strong id="quick-payment"></strong><span>円</span></p><small id="quick-conditions"></small><small id="quick-total"></small><button type="button" id="quick-details" class="lp-text-button">内訳と相談窓口を見る →</button></div>
+            <p id="plan-description" class="sf-plan-description"></p>
+            <p class="lp-source-note"><a href="https://www.nantobank.co.jp/kojin/kariru/home/kinri_plan.html" target="_blank" rel="noopener">変動金利の出典（南都銀行） ↗</a> ／ <a href="https://www.simulation.jhf.go.jp/flat35/kinri/index.php/rates/top" target="_blank" rel="noopener">固定金利の出典（住宅金融支援機構） ↗</a></p>
+            <p class="sf-draft">諸費用は操作確認用の仮額200万円を加算。内訳・会社負担分は未確認です。</p>
+            <details class="sf-details" id="finance-details"><summary>自己資金や条件を変更する</summary>
+            <p class="lp-source-note">金額は税込。入力欄を空にすると試算を停止します。</p>
+            <div class="lp-finance-grid">
+              <label>自己資金<div class="lp-unit-input"><input id="own-cash" type="text" inputmode="decimal" autocomplete="off" data-financial="cash" aria-describedby="own-cash-error"><span>万円</span></div><span class="lp-field-error" id="own-cash-error" hidden></span></label>
+              <label>付帯工事・諸費用<div class="lp-unit-input"><input id="fees" type="text" inputmode="decimal" autocomplete="off" data-financial="fees" aria-describedby="fees-note fees-error"><span>万円</span></div><span class="lp-field-error" id="fees-error" hidden></span></label>
+              <label>金利（年率）<div class="lp-unit-input"><input id="interest" type="text" inputmode="decimal" autocomplete="off" data-financial="interest" aria-describedby="interest-error"><span>％</span></div><span class="lp-field-error" id="interest-error" hidden></span></label>
+              <label>返済期間<div class="lp-unit-input"><input id="years" type="text" inputmode="numeric" autocomplete="off" data-financial="years" aria-describedby="years-error"><span>年</span></div><span class="lp-field-error" id="years-error" hidden></span></label>
+            </div>
+            <p id="fees-note" class="lp-source-note">登記・融資手数料・保険などを含めて入力します。建物本体に含まれる工事費を重複して加算しないでください。費用の範囲は個別のお見積もりで確認します。</p>
+            <fieldset class="sim-method"><legend>返済方法</legend><label><input type="radio" name="repayment" value="annuity" checked><span><b>元利均等</b><small>毎月の返済額を一定に</small></span></label><label><input type="radio" name="repayment" value="equal-principal"><span><b>元金均等</b><small>返済額が徐々に減少</small></span></label></fieldset>
+            <p class="lp-source-note">金利は全期間一定、ボーナス返済なしで試算します。</p>
+            <button type="button" class="lp-text-button" id="reset-preset">選択中の参考条件に戻す</button>
+            </details>
+            <p id="calculation-error" class="lp-field-error" role="alert" hidden></p>
+            <button type="button" id="calculate" class="lp-button sim-calculate">返済額を計算する <span aria-hidden="true">→</span></button>
+            <button class="lp-text-button" id="clear-inputs" type="button">選択を解除してやり直す</button>
+          </section>
+
+          <section class="sim-results" id="calculation-result" aria-labelledby="result-title" hidden>
+            <header class="lp-section-heading"><div><p class="lp-eyebrow">比較用の概算</p><h2 id="result-title" tabindex="-1">月々の目安</h2></div><button type="button" id="edit-conditions" class="lp-text-button">条件を変える</button></header>
+            <div class="sim-payment"><span id="payment-label">毎月の返済額</span><p><strong id="payment-value"></strong><span>円</span></p><small id="payment-note"></small></div>
+            <p id="result-assumptions" class="lp-source-note"></p>
+            <p id="result-price-basis" class="sf-draft"></p>
+            <section class="sf-loan-compare" aria-labelledby="loan-compare-title">
+              <h3 id="loan-compare-title">同じ借入額で比べる</h3>
+              <p id="comparison-principal" class="lp-source-note"></p>
+              <div id="loan-comparison" class="sf-loan-grid"></div>
+              <p class="lp-source-note">すべて元利均等・ボーナス払いなし。表示金利が全期間続く仮定です。長期返済の金利は比較用の仮設定で、利用できる金融商品の提示ではありません。変動金利には上昇リスクがあります。</p>
+              <p class="lp-source-note">返済期間を延ばすと、月額が下がっても利息や退職後の負担が増える場合があります。完済年齢は「借入時の年齢＋返済年数」で確認してください。</p>
+              <a href="#estimate-title" class="lp-text-button">土地・商品を選び直す ↑</a>
+            </section>
+            <button type="button" id="consult-result" class="lp-button sf-consult">この条件で支払いを相談する <span aria-hidden="true">→</span></button>
+            <p class="lp-source-note">試算の閲覧に、お名前や連絡先の入力は不要です。</p>
+            <details class="sf-details" open><summary>総額・内訳を見る</summary>
+            <dl class="sim-totals" id="result-totals"></dl>
+            <div class="sim-breakdown"><div class="sim-breakdown__bar" aria-hidden="true"><span id="principal-bar"></span><span id="interest-bar"></span></div><p>ローン総返済額の内訳 <span>■ 元金</span><span>■ 利息</span></p></div>
+            </details>
+            <details class="sf-details"><summary>金利が違う場合も比べる</summary>
+            <div class="sim-comparison"><h3>金利が違う場合</h3><p class="lp-source-note">同じ借入額・返済期間で、金利だけを変えた比較です。将来の金利を予測するものではありません。</p><div id="rate-comparison" class="sim-comparison-grid"></div></div>
+            </details>
+            <details class="sim-schedule"><summary>年ごとの返済予定を見る</summary><div class="sim-table-scroll" role="region" aria-label="年ごとの返済予定" tabindex="0"><table><caption>入力金利が全期間変わらない場合</caption><thead><tr><th scope="col">年</th><th scope="col">年間返済額</th><th scope="col">うち利息</th><th scope="col">年末残高</th></tr></thead><tbody id="schedule-body"></tbody></table></div></details>
+            <div class="sim-disclosure"><h3>試算に含まれない費用</h3><p>入力していない購入時の費用、入居後の固定資産税・都市計画税、保険更新、修繕費などは含みません。諸費用を住宅ローンに含められるかは金融機関により異なります。</p><p>返済額は円未満を切り捨て、最終回で端数を調整します。実際の返済額は、金融機関の計算方法・借入日・金利条件などで異なります。</p><a href="https://www.flat35.com/loan/lineup/kinto/index.html" target="_blank" rel="noopener">返済方法の違いを見る（住宅金融支援機構） ↗</a></div>
+          </section>
+        </section>
+      </div>
+
+      <aside class="lp-summary" aria-labelledby="summary-title">
+        <p class="lp-eyebrow">検討中の内容</p><h2 id="summary-title">選択内容</h2>
+        <div class="lp-summary-content" data-summary></div>
+        <button type="button" class="lp-button" data-go-estimate>支払いを試算する <span aria-hidden="true">↗</span></button>
+        <div class="lp-summary-contact"><p>物件・資金計画のご相談</p><a href="tel:0742361123">0742-36-1123</a><small>Web予約は準備中です。<br>お電話でご予約ください。</small></div>
+      </aside>
+    </div>
+    <footer class="lp-footer"><a href="index-art-preview.html">やまと不動産 TOPへ戻る <span aria-hidden="true">↗</span></a><p>制作確認用。掲載内容・価格・販売状況は公開前に照合します。</p></footer>
+    <noscript><p class="lp-noscript">物件の検索・選択にはJavaScriptが必要です。ご相談は <a href="tel:0742361123">0742-36-1123</a> へお電話ください。</p></noscript>
+  </main>
+  <div class="lp-mobile-bar"><button type="button" id="open-summary"><span id="mobile-summary-label">土地は未選択</span><span>選択内容 <span aria-hidden="true">＋</span></span></button></div>
+  <dialog class="lp-dialog lp-summary-dialog" id="summary-dialog" aria-labelledby="mobile-summary-title"><div class="lp-dialog-heading"><h2 id="mobile-summary-title">選択内容</h2><button class="lp-close" type="button" data-close-dialog aria-label="選択内容を閉じる">×</button></div><div data-summary></div><button type="button" class="lp-button" data-go-estimate>選択内容を確認する <span aria-hidden="true">↗</span></button><a class="lp-inline-link" href="tel:0742361123">電話で相談する：0742-36-1123</a></dialog>
+  <dialog class="lp-dialog lp-property-dialog" id="property-dialog" aria-labelledby="property-dialog-title"><div class="lp-dialog-heading"><h2 id="property-dialog-title">分譲地の情報</h2><button class="lp-close" type="button" data-close-dialog aria-label="分譲地の情報を閉じる">×</button></div><div id="property-detail"></div></dialog>
+  <div id="action-status" class="lp-sr-only" role="status" aria-live="polite"></div>
+  <dialog id="consult-dialog" class="lp-dialog sf-consult-dialog" aria-labelledby="consult-title"><div class="lp-dialog-heading"><h2 id="consult-title">支払いのご相談</h2><button type="button" class="lp-close" data-close-dialog aria-label="相談内容を閉じる">×</button></div><p>試算した内容を見ながら、ご相談いただけます。</p><label for="consult-text">今回の試算内容</label><textarea id="consult-text" readonly rows="10"></textarea><button type="button" id="copy-quote" class="lp-button lp-button--outline">試算内容をコピーする</button><p id="copy-status" role="status"></p><a href="tel:0742361123" class="lp-button">電話で相談する <span>0742-36-1123</span></a><p class="lp-source-note">Web送信は未接続です。この画面を開くだけで情報が送信されることはありません。融資の審査・申込みではありません。</p></dialog>
+</body>
+</html>

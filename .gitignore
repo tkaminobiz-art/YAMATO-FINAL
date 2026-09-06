@@ -1,6 +1,15 @@
 # macOS
 .DS_Store
 
+# Authentication and generated deployment output are never source-controlled.
+.env
+.env.*
+.vercel/
+node_modules/
+.playwright-mcp/
+test-results/
+public/
+
 # ローカル作業ファイル（公開リポジトリに含めない）
 index.backup_*.html
 company_shoin_rejected.html

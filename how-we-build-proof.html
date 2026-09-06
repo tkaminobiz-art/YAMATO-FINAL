@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>費用・お見積もり｜デザイン検討｜やまと不動産</title>
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans+JP:wght@400;500&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#302c28;--muted:#6b625b;--red:#8b1621;--gold:#c7b18a;--paper:#faf8f3;--serif:'Shippori Mincho','Yu Mincho',serif;--sans:'Noto Sans JP',sans-serif}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:var(--paper);-webkit-font-smoothing:antialiased}a{color:inherit}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:5px}figure,p,h1,h2,dl,dd{margin:0}img{display:block;max-width:100%}h1,h2{font-weight:400}h1,h2,button,a{font-synthesis:none}.wrap{width:calc(100% - 112px);max-width:1160px;margin:auto}
+.preview-bar{padding:9px 20px;background:#eeeae3;color:#615b52;text-align:center;font-size:11px;line-height:1.7}.preview-bar a{margin-left:18px;text-underline-offset:4px}
+.masthead{height:84px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:400 23px/1 var(--serif);letter-spacing:.06em}.brand img{width:47px;height:auto}.header-link{font-size:12px;text-decoration:none;border-bottom:1px solid #a29a8d;padding:12px 0}.header-link span{margin-left:20px}
+.heritage{position:relative;background:#8b1621 url('assets/std/page_beni_dark_1800.webp') center/cover;color:#fff5e3;overflow:hidden;border-bottom:1px solid var(--gold)}
+.heritage-inner{min-height:246px;display:flex;align-items:center;justify-content:space-between;gap:60px;padding-top:42px;padding-bottom:42px;position:relative;z-index:1}
+.heritage::after{content:'';position:absolute;right:4%;top:-70%;width:350px;height:500px;background:url('assets/std/art_swallows_t.webp') center/contain no-repeat;opacity:.1;pointer-events:none}
+.heritage-label{font-size:12px;letter-spacing:.09em}.heritage-count{margin-top:9px;font:400 64px/1.05 Inter,sans-serif;letter-spacing:-.035em}.heritage-count span{margin-left:12px;font:400 16px/1 var(--serif);letter-spacing:.02em}.heritage-date{margin-top:12px;font-size:10px;color:#e0cdb4}.heritage-message{max-width:420px;font:400 19px/1.95 var(--serif);letter-spacing:.035em}
+.estimate{position:relative;padding:78px 0 66px;background:linear-gradient(#faf8f3e8,#faf8f3e8),url('assets/std/paper_washi.webp') center/720px auto}
+.estimate-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:32px 64px;align-items:start}
+.estimate-heading{padding-top:16px}.eyebrow{font-size:11px;line-height:1.5;letter-spacing:.1em;color:var(--red);margin-bottom:24px}.estimate h1{font:400 28px/1.75 var(--serif);letter-spacing:.025em}.estimate h1 span{display:block;white-space:nowrap}
+.estimate-intro{margin-top:24px;font-size:14px;line-height:2;max-width:27em}
+.estimate-photo{grid-column:2;grid-row:1/3;position:relative;padding-bottom:14px}.estimate-photo::after{content:'';position:absolute;left:25px;right:-14px;top:22px;bottom:0;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold);pointer-events:none}.estimate-photo img{width:100%;height:auto;aspect-ratio:802/535;position:relative;z-index:1}.estimate-photo figcaption{position:relative;z-index:1;margin:12px 0 0;font-size:10px;line-height:1.6;color:var(--muted)}
+.estimate-link{grid-column:1;align-self:end;display:inline-flex;align-items:center;justify-content:space-between;gap:30px;width:264px;max-width:100%;padding:17px 0;text-decoration:none;border-bottom:1px solid var(--red);font-size:13px;font-weight:500}.estimate-link svg{width:27px;height:16px;stroke:var(--red);stroke-width:1;fill:none;transition:transform .25s}.estimate-link:hover svg{transform:translateX(5px)}
+.estimate-scope{margin-top:50px;padding-top:26px;border-top:1px solid #d2c7b7}.estimate-scope h2{font:500 12px/1.7 var(--sans);letter-spacing:.03em;margin-bottom:22px}.scope-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}.scope-list>div{position:relative;padding-left:17px;border-left:1px solid var(--gold)}.scope-list dt{font:400 18px/1.5 var(--serif);margin-bottom:9px}.scope-list dd{font-size:13px;line-height:1.8;color:#5c554e;max-width:23em}
+.conditions{margin-top:26px;max-width:850px;font-size:11px;line-height:1.85;color:var(--muted)}.prototype-end{padding:23px 24px;border-top:1px solid #d8d1c7;text-align:center;font-size:11px;line-height:1.8;color:var(--muted)}.prototype-end a{text-underline-offset:4px}
+@media(max-width:1050px){.wrap{width:calc(100% - 64px)}.estimate-grid{gap:28px 40px;grid-template-columns:1fr 1.1fr}.estimate h1{font-size:25px}.estimate-intro{font-size:14px}.estimate-photo{grid-row:1}.estimate-link{grid-row:2}.heritage-message{font-size:17px}.scope-list{gap:22px}}
+@media(max-width:700px){.wrap{width:calc(100% - 44px)}.preview-bar{font-size:10px;padding:7px 10px}.preview-bar a{margin-left:10px}.masthead{height:70px}.brand{font-size:19px;gap:8px}.brand img{width:36px}.header-link{font-size:11px}.header-link span{display:none}.heritage-inner{min-height:0;padding-top:30px;padding-bottom:30px;gap:23px;display:grid;grid-template-columns:1fr}.heritage-count{font-size:48px;display:inline-block;margin:8px 0}.heritage-label{font-size:11px}.heritage-date{margin-top:0;font-size:10px}.heritage-message{font-size:15px;line-height:1.95;max-width:none}.heritage::after{width:220px;height:310px;top:0;right:-20px;opacity:.08}.estimate{padding:43px 0 38px}.estimate-grid{display:flex;flex-direction:column;gap:25px}.estimate-heading{padding:0}.eyebrow{margin-bottom:14px;font-size:11px}.estimate h1{font-size:24px;line-height:1.65;letter-spacing:.015em}.estimate-intro{margin-top:20px;font-size:14px;line-height:1.95;max-width:none}.estimate-photo{width:100%;padding-bottom:9px}.estimate-photo::after{left:17px;right:-8px;top:16px}.estimate-photo figcaption{font-size:10px;margin-top:10px}.estimate-link{order:4;margin-top:3px;align-self:stretch;width:100%;padding:17px 0}.estimate-scope{margin-top:30px;padding-top:22px}.estimate-scope h2{margin-bottom:18px}.scope-list{grid-template-columns:1fr;gap:18px}.scope-list>div{display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px;padding-left:12px}.scope-list dt{font:500 13px/1.8 var(--sans);margin:0}.scope-list dd{font-size:13px;line-height:1.8;max-width:none}.conditions{font-size:11px;margin-top:22px}.prototype-end{font-size:10px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}.estimate-link:hover svg{transform:none}}
+</style>
+</head>
+<body>
+<div class="preview-bar">デザイン検討用 · 費用・お見積もりの代表案<a href="index-material-preview.html?v=20260906-how-we-build-2#howWeBuild">現在案と比較</a></div>
+<header class="masthead wrap"><a class="brand" href="index-material-preview.html" aria-label="やまと不動産 トップページ"><img src="assets/brand/yamato_mark.svg" width="53" height="33" alt=""><span style="white-space:nowrap">やまと不動産</span></a><a class="header-link" href="kodawari.html" style="white-space:nowrap">こだわりを見る<span aria-hidden="true">↗</span></a></header>
+<main>
+<section class="heritage" aria-label="設立以来の建築実績">
+ <div class="heritage-inner wrap"><div><p class="heritage-label">設立以来の建築実績</p><p class="heritage-count">770<span>棟以上</span></p><p class="heritage-date">2026年7月10日時点</p></div><p class="heritage-message">5年後も、10年後も、<br>「やまとにお願いしてよかった」と<br>思っていただける家を。</p></div>
+</section>
+<section class="estimate" aria-labelledby="estimateTitle" id="estimate">
+ <div class="wrap">
+  <div class="estimate-grid">
+   <div class="estimate-heading"><p class="eyebrow">費用・お見積もり</p><h1 id="estimateTitle"><span>ご契約前に</span><span>明瞭なお見積もり</span></h1><p class="estimate-intro">標準仕様と追加費用の内訳を、ご契約前のお見積もりで確認できます。</p></div>
+   <figure class="estimate-photo"><img src="assets/top-renewal/built-story/budget-plan.webp" width="802" height="535" alt="図面と電卓を広げた打ち合わせの様子" fetchpriority="high" decoding="async"><figcaption>支給カタログ掲載写真</figcaption></figure>
+   <a class="estimate-link" href="kodawari.html#price">価格・お見積もりについて<svg viewBox="0 0 28 16" aria-hidden="true"><path d="M1 8h25M20 2l6 6-6 6"/></svg></a>
+  </div>
+  <div class="estimate-scope"><h2>お見積もりで確認できること</h2><dl class="scope-list"><div><dt>標準仕様</dt><dd>建物本体価格に含まれる設備と仕様</dd></div><div><dt>オプション</dt><dd>追加する設備や仕様と、その金額</dd></div><div><dt>別途費用</dt><dd>土地代・税金・登記費用など</dd></div></dl></div>
+  <p class="conditions">ご契約後に内容を変更・追加する場合は、金額が変わります。別途費用の対象と金額は、土地やご契約内容によって異なります。</p>
+ </div>
+</section>
+</main>
+<footer class="prototype-end">HOW WE BUILDの代表1項目を検討するプレビューです。<br>他の3項目と本番ページは変更していません。 <a href="index-material-preview.html?v=20260906-how-we-build-2#howWeBuild">現在のページへ戻る</a></footer>
+</body></html>

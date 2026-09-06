@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>大阪で働き、奈良に住む｜やまと不動産・制作確認用</title>
+  <meta name="description" content="大阪方面への電車通勤、最寄駅から住まいまでの移動、休日の車移動を確認するための奈良の住まい案内。">
+  <link rel="stylesheet" href="assets/top-renewal/nara-preview.css">
+  <script src="assets/top-renewal/nara-preview.js" defer></script>
+  <link rel="stylesheet" href="assets/top-renewal/nara-journey.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous" defer></script>
+  <script src="assets/top-renewal/nara-journey.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">本文へ進む</a>
+<header class="header"><a class="brand" href="index-art-preview.html"><img src="assets/brand/yamato_mark.svg" width="32" height="32" alt=""><span>やまと不動産<small>トップへ戻る</small></span></a><a class="phone" href="tel:0742361123"><span>電話で相談</span>0742-36-1123</a></header>
+<main id="main">
+<section class="iju" id="iju" aria-label="大阪から奈良へのアクセス">
+
+  <!-- 幕1: 大阪難波から近鉄奈良へ。スクロールを奪わず、快速急行の運行例を連続して見せる -->
+  <div class="iju__stage" id="ijuStage">
+    <h1 class="iju__sr">大阪から奈良へのアクセス</h1>
+    <div class="iju__hud">
+      <span class="iju__eyebrow">Move to Nara ／ 奈良に住むという選択</span>
+      <span class="iju__clock" aria-hidden="true"><b id="ijuClock">18:27</b><span id="ijuClockCap">大阪難波</span></span>
+    </div>
+
+    <div class="iju__scenes">
+      <figure class="iju__scene iju__sA">
+        <img src="assets/iju/duo_osaka.webp" alt="薄暮の道頓堀・なんばのネオンと運河" loading="eager" fetchpriority="high" decoding="async" width="1320" height="990">
+      </figure>
+      <figure class="iju__scene iju__sUrban" aria-hidden="true">
+        <picture>
+          <source media="(max-width:700px)" type="image/avif" srcset="assets/iju/urban-rail-osaka-sp-20260831.avif">
+          <source media="(max-width:700px)" type="image/webp" srcset="assets/iju/urban-rail-osaka-sp-20260831.webp">
+          <source type="image/avif" srcset="assets/iju/urban-rail-osaka-pc-20260831.avif">
+          <img src="assets/iju/urban-rail-osaka-pc-20260831.webp" alt="" loading="lazy" decoding="async" width="2048" height="1152">
+        </picture>
+      </figure>
+      <figure class="iju__scene iju__sRide" aria-hidden="true">
+        <picture>
+          <source media="(max-width:700px)" type="image/avif" srcset="assets/iju/train-window-bluehour-sp-20260830.avif">
+          <source media="(max-width:700px)" type="image/webp" srcset="assets/iju/train-window-bluehour-sp-20260830.webp">
+          <source type="image/avif" srcset="assets/iju/train-window-bluehour-pc-20260830.avif">
+          <img src="assets/iju/train-window-bluehour-pc-20260830.webp" alt="" loading="lazy" decoding="async" width="3200" height="1787">
+        </picture>
+      </figure>
+      <figure class="iju__scene iju__sApproach" aria-hidden="true">
+        <picture>
+          <source media="(max-width:700px)" type="image/avif" srcset="assets/iju/saidaiji-approach-sp-20260831.avif">
+          <source media="(max-width:700px)" type="image/webp" srcset="assets/iju/saidaiji-approach-sp-20260831.webp">
+          <source type="image/avif" srcset="assets/iju/saidaiji-approach-pc-20260831.avif">
+          <img src="assets/iju/saidaiji-approach-pc-20260831.webp" alt="" loading="lazy" decoding="async" width="3200" height="1787">
+        </picture>
+      </figure>
+      <figure class="iju__scene iju__sNara" aria-hidden="true">
+        <picture>
+          <source media="(max-width:700px)" type="image/avif" srcset="assets/iju/kintetsu-nara-arrival-sp-20260831.avif">
+          <source media="(max-width:700px)" type="image/webp" srcset="assets/iju/kintetsu-nara-arrival-sp-20260831.webp">
+          <source type="image/avif" srcset="assets/iju/kintetsu-nara-arrival-pc-20260831.avif">
+          <img src="assets/iju/kintetsu-nara-arrival-pc-20260831.webp" alt="" loading="lazy" decoding="async" width="3200" height="1787">
+        </picture>
+      </figure>
+    </div>
+
+    <div class="iju__copy" aria-hidden="true">
+      <p class="iju__phase" id="ijuPhase">Osaka Namba ／ Departure</p>
+      <h2 class="iju__journey-title" id="ijuTitle">大阪難波から、近鉄奈良へ。</h2>
+      <p class="iju__journey-deck" id="ijuDeck">快速急行なら、乗り換えなしです。</p>
+    </div>
+
+    <p class="iju__concept-note" id="ijuConcept">背景画像は生成コンセプトです。</p>
+    <a class="iju__skip" href="#train">旅程を飛ばして、移動情報を見る</a>
+
+    <div class="iju__journey" id="ijuJourney" aria-hidden="true">
+      <div class="iju__mode">TRAIN <b>快速急行・乗換なし</b></div>
+      <div class="iju__rail-journey">
+        <span class="iju__route-line"><i class="iju__route-fill" id="ijuRouteFill"></i></span>
+        <ol class="iju__stops">
+          <li class="iju__stop is-active"><time>18:27</time><span>大阪難波</span></li>
+          <li class="iju__stop"><time>18:32</time><span>鶴橋</span></li>
+          <li class="iju__stop"><time>18:49</time><span>生駒</span></li>
+          <li class="iju__stop"><time>18:55</time><span>学園前</span></li>
+          <li class="iju__stop"><time>19:00</time><span>大和西大寺</span></li>
+          <li class="iju__stop"><time>19:05</time><span>新大宮</span></li>
+          <li class="iju__stop"><time>19:08</time><span>近鉄奈良</span></li>
+        </ol>
+      </div>
+      <div class="iju__arrival-summary" id="ijuArrivalSummary">
+        <p class="iju__arrival-meta"><span>途中駅の到着時刻</span><span>大阪難波 18:27発</span></p>
+        <ol class="iju__arrival-list">
+          <li><time datetime="18:32">18:32</time>鶴橋</li>
+          <li><time datetime="18:49">18:49</time>生駒</li>
+          <li><time datetime="18:55">18:55</time>学園前</li>
+          <li><time datetime="19:00">19:00</time>大和西大寺</li>
+          <li><time datetime="19:05">19:05</time>新大宮</li>
+        </ol>
+      </div>
+    </div>
+    <p class="iju__sr">大阪難波18時27分発、近鉄奈良19時08分着。鶴橋・生駒・学園前・大和西大寺・新大宮に停車する、41分の運行例です。</p>
+    <span class="iju__grain" aria-hidden="true"></span>
+  </div>
+</section>
+<p class="journey-condition">快速急行の運行例です。所要時間は列車・時間帯で異なります。<a href="#train">運行例の詳細を見る</a></p>
+  <nav class="section-nav wrap" aria-label="このページの案内"><a href="#train"><span>01</span> 電車での通勤</a><a href="#last-mile"><span>02</span> 駅から住まい</a><a href="#drive"><span>03</span> 休日の車移動</a><a href="lots-preview.html?view=list"><span>04</span> 分譲地を探す</a></nav>
+
+  <section class="section train wrap" id="train" aria-labelledby="train-title">
+    <div class="section-heading"><p class="eyebrow">01 / TRAIN ACCESS</p><h2 id="train-title">電車での通勤</h2><p>大阪難波から、奈良方面へ。<br>勤務先の最寄駅と、住みたい街の駅を合わせて確認します。</p><a class="text-link" href="#last-mile">駅から住まいの情報へ進む <span aria-hidden="true">↓</span></a></div>
+    <div class="journey" aria-label="大阪から奈良への帰宅時の運行例">
+      <div class="travel-example"><p class="eyebrow">大阪から奈良への帰宅例</p><h3>大阪難波から近鉄奈良へ、<br>快速急行で<span class="travel-time">41<span>分。</span></span></h3><p class="travel-conditions">平日夕方の一例：18:27発→19:08着。2026年9月5日近鉄公式確認。列車・時間帯で異なります。駅から住まいまでの移動時間は含みません。</p><a class="external-link" href="https://eki.kintetsu.co.jp/norikae/T7?dw=0&amp;sf=5213&amp;tx=1-5226" target="_blank" rel="noopener noreferrer">この運行例を近鉄公式で確認 <span aria-hidden="true">↗</span></a></div>
+      <details class="timetable"><summary>全停車駅と到着・発車時刻</summary><table><caption>快速急行・近鉄奈良行き／平日夕方の運行例</caption><thead><tr><th scope="col">駅名</th><th scope="col">到着</th><th scope="col">発車</th></tr></thead><tbody><tr><th scope="row">大阪難波</th><td>18:25</td><td>18:27</td></tr><tr><th scope="row">近鉄日本橋</th><td>18:28</td><td>18:28</td></tr><tr><th scope="row">大阪上本町</th><td>18:30</td><td>18:30</td></tr><tr><th scope="row">鶴橋</th><td>18:32</td><td>18:33</td></tr><tr><th scope="row">生駒</th><td>18:49</td><td>18:50</td></tr><tr><th scope="row">学園前</th><td>18:55</td><td>18:56</td></tr><tr><th scope="row">大和西大寺</th><td>19:00</td><td>19:02</td></tr><tr><th scope="row">新大宮</th><td>19:05</td><td>19:05</td></tr><tr><th scope="row">近鉄奈良</th><td>19:08</td><td>—</td></tr></tbody></table><p class="note">大阪難波から近鉄奈良までの全停車駅です。この列車の始発駅は神戸三宮です。朝の奈良→大阪方面とは別の運行例です。</p></details>
+    <div class="route-stations"><p class="journey-label">経路上の主な駅 <span>大阪 → 奈良</span></p><ol class="station-list"><li><span class="station-code">A01</span><div><h3>大阪難波</h3><p>なんば周辺から、近鉄線へ。</p></div></li><li><span class="station-code">A04</span><div><h3>鶴橋</h3><p>勤務先に合わせて、乗換経路も確認。</p></div></li><li><span class="station-code">A17</span><div><h3>生駒</h3><p>生駒方面の住まいも検討できます。</p></div></li><li><span class="station-code">A20</span><div><h3>学園前</h3></div></li><li><span class="station-code">A26</span><div><h3>大和西大寺</h3></div></li><li><span class="station-code">A27</span><div><h3>新大宮</h3></div></li><li><span class="station-code">A28</span><div><h3>近鉄奈良</h3><p>ここから住まいまでの移動も、忘れずに。</p></div></li></ol><p class="note">途中駅を一部省略した経路案内です。特定の列車の停車駅・時刻表ではありません。所要時間・乗換・停車駅は列車と時間帯により異なります。</p><a class="external-link" href="https://www.kintetsu.co.jp/station/" target="_blank" rel="noopener noreferrer">近鉄公式の路線図・駅情報 <span aria-hidden="true">↗</span></a><a class="external-link" href="https://www.kintetsu.co.jp/tetsudo/" target="_blank" rel="noopener noreferrer">近鉄公式でダイヤを調べる <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </section>
+
+  <section class="last-mile" id="last-mile" aria-labelledby="last-title"><div class="wrap section"><div class="section-heading"><p class="eyebrow">02 / STATION TO HOME</p><h2 id="last-title">駅に着いてから、<br>家に着くまで。</h2><p>駅間の時間だけでは、毎日の通勤は決まりません。<br>候補の土地ごとに、次の条件を確かめましょう。</p></div><div class="check-grid"><article><span class="check-number">01</span><h3>最寄駅と移動方法</h3><p>徒歩・自転車・バスなど、駅までの経路を確認。駅からの距離だけでなく、坂道や夜の道も見ておきます。</p></article><article><span class="check-number">02</span><h3>出勤・帰宅の時間帯</h3><p>バスを使う場合は、運行本数・最終便・待ち時間も確認。乗りたい電車に間に合うかを調べます。</p></article><article><span class="check-number">03</span><h3>家から勤務先まで</h3><p>自宅から駅、乗換、到着駅から勤務先までを合わせて確認。保育園の送迎がある日は、その経路も含めます。</p></article></div><div class="inline-cta"><p>気になる分譲地が見つかったら、<br>所在地と最寄駅を合わせてご確認ください。</p><a class="button" href="lots-preview.html?view=list">販売中の分譲地を見る <span aria-hidden="true">→</span></a></div></div></section>
+
+  <section class="section wrap" id="drive" aria-labelledby="drive-title"><div class="section-heading"><p class="eyebrow">03 / WEEKEND BY CAR</p><h2 id="drive-title">休日の移動は、車で。</h2><p>電車での通勤とは分けて、休日のお出かけも検討。<br>大阪方面への移動には、第二阪奈道路という選択肢があります。</p></div><div class="drive-grid"><article class="drive-card"><p class="road-label">E92 <span>第二阪奈道路</span></p><h3>中町IC</h3><p>住まいからICまでの一般道と、利用できる出入口の方向を確認します。</p></article><article class="drive-card"><p class="road-label">E92 <span>第二阪奈道路</span></p><h3>宝来IC</h3><p>目的地に合わせて経路を確認。高速道路を降りてからの移動も含めて考えます。</p></article></div><div class="drive-note"><p>所要時間・料金は出発地、目的地、交通状況によって異なります。通行止めや渋滞など、最新の道路情報もご確認ください。</p><a class="external-link" href="https://search.w-nexco.co.jp/" target="_blank" rel="noopener noreferrer">NEXCO西日本で料金・ルートを調べる <span aria-hidden="true">↗</span></a></div></section>
+
+  <section class="closing"><div class="wrap closing-grid"><div><p class="eyebrow">LAND &amp; HOME</p><h2>通勤と予算に合う、<br>奈良の土地を探す。</h2><p>気になるエリアの分譲地から、住まいの検討へ。<br>土地・建物・諸費用を含めた予算は、条件を確認しながらご相談いただけます。</p></div><div class="closing-actions"><a class="button light" href="lots-preview.html?view=list">販売中の分譲地を見る <span aria-hidden="true">→</span></a><a class="closing-phone" href="tel:0742361123"><span>電話で相談する</span><strong>0742-36-1123</strong></a></div></div></section>
+</main>
+<footer class="footer wrap"><a href="index-art-preview.html">やまと不動産 トップへ戻る</a><p>制作確認用プレビュー · Webフォームでの受付は行っていません。</p><p class="source-note">路線・IC名称の確認：2026年9月5日／近畿日本鉄道・NEXCO西日本公式資料。運行時刻・交通所要時間の保証ではありません。</p></footer>
+</body></html>

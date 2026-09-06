@@ -1,0 +1,30 @@
+/* Photo layer only. Captions, controls, prices and the page scroll stay independent. */
+[data-top-depth] [data-deep-frame] {display:block;position:relative;width:100%;aspect-ratio:var(--photo-ratio,3/2);overflow:hidden;isolation:isolate}
+[data-top-depth] [data-deep-frame]>img {display:block;position:absolute;inset:0;width:100%;height:100%;min-height:0;max-width:100%;object-fit:cover;transition:none}
+[data-top-depth] .built-proof__photos [data-deep-frame]>img {object-fit:contain}
+[data-top-depth] .built-proof__photos figure {border:0;box-shadow:none}
+[data-top-depth] .built-proof__photos [data-deep-frame] {border:4px solid #fff;box-shadow:0 14px 28px -23px #302a24aa}
+[data-top-depth] .product__photo[data-deep-frame] {width:calc(100% - 24px);aspect-ratio:3/2;margin:12px 12px 0;flex:none}
+[data-top-depth] .product__photo[data-deep-frame]>span {z-index:1}
+[data-top-depth] .ig-post__frame[data-deep-frame] {aspect-ratio:var(--media-ratio,.8)}
+[data-top-depth] .entry-card__visual[data-deep-frame] {--photo-ratio:4/3;margin-block:0;flex:none}
+@media(prefers-reduced-motion:no-preference) {
+ [data-top-depth] [data-deep-frame] {margin-block:28px;transform:translate3d(0,var(--photo-y,0px),0)}
+ /* Legacy card hover transforms must not reset the scroll-driven image layer. */
+ [data-top-depth] [data-deep-frame]>img,
+ [data-top-depth] :is(.entry-card,.work):hover [data-deep-frame]>img {transform:translate3d(0,var(--image-y,0px),0) scale(var(--photo-scale,1.14));transform-origin:center}
+ [data-top-depth] .product__photo[data-deep-frame] {margin-top:44px;margin-bottom:24px;--photo-scale:1.08}
+ [data-top-depth] .entry-card__visual[data-deep-frame] {margin-block:0;transform:none}
+ [data-top-depth] .ig-post__frame[data-deep-frame] {margin-block:20px;overflow:visible;--photo-scale:1}
+ [data-top-depth] .new-hero__media {transform:translate3d(0,var(--hero-depth-y,0px),0)}
+ [data-top-depth] .built-proof__photos [data-deep-frame] {--photo-scale:1.06}
+}
+@media(max-width:767px) and (prefers-reduced-motion:no-preference) {
+ [data-top-depth] [data-deep-frame] {margin-block:22px}
+ [data-top-depth] .product__photo[data-deep-frame] {margin-top:36px;margin-bottom:20px}
+ [data-top-depth] .entry-card__visual[data-deep-frame] {margin-block:0;transform:none}
+ [data-top-depth] .ig-post__frame[data-deep-frame] {margin-block:18px}
+}
+@media(prefers-reduced-motion:reduce) {
+ [data-top-depth] [data-deep-frame], [data-top-depth] [data-deep-frame]>img, [data-top-depth] .new-hero__media {transform:none!important;animation:none!important}
+}

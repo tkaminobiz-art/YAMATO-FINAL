@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "framework": null,
+  "buildCommand": "node scripts/build-checkpoint.mjs",
+  "outputDirectory": "public",
+  "functions": { "api/instagram.js": { "maxDuration": 30 } },
+  "rewrites": [{ "source": "/v1top/assets/:path*", "destination": "/assets/:path*" }],
+  "headers": [{ "source": "/(.*)", "headers": [
+    { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" },
+    { "key": "X-Content-Type-Options", "value": "nosniff" }
+  ] }]
+}

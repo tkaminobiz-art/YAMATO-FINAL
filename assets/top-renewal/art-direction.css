@@ -1,0 +1,102 @@
+/* Scoped art-direction preview. Existing routes and brand preview are unaffected. */
+.art-preview .reason {background:var(--paper)}
+.art-preview .reason .split {grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:64px;align-items:center}
+.art-preview .reason figure {padding:0}
+.art-preview .reason figure::before {display:none}
+.art-preview .reason__image {aspect-ratio:3/2;object-fit:cover;box-shadow:none}
+.art-preview .reason .photo-caption {font-size:12px;margin-top:12px;color:var(--muted)}
+.art-preview .reason__body h2 {font-size:28px;line-height:1.65}
+.art-preview .reason__body>p:not(.eyebrow) {font-size:15px;line-height:1.95}
+.art-preview .works-grid {display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:24px 30px;align-items:start}
+.art-preview .work {display:block;min-width:0;color:var(--ink)}
+.art-preview .work--main {grid-column:1;grid-row:1 / span 2}
+.art-preview .work--side {grid-column:2;grid-row:auto}
+.art-preview .work figure {margin:0}
+.art-preview .work img {display:block;width:100%;height:auto;object-fit:contain;aspect-ratio:3/2;outline:none}
+.art-preview .work--main img {aspect-ratio:4/3}
+.art-preview .work figcaption {display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0;padding:14px 0 0;border:0;background:none}
+.art-preview .work figcaption b {display:block;font:500 16px/1.6 var(--sans)}
+.art-preview .work figcaption span {font-size:12px;color:var(--muted);margin-top:3px}
+.art-preview .work figcaption::after {content:'↗';font:400 24px/1 var(--latin);color:var(--red);flex-shrink:0}
+.art-preview .work:hover img {transform:none}
+.art-preview .work:hover figcaption b {text-decoration:underline;text-underline-offset:5px}
+.art-preview .works-note {margin:24px 0 0;font-size:12px;color:var(--muted)}
+.art-preview .entry-grid {gap:22px;align-items:stretch}
+.art-preview .entry-card {border:0;border-bottom:1px solid var(--silver);background:var(--white);box-shadow:none;overflow:hidden}
+.art-preview .entry-card:hover {box-shadow:none;border-color:var(--red);transform:none}
+.art-preview .entry-card__visual {aspect-ratio:4/3;border:0;background:var(--mist)}
+.art-preview .entry-card__visual img {width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.art-preview .entry-card:hover img {transform:scale(1.025)}
+.art-preview .entry-card__body {padding:20px 18px 22px}
+.art-preview .entry-card .eyebrow {font-size:10px;color:var(--muted);letter-spacing:.13em}
+.art-preview .entry-card h3 {font:500 18px/1.6 var(--sans);padding-right:18px}
+.art-preview .entry-card__body>p {font-size:13px;line-height:1.8;margin-top:10px}
+.art-preview .entry-card__body::after {position:absolute;right:16px;top:42px;margin:0}
+.art-preview .entry-controls {display:none}
+.art-preview .entry-grid.is-motion .entry-card {flex-basis:calc((100% - 66px)/4)}
+.art-preview .instagram {background:var(--paper);border-top:1px solid var(--line)}
+.art-preview .instagram>.wrap {display:block}
+.art-preview .social-heading {display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:32px}
+.art-preview .social-heading h2 {font:400 30px/1.3 var(--latin);letter-spacing:-.02em}
+.art-preview .social-heading h2::before {content:'';display:inline-block;width:22px;height:2px;background:var(--red);vertical-align:middle;margin:0 16px 8px 0}
+.art-preview .social-heading p {font-size:14px;color:var(--muted);margin:12px 0 0}
+.art-preview .social-heading a {display:inline-flex;align-items:center;gap:10px;min-height:44px;font:400 14px var(--latin);border-bottom:1px solid var(--silver)}
+.art-preview .social-heading a>span {color:var(--red);font-size:20px;margin-left:8px}
+.art-preview .social-heading img {width:18px;height:18px}
+.art-preview .ig-gallery {display:flex;align-items:end;gap:22px;min-width:0;padding:4px 2px 18px;scroll-padding-inline:2px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--silver) transparent;--media-height:360px}
+.art-preview .ig-post {flex:0 0 auto;width:calc(var(--media-height) * var(--media-ratio,.8));max-width:82vw;background:transparent;border:0;padding:0;scroll-snap-align:start;box-shadow:none;overflow:visible}
+.art-preview .ig-post__frame {display:block;aspect-ratio:var(--media-ratio,.8);height:auto;border:0;background:transparent;box-shadow:none}
+.art-preview .ig-post__frame>img {display:block;width:100%;height:100%;object-fit:contain}
+.art-preview .ig-post__frame>.note {display:grid;place-items:center;min-height:240px;background:var(--mist);font-size:13px;padding:24px;line-height:1.9}
+.art-preview .ig-post__footer {font-size:11px;margin-top:12px}
+.art-preview .ig-post__open {background:#ffffffed;border:0;color:var(--ink);padding:9px 12px;bottom:10px;right:10px}
+.art-preview .ig-post .ig-kind {border:0;border-radius:50%;background:#ffffffed;color:var(--ink);top:10px;right:10px}
+.art-preview .ig-controls {margin:8px 0 0;gap:12px}
+.art-preview .ig-controls button,.art-preview .entry-controls button {width:46px;height:46px;border:1px solid var(--silver);border-radius:50%;background:transparent;color:var(--ink);box-shadow:none;font-size:18px}
+.art-preview .ig-controls button:hover:not(:disabled),.art-preview .entry-controls button:hover:not(:disabled) {border-color:var(--red);color:var(--red);background:white}
+.art-preview .ig-controls button:disabled,.art-preview .entry-controls button:disabled {opacity:.35}
+.art-preview .instagram__status {margin-top:22px;border-color:var(--line);gap:20px}
+.art-preview .instagram__status .note {font-size:13px}
+.art-preview .instagram__status .link-arrow {font-size:14px}
+.art-preview .instagram__layout {display:block;background:transparent;border:0;min-height:160px}
+.art-preview .instagram__intro {padding:32px 0;min-height:0;border-top:1px solid var(--line)}
+.art-preview .instagram__intro p {font-size:14px;line-height:1.9}
+.art-preview .instagram__intro .link-arrow {margin-top:12px;font-size:14px}
+.art-preview :is(.work,.entry-card,.ig-post):focus-visible {outline:2px solid var(--red);outline-offset:4px}
+.art-preview [hidden] {display:none!important}
+@media (max-width:1100px) and (min-width:768px){
+ .art-preview .reason .split {gap:36px}
+ .art-preview .reason__body h2 {font-size:25px}
+ .art-preview .entry-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+ .art-preview .entry-card__visual {aspect-ratio:3/2}
+}
+@media(max-width:767px){
+ .art-preview .reason .split {grid-template-columns:1fr;gap:28px}
+ .art-preview .reason__image {aspect-ratio:4/3;object-position:57% 50%}
+ .art-preview .reason__body h2 {font-size:24px}
+ .art-preview .reason__body>p:not(.eyebrow) {font-size:14px}
+ .art-preview .works-grid {grid-template-columns:1fr;gap:32px}
+ .art-preview .work--main,.art-preview .work--side {grid-column:auto;grid-row:auto}
+ .art-preview .work figcaption b {font-size:16px}
+ .art-preview .work figcaption {padding-top:12px}
+ .art-preview .entry-grid {display:flex;gap:16px;overflow-x:auto;padding:0 0 16px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--silver) transparent}
+ .art-preview .entry-grid .entry-card,.art-preview .entry-grid.is-motion .entry-card {flex:0 0 85%;scroll-snap-align:start}
+ .art-preview .entry-grid.is-motion {scroll-snap-type:none}
+ .art-preview .entry-card__visual {aspect-ratio:4/3}
+ .art-preview .entry-card__body {padding:20px 18px 22px}
+ .art-preview .entry-card h3 {font-size:17px}
+ .art-preview .entry-card__body::after {position:absolute;right:16px;top:42px}
+ .art-preview .entry-controls {display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-top:8px}
+ .art-preview .entry-controls>span {margin-right:auto;font:12px var(--latin);color:var(--muted);letter-spacing:.12em}
+ .art-preview .social-heading {display:block;margin-bottom:24px}
+ .art-preview .social-heading h2 {font-size:27px}
+ .art-preview .social-heading h2::before {width:18px;margin-right:12px}
+ .art-preview .social-heading p {font-size:14px;margin-top:10px}
+ .art-preview .social-heading a {margin-top:16px}
+ .art-preview .ig-gallery {gap:16px;align-items:start;--media-height:clamp(168px,52vw,220px)}
+ .art-preview .ig-post {max-width:82vw}
+ .art-preview .ig-post__open {opacity:1;transform:none;font-size:11px}
+ .art-preview .instagram__status {align-items:flex-start}
+ .art-preview .instagram__status .link-arrow {margin:0}
+}
+@media(prefers-reduced-motion:reduce){.art-preview .entry-card:hover img{transform:none}}
