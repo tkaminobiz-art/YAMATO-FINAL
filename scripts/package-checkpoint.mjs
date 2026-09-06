@@ -2,6 +2,7 @@
 import { readFileSync, existsSync, statSync, mkdirSync, mkdtempSync, copyFileSync, writeFileSync } from 'node:fs';
 import { resolve, relative, dirname, extname } from 'node:path';
 import { createHash } from 'node:crypto';
+import { tmpdir } from 'node:os';
 
 const root = process.cwd();
 const entries = [
@@ -51,7 +52,7 @@ while (queue.length) {
 }
 // Some historic markup contains non-file fragment placeholders. Report rather than guess.
 if (missing.size) throw Error(`Missing runtime dependencies: ${[...missing].sort().join(', ')}`);
-const stage = mkdtempSync('/private/tmp/yamato-checkpoint-');
+const stage = mkdtempSync(resolve(tmpdir(), 'yamato-checkpoint-'));
 const manifest = [];
 for (const path of [...files].sort()) {
   const full = resolve(root, path), data = readFileSync(full);
