@@ -1,0 +1,422 @@
+[
+  {
+    "browser": "chromium",
+    "width": 320,
+    "height": 844,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 288,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 360,
+    "height": 844,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 320,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 375,
+    "height": 844,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 335,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 350,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 414,
+    "height": 844,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 374,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 768,
+    "height": 1000,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 250,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 1024,
+    "height": 1000,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 250,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 1280,
+    "height": 1000,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 250,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 1440,
+    "height": 1000,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 250,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 1920,
+    "height": 1000,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 250,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 320,
+    "height": 844,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 288,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 360,
+    "height": 844,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 320,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 375,
+    "height": 844,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 335,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 350,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 414,
+    "height": 844,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 374,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 768,
+    "height": 1000,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 250,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 1024,
+    "height": 1000,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 250,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 1280,
+    "height": 1000,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 250,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 1440,
+    "height": 1000,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 250,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 1920,
+    "height": 1000,
+    "passed": true,
+    "pageOverflow": false,
+    "sectionOverflow": false,
+    "headingText": "770棟を支えた、3つの仕事",
+    "titleUnitLines": 1,
+    "proseBelow15": [],
+    "labelsBelow12": [],
+    "itemHeadingOrphans": [],
+    "imagesReady": true,
+    "cta": {
+      "href": "works.html",
+      "width": 250,
+      "height": 54
+    },
+    "howWeBuildPresent": true,
+    "errors": []
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "dd352d9165a7fe901fc69d115e3597a1a521afaf99246bba0926da4f460e452c"
+    },
+    {
+      "path": "assets/top-renewal/built-yamato-evidence.css",
+      "sha256": "31979ea138bd0cff1643a60461222a366c8132120e2db1f71370616606211435"
+    },
+    {
+      "path": "assets/top-renewal/built-story/design-meeting.webp",
+      "sha256": "dc6dcd65e8249500f97c768e5234d24836d1d81fde107ac448f84b88d1c7b558"
+    },
+    {
+      "path": "assets/top-renewal/built-story/site-check.webp",
+      "sha256": "df4dc5dae8a565af8237fc8dd9c03305c94ea42bb3d6cf9444c53b227840d1ad"
+    },
+    {
+      "path": "assets/top-renewal/built-story/team-meeting.webp",
+      "sha256": "ce2fa567fb5904a7c4b2accec604c666f74410864c3683a239ea132e8b83cbe6"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/built-yamato-b-cutover-20260907/brief.md",
+      "sha256": "8b2a471c286ce7e24772d03add4fca86c32cdcd072b4857eeea9905523ecdbce"
+    },
+    "copy": {
+      "path": "qa/built-yamato-b-cutover-20260907/copy-review.md",
+      "sha256": "0ceb5f4f371b9f943cc6c1c3d1a5c196714636472b61818ae2534ca804c41b1e"
+    },
+    "assets": {
+      "path": "qa/built-yamato-b-cutover-20260907/asset-decisions.md",
+      "sha256": "e4cf163080f89aa42f4cddde8803d7fde36fa3bd957d6eb17857b07e85c6c88b"
+    },
+    "visual": {
+      "path": "qa/built-yamato-b-cutover-20260907/visual-review.md",
+      "sha256": "66521fe6e02134b1244fdeeeb0e390740e724100a9ceaa6e49786204d65e96e5"
+    },
+    "interaction": {
+      "path": "qa/built-yamato-b-cutover-20260907/interaction-review.md",
+      "sha256": "594153ec4ff3d7e61e4365e353b69b1161d2eef484deedbdb62588d8f1b2bd8b"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 1000,
+      "path": "qa/built-yamato-b-cutover-20260907/after-chromium-pc.png",
+      "sha256": "ed95d93180d58326372ff3f3a3d7c1a115f31dceab7c595f0150cb06ab839259"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/built-yamato-b-cutover-20260907/after-chromium-sp.png",
+      "sha256": "99db5a6dda667d3e04d56984c75fccb490bc4ddf2a98454d9fa1c6db4e182b60"
+    }
+  ]
+}
