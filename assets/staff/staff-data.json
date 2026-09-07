@@ -1,0 +1,476 @@
+{
+  "version": 1,
+  "sourceChecked": "2026-09-07",
+  "status": "preview; current roster and likeness require confirmation before release",
+  "registrationNote": "Approximate normalized eye center x/y and hair width from source/illustration; CSS presentation only, not biometric identification.",
+  "people": [
+    {
+      "id": "100104",
+      "name": "田中",
+      "nickname": "ぐっさん",
+      "role": "営業本部長",
+      "category": "sales",
+      "en": "SALES",
+      "blurb": "お客様や同僚の話をじっくり聞く、営業本部長。",
+      "bio": "相手の話をじっくり聞くことを大切にする、営業本部長の田中。お客様はもちろん、社内でも相談を受ける存在です。",
+      "hobby": "ゴルフ",
+      "w": 640,
+      "h": 421,
+      "source": "https://www.yamatogroup.net/staff_ya/#100104",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 631
+    },
+    {
+      "id": "157200",
+      "name": "山岡",
+      "nickname": "ようちゃん",
+      "role": "専務取締役",
+      "category": "leadership",
+      "en": "LEADERSHIP",
+      "blurb": "場を明るくする人柄で、建物のご相談にも。",
+      "bio": "誰とでも自然に会話を交わし、場を明るくする山岡。建築業界に携わってきた経験も生かしています。",
+      "hobby": "スポーツ観戦、映画鑑賞、ゴルフ",
+      "w": 640,
+      "h": 479,
+      "source": "https://www.yamatogroup.net/staff_ya/#157200",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 718,
+      "registration": {
+        "photo": [
+          0.367,
+          0.362,
+          0.118
+        ],
+        "art": [
+          0.362,
+          0.271,
+          0.129
+        ]
+      }
+    },
+    {
+      "id": "147195",
+      "name": "西口・クロフォード",
+      "nickname": "ジョー",
+      "role": "管理部 部長（コンシェルジュ）",
+      "category": "admin",
+      "en": "ADMINISTRATION",
+      "blurb": "やわらかな物腰でお迎えします。英語でのご相談も。",
+      "bio": "笑顔とやわらかな物腰が持ち味の西口・クロフォード。コンシェルジュとして、英語でのご相談にも対応しています。",
+      "hobby": "ゴルフ、バスケットボール、野球",
+      "w": 640,
+      "h": 480,
+      "source": "https://www.yamatogroup.net/staff_ya/#147195",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 720,
+      "registration": {
+        "photo": [
+          0.284,
+          0.487,
+          0.145
+        ],
+        "art": [
+          0.331,
+          0.401,
+          0.163
+        ]
+      }
+    },
+    {
+      "id": "218450",
+      "name": "柏崎",
+      "nickname": "カッシー",
+      "role": "本店営業部",
+      "category": "sales",
+      "en": "SALES",
+      "blurb": "賃貸業の経験も生かし、住まいのご相談に対応。",
+      "bio": "急な対応が必要な場面でも、落ち着いて取り組む柏崎。賃貸業の経験を持ち、日々学びながら幅広い住まいのご相談に応えています。",
+      "hobby": "車、バイク、釣り",
+      "w": 640,
+      "h": 480,
+      "source": "https://www.yamatogroup.net/staff_ya/#218450",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 720,
+      "registration": {
+        "photo": [
+          0.332,
+          0.459,
+          0.138
+        ],
+        "art": [
+          0.375,
+          0.365,
+          0.172
+        ]
+      }
+    },
+    {
+      "id": "258798",
+      "name": "三野",
+      "nickname": "みのくん",
+      "role": "営業部",
+      "category": "sales",
+      "en": "SALES",
+      "blurb": "何事にも一生懸命に取り組む、営業担当。",
+      "bio": "何事にも一生懸命に取り組むことを大切にしている三野。休日は寺社仏閣巡りやスポーツ観戦、犬や猫と遊ぶ時間を楽しんでいます。",
+      "hobby": "寺社仏閣巡り、スポーツ観戦、犬や猫と遊ぶこと",
+      "w": 640,
+      "h": 480,
+      "source": "https://www.yamatogroup.net/staff_ya/#258798",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 720,
+      "registration": {
+        "photo": [
+          0.405,
+          0.425,
+          0.178
+        ],
+        "art": [
+          0.39,
+          0.337,
+          0.2
+        ]
+      }
+    },
+    {
+      "id": "92140",
+      "name": "入江 将大",
+      "nickname": "",
+      "role": "工務部 責任者・執行役員",
+      "category": "construction",
+      "en": "CONSTRUCTION",
+      "blurb": "明るい笑顔と、細かなところへの気配り。",
+      "bio": "人懐っこい笑顔が持ち味の入江。仕事に粘り強く取り組み、仲間の細かなところにも気を配る工務部の責任者です。",
+      "hobby": "ゴルフ、サッカー",
+      "w": 640,
+      "h": 426,
+      "source": "https://www.yamatogroup.net/staff_ya/#92140",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 639,
+      "registration": {
+        "photo": [
+          0.54,
+          0.308,
+          0.169
+        ],
+        "art": [
+          0.565,
+          0.273,
+          0.179
+        ]
+      }
+    },
+    {
+      "id": "58990",
+      "name": "澤",
+      "nickname": "さわさん",
+      "role": "本店工務部",
+      "category": "construction",
+      "en": "CONSTRUCTION",
+      "blurb": "一度決めたことを、最後までやりきる努力家。",
+      "bio": "一度決めたことをやりきる、工務部の澤。自分の信念を大切にしながら、一つひとつの仕事に取り組んでいます。",
+      "hobby": "動画鑑賞",
+      "w": 640,
+      "h": 426,
+      "source": "https://www.yamatogroup.net/staff_ya/#58990",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 639,
+      "registration": {
+        "photo": [
+          0.557,
+          0.291,
+          0.167
+        ],
+        "art": [
+          0.566,
+          0.259,
+          0.187
+        ]
+      }
+    },
+    {
+      "id": "159106",
+      "name": "稲塚",
+      "nickname": "いなちゃん",
+      "role": "工務部 部長",
+      "category": "construction",
+      "en": "CONSTRUCTION",
+      "blurb": "いつも一生懸命。学ぶ姿勢を大切にする工務部長。",
+      "bio": "笑顔でパワフルに仕事に向き合う稲塚。知らないことをもっと知りたいという気持ちを持ち、日々学び続けています。",
+      "hobby": "",
+      "w": 640,
+      "h": 479,
+      "source": "https://www.yamatogroup.net/staff_ya/#159106",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 719,
+      "registration": {
+        "photo": [
+          0.254,
+          0.496,
+          0.171
+        ],
+        "art": [
+          0.317,
+          0.388,
+          0.194
+        ]
+      }
+    },
+    {
+      "id": "258809",
+      "name": "尾田",
+      "nickname": "オーディー",
+      "role": "工務部（1課）",
+      "category": "construction",
+      "en": "CONSTRUCTION",
+      "blurb": "意欲を持って、根気強く仕事に向き合います。",
+      "bio": "何事にも意欲を持ち、根気強く取り組む尾田。工務部1課で仕事に励み、休日はバイクやゴルフ、野球観戦を楽しんでいます。",
+      "hobby": "バイク、ゴルフ、野球観戦",
+      "w": 640,
+      "h": 480,
+      "source": "https://www.yamatogroup.net/staff_ya/#258809",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 720,
+      "registration": {
+        "photo": [
+          0.365,
+          0.499,
+          0.173
+        ],
+        "art": [
+          0.359,
+          0.418,
+          0.187
+        ]
+      }
+    },
+    {
+      "id": "126646",
+      "name": "栗野 佑也",
+      "nickname": "くりぼう",
+      "role": "住宅設計部 責任者",
+      "category": "design",
+      "en": "DESIGN",
+      "blurb": "ご家族の暮らし方に合わせた、住まいの設計を。",
+      "bio": "ご家族それぞれの暮らし方に沿ったプランを提案する、住宅設計部の栗野。住む人が笑顔で楽しく過ごせる家を目指しています。",
+      "hobby": "読書",
+      "w": 640,
+      "h": 426,
+      "source": "https://www.yamatogroup.net/staff_ya/#126646",
+      "caption": "写真・紹介内容：旧スタッフページ、支給資料より",
+      "artHeight": 639
+    },
+    {
+      "id": "126651",
+      "name": "河野",
+      "nickname": "せんせい",
+      "role": "開発設計部 部長",
+      "category": "design",
+      "en": "DESIGN",
+      "blurb": "奈良・京都・大阪で積んだ、開発の経験を。",
+      "bio": "奈良・京都・大阪の広い地域で、開発に携わってきた河野。いつも笑顔で、豊富な経験を仕事に生かしています。",
+      "hobby": "バイク",
+      "w": 640,
+      "h": 479,
+      "source": "https://www.yamatogroup.net/staff_ya/#126651",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 719,
+      "registration": {
+        "photo": [
+          0.286,
+          0.55,
+          0.153
+        ],
+        "art": [
+          0.346,
+          0.303,
+          0.2
+        ]
+      }
+    },
+    {
+      "id": "194526",
+      "name": "岩佐 篤志",
+      "nickname": "あっちゃん",
+      "role": "建築設計部",
+      "category": "design",
+      "en": "DESIGN",
+      "blurb": "じっくり観察し、学びを設計の仕事に生かす。",
+      "bio": "冷静な状況判断と、広い視野を持つ岩佐。さまざまなことをじっくり観察して吸収するのが得意で、間取りを考えることやDIYも楽しんでいます。",
+      "hobby": "野球、DIY、間取りを考えること",
+      "w": 640,
+      "h": 479,
+      "source": "https://www.yamatogroup.net/staff_ya/#194526",
+      "caption": "写真・紹介内容：旧スタッフページ、支給資料より",
+      "artHeight": 719,
+      "registration": {
+        "photo": [
+          0.338,
+          0.386,
+          0.173
+        ],
+        "art": [
+          0.369,
+          0.292,
+          0.191
+        ]
+      }
+    },
+    {
+      "id": "170083",
+      "name": "森下",
+      "nickname": "あにき",
+      "role": "本店土木部 部長",
+      "category": "construction",
+      "en": "CONSTRUCTION",
+      "blurb": "解体や造成など、さまざまな現場を管理。",
+      "bio": "解体現場や造成現場、資材置き場などを管理する森下。現場で予期せぬことが起きても、落ち着いて対応することを大切にしています。",
+      "hobby": "ゴルフ、釣り、旅行",
+      "w": 640,
+      "h": 479,
+      "source": "https://www.yamatogroup.net/staff_ya/#170083",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 719,
+      "registration": {
+        "photo": [
+          0.354,
+          0.508,
+          0.109
+        ],
+        "art": [
+          0.379,
+          0.359,
+          0.151
+        ]
+      }
+    },
+    {
+      "id": "171880",
+      "name": "和田",
+      "nickname": "わださん",
+      "role": "総務部",
+      "category": "admin",
+      "en": "ADMINISTRATION",
+      "blurb": "総務の仕事で、やまとの家づくりを支えます。",
+      "bio": "総務部の和田は、考えることが好きで、大学では近現代文学を専攻。休日の楽しみは推し活、好きな食べ物は焼肉です。",
+      "hobby": "推し活",
+      "w": 640,
+      "h": 426,
+      "source": "https://www.yamatogroup.net/staff_ya/#171880",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 639
+    },
+    {
+      "id": "258745",
+      "name": "久我 英一",
+      "nickname": "",
+      "role": "顧問",
+      "category": "leadership",
+      "en": "LEADERSHIP",
+      "blurb": "危機管理の経験で、働く環境づくりを支えます。",
+      "bio": "危機管理や反社会的勢力への対策に関する知識を持つ久我。お客様への対応や、社員が働きやすい環境づくりを支える顧問です。",
+      "hobby": "ゴルフ",
+      "w": 800,
+      "h": 449,
+      "source": "https://www.yamatogroup.net/staff_ya/#258745",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 541,
+      "registration": {
+        "photo": [
+          0.492,
+          0.32,
+          0.16
+        ],
+        "art": [
+          0.496,
+          0.257,
+          0.172
+        ]
+      }
+    },
+    {
+      "id": "92293",
+      "name": "多口",
+      "nickname": "たぐちさん",
+      "role": "監査役員・総務部",
+      "category": "admin",
+      "en": "ADMINISTRATION",
+      "blurb": "会社設立時から、スタッフの仕事を支える存在。",
+      "bio": "会社設立時からやまとを支えてきた多口。スタッフが仕事に取り組めるよう、総務の仕事を通じて日々の業務を支えています。",
+      "hobby": "ゴルフ",
+      "w": 640,
+      "h": 426,
+      "source": "https://www.yamatogroup.net/staff_ya/#92293",
+      "caption": "写真・紹介内容：旧スタッフページより",
+      "artHeight": 640,
+      "registration": {
+        "photo": [
+          0.556,
+          0.339,
+          0.21
+        ],
+        "art": [
+          0.593,
+          0.274,
+          0.218
+        ]
+      }
+    },
+    {
+      "id": "92290",
+      "name": "小林 敬昌",
+      "nickname": "こばやん",
+      "role": "代表取締役社長",
+      "category": "leadership",
+      "en": "LEADERSHIP",
+      "blurb": "やまと不動産 代表取締役社長。",
+      "bio": "代表取締役社長の小林敬昌。趣味は空手とダイビングです。",
+      "hobby": "空手、ダイビング",
+      "w": 640,
+      "h": 427,
+      "source": "https://www.yamatogroup.net/staff_ya/#92290",
+      "caption": "写真・紹介内容：旧スタッフページ、支給資料より",
+      "artHeight": 641,
+      "registration": {
+        "photo": [
+          0.534,
+          0.286,
+          0.193
+        ],
+        "art": [
+          0.55,
+          0.248,
+          0.2
+        ]
+      }
+    },
+    {
+      "id": "92289",
+      "name": "古谷 泰彦",
+      "nickname": "フルチャン",
+      "role": "代表取締役会長",
+      "category": "leadership",
+      "en": "LEADERSHIP",
+      "blurb": "やまと不動産 代表取締役会長。",
+      "bio": "代表取締役会長の古谷泰彦。趣味は海釣りとゴルフです。",
+      "hobby": "海釣り、ゴルフ",
+      "w": 640,
+      "h": 426,
+      "source": "https://www.yamatogroup.net/staff_ya/#92289",
+      "caption": "写真・紹介内容：旧スタッフページ、支給資料より",
+      "artHeight": 639,
+      "registration": {
+        "photo": [
+          0.482,
+          0.299,
+          0.148
+        ],
+        "art": [
+          0.501,
+          0.27,
+          0.16
+        ]
+      }
+    }
+  ]
+}

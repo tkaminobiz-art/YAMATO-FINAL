@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "32b3cfe7d3a1f94e31244290f1986e9a00269c060efd889766b4385f19d2aefa"
+    },
+    {
+      "path": "staff.html",
+      "sha256": "40b3acf3faf5027fb5c8d3d1f55299e1df66844a9ecc853cba1fc2b51fd7aa94"
+    },
+    {
+      "path": "assets/staff/staff.css",
+      "sha256": "1cad0624a200bcee2b28d85c9c578ce6ec2ad586aba785cc180589694378b1ec"
+    },
+    {
+      "path": "assets/staff/staff.js",
+      "sha256": "7dbfad43b78f6098b3e1de5791487c17fd87dbcf422a4419fd869da233e2d434"
+    },
+    {
+      "path": "assets/staff/staff-crops.css",
+      "sha256": "8d973d5512dfaa94ad69ebf27d5bda45abaee1b1885f8dd28321467f0ce40174"
+    },
+    {
+      "path": "scripts/build-staff.mjs",
+      "sha256": "ddd0f2d67c2264c83ff061afc1f7cecb103356366e625cc8686eb9aa964181f9"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/release-staff-20260907/brief.md",
+      "sha256": "41f79b31dabce7ceaa6a8a511f3097f00c493f7a96a48dad88a4c9ed6bfc0a6b"
+    },
+    "copy": {
+      "path": "qa/release-staff-20260907/copy-review.md",
+      "sha256": "2573797506f46a002e344359a9bc5787983be65a6e746129bfc1b5c15a608188"
+    },
+    "assets": {
+      "path": "qa/release-staff-20260907/asset-decisions.md",
+      "sha256": "0d9dbda39e6eba8cfc8588adc89726f2880b59ab88e437775b9fc52a3486d6cc"
+    },
+    "visual": {
+      "path": "qa/release-staff-20260907/visual-review.md",
+      "sha256": "92dfe2cda529181eb62413cc36e30e58190d20039ee1a3798c8fffdb876fde2e"
+    },
+    "interaction": {
+      "path": "qa/release-staff-20260907/interaction-review.md",
+      "sha256": "195805b9f6795ac1985f2b1f8369ef886e1901d624c914adc7aebccb8cc653c4"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/release-staff-20260907/local-chromium-1440-staff.png",
+      "sha256": "efe41efccc0c29b25fdbb5893ae2c0c821d4898e5277cb45eda313496e337779"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/release-staff-20260907/local-chromium-390-staff.png",
+      "sha256": "8587ee72cc1c1129491eb2415e8ffcae14fd38071867cba92150b3f198ba284b"
+    }
+  ]
+}

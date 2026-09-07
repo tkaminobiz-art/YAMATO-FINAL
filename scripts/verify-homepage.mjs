@@ -55,6 +55,13 @@ export function verifyHomepage(html){
 
 const html=readFileSync('index.html','utf8');
 const result=verifyHomepage(html);
+for(const cls of ['header-links','menu__links','footer-links']){
+  const nav=html.match(new RegExp('<(?:nav|div) class="'+cls+'"[^>]*>([\\s\\S]*?)</(?:nav|div)>'))?.[1];
+  assert(nav?.includes('href="staff.html"'),'Canonical staff navigation missing: '+cls);
+}
+const staff=readFileSync('staff.html','utf8');
+assert.equal((staff.match(/<article class="staff-card"/g)||[]).length,18,'Staff release must retain 18 profiles');
+assert(!staff.includes('staff-preview.html')&&!staff.includes('<aside class="preview-note"'),'Staff page must use canonical links without the draft banner');
 // Release integration: verify the canonical pages, not only donor preview routes.
 const integrationAssets=['nara-atlas/atlas.css','nara-atlas/dark.css','nara-atlas/atlas.js','guide-maquette/guide.css','quiet-rails.css','quiet-rails.js','washi-motion.css','washi-motion.js','deep-photos.css','deep-photos.js'];
 for(const asset of integrationAssets)assert(html.includes(`assets/top-renewal/${asset}`),`Missing integrated dependency: ${asset}`);

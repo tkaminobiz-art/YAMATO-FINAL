@@ -6,7 +6,7 @@ import { tmpdir } from 'node:os';
 
 const root = process.cwd();
 const entries = [
-  'index.html', 'kodawari.html', 'works.html', 'v1top/index.html',
+  'index.html', 'kodawari.html', 'works.html', 'staff.html', 'v1top/index.html',
   'index-770-preview.html', 'index-material-preview.html', 'works-yellow-preview.html',
   'kodawari-editorial-preview.html', 'kodawari-redesign-preview.html',
   'index-art-preview.html', 'index-brand-preview.html', 'index-renewal-preview.html',

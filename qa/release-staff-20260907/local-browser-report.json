@@ -1,0 +1,235 @@
+{
+  "base": "http://127.0.0.1:4175",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 320,
+      "overflow": 0,
+      "header": [
+        {
+          "left": 14,
+          "right": 146.609375,
+          "top": 23.25,
+          "bottom": 45.75
+        },
+        {
+          "left": 199,
+          "right": 306,
+          "top": 12.5,
+          "bottom": 56.5
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "overflow": 0,
+      "header": [
+        {
+          "left": 20,
+          "right": 171.09375,
+          "top": 21.75,
+          "bottom": 47.25
+        },
+        {
+          "left": 238,
+          "right": 370,
+          "top": 12.5,
+          "bottom": 56.5
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "overflow": 0,
+      "header": [
+        {
+          "left": 38.390625,
+          "right": 230.4375,
+          "top": 23.75,
+          "bottom": 55.25
+        },
+        {
+          "left": 547.609375,
+          "right": 729.609375,
+          "top": 17.5,
+          "bottom": 61.5
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "overflow": 0,
+      "header": [
+        {
+          "left": 51.1875,
+          "right": 243.234375,
+          "top": 23.75,
+          "bottom": 55.25
+        },
+        {
+          "left": 790.8125,
+          "right": 972.8125,
+          "top": 17.5,
+          "bottom": 61.5
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "overflow": 0,
+      "header": [
+        {
+          "left": 43.515625,
+          "right": 235.5625,
+          "top": 27.75,
+          "bottom": 59.25
+        },
+        {
+          "left": 493.484375,
+          "right": 1022.484375,
+          "top": 31.796875,
+          "bottom": 55.1875
+        },
+        {
+          "left": 1054.484375,
+          "right": 1236.484375,
+          "top": 21.5,
+          "bottom": 65.5
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "overflow": 0,
+      "header": [
+        {
+          "left": 48.953125,
+          "right": 241,
+          "top": 27.75,
+          "bottom": 59.25
+        },
+        {
+          "left": 648.046875,
+          "right": 1177.046875,
+          "top": 31.796875,
+          "bottom": 55.1875
+        },
+        {
+          "left": 1209.046875,
+          "right": 1391.046875,
+          "top": 21.5,
+          "bottom": 65.5
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "overflow": 0,
+      "header": [
+        {
+          "left": 65.265625,
+          "right": 257.3125,
+          "top": 27.75,
+          "bottom": 59.25
+        },
+        {
+          "left": 1111.734375,
+          "right": 1640.734375,
+          "top": 31.796875,
+          "bottom": 55.1875
+        },
+        {
+          "left": 1672.734375,
+          "right": 1854.734375,
+          "top": 21.5,
+          "bottom": 65.5
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "overflow": 0,
+      "header": [
+        {
+          "left": 20,
+          "right": 171.09375,
+          "top": 21.75,
+          "bottom": 47.25
+        },
+        {
+          "left": 238,
+          "right": 370,
+          "top": 12.5,
+          "bottom": 56.5
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "overflow": 0,
+      "header": [
+        {
+          "left": 48.953125,
+          "right": 241,
+          "top": 27.75,
+          "bottom": 59.25
+        },
+        {
+          "left": 648.046875,
+          "right": 1177.046875,
+          "top": 31.796875,
+          "bottom": 55.1875
+        },
+        {
+          "left": 1209.046875,
+          "right": 1391.046875,
+          "top": 21.5,
+          "bottom": 65.5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "interactions": [
+    {
+      "engine": "chromium",
+      "width": 390,
+      "profiles": 18,
+      "portraitKeyboard": 18,
+      "filters": 6,
+      "escapeFocus": 18
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "profiles": 18,
+      "portraitKeyboard": 18,
+      "filters": 6,
+      "escapeFocus": 18
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "profiles": 18,
+      "portraitKeyboard": 18,
+      "filters": 6,
+      "escapeFocus": 18
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "profiles": 18,
+      "portraitKeyboard": 18,
+      "filters": 6,
+      "escapeFocus": 18
+    }
+  ]
+}

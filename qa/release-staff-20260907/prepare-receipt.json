@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "7118d6232fa5583c125c8f8a21e56b0fc20d4ca76324e2061d4454ee57035075"
+    },
+    {
+      "path": "staff-preview.html",
+      "sha256": "a544e431d8bbbd3d3fb4949f8fa04b52d6f886a1b91d8eeb2fd77ec2794fd159"
+    },
+    {
+      "path": "assets/staff/staff.css",
+      "sha256": "1cad0624a200bcee2b28d85c9c578ce6ec2ad586aba785cc180589694378b1ec"
+    },
+    {
+      "path": "assets/staff/staff.js",
+      "sha256": "7dbfad43b78f6098b3e1de5791487c17fd87dbcf422a4419fd869da233e2d434"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/release-staff-20260907/brief.md",
+      "sha256": "41f79b31dabce7ceaa6a8a511f3097f00c493f7a96a48dad88a4c9ed6bfc0a6b"
+    },
+    "copy": {
+      "path": "qa/release-staff-20260907/copy-review.md",
+      "sha256": "2573797506f46a002e344359a9bc5787983be65a6e746129bfc1b5c15a608188"
+    },
+    "assets": {
+      "path": "qa/release-staff-20260907/asset-decisions.md",
+      "sha256": "0d9dbda39e6eba8cfc8588adc89726f2880b59ab88e437775b9fc52a3486d6cc"
+    }
+  },
+  "screenshots": []
+}
