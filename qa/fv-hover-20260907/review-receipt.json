@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "assets/top-renewal/fv-bright/fv-player.js",
+      "sha256": "09ff87d71ba4bf67b29aa67debda5cce1b0b0a65c607fb0900c1aa22bff95c4f"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/fv-hover-20260907/brief.md",
+      "sha256": "ea03584ee870e32877f9c69590aa67be02289637f09f58e7f0e02e4150277d7d"
+    },
+    "copy": {
+      "path": "qa/fv-hover-20260907/copy-review.md",
+      "sha256": "b9cbed14b12b566eb5b36d037c3752c55e83d008de1e0c7ab3c035a6ad22f6fe"
+    },
+    "assets": {
+      "path": "qa/fv-hover-20260907/asset-decisions.md",
+      "sha256": "ca274d479d73b68f0c041766a05e5dacda55d68cc5cf0ddfd91969c2e983e820"
+    },
+    "visual": {
+      "path": "qa/fv-hover-20260907/visual-review.md",
+      "sha256": "2f83cd48a5952b59838352a60e90bf5a8e38acc0eae3fbe863ad138132267940"
+    },
+    "interaction": {
+      "path": "qa/fv-hover-20260907/interaction-review.md",
+      "sha256": "7683375ac311f901e492b1071c0561eca585a93537f9a9353dd537f81a581d63"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/fv-hover-20260907/local-chromium-1440.png",
+      "sha256": "63bbb233fd50fa6f65414be134a0e08a87e308ac2086470c9047bb199fe26b6d"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/fv-hover-20260907/local-chromium-390.png",
+      "sha256": "57643b8cfa4192f8b8ef442e38f6a90155793f06c838cc0bfeb3b3000c760dc0"
+    }
+  ]
+}

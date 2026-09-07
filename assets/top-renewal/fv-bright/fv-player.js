@@ -7,9 +7,9 @@
  const play=document.querySelector('#newHeroPlay'),live=document.querySelector('#newHeroLive'),status=document.querySelector('#heroMediaStatus');
  const reduce=matchMedia('(prefers-reduced-motion: reduce)'),mobile=matchMedia('(max-width:900px)'),query=new URLSearchParams(location.search);
  const noVideo=()=>reduce.matches||navigator.connection?.saveData||query.get('mode')==='still';
- let current=0,auto=!noVideo(),visible=false,hover=false,elapsed=0,last=0,raf=0,request=0,busy=false,failed=false,mediaStarted=false,videoEnding=false,loadingSince=0,observedVideoTime=0;
+ let current=0,auto=!noVideo(),visible=false,elapsed=0,last=0,raf=0,request=0,busy=false,failed=false,mediaStarted=false,videoEnding=false,loadingSince=0,observedVideoTime=0;
  const pending=new Map();
- const runnable=()=>auto&&visible&&!document.hidden&&!hover&&!reduce.matches&&!busy;
+ const runnable=()=>auto&&visible&&!document.hidden&&!reduce.matches&&!busy;
  const prepare=index=>{
   if(pending.has(index))return pending.get(index);
   const img=scenes[index].querySelector('img');img.loading='eager';
@@ -72,9 +72,9 @@
  video.addEventListener('ended',()=>{videoEnding=true;elapsed=0;});
  document.querySelector('#newHeroNext').addEventListener('click',()=>go(current+1));document.querySelector('#newHeroPrev').addEventListener('click',()=>go(current-1));
  chapters.forEach(b=>b.addEventListener('click',()=>go(scenes.findIndex(s=>s.dataset.chapter===b.dataset.chapter))));
- play.addEventListener('click',()=>{if(auto){stop();return;}auto=true;hover=false;updatePlay();if(current===7)go(0,false);else sync();});
+ play.addEventListener('click',()=>{if(auto){stop();return;}auto=true;updatePlay();if(current===7)go(0,false);else sync();});
  root.addEventListener('focusin',e=>{if(e.target!==play)stop();});
- root.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'){hover=true;sync();}});root.addEventListener('pointerleave',()=>{hover=false;sync();});
+ // Hover does not interrupt the hero; deliberate controls and focus/touch still pause it.
  let touch=null;root.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'||e.target.closest('a,button'))return;stop();touch={x:e.clientX,y:e.clientY};},{passive:true});
  root.addEventListener('pointerup',e=>{if(!touch)return;const dx=e.clientX-touch.x,dy=e.clientY-touch.y;touch=null;if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.5)go(current+(dx<0?1:-1));},{passive:true});root.addEventListener('pointercancel',()=>touch=null);
  document.addEventListener('visibilitychange',sync);

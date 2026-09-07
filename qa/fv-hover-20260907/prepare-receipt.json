@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "assets/top-renewal/fv-bright/fv-player.js",
+      "sha256": "3ec14707fd6b1a3c1cedba2aabe88451ca9cc7ec00e98e149e648a910343a5cd"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/fv-hover-20260907/brief.md",
+      "sha256": "ea03584ee870e32877f9c69590aa67be02289637f09f58e7f0e02e4150277d7d"
+    },
+    "copy": {
+      "path": "qa/fv-hover-20260907/copy-review.md",
+      "sha256": "b9cbed14b12b566eb5b36d037c3752c55e83d008de1e0c7ab3c035a6ad22f6fe"
+    },
+    "assets": {
+      "path": "qa/fv-hover-20260907/asset-decisions.md",
+      "sha256": "ca274d479d73b68f0c041766a05e5dacda55d68cc5cf0ddfd91969c2e983e820"
+    }
+  },
+  "screenshots": []
+}

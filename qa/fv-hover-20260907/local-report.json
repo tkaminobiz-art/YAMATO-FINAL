@@ -1,0 +1,79 @@
+{
+  "base": "http://127.0.0.1:4175",
+  "at": "2026-09-07T01:26:45.917Z",
+  "baseline": "4896d61",
+  "checks": [
+    {
+      "engine": "chromium",
+      "test": "baseline-hover-pause-reproduced",
+      "from": 0.539641,
+      "to": 0.539641
+    },
+    {
+      "engine": "chromium",
+      "test": "hover-video-continues",
+      "from": 0.540394,
+      "to": 1.258329
+    },
+    {
+      "engine": "chromium",
+      "test": "hover-video-to-stills-and-next-still",
+      "scene": "04"
+    },
+    {
+      "engine": "chromium",
+      "test": "finite-end-and-explicit-restart-preserved"
+    },
+    {
+      "engine": "chromium",
+      "test": "pause-resume-manual-and-focus-preserved"
+    },
+    {
+      "engine": "chromium",
+      "test": "offscreen-pause-and-return-resume-preserved"
+    },
+    {
+      "engine": "chromium",
+      "test": "mobile-video-touch-controls-and-width-preserved"
+    },
+    {
+      "engine": "chromium",
+      "test": "reduced-motion-no-video-manual-navigation"
+    },
+    {
+      "engine": "webkit",
+      "test": "baseline-hover-pause-reproduced",
+      "from": 0.5606519999863804,
+      "to": 0.5606519999863804
+    },
+    {
+      "engine": "webkit",
+      "test": "hover-video-continues",
+      "from": 0.5312582086427925,
+      "to": 1.2354285836481123
+    },
+    {
+      "engine": "webkit",
+      "test": "hover-video-to-stills-and-next-still",
+      "scene": "04"
+    },
+    {
+      "engine": "webkit",
+      "test": "pause-resume-manual-and-focus-preserved"
+    },
+    {
+      "engine": "webkit",
+      "test": "offscreen-pause-and-return-resume-preserved"
+    },
+    {
+      "engine": "webkit",
+      "test": "mobile-video-touch-controls-and-width-preserved"
+    },
+    {
+      "engine": "webkit",
+      "test": "reduced-motion-no-video-manual-navigation"
+    }
+  ],
+  "errors": [],
+  "protectedMarkupStylesAndMedia": true
+}
