@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "befa3ef75baddc995af6cc7cc79f53f601bcd51aceea548599040a26787cd0c1"
+    },
+    {
+      "path": "assets/top-renewal/fv-bright/fv-bright.css",
+      "sha256": "8a5eb3f467e2fcd4747e0d47010305c6b7a08796323d4b62dc0e2791715c649a"
+    },
+    {
+      "path": "assets/top-renewal/fv-bright/fv-player.js",
+      "sha256": "3ec14707fd6b1a3c1cedba2aabe88451ca9cc7ec00e98e149e648a910343a5cd"
+    },
+    {
+      "path": "scripts/verify-bright-hero.mjs",
+      "sha256": "4e9ec40a020d200a6315814dccb4fdd3d80615d870d4911da21bf0f812578014"
+    },
+    {
+      "path": "scripts/build-checkpoint.mjs",
+      "sha256": "061bf22961001b5c425d631b9e760de4c12567d2674dcfa3277bd8159184c4c1"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/release-fv-bright-20260907/brief.md",
+      "sha256": "ae24aaffda8f050637cfada77d8e4ce27b6d8c411d06c3d8e58cf37834ac7e42"
+    },
+    "copy": {
+      "path": "qa/release-fv-bright-20260907/copy-review.md",
+      "sha256": "8441ccc668e855a54038dae3b0844054da650ed005e3acefe9f1ec184f8a053e"
+    },
+    "assets": {
+      "path": "qa/release-fv-bright-20260907/asset-decisions.md",
+      "sha256": "7105fdc4fdb4815340c20342a91dc745e0a44086c004c84c69840327eb41beaa"
+    },
+    "visual": {
+      "path": "qa/release-fv-bright-20260907/visual-review.md",
+      "sha256": "9d2864f9dd51c705f921f35e1a9fa04dd51442641155aab3f1c0e92c976e76ac"
+    },
+    "interaction": {
+      "path": "qa/release-fv-bright-20260907/interaction-review.md",
+      "sha256": "a194957b55ef5caeb59902f1d446dd2b6d34c7a2620951ef857d8d074a50b6e3"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/release-fv-bright-20260907/local-chromium-1440-scene-0.png",
+      "sha256": "687f2d2e6f2b411b20802ba7ae55aabf4f136603fbe1c968005c34293566d92b"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/release-fv-bright-20260907/local-chromium-390-scene-0.png",
+      "sha256": "7ae0e3cd61c6e65e19da40fcdd9bd8944615ed988fd55bf93667bbf831a5be5e"
+    }
+  ]
+}

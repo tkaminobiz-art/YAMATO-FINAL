@@ -23,9 +23,10 @@
   <script src="assets/top-renewal/nara-atlas/atlas.js?v=20260907-release" defer></script>
   <link rel="stylesheet" href="assets/top-renewal/voice-reference/voice.css?v=20260907">
   <script src="assets/top-renewal/art-direction.js" defer></script>
-  <script src="assets/top-renewal/hero.js" defer></script><script src="assets/top-renewal/top.js" defer></script>
+  <script src="assets/top-renewal/fv-bright/fv-player.js" defer></script><script src="assets/top-renewal/top.js" defer></script>
   <link rel="stylesheet" href="assets/top-renewal/built-yamato-evidence.css?v=20260907">
   <link rel="stylesheet" href="assets/top-renewal/washi-gold/washi-gold.css?v=20260907-1">
+  <link rel="stylesheet" href="assets/top-renewal/fv-bright/fv-bright.css">
 </head>
 <body class="brand-preview art-preview material-preview release-integrated washi-gold-preview" data-quiet-rails data-washi-motion data-top-depth>
 <a class="skip" href="#main">本文へ進む</a>
@@ -39,19 +40,19 @@
   <p class="menu__foot">奈良・京都南部の土地探しから、家づくりまで。<br><a href="tel:0742361123">0742-36-1123</a></p>
 </nav>
 <main id="main">
-<section class="new-hero" id="top" aria-label="やまと不動産 ファーストビュー">
+<section class="new-hero" data-active-chapter="0" id="top" aria-label="やまと不動産 ファーストビュー">
       <h1 class="new-hero__sr-only">やまと不動産の家づくり</h1>
       <div class="new-hero__media" aria-hidden="true">
         <div class="new-hero__scene is-active" data-chapter="0" style="--scene-position: center; --scene-position-sp: center;">
           <picture>
-            <source media="(max-width: 900px)" srcset="assets/fv_research_20260904/yamato-exterior-day-sp-1440.webp">
-            <img src="assets/fv_research_20260904/yamato-exterior-day-pc-2560.webp" width="2560" height="1440" alt="" loading="eager" fetchpriority="high">
+            <source media="(max-width: 900px)" srcset="assets/top-renewal/fv-bright/A-day-sp.webp">
+            <img src="assets/top-renewal/fv-bright/A-gpt-image-2.webp" width="2560" height="1440" alt="" loading="eager" fetchpriority="high">
           </picture>
         </div>
         <div class="new-hero__scene" data-chapter="0" style="--scene-position: center; --scene-position-sp: center;">
           <picture>
-            <source media="(max-width: 900px)" data-srcset="assets/fv_research_20260904/yamato-exterior-dusk-sp-1440.webp">
-            <img data-src="assets/fv_research_20260904/yamato-exterior-dusk-pc-2560.webp" width="2560" height="1440" alt="" loading="lazy">
+            <source media="(max-width: 900px)" data-srcset="assets/top-renewal/fv-bright/A-dusk-sp.webp">
+            <img data-src="assets/top-renewal/fv-bright/A-dusk-pc.webp" width="2560" height="1440" alt="" loading="lazy">
           </picture>
         </div>
         <div class="new-hero__scene" data-chapter="1" style="--scene-position: center; --scene-position-sp: center;">
@@ -91,6 +92,7 @@
           </picture>
         </div>
       </div>
+      <video id="heroVideo" class="hero-video" muted playsinline preload="none" aria-hidden="true" data-src-pc="assets/top-renewal/fv-bright/kling-pc.mp4" data-src-sp="assets/top-renewal/fv-bright/kling-sp.mp4"></video>
       <div class="new-hero__shade" aria-hidden="true"></div>
 
       <div class="new-hero__inner">
@@ -133,8 +135,8 @@
         </button>
       </div>
 
-        <div class="new-hero__controls" role="group" aria-label="ファーストビューの写真操作">
-          <div class="new-hero__count" id="newHeroCount" role="img" aria-label="写真 1 / 8">
+        <div class="new-hero__controls" role="group" aria-label="ファーストビューの場面操作">
+          <div class="new-hero__count" id="newHeroCount" role="img" aria-label="場面 1 / 8">
           <span id="newHeroCurrent">01</span>
           <span class="new-hero__track" aria-hidden="true"><i id="newHeroProgress"></i></span>
           <span>08</span>
@@ -143,14 +145,15 @@
           <svg class="new-hero__icon new-hero__icon--play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.2 13 8l-9 5.8Z" fill="currentColor"/></svg>
           <svg class="new-hero__icon new-hero__icon--pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2h2.7v12H4Zm5.3 0H12v12H9.3Z" fill="currentColor"/></svg>
         </button>
-        <button class="new-hero__control" id="newHeroPrev" type="button" aria-label="前の写真">
+        <button class="new-hero__control" id="newHeroPrev" type="button" aria-label="前の場面">
           <svg class="new-hero__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13 8H3m0 0 4-4M3 8l4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <button class="new-hero__control" id="newHeroNext" type="button" aria-label="次の写真">
+        <button class="new-hero__control" id="newHeroNext" type="button" aria-label="次の場面">
           <svg class="new-hero__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10m0 0-4-4m4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
       </div>
       <p class="new-hero__sr-only" id="newHeroLive" aria-live="polite" aria-atomic="true"></p>
+      <p class="new-hero__sr-only" id="heroMediaStatus" role="status"></p>
     </section>
 <section class="wg-section wg-dark yamato-evidence" id="builtProof" aria-labelledby="builtTitle"><span class="wg-paper" aria-hidden="true"></span><span class="wg-motif wg-swallow wg-built-bird" aria-hidden="true"></span>
  <div class="yamato-evidence__inner">

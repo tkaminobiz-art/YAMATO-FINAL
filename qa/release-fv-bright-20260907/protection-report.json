@@ -1,0 +1,40 @@
+{
+  "baseline": "502da6e",
+  "sameApprovedCopy": true,
+  "sameHeaderMenu": true,
+  "sameAllFollowingSections": true,
+  "sameLaterSixScenes": true,
+  "singlePlayer": true,
+  "files": [
+    {
+      "path": "assets/top-renewal/fv-bright/A-gpt-image-2.webp",
+      "bytes": 409230,
+      "sha256": "793a12cb68db4e2df27b05fffbd85ddc53ff72161af2566a3d7d72ef145a29c9"
+    },
+    {
+      "path": "assets/top-renewal/fv-bright/A-dusk-pc.webp",
+      "bytes": 363810,
+      "sha256": "1cfe8ab6979d0c5d0369e31b9fae0ef420265f0fe052e521fb62e7d2f8201f74"
+    },
+    {
+      "path": "assets/top-renewal/fv-bright/A-day-sp.webp",
+      "bytes": 520032,
+      "sha256": "0b777557d86e5ec0666291c18e05e6272296478371eec0e892b0563da7cd9ca0"
+    },
+    {
+      "path": "assets/top-renewal/fv-bright/A-dusk-sp.webp",
+      "bytes": 504238,
+      "sha256": "d2bba46313f7a6cd45abe8e13ced603a29bfd69136b84c462191dc08529f0d61"
+    },
+    {
+      "path": "assets/top-renewal/fv-bright/kling-pc.mp4",
+      "bytes": 5683570,
+      "sha256": "59cb787b6ab8c319a75e0ed40a2cc87aac99483ea8cd17a6f314b68ae2351f78"
+    },
+    {
+      "path": "assets/top-renewal/fv-bright/kling-sp.mp4",
+      "bytes": 4054757,
+      "sha256": "c85944a2e54b0c83dbc7ebf51b5b36a48feedaa40c70d3d3fd94318b34687390"
+    }
+  ]
+}

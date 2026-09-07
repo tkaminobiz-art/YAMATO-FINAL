@@ -1,0 +1,2117 @@
+{
+  "base": "http://127.0.0.1:4175",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 320,
+      "height": 667,
+      "index": 0,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 320,
+        "h": 603,
+        "right": 320,
+        "bottom": 667
+      },
+      "title": {
+        "x": 17,
+        "y": 354,
+        "w": 286,
+        "h": 72,
+        "right": 303,
+        "bottom": 426
+      },
+      "cta": {
+        "x": 17,
+        "y": 444,
+        "w": 286,
+        "h": 48,
+        "right": 303,
+        "bottom": 492
+      },
+      "chapters": {
+        "x": 18,
+        "y": 521.078125,
+        "w": 284,
+        "h": 69.921875,
+        "right": 302,
+        "bottom": 591
+      },
+      "controls": {
+        "x": 62,
+        "y": 601,
+        "w": 240,
+        "h": 46,
+        "right": 302,
+        "bottom": 647
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-day-sp.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "height": 667,
+      "index": 1,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 320,
+        "h": 603,
+        "right": 320,
+        "bottom": 667
+      },
+      "title": {
+        "x": 17,
+        "y": 354,
+        "w": 286,
+        "h": 72,
+        "right": 303,
+        "bottom": 426
+      },
+      "cta": {
+        "x": 17,
+        "y": 444,
+        "w": 286,
+        "h": 48,
+        "right": 303,
+        "bottom": 492
+      },
+      "chapters": {
+        "x": 18,
+        "y": 521.078125,
+        "w": 284,
+        "h": 69.921875,
+        "right": 302,
+        "bottom": 591
+      },
+      "controls": {
+        "x": 62,
+        "y": 601,
+        "w": 240,
+        "h": 46,
+        "right": 302,
+        "bottom": 647
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-dusk-sp.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "index": 0,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 780,
+        "right": 390,
+        "bottom": 844
+      },
+      "title": {
+        "x": 18,
+        "y": 516.625,
+        "w": 354,
+        "h": 86.375,
+        "right": 372,
+        "bottom": 603
+      },
+      "cta": {
+        "x": 18,
+        "y": 621,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 669
+      },
+      "chapters": {
+        "x": 18,
+        "y": 710,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 768
+      },
+      "controls": {
+        "x": 132,
+        "y": 778,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 824
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-day-sp.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "index": 1,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 780,
+        "right": 390,
+        "bottom": 844
+      },
+      "title": {
+        "x": 18,
+        "y": 516.625,
+        "w": 354,
+        "h": 86.375,
+        "right": 372,
+        "bottom": 603
+      },
+      "cta": {
+        "x": 18,
+        "y": 621,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 669
+      },
+      "chapters": {
+        "x": 18,
+        "y": 710,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 768
+      },
+      "controls": {
+        "x": 132,
+        "y": 778,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 824
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-dusk-sp.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "index": 2,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 780,
+        "right": 390,
+        "bottom": 844
+      },
+      "title": {
+        "x": 18,
+        "y": 436.25,
+        "w": 354,
+        "h": 129.5625,
+        "right": 372,
+        "bottom": 565.8125
+      },
+      "cta": {
+        "x": 18,
+        "y": 621,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 669
+      },
+      "chapters": {
+        "x": 18,
+        "y": 710,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 768
+      },
+      "controls": {
+        "x": 132,
+        "y": 778,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 824
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-land-sp-2k.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "index": 3,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 780,
+        "right": 390,
+        "bottom": 844
+      },
+      "title": {
+        "x": 18,
+        "y": 436.25,
+        "w": 354,
+        "h": 129.5625,
+        "right": 372,
+        "bottom": 565.8125
+      },
+      "cta": {
+        "x": 18,
+        "y": 621,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 669
+      },
+      "chapters": {
+        "x": 18,
+        "y": 710,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 768
+      },
+      "controls": {
+        "x": 132,
+        "y": 778,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 824
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-design-sp-2k.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "index": 4,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 780,
+        "right": 390,
+        "bottom": 844
+      },
+      "title": {
+        "x": 18,
+        "y": 436.25,
+        "w": 354,
+        "h": 129.5625,
+        "right": 372,
+        "bottom": 565.8125
+      },
+      "cta": {
+        "x": 18,
+        "y": 621,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 669
+      },
+      "chapters": {
+        "x": 18,
+        "y": 710,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 768
+      },
+      "controls": {
+        "x": 132,
+        "y": 778,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 824
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-build-sp-2k.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "index": 5,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 780,
+        "right": 390,
+        "bottom": 844
+      },
+      "title": {
+        "x": 18,
+        "y": 479.4375,
+        "w": 354,
+        "h": 86.375,
+        "right": 372,
+        "bottom": 565.8125
+      },
+      "cta": {
+        "x": 18,
+        "y": 621,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 669
+      },
+      "chapters": {
+        "x": 18,
+        "y": 710,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 768
+      },
+      "controls": {
+        "x": 132,
+        "y": 778,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 824
+      },
+      "image": "http://127.0.0.1:4175/assets/std/kitchen_sp_1440.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "index": 6,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 780,
+        "right": 390,
+        "bottom": 844
+      },
+      "title": {
+        "x": 18,
+        "y": 479.4375,
+        "w": 354,
+        "h": 86.375,
+        "right": 372,
+        "bottom": 565.8125
+      },
+      "cta": {
+        "x": 18,
+        "y": 621,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 669
+      },
+      "chapters": {
+        "x": 18,
+        "y": 710,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 768
+      },
+      "controls": {
+        "x": 132,
+        "y": 778,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 824
+      },
+      "image": "http://127.0.0.1:4175/assets/std/bath_sp_1440.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "index": 7,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 780,
+        "right": 390,
+        "bottom": 844
+      },
+      "title": {
+        "x": 18,
+        "y": 479.4375,
+        "w": 354,
+        "h": 86.375,
+        "right": 372,
+        "bottom": 565.8125
+      },
+      "cta": {
+        "x": 18,
+        "y": 621,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 669
+      },
+      "chapters": {
+        "x": 18,
+        "y": 710,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 768
+      },
+      "controls": {
+        "x": 132,
+        "y": 778,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 824
+      },
+      "image": "http://127.0.0.1:4175/assets/std/living_sp_1440.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 900,
+      "index": 0,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 768,
+        "h": 824,
+        "right": 768,
+        "bottom": 900
+      },
+      "title": {
+        "x": 46,
+        "y": 543.46875,
+        "w": 468,
+        "h": 111.53125,
+        "right": 514,
+        "bottom": 655
+      },
+      "cta": {
+        "x": 46,
+        "y": 677,
+        "w": 280,
+        "h": 48,
+        "right": 326,
+        "bottom": 725
+      },
+      "chapters": {
+        "x": 46,
+        "y": 754,
+        "w": 676,
+        "h": 58,
+        "right": 722,
+        "bottom": 812
+      },
+      "controls": {
+        "x": 458,
+        "y": 822,
+        "w": 264,
+        "h": 46,
+        "right": 722,
+        "bottom": 868
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-day-sp.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 900,
+      "index": 1,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 768,
+        "h": 824,
+        "right": 768,
+        "bottom": 900
+      },
+      "title": {
+        "x": 46,
+        "y": 543.46875,
+        "w": 468,
+        "h": 111.53125,
+        "right": 514,
+        "bottom": 655
+      },
+      "cta": {
+        "x": 46,
+        "y": 677,
+        "w": 280,
+        "h": 48,
+        "right": 326,
+        "bottom": 725
+      },
+      "chapters": {
+        "x": 46,
+        "y": 754,
+        "w": 676,
+        "h": 58,
+        "right": 722,
+        "bottom": 812
+      },
+      "controls": {
+        "x": 458,
+        "y": 822,
+        "w": 264,
+        "h": 46,
+        "right": 722,
+        "bottom": 868
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-dusk-sp.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 900,
+      "height": 1100,
+      "index": 0,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 900,
+        "h": 1024,
+        "right": 900,
+        "bottom": 1100
+      },
+      "title": {
+        "x": 46,
+        "y": 743.46875,
+        "w": 468,
+        "h": 111.53125,
+        "right": 514,
+        "bottom": 855
+      },
+      "cta": {
+        "x": 46,
+        "y": 877,
+        "w": 280,
+        "h": 48,
+        "right": 326,
+        "bottom": 925
+      },
+      "chapters": {
+        "x": 46,
+        "y": 954,
+        "w": 808,
+        "h": 58,
+        "right": 854,
+        "bottom": 1012
+      },
+      "controls": {
+        "x": 590,
+        "y": 1022,
+        "w": 264,
+        "h": 46,
+        "right": 854,
+        "bottom": 1068
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-day-sp.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 900,
+      "height": 1100,
+      "index": 1,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 900,
+        "h": 1024,
+        "right": 900,
+        "bottom": 1100
+      },
+      "title": {
+        "x": 46,
+        "y": 743.46875,
+        "w": 468,
+        "h": 111.53125,
+        "right": 514,
+        "bottom": 855
+      },
+      "cta": {
+        "x": 46,
+        "y": 877,
+        "w": 280,
+        "h": 48,
+        "right": 326,
+        "bottom": 925
+      },
+      "chapters": {
+        "x": 46,
+        "y": 954,
+        "w": 808,
+        "h": 58,
+        "right": 854,
+        "bottom": 1012
+      },
+      "controls": {
+        "x": 590,
+        "y": 1022,
+        "w": 264,
+        "h": 46,
+        "right": 854,
+        "bottom": 1068
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-dusk-sp.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "height": 900,
+      "index": 0,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1024,
+        "h": 824,
+        "right": 1024,
+        "bottom": 900
+      },
+      "title": {
+        "x": 61.4375,
+        "y": 571.625,
+        "w": 532.46875,
+        "h": 106.375,
+        "right": 593.90625,
+        "bottom": 678
+      },
+      "cta": {
+        "x": 61.4375,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 291.4375,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 61.4375,
+        "y": 806,
+        "w": 532.46875,
+        "h": 58,
+        "right": 593.90625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 708.8125,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 972.8125,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-gpt-image-2.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "height": 900,
+      "index": 1,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1024,
+        "h": 824,
+        "right": 1024,
+        "bottom": 900
+      },
+      "title": {
+        "x": 61.4375,
+        "y": 571.625,
+        "w": 532.46875,
+        "h": 106.375,
+        "right": 593.90625,
+        "bottom": 678
+      },
+      "cta": {
+        "x": 61.4375,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 291.4375,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 61.4375,
+        "y": 806,
+        "w": 532.46875,
+        "h": 58,
+        "right": 593.90625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 708.8125,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 972.8125,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-dusk-pc.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "index": 0,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 546.96875,
+        "w": 678.59375,
+        "h": 131.03125,
+        "right": 764.984375,
+        "bottom": 678
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-gpt-image-2.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "index": 1,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 546.96875,
+        "w": 678.59375,
+        "h": 131.03125,
+        "right": 764.984375,
+        "bottom": 678
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-dusk-pc.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "index": 2,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 438.859375,
+        "w": 678.59375,
+        "h": 196.546875,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-land-pc-2k.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "index": 3,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 438.859375,
+        "w": 678.59375,
+        "h": 196.546875,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-design-pc-2k.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "index": 4,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 438.859375,
+        "w": 678.59375,
+        "h": 196.546875,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-build-pc-2k.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "index": 5,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 504.375,
+        "w": 678.59375,
+        "h": 131.03125,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/std/kitchen_1920.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "index": 6,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 504.375,
+        "w": 678.59375,
+        "h": 131.03125,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/std/bath_1920.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "index": 7,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 504.375,
+        "w": 678.59375,
+        "h": 131.03125,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/std/living_1920.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "height": 900,
+      "index": 0,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1920,
+        "h": 824,
+        "right": 1920,
+        "bottom": 900
+      },
+      "title": {
+        "x": 92,
+        "y": 546.40625,
+        "w": 681.5,
+        "h": 131.59375,
+        "right": 773.5,
+        "bottom": 678
+      },
+      "cta": {
+        "x": 92,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 322,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 92,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 702,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1580,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1844,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-gpt-image-2.webp"
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "height": 900,
+      "index": 1,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1920,
+        "h": 824,
+        "right": 1920,
+        "bottom": 900
+      },
+      "title": {
+        "x": 92,
+        "y": 546.40625,
+        "w": 681.5,
+        "h": 131.59375,
+        "right": 773.5,
+        "bottom": 678
+      },
+      "cta": {
+        "x": 92,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 322,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 92,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 702,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1580,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1844,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-dusk-pc.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "index": 0,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 779.984375,
+        "right": 390,
+        "bottom": 843.984375
+      },
+      "title": {
+        "x": 18,
+        "y": 516.609375,
+        "w": 354,
+        "h": 86.375,
+        "right": 372,
+        "bottom": 602.984375
+      },
+      "cta": {
+        "x": 18,
+        "y": 620.984375,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 668.984375
+      },
+      "chapters": {
+        "x": 18,
+        "y": 709.984375,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 767.984375
+      },
+      "controls": {
+        "x": 132,
+        "y": 777.984375,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 823.984375
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-day-sp.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "index": 1,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 779.984375,
+        "right": 390,
+        "bottom": 843.984375
+      },
+      "title": {
+        "x": 18,
+        "y": 516.609375,
+        "w": 354,
+        "h": 86.375,
+        "right": 372,
+        "bottom": 602.984375
+      },
+      "cta": {
+        "x": 18,
+        "y": 620.984375,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 668.984375
+      },
+      "chapters": {
+        "x": 18,
+        "y": 709.984375,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 767.984375
+      },
+      "controls": {
+        "x": 132,
+        "y": 777.984375,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 823.984375
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-dusk-sp.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "index": 2,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 779.984375,
+        "right": 390,
+        "bottom": 843.984375
+      },
+      "title": {
+        "x": 18,
+        "y": 436.234375,
+        "w": 354,
+        "h": 129.5625,
+        "right": 372,
+        "bottom": 565.796875
+      },
+      "cta": {
+        "x": 18,
+        "y": 620.984375,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 668.984375
+      },
+      "chapters": {
+        "x": 18,
+        "y": 709.984375,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 767.984375
+      },
+      "controls": {
+        "x": 132,
+        "y": 777.984375,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 823.984375
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-land-sp-2k.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "index": 3,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 779.984375,
+        "right": 390,
+        "bottom": 843.984375
+      },
+      "title": {
+        "x": 18,
+        "y": 436.234375,
+        "w": 354,
+        "h": 129.5625,
+        "right": 372,
+        "bottom": 565.796875
+      },
+      "cta": {
+        "x": 18,
+        "y": 620.984375,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 668.984375
+      },
+      "chapters": {
+        "x": 18,
+        "y": 709.984375,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 767.984375
+      },
+      "controls": {
+        "x": 132,
+        "y": 777.984375,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 823.984375
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-design-sp-2k.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "index": 4,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 779.984375,
+        "right": 390,
+        "bottom": 843.984375
+      },
+      "title": {
+        "x": 18,
+        "y": 436.234375,
+        "w": 354,
+        "h": 129.5625,
+        "right": 372,
+        "bottom": 565.796875
+      },
+      "cta": {
+        "x": 18,
+        "y": 620.984375,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 668.984375
+      },
+      "chapters": {
+        "x": 18,
+        "y": 709.984375,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 767.984375
+      },
+      "controls": {
+        "x": 132,
+        "y": 777.984375,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 823.984375
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-build-sp-2k.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "index": 5,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 779.984375,
+        "right": 390,
+        "bottom": 843.984375
+      },
+      "title": {
+        "x": 18,
+        "y": 479.421875,
+        "w": 354,
+        "h": 86.375,
+        "right": 372,
+        "bottom": 565.796875
+      },
+      "cta": {
+        "x": 18,
+        "y": 620.984375,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 668.984375
+      },
+      "chapters": {
+        "x": 18,
+        "y": 709.984375,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 767.984375
+      },
+      "controls": {
+        "x": 132,
+        "y": 777.984375,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 823.984375
+      },
+      "image": "http://127.0.0.1:4175/assets/std/kitchen_sp_1440.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "index": 6,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 779.984375,
+        "right": 390,
+        "bottom": 843.984375
+      },
+      "title": {
+        "x": 18,
+        "y": 479.421875,
+        "w": 354,
+        "h": 86.375,
+        "right": 372,
+        "bottom": 565.796875
+      },
+      "cta": {
+        "x": 18,
+        "y": 620.984375,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 668.984375
+      },
+      "chapters": {
+        "x": 18,
+        "y": 709.984375,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 767.984375
+      },
+      "controls": {
+        "x": 132,
+        "y": 777.984375,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 823.984375
+      },
+      "image": "http://127.0.0.1:4175/assets/std/bath_sp_1440.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "index": 7,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 64,
+        "w": 390,
+        "h": 779.984375,
+        "right": 390,
+        "bottom": 843.984375
+      },
+      "title": {
+        "x": 18,
+        "y": 479.421875,
+        "w": 354,
+        "h": 86.375,
+        "right": 372,
+        "bottom": 565.796875
+      },
+      "cta": {
+        "x": 18,
+        "y": 620.984375,
+        "w": 354,
+        "h": 48,
+        "right": 372,
+        "bottom": 668.984375
+      },
+      "chapters": {
+        "x": 18,
+        "y": 709.984375,
+        "w": 354,
+        "h": 58,
+        "right": 372,
+        "bottom": 767.984375
+      },
+      "controls": {
+        "x": 132,
+        "y": 777.984375,
+        "w": 240,
+        "h": 46,
+        "right": 372,
+        "bottom": 823.984375
+      },
+      "image": "http://127.0.0.1:4175/assets/std/living_sp_1440.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "index": 0,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 546.96875,
+        "w": 678.59375,
+        "h": 131.03125,
+        "right": 764.984375,
+        "bottom": 678
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-gpt-image-2.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "index": 1,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 546.96875,
+        "w": 678.59375,
+        "h": 131.03125,
+        "right": 764.984375,
+        "bottom": 678
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/A-dusk-pc.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "index": 2,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 438.859375,
+        "w": 678.59375,
+        "h": 196.546875,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-land-pc-2k.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "index": 3,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 438.859375,
+        "w": 678.59375,
+        "h": 196.546875,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-design-pc-2k.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "index": 4,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 438.859375,
+        "w": 678.59375,
+        "h": 196.546875,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/fv_research_20260904/reason-build-pc-2k.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "index": 5,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 504.375,
+        "w": 678.59375,
+        "h": 131.03125,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/std/kitchen_1920.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "index": 6,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 504.375,
+        "w": 678.59375,
+        "h": 131.03125,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/std/bath_1920.webp"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "index": 7,
+      "overflow": 0,
+      "hero": {
+        "x": 0,
+        "y": 76,
+        "w": 1440,
+        "h": 824,
+        "right": 1440,
+        "bottom": 900
+      },
+      "title": {
+        "x": 86.390625,
+        "y": 504.375,
+        "w": 678.59375,
+        "h": 131.03125,
+        "right": 764.984375,
+        "bottom": 635.40625
+      },
+      "cta": {
+        "x": 86.390625,
+        "y": 699,
+        "w": 230,
+        "h": 48,
+        "right": 316.390625,
+        "bottom": 747
+      },
+      "chapters": {
+        "x": 86.390625,
+        "y": 806,
+        "w": 610,
+        "h": 58,
+        "right": 696.390625,
+        "bottom": 864
+      },
+      "controls": {
+        "x": 1104,
+        "y": 818,
+        "w": 264,
+        "h": 46,
+        "right": 1368,
+        "bottom": 864
+      },
+      "image": "http://127.0.0.1:4175/assets/std/living_1920.webp"
+    }
+  ],
+  "errors": [],
+  "motion": [
+    {
+      "engine": "chromium",
+      "width": 390,
+      "src": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/kling-sp.mp4",
+      "muted": true,
+      "inline": true,
+      "ready": 4,
+      "finiteSequence": [
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "pauseResume": true,
+      "offscreenPause": true,
+      "manualDuskResume": true
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "src": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/kling-pc.mp4",
+      "muted": true,
+      "inline": true,
+      "ready": 4,
+      "finiteSequence": [
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "pauseResume": true,
+      "offscreenPause": true,
+      "manualDuskResume": true
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "src": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/kling-sp.mp4",
+      "muted": true,
+      "inline": true,
+      "ready": 4,
+      "finiteSequence": [
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "pauseResume": true,
+      "offscreenPause": true,
+      "manualDuskResume": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "src": "http://127.0.0.1:4175/assets/top-renewal/fv-bright/kling-pc.mp4",
+      "muted": true,
+      "inline": true,
+      "ready": 4,
+      "finiteSequence": [
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "pauseResume": true,
+      "offscreenPause": true,
+      "manualDuskResume": true
+    }
+  ],
+  "fallback": [
+    {
+      "kind": "save-data",
+      "videoRequests": 0,
+      "manualDusk": true
+    },
+    {
+      "kind": "video-error",
+      "videoRequests": 1,
+      "manualDusk": true
+    },
+    {
+      "kind": "play-rejection",
+      "videoRequests": 0,
+      "manualDusk": true
+    }
+  ]
+}

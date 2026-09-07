@@ -1,0 +1,19 @@
+/* Only the first chapter changes its light treatment. Other six scenes retain their approved shade. */
+.new-hero{margin-top:0;min-height:calc(100svh - var(--header-h))}
+.new-hero__inner{min-height:calc(100svh - var(--header-h))}
+.new-hero[data-active-chapter="0"]{background:#b1b1a9}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-3;opacity:0;pointer-events:none}
+.hero-video.is-visible{opacity:1}
+.new-hero[data-active-chapter="0"] .new-hero__shade{background:radial-gradient(ellipse 53% 52% at 13% 78%,rgba(15,24,18,.78),rgba(15,24,18,.53) 34%,rgba(15,24,18,.12) 72%,transparent 100%)}
+.new-hero__chapters{background:rgba(20,27,22,.7)}
+.new-hero__chapter{color:#fff}
+.new-hero__kicker{color:#fff}
+.new-hero__copy{text-shadow:0 1px 12px #0003}
+.new-hero :focus-visible{outline-color:#fff;outline-offset:5px}
+@media(max-width:900px){
+ .new-hero[data-active-chapter="0"] .new-hero__shade{background:linear-gradient(180deg,transparent 0%,transparent 47%,rgba(15,24,18,.55) 54%,rgba(15,24,18,.76) 76%,rgba(15,24,18,.86) 100%)}
+ .new-hero[data-active-chapter="0"] .new-hero__story-stack{min-height:0}
+ .new-hero[data-active-chapter="0"] .new-hero__inner{padding-bottom:175px}
+ .new-hero[data-active-chapter="0"] .new-hero__scene img,.hero-video{object-fit:contain;object-position:center top}
+}
+@media(prefers-reduced-motion:reduce){.new-hero__scene,.new-hero__story,.new-hero__chapter-progress i,.new-hero__track i{transition:none!important}.hero-video{display:none}}
