@@ -58,7 +58,7 @@
       const id=link.dataset.gallery,gallery=data.galleries[id];
       if(!gallery?.images?.length) return;
       event.preventDefault();
-      openPhotos(gallery.images,0,id==='home'?'奈良市の注文住宅':id==='sakyo'?'左京モデルハウス':'三山木モデルハウス',id==='home'?'注文住宅・お引き渡し済み':'モデルハウス',link);
+      openPhotos(gallery.images,0,gallery.heading||gallery.title,gallery.category||(id==='home'?'注文住宅・お引き渡し済み':'モデルハウス'),link);
     });
   });
   prev.addEventListener('click',()=>showPhoto(position-1));

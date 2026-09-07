@@ -80,6 +80,7 @@ dialog form{margin:0}
 
 /* Models: two photographs, no ornamental card boxes. */
 .model-section{padding-block:78px 90px}
+#homes{padding-bottom:0}
 .section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:32px}
 .section-heading h2,.archive-heading h2{font:500 26px/1.6 var(--serif);letter-spacing:.035em}
 .section-heading>p{font-size:14px;color:var(--works-muted)}

@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "works.html",
+      "sha256": "b5492c65699dc615e4a3189cdaacdb47a03be7ca60c1aa92364872ca1945c09b"
+    },
+    {
+      "path": "assets/works/works-yellow.js",
+      "sha256": "c4006ad5ba056807748040b4d75180796b168be92720ebbe8c293ed9073a78e8"
+    },
+    {
+      "path": "assets/works/works-yellow.css",
+      "sha256": "861de2fcd89ab7ed4a67b1974b07a4ae73266e94d7ea8f5b8b8cd9f1f79f2236"
+    },
+    {
+      "path": "assets/works/20260907/saki-5766.webp",
+      "sha256": "f1c83a96ed35c31bd7d643aa6589030ca4f1b7072c5e091dc45086b7f3db8e8d"
+    },
+    {
+      "path": "assets/works/20260907/saki-5766-thumb.webp",
+      "sha256": "431fc565d61d5ca88f987db86f3eea757b003caf206b50031e5ef35d47eef8f9"
+    },
+    {
+      "path": "assets/works/20260907/saki-5769.webp",
+      "sha256": "bf8f02420e6befe3d7ba3d0e008a6e06a0d24b0a40694a939a9ed90a3af2d114"
+    },
+    {
+      "path": "assets/works/20260907/saki-5769-thumb.webp",
+      "sha256": "7cfabaed58b3e1e06f747cb27d4c69739a626e2c681008e766292193c8e120cb"
+    },
+    {
+      "path": "assets/works/20260907/saki-5746.webp",
+      "sha256": "bd38f8de5f530afc9d321cc7823d66e41ab09d71de4529fa6c68589822694cc1"
+    },
+    {
+      "path": "assets/works/20260907/saki-5746-thumb.webp",
+      "sha256": "d91c1e1d7cb77e9092eba85624340f06546f3d03d45192bce79031ae59f1b2b2"
+    },
+    {
+      "path": "assets/works/20260907/saki-5775.webp",
+      "sha256": "cf7cf20f335c3a7637107654134afb5f3f8cec80eaf4fdcb45b15508a29a3861"
+    },
+    {
+      "path": "assets/works/20260907/saki-5775-thumb.webp",
+      "sha256": "fdd02fcb7a808f2e32045ed374dd4241d3504840a1220f4e60412e6fdcdc9207"
+    },
+    {
+      "path": "assets/works/20260907/saki-5787.webp",
+      "sha256": "dff235fb09185d1bb031c3df73df1a4eebae18a1723afd166392189a3cbe1fcb"
+    },
+    {
+      "path": "assets/works/20260907/saki-5787-thumb.webp",
+      "sha256": "0a891a44ba39db5d152cdb73e9f66ec5a0e2737fe7014d7394ae0c4c658386bc"
+    },
+    {
+      "path": "assets/works/20260907/saki-5790.webp",
+      "sha256": "12a0038bf79ab694123fbb5bda47c1b2ab16968e7e17d09657280d69865ac1a2"
+    },
+    {
+      "path": "assets/works/20260907/saki-5790-thumb.webp",
+      "sha256": "7b27a57449e2f9997f42ce451252e1e66b2bb6855f754107baa2fba3976f1510"
+    },
+    {
+      "path": "assets/works/20260907/saki-5745.webp",
+      "sha256": "73ceb88744f54ea5756e6e48bc2c16f8f4973ddb3287521bf3b36a84b9f7aae3"
+    },
+    {
+      "path": "assets/works/20260907/saki-5745-thumb.webp",
+      "sha256": "7e06fda1528140566e31c015b85e9ebf01f1a00c72433f90a2c3b28124519647"
+    },
+    {
+      "path": "assets/works/20260907/saki-5808.webp",
+      "sha256": "6bf10fdefc7a2951c5dc141363ebfeacf59b0955c4fb8d264046e876e9accdd8"
+    },
+    {
+      "path": "assets/works/20260907/saki-5808-thumb.webp",
+      "sha256": "fd9bccd0b9922677aa210defaa74cc19d665f4a3abfac8d7319ca3a352c66999"
+    },
+    {
+      "path": "assets/works/20260907/saki-5764.webp",
+      "sha256": "792954cecc73194848811322d9bdf7e8da53489a6f08debebea070878659a138"
+    },
+    {
+      "path": "assets/works/20260907/saki-5764-thumb.webp",
+      "sha256": "c72b9be02f007dd2fd76dde71de15d83bcf094f89138b5f84de4836590411ab4"
+    },
+    {
+      "path": "assets/works/20260907/saki-5809.webp",
+      "sha256": "2d2e35bdbc0f1e99f3cadb26ae1e63d38ad73f21fb436ad74a188ff0bb68e04c"
+    },
+    {
+      "path": "assets/works/20260907/saki-5809-thumb.webp",
+      "sha256": "a2786c64f9c9dfa1fbd170185a5a352388f80604dcc9274fa8372d822fb4156d"
+    },
+    {
+      "path": "assets/works/20260907/shijo-5908.webp",
+      "sha256": "f4f0254e3f5cd2d8969a5f0c1f70ab7d71a291b3436f18b2ec440958c5777cca"
+    },
+    {
+      "path": "assets/works/20260907/shijo-5908-thumb.webp",
+      "sha256": "25205ed011087029ea9654578fc54bd66546c3df990980406566ad430ea07e89"
+    },
+    {
+      "path": "assets/works/20260907/shijo-5906.webp",
+      "sha256": "928e3bc6db2782e5583e489a2153396eff2fca0feaefdb2347678d4d07ed2f55"
+    },
+    {
+      "path": "assets/works/20260907/shijo-5906-thumb.webp",
+      "sha256": "d8cf16cdacf7fe5958d162f109024bc74d20c9326cdcf9e6a5907402571adbbf"
+    },
+    {
+      "path": "assets/works/20260907/shijo-5823.webp",
+      "sha256": "8a46c34a29eb38a5948ada78f0c70da6844e1879db6f1d59d7564ab48b22e74d"
+    },
+    {
+      "path": "assets/works/20260907/shijo-5823-thumb.webp",
+      "sha256": "96e496b57f4ffddaee485de84e9575780657a886af77425d8f6b2fe4efd8fdac"
+    },
+    {
+      "path": "assets/works/20260907/shijo-5837.webp",
+      "sha256": "548771e3f20a2ebf569e4c6849f4c32a08d34d944257367e3ddc52efa14ff23e"
+    },
+    {
+      "path": "assets/works/20260907/shijo-5837-thumb.webp",
+      "sha256": "bbe1df97691aa73ab69a758d12d48198dbc77293558fae04a5f4fa7d2aef31d6"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/works-expansion-20260907/brief.md",
+      "sha256": "a882ff2070fa1f8ff4d3ef293475c5b9703eb8277b96c7ad3c87f8816ff282a1"
+    },
+    "copy": {
+      "path": "qa/works-expansion-20260907/copy.md",
+      "sha256": "0be3b94d284a1e01e8e837b3de08cc71a0cd5ffa11c23dbb8fd6839b18358aac"
+    },
+    "assets": {
+      "path": "qa/works-expansion-20260907/assets.md",
+      "sha256": "cc7ba608c0755f2b0c63b7c571a93a1e0dbd812b96d5ffb2179868d243a3eda6"
+    },
+    "visual": {
+      "path": "qa/works-expansion-20260907/visual.md",
+      "sha256": "57ad79db6cdc367f5b2ad8a0a418066f9ef734f33fbb1e89e0961d4149896e79"
+    },
+    "interaction": {
+      "path": "qa/works-expansion-20260907/interaction.md",
+      "sha256": "b515101e50a4be6165fd1e002df16b0885c2e291c2b66e0fe0b9dfc88456822a"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 1000,
+      "path": "qa/works-expansion-20260907/local-chromium-1440-new.png",
+      "sha256": "b71ebcd449dfd8552e0229233274e5f94a8c570dfa4e0244bf88665097b674ab"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/works-expansion-20260907/local-webkit-390-new.png",
+      "sha256": "eb57c039ed365674382798dcc3a4a574dd620a20752b73c23fb0cd3822b3a3aa"
+    }
+  ]
+}
