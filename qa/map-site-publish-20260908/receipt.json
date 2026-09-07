@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "vercel.json",
+      "sha256": "7115d3cc6eb43697af6949a6bc4742781183ac0a24b63729cd962fc098679cc9"
+    },
+    {
+      "path": "scripts/package-checkpoint.mjs",
+      "sha256": "6ed164f98e4cd664e9505bcbddbf668f0b264e7d22da253725d596532959c1b1"
+    },
+    {
+      "path": "scripts/package-land-payment.mjs",
+      "sha256": "32136717e08c496f20563fdeb683bacd598385abbbc73ebb1dcd0189ae58e701"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/land-payment-study.html",
+      "sha256": "dc526f7b826e67342f57547c2f3dc2396881b7bcb9e185468f8bc5ad4905fd13"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/top-renewal/mortgage.mjs",
+      "sha256": "8d8362880aab863bd731c9259b5f67a72a29430277bd867cf300c1469fbf0e84"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/api/property-inquiries.mjs",
+      "sha256": "9362d4813fe743b178ba6d66843bad3bee77baad0ec0481ec44bc016887469ac"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/finance.mjs",
+      "sha256": "d3cdff126f40c04b2cd91bc8a58a3390a33a313e23f733aaa4812fcf423bc1e4"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/views/finance.mjs",
+      "sha256": "e881c8e188f616052abec3da0b72944fcd36a86c0194d221a5e5268c5eb72ab1"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/app.mjs",
+      "sha256": "2aa67652210e6f643645950fe59d998ceae50218d8ef6139e1f711250ae3739d"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/catalog.mjs",
+      "sha256": "06ca918519e1bc13c9633e18ff09585e38b5faf9e73c44618df0f06d6d05489c"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/data.mjs",
+      "sha256": "7107c01f30d61f7ffe2e3cfd02411ed0514c365d631253b3d48ecbc755e7c4e9"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/domain.mjs",
+      "sha256": "33d79e72280bf74fcaa6b6e702c16605ae2bb729c9a649f0a66bd2d7b08966fe"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/inquiry-contract.mjs",
+      "sha256": "60cf64e227c9a9b73f44d1c3b09e4d01f468ea6dc7316130c759aed8b1ada3bd"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/map-controller.mjs",
+      "sha256": "4df1e1f24e010304cf9b3cb9fa9b6f9bb8d1a6f0d2510fa3124d3c1593b3ba9b"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/media.mjs",
+      "sha256": "806030d92de1d00ad69a51054d117a673bf04849272fbef079386f085adf344e"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/router.mjs",
+      "sha256": "9db0f77f597c01a3eb7778ffcc65bcad53717e15bf22171aa09dda405c320100"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/state.mjs",
+      "sha256": "19fa5661660bdca5bf10bdbb88f675b7af4245823566d85d669782b47690c4b9"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/style.css",
+      "sha256": "8dda18460b0205b5e41ca6410df171d249a61b35eaada706277321a32e5a89f1"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/suumo-properties.mjs",
+      "sha256": "b068c940a7eae3b4a4fac4b708c5613f4f955a0bc9f89632e8b1bac52e141f88"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/ui.mjs",
+      "sha256": "2652f3f09fe4a3fdc15b3df3b13da2e3cefc33b1974a0f8658a09544e958543d"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/views/search.mjs",
+      "sha256": "eb39d295b85b0894a99ca3ffd07dde911d40c3237b79199f436422b71e9b1bc5"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/views/property.mjs",
+      "sha256": "d82c9249506671f697bc26e5c9e9747100b5e440d6ecb22926b0e2c77d7cd49b"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/views/saved.mjs",
+      "sha256": "466aac648145c9a14bb7a2ce43c994806eb50ce9d0ff8d82ee17a5cff4de9ed8"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/views/estimate.mjs",
+      "sha256": "957b55a62fc09f25e079d61601f0665f53d7b50956230675f5f09a6c4615d34e"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/views/compare.mjs",
+      "sha256": "dfb25e65f28a0cbeba2b1da56a2ee49fe9914db78d031180298f67992d7c4af7"
+    },
+    {
+      "path": "snapshots/land-payment-20260908/assets/land-payment-study/views/inquiry.mjs",
+      "sha256": "4513ad33b6794a3827941b8bc7a1a641d71da32c8c9b82aad530ff3b3bdcf195"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/map-site-publish-20260908/brief.md",
+      "sha256": "38f807f1a966a290751df2f17364ea59a8657915dc29ff70986dd560204e4b4c"
+    },
+    "copy": {
+      "path": "qa/map-site-publish-20260908/copy.md",
+      "sha256": "a26598dbbb05e35c207137ecf67bf05053e2f6e6c89efc0822a8ffdf9d15cbaa"
+    },
+    "assets": {
+      "path": "qa/map-site-publish-20260908/assets.md",
+      "sha256": "5e2643c9a42784dee02884e32111ad6584f3e94e62f0a1fe7152e17408f78c0e"
+    },
+    "visual": {
+      "path": "qa/map-site-publish-20260908/visual.md",
+      "sha256": "0cb0cfd74a319e12ff99ab1e03c744d83360e915c47a83f830a85b12bad7413c"
+    },
+    "interaction": {
+      "path": "qa/map-site-publish-20260908/interaction.md",
+      "sha256": "3d03a08fe25bc92a56d9d8ba0c58cec23173a8fe19ea77785ad30ad6d119ff83"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 844,
+      "path": "qa/map-site-publish-20260908/local-fit-chromium-1440-map.png",
+      "sha256": "c0c728401868d98e2dd5cf6914b48628d9938bdc023b41c299a3c957338fdae4"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/map-site-publish-20260908/local-fit-webkit-390-map.png",
+      "sha256": "206ea4a89bd45257f78572449214747778de0199f5c03bb9b59fc9a655a6f528"
+    }
+  ]
+}

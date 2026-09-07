@@ -9,7 +9,7 @@
 リポジトリ直下で次を実行すると、全ファイルをハッシュ検査して専用の一時ディレクトリに展開します。
 
 ```sh
-node scripts/package-land-payment.mjs
+node scripts/package-land-payment.mjs 20260907
 node --test snapshots/land-payment-20260907/qa/finance-accuracy-20260907/finance.test.mjs snapshots/land-payment-20260907/qa/land-payment-suumo-20260907/domain.test.mjs snapshots/land-payment-20260907/qa/connections-20260905/mortgage.test.mjs
 ```
 

@@ -63,14 +63,10 @@ for (const path of [...files].sort()) {
   copyFileSync(full, resolve(stage, destination));
   manifest.push({ path, destination, bytes: data.length, sha256: createHash('sha256').update(data).digest('hex') });
 }
+// Use the same routing in Git builds and isolated deployment packages.
 const configuration = {
-  version: 2, framework: null, buildCommand: null, outputDirectory: 'public',
-  functions: { 'api/instagram.js': { maxDuration: 30 } },
-  rewrites: [{ source: '/v1top/assets/:path*', destination: '/assets/:path*' }],
-  headers: [{ source: '/(.*)', headers: [
-    { key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' },
-    { key: 'X-Content-Type-Options', value: 'nosniff' },
-  ] }],
+  ...JSON.parse(readFileSync(resolve(root, 'vercel.json'), 'utf8')),
+  buildCommand: null, outputDirectory: 'public',
 };
 writeFileSync(resolve(stage, 'vercel.json'), JSON.stringify(configuration, null, 2));
 writeFileSync(resolve(stage, 'package.json'), JSON.stringify({ name: 'yamato-checkpoint', private: true, engines: { node: '24.x' } }, null, 2));

@@ -1,0 +1,213 @@
+{
+  "base": "https://yamato-land-payment-preview.vercel.app",
+  "verifiedAt": "2026-09-07T23:46:11.520Z",
+  "files": [
+    {
+      "path": "land-payment-study.html",
+      "status": 200,
+      "match": true,
+      "sha256": "dc526f7b826e67342f57547c2f3dc2396881b7bcb9e185468f8bc5ad4905fd13"
+    },
+    {
+      "path": "assets/top-renewal/mortgage.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "8d8362880aab863bd731c9259b5f67a72a29430277bd867cf300c1469fbf0e84"
+    },
+    {
+      "path": "assets/land-payment-study/finance.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "d3cdff126f40c04b2cd91bc8a58a3390a33a313e23f733aaa4812fcf423bc1e4"
+    },
+    {
+      "path": "assets/land-payment-study/views/finance.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "e881c8e188f616052abec3da0b72944fcd36a86c0194d221a5e5268c5eb72ab1"
+    },
+    {
+      "path": "assets/land-payment-study/app.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "2aa67652210e6f643645950fe59d998ceae50218d8ef6139e1f711250ae3739d"
+    },
+    {
+      "path": "assets/land-payment-study/catalog.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "06ca918519e1bc13c9633e18ff09585e38b5faf9e73c44618df0f06d6d05489c"
+    },
+    {
+      "path": "assets/land-payment-study/data.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "7107c01f30d61f7ffe2e3cfd02411ed0514c365d631253b3d48ecbc755e7c4e9"
+    },
+    {
+      "path": "assets/land-payment-study/domain.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "33d79e72280bf74fcaa6b6e702c16605ae2bb729c9a649f0a66bd2d7b08966fe"
+    },
+    {
+      "path": "assets/land-payment-study/inquiry-contract.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "60cf64e227c9a9b73f44d1c3b09e4d01f468ea6dc7316130c759aed8b1ada3bd"
+    },
+    {
+      "path": "assets/land-payment-study/map-controller.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "4df1e1f24e010304cf9b3cb9fa9b6f9bb8d1a6f0d2510fa3124d3c1593b3ba9b"
+    },
+    {
+      "path": "assets/land-payment-study/media.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "806030d92de1d00ad69a51054d117a673bf04849272fbef079386f085adf344e"
+    },
+    {
+      "path": "assets/land-payment-study/router.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "9db0f77f597c01a3eb7778ffcc65bcad53717e15bf22171aa09dda405c320100"
+    },
+    {
+      "path": "assets/land-payment-study/state.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "19fa5661660bdca5bf10bdbb88f675b7af4245823566d85d669782b47690c4b9"
+    },
+    {
+      "path": "assets/land-payment-study/style.css",
+      "status": 200,
+      "match": true,
+      "sha256": "8dda18460b0205b5e41ca6410df171d249a61b35eaada706277321a32e5a89f1"
+    },
+    {
+      "path": "assets/land-payment-study/suumo-properties.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "b068c940a7eae3b4a4fac4b708c5613f4f955a0bc9f89632e8b1bac52e141f88"
+    },
+    {
+      "path": "assets/land-payment-study/ui.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "2652f3f09fe4a3fdc15b3df3b13da2e3cefc33b1974a0f8658a09544e958543d"
+    },
+    {
+      "path": "assets/land-payment-study/views/search.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "eb39d295b85b0894a99ca3ffd07dde911d40c3237b79199f436422b71e9b1bc5"
+    },
+    {
+      "path": "assets/land-payment-study/views/property.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "d82c9249506671f697bc26e5c9e9747100b5e440d6ecb22926b0e2c77d7cd49b"
+    },
+    {
+      "path": "assets/land-payment-study/views/saved.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "466aac648145c9a14bb7a2ce43c994806eb50ce9d0ff8d82ee17a5cff4de9ed8"
+    },
+    {
+      "path": "assets/land-payment-study/views/estimate.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "957b55a62fc09f25e079d61601f0665f53d7b50956230675f5f09a6c4615d34e"
+    },
+    {
+      "path": "assets/land-payment-study/views/compare.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "dfb25e65f28a0cbeba2b1da56a2ee49fe9914db78d031180298f67992d7c4af7"
+    },
+    {
+      "path": "assets/land-payment-study/views/inquiry.mjs",
+      "status": 200,
+      "match": true,
+      "sha256": "4513ad33b6794a3827941b8bc7a1a641d71da32c8c9b82aad530ff3b3bdcf195"
+    }
+  ],
+  "homeMatches": true,
+  "api": {
+    "valid": {
+      "status": 200,
+      "data": {
+        "valid": true,
+        "mode": "validation-only",
+        "stored": false,
+        "sent": false,
+        "candidateIds": [
+          "s77384816"
+        ],
+        "estimates": [
+          {
+            "publicId": "s77384816",
+            "paymentYen": 121382,
+            "feeYen": 628320,
+            "houseId": "hana",
+            "input": {
+              "landMan": 680,
+              "buildingMan": 2680,
+              "cashMan": 0,
+              "years": 35
+            },
+            "finance": {
+              "flatMode": "scenario",
+              "family": "1",
+              "performance": "zeh",
+              "maintenance": "unknown",
+              "region": "unknown",
+              "site": "unknown",
+              "nantoIncrease": 0,
+              "otherCashMan": ""
+            },
+            "periods": [
+              {
+                "fromMonth": 1,
+                "toMonth": 60,
+                "rate": 2.57,
+                "paymentYen": 121382,
+                "openingBalanceYen": 33600000,
+                "closingBalanceYen": 30439307
+              },
+              {
+                "fromMonth": 61,
+                "toMonth": 420,
+                "rate": 3.57,
+                "paymentYen": 137878,
+                "openingBalanceYen": 30439307,
+                "closingBalanceYen": 0
+              }
+            ],
+            "lastPaymentYen": 137735,
+            "assumption": "金利引下げを利用した場合",
+            "totalPaymentYen": 56918857,
+            "knownCashYen": 628320
+          }
+        ]
+      }
+    },
+    "old": {
+      "status": 400,
+      "data": {
+        "error": "相談内容を読み取れませんでした。ページを再読み込みしてください。"
+      }
+    },
+    "unsent": {
+      "status": 503,
+      "data": {
+        "error": "実際の受付は準備中です。相談は送信されていません。",
+        "stored": false,
+        "sent": false
+      }
+    }
+  }
+}

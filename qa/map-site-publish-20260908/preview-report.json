@@ -1,0 +1,47 @@
+{
+  "base": "https://yamato-final-k0yhyqg4e-office-ks-projects.vercel.app",
+  "phase": "preview",
+  "at": "2026-09-07T23:40:48.393Z",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "list": 40,
+      "mapTiles": true,
+      "filterReload": 5,
+      "property": true,
+      "calculation": true,
+      "legacyList": true,
+      "legacyEstimate": true,
+      "legacyMap": true,
+      "overflow": false
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "list": 40,
+      "mapTiles": true,
+      "filterReload": 5,
+      "property": true,
+      "calculation": true,
+      "legacyList": true,
+      "legacyEstimate": true,
+      "legacyMap": true,
+      "overflow": false
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "list": 40,
+      "mapTiles": true,
+      "filterReload": 5,
+      "property": true,
+      "calculation": true,
+      "legacyList": true,
+      "legacyEstimate": true,
+      "legacyMap": true,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

@@ -4,7 +4,9 @@ import {resolve, dirname, join} from 'node:path';
 import {tmpdir} from 'node:os';
 import {createHash} from 'node:crypto';
 
-const root = fileURLToPath(new URL('../snapshots/land-payment-20260907/', import.meta.url));
+const snapshot = process.argv[2] || '20260908';
+if (!/^[0-9]{8}$/.test(snapshot)) throw new Error('Use a snapshot date: YYYYMMDD');
+const root = fileURLToPath(new URL(`../snapshots/land-payment-${snapshot}/`, import.meta.url));
 const manifest = JSON.parse(await readFile(join(root, 'manifest.json'), 'utf8'));
 const stage = await mkdtemp(join(tmpdir(), 'yamato-land-payment-'));
 for (const entry of manifest.files) {
@@ -16,6 +18,12 @@ for (const entry of manifest.files) {
   if (actual !== entry.sha256) throw new Error(`Snapshot changed: ${entry.source}`);
   await mkdir(dirname(target), {recursive:true});
   await writeFile(target, bytes);
+  // The validation API imports these modules from ../assets, outside public/.
+  if (entry.source.startsWith('assets/') && entry.source.endsWith('.mjs')) {
+    const serverModule = resolve(stage, entry.source);
+    await mkdir(dirname(serverModule), {recursive:true});
+    await writeFile(serverModule, bytes);
+  }
 }
 await copyFile(join(stage, 'public/land-payment-study.html'), join(stage, 'public/index.html'));
 await writeFile(join(stage, 'vercel.json'), JSON.stringify({

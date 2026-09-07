@@ -3,10 +3,117 @@
   "framework": null,
   "buildCommand": "node scripts/build-checkpoint.mjs",
   "outputDirectory": "public",
-  "functions": { "api/instagram.js": { "maxDuration": 30 } },
-  "rewrites": [{ "source": "/v1top/assets/:path*", "destination": "/assets/:path*" }],
-  "headers": [{ "source": "/(.*)", "headers": [
-    { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" },
-    { "key": "X-Content-Type-Options", "value": "nosniff" }
-  ] }]
+  "functions": {
+    "api/instagram.js": {
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/v1top/assets/:path*",
+      "destination": "/assets/:path*"
+    },
+    {
+      "source": "/land-payment-study.html",
+      "destination": "https://yamato-land-payment-preview.vercel.app/"
+    },
+    {
+      "source": "/assets/land-payment-study/:path*",
+      "destination": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/:path*"
+    },
+    {
+      "source": "/api/property-inquiries",
+      "destination": "https://yamato-land-payment-preview.vercel.app/api/property-inquiries"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    },
+    {
+      "source": "/land-payment-study.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "x-vercel-enable-rewrite-caching",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "source": "/assets/land-payment-study/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "x-vercel-enable-rewrite-caching",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "source": "/api/property-inquiries",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "x-vercel-enable-rewrite-caching",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/lots-preview.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "view",
+          "value": "estimate"
+        }
+      ],
+      "destination": "/land-payment-study.html#/estimate",
+      "permanent": false
+    },
+    {
+      "source": "/lots-preview.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "view",
+          "value": "list"
+        }
+      ],
+      "destination": "/land-payment-study.html#/search?view=list",
+      "permanent": false
+    },
+    {
+      "source": "/lots-preview.html",
+      "destination": "/land-payment-study.html#/search",
+      "permanent": false
+    },
+    {
+      "source": "/lots.html",
+      "destination": "/land-payment-study.html#/search",
+      "permanent": false
+    }
+  ]
 }
