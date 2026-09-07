@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "897f33bed3d5132ff2f79ddaa1301da36dd9ab106c92d51691fa9737fa85d256"
+    },
+    {
+      "path": "assets/top-renewal/fv-bright/fv-bright.css",
+      "sha256": "179fdaadef366fb9024e4fbc19e380197e626f116cdadf97c76de446ba1909a5"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/hero-promise-20260907/brief.md",
+      "sha256": "28f10aae4d404a5a1b9b0ac0ee13e8d4e547151ed78bb7b9cd5c576edefc1a05"
+    },
+    "copy": {
+      "path": "qa/hero-promise-20260907/copy.md",
+      "sha256": "17b128033a95f07e6e631a6251c3fa5a411eb0284070f7a09e2f8f5faddfc34b"
+    },
+    "assets": {
+      "path": "qa/hero-promise-20260907/assets.md",
+      "sha256": "e28d9f304e9c130980eafd5d1d105abfaacff91e0934baf39bea1a80cf48e54f"
+    },
+    "visual": {
+      "path": "qa/hero-promise-20260907/visual.md",
+      "sha256": "4a13457dcf7231abb6f06505f9834acc08b13dedcc67967ef7ebbb4763ec3ca1"
+    },
+    "interaction": {
+      "path": "qa/hero-promise-20260907/interaction.md",
+      "sha256": "15b5a02d1b3ce7bdc92c1081e0f3f044e4850617902d1649673f8ac7f6a88b78"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/hero-promise-20260907/local-chromium-1440.png",
+      "sha256": "232382ae0df4ba29017864db832afbdeaa6f0ecb76642b2417e1c7a58ec5f069"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/hero-promise-20260907/local-chromium-390.png",
+      "sha256": "b4eebbea0045987a505adeb91940a7fb554a8e37fd5b347d99602b902a869b19"
+    }
+  ]
+}

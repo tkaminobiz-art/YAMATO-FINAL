@@ -1,0 +1,76 @@
+{
+  "url": "http://127.0.0.1:4175/",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "lines": 1,
+      "left": 86.390625,
+      "right": 1129.234375,
+      "fontSize": "45.36px",
+      "overflow": false,
+      "chapterControls": true
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "lines": 1,
+      "left": 61.4375,
+      "right": 802.890625,
+      "fontSize": "32.256px",
+      "overflow": false,
+      "chapterControls": true
+    },
+    {
+      "engine": "chromium",
+      "width": 901,
+      "lines": 1,
+      "left": 54.046875,
+      "right": 706.515625,
+      "fontSize": "28.3815px",
+      "overflow": false,
+      "chapterControls": true
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "lines": 3,
+      "left": 18,
+      "right": 362.859375,
+      "fontSize": "30px",
+      "overflow": false,
+      "chapterControls": true
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "lines": 3,
+      "left": 17,
+      "right": 298.875,
+      "fontSize": "25px",
+      "overflow": false,
+      "chapterControls": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "lines": 1,
+      "left": 86.390625,
+      "right": 1129.203125,
+      "fontSize": "45.360001px",
+      "overflow": false,
+      "chapterControls": true
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "lines": 3,
+      "left": 18,
+      "right": 268.796875,
+      "fontSize": "30px",
+      "overflow": false,
+      "chapterControls": true
+    }
+  ],
+  "errors": []
+}
