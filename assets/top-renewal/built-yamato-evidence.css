@@ -52,10 +52,13 @@
   align-items: baseline;
   gap: 18px;
   white-space: nowrap;
+  color: #e66350;
 }
 
 .yamato-evidence__number strong {
-  color: #fff;
+  display: inline-block;
+  color: inherit;
+  text-align: right;
   font: 400 clamp(100px, 13vw, 186px)/.82 var(--latin);
   font-variant-numeric: lining-nums tabular-nums;
   letter-spacing: -.075em;

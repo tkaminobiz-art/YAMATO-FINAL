@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "a9d99b10c52f4756e3919229f404d58221db7594bf5b73c08c82e7888472a6d1"
+    },
+    {
+      "path": "assets/top-renewal/built-yamato-evidence.css",
+      "sha256": "5d812591022cc2305b7badc0a3ab914944448bcc2d714f1fae7bdfbb1e2ddbeb"
+    },
+    {
+      "path": "assets/top-renewal/built-count.js",
+      "sha256": "a74a74299c143aa37e173636dddc106ee2a64050b15628ff47b2adc1af79882e"
+    },
+    {
+      "path": "scripts/verify-homepage.mjs",
+      "sha256": "c738f2dab4f38a8a7080cf81d69e65ff21a00b35fd5e22eaa1b849848dbcc2e2"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/built-count-20260907/brief.md",
+      "sha256": "bb9faf097ffadf594d01d34f974b4112a14af4432f8175c640193b9aefe90bc8"
+    },
+    "copy": {
+      "path": "qa/built-count-20260907/copy.md",
+      "sha256": "47869031e82399e088aba71b968ea056f1f088ea2835f2ab70f28ee0428da622"
+    },
+    "assets": {
+      "path": "qa/built-count-20260907/assets.md",
+      "sha256": "ab386bb142582e8fb479dc5bda61602a97018ea775141e1ebe9cfc51cef388b8"
+    },
+    "visual": {
+      "path": "qa/built-count-20260907/visual.md",
+      "sha256": "d96674ac32be9aabd715be4870b63efebc5174cee41ba3f8cd2ea60caf492070"
+    },
+    "interaction": {
+      "path": "qa/built-count-20260907/interaction.md",
+      "sha256": "78f662a290feb4ab2587284bbf42bdd3bd8242530c53c57b54da04ad1f618927"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/built-count-20260907/local-chromium-1440.png",
+      "sha256": "e6f1935718f37962729d2805e98b6987c02c404b99ed672aa05cea577b3d4004"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 900,
+      "path": "qa/built-count-20260907/local-chromium-390.png",
+      "sha256": "3b8e0148ec6448e63d42438b75fdca2c326988ac021a26a98b4c174ea9a5fac3"
+    }
+  ]
+}

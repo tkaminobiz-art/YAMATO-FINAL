@@ -1,0 +1,52 @@
+{
+  "url": "http://127.0.0.1:4175/",
+  "views": [
+    {
+      "engine": "chromium",
+      "viewportWidth": 1440,
+      "intermediateSamples": 85,
+      "once": true,
+      "stableWidth": true,
+      "color": "#e66350",
+      "final": 770
+    },
+    {
+      "engine": "chromium",
+      "viewportWidth": 390,
+      "intermediateSamples": 85,
+      "once": true,
+      "stableWidth": true,
+      "color": "#e66350",
+      "final": 770
+    },
+    {
+      "engine": "webkit",
+      "viewportWidth": 1440,
+      "intermediateSamples": 84,
+      "once": true,
+      "stableWidth": true,
+      "color": "#e66350",
+      "final": 770
+    },
+    {
+      "engine": "webkit",
+      "viewportWidth": 390,
+      "intermediateSamples": 80,
+      "once": true,
+      "stableWidth": true,
+      "color": "#e66350",
+      "final": 770
+    }
+  ],
+  "errors": [],
+  "fallbacks": [
+    {
+      "fallback": "reduced",
+      "final": 770
+    },
+    {
+      "fallback": "no-js",
+      "final": 770
+    }
+  ]
+}

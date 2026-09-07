@@ -29,7 +29,7 @@ export function verifyHomepage(html){
   }
   assert(!html.includes('assets/top-renewal/770-editorial.js'),'Retired 770 counter script must not be loaded');
   assert.equal((built.match(/class="yamato-evidence__item"/g)||[]).length,3,'BUILT BY YAMATO must contain three evidence items');
-  assert(built.includes('<strong>770</strong>'),'BUILT BY YAMATO must retain the approved 770 figure');
+  assert(/<strong\b[^>]*>770<\/strong>/.test(built),'BUILT BY YAMATO must retain the approved 770 figure');
   for(const label of ['770棟を支えた、','3つの仕事','初回から設計士が同席','設計内容を現場で確認','引き渡し後まで社内で対応','施工事例を見る'])assert(built.includes(label),`BUILT BY YAMATO is missing: ${label}`);
   for(const src of [...built.matchAll(/\bsrc="([^"]+)"/g)].map(m=>m[1]))assert(existsSync(src),`BUILT BY YAMATO image is missing: ${src}`);
 
