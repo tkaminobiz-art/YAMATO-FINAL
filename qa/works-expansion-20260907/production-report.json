@@ -1,0 +1,104 @@
+{
+  "url": "https://yamato-final.vercel.app/works.html?v=20260907-photos",
+  "phase": "production",
+  "at": "2026-09-07T05:03:34.529Z",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "galleries": {
+        "home": 7,
+        "saki": 10,
+        "shijo": 4,
+        "sakyo": 16,
+        "miyamaki": 5
+      },
+      "overflow": false,
+      "headerOverlap": false,
+      "keyboardWrap": true,
+      "focusReturn": true,
+      "archive": true
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "galleries": {
+        "home": 7,
+        "saki": 10,
+        "shijo": 4,
+        "sakyo": 16,
+        "miyamaki": 5
+      },
+      "overflow": false,
+      "headerOverlap": false,
+      "keyboardWrap": true,
+      "focusReturn": true,
+      "archive": true
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "galleries": {
+        "home": 7,
+        "saki": 10,
+        "shijo": 4,
+        "sakyo": 16,
+        "miyamaki": 5
+      },
+      "overflow": false,
+      "headerOverlap": false,
+      "keyboardWrap": true,
+      "focusReturn": true,
+      "archive": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "galleries": {
+        "home": 7,
+        "saki": 10,
+        "shijo": 4,
+        "sakyo": 16,
+        "miyamaki": 5
+      },
+      "overflow": false,
+      "headerOverlap": false,
+      "keyboardWrap": true,
+      "focusReturn": true,
+      "archive": true
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "galleries": {
+        "home": 7,
+        "saki": 10,
+        "shijo": 4,
+        "sakyo": 16,
+        "miyamaki": 5
+      },
+      "overflow": false,
+      "headerOverlap": false,
+      "keyboardWrap": true,
+      "focusReturn": true,
+      "archive": true
+    }
+  ],
+  "tests": [
+    {
+      "allPhotoResponsesAndHashes": 62
+    },
+    {
+      "imageFailureRetry": true
+    },
+    {
+      "engine": "chromium",
+      "noJSLinks": true
+    },
+    {
+      "engine": "webkit",
+      "noJSLinks": true
+    }
+  ],
+  "errors": []
+}

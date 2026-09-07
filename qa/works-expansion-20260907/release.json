@@ -1,0 +1,17 @@
+{
+  "runtimeCommit": "957ae64",
+  "branch": "main",
+  "pushed": true,
+  "deploymentId": "dpl_HTPFECBAD2VopnzcPoCViZsjFfN7",
+  "deploymentUrl": "https://yamato-final-9el4p46bx-office-ks-projects.vercel.app",
+  "productionUrl": "https://yamato-final.vercel.app/works.html?v=20260907-photos#homes",
+  "readyState": "READY",
+  "verification": "TECHNICAL_PASS",
+  "productionReport": "production-report.json",
+  "photosBefore": 34,
+  "photosAfter": 62,
+  "propertyGalleriesBefore": 3,
+  "propertyGalleriesAfter": 5,
+  "excluded": "People-containing candidates, unidentified property photos and video remain unpublished.",
+  "unrelatedPages": "TOP, FV and staff unchanged. index.html production hash matched local source."
+}

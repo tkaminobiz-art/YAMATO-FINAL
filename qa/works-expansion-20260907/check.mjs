@@ -4,7 +4,7 @@ const url=process.env.WORKS_URL||'http://127.0.0.1:4175/works.html',phase=proces
 const report={url,phase,at:new Date().toISOString(),views:[],tests:[],errors:[]};
 const counts={home:7,saki:10,shijo:4,sakyo:16,miyamaki:5};
 const hash=x=>createHash('sha256').update(x).digest('hex');
-async function screen(p,selector,name){await p.locator(selector).evaluate(e=>scrollTo(0,e.getBoundingClientRect().top+scrollY-94));await p.waitForTimeout(200);await p.screenshot({path:`${dir}/${name}.png`,scale:'css'});}
+async function screen(p,selector,name){await p.locator(selector).evaluate(e=>scrollTo(0,e.getBoundingClientRect().top+scrollY-94));await p.waitForFunction(()=>[...document.images].filter(i=>{const r=i.getBoundingClientRect();return r.top<innerHeight&&r.bottom>0;}).every(i=>i.complete&&i.naturalWidth>0));await p.waitForTimeout(200);await p.screenshot({path:`${dir}/${name}.png`,scale:'css'});}
 async function loaded(p){await p.waitForFunction(()=>{const i=document.querySelector('.viewer-image');return !i.hidden&&i.complete&&i.naturalWidth>0;});}
 for(const [engine,type,widths]of [['chromium',chromium,[1440,390,320]],['webkit',webkit,[1440,390]]]){
  const browser=await type.launch();
