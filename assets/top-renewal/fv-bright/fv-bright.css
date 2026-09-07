@@ -10,6 +10,8 @@
 .new-hero__kicker{color:#fff}
 .new-hero__copy{text-shadow:0 1px 12px #0003}
 .new-hero :focus-visible{outline-color:#fff;outline-offset:5px}
+.new-hero .new-hero__promise{position:relative;isolation:isolate;font-family:var(--sans,"Noto Sans JP",sans-serif);font-weight:500;font-style:normal;letter-spacing:.02em;line-height:1.5;color:#fff;text-shadow:0 2px 4px rgba(0,0,0,.45);font-synthesis:none}
+.new-hero__promise::before{content:"";position:absolute;inset:-.5em -.6em;z-index:-1;background:rgba(7,13,17,.72);filter:blur(20px);pointer-events:none}
 @media(min-width:901px){
  .new-hero .new-hero__promise{width:max-content;max-width:none;white-space:nowrap;font-size:clamp(28px,3.15vw,46px)}
  .new-hero__promise-break{display:none}

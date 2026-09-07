@@ -1,0 +1,97 @@
+{
+  "url": "http://127.0.0.1:4175/",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "lines": 1,
+      "left": 86.390625,
+      "right": 1100.65625,
+      "family": "\"Noto Sans JP\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+      "weight": "500",
+      "tracking": "0.9072px",
+      "scrim": "rgba(7, 13, 17, 0.72)",
+      "overflow": false,
+      "sceneSwitch": true
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "lines": 1,
+      "left": 61.4375,
+      "right": 782.5625,
+      "family": "\"Noto Sans JP\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+      "weight": "500",
+      "tracking": "0.64512px",
+      "scrim": "rgba(7, 13, 17, 0.72)",
+      "overflow": false,
+      "sceneSwitch": true
+    },
+    {
+      "engine": "chromium",
+      "width": 901,
+      "lines": 1,
+      "left": 54.046875,
+      "right": 688.640625,
+      "family": "\"Noto Sans JP\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+      "weight": "500",
+      "tracking": "0.56763px",
+      "scrim": "rgba(7, 13, 17, 0.72)",
+      "overflow": false,
+      "sceneSwitch": true
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "lines": 3,
+      "left": 18,
+      "right": 353.109375,
+      "family": "\"Noto Sans JP\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+      "weight": "500",
+      "tracking": "0.6px",
+      "scrim": "rgba(7, 13, 17, 0.72)",
+      "overflow": false,
+      "sceneSwitch": true
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "lines": 3,
+      "left": 17,
+      "right": 296.25,
+      "family": "\"Noto Sans JP\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+      "weight": "500",
+      "tracking": "0.5px",
+      "scrim": "rgba(7, 13, 17, 0.72)",
+      "overflow": false,
+      "sceneSwitch": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "lines": 1,
+      "left": 86.390625,
+      "right": 1101.390625,
+      "family": "Noto Sans JP, Hiragino Kaku Gothic ProN, sans-serif",
+      "weight": "500",
+      "tracking": "0.9072px",
+      "scrim": "rgba(7, 13, 17, 0.72)",
+      "overflow": false,
+      "sceneSwitch": true
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "lines": 3,
+      "left": 18,
+      "right": 262.796875,
+      "family": "Noto Sans JP, Hiragino Kaku Gothic ProN, sans-serif",
+      "weight": "500",
+      "tracking": "0.6px",
+      "scrim": "rgba(7, 13, 17, 0.72)",
+      "overflow": false,
+      "sceneSwitch": true
+    }
+  ],
+  "errors": []
+}

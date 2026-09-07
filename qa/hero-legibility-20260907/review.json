@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "b3e3f34a034a3c6be3f194321dbe0050ccb135e09982f5c4560b859918f419d7"
+    },
+    {
+      "path": "assets/top-renewal/fv-bright/fv-bright.css",
+      "sha256": "28f0b832e69399505a6f396c7f131395300ff9a462b914402996cac6015af444"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/hero-legibility-20260907/brief.md",
+      "sha256": "2a279b0edee7276215e73c89777ba6af7731d9d66e1259c3ed4c975dd85296d9"
+    },
+    "copy": {
+      "path": "qa/hero-legibility-20260907/copy.md",
+      "sha256": "d8fabf334ec7314d798574b2f7e20dd8dee4c23986742aaeebcd9cbb0dc0da68"
+    },
+    "assets": {
+      "path": "qa/hero-legibility-20260907/assets.md",
+      "sha256": "a17fed3c7e5f3277db5a63862d54b74e8d3f62cc17b9376621e437cc1fc42c00"
+    },
+    "visual": {
+      "path": "qa/hero-legibility-20260907/visual.md",
+      "sha256": "d02155abaaf3fec300732c90542194ae2f4bacc90665ea6486463f9dc4eb65da"
+    },
+    "interaction": {
+      "path": "qa/hero-legibility-20260907/interaction.md",
+      "sha256": "9a534dfcabee05cd15e62dca516c2c5babc5f4c1cf2b71f6161b72526ad73c80"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/hero-legibility-20260907/local-chromium-1440.png",
+      "sha256": "74981c59889512f1d95c8fb21d6ce655d299268756ade82dd69d2627db204e68"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/hero-legibility-20260907/local-chromium-390.png",
+      "sha256": "acd3a8f7db8112f7d908b71326459627d74705030bcdcc3e06cde9c662281f61"
+    }
+  ]
+}
