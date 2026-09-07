@@ -1,0 +1,104 @@
+{
+  "url": "http://127.0.0.1:4198/works.html",
+  "phase": "local",
+  "at": "2026-09-07T23:15:52.771Z",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "galleries": {
+        "home": 6,
+        "saki": 10,
+        "shijo": 4,
+        "sakyo": 20,
+        "miyamaki": 13
+      },
+      "overflow": false,
+      "headerOverlap": false,
+      "keyboardWrap": true,
+      "focusReturn": true,
+      "archive": true
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "galleries": {
+        "home": 6,
+        "saki": 10,
+        "shijo": 4,
+        "sakyo": 20,
+        "miyamaki": 13
+      },
+      "overflow": false,
+      "headerOverlap": false,
+      "keyboardWrap": true,
+      "focusReturn": true,
+      "archive": true
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "galleries": {
+        "home": 6,
+        "saki": 10,
+        "shijo": 4,
+        "sakyo": 20,
+        "miyamaki": 13
+      },
+      "overflow": false,
+      "headerOverlap": false,
+      "keyboardWrap": true,
+      "focusReturn": true,
+      "archive": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "galleries": {
+        "home": 6,
+        "saki": 10,
+        "shijo": 4,
+        "sakyo": 20,
+        "miyamaki": 13
+      },
+      "overflow": false,
+      "headerOverlap": false,
+      "keyboardWrap": true,
+      "focusReturn": true,
+      "archive": true
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "galleries": {
+        "home": 6,
+        "saki": 10,
+        "shijo": 4,
+        "sakyo": 20,
+        "miyamaki": 13
+      },
+      "overflow": false,
+      "headerOverlap": false,
+      "keyboardWrap": true,
+      "focusReturn": true,
+      "archive": true
+    }
+  ],
+  "tests": [
+    {
+      "allPhotoResponsesAndHashes": 73
+    },
+    {
+      "imageFailureRetry": true
+    },
+    {
+      "engine": "chromium",
+      "noJSLinks": true
+    },
+    {
+      "engine": "webkit",
+      "noJSLinks": true
+    }
+  ],
+  "errors": []
+}

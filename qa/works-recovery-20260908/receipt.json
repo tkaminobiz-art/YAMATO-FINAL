@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "works.html",
+      "sha256": "8ca6aa586f891be65d4d682a2d042a5f8fe9016926908f8482e8f8e14da3b523"
+    },
+    {
+      "path": "assets/works/20260908/miyamaki-kitchen.jpg",
+      "sha256": "5af5119fcdb2449f9df75bccdb12900647fa5b7be4b41d5c425fbd1a5a3114b1"
+    },
+    {
+      "path": "assets/works/20260908/miyamaki-ldk.jpg",
+      "sha256": "7d0b44ec70128418c784ad1d68dd265ba9898e66fa67187bf0be9fad55aab210"
+    },
+    {
+      "path": "assets/works/20260908/miyamaki-bedroom.jpg",
+      "sha256": "9631f36c75ed56d1107eb680e9ac3c2219ae154f529363ce2b89c86963b3f518"
+    },
+    {
+      "path": "assets/works/20260908/miyamaki-closet.jpg",
+      "sha256": "f262bc1132a5d9a4b24484a89eff3497c850b2d5aaed0c6d54d128333e5c8a97"
+    },
+    {
+      "path": "assets/works/20260908/miyamaki-bath.jpg",
+      "sha256": "d3ef6ff8ef3f7175dbe52a660cedbffe0d717ef3795eaf1fdaf7b42b56b71f83"
+    },
+    {
+      "path": "assets/works/20260908/miyamaki-wash.jpg",
+      "sha256": "b2bce2f897b09d48a3e28c236f41c9a8d3f34d078a25b1e4017a37691a2ac1ba"
+    },
+    {
+      "path": "assets/works/20260908/miyamaki-kids.jpg",
+      "sha256": "9840981dd1370b3957f26c33e522683d1c3d04cab16af7742c7dd6d8951fa20e"
+    },
+    {
+      "path": "assets/works/20260908/miyamaki-hall.jpg",
+      "sha256": "2334f41d11ada061fae0a4f06251cdbb495ae3a806ef2984cd92c472e221c096"
+    },
+    {
+      "path": "assets/works/20260908/sakyo-pantry.jpg",
+      "sha256": "4298a1636efae4844e6052611390a63db114fe0af3ae9ec213854f082b308980"
+    },
+    {
+      "path": "assets/works/20260908/home-exterior.jpg",
+      "sha256": "95f6c5716b7b6cd09975ee8ff4dfe5a04689631198f3cfca832eee4f8b6f7285"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/works-recovery-20260908/brief.md",
+      "sha256": "ee0c8789c0da8fcf243c5feefa0b243e016eed048c7153363d9de4c7a425b9bb"
+    },
+    "copy": {
+      "path": "qa/works-recovery-20260908/copy.md",
+      "sha256": "b2ad3549fff7a014c35f663864eb41ec074a4b246010e854bcae54d17f172844"
+    },
+    "assets": {
+      "path": "qa/works-recovery-20260908/assets.md",
+      "sha256": "43f245a23fe9117168ef978c95fcd6005f175c7a2f5e5d1a4811c1a09d5ff0b1"
+    },
+    "visual": {
+      "path": "qa/works-recovery-20260908/visual.md",
+      "sha256": "abbd642bc5138182b2d670920d736a67d0f6a8fc70d72b8c79c20368091a33a6"
+    },
+    "interaction": {
+      "path": "qa/works-recovery-20260908/interaction.md",
+      "sha256": "2faf3141b70f56232695b0d9167cd42948d3b8109c6252fbe51c2f01b5f4559c"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 1000,
+      "path": "qa/works-recovery-20260908/local-chromium-1440-home-changed.png",
+      "sha256": "6f6aa47b3dcbb6417e3ca9a89cf91ca3781ebaa906fea04e44c6c98e91f3aee4"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/works-recovery-20260908/local-webkit-390-home-changed.png",
+      "sha256": "287162ca145aa7c04be0e6dcca44a31b2639b1b66674267bb6da30861527603c"
+    }
+  ]
+}

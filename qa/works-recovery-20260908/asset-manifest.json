@@ -1,0 +1,52 @@
+[
+  {
+    "path": "assets/works/20260908/miyamaki-kitchen.jpg",
+    "sourceReview": "candidate-2.jpg",
+    "sha256": "5af5119fcdb2449f9df75bccdb12900647fa5b7be4b41d5c425fbd1a5a3114b1"
+  },
+  {
+    "path": "assets/works/20260908/miyamaki-ldk.jpg",
+    "sourceReview": "candidate-9.jpg",
+    "sha256": "7d0b44ec70128418c784ad1d68dd265ba9898e66fa67187bf0be9fad55aab210"
+  },
+  {
+    "path": "assets/works/20260908/miyamaki-bedroom.jpg",
+    "sourceReview": "candidate-7.jpg",
+    "sha256": "9631f36c75ed56d1107eb680e9ac3c2219ae154f529363ce2b89c86963b3f518"
+  },
+  {
+    "path": "assets/works/20260908/miyamaki-closet.jpg",
+    "sourceReview": "candidate-6.jpg",
+    "sha256": "f262bc1132a5d9a4b24484a89eff3497c850b2d5aaed0c6d54d128333e5c8a97"
+  },
+  {
+    "path": "assets/works/20260908/miyamaki-bath.jpg",
+    "sourceReview": "candidate-11.jpg",
+    "sha256": "d3ef6ff8ef3f7175dbe52a660cedbffe0d717ef3795eaf1fdaf7b42b56b71f83"
+  },
+  {
+    "path": "assets/works/20260908/miyamaki-wash.jpg",
+    "sourceReview": "candidate-12.jpg",
+    "sha256": "b2bce2f897b09d48a3e28c236f41c9a8d3f34d078a25b1e4017a37691a2ac1ba"
+  },
+  {
+    "path": "assets/works/20260908/miyamaki-kids.jpg",
+    "sourceReview": "candidate-16.jpg",
+    "sha256": "9840981dd1370b3957f26c33e522683d1c3d04cab16af7742c7dd6d8951fa20e"
+  },
+  {
+    "path": "assets/works/20260908/miyamaki-hall.jpg",
+    "sourceReview": "candidate-18.jpg",
+    "sha256": "2334f41d11ada061fae0a4f06251cdbb495ae3a806ef2984cd92c472e221c096"
+  },
+  {
+    "path": "assets/works/20260908/sakyo-pantry.jpg",
+    "sourceReview": "candidate-174.jpg",
+    "sha256": "4298a1636efae4844e6052611390a63db114fe0af3ae9ec213854f082b308980"
+  },
+  {
+    "path": "assets/works/20260908/home-exterior.jpg",
+    "sourceReview": "original-exterior-correct.jpg",
+    "sha256": "95f6c5716b7b6cd09975ee8ff4dfe5a04689631198f3cfca832eee4f8b6f7285"
+  }
+]

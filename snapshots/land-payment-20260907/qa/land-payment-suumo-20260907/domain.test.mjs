@@ -1,0 +1,23 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {getEstimate,selectProperties} from '../../assets/land-payment-study/domain.mjs';
+import {properties} from '../../assets/land-payment-study/data.mjs';
+const input={landMan:1780,buildingMan:2480,cashMan:0,years:35};
+const estimate=(v={},id='nanto',date='2026-09-07')=>getEstimate({...input,...v},id,date);
+test('annuity agrees with independent closed-form calculation within one yen',()=>{for(const id of ['nanto','flat-a','flat-b']){const e=estimate({},id),r=e.rate/1200,n=420,independent=e.principalYen*r/(1-(1+r)**-n);assert.ok(Math.abs(e.paymentYen-independent)<1);}});
+test('known 4260万円 example and fee arithmetic',()=>{assert.equal(estimate().paymentYen,117788);assert.equal(estimate().feeYen,937200);assert.equal(estimate({},'flat-a').feeYen,796620);assert.equal(estimate({},'flat-b').feeYen,55000);});
+test('90 percent boundary uses integer comparison',()=>{assert.equal(estimate({cashMan:426},'flat-a').rate,3.46);assert.equal(estimate({cashMan:425},'flat-a').rate,3.57);assert.equal(estimate({cashMan:426},'flat-b').rate,3.66);});
+test('20 vs 21 year bracket and above 90 percent',()=>{assert.equal(estimate({years:20},'flat-a').rate,3.25);assert.equal(estimate({years:21},'flat-a').rate,3.57);assert.equal(estimate({years:20,cashMan:426},'flat-a').rate,3.14);});
+test('flat term invalid does not mutate inputs',()=>{const v={...input,years:50};assert.throws(()=>getEstimate(v,'flat-a','2026-09-07'),/15〜35年/);assert.equal(v.years,50);assert.ok(estimate({years:50}).paymentYen>0);});
+test('expired and not-yet-effective rates fail closed',()=>{for(const d of ['2026-08-31','2026-10-01'])assert.throws(()=>estimate({},'nanto',d),/適用月/);});
+test('cash exceeds cost is not treated as zero loan',()=>assert.throws(()=>estimate({cashMan:5000}),/上回/));
+test('zero borrowing has zero payments and fees',()=>{const e=estimate({cashMan:4260});assert.equal(e.principalYen,0);assert.equal(e.paymentYen,0);assert.equal(e.feeYen,0);});
+test('blank, infinite, negative, unknown product inputs rejected',()=>{assert.throws(()=>estimate({landMan:NaN}));assert.throws(()=>estimate({cashMan:Infinity}));assert.throws(()=>estimate({landMan:-1}));assert.throws(()=>estimate({},'unknown'));});
+test('loan amount unit and limits checked per actual product',()=>{assert.throws(()=>estimate({cashMan:1}),/10万円単位/);assert.throws(()=>estimate({landMan:10000,buildingMan:10000},'flat-a'),/12000万円/);});
+test('minimum flat percentage fee enforced',()=>assert.equal(estimate({landMan:0,buildingMan:200,cashMan:0},'flat-a').feeYen,110000));
+
+test('SUUMO 40 IDs and 503 source amenities preserved',()=>{assert.equal(properties.length,40);assert.equal(new Set(properties.map(p=>p.id)).size,40);assert.equal(properties.reduce((s,p)=>s+p.amenitySourceCount,0),503);});
+test('city filters include only requested cities',()=>{const found=selectProperties(properties,{regions:['生駒市','天理市']});assert.ok(found.length>1);assert.ok(found.every(p=>['生駒市','天理市'].includes(p.city)));});
+test('area minimum matches listed upper endpoint and not nonexistent single plot',()=>{const p=properties.find(p=>p.id==='s20586171');assert.ok(selectProperties([p],{area:250}).length===1);assert.ok(selectProperties([p],{area:300}).length===0);});
+test('bus stop two minute walk never becomes station two minutes',()=>{const p=properties.find(p=>p.id==='s21270706');assert.equal(p.walkMin,27);assert.equal(selectProperties([p],{walk:10}).length,0);assert.equal(p.transport[0].busStopWalkMin,2);});
+test('range sorting, filter AND, unknown values last and source untouched',()=>{const ids=properties.map(p=>p.id);assert.equal(selectProperties(properties,{},'area')[0].id,'s21622737');assert.equal(selectProperties(properties,{regions:['奈良市'],price:1000,area:100}).length,0);const list=[{id:'a',sourceUpdatedAt:null},{id:'b',sourceUpdatedAt:'2026-08-01'},{id:'c',sourceUpdatedAt:'2026-09-01'}];assert.deepEqual(selectProperties(list,{},'updated').map(p=>p.id),['c','b','a']);assert.deepEqual(properties.map(p=>p.id),ids);});
+test('all 40 indicative prices calculate for all products with explicit 10-man budget adjustment when needed',()=>{for(const p of properties){const landMan=Math.ceil(p.priceMan/10)*10;for(const id of ['nanto','flat-a','flat-b'])assert.ok(estimate({landMan},id).paymentYen>0);}});
