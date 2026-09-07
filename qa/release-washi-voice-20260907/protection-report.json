@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-07T00:36:49.402Z",
+  "baseline": "f425a17",
+  "unchangedHeroSha256": "89c7988d74cc6d406cbc724ecce8594ddbbb4ddbf0dea27d4804337f257f74f5",
+  "preserved": [
+    {
+      "path": "v1top/index.html",
+      "sha256": "0405e784e21c7452871caec81a5c1dc0cddec2fd449b890db4d3c04aba119b42"
+    },
+    {
+      "path": "works.html",
+      "sha256": "9a613a01e7b356a03a75633ecb0d6e0e044cb3ac0a904db94751db97e659ea80"
+    },
+    {
+      "path": "kodawari.html",
+      "sha256": "7b07ed3f567efa0becc860ae9e918909a579edc8521ef269ca139eedb8f5561e"
+    },
+    {
+      "path": "voice.html",
+      "sha256": "f7659e5a0545427b391edc457759ae017d9263865ba5b39d8d907c961de8974a"
+    },
+    {
+      "path": "data/voices.json",
+      "sha256": "7f843493e8cff274e6737a629dfdb96b7081e08deea6871152b9bd07927f9870"
+    },
+    {
+      "path": "assets/top-renewal/hero.js",
+      "sha256": "dc07631a2859063d96755921e399fafc85b3eece9b1f21c368099ee7a418d64e"
+    },
+    {
+      "path": "assets/fv_research_20260904/approved-hero.css",
+      "sha256": "c504d1db4585268b8cce8da3f791a821085efbeb42a26eca24f79a166e385291"
+    },
+    {
+      "path": "assets/top-renewal/nara-atlas/atlas.js",
+      "sha256": "de593d2db5dbeb6c0ac046b6e4addfd04fe35a3dbc83f25834ed4aed19028ae1"
+    },
+    {
+      "path": "assets/top-renewal/guide-maquette/guide.css",
+      "sha256": "db23fc427cd22d3b3f17e565d1f69996a5c05e7c5795eca8419504e777d2e371"
+    },
+    {
+      "path": "api/instagram.js",
+      "sha256": "09eac89bab779b60c2a9c718f02e817a38ef25b40c7433e2860ba09dc471859a"
+    },
+    {
+      "path": "lib/instagram.cjs",
+      "sha256": "088ee910ecacedcd025536734dac5a25471fcd72ea3176daba98b7a325132111"
+    }
+  ],
+  "voiceDonorMatched": true,
+  "excludedRuntimeAssets": true,
+  "runtimeFiles": 602
+}

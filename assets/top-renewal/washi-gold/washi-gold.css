@@ -1,0 +1,148 @@
+/* Catalogue-derived background system. Explicit page opt-in.
+   Foreground copy, photographs, navigation and existing motion are unchanged. */
+.washi-gold-preview {
+  --wg-cotton: url('../770-editorial/cotton-paper-960.webp');
+  --wg-swallow: url('../770-editorial/catalog-swallow-original.svg');
+  --wg-peony: url('peony-mask.webp');
+  --wg-gold: #b29660;
+}
+.washi-gold-preview .wg-section {
+  position: relative;
+  isolation: isolate;
+  background-image: none;
+  box-shadow: inset 0 2px 0 #fff5, inset 0 -2px 0 #50422a12;
+}
+.wg-paper {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: var(--wg-cotton) 0 0 / 680px 680px repeat;
+  mix-blend-mode: multiply;
+  filter: grayscale(1) brightness(.78) contrast(1.7) brightness(1.09);
+  opacity: .32;
+}
+.wg-paper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 17% 10%, #ffffff38, transparent 64%), linear-gradient(110deg, transparent 30%, #65553f09 72%, #fff2);
+  box-shadow: inset 0 3px 6px #fff8, inset 0 -3px 7px #5d4b3012;
+}
+.washi-gold-preview .wg-dark { --wg-gold: #d7bd85; box-shadow: inset 0 1px #ecdbb12b, inset 0 -2px #0003; }
+.wg-dark > .wg-paper { mix-blend-mode: soft-light; filter: grayscale(1) brightness(.6) contrast(3); opacity: .22; }
+.wg-dark > .wg-paper::after { background: radial-gradient(ellipse at 12% 20%, #ffeed912, transparent 65%); box-shadow: inset 0 2px 5px #ffe1a20c, inset 0 -4px 10px #0002; }
+.washi-gold-preview.material-preview .wg-cream { background-color: #f6f2e8; }
+.washi-gold-preview.material-preview .wg-white { background-color: #fcfaf5; }
+.washi-gold-preview .lineup.wg-dark { background: #262826; }
+.washi-gold-preview.material-preview.art-preview .visit.wg-dark { background: #831d27; }
+.washi-gold-preview .nara-atlas.wg-section::before { display: none; }
+.wg-motif {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+  transform-origin: center;
+}
+.wg-swallow { width: 90px; aspect-ratio: 154 / 209; background: var(--wg-swallow) center / contain no-repeat; opacity: .85; }
+.wg-flower {
+  width: 320px;
+  aspect-ratio: 1;
+  background: linear-gradient(125deg, #9d804b 6%, #dcc592 34%, #b39761 57%, #e1cc9d 77%, #a88a54);
+  mask: var(--wg-peony) center / contain no-repeat;
+  mask-mode: luminance;
+  opacity: .94;
+}
+.wg-dark .wg-flower { background: linear-gradient(120deg, #bca06c, #ebd4a4 40%, #c5a875 68%, #e6cf9c); opacity: .83; }
+/* Motif belongs to the photo group, but not the moving photo frame.
+   Space remains available throughout the image's existing scroll travel. */
+.washi-gold-preview .wg-photo-scene { position: relative; isolation: isolate; }
+.washi-gold-preview .reason .wg-photo-scene { padding: 64px 0 12px 42px; }
+.wg-photo-scene > .wg-flower { top: -56px; left: -34px; width: min(82%, 420px); }
+.washi-gold-preview .wg-photo-scene > :not(.wg-motif) { position: relative; z-index: 1; }
+.washi-gold-preview .wg-photo-scene > [data-deep-frame] { box-shadow: 0 16px 30px -24px #201b166e; }
+.washi-gold-preview .reason .photo-caption { margin-left: 0; }
+
+/* One placed motif per chapter; no repeated corner-stamp layout. */
+.wg-built-bird { top: 25px; right: max(28px, calc((100vw - 1300px) / 2)); width: 93px; }
+.wg-guide-bird { bottom: 23px; left: max(28px, calc((100vw - 1200px) / 2 + 34px)); width: 53px; transform: scaleX(-1); }
+.washi-gold-preview .entrance.wg-section { padding-bottom: 74px; }
+.washi-gold-preview .entrance .commute-entry { padding-bottom: 44px; }
+.wg-lineup-bird { top: 38px; left: 47%; width: 77px; transform: scaleX(-1); }
+.washi-gold-preview .works .wg-photo-scene { padding: 0 0 44px 0; }
+.works .wg-photo-scene > .wg-flower { top: auto; bottom: -14px; left: auto; right: -22px; width: min(62%, 430px); transform: scaleX(-1); }
+.washi-gold-preview .works .wg-photo-scene figcaption { position: relative; z-index: 1; width: fit-content; max-width: 65%; }
+.wg-voice-bird { top: 24px; right: max(32px, calc((100vw - 1200px) / 2 + 24px)); width: 60px; }
+.washi-gold-preview .voice-proof__count {
+  background-image: linear-gradient(120deg,#fff0,#1900040c), var(--wg-cotton);
+  background-size: auto, 440px;
+  background-blend-mode: normal, multiply;
+}
+/* New owner-voice composition: keep the red title field and offset sheet.
+   Its bird is placed inside the red field, not at the old B-board coordinates. */
+.washi-gold-preview .voice-reference::before {
+  background-image: var(--wg-cotton);
+  background-size: 440px;
+  background-blend-mode: multiply;
+}
+.washi-gold-preview .voice-reference__sheet {
+  background: linear-gradient(#fffC, #fffC), var(--wg-cotton) 0 0 / 680px;
+}
+.washi-gold-preview .voice-reference .wg-voice-bird {
+  z-index: 0;
+  top: 26px;
+  right: max(12%, calc((100vw - 1200px) / 2 + 36px));
+  width: 58px;
+}
+.wg-nara-bird { top: 12px; right: max(28px, calc((100vw - 1120px) / 2 + 35px)); width: 68px; transform: scaleX(-1); }
+.wg-faq-flower { top: 205px; left: max(16px, calc((100vw - 1200px) / 2 - 18px)); width: clamp(210px, 21vw, 305px); opacity: .88; }
+.wg-ig-bird { top: 24px; left: 46%; width: 62px; }
+.wg-news-bird { top: 215px; left: max(28px, calc((100vw - 1200px) / 2 + 28px)); width: 70px; transform: scaleX(-1); }
+.washi-gold-preview .visit .wg-photo-scene { padding: 60px 0 12px 42px; }
+.visit .wg-photo-scene > .wg-flower { top: -52px; left: -36px; width: min(85%, 450px); }
+.washi-gold-preview .site-footer.wg-section { background-color: #292b29; }
+.wg-footer-bird { top: 55px; right: max(32px, calc((100vw - 1200px) / 2 + 14px)); width: 54px; }
+
+/* Keep artwork fully within the section and out of intermediate-width text. */
+@media (min-width: 768px) and (max-width: 1100px) {
+  .wg-built-bird { top: 15px; right: 25px; width: 60px; }
+  .wg-lineup-bird { top: 24px; left: 48%; width: 60px; }
+  .wg-voice-bird { top: 18px; right: 25px; width: 50px; }
+  .wg-news-bird { top: 245px; width: 60px; }
+  .wg-faq-flower { top: 225px; width: 215px; left: 14px; }
+  .washi-gold-preview .reason .wg-photo-scene,
+  .washi-gold-preview .visit .wg-photo-scene { padding-left: 24px; padding-top: 54px; }
+  .wg-photo-scene > .wg-flower { left: -16px; top: -6px; }
+  .visit .wg-photo-scene > .wg-flower { left: -16px; top: -6px; }
+  .works .wg-photo-scene > .wg-flower { left: auto; right: -14px; top: auto; }
+}
+@media (max-width: 767px) {
+  .wg-paper { background-size: 440px 440px; opacity: .3; }
+  .wg-dark > .wg-paper { opacity: .2; }
+  .wg-swallow { opacity: .86; }
+  .wg-built-bird { top: 15px; right: 20px; width: 45px; }
+  .wg-guide-bird { bottom: 22px; left: auto; right: 24px; width: 47px; }
+  .washi-gold-preview .entrance.wg-section { padding-bottom: 44px; }
+  .washi-gold-preview .entrance .commute-entry { padding-bottom: 24px; }
+  .washi-gold-preview .reason .wg-photo-scene { padding: 51px 0 8px 22px; }
+  .wg-photo-scene > .wg-flower { width: min(82%, 290px); top: -32px; left: -15px; }
+  .wg-lineup-bird { left: auto; top: 14px; right: 24px; width: 43px; }
+  .works .wg-photo-scene > .wg-flower { top: auto; bottom: -11px; right: -10px; left: auto; width: 70%; }
+  .washi-gold-preview .works .wg-photo-scene { padding-bottom: 46px; }
+  .washi-gold-preview .works .wg-photo-scene figcaption { max-width: 66%; }
+  .wg-voice-bird { top: 14px; right: 22px; width: 39px; }
+  .washi-gold-preview .voice-reference .wg-voice-bird { top: 22px; right: 14%; width: 37px; }
+  .wg-nara-bird { top: 6px; right: 22px; width: 32px; }
+  .wg-faq-flower { top: 9px; left: auto; right: 16px; width: 89px; opacity: .9; }
+  .wg-ig-bird { top: 21px; left: auto; right: 23px; width: 48px; }
+  .wg-news-bird { top: 25px; left: auto; right: 24px; width: 43px; }
+  .washi-gold-preview .visit .wg-photo-scene { padding: 46px 0 9px 21px; }
+  .visit .wg-photo-scene > .wg-flower { top: -29px; left: -13px; width: 84%; }
+  .wg-footer-bird { top: 22px; right: 24px; width: 39px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wg-paper, .wg-motif { animation: none !important; transition: none !important; }
+}
+@media (forced-colors: active) { .wg-paper, .wg-motif { display: none; } }
+@media print { .wg-paper, .wg-motif { display: none; } }

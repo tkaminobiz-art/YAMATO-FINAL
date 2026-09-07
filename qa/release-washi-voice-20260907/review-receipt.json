@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "7118d6232fa5583c125c8f8a21e56b0fc20d4ca76324e2061d4454ee57035075"
+    },
+    {
+      "path": "assets/top-renewal/voice-reference/voice.css",
+      "sha256": "fb277f4c49e042e4396b9f01c1c2e9de5c6fb040252692969173e73396cd30c4"
+    },
+    {
+      "path": "assets/top-renewal/washi-gold/washi-gold.css",
+      "sha256": "de1b38f380df3bb615212b650e47cafa53d3121de3473b292898ab845d343b62"
+    },
+    {
+      "path": "assets/top-renewal/washi-gold/peony-mask.webp",
+      "sha256": "aba2b172c924fc6fa637795d4f90d9f8b69907d40c98faed02f06a62e70d8e8c"
+    },
+    {
+      "path": "scripts/verify-homepage.mjs",
+      "sha256": "3832dd6b38724629bd4909c9e9a5d272fe66f8b7dbf0067acb27b5c42d494bed"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/release-washi-voice-20260907/brief.md",
+      "sha256": "876fc647b8c40cf5c79e2eba587673f7240a2af25999047bb2161618038e9c4d"
+    },
+    "copy": {
+      "path": "qa/release-washi-voice-20260907/copy-review.md",
+      "sha256": "848afecf806fea444da774c8ee2c85f0a9516f1dd2c910694a6683d0553785b7"
+    },
+    "assets": {
+      "path": "qa/release-washi-voice-20260907/asset-decisions.md",
+      "sha256": "f6e9489c3361749cb3f2cb77de018e8422aa39d75ad4696c44dba9028053c197"
+    },
+    "visual": {
+      "path": "qa/release-washi-voice-20260907/visual-review.md",
+      "sha256": "e8cfc3f23e468289fb5924908a0c1a911493c2699e0f5487259033a1d3557d22"
+    },
+    "interaction": {
+      "path": "qa/release-washi-voice-20260907/interaction-review.md",
+      "sha256": "4a99074274688a3db0b5181fe697fcac5665854baf62b672596db8196385a497"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/release-washi-voice-20260907/local-chromium-1440-voice.png",
+      "sha256": "95ac1873ce660e4467f4b161f103fddf3c18e8a5074dade3799caa3b0e2af766"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/release-washi-voice-20260907/local-chromium-390-voice.png",
+      "sha256": "f7e0238fbb4c3aa41bbd83b5742aaf3bf0bc420260e508f848f2579c090c1afb"
+    }
+  ]
+}

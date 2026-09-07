@@ -1,0 +1,2308 @@
+{
+  "date": "2026-09-07T00:32:47.048Z",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "builtProof",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-built-bird",
+          "left": 255,
+          "right": 300,
+          "top": 105,
+          "bottom": 166.0625,
+          "width": 45,
+          "height": 61.0625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "entrance",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-guide-bird",
+          "left": 249,
+          "right": 296,
+          "top": 930.171875,
+          "bottom": 993.953125,
+          "width": 47,
+          "height": 63.78125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "reason",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 1,
+          "right": 237.15625,
+          "top": 114.953125,
+          "bottom": 351.109375,
+          "width": 236.15625,
+          "height": 236.15625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "lineup",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-lineup-bird",
+          "left": 253,
+          "right": 296,
+          "top": 104.71875,
+          "bottom": 163.0625,
+          "width": 43,
+          "height": 58.34375,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "works",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 112.40625,
+          "right": 314,
+          "top": 442.515625,
+          "bottom": 644.109375,
+          "width": 201.59375,
+          "height": 201.59375,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "voice",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-voice-bird",
+          "left": 238.203125,
+          "right": 275.203125,
+          "top": 111.671875,
+          "bottom": 161.875,
+          "width": 37,
+          "height": 50.203125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "nara",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-nara-bird",
+          "left": 266,
+          "right": 298,
+          "top": 96.390625,
+          "bottom": 139.8125,
+          "width": 32,
+          "height": 43.421875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "faq",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-flower wg-faq-flower",
+          "left": 215,
+          "right": 304,
+          "top": 98.640625,
+          "bottom": 187.640625,
+          "width": 89,
+          "height": 89,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "instagram",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-ig-bird",
+          "left": 249,
+          "right": 297,
+          "top": 111.640625,
+          "bottom": 176.78125,
+          "width": 48,
+          "height": 65.140625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "news",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-news-bird",
+          "left": 253,
+          "right": 296,
+          "top": 116.203125,
+          "bottom": 174.546875,
+          "width": 43,
+          "height": 58.34375,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "visit",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 3,
+          "right": 244.90625,
+          "top": 103.078125,
+          "bottom": 344.984375,
+          "width": 241.90625,
+          "height": 241.90625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "id": "footer",
+      "viewport": 320,
+      "documentWidth": 320,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-footer-bird",
+          "left": 257,
+          "right": 296,
+          "top": 272.140625,
+          "bottom": 325.0625,
+          "width": 39,
+          "height": 52.921875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "builtProof",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-built-bird",
+          "left": 325,
+          "right": 370,
+          "top": 105,
+          "bottom": 166.0625,
+          "width": 45,
+          "height": 61.0625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "entrance",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-guide-bird",
+          "left": 319,
+          "right": 366,
+          "top": 925.375,
+          "bottom": 989.15625,
+          "width": 47,
+          "height": 63.78125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "reason",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 5,
+          "right": 292,
+          "top": 115.15625,
+          "bottom": 402.15625,
+          "width": 287,
+          "height": 287,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "lineup",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-lineup-bird",
+          "left": 323,
+          "right": 366,
+          "top": 105.171875,
+          "bottom": 163.515625,
+          "width": 43,
+          "height": 58.34375,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "works",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 135,
+          "right": 380,
+          "top": 445.15625,
+          "bottom": 690.15625,
+          "width": 245,
+          "height": 245,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "voice",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-voice-bird",
+          "left": 298.40625,
+          "right": 335.40625,
+          "top": 112.375,
+          "bottom": 162.578125,
+          "width": 37,
+          "height": 50.203125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "nara",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-nara-bird",
+          "left": 336,
+          "right": 368,
+          "top": 96.15625,
+          "bottom": 139.578125,
+          "width": 32,
+          "height": 43.421875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "faq",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-flower wg-faq-flower",
+          "left": 285,
+          "right": 374,
+          "top": 99.046875,
+          "bottom": 188.046875,
+          "width": 89,
+          "height": 89,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "instagram",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-ig-bird",
+          "left": 319,
+          "right": 367,
+          "top": 112.046875,
+          "bottom": 177.1875,
+          "width": 48,
+          "height": 65.140625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "news",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-news-bird",
+          "left": 323,
+          "right": 366,
+          "top": 115.96875,
+          "bottom": 174.3125,
+          "width": 43,
+          "height": 58.34375,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "visit",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 7,
+          "right": 301,
+          "top": 102.84375,
+          "bottom": 396.84375,
+          "width": 294,
+          "height": 294,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "id": "footer",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-footer-bird",
+          "left": 327,
+          "right": 366,
+          "top": 268.234375,
+          "bottom": 321.15625,
+          "width": 39,
+          "height": 52.921875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "builtProof",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-built-bird",
+          "left": 683,
+          "right": 743,
+          "top": 105,
+          "bottom": 186.421875,
+          "width": 60,
+          "height": 81.421875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "entrance",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-guide-bird",
+          "left": 28,
+          "right": 81,
+          "top": 935.75,
+          "bottom": 1007.671875,
+          "width": 53,
+          "height": 71.921875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "reason",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 8,
+          "right": 300.765625,
+          "top": 258.28125,
+          "bottom": 551.046875,
+          "width": 292.765625,
+          "height": 292.765625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "lineup",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-lineup-bird",
+          "left": 368.625,
+          "right": 428.625,
+          "top": 114.5,
+          "bottom": 195.921875,
+          "width": 60,
+          "height": 81.421875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "works",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 212.8125,
+          "right": 498,
+          "top": 471.796875,
+          "bottom": 756.984375,
+          "width": 285.1875,
+          "height": 285.1875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "voice",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-voice-bird",
+          "left": 617.84375,
+          "right": 675.84375,
+          "top": 116.421875,
+          "bottom": 195.125,
+          "width": 58,
+          "height": 78.703125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "nara",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-nara-bird",
+          "left": 672,
+          "right": 740,
+          "top": 101.703125,
+          "bottom": 193.984375,
+          "width": 68,
+          "height": 92.28125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "faq",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-flower wg-faq-flower",
+          "left": 14,
+          "right": 229,
+          "top": 315.203125,
+          "bottom": 530.203125,
+          "width": 215,
+          "height": 215,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "instagram",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-ig-bird",
+          "left": 353.265625,
+          "right": 415.265625,
+          "top": 115.203125,
+          "bottom": 199.34375,
+          "width": 62,
+          "height": 84.140625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "news",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-news-bird",
+          "left": 28,
+          "right": 88,
+          "top": 335.6875,
+          "bottom": 417.109375,
+          "width": 60,
+          "height": 81.421875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "visit",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 8,
+          "right": 345.953125,
+          "top": 193.53125,
+          "bottom": 531.484375,
+          "width": 337.953125,
+          "height": 337.953125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "id": "footer",
+      "viewport": 768,
+      "documentWidth": 768,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-footer-bird",
+          "left": 682,
+          "right": 736,
+          "top": 538.890625,
+          "bottom": 612.171875,
+          "width": 54,
+          "height": 73.28125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "builtProof",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-built-bird",
+          "left": 939,
+          "right": 999,
+          "top": 105,
+          "bottom": 186.421875,
+          "width": 60,
+          "height": 81.421875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "entrance",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-guide-bird",
+          "left": 28,
+          "right": 81,
+          "top": 837.515625,
+          "bottom": 909.4375,
+          "width": 53,
+          "height": 71.921875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "reason",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 24,
+          "right": 407.46875,
+          "top": 208.515625,
+          "bottom": 591.984375,
+          "width": 383.46875,
+          "height": 383.46875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "lineup",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-lineup-bird",
+          "left": 491.515625,
+          "right": 551.515625,
+          "top": 114.96875,
+          "bottom": 196.390625,
+          "width": 60,
+          "height": 81.421875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "works",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 285.546875,
+          "right": 663.328125,
+          "top": 491.359375,
+          "bottom": 869.140625,
+          "width": 377.78125,
+          "height": 377.78125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "voice",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-voice-bird",
+          "left": 843.125,
+          "right": 901.125,
+          "top": 116.140625,
+          "bottom": 194.84375,
+          "width": 58,
+          "height": 78.703125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "nara",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-nara-bird",
+          "left": 928,
+          "right": 996,
+          "top": 102.234375,
+          "bottom": 194.515625,
+          "width": 68,
+          "height": 92.28125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "faq",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-flower wg-faq-flower",
+          "left": 14,
+          "right": 229,
+          "top": 314.734375,
+          "bottom": 529.734375,
+          "width": 215,
+          "height": 215,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "instagram",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-ig-bird",
+          "left": 471.03125,
+          "right": 533.03125,
+          "top": 114.734375,
+          "bottom": 198.875,
+          "width": 62,
+          "height": 84.140625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "news",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-news-bird",
+          "left": 28,
+          "right": 88,
+          "top": 336.21875,
+          "bottom": 417.640625,
+          "width": 60,
+          "height": 81.421875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "visit",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 24,
+          "right": 466.671875,
+          "top": 165.890625,
+          "bottom": 608.5625,
+          "width": 442.671875,
+          "height": 442.671875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "id": "footer",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-footer-bird",
+          "left": 938,
+          "right": 992,
+          "top": 618.875,
+          "bottom": 692.15625,
+          "width": 54,
+          "height": 73.28125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "builtProof",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-built-bird",
+          "left": 1277,
+          "right": 1370,
+          "top": 115,
+          "bottom": 241.203125,
+          "width": 93,
+          "height": 126.203125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "entrance",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-guide-bird",
+          "left": 154,
+          "right": 207,
+          "top": 911.265625,
+          "bottom": 983.1875,
+          "width": 53,
+          "height": 71.921875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "reason",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 86,
+          "right": 506,
+          "top": 123.1875,
+          "bottom": 543.1875,
+          "width": 420,
+          "height": 420,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "lineup",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-lineup-bird",
+          "left": 676.796875,
+          "right": 753.796875,
+          "top": 128.671875,
+          "bottom": 233.171875,
+          "width": 77,
+          "height": 104.5,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "works",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 492,
+          "right": 922,
+          "top": 567.28125,
+          "bottom": 997.28125,
+          "width": 430,
+          "height": 430,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "voice",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-voice-bird",
+          "left": 1209.203125,
+          "right": 1267.203125,
+          "top": 116.28125,
+          "bottom": 194.984375,
+          "width": 58,
+          "height": 78.703125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "nara",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-nara-bird",
+          "left": 1177,
+          "right": 1245,
+          "top": 102.375,
+          "bottom": 194.65625,
+          "width": 68,
+          "height": 92.28125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "faq",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-flower wg-faq-flower",
+          "left": 102,
+          "right": 404.390625,
+          "top": 294.796875,
+          "bottom": 597.1875,
+          "width": 302.390625,
+          "height": 302.390625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "instagram",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-ig-bird",
+          "left": 662.390625,
+          "right": 724.390625,
+          "top": 114.796875,
+          "bottom": 198.9375,
+          "width": 62,
+          "height": 84.140625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "news",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-news-bird",
+          "left": 148,
+          "right": 218,
+          "top": 306.28125,
+          "bottom": 401.28125,
+          "width": 70,
+          "height": 95,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "visit",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 84,
+          "right": 534,
+          "top": 119.953125,
+          "bottom": 569.953125,
+          "width": 450,
+          "height": 450,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "id": "footer",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-footer-bird",
+          "left": 1252,
+          "right": 1306,
+          "top": 618.40625,
+          "bottom": 691.6875,
+          "width": 54,
+          "height": 73.28125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "builtProof",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-built-bird",
+          "left": 1517,
+          "right": 1610,
+          "top": 115,
+          "bottom": 241.203125,
+          "width": 93,
+          "height": 126.203125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "entrance",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-guide-bird",
+          "left": 394,
+          "right": 447,
+          "top": 911.265625,
+          "bottom": 983.1875,
+          "width": 53,
+          "height": 71.921875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "reason",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 326,
+          "right": 746,
+          "top": 123.1875,
+          "bottom": 543.1875,
+          "width": 420,
+          "height": 420,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "lineup",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-lineup-bird",
+          "left": 902.390625,
+          "right": 979.390625,
+          "top": 128.671875,
+          "bottom": 233.171875,
+          "width": 77,
+          "height": 104.5,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "works",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 732,
+          "right": 1162,
+          "top": 567.28125,
+          "bottom": 997.28125,
+          "width": 430,
+          "height": 430,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "voice",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-voice-bird",
+          "left": 1466,
+          "right": 1524,
+          "top": 116.28125,
+          "bottom": 194.984375,
+          "width": 58,
+          "height": 78.703125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "nara",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-nara-bird",
+          "left": 1417,
+          "right": 1485,
+          "top": 102.375,
+          "bottom": 194.65625,
+          "width": 68,
+          "height": 92.28125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "faq",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-flower wg-faq-flower",
+          "left": 342,
+          "right": 647,
+          "top": 294.796875,
+          "bottom": 599.796875,
+          "width": 305,
+          "height": 305,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "instagram",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-ig-bird",
+          "left": 883.1875,
+          "right": 945.1875,
+          "top": 114.796875,
+          "bottom": 198.9375,
+          "width": 62,
+          "height": 84.140625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "news",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-news-bird",
+          "left": 388,
+          "right": 458,
+          "top": 306.28125,
+          "bottom": 401.28125,
+          "width": 70,
+          "height": 95,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "visit",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 324,
+          "right": 774,
+          "top": 119.953125,
+          "bottom": 569.953125,
+          "width": 450,
+          "height": 450,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "id": "footer",
+      "viewport": 1920,
+      "documentWidth": 1920,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-footer-bird",
+          "left": 1492,
+          "right": 1546,
+          "top": 618.40625,
+          "bottom": 691.6875,
+          "width": 54,
+          "height": 73.28125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "builtProof",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-built-bird",
+          "left": 325,
+          "right": 370,
+          "top": 105.984375,
+          "bottom": 167.046875,
+          "width": 45,
+          "height": 61.0625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "entrance",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-guide-bird",
+          "left": 319,
+          "right": 366,
+          "top": 925.390625,
+          "bottom": 989.171875,
+          "width": 47,
+          "height": 63.78125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "reason",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 5,
+          "right": 292,
+          "top": 115.171875,
+          "bottom": 402.171875,
+          "width": 287,
+          "height": 287,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "lineup",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-lineup-bird",
+          "left": 323,
+          "right": 366,
+          "top": 105.1875,
+          "bottom": 163.53125,
+          "width": 43,
+          "height": 58.34375,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "works",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 135.03125,
+          "right": 380.015625,
+          "top": 446.1875,
+          "bottom": 691.171875,
+          "width": 244.984375,
+          "height": 244.984375,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "voice",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-voice-bird",
+          "left": 298.40625,
+          "right": 335.40625,
+          "top": 112.390625,
+          "bottom": 162.59375,
+          "width": 37,
+          "height": 50.203125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "nara",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-nara-bird",
+          "left": 336,
+          "right": 368,
+          "top": 96.171875,
+          "bottom": 139.59375,
+          "width": 32,
+          "height": 43.421875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "faq",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-flower wg-faq-flower",
+          "left": 285,
+          "right": 374,
+          "top": 99.015625,
+          "bottom": 188.015625,
+          "width": 89,
+          "height": 89,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "instagram",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-ig-bird",
+          "left": 319,
+          "right": 367,
+          "top": 112.015625,
+          "bottom": 177.15625,
+          "width": 48,
+          "height": 65.140625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "news",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-news-bird",
+          "left": 323,
+          "right": 366,
+          "top": 116.203125,
+          "bottom": 174.546875,
+          "width": 43,
+          "height": 58.34375,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "visit",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 7,
+          "right": 301,
+          "top": 103.921875,
+          "bottom": 397.921875,
+          "width": 294,
+          "height": 294,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "id": "footer",
+      "viewport": 390,
+      "documentWidth": 390,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-footer-bird",
+          "left": 327,
+          "right": 366,
+          "top": 268.3125,
+          "bottom": 321.234375,
+          "width": 39,
+          "height": 52.921875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "builtProof",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-built-bird",
+          "left": 1277.015625,
+          "right": 1370.015625,
+          "top": 115,
+          "bottom": 241.203125,
+          "width": 93,
+          "height": 126.203125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "entrance",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-guide-bird",
+          "left": 153.984375,
+          "right": 206.984375,
+          "top": 912.265625,
+          "bottom": 984.1875,
+          "width": 53,
+          "height": 71.921875,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "reason",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 86,
+          "right": 506,
+          "top": 123.1875,
+          "bottom": 543.1875,
+          "width": 420,
+          "height": 420,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "lineup",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-lineup-bird",
+          "left": 676.796875,
+          "right": 753.796875,
+          "top": 129.671875,
+          "bottom": 234.171875,
+          "width": 77,
+          "height": 104.5,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "works",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 492,
+          "right": 922,
+          "top": 567.28125,
+          "bottom": 997.28125,
+          "width": 430,
+          "height": 430,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "voice",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-voice-bird",
+          "left": 1209.203125,
+          "right": 1267.203125,
+          "top": 116.28125,
+          "bottom": 194.984375,
+          "width": 58,
+          "height": 78.703125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "nara",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-nara-bird",
+          "left": 1177.015625,
+          "right": 1245.015625,
+          "top": 102.375,
+          "bottom": 194.65625,
+          "width": 68,
+          "height": 92.28125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "faq",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-flower wg-faq-flower",
+          "left": 101.984375,
+          "right": 404.375,
+          "top": 295.796875,
+          "bottom": 598.1875,
+          "width": 302.390625,
+          "height": 302.390625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "instagram",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-ig-bird",
+          "left": 662.390625,
+          "right": 724.390625,
+          "top": 115.796875,
+          "bottom": 199.9375,
+          "width": 62,
+          "height": 84.140625,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "news",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-news-bird",
+          "left": 147.984375,
+          "right": 217.984375,
+          "top": 306.28125,
+          "bottom": 401.28125,
+          "width": 70,
+          "height": 95,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "visit",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-flower",
+          "left": 84,
+          "right": 534,
+          "top": 120.515625,
+          "bottom": 570.515625,
+          "width": 450,
+          "height": 450,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "luminance"
+        }
+      ],
+      "collisions": []
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "id": "footer",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "art": [
+        {
+          "name": "wg-motif wg-swallow wg-footer-bird",
+          "left": 1252.015625,
+          "right": 1306.015625,
+          "top": 618.96875,
+          "bottom": 692.25,
+          "width": 54,
+          "height": 73.28125,
+          "withinViewport": true,
+          "withinSection": true,
+          "pointerEvents": "none",
+          "mask": "match-source"
+        }
+      ],
+      "collisions": []
+    }
+  ],
+  "errors": [],
+  "interactions": [
+    {
+      "engine": "chromium",
+      "width": 320,
+      "atlas": "both origins and disclosure",
+      "faq": "expand/close",
+      "contact": "open/Escape",
+      "rail": "reduced motion, autoplay, touch pause, next",
+      "photos": "no uncovered parallax frame"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "atlas": "both origins and disclosure",
+      "faq": "expand/close",
+      "contact": "open/Escape",
+      "rail": "reduced motion, autoplay, touch pause, next",
+      "photos": "no uncovered parallax frame"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "voice": "4 answer modals, Escape, list 50"
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "atlas": "both origins and disclosure",
+      "faq": "expand/close",
+      "contact": "open/Escape",
+      "rail": "reduced motion, autoplay, touch pause, next",
+      "photos": "no uncovered parallax frame"
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "atlas": "both origins and disclosure",
+      "faq": "expand/close",
+      "contact": "open/Escape",
+      "rail": "reduced motion, autoplay, touch pause, next",
+      "photos": "no uncovered parallax frame"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "atlas": "both origins and disclosure",
+      "faq": "expand/close",
+      "contact": "open/Escape",
+      "rail": "reduced motion, autoplay, touch pause, next",
+      "photos": "no uncovered parallax frame"
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "voice": "4 answer modals, Escape, list 50"
+    },
+    {
+      "engine": "chromium",
+      "width": 1920,
+      "atlas": "both origins and disclosure",
+      "faq": "expand/close",
+      "contact": "open/Escape",
+      "rail": "reduced motion, autoplay, touch pause, next",
+      "photos": "no uncovered parallax frame"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "atlas": "both origins and disclosure",
+      "faq": "expand/close",
+      "contact": "open/Escape",
+      "rail": "reduced motion, autoplay, touch pause, next",
+      "photos": "no uncovered parallax frame"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "voice": "4 answer modals, Escape, list 50"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "atlas": "both origins and disclosure",
+      "faq": "expand/close",
+      "contact": "open/Escape",
+      "rail": "reduced motion, autoplay, touch pause, next",
+      "photos": "no uncovered parallax frame"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "voice": "4 answer modals, Escape, list 50"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "aa6973fc8d82de04ad166f830e29ba26f141ada9a79fcb8c651721734ebac77d"
+    },
+    {
+      "path": "index-washi-gold-preview.html",
+      "sha256": "5867dc69562b842b5959f12602bf1101439f2918424f98372447b936724e7ce6"
+    },
+    {
+      "path": "index-voice-reference-preview.html",
+      "sha256": "e6baa8fe0c16ede35a4aa8f3953fb3d4d3464a0c0a2329c3c7ef2820d5337517"
+    },
+    {
+      "path": "assets/top-renewal/voice-reference/voice.css",
+      "sha256": "fb277f4c49e042e4396b9f01c1c2e9de5c6fb040252692969173e73396cd30c4"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/release-washi-voice-20260907/brief.md",
+      "sha256": "876fc647b8c40cf5c79e2eba587673f7240a2af25999047bb2161618038e9c4d"
+    },
+    "copy": {
+      "path": "qa/release-washi-voice-20260907/copy-review.md",
+      "sha256": "848afecf806fea444da774c8ee2c85f0a9516f1dd2c910694a6683d0553785b7"
+    },
+    "assets": {
+      "path": "qa/release-washi-voice-20260907/asset-decisions.md",
+      "sha256": "f6e9489c3361749cb3f2cb77de018e8422aa39d75ad4696c44dba9028053c197"
+    }
+  },
+  "screenshots": []
+}

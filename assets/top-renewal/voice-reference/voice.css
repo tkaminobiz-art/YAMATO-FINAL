@@ -1,0 +1,25 @@
+/* Own implementation from measured TOP reference. Styles intentionally scoped. */
+.voice-reference{--voice-accent:var(--red,#8e121b);--voice-back:#eeebe5;position:relative;isolation:isolate;padding:80px 0;background:var(--paper,#faf9f6);color:var(--ink,#2b2b29);font-family:"Zen Kaku Gothic New",sans-serif;font-synthesis:none;scroll-margin-top:84px}
+.voice-reference::before,.voice-reference::after{content:"";position:absolute;width:90%;height:360px;pointer-events:none;z-index:-1}
+.voice-reference::before{top:0;left:0;background:var(--voice-accent)}
+.voice-reference::after{top:128px;right:0;background:var(--voice-back);z-index:-2}
+.voice-reference__inner{width:calc(100% - 80px);max-width:1200px;margin:0 auto}
+.voice-reference h2{margin:0 0 40px;color:#fff;font:700 30px/38px "Zen Kaku Gothic New",sans-serif;letter-spacing:.1em}
+.voice-reference__sheet{margin-left:85px;padding:40px;background:#fff;box-shadow:0 1px 10px #00000012}
+.voice-reference__list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 0}
+.voice-reference__item{min-width:0;margin:0 4%;padding:10px 20px}
+.voice-reference__card{display:block;color:inherit;text-decoration:none;min-width:0}
+.voice-reference__photo{position:relative;height:220px;margin:0;background:var(--voice-back)}
+.voice-reference__image{position:relative;top:12px;left:12px;height:220px;overflow:hidden}
+.voice-reference__image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:opacity .2s ease}
+.voice-reference__caption{margin:23px 0 0!important;color:#66635e;font-size:13px;line-height:1.55;letter-spacing:.015em}
+.voice-reference h3{margin:18px 0 12px;font:700 16px/1.65 "Zen Kaku Gothic New",sans-serif;letter-spacing:.04em}
+.voice-reference h3 span{padding:0 .22em;color:#aaa49a}
+.voice-reference__quote{margin:0;font-size:14px;line-height:1.8;letter-spacing:.035em}
+.voice-reference__footer{text-align:center;margin-top:40px}
+.voice-reference__all{display:inline-flex;min-width:200px;min-height:50px;align-items:center;justify-content:center;gap:22px;padding:12px 20px;background:var(--voice-accent);color:#fff;text-decoration:none;font-size:14px;font-weight:700;letter-spacing:.06em;transition:background-color .2s}
+.voice-reference__card:focus-visible,.voice-reference__all:focus-visible{outline:3px solid var(--voice-accent);outline-offset:6px}
+@media(hover:hover){.voice-reference__card:hover h3{text-decoration:underline;text-underline-offset:4px}.voice-reference__card:hover img{opacity:.85}.voice-reference__all:hover{background:var(--red-hover,#731019)}}
+@media(max-width:1080px){.voice-reference__inner{width:92%}.voice-reference__sheet{margin-left:45px;padding:25px}.voice-reference__item{margin:0 3%;padding:10px}.voice-reference__photo,.voice-reference__image{height:180px}}
+@media(max-width:767px){.voice-reference{padding:60px 0}.voice-reference::after{top:56px}.voice-reference h2{font-size:22px;line-height:1.4;margin-bottom:40px}.voice-reference__sheet{margin-left:25px;padding:15px}.voice-reference__list{display:grid;grid-template-columns:1fr;gap:34px}.voice-reference__item{margin:0;padding:0}.voice-reference__photo{height:auto;margin:0;padding-right:25px}.voice-reference__image{top:10px;left:5px;height:auto}.voice-reference__image img{height:auto}.voice-reference__caption{margin-top:21px!important;font-size:11px;line-height:1.8}.voice-reference__quote{font-size:11px;line-height:1.8;letter-spacing:1px}.voice-reference h3{margin-top:15px}.voice-reference__footer{margin-top:40px}}
+@media(prefers-reduced-motion:reduce){.voice-reference *{transition:none!important}}

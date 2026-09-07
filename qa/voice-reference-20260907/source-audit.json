@@ -1,0 +1,114 @@
+{
+  "status": "LOCAL_PREVIEW_REVIEWED",
+  "baseCommit": "f425a17d97a04d4e3b641697af220cc515b681ab",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "aa6973fc8d82de04ad166f830e29ba26f141ada9a79fcb8c651721734ebac77d"
+    },
+    {
+      "path": "assets/top-renewal/voice-proof.css",
+      "sha256": "a356682d2c65c8b563c0639ae9e64134f04eef528de878d64d65b0334f14c820"
+    },
+    {
+      "path": "voice.html",
+      "sha256": "f7659e5a0545427b391edc457759ae017d9263865ba5b39d8d907c961de8974a"
+    },
+    {
+      "path": "data/voices.json",
+      "sha256": "7f843493e8cff274e6737a629dfdb96b7081e08deea6871152b9bd07927f9870"
+    }
+  ],
+  "dataAudit": {
+    "actualCount": 50,
+    "uniqueIds": 50,
+    "metaTotal": 50,
+    "source": "やまと不動産 お客様の声（お引き渡し後アンケート・旧サイト掲載分）",
+    "coverNote": "表紙の写真はやまとの家の実例写真です（各ご家庭の住まいの写真とは限りません）"
+  },
+  "candidates": [
+    {
+      "id": "v01",
+      "area": "奈良市",
+      "family": "S様邸",
+      "quote": "実際に掛かる本当の費用を提示して頂ける点が魅力的でした。",
+      "qaIndex": 0,
+      "exactSubstring": true,
+      "href": "voice.html#v01",
+      "existingCover": "assets/voice/covers/living08.jpg",
+      "coverExists": true,
+      "customerPhotoMatch": "UNCONFIRMED; meta.coverNote explicitly disclaims correspondence"
+    },
+    {
+      "id": "v02",
+      "area": "奈良市",
+      "family": "N様邸",
+      "quote": "希望の間取りを実現できるということが決め手の一つになりました。",
+      "qaIndex": 0,
+      "exactSubstring": true,
+      "href": "voice.html#v02",
+      "existingCover": "assets/voice/covers/entry02.jpg",
+      "coverExists": true,
+      "customerPhotoMatch": "UNCONFIRMED; meta.coverNote explicitly disclaims correspondence"
+    },
+    {
+      "id": "v08",
+      "area": "奈良市",
+      "family": "S様邸",
+      "quote": "実際にモデルハウスを見に行き感動しました！後からオプション工事が必要ないと感じるほどでした。",
+      "qaIndex": 0,
+      "exactSubstring": true,
+      "href": "voice.html#v08",
+      "existingCover": "assets/voice/covers/kitchen01.jpg",
+      "coverExists": true,
+      "customerPhotoMatch": "UNCONFIRMED; meta.coverNote explicitly disclaims correspondence"
+    },
+    {
+      "id": "v33",
+      "area": "生駒市",
+      "family": "H様邸",
+      "quote": "完成後もカーポートの設置や追加の外構工事で相談に乗ってもらっています。",
+      "qaIndex": 3,
+      "exactSubstring": true,
+      "href": "voice.html#v33",
+      "existingCover": "assets/voice/covers/ext05.jpg",
+      "coverExists": true,
+      "customerPhotoMatch": "UNCONFIRMED; meta.coverNote explicitly disclaims correspondence"
+    }
+  ],
+  "browserVerification": "Chrome PC1440/SP390/SP320 with final SP11px verified. Four card links, list50, Tab/Enter and actual hover verified.",
+  "prepareGate": "PASS before implementation; prepare-receipt.json",
+  "reviewGate": "PASS: EVIDENCE_READY_FOR_REVIEW; receipt.json",
+  "technicalPass": "SCOPED_LAYOUT_LINKS_COPY_PRESERVATION",
+  "humanApproval": "HUMAN_APPROVAL_REQUIRED",
+  "releaseApproved": false,
+  "sourceChecks": {
+    "outsideVoiceUnchanged": true,
+    "baselineHashesUnchanged": true,
+    "singleVoiceSection": true,
+    "quotesExact": true,
+    "spBodyCss": "11px / 1.8",
+    "spCaptionCss": "11px / 1.8"
+  },
+  "implementation": [
+    {
+      "path": "index-voice-reference-preview.html",
+      "sha256": "e6baa8fe0c16ede35a4aa8f3953fb3d4d3464a0c0a2329c3c7ef2820d5337517"
+    },
+    {
+      "path": "assets/top-renewal/voice-reference/voice.css",
+      "sha256": "fb277f4c49e042e4396b9f01c1c2e9de5c6fb040252692969173e73396cd30c4"
+    },
+    {
+      "path": "assets/top-renewal/voice-reference/section.html",
+      "sha256": "428ffc12da90c446ea7bc1d4b3984fa8535a46939fed332866e770ed74b38fe9"
+    }
+  ],
+  "limits": [
+    "Customer-photo mapping unconfirmed; per-card caption added",
+    "FontFaceSet returned empty list; actual face/glyph audit unverified",
+    "OS reduced motion and Safari/device not tested",
+    "Reference hover not directly measured",
+    "Extension communication console errors present"
+  ]
+}
