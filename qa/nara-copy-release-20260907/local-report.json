@@ -1,0 +1,59 @@
+{
+  "url": "http://127.0.0.1:4175/",
+  "phase": "local",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 912,
+      "x": 160,
+      "height": 75.1875,
+      "fontSize": "19px",
+      "overflow": false,
+      "verbatim": true,
+      "ctaResponses": [
+        200,
+        200
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 350,
+      "x": 20,
+      "height": 63.78125,
+      "fontSize": "16px",
+      "overflow": false,
+      "verbatim": true,
+      "ctaResponses": [
+        200,
+        200
+      ]
+    },
+    {
+      "engine": "chromium",
+      "width": 280,
+      "x": 20,
+      "height": 94.171875,
+      "fontSize": "16px",
+      "overflow": false,
+      "verbatim": true,
+      "ctaResponses": [
+        200,
+        200
+      ]
+    },
+    {
+      "engine": "webkit",
+      "width": 350,
+      "x": 20,
+      "height": 63.78125,
+      "fontSize": "16px",
+      "overflow": false,
+      "verbatim": true,
+      "ctaResponses": [
+        200,
+        200
+      ]
+    }
+  ],
+  "errors": []
+}
