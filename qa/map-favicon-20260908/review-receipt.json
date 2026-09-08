@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "snapshots/land-payment-20260908-icon/land-payment-study.html",
+      "sha256": "95e4f2a65fcba6bd18a11382ce98809ffccf66067cd494891a776f4f8d7415e6"
+    },
+    {
+      "path": "snapshots/land-payment-20260908-icon/assets/land-payment-study/favicon.svg",
+      "sha256": "34c10cc6f79fb4f4369a74204b72c12606d1accd7b070d28f8318aebba6e8b32"
+    },
+    {
+      "path": "snapshots/land-payment-20260908-icon/manifest.json",
+      "sha256": "92f262dddf2b1b149fa43ea5df7c909c6c3b2ba39a752f73d4e4f7dcfdd419fb"
+    },
+    {
+      "path": "snapshots/land-payment-20260908-icon/README.md",
+      "sha256": "8fad2203d4690ec5bc3aafdf85129e5dc66f2722571d78e202b7cc2bedde81ff"
+    },
+    {
+      "path": "scripts/package-land-payment.mjs",
+      "sha256": "43922bf17746f4c5aca2d2bbd83f45e45ef0724f9ac74c7d89dd85bedc91cbe6"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/map-favicon-20260908/brief.md",
+      "sha256": "a93e96f63485d777d1289e83df0e6adbbe0d54bb6e833485668783a9d8757d50"
+    },
+    "copy": {
+      "path": "qa/map-favicon-20260908/copy-review.md",
+      "sha256": "61566a250f8d53a981a4ff68d5bf2af071b76e104ff63771ef6be49fb8619295"
+    },
+    "assets": {
+      "path": "qa/map-favicon-20260908/asset-decisions.md",
+      "sha256": "b1d33702b4085970f9eca34537a8d7c0baf7b368dadec35f8c92a3fdc7c18e78"
+    },
+    "visual": {
+      "path": "qa/map-favicon-20260908/visual-review.md",
+      "sha256": "3df6d3fc3b9a8f24c9a35a5d66a58dfb4e89e9d6d2b4a576efb0167719f70670"
+    },
+    "interaction": {
+      "path": "qa/map-favicon-20260908/interaction-review.md",
+      "sha256": "25742e06c7084bb3787ee09faa6a9fc5cf8349b35c28762a565717485de802c3"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/map-favicon-20260908/local-pc-1440.png",
+      "sha256": "493a890e8c6399bbdf4d72e98429a46b21ee9beb23b956f11b493fa387cfc93f"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/map-favicon-20260908/local-sp-390.png",
+      "sha256": "3b53f39622d03c3e9f685f72783aa00516b8b4e1a12ee4cd68a021aaa6fc04a8"
+    }
+  ]
+}

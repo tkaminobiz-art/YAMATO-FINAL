@@ -4,7 +4,7 @@ import {resolve, dirname, join} from 'node:path';
 import {tmpdir} from 'node:os';
 import {createHash} from 'node:crypto';
 
-const snapshot = process.argv[2] || '20260908-pc';
+const snapshot = process.argv[2] || '20260908-icon';
 if (!/^[0-9]{8}(?:-[a-z0-9]+)?$/.test(snapshot)) throw new Error('Use a snapshot version: YYYYMMDD or YYYYMMDD-name');
 const root = fileURLToPath(new URL(`../snapshots/land-payment-${snapshot}/`, import.meta.url));
 const manifest = JSON.parse(await readFile(join(root, 'manifest.json'), 'utf8'));

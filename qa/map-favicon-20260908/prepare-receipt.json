@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "snapshots/land-payment-20260908-icon/land-payment-study.html",
+      "sha256": "4b27178e8b6dc9c99626d79e2482a2f1f9690286cad37aac03c6fdf453a5278b"
+    },
+    {
+      "path": "scripts/package-land-payment.mjs",
+      "sha256": "ac0048edfb8247dc012e2fb02a558d2e118cd86b71612e0382ccdd55a2cf64d7"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/map-favicon-20260908/brief.md",
+      "sha256": "a93e96f63485d777d1289e83df0e6adbbe0d54bb6e833485668783a9d8757d50"
+    },
+    "copy": {
+      "path": "qa/map-favicon-20260908/copy-review.md",
+      "sha256": "61566a250f8d53a981a4ff68d5bf2af071b76e104ff63771ef6be49fb8619295"
+    },
+    "assets": {
+      "path": "qa/map-favicon-20260908/asset-decisions.md",
+      "sha256": "b1d33702b4085970f9eca34537a8d7c0baf7b368dadec35f8c92a3fdc7c18e78"
+    }
+  }
+}
