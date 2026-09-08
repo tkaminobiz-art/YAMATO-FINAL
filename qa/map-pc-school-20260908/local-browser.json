@@ -1,0 +1,1788 @@
+{
+  "base": "http://127.0.0.1:4191/land-payment-study.html",
+  "checks": [
+    {
+      "label": "chrome-pc",
+      "name": "list entry has 40 listings",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "desktop list entry also has map; mobile keeps list mode",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "all 40 source coordinates within initial map",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "all listing IDs appear in map markers",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "entire map in first viewport",
+      "ok": true,
+      "details": {
+        "y": 305.234375,
+        "height": 520,
+        "viewport": 900
+      }
+    },
+    {
+      "label": "chrome-pc",
+      "name": "desktop mode switch hidden",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "map no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "map scrolls offscreen",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "wheel scroll did not zoom map",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "list has no independent scroll region",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "list no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "primary ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "junior ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "price ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "area ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "walk ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "updated ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "region ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "school missing entry last",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "missing school copy says unavailable",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "school selector reachable above sticky actions",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "school-filter no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "combined school filter",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "filters in URL",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "reload retains sort and school conditions",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "school-results no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "results jump reveals list heading",
+      "ok": true,
+      "details": {
+        "y": 915,
+        "top": 24.03125,
+        "active": "<a class=\"results-jump\" href=\"#property-results\" data-scroll-to=\"property-results\">一覧を見る ↓</a>",
+        "ready": "complete"
+      }
+    },
+    {
+      "label": "chrome-pc",
+      "name": "school-card no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "remove one school condition retains other",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "active school section reopens",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "form reset clears previously checked regions and school options",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "reset restores full catalogue",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "empty result has zero listings",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "empty result removes all map markers",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "empty no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "empty reset restores40",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "empty reset refits all40",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "whole-map button restores every result",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "drag area enters URL",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "back retains rounded map bounds and results",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "list selection opens selected card",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "list selection returns map to view",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "save state reflected",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "detail preserves selected listing",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "back retains selected listing",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "PC to mobile restores mode switch",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "mobile list to PC still shows map",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "resize keeps 40 records",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "fullscreen is user-initiated dialog",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "fullscreen closes without fixed map",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "compare retains chosen2",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "comparison contains school distance unit",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "land price prefilled accurately",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "estimate result rendered",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "result no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-pc",
+      "name": "no browser exceptions",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "list entry has 40 listings",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "desktop list entry also has map; mobile keeps list mode",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "all 40 source coordinates within initial map",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "all listing IDs appear in map markers",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "entire map in first viewport",
+      "ok": true,
+      "details": {
+        "y": 305.234375,
+        "height": 355,
+        "viewport": 720
+      }
+    },
+    {
+      "label": "chrome-short",
+      "name": "desktop mode switch hidden",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "map no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "map scrolls offscreen",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "wheel scroll did not zoom map",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "list has no independent scroll region",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "list no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "primary ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "junior ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "price ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "area ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "walk ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "updated ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "region ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "school missing entry last",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "missing school copy says unavailable",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "school selector reachable above sticky actions",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "school-filter no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "combined school filter",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "filters in URL",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "reload retains sort and school conditions",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "school-results no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "results jump reveals list heading",
+      "ok": true,
+      "details": {
+        "y": 750,
+        "top": 24.03125,
+        "active": "<a class=\"results-jump\" href=\"#property-results\" data-scroll-to=\"property-results\">一覧を見る ↓</a>",
+        "ready": "complete"
+      }
+    },
+    {
+      "label": "chrome-short",
+      "name": "school-card no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "remove one school condition retains other",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "active school section reopens",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "form reset clears previously checked regions and school options",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "reset restores full catalogue",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "empty result has zero listings",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "empty result removes all map markers",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "empty no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "empty reset restores40",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "empty reset refits all40",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "whole-map button restores every result",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "drag area enters URL",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "back retains rounded map bounds and results",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "list selection opens selected card",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "list selection returns map to view",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "save state reflected",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "detail preserves selected listing",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "back retains selected listing",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "PC to mobile restores mode switch",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "mobile list to PC still shows map",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "resize keeps 40 records",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "fullscreen is user-initiated dialog",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "fullscreen closes without fixed map",
+      "ok": true
+    },
+    {
+      "label": "chrome-short",
+      "name": "no browser exceptions",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "list entry has 40 listings",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "desktop list entry also has map; mobile keeps list mode",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "all 40 source coordinates within initial map",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "all listing IDs appear in map markers",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "entire map in first viewport",
+      "ok": true,
+      "details": {
+        "y": 305.234375,
+        "height": 403,
+        "viewport": 768
+      }
+    },
+    {
+      "label": "chrome-small",
+      "name": "desktop mode switch hidden",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "map no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "map scrolls offscreen",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "wheel scroll did not zoom map",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "list has no independent scroll region",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "list no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "primary ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "junior ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "price ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "area ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "walk ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "updated ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "region ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "school missing entry last",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "missing school copy says unavailable",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "school selector reachable above sticky actions",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "school-filter no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "combined school filter",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "filters in URL",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "reload retains sort and school conditions",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "school-results no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "results jump reveals list heading",
+      "ok": true,
+      "details": {
+        "y": 798,
+        "top": 24.03125,
+        "active": "<a class=\"results-jump\" href=\"#property-results\" data-scroll-to=\"property-results\">一覧を見る ↓</a>",
+        "ready": "interactive"
+      }
+    },
+    {
+      "label": "chrome-small",
+      "name": "school-card no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "remove one school condition retains other",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "active school section reopens",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "form reset clears previously checked regions and school options",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "reset restores full catalogue",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "empty result has zero listings",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "empty result removes all map markers",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "empty no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "empty reset restores40",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "empty reset refits all40",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "whole-map button restores every result",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "drag area enters URL",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "back retains rounded map bounds and results",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "list selection opens selected card",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "list selection returns map to view",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "save state reflected",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "detail preserves selected listing",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "back retains selected listing",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "PC to mobile restores mode switch",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "mobile list to PC still shows map",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "resize keeps 40 records",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "fullscreen is user-initiated dialog",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "fullscreen closes without fixed map",
+      "ok": true
+    },
+    {
+      "label": "chrome-small",
+      "name": "no browser exceptions",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "list entry has 40 listings",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "desktop list entry also has map; mobile keeps list mode",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "all 40 source coordinates within initial map",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "all listing IDs appear in map markers",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "entire map in first viewport",
+      "ok": true,
+      "details": {
+        "y": 305.234375,
+        "height": 435,
+        "viewport": 800
+      }
+    },
+    {
+      "label": "safari-pc",
+      "name": "desktop mode switch hidden",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "map no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "map scrolls offscreen",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "wheel scroll did not zoom map",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "list has no independent scroll region",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "list no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "primary ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "junior ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "price ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "area ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "walk ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "updated ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "region ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "school missing entry last",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "missing school copy says unavailable",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "school selector reachable above sticky actions",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "school-filter no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "combined school filter",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "filters in URL",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "reload retains sort and school conditions",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "school-results no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "results jump reveals list heading",
+      "ok": true,
+      "details": {
+        "y": 830,
+        "top": 24.03125,
+        "active": "<body>\n<a class=\"skip\" href=\"#main\">本文へ</a>\n<div class=\"preview-label\">ご確認用 <span>ご相談の受付は準備中です</span></div>\n<header class=\"site-header\"><a class=\"brand\" href=\"#/search\" data-page=\"search\">やまと不動産<small>花鳥風月 やまとの家</small></a><nav aria-label=\"土地検索メニュー\"><button class=\"nav-budget\" data-start-budget=\"\">予算から計算</button><a class=\"saved-nav\" href=\"#/saved\" data-page=\"saved\"><span>保存した土地</span><b id=\"saved-count\">0</b></a></nav></header>\n<main id=\"main\">\n<section id=\"search-screen\" aria-labelledby=\"search-heading\">\n <div class=\"search-heading\"><div><p class=\"eyebrow\">奈良・京都の土地探し</p><h1 id=\"search-heading\" tabindex=\"-1\">土地を探す</h1></div><p class=\"desktop-intro\">気になる土地を保存して、<br>周辺環境や返済額を比べられます。</p></div>\n <div class=\"search-toolbar\"><button id=\"open-filters\" class=\"filter-toggle\">絞り込み <b id=\"filter-count\">2</b></button><div class=\"view-switch\" role=\"group\" aria-label=\"表示を切り替える\"><button id=\"map-view\" aria-pressed=\"false\">地図</button><button id=\"list-view\" aria-pressed=\"true\">一覧</button></div><p id=\"count\" role=\"status\">8件</p><a class=\"results-jump\" href=\"#property-results\" data-scroll-to=\"property-results\">一覧を見る ↓</a></div>\n <div id=\"active-filters\" class=\"active-filters\"><button data-remove-filter=\"primary\">小学校まで800m以内 <span aria-hidden=\"true\">×</span></button><button data-remove-filter=\"junior\">中学校まで1,200m以内 <span aria-hidden=\"true\">×</span></button><button class=\"clear-all\" data-reset-filters=\"\">すべて解除</button></div>\n <div class=\"workspace list-mode\" id=\"workspace\"><div class=\"map-column\"><div id=\"map-shell\" class=\"map-shell\"><div id=\"property-map\" role=\"region\" aria-label=\"奈良県・京都府の土地の地図\" class=\"leaflet-container leaflet-touch leaflet-safari leaflet-grab leaflet-touch-drag\" tabindex=\"0\" style=\"position: relative;\"><div class=\"leaflet-pane leaflet-map-pane\" style=\"transform: translate3d(0px, 0px, 0px);\"><div class=\"leaflet-pane leaflet-tile-pane\"><div class=\"leaflet-layer \" style=\"z-index: 1;\"><div class=\"leaflet-tile-container leaflet-zoom-animated\" style=\"z-index: 18; transform: translate3d(0px, 0px, 0px) scale(0.840896);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7185/3253.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(632px, 170px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7185/3252.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(632px, -86px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7184/3253.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(376px, 170px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7186/3253.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(888px, 170px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7185/3254.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(632px, 426px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7184/3252.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(376px, -86px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7186/3252.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(888px, -86px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7184/3254.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(376px, 426px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7186/3254.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(888px, 426px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7183/3253.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(120px, 170px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7187/3253.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(1144px, 170px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7183/3252.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(120px, -86px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7187/3252.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(1144px, -86px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7183/3254.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(120px, 426px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7187/3254.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(1144px, 426px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7182/3253.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-136px, 170px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7188/3253.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(1400px, 170px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7182/3252.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-136px, -86px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7188/3252.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(1400px, -86px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7182/3254.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-136px, 426px, 0px);\"><img alt=\"\" src=\"https://cyberjapandata.gsi.go.jp/xyz/pale/13/7188/3254.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(1400px, 426px, 0px);\"></div></div></div><div class=\"leaflet-pane leaflet-overlay-pane\"></div><div class=\"leaflet-pane leaflet-shadow-pane leaflet-zoom-hide\"></div><div class=\"leaflet-pane leaflet-marker-pane leaflet-zoom-hide\"><div class=\"leaflet-marker-icon cluster-pin leaflet-zoom-hide leaflet-interactive\" style=\"margin-left: -24px; margin-top: -24px; width: 48px; height: 48px; transform: translate3d(845px, 309px, 0px); z-index: 309;\"><button data-cluster=\"s20499832,s20746650,s20803130\" aria-label=\"この付近の物件3件を見る\">3</button></div><div class=\"leaflet-marker-icon price-pin leaflet-zoom-hide leaflet-interactive\" style=\"margin-left: -47px; margin-top: -22px; width: 94px; height: 44px; transform: translate3d(619px, 166px, 0px); z-index: 166;\"><button data-pin=\"s20586171\" class=\"\" aria-label=\"敷島町2丁目、土地1,980万円、地図の位置は目安\">1,980<small>万円</small></button></div><div class=\"leaflet-marker-icon cluster-pin leaflet-zoom-hide leaflet-interactive\" style=\"margin-left: -24px; margin-top: -24px; width: 48px; height: 48px; transform: translate3d(320px, 121px, 0px); z-index: 121;\"><button data-cluster=\"s21270706,s77151550\" aria-label=\"この付近の物件2件を見る\">2</button></div><div class=\"leaflet-marker-icon price-pin leaflet-zoom-hide leaflet-interactive\" style=\"margin-left: -47px; margin-top: -22px; width: 94px; height: 44px; transform: translate3d(798px, 72px, 0px); z-index: 72;\"><button data-pin=\"s78577683\" class=\"\" aria-label=\"朱雀5丁目、土地2,280万円、地図の位置は目安\">2,280<small>万円</small></button></div><div class=\"leaflet-marker-icon price-pin leaflet-zoom-hide leaflet-interactive\" style=\"margin-left: -47px; margin-top: -22px; width: 94px; height: 44px; transform: translate3d(847px, 364px, 0px); z-index: 364;\"><button data-pin=\"s98552927\" class=\"\" aria-label=\"大安寺2丁目（2区画掲載）、土地1,680万円、地図の位置は目安\">1,680<small>万円</small></button></div></div><div class=\"leaflet-pane leaflet-tooltip-pane\"></div><div class=\"leaflet-pane leaflet-popup-pane\"></div></div><div class=\"leaflet-control-container\"><div class=\"leaflet-top leaflet-left\"></div><div class=\"leaflet-top leaflet-right\"></div><div class=\"leaflet-bottom leaflet-left\"></div><div class=\"leaflet-bottom leaflet-right\"><div class=\"leaflet-control-zoom leaflet-bar leaflet-control\"><a class=\"leaflet-control-zoom-in\" href=\"#\" title=\"Zoom in\" role=\"button\" aria-label=\"Zoom in\" aria-disabled=\"false\"><span aria-hidden=\"true\">+</span></a><a class=\"leaflet-control-zoom-out\" href=\"#\" title=\"Zoom out\" role=\"button\" aria-label=\"Zoom out\" aria-disabled=\"false\"><span aria-hidden=\"true\">−</span></a></div><div class=\"leaflet-control-attribution leaflet-control\"><a href=\"https://leafletjs.com\" title=\"A JavaScript library for interactive maps\"><svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"8\" viewBox=\"0 0 12 8\" class=\"leaflet-attribution-flag\"><path fill=\"#4C7BE1\" d=\"M0 0h12v4H0z\"></path><path fill=\"#FFD500\" d=\"M0 4h12v3H0z\"></path><path fill=\"#E0BC00\" d=\"M0 7h12v1H0z\"></path></svg> Leaflet</a> <span aria-hidden=\"true\">|</span> <a href=\"https://maps.gsi.go.jp/development/ichiran.html\" target=\"_blank\" rel=\"noopener\">地理院タイル（国土地理院）</a></div></div></div></div><div class=\"map-caption\"><span>位置は目安</span><span>数字は掲載件数</span></div><button id=\"map-fit\" class=\"map-fit\" aria-label=\"検索結果の全体を地図に表示\">全体を見る</button><button id=\"map-expand\" class=\"map-expand\" aria-label=\"地図を大きく見る\">拡大表示</button><button id=\"map-close\" class=\"map-close\" hidden=\"\">地図を閉じる</button><button id=\"search-bounds\" class=\"bounds-button\" hidden=\"\">この範囲で探す</button><div id=\"map-error\" class=\"map-error\" hidden=\"\"><p>地図を読み込めませんでした。</p><button id=\"fallback-list\">一覧から探す</button></div><div id=\"map-empty\" class=\"map-empty\" role=\"status\" hidden=\"\"><h2>条件に合う物件が見つかりません</h2><p>地域や予算を変えて、もう一度お探しください。</p><button data-reset-filters=\"\">絞り込みを解除</button></div></div><div id=\"selected-card\" class=\"selected-card\" hidden=\"\"></div><p class=\"map-footnote\">地図の位置はSUUMOの掲載情報をもとにした目安です。正確な区画や入口は担当者にご確認ください。</p></div><aside id=\"property-results\" class=\"list-panel\" aria-label=\"検索結果\"><div class=\"results-heading\"><h2>物件一覧</h2><div class=\"results-tools\"><label class=\"sort-label\">並び順<select id=\"sort\"><option value=\"price\">価格が安い順（下限）</option><option value=\"area\">面積が広い順（上限）</option><option value=\"walk\">駅から近い順（徒歩）</option><option value=\"primary\">小学校が近い順</option><option value=\"junior\">中学校が近い順</option><option value=\"updated\">情報が新しい順</option><option value=\"region\">地域順</option></select></label></div></div><p id=\"school-note\" class=\"list-note\">学校までの距離はSUUMOの掲載情報です。通う学校・通学路は未確認です。</p><p id=\"match-note\" class=\"list-note\">中学校までの掲載距離が短い順です。距離の情報がない物件は最後に表示します。</p><div id=\"list\"><article class=\"property-card\" data-id=\"s78577683\"><div class=\"card-picture\"><a href=\"#/property/s78577683\" data-property=\"s78577683\" tabindex=\"-1\" aria-hidden=\"true\"><img class=\" \" src=\"https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F060%2FN010000%2Fimg%2F683%2F78577683%2F78577683_0138.jpg&amp;w=452&amp;h=339\" alt=\"朱雀5丁目・前面道路含む現地写真（SUUMO掲載）\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"no-referrer\"></a><button class=\"save-button  icon-only\" data-save=\"s78577683\" aria-pressed=\"false\" aria-label=\"朱雀5丁目を候補に保存\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z\"></path></svg></button></div><div class=\"card-body\"><p class=\"card-city\">奈良市<span>土地</span></p><h2><a href=\"#/property/s78577683\" data-property=\"s78577683\">朱雀5丁目</a></h2><p class=\"card-price\">2,280<small>万円</small></p><p class=\"card-facts\">206.4㎡<span>62.4坪</span></p><p class=\"card-access\">高の原駅 徒歩20分<small>SUUMO掲載</small></p><dl class=\"card-schools\"><div><dt>小学校</dt><dd><span>奈良市立朱雀小学校</span><strong>677m</strong></dd></div><div><dt>中学校</dt><dd><span>奈良市立平城東中学校</span><strong>487m</strong></dd></div></dl><div class=\"card-actions\"><button data-map-select=\"s78577683\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Zm0 0V3m6 18V6\"></path></svg>地図</button><a class=\"detail-link\" href=\"#/property/s78577683\" data-property=\"s78577683\">詳細を見る <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"></path></svg></a></div></div></article><article class=\"property-card\" data-id=\"s20746650\"><div class=\"card-picture\"><a href=\"#/property/s20746650\" data-property=\"s20746650\" tabindex=\"-1\" aria-hidden=\"true\"><img class=\" \" src=\"https://suumo.jp/front/gazo/bukken/060/N010000/img/650/20746650/20746650_0129.jpg\" alt=\"大安寺5丁目・現地土地写真（SUUMO掲載）\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"no-referrer\"></a><button class=\"save-button  icon-only\" data-save=\"s20746650\" aria-pressed=\"false\" aria-label=\"大安寺5丁目を候補に保存\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z\"></path></svg></button></div><div class=\"card-body\"><p class=\"card-city\">奈良市<span>土地</span></p><h2><a href=\"#/property/s20746650\" data-property=\"s20746650\">大安寺5丁目</a></h2><p class=\"card-price\">1,380<small>万円</small></p><p class=\"card-facts\">107.07〜124.24㎡<span>32.4〜坪</span></p><p class=\"card-access\">奈良駅 徒歩17分<small>SUUMO掲載</small></p><dl class=\"card-schools\"><div><dt>小学校</dt><dd><span>奈良市立大安寺小学校</span><strong>650m</strong></dd></div><div><dt>中学校</dt><dd><span>奈良市立春日中学校</span><strong>500m</strong></dd></div></dl><div class=\"card-actions\"><button data-map-select=\"s20746650\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Zm0 0V3m6 18V6\"></path></svg>地図</button><a class=\"detail-link\" href=\"#/property/s20746650\" data-property=\"s20746650\">詳細を見る <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"></path></svg></a></div></div></article><article class=\"property-card\" data-id=\"s20499832\"><div class=\"card-picture\"><a href=\"#/property/s20499832\" data-property=\"s20499832\" tabindex=\"-1\" aria-hidden=\"true\"><img class=\" \" src=\"https://suumo.jp/front/gazo/bukken/060/N010000/img/832/20499832/20499832_0183.jpg\" alt=\"四条大路1丁目・前面道路含む現地写真（SUUMO掲載）\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"no-referrer\"></a><button class=\"save-button  icon-only\" data-save=\"s20499832\" aria-pressed=\"false\" aria-label=\"四条大路1丁目を候補に保存\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z\"></path></svg></button></div><div class=\"card-body\"><p class=\"card-city\">奈良市<span>土地</span></p><h2><a href=\"#/property/s20499832\" data-property=\"s20499832\">四条大路1丁目</a></h2><p class=\"card-price\">2,780<small>万円</small></p><p class=\"card-facts\">187.33〜187.43㎡<span>56.7〜坪</span></p><p class=\"card-access\">新大宮駅 徒歩18分<small>SUUMO掲載</small></p><dl class=\"card-schools\"><div><dt>小学校</dt><dd><span>奈良市立大安寺西小学校</span><strong>648m</strong></dd></div><div><dt>中学校</dt><dd><span>奈良市立三笠中学校</span><strong>614m</strong></dd></div></dl><div class=\"card-actions\"><button data-map-select=\"s20499832\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Zm0 0V3m6 18V6\"></path></svg>地図</button><a class=\"detail-link\" href=\"#/property/s20499832\" data-property=\"s20499832\">詳細を見る <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"></path></svg></a></div></div></article><article class=\"property-card\" data-id=\"s77151550\"><div class=\"card-picture\"><a href=\"#/property/s77151550\" data-property=\"s77151550\" tabindex=\"-1\" aria-hidden=\"true\"><img class=\" \" src=\"https://suumo.jp/front/gazo/bukken/060/N010000/img/550/77151550/77151550_0136.jpg\" alt=\"小明町・現地土地写真（SUUMO掲載）\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"no-referrer\"></a><button class=\"save-button  icon-only\" data-save=\"s77151550\" aria-pressed=\"false\" aria-label=\"小明町を候補に保存\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z\"></path></svg></button></div><div class=\"card-body\"><p class=\"card-city\">生駒市<span>土地</span></p><h2><a href=\"#/property/s77151550\" data-property=\"s77151550\">小明町</a></h2><p class=\"card-price\">1,980<small>万円</small></p><p class=\"card-facts\">166.62〜234.59㎡<span>50.4〜坪</span></p><p class=\"card-access\">白庭台駅 徒歩36分<small>SUUMO掲載</small></p><dl class=\"card-schools\"><div><dt>小学校</dt><dd><span>生駒市立生駒台小学校</span><strong>650m</strong></dd></div><div><dt>中学校</dt><dd><span>生駒市立光明中学校</span><strong>683m</strong></dd></div></dl><div class=\"card-actions\"><button data-map-select=\"s77151550\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Zm0 0V3m6 18V6\"></path></svg>地図</button><a class=\"detail-link\" href=\"#/property/s77151550\" data-property=\"s77151550\">詳細を見る <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"></path></svg></a></div></div></article><article class=\"property-card\" data-id=\"s21270706\"><div class=\"card-picture\"><a href=\"#/property/s21270706\" data-property=\"s21270706\" tabindex=\"-1\" aria-hidden=\"true\"><img class=\" \" src=\"https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F060%2FN010000%2Fimg%2F706%2F21270706%2F21270706_0179.jpg&amp;w=96&amp;h=72\" alt=\"俵口町・前面道路含む現地写真（SUUMO掲載）\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"no-referrer\"></a><button class=\"save-button  icon-only\" data-save=\"s21270706\" aria-pressed=\"false\" aria-label=\"俵口町を候補に保存\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z\"></path></svg></button></div><div class=\"card-body\"><p class=\"card-city\">生駒市<span>土地</span></p><h2><a href=\"#/property/s21270706\" data-property=\"s21270706\">俵口町</a></h2><p class=\"card-price\">2,180〜2,380<small>万円</small></p><p class=\"card-facts\">182〜257.78㎡<span>55.1〜坪</span></p><p class=\"card-access\">生駒駅 徒歩27分<small>SUUMO掲載</small></p><dl class=\"card-schools\"><div><dt>小学校</dt><dd><span>生駒市立生駒台小学校</span><strong>240m</strong></dd></div><div><dt>中学校</dt><dd><span>生駒市立光明中学校</span><strong>950m</strong></dd></div></dl><div class=\"card-actions\"><button data-map-select=\"s21270706\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Zm0 0V3m6 18V6\"></path></svg>地図</button><a class=\"detail-link\" href=\"#/property/s21270706\" data-property=\"s21270706\">詳細を見る <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"></path></svg></a></div></div></article><article class=\"property-card\" data-id=\"s20586171\"><div class=\"card-picture\"><a href=\"#/property/s20586171\" data-property=\"s20586171\" tabindex=\"-1\" aria-hidden=\"true\"><img class=\" \" src=\"https://suumo.jp/front/gazo/bukken/060/N010000/img/171/20586171/20586171_0246.jpg\" alt=\"敷島町2丁目・現地土地写真（SUUMO掲載）\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"no-referrer\"></a><button class=\"save-button  icon-only\" data-save=\"s20586171\" aria-pressed=\"false\" aria-label=\"敷島町2丁目を候補に保存\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z\"></path></svg></button></div><div class=\"card-body\"><p class=\"card-city\">奈良市<span>土地</span></p><h2><a href=\"#/property/s20586171\" data-property=\"s20586171\">敷島町2丁目</a></h2><p class=\"card-price\">1,980<small>万円</small></p><p class=\"card-facts\">210〜288.49㎡<span>63.5〜坪</span></p><p class=\"card-access\">菖蒲池駅 徒歩14分<small>SUUMO掲載</small></p><dl class=\"card-schools\"><div><dt>小学校</dt><dd><span>奈良市立西大寺北小学校</span><strong>700m</strong></dd></div><div><dt>中学校</dt><dd><span>奈良市立平城中学校</span><strong>1,200m</strong></dd></div></dl><div class=\"card-actions\"><button data-map-select=\"s20586171\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Zm0 0V3m6 18V6\"></path></svg>地図</button><a class=\"detail-link\" href=\"#/property/s20586171\" data-property=\"s20586171\">詳細を見る <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"></path></svg></a></div></div></article><article class=\"property-card\" data-id=\"s20803130\"><div class=\"card-picture\"><a href=\"#/property/s20803130\" data-property=\"s20803130\" tabindex=\"-1\" aria-hidden=\"true\"><img class=\" \" src=\"https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F060%2FN010000%2Fimg%2F130%2F20803130%2F20803130_0096.jpg&amp;w=452&amp;h=339\" alt=\"大宮町5丁目（土地5,880万円）・現地土地写真（SUUMO掲載）\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"no-referrer\"></a><button class=\"save-button  icon-only\" data-save=\"s20803130\" aria-pressed=\"false\" aria-label=\"大宮町5丁目（土地5,880万円）を候補に保存\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z\"></path></svg></button></div><div class=\"card-body\"><p class=\"card-city\">奈良市<span>土地</span></p><h2><a href=\"#/property/s20803130\" data-property=\"s20803130\">大宮町5丁目（土地5,880万円）</a></h2><p class=\"card-price\">5,880<small>万円</small></p><p class=\"card-facts\">227.92㎡<span>68.9坪</span></p><p class=\"card-access\">新大宮駅 徒歩6分<small>SUUMO掲載</small></p><dl class=\"card-schools\"><div><dt>小学校</dt><dd><span>奈良市立大宮小学校</span><strong>400m</strong></dd></div><div><dt>中学校</dt><dd><span>三笠中学校</span><strong>1,200m</strong></dd></div></dl><div class=\"card-actions\"><button data-map-select=\"s20803130\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Zm0 0V3m6 18V6\"></path></svg>地図</button><a class=\"detail-link\" href=\"#/property/s20803130\" data-property=\"s20803130\">詳細を見る <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"></path></svg></a></div></div></article><article class=\"property-card\" data-id=\"s98552927\"><div class=\"card-picture\"><a href=\"#/property/s98552927\" data-property=\"s98552927\" tabindex=\"-1\" aria-hidden=\"true\"><img class=\" \" src=\"https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F060%2FN010000%2Fimg%2F927%2F98552927%2F98552927_0055.jpg&amp;w=452&amp;h=339\" alt=\"大安寺2丁目（2区画掲載）・現地土地写真（SUUMO掲載）\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"no-referrer\"></a><button class=\"save-button  icon-only\" data-save=\"s98552927\" aria-pressed=\"false\" aria-label=\"大安寺2丁目（2区画掲載）を候補に保存\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z\"></path></svg></button></div><div class=\"card-body\"><p class=\"card-city\">奈良市<span>土地</span></p><h2><a href=\"#/property/s98552927\" data-property=\"s98552927\">大安寺2丁目（2区画掲載）</a></h2><p class=\"card-price\">1,680<small>万円</small></p><p class=\"card-facts\">148㎡<span>44.8坪</span></p><p class=\"card-access\">奈良駅 徒歩26分<small>SUUMO掲載</small></p><dl class=\"card-schools\"><div><dt>小学校</dt><dd><span>奈良市立大安寺小学校</span><strong>60m</strong></dd></div><div><dt>中学校</dt><dd><span>奈良市立春日中学校</span><strong>1,200m</strong></dd></div></dl><div class=\"card-actions\"><button data-map-select=\"s98552927\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Zm0 0V3m6 18V6\"></path></svg>地図</button><a class=\"detail-link\" href=\"#/property/s98552927\" data-property=\"s98552927\">詳細を見る <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"></path></svg></a></div></div></article></div></aside></div>\n <p class=\"catalog-note\">掲載40件には複数の区画を含む物件があります。情報提供日：2026年9月6日／取得日：9月7日</p>\n</section>\n<div id=\"content-screen\" hidden=\"\"></div>\n</main>\n<aside id=\"compare-tray\" class=\"compare-tray\" aria-label=\"比較する土地\" hidden=\"\"></aside><div id=\"toast\" class=\"toast\" role=\"status\" aria-live=\"polite\" hidden=\"\"></div>\n<dialog id=\"filter-dialog\" aria-labelledby=\"filter-heading\"><form id=\"filter-form\"><div class=\"dialog-head\"><h2 id=\"filter-heading\">絞り込み</h2><button type=\"button\" data-close-dialog=\"\" aria-label=\"絞り込みを閉じる\">×</button></div><fieldset><legend>地域</legend><div id=\"region-options\"></div></fieldset><label>土地価格の上限<select name=\"price\"><option value=\"\">指定なし</option><option value=\"1000\">1,000万円まで</option><option value=\"1500\">1,500万円まで</option><option value=\"2000\">2,000万円まで</option><option value=\"2500\">2,500万円まで</option><option value=\"3000\">3,000万円まで</option></select></label><label>土地面積<select name=\"area\"><option value=\"\">指定なし</option><option value=\"150\">150㎡以上（約45坪）</option><option value=\"180\">180㎡以上（約54坪）</option></select></label><label>駅までの徒歩時間<select name=\"walk\"><option value=\"\">指定なし</option><option value=\"10\">10分以内</option><option value=\"15\">15分以内</option><option value=\"20\">20分以内</option></select></label><p class=\"note\">価格や面積に幅がある物件は、ご希望の両方を満たす区画があるか担当者にご確認ください。徒歩時間は鉄道駅までの時間です。</p><details id=\"school-filters\" class=\"school-filters\"><summary>学校までの距離</summary><p class=\"note\">SUUMOに掲載された学校までの距離です。通う学校・通学路は未確認です。</p><div class=\"school-filter-fields\"><label>小学校<select name=\"primary\"><option value=\"\">指定なし</option><option value=\"800\">800m以内</option><option value=\"1200\">1,200m以内</option><option value=\"1600\">1,600m以内</option></select></label><label>中学校<select name=\"junior\"><option value=\"\">指定なし</option><option value=\"800\">800m以内</option><option value=\"1200\">1,200m以内</option><option value=\"1600\">1,600m以内</option></select></label></div></details><div class=\"dialog-actions\"><button type=\"reset\">リセット</button><button type=\"submit\" class=\"primary\">検索する</button></div></form></dialog>\n<dialog id=\"cluster-dialog\" aria-labelledby=\"cluster-heading\"><div class=\"dialog-head\"><h2 id=\"cluster-heading\">この付近の物件</h2><button data-close-dialog=\"\" aria-label=\"物件一覧を閉じる\">×</button></div><div id=\"cluster-items\"></div></dialog>\n<dialog id=\"image-dialog\" class=\"image-dialog\" aria-label=\"物件の写真を拡大\"><button data-close-dialog=\"\" class=\"image-close\">閉じる ×</button><div id=\"image-content\"></div></dialog>\n<noscript><p>土地検索や返済額の計算には、JavaScriptを有効にしてください。<a href=\"https://suumo.jp/tochi/__JJ_JJ010FJ001_arz1060z2bsz1030z2kkcz1140582001.html\">SUUMOの掲載一覧へ</a></p></noscript>\n<script src=\"https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js\" integrity=\"sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH\" crossorigin=\"anonymous\"></script><script type=\"module\" src=\"assets/land-payment-study/app.mjs\"></script>\n\n</body>",
+        "ready": "complete"
+      }
+    },
+    {
+      "label": "safari-pc",
+      "name": "school-card no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "remove one school condition retains other",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "active school section reopens",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "form reset clears previously checked regions and school options",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "reset restores full catalogue",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "empty result has zero listings",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "empty result removes all map markers",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "empty no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "empty reset restores40",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "empty reset refits all40",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "whole-map button restores every result",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "drag area enters URL",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "list selection opens selected card",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "list selection returns map to view",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "save state reflected",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "detail preserves selected listing",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "back retains selected listing",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "PC to mobile restores mode switch",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "mobile list to PC still shows map",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "resize keeps 40 records",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "fullscreen is user-initiated dialog",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "fullscreen closes without fixed map",
+      "ok": true
+    },
+    {
+      "label": "safari-pc",
+      "name": "no browser exceptions",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "list entry has 40 listings",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "desktop list entry also has map; mobile keeps list mode",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "all 40 source coordinates within initial map",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "all listing IDs appear in map markers",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "map no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "list no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "primary ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "junior ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "price ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "area ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "walk ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "updated ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "region ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "school missing entry last",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "missing school copy says unavailable",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "school selector reachable above sticky actions",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "school-filter no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "combined school filter",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "filters in URL",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "reload retains sort and school conditions",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "school-results no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "school-card no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "remove one school condition retains other",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "active school section reopens",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "form reset clears previously checked regions and school options",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "reset restores full catalogue",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "empty result has zero listings",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "empty result removes all map markers",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "empty no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "empty reset restores40",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "empty reset refits all40",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "whole-map button restores every result",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "list selection opens selected card",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "list selection returns map to view",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "save state reflected",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "detail preserves selected listing",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "back retains selected listing",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "fullscreen is user-initiated dialog",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "fullscreen closes without fixed map",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "compare retains chosen2",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "comparison contains school distance unit",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "land price prefilled accurately",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "estimate result rendered",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "result no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-sp",
+      "name": "no browser exceptions",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "list entry has 40 listings",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "desktop list entry also has map; mobile keeps list mode",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "all 40 source coordinates within initial map",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "all listing IDs appear in map markers",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "map no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "list no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "primary ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "junior ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "price ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "area ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "walk ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "updated ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "region ordering matches published data",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "school missing entry last",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "missing school copy says unavailable",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "school selector reachable above sticky actions",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "school-filter no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "combined school filter",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "filters in URL",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "reload retains sort and school conditions",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "school-results no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "school-card no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "remove one school condition retains other",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "active school section reopens",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "form reset clears previously checked regions and school options",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "reset restores full catalogue",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "empty result has zero listings",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "empty result removes all map markers",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "empty no horizontal overflow",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "empty reset restores40",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "empty reset refits all40",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "whole-map button restores every result",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "list selection opens selected card",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "list selection returns map to view",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "save state reflected",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "detail preserves selected listing",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "back retains selected listing",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "fullscreen is user-initiated dialog",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "fullscreen closes without fixed map",
+      "ok": true
+    },
+    {
+      "label": "safari-small",
+      "name": "no browser exceptions",
+      "ok": true
+    },
+    {
+      "label": "failure",
+      "name": "tile failure leads to usable list",
+      "ok": true
+    }
+  ],
+  "shots": [
+    {
+      "label": "chrome-pc",
+      "name": "map",
+      "path": "qa/map-pc-school-20260908/local-chrome-pc-map.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "chrome-pc",
+      "name": "list",
+      "path": "qa/map-pc-school-20260908/local-chrome-pc-list.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "chrome-pc",
+      "name": "school-filter",
+      "path": "qa/map-pc-school-20260908/local-chrome-pc-school-filter.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "chrome-pc",
+      "name": "school-results",
+      "path": "qa/map-pc-school-20260908/local-chrome-pc-school-results.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "chrome-pc",
+      "name": "school-card",
+      "path": "qa/map-pc-school-20260908/local-chrome-pc-school-card.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "chrome-pc",
+      "name": "empty",
+      "path": "qa/map-pc-school-20260908/local-chrome-pc-empty.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "chrome-pc",
+      "name": "result",
+      "path": "qa/map-pc-school-20260908/local-chrome-pc-result.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "chrome-short",
+      "name": "map",
+      "path": "qa/map-pc-school-20260908/local-chrome-short-map.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "label": "chrome-short",
+      "name": "list",
+      "path": "qa/map-pc-school-20260908/local-chrome-short-list.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "label": "chrome-short",
+      "name": "school-filter",
+      "path": "qa/map-pc-school-20260908/local-chrome-short-school-filter.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "label": "chrome-short",
+      "name": "school-results",
+      "path": "qa/map-pc-school-20260908/local-chrome-short-school-results.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "label": "chrome-short",
+      "name": "school-card",
+      "path": "qa/map-pc-school-20260908/local-chrome-short-school-card.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "label": "chrome-short",
+      "name": "empty",
+      "path": "qa/map-pc-school-20260908/local-chrome-short-empty.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "label": "chrome-small",
+      "name": "map",
+      "path": "qa/map-pc-school-20260908/local-chrome-small-map.png",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "chrome-small",
+      "name": "list",
+      "path": "qa/map-pc-school-20260908/local-chrome-small-list.png",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "chrome-small",
+      "name": "school-filter",
+      "path": "qa/map-pc-school-20260908/local-chrome-small-school-filter.png",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "chrome-small",
+      "name": "school-results",
+      "path": "qa/map-pc-school-20260908/local-chrome-small-school-results.png",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "chrome-small",
+      "name": "school-card",
+      "path": "qa/map-pc-school-20260908/local-chrome-small-school-card.png",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "chrome-small",
+      "name": "empty",
+      "path": "qa/map-pc-school-20260908/local-chrome-small-empty.png",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "safari-pc",
+      "name": "map",
+      "path": "qa/map-pc-school-20260908/local-safari-pc-map.png",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "label": "safari-pc",
+      "name": "list",
+      "path": "qa/map-pc-school-20260908/local-safari-pc-list.png",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "label": "safari-pc",
+      "name": "school-filter",
+      "path": "qa/map-pc-school-20260908/local-safari-pc-school-filter.png",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "label": "safari-pc",
+      "name": "school-results",
+      "path": "qa/map-pc-school-20260908/local-safari-pc-school-results.png",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "label": "safari-pc",
+      "name": "school-card",
+      "path": "qa/map-pc-school-20260908/local-safari-pc-school-card.png",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "label": "safari-pc",
+      "name": "empty",
+      "path": "qa/map-pc-school-20260908/local-safari-pc-empty.png",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "label": "safari-sp",
+      "name": "map",
+      "path": "qa/map-pc-school-20260908/local-safari-sp-map.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "label": "safari-sp",
+      "name": "list",
+      "path": "qa/map-pc-school-20260908/local-safari-sp-list.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "label": "safari-sp",
+      "name": "school-filter",
+      "path": "qa/map-pc-school-20260908/local-safari-sp-school-filter.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "label": "safari-sp",
+      "name": "school-results",
+      "path": "qa/map-pc-school-20260908/local-safari-sp-school-results.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "label": "safari-sp",
+      "name": "school-card",
+      "path": "qa/map-pc-school-20260908/local-safari-sp-school-card.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "label": "safari-sp",
+      "name": "empty",
+      "path": "qa/map-pc-school-20260908/local-safari-sp-empty.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "label": "safari-sp",
+      "name": "result",
+      "path": "qa/map-pc-school-20260908/local-safari-sp-result.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "label": "safari-small",
+      "name": "map",
+      "path": "qa/map-pc-school-20260908/local-safari-small-map.png",
+      "width": 320,
+      "height": 740
+    },
+    {
+      "label": "safari-small",
+      "name": "list",
+      "path": "qa/map-pc-school-20260908/local-safari-small-list.png",
+      "width": 320,
+      "height": 740
+    },
+    {
+      "label": "safari-small",
+      "name": "school-filter",
+      "path": "qa/map-pc-school-20260908/local-safari-small-school-filter.png",
+      "width": 320,
+      "height": 740
+    },
+    {
+      "label": "safari-small",
+      "name": "school-results",
+      "path": "qa/map-pc-school-20260908/local-safari-small-school-results.png",
+      "width": 320,
+      "height": 740
+    },
+    {
+      "label": "safari-small",
+      "name": "school-card",
+      "path": "qa/map-pc-school-20260908/local-safari-small-school-card.png",
+      "width": 320,
+      "height": 740
+    },
+    {
+      "label": "safari-small",
+      "name": "empty",
+      "path": "qa/map-pc-school-20260908/local-safari-small-empty.png",
+      "width": 320,
+      "height": 740
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,809 @@
+{
+  "sourceRevision": "suumo-20260907-v1",
+  "sourceUpdated": "2026-09-06",
+  "retrieved": "2026-09-07",
+  "unit": "m",
+  "primaryCount": 40,
+  "juniorCount": 39,
+  "notConfirmed": [
+    "指定学区",
+    "通学路",
+    "安全性",
+    "物件玄関からの実測経路"
+  ],
+  "properties": [
+    {
+      "id": "s74168777",
+      "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_74168777/",
+      "primary": {
+        "type": "小学校",
+        "name": "生駒東小学校",
+        "publishedMeters": 1300,
+        "publishedMinutes": 17,
+        "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_74168777/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "緑ヶ丘中学校",
+        "publishedMeters": 1000,
+        "publishedMinutes": 13,
+        "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_74168777/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s77384816",
+      "source": "https://suumo.jp/tochi/nara/sc_yamatokoriyama/nc_77384816/",
+      "primary": {
+        "type": "小学校",
+        "name": "大和郡山市立矢田南小学校",
+        "publishedMeters": 977,
+        "publishedMinutes": 13,
+        "source": "https://suumo.jp/tochi/nara/sc_yamatokoriyama/nc_77384816/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "大和郡山市立郡山西中学校",
+        "publishedMeters": 2184,
+        "publishedMinutes": 28,
+        "source": "https://suumo.jp/tochi/nara/sc_yamatokoriyama/nc_77384816/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s21354655",
+      "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_21354655/",
+      "primary": {
+        "type": "小学校",
+        "name": "斑鳩町立斑鳩東小学校",
+        "publishedMeters": 830,
+        "publishedMinutes": 11,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_21354655/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "斑鳩町立斑鳩中学校",
+        "publishedMeters": 1370,
+        "publishedMinutes": 18,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_21354655/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s78581436",
+      "source": "https://suumo.jp/tochi/nara/sc_tenri/nc_78581436/",
+      "primary": {
+        "type": "小学校",
+        "name": "天理市立前栽小学校",
+        "publishedMeters": 826,
+        "publishedMinutes": 11,
+        "source": "https://suumo.jp/tochi/nara/sc_tenri/nc_78581436/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "天理市立西中学校",
+        "publishedMeters": 1984,
+        "publishedMinutes": 25,
+        "source": "https://suumo.jp/tochi/nara/sc_tenri/nc_78581436/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s20586171",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20586171/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立西大寺北小学校",
+        "publishedMeters": 700,
+        "publishedMinutes": 9,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20586171/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立平城中学校",
+        "publishedMeters": 1200,
+        "publishedMinutes": 15,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20586171/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s20670715",
+      "source": "https://suumo.jp/tochi/kyoto/sc_kizugawa/nc_20670715/",
+      "primary": {
+        "type": "小学校",
+        "name": "木津川市立城山台小学校",
+        "publishedMeters": 1094,
+        "publishedMinutes": 14,
+        "source": "https://suumo.jp/tochi/kyoto/sc_kizugawa/nc_20670715/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "木津川市立木津南中学校",
+        "publishedMeters": 1840,
+        "publishedMinutes": 23,
+        "source": "https://suumo.jp/tochi/kyoto/sc_kizugawa/nc_20670715/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s76455797",
+      "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_76455797/",
+      "primary": {
+        "type": "小学校",
+        "name": "生駒市立生駒台小学校",
+        "publishedMeters": 2500,
+        "publishedMinutes": 32,
+        "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_76455797/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "生駒市立光明中学校",
+        "publishedMeters": 2374,
+        "publishedMinutes": 30,
+        "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_76455797/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s20499832",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20499832/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立大安寺西小学校",
+        "publishedMeters": 648,
+        "publishedMinutes": 9,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20499832/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立三笠中学校",
+        "publishedMeters": 614,
+        "publishedMinutes": 8,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20499832/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s21320158",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_21320158/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立佐保台小学校",
+        "publishedMeters": 1280,
+        "publishedMinutes": 16,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_21320158/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立平城東中学校",
+        "publishedMeters": 1515,
+        "publishedMinutes": 19,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_21320158/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s20746650",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20746650/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立大安寺小学校",
+        "publishedMeters": 650,
+        "publishedMinutes": 9,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20746650/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立春日中学校",
+        "publishedMeters": 500,
+        "publishedMinutes": 7,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20746650/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s78957553",
+      "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_78957553/",
+      "primary": {
+        "type": "小学校",
+        "name": "橿原市立耳成南小学校",
+        "publishedMeters": 1182,
+        "publishedMinutes": 15,
+        "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_78957553/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "橿原市立八木中学校",
+        "publishedMeters": 1482,
+        "publishedMinutes": 19,
+        "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_78957553/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s74822856",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_74822856/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立佐保小学校",
+        "publishedMeters": 376,
+        "publishedMinutes": 5,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_74822856/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "若草中学校",
+        "publishedMeters": 1400,
+        "publishedMinutes": 18,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_74822856/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s77306427",
+      "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_77306427/",
+      "primary": {
+        "type": "小学校",
+        "name": "橿原市立晩成小学校",
+        "publishedMeters": 202,
+        "publishedMinutes": 3,
+        "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_77306427/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "橿原市立八木中学校",
+        "publishedMeters": 2200,
+        "publishedMinutes": 28,
+        "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_77306427/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s77151550",
+      "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_77151550/",
+      "primary": {
+        "type": "小学校",
+        "name": "生駒市立生駒台小学校",
+        "publishedMeters": 650,
+        "publishedMinutes": 9,
+        "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_77151550/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "生駒市立光明中学校",
+        "publishedMeters": 683,
+        "publishedMinutes": 9,
+        "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_77151550/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s77151281",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_77151281/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立佐保小学校",
+        "publishedMeters": 513,
+        "publishedMinutes": 7,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_77151281/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立若草中学校",
+        "publishedMeters": 1500,
+        "publishedMinutes": 19,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_77151281/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s78316608",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_78316608/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立都跡小学校",
+        "publishedMeters": 1029,
+        "publishedMinutes": 13,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_78316608/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立都跡中学校",
+        "publishedMeters": 660,
+        "publishedMinutes": 9,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_78316608/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s98280687",
+      "source": "https://suumo.jp/tochi/kyoto/sc_kyotanabe/nc_98280687/",
+      "primary": {
+        "type": "小学校",
+        "name": "京田辺市立 田辺小学校",
+        "publishedMeters": 1200,
+        "publishedMinutes": 15,
+        "source": "https://suumo.jp/tochi/kyoto/sc_kyotanabe/nc_98280687/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "京田辺市立 田辺中学校",
+        "publishedMeters": 2000,
+        "publishedMinutes": 25,
+        "source": "https://suumo.jp/tochi/kyoto/sc_kyotanabe/nc_98280687/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s76905419",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_76905419/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立佐保川小学校",
+        "publishedMeters": 807,
+        "publishedMinutes": 11,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_76905419/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立三笠中学校",
+        "publishedMeters": 1410,
+        "publishedMinutes": 18,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_76905419/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s21327071",
+      "source": "https://suumo.jp/tochi/kyoto/sc_sorakugun/nc_21327071/",
+      "primary": {
+        "type": "小学校",
+        "name": "精華町立精北小学校",
+        "publishedMeters": 556,
+        "publishedMinutes": 7,
+        "source": "https://suumo.jp/tochi/kyoto/sc_sorakugun/nc_21327071/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "精華町立精華中学校",
+        "publishedMeters": 2441,
+        "publishedMinutes": 31,
+        "source": "https://suumo.jp/tochi/kyoto/sc_sorakugun/nc_21327071/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s72388512",
+      "source": "https://suumo.jp/tochi/nara/sc_shikiguntawaramoto/nc_72388512/",
+      "primary": {
+        "type": "小学校",
+        "name": "田原本町立平野小学校",
+        "publishedMeters": 1095,
+        "publishedMinutes": 14,
+        "source": "https://suumo.jp/tochi/nara/sc_shikiguntawaramoto/nc_72388512/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "田原本町立田原本中学校",
+        "publishedMeters": 980,
+        "publishedMinutes": 13,
+        "source": "https://suumo.jp/tochi/nara/sc_shikiguntawaramoto/nc_72388512/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s76905588",
+      "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_76905588/",
+      "primary": {
+        "type": "小学校",
+        "name": "斑鳩町立斑鳩小学校",
+        "publishedMeters": 1389,
+        "publishedMinutes": 18,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_76905588/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "斑鳩町立斑鳩南中学校",
+        "publishedMeters": 270,
+        "publishedMinutes": 4,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_76905588/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s21398442",
+      "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_21398442/",
+      "primary": {
+        "type": "小学校",
+        "name": "斑鳩町立斑鳩東小学校",
+        "publishedMeters": 750,
+        "publishedMinutes": 10,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_21398442/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "斑鳩町立斑鳩南中学校",
+        "publishedMeters": 1400,
+        "publishedMinutes": 18,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_21398442/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s21622737",
+      "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_21622737/",
+      "primary": {
+        "type": "小学校",
+        "name": "斑鳩町立斑鳩西小学校",
+        "publishedMeters": 1016,
+        "publishedMinutes": 13,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_21622737/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "斑鳩町立斑鳩南中学校",
+        "publishedMeters": 2367,
+        "publishedMinutes": 30,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_21622737/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s70847516",
+      "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_70847516/",
+      "primary": {
+        "type": "小学校",
+        "name": "斑鳩町立斑鳩東小学校",
+        "publishedMeters": 880,
+        "publishedMinutes": 11,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_70847516/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "斑鳩町立斑鳩中学校",
+        "publishedMeters": 1600,
+        "publishedMinutes": 20,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_70847516/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s20322071",
+      "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_20322071/",
+      "primary": {
+        "type": "小学校",
+        "name": "橿原市立耳成小学校",
+        "publishedMeters": 1669,
+        "publishedMinutes": 21,
+        "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_20322071/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "橿原市立八木中学校",
+        "publishedMeters": 1269,
+        "publishedMinutes": 16,
+        "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_20322071/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s73843407",
+      "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_73843407/",
+      "primary": {
+        "type": "小学校",
+        "name": "斑鳩町立斑鳩東小学校",
+        "publishedMeters": 750,
+        "publishedMinutes": 10,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_73843407/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "斑鳩町立斑鳩南中学校",
+        "publishedMeters": 1400,
+        "publishedMinutes": 18,
+        "source": "https://suumo.jp/tochi/nara/sc_ikomagunikaruga/nc_73843407/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s72387437",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_72387437/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立左京小学校",
+        "publishedMeters": 850,
+        "publishedMinutes": 11,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_72387437/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立平城東中学校",
+        "publishedMeters": 700,
+        "publishedMinutes": 9,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_72387437/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s98552927",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_98552927/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立大安寺小学校",
+        "publishedMeters": 60,
+        "publishedMinutes": 1,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_98552927/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立春日中学校",
+        "publishedMeters": 1200,
+        "publishedMinutes": 15,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_98552927/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s90404562",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_90404562/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立大安寺小学校",
+        "publishedMeters": 240,
+        "publishedMinutes": 3,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_90404562/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立春日中学校",
+        "publishedMeters": 1360,
+        "publishedMinutes": 17,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_90404562/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s20924995",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20924995/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立大安寺小学校",
+        "publishedMeters": 926,
+        "publishedMinutes": 12,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20924995/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立春日中学校",
+        "publishedMeters": 652,
+        "publishedMinutes": 9,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20924995/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s20676210",
+      "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_20676210/",
+      "primary": {
+        "type": "小学校",
+        "name": "生駒市立生駒東小学校",
+        "publishedMeters": 1557,
+        "publishedMinutes": 20,
+        "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_20676210/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "生駒市立緑ケ丘中学校",
+        "publishedMeters": 879,
+        "publishedMinutes": 11,
+        "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_20676210/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s77268401",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_77268401/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立佐保小学校",
+        "publishedMeters": 849,
+        "publishedMinutes": 11,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_77268401/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立若草中学校",
+        "publishedMeters": 766,
+        "publishedMinutes": 10,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_77268401/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s21270706",
+      "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_21270706/",
+      "primary": {
+        "type": "小学校",
+        "name": "生駒市立生駒台小学校",
+        "publishedMeters": 240,
+        "publishedMinutes": 3,
+        "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_21270706/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "生駒市立光明中学校",
+        "publishedMeters": 950,
+        "publishedMinutes": 12,
+        "source": "https://suumo.jp/tochi/nara/sc_ikoma/nc_21270706/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s21143865",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_21143865/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立佐保川小学校",
+        "publishedMeters": 1000,
+        "publishedMinutes": 13,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_21143865/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立三笠中学校",
+        "publishedMeters": 1100,
+        "publishedMinutes": 14,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_21143865/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s78577683",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_78577683/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立朱雀小学校",
+        "publishedMeters": 677,
+        "publishedMinutes": 9,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_78577683/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "奈良市立平城東中学校",
+        "publishedMeters": 487,
+        "publishedMinutes": 7,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_78577683/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s20080819",
+      "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_20080819/",
+      "primary": {
+        "type": "小学校",
+        "name": "木津川市立木津川台小学校",
+        "publishedMeters": 633,
+        "publishedMinutes": 8,
+        "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_20080819/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "木津川市立木津中学校",
+        "publishedMeters": 2720,
+        "publishedMinutes": 34,
+        "source": "https://suumo.jp/tochi/nara/sc_kashihara/nc_20080819/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s20406484",
+      "source": "https://suumo.jp/tochi/kyoto/sc_kizugawa/nc_20406484/",
+      "primary": {
+        "type": "小学校",
+        "name": "木津川市立相楽台小学校",
+        "publishedMeters": 628,
+        "publishedMinutes": 8,
+        "source": "https://suumo.jp/tochi/kyoto/sc_kizugawa/nc_20406484/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "木津川市立木津第二中学校",
+        "publishedMeters": 1965,
+        "publishedMinutes": 25,
+        "source": "https://suumo.jp/tochi/kyoto/sc_kizugawa/nc_20406484/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s78836067",
+      "source": "https://suumo.jp/tochi/kyoto/sc_kizugawa/nc_78836067/",
+      "primary": {
+        "type": "小学校",
+        "name": "木津川市立木津川台小学校",
+        "publishedMeters": 633,
+        "publishedMinutes": 8,
+        "source": "https://suumo.jp/tochi/kyoto/sc_kizugawa/nc_78836067/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "木津川市立木津中学校",
+        "publishedMeters": 2720,
+        "publishedMinutes": 34,
+        "source": "https://suumo.jp/tochi/kyoto/sc_kizugawa/nc_78836067/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s20803130",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20803130/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立大宮小学校",
+        "publishedMeters": 400,
+        "publishedMinutes": 5,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20803130/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": {
+        "type": "中学校",
+        "name": "三笠中学校",
+        "publishedMeters": 1200,
+        "publishedMinutes": 15,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_20803130/",
+        "note": "指定通学校は未確認です。"
+      }
+    },
+    {
+      "id": "s78578283",
+      "source": "https://suumo.jp/tochi/nara/sc_nara/nc_78578283/",
+      "primary": {
+        "type": "小学校",
+        "name": "奈良市立大宮小学校",
+        "publishedMeters": 495,
+        "publishedMinutes": 7,
+        "source": "https://suumo.jp/tochi/nara/sc_nara/nc_78578283/",
+        "note": "指定通学校は未確認です。"
+      },
+      "junior": null
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "land-payment-study.html",
+      "sha256": "dc526f7b826e67342f57547c2f3dc2396881b7bcb9e185468f8bc5ad4905fd13"
+    },
+    {
+      "path": "assets/land-payment-study/style.css",
+      "sha256": "8dda18460b0205b5e41ca6410df171d249a61b35eaada706277321a32e5a89f1"
+    },
+    {
+      "path": "assets/land-payment-study/app.mjs",
+      "sha256": "2aa67652210e6f643645950fe59d998ceae50218d8ef6139e1f711250ae3739d"
+    },
+    {
+      "path": "assets/land-payment-study/map-controller.mjs",
+      "sha256": "4df1e1f24e010304cf9b3cb9fa9b6f9bb8d1a6f0d2510fa3124d3c1593b3ba9b"
+    },
+    {
+      "path": "assets/land-payment-study/domain.mjs",
+      "sha256": "33d79e72280bf74fcaa6b6e702c16605ae2bb729c9a649f0a66bd2d7b08966fe"
+    },
+    {
+      "path": "assets/land-payment-study/state.mjs",
+      "sha256": "19fa5661660bdca5bf10bdbb88f675b7af4245823566d85d669782b47690c4b9"
+    },
+    {
+      "path": "assets/land-payment-study/router.mjs",
+      "sha256": "9db0f77f597c01a3eb7778ffcc65bcad53717e15bf22171aa09dda405c320100"
+    },
+    {
+      "path": "assets/land-payment-study/views/search.mjs",
+      "sha256": "eb39d295b85b0894a99ca3ffd07dde911d40c3237b79199f436422b71e9b1bc5"
+    },
+    {
+      "path": "assets/land-payment-study/views/compare.mjs",
+      "sha256": "dfb25e65f28a0cbeba2b1da56a2ee49fe9914db78d031180298f67992d7c4af7"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/map-pc-school-20260908/brief.md",
+      "sha256": "e226cfcd071d6d9514634e2cc757ab7449de90c89ccb89884461e9c2ccf18a99"
+    },
+    "copy": {
+      "path": "qa/map-pc-school-20260908/copy.md",
+      "sha256": "de510d0525ce2e4366e3ad0653aff1915ccc3d5f73e09baea4ed4068b971e148"
+    },
+    "assets": {
+      "path": "qa/map-pc-school-20260908/assets.md",
+      "sha256": "bb87f4aac1d60c7082f66bc5d3d7d7bf4cdb767c8763b33027905cfb0c4a2c12"
+    }
+  },
+  "screenshots": []
+}

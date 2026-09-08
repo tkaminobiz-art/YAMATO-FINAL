@@ -1,0 +1,17 @@
+{
+  "matched": [
+    "index.html",
+    "_mobile-verify/webkit-1024.png",
+    "_mobile-verify/report.json",
+    "_mobile-verify/webkit-768.png",
+    "_mobile-verify/webkit-390.png",
+    "_mobile-verify/webkit-320.png",
+    "_mobile-verify/webkit-1440.png",
+    "_mobile-verify/webkit-1280.png",
+    "_mobile-verify/webkit-1920.png",
+    "_mobile-verify/webkit-375.png",
+    "_mobile-verify/webkit-360.png",
+    "_mobile-verify/webkit-414.png"
+  ],
+  "changed": []
+}

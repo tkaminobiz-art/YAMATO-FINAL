@@ -1,0 +1,8 @@
+{
+  "before": "Existing side-by-side with sticky map and internal list scroll",
+  "candidate": "Map above list, normal document scroll; prototype CSS only",
+  "viewport": [
+    1440,
+    900
+  ]
+}

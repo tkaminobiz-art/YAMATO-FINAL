@@ -1,0 +1,12 @@
+[
+  "land-payment-study.html",
+  "assets/land-payment-study/app.mjs",
+  "assets/land-payment-study/domain.mjs",
+  "assets/land-payment-study/map-controller.mjs",
+  "assets/land-payment-study/router.mjs",
+  "assets/land-payment-study/state.mjs",
+  "assets/land-payment-study/style.css",
+  "assets/land-payment-study/views/search.mjs",
+  "assets/land-payment-study/views/compare.mjs",
+  "assets/land-payment-study/school.mjs"
+]
