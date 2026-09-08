@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "move-to-nara-preview.html",
+      "sha256": "0b829208f1aa0d8ba322925afd1f2c12a14c5bfc5cda580025467c12acd47ba3"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/move-to-nara-top-link-20260908/brief.md",
+      "sha256": "fbc65cc6d95e43ab25ea27b6aa8c94afb02dc37db4b18ec7bdb8eb472d3490e1"
+    },
+    "copy": {
+      "path": "qa/move-to-nara-top-link-20260908/copy-review.md",
+      "sha256": "1300fba4cdb8db1b77f3d6f40340dbd1eef7a02eb840810d14099f6ede56aab2"
+    },
+    "assets": {
+      "path": "qa/move-to-nara-top-link-20260908/asset-decisions.md",
+      "sha256": "845da3ec911c0588de48ce2f7e60f22372cc3801f16b96b121215eea82c310e4"
+    },
+    "visual": {
+      "path": "qa/move-to-nara-top-link-20260908/visual-review.md",
+      "sha256": "17a46fef1fb03636812f022f82c8f261dc5bc040b5cabcb71618077cb8840930"
+    },
+    "interaction": {
+      "path": "qa/move-to-nara-top-link-20260908/interaction-review.md",
+      "sha256": "832f8e492064f17d20886afe35e5f47e72f5bd84ca3aa940368a282766b31188"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/move-to-nara-top-link-20260908/local-pc-1440.png",
+      "sha256": "6e092107ef1eadbaceb3d5ba71db10921a63d4dd959bb4b8c3bc38c1556f88c9"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/move-to-nara-top-link-20260908/local-sp-390.png",
+      "sha256": "1da9725027dfb0a8b2657f9a5521ea8034762ad68b900d6518921113631f0280"
+    }
+  ]
+}
