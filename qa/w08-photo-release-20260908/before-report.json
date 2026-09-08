@@ -1,0 +1,134 @@
+{
+  "phase": "before",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "cards": [
+        {
+          "href": "kodawari.html",
+          "src": "https://yamato-final.vercel.app/assets/top-renewal/sakyo-kitchen-560.webp",
+          "alt": "左京モデルハウスのキッチン",
+          "natural": [
+            360,
+            240
+          ],
+          "display": [
+            353.0625,
+            264.796875
+          ],
+          "text": "OUR CRAFT\n家づくりのこだわり\n\n標準仕様と、費用の仕組み。"
+        },
+        {
+          "href": "lots-preview.html?view=list",
+          "src": "https://yamato-final.vercel.app/assets/top-renewal/guide-maquette/land-320.webp",
+          "alt": "土地選びを表す、敷地と住宅の模型風イラスト",
+          "natural": [
+            299,
+            224
+          ],
+          "display": [
+            353.0625,
+            264.796875
+          ],
+          "text": "イラスト\nLAND & HOMES\n物件一覧\n\n奈良・京都南部の土地を探す。"
+        },
+        {
+          "href": "lots-preview.html?view=estimate",
+          "src": "https://yamato-final.vercel.app/assets/top-renewal/guide-maquette/payment-320.webp",
+          "alt": "住宅の支払い試算を表す、家と電卓の模型風イラスト",
+          "natural": [
+            299,
+            224
+          ],
+          "display": [
+            353.0625,
+            264.796875
+          ],
+          "text": "イラスト\nPAYMENT PLAN\nお支払い\nシミュレーション\n\n土地と建物の、月々の返済額を試算。"
+        },
+        {
+          "href": "move-to-nara-preview.html",
+          "src": "https://yamato-final.vercel.app/assets/top-renewal/guide-maquette/commute-320.webp",
+          "alt": "都市と住宅地を結ぶ鉄道の模型風イラスト",
+          "natural": [
+            299,
+            224
+          ],
+          "display": [
+            353.0625,
+            264.796875
+          ],
+          "text": "イラスト\nMOVE TO NARA\n奈良からの通勤\n\n大阪への電車と、休日の車移動。"
+        }
+      ],
+      "keyboardScroll": 377,
+      "overflow": false
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "cards": [
+        {
+          "href": "kodawari.html",
+          "src": "https://yamato-final.vercel.app/assets/top-renewal/sakyo-kitchen-560.webp",
+          "alt": "左京モデルハウスのキッチン",
+          "natural": [
+            179,
+            119
+          ],
+          "display": [
+            298,
+            223.5
+          ],
+          "text": "OUR CRAFT\n家づくりのこだわり\n\n標準仕様と、費用の仕組み。"
+        },
+        {
+          "href": "lots-preview.html?view=list",
+          "src": "https://yamato-final.vercel.app/assets/top-renewal/guide-maquette/land-320.webp",
+          "alt": "土地選びを表す、敷地と住宅の模型風イラスト",
+          "natural": [
+            297,
+            223
+          ],
+          "display": [
+            298,
+            223.5
+          ],
+          "text": "イラスト\nLAND & HOMES\n物件一覧\n\n奈良・京都南部の土地を探す。"
+        },
+        {
+          "href": "lots-preview.html?view=estimate",
+          "src": "https://yamato-final.vercel.app/assets/top-renewal/guide-maquette/payment-320.webp",
+          "alt": "住宅の支払い試算を表す、家と電卓の模型風イラスト",
+          "natural": [
+            297,
+            223
+          ],
+          "display": [
+            298,
+            223.5
+          ],
+          "text": "イラスト\nPAYMENT PLAN\nお支払い\nシミュレーション\n\n土地と建物の、月々の返済額を試算。"
+        },
+        {
+          "href": "move-to-nara-preview.html",
+          "src": "https://yamato-final.vercel.app/assets/top-renewal/guide-maquette/commute-320.webp",
+          "alt": "都市と住宅地を結ぶ鉄道の模型風イラスト",
+          "natural": [
+            297,
+            223
+          ],
+          "display": [
+            298,
+            223.5
+          ],
+          "text": "イラスト\nMOVE TO NARA\n奈良からの通勤\n\n大阪への電車と、休日の車移動。"
+        }
+      ],
+      "keyboardScroll": 314,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

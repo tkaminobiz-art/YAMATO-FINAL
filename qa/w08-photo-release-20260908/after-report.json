@@ -1,0 +1,454 @@
+{
+  "phase": "after",
+  "views": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "cards": [
+        {
+          "href": "kodawari.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/sakyo-kitchen-560.webp",
+          "alt": "左京モデルハウスのキッチン",
+          "natural": [
+            370,
+            247
+          ],
+          "display": [
+            353.0625,
+            235.375
+          ],
+          "text": "OUR CRAFT\n家づくりのこだわり\n\n標準仕様と、費用の仕組み。"
+        },
+        {
+          "href": "lots-preview.html?view=list",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/land-640.webp",
+          "alt": "生駒市緑が丘の分譲地と前面道路",
+          "natural": [
+            370,
+            277
+          ],
+          "display": [
+            353.0625,
+            235.375
+          ],
+          "text": "LAND & HOMES\n物件一覧\n\n奈良・京都南部の土地を探す。"
+        },
+        {
+          "href": "lots-preview.html?view=estimate",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/payment-802.webp",
+          "alt": "図面と電卓を使って確認する打ち合わせの手元",
+          "natural": [
+            370,
+            246
+          ],
+          "display": [
+            353.0625,
+            235.375
+          ],
+          "text": "PAYMENT PLAN\nお支払い\nシミュレーション\n\n土地と建物の、月々の返済額を試算。"
+        },
+        {
+          "href": "move-to-nara-preview.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/commute-639.webp",
+          "alt": "平城宮跡を通る近鉄電車",
+          "natural": [
+            370,
+            246
+          ],
+          "display": [
+            353.0625,
+            235.375
+          ],
+          "text": "MOVE TO NARA\n奈良からの通勤\n\n大阪への電車と、休日の車移動。"
+        }
+      ],
+      "keyboardScroll": 377,
+      "overflow": false
+    },
+    {
+      "engine": "chromium",
+      "width": 1024,
+      "cards": [
+        {
+          "href": "kodawari.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/sakyo-kitchen-560.webp",
+          "alt": "左京モデルハウスのキッチン",
+          "natural": [
+            460,
+            307
+          ],
+          "display": [
+            274.296875,
+            182.859375
+          ],
+          "text": "OUR CRAFT\n家づくりのこだわり\n\n標準仕様と、費用の仕組み。"
+        },
+        {
+          "href": "lots-preview.html?view=list",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/land-640.webp",
+          "alt": "生駒市緑が丘の分譲地と前面道路",
+          "natural": [
+            460,
+            345
+          ],
+          "display": [
+            274.296875,
+            182.859375
+          ],
+          "text": "LAND & HOMES\n物件一覧\n\n奈良・京都南部の土地を探す。"
+        },
+        {
+          "href": "lots-preview.html?view=estimate",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/payment-802.webp",
+          "alt": "図面と電卓を使って確認する打ち合わせの手元",
+          "natural": [
+            460,
+            307
+          ],
+          "display": [
+            274.296875,
+            182.859375
+          ],
+          "text": "PAYMENT PLAN\nお支払い\nシミュレーション\n\n土地と建物の、月々の返済額を試算。"
+        },
+        {
+          "href": "move-to-nara-preview.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/commute-639.webp",
+          "alt": "平城宮跡を通る近鉄電車",
+          "natural": [
+            460,
+            307
+          ],
+          "display": [
+            274.296875,
+            182.859375
+          ],
+          "text": "MOVE TO NARA\n奈良からの通勤\n\n大阪への電車と、休日の車移動。"
+        }
+      ],
+      "keyboardScroll": 298,
+      "overflow": false
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "cards": [
+        {
+          "href": "kodawari.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/sakyo-kitchen-560.webp",
+          "alt": "左京モデルハウスのキッチン",
+          "natural": [
+            345,
+            230
+          ],
+          "display": [
+            307.328125,
+            204.875
+          ],
+          "text": "OUR CRAFT\n家づくりのこだわり\n\n標準仕様と、費用の仕組み。"
+        },
+        {
+          "href": "lots-preview.html?view=list",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/land-640.webp",
+          "alt": "生駒市緑が丘の分譲地と前面道路",
+          "natural": [
+            345,
+            259
+          ],
+          "display": [
+            307.328125,
+            204.875
+          ],
+          "text": "LAND & HOMES\n物件一覧\n\n奈良・京都南部の土地を探す。"
+        },
+        {
+          "href": "lots-preview.html?view=estimate",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/payment-802.webp",
+          "alt": "図面と電卓を使って確認する打ち合わせの手元",
+          "natural": [
+            345,
+            230
+          ],
+          "display": [
+            307.328125,
+            204.875
+          ],
+          "text": "PAYMENT PLAN\nお支払い\nシミュレーション\n\n土地と建物の、月々の返済額を試算。"
+        },
+        {
+          "href": "move-to-nara-preview.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/commute-639.webp",
+          "alt": "平城宮跡を通る近鉄電車",
+          "natural": [
+            345,
+            230
+          ],
+          "display": [
+            307.328125,
+            204.875
+          ],
+          "text": "MOVE TO NARA\n奈良からの通勤\n\n大阪への電車と、休日の車移動。"
+        }
+      ],
+      "keyboardScroll": 331,
+      "overflow": false
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "cards": [
+        {
+          "href": "kodawari.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/sakyo-kitchen-560.webp",
+          "alt": "左京モデルハウスのキッチン",
+          "natural": [
+            300,
+            200
+          ],
+          "display": [
+            298,
+            198.65625
+          ],
+          "text": "OUR CRAFT\n家づくりのこだわり\n\n標準仕様と、費用の仕組み。"
+        },
+        {
+          "href": "lots-preview.html?view=list",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/land-320.webp",
+          "alt": "生駒市緑が丘の分譲地と前面道路",
+          "natural": [
+            300,
+            225
+          ],
+          "display": [
+            298,
+            198.65625
+          ],
+          "text": "LAND & HOMES\n物件一覧\n\n奈良・京都南部の土地を探す。"
+        },
+        {
+          "href": "lots-preview.html?view=estimate",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/payment-320.webp",
+          "alt": "図面と電卓を使って確認する打ち合わせの手元",
+          "natural": [
+            300,
+            199
+          ],
+          "display": [
+            298,
+            198.65625
+          ],
+          "text": "PAYMENT PLAN\nお支払い\nシミュレーション\n\n土地と建物の、月々の返済額を試算。"
+        },
+        {
+          "href": "move-to-nara-preview.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/commute-320.webp",
+          "alt": "平城宮跡を通る近鉄電車",
+          "natural": [
+            300,
+            199
+          ],
+          "display": [
+            298,
+            198.65625
+          ],
+          "text": "MOVE TO NARA\n奈良からの通勤\n\n大阪への電車と、休日の車移動。"
+        }
+      ],
+      "keyboardScroll": 314,
+      "overflow": false
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "cards": [
+        {
+          "href": "kodawari.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/sakyo-kitchen-560.webp",
+          "alt": "左京モデルハウスのキッチン",
+          "natural": [
+            246,
+            164
+          ],
+          "display": [
+            235.5,
+            157
+          ],
+          "text": "OUR CRAFT\n家づくりのこだわり\n\n標準仕様と、費用の仕組み。"
+        },
+        {
+          "href": "lots-preview.html?view=list",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/land-320.webp",
+          "alt": "生駒市緑が丘の分譲地と前面道路",
+          "natural": [
+            246,
+            184
+          ],
+          "display": [
+            235.5,
+            157
+          ],
+          "text": "LAND & HOMES\n物件一覧\n\n奈良・京都南部の土地を探す。"
+        },
+        {
+          "href": "lots-preview.html?view=estimate",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/payment-320.webp",
+          "alt": "図面と電卓を使って確認する打ち合わせの手元",
+          "natural": [
+            246,
+            164
+          ],
+          "display": [
+            235.5,
+            157
+          ],
+          "text": "PAYMENT PLAN\nお支払い\nシミュレーション\n\n土地と建物の、月々の返済額を試算。"
+        },
+        {
+          "href": "move-to-nara-preview.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/commute-320.webp",
+          "alt": "平城宮跡を通る近鉄電車",
+          "natural": [
+            246,
+            164
+          ],
+          "display": [
+            235.5,
+            157
+          ],
+          "text": "MOVE TO NARA\n奈良からの通勤\n\n大阪への電車と、休日の車移動。"
+        }
+      ],
+      "keyboardScroll": 252,
+      "overflow": false
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "cards": [
+        {
+          "href": "kodawari.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/sakyo-kitchen-560.webp",
+          "alt": "左京モデルハウスのキッチン",
+          "natural": [
+            370,
+            247
+          ],
+          "display": [
+            353.0625,
+            235.375
+          ],
+          "text": "OUR CRAFT\n家づくりのこだわり\n\n標準仕様と、費用の仕組み。"
+        },
+        {
+          "href": "lots-preview.html?view=list",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/land-640.webp",
+          "alt": "生駒市緑が丘の分譲地と前面道路",
+          "natural": [
+            370,
+            277
+          ],
+          "display": [
+            353.0625,
+            235.375
+          ],
+          "text": "LAND & HOMES\n物件一覧\n\n奈良・京都南部の土地を探す。"
+        },
+        {
+          "href": "lots-preview.html?view=estimate",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/payment-802.webp",
+          "alt": "図面と電卓を使って確認する打ち合わせの手元",
+          "natural": [
+            370,
+            246
+          ],
+          "display": [
+            353.0625,
+            235.375
+          ],
+          "text": "PAYMENT PLAN\nお支払い\nシミュレーション\n\n土地と建物の、月々の返済額を試算。"
+        },
+        {
+          "href": "move-to-nara-preview.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/commute-639.webp",
+          "alt": "平城宮跡を通る近鉄電車",
+          "natural": [
+            370,
+            246
+          ],
+          "display": [
+            353.0625,
+            235.375
+          ],
+          "text": "MOVE TO NARA\n奈良からの通勤\n\n大阪への電車と、休日の車移動。"
+        }
+      ],
+      "keyboardScroll": 377,
+      "overflow": false
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "cards": [
+        {
+          "href": "kodawari.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/sakyo-kitchen-560.webp",
+          "alt": "左京モデルハウスのキッチン",
+          "natural": [
+            300,
+            200
+          ],
+          "display": [
+            298,
+            198.65625
+          ],
+          "text": "OUR CRAFT\n家づくりのこだわり\n\n標準仕様と、費用の仕組み。"
+        },
+        {
+          "href": "lots-preview.html?view=list",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/land-320.webp",
+          "alt": "生駒市緑が丘の分譲地と前面道路",
+          "natural": [
+            300,
+            225
+          ],
+          "display": [
+            298,
+            198.65625
+          ],
+          "text": "LAND & HOMES\n物件一覧\n\n奈良・京都南部の土地を探す。"
+        },
+        {
+          "href": "lots-preview.html?view=estimate",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/payment-320.webp",
+          "alt": "図面と電卓を使って確認する打ち合わせの手元",
+          "natural": [
+            300,
+            199
+          ],
+          "display": [
+            298,
+            198.65625
+          ],
+          "text": "PAYMENT PLAN\nお支払い\nシミュレーション\n\n土地と建物の、月々の返済額を試算。"
+        },
+        {
+          "href": "move-to-nara-preview.html",
+          "src": "http://127.0.0.1:59942/assets/top-renewal/real-photo/commute-320.webp",
+          "alt": "平城宮跡を通る近鉄電車",
+          "natural": [
+            300,
+            199
+          ],
+          "display": [
+            298,
+            198.65625
+          ],
+          "text": "MOVE TO NARA\n奈良からの通勤\n\n大阪への電車と、休日の車移動。"
+        }
+      ],
+      "keyboardScroll": 314,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

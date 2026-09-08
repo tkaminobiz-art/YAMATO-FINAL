@@ -1,0 +1,48 @@
+import {chromium} from '/Users/takahirokamino/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const dir='qa/w08-photo-release-20260908/',base=process.argv[2]||'http://127.0.0.1:4188/',phase=process.argv[3]||'local';
+const browser=await chromium.launch(),report=[];
+for(const width of [1440,390]){
+ const p=await browser.newPage({viewport:{width,height:width===1440?900:844},reducedMotion:'no-preference'});
+ await p.goto(base+'index.html?mode=still',{waitUntil:'load'});
+ await p.mouse.move(0,0);
+ const rail=p.locator('#entryCards');
+ await rail.scrollIntoViewIfNeeded();
+ await p.waitForTimeout(350);
+ const start=await rail.evaluate(e=>e.scrollLeft);
+ await p.waitForTimeout(600);
+ const end=await rail.evaluate(e=>e.scrollLeft);
+ assert(end>start+3,'autoplay moves');
+ await rail.hover();
+ await p.waitForTimeout(150);
+ const stopped=await rail.evaluate(e=>e.scrollLeft);
+ await p.waitForTimeout(400);
+ assert(Math.abs(await rail.evaluate(e=>e.scrollLeft)-stopped)<1,'hover stops');
+ await p.locator('#cardMotion').click();
+ await p.waitForTimeout(400);
+ assert(await rail.evaluate(e=>e.scrollLeft)>stopped+2,'resume moves');
+ await p.locator('#entryNext').click();
+ await p.waitForTimeout(500);
+ assert.equal(await rail.getAttribute('data-motion'),'paused');
+ const images=await rail.locator('.entry-card__visual--photo').evaluateAll(frames=>frames.map(f=>{const i=f.querySelector('img'),a=f.getBoundingClientRect(),b=i.getBoundingClientRect();return {transform:getComputedStyle(i).transform,cover:b.left<=a.left+.5&&b.right>=a.right-.5&&b.top<=a.top+.5&&b.bottom>=a.bottom-.5}}));
+ assert(images.every(i=>i.transform==='none'&&i.cover));
+ await p.screenshot({path:dir+phase+'-motion-'+width+'.png',scale:'css'});
+ const destinations=[];
+ for(const i of [0,1,2,3]){
+  await p.goto(base+'index.html?mode=still',{waitUntil:'load'});
+  const card=p.locator('#entryCards > a:not([aria-hidden="true"])').nth(i);
+  await card.scrollIntoViewIfNeeded();
+  await card.focus();
+  const href=await card.getAttribute('href');
+  await Promise.all([p.waitForURL(u=>u.href!==new URL('index.html?mode=still',base).href),card.press('Enter')]);
+  const expected=base.startsWith('https:')&&i===1?'land-payment-study.html#/search?view=list':base.startsWith('https:')&&i===2?'land-payment-study.html#/estimate':href;
+  assert.equal(p.url(),new URL(expected,base).href);
+  destinations.push(p.url());
+ }
+ report.push({width,autoplayDelta:end-start,hoverStops:true,resume:true,nextPauses:true,images,destinations});
+ await p.close();
+}
+await browser.close();
+fs.writeFileSync(dir+phase+'-interaction-report.json',JSON.stringify(report,null,2));
+console.log(JSON.stringify(report,null,2));

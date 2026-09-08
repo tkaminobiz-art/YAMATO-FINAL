@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "257842ae99c01d47a89821ae8691f38c2d8a83ee08dbc1852fd9269bb4a07047"
+    },
+    {
+      "path": "scripts/verify-homepage.mjs",
+      "sha256": "c738f2dab4f38a8a7080cf81d69e65ff21a00b35fd5e22eaa1b849848dbcc2e2"
+    },
+    {
+      "path": "assets/top-renewal/real-photo/commute-320.webp",
+      "sha256": "7ef240c1d4432f24c35facd506ab12298f8fbfe018c360976a24bc1a16bb8006"
+    },
+    {
+      "path": "assets/top-renewal/real-photo/commute-639.webp",
+      "sha256": "beb840a90bd38124083d8032b843cfa428b6e1b73fddba59da87cd1bc08ef7a1"
+    },
+    {
+      "path": "assets/top-renewal/real-photo/land-320.webp",
+      "sha256": "d2fde11d1992ee8201746c76c493dbcfece597b184db398bb1c2c2f6191cf68f"
+    },
+    {
+      "path": "assets/top-renewal/real-photo/land-640.webp",
+      "sha256": "59f933d9571af80ac24012c363f87c3e41d8ce180321ae1f65c012ba876a7208"
+    },
+    {
+      "path": "assets/top-renewal/real-photo/payment-320.webp",
+      "sha256": "1a3f3f41219c98175e99f722d92552cc35ea89a7b149e68f29cbe867bcf4fbfe"
+    },
+    {
+      "path": "assets/top-renewal/real-photo/payment-802.webp",
+      "sha256": "c10036832563d28070325269b0e03c457d167970dfa738941e727d7de833078b"
+    },
+    {
+      "path": "assets/top-renewal/real-photo/real-photo.css",
+      "sha256": "fa38e6d2ee2c139d4e4476a5d4c4c06e141ed42d2991f65f3e510b5864e18abe"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/w08-photo-release-20260908/brief.md",
+      "sha256": "c00b627b36f561120af8ff7793d7b453cf3221bd6852fb84adec7d4bb88906a2"
+    },
+    "copy": {
+      "path": "qa/w08-photo-release-20260908/copy.md",
+      "sha256": "c1dc1d6f534238b842cf43ed11c3e317828b5c0843b187f14f92ae282c5d0ac7"
+    },
+    "assets": {
+      "path": "qa/w08-photo-release-20260908/assets.md",
+      "sha256": "65bce0e7cd74ae758df3693a7a4690f1b0521367eb991c1935811457c3c49e85"
+    }
+  },
+  "screenshots": []
+}

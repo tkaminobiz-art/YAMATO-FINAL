@@ -1,0 +1,19 @@
+/* Documentary photos: keep the calculator, train and working hands inside the frame.
+   The horizontal rail retains its existing motion and controls. */
+.art-preview #entryCards .entry-card__visual--photo {
+  --photo-ratio: 3 / 2;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+.art-preview #entryCards .entry-card__visual--photo > img,
+.art-preview #entryCards .entry-card:hover .entry-card__visual--photo > img {
+  transform: none;
+  object-fit: cover;
+  object-position: center;
+}
+.art-preview #entryCards .entry-card__visual--land > img {
+  object-position: 50% 58%;
+}
+.yamato-evidence__item .photo-real-work {
+  object-position: 50% 20%;
+}

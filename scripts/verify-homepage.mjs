@@ -50,6 +50,10 @@ export function verifyHomepage(html){
   assert.equal((quick.match(/<a /g)||[]).length,4,'Preserve all four quick links');
   for(const href of destinations)assert(entrance.includes(`href="${href}"`),`Missing guide destination: ${href}`);
   for(const label of ['商品ラインナップ','施工事例','モデルハウス','家づくりのこだわり'])assert(quick.includes(label),`Missing quick link: ${label}`);
+  assert.equal((entrance.match(/entry-card__visual--photo/g)||[]).length,4,'All four guide cards must use the approved photographs');
+  assert(!entrance.includes('entry-card__visual--maquette')&&!entrance.includes('entry-card__art-label'),'Retired guide illustrations must not return');
+  for(const src of ['assets/top-renewal/sakyo-kitchen-560.webp','assets/top-renewal/real-photo/land-640.webp','assets/top-renewal/real-photo/payment-802.webp','assets/top-renewal/real-photo/commute-639.webp'])assert(entrance.includes(`src="${src}"`)&&existsSync(src),`Approved guide photograph missing: ${src}`);
+  assert(html.includes('assets/top-renewal/real-photo/real-photo.css'),'Guide photograph framing stylesheet must be loaded');
   return {sections:['builtProof','voice'],builtItems:3,voiceCards:4,voiceLinks:5,guideCards:4,quickLinks:4,paperSections:12,approvedMarkup:true};
 }
 
@@ -67,7 +71,6 @@ const integrationAssets=['nara-atlas/atlas.css','nara-atlas/dark.css','nara-atla
 for(const asset of integrationAssets)assert(html.includes(`assets/top-renewal/${asset}`),`Missing integrated dependency: ${asset}`);
 assert.equal((html.match(/id="nara"/g)||[]).length,1,'Atlas must be integrated once');
 assert(readSection(html,'nara').includes('nara-atlas'),'Nara must retain its approved Atlas layout');
-assert.equal((html.match(/entry-card__visual--maquette/g)||[]).length,3,'All three guide illustrations must be integrated');
 for(const attr of ['data-quiet-rails','data-washi-motion','data-top-depth'])assert(html.includes(attr),`Missing motion activation: ${attr}`);
 assert(!html.includes('動くカードを試す'),'Guide rail should start without opt-in');
 assert(readFileSync('works.html','utf8').includes('assets/works/works-yellow.css'),'Canonical works route must use the yellow design');

@@ -1,0 +1,30 @@
+{
+  "reference": "qa/w08-photo-release-20260908/before-pc.png",
+  "candidate": "qa/w08-photo-release-20260908/after-pc.png",
+  "diff": "qa/w08-photo-release-20260908/pc-diff.png",
+  "threshold": 16,
+  "referenceSize": {
+    "width": 1440,
+    "height": 900
+  },
+  "candidateSize": {
+    "width": 1440,
+    "height": 900
+  },
+  "canvasSize": {
+    "width": 1440,
+    "height": 900
+  },
+  "changedPixels": 322033,
+  "totalPixels": 1296000,
+  "differenceRatio": 0.24848225308641975,
+  "meanAbsoluteError": 0.10036125635439361,
+  "boundingBox": {
+    "left": 0,
+    "top": 76,
+    "right": 1440,
+    "bottom": 900
+  },
+  "dimensionMismatch": false,
+  "gateStatus": "advisory"
+}

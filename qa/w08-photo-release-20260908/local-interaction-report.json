@@ -1,0 +1,96 @@
+[
+  {
+    "width": 1440,
+    "autoplayDelta": 11,
+    "hoverStops": true,
+    "resume": true,
+    "nextPauses": true,
+    "images": [
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      }
+    ],
+    "destinations": [
+      "http://127.0.0.1:59942/kodawari.html",
+      "http://127.0.0.1:59942/lots-preview.html?view=list",
+      "http://127.0.0.1:59942/lots-preview.html?view=estimate",
+      "http://127.0.0.1:59942/move-to-nara-preview.html"
+    ]
+  },
+  {
+    "width": 390,
+    "autoplayDelta": 10,
+    "hoverStops": true,
+    "resume": true,
+    "nextPauses": true,
+    "images": [
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      }
+    ],
+    "destinations": [
+      "http://127.0.0.1:59942/kodawari.html",
+      "http://127.0.0.1:59942/lots-preview.html?view=list",
+      "http://127.0.0.1:59942/lots-preview.html?view=estimate",
+      "http://127.0.0.1:59942/move-to-nara-preview.html"
+    ]
+  }
+]

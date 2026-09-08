@@ -1,0 +1,31 @@
+{
+  "baseline": "417617035ca49724393e1f18598847d7a6fe548f",
+  "productionMatchesHead": true,
+  "headIndexSha256": "b3e3f34a034a3c6be3f194321dbe0050ccb135e09982f5c4560b859918f419d7",
+  "productionIndexSha256": "b3e3f34a034a3c6be3f194321dbe0050ccb135e09982f5c4560b859918f419d7",
+  "workingIndexSha256": "257842ae99c01d47a89821ae8691f38c2d8a83ee08dbc1852fd9269bb4a07047",
+  "unrelatedTrackedFiles": {
+    "_mobile-verify/report.json": "bcb98c204effb43ee07fd9d240de7364d0ffe6a8288abf7827b73c3c3e7d7fff",
+    "_mobile-verify/webkit-1024.png": "b753d97d32bf7c30936c5ab38c4685a1548ebc37bda201509c7b2de91dc5763e",
+    "_mobile-verify/webkit-1280.png": "72a3a347f24770a3dbfb547ebc879911ce2ad0604e337309fa4de621bd9f9f30",
+    "_mobile-verify/webkit-1440.png": "376885a8ddc8d9627be90c444ef1185a961de0a8574c5d06c2bc673c79a171d8",
+    "_mobile-verify/webkit-1920.png": "80c1dc1d7f18045592d7afddffad4d2a9e74a1184d68b3cf792d697936db3c2e",
+    "_mobile-verify/webkit-320.png": "e04cc3cb8652cd1100ba87ca580df28fd3b04b50e7abefe1149023ae4bb41f6c",
+    "_mobile-verify/webkit-360.png": "336b72e32189b2de1e438c3a1333dd77fce0e0699cf898864d8bcfe83b075d82",
+    "_mobile-verify/webkit-375.png": "fc5c00da939a24633a39fec900c179df805c46f4948608ce408bed8328c7fdce",
+    "_mobile-verify/webkit-390.png": "f2db5c6e26139994ac536e42045ab7ed6d6bf2addab4a15cb0456627ffc5d981",
+    "_mobile-verify/webkit-414.png": "2cc4ac098008b676f549cc817ca48618f429d1af8b276a1ce9c340fee7c0504e",
+    "_mobile-verify/webkit-768.png": "8b9ee0230e62e21b1d4ae1e5eaf1b179f46720c4fd9eb7575f6c72cb6d0ed8c6"
+  },
+  "scope": [
+    "index.html",
+    "scripts/verify-homepage.mjs",
+    "assets/top-renewal/real-photo/commute-320.webp",
+    "assets/top-renewal/real-photo/commute-639.webp",
+    "assets/top-renewal/real-photo/land-320.webp",
+    "assets/top-renewal/real-photo/land-640.webp",
+    "assets/top-renewal/real-photo/payment-320.webp",
+    "assets/top-renewal/real-photo/payment-802.webp",
+    "assets/top-renewal/real-photo/real-photo.css"
+  ]
+}
