@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "move-to-nara-preview.html",
+      "sha256": "7cf83b6c4f53fed9ba210ac1c59fbdcbd6e6b5b2a0c8321c8554266f19aafbb6"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/move-to-nara-favicon-20260908/brief.md",
+      "sha256": "d139bcba4a568028c140e580b54d0f6eb0eacb44dcdbbfc40b720c06c0c5ccac"
+    },
+    "copy": {
+      "path": "qa/move-to-nara-favicon-20260908/copy-review.md",
+      "sha256": "d35e00df1eb6b9fb9c2ccc100bf739a7f7ef6f6511d189b781848a3db5b23cd5"
+    },
+    "assets": {
+      "path": "qa/move-to-nara-favicon-20260908/asset-decisions.md",
+      "sha256": "4cfcec5a64e98ea522c817d7641ed4e2ab05bf62afe1ff4b1fad92e395114031"
+    },
+    "visual": {
+      "path": "qa/move-to-nara-favicon-20260908/visual-review.md",
+      "sha256": "2076f37af2552f9ac47db89cbfdbf6fb2101dcdbf281e04ea3a98ca44ca4e685"
+    },
+    "interaction": {
+      "path": "qa/move-to-nara-favicon-20260908/interaction-review.md",
+      "sha256": "0350b85877aeccc543bbb0e18bfae08961f1b5a7b8db93a582ecf193a1ddf458"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/move-to-nara-favicon-20260908/local-pc-1440.png",
+      "sha256": "6e092107ef1eadbaceb3d5ba71db10921a63d4dd959bb4b8c3bc38c1556f88c9"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/move-to-nara-favicon-20260908/local-sp-390.png",
+      "sha256": "1da9725027dfb0a8b2657f9a5521ea8034762ad68b900d6518921113631f0280"
+    }
+  ]
+}

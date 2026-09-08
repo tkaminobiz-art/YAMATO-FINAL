@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "move-to-nara-preview.html",
+      "sha256": "0b829208f1aa0d8ba322925afd1f2c12a14c5bfc5cda580025467c12acd47ba3"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/move-to-nara-favicon-20260908/brief.md",
+      "sha256": "d139bcba4a568028c140e580b54d0f6eb0eacb44dcdbbfc40b720c06c0c5ccac"
+    },
+    "copy": {
+      "path": "qa/move-to-nara-favicon-20260908/copy-review.md",
+      "sha256": "d35e00df1eb6b9fb9c2ccc100bf739a7f7ef6f6511d189b781848a3db5b23cd5"
+    },
+    "assets": {
+      "path": "qa/move-to-nara-favicon-20260908/asset-decisions.md",
+      "sha256": "4cfcec5a64e98ea522c817d7641ed4e2ab05bf62afe1ff4b1fad92e395114031"
+    }
+  }
+}
