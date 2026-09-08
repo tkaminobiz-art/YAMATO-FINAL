@@ -2,6 +2,7 @@ import {chromium} from '/Users/takahirokamino/.cache/codex-runtimes/codex-primar
 import {writeFile} from 'node:fs/promises';
 
 const base = process.env.STUDY_URL || 'http://127.0.0.1:4198/land-payment-study.html';
+const runTag = process.env.RUN_LABEL || (process.env.STUDY_URL ? 'production' : 'local');
 const executablePath = '/Users/takahirokamino/.agent-browser/browsers/chrome-149.0.7827.55/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing';
 const out = new URL('./', import.meta.url);
 const browser = await chromium.launch({executablePath});
@@ -59,8 +60,8 @@ async function run(viewport, label) {
   await context.close();
 }
 
-await run({width: 1440, height: 900}, 'local-pc-1440');
-await run({width: 390, height: 844}, 'local-sp-390');
+await run({width: 1440, height: 900}, `${runTag}-pc-1440`);
+await run({width: 390, height: 844}, `${runTag}-sp-390`);
 
 const recoveryContext = await browser.newContext({viewport: {width: 390, height: 844}});
 await recoveryContext.addInitScript(() => {
@@ -82,5 +83,5 @@ await recoveryContext.close();
 
 check('browser: no console or page errors', report.errors.length === 0, report.errors);
 await browser.close();
-await writeFile(new URL('local-browser.json', out), JSON.stringify(report, null, 2));
+await writeFile(new URL(`${runTag}-browser.json`, out), JSON.stringify(report, null, 2));
 console.log(JSON.stringify({checks: report.checks.length, screenshots: report.screenshots.length, errors: report.errors.length}));

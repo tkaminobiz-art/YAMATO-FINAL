@@ -1,0 +1,420 @@
+{
+  "checkedAt": "2026-09-08T13:33:17.718Z",
+  "revision": "suumo-20260908-v1",
+  "targets": [
+    {
+      "name": "dedicated",
+      "files": [
+        {
+          "source": "land-payment-study.html",
+          "url": "https://yamato-land-payment-preview.vercel.app/land-payment-study.html",
+          "status": 200,
+          "sha256": "084029bfcaa65497586f07315a14683184aaa44f7580fdb7a6c0484ee0093be6",
+          "expectedSha256": "084029bfcaa65497586f07315a14683184aaa44f7580fdb7a6c0484ee0093be6",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/favicon.svg",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/favicon.svg",
+          "status": 200,
+          "sha256": "34c10cc6f79fb4f4369a74204b72c12606d1accd7b070d28f8318aebba6e8b32",
+          "expectedSha256": "34c10cc6f79fb4f4369a74204b72c12606d1accd7b070d28f8318aebba6e8b32",
+          "ok": true
+        },
+        {
+          "source": "assets/top-renewal/mortgage.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/top-renewal/mortgage.mjs",
+          "status": 200,
+          "sha256": "8d8362880aab863bd731c9259b5f67a72a29430277bd867cf300c1469fbf0e84",
+          "expectedSha256": "8d8362880aab863bd731c9259b5f67a72a29430277bd867cf300c1469fbf0e84",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/finance.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/finance.mjs",
+          "status": 200,
+          "sha256": "d3cdff126f40c04b2cd91bc8a58a3390a33a313e23f733aaa4812fcf423bc1e4",
+          "expectedSha256": "d3cdff126f40c04b2cd91bc8a58a3390a33a313e23f733aaa4812fcf423bc1e4",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/finance.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/views/finance.mjs",
+          "status": 200,
+          "sha256": "e881c8e188f616052abec3da0b72944fcd36a86c0194d221a5e5268c5eb72ab1",
+          "expectedSha256": "e881c8e188f616052abec3da0b72944fcd36a86c0194d221a5e5268c5eb72ab1",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/app.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/app.mjs",
+          "status": 200,
+          "sha256": "18f1c09333fda949d00e1d93814cc468154d43fca3b30bebe4a33826a6a1fb06",
+          "expectedSha256": "18f1c09333fda949d00e1d93814cc468154d43fca3b30bebe4a33826a6a1fb06",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/catalog.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/catalog.mjs",
+          "status": 200,
+          "sha256": "c8b0825680fbc3bde45b2e3f8214bd384df7fe2574dc6fb4d57b30868f643ebc",
+          "expectedSha256": "c8b0825680fbc3bde45b2e3f8214bd384df7fe2574dc6fb4d57b30868f643ebc",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/data.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/data.mjs",
+          "status": 200,
+          "sha256": "6f23fa17db6af75cdda1f2a84d13a87d025f6160ac14410d59f2c1308082b0a9",
+          "expectedSha256": "6f23fa17db6af75cdda1f2a84d13a87d025f6160ac14410d59f2c1308082b0a9",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/domain.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/domain.mjs",
+          "status": 200,
+          "sha256": "f50ff1e7e001a27ad08fd4e645345e7b65e4083b1532884e03acad3dbb10725f",
+          "expectedSha256": "f50ff1e7e001a27ad08fd4e645345e7b65e4083b1532884e03acad3dbb10725f",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/inquiry-contract.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/inquiry-contract.mjs",
+          "status": 200,
+          "sha256": "60cf64e227c9a9b73f44d1c3b09e4d01f468ea6dc7316130c759aed8b1ada3bd",
+          "expectedSha256": "60cf64e227c9a9b73f44d1c3b09e4d01f468ea6dc7316130c759aed8b1ada3bd",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/map-controller.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/map-controller.mjs",
+          "status": 200,
+          "sha256": "e600588791aef32a87fc2f4eaf406769e733caa3432ab24d4335b3aa7b87fa0f",
+          "expectedSha256": "e600588791aef32a87fc2f4eaf406769e733caa3432ab24d4335b3aa7b87fa0f",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/media.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/media.mjs",
+          "status": 200,
+          "sha256": "806030d92de1d00ad69a51054d117a673bf04849272fbef079386f085adf344e",
+          "expectedSha256": "806030d92de1d00ad69a51054d117a673bf04849272fbef079386f085adf344e",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/router.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/router.mjs",
+          "status": 200,
+          "sha256": "375d815a87c4cb678ab277480609b98688e87ad8af6368e1229b41fe00f70c42",
+          "expectedSha256": "375d815a87c4cb678ab277480609b98688e87ad8af6368e1229b41fe00f70c42",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/state.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/state.mjs",
+          "status": 200,
+          "sha256": "a413314344b2c10ec2c3188abeaaf85e647ecb5ccf92df3c57db5b0b23d479fb",
+          "expectedSha256": "a413314344b2c10ec2c3188abeaaf85e647ecb5ccf92df3c57db5b0b23d479fb",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/style.css",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/style.css",
+          "status": 200,
+          "sha256": "b6c4ded1e49a64af65f9963357885b56e6271f1c3c6ade0602997e56ff75f5dc",
+          "expectedSha256": "b6c4ded1e49a64af65f9963357885b56e6271f1c3c6ade0602997e56ff75f5dc",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/suumo-properties.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/suumo-properties.mjs",
+          "status": 200,
+          "sha256": "e52e937dd2cb399188b3cc1664cd34a871e29e4ba6ceef82699673d43f026ec5",
+          "expectedSha256": "e52e937dd2cb399188b3cc1664cd34a871e29e4ba6ceef82699673d43f026ec5",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/ui.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/ui.mjs",
+          "status": 200,
+          "sha256": "2652f3f09fe4a3fdc15b3df3b13da2e3cefc33b1974a0f8658a09544e958543d",
+          "expectedSha256": "2652f3f09fe4a3fdc15b3df3b13da2e3cefc33b1974a0f8658a09544e958543d",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/search.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/views/search.mjs",
+          "status": 200,
+          "sha256": "8af35fce68cd53975a9236538a17bbb5f8b11e8c64af9d7096fcd02771286465",
+          "expectedSha256": "8af35fce68cd53975a9236538a17bbb5f8b11e8c64af9d7096fcd02771286465",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/property.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/views/property.mjs",
+          "status": 200,
+          "sha256": "268ddd3bcff6b9e4fa6f5ccc24a082b4f5beaf0ffc6051c117814beb01c240c4",
+          "expectedSha256": "268ddd3bcff6b9e4fa6f5ccc24a082b4f5beaf0ffc6051c117814beb01c240c4",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/saved.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/views/saved.mjs",
+          "status": 200,
+          "sha256": "466aac648145c9a14bb7a2ce43c994806eb50ce9d0ff8d82ee17a5cff4de9ed8",
+          "expectedSha256": "466aac648145c9a14bb7a2ce43c994806eb50ce9d0ff8d82ee17a5cff4de9ed8",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/estimate.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/views/estimate.mjs",
+          "status": 200,
+          "sha256": "957b55a62fc09f25e079d61601f0665f53d7b50956230675f5f09a6c4615d34e",
+          "expectedSha256": "957b55a62fc09f25e079d61601f0665f53d7b50956230675f5f09a6c4615d34e",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/compare.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/views/compare.mjs",
+          "status": 200,
+          "sha256": "c8483365910c3170a5ce8f7098fc38dd36483156f2c64461e3b017730f98883d",
+          "expectedSha256": "c8483365910c3170a5ce8f7098fc38dd36483156f2c64461e3b017730f98883d",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/inquiry.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/views/inquiry.mjs",
+          "status": 200,
+          "sha256": "4513ad33b6794a3827941b8bc7a1a641d71da32c8c9b82aad530ff3b3bdcf195",
+          "expectedSha256": "4513ad33b6794a3827941b8bc7a1a641d71da32c8c9b82aad530ff3b3bdcf195",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/school.mjs",
+          "url": "https://yamato-land-payment-preview.vercel.app/assets/land-payment-study/school.mjs",
+          "status": 200,
+          "sha256": "190c6512e30dd6d87a4c7a2b2968d2be572d56cefd74e34d544b3ba8586b4f9d",
+          "expectedSha256": "190c6512e30dd6d87a4c7a2b2968d2be572d56cefd74e34d544b3ba8586b4f9d",
+          "ok": true
+        }
+      ],
+      "ok": true
+    },
+    {
+      "name": "company-rewrite",
+      "files": [
+        {
+          "source": "land-payment-study.html",
+          "url": "https://yamato-final.vercel.app/land-payment-study.html",
+          "status": 200,
+          "sha256": "084029bfcaa65497586f07315a14683184aaa44f7580fdb7a6c0484ee0093be6",
+          "expectedSha256": "084029bfcaa65497586f07315a14683184aaa44f7580fdb7a6c0484ee0093be6",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/favicon.svg",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/favicon.svg",
+          "status": 200,
+          "sha256": "34c10cc6f79fb4f4369a74204b72c12606d1accd7b070d28f8318aebba6e8b32",
+          "expectedSha256": "34c10cc6f79fb4f4369a74204b72c12606d1accd7b070d28f8318aebba6e8b32",
+          "ok": true
+        },
+        {
+          "source": "assets/top-renewal/mortgage.mjs",
+          "url": "https://yamato-final.vercel.app/assets/top-renewal/mortgage.mjs",
+          "status": 200,
+          "sha256": "8d8362880aab863bd731c9259b5f67a72a29430277bd867cf300c1469fbf0e84",
+          "expectedSha256": "8d8362880aab863bd731c9259b5f67a72a29430277bd867cf300c1469fbf0e84",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/finance.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/finance.mjs",
+          "status": 200,
+          "sha256": "d3cdff126f40c04b2cd91bc8a58a3390a33a313e23f733aaa4812fcf423bc1e4",
+          "expectedSha256": "d3cdff126f40c04b2cd91bc8a58a3390a33a313e23f733aaa4812fcf423bc1e4",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/finance.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/views/finance.mjs",
+          "status": 200,
+          "sha256": "e881c8e188f616052abec3da0b72944fcd36a86c0194d221a5e5268c5eb72ab1",
+          "expectedSha256": "e881c8e188f616052abec3da0b72944fcd36a86c0194d221a5e5268c5eb72ab1",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/app.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/app.mjs",
+          "status": 200,
+          "sha256": "18f1c09333fda949d00e1d93814cc468154d43fca3b30bebe4a33826a6a1fb06",
+          "expectedSha256": "18f1c09333fda949d00e1d93814cc468154d43fca3b30bebe4a33826a6a1fb06",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/catalog.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/catalog.mjs",
+          "status": 200,
+          "sha256": "c8b0825680fbc3bde45b2e3f8214bd384df7fe2574dc6fb4d57b30868f643ebc",
+          "expectedSha256": "c8b0825680fbc3bde45b2e3f8214bd384df7fe2574dc6fb4d57b30868f643ebc",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/data.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/data.mjs",
+          "status": 200,
+          "sha256": "6f23fa17db6af75cdda1f2a84d13a87d025f6160ac14410d59f2c1308082b0a9",
+          "expectedSha256": "6f23fa17db6af75cdda1f2a84d13a87d025f6160ac14410d59f2c1308082b0a9",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/domain.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/domain.mjs",
+          "status": 200,
+          "sha256": "f50ff1e7e001a27ad08fd4e645345e7b65e4083b1532884e03acad3dbb10725f",
+          "expectedSha256": "f50ff1e7e001a27ad08fd4e645345e7b65e4083b1532884e03acad3dbb10725f",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/inquiry-contract.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/inquiry-contract.mjs",
+          "status": 200,
+          "sha256": "60cf64e227c9a9b73f44d1c3b09e4d01f468ea6dc7316130c759aed8b1ada3bd",
+          "expectedSha256": "60cf64e227c9a9b73f44d1c3b09e4d01f468ea6dc7316130c759aed8b1ada3bd",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/map-controller.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/map-controller.mjs",
+          "status": 200,
+          "sha256": "e600588791aef32a87fc2f4eaf406769e733caa3432ab24d4335b3aa7b87fa0f",
+          "expectedSha256": "e600588791aef32a87fc2f4eaf406769e733caa3432ab24d4335b3aa7b87fa0f",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/media.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/media.mjs",
+          "status": 200,
+          "sha256": "806030d92de1d00ad69a51054d117a673bf04849272fbef079386f085adf344e",
+          "expectedSha256": "806030d92de1d00ad69a51054d117a673bf04849272fbef079386f085adf344e",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/router.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/router.mjs",
+          "status": 200,
+          "sha256": "375d815a87c4cb678ab277480609b98688e87ad8af6368e1229b41fe00f70c42",
+          "expectedSha256": "375d815a87c4cb678ab277480609b98688e87ad8af6368e1229b41fe00f70c42",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/state.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/state.mjs",
+          "status": 200,
+          "sha256": "a413314344b2c10ec2c3188abeaaf85e647ecb5ccf92df3c57db5b0b23d479fb",
+          "expectedSha256": "a413314344b2c10ec2c3188abeaaf85e647ecb5ccf92df3c57db5b0b23d479fb",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/style.css",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/style.css",
+          "status": 200,
+          "sha256": "b6c4ded1e49a64af65f9963357885b56e6271f1c3c6ade0602997e56ff75f5dc",
+          "expectedSha256": "b6c4ded1e49a64af65f9963357885b56e6271f1c3c6ade0602997e56ff75f5dc",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/suumo-properties.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/suumo-properties.mjs",
+          "status": 200,
+          "sha256": "e52e937dd2cb399188b3cc1664cd34a871e29e4ba6ceef82699673d43f026ec5",
+          "expectedSha256": "e52e937dd2cb399188b3cc1664cd34a871e29e4ba6ceef82699673d43f026ec5",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/ui.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/ui.mjs",
+          "status": 200,
+          "sha256": "2652f3f09fe4a3fdc15b3df3b13da2e3cefc33b1974a0f8658a09544e958543d",
+          "expectedSha256": "2652f3f09fe4a3fdc15b3df3b13da2e3cefc33b1974a0f8658a09544e958543d",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/search.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/views/search.mjs",
+          "status": 200,
+          "sha256": "8af35fce68cd53975a9236538a17bbb5f8b11e8c64af9d7096fcd02771286465",
+          "expectedSha256": "8af35fce68cd53975a9236538a17bbb5f8b11e8c64af9d7096fcd02771286465",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/property.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/views/property.mjs",
+          "status": 200,
+          "sha256": "268ddd3bcff6b9e4fa6f5ccc24a082b4f5beaf0ffc6051c117814beb01c240c4",
+          "expectedSha256": "268ddd3bcff6b9e4fa6f5ccc24a082b4f5beaf0ffc6051c117814beb01c240c4",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/saved.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/views/saved.mjs",
+          "status": 200,
+          "sha256": "466aac648145c9a14bb7a2ce43c994806eb50ce9d0ff8d82ee17a5cff4de9ed8",
+          "expectedSha256": "466aac648145c9a14bb7a2ce43c994806eb50ce9d0ff8d82ee17a5cff4de9ed8",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/estimate.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/views/estimate.mjs",
+          "status": 200,
+          "sha256": "957b55a62fc09f25e079d61601f0665f53d7b50956230675f5f09a6c4615d34e",
+          "expectedSha256": "957b55a62fc09f25e079d61601f0665f53d7b50956230675f5f09a6c4615d34e",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/compare.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/views/compare.mjs",
+          "status": 200,
+          "sha256": "c8483365910c3170a5ce8f7098fc38dd36483156f2c64461e3b017730f98883d",
+          "expectedSha256": "c8483365910c3170a5ce8f7098fc38dd36483156f2c64461e3b017730f98883d",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/views/inquiry.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/views/inquiry.mjs",
+          "status": 200,
+          "sha256": "4513ad33b6794a3827941b8bc7a1a641d71da32c8c9b82aad530ff3b3bdcf195",
+          "expectedSha256": "4513ad33b6794a3827941b8bc7a1a641d71da32c8c9b82aad530ff3b3bdcf195",
+          "ok": true
+        },
+        {
+          "source": "assets/land-payment-study/school.mjs",
+          "url": "https://yamato-final.vercel.app/assets/land-payment-study/school.mjs",
+          "status": 200,
+          "sha256": "190c6512e30dd6d87a4c7a2b2968d2be572d56cefd74e34d544b3ba8586b4f9d",
+          "expectedSha256": "190c6512e30dd6d87a4c7a2b2968d2be572d56cefd74e34d544b3ba8586b4f9d",
+          "ok": true
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "api": [
+    {
+      "name": "dedicated",
+      "status": 200,
+      "valid": true,
+      "stored": false,
+      "sent": false,
+      "ok": true
+    },
+    {
+      "name": "company-rewrite",
+      "status": 200,
+      "valid": true,
+      "stored": false,
+      "sent": false,
+      "ok": true
+    }
+  ]
+}

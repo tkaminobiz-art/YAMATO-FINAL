@@ -1,0 +1,125 @@
+{
+  "base": "https://yamato-final.vercel.app/land-payment-study.html",
+  "checks": [
+    {
+      "name": "production-company-pc-1440: 40 listings",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: saved listing restored",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: updated sort explanation",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: map visible with list",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: desktop map is not sticky",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: property date is current",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: material dates are current",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: saved property remains saved",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: TOP route preserved",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: estimate result rendered",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: three finance products available",
+      "ok": true
+    },
+    {
+      "name": "production-company-pc-1440: finance switch works",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: 40 listings",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: saved listing restored",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: updated sort explanation",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: list switch active",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: property date is current",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: material dates are current",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: saved property remains saved",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: TOP route preserved",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: estimate result rendered",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: three finance products available",
+      "ok": true
+    },
+    {
+      "name": "production-company-sp-390: finance switch works",
+      "ok": true
+    },
+    {
+      "name": "old state: recovery message",
+      "ok": true
+    },
+    {
+      "name": "old state: inputs preserved",
+      "ok": true
+    },
+    {
+      "name": "browser: no console or page errors",
+      "ok": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "/private/tmp/yamato-map-suumo-refresh-20260908/qa/map-suumo-refresh-20260908/production-company-pc-1440-search.png",
+    "/private/tmp/yamato-map-suumo-refresh-20260908/qa/map-suumo-refresh-20260908/production-company-pc-1440-result.png",
+    "/private/tmp/yamato-map-suumo-refresh-20260908/qa/map-suumo-refresh-20260908/production-company-sp-390-search.png",
+    "/private/tmp/yamato-map-suumo-refresh-20260908/qa/map-suumo-refresh-20260908/production-company-sp-390-result.png"
+  ]
+}

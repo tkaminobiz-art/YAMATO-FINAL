@@ -11,3 +11,5 @@
 - 実際の問い合わせ送信は行わない。
 
 記録：`local-browser.json`。代表画面は `local-pc-1440-search.png`、`local-pc-1440-result.png`、`local-sp-390-search.png`、`local-sp-390-result.png`。
+
+公開後、専用URLと会社サイト経由URLでも同じ28項目を再実行し、両方ともPASS、コンソール・ページエラー0件を確認した。

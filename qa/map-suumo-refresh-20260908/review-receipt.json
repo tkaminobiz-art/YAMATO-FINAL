@@ -49,23 +49,39 @@
     },
     "interaction": {
       "path": "qa/map-suumo-refresh-20260908/interaction-review.md",
-      "sha256": "83f9786bbd97588ffa193122e63193be90aa6c78adc88c67f2383d9e495928a3"
+      "sha256": "c29e5554ca76874e8133e0c77d2285cf413bb7bb64b7b1325ac563083c1c61d1"
     },
     "visual": {
       "path": "qa/map-suumo-refresh-20260908/visual-review.md",
-      "sha256": "ba106faed97a11046dad856c986f8dca69034ce5516142448cbc35e2491cf270"
+      "sha256": "31c6ce408c94a3af21ad0bc4b8185e40d1bba79446c966b9b952e4f7101a886a"
     },
     "data": {
       "path": "qa/map-suumo-refresh-20260908/data-test.txt",
       "sha256": "bd9055e1125ffa4a0d95e58eaa026fe84b307b580fc7641065cd6a190bd5ca09"
     },
-    "browser": {
+    "localBrowser": {
       "path": "qa/map-suumo-refresh-20260908/local-browser.json",
       "sha256": "ab8094f74524a8a6ce27973103820790aa88805e1fc6d163366f06ab9d11ac47"
     },
     "package": {
       "path": "qa/map-suumo-refresh-20260908/package-verification.json",
       "sha256": "bb758f65bbf47c007a757c6568f52bb331cb2b615ea163e33474a5f692023ea8"
+    },
+    "productionHttp": {
+      "path": "qa/map-suumo-refresh-20260908/production-http.json",
+      "sha256": "8888cf4be34374ab64b19eb748346d49f272dadbb4d84f4d3928662540cb438e"
+    },
+    "dedicatedBrowser": {
+      "path": "qa/map-suumo-refresh-20260908/production-dedicated-browser.json",
+      "sha256": "9ff164e0c7af51837bb05d8e1c84635dcf975914d0dbd7e935129abe907d4663"
+    },
+    "companyBrowser": {
+      "path": "qa/map-suumo-refresh-20260908/production-company-browser.json",
+      "sha256": "2e04eb7936255c97374cd931208746faf396810e319e638123d290e895b43b86"
+    },
+    "release": {
+      "path": "qa/map-suumo-refresh-20260908/RELEASE.md",
+      "sha256": "75b9524f738e46378b72c4bc680fa8643aeca954d191a5fe9c2af78219f9b03e"
     }
   },
   "screenshots": [
@@ -83,6 +99,38 @@
     },
     {
       "path": "qa/map-suumo-refresh-20260908/local-sp-390-result.png",
+      "sha256": "06f3668e707cdb5453f299b1e1be11c814190ba1da319a1ad3fd1c77e0df3a49"
+    },
+    {
+      "path": "qa/map-suumo-refresh-20260908/production-dedicated-pc-1440-search.png",
+      "sha256": "6b9c56bce58e4204db666b58dcd90706be56087cbe42b889ec7f4d2113e46474"
+    },
+    {
+      "path": "qa/map-suumo-refresh-20260908/production-dedicated-pc-1440-result.png",
+      "sha256": "9dda0fcd69474e4dec1f7c2950bffa70f1157cbf99577ea2f44fd1d53d9fafc3"
+    },
+    {
+      "path": "qa/map-suumo-refresh-20260908/production-dedicated-sp-390-search.png",
+      "sha256": "973a687a39c713054724a445729784c2a23a9a7d5ce48df1e7bddadbdc52c3f7"
+    },
+    {
+      "path": "qa/map-suumo-refresh-20260908/production-dedicated-sp-390-result.png",
+      "sha256": "06f3668e707cdb5453f299b1e1be11c814190ba1da319a1ad3fd1c77e0df3a49"
+    },
+    {
+      "path": "qa/map-suumo-refresh-20260908/production-company-pc-1440-search.png",
+      "sha256": "6b9c56bce58e4204db666b58dcd90706be56087cbe42b889ec7f4d2113e46474"
+    },
+    {
+      "path": "qa/map-suumo-refresh-20260908/production-company-pc-1440-result.png",
+      "sha256": "9dda0fcd69474e4dec1f7c2950bffa70f1157cbf99577ea2f44fd1d53d9fafc3"
+    },
+    {
+      "path": "qa/map-suumo-refresh-20260908/production-company-sp-390-search.png",
+      "sha256": "26dc7fffdcd3391f6938c56fbc4280c8f86f1e08ca91d8a42b3f4376e86ca0cb"
+    },
+    {
+      "path": "qa/map-suumo-refresh-20260908/production-company-sp-390-result.png",
       "sha256": "06f3668e707cdb5453f299b1e1be11c814190ba1da319a1ad3fd1c77e0df3a49"
     }
   ]
