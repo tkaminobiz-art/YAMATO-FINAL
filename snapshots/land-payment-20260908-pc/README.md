@@ -5,5 +5,7 @@ PCは追従しない地図と一覧を同じページに表示。小学校・中
 物件原典・画像・金利と返済計算・相談APIの契約は保持。
 
 配布：リポジトリルートで `node scripts/package-land-payment.mjs 20260908-pc`。
-検証記録：`qa/map-pc-school-20260908/RESULT.md`（完了時に作成）。
-このsnapshotは公開準備版。ディレクターの事前確認とユーザーの承認後、MAP構築担当がcommit・push・本番反映を実施する。公開状態はqa/map-pc-school-20260908/RELEASE.mdを参照。
+検証記録：`qa/map-pc-school-20260908/RESULT.md`。
+2026-09-08に本番反映・公開後確認まで完了。実装commitは `33d039b721107c978699284336c5bf3f643497ae`、deploymentは `dpl_757Nv4erak8uV9URJBPJ8gYasFz9`。
+本サイト：https://yamato-final.vercel.app/land-payment-study.html#/search
+公開記録：`qa/map-pc-school-20260908/RELEASE.md`。実装の24ファイルとSHAは公開前から変更していない。

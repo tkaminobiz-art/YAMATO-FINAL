@@ -1,0 +1,422 @@
+{
+  "checkedAt": "2026-09-08T01:47:09.420Z",
+  "checks": [
+    {
+      "label": "dedicated-pc",
+      "name": "40 listings",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "PC list entry shows map; SP keeps list",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "all 40 coordinates inside map",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "map fits first viewport",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "map no overflow",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "map scrolls away normally",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "primary sort matches source",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "junior sort matches source",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "missing junior distance last",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "combined distance filter",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "reload retains filters and sort",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "list anchor survives reload",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "filtered-list no overflow",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "list to map selects property",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "property detail route",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "back retains selection",
+      "ok": true
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "no page errors",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "40 listings",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "PC list entry shows map; SP keeps list",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "all 40 coordinates inside map",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "map no overflow",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "primary sort matches source",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "junior sort matches source",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "missing junior distance last",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "combined distance filter",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "reload retains filters and sort",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "filtered-list no overflow",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "list to map selects property",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "property detail route",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "back retains selection",
+      "ok": true
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "no page errors",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "40 listings",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "PC list entry shows map; SP keeps list",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "all 40 coordinates inside map",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "map fits first viewport",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "map no overflow",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "map scrolls away normally",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "primary sort matches source",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "junior sort matches source",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "missing junior distance last",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "combined distance filter",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "reload retains filters and sort",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "list anchor survives reload",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "filtered-list no overflow",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "list to map selects property",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "property detail route",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "back retains selection",
+      "ok": true
+    },
+    {
+      "label": "main-pc",
+      "name": "legacy entry lots.html",
+      "ok": true,
+      "details": {
+        "url": "https://yamato-final.vercel.app/land-payment-study.html#/search"
+      }
+    },
+    {
+      "label": "main-pc",
+      "name": "legacy entry lots-preview.html?view=list",
+      "ok": true,
+      "details": {
+        "url": "https://yamato-final.vercel.app/land-payment-study.html?view=list#/search?view=list"
+      }
+    },
+    {
+      "label": "main-pc",
+      "name": "legacy entry lots-preview.html?view=estimate",
+      "ok": true,
+      "details": {
+        "url": "https://yamato-final.vercel.app/land-payment-study.html?view=estimate#/estimate/04124b74-ec18-4b90-a7d4-8a5ae25f25f6"
+      }
+    },
+    {
+      "label": "main-pc",
+      "name": "legacy entry lots-preview.html",
+      "ok": true,
+      "details": {
+        "url": "https://yamato-final.vercel.app/land-payment-study.html#/search"
+      }
+    },
+    {
+      "label": "main-pc",
+      "name": "no page errors",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "40 listings",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "PC list entry shows map; SP keeps list",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "all 40 coordinates inside map",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "map no overflow",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "primary sort matches source",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "junior sort matches source",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "missing junior distance last",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "combined distance filter",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "reload retains filters and sort",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "filtered-list no overflow",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "list to map selects property",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "property detail route",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "back retains selection",
+      "ok": true
+    },
+    {
+      "label": "main-sp",
+      "name": "legacy entry lots.html",
+      "ok": true,
+      "details": {
+        "url": "https://yamato-final.vercel.app/land-payment-study.html#/search"
+      }
+    },
+    {
+      "label": "main-sp",
+      "name": "legacy entry lots-preview.html?view=list",
+      "ok": true,
+      "details": {
+        "url": "https://yamato-final.vercel.app/land-payment-study.html?view=list#/search?view=list"
+      }
+    },
+    {
+      "label": "main-sp",
+      "name": "legacy entry lots-preview.html?view=estimate",
+      "ok": true,
+      "details": {
+        "url": "https://yamato-final.vercel.app/land-payment-study.html?view=estimate#/estimate/a7170555-ccbb-4c80-8106-ed785e113f5a"
+      }
+    },
+    {
+      "label": "main-sp",
+      "name": "legacy entry lots-preview.html",
+      "ok": true,
+      "details": {
+        "url": "https://yamato-final.vercel.app/land-payment-study.html#/search"
+      }
+    },
+    {
+      "label": "main-sp",
+      "name": "no page errors",
+      "ok": true
+    }
+  ],
+  "shots": [
+    {
+      "label": "dedicated-pc",
+      "name": "map",
+      "path": "qa/map-pc-school-20260908/release-dedicated-pc-map.png"
+    },
+    {
+      "label": "dedicated-pc",
+      "name": "filtered-list",
+      "path": "qa/map-pc-school-20260908/release-dedicated-pc-filtered-list.png"
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "map",
+      "path": "qa/map-pc-school-20260908/release-dedicated-sp-map.png"
+    },
+    {
+      "label": "dedicated-sp",
+      "name": "filtered-list",
+      "path": "qa/map-pc-school-20260908/release-dedicated-sp-filtered-list.png"
+    },
+    {
+      "label": "main-pc",
+      "name": "map",
+      "path": "qa/map-pc-school-20260908/release-main-pc-map.png"
+    },
+    {
+      "label": "main-pc",
+      "name": "filtered-list",
+      "path": "qa/map-pc-school-20260908/release-main-pc-filtered-list.png"
+    },
+    {
+      "label": "main-sp",
+      "name": "map",
+      "path": "qa/map-pc-school-20260908/release-main-sp-map.png"
+    },
+    {
+      "label": "main-sp",
+      "name": "filtered-list",
+      "path": "qa/map-pc-school-20260908/release-main-sp-filtered-list.png"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_757Nv4erak8uV9URJBPJ8gYasFz9",
+    "url": "https://yamato-land-payment-preview-5705ppe7c-office-ks-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/office-ks-projects/yamato-land-payment-preview/757Nv4erak8uV9URJBPJ8gYasFz9",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_757Nv4erak8uV9URJBPJ8gYasFz9"
+  },
+  "message": "Deployment yamato-land-payment-preview-5705ppe7c-office-ks-projects.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel curl https://yamato-land-payment-preview-5705ppe7c-office-ks-projects.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect yamato-land-payment-preview-5705ppe7c-office-ks-projects.vercel.app --scope office-ks-projects",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod --scope office-ks-projects",
+      "when": "Promote to production"
+    }
+  ]
+}

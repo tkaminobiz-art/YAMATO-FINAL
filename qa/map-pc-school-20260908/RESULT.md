@@ -1,8 +1,8 @@
-> 公開工程の更新（2026-09-08）：ディレクターの事前確認後、ユーザーの明示承認に基づきMAP構築担当がcommit・push・本番反映を一括実行する。以下の「窓口が公開を実行」は初回引渡し時点の記録。現在の公開状態はRELEASE.mdを参照（作成・検証中）。
+> 2026-09-08：commit・push・本番反映・公開確認まで完了。実装commit `33d039b`、deployment `dpl_757Nv4erak8uV9URJBPJ8gYasFz9`。公開後の61項目・70操作確認と公開URLは [RELEASE.md](RELEASE.md) を参照。
 
 # MAP PC構成・学校距離検索：担当完了報告
 
-2026-09-08。実装・検証・配布準備まで完了。commit・push・本番deployは未実施で、ディレクター（新）が担当する。追加の公開許可は取得済み。公開処理を重複させない。
+2026-09-08。実装と公開を完了した。ディレクター（新）の事前確認とユーザーの明示承認に基づき、MAP構築担当が公開工程まで担当した。
 
 ## 結果
 
@@ -28,24 +28,19 @@ PCは初期画面に全体の地図、その下に物件一覧。地図も一覧
 ## 引き渡す作業場所と対象
 
 - 独立worktree：`/tmp/yamato-map-pc-20260908`
-- ブランチ：`codex/map-pc-school-20260908`（まだcommitなし）。基点：`6e4f8d0`。
+- ブランチ：`codex/map-pc-school-20260908`。基点：`6e4f8d0`、実装commit：`33d039b`、origin/mainへpush済み。
 - 新snapshot：`snapshots/land-payment-20260908-pc/`。旧 `land-payment-20260908/` は変更しない。
 - 配布スクリプト：`scripts/package-land-payment.mjs`。日付＋版名を扱い、既定を20260908-pcに更新。
 - 証跡：`qa/map-pc-school-20260908/`。Gitへ保存する対象は `git-files.json` の明示リスト。作業探索の出力や親の未追跡ファイル一覧は含めない。
 - 元の実行時ファイルとの差分は `changed-files.json`（10ファイル、うちschool.mjs新規）と `changes.diff`。原典・金融条件等は変更していない。
-- 親の未追跡runtimeは旧版のまま保全。統合時、同名の10ファイルだけ新snapshotから反映し、他担当の差分を取り込まない。公開基準は新snapshotとmanifestとする。
+- 親の実行ファイルは旧9ファイルのバックアップ後、変更10ファイルを新snapshotから反映済み。他担当の差分を保持した。公開基準は新snapshotとmanifestとする。
 
-## ディレクターの次の工程
+## 公開状態
 
-1. 差分・画面・証跡を確認し、上記worktreeの明示ファイルを統合する。親で未公開のindex.html・_mobile-verify等は含めない。対象だけcommitし、最新origin/mainへrebase・競合確認してpushする。
-2. `node scripts/package-land-payment.mjs 20260908-pc` で配布ディレクトリを生成。出力先にはpublicとAPI側モジュールの両方が含まれる。
-3. 配布先は **office-ks-projects / yamato-land-payment-preview / prj_QtoSX8anRttecURruvIJcXwn3P74**。既存プロジェクトをCLIで照合済み。本サイトrewrite先のため、専用production aliasへの反映が本サイトMAPにも直ちに反映される。
-4. 本番反映後、専用aliasと本サイトのHTML・モジュールがmanifestと一致すること、旧lots.html/lots-preview.htmlの入口、本サイトの一覧URL、PC/SP・条件再読込を確認。APIのdryRun200・旧版400・未接続本受付503等の既存挙動を確認する。実問い合わせは送信しない。
-5. commit・push・deployment ID・本サイト公開URL・版を公開記録へ追記する。今回こちらはcommit/push/deployをしていない。
+本番URL：https://yamato-final.vercel.app/land-payment-study.html#/search
 
-本番URL（現在は旧版）：https://yamato-final.vercel.app/land-payment-study.html#/search
-確認用ローカル：http://127.0.0.1:4191/land-payment-study.html#/search?view=list
+実装・証跡の明示91ファイルをcommit・pushし、新snapshotの24ファイルを配布した。配布スクリプトは `node scripts/package-land-payment.mjs 20260908-pc`。専用production aliasと本サイトで配信・PC/SP・再読込・旧入口・API挙動を確認済み。詳しい公開証跡は [RELEASE.md](RELEASE.md) にまとめた。
 
-TECHNICAL_PASS：実装検証と配布準備。
-RELEASE_APPROVED：ユーザーからMAP差分のcommit・push・本番反映の許可あり、実施担当はディレクター。
-公開実施：未実施。相談本受付・営業APP・LINE・予約の実接続は今回の対象外。
+TECHNICAL_PASS：実装検証と本番確認を完了。
+RELEASE_APPROVED：ユーザーの明示承認に基づきMAP構築担当が公開済み。
+相談本受付・営業APP・LINE・予約の実接続は今回の対象外。

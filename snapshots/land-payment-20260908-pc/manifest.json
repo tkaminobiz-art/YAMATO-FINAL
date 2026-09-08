@@ -126,7 +126,10 @@
       "sha256": "190c6512e30dd6d87a4c7a2b2968d2be572d56cefd74e34d544b3ba8586b4f9d"
     }
   ],
-  "deployment": "dpl_6ppQx4aHuTHyEJMR2xHUGcSRye2v",
+  "deployment": "dpl_757Nv4erak8uV9URJBPJ8gYasFz9",
   "revision": "map-pc-school-20260908",
-  "releaseStatus": "not-deployed"
+  "releaseStatus": "deployed",
+  "sourceCommit": "33d039b721107c978699284336c5bf3f643497ae",
+  "productionVerifiedAt": "2026-09-08T02:00:17.801604+00:00",
+  "releaseRecord": "../../qa/map-pc-school-20260908/RELEASE.md"
 }
