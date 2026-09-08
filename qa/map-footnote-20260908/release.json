@@ -1,0 +1,25 @@
+{
+  "status": "production-verified",
+  "verifiedAt": "2026-09-08T02:36:25.986436+00:00",
+  "sourceCommit": "5ce35cb7a2df73be2bcbfcd017fda7de74d53938",
+  "deployment": {
+    "id": "dpl_8vAJwskQGEUw9dTE1esFVmPr7JVh",
+    "url": "https://yamato-land-payment-preview-9653h511p-office-ks-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/office-ks-projects/yamato-land-payment-preview/8vAJwskQGEUw9dTE1esFVmPr7JVh",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_8vAJwskQGEUw9dTE1esFVmPr7JVh"
+  },
+  "mainUrl": "https://yamato-final.vercel.app/land-payment-study.html#/search",
+  "dedicatedUrl": "https://yamato-land-payment-preview.vercel.app/",
+  "topDestination": "https://yamato-final.vercel.app/",
+  "browserChecks": 90,
+  "httpMatches": 50,
+  "packageMatches": 24,
+  "unrelatedTrackedFilesPreserved": 12,
+  "newCopy": [
+    "TOPへ戻る"
+  ],
+  "deletedCopy": "地図の位置はSUUMOの掲載情報をもとにした目安です。正確な区画や入口は担当者にご確認ください。",
+  "physicalIPhoneTested": false
+}

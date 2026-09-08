@@ -1,0 +1,16 @@
+[
+  "qa/map-footnote-20260908/RELEASE.md",
+  "qa/map-footnote-20260908/release.json",
+  "qa/map-footnote-20260908/deployment.json",
+  "qa/map-footnote-20260908/public-integrity.json",
+  "qa/map-footnote-20260908/parent-sync.json",
+  "qa/map-footnote-20260908/main-browser.json",
+  "qa/map-footnote-20260908/dedicated-browser.json",
+  "qa/map-footnote-20260908/main-pc.png",
+  "qa/map-footnote-20260908/main-sp.png",
+  "qa/map-footnote-20260908/dedicated-pc.png",
+  "qa/map-footnote-20260908/dedicated-sp.png",
+  "qa/map-footnote-20260908/release-git-files.json",
+  "snapshots/land-payment-20260908-pc/manifest.json",
+  "snapshots/land-payment-20260908-pc/README.md"
+]

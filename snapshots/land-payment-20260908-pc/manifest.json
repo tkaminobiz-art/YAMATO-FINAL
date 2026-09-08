@@ -126,8 +126,10 @@
       "sha256": "190c6512e30dd6d87a4c7a2b2968d2be572d56cefd74e34d544b3ba8586b4f9d"
     }
   ],
-  "deployment": "dpl_757Nv4erak8uV9URJBPJ8gYasFz9",
+  "deployment": "dpl_8vAJwskQGEUw9dTE1esFVmPr7JVh",
   "revision": "map-home-link-20260908",
-  "releaseStatus": "prepared",
-  "releaseRecord": "../../qa/map-footnote-20260908/RELEASE.md"
+  "releaseStatus": "deployed",
+  "releaseRecord": "../../qa/map-footnote-20260908/RELEASE.md",
+  "sourceCommit": "5ce35cb7a2df73be2bcbfcd017fda7de74d53938",
+  "productionVerifiedAt": "2026-09-08T02:36:25.986436+00:00"
 }
