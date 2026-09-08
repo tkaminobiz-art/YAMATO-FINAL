@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "snapshots/land-payment-20260908-pc/land-payment-study.html",
+      "sha256": "4b27178e8b6dc9c99626d79e2482a2f1f9690286cad37aac03c6fdf453a5278b"
+    },
+    {
+      "path": "snapshots/land-payment-20260908-pc/assets/land-payment-study/map-controller.mjs",
+      "sha256": "e600588791aef32a87fc2f4eaf406769e733caa3432ab24d4335b3aa7b87fa0f"
+    },
+    {
+      "path": "snapshots/land-payment-20260908-pc/assets/land-payment-study/style.css",
+      "sha256": "b6c4ded1e49a64af65f9963357885b56e6271f1c3c6ade0602997e56ff75f5dc"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/map-footnote-20260908/brief.md",
+      "sha256": "5c5547c20fe4a53c6b47bdd8d432d18b68d1674d2f0ec916f3c3c1957eb93235"
+    },
+    "copy": {
+      "path": "qa/map-footnote-20260908/copy.md",
+      "sha256": "ebb38360e2c9c1884d76a4a5e055031f2676657f4b284676742c1f52226b2d2e"
+    },
+    "assets": {
+      "path": "qa/map-footnote-20260908/assets.md",
+      "sha256": "1b329c027d772e7ebedb8e973e6a145d9d91b087d44a1e30f14ae30adde64145"
+    },
+    "visual": {
+      "path": "qa/map-footnote-20260908/visual.md",
+      "sha256": "7e57b4f54c1324ef1ad54348b6827483da68039743733628d787a9ea1032e894"
+    },
+    "interaction": {
+      "path": "qa/map-footnote-20260908/interaction.md",
+      "sha256": "b20973cd19e6dde419b8df3bdd61b8b11b3f944e2044117e4d42767ac949e55d"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1280,
+      "height": 720,
+      "path": "qa/map-footnote-20260908/local-pc.png",
+      "sha256": "b73c5758d2d49cbbbeab78ecd5c7b3fe83d15fbaf11722b5742f513df8df9d06"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/map-footnote-20260908/local-sp.png",
+      "sha256": "95a1f254aab9360393df5f868227642852b6575858d06227e7e023c8833d4c6b"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "base": "http://127.0.0.1:4192/land-payment-study.html",
+  "checks": [
+    {
+      "device": "pc",
+      "name": "requested paragraph absent",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "map precision caption retained",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "40 listings retained",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "map visible",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "entire PC map in first viewport",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "TOP tap target",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "TOP absolute destination",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "PC results anchor",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "school note retained",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "list to map",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "expand and background inert",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "collapse restores background",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "no overflow",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "property TOP visible",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "property TOP visible",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "saved TOP visible",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "compare TOP visible",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "estimate TOP visible",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "result TOP visible",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "TOP actual landing",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "result survives return",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "search condition survives TOP return",
+      "ok": true
+    },
+    {
+      "device": "pc",
+      "name": "no JS exception",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "requested paragraph absent",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "map precision caption retained",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "40 listings retained",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "map visible",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "TOP tap target",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "TOP absolute destination",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "mobile list opens",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "school note retained",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "list to map",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "expand and background inert",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "collapse restores background",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "no overflow",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "property TOP visible",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "property TOP visible",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "saved TOP visible",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "compare TOP visible",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "estimate TOP visible",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "result TOP visible",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "TOP actual landing",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "result survives return",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "search condition survives TOP return",
+      "ok": true
+    },
+    {
+      "device": "sp",
+      "name": "no JS exception",
+      "ok": true
+    }
+  ],
+  "shots": [
+    {
+      "viewport": "pc",
+      "width": 1280,
+      "height": 720,
+      "path": "qa/map-footnote-20260908/local-pc.png"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/map-footnote-20260908/local-sp.png"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "snapshots/land-payment-20260908-pc/land-payment-study.html",
+      "sha256": "b68718d7d7696fad4e6e0bf48c2fc958f8c7df356db82ff220a586526dadd134"
+    },
+    {
+      "path": "snapshots/land-payment-20260908-pc/assets/land-payment-study/map-controller.mjs",
+      "sha256": "61d0976a0ad3578ea46bee0302aeabd890a6177c7abf56155406e31e0620fbf3"
+    },
+    {
+      "path": "snapshots/land-payment-20260908-pc/assets/land-payment-study/style.css",
+      "sha256": "7dffb6f2374be6ff5f477b5e4f71a69c3a4009bfbfa4e6361751cea5361331e4"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/map-footnote-20260908/brief.md",
+      "sha256": "b2c4dd2b8db852243e97737d2d6e667560c5c415c97efae46207ad3584880ede"
+    },
+    "copy": {
+      "path": "qa/map-footnote-20260908/copy.md",
+      "sha256": "22c4f7e9ad8c085db99a24a7b34aa78132e8033e87702f79f9f676f0848566a6"
+    },
+    "assets": {
+      "path": "qa/map-footnote-20260908/assets.md",
+      "sha256": "1b329c027d772e7ebedb8e973e6a145d9d91b087d44a1e30f14ae30adde64145"
+    }
+  },
+  "screenshots": []
+}

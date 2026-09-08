@@ -1,0 +1,15 @@
+[
+  {
+    "name": "320px header and tap area",
+    "ok": true,
+    "details": {
+      "height": 44,
+      "link": 44,
+      "overflow": false
+    }
+  },
+  {
+    "name": "PC map scrolls away",
+    "ok": true
+  }
+]
