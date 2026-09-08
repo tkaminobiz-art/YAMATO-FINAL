@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "baselineCommit": "b7afea999355d4fd43ec1fd5c3ac8adba4204c10",
+  "baselineSnapshot": "snapshots/land-payment-20260908-icon",
+  "plannedScope": [
+    "snapshots/land-payment-20260908-suumo/land-payment-study.html",
+    "snapshots/land-payment-20260908-suumo/assets/land-payment-study/suumo-properties.mjs",
+    "snapshots/land-payment-20260908-suumo/assets/land-payment-study/catalog.mjs",
+    "snapshots/land-payment-20260908-suumo/assets/land-payment-study/data.mjs",
+    "snapshots/land-payment-20260908-suumo/assets/land-payment-study/views/search.mjs",
+    "snapshots/land-payment-20260908-suumo/assets/land-payment-study/views/property.mjs",
+    "snapshots/land-payment-20260908-suumo/manifest.json",
+    "scripts/package-land-payment.mjs"
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/map-suumo-refresh-20260908/brief.md",
+      "sha256": "5f73ba86fda3b471ab8f7dd4f06184e5d402efae1d809a25d61d917f77c28279"
+    },
+    "copy": {
+      "path": "qa/map-suumo-refresh-20260908/copy-review.md",
+      "sha256": "e5e6c4f73324a3887e28aafd6a3476dbc97e572702c3f434c4a5e61f12666a15"
+    },
+    "assets": {
+      "path": "qa/map-suumo-refresh-20260908/asset-decisions.md",
+      "sha256": "e28cb80246eccb3606ebb6588085459db8a80f4e3d0f50e0dafe8132e8703da3"
+    }
+  }
+}
