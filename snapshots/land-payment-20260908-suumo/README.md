@@ -4,6 +4,6 @@
 
 基準commit：`b7afea999355d4fd43ec1fd5c3ac8adba4204c10`。基準deployment：`dpl_FMUf6hTT1tfzUP5V7qPKrNb4Joz9`。今回の実装commit・deploymentは公開記録に残す。
 本サイト：https://yamato-final.vercel.app/land-payment-study.html#/search
-公開記録：`qa/map-suumo-refresh-20260908/RELEASE.md`。直前版は `snapshots/land-payment-20260908-icon` と `qa/map-favicon-20260908/RELEASE.md` に保持する。
+公開記録：`qa/map-suumo-refresh-20260908/RELEASE.md`。manifestの `releaseStatus`、`deployment`、`sourceCommit`、`productionVerifiedAt` は配布準備時点の値を保持し、現在の公開状態・実装commit・deploymentは公開記録を正本とする。直前版は `snapshots/land-payment-20260908-icon` と `qa/map-favicon-20260908/RELEASE.md` に保持する。
 
 配布：`node scripts/package-land-payment.mjs 20260908-suumo`。manifestの25ファイルを照合して配布する。旧snapshotは変更せず保持。

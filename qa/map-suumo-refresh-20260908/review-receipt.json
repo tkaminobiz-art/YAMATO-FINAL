@@ -27,7 +27,11 @@
     },
     {
       "path": "snapshots/land-payment-20260908-suumo/manifest.json",
-      "sha256": "9a0d844a13f7064d5be4e5a7fe2ba34b9ef0e8f8ec3d7e60e04f0d0bea63c22e"
+      "sha256": "61388de9513394f4ddca902e8af6cc66ed3ba8bf13ee69a3a6b7299fd16dfe2f"
+    },
+    {
+      "path": "snapshots/land-payment-20260908-suumo/README.md",
+      "sha256": "0a6ac3e902525cc5781242a5afef53f608731cb8a2370096e6cff4bcfef47976"
     },
     {
       "path": "scripts/package-land-payment.mjs",
