@@ -1,0 +1,154 @@
+{
+  "checkedAt": "2026-09-08T03:02:25.857Z",
+  "implementationCommit": "6732c09",
+  "files": [
+    {
+      "path": "index.html",
+      "url": "https://yamato-final.vercel.app/index.html",
+      "status": 200,
+      "sha256": "257842ae99c01d47a89821ae8691f38c2d8a83ee08dbc1852fd9269bb4a07047",
+      "expectedSha256": "257842ae99c01d47a89821ae8691f38c2d8a83ee08dbc1852fd9269bb4a07047",
+      "matches": true
+    },
+    {
+      "path": "assets/top-renewal/real-photo/commute-320.webp",
+      "url": "https://yamato-final.vercel.app/assets/top-renewal/real-photo/commute-320.webp",
+      "status": 200,
+      "sha256": "7ef240c1d4432f24c35facd506ab12298f8fbfe018c360976a24bc1a16bb8006",
+      "expectedSha256": "7ef240c1d4432f24c35facd506ab12298f8fbfe018c360976a24bc1a16bb8006",
+      "matches": true
+    },
+    {
+      "path": "assets/top-renewal/real-photo/commute-639.webp",
+      "url": "https://yamato-final.vercel.app/assets/top-renewal/real-photo/commute-639.webp",
+      "status": 200,
+      "sha256": "beb840a90bd38124083d8032b843cfa428b6e1b73fddba59da87cd1bc08ef7a1",
+      "expectedSha256": "beb840a90bd38124083d8032b843cfa428b6e1b73fddba59da87cd1bc08ef7a1",
+      "matches": true
+    },
+    {
+      "path": "assets/top-renewal/real-photo/land-320.webp",
+      "url": "https://yamato-final.vercel.app/assets/top-renewal/real-photo/land-320.webp",
+      "status": 200,
+      "sha256": "d2fde11d1992ee8201746c76c493dbcfece597b184db398bb1c2c2f6191cf68f",
+      "expectedSha256": "d2fde11d1992ee8201746c76c493dbcfece597b184db398bb1c2c2f6191cf68f",
+      "matches": true
+    },
+    {
+      "path": "assets/top-renewal/real-photo/land-640.webp",
+      "url": "https://yamato-final.vercel.app/assets/top-renewal/real-photo/land-640.webp",
+      "status": 200,
+      "sha256": "59f933d9571af80ac24012c363f87c3e41d8ce180321ae1f65c012ba876a7208",
+      "expectedSha256": "59f933d9571af80ac24012c363f87c3e41d8ce180321ae1f65c012ba876a7208",
+      "matches": true
+    },
+    {
+      "path": "assets/top-renewal/real-photo/payment-320.webp",
+      "url": "https://yamato-final.vercel.app/assets/top-renewal/real-photo/payment-320.webp",
+      "status": 200,
+      "sha256": "1a3f3f41219c98175e99f722d92552cc35ea89a7b149e68f29cbe867bcf4fbfe",
+      "expectedSha256": "1a3f3f41219c98175e99f722d92552cc35ea89a7b149e68f29cbe867bcf4fbfe",
+      "matches": true
+    },
+    {
+      "path": "assets/top-renewal/real-photo/payment-802.webp",
+      "url": "https://yamato-final.vercel.app/assets/top-renewal/real-photo/payment-802.webp",
+      "status": 200,
+      "sha256": "c10036832563d28070325269b0e03c457d167970dfa738941e727d7de833078b",
+      "expectedSha256": "c10036832563d28070325269b0e03c457d167970dfa738941e727d7de833078b",
+      "matches": true
+    },
+    {
+      "path": "assets/top-renewal/real-photo/real-photo.css",
+      "url": "https://yamato-final.vercel.app/assets/top-renewal/real-photo/real-photo.css",
+      "status": 200,
+      "sha256": "fa38e6d2ee2c139d4e4476a5d4c4c06e141ed42d2991f65f3e510b5864e18abe",
+      "expectedSha256": "fa38e6d2ee2c139d4e4476a5d4c4c06e141ed42d2991f65f3e510b5864e18abe",
+      "matches": true
+    },
+    {
+      "path": "assets/top-renewal/built-story/site-coordination.webp",
+      "url": "https://yamato-final.vercel.app/assets/top-renewal/built-story/site-coordination.webp",
+      "status": 200,
+      "sha256": "bfd7e901dd6a824750397dde7c7193ce606003b72c9c9e467f02e2036cf60f81",
+      "expectedSha256": "bfd7e901dd6a824750397dde7c7193ce606003b72c9c9e467f02e2036cf60f81",
+      "matches": true
+    },
+    {
+      "path": "staff.html",
+      "url": "https://yamato-final.vercel.app/staff.html",
+      "status": 200,
+      "sha256": "40b3acf3faf5027fb5c8d3d1f55299e1df66844a9ecc853cba1fc2b51fd7aa94",
+      "expectedSha256": "40b3acf3faf5027fb5c8d3d1f55299e1df66844a9ecc853cba1fc2b51fd7aa94",
+      "matches": true
+    },
+    {
+      "path": "works.html",
+      "url": "https://yamato-final.vercel.app/works.html",
+      "status": 200,
+      "sha256": "8ca6aa586f891be65d4d682a2d042a5f8fe9016926908f8482e8f8e14da3b523",
+      "expectedSha256": "8ca6aa586f891be65d4d682a2d042a5f8fe9016926908f8482e8f8e14da3b523",
+      "matches": true
+    },
+    {
+      "path": "voice.html",
+      "url": "https://yamato-final.vercel.app/voice.html",
+      "status": 200,
+      "sha256": "f7659e5a0545427b391edc457759ae017d9263865ba5b39d8d907c961de8974a",
+      "expectedSha256": "f7659e5a0545427b391edc457759ae017d9263865ba5b39d8d907c961de8974a",
+      "matches": true
+    },
+    {
+      "path": "data/voices.json",
+      "url": "https://yamato-final.vercel.app/data/voices.json",
+      "status": 200,
+      "sha256": "7f843493e8cff274e6737a629dfdb96b7081e08deea6871152b9bd07927f9870",
+      "expectedSha256": "7f843493e8cff274e6737a629dfdb96b7081e08deea6871152b9bd07927f9870",
+      "matches": true
+    },
+    {
+      "path": "assets/top-renewal/fv-bright/fv-bright.css",
+      "url": "https://yamato-final.vercel.app/assets/top-renewal/fv-bright/fv-bright.css",
+      "status": 200,
+      "sha256": "28f0b832e69399505a6f396c7f131395300ff9a462b914402996cac6015af444",
+      "expectedSha256": "28f0b832e69399505a6f396c7f131395300ff9a462b914402996cac6015af444",
+      "matches": true
+    },
+    {
+      "path": "assets/top-renewal/quiet-rails.js",
+      "url": "https://yamato-final.vercel.app/assets/top-renewal/quiet-rails.js",
+      "status": 200,
+      "sha256": "c66f9ccaeaabf149687bcc1f7868bfd2768ac51ce8c5ff5513d9d07abd0723b3",
+      "expectedSha256": "c66f9ccaeaabf149687bcc1f7868bfd2768ac51ce8c5ff5513d9d07abd0723b3",
+      "matches": true
+    }
+  ],
+  "errors": [],
+  "preserved": [
+    {
+      "path": "staff.html",
+      "unchanged": true
+    },
+    {
+      "path": "works.html",
+      "unchanged": true
+    },
+    {
+      "path": "voice.html",
+      "unchanged": true
+    },
+    {
+      "path": "data/voices.json",
+      "unchanged": true
+    },
+    {
+      "path": "assets/top-renewal/fv-bright/fv-bright.css",
+      "unchanged": true
+    },
+    {
+      "path": "assets/top-renewal/quiet-rails.js",
+      "unchanged": true
+    }
+  ],
+  "unrelatedWorkingFilesPreserved": 11
+}

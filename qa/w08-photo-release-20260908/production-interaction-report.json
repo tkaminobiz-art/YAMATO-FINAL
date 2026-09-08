@@ -1,0 +1,96 @@
+[
+  {
+    "width": 1440,
+    "autoplayDelta": 11,
+    "hoverStops": true,
+    "resume": true,
+    "nextPauses": true,
+    "images": [
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      }
+    ],
+    "destinations": [
+      "https://yamato-final.vercel.app/kodawari.html",
+      "https://yamato-final.vercel.app/land-payment-study.html?view=list#/search?view=list",
+      "https://yamato-final.vercel.app/land-payment-study.html?view=estimate#/estimate/bf3272e9-141e-471a-848a-9c65bd9abb3e",
+      "https://yamato-final.vercel.app/move-to-nara-preview.html"
+    ]
+  },
+  {
+    "width": 390,
+    "autoplayDelta": 11,
+    "hoverStops": true,
+    "resume": true,
+    "nextPauses": true,
+    "images": [
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      },
+      {
+        "transform": "none",
+        "cover": true
+      }
+    ],
+    "destinations": [
+      "https://yamato-final.vercel.app/kodawari.html",
+      "https://yamato-final.vercel.app/land-payment-study.html?view=list#/search?view=list",
+      "https://yamato-final.vercel.app/land-payment-study.html?view=estimate#/estimate/5dbaf8d9-9fe9-498e-b818-0016e457505b",
+      "https://yamato-final.vercel.app/move-to-nara-preview.html"
+    ]
+  }
+]

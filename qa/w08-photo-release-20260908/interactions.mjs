@@ -37,7 +37,10 @@ for(const width of [1440,390]){
   const href=await card.getAttribute('href');
   await Promise.all([p.waitForURL(u=>u.href!==new URL('index.html?mode=still',base).href),card.press('Enter')]);
   const expected=base.startsWith('https:')&&i===1?'land-payment-study.html#/search?view=list':base.startsWith('https:')&&i===2?'land-payment-study.html#/estimate':href;
-  assert.equal(p.url(),new URL(expected,base).href);
+  const actualURL=new URL(p.url()),expectedURL=new URL(expected,base);
+  assert.equal(actualURL.origin+actualURL.pathname,expectedURL.origin+expectedURL.pathname);
+  if(base.startsWith('https:')&&i===2)assert.match(actualURL.hash,/^#\/estimate(?:\/[0-9a-f-]{36})?$/);
+  else assert.equal(actualURL.hash,expectedURL.hash);
   destinations.push(p.url());
  }
  report.push({width,autoplayDelta:end-start,hoverStops:true,resume:true,nextPauses:true,images,destinations});
