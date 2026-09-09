@@ -1,0 +1,94 @@
+/* Adopted VOICE B: independent construction photographs and four source-linked answers. */
+#voice.vb26 { position: relative; isolation: isolate; width: 100%; aspect-ratio: 1290 / 1219; margin: 0; padding: 0; overflow: hidden; background: #f8f4eb; color: #25221e; box-shadow: none; font-family: "Shippori Mincho","Yu Mincho",serif; }
+#voice.vb26 > .wg-paper { background: url('../770-editorial/cotton-paper-960.webp') center / 680px repeat; z-index: -2; opacity: .55; filter: grayscale(1); mix-blend-mode: multiply; }
+.vb26__red { position: absolute; z-index: -1; inset: 0; pointer-events: none; background: #961b22 url('../770-editorial/cotton-paper-960.webp') center / 540px repeat; background-blend-mode: multiply; }
+.vb26__red--top { clip-path: polygon(0 0,19.2% 0,0 9.4%); }
+.vb26__red--side { clip-path: polygon(100% 38%,90% 42.5%,82% 62%,88% 79%,73% 100%,100% 100%); }
+.vb26__rules { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: #b38a3d; stroke-width: 1.2; pointer-events: none; }
+.vb26__rules-sp { display: none; }
+.vb26__rules path { vector-effect: non-scaling-stroke; }
+#voice.vb26 > h2 { position: absolute; z-index: 4; left: 5.2%; top: 14.2%; margin: 0; color: #771b18; font: 400 5.85vw/1.4 "Shippori Mincho","Yu Mincho",serif; letter-spacing: .025em; white-space: nowrap; }
+#voice.vb26 > h2::after { content: ""; display: block; width: 6.2vw; height: 1px; margin-top: 1.1vw; background: #c0a060; }
+.vb26__scene { position: absolute; overflow: hidden; margin: 0; background: #535147; }
+.vb26__scene > img { position: absolute; inset: 0; display: block; max-width: none; width: 100%; height: 100%; object-fit: cover; transform: none; filter: none; }
+.vb26__scene--living { left: 27.8%; top: 0; width: 72.2%; height: 45.7%; clip-path: polygon(10% 0,100% 0,100% 84%,86% 96%,0 100%); }
+.vb26__scene--living > img { width: 128%; height: 128%; left: -14%; top: -22%; object-position: 53% 52%; }
+.vb26__scene--exterior { left: 0; top: 45.3%; width: 52.8%; height: 47%; clip-path: polygon(0 4%,100% 0,68% 100%,0 90%); }
+.vb26__scene--exterior > img { object-position: 52% 46%; }
+.vb26__scene--detail { left: 36.5%; top: 66%; width: 41%; height: 28.5%; clip-path: polygon(17% 7%,67% 0,100% 80%,28% 100%,0 94%); }
+.vb26__scene--detail > img { width: 190%; height: 190%; left: -86%; top: -47%; object-position: 65% 50%; }
+.vb26__scene--garden { display: none; }
+.vb26__quote { position: absolute; z-index: 5; display: block; min-height: 44px; padding: 2vw 2.7vw 3.2vw 3.5vw; color: #26231e; background: #fdfbf7; box-shadow: 0 6px 24px #4b36221c; clip-path: polygon(10% 0,100% 0,95% 100%,0 100%); text-decoration: none; }
+.vb26__quote::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url('../770-editorial/cotton-paper-960.webp') center / 540px; opacity: .16; mix-blend-mode: multiply; pointer-events: none; }
+.vb26__quote--v01 blockquote { max-width: 13em; }
+.vb26__quote--v01 { left: 12.6%; top: 26.1%; width: 32.4%; }
+.vb26__quote--v02 { left: 31.5%; top: 48.6%; width: 26.5%; padding-left: 3.2vw; padding-right: 2.5vw; }
+.vb26__quote--v08 { left: 57.8%; top: 47.6%; width: 31.5%; }
+.vb26__quote--v33 { left: 64.7%; top: 67.2%; width: 31.4%; }
+.vb26__quote h3 { display: flex; align-items: baseline; flex-wrap: wrap; gap: .5vw; margin: 0 0 .9vw; font-family: "Shippori Mincho","Yu Mincho",serif; font-weight: 400; line-height: 1.5; letter-spacing: .015em; }
+.vb26__customer { padding-bottom: .3vw; border-bottom: 1px solid #c7a35c; color: #851c1c; font-size: clamp(14px,1.7vw,28px); white-space: nowrap; }
+.vb26__topic { padding-left: .6vw; border-left: 1px solid #951b22; font-size: clamp(13px,1.42vw,24px); white-space: nowrap; }
+.vb26__quote blockquote { margin: 0; font-size: clamp(16px,1.67vw,28px); font-weight: 400; line-height: 1.48; letter-spacing: .01em; overflow-wrap: break-word; text-wrap: balance; }
+.vb26__arrow { position: absolute; right: 2.6vw; bottom: 1.35vw; width: 3.1vw; color: #a46b24; }
+.vb26__arrow svg { display: block; width: 100%; height: auto; fill: none; stroke: currentColor; stroke-width: 1.4; }
+.vb26__quote:focus-visible { outline: none; }
+.vb26__quote:focus-visible::after { content: ""; position: absolute; inset: 8px 12%; border: 3px solid #841b22; pointer-events: none; }
+.vb26__photo-note { position: absolute; left: 4.7%; bottom: 4.6%; margin: 0; font-size: clamp(13px,1.02vw,18px); line-height: 1.8; letter-spacing: .025em; }
+.vb26__photo-note span { margin-left: .9em; }
+.vb26__all { position: absolute; z-index: 6; right: 3.5%; bottom: 4.4%; width: 38.5%; min-height: 52px; height: 7.4%; display: flex; align-items: center; justify-content: center; gap: 4vw; padding: 12px; border: 1px solid #cfb16c; background: #8b131b url('../770-editorial/cotton-paper-960.webp') center / 540px; background-blend-mode: multiply; color: #fff7e8; font-size: clamp(18px,2.05vw,34px); line-height: 1.5; letter-spacing: .18em; text-decoration: none; }
+.vb26__all svg { width: 3.1vw; min-width: 30px; height: auto; fill: none; stroke: #dcc080; stroke-width: 1.4; }
+.vb26__all:focus-visible { outline: 3px solid #24221e; outline-offset: 5px; }
+@media (hover:hover) { .vb26__quote:hover .vb26__arrow { color: #70161b; } .vb26__all:hover { background-color: #ac2630; } }
+.av26__fallback { position: absolute; left: 18%; right: 15%; top: 47%; margin: 0; color: #fff; font: 400 clamp(13px,1.1vw,18px)/1.8 "Noto Sans JP",sans-serif; text-align: center; text-wrap: balance; }
+.av26__fallback[hidden] { display: none; }
+.vb26__scene.is-error > img,.va26__scene.is-error > img { visibility: hidden; }
+@media (min-width:768px) and (max-width:1050px) {
+  #voice.vb26 { aspect-ratio: 1290 / 1360; }
+  .vb26__photo-note { max-width: 50%; }
+  .vb26__photo-note span { display: block; margin-left: 0; }
+  .vb26__quote { padding-bottom: 40px; }
+  .vb26__quote h3 { gap: 4px; }
+  .vb26__customer { font-size: 14px; }
+  .vb26__topic { font-size: 13px; }
+  .vb26__quote--v02 { top: 47%; }
+  .vb26__quote--v08 { top: 45.5%; }
+  .vb26__quote--v33 { top: 66%; }
+}
+@media (max-width:767px) {
+  #voice.vb26 { aspect-ratio: auto; height: calc(170vw + 580px); }
+  #voice.vb26 > .wg-paper { background-size: 440px; }
+  .vb26__red--top { clip-path: polygon(0 0,33% 0,0 6.1%); }
+  .vb26__red--side { clip-path: polygon(100% 66%,54% 100%,100% 100%); }
+  .vb26__rules { opacity: .9; }
+  .vb26__rules-pc { display: none; }
+  .vb26__rules-sp { display: block; }
+  #voice.vb26 > h2 { left: 5.4%; top: calc(5vw + 46px); font-size: 8.7vw; line-height: 1.4; letter-spacing: .01em; }
+  #voice.vb26 > h2::after { width: 10.4vw; margin-top: 3vw; }
+  .vb26__scene--living { left: 16.7%; top: 0; width: 83.3%; height: calc(35vw + 220px); clip-path: polygon(55% 0,100% 0,100% 92%,0 100%); }
+  .vb26__scene--living > img { width: 100%; height: 125%; left: 0; top: -25%; object-position: 15% 50%; }
+  .vb26__scene--exterior { left: 0; top: calc(42vw + 165px); width: 100%; height: calc(40vw + 230px); clip-path: polygon(0 5%,100% 0,100% 80%,0 100%); }
+  .vb26__scene--exterior > img { object-position: 53% 42%; }
+  .vb26__scene--detail { left: 0; top: calc(90vw + 235px); width: 83%; height: calc(20vw + 210px); clip-path: polygon(0 11%,100% 0,76% 100%,0 84%); }
+  .vb26__scene--detail > img { width: 190%; height: 190%; left: -88%; top: -41%; object-position: 65% 48%; }
+  .vb26__scene--garden { display: block; left: 0; top: calc(125vw + 320px); width: 76%; height: calc(20vw + 185px); clip-path: polygon(0 0,100% 16%,81% 100%,0 96%); }
+  .vb26__scene--garden > img { width: 300%; height: 300%; left: -80%; top: -200%; object-position: 50% 70%; }
+  .vb26__quote { width: 76%; padding: 20px 22px 38px 30px; clip-path: polygon(7% 0,100% 0,94% 100%,0 100%); }
+  .vb26__quote--v01 { left: 2.5%; top: calc(15vw + 125px); }
+  .vb26__quote--v02 { left: auto; right: 2.5%; top: calc(55vw + 215px); }
+  .vb26__quote--v08 { left: auto; right: 2%; top: calc(94vw + 270px); }
+  .vb26__quote--v33 { left: auto; right: 2.5%; top: calc(133vw + 340px); }
+  .vb26__quote h3 { gap: 6px; margin-bottom: 10px; line-height: 1.5; letter-spacing: 0; }
+  .vb26__customer { padding-bottom: 4px; font-size: 15px; }
+  .vb26__topic { padding-left: 7px; font-size: 13px; }
+  .vb26__quote blockquote { font-size: 16px; line-height: 1.62; letter-spacing: .01em; }
+  .vb26__arrow { width: 30px; right: 28px; bottom: 14px; }
+  .vb26__photo-note { left: 5%; bottom: 108px; font-size: 13px; line-height: 1.8; letter-spacing: 0; }
+  .vb26__photo-note span { display: block; margin-left: 0; }
+  .vb26__all { left: 9%; right: auto; bottom: 30px; width: 82%; height: 58px; min-height: 52px; gap: 9vw; font-size: 21px; letter-spacing: .14em; }
+  .vb26__all svg { width: 30px; }
+}
+@media (max-width:359px) {
+  .vb26__quote { width: 88%; }
+  .vb26__quote--v33 { top: calc(133vw + 360px); }
+  .vb26__all { font-size: 18px; }
+}

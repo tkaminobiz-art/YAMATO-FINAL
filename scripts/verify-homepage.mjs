@@ -29,7 +29,7 @@ export function verifyHomepage(html){
   assert.equal((html.match(/id="voice"/g)||[]).length,1,'Voice section must appear once');
   assert(built.indexOf('id="top"')<built.indexOf('id="homePromise"'),'House promise must follow the visual FV');
   assert(html.indexOf(built)<html.indexOf(entrance),'Guide section must follow BUILT BY YAMATO');
-  for(const asset of ['assets/top-renewal/generated-fv-20260909/style.css','assets/top-renewal/voice-reference/voice.css','assets/top-renewal/washi-gold/washi-gold.css']){
+  for(const asset of ['assets/top-renewal/generated-fv-20260909/style.css','assets/top-renewal/voice-b-20260909/style.css','assets/top-renewal/washi-gold/washi-gold.css']){
     assert(html.includes(asset),`Approved section dependency is not loaded: ${asset}`);
     assert(existsSync(asset),`Approved section dependency is missing: ${asset}`);
   }
@@ -39,14 +39,32 @@ export function verifyHomepage(html){
   for(const label of ['770棟を支えた、','3つの仕事','初回から設計士が同席','設計内容を現場で確認','引き渡し後まで社内で対応','施工事例を見る'])assert(built.includes(label),`BUILT BY YAMATO is missing: ${label}`);
   for(const src of [...built.matchAll(/\bsrc="([^"]+)"/g)].map(m=>m[1]))assert(existsSync(src),`BUILT BY YAMATO image is missing: ${src}`);
 
-  assert(voice.includes('voice-reference wg-section'),'Approved photo-card voice layout must be present');
-  assert.equal((voice.match(/class="voice-reference__card"/g)||[]).length,4,'Voice section must contain four cards');
-  for(const label of ['お客様の声','費用の説明','自由設計','標準仕様','完成後の対応','お客様の声一覧'])assert(voice.includes(label),`Voice section is missing: ${label}`);
-  for(const href of ['voice.html#v01','voice.html#v02','voice.html#v08','voice.html#v33','voice.html'])assert(voice.includes(`href="${href}"`),`Voice destination is missing: ${href}`);
-  assert.equal((voice.match(/回答者の住まいとは限りません/g)||[]).length,4,'Every voice photo must retain its correspondence disclaimer');
-  const voiceData=readFileSync('data/voices.json','utf8');
-  for(const match of voice.matchAll(/class="voice-reference__quote">([^<]+)</g))assert(voiceData.includes(match[1]),'Voice quote must be an exact original excerpt');
+  assert(voice.includes('wg-section wg-white vb26'),'Adopted VOICE B must be present');
+  const cards=[...voice.matchAll(/<a class="vb26__quote [^"]+" data-voice-id="([^"]+)" href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
+  assert.deepEqual(cards.map(m=>m[1]),['v01','v02','v08','v33'],'Four source IDs must retain their adopted order');
+  const voiceData=JSON.parse(readFileSync('data/voices.json','utf8')).voices;
+  const topics=['費用の説明','自由設計','標準仕様','完成後の対応'];
+  cards.forEach((m,i)=>{
+    const record=voiceData.find(v=>v.id===m[1]);
+    assert(record,'Unknown voice ID');
+    assert.equal(m[2],`voice.html#${record.id}`,'Voice must link to the same source record');
+    assert(m[3].includes(`>${record.area} ${record.family}</span>`),'Customer identity must match the source record');
+    assert(m[3].includes(`>${topics[i]}</span>`),'Adopted topic must remain');
+    const excerpt=m[3].match(/<blockquote>([^<]+)<\/blockquote>/)?.[1];
+    assert(excerpt && record.qa.some(qa=>qa.a.includes(excerpt)),'Excerpt must belong to this exact respondent');
+    assert(!m[3].includes('<img'),'Construction photos are independent from individual respondents');
+  });
+  assert(voice.includes('href="voice.html"')&&voice.includes('お客様の声一覧'),'All voices destination is required');
+  assert.equal((voice.match(/回答者の住まいとは限りません/g)||[]).length,1,'Retain the adopted single common photograph note');
+  assert(voice.includes('class="vb26__photos" role="group"'),'Independent construction photograph group is required');
   for(const src of [...voice.matchAll(/\bsrc="([^"]+)"/g)].map(m=>m[1]))assert(existsSync(src),`Voice image missing: ${src}`);
+  const visit=readSection(html,'visit');
+  assert(visit.includes('wg-section wg-dark va26'),'Final VISIT composition is required');
+  for(const text of ['VISIT <span>&amp;</span> CONTACT','モデルハウス見学','商品別の設備・仕様と、お見積もりの考え方をご案内します。','見学は無料・予約制です。','左京モデルハウスの写真。','ご案内する会場は予約時に確認します。','9:00〜19:00 ／ 火曜・水曜定休'])assert(visit.includes(text),`Visit copy missing: ${text}`);
+  for(const mode of ['reserve','docs'])assert(visit.includes(`href="#contactDialog" data-contact="${mode}"`),'Existing enquiry action must remain');
+  assert(visit.includes('href="tel:0742361123"')&&visit.includes('0742-36-1123'),'Telephone must remain correct');
+  assert(visit.includes('src="assets/top-renewal/sakyo-living-1440.webp"'),'Visit must use the real Sakyo model-house photograph');
+  for(const dep of ['assets/top-renewal/visit-adopted-20260909/style.css','assets/top-renewal/voice-b-20260909/media.js'])assert(html.includes(dep)&&existsSync(dep),`Adopted dependency missing: ${dep}`);
   // FV and Nara have newly adopted surfaces. Keep the approved paper in the unchanged sections.
   for(const id of ['entrance','lineup','works','voice','faq','instagram','visit'])assert(readSection(html,id).includes('class="wg-paper"'),`Preserve the existing paper background in #${id}`);
   for(const label of ['news','site-footer'])assert(new RegExp(`<(?:section|footer)[^>]*class="[^"]*\\b${label}\\b[^\"]*"[^>]*><span class="wg-paper"`).test(html),`Preserve the ${label} paper background`);
@@ -88,9 +106,13 @@ if(process.argv.includes('--self-test')){
   assert.throws(()=>verifyHomepage(html.replace('>770</strong>','>600</strong>')));
   assert.throws(()=>verifyHomepage(html.replace('class="gf-job gf-job--1"','class="removed-item"')));
   assert.throws(()=>verifyHomepage(html.replace('assets/top-renewal/generated-fv-20260909/style.css','missing.css')));
-  assert.throws(()=>verifyHomepage(html.replace('voice-reference wg-section','voices section')));
+  assert.throws(()=>verifyHomepage(html.replace('wg-section wg-white vb26','voices section')));
   assert.throws(()=>verifyHomepage(html.replace('voice.html#v33','voice.html#missing')));
   assert.throws(()=>verifyHomepage(html.replace('class="entry-card"','class="removed-card"')));
-  console.log('Homepage regression checks: 7 known failures rejected');
+  assert.throws(()=>verifyHomepage(html.replace('data-voice-id="v01"','data-voice-id="v02"')));
+  assert.throws(()=>verifyHomepage(html.replace('>奈良市 N様邸</span>','>生駒市 H様邸</span>')));
+  assert.throws(()=>verifyHomepage(html.replace('実際に掛かる本当の費用を提示して頂ける点が魅力的でした。','完成後もカーポートの設置や追加の外構工事で相談に乗ってもらっています。')));
+  assert.throws(()=>verifyHomepage(html.replace('href="#contactDialog" data-contact="docs"><span>資料請求','href="#missing" data-contact="docs"><span>資料請求')));
+  console.log('Homepage regression checks: 11 known failures rejected');
 }
 console.log('Homepage content verified:',JSON.stringify(result));

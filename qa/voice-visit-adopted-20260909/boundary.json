@@ -1,0 +1,15 @@
+{
+  "baseSHA": "2b1363e3ffc1fa5cf933627e6fe8e8024aa9a5b2",
+  "outsideVoiceVisitMarkupIdentical": true,
+  "protected": {
+    "data/voices.json": true,
+    "vercel.json": true,
+    "voice.html": true,
+    "assets/top-renewal/generated-fv-20260909/cycle.js": true,
+    "assets/top-renewal/generated-fv-20260909/style.css": true,
+    "assets/top-renewal/nara-adopted-20260909/section.js": true,
+    "assets/top-renewal/nara-adopted-20260909/style.css": true,
+    "assets/top-renewal/works-freeform-20260909/style.css": true,
+    "assets/top-renewal/works-freeform-20260909/photos.js": true
+  }
+}

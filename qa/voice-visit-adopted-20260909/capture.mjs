@@ -1,0 +1,13 @@
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+import {mkdir,writeFile} from 'node:fs/promises';
+const base=process.env.ADOPTED_URL||'http://127.0.0.1:8947',phase=process.env.ADOPTED_PHASE||'iteration-1';const out=`qa/voice-visit-adopted-20260909/${phase}`;await mkdir(out,{recursive:true});
+const b=await chromium.launch();const metrics=[];
+for(const [width,height] of [[1440,1080],[1024,900],[768,1024],[390,844],[320,740],[390,664]]){
+ const p=await b.newPage({viewport:{width,height},reducedMotion:'reduce'});const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(base+'/',{waitUntil:'networkidle'});await p.evaluate(()=>document.fonts.ready);
+ for(const id of ['voice','visit']){
+  await p.locator('#'+id).scrollIntoViewIfNeeded();await p.locator('#'+id).evaluate(async s=>{await Promise.all([...s.querySelectorAll('img')].filter(i=>i.getClientRects().length).map(i=>i.decode()));await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));});
+  const layout=await p.locator('#'+id).evaluate(s=>{const rect=s.getBoundingClientRect(),texts=[];for(const e of s.querySelectorAll('h2,h3,blockquote,p,.va26__button>span,.va26__phone>a>span,.vb26__all>span')){if(!e.getClientRects().length)continue;const range=document.createRange();range.selectNodeContents(e);const boxes=[...range.getClientRects()];texts.push({text:e.textContent,font:getComputedStyle(e).fontSize,overflow:boxes.some(r=>r.left<-.5||r.right>innerWidth+.5||r.top<rect.top-.5||r.bottom>rect.bottom+.5),rect:e.getBoundingClientRect().toJSON()});}return {section:[rect.width,rect.height],text:texts,links:[...s.querySelectorAll('a')].map(a=>({href:a.getAttribute('href'),size:[a.offsetWidth,a.offsetHeight]})),overflow:document.documentElement.scrollWidth>innerWidth};});
+  const sh=await p.locator('#'+id).evaluate(e=>e.clientHeight);await p.setViewportSize({width,height:Math.max(height,sh+180)});await p.locator('#'+id).screenshot({path:`${out}/${id}-${width}-${height}.png`,style:'.site-header{visibility:hidden!important}',animations:'disabled'});await p.setViewportSize({width,height});await p.evaluate(id=>scrollTo({top:document.getElementById(id).getBoundingClientRect().top+scrollY-78,behavior:'instant'}),id);await p.screenshot({path:`${out}/${id}-viewport-${width}-${height}.png`,animations:'disabled'});metrics.push({id,width,height,...layout,errors});
+ }await p.close();
+}
+await b.close();await writeFile(`${out}/metrics.json`,JSON.stringify(metrics,null,2)+'\n');console.log(JSON.stringify(metrics.map(x=>({id:x.id,width:x.width,height:x.section[1],overflow:x.overflow,textProblems:x.text.filter(t=>t.overflow).map(t=>t.text),errors:x.errors})),null,2));

@@ -1,0 +1,30 @@
+{
+  "tool": "image_gen.imagegen",
+  "modelId": "not exposed",
+  "requestCount": 3,
+  "higgsfieldRequests": 0,
+  "assets": [
+    {
+      "role": "PC initial",
+      "generatedBasename": "exec-4c05b862-9c16-456f-a15f-3fe7a2ee8282.png",
+      "accepted": false,
+      "reason": "Baked checkerboard RGB, no real transparency"
+    },
+    {
+      "role": "SP",
+      "generatedBasename": "exec-fffa7aee-235f-4b0e-bd61-d5703355e80b.png",
+      "accepted": true,
+      "runtimePath": "assets/top-renewal/visit-adopted-20260909/peony-top-sp.webp",
+      "sha256": "de27971ec5084d33c48abdd29bfc53f6bab9d4d4f80ce5dcdf7fa67ea64f3be0",
+      "bytes": 102822
+    },
+    {
+      "role": "PC corrected",
+      "generatedBasename": "exec-ec566bb5-8b98-4c01-9f5e-c84ec841d5f1.png",
+      "accepted": true,
+      "runtimePath": "assets/top-renewal/visit-adopted-20260909/peony-top-pc.webp",
+      "sha256": "36d27466586ee45f100da74d3da54b25a97142c1365217a07c0b4173fd34c906",
+      "bytes": 392992
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "baseSHA": "2b1363e3ffc1fa5cf933627e6fe8e8024aa9a5b2",
+  "referenceSHA": {
+    "voice-pc": "22215c6dc1fbda42681b37a9f9451f4b2cc868a2487280a5d27fcad7057a1749",
+    "voice-sp": "7962a11db9a562aabee333589eb02426858fb65331aceeeb39dd7924adcd8c9b",
+    "visit-pc": "ed256e862243d4eed70efbf87cd3b50051b62622eb26eddee27a0e52e93c719b",
+    "visit-sp": "4b94318a5c8cfc765804f0dc3e7a84242e19d98be927baaa1a3bd1121d84a094"
+  },
+  "protected": {
+    "data/voices.json": "7f843493e8cff274e6737a629dfdb96b7081e08deea6871152b9bd07927f9870",
+    "vercel.json": "7115d3cc6eb43697af6949a6bc4742781183ac0a24b63729cd962fc098679cc9",
+    "voice.html": "f7659e5a0545427b391edc457759ae017d9263865ba5b39d8d907c961de8974a",
+    "assets/top-renewal/generated-fv-20260909/cycle.js": "4f3e5366836e5865625de453d2b961ef78aaa09f2f773bd414596915f08ef264",
+    "assets/top-renewal/generated-fv-20260909/style.css": "4d6967ae7d581ae7d1ac33ce1b831ce2700956528624d239a9c77cc54c4d5f34",
+    "assets/top-renewal/nara-adopted-20260909/section.js": "e3bf28f8c75240ca0cc02f7641f23d1b4d98e99ec1ddc69667de1097636e0d76",
+    "assets/top-renewal/nara-adopted-20260909/style.css": "ddda0dedf487e381bfca41ff847ca617928ea65f8247dd8fbeb2a0e34e037ed3",
+    "assets/top-renewal/works-freeform-20260909/style.css": "d898499f918818dae54903253938719ef2589d84c6a06c4a3c06ee23d65c75ef",
+    "assets/top-renewal/works-freeform-20260909/photos.js": "48ba47c0dc200e31cbd1d770632d68e527e392a2bd718356b12ef124daf6936f"
+  }
+}
