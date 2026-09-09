@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "kodawari.html",
+      "sha256": "dd0e71fab491173b47c062ff0e0578367cc205952a50d47fd2a00a8e324cde9d"
+    },
+    {
+      "path": "assets/catalog/catalog-hero.js",
+      "sha256": "5802d0bf9cda340d05529c8756e062bbc97d44ffe93b3a026f545c54d558088f"
+    },
+    {
+      "path": "scripts/build-checkpoint.mjs",
+      "sha256": "8775b806bad90ea97a5dc1ad0843f8d141fdf0f9f1cba8438aac6e8bc4247b01"
+    },
+    {
+      "path": "scripts/build-catalog.mjs",
+      "sha256": "d3f2e5e508f8b565b807f117cfa9924fe4ca78b81aa73ba6e46dd5e61ba744d0"
+    },
+    {
+      "path": "scripts/verify-catalog.mjs",
+      "sha256": "4992623f1c79dcac41050cd872fc452c2ffa4f545bf2f248c1690c8a160dd1e1"
+    },
+    {
+      "path": "data/catalog-content.json",
+      "sha256": "caa2bbddb7cfaf8fef92eb6b345776a0b8ef2509834bd23c449fb5656a72baa4"
+    },
+    {
+      "path": "qa/catalog-adopted-20260909/asset-manifest.json",
+      "sha256": "0e8f086476cde9b2dc2a1f821c1ae5c49ed0a7329495b01e12df75b4174d40c4"
+    },
+    {
+      "path": "assets/catalog/adopted/a01.webp",
+      "sha256": "4d2ca0b22d0506557fb3fc229ad2994c6fb34cd533b33afd0a81ae3db82a220f"
+    },
+    {
+      "path": "assets/catalog/adopted/a02.webp",
+      "sha256": "c6fd8a97d894dcfda5ccc4ab10c70f2b4ebd69c7c25ccea008a3089a837a0484"
+    },
+    {
+      "path": "assets/catalog/adopted/a04.webp",
+      "sha256": "fd246c176bfab6ece348526909546ae9fd89ad40b7263c8d6d491fd4539b3bc1"
+    },
+    {
+      "path": "assets/catalog/adopted/a06.webp",
+      "sha256": "38c65d2d699228dd8e638ce38863d542c3023f0b877bed1868cb5387ead7ee5f"
+    },
+    {
+      "path": "assets/catalog/adopted/a07.webp",
+      "sha256": "3b33962e5be7b416a8faa4de54095c32d704588653c0e6b90a9f2f3bb00a1db1"
+    },
+    {
+      "path": "assets/catalog/adopted/a08.webp",
+      "sha256": "80db6efa813c36ad6921ba50141eaf060c673081e6d888a6e4e77baa741be6b5"
+    },
+    {
+      "path": "assets/catalog/adopted/a10.webp",
+      "sha256": "cf3bab902698786eba57713f48542578f245936d41cbcb17d8c183449e8f480e"
+    },
+    {
+      "path": "assets/catalog/adopted/a11.webp",
+      "sha256": "cf2b220b5bc7abb012cdb6023af526b0b1421346c73014723ad64a1d06af8d04"
+    },
+    {
+      "path": "assets/catalog/adopted/a12.webp",
+      "sha256": "2a7c0ca84a75f91f918243162123fb040fee169ce2d717c81fd6f13e83573b6a"
+    },
+    {
+      "path": "assets/catalog/adopted/a15.png",
+      "sha256": "e73384cea1319dd3df1ccf50bd54b394f02777f425b9cefdf5a7fbd8c9c4c916"
+    },
+    {
+      "path": "assets/catalog/adopted/a16.png",
+      "sha256": "d6156b75278615e774a9353ed5e43ae01ab532d567868f1a878f703ad1167f93"
+    },
+    {
+      "path": "assets/catalog/adopted/a17.png",
+      "sha256": "2577a8d36ca4e6401c2706b7b5c2b1e3073fd82925f005cbf86504f5132eaf77"
+    },
+    {
+      "path": "assets/catalog/adopted/a18.jpg",
+      "sha256": "e84abc2903f8e958b6061aa99cfb8f4d8540bb595267b60fe3503c0d9b6d787d"
+    },
+    {
+      "path": "assets/catalog/adopted/a19.jpg",
+      "sha256": "de11f33d544f8d43f6413c660e95d7eb21ab902de159d4f3b8f29fcdaff2e930"
+    },
+    {
+      "path": "assets/catalog/adopted/a20.jpg",
+      "sha256": "674631029b50081941e2129d127d0335cac8a678fef8a0c2d8cfa04975a7506f"
+    },
+    {
+      "path": "assets/catalog/adopted/fonts/YamatoCatalogGothic-400-0.woff2",
+      "sha256": "c1039c17bab4b2f0da3bf8e5fd35eb85af2bcfbb286cc0691b78f3f2c06f26e4"
+    },
+    {
+      "path": "assets/catalog/adopted/fonts/YamatoCatalogGothic-500-0.woff2",
+      "sha256": "789acb3d030e7e8d44684ac0044861b43ad89798a3830ff0d67ca40023f31921"
+    },
+    {
+      "path": "assets/catalog/adopted/fonts/YamatoCatalogGothic-700-0.woff2",
+      "sha256": "d03a3f25098e6d7abc4ba48f31ae670467f7ece6c4e039b490ba06ddcd492ede"
+    },
+    {
+      "path": "assets/catalog/adopted/fonts/YamatoCatalogMincho-500-0.woff2",
+      "sha256": "9a64c3b95c0b3b1b18a2146d37be8ce29176e76b4f807ddadf4706271e6288fd"
+    },
+    {
+      "path": "assets/catalog/adopted/fonts/shipporiminchob1-OFL.txt",
+      "sha256": "ab93f2bba3aa30a641c1e961246dcd5b46e740dbd7bdde1bfe1dc22f6468167a"
+    },
+    {
+      "path": "assets/catalog/adopted/fonts/zenkakugothicnew-OFL.txt",
+      "sha256": "e375d07d76ff57c61e976a1d238ca5c7d5ce230b618350f6b3e01f5cf726c256"
+    },
+    {
+      "path": "assets/catalog/adopted/fonts.css",
+      "sha256": "d2cae8e63832becacf174c0ef741bbd7d1a0a19c8e2165feeaba58340c533381"
+    },
+    {
+      "path": "assets/catalog/adopted/n01.jpg",
+      "sha256": "89417a8d803fe7ba6dc0662604b98002386c7290fdb7af53e07fb1f3d8ff9a59"
+    },
+    {
+      "path": "assets/catalog/adopted/n02.jpg",
+      "sha256": "7f844b75d330b3fe8e5254998e9f0b330d16a72d7d59df7d7095b8ce2871b041"
+    },
+    {
+      "path": "assets/catalog/adopted/n03.jpg",
+      "sha256": "cbb0a33df5d43da1b3cbb5954cd990dee1c8faff3dd8e09b136ee31ad1f0d693"
+    },
+    {
+      "path": "assets/catalog/adopted/n04.jpg",
+      "sha256": "995717360545e3432da49bd498569d3ceb032f20f0e46942799736ebad6306ed"
+    },
+    {
+      "path": "assets/catalog/adopted/n05.jpg",
+      "sha256": "ac79bb89d0a6516c1758d60fb156bf8102b76a25618429cfbeef5d29049a70a3"
+    },
+    {
+      "path": "assets/catalog/adopted/n06.jpg",
+      "sha256": "65640addf7dd275e9e212d19e57f262303697fc4398927acb4df4d87e095a697"
+    },
+    {
+      "path": "assets/catalog/adopted/n07.jpg",
+      "sha256": "98426a71bbe3c92bc85134d2f5e4ae7ad54d6edcedf267f3b70ac1f252dadd60"
+    },
+    {
+      "path": "assets/catalog/adopted/n08.jpg",
+      "sha256": "e468ae3c3d6352311a7daf9f5e8fef45f31b4b7cfda6b3dd97ce95c9d4a9a573"
+    },
+    {
+      "path": "assets/catalog/adopted/n09.jpg",
+      "sha256": "ce7c42af526ccafa5a2d92176f6bc00276e8d2b80979513dd6e4a6e511ada1bc"
+    },
+    {
+      "path": "assets/catalog/adopted/n10.jpg",
+      "sha256": "8e096521e2539e4b2699cf886f2e697e8ba91e6153195fe58258b7ea96480a31"
+    },
+    {
+      "path": "assets/catalog/adopted/n11.jpg",
+      "sha256": "4646e8fb25b5db202721cf5508160b4d7a9def8e731f0ad59cb4d53560f4b93b"
+    },
+    {
+      "path": "assets/catalog/adopted/n12.jpg",
+      "sha256": "2c8014b3ee8e5ca6b1242173130d235405017806e48bc8091fcd472d4802affa"
+    },
+    {
+      "path": "assets/catalog/adopted/n13.jpg",
+      "sha256": "6097d02532ae8caf4386fb0e91c94ef65320a9fe01dd58f059557203f9d0982e"
+    },
+    {
+      "path": "assets/catalog/adopted/n14.jpg",
+      "sha256": "c0715d034d0e40544e35cfce6418d68666369dee84b45f2c96ece64adee28313"
+    },
+    {
+      "path": "assets/catalog/adopted/n15.jpg",
+      "sha256": "072ae56ebcaf2da5d8bc88cd013e391d06829e0f805cf0343240960aef27d48e"
+    },
+    {
+      "path": "assets/catalog/adopted/n16.jpg",
+      "sha256": "7b6c13b473da2b2d21e6454cbf1c65fc2ed6d595fd9c9d8f7c1597b09ea15a36"
+    },
+    {
+      "path": "assets/catalog/adopted/n17.jpg",
+      "sha256": "15fbe688753d685354ddacbdc0bb00dbf10b84b3f953808bcecec3a9d7564c1a"
+    },
+    {
+      "path": "assets/catalog/adopted/n18.jpg",
+      "sha256": "c0f61f82ddf03deea6f4e58b8167a8de8a7d3e02dfb55fba38dbb38479aaf57d"
+    },
+    {
+      "path": "assets/catalog/adopted/n19.jpg",
+      "sha256": "1a2088e805bc8f121eca51d174b7e1eadf66017698c2948ea55b3a2dc35c8914"
+    },
+    {
+      "path": "assets/catalog/adopted/n20.jpg",
+      "sha256": "1972a6296cffacf0ff1824ed6d3f9bfa6112bfef0041473f8b0e6887215faeda"
+    },
+    {
+      "path": "assets/catalog/adopted/n21.jpg",
+      "sha256": "7b38f7ea1fd04073339b63b47d8252963a53e67a0169b4cf0554e918eb88203b"
+    },
+    {
+      "path": "assets/catalog/adopted/n22.jpg",
+      "sha256": "3a96b745d1aa2ad99b7af6af120c37c77ce11638abd56a59797be601fb92d57b"
+    },
+    {
+      "path": "assets/catalog/adopted/n23.jpg",
+      "sha256": "bfd9232745bc6a95727789c7eb5a4b4773f2ce850a1a5e4dbc94dc973cf23a2d"
+    },
+    {
+      "path": "assets/catalog/adopted/n24.jpg",
+      "sha256": "11bc4efd1421c9d3949fa6de4bbce4565c990076fe67f3422835e382fbd9f9fb"
+    },
+    {
+      "path": "assets/catalog/adopted/reader.css",
+      "sha256": "82c5f9f77f96206232cddf65beb46dc25a325e6b653a2147d8d43e961049d76b"
+    },
+    {
+      "path": "assets/catalog/adopted/reader.js",
+      "sha256": "981e0f602cd9dc5d369a56540ddc6817aa032ab64d5184255aa136467fbd243a"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/catalog-adopted-20260909/brief.md",
+      "sha256": "e759735ab6d157b8a4c248269da7c8c7f86d3307b463a602611d0d52bb7e1a9e"
+    },
+    "copy": {
+      "path": "qa/catalog-adopted-20260909/copy.md",
+      "sha256": "58e74028a5f90e6d7dc6ce381858fdb85abb4ac4ac3b0b1c01aa252947194eaa"
+    },
+    "assets": {
+      "path": "qa/catalog-adopted-20260909/assets.md",
+      "sha256": "2fd516669c0d93c5713584795d9d68fafd7c6fa6fbae896c7d2fe71058c2b589"
+    },
+    "visual": {
+      "path": "qa/catalog-adopted-20260909/visual.md",
+      "sha256": "52f675d2b8b5bba0e5d1db50c9b0503bc04b00eacfc8d143ba4e099443fcea9a"
+    },
+    "interaction": {
+      "path": "qa/catalog-adopted-20260909/interaction.md",
+      "sha256": "2c915cb930921582ff9f0471b0ba6f1770397c2002cedafb44b1f827931c3875"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 1000,
+      "path": "qa/catalog-adopted-20260909/evidence/page-07-1440.png",
+      "sha256": "88ca3fae30116be32c2e11d01f320e1254b9ecc2bc1e6dfc64f44a446287616d"
+    },
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 1000,
+      "path": "qa/catalog-adopted-20260909/evidence/page-26-1440.png",
+      "sha256": "103631f9fc99c9ae01a2e77321cb16b17f4053d76ef336925765e9b0a3eb3732"
+    },
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 1000,
+      "path": "qa/catalog-adopted-20260909/evidence/page-28-1440.png",
+      "sha256": "78ec3e21b14044764f775dc696c80796231c36ab59eb7a15e87cad556c51d827"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/catalog-adopted-20260909/evidence/page-07-390.png",
+      "sha256": "6a1a9a828ed73908d6268799cc46ee609cac63d1d352337b356e5dcce8c79560"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/catalog-adopted-20260909/evidence/page-26-390.png",
+      "sha256": "74e10a38d9d41358b279be18356b8dea66057c7c68a735721eebf9784b2d350e"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/catalog-adopted-20260909/evidence/page-28-390.png",
+      "sha256": "6351ea323ebb95463e6a9338f6f2567f77476bbf895f4f9f1f1beacd5eedae1f"
+    }
+  ]
+}

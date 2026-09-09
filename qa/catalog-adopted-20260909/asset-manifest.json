@@ -1,0 +1,371 @@
+{
+  "A01": {
+    "src": "assets/catalog/adopted/a01.webp",
+    "width": 1920,
+    "height": 1280,
+    "caption": "STEDIA空間。展示の現行標準範囲はQ01/Q10",
+    "sourceSha256": "51846fcfef1b5caa5f1dfc69706a0abd7ab0d82848b10a9b345a44f1b8003a8a",
+    "sha256": "4d2ca0b22d0506557fb3fc229ad2994c6fb34cd533b33afd0a81ae3db82a220f",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/写真素材/05_モデルハウス高画質/左京モデルハウス（高画質） 2/キッチン/20230327-031.jpg"
+  },
+  "A02": {
+    "src": "assets/catalog/adopted/a02.webp",
+    "width": 1920,
+    "height": 1280,
+    "caption": "STEDIAシンク水栓実写。展示の現行標準範囲はQ01/Q10",
+    "sourceSha256": "b44a1286b4eb8dd33c0adbca716fe7a9759e5d73891252b2a9d80aa563014adf",
+    "sha256": "c6fd8a97d894dcfda5ccc4ab10c70f2b4ebd69c7c25ccea008a3089a837a0484",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/写真素材/05_モデルハウス高画質/左京モデルハウス（高画質） 2/キッチン/20230327-131.jpg"
+  },
+  "A03": {
+    "src": "assets/catalog/adopted/a03.webp",
+    "width": 1920,
+    "height": 1080,
+    "caption": "クリナップ収納の接写（KTの型番確定前は実例）",
+    "sourceSha256": "c5f59fec1d1de24a9f191437a3a0db714a0455800e33276cd186216929b0f1c7",
+    "sha256": "9d8fc3991cb1c2c61e3c685b4f9f9fc16e350a701754a98d10699a84d715f3f9",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/写真素材/06_YAMATO撮影/_DSC7020.JPG"
+  },
+  "A04": {
+    "src": "assets/catalog/adopted/a04.webp",
+    "width": 1920,
+    "height": 1080,
+    "caption": "京キッチン空間",
+    "sourceSha256": "558e615817a3221fc400e937c38b3ec5be2687697d5b5c35b81bd1cdee7289c4",
+    "sha256": "fd246c176bfab6ece348526909546ae9fd89ad40b7263c8d6d491fd4539b3bc1",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/写真素材/06_YAMATO撮影/_DSC7021.JPG"
+  },
+  "A06": {
+    "src": "assets/catalog/adopted/a06.webp",
+    "width": 1920,
+    "height": 1280,
+    "caption": "MIRAIE展示実物",
+    "sourceSha256": "4ae84808b0907fdda54eda041459c4f9bbd7c519dbeecfbb0a2d88b1f58cf33c",
+    "sha256": "38c65d2d699228dd8e638ce38863d542c3023f0b877bed1868cb5387ead7ee5f",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/写真素材/05_モデルハウス高画質/左京モデルハウス（高画質） 2/ミライエ/20230327-064.jpg"
+  },
+  "A07": {
+    "src": "assets/catalog/adopted/a07.webp",
+    "width": 1920,
+    "height": 1280,
+    "caption": "外壁実物",
+    "sourceSha256": "4d627ef28eb9423466fa86ece4724a782f08d36b5a4d292d2c80fed86110fbed",
+    "sha256": "3b33962e5be7b416a8faa4de54095c32d704588653c0e6b90a9f2f3bb00a1db1",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/写真素材/05_モデルハウス高画質/左京モデルハウス（高画質） 2/外観・外部/外壁/20230327-239.jpg"
+  },
+  "A08": {
+    "src": "assets/catalog/adopted/a08.webp",
+    "width": 1920,
+    "height": 1280,
+    "caption": "軒天の実物（屋根材の写真ではない）",
+    "sourceSha256": "64bc2bccf1aab22d9778304d832e9ace2a17c1ac987d73840950063d48987110",
+    "sha256": "80db6efa813c36ad6921ba50141eaf060c673081e6d888a6e4e77baa741be6b5",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/写真素材/05_モデルハウス高画質/左京モデルハウス（高画質） 2/外観・外部/軒天/20230327-229.jpg"
+  },
+  "A09": {
+    "src": "assets/catalog/adopted/a09.webp",
+    "width": 1920,
+    "height": 1280,
+    "caption": "洗面実物",
+    "sourceSha256": "b4d2c9bf6146e097cd6b73587c50290fe90e2dfd017c39e3c18c003e964d4bed",
+    "sha256": "212d730ff2e44cf906739153ba69f5dad09f4e768a3cb4c3899fb82d2cf3911e",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/写真素材/05_モデルハウス高画質/左京モデルハウス（高画質） 2/洗面室/20230327-111.jpg"
+  },
+  "A10": {
+    "src": "assets/catalog/adopted/a10.webp",
+    "width": 1920,
+    "height": 1280,
+    "caption": "浴室実物",
+    "sourceSha256": "30bf134c1988e69f9f0936064c008647f8310436343f5bb2cba0f3c39813fbe8",
+    "sha256": "cf3bab902698786eba57713f48542578f245936d41cbcb17d8c183449e8f480e",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/写真素材/05_モデルハウス高画質/左京モデルハウス（高画質） 2/浴室/20230327-121.jpg"
+  },
+  "A11": {
+    "src": "assets/catalog/adopted/a11.webp",
+    "width": 1920,
+    "height": 1280,
+    "caption": "畳空間",
+    "sourceSha256": "c191ca34e2bd1fb230d6600a8646a201f8b000df26aeaf09d17ef6c965ebfd07",
+    "sha256": "cf2b220b5bc7abb012cdb6023af526b0b1421346c73014723ad64a1d06af8d04",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/写真素材/05_モデルハウス高画質/左京モデルハウス（高画質） 2/和室/20230327-095.jpg"
+  },
+  "A12": {
+    "src": "assets/catalog/adopted/a12.webp",
+    "width": 1920,
+    "height": 1280,
+    "caption": "風空間",
+    "sourceSha256": "ad0bdcf8c76c1be11e5a994f6fa14ac63a8bcc84f7c8e66f8527c9ed416697f5",
+    "sha256": "2a7c0ca84a75f91f918243162123fb040fee169ce2d717c81fd6f13e83573b6a",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/写真素材/05_モデルハウス高画質/三山木（家具あり）高画質/_MG_9194.jpg"
+  },
+  "A15": {
+    "src": "assets/catalog/adopted/a15.png",
+    "width": 292,
+    "height": 292,
+    "caption": "1F図面 入稿元不足",
+    "sourceSha256": "e73384cea1319dd3df1ccf50bd54b394f02777f425b9cefdf5a7fbd8c9c4c916",
+    "sha256": "e73384cea1319dd3df1ccf50bd54b394f02777f425b9cefdf5a7fbd8c9c4c916",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/出典資料/パンフレット抽出/自由設計/水彩平面図_1F_292x292.png"
+  },
+  "A16": {
+    "src": "assets/catalog/adopted/a16.png",
+    "width": 303,
+    "height": 302,
+    "caption": "2F図面 入稿元不足",
+    "sourceSha256": "d6156b75278615e774a9353ed5e43ae01ab532d567868f1a878f703ad1167f93",
+    "sha256": "d6156b75278615e774a9353ed5e43ae01ab532d567868f1a878f703ad1167f93",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/出典資料/パンフレット抽出/自由設計/水彩平面図_2F_303x302.png"
+  },
+  "A17": {
+    "src": "assets/catalog/adopted/a17.png",
+    "width": 802,
+    "height": 535,
+    "caption": "図面を見ながらの打合せ",
+    "sourceSha256": "2577a8d36ca4e6401c2706b7b5c2b1e3073fd82925f005cbf86504f5132eaf77",
+    "sha256": "2577a8d36ca4e6401c2706b7b5c2b1e3073fd82925f005cbf86504f5132eaf77",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/デザイン図面_20260703/出典資料/パンフレット抽出/自由設計/打ち合わせ_図面を挟んで_802x535.png"
+  },
+  "A18": {
+    "src": "assets/catalog/adopted/a18.jpg",
+    "width": 575,
+    "height": 383,
+    "caption": "工務担当の現場共有",
+    "sourceSha256": "e84abc2903f8e958b6061aa99cfb8f4d8540bb595267b60fe3503c0d9b6d787d",
+    "sha256": "e84abc2903f8e958b6061aa99cfb8f4d8540bb595267b60fe3503c0d9b6d787d",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-17/native-001.jpg"
+  },
+  "A19": {
+    "src": "assets/catalog/adopted/a19.jpg",
+    "width": 602,
+    "height": 401,
+    "caption": "躯体の確認",
+    "sourceSha256": "de11f33d544f8d43f6413c660e95d7eb21ab902de159d4f3b8f29fcdaff2e930",
+    "sha256": "de11f33d544f8d43f6413c660e95d7eb21ab902de159d4f3b8f29fcdaff2e930",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-17/native-002.jpg"
+  },
+  "A20": {
+    "src": "assets/catalog/adopted/a20.jpg",
+    "width": 683,
+    "height": 385,
+    "caption": "引渡し前の設備確認",
+    "sourceSha256": "674631029b50081941e2129d127d0335cac8a678fef8a0c2d8cfa04975a7506f",
+    "sha256": "674631029b50081941e2129d127d0335cac8a678fef8a0c2d8cfa04975a7506f",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-17/native-010.jpg"
+  },
+  "N01": {
+    "src": "assets/catalog/adopted/n01.jpg",
+    "width": 339,
+    "height": 166,
+    "caption": "ステンレスキャビネット",
+    "sourceSha256": "89417a8d803fe7ba6dc0662604b98002386c7290fdb7af53e07fb1f3d8ff9a59",
+    "sha256": "89417a8d803fe7ba6dc0662604b98002386c7290fdb7af53e07fb1f3d8ff9a59",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-04/native-019.jpg"
+  },
+  "N02": {
+    "src": "assets/catalog/adopted/n02.jpg",
+    "width": 350,
+    "height": 167,
+    "caption": "ワークトップの汚れ参考",
+    "sourceSha256": "7f844b75d330b3fe8e5254998e9f0b330d16a72d7d59df7d7095b8ce2871b041",
+    "sha256": "7f844b75d330b3fe8e5254998e9f0b330d16a72d7d59df7d7095b8ce2871b041",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-04/native-037.jpg"
+  },
+  "N03": {
+    "src": "assets/catalog/adopted/n03.jpg",
+    "width": 144,
+    "height": 186,
+    "caption": "流レールシンク",
+    "sourceSha256": "cbb0a33df5d43da1b3cbb5954cd990dee1c8faff3dd8e09b136ee31ad1f0d693",
+    "sha256": "cbb0a33df5d43da1b3cbb5954cd990dee1c8faff3dd8e09b136ee31ad1f0d693",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-04/native-021.jpg"
+  },
+  "N04": {
+    "src": "assets/catalog/adopted/n04.jpg",
+    "width": 276,
+    "height": 258,
+    "caption": "排水口の構造",
+    "sourceSha256": "995717360545e3432da49bd498569d3ceb032f20f0e46942799736ebad6306ed",
+    "sha256": "995717360545e3432da49bd498569d3ceb032f20f0e46942799736ebad6306ed",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-04/native-018.jpg"
+  },
+  "N05": {
+    "src": "assets/catalog/adopted/n05.jpg",
+    "width": 273,
+    "height": 182,
+    "caption": "KT底板清掃",
+    "sourceSha256": "ac79bb89d0a6516c1758d60fb156bf8102b76a25618429cfbeef5d29049a70a3",
+    "sha256": "ac79bb89d0a6516c1758d60fb156bf8102b76a25618429cfbeef5d29049a70a3",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-04/native-011.jpg"
+  },
+  "N06": {
+    "src": "assets/catalog/adopted/n06.jpg",
+    "width": 259,
+    "height": 314,
+    "caption": "KT引き出し",
+    "sourceSha256": "65640addf7dd275e9e212d19e57f262303697fc4398927acb4df4d87e095a697",
+    "sha256": "65640addf7dd275e9e212d19e57f262303697fc4398927acb4df4d87e095a697",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-04/native-012.jpg"
+  },
+  "N07": {
+    "src": "assets/catalog/adopted/n07.jpg",
+    "width": 240,
+    "height": 183,
+    "caption": "KT包丁収納",
+    "sourceSha256": "98426a71bbe3c92bc85134d2f5e4ae7ad54d6edcedf267f3b70ac1f252dadd60",
+    "sha256": "98426a71bbe3c92bc85134d2f5e4ae7ad54d6edcedf267f3b70ac1f252dadd60",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-04/native-041.jpg"
+  },
+  "N08": {
+    "src": "assets/catalog/adopted/n08.jpg",
+    "width": 415,
+    "height": 451,
+    "caption": "ESアシスト収納",
+    "sourceSha256": "e468ae3c3d6352311a7daf9f5e8fef45f31b4b7cfda6b3dd97ce95c9d4a9a573",
+    "sha256": "e468ae3c3d6352311a7daf9f5e8fef45f31b4b7cfda6b3dd97ce95c9d4a9a573",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-05/native-005.jpg"
+  },
+  "N09": {
+    "src": "assets/catalog/adopted/n09.jpg",
+    "width": 482,
+    "height": 359,
+    "caption": "ES浄水栓",
+    "sourceSha256": "ce7c42af526ccafa5a2d92176f6bc00276e8d2b80979513dd6e4a6e511ada1bc",
+    "sha256": "ce7c42af526ccafa5a2d92176f6bc00276e8d2b80979513dd6e4a6e511ada1bc",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-05/native-004.jpg"
+  },
+  "N10": {
+    "src": "assets/catalog/adopted/n10.jpg",
+    "width": 340,
+    "height": 286,
+    "caption": "ESキレイシンク",
+    "sourceSha256": "8e096521e2539e4b2699cf886f2e697e8ba91e6153195fe58258b7ea96480a31",
+    "sha256": "8e096521e2539e4b2699cf886f2e697e8ba91e6153195fe58258b7ea96480a31",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-05/native-006.jpg"
+  },
+  "N11": {
+    "src": "assets/catalog/adopted/n11.jpg",
+    "width": 255,
+    "height": 254,
+    "caption": "浴槽保温断面",
+    "sourceSha256": "4646e8fb25b5db202721cf5508160b4d7a9def8e731f0ad59cb4d53560f4b93b",
+    "sha256": "4646e8fb25b5db202721cf5508160b4d7a9def8e731f0ad59cb4d53560f4b93b",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-06/native-015.jpg"
+  },
+  "N12": {
+    "src": "assets/catalog/adopted/n12.jpg",
+    "width": 251,
+    "height": 320,
+    "caption": "ほっカラリ床断面",
+    "sourceSha256": "2c8014b3ee8e5ca6b1242173130d235405017806e48bc8091fcd472d4802affa",
+    "sha256": "2c8014b3ee8e5ca6b1242173130d235405017806e48bc8091fcd472d4802affa",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-06/native-025.jpg"
+  },
+  "N13": {
+    "src": "assets/catalog/adopted/n13.jpg",
+    "width": 335,
+    "height": 153,
+    "caption": "浴槽の姿勢",
+    "sourceSha256": "6097d02532ae8caf4386fb0e91c94ef65320a9fe01dd58f059557203f9d0982e",
+    "sha256": "6097d02532ae8caf4386fb0e91c94ef65320a9fe01dd58f059557203f9d0982e",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-06/native-011.jpg"
+  },
+  "N14": {
+    "src": "assets/catalog/adopted/n14.jpg",
+    "width": 136,
+    "height": 99,
+    "caption": "浴室排水口",
+    "sourceSha256": "c0715d034d0e40544e35cfce6418d68666369dee84b45f2c96ece64adee28313",
+    "sha256": "c0715d034d0e40544e35cfce6418d68666369dee84b45f2c96ece64adee28313",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-06/native-028.jpg"
+  },
+  "N15": {
+    "src": "assets/catalog/adopted/n15.jpg",
+    "width": 673,
+    "height": 862,
+    "caption": "洗面正面",
+    "sourceSha256": "072ae56ebcaf2da5d8bc88cd013e391d06829e0f805cf0343240960aef27d48e",
+    "sha256": "072ae56ebcaf2da5d8bc88cd013e391d06829e0f805cf0343240960aef27d48e",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-07/native-029.jpg"
+  },
+  "N16": {
+    "src": "assets/catalog/adopted/n16.jpg",
+    "width": 325,
+    "height": 179,
+    "caption": "洗面引き出し",
+    "sourceSha256": "7b6c13b473da2b2d21e6454cbf1c65fc2ed6d595fd9c9d8f7c1597b09ea15a36",
+    "sha256": "7b6c13b473da2b2d21e6454cbf1c65fc2ed6d595fd9c9d8f7c1597b09ea15a36",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-07/native-038.jpg"
+  },
+  "N17": {
+    "src": "assets/catalog/adopted/n17.jpg",
+    "width": 220,
+    "height": 117,
+    "caption": "洗面水栓",
+    "sourceSha256": "15fbe688753d685354ddacbdc0bb00dbf10b84b3f953808bcecec3a9d7564c1a",
+    "sha256": "15fbe688753d685354ddacbdc0bb00dbf10b84b3f953808bcecec3a9d7564c1a",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-07/native-039.jpg"
+  },
+  "N18": {
+    "src": "assets/catalog/adopted/n18.jpg",
+    "width": 250,
+    "height": 350,
+    "caption": "1F便器参考",
+    "sourceSha256": "c0f61f82ddf03deea6f4e58b8167a8de8a7d3e02dfb55fba38dbb38479aaf57d",
+    "sha256": "c0f61f82ddf03deea6f4e58b8167a8de8a7d3e02dfb55fba38dbb38479aaf57d",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-07/native-007.jpg"
+  },
+  "N19": {
+    "src": "assets/catalog/adopted/n19.jpg",
+    "width": 255,
+    "height": 332,
+    "caption": "タンク式便器",
+    "sourceSha256": "1a2088e805bc8f121eca51d174b7e1eadf66017698c2948ea55b3a2dc35c8914",
+    "sha256": "1a2088e805bc8f121eca51d174b7e1eadf66017698c2948ea55b3a2dc35c8914",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-07/native-013.jpg"
+  },
+  "N20": {
+    "src": "assets/catalog/adopted/n20.jpg",
+    "width": 151,
+    "height": 232,
+    "caption": "別置き手洗い",
+    "sourceSha256": "1972a6296cffacf0ff1824ed6d3f9bfa6112bfef0041473f8b0e6887215faeda",
+    "sha256": "1972a6296cffacf0ff1824ed6d3f9bfa6112bfef0041473f8b0e6887215faeda",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-07/native-028.jpg"
+  },
+  "N21": {
+    "src": "assets/catalog/adopted/n21.jpg",
+    "width": 896,
+    "height": 710,
+    "caption": "木造の構造",
+    "sourceSha256": "7b38f7ea1fd04073339b63b47d8252963a53e67a0169b4cf0554e918eb88203b",
+    "sha256": "7b38f7ea1fd04073339b63b47d8252963a53e67a0169b4cf0554e918eb88203b",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-15/native-000.jpg"
+  },
+  "N22": {
+    "src": "assets/catalog/adopted/n22.jpg",
+    "width": 227,
+    "height": 244,
+    "caption": "耐震概念図",
+    "sourceSha256": "3a96b745d1aa2ad99b7af6af120c37c77ce11638abd56a59797be601fb92d57b",
+    "sha256": "3a96b745d1aa2ad99b7af6af120c37c77ce11638abd56a59797be601fb92d57b",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-15/native-004.jpg"
+  },
+  "N23": {
+    "src": "assets/catalog/adopted/n23.jpg",
+    "width": 272,
+    "height": 310,
+    "caption": "制振概念図",
+    "sourceSha256": "bfd9232745bc6a95727789c7eb5a4b4773f2ce850a1a5e4dbc94dc973cf23a2d",
+    "sha256": "bfd9232745bc6a95727789c7eb5a4b4773f2ce850a1a5e4dbc94dc973cf23a2d",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-15/native-008.jpg"
+  },
+  "N24": {
+    "src": "assets/catalog/adopted/n24.jpg",
+    "width": 221,
+    "height": 146,
+    "caption": "発泡断熱施工",
+    "sourceSha256": "11bc4efd1421c9d3949fa6de4bbce4565c990076fe67f3422835e382fbd9f9fb",
+    "sha256": "11bc4efd1421c9d3949fa6de4bbce4565c990076fe67f3422835e382fbd9f9fb",
+    "source": "/Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/調査/デジタルカタログ全面設計_20260909/EVIDENCE/assets/pdf-15/native-022.jpg"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "all32TocClicks": true,
+    "arrowNavigation": true,
+    "syntheticTouchRouting": false,
+    "modalLastTabFocus": "catTocClose",
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "all32TocClicks": true,
+    "arrowNavigation": true,
+    "syntheticTouchRouting": true,
+    "modalLastTabFocus": "catTocClose",
+    "errors": []
+  }
+]

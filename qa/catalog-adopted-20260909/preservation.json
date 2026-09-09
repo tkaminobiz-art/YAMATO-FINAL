@@ -1,0 +1,32 @@
+{
+  "coverMarkupSha256": "17295ef565ef072a9605855588ec9f02b0b4d04137c53630733ca7390c869f9d",
+  "headOutsideReaderUnchanged": true,
+  "mainAndFooterUnchanged": true,
+  "coverPixels": [
+    {
+      "width": 1440,
+      "size": [
+        1243,
+        705
+      ],
+      "differentPixels": 0,
+      "bounds": null,
+      "explanation": "同状態で全画素一致"
+    },
+    {
+      "width": 390,
+      "size": [
+        372,
+        696
+      ],
+      "differentPixels": 16,
+      "bounds": [
+        41,
+        694,
+        56,
+        696
+      ],
+      "explanation": "ページ総数の表示がPC13/SP20から33へ更新。SPでは既存カウンターが表紙下端2pxへ重なっていたため、この表示領域だけ差分。表紙の画像・装飾・書体・動画・位置は不変更。"
+    }
+  ]
+}

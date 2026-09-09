@@ -1,0 +1,24 @@
+[
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "source": "http://127.0.0.1:8955/assets/catalog/cover-opening-desktop-v3.mp4?v=clean-alpha-20260830",
+    "autoplay": true,
+    "skip": true,
+    "replayEnded": true,
+    "sessionSeen": true,
+    "widthMediaSwitch": true,
+    "returnPause": true
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "source": "http://127.0.0.1:8955/assets/catalog/cover-opening-mobile-v3.mp4?v=clean-alpha-20260830",
+    "autoplay": true,
+    "skip": true,
+    "replayEnded": true,
+    "sessionSeen": true,
+    "widthMediaSwitch": true,
+    "returnPause": true
+  }
+]

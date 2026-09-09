@@ -1,0 +1,11 @@
+# 閲覧操作の検証
+
+verify.mjs：PC/SP共通32DOM、10章、全32深リンク、32比較行の3シリーズ値、4幅で全項目表示、文字サイズ、画像失敗なし、内部リンク先、ルート全体の横はみ出しなしを確認。Chromium1440とWebKit390で目次、比較→詳細→ブラウザ戻る、写真拡大/リセット/Esc/戻る/フォーカス復帰、幅切替で内容ID保持、本編#price出口を検証。JSなしでも32項目すべて表示。画像読み込み失敗時も4機能本文を保持。200%文字の再配置を検証。最新結果verification.jsonはfailures/errorsとも空。
+
+interaction-extra.mjs：本番用publicパッケージを8956で配信し、目次の全32リンクをPC/SPで実際にクリック。矢印、SPの章送りと縦操作優先、TOCのTab・Esc・フォーカス、本編出口を追加確認。タッチは合成PointerEventによるルーティング検証であり実機スワイプ合格ではない。
+
+cover-interaction.mjs：通常モーションのChromium/WebKitで表紙動画が自動再生、skip、replay→ended、セッション再訪の静止状態、表紙へ戻った時の停止、幅切替の正しいPC/SP動画選択を確認。低モーションでは静止表紙に落とす。
+
+修正した不具合：closestへElementを渡していた本編出口の例外をcontainsへ修正。WebKitの横表は矢印キーで横スクロールを明示。写真のhistory復帰時にブラウザが本文へ移すフォーカスを、復帰後2フレームで写真ボタンへ戻す。通常の縦スクロールはpreventDefaultしない。
+
+最終追加修正：目次と拡大ダイアログ内でTab/Shift+Tabが循環するよう明示し、公開用パッケージで再検証。Chromium1440/WebKit390とも目次の最終リンクからTabでcatTocCloseへ戻ることをassertで確認。全32目次リンク、矢印移動、SP合成タッチ経路も成功。interaction-extra.jsonのerrorsは両環境とも空。

@@ -1,0 +1,50 @@
+[
+  {
+    "family": "Shippori Mincho B1",
+    "weight": 500,
+    "alias": "YamatoCatalogMincho",
+    "path": "assets/catalog/adopted/fonts/YamatoCatalogMincho-500-0.woff2",
+    "bytes": 192604,
+    "sha256": "9a64c3b95c0b3b1b18a2146d37be8ce29176e76b4f807ddadf4706271e6288fd",
+    "source": "Google Fonts CSS2 text subset",
+    "characters": 812,
+    "originalDownloadSha256": "bfbfcbe6a3965518234f2381bbd9b6e107dd8eb02fa7e8f3a39fcf33959a43f7",
+    "subsetMethod": "fontTools; text from shared data + renderer + controls; WOFF2"
+  },
+  {
+    "family": "Zen Kaku Gothic New",
+    "weight": 400,
+    "alias": "YamatoCatalogGothic",
+    "path": "assets/catalog/adopted/fonts/YamatoCatalogGothic-400-0.woff2",
+    "bytes": 97588,
+    "sha256": "c1039c17bab4b2f0da3bf8e5fd35eb85af2bcfbb286cc0691b78f3f2c06f26e4",
+    "source": "Google Fonts CSS2 text subset",
+    "characters": 812,
+    "originalDownloadSha256": "67f17ccc7a7f5a26f799feb9cf647fe509648f9943ecaadb745615504f9666d4",
+    "subsetMethod": "fontTools; text from shared data + renderer + controls; WOFF2"
+  },
+  {
+    "family": "Zen Kaku Gothic New",
+    "weight": 500,
+    "alias": "YamatoCatalogGothic",
+    "path": "assets/catalog/adopted/fonts/YamatoCatalogGothic-500-0.woff2",
+    "bytes": 98564,
+    "sha256": "789acb3d030e7e8d44684ac0044861b43ad89798a3830ff0d67ca40023f31921",
+    "source": "Google Fonts CSS2 text subset",
+    "characters": 812,
+    "originalDownloadSha256": "6fafdce8f5726736b79b4e6118e7f6b5c5e53e8f24204f63a3ef7fdc15725502",
+    "subsetMethod": "fontTools; text from shared data + renderer + controls; WOFF2"
+  },
+  {
+    "family": "Zen Kaku Gothic New",
+    "weight": 700,
+    "alias": "YamatoCatalogGothic",
+    "path": "assets/catalog/adopted/fonts/YamatoCatalogGothic-700-0.woff2",
+    "bytes": 98844,
+    "sha256": "d03a3f25098e6d7abc4ba48f31ae670467f7ece6c4e039b490ba06ddcd492ede",
+    "source": "Google Fonts CSS2 text subset",
+    "characters": 812,
+    "originalDownloadSha256": "d4e8a9a774fa516121fc04b8187b56d57139419db49fd86d06c331619f68f03b",
+    "subsetMethod": "fontTools; text from shared data + renderer + controls; WOFF2"
+  }
+]

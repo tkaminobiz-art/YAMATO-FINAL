@@ -1,0 +1,197 @@
+# 原資料193項目の公開対応
+
+全32項目の採否と詳細はsource-coverage.csv。原設計の採用119/統合30/保留36/不採用8は商品認定ではない。表記を残した基礎説明、非掲載とした追加の数値・条件を各行に記録。
+
+- B01.01 表紙・花鳥風月 → #top：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B02.01 家づくりの考え方 → #catalog-introduction / #catalog-design：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B02.02 実例写真と3シリーズ → #catalog-series / #catalog-hana / #catalog-kyo / #catalog-kaze：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B03.01 STEDIA空間事例 → #catalog-kitchen / #catalog-stedia：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B03.02 写真と実際の仕様の差 → #catalog-kitchen / #catalog-stedia / #catalog-kt / #catalog-es：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B04.01 STEDIAレイアウト → #catalog-kitchen / #catalog-stedia / #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B04.02 ステンレスエコキャビネット → #catalog-stedia：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B04.03 美コートワークトップ → #catalog-stedia：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B04.04 流レールシンク → #catalog-stedia：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B04.05 とってもクリン排水口 → #catalog-stedia：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B04.06 タッチレス水栓 → #catalog-stedia / #catalog-conditions：タッチレスの採用機種・浄水の有無は未確定。P07で仕様選定の案内のみ。
+- B04.07 食器洗い乾燥機 → #catalog-stedia / #catalog-compare-water：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B04.08 流レール節水試算 → #catalog-conditions：顧客UIへ転記しない。理由は原資料台帳のgap欄。
+- B04.09 KT選択対象 → #catalog-kitchen / #catalog-kt / #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B04.10 美サイレントEUシンク → #catalog-kt：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B04.11 KT引き出し底板 → #catalog-kt：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B04.12 KTオールスライド収納 → #catalog-kt：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B04.13 KTサイレントレール → #catalog-kt / #catalog-conditions：ゆっくり閉まる機能は掲載。20kgと適用除外の数値は非掲載。
+- B05.01 ES選択対象 → #catalog-kitchen / #catalog-es / #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B05.02 アシストポケット → #catalog-es：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B05.03 コンロ下ポケットの矛盾 → #catalog-es：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B05.04 ES引き出しと底板 → #catalog-es：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B05.05 ES食洗機キャビネット → #catalog-es / #catalog-compare-water：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B05.06 オールインワン浄水栓 → #catalog-es / #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B05.07 キレイシンク → #catalog-es / #catalog-conditions：シンクの形・清掃を掲載。内寸と水栓位置の選択条件は非掲載。
+- B05.08 てまなし排水口 → #catalog-es：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B05.09 天井・照明の事例 → #catalog-kitchen / #catalog-es：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B05.10 未完成の追記欄・QR枠 → #catalog-conditions：顧客UIへ転記しない。理由は原資料台帳のgap欄。
+- B06.01 sazanaタイプ別 → #catalog-bath / #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B06.02 浴室サイズ → #catalog-bath / #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B06.03 浴槽の形 → #catalog-bath：形の候補とワイド1620用を掲載。無条件の無料選択は非掲載。
+- B06.04 魔法びん浴槽 → #catalog-bath：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B06.05 4時間後の温度差 → #catalog-bath / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B06.06 床の違い → #catalog-bath / #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B06.07 排水口の清掃 → #catalog-bath：排水口の清掃を掲載。抗菌・防カビの試験効果は非掲載。
+- B06.08 お掃除ラクラク鏡 → #catalog-bath：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B06.09 人大浴槽 → #catalog-bath：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B06.10 マグネット壁と展示写真 → #catalog-bath：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B07.01 洗面の名称・寸法 → #catalog-vanity / #catalog-compare-water：商品名と900mm幅を掲載。12L容量は採用ボウル照合が残るため非掲載。
+- B07.02 洗面収納の違い → #catalog-vanity / #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B07.03 すべり台ボウル → #catalog-vanity：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B07.04 お掃除ラクラク水栓 → #catalog-vanity：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B07.05 鏡・照明 → #catalog-vanity：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B07.06 ソフトクローズの条件 → #catalog-vanity / #catalog-conditions：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B07.07 トイレ配置 → #catalog-toilet / #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B07.08 便器の型番 → #catalog-toilet / #catalog-compare-water：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B07.09 便ふた自動開閉・自動洗浄 → #catalog-toilet：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B07.10 プレミスト・セフィオンテクト → #catalog-toilet：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B07.11 クリーン便座・お掃除リフト → #catalog-toilet：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B07.12 停電時の洗浄 → #catalog-toilet / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B08.01 花の室内建具 → #catalog-doors / #catalog-compare-interior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B08.02 京・風の室内建具 → #catalog-doors / #catalog-compare-interior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B08.03 空間コーディネート → #catalog-doors：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B09.01 VINTIA色柄 → #catalog-colors：色名・コード一覧を掲載。高解像度正規色見本は未取得。
+- B09.02 NORTH FOREST色柄 → #catalog-colors：色名・コード一覧を掲載。高解像度正規色見本は未取得。
+- B09.03 KINARI MODERN色柄 → #catalog-colors：色名・コード一覧を掲載。高解像度正規色見本は未取得。
+- B09.04 LATTEO色柄 → #catalog-colors：色名・コード一覧を掲載。高解像度正規色見本は未取得。
+- B09.05 PALETTE色柄 → #catalog-colors：色名・コード一覧を掲載。高解像度正規色見本は未取得。
+- B09.06 CREA色柄 → #catalog-colors：色名・コード一覧を掲載。高解像度正規色見本は未取得。
+- B09.07 Skism S色柄 → #catalog-colors：色名と矛盾のないコードのみ。GUコードは省きライトグレージュ名を残す。正規色見本未取得。
+- B09.08 Skism SのGU重複 → #catalog-colors：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B09.09 枠・造作材の色 → #catalog-colors / #catalog-compare-interior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B09.10 ガラス・パネル → #catalog-colors / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B09.11 高さと扉デザイン → #catalog-doors / #catalog-colors：採光・視線・開き方・高さの選定説明を掲載。高さの数値は非掲載。
+- B10.01 花の床TY-02D → #catalog-floor / #catalog-compare-interior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B10.02 TY-02Dの除外条件 → #catalog-floor / #catalog-conditions：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B10.03 床の傷とキャスター → #catalog-floor：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B10.04 シート床V溝 → #catalog-floor：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B10.05 京アトムジェニック → #catalog-floor / #catalog-compare-interior：名称と手入れを掲載。ホットカーペットへの個別対応は未確定につき非掲載。
+- B10.06 京銘木フロアーラスティック → #catalog-floor / #catalog-compare-interior：天然突板・マット塗装を掲載。床暖房一律対応は非掲載。
+- B10.07 ラスティック材の特徴 → #catalog-floor：節・木目・色差を掲載。12mm断面・樹種の選択範囲は非掲載。
+- B10.08 床材の衛生試験 → #catalog-floor / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B10.09 風アトムフィットGM → #catalog-floor / #catalog-compare-interior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B10.10 床の施工事例 → #catalog-floor：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B11.01 ここち和座 → #catalog-tatami-tile / #catalog-compare-interior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B11.02 畳の耐久試験 → #catalog-tatami-tile / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B11.03 畳のカビ試験 → #catalog-tatami-tile / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B11.04 畳の汚れ・色変化 → #catalog-tatami-tile：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B11.05 畳6色 → #catalog-tatami-tile：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B11.06 Rivieraタイル4系統 → #catalog-tatami-tile / #catalog-compare-interior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B11.07 磁器質タイルの特徴 → #catalog-tatami-tile：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B11.08 タイル施工範囲 → #catalog-compare-interior / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B12.01 玄関ドアの形式 → #catalog-entrance / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B12.02 花FACE → #catalog-entrance / #catalog-smart：FACEの用途・電源・登録を掲載。二認証の設定・同梱物は非掲載。
+- B12.03 京・風FamiLock → #catalog-entrance / #catalog-smart：FamiLockの操作・登録と手動キーを掲載。同梱数は非掲載。
+- B12.04 玄関ドアデザイン → #catalog-entrance：18デザインの候補名を掲載。写真と色の不整合は未確定として対応付けを非掲載。
+- B12.05 玄関ドア色柄 → #catalog-entrance：17色の候補名を掲載。全デザインで全色選べるとは表示しない。
+- B12.06 Ring防犯ドアホンPro → #catalog-smart：来客の確認・応答と接続条件を掲載。型番Pro・4K・IP65・サイレンは採用機種照合待ちとして非掲載。
+- B12.07 クラウド録画と接続条件 → #catalog-smart / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B12.08 メーカー希望小売の注記 → #catalog-conditions：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B13.01 ヘーベルパワーボード → #catalog-exterior / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B13.02 断熱・遮音・防火の仕組み → #catalog-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B13.03 遮音約30dB・耐火試験 → #catalog-exterior / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B13.04 期待耐用年数60年 → #catalog-exterior：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B13.05 純正グランロック塗装 → #catalog-exterior / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B13.06 外壁施工例と動画導線 → #catalog-exterior：支給外壁写真を掲載。未取得動画・空QRは非掲載。
+- B14.01 サーモスL → #catalog-windows / #catalog-compare-exterior：フレームとLow-Eの仕組みを説明。風の構成欠如・全棟一律仕様は非掲載。
+- B14.02 Low-Eと風の表記差 → #catalog-windows / #catalog-compare-exterior：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B14.03 アルゴンガス・樹脂スペーサー → #catalog-windows：追加構成として説明。一律標準・実価格は非掲載。
+- B14.04 熱性能の比較数値 → #catalog-windows / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B14.05 開き方の種類 → #catalog-windows：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B14.06 防犯部材 → #catalog-windows：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B14.07 LifeAssist2 → #catalog-smart / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B14.08 スマート設備の対象整理 → #catalog-entrance / #catalog-smart / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B15.01 耐震と制振の選択 → #catalog-earthquake / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B15.02 木造軸組と耐力面材 → #catalog-earthquake：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B15.03 耐震等級3相当 → #catalog-earthquake / #catalog-compare-exterior：「相当」と第三者評価の違いを説明。一律認定取得を主張しない。
+- B15.04 筋交い・ホールダウン金物 → #catalog-earthquake：接合部材の基本を説明。筋交い2.5倍の数値は非掲載。
+- B15.05 wallstat → #catalog-earthquake：解析に入力条件と結果が必要な旨を説明。全棟実施・特定地震2回実施・解析動画は未実証として非掲載。
+- B15.06 MIRAIE → #catalog-earthquake：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B15.07 地盤調査と改良 → #catalog-insulation / #catalog-construction / #catalog-conditions：地盤調査と工事範囲を説明。会社負担の全土地適用は非掲載。
+- B15.08 地盤保証会社の差 → #catalog-warranty / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B15.09 現場発泡断熱 → #catalog-insulation / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B15.10 外壁通気工法 → #catalog-insulation：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B15.11 しろあり初期保証 → #catalog-warranty：しろあり初期10年を掲載。1000万円上限・対象構法の一律適用は非掲載。
+- B15.12 しろあり延長制度 → #catalog-warranty / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B16.01 初回から設計士が同席 → #catalog-design：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B16.02 自由設計の5手順 → #catalog-design：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B16.03 間取り1F → #catalog-plans：支給1F図292pxを原寸以下の参考図として掲載。拡大・寸法加筆なし。
+- B16.04 間取り2F → #catalog-plans：支給2F図303pxを原寸以下の参考図として掲載。共通縮尺は認定しない。
+- B16.05 設計士栗野佑也 → #catalog-plans：現スタッフページへ集約リンク。現所属再確認未了につき個人紹介の複製はしない。
+- B16.06 設計士岩佐篤志 → #catalog-plans：現スタッフページへ集約リンク。現所属再確認未了につき個人紹介の複製はしない。
+- B16.07 打合せと完成写真 → #catalog-design / #catalog-plans：打合せと完成写真を別の実例として表示。同一事例の因果は説明しない。
+- B17.01 工務の4手順 → #catalog-construction：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B17.02 現場写真 → #catalog-construction：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B17.03 土地からの一貫体制 → #catalog-introduction / #catalog-construction：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B17.04 奈良・京都の地図 → #catalog-construction / #catalog-visit：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B17.05 200区画以上 → #catalog-construction：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B18.01 建物保証の期間 → #catalog-warranty / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B18.02 建物保証の対象 → #catalog-warranty：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B18.03 延長に必要な条件 → #catalog-warranty：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B18.04 保証上限 → #catalog-warranty / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B18.05 保証対象外 → #catalog-warranty：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B18.06 保証の引継ぎ → #catalog-warranty：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B18.07 倒産・廃業時 → #catalog-warranty：保険期間・責任範囲を含む最新約款の確認待ち。倒産時の保険金請求の追加説明は非掲載。
+- B18.08 地盤保証20年 → #catalog-warranty / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B18.09 住宅設備保証10年 → #catalog-warranty / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B18.10 短期保証 → #catalog-warranty：短期保証は制度・部位ごとと説明。全設備一律2年は非掲載。
+- B18.11 第三者検査 → #catalog-construction / #catalog-warranty：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B18.12 定期点検の時期 → #catalog-aftercare / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B18.13 無料の範囲 → #catalog-aftercare：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B18.14 水まわり相談 → #catalog-aftercare：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B18.15 電気・内装相談 → #catalog-aftercare：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B18.16 防犯・清掃・修理 → #catalog-aftercare：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B19.01 会社と住まいのメッセージ → #catalog-introduction / #catalog-construction：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B19.02 水彩画の役割 → #catalog-visit：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.01 キッチン比較 → #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.02 浴室比較 → #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.03 洗面比較 → #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.04 トイレ比較の結合セル → #catalog-compare-water：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.05 室内建具比較 → #catalog-compare-interior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.06 床比較 → #catalog-compare-interior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.07 畳・タイル共通 → #catalog-compare-interior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.08 玄関ドア比較 → #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.09 サッシ比較 → #catalog-compare-exterior：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B20.10 階段比較 → #catalog-doors / #catalog-compare-interior：階段の形・段数・手すり・仕上げを選定する説明。KSGL/STASの正式名称は未確定で非掲載。
+- B20.11 屋根 → #catalog-exterior / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.12 外壁・軒天 → #catalog-exterior / #catalog-compare-exterior：外壁名称と軒天の役割・実写を掲載。軒天12の正式製品名は非掲載。
+- B20.13 雨トユ・門柱 → #catalog-exterior / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.14 断熱材 → #catalog-insulation / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B20.15 給湯機 → #catalog-compare-exterior / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- B20.16 性能・保証への参照 → #catalog-earthquake / #catalog-insulation / #catalog-warranty / #catalog-aftercare / #catalog-compare-exterior：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B21.01 会社名・所在地・窓口 → #catalog-visit：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B21.02 会社概要と免許 → #catalog-visit：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- B21.03 取引銀行・関連会社 → QA採否記録／カタログ外は既存担当ページ：顧客UIへ転記しない。理由は原資料台帳のgap欄。
+- B21.04 Web・SNSのQR → #catalog-visit：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I01.01 追加費用ゼロの言い切り → #catalog-introduction / #catalog-conditions：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I01.02 費用項目の0円表現 → #catalog-introduction / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- I01.03 他社差額の試算 → #catalog-conditions：顧客UIへ転記しない。理由は原資料台帳のgap欄。
+- I02.01 3シリーズ価格 → #catalog-series / #catalog-hana / #catalog-kyo / #catalog-kaze / #catalog-conditions：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I02.02 土地別途を消す指示 → #catalog-series / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- I02.03 シリーズ色と訴求 → #catalog-series / #catalog-hana / #catalog-kyo / #catalog-kaze：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I02.04 値引率24/22/23/26％ → #catalog-conditions：顧客UIへ転記しない。理由は原資料台帳のgap欄。
+- I02.05 シリーズ6～8特徴 → #catalog-hana / #catalog-kyo / #catalog-kaze：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I02.06 実績770棟超と創業年 → #catalog-introduction / #catalog-construction：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- I03.01 TOPのシリーズ写真配置 → #catalog-hana / #catalog-kyo / #catalog-kaze / #catalog-plans：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I03.02 SPで3価格を一覧 → #catalog-series：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I03.03 契約後費用不変の削除 → #catalog-introduction / #catalog-conditions：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I03.04 TOPのReason等の整理 → #catalog-introduction：顧客UIへ転記しない。理由は原資料台帳のgap欄。
+- I04.01 奈良地図と写真 → #catalog-construction / #catalog-visit：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I04.02 保有150/旧216区画 → #catalog-construction：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- I04.03 FAQ4点 → #catalog-conditions：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I05.01 自社責任・管理体制 → #catalog-construction：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I05.02 設計士2名と実映像 → #catalog-earthquake / #catalog-plans：設計担当ページへリンク。wallstat/ARCHITRENDの実映像は未取得。
+- I05.03 火災保険と保証 → #catalog-warranty / #catalog-conditions：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- I05.04 無料点検1/5/10/50 → #catalog-aftercare：機種・数値・契約条件・試験条件の未解決部分は非掲載。関連ページは根拠のある基礎説明を保持。
+- I05.05 固定ナビ土地・見学 → #catalog-visit：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I06.01 販売中20以上等 → #catalog-visit：顧客UIへ転記しない。理由は原資料台帳のgap欄。
+- I06.02 重複価格を整理し詳細はカタログ → #catalog-series / #catalog-compare-water / #catalog-compare-interior / #catalog-compare-exterior / #catalog-conditions：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I06.03 紙パンフとのブランド統一 → QA採否記録／カタログ外は既存担当ページ：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I06.04 販売終了物件の実例化 → #catalog-hana / #catalog-kyo / #catalog-kaze：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I07.01 全アクションの再掲 → QA採否記録／カタログ外は既存担当ページ：原資料と選定原稿を対応ページへ反映。条件と選択範囲を近接表示。
+- I07.02 住友林業PDFの参考 → QA採否記録／カタログ外は既存担当ページ：顧客UIへ転記しない。理由は原資料台帳のgap欄。

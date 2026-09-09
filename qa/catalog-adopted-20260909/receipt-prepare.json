@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "kodawari.html",
+      "sha256": "7b07ed3f567efa0becc860ae9e918909a579edc8521ef269ca139eedb8f5561e"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/catalog-adopted-20260909/brief.md",
+      "sha256": "cb8fa2a420239fcfbcdd93d666789a503492e8caba890886b9b909253328d377"
+    },
+    "copy": {
+      "path": "qa/catalog-adopted-20260909/copy.md",
+      "sha256": "58e74028a5f90e6d7dc6ce381858fdb85abb4ac4ac3b0b1c01aa252947194eaa"
+    },
+    "assets": {
+      "path": "qa/catalog-adopted-20260909/assets.md",
+      "sha256": "2fd516669c0d93c5713584795d9d68fafd7c6fa6fbae896c7d2fe71058c2b589"
+    }
+  },
+  "screenshots": []
+}

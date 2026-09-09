@@ -1,0 +1,10 @@
+import {chromium,webkit} from '/Users/takahirokamino/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';
+import {writeFile} from 'node:fs/promises';import assert from 'node:assert/strict';
+const results=[];
+for(const [engine,width] of [[chromium,1440],[webkit,390]]){const b=await engine.launch();const p=await b.newPage({viewport:{width,height:844}});await p.goto('http://127.0.0.1:8955/kodawari.html');const video=p.locator('.catalog-cover__motion');await p.waitForFunction(()=>document.querySelector('.catalog-cover__motion').currentTime>.2);const src=await video.evaluate(e=>e.currentSrc);assert(src.includes(width<821?'mobile':'desktop'));
+await p.locator('#catOpeningSkip').click();assert(await video.evaluate(e=>e.paused));assert(await p.locator('.catalog-cover').evaluate(e=>e.classList.contains('is-motion-settled')));
+await p.locator('#catOpeningReplay').click();await p.waitForFunction(()=>document.querySelector('.catalog-cover__motion').currentTime>.2);await video.evaluate(e=>e.currentTime=Math.max(0,e.duration-.15));await p.waitForFunction(()=>document.querySelector('.catalog-cover').classList.contains('is-motion-settled'));assert.equal(await p.evaluate(()=>sessionStorage.getItem('yamatoCatalogOpeningSeen')),'1');
+await p.locator('#catNext').click();await p.waitForTimeout(100);assert(await video.evaluate(e=>e.paused));await p.evaluate(()=>__catalogReader.go('top'));await p.waitForTimeout(150);assert(await video.evaluate(e=>e.paused));
+await p.setViewportSize({width:width<821?1440:390,height:844});await p.waitForTimeout(100);assert((await video.evaluate(e=>e.currentSrc)).includes(width<821?'desktop':'mobile'));
+await p.reload();await p.waitForTimeout(150);assert(await video.evaluate(e=>e.paused));results.push({engine:engine.name(),width,source:src,autoplay:true,skip:true,replayEnded:true,sessionSeen:true,widthMediaSwitch:true,returnPause:true});await b.close();}
+await writeFile('qa/catalog-adopted-20260909/cover-interaction.json',JSON.stringify(results,null,2));console.log(results);

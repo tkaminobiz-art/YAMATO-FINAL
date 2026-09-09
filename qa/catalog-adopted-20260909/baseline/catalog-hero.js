@@ -3,7 +3,6 @@
   try{
   var catalog=document.querySelector('section.fvs');
   if(!catalog) return;
-  if(catalog.hasAttribute("data-catalog-adopted")){ window.YamatoCatalogReader.init(catalog); return; }
   var compactMedia=matchMedia('(max-width:820px)');
   var layoutMode=compactMedia.matches?'sp':'pc';
   var allScenes=[].slice.call(catalog.querySelectorAll(':scope > .fvs__scene'));

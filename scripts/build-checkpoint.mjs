@@ -1,5 +1,6 @@
 // Reproducible allow-listed static output for the review checkpoint.
 import './verify-homepage.mjs';
+import './verify-catalog.mjs';
 import './verify-day-cycle-hero.mjs';
 import './verify-nara.mjs';
 import './verify-works-freeform.mjs';
