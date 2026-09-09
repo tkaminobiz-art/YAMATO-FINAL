@@ -219,7 +219,7 @@
     },
     {
       "path": "assets/catalog/adopted/reader.js",
-      "sha256": "981e0f602cd9dc5d369a56540ddc6817aa032ab64d5184255aa136467fbd243a"
+      "sha256": "d891f5db944409d88acbcb5d5ecb26e3119f624c42f17df898936c9d0e8e0e1b"
     }
   ],
   "records": {
@@ -241,7 +241,7 @@
     },
     "interaction": {
       "path": "qa/catalog-adopted-20260909/interaction.md",
-      "sha256": "2c915cb930921582ff9f0471b0ba6f1770397c2002cedafb44b1f827931c3875"
+      "sha256": "481e5bc0508a1e3b5bbc070ae8b8ebedcb65dbc01c9b95d4af67d1ecab9640b3"
     }
   },
   "screenshots": [
