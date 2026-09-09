@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-09-09T22:11:27.898Z",
+  "baseCommit": "5945f0b0b414f053f000d3f14b43934c651bf870",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "c98a3d59e33b9520633c71643e648724392b5a464fffedaeb4832a6785637b67",
+      "match": true
+    },
+    {
+      "path": "assets/top-renewal/visit-adopted-20260909/style.css",
+      "status": 200,
+      "sha256": "13674ee980ed2d1fa9456eb70348b5d6c1d94188dbe0297cdc47402d7a365c77",
+      "match": true
+    },
+    {
+      "path": "kodawari.html",
+      "status": 200,
+      "sha256": "dd0e71fab491173b47c062ff0e0578367cc205952a50d47fd2a00a8e324cde9d",
+      "match": true
+    },
+    {
+      "path": "assets/top-renewal/generated-fv-20260909/cycle.js",
+      "status": 200,
+      "sha256": "4f3e5366836e5865625de453d2b961ef78aaa09f2f773bd414596915f08ef264",
+      "match": true
+    }
+  ]
+}

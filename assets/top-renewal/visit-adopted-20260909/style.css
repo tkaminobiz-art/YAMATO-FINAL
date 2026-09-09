@@ -72,3 +72,78 @@
   .va26__phone > a { font-size: 7.5vw; }
   .va26__phone .va26__hours { font-size: 13px; }
 }
+
+/* Adopted 2026-09-10: PC height and catalogue red. Mobile geometry/content unchanged. */
+/* The current catalogue cover is the visual colour reference; its artwork is not duplicated. */
+#visit.va26 {
+  background-color: #9f252c;
+  background-image: radial-gradient(ellipse at 15% 0%, #b4424026, transparent 64%), linear-gradient(115deg, #a12930, #981f28 52%, #89131e);
+}
+#visit.va26 > .wg-paper {
+  background-image: url('../../std/paper_washi.webp');
+  background-size: cover;
+  background-position: center;
+  opacity: .62;
+  filter: grayscale(1) brightness(.56) contrast(2.4);
+  mix-blend-mode: soft-light;
+}
+#visit.va26 > .wg-paper::after { background: none; box-shadow: none; }
+
+@media (min-width: 768px) {
+  #visit.va26 { aspect-ratio: auto; height: clamp(660px, calc(100svh - 104px), 900px); }
+  #visit .va26__header { top: 20px; width: 68%; }
+  #visit .va26__brand { font-size: 18px; line-height: 1.5; }
+  #visit .va26__brand::after { width: 36px; margin: 6px 0 8px; }
+  #visit .va26__english { font-size: clamp(44px, 3.34vw, 54px); line-height: 1.05; letter-spacing: .13em; }
+  #visit .va26__header h2 { margin-top: 3px; font-size: 32px; line-height: 1.45; }
+  #visit .va26__description { margin-top: 8px; font-size: 16.5px; line-height: 1.8; letter-spacing: .08em; }
+  #visit .va26__scene { top: 26%; width: 70%; max-width: 1200px; height: 65%; }
+  #visit .va26__scene > img { object-position: 49% 62%; }
+  #visit .va26__photo-note { bottom: 16px; font-size: 16px; line-height: 1.8; }
+  #visit .va26__photo-note::before { width: 36px; margin-bottom: 10px; }
+  #visit .va26__contact { top: 43%; right: 3.1%; width: clamp(330px, 27vw, 430px); }
+  #visit .va26__actions { gap: 14px; }
+  #visit .va26__button { min-height: 54px; padding: 8px 44px 8px 22px; font-size: 24px; line-height: 1.5; letter-spacing: .14em; }
+  #visit .va26__button--primary { min-height: 58px; }
+  #visit .va26__button svg { right: 20px; width: 14px; }
+  #visit .va26__phone { margin-top: 22px; padding-top: 14px; }
+  #visit .va26__phone > p { font-size: 16px; line-height: 1.8; }
+  #visit .va26__phone > a { font-size: 40px; line-height: 1.4; min-height: 48px; margin: 2px 0; gap: 10px; }
+  #visit .va26__phone > a svg { width: 27px; }
+  #visit .va26__phone .va26__hours { font-size: 16px; line-height: 1.8; }
+  #visit .va26__flower--top { width: clamp(260px, 20vw, 360px); }
+  #visit .va26__flower--bottom { width: clamp(360px, 25vw, 480px); right: -9%; bottom: calc(clamp(360px, 25vw, 480px) * -.72); }
+}
+@media (min-width: 768px) and (max-width: 1099px) {
+  /* Below desktop width the existing content takes priority over a one-screen fit. */
+  #visit.va26 { height: max(760px, calc(100svh - 104px)); max-height: 920px; }
+  #visit .va26__header { width: 85%; }
+  #visit .va26__english { font-size: 40px; letter-spacing: .1em; }
+  #visit .va26__header h2 { font-size: 32px; }
+  #visit .va26__description { max-width: 82%; font-size: 16px; letter-spacing: .06em; }
+  #visit .va26__scene { top: 30%; width: 70%; height: 61%; }
+  #visit .va26__contact { top: 48%; width: 36%; right: 3%; }
+  #visit .va26__button { padding: 9px 32px 9px 16px; font-size: 20px; }
+  #visit .va26__button svg { right: 15px; }
+  #visit .va26__phone > a { font-size: clamp(30px, 3.9vw, 38px); }
+  #visit .va26__phone > a svg { width: 24px; }
+  #visit .va26__phone .va26__hours { font-size: 14px; }
+  #visit .va26__flower--top { width: 25%; }
+  #visit .va26__flower--bottom { width: 360px; bottom: -280px; }
+}
+
+@media (min-width: 960px) and (max-width: 1099px) {
+  #visit.va26 { height: clamp(700px, calc(100svh - 64px), 860px); }
+  #visit .va26__contact { top: 45%; }
+  #visit .va26__flower--bottom { bottom: -300px; }
+}
+
+/* Update 100: background texture only; update 99 geometry and colour layer retained. */
+#visit.va26 > .wg-paper {
+  background-image: url('./washi-texture-20260910.webp');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1) brightness(1.75) contrast(.65);
+  opacity: .9;
+  mix-blend-mode: soft-light;
+}

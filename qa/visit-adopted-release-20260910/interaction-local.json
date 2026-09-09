@@ -1,0 +1,166 @@
+[
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "height": 778,
+    "motion": "no-preference",
+    "geometries": {
+      "height": 674,
+      "header": 76.75,
+      "overflow": 0,
+      "copy": "\n \n \n やまと不動産VISIT & CONTACTモデルハウス見学商品別の設備・仕様と、お見積もりの考え方をご案内します。見学は無料・予約制です。\n 写真を読み込めませんでした\n 左京モデルハウスの写真。ご案内する会場は予約時に確認します。\n 来場を予約する資料請求お電話でのご相談：0742-36-11239:00〜19:00 ／ 火曜・水曜定休\n",
+      "photos": [
+        {
+          "loaded": true,
+          "src": "http://127.0.0.1:8961/assets/top-renewal/sakyo-living-1440.webp"
+        }
+      ],
+      "links": [
+        {
+          "text": "来場を予約する",
+          "href": "#contactDialog",
+          "contact": "reserve",
+          "rect": {
+            "x": 1006.578125,
+            "y": 389.375,
+            "width": 388.796875,
+            "height": 58,
+            "top": 389.375,
+            "right": 1395.375,
+            "bottom": 447.375,
+            "left": 1006.578125
+          }
+        },
+        {
+          "text": "資料請求",
+          "href": "#contactDialog",
+          "contact": "docs",
+          "rect": {
+            "x": 1006.578125,
+            "y": 461.375,
+            "width": 388.796875,
+            "height": 54,
+            "top": 461.375,
+            "right": 1395.375,
+            "bottom": 515.375,
+            "left": 1006.578125
+          }
+        },
+        {
+          "text": "0742-36-1123",
+          "href": "tel:0742361123",
+          "rect": {
+            "x": 1006.578125,
+            "y": 583.171875,
+            "width": 388.796875,
+            "height": 56,
+            "top": 583.171875,
+            "right": 1395.375,
+            "bottom": 639.171875,
+            "left": 1006.578125
+          }
+        }
+      ]
+    },
+    "actions": [
+      {
+        "kind": "reserve",
+        "title": "来場予約のご案内",
+        "tabLoop": true,
+        "escapeFocusReturn": true,
+        "closeFocusReturn": true
+      },
+      {
+        "kind": "docs",
+        "title": "資料請求のご案内",
+        "tabLoop": true,
+        "escapeFocusReturn": true,
+        "closeFocusReturn": true
+      }
+    ],
+    "errors": [],
+    "nonGetRequests": []
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "height": 844,
+    "motion": "reduce",
+    "geometries": {
+      "height": 872.046875,
+      "header": 60,
+      "overflow": 0,
+      "copy": "\n \n \n やまと不動産VISIT & CONTACTモデルハウス見学商品別の設備・仕様と、お見積もりの考え方をご案内します。見学は無料・予約制です。\n 写真を読み込めませんでした\n 左京モデルハウスの写真。ご案内する会場は予約時に確認します。\n 来場を予約する資料請求お電話でのご相談：0742-36-11239:00〜19:00 ／ 火曜・水曜定休\n",
+      "photos": [
+        {
+          "loaded": true,
+          "src": "http://127.0.0.1:8961/assets/top-renewal/sakyo-living-840.webp"
+        }
+      ],
+      "links": [
+        {
+          "text": "来場を予約する",
+          "href": "#contactDialog",
+          "contact": "reserve",
+          "rect": {
+            "x": 29.25,
+            "y": 674.25,
+            "width": 331.5,
+            "height": 58,
+            "top": 674.25,
+            "right": 360.75,
+            "bottom": 732.25,
+            "left": 29.25
+          }
+        },
+        {
+          "text": "資料請求",
+          "href": "#contactDialog",
+          "contact": "docs",
+          "rect": {
+            "x": 29.25,
+            "y": 744.25,
+            "width": 331.5,
+            "height": 53.5,
+            "top": 744.25,
+            "right": 360.75,
+            "bottom": 797.75,
+            "left": 29.25
+          }
+        },
+        {
+          "text": "0742-36-1123",
+          "href": "tel:0742361123",
+          "rect": {
+            "x": 132.015625,
+            "y": 857.140625,
+            "width": 228.734375,
+            "height": 44,
+            "top": 857.140625,
+            "right": 360.75,
+            "bottom": 901.140625,
+            "left": 132.015625
+          }
+        }
+      ]
+    },
+    "actions": [
+      {
+        "kind": "reserve",
+        "title": "来場予約のご案内",
+        "tabLoop": true,
+        "escapeFocusReturn": true,
+        "closeFocusReturn": true
+      },
+      {
+        "kind": "docs",
+        "title": "資料請求のご案内",
+        "tabLoop": true,
+        "escapeFocusReturn": true,
+        "closeFocusReturn": true
+      }
+    ],
+    "errors": [],
+    "nonGetRequests": []
+  }
+]

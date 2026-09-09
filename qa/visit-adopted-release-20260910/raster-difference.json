@@ -1,0 +1,52 @@
+[
+  {
+    "viewport": "1366-768",
+    "referenceSectionTop": 72.328125,
+    "actualSectionTop": 72.328125,
+    "shifts": [
+      {
+        "dy": -1,
+        "meanAbs": 2.987452739214545,
+        "diffGT8percent": 5.395116336502673,
+        "max": 232
+      },
+      {
+        "dy": 0,
+        "meanAbs": 2.1128003023664577,
+        "diffGT8percent": 3.872565748191856,
+        "max": 216
+      },
+      {
+        "dy": 1,
+        "meanAbs": 5.704488157608472,
+        "diffGT8percent": 11.194521864912064,
+        "max": 232
+      }
+    ]
+  },
+  {
+    "viewport": "1440-900",
+    "referenceSectionTop": 76.5625,
+    "actualSectionTop": 76.875,
+    "shifts": [
+      {
+        "dy": -1,
+        "meanAbs": 3.6182399264842733,
+        "diffGT8percent": 6.662391820212172,
+        "max": 232
+      },
+      {
+        "dy": 0,
+        "meanAbs": 0.6710331567452019,
+        "diffGT8percent": 1.2688205771643664,
+        "max": 211
+      },
+      {
+        "dy": 1,
+        "meanAbs": 4.6143314954401635,
+        "diffGT8percent": 8.809586125069794,
+        "max": 232
+      }
+    ]
+  }
+]

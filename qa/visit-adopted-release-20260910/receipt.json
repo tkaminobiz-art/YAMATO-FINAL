@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "af0803a18478bb2953686f386656eb8fbfb93fe52d7b95e908c90be7d8de4c37"
+    },
+    {
+      "path": "assets/top-renewal/visit-adopted-20260909/style.css",
+      "sha256": "a18e030d068eecfc633b9166dff4cb4398a1ab47b32b4fe6485f45b8b9521675"
+    },
+    {
+      "path": "assets/top-renewal/visit-adopted-20260909/washi-texture-20260910.webp",
+      "sha256": "6be0f78c7b7f581f11f73d646a6210ab28aed0230bc2b073475973993c3c3543"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/visit-adopted-release-20260910/brief.md",
+      "sha256": "aac18f85fadf24180bbcbbd9c41c92c6c468e1f2ca782af45686469a6fb904b1"
+    },
+    "copy": {
+      "path": "qa/visit-adopted-release-20260910/copy.md",
+      "sha256": "461cf68c6b4ad26b91aca7bc523e1d4fa271fe381f6660d134a08c0b1c4eaa6e"
+    },
+    "assets": {
+      "path": "qa/visit-adopted-release-20260910/assets.md",
+      "sha256": "04392cb5ec2d7ede0e1c295aaf458a50f124ef56a856e94a77b37d966617a132"
+    },
+    "visual": {
+      "path": "qa/visit-adopted-release-20260910/visual.md",
+      "sha256": "3b8acccdc57c4e5c738c9261f39387a99a096be90bbf2d1f489922def644690c"
+    },
+    "interaction": {
+      "path": "qa/visit-adopted-release-20260910/interaction.md",
+      "sha256": "4cd3b6a0cf03f5c6f88347280fdd2b0d505dda3ff5c6eed1fa426052bd1b4148"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 778,
+      "path": "qa/visit-adopted-release-20260910/evidence/pc.png",
+      "sha256": "442fab991d8ea7826a49e81bd060e248d145507fa62a91b5eaee65339a15b059"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/visit-adopted-release-20260910/evidence/sp.png",
+      "sha256": "33f447c23f8a29d0664a304731dbcd93211b9d27b1c59a133c46563bbc7d62d9"
+    }
+  ]
+}
