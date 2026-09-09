@@ -1,0 +1,89 @@
+{
+  "base": "http://127.0.0.1:8955",
+  "results": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 1000,
+      "bands": 1,
+      "heading": true,
+      "jobs": [
+        {
+          "title": "初回から設計士が同席",
+          "body": "収納する物まで伺い、間取りを考えます。床やドアは実物のサンプルで確認します。",
+          "image": "assets/top-renewal/built-story/design-meeting.webp",
+          "loaded": true
+        },
+        {
+          "title": "設計内容を現場で確認",
+          "body": "決めた内容を現場責任者まで共有。施工中に気づいた改善案も、お客様へ伝えます。",
+          "image": "assets/top-renewal/built-story/site-coordination.webp",
+          "loaded": true
+        },
+        {
+          "title": "引き渡し後まで社内で対応",
+          "body": "営業・設計・工務が分断されず、住み始めてからの相談まで対応します。",
+          "image": "assets/top-renewal/built-story/team-meeting.webp",
+          "loaded": true
+        }
+      ],
+      "cta": [
+        {
+          "label": "施工事例を見る→",
+          "href": "works.html"
+        },
+        {
+          "label": "スタッフ紹介→",
+          "href": "staff.html"
+        }
+      ],
+      "reasons": "01\n家づくりの約束\n\nやまと不動産なら、\nあきらめかけた戸建ての夢が、\nかなうかもしれません。\n\n02\n費用を抑える仕組み\n\n土地から自社で手がけ、費用を抑える。\n\n土地の仕入れ・造成から、設計・施工・販売まで自社で一貫対応。中間コストを抑え、その分を住まいの設備や仕様に還元しています。\n\n03\n商品ごとの標準仕様\n\n毎日使う設備に、標準仕様からこだわる。\n\nクリナップのキッチンとカップボード、TOTOの浴室などを標準装備。暮らしの使い心地を左右する設備を、はじめから備えています。\n\n※設備のシリーズや仕様は、商品・選択内容によって異なります。\n\nその標準仕様を、モデルハウスで実際に確かめていただけます。\n\nモデルハウスを見る\n→\n家づくりの中身を見る\n→",
+      "entrance": "家づくりのご案内\nLAND & HOMES\n物件一覧\n\n奈良・京都南部の土地を探す。\n\n→\nPAYMENT PLAN\nお支払いシミュレーション\n\n土地と建物の、月々の返済額を試算。\n\n→\nOUR CRAFT\n家づくりのこだわり\n\n標準仕様と、費用の仕組み。\n\n→\nMOVE TO NARA\n奈良からの通勤\n\n大阪への電車と、休日の車移動。\n\n→\n商品ラインナップ\nLINEUP\n→\n施工事例\nWORKS\n→\nモデルハウス\nMODEL HOUSE\n→\n家づくりのこだわり\nOUR WORK\n→\n\n大阪で働く方へ。奈良の土地と通勤を、一緒に確認できます。\n\n奈良からのアクセスを見る\n→",
+      "gapFromActionsToGuide": 336.4375,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "bands": 1,
+      "heading": true,
+      "jobs": [
+        {
+          "title": "初回から設計士が同席",
+          "body": "収納する物まで伺い、間取りを考えます。床やドアは実物のサンプルで確認します。",
+          "image": "assets/top-renewal/built-story/design-meeting.webp",
+          "loaded": true
+        },
+        {
+          "title": "設計内容を現場で確認",
+          "body": "決めた内容を現場責任者まで共有。施工中に気づいた改善案も、お客様へ伝えます。",
+          "image": "assets/top-renewal/built-story/site-coordination.webp",
+          "loaded": true
+        },
+        {
+          "title": "引き渡し後まで社内で対応",
+          "body": "営業・設計・工務が分断されず、住み始めてからの相談まで対応します。",
+          "image": "assets/top-renewal/built-story/team-meeting.webp",
+          "loaded": true
+        }
+      ],
+      "cta": [
+        {
+          "label": "施工事例を見る→",
+          "href": "works.html"
+        },
+        {
+          "label": "スタッフ紹介→",
+          "href": "staff.html"
+        }
+      ],
+      "reasons": "01\n家づくりの約束\n\nやまと不動産なら、\nあきらめかけた戸建ての夢が、\nかなうかもしれません。\n\n02\n費用を抑える仕組み\n\n土地から自社で手がけ、費用を抑える。\n\n土地の仕入れ・造成から、設計・施工・販売まで自社で一貫対応。中間コストを抑え、その分を住まいの設備や仕様に還元しています。\n\n03\n商品ごとの標準仕様\n\n毎日使う設備に、標準仕様からこだわる。\n\nクリナップのキッチンとカップボード、TOTOの浴室などを標準装備。暮らしの使い心地を左右する設備を、はじめから備えています。\n\n※設備のシリーズや仕様は、商品・選択内容によって異なります。\n\nその標準仕様を、モデルハウスで実際に確かめていただけます。\n\nモデルハウスを見る\n→\n家づくりの中身を見る\n→",
+      "entrance": "家づくりのご案内\nLAND & HOMES\n物件一覧\n\n奈良・京都南部の\n土地を探す。\n\n→\nPAYMENT PLAN\nお支払いシミュレーション\n\n土地と建物の、\n月々の返済額を\n試算。\n\n→\nOUR CRAFT\n家づくりのこだわり\n\n標準仕様と、\n費用の仕組み。\n\n→\nMOVE TO NARA\n奈良からの通勤\n\n大阪への電車と、\n休日の車移動。\n\n→\n商品ラインナップ\nLINEUP\n→\n施工事例\nWORKS\n→\nモデルハウス\nMODEL HOUSE\n→\n家づくりのこだわり\nOUR WORK\n→\n\n大阪で働く方へ。\n奈良の土地と通勤を、\n一緒に確認できます。\n\n奈良からのアクセスを見る\n→",
+      "gapFromActionsToGuide": 453.234375,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

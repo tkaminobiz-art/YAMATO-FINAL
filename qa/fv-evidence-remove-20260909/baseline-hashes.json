@@ -1,0 +1,46 @@
+[
+  {
+    "path": "index.html",
+    "sha256": "eb6ccfe4f5884e192fca564c615ea0ee33f7b0f5331505048476a1fe692f3503"
+  },
+  {
+    "path": "scripts/verify-homepage.mjs",
+    "sha256": "431b5668b31efda15a480a8018150407244962dea2cdbe8cc5ce03998c11fde4"
+  },
+  {
+    "path": "kodawari.html",
+    "sha256": "dd0e71fab491173b47c062ff0e0578367cc205952a50d47fd2a00a8e324cde9d"
+  },
+  {
+    "path": "assets/catalog/adopted/reader.js",
+    "sha256": "d891f5db944409d88acbcb5d5ecb26e3119f624c42f17df898936c9d0e8e0e1b"
+  },
+  {
+    "path": "data/voices.json",
+    "sha256": "7f843493e8cff274e6737a629dfdb96b7081e08deea6871152b9bd07927f9870"
+  },
+  {
+    "path": "voice.html",
+    "sha256": "f7659e5a0545427b391edc457759ae017d9263865ba5b39d8d907c961de8974a"
+  },
+  {
+    "path": "assets/top-renewal/generated-fv-20260909/style.css",
+    "sha256": "4d6967ae7d581ae7d1ac33ce1b831ce2700956528624d239a9c77cc54c4d5f34"
+  },
+  {
+    "path": "assets/top-renewal/generated-fv-20260909/cycle.js",
+    "sha256": "4f3e5366836e5865625de453d2b961ef78aaa09f2f773bd414596915f08ef264"
+  },
+  {
+    "path": "assets/top-renewal/built-story/design-meeting.webp",
+    "sha256": "dc6dcd65e8249500f97c768e5234d24836d1d81fde107ac448f84b88d1c7b558"
+  },
+  {
+    "path": "assets/top-renewal/built-story/site-coordination.webp",
+    "sha256": "bfd7e901dd6a824750397dde7c7193ce606003b72c9c9e467f02e2036cf60f81"
+  },
+  {
+    "path": "assets/top-renewal/built-story/team-meeting.webp",
+    "sha256": "ce2fa567fb5904a7c4b2accec604c666f74410864c3683a239ea132e8b83cbe6"
+  }
+]

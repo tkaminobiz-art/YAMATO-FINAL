@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "c98a3d59e33b9520633c71643e648724392b5a464fffedaeb4832a6785637b67"
+    },
+    {
+      "path": "scripts/verify-homepage.mjs",
+      "sha256": "fa2ccfd1303b5d4a76a88f1777cd22f8099dabe68061519286c16d6ee6ecdaa1"
+    },
+    {
+      "path": "assets/top-renewal/generated-fv-20260909/style.css",
+      "sha256": "2a4b5c2ef124c54aa333964e683bcaaa534d4dcd054f91742a734bac5c870dbf"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/fv-evidence-remove-20260909/brief.md",
+      "sha256": "d8ded2abfbb2e3efd19fc49cce7490fc017c9b53b8a8da667ecabe38039aed93"
+    },
+    "copy": {
+      "path": "qa/fv-evidence-remove-20260909/copy.md",
+      "sha256": "faddbece46b95aef50c8076ce34c38d9be581a60a677544887b3549df9390470"
+    },
+    "assets": {
+      "path": "qa/fv-evidence-remove-20260909/assets.md",
+      "sha256": "8a84faecb0e1bf97601f3c200f34cc7f25591e47da44be2993c44ff7fc99cf07"
+    },
+    "visual": {
+      "path": "qa/fv-evidence-remove-20260909/visual.md",
+      "sha256": "cadb6e7c67d94e69a9ebf63099122fabbc065bf2578215ef58e441aa30192bde"
+    },
+    "interaction": {
+      "path": "qa/fv-evidence-remove-20260909/interaction.md",
+      "sha256": "c39d2ae54098f76640c0c8a8e329cd4ec5eab6dee384306e841712abac117847"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 1000,
+      "path": "qa/fv-evidence-remove-20260909/evidence/after-1440.png",
+      "sha256": "6f4bdc14a410453ae3f85dc71aca5a6deef4204fc6f42543b658560b712006cf"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/fv-evidence-remove-20260909/evidence/after-390.png",
+      "sha256": "707fff460902a053229bb33e5585e5931baa4aaadbc5d630617ec3d523c025cc"
+    }
+  ]
+}

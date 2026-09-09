@@ -161,5 +161,6 @@ body.gf26.material-preview .site-header .reserve-link:hover{background:#114b28;t
 @media(max-width:359px){.gf-reason h2{font-size:18px}}
 /* Foliage stays behind the copy; it never forms an overlay above nearby rows. */
 .gf-job-actions{isolation:auto}
+#homePromise:has(> .gf-job-actions:last-child){padding-bottom:24px}
 .gf-job-actions::before{height:120px;opacity:.5}
 @media(max-width:767px){.gf-actions{position:relative}.gf-actions::before{content:'';position:absolute;z-index:-1;pointer-events:none;width:100vw;height:90px;left:50%;bottom:-35px;transform:translateX(-50%);background:url('leaf-background.webp') center bottom/100% auto no-repeat;mask-image:linear-gradient(transparent,#000 85%);opacity:.5}.gf-job-actions::before{height:90px}}
