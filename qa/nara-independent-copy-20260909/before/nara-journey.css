@@ -190,4 +190,4 @@
 .journey-condition a{margin-left:12px}
 .iju__copy h2{color:var(--cr)}
 @media(max-width:800px){.iju{--header-h:76px}.header{height:76px}.iju__eyebrow{max-width:60%;line-height:1.8}}
-@media(max-height:560px) and (orientation:landscape){.iju__copy{bottom:108px}.iju__journey-title,.iju__journey-title.is-compact{font-size:25px}.iju__journey-deck{font-size:12px}.iju__skip{top:calc(var(--header-h) + 80px)}.iju__concept-note{top:calc(var(--header-h) + 40px);bottom:auto}}
+@media(max-height:560px) and (orientation:landscape){.iju__copy{bottom:108px}.iju__journey-title,.iju__journey-title.is-compact{font-size:25px}.iju__journey-deck{font-size:12px}.iju__skip{top:100px}.iju__concept-note{bottom:74px}}

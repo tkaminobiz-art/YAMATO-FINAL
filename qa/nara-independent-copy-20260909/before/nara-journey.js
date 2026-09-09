@@ -30,14 +30,14 @@ function setup(){
       jWarm.observe(ijuStage);
     }
     var jBeats=[
-      {at:0,phase:'Osaka Namba ／ Departure',title:'大阪難波から、近鉄奈良へ。',deck:'平日夕方の快速急行で、乗り換えなし。',cap:'大阪難波',clock:'18:27',stop:0},
-      {at:.15,phase:'Rail Access ／ 41 Minutes',title:'近鉄奈良まで、41分。',deck:'平日18:27発、19:08着の帰宅例です。',cap:'直通',clock:'18:27',stop:0},
-      {at:.32,phase:'Tsuruhashi ／ 5 Minutes',title:'鶴橋に到着。',deck:'大阪難波を出て5分。乗り換えずに奈良へ向かいます。',cap:'鶴橋',clock:'18:32',stop:1},
-      {at:.5,phase:'Ikoma ／ 22 Minutes',title:'生駒に到着。',deck:'大阪難波から22分。次は学園前です。',cap:'生駒',clock:'18:49',stop:2},
-      {at:.58,phase:'Gakuen-mae ／ 28 Minutes',title:'学園前に到着。',deck:'大阪難波から28分。次は大和西大寺です。',cap:'学園前',clock:'18:55',stop:3},
-      {at:.66,phase:'Yamato-Saidaiji ／ 8 Minutes Left',title:'近鉄奈良まで、あと8分。',deck:'大和西大寺に到着。次は新大宮です。',cap:'大和西大寺',clock:'19:00',stop:4,compact:true},
-      {at:.77,phase:'Shin-Omiya ／ 3 Minutes Left',title:'近鉄奈良まで、あと3分。',deck:'新大宮に到着。次は終点の近鉄奈良です。',cap:'新大宮',clock:'19:05',stop:5,compact:true},
-      {at:.88,phase:'Kintetsu Nara ／ Arrival',title:'近鉄奈良に到着。',deck:'大阪難波から41分、19:08着の帰宅例です。',cap:'近鉄奈良',clock:'19:08',stop:6}
+      {at:0,phase:'Osaka Namba ／ Departure',title:'大阪難波から近鉄奈良へ。',deck:'快速急行は乗り換えなし。',cap:'大阪難波',clock:'18:27',stop:0},
+      {at:.15,phase:'Rail Access ／ 41 Minutes',title:'近鉄奈良まで41分。',deck:'快速急行の運行例です。',cap:'乗換なし',clock:'18:27',stop:0},
+      {at:.32,phase:'Tsuruhashi ／ 5 Minutes',title:'鶴橋まで5分。',deck:'近鉄奈良方面へ直通。',cap:'鶴橋',clock:'18:32',stop:1},
+      {at:.5,phase:'Ikoma ／ 22 Minutes',title:'生駒まで22分。',deck:'乗り換えなし。',cap:'生駒',clock:'18:49',stop:2},
+      {at:.58,phase:'Gakuen-mae ／ 28 Minutes',title:'学園前まで28分。',deck:'大和西大寺、新大宮を経て近鉄奈良へ。',cap:'学園前',clock:'18:55',stop:3},
+      {at:.66,phase:'Yamato-Saidaiji ／ 8 Minutes Left',title:'近鉄奈良まであと8分。',deck:'新大宮に停車。',cap:'大和西大寺',clock:'19:00',stop:4,compact:true},
+      {at:.77,phase:'Shin-Omiya ／ 3 Minutes Left',title:'近鉄奈良まであと3分。',deck:'次は近鉄奈良。',cap:'新大宮',clock:'19:05',stop:5,compact:true},
+      {at:.88,phase:'Kintetsu Nara ／ Arrival',title:'近鉄奈良に到着。',deck:'大阪難波から41分の運行例。',cap:'近鉄奈良',clock:'19:08',stop:6}
     ];
     var jBeat=-1;
     function jClamp(v){ return Math.max(0,Math.min(1,v)); }

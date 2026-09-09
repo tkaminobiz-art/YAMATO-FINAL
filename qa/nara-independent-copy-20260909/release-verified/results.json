@@ -1,0 +1,7268 @@
+[
+  {
+    "name": "chromium-pc",
+    "engine": "chromium",
+    "width": 1440,
+    "height": 900,
+    "mode": "normal",
+    "beats": [
+      {
+        "index": 1,
+        "progress": 0,
+        "clock": "18:27",
+        "title": "大阪難波から、近鉄奈良へ。",
+        "deck": "平日夕方の快速急行で、乗り換えなし。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 127,
+              "right": 324.46875,
+              "bottom": 137,
+              "width": 252.46875,
+              "height": 10
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1203.875,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.359375,
+              "width": 164.125,
+              "height": 65.359375
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 403.84375,
+              "right": 359.140625,
+              "bottom": 414.84375,
+              "width": 211.34375,
+              "height": 11
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 454.609375,
+              "right": 578.171875,
+              "bottom": 611.390625,
+              "width": 477.375,
+              "height": 156.78125
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.171875,
+              "right": 426.53125,
+              "bottom": 666.171875,
+              "width": 325.734375,
+              "height": 17
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.75,
+              "right": 391.171875,
+              "bottom": 771.40625,
+              "width": 178.171875,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.40625,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.59375
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 2,
+        "progress": 0.2,
+        "clock": "18:27",
+        "title": "近鉄奈良まで、41分。",
+        "deck": "平日18:27発、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 127,
+              "right": 324.46875,
+              "bottom": 137,
+              "width": 252.46875,
+              "height": 10
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1230.59375,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.359375,
+              "width": 137.40625,
+              "height": 65.359375
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 495.625,
+              "right": 352.96875,
+              "bottom": 506.625,
+              "width": 205.171875,
+              "height": 11
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 546.3986206054688,
+              "right": 794.453125,
+              "bottom": 611.3986206054688,
+              "width": 693.65625,
+              "height": 65
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.2265625,
+              "right": 424.5625,
+              "bottom": 666.2265625,
+              "width": 323.765625,
+              "height": 17
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.75,
+              "right": 391.171875,
+              "bottom": 771.40625,
+              "width": 178.171875,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.40625,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.59375
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 3,
+        "progress": 0.36,
+        "clock": "18:32",
+        "title": "鶴橋に到着。",
+        "deck": "大阪難波を出て5分。乗り換えずに奈良へ向かいます。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 127,
+              "right": 324.46875,
+              "bottom": 137,
+              "width": 252.46875,
+              "height": 10
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1230.59375,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.359375,
+              "width": 137.40625,
+              "height": 65.359375
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 495.6260986328125,
+              "right": 341.96875,
+              "bottom": 506.6260986328125,
+              "width": 194.171875,
+              "height": 11
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 546.4131469726562,
+              "right": 509.96875,
+              "bottom": 611.4131469726562,
+              "width": 409.171875,
+              "height": 65
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.270263671875,
+              "right": 545.546875,
+              "bottom": 666.270263671875,
+              "width": 444.75,
+              "height": 17
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724,
+              "right": 248.25,
+              "bottom": 735,
+              "width": 176.25,
+              "height": 11
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.75,
+              "right": 391.171875,
+              "bottom": 771.40625,
+              "width": 178.171875,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.40625,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.59375
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 4,
+        "progress": 0.53,
+        "clock": "18:49",
+        "title": "生駒に到着。",
+        "deck": "大阪難波から22分。次は学園前です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 127,
+              "right": 324.46875,
+              "bottom": 137,
+              "width": 252.46875,
+              "height": 10
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1230.46875,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.359375,
+              "width": 137.53125,
+              "height": 65.359375
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 495.6260986328125,
+              "right": 303.109375,
+              "bottom": 506.6260986328125,
+              "width": 155.3125,
+              "height": 11
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 546.4131469726562,
+              "right": 509.96875,
+              "bottom": 611.4131469726562,
+              "width": 409.171875,
+              "height": 65
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.270263671875,
+              "right": 413.8125,
+              "bottom": 666.270263671875,
+              "width": 313.015625,
+              "height": 17
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724,
+              "right": 248.25,
+              "bottom": 735,
+              "width": 176.25,
+              "height": 11
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.75,
+              "right": 391.171875,
+              "bottom": 771.40625,
+              "width": 178.171875,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.40625,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.59375
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 5,
+        "progress": 0.61,
+        "clock": "18:55",
+        "title": "学園前に到着。",
+        "deck": "大阪難波から28分。次は大和西大寺です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 127,
+              "right": 324.46875,
+              "bottom": 137,
+              "width": 252.46875,
+              "height": 10
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1217.234375,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.359375,
+              "width": 150.765625,
+              "height": 65.359375
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 495.625,
+              "right": 352.5625,
+              "bottom": 506.625,
+              "width": 204.765625,
+              "height": 11
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 546.3986206054688,
+              "right": 578.171875,
+              "bottom": 611.3986206054688,
+              "width": 477.375,
+              "height": 65
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.2265625,
+              "right": 450.109375,
+              "bottom": 666.2265625,
+              "width": 349.3125,
+              "height": 17
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724,
+              "right": 248.25,
+              "bottom": 735,
+              "width": 176.25,
+              "height": 11
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.75,
+              "right": 391.171875,
+              "bottom": 771.40625,
+              "width": 178.171875,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.40625,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.59375
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 6,
+        "progress": 0.7,
+        "clock": "19:00",
+        "title": "近鉄奈良まで、あと8分。",
+        "deck": "大和西大寺に到着。次は新大宮です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 127,
+              "right": 324.46875,
+              "bottom": 137,
+              "width": 252.46875,
+              "height": 10
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1190.5,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.359375,
+              "width": 177.5,
+              "height": 65.359375
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 516.6102905273438,
+              "right": 415.484375,
+              "bottom": 527.6102905273438,
+              "width": 267.6875,
+              "height": 11
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 565.3963012695312,
+              "right": 676.546875,
+              "bottom": 613.3963012695312,
+              "width": 575.75,
+              "height": 48
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.26708984375,
+              "right": 407.53125,
+              "bottom": 666.26708984375,
+              "width": 306.734375,
+              "height": 17
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724,
+              "right": 248.25,
+              "bottom": 735,
+              "width": 176.25,
+              "height": 11
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.75,
+              "right": 391.171875,
+              "bottom": 771.40625,
+              "width": 178.171875,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.40625,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.59375
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 7,
+        "progress": 0.81,
+        "clock": "19:05",
+        "title": "近鉄奈良まで、あと3分。",
+        "deck": "新大宮に到着。次は終点の近鉄奈良です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 127,
+              "right": 324.46875,
+              "bottom": 137,
+              "width": 252.46875,
+              "height": 10
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1217.234375,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.359375,
+              "width": 150.765625,
+              "height": 65.359375
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 516.609375,
+              "right": 375.640625,
+              "bottom": 527.609375,
+              "width": 227.84375,
+              "height": 11
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 565.3829956054688,
+              "right": 676.546875,
+              "bottom": 613.3829956054688,
+              "width": 575.75,
+              "height": 48
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.2265625,
+              "right": 443.8125,
+              "bottom": 666.2265625,
+              "width": 343.015625,
+              "height": 17
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724,
+              "right": 248.25,
+              "bottom": 735,
+              "width": 176.25,
+              "height": 11
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.75,
+              "right": 391.171875,
+              "bottom": 771.40625,
+              "width": 178.171875,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.40625,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.59375
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 8,
+        "progress": 0.95,
+        "clock": "19:08",
+        "title": "近鉄奈良に到着。",
+        "deck": "大阪難波から41分、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 127,
+              "right": 324.46875,
+              "bottom": 137,
+              "width": 252.46875,
+              "height": 10
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1203.875,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.359375,
+              "width": 164.125,
+              "height": 65.359375
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 495.625,
+              "right": 347.1875,
+              "bottom": 506.625,
+              "width": 199.390625,
+              "height": 11
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 546.3980102539062,
+              "right": 646.359375,
+              "bottom": 611.3980102539062,
+              "width": 545.5625,
+              "height": 65
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.224365234375,
+              "right": 467.765625,
+              "bottom": 666.224365234375,
+              "width": 366.96875,
+              "height": 17
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724,
+              "right": 248.25,
+              "bottom": 735,
+              "width": 176.25,
+              "height": 11
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.75,
+              "right": 391.171875,
+              "bottom": 771.40625,
+              "width": 178.171875,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__arrival-summary",
+              "x": 200,
+              "y": 784.437744140625,
+              "right": 1240,
+              "bottom": 855.000244140625,
+              "width": 1040,
+              "height": 70.5625
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      }
+    ],
+    "checks": [
+      "hero skip reaches train",
+      ".section-nav a[href=\"#train\"] -> #train",
+      ".section-nav a[href=\"#last-mile\"] -> #last-mile",
+      ".section-nav a[href=\"#drive\"] -> #drive",
+      ".section-heading a[href=\"#last-mile\"] -> #last-mile",
+      ".journey-condition a -> #train"
+    ],
+    "status": "pass",
+    "shell": {
+      "title": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "description": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+      "robots": "noindex,nofollow",
+      "forms": 0,
+      "links": [
+        {
+          "text": "本文へ進む",
+          "href": "#main",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電車の所要時間を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "01 電車での通勤",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "02 駅から家まで",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "03 車でのお出かけ",
+          "href": "#drive",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "04 分譲地を探す",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "駅から家までの移動を見る ↓",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻表を見る（近鉄公式） ↗",
+          "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式の路線図・駅情報 ↗",
+          "href": "https://www.kintetsu.co.jp/station/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式でダイヤを調べる ↗",
+          "href": "https://www.kintetsu.co.jp/tetsudo/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "NEXCO西日本で料金・ルートを調べる ↗",
+          "href": "https://search.w-nexco.co.jp/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産 トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        }
+      ],
+      "table": [
+        [
+          "大阪難波",
+          "18:25",
+          "18:27"
+        ],
+        [
+          "近鉄日本橋",
+          "18:28",
+          "18:28"
+        ],
+        [
+          "大阪上本町",
+          "18:30",
+          "18:30"
+        ],
+        [
+          "鶴橋",
+          "18:32",
+          "18:33"
+        ],
+        [
+          "生駒",
+          "18:49",
+          "18:50"
+        ],
+        [
+          "学園前",
+          "18:55",
+          "18:56"
+        ],
+        [
+          "大和西大寺",
+          "19:00",
+          "19:02"
+        ],
+        [
+          "新大宮",
+          "19:05",
+          "19:05"
+        ],
+        [
+          "近鉄奈良",
+          "19:08",
+          "—"
+        ]
+      ],
+      "images": [
+        {
+          "src": "assets/brand/yamato_mark.svg",
+          "width": "32",
+          "height": "32",
+          "alt": ""
+        },
+        {
+          "src": "assets/iju/duo_osaka.webp",
+          "alt": "薄暮の道頓堀・なんばのネオンと運河",
+          "width": "1320",
+          "height": "990"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/urban-rail-osaka-pc-20260831.webp",
+          "alt": "",
+          "width": "2048",
+          "height": "1152"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-pc-20260830.avif"
+        },
+        {
+          "src": "assets/iju/train-window-bluehour-pc-20260830.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/saidaiji-approach-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/kintetsu-nara-arrival-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        }
+      ]
+    },
+    "errors": [],
+    "badResponses": []
+  },
+  {
+    "name": "chromium-sp",
+    "engine": "chromium",
+    "width": 390,
+    "height": 900,
+    "mode": "normal",
+    "beats": [
+      {
+        "index": 1,
+        "progress": 0,
+        "clock": "18:27",
+        "title": "大阪難波から、近鉄奈良へ。",
+        "deck": "平日夕方の快速急行で、乗り換えなし。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 226.90625,
+              "bottom": 104,
+              "width": 208.90625,
+              "height": 9
+            },
+            {
+              "s": ".iju__clock",
+              "x": 257.390625,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 114.609375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 524.890625,
+              "right": 231.75,
+              "bottom": 534.890625,
+              "width": 172.75,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 561.21875,
+              "right": 251.328125,
+              "bottom": 639.015625,
+              "width": 229.328125,
+              "height": 77.796875
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.8125,
+              "right": 275.34375,
+              "bottom": 678.8125,
+              "width": 253.34375,
+              "height": 14
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.25,
+              "right": 191.8125,
+              "bottom": 799.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.796875,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 2,
+        "progress": 0.2,
+        "clock": "18:27",
+        "title": "近鉄奈良まで、41分。",
+        "deck": "平日18:27発、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 226.90625,
+              "bottom": 104,
+              "width": 208.90625,
+              "height": 9
+            },
+            {
+              "s": ".iju__clock",
+              "x": 278.859375,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 93.140625,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 571.6875,
+              "right": 225.78125,
+              "bottom": 581.6875,
+              "width": 166.78125,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 608.0236206054688,
+              "right": 355.09375,
+              "bottom": 639.0236206054688,
+              "width": 333.09375,
+              "height": 31
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.8671875,
+              "right": 273.8125,
+              "bottom": 678.8671875,
+              "width": 251.8125,
+              "height": 14
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.25,
+              "right": 191.8125,
+              "bottom": 799.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.796875,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 3,
+        "progress": 0.36,
+        "clock": "18:32",
+        "title": "鶴橋に到着。",
+        "deck": "大阪難波を出て5分。乗り換えずに奈良へ向かいます。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 226.90625,
+              "bottom": 104,
+              "width": 208.90625,
+              "height": 9
+            },
+            {
+              "s": ".iju__clock",
+              "x": 278.859375,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 93.140625,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 571.6885986328125,
+              "right": 217.234375,
+              "bottom": 581.6885986328125,
+              "width": 158.234375,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 608.0381469726562,
+              "right": 218.5625,
+              "bottom": 639.0381469726562,
+              "width": 196.5625,
+              "height": 31
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.910888671875,
+              "right": 367.90625,
+              "bottom": 678.910888671875,
+              "width": 345.90625,
+              "height": 14
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 769.0625,
+              "right": 171.28125,
+              "bottom": 779.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.25,
+              "right": 191.8125,
+              "bottom": 799.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.796875,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 4,
+        "progress": 0.53,
+        "clock": "18:49",
+        "title": "生駒に到着。",
+        "deck": "大阪難波から22分。次は学園前です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 226.90625,
+              "bottom": 104,
+              "width": 208.90625,
+              "height": 9
+            },
+            {
+              "s": ".iju__clock",
+              "x": 278.765625,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 93.234375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 571.6885986328125,
+              "right": 185.34375,
+              "bottom": 581.6885986328125,
+              "width": 126.34375,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 608.0381469726562,
+              "right": 218.5625,
+              "bottom": 639.0381469726562,
+              "width": 196.5625,
+              "height": 31
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.910888671875,
+              "right": 265.453125,
+              "bottom": 678.910888671875,
+              "width": 243.453125,
+              "height": 14
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 769.0625,
+              "right": 171.28125,
+              "bottom": 779.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.25,
+              "right": 191.8125,
+              "bottom": 799.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.796875,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 5,
+        "progress": 0.61,
+        "clock": "18:55",
+        "title": "学園前に到着。",
+        "deck": "大阪難波から28分。次は大和西大寺です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 226.90625,
+              "bottom": 104,
+              "width": 208.90625,
+              "height": 9
+            },
+            {
+              "s": ".iju__clock",
+              "x": 268.125,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 103.875,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 571.6885986328125,
+              "right": 225.984375,
+              "bottom": 581.6885986328125,
+              "width": 166.984375,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 608.0381469726562,
+              "right": 251.328125,
+              "bottom": 639.0381469726562,
+              "width": 229.328125,
+              "height": 31
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.910888671875,
+              "right": 293.6875,
+              "bottom": 678.910888671875,
+              "width": 271.6875,
+              "height": 14
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 769.0625,
+              "right": 171.28125,
+              "bottom": 779.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.25,
+              "right": 191.8125,
+              "bottom": 799.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.796875,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 6,
+        "progress": 0.7,
+        "clock": "19:00",
+        "title": "近鉄奈良まで、あと8分。",
+        "deck": "大和西大寺に到着。次は新大宮です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 226.90625,
+              "bottom": 104,
+              "width": 208.90625,
+              "height": 9
+            },
+            {
+              "s": ".iju__clock",
+              "x": 246.65625,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 125.34375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 574.7510986328125,
+              "right": 276.234375,
+              "bottom": 584.7510986328125,
+              "width": 217.234375,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 612.1006469726562,
+              "right": 358.109375,
+              "bottom": 639.1006469726562,
+              "width": 336.109375,
+              "height": 27
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.910888671875,
+              "right": 260.5625,
+              "bottom": 678.910888671875,
+              "width": 238.5625,
+              "height": 14
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 769.0625,
+              "right": 171.28125,
+              "bottom": 779.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.25,
+              "right": 191.8125,
+              "bottom": 799.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.796875,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 7,
+        "progress": 0.81,
+        "clock": "19:05",
+        "title": "近鉄奈良まで、あと3分。",
+        "deck": "新大宮に到着。次は終点の近鉄奈良です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 226.90625,
+              "bottom": 104,
+              "width": 208.90625,
+              "height": 9
+            },
+            {
+              "s": ".iju__clock",
+              "x": 268.125,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 103.875,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 574.7510986328125,
+              "right": 244.03125,
+              "bottom": 584.7510986328125,
+              "width": 185.03125,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 612.1006469726562,
+              "right": 358.109375,
+              "bottom": 639.1006469726562,
+              "width": 336.109375,
+              "height": 27
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.910888671875,
+              "right": 288.796875,
+              "bottom": 678.910888671875,
+              "width": 266.796875,
+              "height": 14
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 769.0625,
+              "right": 171.28125,
+              "bottom": 779.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.25,
+              "right": 191.8125,
+              "bottom": 799.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.796875,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 8,
+        "progress": 0.95,
+        "clock": "19:08",
+        "title": "近鉄奈良に到着。",
+        "deck": "大阪難波から41分、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 226.90625,
+              "bottom": 104,
+              "width": 208.90625,
+              "height": 9
+            },
+            {
+              "s": ".iju__clock",
+              "x": 257.390625,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 114.609375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 571.6885986328125,
+              "right": 221.265625,
+              "bottom": 581.6885986328125,
+              "width": 162.265625,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 608.0381469726562,
+              "right": 284.09375,
+              "bottom": 639.0381469726562,
+              "width": 262.09375,
+              "height": 31
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.910888671875,
+              "right": 307.421875,
+              "bottom": 678.910888671875,
+              "width": 285.421875,
+              "height": 14
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 769.0625,
+              "right": 171.28125,
+              "bottom": 779.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.25,
+              "right": 191.8125,
+              "bottom": 799.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__arrival-summary",
+              "x": 18,
+              "y": 807.2490844726562,
+              "right": 372,
+              "bottom": 872.0303344726562,
+              "width": 354,
+              "height": 64.78125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      }
+    ],
+    "checks": [
+      "hero skip reaches train",
+      ".section-nav a[href=\"#train\"] -> #train",
+      ".section-nav a[href=\"#last-mile\"] -> #last-mile",
+      ".section-nav a[href=\"#drive\"] -> #drive",
+      ".section-heading a[href=\"#last-mile\"] -> #last-mile",
+      ".journey-condition a -> #train"
+    ],
+    "status": "pass",
+    "shell": {
+      "title": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "description": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+      "robots": "noindex,nofollow",
+      "forms": 0,
+      "links": [
+        {
+          "text": "本文へ進む",
+          "href": "#main",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電車の所要時間を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "01 電車での通勤",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "02 駅から家まで",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "03 車でのお出かけ",
+          "href": "#drive",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "04 分譲地を探す",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "駅から家までの移動を見る ↓",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻表を見る（近鉄公式） ↗",
+          "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式の路線図・駅情報 ↗",
+          "href": "https://www.kintetsu.co.jp/station/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式でダイヤを調べる ↗",
+          "href": "https://www.kintetsu.co.jp/tetsudo/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "NEXCO西日本で料金・ルートを調べる ↗",
+          "href": "https://search.w-nexco.co.jp/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産 トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        }
+      ],
+      "table": [
+        [
+          "大阪難波",
+          "18:25",
+          "18:27"
+        ],
+        [
+          "近鉄日本橋",
+          "18:28",
+          "18:28"
+        ],
+        [
+          "大阪上本町",
+          "18:30",
+          "18:30"
+        ],
+        [
+          "鶴橋",
+          "18:32",
+          "18:33"
+        ],
+        [
+          "生駒",
+          "18:49",
+          "18:50"
+        ],
+        [
+          "学園前",
+          "18:55",
+          "18:56"
+        ],
+        [
+          "大和西大寺",
+          "19:00",
+          "19:02"
+        ],
+        [
+          "新大宮",
+          "19:05",
+          "19:05"
+        ],
+        [
+          "近鉄奈良",
+          "19:08",
+          "—"
+        ]
+      ],
+      "images": [
+        {
+          "src": "assets/brand/yamato_mark.svg",
+          "width": "32",
+          "height": "32",
+          "alt": ""
+        },
+        {
+          "src": "assets/iju/duo_osaka.webp",
+          "alt": "薄暮の道頓堀・なんばのネオンと運河",
+          "width": "1320",
+          "height": "990"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/urban-rail-osaka-pc-20260831.webp",
+          "alt": "",
+          "width": "2048",
+          "height": "1152"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-pc-20260830.avif"
+        },
+        {
+          "src": "assets/iju/train-window-bluehour-pc-20260830.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/saidaiji-approach-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/kintetsu-nara-arrival-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        }
+      ]
+    },
+    "errors": [],
+    "badResponses": []
+  },
+  {
+    "name": "webkit-pc",
+    "engine": "webkit",
+    "width": 1440,
+    "height": 900,
+    "mode": "normal",
+    "beats": [
+      {
+        "index": 1,
+        "progress": 0,
+        "clock": "18:27",
+        "title": "大阪難波から、近鉄奈良へ。",
+        "deck": "平日夕方の快速急行で、乗り換えなし。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 126.71314239501953,
+              "right": 324.46722412109375,
+              "bottom": 138.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.011222839355469
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1203.875,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.328125,
+              "width": 164.125,
+              "height": 65.328125
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 403.99530029296875,
+              "right": 359.1279296875,
+              "bottom": 415.61407470703125,
+              "width": 211.3310546875,
+              "height": 11.6187744140625
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 455.234619140625,
+              "right": 578.1632690429688,
+              "bottom": 611.640380859375,
+              "width": 477.36639404296875,
+              "height": 156.40576171875
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.4983520507812,
+              "right": 426.5248718261719,
+              "bottom": 667.7047729492188,
+              "width": 325.7279968261719,
+              "height": 18.2064208984375
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.78125,
+              "right": 391.5,
+              "bottom": 771.4375,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.4375,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.5625
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 2,
+        "progress": 0.2,
+        "clock": "18:27",
+        "title": "近鉄奈良まで、41分。",
+        "deck": "平日18:27発、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 126.713134765625,
+              "right": 324.46722412109375,
+              "bottom": 138.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1230.59375,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.328125,
+              "width": 137.40625,
+              "height": 65.328125
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 495.760986328125,
+              "right": 353.52935791015625,
+              "bottom": 507.379638671875,
+              "width": 205.73248291015625,
+              "height": 11.61865234375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 547.0015869140625,
+              "right": 794.44873046875,
+              "bottom": 611.6417236328125,
+              "width": 693.65185546875,
+              "height": 64.64013671875
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.5233154296875,
+              "right": 424.5549621582031,
+              "bottom": 667.7298583984375,
+              "width": 323.7580871582031,
+              "height": 18.20654296875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.78125,
+              "right": 391.5,
+              "bottom": 771.4375,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.4375,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.5625
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 3,
+        "progress": 0.36,
+        "clock": "18:32",
+        "title": "鶴橋に到着。",
+        "deck": "大阪難波を出て5分。乗り換えずに奈良へ向かいます。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 126.713134765625,
+              "right": 324.46722412109375,
+              "bottom": 138.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1230.59375,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.328125,
+              "width": 137.40625,
+              "height": 65.328125
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 495.7611083984375,
+              "right": 341.96630859375,
+              "bottom": 507.3797607421875,
+              "width": 194.16943359375,
+              "height": 11.61865234375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 547.01171875,
+              "right": 509.96807861328125,
+              "bottom": 611.65185546875,
+              "width": 409.17120361328125,
+              "height": 64.64013671875
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.564697265625,
+              "right": 546.741943359375,
+              "bottom": 667.771240234375,
+              "width": 445.945068359375,
+              "height": 18.20654296875
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724.4140625,
+              "right": 249.14825439453125,
+              "bottom": 735.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.78125,
+              "right": 391.5,
+              "bottom": 771.4375,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.4375,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.5625
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 4,
+        "progress": 0.53,
+        "clock": "18:49",
+        "title": "生駒に到着。",
+        "deck": "大阪難波から22分。次は学園前です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 126.713134765625,
+              "right": 324.46722412109375,
+              "bottom": 138.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1230.46875,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.328125,
+              "width": 137.53125,
+              "height": 65.328125
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 495.761474609375,
+              "right": 303.10296630859375,
+              "bottom": 507.380126953125,
+              "width": 155.30609130859375,
+              "height": 11.61865234375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 547.01611328125,
+              "right": 509.96807861328125,
+              "bottom": 611.65625,
+              "width": 409.17120361328125,
+              "height": 64.64013671875
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.578369140625,
+              "right": 413.8067932128906,
+              "bottom": 667.784912109375,
+              "width": 313.0099182128906,
+              "height": 18.20654296875
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724.4140625,
+              "right": 249.14825439453125,
+              "bottom": 735.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.78125,
+              "right": 391.5,
+              "bottom": 771.4375,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.4375,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.5625
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 5,
+        "progress": 0.61,
+        "clock": "18:55",
+        "title": "学園前に到着。",
+        "deck": "大阪難波から28分。次は大和西大寺です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 126.713134765625,
+              "right": 324.46722412109375,
+              "bottom": 138.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1217.234375,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.328125,
+              "width": 150.765625,
+              "height": 65.328125
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 495.760986328125,
+              "right": 352.5618896484375,
+              "bottom": 507.379638671875,
+              "width": 204.7650146484375,
+              "height": 11.61865234375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 547.007568359375,
+              "right": 578.1632690429688,
+              "bottom": 611.647705078125,
+              "width": 477.36639404296875,
+              "height": 64.64013671875
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.55078125,
+              "right": 450.0948181152344,
+              "bottom": 667.75732421875,
+              "width": 349.2979431152344,
+              "height": 18.20654296875
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724.4140625,
+              "right": 249.14825439453125,
+              "bottom": 735.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.78125,
+              "right": 391.5,
+              "bottom": 771.4375,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.4375,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.5625
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 6,
+        "progress": 0.7,
+        "clock": "19:00",
+        "title": "近鉄奈良まで、あと8分。",
+        "deck": "大和西大寺に到着。次は新大宮です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 126.713134765625,
+              "right": 324.46722412109375,
+              "bottom": 138.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1190.5,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.328125,
+              "width": 177.5,
+              "height": 65.328125
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 516.74658203125,
+              "right": 415.47314453125,
+              "bottom": 528.365234375,
+              "width": 267.67626953125,
+              "height": 11.61865234375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 566.23486328125,
+              "right": 676.54248046875,
+              "bottom": 613.43505859375,
+              "width": 575.74560546875,
+              "height": 47.2001953125
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.5966796875,
+              "right": 407.516845703125,
+              "bottom": 667.80322265625,
+              "width": 306.719970703125,
+              "height": 18.20654296875
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724.4140625,
+              "right": 249.14825439453125,
+              "bottom": 735.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.78125,
+              "right": 391.5,
+              "bottom": 771.4375,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.4375,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.5625
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 7,
+        "progress": 0.81,
+        "clock": "19:05",
+        "title": "近鉄奈良まで、あと3分。",
+        "deck": "新大宮に到着。次は終点の近鉄奈良です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 126.713134765625,
+              "right": 324.46722412109375,
+              "bottom": 138.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1217.234375,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.328125,
+              "width": 150.765625,
+              "height": 65.328125
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 516.745361328125,
+              "right": 375.6372985839844,
+              "bottom": 528.364013671875,
+              "width": 227.84042358398438,
+              "height": 11.61865234375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 566.220458984375,
+              "right": 676.54248046875,
+              "bottom": 613.420654296875,
+              "width": 575.74560546875,
+              "height": 47.2001953125
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.552978515625,
+              "right": 443.80487060546875,
+              "bottom": 667.759521484375,
+              "width": 343.00799560546875,
+              "height": 18.20654296875
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724.4140625,
+              "right": 249.14825439453125,
+              "bottom": 735.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.78125,
+              "right": 391.5,
+              "bottom": 771.4375,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 200,
+              "y": 784.4375,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.5625
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 8,
+        "progress": 0.95,
+        "clock": "19:08",
+        "title": "近鉄奈良に到着。",
+        "deck": "大阪難波から41分、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 1440,
+          "width": 1440,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 72,
+              "y": 126.713134765625,
+              "right": 324.46722412109375,
+              "bottom": 138.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 1203.875,
+              "y": 123,
+              "right": 1368,
+              "bottom": 188.328125,
+              "width": 164.125,
+              "height": 65.328125
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 147.796875,
+              "y": 495.7607421875,
+              "right": 347.7529296875,
+              "bottom": 507.3798828125,
+              "width": 199.9560546875,
+              "height": 11.619140625
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 100.796875,
+              "y": 547.0029296875,
+              "right": 646.3584594726562,
+              "bottom": 611.64306640625,
+              "width": 545.5615844726562,
+              "height": 64.64013671875
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 100.796875,
+              "y": 649.5322265625,
+              "right": 467.7549743652344,
+              "bottom": 667.73828125,
+              "width": 366.9580993652344,
+              "height": 18.2060546875
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 72,
+              "y": 724.4140625,
+              "right": 249.14825439453125,
+              "bottom": 735.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 1194.796875,
+              "y": 195,
+              "right": 1368,
+              "bottom": 239,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 213,
+              "y": 750.78125,
+              "right": 391.5,
+              "bottom": 771.4375,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__arrival-summary",
+              "x": 200,
+              "y": 784.4375,
+              "right": 1240,
+              "bottom": 855,
+              "width": 1040,
+              "height": 70.5625
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      }
+    ],
+    "checks": [
+      "hero skip reaches train",
+      ".section-nav a[href=\"#train\"] -> #train",
+      ".section-nav a[href=\"#last-mile\"] -> #last-mile",
+      ".section-nav a[href=\"#drive\"] -> #drive",
+      ".section-heading a[href=\"#last-mile\"] -> #last-mile",
+      ".journey-condition a -> #train"
+    ],
+    "status": "pass",
+    "shell": {
+      "title": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "description": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+      "robots": "noindex,nofollow",
+      "forms": 0,
+      "links": [
+        {
+          "text": "本文へ進む",
+          "href": "#main",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電車の所要時間を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "01 電車での通勤",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "02 駅から家まで",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "03 車でのお出かけ",
+          "href": "#drive",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "04 分譲地を探す",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "駅から家までの移動を見る ↓",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻表を見る（近鉄公式） ↗",
+          "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式の路線図・駅情報 ↗",
+          "href": "https://www.kintetsu.co.jp/station/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式でダイヤを調べる ↗",
+          "href": "https://www.kintetsu.co.jp/tetsudo/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "NEXCO西日本で料金・ルートを調べる ↗",
+          "href": "https://search.w-nexco.co.jp/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産 トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        }
+      ],
+      "table": [
+        [
+          "大阪難波",
+          "18:25",
+          "18:27"
+        ],
+        [
+          "近鉄日本橋",
+          "18:28",
+          "18:28"
+        ],
+        [
+          "大阪上本町",
+          "18:30",
+          "18:30"
+        ],
+        [
+          "鶴橋",
+          "18:32",
+          "18:33"
+        ],
+        [
+          "生駒",
+          "18:49",
+          "18:50"
+        ],
+        [
+          "学園前",
+          "18:55",
+          "18:56"
+        ],
+        [
+          "大和西大寺",
+          "19:00",
+          "19:02"
+        ],
+        [
+          "新大宮",
+          "19:05",
+          "19:05"
+        ],
+        [
+          "近鉄奈良",
+          "19:08",
+          "—"
+        ]
+      ],
+      "images": [
+        {
+          "src": "assets/brand/yamato_mark.svg",
+          "width": "32",
+          "height": "32",
+          "alt": ""
+        },
+        {
+          "src": "assets/iju/duo_osaka.webp",
+          "alt": "薄暮の道頓堀・なんばのネオンと運河",
+          "width": "1320",
+          "height": "990"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/urban-rail-osaka-pc-20260831.webp",
+          "alt": "",
+          "width": "2048",
+          "height": "1152"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-pc-20260830.avif"
+        },
+        {
+          "src": "assets/iju/train-window-bluehour-pc-20260830.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/saidaiji-approach-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/kintetsu-nara-arrival-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        }
+      ]
+    },
+    "errors": [],
+    "badResponses": []
+  },
+  {
+    "name": "webkit-sp",
+    "engine": "webkit",
+    "width": 390,
+    "height": 900,
+    "mode": "normal",
+    "beats": [
+      {
+        "index": 1,
+        "progress": 0,
+        "clock": "18:27",
+        "title": "大阪難波から、近鉄奈良へ。",
+        "deck": "平日夕方の快速急行で、乗り換えなし。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 94.68250274658203,
+              "right": 226.89356994628906,
+              "bottom": 105.70812225341797,
+              "width": 208.89356994628906,
+              "height": 11.025619506835938
+            },
+            {
+              "s": ".iju__clock",
+              "x": 257.390625,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 114.609375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 525.5072021484375,
+              "right": 231.73550415039062,
+              "bottom": 535.6959228515625,
+              "width": 172.73550415039062,
+              "height": 10.188720703125
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 562.0405883789062,
+              "right": 251.3200225830078,
+              "bottom": 640.0219116210938,
+              "width": 229.3200225830078,
+              "height": 77.9813232421875
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.4926147460938,
+              "right": 275.343994140625,
+              "bottom": 679.3198852539062,
+              "width": 253.343994140625,
+              "height": 14.8272705078125
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.3125,
+              "right": 192.109375,
+              "bottom": 799.828125,
+              "width": 161.109375,
+              "height": 18.515625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.828125,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.171875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 2,
+        "progress": 0.2,
+        "clock": "18:27",
+        "title": "近鉄奈良まで、41分。",
+        "deck": "平日18:27発、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 94.6824951171875,
+              "right": 226.89356994628906,
+              "bottom": 105.7081298828125,
+              "width": 208.89356994628906,
+              "height": 11.025634765625
+            },
+            {
+              "s": ".iju__clock",
+              "x": 278.859375,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 93.140625,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 572.2884521484375,
+              "right": 226.27880859375,
+              "bottom": 582.4771728515625,
+              "width": 167.27880859375,
+              "height": 10.188720703125
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 608.829345703125,
+              "right": 355.09124755859375,
+              "bottom": 640.029296875,
+              "width": 333.09124755859375,
+              "height": 31.199951171875
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.545166015625,
+              "right": 273.8118591308594,
+              "bottom": 679.372314453125,
+              "width": 251.81185913085938,
+              "height": 14.8271484375
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.3125,
+              "right": 192.109375,
+              "bottom": 799.828125,
+              "width": 161.109375,
+              "height": 18.515625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.828125,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.171875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 3,
+        "progress": 0.36,
+        "clock": "18:32",
+        "title": "鶴橋に到着。",
+        "deck": "大阪難波を出て5分。乗り換えずに奈良へ向かいます。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 94.6824951171875,
+              "right": 226.89356994628906,
+              "bottom": 105.7081298828125,
+              "width": 208.89356994628906,
+              "height": 11.025634765625
+            },
+            {
+              "s": ".iju__clock",
+              "x": 278.859375,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 93.140625,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 548.1014404296875,
+              "right": 217.2332763671875,
+              "bottom": 558.290283203125,
+              "width": 158.2332763671875,
+              "height": 10.1888427734375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 584.651123046875,
+              "right": 218.5600128173828,
+              "bottom": 615.851318359375,
+              "width": 196.5600128173828,
+              "height": 31.2001953125
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 640.38818359375,
+              "right": 341.966064453125,
+              "bottom": 679.40283203125,
+              "width": 319.966064453125,
+              "height": 39.0146484375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 770.00390625,
+              "right": 172.07843017578125,
+              "bottom": 780.05859375,
+              "width": 154.07843017578125,
+              "height": 10.0546875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.3125,
+              "right": 192.109375,
+              "bottom": 799.828125,
+              "width": 161.109375,
+              "height": 18.515625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.828125,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.171875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 4,
+        "progress": 0.53,
+        "clock": "18:49",
+        "title": "生駒に到着。",
+        "deck": "大阪難波から22分。次は学園前です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 94.6826171875,
+              "right": 226.89356994628906,
+              "bottom": 105.7080078125,
+              "width": 208.89356994628906,
+              "height": 11.025390625
+            },
+            {
+              "s": ".iju__clock",
+              "x": 278.765625,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 93.234375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 572.28857421875,
+              "right": 185.34194946289062,
+              "bottom": 582.4775390625,
+              "width": 126.34194946289062,
+              "height": 10.18896484375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 608.835693359375,
+              "right": 218.5600128173828,
+              "bottom": 640.035888671875,
+              "width": 196.5600128173828,
+              "height": 31.2001953125
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.567138671875,
+              "right": 265.4521484375,
+              "bottom": 679.394287109375,
+              "width": 243.4521484375,
+              "height": 14.8271484375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 770.00390625,
+              "right": 172.07843017578125,
+              "bottom": 780.05859375,
+              "width": 154.07843017578125,
+              "height": 10.0546875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.3125,
+              "right": 192.109375,
+              "bottom": 799.828125,
+              "width": 161.109375,
+              "height": 18.515625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.828125,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.171875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 5,
+        "progress": 0.61,
+        "clock": "18:55",
+        "title": "学園前に到着。",
+        "deck": "大阪難波から28分。次は大和西大寺です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 94.6826171875,
+              "right": 226.89356994628906,
+              "bottom": 105.7080078125,
+              "width": 208.89356994628906,
+              "height": 11.025390625
+            },
+            {
+              "s": ".iju__clock",
+              "x": 268.125,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 103.875,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 572.289306640625,
+              "right": 225.97760009765625,
+              "bottom": 582.478271484375,
+              "width": 166.97760009765625,
+              "height": 10.18896484375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 608.843017578125,
+              "right": 251.3200225830078,
+              "bottom": 640.043212890625,
+              "width": 229.3200225830078,
+              "height": 31.2001953125
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.587890625,
+              "right": 293.6761474609375,
+              "bottom": 679.4150390625,
+              "width": 271.6761474609375,
+              "height": 14.8271484375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 770.00390625,
+              "right": 172.07843017578125,
+              "bottom": 780.05859375,
+              "width": 154.07843017578125,
+              "height": 10.0546875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.3125,
+              "right": 192.109375,
+              "bottom": 799.828125,
+              "width": 161.109375,
+              "height": 18.515625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.828125,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.171875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 6,
+        "progress": 0.7,
+        "clock": "19:00",
+        "title": "近鉄奈良まで、あと8分。",
+        "deck": "大和西大寺に到着。次は新大宮です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 94.6826171875,
+              "right": 226.89356994628906,
+              "bottom": 105.7080078125,
+              "width": 208.89356994628906,
+              "height": 11.025390625
+            },
+            {
+              "s": ".iju__clock",
+              "x": 246.65625,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 125.34375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 575.335205078125,
+              "right": 276.2211608886719,
+              "bottom": 585.524169921875,
+              "width": 217.22116088867188,
+              "height": 10.18896484375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 612.109619140625,
+              "right": 358.1011962890625,
+              "bottom": 639.799560546875,
+              "width": 336.1011962890625,
+              "height": 27.68994140625
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.552001953125,
+              "right": 260.55999755859375,
+              "bottom": 679.379150390625,
+              "width": 238.55999755859375,
+              "height": 14.8271484375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 770.00390625,
+              "right": 172.07843017578125,
+              "bottom": 780.05859375,
+              "width": 154.07843017578125,
+              "height": 10.0546875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.3125,
+              "right": 192.109375,
+              "bottom": 799.828125,
+              "width": 161.109375,
+              "height": 18.515625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.828125,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.171875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 7,
+        "progress": 0.81,
+        "clock": "19:05",
+        "title": "近鉄奈良まで、あと3分。",
+        "deck": "新大宮に到着。次は終点の近鉄奈良です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 94.6826171875,
+              "right": 226.89356994628906,
+              "bottom": 105.7080078125,
+              "width": 208.89356994628906,
+              "height": 11.025390625
+            },
+            {
+              "s": ".iju__clock",
+              "x": 268.125,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 103.875,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 575.335205078125,
+              "right": 244.02415466308594,
+              "bottom": 585.524169921875,
+              "width": 185.02415466308594,
+              "height": 10.18896484375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 612.10888671875,
+              "right": 358.1011962890625,
+              "bottom": 639.798828125,
+              "width": 336.1011962890625,
+              "height": 27.68994140625
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.549560546875,
+              "right": 288.78399658203125,
+              "bottom": 679.376708984375,
+              "width": 266.78399658203125,
+              "height": 14.8271484375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 770.00390625,
+              "right": 172.07843017578125,
+              "bottom": 780.05859375,
+              "width": 154.07843017578125,
+              "height": 10.0546875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.3125,
+              "right": 192.109375,
+              "bottom": 799.828125,
+              "width": 161.109375,
+              "height": 18.515625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 810.828125,
+              "right": 372,
+              "bottom": 872,
+              "width": 354,
+              "height": 61.171875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 8,
+        "progress": 0.95,
+        "clock": "19:08",
+        "title": "近鉄奈良に到着。",
+        "deck": "大阪難波から41分、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 390,
+          "width": 390,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 94.6826171875,
+              "right": 226.89356994628906,
+              "bottom": 105.7080078125,
+              "width": 208.89356994628906,
+              "height": 11.025390625
+            },
+            {
+              "s": ".iju__clock",
+              "x": 257.390625,
+              "y": 92,
+              "right": 372,
+              "bottom": 131.5,
+              "width": 114.609375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 572.28857421875,
+              "right": 221.760498046875,
+              "bottom": 582.47705078125,
+              "width": 162.760498046875,
+              "height": 10.1884765625
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 608.8310546875,
+              "right": 284.08001708984375,
+              "bottom": 640.03125,
+              "width": 262.08001708984375,
+              "height": 31.2001953125
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 664.5517578125,
+              "right": 307.411865234375,
+              "bottom": 679.37890625,
+              "width": 285.411865234375,
+              "height": 14.8271484375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 770.00390625,
+              "right": 172.07843017578125,
+              "bottom": 780.05859375,
+              "width": 154.07843017578125,
+              "height": 10.0546875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 222.0625,
+              "y": 150,
+              "right": 372,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 781.3125,
+              "right": 192.109375,
+              "bottom": 799.828125,
+              "width": 161.109375,
+              "height": 18.515625
+            },
+            {
+              "s": ".iju__arrival-summary",
+              "x": 18,
+              "y": 807.22314453125,
+              "right": 372,
+              "bottom": 872.00439453125,
+              "width": 354,
+              "height": 64.78125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      }
+    ],
+    "checks": [
+      "hero skip reaches train",
+      ".section-nav a[href=\"#train\"] -> #train",
+      ".section-nav a[href=\"#last-mile\"] -> #last-mile",
+      ".section-nav a[href=\"#drive\"] -> #drive",
+      ".section-heading a[href=\"#last-mile\"] -> #last-mile",
+      ".journey-condition a -> #train"
+    ],
+    "status": "pass",
+    "shell": {
+      "title": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "description": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+      "robots": "noindex,nofollow",
+      "forms": 0,
+      "links": [
+        {
+          "text": "本文へ進む",
+          "href": "#main",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電車の所要時間を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "01 電車での通勤",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "02 駅から家まで",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "03 車でのお出かけ",
+          "href": "#drive",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "04 分譲地を探す",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "駅から家までの移動を見る ↓",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻表を見る（近鉄公式） ↗",
+          "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式の路線図・駅情報 ↗",
+          "href": "https://www.kintetsu.co.jp/station/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式でダイヤを調べる ↗",
+          "href": "https://www.kintetsu.co.jp/tetsudo/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "NEXCO西日本で料金・ルートを調べる ↗",
+          "href": "https://search.w-nexco.co.jp/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産 トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        }
+      ],
+      "table": [
+        [
+          "大阪難波",
+          "18:25",
+          "18:27"
+        ],
+        [
+          "近鉄日本橋",
+          "18:28",
+          "18:28"
+        ],
+        [
+          "大阪上本町",
+          "18:30",
+          "18:30"
+        ],
+        [
+          "鶴橋",
+          "18:32",
+          "18:33"
+        ],
+        [
+          "生駒",
+          "18:49",
+          "18:50"
+        ],
+        [
+          "学園前",
+          "18:55",
+          "18:56"
+        ],
+        [
+          "大和西大寺",
+          "19:00",
+          "19:02"
+        ],
+        [
+          "新大宮",
+          "19:05",
+          "19:05"
+        ],
+        [
+          "近鉄奈良",
+          "19:08",
+          "—"
+        ]
+      ],
+      "images": [
+        {
+          "src": "assets/brand/yamato_mark.svg",
+          "width": "32",
+          "height": "32",
+          "alt": ""
+        },
+        {
+          "src": "assets/iju/duo_osaka.webp",
+          "alt": "薄暮の道頓堀・なんばのネオンと運河",
+          "width": "1320",
+          "height": "990"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/urban-rail-osaka-pc-20260831.webp",
+          "alt": "",
+          "width": "2048",
+          "height": "1152"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-pc-20260830.avif"
+        },
+        {
+          "src": "assets/iju/train-window-bluehour-pc-20260830.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/saidaiji-approach-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/kintetsu-nara-arrival-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        }
+      ]
+    },
+    "errors": [],
+    "badResponses": []
+  },
+  {
+    "name": "chromium-pc-reduced",
+    "engine": "chromium",
+    "width": 1440,
+    "height": 900,
+    "mode": "reduce",
+    "beats": [],
+    "checks": [
+      "hero skip reaches train",
+      ".section-nav a[href=\"#train\"] -> #train",
+      ".section-nav a[href=\"#last-mile\"] -> #last-mile",
+      ".section-nav a[href=\"#drive\"] -> #drive",
+      ".section-heading a[href=\"#last-mile\"] -> #last-mile",
+      ".journey-condition a -> #train"
+    ],
+    "status": "pass",
+    "shell": {
+      "title": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "description": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+      "robots": "noindex,nofollow",
+      "forms": 0,
+      "links": [
+        {
+          "text": "本文へ進む",
+          "href": "#main",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電車の所要時間を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "01 電車での通勤",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "02 駅から家まで",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "03 車でのお出かけ",
+          "href": "#drive",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "04 分譲地を探す",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "駅から家までの移動を見る ↓",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻表を見る（近鉄公式） ↗",
+          "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式の路線図・駅情報 ↗",
+          "href": "https://www.kintetsu.co.jp/station/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式でダイヤを調べる ↗",
+          "href": "https://www.kintetsu.co.jp/tetsudo/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "NEXCO西日本で料金・ルートを調べる ↗",
+          "href": "https://search.w-nexco.co.jp/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産 トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        }
+      ],
+      "table": [
+        [
+          "大阪難波",
+          "18:25",
+          "18:27"
+        ],
+        [
+          "近鉄日本橋",
+          "18:28",
+          "18:28"
+        ],
+        [
+          "大阪上本町",
+          "18:30",
+          "18:30"
+        ],
+        [
+          "鶴橋",
+          "18:32",
+          "18:33"
+        ],
+        [
+          "生駒",
+          "18:49",
+          "18:50"
+        ],
+        [
+          "学園前",
+          "18:55",
+          "18:56"
+        ],
+        [
+          "大和西大寺",
+          "19:00",
+          "19:02"
+        ],
+        [
+          "新大宮",
+          "19:05",
+          "19:05"
+        ],
+        [
+          "近鉄奈良",
+          "19:08",
+          "—"
+        ]
+      ],
+      "images": [
+        {
+          "src": "assets/brand/yamato_mark.svg",
+          "width": "32",
+          "height": "32",
+          "alt": ""
+        },
+        {
+          "src": "assets/iju/duo_osaka.webp",
+          "alt": "薄暮の道頓堀・なんばのネオンと運河",
+          "width": "1320",
+          "height": "990"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/urban-rail-osaka-pc-20260831.webp",
+          "alt": "",
+          "width": "2048",
+          "height": "1152"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-pc-20260830.avif"
+        },
+        {
+          "src": "assets/iju/train-window-bluehour-pc-20260830.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/saidaiji-approach-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/kintetsu-nara-arrival-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        }
+      ]
+    },
+    "errors": [],
+    "badResponses": []
+  },
+  {
+    "name": "webkit-sp-reduced",
+    "engine": "webkit",
+    "width": 390,
+    "height": 900,
+    "mode": "reduce",
+    "beats": [],
+    "checks": [
+      "hero skip reaches train",
+      ".section-nav a[href=\"#train\"] -> #train",
+      ".section-nav a[href=\"#last-mile\"] -> #last-mile",
+      ".section-nav a[href=\"#drive\"] -> #drive",
+      ".section-heading a[href=\"#last-mile\"] -> #last-mile",
+      ".journey-condition a -> #train"
+    ],
+    "status": "pass",
+    "shell": {
+      "title": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "description": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+      "robots": "noindex,nofollow",
+      "forms": 0,
+      "links": [
+        {
+          "text": "本文へ進む",
+          "href": "#main",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電車の所要時間を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "01 電車での通勤",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "02 駅から家まで",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "03 車でのお出かけ",
+          "href": "#drive",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "04 分譲地を探す",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "駅から家までの移動を見る ↓",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻表を見る（近鉄公式） ↗",
+          "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式の路線図・駅情報 ↗",
+          "href": "https://www.kintetsu.co.jp/station/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式でダイヤを調べる ↗",
+          "href": "https://www.kintetsu.co.jp/tetsudo/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "NEXCO西日本で料金・ルートを調べる ↗",
+          "href": "https://search.w-nexco.co.jp/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産 トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        }
+      ],
+      "table": [
+        [
+          "大阪難波",
+          "18:25",
+          "18:27"
+        ],
+        [
+          "近鉄日本橋",
+          "18:28",
+          "18:28"
+        ],
+        [
+          "大阪上本町",
+          "18:30",
+          "18:30"
+        ],
+        [
+          "鶴橋",
+          "18:32",
+          "18:33"
+        ],
+        [
+          "生駒",
+          "18:49",
+          "18:50"
+        ],
+        [
+          "学園前",
+          "18:55",
+          "18:56"
+        ],
+        [
+          "大和西大寺",
+          "19:00",
+          "19:02"
+        ],
+        [
+          "新大宮",
+          "19:05",
+          "19:05"
+        ],
+        [
+          "近鉄奈良",
+          "19:08",
+          "—"
+        ]
+      ],
+      "images": [
+        {
+          "src": "assets/brand/yamato_mark.svg",
+          "width": "32",
+          "height": "32",
+          "alt": ""
+        },
+        {
+          "src": "assets/iju/duo_osaka.webp",
+          "alt": "薄暮の道頓堀・なんばのネオンと運河",
+          "width": "1320",
+          "height": "990"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/urban-rail-osaka-pc-20260831.webp",
+          "alt": "",
+          "width": "2048",
+          "height": "1152"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-pc-20260830.avif"
+        },
+        {
+          "src": "assets/iju/train-window-bluehour-pc-20260830.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/saidaiji-approach-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/kintetsu-nara-arrival-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        }
+      ]
+    },
+    "errors": [],
+    "badResponses": []
+  },
+  {
+    "name": "chromium-sp-nojs",
+    "engine": "chromium",
+    "width": 390,
+    "height": 900,
+    "mode": "nojs",
+    "beats": [],
+    "checks": [
+      "hero skip reaches train",
+      ".section-nav a[href=\"#train\"] -> #train",
+      ".section-nav a[href=\"#last-mile\"] -> #last-mile",
+      ".section-nav a[href=\"#drive\"] -> #drive",
+      ".section-heading a[href=\"#last-mile\"] -> #last-mile",
+      ".journey-condition a -> #train"
+    ],
+    "status": "pass",
+    "shell": {
+      "title": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "description": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+      "robots": "noindex,nofollow",
+      "forms": 0,
+      "links": [
+        {
+          "text": "本文へ進む",
+          "href": "#main",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電車の所要時間を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "01 電車での通勤",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "02 駅から家まで",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "03 車でのお出かけ",
+          "href": "#drive",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "04 分譲地を探す",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "駅から家までの移動を見る ↓",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻表を見る（近鉄公式） ↗",
+          "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式の路線図・駅情報 ↗",
+          "href": "https://www.kintetsu.co.jp/station/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式でダイヤを調べる ↗",
+          "href": "https://www.kintetsu.co.jp/tetsudo/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "NEXCO西日本で料金・ルートを調べる ↗",
+          "href": "https://search.w-nexco.co.jp/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産 トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        }
+      ],
+      "table": [
+        [
+          "大阪難波",
+          "18:25",
+          "18:27"
+        ],
+        [
+          "近鉄日本橋",
+          "18:28",
+          "18:28"
+        ],
+        [
+          "大阪上本町",
+          "18:30",
+          "18:30"
+        ],
+        [
+          "鶴橋",
+          "18:32",
+          "18:33"
+        ],
+        [
+          "生駒",
+          "18:49",
+          "18:50"
+        ],
+        [
+          "学園前",
+          "18:55",
+          "18:56"
+        ],
+        [
+          "大和西大寺",
+          "19:00",
+          "19:02"
+        ],
+        [
+          "新大宮",
+          "19:05",
+          "19:05"
+        ],
+        [
+          "近鉄奈良",
+          "19:08",
+          "—"
+        ]
+      ],
+      "images": [
+        {
+          "src": "assets/brand/yamato_mark.svg",
+          "width": "32",
+          "height": "32",
+          "alt": ""
+        },
+        {
+          "src": "assets/iju/duo_osaka.webp",
+          "alt": "薄暮の道頓堀・なんばのネオンと運河",
+          "width": "1320",
+          "height": "990"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/urban-rail-osaka-pc-20260831.webp",
+          "alt": "",
+          "width": "2048",
+          "height": "1152"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-pc-20260830.avif"
+        },
+        {
+          "src": "assets/iju/train-window-bluehour-pc-20260830.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/saidaiji-approach-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/kintetsu-nara-arrival-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        }
+      ]
+    },
+    "errors": [],
+    "badResponses": []
+  },
+  {
+    "name": "chromium-sp-blocked-gsap",
+    "engine": "chromium",
+    "width": 390,
+    "height": 900,
+    "mode": "blocked",
+    "beats": [],
+    "checks": [
+      "hero skip reaches train",
+      ".section-nav a[href=\"#train\"] -> #train",
+      ".section-nav a[href=\"#last-mile\"] -> #last-mile",
+      ".section-nav a[href=\"#drive\"] -> #drive",
+      ".section-heading a[href=\"#last-mile\"] -> #last-mile",
+      ".journey-condition a -> #train"
+    ],
+    "status": "pass",
+    "shell": {
+      "title": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "description": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+      "robots": "noindex,nofollow",
+      "forms": 0,
+      "links": [
+        {
+          "text": "本文へ進む",
+          "href": "#main",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電車の所要時間を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "01 電車での通勤",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "02 駅から家まで",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "03 車でのお出かけ",
+          "href": "#drive",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "04 分譲地を探す",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "駅から家までの移動を見る ↓",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻表を見る（近鉄公式） ↗",
+          "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式の路線図・駅情報 ↗",
+          "href": "https://www.kintetsu.co.jp/station/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式でダイヤを調べる ↗",
+          "href": "https://www.kintetsu.co.jp/tetsudo/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "NEXCO西日本で料金・ルートを調べる ↗",
+          "href": "https://search.w-nexco.co.jp/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産 トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        }
+      ],
+      "table": [
+        [
+          "大阪難波",
+          "18:25",
+          "18:27"
+        ],
+        [
+          "近鉄日本橋",
+          "18:28",
+          "18:28"
+        ],
+        [
+          "大阪上本町",
+          "18:30",
+          "18:30"
+        ],
+        [
+          "鶴橋",
+          "18:32",
+          "18:33"
+        ],
+        [
+          "生駒",
+          "18:49",
+          "18:50"
+        ],
+        [
+          "学園前",
+          "18:55",
+          "18:56"
+        ],
+        [
+          "大和西大寺",
+          "19:00",
+          "19:02"
+        ],
+        [
+          "新大宮",
+          "19:05",
+          "19:05"
+        ],
+        [
+          "近鉄奈良",
+          "19:08",
+          "—"
+        ]
+      ],
+      "images": [
+        {
+          "src": "assets/brand/yamato_mark.svg",
+          "width": "32",
+          "height": "32",
+          "alt": ""
+        },
+        {
+          "src": "assets/iju/duo_osaka.webp",
+          "alt": "薄暮の道頓堀・なんばのネオンと運河",
+          "width": "1320",
+          "height": "990"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/urban-rail-osaka-pc-20260831.webp",
+          "alt": "",
+          "width": "2048",
+          "height": "1152"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-pc-20260830.avif"
+        },
+        {
+          "src": "assets/iju/train-window-bluehour-pc-20260830.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/saidaiji-approach-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/kintetsu-nara-arrival-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        }
+      ]
+    },
+    "errors": [],
+    "badResponses": []
+  },
+  {
+    "name": "chromium-small",
+    "engine": "chromium",
+    "width": 320,
+    "height": 640,
+    "mode": "normal",
+    "beats": [
+      {
+        "index": 1,
+        "progress": 0,
+        "clock": "18:27",
+        "title": "大阪難波から、近鉄奈良へ。",
+        "deck": "平日夕方の快速急行で、乗り換えなし。",
+        "geom": {
+          "scrollWidth": 320,
+          "width": 320,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 173.09375,
+              "bottom": 120.421875,
+              "width": 155.09375,
+              "height": 25.421875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 187.390625,
+              "y": 92,
+              "right": 302,
+              "bottom": 131.5,
+              "width": 114.609375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 306.484375,
+              "right": 231.75,
+              "bottom": 316.484375,
+              "width": 172.75,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 342.8125,
+              "right": 227.8125,
+              "bottom": 412.8125,
+              "width": 205.8125,
+              "height": 70
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 436.8125,
+              "right": 275.34375,
+              "bottom": 450.8125,
+              "width": 253.34375,
+              "height": 14
+            },
+            {
+              "s": ".iju__skip",
+              "x": 152.0625,
+              "y": 150,
+              "right": 302,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 521.25,
+              "right": 191.8125,
+              "bottom": 539.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 550.796875,
+              "right": 302,
+              "bottom": 612,
+              "width": 284,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 2,
+        "progress": 0.2,
+        "clock": "18:27",
+        "title": "近鉄奈良まで、41分。",
+        "deck": "平日18:27発、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 320,
+          "width": 320,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 183.859375,
+              "bottom": 120.421875,
+              "width": 165.859375,
+              "height": 25.421875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 208.859375,
+              "y": 92,
+              "right": 302,
+              "bottom": 131.5,
+              "width": 93.140625,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 306.4854736328125,
+              "right": 225.78125,
+              "bottom": 316.4854736328125,
+              "width": 166.78125,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 342.8349914550781,
+              "right": 173.9375,
+              "bottom": 412.8349914550781,
+              "width": 151.9375,
+              "height": 70
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 436.910888671875,
+              "right": 273.8125,
+              "bottom": 450.910888671875,
+              "width": 251.8125,
+              "height": 14
+            },
+            {
+              "s": ".iju__skip",
+              "x": 152.0625,
+              "y": 150,
+              "right": 302,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 521.25,
+              "right": 191.8125,
+              "bottom": 539.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 550.796875,
+              "right": 302,
+              "bottom": 612,
+              "width": 284,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 3,
+        "progress": 0.36,
+        "clock": "18:32",
+        "title": "鶴橋に到着。",
+        "deck": "大阪難波を出て5分。乗り換えずに奈良へ向かいます。",
+        "geom": {
+          "scrollWidth": 320,
+          "width": 320,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 183.859375,
+              "bottom": 120.421875,
+              "width": 165.859375,
+              "height": 25.421875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 208.859375,
+              "y": 92,
+              "right": 302,
+              "bottom": 131.5,
+              "width": 93.140625,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 324.2979736328125,
+              "right": 217.234375,
+              "bottom": 334.2979736328125,
+              "width": 158.234375,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 360.6474914550781,
+              "right": 198.40625,
+              "bottom": 388.6474914550781,
+              "width": 176.40625,
+              "height": 28
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 412.723388671875,
+              "right": 284.578125,
+              "bottom": 450.910888671875,
+              "width": 262.578125,
+              "height": 38.1875
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 509.0625,
+              "right": 171.28125,
+              "bottom": 519.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 152.0625,
+              "y": 150,
+              "right": 302,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 521.25,
+              "right": 191.8125,
+              "bottom": 539.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 550.796875,
+              "right": 302,
+              "bottom": 612,
+              "width": 284,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 4,
+        "progress": 0.53,
+        "clock": "18:49",
+        "title": "生駒に到着。",
+        "deck": "大阪難波から22分。次は学園前です。",
+        "geom": {
+          "scrollWidth": 320,
+          "width": 320,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 183.859375,
+              "bottom": 120.421875,
+              "width": 165.859375,
+              "height": 25.421875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 208.765625,
+              "y": 92,
+              "right": 302,
+              "bottom": 131.5,
+              "width": 93.234375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 348.4852600097656,
+              "right": 185.34375,
+              "bottom": 358.48529052734375,
+              "width": 126.34375,
+              "height": 10.000030517578125
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 384.83380126953125,
+              "right": 198.40625,
+              "bottom": 412.83380126953125,
+              "width": 176.40625,
+              "height": 28
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 436.90771484375,
+              "right": 265.453125,
+              "bottom": 450.90771484375,
+              "width": 243.453125,
+              "height": 14
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 509.0625,
+              "right": 171.28125,
+              "bottom": 519.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 152.0625,
+              "y": 150,
+              "right": 302,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 521.25,
+              "right": 191.8125,
+              "bottom": 539.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 550.796875,
+              "right": 302,
+              "bottom": 612,
+              "width": 284,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 5,
+        "progress": 0.61,
+        "clock": "18:55",
+        "title": "学園前に到着。",
+        "deck": "大阪難波から28分。次は大和西大寺です。",
+        "geom": {
+          "scrollWidth": 320,
+          "width": 320,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 183.859375,
+              "bottom": 120.421875,
+              "width": 165.859375,
+              "height": 25.421875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 198.125,
+              "y": 92,
+              "right": 302,
+              "bottom": 131.5,
+              "width": 103.875,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 348.4854736328125,
+              "right": 225.984375,
+              "bottom": 358.4854736328125,
+              "width": 166.984375,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 384.8349914550781,
+              "right": 227.8125,
+              "bottom": 412.8349914550781,
+              "width": 205.8125,
+              "height": 28
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 436.910888671875,
+              "right": 293.6875,
+              "bottom": 450.910888671875,
+              "width": 271.6875,
+              "height": 14
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 509.0625,
+              "right": 171.28125,
+              "bottom": 519.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 152.0625,
+              "y": 150,
+              "right": 302,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 521.25,
+              "right": 191.8125,
+              "bottom": 539.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 550.796875,
+              "right": 302,
+              "bottom": 612,
+              "width": 284,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 6,
+        "progress": 0.7,
+        "clock": "19:00",
+        "title": "近鉄奈良まで、あと8分。",
+        "deck": "大和西大寺に到着。次は新大宮です。",
+        "geom": {
+          "scrollWidth": 320,
+          "width": 320,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 162.328125,
+              "bottom": 120.421875,
+              "width": 144.328125,
+              "height": 25.421875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 176.65625,
+              "y": 92,
+              "right": 302,
+              "bottom": 131.5,
+              "width": 125.34375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 314.6729736328125,
+              "right": 276.234375,
+              "bottom": 324.6729736328125,
+              "width": 217.234375,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 350.0224914550781,
+              "right": 187.3125,
+              "bottom": 411.9287414550781,
+              "width": 165.3125,
+              "height": 61.90625
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 436.910888671875,
+              "right": 260.5625,
+              "bottom": 450.910888671875,
+              "width": 238.5625,
+              "height": 14
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 509.0625,
+              "right": 171.28125,
+              "bottom": 519.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 152.0625,
+              "y": 150,
+              "right": 302,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 521.25,
+              "right": 191.8125,
+              "bottom": 539.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 550.796875,
+              "right": 302,
+              "bottom": 612,
+              "width": 284,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 7,
+        "progress": 0.81,
+        "clock": "19:05",
+        "title": "近鉄奈良まで、あと3分。",
+        "deck": "新大宮に到着。次は終点の近鉄奈良です。",
+        "geom": {
+          "scrollWidth": 320,
+          "width": 320,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 183.859375,
+              "bottom": 120.421875,
+              "width": 165.859375,
+              "height": 25.421875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 198.125,
+              "y": 92,
+              "right": 302,
+              "bottom": 131.5,
+              "width": 103.875,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 314.6727600097656,
+              "right": 244.03125,
+              "bottom": 324.67279052734375,
+              "width": 185.03125,
+              "height": 10.000030517578125
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 350.02130126953125,
+              "right": 187.3125,
+              "bottom": 411.92755126953125,
+              "width": 165.3125,
+              "height": 61.90625
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 436.90771484375,
+              "right": 288.796875,
+              "bottom": 450.90771484375,
+              "width": 266.796875,
+              "height": 14
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 509.0625,
+              "right": 171.28125,
+              "bottom": 519.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 152.0625,
+              "y": 150,
+              "right": 302,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 521.25,
+              "right": 191.8125,
+              "bottom": 539.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 18,
+              "y": 550.796875,
+              "right": 302,
+              "bottom": 612,
+              "width": 284,
+              "height": 61.203125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 8,
+        "progress": 0.95,
+        "clock": "19:08",
+        "title": "近鉄奈良に到着。",
+        "deck": "大阪難波から41分、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 320,
+          "width": 320,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 18,
+              "y": 95,
+              "right": 173.09375,
+              "bottom": 120.421875,
+              "width": 155.09375,
+              "height": 25.421875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 187.390625,
+              "y": 92,
+              "right": 302,
+              "bottom": 131.5,
+              "width": 114.609375,
+              "height": 39.5
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 59,
+              "y": 324.2979736328125,
+              "right": 221.265625,
+              "bottom": 334.2979736328125,
+              "width": 162.265625,
+              "height": 10
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 22,
+              "y": 360.6474914550781,
+              "right": 257.203125,
+              "bottom": 388.6474914550781,
+              "width": 235.203125,
+              "height": 28
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 22,
+              "y": 412.723388671875,
+              "right": 280.546875,
+              "bottom": 450.910888671875,
+              "width": 258.546875,
+              "height": 38.1875
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 18,
+              "y": 509.0625,
+              "right": 171.28125,
+              "bottom": 519.0625,
+              "width": 153.28125,
+              "height": 10
+            },
+            {
+              "s": ".iju__skip",
+              "x": 152.0625,
+              "y": 150,
+              "right": 302,
+              "bottom": 192,
+              "width": 149.9375,
+              "height": 42
+            },
+            {
+              "s": ".iju__mode",
+              "x": 31,
+              "y": 521.25,
+              "right": 191.8125,
+              "bottom": 539.796875,
+              "width": 160.8125,
+              "height": 18.546875
+            },
+            {
+              "s": ".iju__arrival-summary",
+              "x": 18,
+              "y": 547.2489013671875,
+              "right": 302,
+              "bottom": 612.0301513671875,
+              "width": 284,
+              "height": 64.78125
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      }
+    ],
+    "checks": [
+      "hero skip reaches train",
+      ".section-nav a[href=\"#train\"] -> #train",
+      ".section-nav a[href=\"#last-mile\"] -> #last-mile",
+      ".section-nav a[href=\"#drive\"] -> #drive",
+      ".section-heading a[href=\"#last-mile\"] -> #last-mile",
+      ".journey-condition a -> #train"
+    ],
+    "status": "pass",
+    "shell": {
+      "title": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "description": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+      "robots": "noindex,nofollow",
+      "forms": 0,
+      "links": [
+        {
+          "text": "本文へ進む",
+          "href": "#main",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電車の所要時間を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "01 電車での通勤",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "02 駅から家まで",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "03 車でのお出かけ",
+          "href": "#drive",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "04 分譲地を探す",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "駅から家までの移動を見る ↓",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻表を見る（近鉄公式） ↗",
+          "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式の路線図・駅情報 ↗",
+          "href": "https://www.kintetsu.co.jp/station/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式でダイヤを調べる ↗",
+          "href": "https://www.kintetsu.co.jp/tetsudo/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "NEXCO西日本で料金・ルートを調べる ↗",
+          "href": "https://search.w-nexco.co.jp/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産 トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        }
+      ],
+      "table": [
+        [
+          "大阪難波",
+          "18:25",
+          "18:27"
+        ],
+        [
+          "近鉄日本橋",
+          "18:28",
+          "18:28"
+        ],
+        [
+          "大阪上本町",
+          "18:30",
+          "18:30"
+        ],
+        [
+          "鶴橋",
+          "18:32",
+          "18:33"
+        ],
+        [
+          "生駒",
+          "18:49",
+          "18:50"
+        ],
+        [
+          "学園前",
+          "18:55",
+          "18:56"
+        ],
+        [
+          "大和西大寺",
+          "19:00",
+          "19:02"
+        ],
+        [
+          "新大宮",
+          "19:05",
+          "19:05"
+        ],
+        [
+          "近鉄奈良",
+          "19:08",
+          "—"
+        ]
+      ],
+      "images": [
+        {
+          "src": "assets/brand/yamato_mark.svg",
+          "width": "32",
+          "height": "32",
+          "alt": ""
+        },
+        {
+          "src": "assets/iju/duo_osaka.webp",
+          "alt": "薄暮の道頓堀・なんばのネオンと運河",
+          "width": "1320",
+          "height": "990"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/urban-rail-osaka-pc-20260831.webp",
+          "alt": "",
+          "width": "2048",
+          "height": "1152"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-pc-20260830.avif"
+        },
+        {
+          "src": "assets/iju/train-window-bluehour-pc-20260830.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/saidaiji-approach-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/kintetsu-nara-arrival-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        }
+      ]
+    },
+    "errors": [],
+    "badResponses": []
+  },
+  {
+    "name": "webkit-landscape",
+    "engine": "webkit",
+    "width": 844,
+    "height": 390,
+    "mode": "normal",
+    "beats": [
+      {
+        "index": 1,
+        "progress": 0,
+        "clock": "18:27",
+        "title": "大阪難波から、近鉄奈良へ。",
+        "deck": "平日夕方の快速急行で、乗り換えなし。",
+        "geom": {
+          "scrollWidth": 844,
+          "width": 844,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 42.1875,
+              "y": 117.71314239501953,
+              "right": 294.65472412109375,
+              "bottom": 129.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.011222839355469
+            },
+            {
+              "s": ".iju__clock",
+              "x": 655.359375,
+              "y": 114,
+              "right": 801.8125,
+              "bottom": 167.640625,
+              "width": 146.453125,
+              "height": 53.640625
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 106.078125,
+              "y": 198.8234405517578,
+              "right": 317.4091796875,
+              "bottom": 210.4421844482422,
+              "width": 211.3310546875,
+              "height": 11.618743896484375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 59.078125,
+              "y": 227.74996948242188,
+              "right": 401.953125,
+              "bottom": 252.75003051757812,
+              "width": 342.875,
+              "height": 25.00006103515625
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 59.078125,
+              "y": 266.2200012207031,
+              "right": 285.27813720703125,
+              "bottom": 279.7799987792969,
+              "width": 226.20001220703125,
+              "height": 13.55999755859375
+            },
+            {
+              "s": ".iju__skip",
+              "x": 628.609375,
+              "y": 176,
+              "right": 801.8125,
+              "bottom": 220,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 72,
+              "y": 284.046875,
+              "right": 250.5,
+              "bottom": 304.703125,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 59,
+              "y": 317.703125,
+              "right": 784.828125,
+              "bottom": 378,
+              "width": 725.828125,
+              "height": 60.296875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 2,
+        "progress": 0.2,
+        "clock": "18:27",
+        "title": "近鉄奈良まで、41分。",
+        "deck": "平日18:27発、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 844,
+          "width": 844,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 42.1875,
+              "y": 117.713134765625,
+              "right": 294.65472412109375,
+              "bottom": 129.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 682.078125,
+              "y": 114,
+              "right": 801.8125,
+              "bottom": 167.640625,
+              "width": 119.734375,
+              "height": 53.640625
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 106.078125,
+              "y": 198.82342529296875,
+              "right": 311.81060791015625,
+              "bottom": 210.44219970703125,
+              "width": 205.73248291015625,
+              "height": 11.6187744140625
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 59.078125,
+              "y": 227.75738525390625,
+              "right": 327.3531188964844,
+              "bottom": 252.75738525390625,
+              "width": 268.2749938964844,
+              "height": 25
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 59.078125,
+              "y": 266.2724609375,
+              "right": 283.91015625,
+              "bottom": 279.83251953125,
+              "width": 224.83203125,
+              "height": 13.56005859375
+            },
+            {
+              "s": ".iju__skip",
+              "x": 628.609375,
+              "y": 176,
+              "right": 801.8125,
+              "bottom": 220,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 72,
+              "y": 284.046875,
+              "right": 250.5,
+              "bottom": 304.703125,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 59,
+              "y": 317.703125,
+              "right": 784.828125,
+              "bottom": 378,
+              "width": 725.828125,
+              "height": 60.296875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 3,
+        "progress": 0.36,
+        "clock": "18:32",
+        "title": "鶴橋に到着。",
+        "deck": "大阪難波を出て5分。乗り換えずに奈良へ向かいます。",
+        "geom": {
+          "scrollWidth": 844,
+          "width": 844,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 42.1875,
+              "y": 117.713134765625,
+              "right": 294.65472412109375,
+              "bottom": 129.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 682.078125,
+              "y": 114,
+              "right": 801.8125,
+              "bottom": 167.640625,
+              "width": 119.734375,
+              "height": 53.640625
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 106.078125,
+              "y": 198.8243408203125,
+              "right": 300.24755859375,
+              "bottom": 210.443115234375,
+              "width": 194.16943359375,
+              "height": 11.6187744140625
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 59.078125,
+              "y": 227.77130126953125,
+              "right": 217.328125,
+              "bottom": 252.77130126953125,
+              "width": 158.25,
+              "height": 25
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 59.078125,
+              "y": 266.315185546875,
+              "right": 368.76220703125,
+              "bottom": 279.875244140625,
+              "width": 309.68408203125,
+              "height": 13.56005859375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 42.1875,
+              "y": 138.4140625,
+              "right": 219.33575439453125,
+              "bottom": 149.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 628.609375,
+              "y": 176,
+              "right": 801.8125,
+              "bottom": 220,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 72,
+              "y": 284.046875,
+              "right": 250.5,
+              "bottom": 304.703125,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 59,
+              "y": 317.703125,
+              "right": 784.828125,
+              "bottom": 378,
+              "width": 725.828125,
+              "height": 60.296875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 4,
+        "progress": 0.53,
+        "clock": "18:49",
+        "title": "生駒に到着。",
+        "deck": "大阪難波から22分。次は学園前です。",
+        "geom": {
+          "scrollWidth": 844,
+          "width": 844,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 42.1875,
+              "y": 117.713134765625,
+              "right": 294.65472412109375,
+              "bottom": 129.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 681.96875,
+              "y": 114,
+              "right": 801.8125,
+              "bottom": 167.640625,
+              "width": 119.84375,
+              "height": 53.640625
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 106.078125,
+              "y": 198.823486328125,
+              "right": 261.38421630859375,
+              "bottom": 210.442138671875,
+              "width": 155.30609130859375,
+              "height": 11.61865234375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 59.078125,
+              "y": 227.758056640625,
+              "right": 217.328125,
+              "bottom": 252.758056640625,
+              "width": 158.25,
+              "height": 25
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 59.078125,
+              "y": 266.274658203125,
+              "right": 276.4461669921875,
+              "bottom": 279.834716796875,
+              "width": 217.3680419921875,
+              "height": 13.56005859375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 42.1875,
+              "y": 138.4140625,
+              "right": 219.33575439453125,
+              "bottom": 149.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 628.609375,
+              "y": 176,
+              "right": 801.8125,
+              "bottom": 220,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 72,
+              "y": 284.046875,
+              "right": 250.5,
+              "bottom": 304.703125,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 59,
+              "y": 317.703125,
+              "right": 784.828125,
+              "bottom": 378,
+              "width": 725.828125,
+              "height": 60.296875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 5,
+        "progress": 0.61,
+        "clock": "18:55",
+        "title": "学園前に到着。",
+        "deck": "大阪難波から28分。次は大和西大寺です。",
+        "geom": {
+          "scrollWidth": 844,
+          "width": 844,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 42.1875,
+              "y": 117.713134765625,
+              "right": 294.65472412109375,
+              "bottom": 129.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 668.71875,
+              "y": 114,
+              "right": 801.8125,
+              "bottom": 167.640625,
+              "width": 133.09375,
+              "height": 53.640625
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 106.078125,
+              "y": 198.823486328125,
+              "right": 310.8431396484375,
+              "bottom": 210.442138671875,
+              "width": 204.7650146484375,
+              "height": 11.61865234375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 59.078125,
+              "y": 227.75927734375,
+              "right": 243.703125,
+              "bottom": 252.75927734375,
+              "width": 184.625,
+              "height": 25
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 59.078125,
+              "y": 266.279296875,
+              "right": 301.64617919921875,
+              "bottom": 279.83935546875,
+              "width": 242.56805419921875,
+              "height": 13.56005859375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 42.1875,
+              "y": 138.4140625,
+              "right": 219.33575439453125,
+              "bottom": 149.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 628.609375,
+              "y": 176,
+              "right": 801.8125,
+              "bottom": 220,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 72,
+              "y": 284.046875,
+              "right": 250.5,
+              "bottom": 304.703125,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 59,
+              "y": 317.703125,
+              "right": 784.828125,
+              "bottom": 378,
+              "width": 725.828125,
+              "height": 60.296875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 6,
+        "progress": 0.7,
+        "clock": "19:00",
+        "title": "近鉄奈良まで、あと8分。",
+        "deck": "大和西大寺に到着。次は新大宮です。",
+        "geom": {
+          "scrollWidth": 844,
+          "width": 844,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 42.1875,
+              "y": 117.713134765625,
+              "right": 294.65472412109375,
+              "bottom": 129.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 641.984375,
+              "y": 114,
+              "right": 801.8125,
+              "bottom": 167.640625,
+              "width": 159.828125,
+              "height": 53.640625
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 106.078125,
+              "y": 196.8240966796875,
+              "right": 373.75439453125,
+              "bottom": 208.4427490234375,
+              "width": 267.67626953125,
+              "height": 11.61865234375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 59.078125,
+              "y": 226.7679443359375,
+              "right": 364.02813720703125,
+              "bottom": 251.7679443359375,
+              "width": 304.95001220703125,
+              "height": 25
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 59.078125,
+              "y": 266.305908203125,
+              "right": 272.078125,
+              "bottom": 279.865966796875,
+              "width": 213,
+              "height": 13.56005859375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 42.1875,
+              "y": 138.4140625,
+              "right": 219.33575439453125,
+              "bottom": 149.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 628.609375,
+              "y": 176,
+              "right": 801.8125,
+              "bottom": 220,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 72,
+              "y": 284.046875,
+              "right": 250.5,
+              "bottom": 304.703125,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 59,
+              "y": 317.703125,
+              "right": 784.828125,
+              "bottom": 378,
+              "width": 725.828125,
+              "height": 60.296875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 7,
+        "progress": 0.81,
+        "clock": "19:05",
+        "title": "近鉄奈良まで、あと3分。",
+        "deck": "新大宮に到着。次は終点の近鉄奈良です。",
+        "geom": {
+          "scrollWidth": 844,
+          "width": 844,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 42.1875,
+              "y": 117.713134765625,
+              "right": 294.65472412109375,
+              "bottom": 129.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 668.71875,
+              "y": 114,
+              "right": 801.8125,
+              "bottom": 167.640625,
+              "width": 133.09375,
+              "height": 53.640625
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 106.078125,
+              "y": 196.8245849609375,
+              "right": 333.9185485839844,
+              "bottom": 208.4432373046875,
+              "width": 227.84042358398438,
+              "height": 11.61865234375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 59.078125,
+              "y": 226.7724609375,
+              "right": 364.02813720703125,
+              "bottom": 251.7724609375,
+              "width": 304.95001220703125,
+              "height": 25
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 59.078125,
+              "y": 266.318359375,
+              "right": 297.27813720703125,
+              "bottom": 279.87841796875,
+              "width": 238.20001220703125,
+              "height": 13.56005859375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 42.1875,
+              "y": 138.4140625,
+              "right": 219.33575439453125,
+              "bottom": 149.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 628.609375,
+              "y": 176,
+              "right": 801.8125,
+              "bottom": 220,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 72,
+              "y": 284.046875,
+              "right": 250.5,
+              "bottom": 304.703125,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__rail-journey",
+              "x": 59,
+              "y": 317.703125,
+              "right": 784.828125,
+              "bottom": 378,
+              "width": 725.828125,
+              "height": 60.296875
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      },
+      {
+        "index": 8,
+        "progress": 0.95,
+        "clock": "19:08",
+        "title": "近鉄奈良に到着。",
+        "deck": "大阪難波から41分、19:08着の帰宅例です。",
+        "geom": {
+          "scrollWidth": 844,
+          "width": 844,
+          "boxes": [
+            {
+              "s": ".iju__eyebrow",
+              "x": 42.1875,
+              "y": 117.713134765625,
+              "right": 294.65472412109375,
+              "bottom": 129.724365234375,
+              "width": 252.46722412109375,
+              "height": 12.01123046875
+            },
+            {
+              "s": ".iju__clock",
+              "x": 655.359375,
+              "y": 114,
+              "right": 801.8125,
+              "bottom": 167.640625,
+              "width": 146.453125,
+              "height": 53.640625
+            },
+            {
+              "s": "#ijuPhase",
+              "x": 106.078125,
+              "y": 198.823486328125,
+              "right": 306.0341796875,
+              "bottom": 210.442138671875,
+              "width": 199.9560546875,
+              "height": 11.61865234375
+            },
+            {
+              "s": "#ijuTitle",
+              "x": 59.078125,
+              "y": 227.758544921875,
+              "right": 270.078125,
+              "bottom": 252.758544921875,
+              "width": 211,
+              "height": 25
+            },
+            {
+              "s": "#ijuDeck",
+              "x": 59.078125,
+              "y": 266.27685546875,
+              "right": 313.91015625,
+              "bottom": 279.8369140625,
+              "width": 254.83203125,
+              "height": 13.56005859375
+            },
+            {
+              "s": "#ijuConcept",
+              "x": 42.1875,
+              "y": 138.4140625,
+              "right": 219.33575439453125,
+              "bottom": 149.5859375,
+              "width": 177.14825439453125,
+              "height": 11.171875
+            },
+            {
+              "s": ".iju__skip",
+              "x": 628.609375,
+              "y": 176,
+              "right": 801.8125,
+              "bottom": 220,
+              "width": 173.203125,
+              "height": 44
+            },
+            {
+              "s": ".iju__mode",
+              "x": 72,
+              "y": 284.046875,
+              "right": 250.5,
+              "bottom": 304.703125,
+              "width": 178.5,
+              "height": 20.65625
+            },
+            {
+              "s": ".iju__arrival-summary",
+              "x": 59,
+              "y": 307.441162109375,
+              "right": 784.828125,
+              "bottom": 378.003662109375,
+              "width": 725.828125,
+              "height": 70.5625
+            }
+          ],
+          "overflow": []
+        },
+        "overlaps": []
+      }
+    ],
+    "checks": [
+      "hero skip reaches train",
+      ".section-nav a[href=\"#train\"] -> #train",
+      ".section-nav a[href=\"#last-mile\"] -> #last-mile",
+      ".section-nav a[href=\"#drive\"] -> #drive",
+      ".section-heading a[href=\"#last-mile\"] -> #last-mile",
+      ".journey-condition a -> #train"
+    ],
+    "status": "pass",
+    "shell": {
+      "title": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "description": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+      "robots": "noindex,nofollow",
+      "forms": 0,
+      "links": [
+        {
+          "text": "本文へ進む",
+          "href": "#main",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電車の所要時間を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "01 電車での通勤",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "02 駅から家まで",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "03 車でのお出かけ",
+          "href": "#drive",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "04 分譲地を探す",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "駅から家までの移動を見る ↓",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻表を見る（近鉄公式） ↗",
+          "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式の路線図・駅情報 ↗",
+          "href": "https://www.kintetsu.co.jp/station/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式でダイヤを調べる ↗",
+          "href": "https://www.kintetsu.co.jp/tetsudo/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "NEXCO西日本で料金・ルートを調べる ↗",
+          "href": "https://search.w-nexco.co.jp/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産 トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        }
+      ],
+      "table": [
+        [
+          "大阪難波",
+          "18:25",
+          "18:27"
+        ],
+        [
+          "近鉄日本橋",
+          "18:28",
+          "18:28"
+        ],
+        [
+          "大阪上本町",
+          "18:30",
+          "18:30"
+        ],
+        [
+          "鶴橋",
+          "18:32",
+          "18:33"
+        ],
+        [
+          "生駒",
+          "18:49",
+          "18:50"
+        ],
+        [
+          "学園前",
+          "18:55",
+          "18:56"
+        ],
+        [
+          "大和西大寺",
+          "19:00",
+          "19:02"
+        ],
+        [
+          "新大宮",
+          "19:05",
+          "19:05"
+        ],
+        [
+          "近鉄奈良",
+          "19:08",
+          "—"
+        ]
+      ],
+      "images": [
+        {
+          "src": "assets/brand/yamato_mark.svg",
+          "width": "32",
+          "height": "32",
+          "alt": ""
+        },
+        {
+          "src": "assets/iju/duo_osaka.webp",
+          "alt": "薄暮の道頓堀・なんばのネオンと運河",
+          "width": "1320",
+          "height": "990"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/urban-rail-osaka-pc-20260831.webp",
+          "alt": "",
+          "width": "2048",
+          "height": "1152"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-pc-20260830.avif"
+        },
+        {
+          "src": "assets/iju/train-window-bluehour-pc-20260830.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/saidaiji-approach-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/kintetsu-nara-arrival-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        }
+      ]
+    },
+    "errors": [],
+    "badResponses": []
+  }
+]

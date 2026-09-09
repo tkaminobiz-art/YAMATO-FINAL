@@ -1,0 +1,73 @@
+[
+  {
+    "control": "keyboard skip",
+    "target": "#main",
+    "pass": true
+  },
+  {
+    "control": ".section-nav a[href=\"lots-preview.html?view=list\"]",
+    "href": "lots-preview.html?view=list",
+    "url": "http://127.0.0.1:8952/lots-preview.html?view=list",
+    "pass": true
+  },
+  {
+    "control": ".inline-cta .button",
+    "href": "lots-preview.html?view=list",
+    "url": "http://127.0.0.1:8952/lots-preview.html?view=list",
+    "pass": true
+  },
+  {
+    "control": ".closing-actions .button",
+    "href": "lots-preview.html?view=list",
+    "url": "http://127.0.0.1:8952/lots-preview.html?view=list",
+    "pass": true
+  },
+  {
+    "control": ".header .brand",
+    "href": "/",
+    "url": "http://127.0.0.1:8952/",
+    "pass": true
+  },
+  {
+    "control": ".footer a",
+    "href": "/",
+    "url": "http://127.0.0.1:8952/",
+    "pass": true
+  },
+  {
+    "control": "この列車の時刻表を見る（近鉄公式） ↗",
+    "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+    "dispatched": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+    "pass": true
+  },
+  {
+    "control": "近鉄公式の路線図・駅情報 ↗",
+    "href": "https://www.kintetsu.co.jp/station/",
+    "dispatched": "https://www.kintetsu.co.jp/station/",
+    "pass": true
+  },
+  {
+    "control": "近鉄公式でダイヤを調べる ↗",
+    "href": "https://www.kintetsu.co.jp/tetsudo/",
+    "dispatched": "https://www.kintetsu.co.jp/tetsudo/",
+    "pass": true
+  },
+  {
+    "control": "NEXCO西日本で料金・ルートを調べる ↗",
+    "href": "https://search.w-nexco.co.jp/",
+    "dispatched": "https://search.w-nexco.co.jp/",
+    "pass": true
+  },
+  {
+    "control": "電話で相談する0742-36-1123",
+    "href": "tel:0742361123",
+    "actualCall": false,
+    "pass": true
+  },
+  {
+    "control": "電話で相談する0742-36-1123",
+    "href": "tel:0742361123",
+    "actualCall": false,
+    "pass": true
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "files": 700,
+  "publicFiles": 698,
+  "bytes": 127922799,
+  "sourceAndPackagedSHAMatch": true,
+  "qaAndSourceDocumentsPublished": false,
+  "runtimeChanged": [
+    {
+      "path": "move-to-nara-preview.html",
+      "sha256": "3c250357d4719a7e5f6bd0d008cdd840f9d361a5c81f42a8c9364500c5b21c1f"
+    },
+    {
+      "path": "assets/top-renewal/nara-journey.js",
+      "sha256": "3063a70e8c1b365a33dd725717f0a59a829c0113944514531e862c78e345bb27"
+    },
+    {
+      "path": "assets/top-renewal/nara-journey.css",
+      "sha256": "568620cfed90a4bee0842d413c4d4915a76776ac6cbe6e2554b2405653a7cb6c"
+    }
+  ]
+}

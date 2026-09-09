@@ -1,0 +1,10 @@
+# Full raw browser captures stay local; reviewed evidence and machine results are tracked.
+/local/
+/focused-before/
+/layout-fix/
+/release-verified/*.png
+/before/overview-*.png
+/plan-copy.py
+/production/
+/RELEASE.md
+/nojs-confirm/*.png

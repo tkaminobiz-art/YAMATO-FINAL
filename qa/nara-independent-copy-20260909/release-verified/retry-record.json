@@ -1,0 +1,292 @@
+{
+  "firstAttempt": {
+    "name": "chromium-sp-nojs",
+    "engine": "chromium",
+    "width": 390,
+    "height": 900,
+    "mode": "nojs",
+    "beats": [],
+    "checks": [
+      "hero skip reaches train"
+    ],
+    "status": "fail",
+    "error": "locator.scrollIntoViewIfNeeded: Element is not attached to the DOM\nCall log:\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    2 × waiting for element to be stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying scroll into view action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\n    at /Users/takahirokamino/Downloads/最終やまと不動産画像ファイル/NARA-COPY-RELEASE-20260909/release-2026/qa/nara-independent-copy-20260909/browser-check.mjs:69:35"
+  },
+  "confirmation": {
+    "name": "chromium-sp-nojs",
+    "engine": "chromium",
+    "width": 390,
+    "height": 900,
+    "mode": "nojs",
+    "beats": [],
+    "checks": [
+      "hero skip reaches train",
+      ".section-nav a[href=\"#train\"] -> #train",
+      ".section-nav a[href=\"#last-mile\"] -> #last-mile",
+      ".section-nav a[href=\"#drive\"] -> #drive",
+      ".section-heading a[href=\"#last-mile\"] -> #last-mile",
+      ".journey-condition a -> #train"
+    ],
+    "status": "pass",
+    "shell": {
+      "title": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "description": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+      "robots": "noindex,nofollow",
+      "forms": 0,
+      "links": [
+        {
+          "text": "本文へ進む",
+          "href": "#main",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電車の所要時間を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻を見る",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "01 電車での通勤",
+          "href": "#train",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "02 駅から家まで",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "03 車でのお出かけ",
+          "href": "#drive",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "04 分譲地を探す",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "駅から家までの移動を見る ↓",
+          "href": "#last-mile",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "この列車の時刻表を見る（近鉄公式） ↗",
+          "href": "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式の路線図・駅情報 ↗",
+          "href": "https://www.kintetsu.co.jp/station/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "近鉄公式でダイヤを調べる ↗",
+          "href": "https://www.kintetsu.co.jp/tetsudo/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "NEXCO西日本で料金・ルートを調べる ↗",
+          "href": "https://search.w-nexco.co.jp/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "販売中の分譲地を見る →",
+          "href": "lots-preview.html?view=list",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "電話で相談する0742-36-1123",
+          "href": "tel:0742361123",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "text": "やまと不動産 トップへ戻る",
+          "href": "/",
+          "target": "",
+          "rel": ""
+        }
+      ],
+      "table": [
+        [
+          "大阪難波",
+          "18:25",
+          "18:27"
+        ],
+        [
+          "近鉄日本橋",
+          "18:28",
+          "18:28"
+        ],
+        [
+          "大阪上本町",
+          "18:30",
+          "18:30"
+        ],
+        [
+          "鶴橋",
+          "18:32",
+          "18:33"
+        ],
+        [
+          "生駒",
+          "18:49",
+          "18:50"
+        ],
+        [
+          "学園前",
+          "18:55",
+          "18:56"
+        ],
+        [
+          "大和西大寺",
+          "19:00",
+          "19:02"
+        ],
+        [
+          "新大宮",
+          "19:05",
+          "19:05"
+        ],
+        [
+          "近鉄奈良",
+          "19:08",
+          "—"
+        ]
+      ],
+      "images": [
+        {
+          "src": "assets/brand/yamato_mark.svg",
+          "width": "32",
+          "height": "32",
+          "alt": ""
+        },
+        {
+          "src": "assets/iju/duo_osaka.webp",
+          "alt": "薄暮の道頓堀・なんばのネオンと運河",
+          "width": "1320",
+          "height": "990"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/urban-rail-osaka-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/urban-rail-osaka-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/urban-rail-osaka-pc-20260831.webp",
+          "alt": "",
+          "width": "2048",
+          "height": "1152"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/train-window-bluehour-sp-20260830.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/train-window-bluehour-pc-20260830.avif"
+        },
+        {
+          "src": "assets/iju/train-window-bluehour-pc-20260830.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/saidaiji-approach-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/saidaiji-approach-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/saidaiji-approach-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.avif"
+        },
+        {
+          "media": "(max-width:700px)",
+          "type": "image/webp",
+          "srcset": "assets/iju/kintetsu-nara-arrival-sp-20260831.webp"
+        },
+        {
+          "type": "image/avif",
+          "srcset": "assets/iju/kintetsu-nara-arrival-pc-20260831.avif"
+        },
+        {
+          "src": "assets/iju/kintetsu-nara-arrival-pc-20260831.webp",
+          "alt": "",
+          "width": "3200",
+          "height": "1787"
+        }
+      ]
+    },
+    "errors": [],
+    "badResponses": []
+  },
+  "sourceChangedBetweenAttempts": false
+}

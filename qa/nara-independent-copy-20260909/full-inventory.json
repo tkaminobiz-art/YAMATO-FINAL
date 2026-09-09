@@ -1,0 +1,1562 @@
+{
+  "beforeNodeCount": 113,
+  "afterNodeCount": 113,
+  "reviewedUnchanged": 70,
+  "revisedOldNodes": 43,
+  "structureElements": 291,
+  "links": 18,
+  "times": 12,
+  "tableUnchanged": true,
+  "structureUnchangedExceptConditionsAndDriveBR": true,
+  "before": [
+    {
+      "location": "TITLE ",
+      "text": "大阪で働き、奈良に住む｜やまと不動産・制作確認用",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "A .skip",
+      "text": "本文へ進む",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "やまと不動産",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SMALL ",
+      "text": "トップへ戻る",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "電話で相談",
+      "status": "revised",
+      "changes": [
+        "header phone"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "H1 .iju__sr",
+      "text": "大阪から奈良へのアクセス",
+      "status": "revised",
+      "changes": [
+        "H1 / section aria-label"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "SPAN .iju__eyebrow",
+      "text": "Move to Nara ／ 奈良に住むという選択",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN #ijuClockCap",
+      "text": "大阪難波",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "train intro",
+        "timetable note",
+        "dynamic beat 1/8 title+deck",
+        "dynamic beat 8/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H2 #ijuTitle",
+      "text": "大阪難波から、近鉄奈良へ。",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P #ijuDeck",
+      "text": "快速急行なら、乗り換えなしです。",
+      "status": "revised",
+      "changes": [
+        "static hero deck"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P #ijuConcept",
+      "text": "背景画像は生成コンセプトです。",
+      "status": "revised",
+      "changes": [
+        "image note"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "A .iju__skip",
+      "text": "旅程を飛ばして、移動情報を見る",
+      "status": "revised",
+      "changes": [
+        "hero skip link"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "B ",
+      "text": "快速急行・乗換なし",
+      "status": "revised",
+      "changes": [
+        "TRAIN label"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "SPAN ",
+      "text": "大阪難波",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "train intro",
+        "timetable note",
+        "dynamic beat 1/8 title+deck",
+        "dynamic beat 8/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "鶴橋",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 3/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "生駒",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 4/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "学園前",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "大和西大寺",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "新大宮",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck",
+        "dynamic beat 6/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "近鉄奈良",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "timetable note",
+        "dynamic beat 1/8 title+deck",
+        "dynamic beat 2/8 title+deck",
+        "dynamic beat 3/8 title+deck",
+        "dynamic beat 5/8 title+deck",
+        "dynamic beat 6/8 title+deck",
+        "dynamic beat 7/8 title+deck",
+        "dynamic beat 8/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "途中駅の到着時刻",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "大阪難波 18:27発",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "LI ",
+      "text": "鶴橋",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 3/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "LI ",
+      "text": "生駒",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 4/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "LI ",
+      "text": "学園前",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "LI ",
+      "text": "大和西大寺",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "LI ",
+      "text": "新大宮",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck",
+        "dynamic beat 6/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P .iju__sr",
+      "text": "大阪難波18時27分発、近鉄奈良19時08分着。鶴橋・生駒・学園前・大和西大寺・新大宮に停車する、41分の運行例です。",
+      "status": "revised",
+      "changes": [
+        "screen reader journey summary"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P .journey-condition",
+      "text": "快速急行の運行例です。所要時間は列車・時間帯で異なります。",
+      "status": "revised",
+      "changes": [
+        "journey condition"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "A ",
+      "text": "運行例の詳細を見る",
+      "status": "revised",
+      "changes": [
+        "condition link"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "A ",
+      "text": "電車での通勤",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "drive intro"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "A ",
+      "text": "駅から住まい",
+      "status": "revised",
+      "changes": [
+        "meta description",
+        "section nav 02",
+        "train section link",
+        "travel conditions"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "A ",
+      "text": "休日の車移動",
+      "status": "revised",
+      "changes": [
+        "meta description",
+        "section nav 03"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "A ",
+      "text": "分譲地を探す",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H2 #train-title",
+      "text": "電車での通勤",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "drive intro"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "大阪難波から、奈良方面へ。",
+      "status": "revised",
+      "changes": [
+        "train intro"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P ",
+      "text": "勤務先の最寄駅と、住みたい街の駅を合わせて確認します。",
+      "status": "revised",
+      "changes": [
+        "train intro"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "A .text-link",
+      "text": "駅から住まいの情報へ進む",
+      "status": "revised",
+      "changes": [
+        "train section link"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P .eyebrow",
+      "text": "大阪から奈良への帰宅例",
+      "status": "revised",
+      "changes": [
+        "travel eyebrow"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "H3 ",
+      "text": "大阪難波から近鉄奈良へ、",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H3 ",
+      "text": "快速急行で",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "分。",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "dynamic beat 2/8 title+deck",
+        "dynamic beat 3/8 title+deck",
+        "dynamic beat 4/8 title+deck",
+        "dynamic beat 5/8 title+deck",
+        "dynamic beat 6/8 title+deck",
+        "dynamic beat 7/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P .travel-conditions",
+      "text": "平日夕方の一例：18:27発→19:08着。2026年9月5日近鉄公式確認。列車・時間帯で異なります。駅から住まいまでの移動時間は含みません。",
+      "status": "revised",
+      "changes": [
+        "travel conditions"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "A .external-link",
+      "text": "この運行例を近鉄公式で確認",
+      "status": "revised",
+      "changes": [
+        "official train CTA"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "SUMMARY ",
+      "text": "全停車駅と到着・発車時刻",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "CAPTION ",
+      "text": "快速急行・近鉄奈良行き／平日夕方の運行例",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "駅名",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "到着",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "last-mile card 03",
+        "dynamic beat 8/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "発車",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "大阪難波",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "train intro",
+        "timetable note",
+        "dynamic beat 1/8 title+deck",
+        "dynamic beat 8/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "近鉄日本橋",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "大阪上本町",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "鶴橋",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 3/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "生駒",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 4/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "学園前",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "大和西大寺",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "新大宮",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck",
+        "dynamic beat 6/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "TH ",
+      "text": "近鉄奈良",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "timetable note",
+        "dynamic beat 1/8 title+deck",
+        "dynamic beat 2/8 title+deck",
+        "dynamic beat 3/8 title+deck",
+        "dynamic beat 5/8 title+deck",
+        "dynamic beat 6/8 title+deck",
+        "dynamic beat 7/8 title+deck",
+        "dynamic beat 8/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P .note",
+      "text": "大阪難波から近鉄奈良までの全停車駅です。この列車の始発駅は神戸三宮です。朝の奈良→大阪方面とは別の運行例です。",
+      "status": "revised",
+      "changes": [
+        "timetable note"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P .journey-label",
+      "text": "経路上の主な駅",
+      "status": "revised",
+      "changes": [
+        "route label"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "SPAN ",
+      "text": "大阪 → 奈良",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H3 ",
+      "text": "大阪難波",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "train intro",
+        "timetable note",
+        "dynamic beat 1/8 title+deck",
+        "dynamic beat 8/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "なんば周辺から、近鉄線へ。",
+      "status": "revised",
+      "changes": [
+        "Osaka Namba station description"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "H3 ",
+      "text": "鶴橋",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 3/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "勤務先に合わせて、乗換経路も確認。",
+      "status": "revised",
+      "changes": [
+        "Tsuruhashi station description"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "H3 ",
+      "text": "生駒",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 4/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "生駒方面の住まいも検討できます。",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H3 ",
+      "text": "学園前",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H3 ",
+      "text": "大和西大寺",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H3 ",
+      "text": "新大宮",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "dynamic beat 5/8 title+deck",
+        "dynamic beat 6/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H3 ",
+      "text": "近鉄奈良",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "screen reader journey summary",
+        "timetable note",
+        "dynamic beat 1/8 title+deck",
+        "dynamic beat 2/8 title+deck",
+        "dynamic beat 3/8 title+deck",
+        "dynamic beat 5/8 title+deck",
+        "dynamic beat 6/8 title+deck",
+        "dynamic beat 7/8 title+deck",
+        "dynamic beat 8/8 title+deck"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "ここから住まいまでの移動も、忘れずに。",
+      "status": "revised",
+      "changes": [
+        "Nara station description"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P .note",
+      "text": "途中駅を一部省略した経路案内です。特定の列車の停車駅・時刻表ではありません。所要時間・乗換・停車駅は列車と時間帯により異なります。",
+      "status": "revised",
+      "changes": [
+        "route note"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "A .external-link",
+      "text": "近鉄公式の路線図・駅情報",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "A .external-link",
+      "text": "近鉄公式でダイヤを調べる",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H2 #last-title",
+      "text": "駅に着いてから、",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H2 #last-title",
+      "text": "家に着くまで。",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "駅間の時間だけでは、毎日の通勤は決まりません。",
+      "status": "revised",
+      "changes": [
+        "last-mile intro"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P ",
+      "text": "候補の土地ごとに、次の条件を確かめましょう。",
+      "status": "revised",
+      "changes": [
+        "last-mile intro"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "H3 ",
+      "text": "最寄駅と移動方法",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "徒歩・自転車・バスなど、駅までの経路を確認。駅からの距離だけでなく、坂道や夜の道も見ておきます。",
+      "status": "revised",
+      "changes": [
+        "last-mile card 01"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "H3 ",
+      "text": "出勤・帰宅の時間帯",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "バスを使う場合は、運行本数・最終便・待ち時間も確認。乗りたい電車に間に合うかを調べます。",
+      "status": "revised",
+      "changes": [
+        "last-mile card 02"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "H3 ",
+      "text": "家から勤務先まで",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "自宅から駅、乗換、到着駅から勤務先までを合わせて確認。保育園の送迎がある日は、その経路も含めます。",
+      "status": "revised",
+      "changes": [
+        "last-mile card 03"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P ",
+      "text": "気になる分譲地が見つかったら、",
+      "status": "revised",
+      "changes": [
+        "last-mile CTA intro"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P ",
+      "text": "所在地と最寄駅を合わせてご確認ください。",
+      "status": "revised",
+      "changes": [
+        "last-mile CTA intro"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "A .button",
+      "text": "販売中の分譲地を見る",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H2 #drive-title",
+      "text": "休日の移動は、車で。",
+      "status": "revised",
+      "changes": [
+        "drive heading"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P ",
+      "text": "電車での通勤とは分けて、休日のお出かけも検討。",
+      "status": "revised",
+      "changes": [
+        "drive intro"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P ",
+      "text": "大阪方面への移動には、第二阪奈道路という選択肢があります。",
+      "status": "revised",
+      "changes": [
+        "drive intro"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "SPAN ",
+      "text": "第二阪奈道路",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "drive intro"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H3 ",
+      "text": "中町IC",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "住まいからICまでの一般道と、利用できる出入口の方向を確認します。",
+      "status": "revised",
+      "changes": [
+        "Nakamachi IC description"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "SPAN ",
+      "text": "第二阪奈道路",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "drive intro"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H3 ",
+      "text": "宝来IC",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "目的地に合わせて経路を確認。高速道路を降りてからの移動も含めて考えます。",
+      "status": "revised",
+      "changes": [
+        "Horai IC description"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P ",
+      "text": "所要時間・料金は出発地、目的地、交通状況によって異なります。通行止めや渋滞など、最新の道路情報もご確認ください。",
+      "status": "revised",
+      "changes": [
+        "drive conditions"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "A .external-link",
+      "text": "NEXCO西日本で料金・ルートを調べる",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H2 ",
+      "text": "通勤と予算に合う、",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "H2 ",
+      "text": "奈良の土地を探す。",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "気になるエリアの分譲地から、住まいの検討へ。",
+      "status": "revised",
+      "changes": [
+        "closing body"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P ",
+      "text": "土地・建物・諸費用を含めた予算は、条件を確認しながらご相談いただけます。",
+      "status": "revised",
+      "changes": [
+        "closing body"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "A .button light",
+      "text": "販売中の分譲地を見る",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "SPAN ",
+      "text": "電話で相談する",
+      "status": "reviewed-unchanged",
+      "changes": [
+        "header phone"
+      ],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "A ",
+      "text": "やまと不動産 トップへ戻る",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "P ",
+      "text": "制作確認用プレビュー · Webフォームでの受付は行っていません。",
+      "status": "revised",
+      "changes": [
+        "footer preview status"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "P .source-note",
+      "text": "路線・IC名称の確認：2026年9月5日／近畿日本鉄道・NEXCO西日本公式資料。運行時刻・交通所要時間の保証ではありません。",
+      "status": "revised",
+      "changes": [
+        "footer source note"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "META  [content]",
+      "text": "大阪方面への電車通勤、最寄駅から住まいまでの移動、休日の車移動を確認するための奈良の住まい案内。",
+      "status": "revised",
+      "changes": [
+        "meta description"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "SECTION #iju [aria-label]",
+      "text": "大阪から奈良へのアクセス",
+      "status": "revised",
+      "changes": [
+        "H1 / section aria-label"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    },
+    {
+      "location": "IMG  [alt]",
+      "text": "薄暮の道頓堀・なんばのネオンと運河",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "NAV  [aria-label]",
+      "text": "このページの案内",
+      "status": "reviewed-unchanged",
+      "changes": [],
+      "rationale": "固有名詞・数値・明確なラベル/説明で、意味と実動作が整っているため維持"
+    },
+    {
+      "location": "DIV  [aria-label]",
+      "text": "大阪から奈良への帰宅時の運行例",
+      "status": "revised",
+      "changes": [
+        "journey aria-label"
+      ],
+      "rationale": "copy-changes.jsonの問題・保持条件と対照。改稿後の全文も別記"
+    }
+  ],
+  "after": [
+    {
+      "location": "TITLE ",
+      "text": "大阪で働き、奈良に住む｜やまと不動産・制作確認用"
+    },
+    {
+      "location": "A .skip",
+      "text": "本文へ進む"
+    },
+    {
+      "location": "SPAN ",
+      "text": "やまと不動産"
+    },
+    {
+      "location": "SMALL ",
+      "text": "トップへ戻る"
+    },
+    {
+      "location": "SPAN ",
+      "text": "電話で相談する"
+    },
+    {
+      "location": "H1 .iju__sr",
+      "text": "大阪で働き、奈良に住む"
+    },
+    {
+      "location": "SPAN .iju__eyebrow",
+      "text": "Move to Nara ／ 奈良に住むという選択"
+    },
+    {
+      "location": "SPAN #ijuClockCap",
+      "text": "大阪難波"
+    },
+    {
+      "location": "H2 #ijuTitle",
+      "text": "大阪難波から、近鉄奈良へ。"
+    },
+    {
+      "location": "P #ijuDeck",
+      "text": "平日夕方の快速急行で、乗り換えなし。"
+    },
+    {
+      "location": "P #ijuConcept",
+      "text": "背景はAIで生成したイメージです。"
+    },
+    {
+      "location": "A .iju__skip",
+      "text": "電車の所要時間を見る"
+    },
+    {
+      "location": "B ",
+      "text": "快速急行・乗り換えなし"
+    },
+    {
+      "location": "SPAN ",
+      "text": "大阪難波"
+    },
+    {
+      "location": "SPAN ",
+      "text": "鶴橋"
+    },
+    {
+      "location": "SPAN ",
+      "text": "生駒"
+    },
+    {
+      "location": "SPAN ",
+      "text": "学園前"
+    },
+    {
+      "location": "SPAN ",
+      "text": "大和西大寺"
+    },
+    {
+      "location": "SPAN ",
+      "text": "新大宮"
+    },
+    {
+      "location": "SPAN ",
+      "text": "近鉄奈良"
+    },
+    {
+      "location": "SPAN ",
+      "text": "途中駅の到着時刻"
+    },
+    {
+      "location": "SPAN ",
+      "text": "大阪難波 18:27発"
+    },
+    {
+      "location": "LI ",
+      "text": "鶴橋"
+    },
+    {
+      "location": "LI ",
+      "text": "生駒"
+    },
+    {
+      "location": "LI ",
+      "text": "学園前"
+    },
+    {
+      "location": "LI ",
+      "text": "大和西大寺"
+    },
+    {
+      "location": "LI ",
+      "text": "新大宮"
+    },
+    {
+      "location": "P .iju__sr",
+      "text": "平日夕方の快速急行による帰宅例です。大阪難波18時27分発、近鉄奈良19時08分着。乗り換えなしで41分です。主な停車駅は鶴橋、生駒、学園前、大和西大寺、新大宮です。"
+    },
+    {
+      "location": "P .journey-condition",
+      "text": "平日夕方の快速急行の一例です。所要時間は列車や時間帯によって異なります。"
+    },
+    {
+      "location": "A ",
+      "text": "この列車の時刻を見る"
+    },
+    {
+      "location": "A ",
+      "text": "電車での通勤"
+    },
+    {
+      "location": "A ",
+      "text": "駅から家まで"
+    },
+    {
+      "location": "A ",
+      "text": "車でのお出かけ"
+    },
+    {
+      "location": "A ",
+      "text": "分譲地を探す"
+    },
+    {
+      "location": "H2 #train-title",
+      "text": "電車での通勤"
+    },
+    {
+      "location": "P ",
+      "text": "大阪での仕事を続けながら、奈良に住む。"
+    },
+    {
+      "location": "P ",
+      "text": "通勤の参考に、大阪難波から奈良へ帰る電車の一例をご紹介します。"
+    },
+    {
+      "location": "A .text-link",
+      "text": "駅から家までの移動を見る"
+    },
+    {
+      "location": "P .eyebrow",
+      "text": "平日夕方の帰宅例"
+    },
+    {
+      "location": "H3 ",
+      "text": "大阪難波から近鉄奈良へ、"
+    },
+    {
+      "location": "H3 ",
+      "text": "快速急行で"
+    },
+    {
+      "location": "SPAN ",
+      "text": "分。"
+    },
+    {
+      "location": "P .travel-conditions",
+      "text": "18:27発→19:08着、平日夕方の一例です。所要時間は列車や時間帯によって異なります。自宅や勤務先と駅の間の移動時間は含みません。"
+    },
+    {
+      "location": "P .travel-conditions",
+      "text": "（2026年9月5日、近鉄公式時刻表で確認）"
+    },
+    {
+      "location": "A .external-link",
+      "text": "この列車の時刻表を見る（近鉄公式）"
+    },
+    {
+      "location": "SUMMARY ",
+      "text": "全停車駅と到着・発車時刻"
+    },
+    {
+      "location": "CAPTION ",
+      "text": "快速急行・近鉄奈良行き／平日夕方の運行例"
+    },
+    {
+      "location": "TH ",
+      "text": "駅名"
+    },
+    {
+      "location": "TH ",
+      "text": "到着"
+    },
+    {
+      "location": "TH ",
+      "text": "発車"
+    },
+    {
+      "location": "TH ",
+      "text": "大阪難波"
+    },
+    {
+      "location": "TH ",
+      "text": "近鉄日本橋"
+    },
+    {
+      "location": "TH ",
+      "text": "大阪上本町"
+    },
+    {
+      "location": "TH ",
+      "text": "鶴橋"
+    },
+    {
+      "location": "TH ",
+      "text": "生駒"
+    },
+    {
+      "location": "TH ",
+      "text": "学園前"
+    },
+    {
+      "location": "TH ",
+      "text": "大和西大寺"
+    },
+    {
+      "location": "TH ",
+      "text": "新大宮"
+    },
+    {
+      "location": "TH ",
+      "text": "近鉄奈良"
+    },
+    {
+      "location": "P .note",
+      "text": "大阪難波〜近鉄奈良の全停車駅を掲載しています。この列車は神戸三宮始発です。朝の通勤には、奈良から大阪方面への時刻表をご覧ください。"
+    },
+    {
+      "location": "P .journey-label",
+      "text": "主な駅"
+    },
+    {
+      "location": "SPAN ",
+      "text": "大阪 → 奈良"
+    },
+    {
+      "location": "H3 ",
+      "text": "大阪難波"
+    },
+    {
+      "location": "P ",
+      "text": "なんばエリアから近鉄線を利用できます。"
+    },
+    {
+      "location": "H3 ",
+      "text": "鶴橋"
+    },
+    {
+      "location": "P ",
+      "text": "勤務先によっては、鶴橋で乗り換える経路もあります。"
+    },
+    {
+      "location": "H3 ",
+      "text": "生駒"
+    },
+    {
+      "location": "P ",
+      "text": "生駒方面の住まいも検討できます。"
+    },
+    {
+      "location": "H3 ",
+      "text": "学園前"
+    },
+    {
+      "location": "H3 ",
+      "text": "大和西大寺"
+    },
+    {
+      "location": "H3 ",
+      "text": "新大宮"
+    },
+    {
+      "location": "H3 ",
+      "text": "近鉄奈良"
+    },
+    {
+      "location": "P ",
+      "text": "駅から家までの移動時間も、通勤時間に含まれます。"
+    },
+    {
+      "location": "P .note",
+      "text": "一部の駅を省略した路線案内です。停車駅・所要時間・乗り換えは、列車や時間帯によって異なります。"
+    },
+    {
+      "location": "A .external-link",
+      "text": "近鉄公式の路線図・駅情報"
+    },
+    {
+      "location": "A .external-link",
+      "text": "近鉄公式でダイヤを調べる"
+    },
+    {
+      "location": "H2 #last-title",
+      "text": "駅に着いてから、"
+    },
+    {
+      "location": "H2 #last-title",
+      "text": "家に着くまで。"
+    },
+    {
+      "location": "P ",
+      "text": "駅から家までの距離や移動方法で、毎日の通勤時間は変わります。"
+    },
+    {
+      "location": "P ",
+      "text": "出勤・帰宅の時間帯に合わせて、候補の土地ごとの経路を見てみましょう。"
+    },
+    {
+      "location": "H3 ",
+      "text": "最寄駅と移動方法"
+    },
+    {
+      "location": "P ",
+      "text": "徒歩・自転車・バスなど、駅までの移動方法を調べましょう。距離に加え、坂道や夜道の様子も、通いやすさを左右します。"
+    },
+    {
+      "location": "H3 ",
+      "text": "出勤・帰宅の時間帯"
+    },
+    {
+      "location": "P ",
+      "text": "バスの本数や待ち時間は、毎日の通勤時間に関わります。出勤時は電車との接続、帰宅時は最終便の時刻も大切です。"
+    },
+    {
+      "location": "H3 ",
+      "text": "家から勤務先まで"
+    },
+    {
+      "location": "P ",
+      "text": "家から駅、電車と乗り換え、駅から勤務先までの時間を合計します。保育園への送迎がある日は、その道のりも含めます。"
+    },
+    {
+      "location": "P ",
+      "text": "気になる分譲地は、所在地と最寄駅を見ながら、"
+    },
+    {
+      "location": "P ",
+      "text": "家から駅までの経路も確かめましょう。"
+    },
+    {
+      "location": "A .button",
+      "text": "販売中の分譲地を見る"
+    },
+    {
+      "location": "H2 #drive-title",
+      "text": "休日のお出かけは、車で。"
+    },
+    {
+      "location": "P ",
+      "text": "大阪方面へは、第二阪奈道路を使うルートもあります。"
+    },
+    {
+      "location": "SPAN ",
+      "text": "第二阪奈道路"
+    },
+    {
+      "location": "H3 ",
+      "text": "中町IC"
+    },
+    {
+      "location": "P ",
+      "text": "家からICまでの一般道の経路と、出入口の方向を調べておきましょう。"
+    },
+    {
+      "location": "SPAN ",
+      "text": "第二阪奈道路"
+    },
+    {
+      "location": "H3 ",
+      "text": "宝来IC"
+    },
+    {
+      "location": "P ",
+      "text": "目的地までの経路は、ICを降りてからの一般道も含めて考えます。"
+    },
+    {
+      "location": "P ",
+      "text": "所要時間や有料区間の料金は、出発地・目的地によって異なります。道路の混み具合でも時間は変わるため、お出かけ前に通行止めや渋滞の情報もご確認ください。"
+    },
+    {
+      "location": "A .external-link",
+      "text": "NEXCO西日本で料金・ルートを調べる"
+    },
+    {
+      "location": "H2 ",
+      "text": "通勤と予算に合う、"
+    },
+    {
+      "location": "H2 ",
+      "text": "奈良の土地を探す。"
+    },
+    {
+      "location": "P ",
+      "text": "住みたいエリアの土地を、販売中の分譲地から探せます。"
+    },
+    {
+      "location": "P ",
+      "text": "ご希望の条件と、土地・建物・諸費用を含めた予算についてもご相談いただけます。"
+    },
+    {
+      "location": "A .button light",
+      "text": "販売中の分譲地を見る"
+    },
+    {
+      "location": "SPAN ",
+      "text": "電話で相談する"
+    },
+    {
+      "location": "A ",
+      "text": "やまと不動産 トップへ戻る"
+    },
+    {
+      "location": "P ",
+      "text": "このページは制作確認用です。Webフォームでのお申し込みは受け付けていません。"
+    },
+    {
+      "location": "P .source-note",
+      "text": "路線・IC名は、2026年9月5日に近畿日本鉄道・NEXCO西日本の公式資料で確認しています。時刻や所要時間は、ご利用前に各社の最新情報をご確認ください。"
+    },
+    {
+      "location": "META  [content]",
+      "text": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。"
+    },
+    {
+      "location": "SECTION #iju [aria-label]",
+      "text": "大阪で働き、奈良に住む"
+    },
+    {
+      "location": "IMG  [alt]",
+      "text": "薄暮の道頓堀・なんばのネオンと運河"
+    },
+    {
+      "location": "NAV  [aria-label]",
+      "text": "このページの案内"
+    },
+    {
+      "location": "DIV  [aria-label]",
+      "text": "平日夕方、大阪から奈良への帰宅例"
+    }
+  ],
+  "dynamic": [
+    {
+      "at": 0,
+      "phase": "Osaka Namba ／ Departure",
+      "title": "大阪難波から、近鉄奈良へ。",
+      "deck": "平日夕方の快速急行で、乗り換えなし。",
+      "cap": "大阪難波",
+      "clock": "18:27",
+      "stop": 0
+    },
+    {
+      "at": 0.15,
+      "phase": "Rail Access ／ 41 Minutes",
+      "title": "近鉄奈良まで、41分。",
+      "deck": "平日18:27発、19:08着の帰宅例です。",
+      "cap": "直通",
+      "clock": "18:27",
+      "stop": 0
+    },
+    {
+      "at": 0.32,
+      "phase": "Tsuruhashi ／ 5 Minutes",
+      "title": "鶴橋に到着。",
+      "deck": "大阪難波を出て5分。乗り換えずに奈良へ向かいます。",
+      "cap": "鶴橋",
+      "clock": "18:32",
+      "stop": 1
+    },
+    {
+      "at": 0.5,
+      "phase": "Ikoma ／ 22 Minutes",
+      "title": "生駒に到着。",
+      "deck": "大阪難波から22分。次は学園前です。",
+      "cap": "生駒",
+      "clock": "18:49",
+      "stop": 2
+    },
+    {
+      "at": 0.58,
+      "phase": "Gakuen-mae ／ 28 Minutes",
+      "title": "学園前に到着。",
+      "deck": "大阪難波から28分。次は大和西大寺です。",
+      "cap": "学園前",
+      "clock": "18:55",
+      "stop": 3
+    },
+    {
+      "at": 0.66,
+      "phase": "Yamato-Saidaiji ／ 8 Minutes Left",
+      "title": "近鉄奈良まで、あと8分。",
+      "deck": "大和西大寺に到着。次は新大宮です。",
+      "cap": "大和西大寺",
+      "clock": "19:00",
+      "stop": 4,
+      "compact": true
+    },
+    {
+      "at": 0.77,
+      "phase": "Shin-Omiya ／ 3 Minutes Left",
+      "title": "近鉄奈良まで、あと3分。",
+      "deck": "新大宮に到着。次は終点の近鉄奈良です。",
+      "cap": "新大宮",
+      "clock": "19:05",
+      "stop": 5,
+      "compact": true
+    },
+    {
+      "at": 0.88,
+      "phase": "Kintetsu Nara ／ Arrival",
+      "title": "近鉄奈良に到着。",
+      "deck": "大阪難波から41分、19:08着の帰宅例です。",
+      "cap": "近鉄奈良",
+      "clock": "19:08",
+      "stop": 6
+    }
+  ]
+}

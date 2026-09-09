@@ -1,0 +1,17 @@
+{
+  "status": "TECHNICAL_PASS",
+  "browserConfigurations": 10,
+  "normalJourneyConfigurations": 6,
+  "journeyStagesEach": 8,
+  "staticJapaneseItems": 113,
+  "allCTA": 18,
+  "protectedAssetCount": 9,
+  "realDeviceChecked": false,
+  "textlintAvailable": false,
+  "releaseAuthorization": "existing director request 2026-09-09; meaning-preserving Japanese corrections plus minimal spacing; publish to existing production",
+  "sourceSHA": {
+    "move-to-nara-preview.html": "3c250357d4719a7e5f6bd0d008cdd840f9d361a5c81f42a8c9364500c5b21c1f",
+    "assets/top-renewal/nara-journey.js": "3063a70e8c1b365a33dd725717f0a59a829c0113944514531e862c78e345bb27",
+    "assets/top-renewal/nara-journey.css": "568620cfed90a4bee0842d413c4d4915a76776ac6cbe6e2554b2405653a7cb6c"
+  }
+}

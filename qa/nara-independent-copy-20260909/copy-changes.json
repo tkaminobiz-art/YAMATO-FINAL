@@ -1,0 +1,416 @@
+[
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "meta description",
+    "before": "大阪方面への電車通勤、最寄駅から住まいまでの移動、休日の車移動を確認するための奈良の住まい案内。",
+    "after": "大阪で働きながら奈良で住まいを探す方へ。電車の運行例、駅から家までの移動、車でのアクセスをご案内します。",
+    "problem": "確認のためという制作目的ではなく、読者と内容を示す",
+    "preserve": "大阪勤務と奈良の住まい、電車・駅からの移動・車",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "header phone",
+    "before": "<span>電話で相談</span>",
+    "after": "<span>電話で相談する</span>",
+    "problem": "電話の実動作に合わせ、末尾CTAと統一",
+    "preserve": "tel:0742361123",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "H1 / section aria-label",
+    "before": "大阪から奈良へのアクセス",
+    "after": "大阪で働き、奈良に住む",
+    "problem": "アクセス情報だけでなくページの提案を示す",
+    "preserve": "大阪の仕事を続け奈良の住まいを検討",
+    "occurrences": 2
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "static hero deck",
+    "before": "快速急行なら、乗り換えなしです。",
+    "after": "平日夕方の快速急行で、乗り換えなし。",
+    "problem": "初期表示にも運行日の条件を添える",
+    "preserve": "快速急行・平日夕方・直通",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "image note",
+    "before": "背景画像は生成コンセプトです。",
+    "after": "背景はAIで生成したイメージです。",
+    "problem": "生成コンセプトという制作者の用語を自然に",
+    "preserve": "生成背景の注記を保持",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "hero skip link",
+    "before": "旅程を飛ばして、移動情報を見る",
+    "after": "電車の所要時間を見る",
+    "problem": "操作の内部事情から到達先の内容へ",
+    "preserve": "遷移先 #train",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "TRAIN label",
+    "before": "快速急行・乗換なし",
+    "after": "快速急行・乗り換えなし",
+    "problem": "通常の表記に揃える",
+    "preserve": "列車種別と乗り換えなし",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "screen reader journey summary",
+    "before": "大阪難波18時27分発、近鉄奈良19時08分着。鶴橋・生駒・学園前・大和西大寺・新大宮に停車する、41分の運行例です。",
+    "after": "平日夕方の快速急行による帰宅例です。大阪難波18時27分発、近鉄奈良19時08分着。乗り換えなしで41分です。主な停車駅は鶴橋、生駒、学園前、大和西大寺、新大宮です。",
+    "problem": "読み上げにも運行日・帰宅例と主な駅の省略を明示",
+    "preserve": "全時刻・駅名・41分・直通、全9駅は時刻表",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "journey condition",
+    "before": "快速急行の運行例です。所要時間は列車・時間帯で異なります。",
+    "after": "平日夕方の快速急行の一例です。所要時間は列車や時間帯によって異なります。",
+    "problem": "条件を読みやすい説明体に",
+    "preserve": "一例、時間帯・列車で変動",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "condition link",
+    "before": "運行例の詳細を見る",
+    "after": "この列車の時刻を見る",
+    "problem": "詳細の対象を具体化",
+    "preserve": "遷移先 #train",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "section nav 02",
+    "before": " 駅から住まい</a>",
+    "after": " 駅から家まで</a>",
+    "problem": "読み手の日常語に",
+    "preserve": "遷移先 #last-mile",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "section nav 03",
+    "before": " 休日の車移動</a>",
+    "after": " 車でのお出かけ</a>",
+    "problem": "自然な案内ラベルに",
+    "preserve": "遷移先 #drive",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "train intro",
+    "before": "大阪難波から、奈良方面へ。<br>勤務先の最寄駅と、住みたい街の駅を合わせて確認します。",
+    "after": "大阪での仕事を続けながら、奈良に住む。<br>通勤の参考に、大阪難波から奈良へ帰る電車の一例をご紹介します。",
+    "problem": "曖昧な確認をやめ、何を見られるかを伝える",
+    "preserve": "朝の通勤ではなく夕方帰宅例",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "train section link",
+    "before": "駅から住まいの情報へ進む",
+    "after": "駅から家までの移動を見る",
+    "problem": "情報へ進むを具体化",
+    "preserve": "遷移先 #last-mile",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "journey aria-label",
+    "before": "大阪から奈良への帰宅時の運行例",
+    "after": "平日夕方、大阪から奈良への帰宅例",
+    "problem": "読み上げにも平日夕方を明示",
+    "preserve": "帰宅例",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "travel eyebrow",
+    "before": "大阪から奈良への帰宅例</p>",
+    "after": "平日夕方の帰宅例</p>",
+    "problem": "直下の駅名との重複を減らす",
+    "preserve": "平日夕方・帰宅",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "travel conditions",
+    "before": "平日夕方の一例：18:27発→19:08着。2026年9月5日近鉄公式確認。列車・時間帯で異なります。駅から住まいまでの移動時間は含みません。",
+    "after": "18:27発→19:08着、平日夕方の一例です。所要時間は列車や時間帯によって異なります。自宅や勤務先と駅の間の移動時間は含みません。<br>（2026年9月5日、近鉄公式時刻表で確認）",
+    "problem": "断片の羅列を整え、41分に含まれない範囲を具体化",
+    "preserve": "時刻・平日・駅間・確認日9/5を保持。9/9再検証はQA記録",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "official train CTA",
+    "before": "この運行例を近鉄公式で確認",
+    "after": "この列車の時刻表を見る（近鉄公式）",
+    "problem": "読者が見る対象を具体化",
+    "preserve": "既存の当該列車URL",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "timetable note",
+    "before": "大阪難波から近鉄奈良までの全停車駅です。この列車の始発駅は神戸三宮です。朝の奈良→大阪方面とは別の運行例です。",
+    "after": "大阪難波〜近鉄奈良の全停車駅を掲載しています。この列車は神戸三宮始発です。朝の通勤には、奈良から大阪方面への時刻表をご覧ください。",
+    "problem": "冗長な始発説明と否定を自然な案内に",
+    "preserve": "全9駅・神戸三宮始発・朝は逆方向の別列車",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "route label",
+    "before": "経路上の主な駅",
+    "after": "主な駅",
+    "problem": "意味の重複を整理",
+    "preserve": "一部駅の省略表示",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "Osaka Namba station description",
+    "before": "なんば周辺から、近鉄線へ。",
+    "after": "なんばエリアから近鉄線を利用できます。",
+    "problem": "本文の省略語尾を整える",
+    "preserve": "なんばと近鉄線",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "Tsuruhashi station description",
+    "before": "勤務先に合わせて、乗換経路も確認。",
+    "after": "勤務先によっては、鶴橋で乗り換える経路もあります。",
+    "problem": "何を確認するか曖昧な指示を具体的な条件に",
+    "preserve": "勤務先次第の乗り換え経路、一律通勤時間は追加しない",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "Nara station description",
+    "before": "ここから住まいまでの移動も、忘れずに。",
+    "after": "駅から家までの移動時間も、通勤時間に含まれます。",
+    "problem": "読者への注意口調を、判断に必要な事実へ",
+    "preserve": "駅から家までの時間を含める",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "route note",
+    "before": "途中駅を一部省略した経路案内です。特定の列車の停車駅・時刻表ではありません。所要時間・乗換・停車駅は列車と時間帯により異なります。",
+    "after": "一部の駅を省略した路線案内です。停車駅・所要時間・乗り換えは、列車や時間帯によって異なります。",
+    "problem": "3文の重複を整理",
+    "preserve": "路線の概要、途中駅省略、列車ごとの時刻表とは区別",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "last-mile intro",
+    "before": "駅間の時間だけでは、毎日の通勤は決まりません。<br>候補の土地ごとに、次の条件を確かめましょう。",
+    "after": "駅から家までの距離や移動方法で、毎日の通勤時間は変わります。<br>出勤・帰宅の時間帯に合わせて、候補の土地ごとの経路を見てみましょう。",
+    "problem": "否定から入らず、通勤時間に関わる条件を先に",
+    "preserve": "土地ごと・駅から家・出勤帰宅時の確認",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "last-mile card 01",
+    "before": "徒歩・自転車・バスなど、駅までの経路を確認。駅からの距離だけでなく、坂道や夜の道も見ておきます。",
+    "after": "徒歩・自転車・バスなど、駅までの移動方法を調べましょう。距離に加え、坂道や夜道の様子も、通いやすさを左右します。",
+    "problem": "体言止めの作業指示を、必要性が分かる文章に",
+    "preserve": "徒歩・自転車・バス、距離、坂道、夜道",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "last-mile card 02",
+    "before": "バスを使う場合は、運行本数・最終便・待ち時間も確認。乗りたい電車に間に合うかを調べます。",
+    "after": "バスの本数や待ち時間は、毎日の通勤時間に関わります。出勤時は電車との接続、帰宅時は最終便の時刻も大切です。",
+    "problem": "同じ確認指示を繰り返さず、具体的な判断材料に",
+    "preserve": "本数・待ち時間・接続・最終便",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "last-mile card 03",
+    "before": "自宅から駅、乗換、到着駅から勤務先までを合わせて確認。保育園の送迎がある日は、その経路も含めます。",
+    "after": "家から駅、電車と乗り換え、駅から勤務先までの時間を合計します。保育園への送迎がある日は、その道のりも含めます。",
+    "problem": "何を合わせるかを時間として明示",
+    "preserve": "全行程・乗り換え・送迎",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "last-mile CTA intro",
+    "before": "気になる分譲地が見つかったら、<br>所在地と最寄駅を合わせてご確認ください。",
+    "after": "気になる分譲地は、所在地と最寄駅を見ながら、<br>家から駅までの経路も確かめましょう。",
+    "problem": "所在地と駅を合わせる目的を明示",
+    "preserve": "所在地・最寄駅・経路。遷移は分譲地一覧",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "drive heading",
+    "before": "休日の移動は、車で。",
+    "after": "休日のお出かけは、車で。",
+    "problem": "日常的な語感に",
+    "preserve": "休日の車移動",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "drive intro",
+    "before": "電車での通勤とは分けて、休日のお出かけも検討。<br>大阪方面への移動には、第二阪奈道路という選択肢があります。",
+    "after": "大阪方面へは、第二阪奈道路を使うルートもあります。",
+    "problem": "制作者の章分け・文末省略を削り、経路を直接示す",
+    "preserve": "大阪方面・第二阪奈は複数ルートの一つ",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "Nakamachi IC description",
+    "before": "住まいからICまでの一般道と、利用できる出入口の方向を確認します。",
+    "after": "家からICまでの一般道の経路と、出入口の方向を調べておきましょう。",
+    "problem": "何を確認するかを具体化",
+    "preserve": "一般道、IC入口出口の方向。未検証の方向を断定しない",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "Horai IC description",
+    "before": "目的地に合わせて経路を確認。高速道路を降りてからの移動も含めて考えます。",
+    "after": "目的地までの経路は、ICを降りてからの一般道も含めて考えます。",
+    "problem": "重複した確認指示を一つに",
+    "preserve": "目的地・有料道路の後の一般道",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "drive conditions",
+    "before": "所要時間・料金は出発地、目的地、交通状況によって異なります。通行止めや渋滞など、最新の道路情報もご確認ください。",
+    "after": "所要時間や有料区間の料金は、出発地・目的地によって異なります。道路の混み具合でも時間は変わるため、お出かけ前に通行止めや渋滞の情報もご確認ください。",
+    "problem": "時間と料金の変動要因を分けて正確に",
+    "preserve": "料金・出発地・目的地・混雑・通行止め・最新情報",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "closing body",
+    "before": "気になるエリアの分譲地から、住まいの検討へ。<br>土地・建物・諸費用を含めた予算は、条件を確認しながらご相談いただけます。",
+    "after": "住みたいエリアの土地を、販売中の分譲地から探せます。<br>ご希望の条件と、土地・建物・諸費用を含めた予算についてもご相談いただけます。",
+    "problem": "抽象的な誘導を一覧の実内容と予算相談に",
+    "preserve": "販売中の土地、希望条件、土地・建物・諸費用。試算完了や受付送信は謳わない",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "footer preview status",
+    "before": "制作確認用プレビュー · Webフォームでの受付は行っていません。",
+    "after": "このページは制作確認用です。Webフォームでのお申し込みは受け付けていません。",
+    "problem": "制作用語の断片を自然な説明体に",
+    "preserve": "制作確認用・Web受付なし",
+    "occurrences": 1
+  },
+  {
+    "file": "move-to-nara-preview.html",
+    "role": "footer source note",
+    "before": "路線・IC名称の確認：2026年9月5日／近畿日本鉄道・NEXCO西日本公式資料。運行時刻・交通所要時間の保証ではありません。",
+    "after": "路線・IC名は、2026年9月5日に近畿日本鉄道・NEXCO西日本の公式資料で確認しています。時刻や所要時間は、ご利用前に各社の最新情報をご確認ください。",
+    "problem": "断片と保証否定を、出典と利用時の案内に",
+    "preserve": "確認日9/5、両公式資料、時刻の非固定性は本文にも保持",
+    "occurrences": 1
+  },
+  {
+    "file": "assets/top-renewal/nara-journey.js",
+    "role": "dynamic beat 1/8 title+deck",
+    "before": "title:'大阪難波から近鉄奈良へ。',deck:'快速急行は乗り換えなし。'",
+    "after": "title:'大阪難波から、近鉄奈良へ。',deck:'平日夕方の快速急行で、乗り換えなし。'",
+    "problem": "出発駅・到着駅・経過時間の関係を明示し、省略語尾を整理",
+    "preserve": "運行例の時刻・順序・GSAP progress/stop/clockを全て保持",
+    "occurrences": 1
+  },
+  {
+    "file": "assets/top-renewal/nara-journey.js",
+    "role": "dynamic beat 2/8 title+deck",
+    "before": "title:'近鉄奈良まで41分。',deck:'快速急行の運行例です。'",
+    "after": "title:'近鉄奈良まで、41分。',deck:'平日18:27発、19:08着の帰宅例です。'",
+    "problem": "出発駅・到着駅・経過時間の関係を明示し、省略語尾を整理",
+    "preserve": "運行例の時刻・順序・GSAP progress/stop/clockを全て保持",
+    "occurrences": 1
+  },
+  {
+    "file": "assets/top-renewal/nara-journey.js",
+    "role": "dynamic beat 3/8 title+deck",
+    "before": "title:'鶴橋まで5分。',deck:'近鉄奈良方面へ直通。'",
+    "after": "title:'鶴橋に到着。',deck:'大阪難波を出て5分。乗り換えずに奈良へ向かいます。'",
+    "problem": "出発駅・到着駅・経過時間の関係を明示し、省略語尾を整理",
+    "preserve": "運行例の時刻・順序・GSAP progress/stop/clockを全て保持",
+    "occurrences": 1
+  },
+  {
+    "file": "assets/top-renewal/nara-journey.js",
+    "role": "dynamic beat 4/8 title+deck",
+    "before": "title:'生駒まで22分。',deck:'乗り換えなし。'",
+    "after": "title:'生駒に到着。',deck:'大阪難波から22分。次は学園前です。'",
+    "problem": "出発駅・到着駅・経過時間の関係を明示し、省略語尾を整理",
+    "preserve": "運行例の時刻・順序・GSAP progress/stop/clockを全て保持",
+    "occurrences": 1
+  },
+  {
+    "file": "assets/top-renewal/nara-journey.js",
+    "role": "dynamic beat 5/8 title+deck",
+    "before": "title:'学園前まで28分。',deck:'大和西大寺、新大宮を経て近鉄奈良へ。'",
+    "after": "title:'学園前に到着。',deck:'大阪難波から28分。次は大和西大寺です。'",
+    "problem": "出発駅・到着駅・経過時間の関係を明示し、省略語尾を整理",
+    "preserve": "運行例の時刻・順序・GSAP progress/stop/clockを全て保持",
+    "occurrences": 1
+  },
+  {
+    "file": "assets/top-renewal/nara-journey.js",
+    "role": "dynamic beat 6/8 title+deck",
+    "before": "title:'近鉄奈良まであと8分。',deck:'新大宮に停車。'",
+    "after": "title:'近鉄奈良まで、あと8分。',deck:'大和西大寺に到着。次は新大宮です。'",
+    "problem": "出発駅・到着駅・経過時間の関係を明示し、省略語尾を整理",
+    "preserve": "運行例の時刻・順序・GSAP progress/stop/clockを全て保持",
+    "occurrences": 1
+  },
+  {
+    "file": "assets/top-renewal/nara-journey.js",
+    "role": "dynamic beat 7/8 title+deck",
+    "before": "title:'近鉄奈良まであと3分。',deck:'次は近鉄奈良。'",
+    "after": "title:'近鉄奈良まで、あと3分。',deck:'新大宮に到着。次は終点の近鉄奈良です。'",
+    "problem": "出発駅・到着駅・経過時間の関係を明示し、省略語尾を整理",
+    "preserve": "運行例の時刻・順序・GSAP progress/stop/clockを全て保持",
+    "occurrences": 1
+  },
+  {
+    "file": "assets/top-renewal/nara-journey.js",
+    "role": "dynamic beat 8/8 title+deck",
+    "before": "title:'近鉄奈良に到着。',deck:'大阪難波から41分の運行例。'",
+    "after": "title:'近鉄奈良に到着。',deck:'大阪難波から41分、19:08着の帰宅例です。'",
+    "problem": "出発駅・到着駅・経過時間の関係を明示し、省略語尾を整理",
+    "preserve": "運行例の時刻・順序・GSAP progress/stop/clockを全て保持",
+    "occurrences": 1
+  },
+  {
+    "file": "assets/top-renewal/nara-journey.js",
+    "role": "dynamic clock caption",
+    "before": "cap:'乗換なし'",
+    "after": "cap:'直通'",
+    "problem": "時計脇の短いラベルは直通と表し、SPでブランド行の1文字だけの折り返しを防ぐ",
+    "preserve": "乗り換えなし",
+    "occurrences": 1
+  }
+]

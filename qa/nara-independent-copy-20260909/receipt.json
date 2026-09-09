@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "move-to-nara-preview.html",
+      "sha256": "3c250357d4719a7e5f6bd0d008cdd840f9d361a5c81f42a8c9364500c5b21c1f"
+    },
+    {
+      "path": "assets/top-renewal/nara-journey.js",
+      "sha256": "3063a70e8c1b365a33dd725717f0a59a829c0113944514531e862c78e345bb27"
+    },
+    {
+      "path": "assets/top-renewal/nara-journey.css",
+      "sha256": "568620cfed90a4bee0842d413c4d4915a76776ac6cbe6e2554b2405653a7cb6c"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/nara-independent-copy-20260909/brief.md",
+      "sha256": "46b4f6da0ec984f45cecb3e6350c2d5d89d49d7fa1e91cde75dee2fa7974b919"
+    },
+    "copy": {
+      "path": "qa/nara-independent-copy-20260909/copy.md",
+      "sha256": "3d195035f5ffc38048c49e063036929b381f27c2120d4fd18eba04f9eee22a43"
+    },
+    "assets": {
+      "path": "qa/nara-independent-copy-20260909/assets.md",
+      "sha256": "b639722a35ec99c865065f1539c9f4c4d1faa240578997d623d03ab118c6d1ae"
+    },
+    "visual": {
+      "path": "qa/nara-independent-copy-20260909/visual.md",
+      "sha256": "f8690a7f9be002badf72c56c8944b80049dcf806ed6c84d389b3f7879de7986c"
+    },
+    "interaction": {
+      "path": "qa/nara-independent-copy-20260909/interaction.md",
+      "sha256": "14dddb9c12c66faea14c9f83e93a39136204a385e74d97ebc7d390a1664df432"
+    }
+  },
+  "screenshots": [
+    {
+      "path": "qa/nara-independent-copy-20260909/evidence/pc-hero.png",
+      "sha256": "02222aa4a584542a90239732b0e06049929e4b119ee9bb2cffbbb0f2df4a2482",
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "qa/nara-independent-copy-20260909/evidence/pc-train.png",
+      "sha256": "73e8b1d07ff7358b78ef111ecf5653e45cb85f4c5287c27fa7af503922190d23",
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "qa/nara-independent-copy-20260909/evidence/sp-hero.png",
+      "sha256": "6fc5b44611b2399649eaedbee72432ff900d62b80e5d132d57e064080696cd04",
+      "viewport": "sp",
+      "width": 390,
+      "height": 900
+    },
+    {
+      "path": "qa/nara-independent-copy-20260909/evidence/sp-train.png",
+      "sha256": "38c7dc30ba306972baa61bff0943c5f4882250b771c3b00dadc98ee077d43586",
+      "viewport": "sp",
+      "width": 390,
+      "height": 900
+    }
+  ]
+}

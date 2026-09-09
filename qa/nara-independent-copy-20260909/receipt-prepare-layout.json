@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "move-to-nara-preview.html",
+      "sha256": "3c250357d4719a7e5f6bd0d008cdd840f9d361a5c81f42a8c9364500c5b21c1f"
+    },
+    {
+      "path": "assets/top-renewal/nara-journey.js",
+      "sha256": "b11eda8a075f718f82e1c450d23d2c164486d8a503281e451ddb9df04cc9e074"
+    },
+    {
+      "path": "assets/top-renewal/nara-journey.css",
+      "sha256": "d20ac9dfd9c0ffca5b6f7d0155d00557d83612ac80557adbb63cd979c51089fb"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/nara-independent-copy-20260909/brief.md",
+      "sha256": "a62bdd6b5df04bb30281b3249839816edd8a56ee81b0e780fb0625302fce425d"
+    },
+    "copy": {
+      "path": "qa/nara-independent-copy-20260909/copy.md",
+      "sha256": "d8964f644e18d7dcf50443990c2718cb97e384313b71bb79cca80a2edb783924"
+    },
+    "assets": {
+      "path": "qa/nara-independent-copy-20260909/assets.md",
+      "sha256": "b639722a35ec99c865065f1539c9f4c4d1faa240578997d623d03ab118c6d1ae"
+    }
+  },
+  "screenshots": []
+}
