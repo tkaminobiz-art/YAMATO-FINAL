@@ -1,0 +1,83 @@
+{
+  "outsideWorksMarkupUnchanged": true,
+  "sourceProtected": [
+    {
+      "path": "vercel.json",
+      "unchanged": true
+    },
+    {
+      "path": "works.html",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/verify-homepage.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/verify-day-cycle-hero.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/verify-nara.mjs",
+      "unchanged": true
+    }
+  ],
+  "sharedProtected": [
+    {
+      "path": "_mobile-verify/report.json",
+      "unchanged": true
+    },
+    {
+      "path": "_mobile-verify/webkit-1024.png",
+      "unchanged": true
+    },
+    {
+      "path": "_mobile-verify/webkit-1280.png",
+      "unchanged": true
+    },
+    {
+      "path": "_mobile-verify/webkit-1440.png",
+      "unchanged": true
+    },
+    {
+      "path": "_mobile-verify/webkit-1920.png",
+      "unchanged": true
+    },
+    {
+      "path": "_mobile-verify/webkit-320.png",
+      "unchanged": true
+    },
+    {
+      "path": "_mobile-verify/webkit-360.png",
+      "unchanged": true
+    },
+    {
+      "path": "_mobile-verify/webkit-375.png",
+      "unchanged": true
+    },
+    {
+      "path": "_mobile-verify/webkit-390.png",
+      "unchanged": true
+    },
+    {
+      "path": "_mobile-verify/webkit-414.png",
+      "unchanged": true
+    },
+    {
+      "path": "_mobile-verify/webkit-768.png",
+      "unchanged": true
+    },
+    {
+      "path": "index.html",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/build-checkpoint.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "vercel.json",
+      "unchanged": true
+    }
+  ]
+}

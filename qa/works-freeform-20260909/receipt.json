@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "2447bd185754529b52b281090670a2e2047b940abfc19fb9e52b20ec33bfea2b"
+    },
+    {
+      "path": "assets/top-renewal/works-freeform-20260909/style.css",
+      "sha256": "d898499f918818dae54903253938719ef2589d84c6a06c4a3c06ee23d65c75ef"
+    },
+    {
+      "path": "assets/top-renewal/works-freeform-20260909/photos.js",
+      "sha256": "48ba47c0dc200e31cbd1d770632d68e527e392a2bd718356b12ef124daf6936f"
+    },
+    {
+      "path": "scripts/verify-works-freeform.mjs",
+      "sha256": "6f88f47fadd4deedf5f6ab43d2de63d3bf3d9f5f95d23acb792a47d0bb455bc4"
+    },
+    {
+      "path": "scripts/build-checkpoint.mjs",
+      "sha256": "22e5852034a2323a70a8557cc5aa77fe142d9e33117f6e96d72f70777744516e"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/works-freeform-20260909/brief.md",
+      "sha256": "6ef05adeba0d988ca80522520aa613f0114e4b291796295b37b73b232fae5fdd"
+    },
+    "copy": {
+      "path": "qa/works-freeform-20260909/copy.md",
+      "sha256": "09d93db3ace840837c3c40c8c8611ae9c0c306269977fb5e4c685ab2121e8af8"
+    },
+    "assets": {
+      "path": "qa/works-freeform-20260909/assets.md",
+      "sha256": "e73bb86a3080c268b1058c05687dca325f570b7618e25005404289a42e522413"
+    },
+    "visual": {
+      "path": "qa/works-freeform-20260909/visual.md",
+      "sha256": "50a69eacdf37e494e05d5f7874867fec417a754877a1bbcee036428b3435113a"
+    },
+    "interaction": {
+      "path": "qa/works-freeform-20260909/interaction.md",
+      "sha256": "9ff01bb4e608821c4e1607576c92e1ebb252bebb8b057c64f2139284966ae273"
+    }
+  },
+  "screenshots": [
+    {
+      "path": "qa/works-freeform-20260909/release-verified/viewport-chromium-normal-1440-1080.png",
+      "sha256": "b9c7d010e81977384017d440b48f1b2320047ba584c65b2fcd3fa28e7461fb9e",
+      "viewport": "pc",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "path": "qa/works-freeform-20260909/release-verified/viewport-chromium-normal-390-844.png",
+      "sha256": "e0d5e265a174f9bf146296b9d36f734ef780c551efd97a4cf1ec639088fef07f",
+      "viewport": "sp",
+      "width": 390,
+      "height": 844
+    }
+  ]
+}

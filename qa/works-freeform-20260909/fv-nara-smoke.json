@@ -1,0 +1,62 @@
+[
+  {
+    "width": 1440,
+    "video": {
+      "source": "http://127.0.0.1:8938/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "time": 2.001609,
+      "loop": true,
+      "muted": true,
+      "inline": true,
+      "manual": 0,
+      "visibleNotice": false
+    },
+    "pausedOffscreen": true,
+    "nara": {
+      "origins": 2,
+      "links": [
+        "works.html",
+        "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+        "https://www.pref.osaka.lg.jp/documents/12026/zyuugyouti_tuugakuti20osakahusyuukei.pdf",
+        "https://www.pref.nara.lg.jp/documents/12527/n030406a.xls",
+        "move-to-nara-preview.html#train",
+        "lots-preview.html?view=list"
+      ],
+      "tsuruhashiMinutes": [
+        "16",
+        "22",
+        "35"
+      ],
+      "originSelectionVerified": true
+    }
+  },
+  {
+    "width": 390,
+    "video": {
+      "source": "http://127.0.0.1:8938/assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "time": 5.65635,
+      "loop": true,
+      "muted": true,
+      "inline": true,
+      "manual": 0,
+      "visibleNotice": false
+    },
+    "pausedOffscreen": true,
+    "nara": {
+      "origins": 2,
+      "links": [
+        "works.html",
+        "https://eki.kintetsu.co.jp/norikae/T7?dw=0&sf=5213&tx=1-5226",
+        "https://www.pref.osaka.lg.jp/documents/12026/zyuugyouti_tuugakuti20osakahusyuukei.pdf",
+        "https://www.pref.nara.lg.jp/documents/12527/n030406a.xls",
+        "move-to-nara-preview.html#train",
+        "lots-preview.html?view=list"
+      ],
+      "tsuruhashiMinutes": [
+        "16",
+        "22",
+        "35"
+      ],
+      "originSelectionVerified": true
+    }
+  }
+]

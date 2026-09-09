@@ -1,0 +1,11 @@
+# 操作・状態の確認
+
+公開ビルドをloopback 8938から配信。verify-browser.mjsのrelease-verified/results.jsonは14ケース/失敗0。Chromium通常6画面＋画像失敗2＋reduced-motion2＋JavaScript無効2、WebKit通常PC/SP2。各画面で3カテゴリ＋全件CTAの4リンク、44px以上、帯の4隅と中央20点のヒット、横あふれ/本文範囲、建物を動かさないことを確認。各リンクはworks.htmlで、PC/SPの全件CTAは実際の施工事例h1まで遷移した。
+
+Tab（WebKit/macOSはOption+Tab）で4リンクが順にフォーカスされ、写真内の帯に見える白黒の輪郭、CTAに濃色輪郭が出る。通常のpointer操作4点を各ケースで確認。JS無効はページ側スクリプトを使わず一覧へ遷移し、CSS構図も残る。
+
+画像リクエスト失敗3枚でもカテゴリ名と4導線を維持。SPからPCへ拡幅し別解像度の画像読込が回復すると、エラー表示を解除し3写真へ戻ることを確認。reduced-motionでWORKS内のアニメーションはなし。
+
+FVはPC/SPの元の18秒動画を自動再生、ミュート/inline/loop・手動切替0・画面上の生成注記なしを再確認。WORKSへ移動すると画面外で一時停止。Naraは2起点を維持し鶴橋16/22/35分の切替をPC/SPで実操作確認。元のビルドゲート全数＋既知の16回帰例も通過。
+
+初回QAで製品側の320pxラベル干渉を修正した。QA側はJS無効時のrequestAnimationFrame待機を除去し、WebKit既定Tabがリンクを飛ばすmacOS挙動に合わせOption+Tabで検証。Nara起点も実DOMのradioを使うよう確認セレクタを修正した。これらをサイト動作不具合として報告していない。

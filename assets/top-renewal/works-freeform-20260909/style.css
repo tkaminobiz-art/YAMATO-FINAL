@@ -1,0 +1,88 @@
+/* Adopted WORKS PC v2 / SP v1. Only the frames are clipped; source photographs stay level. */
+#works.wf26 {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #f7f3eb;
+  box-shadow: none;
+  color: #24231f;
+  font-family: "Shippori Mincho", "Yu Mincho", serif;
+}
+#works.wf26 > .wg-paper {
+  z-index: -1;
+  background: url('../770-editorial/cotton-paper-960.webp') center / 680px repeat;
+  opacity: .48;
+  filter: grayscale(1);
+  mix-blend-mode: multiply;
+}
+.wf26__rules { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: #ae9050; stroke-width: 1.2; pointer-events: none; }
+.wf26__rules path { vector-effect: non-scaling-stroke; }
+.wf26__rules-sp { display: none; }
+.wf26__intro { position: absolute; z-index: 4; left: 4.45%; top: 4.7%; width: 44%; pointer-events: none; }
+.wf26__english { margin: 0; color: #ae9252; font-family: "Times New Roman", Times, serif; font-size: 10.55vw; font-weight: 400; line-height: .98; letter-spacing: .015em; white-space: nowrap; background: linear-gradient(110deg,#9d8044 5%,#dec991 36%,#aa8b4c 65%,#c7ae72); background-clip: text; -webkit-text-fill-color: transparent; }
+#works .wf26__intro h2 { margin: 0 0 0 1.8vw; color: #24231f; font: 400 3.8vw/1.5 "Shippori Mincho", "Yu Mincho", serif; letter-spacing: .24em; }
+.wf26__note { display: flex; align-items: center; gap: 1.5vw; margin: 1vw 0 0 1.9vw; font-size: clamp(13px,1.4vw,26px); line-height: 1.7; letter-spacing: .28em; white-space: nowrap; }
+.wf26__note::before { content: ""; flex: 0 0 7.5vw; height: 2px; background: linear-gradient(90deg,#9d7d3c,#d8bf83); }
+.wf26__photo { position: absolute; display: block; overflow: hidden; color: #fff; background: #403e37; text-decoration: none; }
+.wf26__photo > img { display: block; position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; margin: 0; object-fit: cover; transform: none; filter: none; }
+.wf26__photo--exterior { left: 42.5%; top: 0; width: 57.5%; height: 53%; clip-path: polygon(22% 0,100% 0,100% 82%,23% 100%,0 74%); }
+.wf26__photo--exterior > img { width: 112%; height: 112%; left: -8%; top: -6%; object-position: 60% 46%; }
+.wf26__photo--living { z-index: 2; left: 0; top: 31.5%; width: 57.5%; height: 56.8%; clip-path: polygon(5% 0,100% 19.5%,81.5% 85%,0 100%,0 14.5%); }
+.wf26__photo--living > img { object-position: 44% 52%; }
+.wf26__photo--kitchen { z-index: 3; left: 46.7%; top: 44.6%; width: 53.3%; height: 49%; clip-path: polygon(18% 19%,100% 0,100% 88%,73% 100%,0 84%); }
+.wf26__photo--kitchen > img { object-position: 54% 48%; }
+.wf26__caption { position: absolute; display: flex; align-items: center; gap: 1.2vw; min-height: 44px; padding: .8vw 1.4vw; border-bottom: 2px solid #b99b58; color: #fffdf7; background: #171811d9; font-size: clamp(14px,1.6vw,30px); line-height: 1.5; letter-spacing: .04em; white-space: nowrap; }
+.wf26__caption svg { flex: none; width: clamp(30px,2.9vw,52px); height: auto; fill: none; stroke: #e8d298; stroke-width: 1.4; }
+.wf26__photo--exterior .wf26__caption { right: 3.7%; top: 66%; }
+.wf26__photo--living .wf26__caption { left: 5%; top: 76%; }
+.wf26__photo--kitchen .wf26__caption { right: 3.8%; bottom: 18%; }
+.wf26__all { position: absolute; z-index: 4; left: 6.4%; bottom: 4.7%; width: 33.5%; min-height: 52px; height: 6.7%; display: flex; align-items: center; justify-content: center; gap: 3.7vw; padding: 8px 12px; border: 1px solid #c4a867; outline: 1px solid #f8ebc8; outline-offset: -5px; background: linear-gradient(115deg,#b59650,#e2c990 58%,#c2a15c); color: #231f15; text-decoration: none; font-size: clamp(15px,1.55vw,28px); line-height: 1.5; letter-spacing: .18em; white-space: nowrap; }
+.wf26__all svg { width: clamp(25px,2.2vw,40px); height: auto; flex: none; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.wf26__photo:focus { outline: none; }
+.wf26__photo:focus-visible .wf26__caption { outline: 3px solid #fff; outline-offset: 4px; box-shadow: 0 0 0 8px #312b1b; background: #12120f; }
+.wf26__all:focus-visible { outline: 3px solid #24231f; outline-offset: 5px; }
+@media (hover:hover) {
+  .wf26__photo:hover .wf26__caption { background: #171811; border-color: #ffe3a1; }
+  .wf26__all:hover { background: linear-gradient(115deg,#c3a360,#ecdaa7 58%,#cfb276); }
+}
+.wf26__fallback { position: absolute; left: 26%; right: 5%; top: 43%; color: #fff; font: 400 clamp(13px,1.15vw,18px)/1.8 "Noto Sans JP",sans-serif; text-align: center; text-wrap: balance; }
+.wf26__fallback[hidden] { display: none; }
+.wf26__photo.is-error > img { visibility: hidden; }
+@media (max-width:767px) {
+  #works.wf26 { aspect-ratio: 934 / 1685; }
+  #works.wf26 > .wg-paper { background-size: 440px; }
+  .wf26__rules-pc { display: none; }
+  .wf26__rules-sp { display: block; }
+  .wf26__intro { left: 3.5%; top: 4.4%; width: 53%; }
+  .wf26__english { font-size: 13.5vw; line-height: 1.08; letter-spacing: -.015em; }
+  #works .wf26__intro h2 { margin: 1.4vw 0 0 2.7vw; font-size: max(24px,6.7vw); line-height: 1.5; letter-spacing: .16em; }
+  .wf26__note { display: block; margin: 2.4vw 0 0 2.9vw; font-size: max(13px,2.8vw); line-height: 1.8; letter-spacing: .14em; }
+  .wf26__note::before { display: block; width: 15.6vw; height: 2px; margin-bottom: 2vw; }
+  .wf26__photo--exterior { left: 37%; width: 63%; height: 39%; clip-path: polygon(37.5% 0,100% 0,100% 93%,88% 100%,0 76.5%); }
+  .wf26__photo--exterior > img { width: 100%; height: 100%; left: 0; top: 0; object-position: 60% 49%; }
+  .wf26__photo--living { left: 0; top: 25.6%; width: 100%; height: 37.5%; clip-path: polygon(4% 0,100% 41.4%,100% 70.5%,0 100%,0 11.1%); }
+  .wf26__photo--living > img { object-position: 46% 53%; }
+  .wf26__photo--kitchen { left: 0; top: 52.9%; width: 100%; height: 35.2%; clip-path: polygon(0 28%,100% 0,100% 89%,60% 100%,34% 98%,0 83%); }
+  .wf26__photo--kitchen > img { object-position: 56% 47%; }
+  .wf26__caption { gap: 2vw; min-height: 44px; padding: 5px 2.4vw; font-size: max(14px,3.1vw); line-height: 1.5; letter-spacing: .04em; border-bottom-width: 2px; }
+  .wf26__caption svg { width: max(30px,5.5vw); }
+  .wf26__photo--exterior .wf26__caption { right: 3%; top: 72%; }
+  .wf26__photo--living .wf26__caption { left: 3.5%; top: 68%; }
+  .wf26__photo--kitchen .wf26__caption { right: 2.5%; bottom: 14%; }
+  .wf26__all { left: 8%; bottom: 3.4%; width: 84%; height: 6.9%; min-height: 52px; gap: 7vw; font-size: max(16px,3.4vw); letter-spacing: .1em; }
+  .wf26__all svg { width: max(26px,4.5vw); }
+  .wf26__fallback { left: 8%; top: 50%; right: 8%; font-size: 13px; }
+  .wf26__photo--exterior .wf26__fallback { left: 22%; top: 47%; }
+}
+@media (max-width:359px) {
+  #works.wf26 { aspect-ratio: 934 / 1835; }
+  .wf26__intro { top: 3.8%; }
+  .wf26__note { letter-spacing: .08em; }
+  .wf26__photo--exterior .wf26__caption { right: 2%; top: 69%; }
+  .wf26__photo--living .wf26__caption { top: 60%; }
+  .wf26__all { font-size: 15px; gap: 5vw; }
+}

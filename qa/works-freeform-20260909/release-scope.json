@@ -1,0 +1,28 @@
+{
+  "base": "fdafa2747d52324c6690f3769e62bfb74a84172e",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "2447bd185754529b52b281090670a2e2047b940abfc19fb9e52b20ec33bfea2b"
+    },
+    {
+      "path": "assets/top-renewal/works-freeform-20260909/style.css",
+      "sha256": "d898499f918818dae54903253938719ef2589d84c6a06c4a3c06ee23d65c75ef"
+    },
+    {
+      "path": "assets/top-renewal/works-freeform-20260909/photos.js",
+      "sha256": "48ba47c0dc200e31cbd1d770632d68e527e392a2bd718356b12ef124daf6936f"
+    },
+    {
+      "path": "scripts/verify-works-freeform.mjs",
+      "sha256": "6f88f47fadd4deedf5f6ab43d2de63d3bf3d9f5f95d23acb792a47d0bb455bc4"
+    },
+    {
+      "path": "scripts/build-checkpoint.mjs",
+      "sha256": "22e5852034a2323a70a8557cc5aa77fe142d9e33117f6e96d72f70777744516e"
+    }
+  ],
+  "technical": "PASS",
+  "releaseAuthorization": "User adopted WORKS PC v2 / SP v1 and explicitly requested production on 2026-09-09.",
+  "otherSectionsPreserved": true
+}

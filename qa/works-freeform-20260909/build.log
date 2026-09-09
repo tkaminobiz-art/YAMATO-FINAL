@@ -1,0 +1,35 @@
+Homepage content verified: {"sections":["builtProof","voice"],"builtItems":3,"voiceCards":4,"voiceLinks":5,"guideCards":4,"quickLinks":4,"preservedPaperSections":9,"approvedMarkup":true}
+Day-cycle FV verified: {"player":1,"video":1,"stills":6,"loopSeconds":18,"automatic":true,"manualControls":0}
+Nara content verified: {"originChoices":2,"stations":3,"exits":2,"censusYear":2020,"originalPhoto":true}
+WORKS freeform verified: {"photographs":3,"links":4,"canonicalRoute":"works.html","approvedCopy":true}
+{
+  "stage": "/var/folders/c3/04d2yqkd5tn4ccgy4pdzl8nc0000gn/T/yamato-checkpoint-TbTy0c",
+  "files": 695,
+  "megabytes": 121.5,
+  "pages": [
+    "company.html",
+    "contact.html",
+    "fv-preview-20260904.html",
+    "how-we-build-proof.html",
+    "index-770-preview.html",
+    "index-art-preview.html",
+    "index-brand-preview.html",
+    "index-material-preview.html",
+    "index-renewal-preview.html",
+    "index.html",
+    "kodawari-editorial-preview.html",
+    "kodawari-redesign-preview.html",
+    "kodawari.html",
+    "lot.html",
+    "lots-preview.html",
+    "lots.html",
+    "madori.html",
+    "model.html",
+    "move-to-nara-preview.html",
+    "staff.html",
+    "v1top/index.html",
+    "voice.html",
+    "works-yellow-preview.html",
+    "works.html"
+  ]
+}
