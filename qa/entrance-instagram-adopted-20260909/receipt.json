@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "eb6ccfe4f5884e192fca564c615ea0ee33f7b0f5331505048476a1fe692f3503"
+    },
+    {
+      "path": "assets/top-renewal/top.js",
+      "sha256": "7bed8485bb48f6756c91d88ffdae14e44570f4db375ea34c996c325712571feb"
+    },
+    {
+      "path": "assets/top-renewal/entrance-adopted-20260909/style.css",
+      "sha256": "84c80e65d653453a2484400544d00cfc41272d5af63dd94ff8cde0119053ef62"
+    },
+    {
+      "path": "assets/top-renewal/instagram-b-20260909/style.css",
+      "sha256": "088174e5a16e25ebb3be5adf7bfbda9914e289d4f273359d8a66fdd1db485f6e"
+    },
+    {
+      "path": "assets/top-renewal/instagram-b-20260909/feed.js",
+      "sha256": "c3fbebc37ac19cf3e3201335a9297f4b99b080606b4ba31255160f80cd6fa0c6"
+    },
+    {
+      "path": "scripts/verify-homepage.mjs",
+      "sha256": "431b5668b31efda15a480a8018150407244962dea2cdbe8cc5ce03998c11fde4"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/entrance-instagram-adopted-20260909/brief.md",
+      "sha256": "75fa4ff3e25d4b1fa2a68bce95a1262d794821127524aa6d86fb28e7b786f385"
+    },
+    "copy": {
+      "path": "qa/entrance-instagram-adopted-20260909/copy.md",
+      "sha256": "33d59814eff73fb18e2c67d129cd23a61b3e1714a43b4d3ef79259404c47a62e"
+    },
+    "assets": {
+      "path": "qa/entrance-instagram-adopted-20260909/assets.md",
+      "sha256": "e8fcbb0ef8b2054ad15536706cbf3681afe72ddca7c74b705f0367d3505ad141"
+    },
+    "visual": {
+      "path": "qa/entrance-instagram-adopted-20260909/visual.md",
+      "sha256": "409d8cfa23577fa8fbd395963628b7d4397ed9af1511019f37ac51be49d335d6"
+    },
+    "interaction": {
+      "path": "qa/entrance-instagram-adopted-20260909/interaction.md",
+      "sha256": "fd569cb21dee6bf0a39865c2c9a9db272cfb89fd3c95508b911b4fbaf7537072"
+    }
+  },
+  "screenshots": [
+    {
+      "path": "qa/entrance-instagram-adopted-20260909/evidence/entrance-1440-viewport.png",
+      "sha256": "03c96aa4d91a6ebee5c117743841a9992d906c23f13d1b54121962c49a0eb535",
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "qa/entrance-instagram-adopted-20260909/evidence/instagram-1440-viewport.png",
+      "sha256": "27c10abda7cf450fd9baceb7f420f91167e1c24256c28f2a4276e20c394b5e3b",
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "qa/entrance-instagram-adopted-20260909/evidence/entrance-1366-viewport.png",
+      "sha256": "39e21a68fde2f1e13a7983917e18b075b89a637493298ccee146e50507065812",
+      "viewport": "pc",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "path": "qa/entrance-instagram-adopted-20260909/evidence/instagram-1366-viewport.png",
+      "sha256": "8cf6a92a46cdc09e6706b1438f1eceabe4853ef61b3f0015f4cee19e46859fd8",
+      "viewport": "pc",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "path": "qa/entrance-instagram-adopted-20260909/evidence/entrance-390-viewport.png",
+      "sha256": "266b4226af63361e2903062b11de9bea18a060866b9a2d80f55fddd306c4d680",
+      "viewport": "sp",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "qa/entrance-instagram-adopted-20260909/evidence/instagram-390-viewport.png",
+      "sha256": "0f382ed984365078d201a698861fc9d4c7ac3b3179f0a57a7f8f23603b7c2ce2",
+      "viewport": "sp",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "qa/entrance-instagram-adopted-20260909/evidence/entrance-320-viewport.png",
+      "sha256": "7a8f4b9b066140ad1809cd0111d67b872fac72746be94a6d830813f70b064b2b",
+      "viewport": "sp",
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "qa/entrance-instagram-adopted-20260909/evidence/instagram-320-viewport.png",
+      "sha256": "f6a4dffd33d2cf9af025792d9ce4575f55b7822d12abdb0e81f18f5edee4de6f",
+      "viewport": "sp",
+      "width": 320,
+      "height": 844
+    }
+  ]
+}

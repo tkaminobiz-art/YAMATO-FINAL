@@ -1,0 +1,94 @@
+/* Instagram B: a single real post and three independent neighbouring posts. */
+body.washi-gold-preview #instagram[data-instagram-b]{padding:56px 56px 48px;color:#292823;background-color:#fcfaf5;font-family:"Zen Kaku Gothic New",sans-serif;font-synthesis:none}
+[data-instagram-b] .igb__inner{max-width:1328px;margin-inline:auto}
+[data-instagram-b] [hidden],.igb-dialog [hidden]{display:none!important}
+[data-instagram-b] button,[data-instagram-b] a{font:inherit;color:inherit;letter-spacing:0;text-decoration:none}
+[data-instagram-b] button{cursor:pointer;border:0;border-radius:0;background:none;padding:0}
+[data-instagram-b] button:disabled{cursor:default;opacity:.4}
+[data-instagram-b] :is(a,button):focus-visible{outline:3px solid #831d27;outline-offset:5px}
+[data-instagram-b] .igb__head{position:relative;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:32px;padding-right:0}
+[data-instagram-b] .igb__brand{display:flex;align-items:center;gap:22px}
+[data-instagram-b] h2{font:400 44px/1.2 "Shippori Mincho",serif;letter-spacing:.01em;margin:0}
+[data-instagram-b] .igb__brand p{margin:0;padding-left:22px;border-left:1px solid #831d27;font-size:16px;line-height:1.7;letter-spacing:.04em}
+[data-instagram-b] .igb__account{display:flex;align-items:center;gap:24px;font-size:16px;line-height:1.5}
+[data-instagram-b] .igb__account a,[data-instagram-b] .igb__foot>a{display:inline-flex;gap:14px;align-items:center;min-height:44px;color:#831d27;text-decoration:underline;text-underline-offset:8px}
+[data-instagram-b] .igb__bird{position:absolute;right:0;top:100px;z-index:1;pointer-events:none;opacity:.85}
+[data-instagram-b] .igb__layout{display:grid;grid-template-columns:minmax(0,.43fr) minmax(0,.57fr);grid-template-areas:"photo meta" "photo copy" "photo neighbors" "photo nav";column-gap:44px;row-gap:24px;align-items:start}
+[data-instagram-b] .igb__meta{grid-area:meta;display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;min-height:50px;padding-right:64px;font-size:16px;letter-spacing:.04em}
+[data-instagram-b] .igb__count{font:400 24px/1.5 "Shippori Mincho",serif;color:#831d27;border-bottom:1px solid #831d27;padding-bottom:8px;margin-right:6px;white-space:nowrap}
+[data-instagram-b] .igb__hero{grid-area:photo;position:relative;display:block;width:100%;min-width:0;text-align:left;background:rgba(241,237,228,.35)}
+[data-instagram-b] .igb__cover{display:flex;align-items:center;justify-content:center;min-height:300px;width:100%}
+[data-instagram-b] .igb__cover img{display:block;width:100%;height:auto;max-height:880px;object-fit:contain;transform:none}
+[data-instagram-b] .igb__hero-hint{position:absolute;bottom:14px;left:14px;background:rgba(255,255,255,.95);padding:9px 14px;color:#831d27;font-size:14px;line-height:20px;opacity:0;pointer-events:none}
+[data-instagram-b] .igb__hero:focus-visible .igb__hero-hint,[data-instagram-b] .igb__hero:hover .igb__hero-hint{opacity:1}
+[data-instagram-b] .igb__copy{grid-area:copy;min-width:0}
+[data-instagram-b] .igb__eyebrow{font-size:14px;line-height:1.6;letter-spacing:.12em;color:#615d55;margin:0 0 16px}
+[data-instagram-b] .igb__lead{font:400 36px/1.65 "Shippori Mincho",serif;letter-spacing:.02em;overflow-wrap:anywhere;white-space:pre-line;margin:0 0 14px}
+[data-instagram-b] .igb__excerpt{font-size:16px;line-height:1.9;letter-spacing:0;white-space:pre-line;overflow-wrap:anywhere;margin:0}
+[data-instagram-b] .igb__actions{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:24px;font-size:16px}
+[data-instagram-b] .igb__open{display:inline-flex;align-items:center;gap:18px;color:#831d27;font-size:22px;line-height:1.5;min-height:48px;border-bottom:1px solid #831d27}
+[data-instagram-b] .igb__actions a{display:inline-flex;align-items:center;gap:12px;min-height:44px}
+[data-instagram-b] .igb__neighbors{grid-area:neighbors;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:0;padding:0;align-self:end}
+[data-instagram-b] .igb__neighbor{display:flex;flex-direction:column;gap:8px;text-align:left;min-width:0}
+[data-instagram-b] .igb__neighbor-meta{display:flex;flex-wrap:wrap;column-gap:8px;font-size:14px;line-height:1.5;letter-spacing:0}
+[data-instagram-b] .igb__neighbor-media{display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:9/14;background:rgba(236,231,222,.5);overflow:hidden}
+[data-instagram-b] .igb__neighbor img{width:100%;height:100%;object-fit:contain;transform:none}
+[data-instagram-b] .igb__image-error{display:block;padding:24px 16px;font-size:16px;line-height:1.7;text-align:center}
+[data-instagram-b] .igb__neighbor .igb__image-error{padding:8px;font-size:14px}
+[data-instagram-b] .igb__nav{grid-area:nav;display:flex;align-items:center;gap:24px;width:100%;align-self:end}
+[data-instagram-b] .igb__nav button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;font-size:16px;white-space:nowrap}
+[data-instagram-b] .igb__circle{display:grid;place-items:center;width:48px;height:48px;border:1px solid #831d27;border-radius:50%;color:#831d27;font:32px/1 Arial,sans-serif}
+[data-instagram-b] .igb__nav-rule{height:1px;flex:1;background:#b99091}
+[data-instagram-b] .igb__foot{display:flex;align-items:center;gap:24px;border-top:1px solid #831d27;margin-top:28px;padding-top:14px;font-size:16px;line-height:1.7}
+[data-instagram-b] .igb__foot p{flex:1;margin:0;letter-spacing:0}
+[data-instagram-b] .igb__foot>a{flex-shrink:0}
+[data-instagram-b] #igBRetry{min-height:48px;padding:8px 16px;color:#831d27;border:1px solid currentColor}
+[data-instagram-b] .igb__empty{min-height:220px;display:grid;place-content:center;border-block:1px solid #d6cfc1;padding:32px;font-size:16px;line-height:1.8;text-align:center}
+[data-instagram-b][data-state="loading"] .igb__empty{background:rgba(238,234,225,.4)}
+.igb-dialog{font-family:"Zen Kaku Gothic New",sans-serif;font-synthesis:none;max-height:90dvh}
+.igb-dialog .ig-dialog__body,.igb-dialog .ig-dialog__body p,.igb-dialog .ig-dialog__body a,.igb-dialog time{font-size:16px;line-height:1.8}
+.igb-dialog #igDialogCaption{white-space:pre-wrap;overflow-wrap:anywhere}
+.igb-dialog .ig-dialog__image img{width:100%;height:auto;max-height:75dvh;object-fit:contain;transform:none}
+.igb-dialog .ig-dialog__image{height:auto;min-height:240px}
+.igb-dialog button,.igb-dialog .link-arrow{min-height:48px;min-width:48px;font-size:16px}
+.igb-dialog #igPostCount,.igb-dialog #igPhotoCount,.igb-dialog .ig-video-label{font-size:14px;line-height:1.5}
+.igb-dialog .ig-post-nav{flex-wrap:wrap}
+.igb-dialog .ig-post-nav button{flex:1}
+.igb-dialog :is(button,a):focus-visible{outline:3px solid #831d27;outline-offset:3px}
+@media(max-width:1100px){[data-instagram-b] .igb__head{align-items:flex-start}[data-instagram-b] .igb__brand{display:block}[data-instagram-b] .igb__brand p{padding:0;border:0;margin-top:8px}[data-instagram-b] .igb__layout{column-gap:28px}[data-instagram-b] .igb__neighbors{gap:12px}[data-instagram-b] .igb__nav{gap:12px}}
+@media(max-width:767px){
+ body.washi-gold-preview #instagram[data-instagram-b]{padding:36px 20px 32px}
+ [data-instagram-b] .igb__head{display:block;margin-bottom:24px}
+ [data-instagram-b] h2{font-size:36px;padding-right:56px}
+ [data-instagram-b] .igb__brand p{margin-top:8px;font-size:16px;letter-spacing:0}
+ [data-instagram-b] .igb__account{gap:16px;margin-top:12px;flex-wrap:wrap}
+ [data-instagram-b] .igb__account a{padding-left:16px;border-left:1px solid #831d27}
+ [data-instagram-b] .igb__bird{top:0;right:0;width:44px;height:38px}
+ [data-instagram-b] .igb__layout{grid-template-columns:minmax(0,1fr);grid-template-areas:"meta" "photo" "copy" "nav" "neighbors";gap:20px}
+ [data-instagram-b] .igb__meta{padding:0;font-size:14px;gap:12px;min-height:44px}
+ [data-instagram-b] .igb__count{font-size:24px;padding-bottom:4px}
+ [data-instagram-b] .igb__cover{min-height:200px}
+ [data-instagram-b] .igb__cover img{max-height:none}
+ [data-instagram-b] .igb__eyebrow{margin-bottom:10px}
+ [data-instagram-b] .igb__lead{font-size:28px;line-height:1.65}
+ [data-instagram-b] .igb__excerpt{font-size:16px;line-height:1.85}
+ [data-instagram-b] .igb__actions{margin-top:18px;gap:4px}
+ [data-instagram-b] .igb__open{font-size:20px}
+ [data-instagram-b] .igb__neighbors{gap:12px}
+ [data-instagram-b] .igb__neighbor-meta{order:2;font-size:14px;overflow-wrap:anywhere}
+ [data-instagram-b] .igb__neighbor-meta span{display:block;width:100%}
+ [data-instagram-b] .igb__nav{gap:12px;justify-content:space-between}
+ [data-instagram-b] .igb__nav button{gap:8px}
+ [data-instagram-b] .igb__nav-rule{flex:none;width:1px;height:24px}
+ [data-instagram-b] .igb__circle{width:44px;height:44px}
+ [data-instagram-b] .igb__foot{flex-wrap:wrap;gap:12px;margin-top:20px;padding-top:12px}
+ [data-instagram-b] .igb__foot p{flex-basis:100%}
+ [data-instagram-b] .igb__foot>a{justify-content:center;width:100%}
+ [data-instagram-b] .igb__empty{padding:24px 16px}
+ .igb-dialog .ig-dialog__body{padding:24px 20px}
+}
+@media(max-width:359px){body.washi-gold-preview #instagram[data-instagram-b]{padding-inline:12px}[data-instagram-b] .igb__neighbors{gap:8px}[data-instagram-b] .igb__account{gap:8px}[data-instagram-b] .igb__account a{padding-left:8px}[data-instagram-b] .igb__nav{gap:8px}[data-instagram-b] .igb__nav button{gap:6px}}
+@media(prefers-reduced-motion:reduce){[data-instagram-b] *,[data-entrance-adopted] *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+[data-instagram-b] .igb__lead{text-wrap:pretty}
+[data-instagram-b] .igb__phrase{display:inline-block;max-inline-size:100%;overflow-wrap:anywhere}

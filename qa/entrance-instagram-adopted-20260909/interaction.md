@@ -1,0 +1,9 @@
+# Interaction review
+
+`verify.mjs` passes against the allow-listed public package in Chromium PC 1440, Chromium SP 390, and WebKit SP 390, plus Chromium with JavaScript disabled. It covers latest-ten sorting; exact selected ID/date/type/permalink/caption association; distinct neighbors; 0/1/2/3 record states; carousel children and bounds; modal full text; separate post switching; keyboard arrows; Tab trapping; Escape and return focus; long/empty/HTML-like captions; duplicate/unsafe records; image failure with official escape; HTTP 503 and successful retry; all nine guide routes; unchanged shared menu/contact-preview behavior. Test fixture media URLs are synthetic, and no raw live response or signed source URL is persisted.
+
+`check-exits-motion.mjs`: all nine guide URLs return HTTP 200, `#lineup` lands on the real section; existing FV at PC Chromium and SP WebKit automatically plays muted inline, loops across the end, has no manual switch or visible concept note, pauses when out of view, and displays static media for reduced motion. A separate non-routed live API browser check confirms `ready` and ten real posts. No submissions, calls, messages or external Instagram actions were sent.
+
+`preservation.mjs`: all non-target homepage markup is unchanged after whitespace normalization and the declared guide/Instagram dependency changes. Shared top.js is byte-identical after removing the one guard. Fifteen protected source/asset files retain SHA-256, including Nara, catalogue/cover controller, API and Vercel configuration. Existing homepage, FV, Nara and WORKS build gates pass. Eleven known homepage mutations are rejected by the integration self-test.
+
+All six viewport captures are 100% at device scale factor 1, font-resolved. These are browser/emulation checks, not physical-device certification. Live service availability can change independently after release; the retry and official fallback remain.

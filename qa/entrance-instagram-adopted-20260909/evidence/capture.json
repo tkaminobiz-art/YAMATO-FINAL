@@ -1,0 +1,2295 @@
+{
+  "base": "http://127.0.0.1:8953/",
+  "posts": [
+    {
+      "id": "18077624408348269",
+      "date": "2026-09-05T02:58:38.000Z",
+      "type": "VIDEO"
+    },
+    {
+      "id": "17976070377105266",
+      "date": "2026-08-30T06:04:37.000Z",
+      "type": "VIDEO"
+    },
+    {
+      "id": "17901194550515537",
+      "date": "2026-08-13T10:12:14.000Z",
+      "type": "VIDEO"
+    },
+    {
+      "id": "18112205431755943",
+      "date": "2026-08-07T04:44:46.000Z",
+      "type": "VIDEO"
+    },
+    {
+      "id": "18094979987575508",
+      "date": "2026-07-01T10:41:09.000Z",
+      "type": "VIDEO"
+    },
+    {
+      "id": "17973388182066211",
+      "date": "2026-06-25T03:54:43.000Z",
+      "type": "VIDEO"
+    },
+    {
+      "id": "18077966090653894",
+      "date": "2026-06-24T06:11:51.000Z",
+      "type": "VIDEO"
+    },
+    {
+      "id": "17871332874684387",
+      "date": "2026-06-23T03:03:31.000Z",
+      "type": "VIDEO"
+    },
+    {
+      "id": "17919466575146414",
+      "date": "2026-05-06T10:22:40.000Z",
+      "type": "VIDEO"
+    },
+    {
+      "id": "17986724597986699",
+      "date": "2026-04-27T07:09:58.000Z",
+      "type": "VIDEO"
+    }
+  ],
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "errors": [],
+      "entrance": {
+        "height": 593.296875,
+        "headerHeight": 76.75,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "LAND & HOMES物件一覧奈良・京都南部の土地を探す。→",
+            "width": 310,
+            "height": 292.796875
+          },
+          {
+            "label": "PAYMENT PLANお支払いシミュレーション土地と建物の、月々の返済額を試算",
+            "width": 310,
+            "height": 292.796875
+          },
+          {
+            "label": "OUR CRAFT家づくりのこだわり標準仕様と、費用の仕組み。→",
+            "width": 310,
+            "height": 292.796875
+          },
+          {
+            "label": "MOVE TO NARA奈良からの通勤大阪への電車と、休日の車移動。→",
+            "width": 310,
+            "height": 292.796875
+          },
+          {
+            "label": "商品ラインナップLINEUP→",
+            "width": 328,
+            "height": 56
+          },
+          {
+            "label": "施工事例WORKS→",
+            "width": 328,
+            "height": 56
+          },
+          {
+            "label": "モデルハウスMODEL HOUSE→",
+            "width": 328,
+            "height": 56
+          },
+          {
+            "label": "家づくりのこだわりOUR WORK→",
+            "width": 328,
+            "height": 56
+          },
+          {
+            "label": "奈良からのアクセスを見る→",
+            "width": 241.21875,
+            "height": 48
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "家づくりのご案内",
+            "size": "30px",
+            "lineHeight": "40.5px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "LAND & HOMES",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "物件一覧",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "奈良・京都南部の土地を探す。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "PAYMENT PLAN",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "お支払いシミュレーション",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "土地と建物の、月々の返済額を試算。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "OUR CRAFT",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "家づくりのこだわり",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "標準仕様と、費用の仕組み。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "MOVE TO NARA",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "奈良からの通勤",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪への電車と、休日の車移動。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "A",
+            "text": "商品ラインナップLINEUP→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "施工事例WORKS→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "モデルハウスMODEL HOUSE→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "家づくりのこだわりOUR WORK→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪で働く方へ。奈良の土地と通勤を、一緒に確認できます。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          }
+        ]
+      },
+      "instagram": {
+        "height": 1156.796875,
+        "headerHeight": 76.75,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "Instagramを見る ↗",
+            "width": 147.875,
+            "height": 44
+          },
+          {
+            "label": "投稿を開く ↗",
+            "width": 552.109375,
+            "height": 880
+          },
+          {
+            "label": "投稿を開く →",
+            "width": 150,
+            "height": 48
+          },
+          {
+            "label": "公式で動画を見る ↗",
+            "width": 148.484375,
+            "height": 44
+          },
+          {
+            "label": "2026/08/30REEL",
+            "width": 230.625,
+            "height": 387.75
+          },
+          {
+            "label": "2026/08/13REEL",
+            "width": 230.625,
+            "height": 387.75
+          },
+          {
+            "label": "2026/08/07REEL",
+            "width": 230.625,
+            "height": 387.75
+          },
+          {
+            "label": "‹前の投稿",
+            "width": 124,
+            "height": 52
+          },
+          {
+            "label": "次の投稿›",
+            "width": 124,
+            "height": 52
+          },
+          {
+            "label": "Instagramを見る ↗",
+            "width": 147.875,
+            "height": 44
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "fill"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "Instagram",
+            "size": "44px",
+            "lineHeight": "52.8px"
+          },
+          {
+            "tag": "P",
+            "text": "やまとの家の公式Instagram",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          },
+          {
+            "tag": "P",
+            "text": "投稿本文より",
+            "size": "14px",
+            "lineHeight": "22.4px"
+          },
+          {
+            "tag": "H3",
+            "text": "外構までこだわる家づくり。",
+            "size": "36px",
+            "lineHeight": "59.4px"
+          },
+          {
+            "tag": "P",
+            "text": "建物が完成しても、\n外構が変わるだけで住まいの印象はここ",
+            "size": "16px",
+            "lineHeight": "30.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/30REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/13REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/07REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "P",
+            "text": "最新の10投稿。写真を選ぶと、投稿の画像と本文を開きます",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          }
+        ]
+      },
+      "platformFonts": {
+        "#entranceTitle": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        ".en26__card h3": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ],
+        ".en26__card p": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 14
+          }
+        ],
+        "#instagramTitle": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ],
+        "#igBLead": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 13
+          }
+        ],
+        "#igBExcerpt": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 34
+          },
+          {
+            "familyName": "Apple Color Emoji",
+            "isCustomFont": false,
+            "glyphCount": 2
+          }
+        ]
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "errors": [],
+      "entrance": {
+        "height": 593.296875,
+        "headerHeight": 72.796875,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "LAND & HOMES物件一覧奈良・京都南部の土地を探す。→",
+            "width": 295.5,
+            "height": 292.796875
+          },
+          {
+            "label": "PAYMENT PLANお支払いシミュレーション土地と建物の、月々の返済額を試算",
+            "width": 295.5,
+            "height": 292.796875
+          },
+          {
+            "label": "OUR CRAFT家づくりのこだわり標準仕様と、費用の仕組み。→",
+            "width": 295.5,
+            "height": 292.796875
+          },
+          {
+            "label": "MOVE TO NARA奈良からの通勤大阪への電車と、休日の車移動。→",
+            "width": 295.5,
+            "height": 292.796875
+          },
+          {
+            "label": "商品ラインナップLINEUP→",
+            "width": 313.5,
+            "height": 56
+          },
+          {
+            "label": "施工事例WORKS→",
+            "width": 313.5,
+            "height": 56
+          },
+          {
+            "label": "モデルハウスMODEL HOUSE→",
+            "width": 313.5,
+            "height": 56
+          },
+          {
+            "label": "家づくりのこだわりOUR WORK→",
+            "width": 313.5,
+            "height": 56
+          },
+          {
+            "label": "奈良からのアクセスを見る→",
+            "width": 241.21875,
+            "height": 48
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "家づくりのご案内",
+            "size": "30px",
+            "lineHeight": "40.5px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "LAND & HOMES",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "物件一覧",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "奈良・京都南部の土地を探す。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "PAYMENT PLAN",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "お支払いシミュレーション",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "土地と建物の、月々の返済額を試算。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "OUR CRAFT",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "家づくりのこだわり",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "標準仕様と、費用の仕組み。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "MOVE TO NARA",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "奈良からの通勤",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪への電車と、休日の車移動。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "A",
+            "text": "商品ラインナップLINEUP→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "施工事例WORKS→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "モデルハウスMODEL HOUSE→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "家づくりのこだわりOUR WORK→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪で働く方へ。奈良の土地と通勤を、一緒に確認できます。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          }
+        ]
+      },
+      "instagram": {
+        "height": 1156.796875,
+        "headerHeight": 72.796875,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "Instagramを見る ↗",
+            "width": 147.875,
+            "height": 44
+          },
+          {
+            "label": "投稿を開く ↗",
+            "width": 520.296875,
+            "height": 880
+          },
+          {
+            "label": "投稿を開く →",
+            "width": 150,
+            "height": 48
+          },
+          {
+            "label": "公式で動画を見る ↗",
+            "width": 148.484375,
+            "height": 44
+          },
+          {
+            "label": "2026/08/30REEL",
+            "width": 216.5625,
+            "height": 365.875
+          },
+          {
+            "label": "2026/08/13REEL",
+            "width": 216.5625,
+            "height": 365.875
+          },
+          {
+            "label": "2026/08/07REEL",
+            "width": 216.5625,
+            "height": 365.875
+          },
+          {
+            "label": "‹前の投稿",
+            "width": 124,
+            "height": 52
+          },
+          {
+            "label": "次の投稿›",
+            "width": 124,
+            "height": 52
+          },
+          {
+            "label": "Instagramを見る ↗",
+            "width": 147.875,
+            "height": 44
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "fill"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "Instagram",
+            "size": "44px",
+            "lineHeight": "52.8px"
+          },
+          {
+            "tag": "P",
+            "text": "やまとの家の公式Instagram",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          },
+          {
+            "tag": "P",
+            "text": "投稿本文より",
+            "size": "14px",
+            "lineHeight": "22.4px"
+          },
+          {
+            "tag": "H3",
+            "text": "外構までこだわる家づくり。",
+            "size": "36px",
+            "lineHeight": "59.4px"
+          },
+          {
+            "tag": "P",
+            "text": "建物が完成しても、\n外構が変わるだけで住まいの印象はここ",
+            "size": "16px",
+            "lineHeight": "30.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/30REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/13REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/07REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "P",
+            "text": "最新の10投稿。写真を選ぶと、投稿の画像と本文を開きます",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          }
+        ]
+      },
+      "platformFonts": {
+        "#entranceTitle": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        ".en26__card h3": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ],
+        ".en26__card p": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 14
+          }
+        ],
+        "#instagramTitle": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ],
+        "#igBLead": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 13
+          }
+        ],
+        "#igBExcerpt": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 34
+          },
+          {
+            "familyName": "Apple Color Emoji",
+            "isCustomFont": false,
+            "glyphCount": 2
+          }
+        ]
+      }
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "errors": [],
+      "entrance": {
+        "height": 623.3125,
+        "headerHeight": 60,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "LAND & HOMES物件一覧奈良・京都南部の土地を探す。→",
+            "width": 210,
+            "height": 322.8125
+          },
+          {
+            "label": "PAYMENT PLANお支払いシミュレーション土地と建物の、月々の返済額を試算",
+            "width": 210,
+            "height": 322.8125
+          },
+          {
+            "label": "OUR CRAFT家づくりのこだわり標準仕様と、費用の仕組み。→",
+            "width": 210,
+            "height": 322.8125
+          },
+          {
+            "label": "MOVE TO NARA奈良からの通勤大阪への電車と、休日の車移動。→",
+            "width": 210,
+            "height": 322.8125
+          },
+          {
+            "label": "商品ラインナップLINEUP→",
+            "width": 228,
+            "height": 56
+          },
+          {
+            "label": "施工事例WORKS→",
+            "width": 228,
+            "height": 56
+          },
+          {
+            "label": "モデルハウスMODEL HOUSE→",
+            "width": 228,
+            "height": 56
+          },
+          {
+            "label": "家づくりのこだわりOUR WORK→",
+            "width": 228,
+            "height": 56
+          },
+          {
+            "label": "奈良からのアクセスを見る→",
+            "width": 241.21875,
+            "height": 48
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "家づくりのご案内",
+            "size": "30px",
+            "lineHeight": "40.5px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "LAND & HOMES",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "物件一覧",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "奈良・京都南部の土地を探す。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "PAYMENT PLAN",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "お支払いシミュレーション",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "土地と建物の、月々の返済額を試算。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "OUR CRAFT",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "家づくりのこだわり",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "標準仕様と、費用の仕組み。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "MOVE TO NARA",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "奈良からの通勤",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪への電車と、休日の車移動。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "A",
+            "text": "商品ラインナップLINEUP→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "施工事例WORKS→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "モデルハウスMODEL HOUSE→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "家づくりのこだわりOUR WORK→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪で働く方へ。奈良の土地と通勤を、一緒に確認できます。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          }
+        ]
+      },
+      "instagram": {
+        "height": 1060.375,
+        "headerHeight": 60,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "Instagramを見る ↗",
+            "width": 147.875,
+            "height": 44
+          },
+          {
+            "label": "投稿を開く ↗",
+            "width": 380.109375,
+            "height": 675.75
+          },
+          {
+            "label": "投稿を開く →",
+            "width": 150,
+            "height": 48
+          },
+          {
+            "label": "公式で動画を見る ↗",
+            "width": 148.484375,
+            "height": 44
+          },
+          {
+            "label": "2026/08/30REEL",
+            "width": 159.953125,
+            "height": 277.828125
+          },
+          {
+            "label": "2026/08/13REEL",
+            "width": 159.96875,
+            "height": 277.828125
+          },
+          {
+            "label": "2026/08/07REEL",
+            "width": 159.96875,
+            "height": 277.828125
+          },
+          {
+            "label": "‹前の投稿",
+            "width": 124,
+            "height": 52
+          },
+          {
+            "label": "次の投稿›",
+            "width": 124,
+            "height": 52
+          },
+          {
+            "label": "Instagramを見る ↗",
+            "width": 147.875,
+            "height": 44
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "fill"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "Instagram",
+            "size": "44px",
+            "lineHeight": "52.8px"
+          },
+          {
+            "tag": "P",
+            "text": "やまとの家の公式Instagram",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          },
+          {
+            "tag": "P",
+            "text": "投稿本文より",
+            "size": "14px",
+            "lineHeight": "22.4px"
+          },
+          {
+            "tag": "H3",
+            "text": "外構までこだわる家づくり。",
+            "size": "36px",
+            "lineHeight": "59.4px"
+          },
+          {
+            "tag": "P",
+            "text": "建物が完成しても、\n外構が変わるだけで住まいの印象はここ",
+            "size": "16px",
+            "lineHeight": "30.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/30REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/13REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/07REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "P",
+            "text": "最新の10投稿。写真を選ぶと、投稿の画像と本文を開きます",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          }
+        ]
+      },
+      "platformFonts": {
+        "#entranceTitle": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        ".en26__card h3": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ],
+        ".en26__card p": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 14
+          }
+        ],
+        "#instagramTitle": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ],
+        "#igBLead": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 13
+          }
+        ],
+        "#igBExcerpt": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 34
+          },
+          {
+            "familyName": "Apple Color Emoji",
+            "isCustomFont": false,
+            "glyphCount": 2
+          }
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "errors": [],
+      "entrance": {
+        "height": 1038.5,
+        "headerHeight": 60,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "LAND & HOMES物件一覧奈良・京都南部の土地を探す。→",
+            "width": 344,
+            "height": 292.796875
+          },
+          {
+            "label": "PAYMENT PLANお支払いシミュレーション土地と建物の、月々の返済額を試算",
+            "width": 344,
+            "height": 292.796875
+          },
+          {
+            "label": "OUR CRAFT家づくりのこだわり標準仕様と、費用の仕組み。→",
+            "width": 344,
+            "height": 292.796875
+          },
+          {
+            "label": "MOVE TO NARA奈良からの通勤大阪への電車と、休日の車移動。→",
+            "width": 344,
+            "height": 292.796875
+          },
+          {
+            "label": "商品ラインナップLINEUP→",
+            "width": 356,
+            "height": 56
+          },
+          {
+            "label": "施工事例WORKS→",
+            "width": 356,
+            "height": 56
+          },
+          {
+            "label": "モデルハウスMODEL HOUSE→",
+            "width": 356,
+            "height": 56
+          },
+          {
+            "label": "家づくりのこだわりOUR WORK→",
+            "width": 356,
+            "height": 56
+          },
+          {
+            "label": "奈良からのアクセスを見る→",
+            "width": 241.21875,
+            "height": 48
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "家づくりのご案内",
+            "size": "30px",
+            "lineHeight": "40.5px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "LAND & HOMES",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "物件一覧",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "奈良・京都南部の土地を探す。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "PAYMENT PLAN",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "お支払いシミュレーション",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "土地と建物の、月々の返済額を試算。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "OUR CRAFT",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "家づくりのこだわり",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "標準仕様と、費用の仕組み。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "MOVE TO NARA",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "奈良からの通勤",
+            "size": "20px",
+            "lineHeight": "30px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪への電車と、休日の車移動。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "A",
+            "text": "商品ラインナップLINEUP→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "施工事例WORKS→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "モデルハウスMODEL HOUSE→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "家づくりのこだわりOUR WORK→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪で働く方へ。奈良の土地と通勤を、一緒に確認できます。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          }
+        ]
+      },
+      "instagram": {
+        "height": 1074.5,
+        "headerHeight": 60,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "Instagramを見る ↗",
+            "width": 147.875,
+            "height": 44
+          },
+          {
+            "label": "投稿を開く ↗",
+            "width": 270.03125,
+            "height": 480.046875
+          },
+          {
+            "label": "投稿を開く →",
+            "width": 150,
+            "height": 48
+          },
+          {
+            "label": "公式で動画を見る ↗",
+            "width": 148.484375,
+            "height": 44
+          },
+          {
+            "label": "2026/08/30REEL",
+            "width": 111.3125,
+            "height": 202.171875
+          },
+          {
+            "label": "2026/08/13REEL",
+            "width": 111.328125,
+            "height": 202.171875
+          },
+          {
+            "label": "2026/08/07REEL",
+            "width": 111.3125,
+            "height": 202.171875
+          },
+          {
+            "label": "‹前の投稿",
+            "width": 124,
+            "height": 52
+          },
+          {
+            "label": "次の投稿›",
+            "width": 124,
+            "height": 52
+          },
+          {
+            "label": "Instagramを見る ↗",
+            "width": 147.875,
+            "height": 44
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "fill"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "Instagram",
+            "size": "44px",
+            "lineHeight": "52.8px"
+          },
+          {
+            "tag": "P",
+            "text": "やまとの家の公式Instagram",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          },
+          {
+            "tag": "P",
+            "text": "投稿本文より",
+            "size": "14px",
+            "lineHeight": "22.4px"
+          },
+          {
+            "tag": "H3",
+            "text": "外構までこだわる家づくり。",
+            "size": "36px",
+            "lineHeight": "59.4px"
+          },
+          {
+            "tag": "P",
+            "text": "建物が完成しても、\n外構が変わるだけで住まいの印象はここ",
+            "size": "16px",
+            "lineHeight": "30.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/30REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/13REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/07REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "P",
+            "text": "最新の10投稿。写真を選ぶと、投稿の画像と本文を開きます",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          }
+        ]
+      },
+      "platformFonts": {
+        "#entranceTitle": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        ".en26__card h3": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ],
+        ".en26__card p": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 14
+          }
+        ],
+        "#instagramTitle": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ],
+        "#igBLead": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 13
+          }
+        ],
+        "#igBExcerpt": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 34
+          },
+          {
+            "familyName": "Apple Color Emoji",
+            "isCustomFont": false,
+            "glyphCount": 2
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "errors": [],
+      "entrance": {
+        "height": 1163.625,
+        "headerHeight": 60,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "LAND & HOMES物件一覧奈良・京都南部の土地を探す。→",
+            "width": 167,
+            "height": 330.21875
+          },
+          {
+            "label": "PAYMENT PLANお支払いシミュレーション土地と建物の、月々の返済額を試算",
+            "width": 167,
+            "height": 330.21875
+          },
+          {
+            "label": "OUR CRAFT家づくりのこだわり標準仕様と、費用の仕組み。→",
+            "width": 167,
+            "height": 330.1875
+          },
+          {
+            "label": "MOVE TO NARA奈良からの通勤大阪への電車と、休日の車移動。→",
+            "width": 167,
+            "height": 330.1875
+          },
+          {
+            "label": "商品ラインナップLINEUP→",
+            "width": 175,
+            "height": 64
+          },
+          {
+            "label": "施工事例WORKS→",
+            "width": 175,
+            "height": 64
+          },
+          {
+            "label": "モデルハウスMODEL HOUSE→",
+            "width": 175,
+            "height": 66
+          },
+          {
+            "label": "家づくりのこだわりOUR WORK→",
+            "width": 175,
+            "height": 66
+          },
+          {
+            "label": "奈良からのアクセスを見る→",
+            "width": 350,
+            "height": 52
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "家づくりのご案内",
+            "size": "26px",
+            "lineHeight": "36px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "LAND & HOMES",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "物件一覧",
+            "size": "18px",
+            "lineHeight": "27px"
+          },
+          {
+            "tag": "P",
+            "text": "奈良・京都南部の土地を探す。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "PAYMENT PLAN",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "お支払いシミュレーション",
+            "size": "18px",
+            "lineHeight": "27px"
+          },
+          {
+            "tag": "P",
+            "text": "土地と建物の、月々の返済額を試算。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "OUR CRAFT",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "家づくりのこだわり",
+            "size": "18px",
+            "lineHeight": "27px"
+          },
+          {
+            "tag": "P",
+            "text": "標準仕様と、費用の仕組み。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "MOVE TO NARA",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "奈良からの通勤",
+            "size": "18px",
+            "lineHeight": "27px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪への電車と、休日の車移動。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "A",
+            "text": "商品ラインナップLINEUP→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "施工事例WORKS→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "モデルハウスMODEL HOUSE→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "家づくりのこだわりOUR WORK→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪で働く方へ。奈良の土地と通勤を、一緒に確認できます。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          }
+        ]
+      },
+      "instagram": {
+        "height": 1729.546875,
+        "headerHeight": 60,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "Instagramを見る ↗",
+            "width": 164.875,
+            "height": 44
+          },
+          {
+            "label": "投稿を開く ↗",
+            "width": 350,
+            "height": 622.21875
+          },
+          {
+            "label": "投稿を開く →",
+            "width": 138,
+            "height": 48
+          },
+          {
+            "label": "公式で動画を見る ↗",
+            "width": 148.484375,
+            "height": 44
+          },
+          {
+            "label": "2026/08/30REEL",
+            "width": 108.65625,
+            "height": 219.03125
+          },
+          {
+            "label": "2026/08/13REEL",
+            "width": 108.671875,
+            "height": 219.03125
+          },
+          {
+            "label": "2026/08/07REEL",
+            "width": 108.65625,
+            "height": 219.03125
+          },
+          {
+            "label": "‹前の投稿",
+            "width": 116,
+            "height": 52
+          },
+          {
+            "label": "次の投稿›",
+            "width": 116,
+            "height": 52
+          },
+          {
+            "label": "Instagramを見る ↗",
+            "width": 350,
+            "height": 44
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "fill"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "Instagram",
+            "size": "36px",
+            "lineHeight": "43.2px"
+          },
+          {
+            "tag": "P",
+            "text": "やまとの家の公式Instagram",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          },
+          {
+            "tag": "P",
+            "text": "投稿本文より",
+            "size": "14px",
+            "lineHeight": "22.4px"
+          },
+          {
+            "tag": "H3",
+            "text": "外構までこだわる家づくり。",
+            "size": "28px",
+            "lineHeight": "46.2px"
+          },
+          {
+            "tag": "P",
+            "text": "建物が完成しても、\n外構が変わるだけで住まいの印象はここ",
+            "size": "16px",
+            "lineHeight": "29.6px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/30REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/13REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/07REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "P",
+            "text": "最新の10投稿。写真を選ぶと、投稿の画像と本文を開きます",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          }
+        ]
+      },
+      "platformFonts": {
+        "#entranceTitle": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        ".en26__card h3": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ],
+        ".en26__card p": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 14
+          }
+        ],
+        "#instagramTitle": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ],
+        "#igBLead": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 13
+          }
+        ],
+        "#igBExcerpt": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 34
+          },
+          {
+            "familyName": "Apple Color Emoji",
+            "isCustomFont": false,
+            "glyphCount": 2
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "errors": [],
+      "entrance": {
+        "height": 1165.625,
+        "headerHeight": 60,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "LAND & HOMES物件一覧奈良・京都南部の土地を探す。→",
+            "width": 144,
+            "height": 330.21875
+          },
+          {
+            "label": "PAYMENT PLANお支払いシミュレーション土地と建物の、月々の返済額を試算",
+            "width": 144,
+            "height": 330.21875
+          },
+          {
+            "label": "OUR CRAFT家づくりのこだわり標準仕様と、費用の仕組み。→",
+            "width": 144,
+            "height": 330.1875
+          },
+          {
+            "label": "MOVE TO NARA奈良からの通勤大阪への電車と、休日の車移動。→",
+            "width": 144,
+            "height": 330.1875
+          },
+          {
+            "label": "商品ラインナップLINEUP→",
+            "width": 148,
+            "height": 66
+          },
+          {
+            "label": "施工事例WORKS→",
+            "width": 148,
+            "height": 66
+          },
+          {
+            "label": "モデルハウスMODEL HOUSE→",
+            "width": 148,
+            "height": 66
+          },
+          {
+            "label": "家づくりのこだわりOUR WORK→",
+            "width": 148,
+            "height": 66
+          },
+          {
+            "label": "奈良からのアクセスを見る→",
+            "width": 296,
+            "height": 52
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          },
+          {
+            "loaded": true,
+            "fit": "cover"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "家づくりのご案内",
+            "size": "26px",
+            "lineHeight": "36px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "LAND & HOMES",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "物件一覧",
+            "size": "18px",
+            "lineHeight": "27px"
+          },
+          {
+            "tag": "P",
+            "text": "奈良・京都南部の土地を探す。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "PAYMENT PLAN",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "お支払いシミュレーション",
+            "size": "18px",
+            "lineHeight": "27px"
+          },
+          {
+            "tag": "P",
+            "text": "土地と建物の、月々の返済額を試算。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "OUR CRAFT",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "家づくりのこだわり",
+            "size": "18px",
+            "lineHeight": "27px"
+          },
+          {
+            "tag": "P",
+            "text": "標準仕様と、費用の仕組み。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "MOVE TO NARA",
+            "size": "12px",
+            "lineHeight": "18px"
+          },
+          {
+            "tag": "H3",
+            "text": "奈良からの通勤",
+            "size": "18px",
+            "lineHeight": "27px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪への電車と、休日の車移動。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          },
+          {
+            "tag": "A",
+            "text": "商品ラインナップLINEUP→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "施工事例WORKS→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "モデルハウスMODEL HOUSE→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "A",
+            "text": "家づくりのこだわりOUR WORK→",
+            "size": "16px",
+            "lineHeight": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "大阪で働く方へ。奈良の土地と通勤を、一緒に確認できます。",
+            "size": "16px",
+            "lineHeight": "26.4px"
+          }
+        ]
+      },
+      "instagram": {
+        "height": 1609.703125,
+        "headerHeight": 60,
+        "overflow": false,
+        "buttons": [
+          {
+            "label": "Instagramを見る ↗",
+            "width": 156.875,
+            "height": 44
+          },
+          {
+            "label": "投稿を開く ↗",
+            "width": 296,
+            "height": 526.21875
+          },
+          {
+            "label": "投稿を開く →",
+            "width": 138,
+            "height": 48
+          },
+          {
+            "label": "公式で動画を見る ↗",
+            "width": 148.484375,
+            "height": 44
+          },
+          {
+            "label": "2026/08/30REEL",
+            "width": 93.328125,
+            "height": 195.1875
+          },
+          {
+            "label": "2026/08/13REEL",
+            "width": 93.328125,
+            "height": 195.1875
+          },
+          {
+            "label": "2026/08/07REEL",
+            "width": 93.34375,
+            "height": 195.1875
+          },
+          {
+            "label": "‹前の投稿",
+            "width": 114,
+            "height": 52
+          },
+          {
+            "label": "次の投稿›",
+            "width": 114,
+            "height": 52
+          },
+          {
+            "label": "Instagramを見る ↗",
+            "width": 296,
+            "height": 44
+          }
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "fit": "fill"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          },
+          {
+            "loaded": true,
+            "fit": "contain"
+          }
+        ],
+        "fonts": [
+          {
+            "tag": "H2",
+            "text": "Instagram",
+            "size": "36px",
+            "lineHeight": "43.2px"
+          },
+          {
+            "tag": "P",
+            "text": "やまとの家の公式Instagram",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          },
+          {
+            "tag": "P",
+            "text": "投稿本文より",
+            "size": "14px",
+            "lineHeight": "22.4px"
+          },
+          {
+            "tag": "H3",
+            "text": "外構までこだわる家づくり。",
+            "size": "28px",
+            "lineHeight": "46.2px"
+          },
+          {
+            "tag": "P",
+            "text": "建物が完成しても、\n外構が変わるだけで住まいの印象はここ",
+            "size": "16px",
+            "lineHeight": "29.6px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/30REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/13REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "SPAN",
+            "text": "2026/08/07REEL",
+            "size": "14px",
+            "lineHeight": "21px"
+          },
+          {
+            "tag": "P",
+            "text": "最新の10投稿。写真を選ぶと、投稿の画像と本文を開きます",
+            "size": "16px",
+            "lineHeight": "27.2px"
+          }
+        ]
+      },
+      "platformFonts": {
+        "#entranceTitle": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        ".en26__card h3": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ],
+        ".en26__card p": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 14
+          }
+        ],
+        "#instagramTitle": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ],
+        "#igBLead": [
+          {
+            "familyName": "Shippori Mincho",
+            "isCustomFont": true,
+            "glyphCount": 13
+          }
+        ],
+        "#igBExcerpt": [
+          {
+            "familyName": "Zen Kaku Gothic New",
+            "isCustomFont": true,
+            "glyphCount": 34
+          },
+          {
+            "familyName": "Apple Color Emoji",
+            "isCustomFont": false,
+            "glyphCount": 2
+          }
+        ]
+      }
+    }
+  ]
+}

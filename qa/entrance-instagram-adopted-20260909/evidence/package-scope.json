@@ -1,0 +1,37 @@
+{
+  "files": 700,
+  "bytes": 127911286,
+  "scope": [
+    {
+      "path": "index.html",
+      "destination": "public/index.html",
+      "bytes": 51413,
+      "sha256": "eb6ccfe4f5884e192fca564c615ea0ee33f7b0f5331505048476a1fe692f3503"
+    },
+    {
+      "path": "assets/top-renewal/top.js",
+      "destination": "public/assets/top-renewal/top.js",
+      "bytes": 16052,
+      "sha256": "7bed8485bb48f6756c91d88ffdae14e44570f4db375ea34c996c325712571feb"
+    },
+    {
+      "path": "assets/top-renewal/entrance-adopted-20260909/style.css",
+      "destination": "public/assets/top-renewal/entrance-adopted-20260909/style.css",
+      "bytes": 5954,
+      "sha256": "84c80e65d653453a2484400544d00cfc41272d5af63dd94ff8cde0119053ef62"
+    },
+    {
+      "path": "assets/top-renewal/instagram-b-20260909/style.css",
+      "destination": "public/assets/top-renewal/instagram-b-20260909/style.css",
+      "bytes": 9598,
+      "sha256": "088174e5a16e25ebb3be5adf7bfbda9914e289d4f273359d8a66fdd1db485f6e"
+    },
+    {
+      "path": "assets/top-renewal/instagram-b-20260909/feed.js",
+      "destination": "public/assets/top-renewal/instagram-b-20260909/feed.js",
+      "bytes": 11989,
+      "sha256": "c3fbebc37ac19cf3e3201335a9297f4b99b080606b4ba31255160f80cd6fa0c6"
+    }
+  ],
+  "qaExcluded": true
+}

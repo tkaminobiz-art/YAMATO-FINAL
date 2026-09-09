@@ -1,0 +1,57 @@
+{
+  "base": "http://127.0.0.1:8954/",
+  "results": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "checks": [
+        "10 latest posts: identity, metadata, permalink, distinct neighbors, album, modal post switching, Tab trap, Esc/focus return",
+        "0/1/2/3 posts: empty differs from error; navigation and neighbors match available records",
+        "Long, empty and HTML-like captions: excerpt bounded, full original readable, no HTML execution",
+        "Media failures retain original post action; duplicate IDs and unsafe media/permalinks rejected",
+        "Neighbor selection keeps focus; arrow keys select matching posts",
+        "HTTP failure, retry and successful recovery",
+        "All nine guide routes in adopted order, static list without motion controls or clones",
+        "Unchanged global menu and enquiry preview dialog"
+      ],
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "checks": [
+        "10 latest posts: identity, metadata, permalink, distinct neighbors, album, modal post switching, Tab trap, Esc/focus return",
+        "0/1/2/3 posts: empty differs from error; navigation and neighbors match available records",
+        "Long, empty and HTML-like captions: excerpt bounded, full original readable, no HTML execution",
+        "Media failures retain original post action; duplicate IDs and unsafe media/permalinks rejected",
+        "Neighbor selection keeps focus; arrow keys select matching posts",
+        "HTTP failure, retry and successful recovery",
+        "All nine guide routes in adopted order, static list without motion controls or clones",
+        "Unchanged global menu and enquiry preview dialog"
+      ],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "checks": [
+        "10 latest posts: identity, metadata, permalink, distinct neighbors, album, modal post switching, Tab trap, Esc/focus return",
+        "0/1/2/3 posts: empty differs from error; navigation and neighbors match available records",
+        "Long, empty and HTML-like captions: excerpt bounded, full original readable, no HTML execution",
+        "Media failures retain original post action; duplicate IDs and unsafe media/permalinks rejected",
+        "Neighbor selection keeps focus; arrow keys select matching posts",
+        "HTTP failure, retry and successful recovery",
+        "All nine guide routes in adopted order, static list without motion controls or clones",
+        "Unchanged global menu and enquiry preview dialog"
+      ],
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "noJS": true,
+      "checks": [
+        "All nine static routes and official Instagram exit remain usable"
+      ]
+    }
+  ]
+}

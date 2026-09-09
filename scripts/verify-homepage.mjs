@@ -70,16 +70,19 @@ export function verifyHomepage(html){
   for(const label of ['news','site-footer'])assert(new RegExp(`<(?:section|footer)[^>]*class="[^"]*\\b${label}\\b[^\"]*"[^>]*><span class="wg-paper"`).test(html),`Preserve the ${label} paper background`);
   for(const asset of ['assets/top-renewal/washi-gold/peony-mask.webp','assets/top-renewal/770-editorial/catalog-swallow-original.svg','assets/top-renewal/770-editorial/cotton-paper-960.webp'])assert(existsSync(asset),`Missing ornament: ${asset}`);
 
-  assert.equal((entrance.match(/class="entry-card"/g)||[]).length,4,'Preserve all four guide cards');
-  const quick=entrance.match(/<nav class="quick-links"[\s\S]*?<\/nav>/)?.[0];
+  assert.equal((entrance.match(/class="en26__card"/g)||[]).length,4,'Preserve all four guide cards');
+  const quick=entrance.match(/<nav class="en26__quick"[\s\S]*?<\/nav>/)?.[0];
   assert(quick,'Quick navigation is missing');
   assert.equal((quick.match(/<a /g)||[]).length,4,'Preserve all four quick links');
   for(const href of destinations)assert(entrance.includes(`href="${href}"`),`Missing guide destination: ${href}`);
-  for(const label of ['商品ラインナップ','施工事例','モデルハウス','家づくりのこだわり'])assert(quick.includes(label),`Missing quick link: ${label}`);
-  assert.equal((entrance.match(/entry-card__visual--photo/g)||[]).length,4,'All four guide cards must use the approved photographs');
+  for(const label of ['商品ラインナップ','施工事例','モデルハウス','家づくりのこだわり'])assert(quick.replace(/<[^>]+>/g,'').includes(label),`Missing quick link: ${label}`);
+  assert.equal((entrance.match(/class="en26__photo"/g)||[]).length,4,'All four guide cards must use the approved photographs');
   assert(!entrance.includes('entry-card__visual--maquette')&&!entrance.includes('entry-card__art-label'),'Retired guide illustrations must not return');
-  for(const src of ['assets/top-renewal/sakyo-kitchen-560.webp','assets/top-renewal/real-photo/land-640.webp','assets/top-renewal/real-photo/payment-802.webp','assets/top-renewal/real-photo/commute-639.webp'])assert(entrance.includes(`src="${src}"`)&&existsSync(src),`Approved guide photograph missing: ${src}`);
-  assert(html.includes('assets/top-renewal/real-photo/real-photo.css'),'Guide photograph framing stylesheet must be loaded');
+  for(const src of ['assets/top-renewal/sakyo-kitchen-840.webp','assets/top-renewal/real-photo/land-640.webp','assets/top-renewal/real-photo/payment-802.webp','assets/top-renewal/real-photo/commute-639.webp'])assert(entrance.includes(`src="${src}"`)&&existsSync(src),`Approved guide photograph missing: ${src}`);
+  assert.deepEqual([...entrance.matchAll(/<a[^>]*href="([^"]+)"/g)].map(m=>m[1]),['lots-preview.html?view=list','lots-preview.html?view=estimate','kodawari.html','move-to-nara-preview.html','#lineup','works.html','model.html','kodawari.html','move-to-nara-preview.html'],'Keep all nine approved guide routes in adopted order');
+  assert(!/id="(?:entryCards|cardMotion|entryPrev|entryNext)"/.test(entrance),'Adopted guide is a static list without rail controls');
+  for(const asset of ['entrance-adopted-20260909/style.css','instagram-b-20260909/style.css','instagram-b-20260909/feed.js'])assert(html.includes('assets/top-renewal/'+asset)&&existsSync('assets/top-renewal/'+asset),'Adopted dependency missing: '+asset);
+  assert(readSection(html,'instagram').includes('data-instagram-b'),'Adopted Instagram B must be integrated');
   return {sections:['builtProof','voice'],builtItems:3,voiceCards:4,voiceLinks:5,guideCards:4,quickLinks:4,preservedPaperSections:9,approvedMarkup:true};
 }
 
@@ -108,7 +111,7 @@ if(process.argv.includes('--self-test')){
   assert.throws(()=>verifyHomepage(html.replace('assets/top-renewal/generated-fv-20260909/style.css','missing.css')));
   assert.throws(()=>verifyHomepage(html.replace('wg-section wg-white vb26','voices section')));
   assert.throws(()=>verifyHomepage(html.replace('voice.html#v33','voice.html#missing')));
-  assert.throws(()=>verifyHomepage(html.replace('class="entry-card"','class="removed-card"')));
+  assert.throws(()=>verifyHomepage(html.replace('class="en26__card"','class="removed-card"')));
   assert.throws(()=>verifyHomepage(html.replace('data-voice-id="v01"','data-voice-id="v02"')));
   assert.throws(()=>verifyHomepage(html.replace('>奈良市 N様邸</span>','>生駒市 H様邸</span>')));
   assert.throws(()=>verifyHomepage(html.replace('実際に掛かる本当の費用を提示して頂ける点が魅力的でした。','完成後もカーポートの設置や追加の外構工事で相談に乗ってもらっています。')));

@@ -1,0 +1,16 @@
+[
+  {
+    "width": 1440,
+    "threshold": 16,
+    "maxDiffRatio": 0.001,
+    "diffRatio": 0.0,
+    "gateStatus": "PASS"
+  },
+  {
+    "width": 390,
+    "threshold": 16,
+    "maxDiffRatio": 0.001,
+    "diffRatio": 0.0,
+    "gateStatus": "PASS"
+  }
+]

@@ -45,6 +45,12 @@
  addEventListener('pagehide',()=>{cancelAnimationFrame(frame);previous=0;});addEventListener('pageshow',resumeCards);
  }
 
+ // The adopted TOP owns its selected-post view; other previews retain their existing gallery.
+ if(document.querySelector('#instagram[data-instagram-b]')){
+  window.YamatoInstagramB?.init({openDialog});
+  return;
+ }
+
  // The browser receives public display fields only, never an Instagram credential.
  const gallery=$('igGallery'),igDialog=$('igDialog'),media=$('igDialogMedia'),caption=$('igDialogCaption'),dialogTitle=$('igDialogTitle'),dialogLink=$('igDialogLink');
  let posts=[],postIndex=0,photoIndex=0,loading=false,requestController=null;

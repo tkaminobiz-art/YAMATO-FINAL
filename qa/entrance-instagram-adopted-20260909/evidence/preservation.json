@@ -1,0 +1,23 @@
+{
+  "baseline": "e67fa4f6b04a1cffb59371f1476b72fa7a3c3a77",
+  "unrelatedHomepageMarkup": "byte-equivalent after whitespace normalization and two declared section/dependency replacements",
+  "legacySharedJS": "byte-identical after the one declared TOP guard",
+  "protectedFiles": [
+    "assets/top-renewal/real-photo/land-640.webp",
+    "assets/top-renewal/real-photo/payment-802.webp",
+    "assets/top-renewal/sakyo-kitchen-840.webp",
+    "assets/top-renewal/real-photo/commute-639.webp",
+    "assets/top-renewal/770-editorial/catalog-swallow-original.svg",
+    "assets/top-renewal/770-editorial/cotton-paper-960.webp",
+    "move-to-nara-preview.html",
+    "assets/top-renewal/nara-journey.js",
+    "assets/top-renewal/nara-journey.css",
+    "kodawari.html",
+    "assets/catalog/catalog-hero.js",
+    "assets/catalog/catalog-hero.css",
+    "api/instagram.js",
+    "lib/instagram.cjs",
+    "vercel.json"
+  ],
+  "passed": true
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "height": 900,
+    "fv": {
+      "duration": 18,
+      "loop": true,
+      "muted": true,
+      "playsInline": true,
+      "controls": false,
+      "manualButtons": 0,
+      "notice": false
+    },
+    "loopBoundary": {
+      "time": 0.493826,
+      "paused": false
+    },
+    "offscreenPause": true,
+    "reducedMotion": true,
+    "routes": [
+      {
+        "url": "http://127.0.0.1:8953/lots-preview.html?view=list",
+        "label": "LAND & HOMES 物件一覧  奈良・京都南部の土地を探す。  →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/lots-preview.html?view=estimate",
+        "label": "PAYMENT PLAN お支払いシミュレーション  土地と建物の、月々の返済額を試算。  →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/kodawari.html",
+        "label": "OUR CRAFT 家づくりのこだわり  標準仕様と、費用の仕組み。  →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/move-to-nara-preview.html",
+        "label": "MOVE TO NARA 奈良からの通勤  大阪への電車と、休日の車移動。  →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/#lineup",
+        "label": "商品ラインナップ LINEUP →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/works.html",
+        "label": "施工事例 WORKS →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/model.html",
+        "label": "モデルハウス MODEL HOUSE →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/kodawari.html",
+        "label": "家づくりのこだわり OUR WORK →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/move-to-nara-preview.html",
+        "label": "奈良からのアクセスを見る →",
+        "http": 200
+      }
+    ],
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "height": 844,
+    "fv": {
+      "duration": 18,
+      "loop": true,
+      "muted": true,
+      "playsInline": true,
+      "controls": false,
+      "manualButtons": 0,
+      "notice": false
+    },
+    "loopBoundary": {
+      "time": 0.5361482080005737,
+      "paused": false
+    },
+    "offscreenPause": true,
+    "reducedMotion": true,
+    "routes": [
+      {
+        "url": "http://127.0.0.1:8953/lots-preview.html?view=list",
+        "label": "LAND & HOMES 物件一覧  奈良・京都南部の 土地を探す。  →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/lots-preview.html?view=estimate",
+        "label": "PAYMENT PLAN お支払いシミュレーション  土地と建物の、 月々の返済額を 試算。  →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/kodawari.html",
+        "label": "OUR CRAFT 家づくりのこだわり  標準仕様と、 費用の仕組み。  →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/move-to-nara-preview.html",
+        "label": "MOVE TO NARA 奈良からの通勤  大阪への電車と、 休日の車移動。  →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/#lineup",
+        "label": "商品ラインナップ LINEUP →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/works.html",
+        "label": "施工事例 WORKS →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/model.html",
+        "label": "モデルハウス MODEL HOUSE →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/kodawari.html",
+        "label": "家づくりのこだわり OUR WORK →",
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:8953/move-to-nara-preview.html",
+        "label": "奈良からのアクセスを見る →",
+        "http": 200
+      }
+    ],
+    "errors": []
+  },
+  {
+    "unroutedLiveFeed": {
+      "state": "ready",
+      "id": "18077624408348269",
+      "count": "01 / 10",
+      "official": "https://www.instagram.com/reel/Dc48MRCv5Kn/"
+    }
+  }
+]
