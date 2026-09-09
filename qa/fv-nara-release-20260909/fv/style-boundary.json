@@ -1,0 +1,52 @@
+{
+  "lower": [
+    {
+      "width": 1440,
+      "comparedNodes": 369,
+      "differences": []
+    },
+    {
+      "width": 390,
+      "comparedNodes": 369,
+      "differences": []
+    }
+  ],
+  "bounds": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "problems": [],
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "problems": [],
+      "scrollWidth": 1024
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "problems": [],
+      "scrollWidth": 768
+    },
+    {
+      "width": 390,
+      "height": 900,
+      "problems": [],
+      "scrollWidth": 390
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "problems": [],
+      "scrollWidth": 320
+    },
+    {
+      "width": 390,
+      "height": 664,
+      "problems": [],
+      "scrollWidth": 390
+    }
+  ]
+}

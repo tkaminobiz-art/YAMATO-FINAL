@@ -1,0 +1,74 @@
+[
+  {
+    "before": {
+      "name": "rapid-before",
+      "at": 5864.199999928474,
+      "t": 5.015175,
+      "w": 1024,
+      "transport": "direct",
+      "ready": 4,
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "paused": false,
+      "seeking": false
+    },
+    "after": {
+      "name": "rapid-after",
+      "at": 6890.899999976158,
+      "t": 6.041937,
+      "w": 1024,
+      "transport": "direct",
+      "ready": 4,
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "paused": false,
+      "seeking": false
+    }
+  },
+  {
+    "before": {
+      "name": "rapid-before",
+      "at": 5655.700000047684,
+      "t": 5.011618,
+      "w": 1024,
+      "transport": "direct",
+      "ready": 4,
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "paused": false,
+      "seeking": false
+    },
+    "after": {
+      "name": "rapid-after",
+      "at": 6682,
+      "t": 6.037968,
+      "w": 1024,
+      "transport": "direct",
+      "ready": 4,
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "paused": false,
+      "seeking": false
+    }
+  },
+  {
+    "before": {
+      "name": "rapid-before",
+      "at": 5760.5,
+      "t": 5.017123,
+      "w": 1024,
+      "transport": "direct",
+      "ready": 4,
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "paused": false,
+      "seeking": false
+    },
+    "after": {
+      "name": "rapid-after",
+      "at": 6823.099999904633,
+      "t": 5.855684,
+      "w": 1024,
+      "transport": "direct",
+      "ready": 4,
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "paused": false,
+      "seeking": false
+    }
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "before": {
+    "time": 3.015797,
+    "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+    "transport": "direct",
+    "playing": true,
+    "ready": 4
+  },
+  "sp": {
+    "time": 3.075729,
+    "asset": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+    "transport": "blob-for-seek",
+    "playing": true,
+    "ready": 4
+  },
+  "pc": {
+    "time": 3.107334,
+    "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+    "transport": "blob-for-seek",
+    "playing": true,
+    "ready": 4
+  },
+  "rapidBefore": {
+    "time": 5.007647,
+    "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+    "transport": "blob-for-seek",
+    "playing": true,
+    "ready": 4
+  },
+  "rapidAfter": {
+    "time": 5.531717,
+    "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+    "transport": "blob-for-seek",
+    "playing": true,
+    "ready": 4
+  },
+  "requests": [
+    {
+      "url": "http://127.0.0.1:8928/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "type": "media"
+    },
+    {
+      "url": "http://127.0.0.1:8928/assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8928/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "type": "fetch"
+    }
+  ]
+}

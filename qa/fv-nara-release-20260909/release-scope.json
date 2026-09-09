@@ -1,0 +1,88 @@
+{
+  "base": "7b4d9f5193d7feecf897c6a165fd5f3a2d109724",
+  "naraSourceCommit": "534548c9ad9606645f797973f9642ce94a13c188",
+  "lowerOutsideNaraPreserved": true,
+  "runtimeMatchesPackaged": true,
+  "files": [
+    {
+      "path": "assets/top-renewal/fv-day-cycle-2026/evening-pc.webp",
+      "sha256": "fa636eece6e1fe28301d69869e0159e91c80da1a89c224e994918d1612045651"
+    },
+    {
+      "path": "assets/top-renewal/fv-day-cycle-2026/evening-sp.webp",
+      "sha256": "8c1f982aa4dfd508fbea1910cf368f72be88a527d6bcd6016b09d1d06c820237"
+    },
+    {
+      "path": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "sha256": "0aa1dd3b4d822278753990872e224df2059d327d2891beb2bc98b075e9b145bb"
+    },
+    {
+      "path": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "sha256": "7ff52cedce7ba2ce58262c46b4fce99a7a11ab078aa132254fa7e395c5f9d430"
+    },
+    {
+      "path": "assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+      "sha256": "6ea02968d09ffd083f6227c7a825e14cfd5ff32dd7ec61963c527c31f22da263"
+    },
+    {
+      "path": "assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+      "sha256": "28cb36c3c178d1a4972d48294ce935a1aefd1e63a4b91b22559e5b22693537b9"
+    },
+    {
+      "path": "assets/top-renewal/fv-day-cycle-2026/night-pc.webp",
+      "sha256": "bff28365bdca9418ef4e855b95927cc4f8504255c1c27571e7bf6fb22c69eb68"
+    },
+    {
+      "path": "assets/top-renewal/fv-day-cycle-2026/night-sp.webp",
+      "sha256": "2165003f4e3ce7481d062b3ad37f96bf743355b10ac5428681766d07dd7e5e65"
+    },
+    {
+      "path": "assets/top-renewal/generated-fv-20260909/cycle.js",
+      "sha256": "4f3e5366836e5865625de453d2b961ef78aaa09f2f773bd414596915f08ef264"
+    },
+    {
+      "path": "assets/top-renewal/generated-fv-20260909/leaf-background.webp",
+      "sha256": "4773298bb98794f7c40c3bc98fd8f868f0736a629608634b8098aa47ee6f9d53"
+    },
+    {
+      "path": "assets/top-renewal/generated-fv-20260909/style.css",
+      "sha256": "4d6967ae7d581ae7d1ac33ce1b831ce2700956528624d239a9c77cc54c4d5f34"
+    },
+    {
+      "path": "assets/top-renewal/nara-adopted-20260909/house-exterior.webp",
+      "sha256": "a966f7cd07d43d36795324da6f4b61f287348dd45ecdd76883b243043b845e7b"
+    },
+    {
+      "path": "assets/top-renewal/nara-adopted-20260909/leaf-background.webp",
+      "sha256": "4773298bb98794f7c40c3bc98fd8f868f0736a629608634b8098aa47ee6f9d53"
+    },
+    {
+      "path": "assets/top-renewal/nara-adopted-20260909/section.js",
+      "sha256": "e3bf28f8c75240ca0cc02f7641f23d1b4d98e99ec1ddc69667de1097636e0d76"
+    },
+    {
+      "path": "assets/top-renewal/nara-adopted-20260909/style.css",
+      "sha256": "ddda0dedf487e381bfca41ff847ca617928ea65f8247dd8fbeb2a0e34e037ed3"
+    },
+    {
+      "path": "index.html",
+      "sha256": "59af8800284fda06ef5f90db117de559a97d1956ebd51e3f3324b0657ef13350"
+    },
+    {
+      "path": "scripts/build-checkpoint.mjs",
+      "sha256": "4401228b940ab61a46ada4fbda2b9bcc6844c5b110808dfdf5c39b92c0f91494"
+    },
+    {
+      "path": "scripts/verify-day-cycle-hero.mjs",
+      "sha256": "0a916e336066b26dffe6a255c23cf822e81bf5579140efa2b0e8faf9bbb0fc65"
+    },
+    {
+      "path": "scripts/verify-homepage.mjs",
+      "sha256": "751122b364f7778259d202da1de465615b6e0e76f3ae41fbbc810bc87b6c60a0"
+    },
+    {
+      "path": "scripts/verify-nara.mjs",
+      "sha256": "890ee1da4f08933e203fd5e731b8bc48d0f28fa1d40eab561e88e34607e6916a"
+    }
+  ]
+}

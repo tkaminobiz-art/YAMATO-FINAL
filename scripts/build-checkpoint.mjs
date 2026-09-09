@@ -1,6 +1,7 @@
 // Reproducible allow-listed static output for the review checkpoint.
 import './verify-homepage.mjs';
-import './verify-bright-hero.mjs';
+import './verify-day-cycle-hero.mjs';
+import './verify-nara.mjs';
 import './package-checkpoint.mjs';
 import { readFileSync, cpSync, existsSync } from 'node:fs';
 const { stage } = JSON.parse(readFileSync('qa/checkpoint-20260906/package.json', 'utf8'));

@@ -1,0 +1,604 @@
+{
+  "at": "2026-09-09T02:41:34.833Z",
+  "checks": [
+    {
+      "name": "playing-morning-1440",
+      "t": 2.229166,
+      "duration": 18,
+      "paused": false,
+      "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "transport": "direct",
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "ready": 4,
+      "muted": true,
+      "loop": true,
+      "phase": "morning",
+      "state": "playing",
+      "opacity": "1",
+      "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+      "visibility": "visible"
+    },
+    {
+      "name": "playing-evening-1440",
+      "t": 8.256474,
+      "duration": 18,
+      "paused": false,
+      "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "transport": "direct",
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "ready": 4,
+      "muted": true,
+      "loop": true,
+      "phase": "evening",
+      "state": "playing",
+      "opacity": "1",
+      "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+      "visibility": "visible"
+    },
+    {
+      "name": "playing-night-1440",
+      "t": 14.250703,
+      "duration": 18,
+      "paused": false,
+      "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "transport": "direct",
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "ready": 4,
+      "muted": true,
+      "loop": true,
+      "phase": "night",
+      "state": "playing",
+      "opacity": "1",
+      "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+      "visibility": "visible"
+    },
+    {
+      "name": "full-18s-loop-1440",
+      "wraps": 1,
+      "errors": []
+    },
+    {
+      "name": "offscreen-resume-1440",
+      "paused1": {
+        "t": 0.058675,
+        "duration": 18,
+        "paused": true,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "paused",
+        "opacity": "1",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+        "visibility": "visible"
+      },
+      "paused2": {
+        "t": 0.058675,
+        "duration": 18,
+        "paused": true,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "paused",
+        "opacity": "1",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+        "visibility": "visible"
+      },
+      "resumed": {
+        "t": 0.461896,
+        "duration": 18,
+        "paused": false,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "playing",
+        "opacity": "1",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+        "visibility": "visible"
+      }
+    },
+    {
+      "name": "resize-preserves-position",
+      "before": {
+        "t": 0.462691,
+        "duration": 18,
+        "paused": false,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "playing",
+        "opacity": "1",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+        "visibility": "visible"
+      },
+      "portrait": {
+        "t": 0.553548,
+        "duration": 18,
+        "paused": false,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "playing",
+        "opacity": "1",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+        "visibility": "visible"
+      },
+      "desktop": {
+        "t": 0.601916,
+        "duration": 18,
+        "paused": false,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "playing",
+        "opacity": "0.828835",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+        "visibility": "visible"
+      }
+    },
+    {
+      "name": "live-reduced-motion",
+      "t": 0,
+      "duration": null,
+      "paused": true,
+      "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "transport": "direct",
+      "src": null,
+      "ready": 0,
+      "muted": true,
+      "loop": true,
+      "phase": "morning",
+      "state": "still",
+      "opacity": "0",
+      "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+      "visibility": "visible"
+    },
+    {
+      "name": "preference-off-resumes",
+      "t": 0.110354,
+      "duration": 18,
+      "paused": false,
+      "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "transport": "direct",
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+      "ready": 4,
+      "muted": true,
+      "loop": true,
+      "phase": "morning",
+      "state": "playing",
+      "opacity": "0.484959",
+      "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+      "visibility": "visible"
+    },
+    {
+      "name": "playing-morning-390",
+      "t": 2.08831,
+      "duration": 18,
+      "paused": false,
+      "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "asset": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "transport": "direct",
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "ready": 4,
+      "muted": true,
+      "loop": true,
+      "phase": "morning",
+      "state": "playing",
+      "opacity": "1",
+      "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+      "visibility": "visible"
+    },
+    {
+      "name": "playing-evening-390",
+      "t": 8.093326,
+      "duration": 18,
+      "paused": false,
+      "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "asset": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "transport": "direct",
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "ready": 4,
+      "muted": true,
+      "loop": true,
+      "phase": "evening",
+      "state": "playing",
+      "opacity": "1",
+      "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+      "visibility": "visible"
+    },
+    {
+      "name": "playing-night-390",
+      "t": 14.104914,
+      "duration": 18,
+      "paused": false,
+      "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "asset": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "transport": "direct",
+      "src": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+      "ready": 4,
+      "muted": true,
+      "loop": true,
+      "phase": "night",
+      "state": "playing",
+      "opacity": "1",
+      "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+      "visibility": "visible"
+    },
+    {
+      "name": "full-18s-loop-390",
+      "wraps": 1,
+      "errors": []
+    },
+    {
+      "name": "offscreen-resume-390",
+      "paused1": {
+        "t": 0.063413,
+        "duration": 18,
+        "paused": true,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "paused",
+        "opacity": "1",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+        "visibility": "visible"
+      },
+      "paused2": {
+        "t": 0.063413,
+        "duration": 18,
+        "paused": true,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "paused",
+        "opacity": "1",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+        "visibility": "visible"
+      },
+      "resumed": {
+        "t": 0.467191,
+        "duration": 18,
+        "paused": false,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "playing",
+        "opacity": "1",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+        "visibility": "visible"
+      }
+    },
+    {
+      "name": "all-approved-copy-and-menu-routes",
+      "menuItems": 13,
+      "allCopy": true
+    },
+    {
+      "name": "linked-routes",
+      "routes": [
+        {
+          "link": "kodawari.html",
+          "status": 200
+        },
+        {
+          "link": "works.html",
+          "status": 200
+        },
+        {
+          "link": "lots-preview.html?view=list",
+          "status": 200
+        },
+        {
+          "link": "staff.html",
+          "status": 200
+        },
+        {
+          "link": "model.html",
+          "status": 200
+        },
+        {
+          "link": "lots-preview.html?view=estimate",
+          "status": 200
+        },
+        {
+          "link": "move-to-nara-preview.html",
+          "status": 200
+        },
+        {
+          "link": "voice.html",
+          "status": 200
+        },
+        {
+          "link": "kodawari.html#top",
+          "status": 200
+        },
+        {
+          "link": "company.html",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "name": "menu-keyboard",
+      "tabTargets": [
+        {
+          "tag": "A",
+          "text": "商品ラインナップ",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "施工事例",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "モデルハウス",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "分譲地・物件",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "お支払いシミュレーション",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "奈良からの通勤",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "お客様の声",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "デジタルカタログ",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "会社案内",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "スタッフ紹介",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "資料請求",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "来場予約",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "0742-36-1123",
+          "inMenu": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "家づくりのこだわり",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "商品ラインナップ",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "施工事例",
+          "inMenu": true
+        },
+        {
+          "tag": "A",
+          "text": "モデルハウス",
+          "inMenu": true
+        }
+      ],
+      "escapeRestoresFocus": true
+    },
+    {
+      "name": "reservation-and-docs",
+      "opened": true,
+      "submitted": false
+    },
+    {
+      "name": "fallback-reduced",
+      "state": {
+        "t": 0,
+        "duration": null,
+        "paused": true,
+        "source": "",
+        "src": null,
+        "ready": 0,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "still",
+        "opacity": "0",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+        "visibility": "visible"
+      },
+      "videoRequests": 0
+    },
+    {
+      "name": "fallback-save-data",
+      "state": {
+        "t": 0,
+        "duration": null,
+        "paused": true,
+        "source": "",
+        "src": null,
+        "ready": 0,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "still",
+        "opacity": "0",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+        "visibility": "visible"
+      },
+      "videoRequests": 0
+    },
+    {
+      "name": "fallback-video-error",
+      "state": {
+        "t": 0,
+        "duration": null,
+        "paused": true,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "transport": "direct",
+        "src": null,
+        "ready": 0,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "fallback",
+        "opacity": "0",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+        "visibility": "visible"
+      },
+      "videoRequests": 1
+    },
+    {
+      "name": "fallback-no-js",
+      "state": {
+        "t": 0,
+        "duration": null,
+        "paused": true,
+        "source": "",
+        "src": null,
+        "ready": 0,
+        "muted": true,
+        "loop": true,
+        "opacity": "0",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-sp.webp",
+        "visibility": "visible"
+      },
+      "videoRequests": 0
+    },
+    {
+      "name": "visibility-event-fixture",
+      "before": {
+        "t": 0.316397,
+        "duration": 18,
+        "paused": true,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "paused",
+        "opacity": "0.964821",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+        "visibility": "visible"
+      },
+      "after": {
+        "t": 0.316397,
+        "duration": 18,
+        "paused": true,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "paused",
+        "opacity": "1",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+        "visibility": "visible"
+      },
+      "resumed": {
+        "t": 0.821476,
+        "duration": 18,
+        "paused": false,
+        "source": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "asset": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "transport": "direct",
+        "src": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "ready": 4,
+        "muted": true,
+        "loop": true,
+        "phase": "morning",
+        "state": "playing",
+        "opacity": "1",
+        "still": "http://127.0.0.1:8927/assets/top-renewal/fv-day-cycle-2026/morning-pc.webp",
+        "visibility": "visible"
+      }
+    }
+  ],
+  "issues": [],
+  "limits": []
+}

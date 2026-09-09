@@ -1,0 +1,5762 @@
+[
+  {
+    "width": 1440,
+    "height": 1000,
+    "errors": [],
+    "metrics": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1158,
+      "fonts": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "elements": {
+        "#naraTitle": {
+          "text": "奈良に移住する選択肢",
+          "font": "\"Shippori Mincho\", serif",
+          "size": "62px",
+          "weight": "500",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 440.515625,
+          "height": 176.0625,
+          "x": 72,
+          "y": 294.265625
+        },
+        ".na26__lead": {
+          "text": "大阪で働き、奈良で戸建てを。",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "28px",
+          "weight": "400",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 440.515625,
+          "height": 50.390625,
+          "x": 72,
+          "y": 495.328125
+        },
+        ".na26__note": {
+          "text": "奈良県に住む15歳以上の就業者が対象。2020年国勢調査／奈良県・大阪府公表値から算出",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "13px",
+          "weight": "400",
+          "color": "rgb(65, 71, 64)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 304.328125,
+          "height": 48.09375,
+          "x": 83,
+          "y": 904.40625
+        },
+        ".na26__stat-line strong": {
+          "text": "5",
+          "font": "Inter, sans-serif",
+          "size": "48px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 32.9375,
+          "height": 59,
+          "x": 110,
+          "y": 783.265625
+        },
+        ".na26__duration b": {
+          "text": "22",
+          "font": "Inter, sans-serif",
+          "size": "42px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 51.890625,
+          "height": 48.296875,
+          "x": 503.09375,
+          "y": 985.40625
+        },
+        ".na26__primary": {
+          "text": "大阪・奈良のアクセスを見る",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "15px",
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(23, 99, 53)",
+          "width": 298.3125,
+          "height": 58,
+          "x": 1081.671875,
+          "y": 829.265625
+        },
+        ".na26__secondary": {
+          "text": "奈良の土地を探す",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "15px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgb(255, 255, 255)",
+          "width": 298.3125,
+          "height": 58,
+          "x": 1081.671875,
+          "y": 903.265625
+        }
+      },
+      "photo": {
+        "naturalWidth": 1600,
+        "naturalHeight": 1200,
+        "src": "http://127.0.0.1:8927/assets/top-renewal/nara-adopted-20260909/house-exterior.webp"
+      },
+      "overflow": []
+    },
+    "fontsUsed": {
+      "#naraTitle": [
+        {
+          "familyName": "Shippori Mincho Medium",
+          "postScriptName": "ShipporiMincho-Medium",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ],
+      ".na26__lead": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Regular",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ],
+      ".na26__duration b": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular_Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ],
+      ".na26__primary span": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Medium",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    "tsuruhashi": {
+      "label": "鶴橋",
+      "minutes": [
+        "16",
+        "22",
+        "35"
+      ],
+      "source": "鶴橋18:33発",
+      "status": "鶴橋から生駒16分、学園前22分、近鉄奈良35分。快速急行、平日夕方の一例です。"
+    },
+    "disclosure": true,
+    "keyboardClose": true,
+    "nambaRestored": [
+      "22",
+      "28",
+      "41"
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "errors": [],
+    "metrics": {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1172,
+      "fonts": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "elements": {
+        "#naraTitle": {
+          "text": "奈良に移住する選択肢",
+          "font": "\"Shippori Mincho\", serif",
+          "size": "48px",
+          "weight": "500",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 341.046875,
+          "height": 136.3125,
+          "x": 51.1875,
+          "y": 214.71875
+        },
+        ".na26__lead": {
+          "text": "大阪で働き、奈良で戸建てを。",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "22px",
+          "weight": "400",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 341.046875,
+          "height": 39.59375,
+          "x": 51.1875,
+          "y": 376.03125
+        },
+        ".na26__note": {
+          "text": "奈良県に住む15歳以上の就業者が対象。2020年国勢調査／奈良県・大阪府公表値から算出",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "13px",
+          "weight": "400",
+          "color": "rgb(65, 71, 64)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 294.203125,
+          "height": 48.09375,
+          "x": 59,
+          "y": 764.703125
+        },
+        ".na26__stat-line strong": {
+          "text": "5",
+          "font": "Inter, sans-serif",
+          "size": "42px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 29.328125,
+          "height": 51,
+          "x": 83,
+          "y": 655.71875
+        },
+        ".na26__duration b": {
+          "text": "22",
+          "font": "Inter, sans-serif",
+          "size": "42px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 51.890625,
+          "height": 48.296875,
+          "x": 463.546875,
+          "y": 857.859375
+        },
+        ".na26__primary": {
+          "text": "大阪・奈良のアクセスを見る",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "15px",
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(23, 99, 53)",
+          "width": 270.25,
+          "height": 58,
+          "x": 431.75,
+          "y": 1082.296875
+        },
+        ".na26__secondary": {
+          "text": "奈良の土地を探す",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "15px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgb(255, 255, 255)",
+          "width": 270,
+          "height": 58,
+          "x": 718,
+          "y": 1082.296875
+        }
+      },
+      "photo": {
+        "naturalWidth": 1600,
+        "naturalHeight": 1200,
+        "src": "http://127.0.0.1:8927/assets/top-renewal/nara-adopted-20260909/house-exterior.webp"
+      },
+      "overflow": []
+    },
+    "fontsUsed": {
+      "#naraTitle": [
+        {
+          "familyName": "Shippori Mincho Medium",
+          "postScriptName": "ShipporiMincho-Medium",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ],
+      ".na26__lead": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Regular",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ],
+      ".na26__duration b": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular_Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ],
+      ".na26__primary span": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Medium",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    "tsuruhashi": {
+      "label": "鶴橋",
+      "minutes": [
+        "16",
+        "22",
+        "35"
+      ],
+      "source": "鶴橋18:33発",
+      "status": "鶴橋から生駒16分、学園前22分、近鉄奈良35分。快速急行、平日夕方の一例です。"
+    },
+    "disclosure": true,
+    "keyboardClose": true,
+    "nambaRestored": [
+      "22",
+      "28",
+      "41"
+    ]
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "errors": [],
+    "metrics": {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1682,
+      "fonts": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "elements": {
+        "#naraTitle": {
+          "text": "奈良に移住する選択肢",
+          "font": "\"Shippori Mincho\", serif",
+          "size": "48px",
+          "weight": "500",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 645.125,
+          "height": 142.0625,
+          "x": 61.4375,
+          "y": -47.140625
+        },
+        ".na26__lead": {
+          "text": "大阪で働き、奈良で戸建てを。",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "18px",
+          "weight": "400",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 645.125,
+          "height": 32.390625,
+          "x": 61.4375,
+          "y": 110.921875
+        },
+        ".na26__note": {
+          "text": "奈良県に住む15歳以上の就業者が対象。2020年国勢調査／奈良県・大阪府公表値から算出",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "13px",
+          "weight": "400",
+          "color": "rgb(65, 71, 64)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 655,
+          "height": 48.09375,
+          "x": 65,
+          "y": 854.4375
+        },
+        ".na26__stat-line strong": {
+          "text": "5",
+          "font": "Inter, sans-serif",
+          "size": "46px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 31.734375,
+          "height": 56,
+          "x": 88,
+          "y": 746.3125
+        },
+        ".na26__duration b": {
+          "text": "22",
+          "font": "Inter, sans-serif",
+          "size": "42px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 51.890625,
+          "height": 48.296875,
+          "x": 122.546875,
+          "y": 1133.171875
+        },
+        ".na26__primary": {
+          "text": "大阪・奈良のアクセスを見る",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "16px",
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(23, 99, 53)",
+          "width": 672,
+          "height": 53.59375,
+          "x": 48,
+          "y": 1357.609375
+        },
+        ".na26__secondary": {
+          "text": "奈良の土地を探す",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "16px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgb(255, 255, 255)",
+          "width": 672,
+          "height": 53.59375,
+          "x": 48,
+          "y": 1423.203125
+        }
+      },
+      "photo": {
+        "naturalWidth": 1600,
+        "naturalHeight": 1200,
+        "src": "http://127.0.0.1:8927/assets/top-renewal/nara-adopted-20260909/house-exterior.webp"
+      },
+      "overflow": []
+    },
+    "fontsUsed": {
+      "#naraTitle": [
+        {
+          "familyName": "Shippori Mincho Medium",
+          "postScriptName": "ShipporiMincho-Medium",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ],
+      ".na26__lead": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Regular",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ],
+      ".na26__duration b": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular_Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ],
+      ".na26__primary span": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Medium",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    "tsuruhashi": {
+      "label": "鶴橋",
+      "minutes": [
+        "16",
+        "22",
+        "35"
+      ],
+      "source": "鶴橋18:33発",
+      "status": "鶴橋から生駒16分、学園前22分、近鉄奈良35分。快速急行、平日夕方の一例です。"
+    },
+    "disclosure": true,
+    "keyboardClose": true,
+    "nambaRestored": [
+      "22",
+      "28",
+      "41"
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "metrics": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1328,
+      "fonts": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "elements": {
+        "#naraTitle": {
+          "text": "奈良に移住する選択肢",
+          "font": "\"Shippori Mincho\", serif",
+          "size": "32px",
+          "weight": "500",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 327.625,
+          "height": 94.71875,
+          "x": 31.1875,
+          "y": 12.140625
+        },
+        ".na26__lead": {
+          "text": "大阪で働き、奈良で戸建てを。",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "16px",
+          "weight": "400",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 327.625,
+          "height": 28.796875,
+          "x": 31.1875,
+          "y": 122.859375
+        },
+        ".na26__note": {
+          "text": "奈良県に住む15歳以上の就業者が対象。2020年国勢調査／奈良県・大阪府公表値から算出",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "13px",
+          "weight": "400",
+          "color": "rgb(65, 71, 64)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 333,
+          "height": 48.09375,
+          "x": 37,
+          "y": 587.28125
+        },
+        ".na26__stat-line strong": {
+          "text": "5",
+          "font": "Inter, sans-serif",
+          "size": "46px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 31.734375,
+          "height": 56,
+          "x": 60,
+          "y": 479.15625
+        },
+        ".na26__duration b": {
+          "text": "22",
+          "font": "Inter, sans-serif",
+          "size": "42px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 51.890625,
+          "height": 48.296875,
+          "x": 40.875,
+          "y": 863.015625
+        },
+        ".na26__primary": {
+          "text": "大阪・奈良のアクセスを見る",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "15px",
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(23, 99, 53)",
+          "width": 350,
+          "height": 52,
+          "x": 20,
+          "y": 1087.453125
+        },
+        ".na26__secondary": {
+          "text": "奈良の土地を探す",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "15px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgb(255, 255, 255)",
+          "width": 350,
+          "height": 52,
+          "x": 20,
+          "y": 1151.453125
+        }
+      },
+      "photo": {
+        "naturalWidth": 1600,
+        "naturalHeight": 1200,
+        "src": "http://127.0.0.1:8927/assets/top-renewal/nara-adopted-20260909/house-exterior.webp"
+      },
+      "overflow": []
+    },
+    "fontsUsed": {
+      "#naraTitle": [
+        {
+          "familyName": "Shippori Mincho Medium",
+          "postScriptName": "ShipporiMincho-Medium",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ],
+      ".na26__lead": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Regular",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ],
+      ".na26__duration b": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular_Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ],
+      ".na26__primary span": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Medium",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    "tsuruhashi": {
+      "label": "鶴橋",
+      "minutes": [
+        "16",
+        "22",
+        "35"
+      ],
+      "source": "鶴橋18:33発",
+      "status": "鶴橋から生駒16分、学園前22分、近鉄奈良35分。快速急行、平日夕方の一例です。"
+    },
+    "disclosure": true,
+    "keyboardClose": true,
+    "nambaRestored": [
+      "22",
+      "28",
+      "41"
+    ]
+  },
+  {
+    "width": 320,
+    "height": 740,
+    "errors": [],
+    "metrics": {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 1314,
+      "fonts": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "elements": {
+        "#naraTitle": {
+          "text": "奈良に移住する選択肢",
+          "font": "\"Shippori Mincho\", serif",
+          "size": "28px",
+          "weight": "500",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 268.8125,
+          "height": 82.875,
+          "x": 25.59375,
+          "y": -32.640625
+        },
+        ".na26__lead": {
+          "text": "大阪で働き、奈良で戸建てを。",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "15px",
+          "weight": "400",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 268.8125,
+          "height": 27,
+          "x": 25.59375,
+          "y": 66.234375
+        },
+        ".na26__note": {
+          "text": "奈良県に住む15歳以上の就業者が対象。2020年国勢調査／奈良県・大阪府公表値から算出",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "13px",
+          "weight": "400",
+          "color": "rgb(65, 71, 64)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 271,
+          "height": 72.140625,
+          "x": 33,
+          "y": 466.625
+        },
+        ".na26__stat-line strong": {
+          "text": "5",
+          "font": "Inter, sans-serif",
+          "size": "42px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 29.328125,
+          "height": 51,
+          "x": 53,
+          "y": 368.234375
+        },
+        ".na26__duration b": {
+          "text": "22",
+          "font": "Inter, sans-serif",
+          "size": "36px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 44.484375,
+          "height": 41.390625,
+          "x": 30.25,
+          "y": 763.203125
+        },
+        ".na26__primary": {
+          "text": "大阪・奈良のアクセスを見る",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "14px",
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(23, 99, 53)",
+          "width": 288,
+          "height": 52,
+          "x": 16,
+          "y": 1028.828125
+        },
+        ".na26__secondary": {
+          "text": "奈良の土地を探す",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "14px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgb(255, 255, 255)",
+          "width": 288,
+          "height": 52,
+          "x": 16,
+          "y": 1092.828125
+        }
+      },
+      "photo": {
+        "naturalWidth": 1600,
+        "naturalHeight": 1200,
+        "src": "http://127.0.0.1:8927/assets/top-renewal/nara-adopted-20260909/house-exterior.webp"
+      },
+      "overflow": []
+    },
+    "fontsUsed": {
+      "#naraTitle": [
+        {
+          "familyName": "Shippori Mincho Medium",
+          "postScriptName": "ShipporiMincho-Medium",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ],
+      ".na26__lead": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Regular",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ],
+      ".na26__duration b": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular_Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ],
+      ".na26__primary span": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Medium",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    "tsuruhashi": {
+      "label": "鶴橋",
+      "minutes": [
+        "16",
+        "22",
+        "35"
+      ],
+      "source": "鶴橋18:33発",
+      "status": "鶴橋から生駒16分、学園前22分、近鉄奈良35分。快速急行、平日夕方の一例です。"
+    },
+    "disclosure": true,
+    "keyboardClose": true,
+    "nambaRestored": [
+      "22",
+      "28",
+      "41"
+    ]
+  },
+  {
+    "width": 390,
+    "height": 664,
+    "errors": [],
+    "metrics": {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 1328,
+      "fonts": [
+        {
+          "family": "Inter",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Noto Sans JP",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Shippori Mincho",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Zen Kaku Gothic New",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "elements": {
+        "#naraTitle": {
+          "text": "奈良に移住する選択肢",
+          "font": "\"Shippori Mincho\", serif",
+          "size": "32px",
+          "weight": "500",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 327.625,
+          "height": 94.71875,
+          "x": 31.1875,
+          "y": -77.859375
+        },
+        ".na26__lead": {
+          "text": "大阪で働き、奈良で戸建てを。",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "16px",
+          "weight": "400",
+          "color": "rgb(22, 28, 24)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 327.625,
+          "height": 28.796875,
+          "x": 31.1875,
+          "y": 32.859375
+        },
+        ".na26__note": {
+          "text": "奈良県に住む15歳以上の就業者が対象。2020年国勢調査／奈良県・大阪府公表値から算出",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "13px",
+          "weight": "400",
+          "color": "rgb(65, 71, 64)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 333,
+          "height": 48.09375,
+          "x": 37,
+          "y": 497.28125
+        },
+        ".na26__stat-line strong": {
+          "text": "5",
+          "font": "Inter, sans-serif",
+          "size": "46px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 31.734375,
+          "height": 56,
+          "x": 60,
+          "y": 389.15625
+        },
+        ".na26__duration b": {
+          "text": "22",
+          "font": "Inter, sans-serif",
+          "size": "42px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgba(0, 0, 0, 0)",
+          "width": 51.890625,
+          "height": 48.296875,
+          "x": 40.875,
+          "y": 773.015625
+        },
+        ".na26__primary": {
+          "text": "大阪・奈良のアクセスを見る",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "15px",
+          "weight": "500",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(23, 99, 53)",
+          "width": 350,
+          "height": 52,
+          "x": 20,
+          "y": 997.453125
+        },
+        ".na26__secondary": {
+          "text": "奈良の土地を探す",
+          "font": "\"Noto Sans JP\", sans-serif",
+          "size": "15px",
+          "weight": "500",
+          "color": "rgb(23, 99, 53)",
+          "background": "rgb(255, 255, 255)",
+          "width": 350,
+          "height": 52,
+          "x": 20,
+          "y": 1061.453125
+        }
+      },
+      "photo": {
+        "naturalWidth": 1600,
+        "naturalHeight": 1200,
+        "src": "http://127.0.0.1:8927/assets/top-renewal/nara-adopted-20260909/house-exterior.webp"
+      },
+      "overflow": []
+    },
+    "fontsUsed": {
+      "#naraTitle": [
+        {
+          "familyName": "Shippori Mincho Medium",
+          "postScriptName": "ShipporiMincho-Medium",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ],
+      ".na26__lead": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Regular",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ],
+      ".na26__duration b": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular_Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ],
+      ".na26__primary span": [
+        {
+          "familyName": "Noto Sans JP Thin",
+          "postScriptName": "NotoSansJP-Thin_Medium",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    "tsuruhashi": {
+      "label": "鶴橋",
+      "minutes": [
+        "16",
+        "22",
+        "35"
+      ],
+      "source": "鶴橋18:33発",
+      "status": "鶴橋から生駒16分、学園前22分、近鉄奈良35分。快速急行、平日夕方の一例です。"
+    },
+    "disclosure": true,
+    "keyboardClose": true,
+    "nambaRestored": [
+      "22",
+      "28",
+      "41"
+    ]
+  }
+]

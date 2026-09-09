@@ -4,6 +4,12 @@ import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
 
 const readSection=(html,id)=>{
+  if(id==='builtProof'){
+    const start=html.indexOf('<div class="gf-composition" id="builtProof">');
+    const end=html.indexOf('<section class="wg-section wg-white entrance"',start);
+    assert(start>=0&&end>start,'Approved FV and evidence composition is missing');
+    return html.slice(start,end);
+  }
   const opening=html.match(new RegExp(`<section\\b[^>]*id="${id}"[^>]*>`))?.[0] || (id==='entrance' ? html.match(/<section\b[^>]*class="[^"]*\bentrance\b[^"]*"[^>]*>/)?.[0] : null);
   assert(opening,`Homepage is missing #${id}`);
   const start=html.indexOf(opening);
@@ -21,14 +27,14 @@ export function verifyHomepage(html){
   const built=readSection(html,builtOpening),voice=readSection(html,voiceOpening),entrance=readSection(html,entranceOpening);
   assert.equal((html.match(/id="builtProof"/g)||[]).length,1,'770 section must appear once');
   assert.equal((html.match(/id="voice"/g)||[]).length,1,'Voice section must appear once');
-  assert(html.indexOf('id="top"')<html.indexOf('id="builtProof"'),'BUILT BY YAMATO must follow the FV');
+  assert(built.indexOf('id="top"')<built.indexOf('id="homePromise"'),'House promise must follow the visual FV');
   assert(html.indexOf(built)<html.indexOf(entrance),'Guide section must follow BUILT BY YAMATO');
-  for(const asset of ['assets/top-renewal/built-yamato-evidence.css','assets/top-renewal/voice-reference/voice.css','assets/top-renewal/washi-gold/washi-gold.css']){
+  for(const asset of ['assets/top-renewal/generated-fv-20260909/style.css','assets/top-renewal/voice-reference/voice.css','assets/top-renewal/washi-gold/washi-gold.css']){
     assert(html.includes(asset),`Approved section dependency is not loaded: ${asset}`);
     assert(existsSync(asset),`Approved section dependency is missing: ${asset}`);
   }
   assert(!html.includes('assets/top-renewal/770-editorial.js'),'Retired 770 counter script must not be loaded');
-  assert.equal((built.match(/class="yamato-evidence__item"/g)||[]).length,3,'BUILT BY YAMATO must contain three evidence items');
+  assert.equal((built.match(/class="gf-job gf-job--[123]"/g)||[]).length,3,'BUILT BY YAMATO must contain three evidence items');
   assert(/<strong\b[^>]*>770<\/strong>/.test(built),'BUILT BY YAMATO must retain the approved 770 figure');
   for(const label of ['770棟を支えた、','3つの仕事','初回から設計士が同席','設計内容を現場で確認','引き渡し後まで社内で対応','施工事例を見る'])assert(built.includes(label),`BUILT BY YAMATO is missing: ${label}`);
   for(const src of [...built.matchAll(/\bsrc="([^"]+)"/g)].map(m=>m[1]))assert(existsSync(src),`BUILT BY YAMATO image is missing: ${src}`);
@@ -41,7 +47,9 @@ export function verifyHomepage(html){
   const voiceData=readFileSync('data/voices.json','utf8');
   for(const match of voice.matchAll(/class="voice-reference__quote">([^<]+)</g))assert(voiceData.includes(match[1]),'Voice quote must be an exact original excerpt');
   for(const src of [...voice.matchAll(/\bsrc="([^"]+)"/g)].map(m=>m[1]))assert(existsSync(src),`Voice image missing: ${src}`);
-  assert.equal((html.match(/class="wg-paper"/g)||[]).length,12,'All twelve approved paper backgrounds must remain');
+  // FV and Nara have newly adopted surfaces. Keep the approved paper in the unchanged sections.
+  for(const id of ['entrance','lineup','works','voice','faq','instagram','visit'])assert(readSection(html,id).includes('class="wg-paper"'),`Preserve the existing paper background in #${id}`);
+  for(const label of ['news','site-footer'])assert(new RegExp(`<(?:section|footer)[^>]*class="[^"]*\\b${label}\\b[^\"]*"[^>]*><span class="wg-paper"`).test(html),`Preserve the ${label} paper background`);
   for(const asset of ['assets/top-renewal/washi-gold/peony-mask.webp','assets/top-renewal/770-editorial/catalog-swallow-original.svg','assets/top-renewal/770-editorial/cotton-paper-960.webp'])assert(existsSync(asset),`Missing ornament: ${asset}`);
 
   assert.equal((entrance.match(/class="entry-card"/g)||[]).length,4,'Preserve all four guide cards');
@@ -54,7 +62,7 @@ export function verifyHomepage(html){
   assert(!entrance.includes('entry-card__visual--maquette')&&!entrance.includes('entry-card__art-label'),'Retired guide illustrations must not return');
   for(const src of ['assets/top-renewal/sakyo-kitchen-560.webp','assets/top-renewal/real-photo/land-640.webp','assets/top-renewal/real-photo/payment-802.webp','assets/top-renewal/real-photo/commute-639.webp'])assert(entrance.includes(`src="${src}"`)&&existsSync(src),`Approved guide photograph missing: ${src}`);
   assert(html.includes('assets/top-renewal/real-photo/real-photo.css'),'Guide photograph framing stylesheet must be loaded');
-  return {sections:['builtProof','voice'],builtItems:3,voiceCards:4,voiceLinks:5,guideCards:4,quickLinks:4,paperSections:12,approvedMarkup:true};
+  return {sections:['builtProof','voice'],builtItems:3,voiceCards:4,voiceLinks:5,guideCards:4,quickLinks:4,preservedPaperSections:9,approvedMarkup:true};
 }
 
 const html=readFileSync('index.html','utf8');
@@ -67,10 +75,10 @@ const staff=readFileSync('staff.html','utf8');
 assert.equal((staff.match(/<article class="staff-card"/g)||[]).length,18,'Staff release must retain 18 profiles');
 assert(!staff.includes('staff-preview.html')&&!staff.includes('<aside class="preview-note"'),'Staff page must use canonical links without the draft banner');
 // Release integration: verify the canonical pages, not only donor preview routes.
-const integrationAssets=['nara-atlas/atlas.css','nara-atlas/dark.css','nara-atlas/atlas.js','guide-maquette/guide.css','quiet-rails.css','quiet-rails.js','washi-motion.css','washi-motion.js','deep-photos.css','deep-photos.js'];
+const integrationAssets=['nara-adopted-20260909/style.css','nara-adopted-20260909/section.js','guide-maquette/guide.css','quiet-rails.css','quiet-rails.js','washi-motion.css','washi-motion.js','deep-photos.css','deep-photos.js'];
 for(const asset of integrationAssets)assert(html.includes(`assets/top-renewal/${asset}`),`Missing integrated dependency: ${asset}`);
-assert.equal((html.match(/id="nara"/g)||[]).length,1,'Atlas must be integrated once');
-assert(readSection(html,'nara').includes('nara-atlas'),'Nara must retain its approved Atlas layout');
+assert.equal((html.match(/id="nara"/g)||[]).length,1,'MOVE TO NARA must be integrated once');
+assert(readSection(html,'nara').includes('class="na26"'),'Nara must use its adopted white/green layout');
 for(const attr of ['data-quiet-rails','data-washi-motion','data-top-depth'])assert(html.includes(attr),`Missing motion activation: ${attr}`);
 assert(!html.includes('動くカードを試す'),'Guide rail should start without opt-in');
 assert(readFileSync('works.html','utf8').includes('assets/works/works-yellow.css'),'Canonical works route must use the yellow design');
@@ -78,8 +86,8 @@ assert(readFileSync('kodawari.html','utf8').includes('assets/kodawari/editorial.
 if(process.argv.includes('--self-test')){
   assert.throws(()=>verifyHomepage(html.replace(readSection(html,builtOpening),'')));
   assert.throws(()=>verifyHomepage(html.replace('>770</strong>','>600</strong>')));
-  assert.throws(()=>verifyHomepage(html.replace('class="yamato-evidence__item"','class="removed-item"')));
-  assert.throws(()=>verifyHomepage(html.replace('assets/top-renewal/built-yamato-evidence.css','missing.css')));
+  assert.throws(()=>verifyHomepage(html.replace('class="gf-job gf-job--1"','class="removed-item"')));
+  assert.throws(()=>verifyHomepage(html.replace('assets/top-renewal/generated-fv-20260909/style.css','missing.css')));
   assert.throws(()=>verifyHomepage(html.replace('voice-reference wg-section','voices section')));
   assert.throws(()=>verifyHomepage(html.replace('voice.html#v33','voice.html#missing')));
   assert.throws(()=>verifyHomepage(html.replace('class="entry-card"','class="removed-card"')));

@@ -1,0 +1,130 @@
+{
+  "url": "http://127.0.0.1:8927/",
+  "at": "2026-09-09T02:42:48.848Z",
+  "checks": [
+    {
+      "name": "cdn-resize",
+      "pc": {
+        "time": 8.039079,
+        "duration": 18,
+        "paused": false,
+        "source": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "transport": "direct",
+        "muted": true
+      },
+      "sp": {
+        "time": 8.340117,
+        "duration": 18,
+        "paused": false,
+        "source": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "transport": "direct",
+        "muted": true
+      },
+      "back": {
+        "time": 8.374701,
+        "duration": 18,
+        "paused": false,
+        "source": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "transport": "direct",
+        "muted": true
+      },
+      "fetches": []
+    },
+    {
+      "name": "release-1440",
+      "playing": {
+        "time": 8.039079,
+        "duration": 18,
+        "paused": false,
+        "source": "assets/top-renewal/fv-day-cycle-2026/loop-pc.mp4",
+        "transport": "direct",
+        "muted": true
+      },
+      "errors": [],
+      "exits": [
+        {
+          "url": "http://127.0.0.1:8927/move-to-nara-preview.html#train",
+          "target": "#train"
+        },
+        {
+          "url": "http://127.0.0.1:8927/lots-preview.html?view=list",
+          "target": "#list-title"
+        }
+      ]
+    },
+    {
+      "name": "release-390",
+      "playing": {
+        "time": 8.020519,
+        "duration": 18,
+        "paused": false,
+        "source": "assets/top-renewal/fv-day-cycle-2026/loop-sp.mp4",
+        "transport": "direct",
+        "muted": true
+      },
+      "errors": [],
+      "exits": [
+        {
+          "url": "http://127.0.0.1:8927/move-to-nara-preview.html#train",
+          "target": "#train"
+        },
+        {
+          "url": "http://127.0.0.1:8927/lots-preview.html?view=list",
+          "target": "#list-title"
+        }
+      ]
+    },
+    {
+      "name": "webkit-1440",
+      "naraSwitch": true,
+      "overflow": false
+    },
+    {
+      "name": "webkit-390",
+      "naraSwitch": true,
+      "overflow": false
+    },
+    {
+      "name": "public-routes",
+      "routes": [
+        {
+          "route": "kodawari.html",
+          "status": 200
+        },
+        {
+          "route": "works.html",
+          "status": 200
+        },
+        {
+          "route": "voice.html",
+          "status": 200
+        },
+        {
+          "route": "staff.html",
+          "status": 200
+        },
+        {
+          "route": "model.html",
+          "status": 200
+        },
+        {
+          "route": "lots-preview.html?view=list",
+          "status": 200
+        },
+        {
+          "route": "lots-preview.html?view=estimate",
+          "status": 200
+        },
+        {
+          "route": "move-to-nara-preview.html",
+          "status": 200
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "No real inquiry submission",
+    "No physical iPhone or OS visibility verification"
+  ]
+}
