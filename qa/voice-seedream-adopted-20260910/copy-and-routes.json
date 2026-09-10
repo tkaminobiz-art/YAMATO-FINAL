@@ -1,0 +1,50 @@
+{
+  "heading": "お客様の声",
+  "quotes": [
+    {
+      "id": "v01",
+      "customer": "奈良市 S様邸",
+      "topic": "費用の説明",
+      "quote": "実際に掛かる本当の費用を提示して頂ける点が魅力的でした。",
+      "href": "voice.html#v01",
+      "source_exact_substring": true,
+      "attribute_match": true
+    },
+    {
+      "id": "v02",
+      "customer": "奈良市 N様邸",
+      "topic": "自由設計",
+      "quote": "希望の間取りを実現できるということが決め手の一つになりました。",
+      "href": "voice.html#v02",
+      "source_exact_substring": true,
+      "attribute_match": true
+    },
+    {
+      "id": "v08",
+      "customer": "奈良市 S様邸",
+      "topic": "標準仕様",
+      "quote": "実際にモデルハウスを見に行き感動しました！後からオプション工事が必要ないと感じるほどでした。",
+      "href": "voice.html#v08",
+      "source_exact_substring": true,
+      "attribute_match": true
+    },
+    {
+      "id": "v33",
+      "customer": "生駒市 H様邸",
+      "topic": "完成後の対応",
+      "quote": "完成後もカーポートの設置や追加の外構工事で相談に乗ってもらっています。",
+      "href": "voice.html#v33",
+      "source_exact_substring": true,
+      "attribute_match": true
+    }
+  ],
+  "all": {
+    "label": "お客様の声一覧",
+    "href": "voice.html"
+  },
+  "photoNote": [
+    "写真：やまとの施工例",
+    "※回答者の住まいとは限りません"
+  ],
+  "verifiedAt": "2026-09-09T22:30:11.008379+00:00"
+}

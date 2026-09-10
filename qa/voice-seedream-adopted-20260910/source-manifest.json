@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-09-09T22:35:36.848346+00:00",
+  "references": [
+    {
+      "name": "living-wide-1200.webp",
+      "sourceUrl": "https://yamato-final.vercel.app/assets/top-renewal/art-direction/living-wide-1200.webp",
+      "localSha256": "ee7a2ce54b791fe8fb485d33e238b37b1bf1e570e6ad063bd289d450ab7cc972",
+      "liveSha256": "ee7a2ce54b791fe8fb485d33e238b37b1bf1e570e6ad063bd289d450ab7cc972",
+      "matches": true
+    },
+    {
+      "name": "garden-exterior-2000.webp",
+      "sourceUrl": "https://yamato-final.vercel.app/assets/top-renewal/art-direction/garden-exterior-2000.webp",
+      "localSha256": "52905fd02fcdacceb95ee8d558b52786ae35f57cd6bc75e62f0ae00ff9aaae97",
+      "liveSha256": "52905fd02fcdacceb95ee8d558b52786ae35f57cd6bc75e62f0ae00ff9aaae97",
+      "matches": true
+    },
+    {
+      "name": "cotton-paper-960.webp",
+      "sourceUrl": "https://yamato-final.vercel.app/assets/top-renewal/770-editorial/cotton-paper-960.webp",
+      "localSha256": "3fe7372a2677550d1f7ec42c80dd794d581f5879cb9fc5f5959cf8dce7ce3247",
+      "liveSha256": "3fe7372a2677550d1f7ec42c80dd794d581f5879cb9fc5f5959cf8dce7ce3247",
+      "matches": true
+    }
+  ]
+}

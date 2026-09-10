@@ -1,0 +1,15 @@
+{
+  "darkestMeasuredPaperRGB": [
+    227,
+    225,
+    218
+  ],
+  "minimumPaperContrast": {
+    "body": 9.86,
+    "photoNote": 7.75,
+    "heading": 6.89,
+    "arrow": 3.37
+  },
+  "ctaContrast": 8.62,
+  "method": "Entire paper-only raster with content hidden; darkest measured background versus specified foreground; not a whole-site accessibility certification"
+}

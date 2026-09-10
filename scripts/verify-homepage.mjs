@@ -51,7 +51,7 @@ export function verifyHomepage(html){
     assert.equal(m[2],`voice.html#${record.id}`,'Voice must link to the same source record');
     assert(m[3].includes(`>${record.area} ${record.family}</span>`),'Customer identity must match the source record');
     assert(m[3].includes(`>${topics[i]}</span>`),'Adopted topic must remain');
-    const excerpt=m[3].match(/<blockquote>([^<]+)<\/blockquote>/)?.[1];
+    const excerpt=m[3].match(/<blockquote>([\s\S]+?)<\/blockquote>/)?.[1].replace(/<br class="vb26__sentence-break">/g,'');
     assert(excerpt && record.qa.some(qa=>qa.a.includes(excerpt)),'Excerpt must belong to this exact respondent');
     assert(!m[3].includes('<img'),'Construction photos are independent from individual respondents');
   });

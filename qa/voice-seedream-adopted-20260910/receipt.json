@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "a27c31340f08fa43c198c8a08b655314974a8da16b79d68b2747671f8a698ebe"
+    },
+    {
+      "path": "assets/top-renewal/voice-b-20260909/style.css",
+      "sha256": "02580f72a6b6d59e28493ee9a1e11aca5fd09a29cc179616592298aeaaf68ef0"
+    },
+    {
+      "path": "scripts/verify-homepage.mjs",
+      "sha256": "0487cac1f78d8ea968d2c6e8c5bb1b5dcd8e54f81ac72aaf0f26c96fcf53b2f1"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/voice-seedream-adopted-20260910/brief.md",
+      "sha256": "f77c5c0022227e7ea8014e7ec7f3d133c4a9777812a9f5248038983de5086146"
+    },
+    "copy": {
+      "path": "qa/voice-seedream-adopted-20260910/copy.md",
+      "sha256": "94ca764b7692ee7748917b7e55b5567da08c2d42c9995f7faa3ba0cbecd27eee"
+    },
+    "assets": {
+      "path": "qa/voice-seedream-adopted-20260910/assets.md",
+      "sha256": "9a0de766acc09b7ad93016c40a5c116f3dff3e29bcf33c3813ae433c7a899174"
+    },
+    "visual": {
+      "path": "qa/voice-seedream-adopted-20260910/visual.md",
+      "sha256": "16c9df95a08a68af35971e8387dabdf9b9a63cb3b72aca775c5c5ff45ae9d924"
+    },
+    "interaction": {
+      "path": "qa/voice-seedream-adopted-20260910/interaction.md",
+      "sha256": "156ef0d5013c8b8c4ddf8162a3368312dc26ea37d6ee03a098bce7ce82b02cb3"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 778,
+      "path": "qa/voice-seedream-adopted-20260910/evidence/pc.png",
+      "sha256": "0985624003607c3721a24e49cc8ec9823759e9559f9b24e17d86a66a17380180"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/voice-seedream-adopted-20260910/evidence/sp.png",
+      "sha256": "3e78ee5b8991fefb736ab42348d6b617df8ef3cb07a0b80c5486c467a4a3a8d6"
+    }
+  ]
+}

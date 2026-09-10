@@ -1,0 +1,162 @@
+{
+  "profiles": [
+    {
+      "engine": "webkit",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "motion": "reduce",
+      "keyboardNavigation": "Focus appearance per link; sequential Tab tested in Chromium",
+      "keyboard": [
+        {
+          "id": "v01",
+          "href": "voice.html#v01",
+          "outline": "solid",
+          "width": 342,
+          "height": 115.390625
+        },
+        {
+          "id": "v02",
+          "href": "voice.html#v02",
+          "outline": "solid",
+          "width": 342,
+          "height": 132.390625
+        },
+        {
+          "id": "v08",
+          "href": "voice.html#v08",
+          "outline": "solid",
+          "width": 342,
+          "height": 163.890625
+        },
+        {
+          "id": "v33",
+          "href": "voice.html#v33",
+          "outline": "solid",
+          "width": 342,
+          "height": 163.890625
+        },
+        {
+          "id": "all",
+          "href": "voice.html",
+          "outline": "solid",
+          "width": 342,
+          "height": 56
+        }
+      ],
+      "routes": [
+        {
+          "id": "v01",
+          "customer": "奈良市 S様邸",
+          "url": "http://127.0.0.1:8962/voice.html#v01",
+          "exactQuoteInOpenDetail": true
+        },
+        {
+          "id": "v02",
+          "customer": "奈良市 N様邸",
+          "url": "http://127.0.0.1:8962/voice.html#v02",
+          "exactQuoteInOpenDetail": true
+        },
+        {
+          "id": "v08",
+          "customer": "奈良市 S様邸",
+          "url": "http://127.0.0.1:8962/voice.html#v08",
+          "exactQuoteInOpenDetail": true
+        },
+        {
+          "id": "v33",
+          "customer": "生駒市 H様邸",
+          "url": "http://127.0.0.1:8962/voice.html#v33",
+          "exactQuoteInOpenDetail": true
+        }
+      ],
+      "allRoute": "http://127.0.0.1:8962/voice.html",
+      "hoverGeometryUnchanged": true,
+      "overflow": 0,
+      "errors": [],
+      "nonGet": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": {
+        "width": 1440,
+        "height": 778
+      },
+      "motion": "no-preference",
+      "keyboardNavigation": "Tab",
+      "keyboard": [
+        {
+          "id": "v01",
+          "href": "voice.html#v01",
+          "outline": "solid",
+          "width": 698,
+          "height": 80.9375
+        },
+        {
+          "id": "v02",
+          "href": "voice.html#v02",
+          "outline": "solid",
+          "width": 698,
+          "height": 94.9375
+        },
+        {
+          "id": "v08",
+          "href": "voice.html#v08",
+          "outline": "solid",
+          "width": 698,
+          "height": 126.28125
+        },
+        {
+          "id": "v33",
+          "href": "voice.html#v33",
+          "outline": "solid",
+          "width": 698,
+          "height": 94.9375
+        },
+        {
+          "id": "all",
+          "href": "voice.html",
+          "outline": "solid",
+          "width": 260,
+          "height": 60
+        }
+      ],
+      "routes": [
+        {
+          "id": "v01",
+          "customer": "奈良市 S様邸",
+          "url": "http://127.0.0.1:8962/voice.html#v01",
+          "exactQuoteInOpenDetail": true
+        },
+        {
+          "id": "v02",
+          "customer": "奈良市 N様邸",
+          "url": "http://127.0.0.1:8962/voice.html#v02",
+          "exactQuoteInOpenDetail": true
+        },
+        {
+          "id": "v08",
+          "customer": "奈良市 S様邸",
+          "url": "http://127.0.0.1:8962/voice.html#v08",
+          "exactQuoteInOpenDetail": true
+        },
+        {
+          "id": "v33",
+          "customer": "生駒市 H様邸",
+          "url": "http://127.0.0.1:8962/voice.html#v33",
+          "exactQuoteInOpenDetail": true
+        }
+      ],
+      "allRoute": "http://127.0.0.1:8962/voice.html",
+      "hoverGeometryUnchanged": true,
+      "overflow": 0,
+      "errors": [],
+      "nonGet": []
+    }
+  ],
+  "imageFailure": {
+    "fallbacks": 2,
+    "retainedLinks": 5
+  }
+}
