@@ -1,0 +1,65 @@
+/* Adopted TOP composition, 2026-09-10. PC rules start at 1201px.
+   Original mobile/tablet declarations and all copy/media/scripts are retained. */
+.top-works-canvas{display:contents}
+@media(min-width:1201px){
+  [data-top-composition] #homePromise{padding-bottom:26px}
+  [data-top-composition] .gf-info{width:100%;max-width:1440px;padding:24px 89px 0;margin:0 auto}
+  [data-top-composition] .gf-promise h1{font-size:min(51.12px,3.55vw);line-height:1.33;margin-top:12px}
+  [data-top-composition] #homePromise .gf-kicker{font-size:min(27.936px,1.94vw)}
+  [data-top-composition] #homePromise .gf-number{font-size:min(60.48px,4.2vw)}
+  [data-top-composition] .gf-reasons{margin-top:24px;gap:6.2%}
+  [data-top-composition] .gf-reason h2{margin-top:12px;font-size:min(30.528px,2.12vw);line-height:1.5}
+  [data-top-composition] #homePromise .gf-body{font-size:min(20px,1.42vw);line-height:1.55}
+  [data-top-composition] .gf-reason .gf-body{margin-top:8px}
+  [data-top-composition] .gf-condition{margin-top:8px!important;font-size:16px;line-height:1.65}
+  [data-top-composition] .gf-model{margin-top:12px!important;font-size:18px;line-height:1.7}
+  [data-top-composition] .gf-actions{gap:16px;margin-top:10px}
+  [data-top-composition] .gf-button{font-size:min(19px,1.36vw);min-height:58px;padding:12px 15px}
+  [data-top-composition] .gf-jobs{width:100%;max-width:1440px;padding:24px 55px 0;margin:0 auto;gap:6px 32px}
+  [data-top-composition] .gf-job img{aspect-ratio:1.95}
+  [data-top-composition] .gf-job__en{padding:0 14px;font-size:min(32.544px,2.26vw);line-height:1.1}
+  [data-top-composition] .gf-job h3{padding:0 14px;font-size:min(24px,1.7vw);line-height:1.45}
+  [data-top-composition] .gf-job>.gf-body{padding:0 14px}
+  [data-top-composition] .gf-job--3>.gf-body{margin-top:10px}
+  [data-top-composition] .gf-job-actions{max-width:778px;gap:16px;margin:16px auto 0}
+
+  [data-top-composition] #works.wf26{aspect-ratio:auto;height:820px}
+  [data-top-composition] .top-works-canvas{display:block;position:relative;width:100%;max-width:1440px;height:820px;margin:auto;isolation:isolate}
+  [data-top-composition] #works>.wg-paper{display:none}
+  [data-top-composition] #works{background:#f7f3eb}
+  [data-top-composition] #works::before{content:'';position:absolute;inset:0;z-index:-1;background:url('770-editorial/cotton-paper-960.webp') center/680px repeat;opacity:.48;filter:grayscale(1);mix-blend-mode:multiply;pointer-events:none}
+  [data-top-composition] .wf26__intro{left:4.4444%;top:20px;width:37.5%}
+  [data-top-composition] .wf26__english{font-size:100px;line-height:.98}
+  [data-top-composition] #works .wf26__intro h2{font-size:38px;line-height:1.5;margin:0 0 0 26px}
+  [data-top-composition] .wf26__note{font-size:16px;line-height:1.7;gap:22px;margin:8px 0 0 27px}
+  [data-top-composition] .wf26__note::before{flex-basis:108px}
+  [data-top-composition] .wf26__photo--exterior{left:48.6111%;top:0;width:51.3889%;height:490px}
+  [data-top-composition] .wf26__photo--exterior>img{width:100%;height:100%;left:0;top:0;object-position:60% 46%}
+  [data-top-composition] .wf26__photo--living{left:0;top:220px;width:51.3889%;height:465px}
+  [data-top-composition] .wf26__photo--kitchen{left:47.2222%;top:325px;width:52.7778%;height:455px}
+  [data-top-composition] .wf26__caption{font-size:19px;line-height:1.5;gap:16px;min-height:44px;padding:7px 16px}
+  [data-top-composition] .wf26__caption svg{width:36px}
+  [data-top-composition] .wf26__photo--exterior .wf26__caption{top:245px;right:3.7%}
+  [data-top-composition] .wf26__photo--living .wf26__caption{top:340px;left:5%}
+  [data-top-composition] .wf26__photo--kitchen .wf26__caption{bottom:43px;right:3.8%}
+  [data-top-composition] .wf26__all{left:6.3889%;top:755px;bottom:auto;width:33.4722%;height:52px;min-height:52px;font-size:20px;gap:45px}
+  [data-top-composition] .wf26__all svg{width:32px}
+
+  [data-top-composition] #nara{padding-bottom:44px}
+  [data-top-composition] .na26__hero{height:auto;max-width:none}
+  [data-top-composition] .na26__intro{position:relative;left:auto;top:auto;width:calc(100% - 112px);max-width:1320px;margin:auto;padding:32px 0 0;display:grid;grid-template-columns:minmax(0,780fr) minmax(0,480fr);column-gap:60px;align-items:center}
+  [data-top-composition] .na26 .na26__eyebrow{grid-column:1;grid-row:1;margin:0 0 12px}
+  [data-top-composition] .na26 #naraTitle{grid-column:1;grid-row:2;font-size:48px;line-height:1.4}
+  [data-top-composition] .na26 #naraTitle span{display:inline}
+  [data-top-composition] .na26 .na26__lead{grid-column:2;grid-row:2;margin:0;font-size:24px;line-height:1.8}
+  [data-top-composition] .na26__information{margin-top:26px}
+  [data-top-composition] .na26__home{display:none}
+}
+/* Keep the existing text size; give the longer specification column room at small PC widths. */
+@media(min-width:1201px) and (max-width:1399px){
+ [data-top-composition] .gf-reasons{grid-template-columns:minmax(0,.95fr) minmax(0,1.15fr);gap:64px}
+}
+/* Prevent the specification paragraph from leaving a two-character last line near 1201px. */
+@media(min-width:1201px) and (max-width:1279px){
+ [data-top-composition] .gf-reasons{gap:40px}
+}
