@@ -1,6 +1,7 @@
 // Shared content is rendered once for both viewport modes; no client fetch is needed to read it.
 import {readFileSync,writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
+if(readFileSync('kodawari.html','utf8').includes('assets/catalog/folio/reader.js'))throw Error('The folio reader is active. This legacy generator must not overwrite it. Update the folio source, pagination and text fallback together; run scripts/verify-catalog.mjs.');
 const data=JSON.parse(readFileSync('data/catalog-content.json','utf8'));
 const assets=JSON.parse(readFileSync('qa/catalog-adopted-20260909/asset-manifest.json','utf8'));
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

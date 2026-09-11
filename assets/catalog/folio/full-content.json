@@ -1,0 +1,1218 @@
+[
+  {
+    "id": "catalog-introduction",
+    "num": 1,
+    "chapter": 1,
+    "title": "標準仕様を、最初の見積もりから。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">どの設備が入り、何を選べて、いくらかかるのか。家づくりのはじめに知っておきたい仕様を、場所ごとにまとめました。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">仕様確定後の変更や追加のご希望は、内容と費用をご案内したうえで進めます。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。を拡大\"><img src=\"assets/catalog/adopted/a12.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>設備と費用を、先に知る</h3><p>キッチン、浴室、床や建具。標準仕様と選択肢を確かめ、希望する変更を含めた費用を見積もりで整理します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>初回から、設計士と話す</h3><p>家族の過ごし方、今の家で不便なこと、敷地の条件。設計士が直接伺い、間取りの提案につなげます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>土地から、引渡し後まで</h3><p>土地の仕入れ・造成、設計、施工、アフターの担当が、必要な情報を引き継ぎながら家づくりを進めます。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-series\">3シリーズを見る <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-conditions\">費用に含まれる範囲 <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-series",
+    "num": 2,
+    "chapter": 1,
+    "title": "花・京・風。違いから選ぶ、3つの住まい。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">キッチンの配置、床や扉の素材、暮らしに合わせた設備。3シリーズの違いから、優先したいことを見つけてください。</p></div></div>"
+      },
+      {
+        "type": "special",
+        "html": "<div class=\"cr-price-grid\"><section class=\"cr-price-item cr-series-0\"><h3>花</h3><p class=\"cr-price\">2,680<span>万円</span></p><p>建物本体価格（税込）</p><p>31坪・4LDKの基準プラン</p><p class=\"cr-important\">土地代別途</p></section><section class=\"cr-price-item cr-series-1\"><h3>京</h3><p class=\"cr-price\">2,480<span>万円</span></p><p>建物本体価格（税込）</p><p>28坪・3LDKの基準プラン</p><p class=\"cr-important\">土地代別途</p></section><section class=\"cr-price-item cr-series-2\"><h3>風</h3><p class=\"cr-price\">2,680<span>万円</span></p><p>建物本体価格（税込）</p><p>30坪・4LDKの基準プラン</p><p class=\"cr-important\">土地代別途</p></section></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>花｜選ぶ楽しみを、キッチンと内装に</h3><p>STEDIAのデュアルトップ・I型、KT。室内建具はラシッサD・S、玄関は親子扉を組み合わせます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>京｜28坪を、暮らしに合わせて設計</h3><p>STEDIA I型・KTと、2種類の床材からの選択。広さの使い方と、日々の動線を一緒に考えます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>風｜家事と日々の操作から選ぶ</h3><p>ESの収納、開き扉タイプの洗面、FamiLockとLifeAssist2。いつもの家事や操作に合わせて設備を考えます。</p></div></section>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">掲載価格は基準プランの建物本体価格（税込）です。土地代は別途必要です。外構・諸費用・選択する設備や変更内容を含む総額は、見積もりでご案内します。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-hana\">花を詳しく <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-kyo\">京を詳しく <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-kaze\">風を詳しく <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-compare-water\">仕様を一覧で比べる <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-hana",
+    "num": 3,
+    "chapter": 1,
+    "title": "花｜キッチンと内装の選択肢を広く。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">キッチンの向きや、室内の色・素材を選ぶところから。使い勝手と空間の印象をあわせて考えられるシリーズです。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">掲載価格は基準プランの建物本体価格（税込）です。土地代は別途必要です。外構・諸費用・選択する設備や変更内容を含む総額は、見積もりでご案内します。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。を拡大\"><img src=\"assets/catalog/adopted/a01.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。</figcaption></figure></div>"
+      },
+      {
+        "type": "special",
+        "html": "<div class=\"cr-price-grid\"><section class=\"cr-price-item cr-series-0\"><h3>花</h3><p class=\"cr-price\">2,680<span>万円</span></p><p>建物本体価格（税込）</p><p>31坪・4LDKの基準プラン</p><p class=\"cr-important\">土地代別途</p></section></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>キッチンの配置から選ぶ</h3><p>STEDIAはデュアルトップ（対面）とI型、KTも選択肢です。調理中の視線、配膳、収納の置き方を比べます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>浴室は1616・1620</h3><p>sazana Tタイプ。広さと浴槽の形を、入浴のしやすさや間取りに合わせて選びます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>洗面は幅900mmの引き出し収納</h3><p>Octave Liteを採用。収納を引き出して、奥にしまった物まで見渡せます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>扉と床を、空間に合わせて</h3><p>ラシッサD・SとTY-02D。扉の色、床の表情、家具の色を実物のサンプルで合わせます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">05</span><h3>玄関は親子扉と顔認証</h3><p>ジエスタ2の親子扉とFACE。日常の出入りと、大きな荷物を運び込む場面を考えて選びます。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-water\">設備の違いを比較する <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-visit\">実物を見学する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-kyo",
+    "num": 4,
+    "chapter": 1,
+    "title": "京｜28坪を、暮らしに合わせて設計。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">28坪の基準プランから、収納・家事・家族の居場所を整理。面積の使い方と素材の選び方を、設計士と考えます。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">掲載価格は基準プランの建物本体価格（税込）です。土地代は別途必要です。外構・諸費用・選択する設備や変更内容を含む総額は、見積もりでご案内します。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。を拡大\"><img src=\"assets/catalog/adopted/a04.webp\" width=\"1920\" height=\"1080\" alt=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。</figcaption></figure></div>"
+      },
+      {
+        "type": "special",
+        "html": "<div class=\"cr-price-grid\"><section class=\"cr-price-item cr-series-1\"><h3>京</h3><p class=\"cr-price\">2,480<span>万円</span></p><p>建物本体価格（税込）</p><p>28坪・3LDKの基準プラン</p><p class=\"cr-important\">土地代別途</p></section></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>キッチンはSTEDIA I型・KT</h3><p>キッチンとダイニングの距離、冷蔵庫・食器棚の位置を合わせて計画します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>浴室と洗面の使い勝手</h3><p>浴室はsazana Tタイプ1616。洗面はOctave Lite、間口900mmの引き出しタイプです。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>床は2種類から</h3><p>アトムジェニックと銘木フロアーラスティック。仕上げの見た目だけでなく、手入れや足ざわりを比較します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>扉はスキスムS</h3><p>床材との色合わせ、光を通す部分、収納の開き方まで。室内全体の使いやすさを整えます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">05</span><h3>玄関は片開きとFamiLock</h3><p>ジエスタ2の片開き扉。スマートフォンやタグなど、家族それぞれの使い方に合う鍵を選びます。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-water\">設備の違いを比較する <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-visit\">実物を見学する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-kaze",
+    "num": 5,
+    "chapter": 1,
+    "title": "風｜家事と日々の操作を、具体的に選ぶ。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">調理、片付け、玄関の出入り。毎日繰り返す動きに目を向け、家事と操作のしやすさから仕様を選ぶシリーズです。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">掲載価格は基準プランの建物本体価格（税込）です。土地代は別途必要です。外構・諸費用・選択する設備や変更内容を含む総額は、見積もりでご案内します。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。を拡大\"><img src=\"assets/catalog/adopted/a12.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。</figcaption></figure></div>"
+      },
+      {
+        "type": "special",
+        "html": "<div class=\"cr-price-grid\"><section class=\"cr-price-item cr-series-2\"><h3>風</h3><p class=\"cr-price\">2,680<span>万円</span></p><p>建物本体価格（税込）</p><p>30坪・4LDKの基準プラン</p><p class=\"cr-important\">土地代別途</p></section></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>キッチンはLIXIL ES</h3><p>使う物を立てて取り出す収納や、シンク・排水口の手入れを見比べます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>浴室はsazana Nタイプ</h3><p>サイズは1616。床や浴槽の仕様を、家族の入り方と掃除のしやすさから選定します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>洗面は開き扉タイプ</h3><p>Octave Lite、間口900mm。高さのある物をどうしまうか、実際の収納物に合わせて考えます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>スキスムSとアトムフィットGM</h3><p>扉と床の色の組合せを実物で確認。光の入り方による見え方も比べます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">05</span><h3>FamiLockとLifeAssist2</h3><p>玄関の施解錠と、対応機器の操作を暮らしに合わせます。インターネット環境や対応機器の確認・設定が必要です。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-water\">設備の違いを比較する <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-visit\">実物を見学する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-kitchen",
+    "num": 6,
+    "chapter": 2,
+    "title": "キッチンは、配置と使い方から。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">同じキッチンでも、通路や収納、食卓との距離で使い心地は変わります。料理から片付けまでの動きを、間取りと一緒に考えます。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">下がり天井、ペンダントライト、間接照明などはオプションです。写真全体が標準仕様に含まれるものではありません。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスのシンクとワークトップ。水栓・天板の採用仕様は選定内容によります。を拡大\"><img src=\"assets/catalog/adopted/a02.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスのシンクとワークトップ。水栓・天板の採用仕様は選定内容によります。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスのシンクとワークトップ。水栓・天板の採用仕様は選定内容によります。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>花・京の選択肢｜STEDIA・KT</h3><p>花はSTEDIAデュアルトップ・I型、京はSTEDIA I型。どちらもKTを選択できます。配置と収納内部のつくりを比べてください。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>風のキッチン｜ES</h3><p>シンク下の収納や水栓、排水口など、日常でよく使う場所から選び方をご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>通路・家電・食器棚を一緒に</h3><p>冷蔵庫を開ける、引き出しを引く、2人で調理する。物を使う場所と戻す場所を、図面で確かめます。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-stedia\">STEDIAの細部 <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-kt\">KTの収納 <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-es\">ESの使い勝手 <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-stedia",
+    "num": 7,
+    "chapter": 2,
+    "title": "STEDIA｜毎日の手入れを、細部から。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">引き出しの中、ワークトップ、シンク、排水口。汚れや水分が残りやすいところを、素材と形で手入れしやすくしています。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">花はデュアルトップ（対面）・I型、京はI型から選択。KTも選択できます。</p><p class=\"cr-important\">水栓・食洗機・ワークトップの仕様と、変更に伴う費用は、選定時の仕様書と見積もりでご案内します。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスのキッチン。家具・照明・造作など、写真には標準仕様以外のものも含まれます。を拡大\"><img src=\"assets/catalog/adopted/a01.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスのキッチン。家具・照明・造作など、写真には標準仕様以外のものも含まれます。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスのキッチン。家具・照明・造作など、写真には標準仕様以外のものも含まれます。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>ステンレスキャビネット</h3><p>引き出しの底だけでなく、キャビネットの骨組みにもステンレスを使用。湿気やにおいが気になる収納内部を、清潔に保ちやすい素材です。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:339px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n01.jpg\" width=\"339\" height=\"166\" alt=\"ステンレスキャビネットの構造\" loading=\"lazy\" decoding=\"async\"></div><figcaption>ステンレスキャビネットの構造</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>美コート ワークトップ</h3><p>水になじみやすいコーティングで、表面の汚れを浮かせて落としやすくします。日々の拭き掃除で手入れする部分です。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:350px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n02.jpg\" width=\"350\" height=\"167\" alt=\"美コートの表面加工\" loading=\"lazy\" decoding=\"async\"></div><figcaption>美コートの表面加工</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>流レールシンク</h3><p>料理や洗い物で使う水が、手前の流レールへ。シンク内のごみを水の流れで排水口へ集める形になっています。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:144px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n03.jpg\" width=\"144\" height=\"186\" alt=\"流レールシンクの水の流れ\" loading=\"lazy\" decoding=\"async\"></div><figcaption>流レールシンクの水の流れ</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>とってもクリン排水口</h3><p>シンクと排水口を継ぎ目なく成形。網かごは取り外して洗え、汚れがたまりやすい部分も手入れできます。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:276px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n04.jpg\" width=\"276\" height=\"258\" alt=\"一体成形の排水口と網かご\" loading=\"lazy\" decoding=\"async\"></div><figcaption>一体成形の排水口と網かご</figcaption></figure></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-kt\">KTを見る <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-compare-water\">水まわりを比較する <span aria-hidden=\"true\">↗</span></a></nav>"
+      },
+      {
+        "type": "special",
+        "html": "<p class=\"cr-source\">製品の機能について：<a href=\"https://cleanup.jp/kitchen/stedia/\" target=\"_blank\" rel=\"noopener\">クリナップ STEDIAの製品情報（外部サイト）</a></p>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-kt",
+    "num": 8,
+    "chapter": 2,
+    "title": "KT｜収納の中まで、取り出しやすく。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">引き出しを開けたときに何が見えるか、どこに手が届くか。毎日の調理で使う物を、しまう場所から考えるキッチンです。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">花・京の選択設備です。引き出しの形・構成、収納できる重さは、選定するキャビネットの仕様によります。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"クリナップのキッチン施工例。展示写真はKTの全採用仕様を示すものではありません。を拡大\"><img src=\"assets/catalog/adopted/a04.webp\" width=\"1920\" height=\"1080\" alt=\"クリナップのキッチン施工例。展示写真はKTの全採用仕様を示すものではありません。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>クリナップのキッチン施工例。展示写真はKTの全採用仕様を示すものではありません。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>美・サイレントEUシンク</h3><p>表面のエンボスとコーティングで、傷や汚れに配慮。水まわりを手入れしやすい表面にしています。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:350px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n02.jpg\" width=\"350\" height=\"167\" alt=\"シンク表面の加工例\" loading=\"lazy\" decoding=\"async\"></div><figcaption>シンク表面の加工例</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>ステンレスの引き出し底板</h3><p>調味料や水分がこぼれたときも、底板を拭き取って手入れできます。収納内部の素材まで確かめてください。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:273px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n05.jpg\" width=\"273\" height=\"182\" alt=\"ステンレス底板の拭き掃除\" loading=\"lazy\" decoding=\"async\"></div><figcaption>ステンレス底板の拭き掃除</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>足元まで使えるスライド収納</h3><p>鍋やボウル、調理器具を使う場所に分けて収納。コンロ横や足元も、取り出す動きと合わせて見比べます。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:259px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n06.jpg\" width=\"259\" height=\"314\" alt=\"スライド収納の例\" loading=\"lazy\" decoding=\"async\"></div><figcaption>スライド収納の例</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>ゆっくり閉まるレール</h3><p>引き出しを閉めるときの衝撃を抑える仕組み。包丁やラップなどの小物も、収納する位置を決めて使います。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:240px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n07.jpg\" width=\"240\" height=\"183\" alt=\"包丁・ラップの収納例\" loading=\"lazy\" decoding=\"async\"></div><figcaption>包丁・ラップの収納例</figcaption></figure></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-stedia\">STEDIAを見る <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-compare-water\">キッチンの選択肢を比較 <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-es",
+    "num": 9,
+    "chapter": 2,
+    "title": "ES｜使う物を、出し入れしやすい位置に。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">作業中にさっと取りたい道具、毎日洗うシンク。収納と水まわりを、それぞれの使い方から見ていきます。</p></div></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>シンク下のアシストポケット</h3><p>使用頻度の高い道具を立てて収納。奥に重ねてしまい込む前に、使う順番と取り出す位置を考えます。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:415px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"ES シンク下収納の例を拡大\"><img src=\"assets/catalog/adopted/n08.jpg\" width=\"415\" height=\"451\" alt=\"ES シンク下収納の例\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>ES シンク下収納の例</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>オールインワン浄水栓</h3><p>水栓に浄水機能を備えた構成。浄水を使う場合は、カートリッジの交換と維持費も含めて検討します。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:482px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"ES 浄水機能付き水栓の例を拡大\"><img src=\"assets/catalog/adopted/n09.jpg\" width=\"482\" height=\"359\" alt=\"ES 浄水機能付き水栓の例\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>ES 浄水機能付き水栓の例</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>キレイシンクと、てまなし排水口</h3><p>シンクと排水口のつなぎ目や形を工夫し、汚れが気になる場所を手入れしやすくしています。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:340px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n10.jpg\" width=\"340\" height=\"286\" alt=\"ES シンクの例\" loading=\"lazy\" decoding=\"async\"></div><figcaption>ES シンクの例</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>引き出しの底と閉まり方</h3><p>メラミン底板とソフトモーションレール。深い引き出しと浅い引き出しを、鍋・道具・小物に合わせて使い分けます。</p></div></section>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">風のキッチンです。キャビネット・水栓・食洗機の組合せと変更費用は、仕様を選ぶ際にご案内します。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-water\">水まわりを比較する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-bath",
+    "num": 10,
+    "chapter": 3,
+    "title": "浴室｜広さと、手入れの違いを比べる。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">浴槽に入る、床に足を置く、排水口を掃除する。毎日の動きで触れる場所を、sazanaのタイプごとに見比べます。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">人工大理石浴槽はオプションです。浴槽の選択範囲や鏡・照明の構成はタイプとサイズによります。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスの浴室。浴槽・鏡・照明・備品は選定仕様により異なります。を拡大\"><img src=\"assets/catalog/adopted/a10.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスの浴室。浴槽・鏡・照明・備品は選定仕様により異なります。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスの浴室。浴槽・鏡・照明・備品は選定仕様により異なります。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>タイプとサイズ</h3><p>花はTタイプの1616・1620、京はTタイプの1616、風はNタイプの1616。1620の広さは、花の選択肢です。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>浴槽の形を選ぶ</h3><p>ゆるリラ・クレイドル・スクエアなど、姿勢や入り方に合わせて比較。ワイド浴槽は1620用です。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:335px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n13.jpg\" width=\"335\" height=\"153\" alt=\"浴槽内の姿勢を説明する図\" loading=\"lazy\" decoding=\"async\"></div><figcaption>浴槽内の姿勢を説明する図</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>Tタイプの保温の仕組み</h3><p>魔法びん浴槽は、浴槽の周囲とふろふたの断熱でお湯の熱を逃がしにくくします。Nタイプへの一律の共通仕様ではありません。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:255px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n11.jpg\" width=\"255\" height=\"254\" alt=\"浴槽を包む保温材の説明図\" loading=\"lazy\" decoding=\"async\"></div><figcaption>浴槽を包む保温材の説明図</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>TタイプとNタイプの床</h3><p>Tタイプはお掃除ラクラクほっカラリ床、Nタイプはカラリ床。足ざわりや日々の手入れを、実物で比べてください。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:251px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n12.jpg\" width=\"251\" height=\"320\" alt=\"ほっカラリ床の表面と手入れ\" loading=\"lazy\" decoding=\"async\"></div><figcaption>ほっカラリ床の表面と手入れ</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">05</span><h3>排水口と壁の手入れ</h3><p>排水口は部品を外して掃除する場所です。壁に取り付ける備品は、マグネット対応と付属範囲を確認して選びます。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:136px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n14.jpg\" width=\"136\" height=\"99\" alt=\"浴室排水口の手入れの例\" loading=\"lazy\" decoding=\"async\"></div><figcaption>浴室排水口の手入れの例</figcaption></figure></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-water\">浴室の仕様を比較する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-vanity",
+    "num": 11,
+    "chapter": 3,
+    "title": "洗面｜幅は共通。収納の開き方が違います。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">Octave Liteの間口は900mm。花・京は引き出し、風は開き扉。使う物の大きさと、しまい方から選びます。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">鏡・水栓・収納の具体的な組合せは、選定する仕様でご案内します。</p></div></div><figure class=\"cr-figure cr-hero-photo cr-native\" style=\"--cr-native-width:673px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"Octave Liteの形状参考。収納の開き方はシリーズにより異なります。を拡大\"><img src=\"assets/catalog/adopted/n15.jpg\" width=\"673\" height=\"862\" alt=\"Octave Liteの形状参考。収納の開き方はシリーズにより異なります。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>Octave Liteの形状参考。収納の開き方はシリーズにより異なります。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>すべり台ボウル</h3><p>泡や髪が排水口へ流れやすい形。排水栓は押して開閉でき、外して手入れできます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>お掃除ラクラク水栓</h3><p>水栓まわりに水がたまりにくい位置と形。ホースを引き出して洗い流せ、吐水も切り替えられます。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:220px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n17.jpg\" width=\"220\" height=\"117\" alt=\"洗面水栓の取り付け部分\" loading=\"lazy\" decoding=\"async\"></div><figcaption>洗面水栓の取り付け部分</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>ワイドLEDとエコミラー</h3><p>鏡の幅に沿うLED照明。エコミラーは、くもり止めのコートを使った鏡です。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>収納とソフトクローズ</h3><p>花・京の2段引き出しは、収納物を見渡しやすく、ゆっくり閉まる仕様。風の開き扉には、引き出し用の機能を当てはめません。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:325px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n16.jpg\" width=\"325\" height=\"179\" alt=\"2段引き出しの収納例\" loading=\"lazy\" decoding=\"async\"></div><figcaption>2段引き出しの収納例</figcaption></figure></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-water\">洗面の仕様を比較する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-toilet",
+    "num": 12,
+    "chapter": 3,
+    "title": "トイレ｜階ごとの設備と、清掃のしやすさ。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">1階と2階、手洗い器の位置。トイレは便器だけでなく、部屋全体の広さと使い方を合わせて考えます。</p></div></div>"
+      },
+      {
+        "type": "figure",
+        "html": "<figure class=\"cr-figure cr-native\" style=\"--cr-native-width:250px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n18.jpg\" width=\"250\" height=\"350\" alt=\"一体形便器の形状参考\" loading=\"lazy\" decoding=\"async\"></div><figcaption>一体形便器の形状参考</figcaption></figure>"
+      },
+      {
+        "type": "figure",
+        "html": "<figure class=\"cr-figure cr-native\" style=\"--cr-native-width:255px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n19.jpg\" width=\"255\" height=\"332\" alt=\"タンク式便器の形状参考\" loading=\"lazy\" decoding=\"async\"></div><figcaption>タンク式便器の形状参考</figcaption></figure>"
+      },
+      {
+        "type": "figure",
+        "html": "<figure class=\"cr-figure cr-native\" style=\"--cr-native-width:151px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n20.jpg\" width=\"151\" height=\"232\" alt=\"別置き手洗いの形状参考\" loading=\"lazy\" decoding=\"async\"></div><figcaption>別置き手洗いの形状参考</figcaption></figure>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>花・京の配置</h3><p>1階はウォシュレット一体形便器、2階はタンク式。別置き手洗いを含む構成を、間取りに合わせて配置します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>風の配置</h3><p>1階・2階ともタンク式。手洗いの位置、収納やペーパーホルダーの使いやすさを確認します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>掃除をする場所から見る</h3><p>便器の表面、便座のつぎ目、便器と便座のすき間。部品をどこまで外せるか、手が届くかを実物で確かめます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>自動機能は、機種ごとに</h3><p>便ふたの自動開閉、自動洗浄、プレミストなどは機種によって異なります。希望する機能を伺い、設置機種の仕様をご案内します。</p></div></section>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">写真は形状を比べるための参考です。便器の品番・自動機能・手洗い器の位置は、ご契約時の仕様書と図面でご案内します。</p><p class=\"cr-important\">停電時の操作は機種によって異なります。設置機種の取扱説明書に沿ってご使用ください。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-water\">階ごとの仕様を比較する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-doors",
+    "num": 13,
+    "chapter": 4,
+    "title": "建具｜部屋の印象を、扉から揃える。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">扉の色や質感だけでなく、光を通すか、視線を遮るか、どちらへ開くか。部屋と収納の使い方に合わせて選びます。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">ガラスや樹脂パネルの種類、高さ、設置する枚数は、選定する建具と図面によって異なります。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。を拡大\"><img src=\"assets/catalog/adopted/a11.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>花｜ラシッサD・S</h3><p>ラシッサDのヴィンティア、ノースフォレスト、キナリモダン、パレット、ラテオ。ラシッサSのクリエと合わせて、空間の方向を選びます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>京・風｜スキスムS</h3><p>床と扉の色を並べ、家具や照明と合わせて確認。部屋全体を同系色でまとめるか、扉を変えて見せるかを考えます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>開き方と採光</h3><p>引き戸・開き戸、ガラス部分の有無。家具と扉が当たらないか、廊下からの光や視線がどう入るかを図面と実物で確かめます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>高さ・階段・手すりを揃える</h3><p>扉の高さや枠の色に加え、階段の段数・形・仕上げ・手すりも間取りと一緒に選定します。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-colors\">色柄の一覧を見る <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-compare-interior\">内装を比較する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-colors",
+    "num": 14,
+    "chapter": 4,
+    "title": "建具の色柄を一覧で。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">色の名前から候補を探し、実物のサンプルを並べて選びます。床や壁の色と合わせると、部屋全体の印象を比較できます。</p></div></div>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>ラシッサD ヴィンティア</h3><ul><li>DE ネイビーブルー</li><li>DF ボトルグリーン</li><li>DG チャコールブラック</li><li>DK ナチュラルオーク</li><li>DB ラフオーク</li><li>DC グレージュエルム</li></ul></section>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>ラシッサD ノースフォレスト</h3><ul><li>EH テンダーオーク</li><li>EJ カームチーク</li><li>EK セージグリーン</li></ul></section>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>ラシッサD キナリモダン</h3><ul><li>ED コウノキ</li><li>EE ソフトモーブ</li><li>EF ソフトグレー</li></ul></section>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>ラシッサD ラテオ</h3><ul><li>DZ ウォルナット</li><li>DR ショコラオーク</li><li>DX チェスナット</li><li>DY チェリー</li></ul></section>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>ラシッサD パレット</h3><ul><li>DJ ホワイトオーク</li><li>DK ナチュラルオーク</li><li>DL スモークオーク</li><li>DN ブルーペイント</li><li>DT ピンクアッシュ</li><li>DV グレーアッシュ</li></ul></section>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>ラシッサS クリエ</h3><ul><li>YY プレシャスホワイト</li><li>WA クリエアイボリー</li><li>AC クリエオーク</li><li>AD クリエチェリー</li><li>MM クリエモカ</li><li>RA コージーライトグレー</li><li>DD クリエダーク</li></ul></section>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>スキスムS</h3><ul><li>WH ハーモニックホワイト</li><li>PP パールペール</li><li>LN ネイキッドライト</li><li>GM グレースミディアム</li><li>CB ショコラブラウン</li><li>DB ディープブラック</li><li>ライトグレージュ</li><li>PH プレーンホワイト</li></ul></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>枠・造作材の色</h3><p>ラシッサはプレシャスホワイト、スキスムSはプレーンホワイトを基本に、扉と枠の組合せをご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>実物を、使う場所の光で</h3><p>画面と実物では色が異なります。木目の見え方やつやは、光の向きと距離を変えて確かめてください。</p></div></section>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">掲載名は色選びの候補です。ドアデザインごとに選択できる色が異なります。ご採用時の製品とサンプルで、選択範囲をご案内します。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-doors\">建具の選び方へ <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-floor\">床材を比べる <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-floor",
+    "num": 15,
+    "chapter": 4,
+    "title": "床｜見た目と、足ざわりを比べる。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">広い面積を占める床は、部屋の明るさや足ざわりに関わる素材です。写真の印象に加え、実物の表面と手入れの方法を比べます。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">床暖房を希望される場合は、対応する床材と工法を一緒に選定します。対応しない種類もあります。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"床と家具を組み合わせたモデルハウスの空間例。写真の床材を各シリーズの採用品と断定するものではありません。を拡大\"><img src=\"assets/catalog/adopted/a12.webp\" width=\"1920\" height=\"1280\" alt=\"床と家具を組み合わせたモデルハウスの空間例。写真の床材を各シリーズの採用品と断定するものではありません。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>床と家具を組み合わせたモデルハウスの空間例。写真の床材を各シリーズの採用品と断定するものではありません。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>花｜TY-02D</h3><p>色柄と表面の足ざわりを見比べる床材。ワックスをかけずに日常の掃除で手入れします。ライトクレイ調は表面の仕様が異なります。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>京｜アトムジェニック</h3><p>へこみや傷に配慮した床材。手入れのしやすさと見た目を、暮らし方に合わせて比べます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>京｜銘木フロアーラスティック</h3><p>表面に天然木の突き板を使用し、マットな塗装で仕上げる床材。節や木目、色の違いも天然木の表情です。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>風｜アトムフィットGM</h3><p>扉や家具の色と合わせて選ぶ床材。明るさや木目を、小さな見本だけでなく空間の写真と合わせて確認します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">05</span><h3>素材に合った手入れを</h3><p>金属製・球状のキャスターや重い物の集中荷重に注意。傷がつかない床という意味ではありません。水分は早めに拭き取り、製品の手入れ方法に従います。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">06</span><h3>床暖房と表面の見え方</h3><p>床暖房・ホットカーペットへの対応は製品ごとに異なります。シート床の溝の見え方や、天然木の節・色差も実サンプルでご案内します。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-interior\">床の選択肢を比較する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-tatami-tile",
+    "num": 16,
+    "chapter": 4,
+    "title": "畳とタイル｜場所に合わせて素材を選ぶ。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">座って過ごす畳の間と、靴で歩く玄関。使う場所に合わせ、足ざわり・手入れ・濡れたときの感触を見比べます。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">タイルの施工部位・面積、畳の配置・範囲はプランによります。外構全体を一律に含む仕様ではありません。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスの畳空間。畳・建具・造作の範囲はプランにより異なります。を拡大\"><img src=\"assets/catalog/adopted/a11.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスの畳空間。畳・建具・造作の範囲はプランにより異なります。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスの畳空間。畳・建具・造作の範囲はプランにより異なります。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>ここち和座｜和紙を使った畳表</h3><p>樹脂加工した和紙を使う畳表。水分や汚れへの配慮を備えていますが、日常の清掃と湿気の管理は必要です。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>6色から空間に合わせる</h3><p>グリーン、イエロー、アイボリー、ベージュ、ブラウン、ダーク。床や壁との色合わせを、実物のサンプルで確認します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>Rivieraの4シリーズ</h3><p>A-ROCK、ETERNITY、GALAPAGOS、LUSERNA。石目の表情や柄の違いを、玄関や外部の計画に合わせて選びます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>タイルを選ぶとき</h3><p>磁器質タイルは硬さと吸水しにくさが特徴。柄のばらつき、目地、濡れたときの足ざわりを確認します。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-interior\">内装の共通仕様を見る <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-entrance",
+    "num": 17,
+    "chapter": 5,
+    "title": "玄関｜扉の形と、鍵の使い方。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">毎日の出入りに加えて、ベビーカーや大きな荷物を運ぶときまで。開口の形と、家族が使う鍵を一緒に考えます。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">FACEとFamiLockの認証方法・電源・同梱品は採用構成によります。防犯性や利用できる機能を、鍵の選定時にご案内します。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスの玄関まわり。扉・窓・造作は選定仕様により異なります。を拡大\"><img src=\"assets/catalog/adopted/a06.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスの玄関まわり。扉・窓・造作は選定仕様により異なります。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスの玄関まわり。扉・窓・造作は選定仕様により異なります。</figcaption></figure></div>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>玄関ドアのデザイン候補</h3><ul><li>G14・G15</li><li>M12・M22・M24・M26</li><li>M13・M14・M16・M27・M28</li><li>P12・M17・M21・P16</li><li>D11・D41・C12</li></ul></section>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>色柄の候補</h3><ul><li>クリエアイボリー</li><li>グレイッシュオーク</li><li>クリエペール</li><li>クリエラスク</li><li>ミディアムチェリー</li><li>クリエモカ</li><li>ブラックウォールナット</li><li>ゼンオーク</li><li>クリエダーク</li><li>トリノパイン</li><li>シャンパンレッド</li><li>パールブルー</li><li>マットブラック</li><li>ナチュラルホワイト</li><li>ポリッシュシルバー</li><li>シャイングレー</li><li>オータムブラウン</li></ul></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>花｜親子扉＋FACE</h3><p>ジエスタ2の親子扉。普段使う扉と、必要に応じて開ける小さな扉を組み合わせます。FACEの顔認証には電源・登録などの設定が必要です。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>京・風｜片開き＋FamiLock</h3><p>ジエスタ2の片開き扉。スマートフォンやタグなどを使うFamiLockを、家族それぞれの操作に合わせて使います。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>光・木目・金属感から選ぶ</h3><p>ガラス部分から光を入れるか、木目で室内と合わせるか。外壁の色と合わせ、ドアデザインと色の対応を確認します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>鍵の備えも確認</h3><p>電池切れ・停電・故障などで電動の操作ができない場合があります。外出時は手動キーも携帯してください。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-smart\">スマート設備と利用条件 <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-compare-exterior\">外装を比較する <span aria-hidden=\"true\">↗</span></a></nav>"
+      },
+      {
+        "type": "special",
+        "html": "<p class=\"cr-source\">製品の機能について：<a href=\"https://www.lixil.co.jp/lineup/entrance/s/familock/\" target=\"_blank\" rel=\"noopener\">LIXIL FamiLock（外部サイト）</a></p>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-exterior",
+    "num": 18,
+    "chapter": 5,
+    "title": "外壁と屋根｜厚みと、手入れを知る。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">外観の印象をつくり、雨や日差しを受ける部分。外壁・屋根・軒天を分けて、素材の役割と維持管理を見ていきます。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">外壁材の特徴は、家全体の無償保証年数やメンテナンス不要期間を示すものではありません。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスの外壁接写。色や塗装仕上げは選定内容により異なります。を拡大\"><img src=\"assets/catalog/adopted/a07.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスの外壁接写。色や塗装仕上げは選定内容により異なります。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスの外壁接写。色や塗装仕上げは選定内容により異なります。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>外壁｜ヘーベルパワーボード</h3><p>厚さ37mmのALC外壁材。内部に気泡を含む素材と厚みで、外壁としての断熱・遮音・防火に配慮します。建物全体の性能認定を示す値ではありません。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>表面の塗装と点検</h3><p>外壁材を長く使うには、塗膜や継ぎ目の状態を確認し、必要な補修を行います。再塗装の時期は立地や劣化状態によって異なります。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>屋根｜ニスクカラーPro.</h3><p>屋根に使う金属材。色や形、納まりは外観と建物の計画に合わせて選定し、維持管理の方法をご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>軒天・雨どい・門柱</h3><p>屋根の裏側を仕上げる軒天、雨を集めるKAKU、玄関まわりのファンクションユニット。機能と配置を外観と合わせて決めます。</p></div><figure class=\"cr-figure\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"屋根の裏側に見える軒天の施工例を拡大\"><img src=\"assets/catalog/adopted/a08.webp\" width=\"1920\" height=\"1280\" alt=\"屋根の裏側に見える軒天の施工例\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>屋根の裏側に見える軒天の施工例</figcaption></figure></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-exterior\">外装の仕様を比較する <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-warranty\">建物保証を見る <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-windows",
+    "num": 19,
+    "chapter": 5,
+    "title": "窓｜開き方と、断熱の仕組み。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">光を取り入れる、風を通す、視線を遮る。窓の目的を決めてから、開き方とガラス、設置する位置を選びます。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">各窓のガラス構成、シャッター、採風・防犯部材は、図面と仕様書でご案内します。窓の商品名だけで、すべての構成が共通になるものではありません。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"外壁と窓の施工例。ガラス・シャッター・防犯部材は窓ごとの仕様によります。を拡大\"><img src=\"assets/catalog/adopted/a08.webp\" width=\"1920\" height=\"1280\" alt=\"外壁と窓の施工例。ガラス・シャッター・防犯部材は窓ごとの仕様によります。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>外壁と窓の施工例。ガラス・シャッター・防犯部材は窓ごとの仕様によります。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>サーモスLのフレーム</h3><p>屋外側にアルミ、室内側に樹脂を用いるハイブリッド窓。細いフレームで、ガラス部分を広く取る設計です。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>Low-E複層ガラスの仕組み</h3><p>複数のガラスと、その間の層、Low-E膜で熱の出入りを抑える構成です。断熱の働きはガラス全体の組合せによって変わります。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>使う場所に合う開き方</h3><p>引違い・上げ下げ・縦すべり・横すべり・内倒し・FIXなど。採風したい場所、高い位置、開閉しない場所で使い分けます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>ガラスと防犯部材</h3><p>防犯合わせガラス、面格子、サブロックなどを、設置位置と用途から選定。アルゴンガスや樹脂スペーサーなどの追加構成は別途ご案内します。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-exterior\">窓・外装の比較を見る <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-smart",
+    "num": 20,
+    "chapter": 5,
+    "title": "スマート設備｜できることと、必要な環境。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">鍵を開ける、来客に応答する、家電を操作する。便利な機能は、対応機器と通信環境を揃え、設定して使います。</p></div></div>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>選ぶ前に確認すること</h3><ul><li>使いたい機能と、対応する機器</li><li>設置場所の電源・通信環境</li><li>家族の端末とアカウント管理</li><li>録画・保存の利用条件と継続費用</li></ul></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>花｜FACEの顔認証</h3><p>登録した顔で玄関の解錠を行う設備。電源工事と利用者の登録などが必要です。認証の組合せや補助の鍵を、採用構成に合わせてご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>京・風｜FamiLock</h3><p>スマートフォンやタグなどを使って施解錠。スマートフォンには対応アプリと登録が必要です。停電・電池切れなどへの備えとして、手動キーを携帯してください。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>Ringのドアホン</h3><p>スマートフォンで来客を確認し、応答する使い方ができます。対応するWi-Fi、端末、アカウントと設定が必要です。録画の保存・再生などは契約条件によって異なります。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>風｜LifeAssist2</h3><p>ホームデバイスをインターネットと対応機器につなぎ、住宅設備・家電の操作をまとめます。照明やエアコンなど、操作したい機器の対応を確認します。</p></div></section>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">通信環境・電源・対応端末・機器の登録設定が必要です。通信障害や停電などで、一部の機能が利用できない場合があります。</p><p class=\"cr-important\">録画や追加サービスは、有料契約が必要となる場合があります。機器代・工事費・通信費・サービス料金を分けてご案内します。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-entrance\">玄関ドアと鍵を選ぶ <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-compare-exterior\">シリーズごとの仕様 <span aria-hidden=\"true\">↗</span></a></nav>"
+      },
+      {
+        "type": "special",
+        "html": "<p class=\"cr-source\">製品の機能について：<a href=\"https://www.lixil.co.jp/lineup/smarthome/lifeassist2/\" target=\"_blank\" rel=\"noopener\">LIXIL LifeAssist2（外部サイト）</a> / <a href=\"https://www.lixil.co.jp/lineup/entrance/s/familock/\" target=\"_blank\" rel=\"noopener\">LIXIL FamiLock（外部サイト）</a></p>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-earthquake",
+    "num": 21,
+    "chapter": 6,
+    "title": "地震への備え｜耐震と制振を知る。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">力に抵抗する「耐震」と、揺れのエネルギーを吸収する「制振」。仕組みの違いを知り、建物に合わせた対策を考えます。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">地震対策は「耐震 または 制振」。両方を全棟一律に採用する仕様ではありません。個別の設計条件と、必要な評価・証明を確認して進めます。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスのMIRAIE展示。室内から制振装置の実物を見られます。を拡大\"><img src=\"assets/catalog/adopted/a06.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスのMIRAIE展示。室内から制振装置の実物を見られます。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスのMIRAIE展示。室内から制振装置の実物を見られます。</figcaption></figure></div>"
+      },
+      {
+        "type": "figure",
+        "html": "<figure class=\"cr-figure cr-native\" style=\"--cr-native-width:896px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"木造軸組の構成を示す説明図。個別物件の設計図ではありません。を拡大\"><img src=\"assets/catalog/adopted/n21.jpg\" width=\"896\" height=\"710\" alt=\"木造軸組の構成を示す説明図。個別物件の設計図ではありません。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>木造軸組の構成を示す説明図。個別物件の設計図ではありません。</figcaption></figure>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>耐震｜柱・梁・壁で支える</h3><p>木造軸組の柱・梁に、筋交いや耐力面材、接合金物を組み合わせます。それぞれの配置を、建物全体のバランスから計画します。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:227px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n22.jpg\" width=\"227\" height=\"244\" alt=\"耐震の考え方を示す説明図\" loading=\"lazy\" decoding=\"async\"></div><figcaption>耐震の考え方を示す説明図</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>制振｜装置でエネルギーを吸収</h3><p>MIRAIEなどの制振装置が、揺れによるエネルギーを吸収する仕組みです。装置の配置と採用する対策は、建物の計画によります。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:272px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n23.jpg\" width=\"272\" height=\"310\" alt=\"MIRAIEによる制振の説明図\" loading=\"lazy\" decoding=\"async\"></div><figcaption>MIRAIEによる制振の説明図</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>「等級3相当」と認定の違い</h3><p>耐震等級3相当という設計上の説明と、第三者による住宅性能評価の取得は異なります。評価・証明を希望される場合は、その取得条件を個別にご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>設計の確認とシミュレーション</h3><p>図面や構造の検討で、柱・壁・金物の位置を確認します。wallstatなどの解析結果は、対象となる建物の入力条件と実施結果を合わせて説明するものです。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-insulation\">断熱と耐久性を見る <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-compare-exterior\">性能の比較を見る <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-insulation",
+    "num": 22,
+    "chapter": 6,
+    "title": "断熱と耐久性｜壁の中の役割を知る。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">完成すると見えにくくなる、断熱材や通気層。どこに何を入れ、何のために設けるのかを、施工の工程から見ていきます。</p></div></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>アクアフォームLITE</h3><p>現場で発泡させて施工する断熱材。壁や屋根まわりの必要な場所へ施工し、隙間を抑えながら断熱層をつくります。</p></div><figure class=\"cr-figure cr-native\" style=\"--cr-native-width:221px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/n24.jpg\" width=\"221\" height=\"146\" alt=\"支給資料掲載の発泡断熱施工\" loading=\"lazy\" decoding=\"async\"></div><figcaption>支給資料掲載の発泡断熱施工</figcaption></figure></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>外壁の通気層</h3><p>外壁の内側に空気の通り道を設け、水分を外へ逃がすための層をつくります。外壁、通気層、防水の層、躯体・断熱材にはそれぞれ役割があります。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>地盤を調べて、基礎を計画</h3><p>地盤の状態を調べ、必要な改良や基礎の計画につなげます。調査結果と工事の内容、費用の範囲をご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>見えなくなる前に確認</h3><p>断熱材の施工範囲、壁の中の納まり、設計内容との一致を現場で確認。仕上げる前の工程ごとに情報を共有します。</p></div></section>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">断熱材の厚さ、窓の構成、断熱性能の値は個別の設計によって異なります。材料名だけで家全体の性能値が決まるものではありません。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-construction\">施工と検査の流れ <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-compare-exterior\">断熱・性能の比較 <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-design",
+    "num": 23,
+    "chapter": 7,
+    "title": "初回から、設計士と間取りを考える。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">希望を誰かに伝え直す前に、設計士と直接話す。家族の一日と敷地の条件を、最初の打ち合わせから一緒に整理します。</p></div><figure class=\"cr-figure cr-hero-photo cr-native\" style=\"--cr-native-width:802px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"図面を囲む打ち合わせの様子。支給パンフレット掲載写真。を拡大\"><img src=\"assets/catalog/adopted/a17.png\" width=\"802\" height=\"535\" alt=\"図面を囲む打ち合わせの様子。支給パンフレット掲載写真。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>図面を囲む打ち合わせの様子。支給パンフレット掲載写真。</figcaption></figure></div>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>最初に、メモしておくと話しやすいこと</h3><ul><li>今の家で不便に感じること</li><li>一日の過ごし方と、よく使う物</li><li>予算・時期・譲れない希望</li></ul></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>敷地を確認する</h3><p>周囲の建物、日差しの向き、高低差、道路からの出入り。家を建てる土地の条件を確かめます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>要望と不便を聞く</h3><p>今の家で困っていること、増やしたい収納、家族の過ごし方。欲しい部屋の数だけでなく、暮らしの動きから伺います。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>配置・動線・光を考える</h3><p>部屋の関係を整理し、料理・洗濯・帰宅の動線、採光と視線を図面で検討します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>構造と防災を確かめる</h3><p>間取りの希望と、建物を支える壁や柱の配置を合わせて検討します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">05</span><h3>家族らしい使い方を加える</h3><p>趣味の場所、子どもの居場所、庭とのつながり。生活に合う使い方を、図面の中へ反映します。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-plans\">図面で確かめること <span aria-hidden=\"true\">↗</span></a><a href=\"contact.html?type=reserve\">家づくりを相談する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-plans",
+    "num": 24,
+    "chapter": 7,
+    "title": "図面で確かめる、暮らしの動線。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">収納は足りるか、家事の距離はどうか、どこから光が入るか。1階と2階を行き来しながら、図面で暮らしを確かめます。</p></div></div>"
+      },
+      {
+        "type": "figure",
+        "html": "<figure class=\"cr-figure cr-native\" style=\"--cr-native-width:292px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/a15.png\" width=\"292\" height=\"292\" alt=\"間取り参考図 1階\" loading=\"lazy\" decoding=\"async\"></div><figcaption>間取り参考図 1階</figcaption></figure>"
+      },
+      {
+        "type": "figure",
+        "html": "<figure class=\"cr-figure cr-native\" style=\"--cr-native-width:303px\"><div class=\"cr-photo-static\"><img src=\"assets/catalog/adopted/a16.png\" width=\"303\" height=\"302\" alt=\"間取り参考図 2階\" loading=\"lazy\" decoding=\"async\"></div><figcaption>間取り参考図 2階</figcaption></figure>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>家事と帰宅の動き</h3><p>玄関から収納へ、買い物からキッチンへ、洗濯から干す場所へ。何を持ち、どこを通るかを図面の上でたどります。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>収納する物と場所</h3><p>量だけでなく、出し入れする位置が大切です。掃除道具、季節の物、日用品など、使う部屋との距離を確かめます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>採光と視線</h3><p>窓と部屋の位置、吹抜けや庭とのつながり。明るさと、外から見えにくくしたい場所を一緒に検討します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>設計士と見直す</h3><p>図面を見ながら要望を伝え、家具の置き方や動線を調整。設計担当の紹介とプロフィールは、スタッフページでご覧いただけます。</p></div></section>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">図は間取りの配置を知るための参考です。寸法を読み取るための実施設計図ではありません。具体的な寸法は、お打ち合わせ時の図面でご案内します。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"staff.html\">設計担当のプロフィール <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-design\">設計の進め方へ <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-construction",
+    "num": 25,
+    "chapter": 7,
+    "title": "土地・設計・施工の情報を、現場へ。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">図面で決めた内容を、材料と施工へつなぐ。担当間の確認と現場での点検を重ね、引渡しへ進めます。</p></div></div>"
+      },
+      {
+        "type": "figure",
+        "html": "<figure class=\"cr-figure cr-native\" style=\"--cr-native-width:575px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"現場で図面と施工内容を確認する様子を拡大\"><img src=\"assets/catalog/adopted/a18.jpg\" width=\"575\" height=\"383\" alt=\"現場で図面と施工内容を確認する様子\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>現場で図面と施工内容を確認する様子</figcaption></figure>"
+      },
+      {
+        "type": "figure",
+        "html": "<figure class=\"cr-figure cr-native\" style=\"--cr-native-width:602px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"躯体の施工を確認する様子を拡大\"><img src=\"assets/catalog/adopted/a19.jpg\" width=\"602\" height=\"401\" alt=\"躯体の施工を確認する様子\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>躯体の施工を確認する様子</figcaption></figure>"
+      },
+      {
+        "type": "figure",
+        "html": "<figure class=\"cr-figure cr-native\" style=\"--cr-native-width:683px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"引渡し前に設備を確認する様子を拡大\"><img src=\"assets/catalog/adopted/a20.jpg\" width=\"683\" height=\"385\" alt=\"引渡し前に設備を確認する様子\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>引渡し前に設備を確認する様子</figcaption></figure>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>土地と計画を引き継ぐ</h3><p>仕入れ・造成の段階で把握した敷地の条件を、設計と施工の担当へ共有します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>工事前に図面を確認</h3><p>間取りと仕様を確認し、材料や設備、施工上の要点を打ち合わせます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>仕上げと設備を選ぶ</h3><p>外壁、床、建具、収納などの色・形・配置を選定。決まった内容を現場へ伝えます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>現場で照合し、調整する</h3><p>図面と材料・施工位置を照合し、必要な確認や是正を行います。担当間で情報を共有しながら進めます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">05</span><h3>第三者検査と引渡し前の確認</h3><p>ハウスジーメンによる基礎配筋・躯体構造の2回の検査を実施。工事全体の確認が2回だけという意味ではなく、各工程や引渡し前にも確認します。</p></div></section>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">写真は支給パンフレットに掲載された各工程の実写です。同一物件の着工から完成までを連続撮影した記録ではありません。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-warranty\">引渡し後の保証 <span aria-hidden=\"true\">↗</span></a><a href=\"lots.html\">土地を探す <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-warranty",
+    "num": 26,
+    "chapter": 8,
+    "title": "保証｜対象と、続けるための条件。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">建物の初期保証は10年。必要な点検とメンテナンスを続けることで、10年ごとに有償で延長し、最長30年まで保証を継続できます。</p></div></div>"
+      },
+      {
+        "type": "special",
+        "html": "<div class=\"cr-warranty-summary\"><div><span class=\"cr-eyebrow\">建物の保証期間</span><p class=\"cr-years\">初期 <strong>10</strong> 年 <span>→</span> 最長 <strong>30</strong> 年</p></div><p>構造耐力上主要な部分と<br>雨水の浸入を防止する部分</p></div>"
+      },
+      {
+        "type": "special",
+        "html": "<ol class=\"cr-timeline\"><li><span>引渡し → 10年</span><strong>初期保証</strong></li><li><span>10年 → 20年</span><strong>有償で延長</strong></li><li><span>20年 → 30年</span><strong>有償で延長</strong></li></ol>"
+      },
+      {
+        "type": "special",
+        "html": "<p class=\"cr-important\">延長には点検と、必要な有償メンテナンス工事・所定の手続きが必要です。</p>"
+      },
+      {
+        "type": "special",
+        "html": "<div class=\"cr-guarantee-diagram\" role=\"img\" aria-label=\"建物保証の対象を説明する模式図。構造耐力上主要な部分は基礎・柱・梁・耐力壁。雨水の浸入を防止する部分は屋根・外壁・開口部。実際の建物の設計図ではありません。\"><svg viewBox=\"0 0 640 320\" aria-hidden=\"true\"><path d=\"M150 138L320 28L490 138\" fill=\"none\" stroke=\"#527582\" stroke-width=\"12\"></path><path d=\"M178 136V286H462V136M178 206H462M230 136V286M405 136V286\" fill=\"none\" stroke=\"#951f2d\" stroke-width=\"7\"></path><path d=\"M165 287H475\" stroke=\"#951f2d\" stroke-width=\"18\"></path><path d=\"M278 152H335V185H278ZM278 232H335V267H278Z\" fill=\"#eef1ee\" stroke=\"#527582\" stroke-width=\"6\"></path><path d=\"M190 214L222 278M412 214L450 278\" stroke=\"#951f2d\" stroke-width=\"5\"></path></svg><div class=\"cr-diagram-labels\"><p><b>建物を支える部分</b><br>基礎・柱・梁・耐力壁など</p><p><b>雨水の浸入を防ぐ部分</b><br>屋根・外壁・開口部など</p></div><p class=\"cr-note\">保証対象を示す模式図です。個別の設計・施工仕様を示すものではありません。</p></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>構造耐力上主要な部分</h3><p>基礎・柱・梁・耐力壁など、建物を支える部分が対象です。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>雨水の浸入を防止する部分</h3><p>屋根・外壁・開口部など、雨水の浸入を防ぐ部分が対象です。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>住宅設備保証はオプション</h3><p>メーカー保証の期間を含めて合計10年間。対象となる機器・故障、加入費用は設備保証の契約内容によります。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>しろあり・地盤・短期保証</h3><p>建物保証とは別の制度です。しろありの初期保証は10年。地盤や内装・設備などの保証範囲、開始時期、条件は各保証書でご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">05</span><h3>売却・相続時の引継ぎ</h3><p>所有者が変わる場合は、保証契約を変更する手続きが必要です。引継ぎは有償となります。</p></div></section>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">延長には、当社または指定業者による点検、必要な有償メンテナンス工事、所定の手続きが必要です。</p><p class=\"cr-important\">経年劣化や自然災害などは保証対象外です。対象部位・免責・修理費用の扱いは保証書・約款に従います。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-aftercare\">点検と住まいの相談 <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-conditions\">保証の用語と条件 <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-aftercare",
+    "num": 27,
+    "chapter": 8,
+    "title": "引渡し後の点検と、住まいの相談。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">蛇口の水漏れ、扉の閉まり、設備の使い方。住み始めてからのお困りごとも、やまと不動産へご相談ください。</p></div></div>"
+      },
+      {
+        "type": "special",
+        "html": "<section class=\"cr-group\"><h3>ご相談時にお伝えいただきたいこと</h3><ul><li>どの場所・設備で起きているか</li><li>いつから、どのような症状があるか</li><li>写真や、設備の品番が分かるもの</li></ul></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>住まいの定期点検</h3><p>引渡し後も、住まいの状態を確認して維持管理をお手伝いします。点検の時期と内容は、ご契約時のご案内に沿ってお知らせします。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>水まわりの相談</h3><p>蛇口の水漏れや臭い、水栓の操作、浄水カートリッジの交換など。場所と症状を確認してご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>電気・内装・建具の相談</h3><p>照明の不具合、壁紙、網戸、扉の閉まり、畳など。状態を伺い、必要な点検や修理の方法を考えます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>鍵・清掃・修理の相談</h3><p>鍵が開きにくい、清掃や修理を相談したいときも、まずは窓口へ。内容に応じて担当へつなぎます。</p></div></section>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">定期点検の費用と、部品交換・補修・清掃などの費用は別です。無償となる範囲は保証内容によります。必要な作業と費用をご案内して進めます。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"contact.html\">住まいの困りごとを相談 <span aria-hidden=\"true\">↗</span></a><a href=\"company.html\">会社・お問い合わせ先 <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-warranty\">保証の対象と条件へ <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-compare-water",
+    "num": 28,
+    "chapter": 9,
+    "title": "水まわりの仕様を、3シリーズで比較。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">使う場所ごとに、花・京・風の設備を並べました。気になる項目から、収納や手入れの詳しい説明へ進めます。</p></div></div>"
+      },
+      {
+        "type": "table",
+        "html": "<table><caption>花・京・風の仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\" class=\"cr-series-0\">花</th><th scope=\"col\" class=\"cr-series-1\">京</th><th scope=\"col\" class=\"cr-series-2\">風</th></tr></thead><tbody><tr data-spec-key=\"kitchen\"><th scope=\"row\"><a href=\"#catalog-kitchen\">キッチン <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>STEDIA デュアルトップ・I型／KT</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>STEDIA I型／KT</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>LIXIL ES</span></td></tr><tr data-spec-key=\"bath\"><th scope=\"row\"><a href=\"#catalog-bath\">浴室 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>sazana Tタイプ</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>sazana Tタイプ</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>sazana Nタイプ</span></td></tr><tr data-spec-key=\"bath-size\"><th scope=\"row\"><a href=\"#catalog-bath\">浴室サイズ <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">1620は花の選択肢です。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>1616・1620</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>1616</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>1616</span></td></tr><tr data-spec-key=\"vanity\"><th scope=\"row\"><a href=\"#catalog-vanity\">洗面化粧台 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>Octave Lite／間口900mm</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>Octave Lite／間口900mm</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>Octave Lite／間口900mm</span></td></tr><tr data-spec-key=\"vanity-storage\"><th scope=\"row\"><a href=\"#catalog-vanity\">洗面の収納 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>引き出しタイプ</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>引き出しタイプ</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>開き扉タイプ</span></td></tr><tr data-spec-key=\"toilet-1f\"><th scope=\"row\"><a href=\"#catalog-toilet\">1階トイレ <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>ウォシュレット一体形便器</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>ウォシュレット一体形便器</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>タンク式</span></td></tr><tr data-spec-key=\"toilet-2f\"><th scope=\"row\"><a href=\"#catalog-toilet\">2階トイレ <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>タンク式</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>タンク式</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>タンク式</span></td></tr><tr data-spec-key=\"handwash\"><th scope=\"row\"><a href=\"#catalog-toilet\">別置き手洗い <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">手洗い器の位置と形は、トイレの配置とあわせてご案内します。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>トイレ内に設置</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>トイレ内に設置</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>便器とあわせて手洗いを計画</span></td></tr></tbody></table>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">設備の形・サイズは間取りとあわせて選定します。選択できる仕様と費用は、ご契約時の仕様書・見積もりでご案内します。</p><p class=\"cr-important\">トイレの自動開閉・自動洗浄などの機能は、設置する機種によって異なります。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-interior\">内装の仕様を比較する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-compare-interior",
+    "num": 29,
+    "chapter": 9,
+    "title": "内装の仕様を、素材ごとに比較。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">床、扉、畳、タイル。シリーズごとに選べる素材と、共通する仕様を並べました。色や足ざわりは、実物で見比べてください。</p></div></div>"
+      },
+      {
+        "type": "table",
+        "html": "<table><caption>花・京・風の仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\" class=\"cr-series-0\">花</th><th scope=\"col\" class=\"cr-series-1\">京</th><th scope=\"col\" class=\"cr-series-2\">風</th></tr></thead><tbody><tr data-spec-key=\"doors\"><th scope=\"row\"><a href=\"#catalog-doors\">室内建具 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>ラシッサD・S</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>スキスムS</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>スキスムS</span></td></tr><tr data-spec-key=\"floor\"><th scope=\"row\"><a href=\"#catalog-floor\">床 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>TY-02D</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>アトムジェニック／銘木フロアーラスティック</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>アトムフィットGM</span></td></tr><tr data-spec-key=\"tatami\"><th scope=\"row\"><a href=\"#catalog-tatami-tile\">畳 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>ここち和座</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>ここち和座</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>ここち和座</span></td></tr><tr data-spec-key=\"tiles\"><th scope=\"row\"><a href=\"#catalog-tatami-tile\">タイル <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">A-ROCK／ETERNITY／GALAPAGOS／LUSERNA。施工部位と範囲はプランによります。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>Riviera 4シリーズ</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>Riviera 4シリーズ</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>Riviera 4シリーズ</span></td></tr><tr data-spec-key=\"stairs\"><th scope=\"row\"><a href=\"#catalog-doors\">階段 <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">段数・形・手すり・仕上げを間取りとあわせてご案内します。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>床・建具に合わせて選定</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>床・建具に合わせて選定</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>床・建具に合わせて選定</span></td></tr><tr data-spec-key=\"frames\"><th scope=\"row\"><a href=\"#catalog-colors\">枠・造作材の色 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>プレシャスホワイト</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>プレーンホワイト</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>プレーンホワイト</span></td></tr></tbody></table>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">高さ・枚数・施工面積・階段の形はプランによります。各素材の選択範囲と施工する場所は、ご契約時の図面と仕様書でご案内します。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-compare-exterior\">外装・性能・保証を比べる <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-colors\">建具の色柄を見る <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-compare-exterior",
+    "num": 30,
+    "chapter": 9,
+    "title": "外装・性能・保証の仕様を比較。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">外まわりの材料から、建物の性能、引渡し後の保証まで。共通の仕様も、対象と条件を分けてご確認ください。</p></div></div>"
+      },
+      {
+        "type": "table",
+        "html": "<table><caption>花・京・風の仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\" class=\"cr-series-0\">花</th><th scope=\"col\" class=\"cr-series-1\">京</th><th scope=\"col\" class=\"cr-series-2\">風</th></tr></thead><tbody><tr data-spec-key=\"entrance\"><th scope=\"row\"><a href=\"#catalog-entrance\">玄関ドア <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>ジエスタ2 親子扉</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>ジエスタ2 片開き</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>ジエスタ2 片開き</span></td></tr><tr data-spec-key=\"key\"><th scope=\"row\"><a href=\"#catalog-smart\">玄関の鍵 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>FACE（顔認証）</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>FamiLock</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>FamiLock</span></td></tr><tr data-spec-key=\"windows\"><th scope=\"row\"><a href=\"#catalog-windows\">窓 <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">ガラスの構成・シャッター・防犯部材は窓ごとにご案内します。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>サーモスL</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>サーモスL</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>サーモスL</span></td></tr><tr data-spec-key=\"wall\"><th scope=\"row\"><a href=\"#catalog-exterior\">外壁 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>ヘーベルパワーボード 37mm</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>ヘーベルパワーボード 37mm</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>ヘーベルパワーボード 37mm</span></td></tr><tr data-spec-key=\"roof\"><th scope=\"row\"><a href=\"#catalog-exterior\">屋根 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>ニスクカラーPro.</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>ニスクカラーPro.</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>ニスクカラーPro.</span></td></tr><tr data-spec-key=\"eaves\"><th scope=\"row\"><a href=\"#catalog-exterior\">軒天 <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">色・仕上げは外観とあわせて選定します。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>屋根の裏側を仕上げる部材</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>屋根の裏側を仕上げる部材</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>屋根の裏側を仕上げる部材</span></td></tr><tr data-spec-key=\"gutter\"><th scope=\"row\"><a href=\"#catalog-exterior\">雨どい <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>KAKU</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>KAKU</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>KAKU</span></td></tr><tr data-spec-key=\"gate\"><th scope=\"row\"><a href=\"#catalog-exterior\">門柱 <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">郵便受け・表札・ドアホンの組合せと設置位置をご案内します。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>ファンクションユニット</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>ファンクションユニット</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>ファンクションユニット</span></td></tr><tr data-spec-key=\"doorbell\"><th scope=\"row\"><a href=\"#catalog-smart\">ドアホン <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">スマートフォン連携には通信環境と設定が必要です。録画機能は契約条件によります。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>Ringのドアホン</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>Ringのドアホン</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>Ringのドアホン</span></td></tr><tr data-spec-key=\"iot\"><th scope=\"row\"><a href=\"#catalog-smart\">スマート設備 <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">機器の対応・インターネット接続・利用条件を確認して組み合わせます。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>対応機器に応じてご提案</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>対応機器に応じてご提案</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>LifeAssist2</span></td></tr><tr data-spec-key=\"insulation\"><th scope=\"row\"><a href=\"#catalog-insulation\">断熱材 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>アクアフォームLITE</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>アクアフォームLITE</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>アクアフォームLITE</span></td></tr><tr data-spec-key=\"earthquake\"><th scope=\"row\"><a href=\"#catalog-earthquake\">地震対策 <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">両方を一律に組み合わせる仕様ではありません。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>耐震 または 制振</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>耐震 または 制振</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>耐震 または 制振</span></td></tr><tr data-spec-key=\"heater\"><th scope=\"row\"><a href=\"#catalog-conditions\">給湯機 <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">ガス給湯のエコジョーズ、電気給湯のエコキュートなど。両方を同時に設置する意味ではありません。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>使用するエネルギーと設備から選定</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>使用するエネルギーと設備から選定</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>使用するエネルギーと設備から選定</span></td></tr><tr data-spec-key=\"initial-warranty\"><th scope=\"row\"><a href=\"#catalog-warranty\">建物の初期保証 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>10年</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>10年</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>10年</span></td></tr><tr data-spec-key=\"extend-warranty\"><th scope=\"row\"><a href=\"#catalog-warranty\">建物保証の延長 <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">10年ごとの点検・必要な有償メンテナンス・手続きが条件です。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>最長30年／有償延長</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>最長30年／有償延長</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>最長30年／有償延長</span></td></tr><tr data-spec-key=\"equipment-warranty\"><th scope=\"row\"><a href=\"#catalog-warranty\">住宅設備保証 <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">メーカー保証期間を含みます。対象機器・加入費用は契約内容によります。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>合計10年／オプション</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>合計10年／オプション</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>合計10年／オプション</span></td></tr><tr data-spec-key=\"third-inspection\"><th scope=\"row\"><a href=\"#catalog-construction\">第三者検査 <span aria-hidden=\"true\">↗</span></a></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>基礎配筋・躯体構造の2回</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>基礎配筋・躯体構造の2回</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>基礎配筋・躯体構造の2回</span></td></tr><tr data-spec-key=\"termite\"><th scope=\"row\"><a href=\"#catalog-warranty\">しろあり初期保証 <span aria-hidden=\"true\">↗</span></a><p class=\"cr-row-note\">対象構法と保証書の条件に従います。</p></th><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">花</span><span>10年</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">京</span><span>10年</span></td><td><span class=\"cr-mobile-series\" aria-hidden=\"true\">風</span><span>10年</span></td></tr></tbody></table>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">各商品の機能は、採用する型・設置位置・接続環境によって異なります。商品名だけで、すべての機能が含まれるものではありません。</p><p class=\"cr-important\">保証は対象部位と条件が定められています。有償延長・オプションの区分と、各保証書・約款をご確認ください。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-warranty\">建物保証を詳しく <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-conditions\">費用と条件を確認する <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-conditions",
+    "num": 31,
+    "chapter": 10,
+    "title": "費用・選択条件・用語を確認。",
+    "blocks": [
+      {
+        "type": "lead",
+        "html": "<div class=\"cr-intro\"><div><p class=\"cr-lead\">比較するときに迷いやすい言葉をまとめました。価格に含まれる範囲と、選べる仕様、保証の条件を整理するためにお使いください。</p></div></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>建物本体価格</h3><p>建物の基準プランに対する価格です。土地代、外構、諸費用などを含む総額とは異なります。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>土地代・外構・諸費用</h3><p>土地の取得、庭や駐車場などの外構、登記や融資などの費用。各項目を分けて見積もりでご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>標準仕様</h3><p>基準プランに含まれる設備や材料。写真に写っている家具・照明・造作が、すべて含まれるという意味ではありません。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">04</span><h3>選択仕様</h3><p>シリーズ内で選べる設備や材料。組合せや条件によって費用が変わる場合があるため、選定時にご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">05</span><h3>追加・オプション</h3><p>標準の範囲に加える設備や工事。希望する内容を伺い、費用を確認したうえで進めます。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">06</span><h3>基準プランの面積</h3><p>価格を示すための基準となる広さ。花31坪・京28坪・風30坪が、すべての敷地・間取りで同じ形になるものではありません。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">07</span><h3>地盤調査と改良</h3><p>地盤の状態を確認し、必要に応じた対策を検討します。工事と費用の負担範囲は、土地・契約の条件に沿ってご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">08</span><h3>給湯機の選択</h3><p>ガスで給湯するエコジョーズ、電気を使うエコキュートなど。使うエネルギーと設置条件を合わせて選びます。両方が同時に入るという意味ではありません。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">09</span><h3>性能の「相当」と認定</h3><p>設計上の考え方を示す「相当」と、第三者の評価・認定を取得することは異なります。証明の種類と取得条件をご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">10</span><h3>初期保証と有償延長</h3><p>建物の初期保証は10年。最長30年への延長には、点検・必要な有償メンテナンスと手続きが必要です。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">11</span><h3>住宅設備保証</h3><p>メーカー保証の期間を含めて合計10年間のオプションです。対象機器・故障・費用は契約内容によります。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">12</span><h3>製品の試験値と実際の住まい</h3><p>メーカーの試験値は、決められた対象と条件での結果です。家全体の性能や、すべての使い方で同じ効果を保証するものではありません。</p></div></section>"
+      },
+      {
+        "type": "conditions",
+        "html": "<aside class=\"cr-conditions\" aria-label=\"適用条件\"><p class=\"cr-important\">掲載価格は基準プランの建物本体価格（税込）です。土地代は別途必要です。外構・諸費用・選択する設備や変更内容を含む総額は、見積もりでご案内します。</p></aside>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"#catalog-series\">基準価格を確認する <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-warranty\">保証条件を確認する <span aria-hidden=\"true\">↗</span></a><a href=\"#catalog-visit\">見学・相談へ <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  },
+  {
+    "id": "catalog-visit",
+    "num": 32,
+    "chapter": 10,
+    "title": "写真で見た仕様を、実物で確かめる。",
+    "blocks": [
+      {
+        "type": "opening",
+        "html": "<div class=\"cr-intro-grid\"><div><p class=\"cr-lead\">引き出しを開ける、水栓に触れる、床を歩く。カタログで気になった仕様を、モデルハウスでご確認ください。</p><div class=\"cr-intro-conditions\"><p class=\"cr-important\">展示内容はモデルハウスにより異なります。見たい設備や仕様がある場合は、ご予約時にお知らせください。</p></div></div><figure class=\"cr-figure cr-hero-photo\" style=\"--cr-native-width:1920px\"><button type=\"button\" class=\"cr-photo-button\" data-cr-zoom=\"\" aria-label=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。を拡大\"><img src=\"assets/catalog/adopted/a12.webp\" width=\"1920\" height=\"1280\" alt=\"モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。\" loading=\"lazy\" decoding=\"async\"><span class=\"cr-photo-label\" aria-hidden=\"true\">写真を拡大 ↗</span></button><figcaption>モデルハウスの施工例。家具・照明・造作など、写真には標準仕様以外のものも含まれます。</figcaption></figure></div>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">01</span><h3>収納と設備を使ってみる</h3><p>引き出しの奥、手の届く高さ、扉の閉まり方。家族が使う場面を思い浮かべて確かめてください。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">02</span><h3>色と素材を並べてみる</h3><p>床と建具、外壁と玄関扉。写真では分かりにくい質感や色の違いを、実物でご案内します。</p></div></section>"
+      },
+      {
+        "type": "feature",
+        "html": "<section class=\"cr-feature\"><div class=\"cr-feature-copy\"><span class=\"cr-feature-no\" aria-hidden=\"true\">03</span><h3>間取りと総額を相談する</h3><p>希望する広さ、土地、設備、予算。気になる点を伺い、図面と見積もりを使ってご案内します。</p></div></section>"
+      },
+      {
+        "type": "links",
+        "html": "<nav class=\"cr-links\" aria-label=\"関連するご案内\"><a href=\"contact.html?type=reserve\">モデルハウス見学を予約 <span aria-hidden=\"true\">↗</span></a><a href=\"contact.html?type=docs\">資料を請求する <span aria-hidden=\"true\">↗</span></a><a href=\"lots.html\">土地を探す <span aria-hidden=\"true\">↗</span></a><a href=\"#price\">サイト本編の価格・費用を見る <span aria-hidden=\"true\">↗</span></a></nav>"
+      }
+    ]
+  }
+]
