@@ -430,10 +430,11 @@
   display:flex;align-items:center;gap:14px;white-space:nowrap}
 .creed__sign::before{content:"";width:clamp(24px,5vw,44px);height:1px;background:rgba(92,83,70,.5);flex:none}
 </style>
+<link rel="stylesheet" href="assets/company/company-a.css">
 </head>
 <body>
 
-<header class="hd" id="hd">
+<header class="hd is-solid" id="hd">
   <a class="hd__brand" href="index.html" aria-label="やまと不動産 トップへ">
     <img class="hd__mark" src="assets/brand/yamato_mark.svg" alt="">
     <span class="hd__kk"><span>株式</span><span>会社</span></span>
@@ -492,10 +493,10 @@
     </nav>
     <div class="menu__contact stagger" style="--i:3">
       <div class="contact-row">
-        <div class="contact-row__label">来場・ご相談のご予約<small>WEBから 24時間受付</small></div>
+        <div class="contact-row__label">来場・ご相談のご予約<small>Web受付は準備中です</small></div>
         <div class="contact-row__action">
           <a class="doc-link" href="contact.html?type=docs">資料請求はこちら</a>
-          <a class="btn-form" href="contact.html?type=reserve">ご予約フォームへ<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn-form" href="contact.html?type=reserve">見学の受付案内へ<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
       <div class="contact-row">
@@ -508,9 +509,9 @@
         </div>
       </div>
       <div class="contact-row">
-        <div class="contact-row__label">LINEでのご相談<small>夜間もお気軽にどうぞ</small></div>
+        <div class="contact-row__label">LINEでのご相談<small>LINE受付は準備中です</small></div>
         <div class="contact-row__action">
-          <a class="btn-form" style="background:#06C755;box-shadow:0 6px 22px rgba(6,199,85,.3)" href="contact.html#line">LINEで友だち追加<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn-form" style="background:#06C755;box-shadow:0 6px 22px rgba(6,199,85,.3)" href="contact.html#line">LINEの受付案内へ<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
     </div>
@@ -527,225 +528,7 @@
   </div>
 </div>
 
-<!-- ヒーロー＝名乗り（朝の光） -->
-<section class="hero" id="hero">
-  <div class="hero__in">
-    <div class="hero__txt">
-      <span class="eyebrow hrv">About Yamato ／ 会社案内</span>
-      <h1 class="hrv"><span class="nw">やまと不動産は、</span><span class="nw"><b>2011年</b>から</span><span class="nw">奈良で</span><span class="nw">家をつくってきた会社です。</span></h1>
-      <p class="hero__lead hrv">本社は奈良市大宮町に、支店は京都・宇治にあります。土地の分譲から設計、施工、建てたあとのお付き合いまでを、自分たちの手でやっています。今年で、創業15年目になります。</p>
-    </div>
-    <figure class="hero__ph" aria-hidden="true"><img src="assets/company/hero_morning.jpg" alt="" fetchpriority="high"></figure>
-  </div>
-</section>
-
-<!-- 証明の帯（実在性・継続性・公的裏付けに即答） -->
-<div class="facts rvf" id="facts">
-  <div class="facts__in">
-    <div class="fact">
-      <span class="fact__k">Founded</span>
-      <span class="fact__v">創立 <span class="num">2011年11月30日</span></span>
-      <span class="fact__n">今年で創業15年目です。</span>
-    </div>
-    <div class="fact">
-      <span class="fact__k">License</span>
-      <span class="fact__v"><span class="nw" style="margin-right:.4em">宅建業免許</span><span class="nw">国土交通大臣（1）</span><span class="nw num">第10516号</span></span>
-      <span class="fact__n">複数の都道府県に事務所を置く会社の免許です。</span>
-    </div>
-    <div class="fact">
-      <span class="fact__k">Offices</span>
-      <span class="fact__v">奈良本社・京都支店</span>
-      <span class="fact__n">奈良と京都南部に<span style="display:inline-block;white-space:nowrap">対応しています。</span></span>
-    </div>
-    <div class="fact">
-      <span class="fact__k">Business</span>
-      <span class="fact__v"><span class="nw">宅地分譲・</span><span class="nw">住宅建築 ほか</span></span>
-      <span class="fact__n">土地から建物まで、一社で完結します。</span>
-    </div>
-  </div>
-</div>
-
-<!-- 代表メッセージ -->
-<section class="msg" id="message">
-  <div class="wrap spine">
-    <div class="shead rv">
-      <span class="eyebrow">Message ／ 代表メッセージ</span>
-      <h2><span class="nw">正直であることを、</span><span class="nw">いちばん大切にしています。</span></h2>
-    </div>
-    <div class="msg__grid">
-      <div>
-        <p class="msg__pull rv"><span class="nw">30年後も</span><span class="nw">「やまと不動産で</span><span class="nw">良かった」と</span><span class="nw">思ってもらいたい。</span></p><!-- 打ち合わせ資料docx§16原文 -->
-        <div class="msg__body rv">
-          <!-- 仮文面: docx§16「代表メッセージに入れたい要素」のみで構成。公開前に両代表の確認要 -->
-          <p>私たちは、お客様に嘘をつかないと決めています。良いことも悪いことも正直にお伝えして、媚びるのではなく、プロとして対等に向き合います。</p>
-          <p>目指しているのは、ご友人を家に招いたときに「いい家やな」と言ってもらえる住まいです。そのために、今が完成形だとは思っていません。標準仕様も設計も、もっと良くできると考えて<span style="display:inline-block;white-space:nowrap">磨き続けています。</span></p>
-          <p>家は、売って終わりではありません。建ててからが、本当のお付き合いです。30年後に「やまと不動産で良かった」と思っていただけるように、これからも奈良で、正直な家づくりを続けます。</p>
-          <div class="msg__sign">
-            <span class="msg__co">株式会社やまと不動産</span>
-            <span class="msg__names">代表取締役会長　古谷 泰彦<br>代表取締役社長　小林 敬昌</span>
-          </div>
-        </div>
-      </div>
-      <figure class="msg__ph rv">
-        <img src="assets/company/msg_stairs.jpg" alt="やまとの家の階段。上階からの光が差し込む" loading="lazy">
-        <figcaption class="msg__cap">写真はすべて、やまとが実際に建てた家です。</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- 信条の全文。TOPは発話1行に絞ったので、手紙はここが正本になる（2026-08-21） -->
-<section class="creed" id="creed" aria-labelledby="creedH">
-  <div class="wrap">
-    <div class="shead rv">
-      <span class="eyebrow">Our Creed ／ 信条</span>
-      <h2 id="creedH"><span class="nw">建てたときだけではなく、</span><span class="nw">暮らしてから、</span><span class="nw">もっと好きになる家を。</span></h2>
-    </div>
-    <div class="creed__sheet rv">
-      <p class="creed__p">やまと不動産が、ずっと大切にしていることがあります。</p>
-      <p class="creed__p">それは、家を見たときに<span class="creed__q">「この金額で、ここまでできるんだ」</span>と、少し驚いてもらえること。</p>
-      <hr class="creed__rule">
-      <p class="creed__p creed__p--m">モデルハウスで心惹かれた設備も、毎日の暮らしを考えた間取りも、あとから追加費用を重ねて、ようやく手に入るものにはしたくありません。</p>
-      <p class="creed__p">いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p>
-      <p class="creed__p creed__p--m">「この予算では、理想の家は難しいかもしれない」</p>
-      <p class="creed__p">そう思っている方にこそ、知ってほしいのです。</p>
-      <p class="creed__p">諦めなくてもいいこと。その予算の中でも、もっと心地よく、もっと好きになれる家はつくれるということを。</p>
-      <hr class="creed__rule">
-      <p class="creed__p creed__p--m">家は、完成した日がいちばん大切なのではありません。</p>
-      <p class="creed__p">朝の光が差し込む洗面。夜になると、間接照明が石壁をやわらかく照らすリビング。木の格子扉を開ける、何気ない毎日。</p>
-      <p class="creed__p">そんな小さな景色のひとつひとつが、そこで暮らす家族の「楽しい毎日」になっていく。</p>
-      <p class="creed__p">私たちは、そこまで想像しながら、一軒ずつ家を設計しています。</p>
-      <hr class="creed__rule">
-      <p class="creed__p creed__p--m">そして5年、10年と暮らしたその先にも、</p>
-      <p class="creed__p">「やまと不動産にお願いして、よかった」</p>
-      <p class="creed__p">そう言ってもらえる家でありたい。</p>
-      <p class="creed__p">建てたときだけではなく、暮らしてから、もっと好きになる家を。</p>
-      <p class="creed__p creed__p--m">それが、やまと不動産の家づくりです。</p>
-      <p class="creed__sign">株式会社やまと不動産</p>
-    </div>
-  </div>
-</section>
-
-<!-- 私たちの約束（三つの地層） -->
-<section id="promises">
-  <div class="wrap spine">
-    <div class="shead rv">
-      <span class="eyebrow">Three Promises ／ 私たちの約束</span>
-      <h2><span class="nw">この考えを、</span><span class="nw">三つの約束にしました。</span></h2>
-    </div>
-    <p class="slead rv">すべてのお客様と交わす約束です。それぞれの中身は、各ページで具体的にご覧いただけます。</p>
-  </div>
-
-  <!-- 約束 01 -->
-  <article class="oath">
-    <figure class="oath__band rvf" aria-hidden="true"><img src="assets/company/band_01_exterior.jpg" alt="" loading="lazy"></figure>
-    <div class="wrap">
-      <div class="oath__panel">
-        <span class="oath__no o1"><span class="num">01</span></span>
-        <h3 class="o1"><span class="nw">お客様に合わないと</span><span class="nw">判断したときは、</span><span class="nw">売らないと</span><span class="nw">約束します。</span></h3><!-- docx§3原文 -->
-        <p class="oath__quote o2"><span class="nw">「パンと見せたものと、</span><span class="nw">値段が一致する」</span><small>― 小林社長</small></p>
-        <p class="oath__body o2">無理に契約をお勧めすることはありません。その土地、その間取り、その予算が本当に合っているのか。メリットだけでなくデメリットも正直にお伝えして、最善の選択を一緒に考えます。反響のあった土地に固執せず、もっと合う土地があれば別の案をご提案します。</p>
-        <a class="oath__more o2" href="kodawari.html#price">価格の正直な中身を見る<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-  </article>
-
-  <!-- 約束 02 -->
-  <article class="oath">
-    <figure class="oath__band rvf" aria-hidden="true"><img src="assets/company/band_02_void.jpg" alt="" loading="lazy"></figure>
-    <div class="wrap">
-      <div class="oath__panel">
-        <span class="oath__no o1"><span class="num">02</span></span>
-        <h3 class="o1"><span class="nw">理想を超えた、</span><span class="nw">自慢の住まいを</span><span class="nw">約束します。</span></h3><!-- docx§3原文 -->
-        <p class="oath__quote o2"><span class="nw">「こんなんで建てんの？</span><span class="nw">っていう驚きを、</span><span class="nw">提供したい」</span><small>― 小林社長</small></p>
-        <p class="oath__body o2">SNSやモデルハウスで見つけた理想を、そのまま形にするだけでは終わらせません。設計士が最初のヒアリングから関わり、複数の間取り案を検討したうえで、暮らしに合った最適な案をご提案します。</p>
-        <a class="oath__more o2" href="kodawari.html#design">設計検討の裏側を見る<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-  </article>
-
-  <!-- 約束 03 -->
-  <article class="oath">
-    <figure class="oath__band rvf" aria-hidden="true"><img src="assets/company/band_03_ldk.jpg" alt="" loading="lazy"></figure>
-    <div class="wrap">
-      <div class="oath__panel">
-        <span class="oath__no o1"><span class="num">03</span></span>
-        <h3 class="o1"><span class="nw">一生のお付き合いを</span><span class="nw">約束します。</span></h3><!-- docx§3原文 -->
-        <p class="oath__quote o2"><span class="nw">「関係が良くなって、</span><span class="nw">深くなっていく」</span><small>― 小林社長</small></p>
-        <p class="oath__body o2">土地の仕入れから分譲、設計、施工、アフターまで、一貫して自社で行っています。窓口がひとつだから、建てたあとの小さな相談にも応え続けられます。蛇口の水漏れから畳の交換まで、日常の困りごともご相談ください。</p>
-        <a class="oath__more o2" href="kodawari.html#after">保証とアフターを見る<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-  </article>
-</section>
-
-<!-- 会社概要 -->
-<section class="prof" id="about">
-  <div class="wrap spine">
-    <div class="prof__grid">
-      <div class="prof__side rv">
-        <div class="shead" style="padding-top:0">
-          <span class="eyebrow">Profile ／ 会社概要</span>
-          <h2>会社概要</h2>
-        </div>
-        <p>記載の内容は変更となる場合があります。</p>
-      </div>
-      <dl class="rv">
-        <div class="prow"><dt>商号</dt><dd class="fx">株式会社やまと不動産</dd></div>
-        <div class="prow"><dt>創立</dt><dd class="fx"><span class="num">2011年11月30日</span><small>今年で創業15年目です。</small></dd></div>
-        <div class="prow"><dt>資本金</dt><dd class="fx"><span class="num">900万円</span></dd></div>
-        <div class="prow"><dt>代表者</dt><dd class="fx">代表取締役会長　古谷 泰彦<br>代表取締役社長　小林 敬昌</dd></div>
-        <div class="prow"><dt>本社所在地</dt><dd class="fx">〒630-8115　奈良県奈良市大宮町<span style="display:inline-block;white-space:nowrap">1丁目6番21</span><small>TEL <span class="num">0742-36-1123</span> ／ FAX <span class="num">0742-36-1888</span></small></dd></div>
-        <div class="prow"><dt>宅地建物<span style="display:inline-block;white-space:nowrap">取引業免許</span></dt><dd class="fx">国土交通大臣（1）<span class="num">第10516号</span><small>複数の都道府県に事務所を置く会社に交付される免許です。</small></dd></div>
-        <div class="prow"><dt>事業内容</dt><dd class="fx">宅地分譲・住宅建築・宅地造成・住宅リフォーム・不動産買取り・賃貸収益事業<span style="display:inline-block;white-space:nowrap">　など</span><small>土地探しから建物、建てたあとまで一社で完結します。</small></dd></div>
-        <div class="prow"><dt>主要取引銀行</dt><dd class="fx">大和信用金庫・奈良中央信用金庫・京都中央信用金庫・関西みらい銀行・奈良信用金庫・京都銀行・紀陽銀行・南都銀行・りそな銀行</dd></div>
-        <div class="prow"><dt>関連会社</dt><dd class="fx">やまとグローバル開発・<span style="display:inline-block;white-space:nowrap">やまと総合技建</span></dd></div>
-        <div class="prow"><dt>営業時間</dt><dd class="fx"><span class="num">9:00〜19:00</span>（定休日：<span style="display:inline-block;white-space:nowrap">火曜・水曜）</span></dd></div>
-      </dl>
-    </div>
-  </div>
-</section>
-
-<!-- アクセス -->
-<section id="access">
-  <div class="wrap spine">
-    <div class="shead rv">
-      <span class="eyebrow">Offices ／ アクセス</span>
-      <h2><span class="nw">本社と京都支店で、</span><span class="nw">ご相談いただけます。</span></h2>
-    </div>
-    <div class="offices">
-      <div class="office rv">
-        <h3><span>Head Office</span>本社（奈良）</h3>
-        <div class="orow"><b>住所</b><span>〒630-8115　奈良県奈良市大宮町1丁目6番21</span></div>
-        <div class="orow"><b>電車</b><span>JR「奈良駅」から5分／近鉄「近鉄奈良駅」から10分</span></div>
-        <div class="orow"><b>お車</b><span>駐車場10台ございます。</span></div>
-        <span class="office__tel"><span class="num">0742-36-1123</span><small>受付 9:00〜19:00｜定休日：火曜・水曜</small></span>
-      </div>
-      <div class="office rv">
-        <h3><span>Kyoto Branch</span>京都支店（宇治）</h3>
-        <div class="orow"><b>住所</b><span>京都府宇治市小倉町西山67-5</span></div>
-        <div class="orow"><b>電車</b><span>近鉄京都線「小倉駅」から5分／JR奈良線「JR小倉駅」から5分</span></div>
-        <div class="orow"><b>お車</b><span>駐車場5台ございます。</span></div>
-        <span class="office__tel"><span class="num">0774-25-1123</span><small>FAX <span class="num">0774-25-3131</span></small></span>
-      </div>
-    </div>
-    <div class="accmap rv"><div id="map" aria-label="本社と京都支店の地図"></div></div>
-    <p class="acc__note rv">京都・宇治方面の土地や家づくりのご相談は、京都支店でも承ります。</p>
-  </div>
-</section>
-
-<!-- 締め -->
-<section class="close" id="closing">
-  <div class="close__in">
-    <span class="close__k">Contact</span>
-    <h2>一度、お会いしませんか。</h2>
-    <p>約束のとおりの会社かどうかは、実際に話してみるのがいちばん確かです。モデルハウス「やまとランド」でも、大宮町の本社でも、<span style="display:inline-block;white-space:nowrap">お待ちしています。</span></p>
-    <span class="close__spine" aria-hidden="true"></span>
-    <span class="close__btnw"><a class="close__btn" href="contact.html?type=reserve">来場のご予約<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
-    <p class="close__sub">フォームでのお問い合わせは<a href="contact.html">こちら</a>／お電話は <a href="tel:0742361123"><span class="num">0742-36-1123</span></a><span style="display:inline-block;white-space:nowrap"> へどうぞ。</span></p>
-  </div>
-</section>
-
+<main id="company-main" class="cp-a"><section class="cp-intro" id="hero"><div><p class="cp-en">ABOUT YAMATO</p><h1>会社案内</h1><p class="cp-lead">2011年から、奈良で家づくりを。</p><p>本社は奈良市大宮町、支店は京都・宇治。<br>土地の分譲から設計、施工、アフターまでを自社で行っています。</p></div><figure class=""><img src="assets/company/hero_morning.jpg" width="1920" height="1280" alt="やまと不動産が建てた家のリビング" loading="lazy"><figcaption>やまと不動産の施工写真</figcaption></figure></section><nav class="cp-nav" aria-label="会社案内の目次"><a href="#about">会社概要</a><a href="#access">アクセス</a><a href="#creed">信条</a><a href="#promises">私たちの約束</a></nav><section class="cp-section cp-profile" id="about"><div class="cp-sectiontitle"><p class="cp-en">COMPANY PROFILE</p><h2>会社概要</h2><p>奈良と京都南部を拠点に、<br>土地と住まいをご案内しています。</p></div><div><dl class="cp-facts"><div><dt>商号</dt><dd>株式会社やまと不動産</dd></div><div><dt>創立</dt><dd>2011年11月30日</dd></div><div><dt>資本金</dt><dd>900万円</dd></div><div><dt>代表者</dt><dd>代表取締役会長　古谷 泰彦<br>代表取締役社長　小林 敬昌</dd></div><div><dt>本社所在地</dt><dd>〒630-8115　奈良県奈良市大宮町1丁目6番21<br>TEL 0742-36-1123 ／ FAX 0742-36-1888</dd></div><div><dt>宅地建物取引業免許</dt><dd>国土交通大臣（1）第10516号<br>複数の都道府県に事務所を置く会社に交付される免許です。</dd></div><div><dt>事業内容</dt><dd>宅地分譲・住宅建築・宅地造成・住宅リフォーム・不動産買取り・賃貸収益事業　など<br>土地探しから建物、建てたあとまで一社で完結します。</dd></div><div><dt>主要取引銀行</dt><dd>大和信用金庫・奈良中央信用金庫・京都中央信用金庫・関西みらい銀行・奈良信用金庫・京都銀行・紀陽銀行・南都銀行・りそな銀行</dd></div><div><dt>関連会社</dt><dd>やまとグローバル開発・やまと総合技建</dd></div><div><dt>営業時間</dt><dd>9:00〜19:00（定休日：火曜・水曜）</dd></div></dl><p class="cp-note">記載の内容は変更となる場合があります。</p></div></section><section class="cp-section" id="access"><div class="cp-sectiontitle"><p class="cp-en">OFFICES & ACCESS</p><h2>本社・京都支店へのアクセス</h2><p>本社と京都支店で、ご相談いただけます。</p></div><div class="cp-offices"><article><p class="cp-en">HEAD OFFICE</p><h3>本社（奈良）</h3><dl><div><dt>住所</dt><dd>〒630-8115　奈良県奈良市大宮町1丁目6番21</dd></div><div><dt>電車</dt><dd>JR「奈良駅」から5分／近鉄「近鉄奈良駅」から10分</dd></div><div><dt>お車</dt><dd>駐車場10台ございます。</dd></div></dl><a class="cp-tel" href="tel:0742361123">0742-36-1123</a><p class="cp-note">受付 9:00〜19:00｜定休日：火曜・水曜</p><button class="cp-mapbutton" type="button" data-office="0">本社を地図で見る <span aria-hidden="true">↗</span></button></article><article><p class="cp-en">KYOTO BRANCH</p><h3>京都支店（宇治）</h3><dl><div><dt>住所</dt><dd>京都府宇治市小倉町西山67-5</dd></div><div><dt>電車</dt><dd>近鉄京都線「小倉駅」から5分／JR奈良線「JR小倉駅」から5分</dd></div><div><dt>お車</dt><dd>駐車場5台ございます。</dd></div></dl><a class="cp-tel" href="tel:0774251123">0774-25-1123</a><p class="cp-note">FAX 0774-25-3131</p><button class="cp-mapbutton" type="button" data-office="1">京都支店を地図で見る <span aria-hidden="true">↗</span></button></article></div><div class="cp-mapwrap" id="office-map"><div class="cp-maptools"><button type="button" data-office="0">本社を表示</button><button type="button" data-office="1">京都支店を表示</button><button type="button" data-office="all" aria-pressed="true">2拠点を表示</button><span id="map-status" aria-live="polite">2拠点を表示しています</span></div><div id="map" role="region" aria-label="本社と京都支店の地図"></div><p class="cp-note" id="map-error" hidden>地図を表示できませんでした。各拠点の住所とお電話をご確認ください。</p></div><p class="cp-note">京都・宇治方面の土地や家づくりのご相談は、京都支店でも承ります。</p></section><section class="cp-section cp-creed" id="creed"><div><p class="cp-en">OUR CREED ／ 信条</p><h2>建てたときだけではなく、<br>暮らしてから、<br>もっと好きになる家を。</h2></div><details><summary>信条の全文を読む</summary><div class="cp-creedbody"><p>やまと不動産が、ずっと大切にしていることがあります。</p><p>それは、家を見たときに「この金額で、ここまでできるんだ」と、少し驚いてもらえること。</p><p>モデルハウスで心惹かれた設備も、毎日の暮らしを考えた間取りも、あとから追加費用を重ねて、ようやく手に入るものにはしたくありません。</p><p>いいと思うものは、できるだけ最初から。私たちは、それを「標準」にしています。</p><p>「この予算では、理想の家は難しいかもしれない」</p><p>そう思っている方にこそ、知ってほしいのです。</p><p>諦めなくてもいいこと。その予算の中でも、もっと心地よく、もっと好きになれる家はつくれるということを。</p><p>家は、完成した日がいちばん大切なのではありません。</p><p>朝の光が差し込む洗面。夜になると、間接照明が石壁をやわらかく照らすリビング。木の格子扉を開ける、何気ない毎日。</p><p>そんな小さな景色のひとつひとつが、そこで暮らす家族の「楽しい毎日」になっていく。</p><p>私たちは、そこまで想像しながら、一軒ずつ家を設計しています。</p><p>そして5年、10年と暮らしたその先にも、</p><p>「やまと不動産にお願いして、よかった」</p><p>そう言ってもらえる家でありたい。</p><p>建てたときだけではなく、暮らしてから、もっと好きになる家を。</p><p>それが、やまと不動産の家づくりです。</p><p>株式会社やまと不動産</p><figure class="cp-creedphoto"><img src="assets/company/msg_stairs.jpg" width="933" height="1400" alt="やまとの家の階段。上階からの光が差し込む" loading="lazy"><figcaption>やまと不動産の施工写真</figcaption></figure></div></details></section><section class="cp-section" id="promises"><div class="cp-sectiontitle"><p class="cp-en">THREE PROMISES</p><h2>私たちの約束</h2><p>すべてのお客様と交わす三つの約束です。</p></div><article class="cp-promise"><figure class=""><img src="assets/company/band_01_exterior.jpg" width="1600" height="1066" alt="やまとの家の外観" loading="lazy"><figcaption>やまと不動産の施工写真</figcaption></figure><div><span class="cp-number">01</span><h3><span class="cp-phrase">お客様に合わないと</span><span class="cp-phrase">判断したときは、</span><br>売らないと約束します。</h3><blockquote>「パンと見せたものと、値段が一致する」<br>― 小林社長</blockquote><p>無理に契約をお勧めすることはありません。その土地、その間取り、その予算が本当に合っているのか。メリットだけでなくデメリットも正直にお伝えして、最善の選択を一緒に考えます。反響のあった土地に固執せず、もっと合う土地があれば別の案をご提案します。</p><a class="cp-textlink" href="kodawari.html#price">価格の正直な中身を見る ↗</a></div></article><article class="cp-promise"><figure class=""><img src="assets/company/band_02_void.jpg" width="1600" height="1066" alt="やまとの家の吹き抜け" loading="lazy"><figcaption>やまと不動産の施工写真</figcaption></figure><div><span class="cp-number">02</span><h3>理想を超えた、自慢の住まいを約束します。</h3><blockquote>「こんなんで建てんの？っていう驚きを、提供したい」<br>― 小林社長</blockquote><p>SNSやモデルハウスで見つけた理想を、そのまま形にするだけでは終わらせません。設計士が最初のヒアリングから関わり、複数の間取り案を検討したうえで、暮らしに合った最適な案をご提案します。</p><a class="cp-textlink" href="kodawari.html#design">設計検討の裏側を見る ↗</a></div></article><article class="cp-promise"><figure class=""><img src="assets/company/band_03_ldk.jpg" width="1600" height="1066" alt="やまとの家のLDK" loading="lazy"><figcaption>やまと不動産の施工写真</figcaption></figure><div><span class="cp-number">03</span><h3>一生のお付き合いを約束します。</h3><blockquote>「関係が良くなって、深くなっていく」<br>― 小林社長</blockquote><p>土地の仕入れから分譲、設計、施工、アフターまで、一貫して自社で行っています。窓口がひとつだから、建てたあとの小さな相談にも応え続けられます。蛇口の水漏れから畳の交換まで、日常の困りごともご相談ください。</p><a class="cp-textlink" href="kodawari.html#after">保証とアフターを見る ↗</a></div></article></section><section class="cp-section cp-contact" id="closing"><div><p class="cp-en">CONTACT</p><h2>家づくりのご相談</h2><p>モデルハウス「やまとランド」でも、<br>大宮町の本社でも、お待ちしています。</p></div><div><a class="cp-book" href="tel:0742361123">電話で予約・相談　0742-36-1123</a><p class="cp-note">9:00〜19:00｜火曜・水曜定休</p><p class="cp-note">Web受付は準備中です。ご予約・ご相談はお電話で承ります。</p><a class="cp-textlink" href="contact.html?type=reserve">来場のご予約について ↗</a><a class="cp-textlink" href="contact.html">お問い合わせのご案内 ↗</a></div></section></main>
 <!-- 奥付 -->
 <footer class="colo">
   <div class="colo__in">
@@ -771,94 +554,28 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<script>(function(){var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;var positions=[[34.684406,135.818039],[34.889893,135.782043]];var labels=['本社（奈良）','京都支店'];var map;if(window.L){map=L.map('map',{zoomControl:true,attributionControl:true,minZoom:9,maxZoom:17,dragging:fine,scrollWheelZoom:false,touchZoom:true});var tiles=L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',{attribution:'<a href="https://maps.gsi.go.jp/development/ichiran.html">地理院タイル</a>',maxZoom:17,keepBuffer:2});tiles.on('tileerror',function(){document.getElementById('map-error').hidden=false;});tiles.addTo(map);positions.forEach(function(ll,i){var icon=L.divIcon({className:'',html:'<span class="rpin"><i></i><em>'+labels[i]+'</em></span>',iconSize:[0,0],iconAnchor:[0,0]});L.marker(ll,{icon:icon}).addTo(map);});map.fitBounds(L.latLngBounds(positions),{padding:[56,56]});document.querySelectorAll('[data-office]').forEach(function(b){b.addEventListener('click',function(){var key=b.dataset.office;document.querySelectorAll('.cp-maptools button').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.office===key));});if(key==='all'){map.fitBounds(L.latLngBounds(positions),{padding:[56,56],animate:!reduce});}else{map.setView(positions[Number(key)],16,{animate:!reduce});}document.getElementById('map-status').textContent=key==='all'?'2拠点を表示しています':labels[Number(key)]+'を表示しています';document.getElementById('office-map').scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});});});window.addEventListener('resize',function(){map.invalidateSize();},{passive:true});}else{document.getElementById('map-error').hidden=false;document.getElementById('map-status').textContent='地図を読み込めませんでした。住所をご確認ください。';document.querySelectorAll('[data-office]').forEach(function(b){b.disabled=true;});}var cv=document.getElementById('stickycv');window.addEventListener('scroll',function(){var on=scrollY>innerHeight*.7;cv.classList.toggle('is-show',on);cv.setAttribute('aria-hidden',on?'false':'true');},{passive:true});})();</script>
 <script>
 (function(){
   var d=document;
-  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
-  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
-
-  /* ヒーロー（初回のみ・以後動かない） */
-  var hero=d.getElementById('hero');
-  requestAnimationFrame(function(){ requestAnimationFrame(function(){ hero.classList.add('is-hin'); }); });
-
-  /* 静かに、灯る（IOは一度きり） */
-  if('IntersectionObserver' in window && !reduce){
-    var io=new IntersectionObserver(function(es){
-      es.forEach(function(e){
-        if(!e.isIntersecting) return;
-        e.target.classList.add('is-in');
-        io.unobserve(e.target);
-      });
-    },{threshold:.25,rootMargin:'0px 0px -12% 0px'});
-    d.querySelectorAll('.rv,.rvf,.spine,.oath').forEach(function(x){ io.observe(x); });
-
-    /* 概要表: 器→事実の追い焼き（40ms時差） */
-    var prof=d.getElementById('about');
-    new IntersectionObserver(function(es,o){
-      if(!es[0].isIntersecting) return;
-      prof.querySelectorAll('.prow .fx').forEach(function(c,i){ c.style.transitionDelay=(.25 + i*0.04)+'s'; });
-      prof.classList.add('is-fx');
-      o.disconnect();
-    },{threshold:.2}).observe(prof);
-
-    /* 署名が書き上がる */
-    var msg=d.querySelector('.msg');
-    new IntersectionObserver(function(es,o){
-      if(!es[0].isIntersecting) return;
-      msg.classList.add('is-sign'); o.disconnect();
-    },{threshold:.6}).observe(d.querySelector('.msg__sign'));
-
-    /* 締め */
-    var close=d.getElementById('closing');
-    new IntersectionObserver(function(es,o){
-      if(!es[0].isIntersecting) return;
-      close.classList.add('is-in'); o.disconnect();
-    },{threshold:.35}).observe(close);
-  } else {
-    d.querySelectorAll('.rv,.rvf,.spine,.oath,.close').forEach(function(x){ x.classList.add('is-in'); });
-    d.querySelector('.msg').classList.add('is-sign');
-    d.getElementById('about').classList.add('is-fx');
-  }
-
-  /* 地図（2拠点・即時初期化＝model.html方式） */
-  var HQ=[34.684406,135.818039], KY=[34.889893,135.782043];
-  var map=null;
-  if(window.L){
-    map=L.map('map',{zoomControl:true,attributionControl:true,
-      minZoom:9,maxZoom:17,dragging:fine,scrollWheelZoom:false,touchZoom:true});
-    L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',{
-      attribution:'<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>',
-      maxZoom:17,keepBuffer:2}).addTo(map);
-    function pin(ll,label){
-      var ic=L.divIcon({className:'',html:'<span class="rpin"><i></i><em>'+label+'</em></span>',iconSize:[0,0],iconAnchor:[0,0]});
-      L.marker(ll,{icon:ic}).addTo(map);
-    }
-    pin(HQ,'本社（奈良）'); pin(KY,'京都支店');
-    map.fitBounds(L.latLngBounds([HQ,KY]),{padding:[56,56]});
-    window.addEventListener('resize',function(){ if(map){ map.invalidateSize(); } },{passive:true});
-  }
-
-  /* 追従CV（SP） */
-  var cv=d.getElementById('stickycv');
-  window.addEventListener('scroll',function(){
-    var on=window.scrollY>innerHeight*.7;
-    cv.classList.toggle('is-show',on); cv.setAttribute('aria-hidden',on?'false':'true');
-  },{passive:true});
-})();
-</script>
-<script>
-(function(){
-  var menu=document.getElementById('hdMenu'), burger=document.getElementById('hdBurger'),
-      closeBtn=document.getElementById('hdMenuClose'), lastFocus=null;
+  var menu=d.getElementById('hdMenu'), burger=d.getElementById('hdBurger'), closeBtn=d.getElementById('hdMenuClose'), lastFocus=null;
   if(!menu||!burger||!closeBtn) return;
-  function onKey(e){ if(e.key==='Escape') closeMenu(); }
-  function openMenu(){ lastFocus=document.activeElement; menu.classList.add('is-open');
-    menu.setAttribute('aria-hidden','false'); burger.setAttribute('aria-expanded','true');
-    document.body.classList.add('is-locked'); setTimeout(function(){closeBtn.focus();},60);
-    document.addEventListener('keydown',onKey); }
-  function closeMenu(){ menu.classList.remove('is-open'); menu.setAttribute('aria-hidden','true');
-    burger.setAttribute('aria-expanded','false'); document.body.classList.remove('is-locked');
-    document.removeEventListener('keydown',onKey); if(lastFocus)lastFocus.focus(); }
+  var FOCUSABLE='a[href],button:not([disabled]),input,select,textarea,[tabindex]:not([tabindex="-1"])';
+  function pageEls(){ return [d.getElementById('company-main'), d.querySelector('.hd'), d.querySelector('.colo'), d.getElementById('stickycv')]; }
+  function setInert(v){ pageEls().forEach(function(e){ if(e){ if(v) e.setAttribute('inert',''); else e.removeAttribute('inert'); } }); }
+  function onKey(e){
+    if(e.key==='Escape'){ closeMenu(); return; }
+    if(e.key==='Tab'){
+      var f=Array.prototype.slice.call(menu.querySelectorAll(FOCUSABLE)).filter(function(el){return el.offsetParent!==null;});
+      if(!f.length) return; var first=f[0], last=f[f.length-1];
+      if(e.shiftKey && d.activeElement===first){ e.preventDefault(); last.focus(); }
+      else if(!e.shiftKey && d.activeElement===last){ e.preventDefault(); first.focus(); }
+    }
+  }
+  function openMenu(){ lastFocus=burger; menu.classList.add('is-open'); menu.setAttribute('aria-hidden','false'); burger.setAttribute('aria-expanded','true');
+    d.body.classList.add('is-locked'); setInert(true); setTimeout(function(){if(menu.classList.contains('is-open'))closeBtn.focus();},60); d.addEventListener('keydown',onKey); }
+  function closeMenu(){ menu.classList.remove('is-open'); menu.setAttribute('aria-hidden','true'); burger.setAttribute('aria-expanded','false');
+    d.body.classList.remove('is-locked'); setInert(false); d.removeEventListener('keydown',onKey); if(lastFocus)lastFocus.focus(); }
   burger.addEventListener('click',openMenu);
   closeBtn.addEventListener('click',closeMenu);
   menu.querySelectorAll('a[href="#"]').forEach(function(a){ a.addEventListener('click',function(e){e.preventDefault();closeMenu();}); });
