@@ -114,6 +114,66 @@
       "source": "/lots.html",
       "destination": "/land-payment-study.html#/search",
       "permanent": false
+    },
+    {
+      "source": "/fv-preview-20260904.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/how-we-build-proof.html",
+      "destination": "/#homePromise",
+      "permanent": false
+    },
+    {
+      "source": "/index-770-preview.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/index-art-preview.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/index-brand-preview.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/index-material-preview.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/index-renewal-preview.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/kodawari-editorial-preview.html",
+      "destination": "/kodawari.html",
+      "permanent": false
+    },
+    {
+      "source": "/kodawari-redesign-preview.html",
+      "destination": "/kodawari.html",
+      "permanent": false
+    },
+    {
+      "source": "/lot.html",
+      "destination": "/land-payment-study.html#/search",
+      "permanent": false
+    },
+    {
+      "source": "/v1top/index.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/works-yellow-preview.html",
+      "destination": "/works.html",
+      "permanent": false
     }
   ]
 }

@@ -6,13 +6,15 @@ import { tmpdir } from 'node:os';
 
 const root = process.cwd();
 const entries = [
-  'index.html', 'kodawari.html', 'works.html', 'staff.html', 'v1top/index.html',
-  'index-770-preview.html', 'index-material-preview.html', 'works-yellow-preview.html',
-  'kodawari-editorial-preview.html', 'kodawari-redesign-preview.html',
-  'index-art-preview.html', 'index-brand-preview.html', 'index-renewal-preview.html',
-  'fv-preview-20260904.html', 'how-we-build-proof.html',
-  'lots-preview.html', 'move-to-nara-preview.html',
+  'index.html', 'kodawari.html', 'works.html', 'staff.html', 'move-to-nara-preview.html',
 ];
+const routing = JSON.parse(readFileSync(resolve(root, 'vercel.json'), 'utf8'));
+// Vercel owns these URLs. Their obsolete HTML must not seed dependencies or be copied.
+const redirectedHtml = new Set((routing.redirects || [])
+  .map(({ source }) => source).filter(source => /^\/[^:*]+\.html$/.test(source))
+  .map(source => source.slice(1)));
+// Preserve existing asset URLs until dynamic/external consumers have been audited.
+const compatibilityAssets = JSON.parse(readFileSync(resolve(root, 'scripts/compatibility-runtime-assets.json'), 'utf8'));
 const server = new Set(['api/instagram.js', 'lib/instagram.cjs']);
 const files = new Set(), queue = [], missing = new Set();
 const contentExtensions = /\.(?:html|css|js|mjs|cjs|json|svg)$/i;
@@ -27,12 +29,17 @@ function add(value, base = root) {
   const path = relative(root, full);
   if (/^assets\/(?:stock_src|[^/]*_backup|fv_candidates)\//.test(path) || /(?:-source|-check)\.(?:png|jpe?g)$/.test(path)) throw Error(`Source artwork must not be published: ${path}`);
   if (path.startsWith('..') || path.split('/').some(p => p.startsWith('.'))) throw Error('Unsafe runtime path');
+  if (redirectedHtml.has(path)) return;
   if (!existsSync(full)) { missing.add(path); return; }
   if (!/^(?:assets\/|data\/|api\/|lib\/|v1top\/index\.html$|[^/]+\.html$)/.test(path)) throw Error(`Unexpected runtime path: ${path}`);
   if (!files.has(path)) { files.add(path); queue.push(path); }
 }
 entries.forEach(p => add(p));
 server.forEach(p => add(p));
+compatibilityAssets.forEach(p => {
+  if (!/^(?:assets|data)\//.test(p) || /\.html$/i.test(p)) throw Error(`Invalid compatibility asset: ${p}`);
+  add(p);
+});
 while (queue.length) {
   const path = queue.shift();
   if (!contentExtensions.test(path)) continue;
@@ -65,7 +72,7 @@ for (const path of [...files].sort()) {
 }
 // Use the same routing in Git builds and isolated deployment packages.
 const configuration = {
-  ...JSON.parse(readFileSync(resolve(root, 'vercel.json'), 'utf8')),
+  ...routing,
   buildCommand: null, outputDirectory: 'public',
 };
 writeFileSync(resolve(stage, 'vercel.json'), JSON.stringify(configuration, null, 2));
