@@ -1,0 +1,84 @@
+/* Post-journey only. #iju and its animation, header/footer/closing are untouched. */
+#train,#last-mile,#drive{color:#263a31}
+#train.section,#last-mile>.section,#drive.section{padding-block:56px}
+#train h2,#last-mile h2,#drive h2{font-size:30px;line-height:1.6}
+#train .eyebrow,#last-mile .eyebrow,#drive .eyebrow{margin-bottom:12px}
+#train .section-heading>p:not(.eyebrow),#last-mile .section-heading>p:not(.eyebrow),#drive .section-heading>p:not(.eyebrow){margin-top:12px;font-size:15px}
+#train .text-link{margin-top:12px;padding-block:9px;font-size:13px}
+#train{display:block}
+#train>.section-heading{display:grid;grid-template-columns:330px 1fr;gap:0 50px;align-items:start;margin-bottom:26px}
+#train>.section-heading>.eyebrow{grid-column:1;grid-row:1}
+#train>.section-heading>h2{grid-column:1;grid-row:2/4}
+#train>.section-heading>p:not(.eyebrow){grid-column:2;grid-row:1/3;margin-top:0}
+#train>.section-heading>.text-link{grid-column:2;grid-row:3;justify-self:start}
+#train .journey{display:grid;grid-template-columns:1fr 1.15fr;grid-template-rows:min-content 1fr;gap:0 56px;padding-top:24px}
+#train .travel-example{grid-column:1;grid-row:1;padding:0 0 18px;align-self:start}
+#train .travel-example h3{font-size:25px;line-height:1.6}
+#train .travel-time{font-size:44px}
+#train .travel-conditions{font-size:14px;line-height:1.85;margin-top:14px}
+#train .timetable{grid-column:1;grid-row:2;align-self:start;margin:0}
+#train .timetable summary{padding-block:14px;min-height:44px}
+#train .route-stations{grid-column:2;grid-row:1/3;padding:0 0 0 28px;border-left:1px solid #d3d7ce}
+#train .station-list{margin:16px 0 18px}
+#train .station-list li{gap:18px;padding-bottom:12px}
+#train .station-list li:last-child{padding-bottom:0}
+#train .station-code{width:42px;height:36px;font-size:12px;background:#f5f3ed}
+#train .station-list li.is-current .station-code{background:#263a31;color:#fff}
+#train .station-list li:not(:last-child)::after{left:20px;top:36px}
+#train .station-list h3{font-size:17px;line-height:1.5}
+#train .station-list p{font-size:13px;line-height:1.65;margin-top:3px}
+#train .route-stations>.note{font-size:12px;margin-bottom:8px}
+#train .external-link{font-size:13px;min-height:44px;padding-block:9px}
+#last-mile{background:#f5f3ed}
+#last-mile .section-heading{display:grid;grid-template-columns:330px 1fr;column-gap:50px;align-items:start}
+#last-mile .section-heading>.eyebrow{grid-column:1;grid-row:1}
+#last-mile .section-heading>h2{grid-column:1;grid-row:2}
+#last-mile .section-heading>p:not(.eyebrow){grid-column:2;grid-row:1/3;margin-top:0;padding-top:4px}
+#last-mile .check-grid{gap:32px;margin-top:28px}
+#last-mile .check-grid article{padding-top:16px}
+#last-mile .check-number{margin-bottom:8px}
+#last-mile .check-grid h3{font-size:18px}
+#last-mile .check-grid p{font-size:14px;margin-top:10px;line-height:1.8}
+#last-mile .inline-cta{margin-top:28px;padding-top:24px}
+#drive .drive-grid{margin-top:26px;gap:28px}
+#drive .drive-card{padding:22px 24px;border:0;border-top:1px solid #bac6b5;background:#fafbf8}
+#drive .drive-card h3{font-size:26px;margin:10px 0}
+#drive .drive-card>p:last-child{max-width:36em}
+#drive .drive-note{margin-top:20px;max-width:none;display:grid;grid-template-columns:1.2fr 1fr;gap:35px;align-items:start}
+#drive .drive-note p{font-size:12px;line-height:1.85}
+#drive .drive-note a{max-width:none;min-height:44px}
+@media(min-width:801px){
+#train.section{padding-block:34px}
+#train>.section-heading{margin-bottom:18px}
+#train .journey{padding-top:20px}
+#train .station-list{margin:14px 0}
+#train .station-list li{padding-bottom:8px}
+#train .station-list li:last-child{padding-bottom:0}
+}
+@media(max-width:800px){
+#train.section,#last-mile>.section,#drive.section{padding-block:38px}
+#train h2,#last-mile h2,#drive h2{font-size:27px;line-height:1.6}
+#train>.section-heading,#last-mile .section-heading{display:block;margin-bottom:24px}
+#train .section-heading>p:not(.eyebrow),#last-mile .section-heading>p:not(.eyebrow),#drive .section-heading>p:not(.eyebrow){font-size:14px;margin-top:12px;padding-top:0}
+#train .journey{display:block;padding-top:20px}
+#train .travel-example h3{font-size:23px}
+#train .travel-conditions{font-size:13px;line-height:1.85}
+#train .route-stations{border-left:0;padding:0;margin-top:24px}
+#train .station-list{margin:14px 0 18px}
+#train .station-list li{gap:16px;padding-bottom:12px}
+#train .station-list h3{font-size:17px}
+#train .station-list p{font-size:13px}
+#train .external-link{font-size:12px}
+#last-mile .check-grid{gap:18px;margin-top:24px}
+#last-mile .check-grid article{padding-top:14px}
+#last-mile .check-grid h3{font-size:17px}
+#last-mile .check-number{margin-bottom:5px}
+#last-mile .check-grid p{font-size:14px;margin-top:8px}
+#last-mile .inline-cta{margin-top:24px;padding-top:20px}
+#last-mile .inline-cta .button{margin-top:18px}
+#drive .drive-grid{margin-top:22px;gap:18px}
+#drive .drive-card{padding:18px 20px}
+#drive .drive-card h3{font-size:24px}
+#drive .drive-note{display:block;margin-top:20px}
+#drive .drive-note a{margin-top:10px}
+}
