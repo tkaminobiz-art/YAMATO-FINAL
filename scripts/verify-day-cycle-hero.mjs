@@ -20,7 +20,9 @@ export function verifyDayCycleHero(html){
   assert(hero.includes(path)&&existsSync(path),`Missing approved FV media: ${path}`);
  }
  for(const text of ['2026年7月10日現在','data-built-count="770"','href="#homePromise"'])assert(hero.includes(text),`Missing FV evidence or reading route: ${text}`);
- assert(html.includes('href="model.html">モデルハウスを見る')&&html.includes('href="kodawari.html">家づくりの中身を見る'),'Retain both house-promise destinations');
+ const promise=html.match(/<section\b[^>]*id="homePromise"[\s\S]*?<\/section>/)?.[0];
+ assert(promise&&!/<a\b/.test(promise),'Approved Promise has no CTA links');
+ assert(promise.includes('家族のために、')&&promise.includes('建てるように。'),'Retain adopted Promise headline');
  const js=readFileSync(player,'utf8');
  for(const capability of ['navigator.connection?.saveData','prefers-reduced-motion','visibilitychange','IntersectionObserver'])assert(js.includes(capability),`FV preference/lifecycle handler missing: ${capability}`);
  return {player:1,video:1,stills:6,loopSeconds:18,automatic:true,manualControls:0};

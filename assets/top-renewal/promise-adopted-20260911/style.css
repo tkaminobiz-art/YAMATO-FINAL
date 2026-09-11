@@ -1,0 +1,41 @@
+/* Approved GPT Image 2.5 A composition, original photographs, live approved copy. */
+#homePromise.pr26{position:relative;isolation:isolate;overflow:hidden;padding:34px 0 36px;background:#faf8f2;color:#303329;scroll-margin-top:0;font-family:"Shippori Mincho","Hiragino Mincho ProN",serif}
+#homePromise.pr26::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('../770-editorial/cotton-paper-960.webp') center/640px auto;opacity:.18}
+#homePromise .pr26__inner{position:relative;z-index:1;max-width:1440px;padding:0 72px 0 92px;margin:0 auto}
+#homePromise .pr26__upper,#homePromise .pr26__jobs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+#homePromise .pr26__number{margin:0 0 13px;padding-bottom:5px;border-bottom:1px solid #b2a788;color:#877342;font:400 12px/1.4 "Inter",sans-serif;letter-spacing:.2em}
+#homePromise .pr26__eyebrow{margin:0 0 8px;font-size:17px;line-height:1.55}
+#homePromise h1{margin:0;font-size:28px;font-weight:400;line-height:1.55;letter-spacing:.025em;color:#303329}
+#homePromise .pr26__intro{margin:12px 0 0;font-size:16px;line-height:1.85;letter-spacing:.01em}
+#homePromise .pr26__reason h2{margin:0 0 10px;font-size:24px;line-height:1.5;font-weight:400;letter-spacing:.025em;color:#303329}
+#homePromise .pr26__lead{margin:0 0 5px;font-size:17px;line-height:1.6}
+#homePromise .pr26__body{margin:0;font-size:16px;line-height:1.75;letter-spacing:.015em;overflow-wrap:normal;word-break:normal}
+#homePromise .pr26__condition,#homePromise .pr26__model{margin:7px 0 0;font-size:14px;line-height:1.7;letter-spacing:0}
+#homePromise .pr26__jobs{margin-top:22px;scroll-margin-top:0}
+#homePromise .gf-job{display:block;margin:0;padding:0;min-width:0}
+#homePromise .gf-job>*{grid-row:auto;grid-column:auto;order:initial}
+#homePromise .gf-job img{display:block;width:100%;height:auto;margin:0;aspect-ratio:1.85;object-fit:cover;object-position:50% 35%;border-radius:0}
+#homePromise .gf-job--2 img{object-position:50% 16%}
+#homePromise .gf-job--3 img{object-position:50% 40%}
+#homePromise .pr26__en{margin:10px 0 5px;padding:0;color:#5f6052;font:400 11px/1.5 "Shippori Mincho",serif;letter-spacing:.17em}
+#homePromise .gf-job h3{margin:0 0 7px;padding:0;font-size:22px;font-weight:400;line-height:1.5;color:#303329;letter-spacing:.015em}
+#homePromise .pr26__ornament{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+#homePromise .pr26__edge{position:absolute;left:0;top:0;width:16px;height:160px;background:#791b2b url('../visit-adopted-20260909/washi-texture-20260910.webp') center/240px;clip-path:polygon(0 0,94% 0,89% 8%,100% 17%,84% 29%,94% 40%,85% 52%,97% 64%,77% 78%,89% 90%,70% 100%,0 100%)}
+#homePromise .pr26__swallow{position:absolute;left:5px;top:23px;width:55px;height:auto;transform:scaleX(-1);opacity:.82}
+#homePromise .pr26__flower{position:absolute;left:-43px;top:97px;width:103px;height:auto;transform:rotate(-28deg);opacity:.55}
+@media(min-width:1001px) and (max-width:1279px){#homePromise .pr26__inner{padding-left:64px;padding-right:42px}#homePromise .pr26__upper,#homePromise .pr26__jobs{gap:28px}#homePromise .pr26__reason h2{font-size:22px}#homePromise .gf-job h3{font-size:20px}}
+@media(max-width:1000px){#homePromise.pr26{padding:38px 0 44px}#homePromise .pr26__inner{padding:0 40px;max-width:760px}#homePromise .pr26__upper,#homePromise .pr26__jobs{grid-template-columns:1fr;gap:28px}#homePromise .pr26__jobs{margin-top:32px;gap:30px}#homePromise .pr26__number{margin-bottom:12px}#homePromise .pr26__reason h2{font-size:23px}#homePromise .pr26__intro{font-size:17px;line-height:1.9}#homePromise .pr26__body{font-size:16px;line-height:1.85}#homePromise .pr26__condition,#homePromise .pr26__model{font-size:14px;line-height:1.8}#homePromise .gf-job img{aspect-ratio:1.5;object-position:50% 30%}#homePromise .gf-job h3{font-size:21px}#homePromise .pr26__swallow{width:37px;left:2px;top:15px}#homePromise .pr26__edge{width:9px;height:116px}#homePromise .pr26__flower{width:68px;left:-38px;top:72px}}
+@media(max-width:600px){#homePromise .pr26__inner{padding:0 24px 0 30px}#homePromise h1{font-size:27px}#homePromise .pr26__intro{font-size:16px}#homePromise .pr26__eyebrow{font-size:16px}#homePromise .pr26__number{font-size:11px}#homePromise .pr26__reason h2{font-size:22px}#homePromise .pr26__en{font-size:11px}#homePromise .gf-job h3{font-size:20px}}
+@media(max-width:359px){#homePromise .pr26__inner{padding:0 18px 0 26px}#homePromise h1{font-size:25px}#homePromise .pr26__reason h2{font-size:20px}#homePromise .gf-job h3{font-size:19px}}
+
+/* Fit the adopted compact composition without reducing body/condition sizes. */
+@media(min-width:1001px){#homePromise.pr26{padding-top:28px;padding-bottom:28px}#homePromise .pr26__inner{padding-left:80px;padding-right:24px}#homePromise .pr26__upper,#homePromise .pr26__jobs{gap:28px}#homePromise .pr26__number{margin-bottom:10px;padding-bottom:4px}#homePromise .pr26__reason h2{font-size:22px;line-height:1.45;margin-bottom:8px}#homePromise h1{line-height:1.45}#homePromise .pr26__body{line-height:1.7}#homePromise .pr26__intro{line-height:1.8}#homePromise .pr26__condition,#homePromise .pr26__model{line-height:1.65}#homePromise .pr26__jobs{margin-top:20px}#homePromise .gf-job img{aspect-ratio:1.7}#homePromise .pr26__en{margin-top:8px;margin-bottom:4px}#homePromise .gf-job h3{font-size:21px;line-height:1.5;margin-bottom:6px}}
+#homePromise .gf-job--1 img,#homePromise .gf-job--2 img{object-position:50% 0%}
+#homePromise .gf-job img{max-width:520px}
+@media(max-width:600px){#homePromise .pr26__swallow{left:-5px;width:29px}#homePromise .pr26__flower{left:-40px;width:60px}}
+
+@media(min-width:1001px){#homePromise .gf-job--2 img{object-position:50% 40%}}
+@media(max-width:1000px){#homePromise .gf-job img{aspect-ratio:auto}}
+
+#homePromise .pr26__mobile-break{display:none}
+@media(max-width:1000px){#homePromise .pr26__mobile-break{display:initial}}
