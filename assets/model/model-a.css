@@ -1,0 +1,127 @@
+#model-tour *{box-sizing:border-box}
+#model-tour{margin:0;color:#282823;background:#faf9f5;font:16px/1.9 "Noto Sans JP",sans-serif}
+#model-tour a{color:inherit;text-decoration:none}
+#model-tour a:focus-visible,#model-tour button:focus-visible{outline:3px solid #735b25;outline-offset:4px}
+#model-tour button{font:inherit;border:0;background:none;cursor:pointer}
+#model-tour img{display:block;width:100%;height:auto}
+#model-tour figure{margin:0}
+#model-tour figcaption{font-size:14px;line-height:1.7;padding-top:8px;color:#64615a}
+#model-tour h1,#model-tour h2{font-family:"Shippori Mincho",serif;font-weight:500;line-height:1.5;letter-spacing:.04em}
+#model-tour h1{font-size:36px;margin:12px 0 24px}
+#model-tour h1 small{display:block;font:14px/1.8 "Noto Sans JP",sans-serif;letter-spacing:.1em;margin-bottom:12px}
+#model-tour h2{font-size:28px;margin:10px 0 20px}
+#model-tour p{margin:0 0 20px}
+#model-tour .mh-eyebrow{font-size:12px;letter-spacing:.13em;color:#726f66}
+#model-tour .mh-note{font-size:14px;line-height:1.8;color:#666259}
+#model-tour .mh-book{background:#713638;color:#fff;padding:12px 24px;display:inline-flex;align-items:center;justify-content:space-between;gap:30px;font-size:15px;min-height:48px}
+#model-tour .mh-book span{font-size:19px}
+#model-tour .mh-hero{max-width:1440px;margin:auto;display:grid;grid-template-columns:35% 65%;min-height:580px}
+#model-tour .mh-hero-copy{padding:42px 9% 30px 12%;align-self:center}
+#model-tour .mh-hero>figure{align-self:stretch;display:flex;flex-direction:column;justify-content:center;padding-right:3.5%}
+#model-tour .mh-hero>figure img{aspect-ratio:1.5;object-fit:contain}
+#model-tour .mh-hero>figure figcaption{display:none}
+#model-tour .mh-hero p{line-height:1.8;margin-bottom:16px}
+#model-tour .mh-meta{font-size:14px;border-top:1px solid #d4d0c7;padding-top:15px;margin:18px 0}
+#model-tour .mh-room-index{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr);border-block:1px solid #d4d0c7;padding:16px 0;font-size:14px}
+#model-tour .mh-room-index a{padding:0 12px;border-right:1px solid #d4d0c7}
+#model-tour .mh-room-index a:last-child{border:0}
+#model-tour .mh-room-index span{color:#8b7770;font-size:12px;margin-right:6px}
+#model-tour .mh-vow{max-width:1160px;margin:70px auto 85px;display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start}
+#model-tour .mh-vow h2{margin:0;font-size:25px}
+#model-tour .mh-vow p{font-size:16px}
+#model-tour .mh-room{max-width:1248px;margin:0 auto 84px;display:grid;grid-template-columns:1fr 1fr;gap:0 50px}
+#model-tour .mh-room-heading{grid-column:1/-1;border-top:1px solid #d4d0c7;padding-top:25px;margin-bottom:20px}
+#model-tour .mh-room-heading h2{margin:6px 0 0}
+#model-tour .mh-photos{grid-column:1/-1;display:grid;grid-template-columns:2fr 1fr;gap:18px;align-items:start}
+#model-tour .mh-photos .mh-main-photo{grid-row:span 2}
+#model-tour .mh-photos img{width:100%;object-fit:contain}
+#model-tour .mh-room-copy{grid-column:1/-1;display:grid;grid-template-columns:1.3fr 1fr;gap:70px;margin-top:26px}
+#model-tour .mh-spec-line{font-size:14px;border-left:1px solid #c5b7a4;padding-left:24px}
+#model-tour .mh-spec-line span{display:block;color:#756753;font-size:12px;margin-bottom:6px}
+#model-tour .mh-room-2{grid-template-columns: .8fr 1.2fr}
+#model-tour .mh-room-2 .mh-room-heading{grid-column:1;border-top:0;align-self:end}
+#model-tour .mh-room-2 .mh-photos{grid-column:2;grid-row:1/span 2}
+#model-tour .mh-room-2 .mh-room-copy{grid-column:1;grid-row:2;display:block}
+#model-tour .mh-room-2 .mh-photos{grid-template-columns:1fr 1fr}
+#model-tour .mh-room-2 .mh-main-photo{grid-column:1/-1;grid-row:auto}
+#model-tour .mh-room-2 .mh-spec-line{margin-top:30px}
+#model-tour .mh-room-3{grid-template-columns:1.7fr 1fr}
+#model-tour .mh-room-3 .mh-room-heading{grid-column:2;grid-row:1;border:0;align-self:end}
+#model-tour .mh-room-3 .mh-photos{grid-column:1;grid-row:1/span 2;display:grid;grid-template-columns:1.25fr 1fr;align-items:center}
+#model-tour .mh-room-3 .mh-photos .mh-main-photo{grid-row:auto}
+#model-tour .mh-room-3 .mh-room-copy{grid-column:2;grid-row:2;display:block}
+#model-tour .mh-interlude{max-width:1100px;margin:0 auto 88px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+#model-tour .mh-room-4 .mh-photos{grid-template-columns:1.5fr 1fr  .65fr}
+#model-tour .mh-room-4 .mh-main-photo{grid-row:span 2}
+#model-tour .mh-room-4 .mh-detail-photo:last-child{grid-column:3;grid-row:1/span 2}
+#model-tour .mh-room-6 .mh-photos{grid-template-columns:1.5fr 1fr}
+#model-tour .mh-room-6 .mh-main-photo{grid-row:auto}
+#model-tour .mh-ledger{background:#eeece5;padding:55px max(calc((100vw - 1248px)/2),4%);display:grid;grid-template-columns:1fr 2fr;gap:50px}
+#model-tour .mh-ledger dl{display:grid;grid-template-columns:1fr 1fr;gap:0 35px;margin:0}
+#model-tour .mh-ledger dl>div{border-top:1px solid #cfcabf;padding:12px 0;display:grid;grid-template-columns:110px 1fr;gap:10px;font-size:14px}
+#model-tour .mh-ledger dd{margin:0;font-size:16px}
+#model-tour .mh-ledger dt{color:#696358}
+#model-tour .mh-ledger .mh-note{margin-top:20px}
+#model-tour .mh-access{max-width:1248px;margin:70px auto;display:grid;grid-template-columns:1fr 1.25fr;gap:70px}
+#model-tour .mh-access .mh-phone{display:block;font-size:26px;margin:10px 0 20px;letter-spacing:.04em}
+#model-tour .mh-access .mh-book{min-width:290px}
+#model-tour .mh-access .mh-note{margin-top:18px}
+#model-tour .mh-access #map{min-height:460px;z-index:0;border:1px solid #dedbd2}
+@media(max-width:800px){#model-tour .mh-hero{display:flex;flex-direction:column;padding:0;min-height:0}
+#model-tour .mh-hero-copy{display:block;width:100%;padding:25px 22px 20px}
+#model-tour h1{font-size:30px;margin:8px 0 14px}
+#model-tour h1 small{font-size:13px;margin:0}
+#model-tour .mh-hero-copy>p{font-size:16px;line-height:1.65}
+#model-tour .mh-hero-copy .mh-note{font-size:14px}
+#model-tour .mh-hero .mh-meta{margin:12px 0;font-size:14px;padding-top:12px}
+#model-tour .mh-hero-copy>.mh-book{display:none}
+#model-tour .mh-hero>figure{padding:0 18px}
+#model-tour .mh-hero>figure img{aspect-ratio:auto}
+#model-tour .mh-room-index{margin:22px 18px 0;grid-template-columns:repeat(2,1fr);row-gap:12px;font-size:13px;padding:14px 0}
+#model-tour .mh-room-index a:nth-child(2n){border:0}
+#model-tour .mh-room-index span{display:none}
+#model-tour .mh-vow{display:block;margin:42px 22px}
+#model-tour .mh-vow h2{font-size:23px;margin-bottom:20px}
+#model-tour .mh-room{display:flex;flex-direction:column;margin:0 18px 45px;gap:0}
+#model-tour .mh-room-heading{align-self:stretch;margin-bottom:17px;padding-top:22px;border-top:1px solid #d4d0c7}
+#model-tour .mh-room h2{font-size:24px}
+#model-tour .mh-photos,#model-tour .mh-room-2 .mh-photos,#model-tour .mh-room-4 .mh-photos,#model-tour .mh-room-6 .mh-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#model-tour .mh-photos .mh-main-photo,#model-tour .mh-room-4 .mh-main-photo{grid-column:1/-1!important;grid-row:auto!important}
+#model-tour .mh-photos .mh-detail-photo{grid-column:auto!important;grid-row:auto!important}
+#model-tour .mh-room-copy{display:block;margin-top:22px}
+#model-tour .mh-spec-line{padding-left:15px;margin:20px 0 0}
+#model-tour .mh-interlude{margin:0 18px 45px;gap:14px}
+#model-tour .mh-interlude figcaption{font-size:13px}
+#model-tour .mh-ledger{display:block;padding:36px 22px}
+#model-tour .mh-ledger h2{font-size:24px}
+#model-tour .mh-ledger dl{display:block}
+#model-tour .mh-ledger dl>div{grid-template-columns:100px 1fr;font-size:14px}
+#model-tour .mh-access{display:flex;flex-direction:column;margin:40px 22px;gap:25px}
+#model-tour .mh-access h2{font-size:24px}
+#model-tour .mh-access #map{min-height:310px}
+#model-tour .mh-access .mh-book{width:100%;min-width:0}}
+@media(max-width:800px){#model-tour .mh-hero{display:grid;grid-template-columns:1fr}
+#model-tour .mh-hero-copy{display:contents}
+#model-tour .mh-hero .mh-eyebrow{grid-row:1;margin:22px 22px 0}
+#model-tour .mh-hero h1{grid-row:2;margin:8px 22px 20px}
+#model-tour .mh-hero>figure{grid-row:3}
+#model-tour .mh-hero-copy>p{margin:16px 22px 0}
+#model-tour .mh-hero-copy>p:first-of-type{grid-row:4}
+#model-tour .mh-hero-copy>.mh-note{grid-row:5}
+#model-tour .mh-hero-copy>.mh-meta{grid-row:6;margin:16px 22px 0;padding-top:12px}}
+/* Local integration of selected A; shared navigation and footer retained. */
+html{scroll-padding-top:90px;scroll-behavior:smooth}
+body{background:#faf9f5}
+#model-tour{padding-top:var(--header-h)}
+#model-tour .mh-room,#model-tour .mh-vow,#model-tour .mh-interlude,#model-tour .mh-access{width:calc(100% - 48px)}
+#model-tour .mh-room-index a{min-height:44px;display:flex;align-items:center}
+#model-tour .mh-spec-link{display:inline-block;font-size:15px;text-decoration:underline;text-underline-offset:5px}
+#model-tour .mh-access #map{position:relative;inset:auto;height:460px}
+#model-tour .mh-access .leaflet-tile{width:256px!important;height:256px!important;max-width:none!important}
+#model-tour .mh-access .leaflet-container img{max-width:none}
+#model-tour [hidden]{display:none!important}
+#model-tour .mh-room-copy p{overflow-wrap:anywhere}
+#model-tour .mh-ledger dd{line-height:1.75}
+@media(max-width:900px){.colo__in{padding-bottom:calc(115px + env(safe-area-inset-bottom))}.stickycv{transform:none}.hd{gap:12px;padding:0 18px}.hd__brand{min-width:0;margin-right:auto}.hd__cta{padding:11px 12px;font-size:13px}.hd__back{display:none}}
+@media(max-width:800px){#model-tour .mh-room,#model-tour .mh-vow,#model-tour .mh-interlude,#model-tour .mh-access{width:auto}#model-tour .mh-room-index a{font-size:14px;line-height:1.6}#model-tour .mh-access #map{height:310px}.hd{gap:8px}.hd__jp{font-size:16px}.hd__mark{height:26px}.hd__cta{display:none}.hd__burger{margin-left:auto}#model-tour .mh-hero .mh-note{font-size:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
