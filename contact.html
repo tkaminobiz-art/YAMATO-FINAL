@@ -771,7 +771,7 @@
       });
     }else closeMenu(url.protocol==='tel:');
   });
-  window.addEventListener('pageshow',function(){closeMenu(false);});
+  window.addEventListener('pageshow',function(event){if(event.persisted)closeMenu(false);});
 })();
 </script>
 </body>
