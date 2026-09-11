@@ -8,7 +8,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
-<link rel="stylesheet" href="https://use.typekit.net/aym8vre.css">
+<script src="assets/site-fonts.js" defer></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   /* ============ 夕暮れの受付（contact.html 図面 v1）============
@@ -724,19 +724,54 @@
 <script>
 (function(){
   var menu=document.getElementById('hdMenu'), burger=document.getElementById('hdBurger'),
-      closeBtn=document.getElementById('hdMenuClose'), lastFocus=null;
+      closeBtn=document.getElementById('hdMenuClose'), background=[];
   if(!menu||!burger||!closeBtn) return;
-  function onKey(e){ if(e.key==='Escape') closeMenu(); }
-  function openMenu(){ lastFocus=document.activeElement; menu.classList.add('is-open');
+  function focusable(){
+    return Array.prototype.slice.call(menu.querySelectorAll('a[href],button,input,select,textarea,[tabindex]')).filter(function(el){
+      return el.tabIndex>=0 && !el.matches(':disabled') && el.getClientRects().length && getComputedStyle(el).visibility!=='hidden';
+    });
+  }
+  function onKey(e){
+    if(e.key==='Escape'){ e.preventDefault(); closeMenu(); return; }
+    if(e.key!=='Tab') return;
+    var items=focusable(), index=items.indexOf(document.activeElement);
+    e.preventDefault(); if(!items.length) return;
+    var next=index<0 ? (e.shiftKey ? items.length-1 : 0) : (index+(e.shiftKey ? -1 : 1)+items.length)%items.length;
+    items[next].focus();
+  }
+  function openMenu(){
+    if(menu.classList.contains('is-open')) return;
+    background=Array.prototype.slice.call(document.body.children).filter(function(el){return el!==menu && !/^(SCRIPT|STYLE|LINK)$/.test(el.tagName);}).map(function(el){
+      var entry={element:el,inert:el.inert}; el.inert=true; return entry;
+    });
+    menu.classList.add('is-open');
     menu.setAttribute('aria-hidden','false'); burger.setAttribute('aria-expanded','true');
-    document.body.classList.add('is-locked'); setTimeout(function(){closeBtn.focus();},60);
+    document.body.classList.add('is-locked'); closeBtn.focus({preventScroll:true});
     document.addEventListener('keydown',onKey); }
-  function closeMenu(){ menu.classList.remove('is-open'); menu.setAttribute('aria-hidden','true');
+  function closeMenu(restoreFocus){
+    if(!menu.classList.contains('is-open')) return;
+    menu.classList.remove('is-open'); menu.setAttribute('aria-hidden','true');
     burger.setAttribute('aria-expanded','false'); document.body.classList.remove('is-locked');
-    document.removeEventListener('keydown',onKey); if(lastFocus)lastFocus.focus(); }
+    background.forEach(function(entry){entry.element.inert=entry.inert;}); background=[];
+    document.removeEventListener('keydown',onKey); if(restoreFocus!==false)burger.focus({preventScroll:true}); }
   burger.addEventListener('click',openMenu);
-  closeBtn.addEventListener('click',closeMenu);
-  menu.querySelectorAll('a[href="#"]').forEach(function(a){ a.addEventListener('click',function(e){e.preventDefault();closeMenu();}); });
+  closeBtn.addEventListener('click',function(){closeMenu();});
+  menu.addEventListener('click',function(e){
+    var link=e.target.closest('a[href]'); if(!link) return;
+    if(link.getAttribute('href')==='#'){e.preventDefault();closeMenu();return;}
+    var url=new URL(link.href,location.href), samePage=url.origin===location.origin && url.pathname===location.pathname && url.search===location.search;
+    if(samePage && url.hash){
+      var target=document.getElementById(decodeURIComponent(url.hash.slice(1)));
+      closeMenu(false);
+      if(target) requestAnimationFrame(function(){
+        var temporary=!target.hasAttribute('tabindex');
+        if(temporary)target.setAttribute('tabindex','-1');
+        target.focus({preventScroll:true});
+        if(temporary)target.addEventListener('blur',function(){target.removeAttribute('tabindex');},{once:true});
+      });
+    }else closeMenu(url.protocol==='tel:');
+  });
+  window.addEventListener('pageshow',function(){closeMenu(false);});
 })();
 </script>
 </body>

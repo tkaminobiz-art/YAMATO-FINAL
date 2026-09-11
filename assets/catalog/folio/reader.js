@@ -15,7 +15,7 @@ add('comparison','comparison','商品比較',adoptedComparison);
 add('stedia','stedia','キッチン',open(equipment,'02 / キッチン',!m));
 if(m){equipment.features.forEach((f,i)=>add('stedia-'+(i+2),'stedia','キッチン',featurePage(equipment,'02 / キッチン',[f],'')));add('stedia-6','stedia','キッチン',head(equipment,'02 / キッチン','選択できる仕様')+equipment.introConditions+equipment.links+equipment.source);}
 else {add('stedia-2','stedia','キッチン',featurePage(equipment,'02 / キッチン',equipment.features.slice(0,2)));add('stedia-3','stedia','キッチン',featurePage(equipment,'02 / キッチン',equipment.features.slice(2)));}
-add('water-details','water-details','設備の補足',`<div class="a-supplement"><p class="folio-kicker">やまとの家 ／ 設備の補足<span>水まわり</span></p><h2 id="folioTitle">トイレと手洗いの仕様。</h2>${comparison.lead}<div class="a-table-scroll" tabindex="0" role="region" aria-label="トイレと手洗いの3商品比較"><table class="a-table a-detail-table"><colgroup><col class="a-label-col"><col><col><col></colgroup>${comparison.tableHead}<tbody>${comparison.rows.filter(r=>r.includes('data-spec-key="toilet-1f"')||r.includes('data-spec-key="handwash"')).join('')}</tbody></table></div>${comparison.conditions}${data[16].introConditions}${comparison.links}</div>`);
+add('water-details','water-details','設備の補足',`<div class="a-supplement"><p class="folio-kicker">やまとの家 ／ 設備の補足<span>水まわり</span></p><h2 id="folioTitle">トイレと手洗いの仕様。</h2>${comparison.lead}<div class="a-table-scroll" tabindex="0" role="region" aria-label="トイレと手洗いの3商品比較"><table class="a-table a-detail-table"><colgroup><col class="a-label-col"><col><col><col></colgroup>${comparison.tableHead}<tbody>${comparison.rows.filter(r=>r.includes('data-spec-key="toilet-1f"')||r.includes('data-spec-key="handwash"')).join('')}</tbody></table></div>${comparison.conditions}${comparison.links}</div>`);
 sheets=a;}
 const chapterNames=['家を選ぶ','キッチン','水まわり','内装','外装とスマート設備','構造と性能','設計と施工','保証と点検','仕様一覧','費用と相談'];
 function resolve(key){if(!key)return -1;if(key==='catalog-compare-water')key='comparison';let n=sheets.findIndex(s=>s.key===key);if(n>=0)return n;const aliases={introduction:'catalog-introduction',stedia:'catalog-stedia','water-details':'catalog-compare-water'};key=aliases[key]||key.split('--')[0];return sheets.findIndex(s=>s.unit===key);}
@@ -63,21 +63,70 @@ function make(){
   }
   flush();
  }
- measure.remove();sheets=out;
+ measure.remove();sheets=out.map(markReadingAnchors);
  toc.querySelectorAll(':scope > a,:scope > .full-toc-list').forEach(e=>e.remove());const list=document.createElement('div');list.className='full-toc-list';list.innerHTML='<a href="#cover">表紙</a><a href="#comparison">花・京・風を、ひと目で比較。</a>'+chapterNames.map((name,c)=>`<section><h3>${String(c+1).padStart(2,'0')} ${name}</h3>${fullData.filter(u=>u.chapter===c+1).map(u=>`<a href="#${u.id}">${u.title}<span>${String(u.num).padStart(2,'0')}</span></a>`).join('')}</section>`).join('')+'<a href="#price">サイト本編へ ↗</a>';toc.append(list);
 }
+
+// Reading anchors describe source content, so they survive changes in pagination.
+function family(sheet){return ['comparison','water-details'].includes(sheet.key)?sheet.key:sheet.unit;}
+function markReadingAnchors(sheet){
+ const dom=document.createElement('div');dom.innerHTML=sheet.html;
+ const nodes=[...dom.querySelectorAll('p,h3,h4,tr,figure,li')].filter(e=>!e.matches('.folio-kicker')&&!e.parentElement.closest('figure,tr,li'));
+ sheet.anchorIds=nodes.map(e=>{const source=e.tagName+'|'+e.textContent.replace(/\s+/g,' ').trim()+'|'+[...e.querySelectorAll('img')].map(i=>i.getAttribute('src')).join('|');let hash=2166136261;for(let i=0;i<source.length;i++)hash=Math.imul(hash^source.charCodeAt(i),16777619);return e.dataset.readingAnchor=(hash>>>0).toString(36)+'-'+source.length;});
+ sheet.html=dom.innerHTML;return sheet;
+}
+let readingPosition=null,rebuilding=false,resizeTimer,scrollFrame,restoreVersion=0;
+function captureReading(){
+ const sheet=sheets[current];if(!sheet)return {key:'cover'};
+ const nodes=[...content.querySelectorAll('[data-reading-anchor]')];
+ const top=80;const anchor=nodes.find(e=>{const r=e.getBoundingClientRect();return r.bottom>top&&r.top<innerHeight;})||nodes[0];
+ const rect=anchor?.getBoundingClientRect(),area=paper.getBoundingClientRect();
+ return {key:sheet.key,unit:sheet.unit,family:family(sheet),anchor:anchor?.dataset.readingAnchor,anchors:sheet.anchorIds,sourceIds:sheet.sourceIds,within:rect?Math.max(0,Math.min(1,(top-rect.top)/Math.max(1,rect.height))):0,y:rect?Math.max(top,rect.top):top,visible:area.bottom>top&&area.top<innerHeight};
+}
+function readingIndex(position){
+ if(!position||position.key==='cover')return -1;
+ const candidates=sheets.map((sheet,index)=>({sheet,index})).filter(({sheet})=>family(sheet)===position.family);
+ const anchored=candidates.filter(({sheet})=>sheet.anchorIds.includes(position.anchor));
+ if(anchored.length){anchored.sort((a,b)=>b.sheet.anchorIds.filter(id=>position.anchors?.includes(id)).length-a.sheet.anchorIds.filter(id=>position.anchors?.includes(id)).length);return anchored[0].index;}
+ const source=candidates.find(({sheet})=>sheet.sourceIds.some(id=>position.sourceIds?.includes(id)));
+ return source?.index??resolve(position.key);
+}
+function saveReading(){
+ if(rebuilding)return;readingPosition=captureReading();
+ const key=location.hash.slice(1);if(key==='cover'||resolve(key)>=0)history.replaceState({...history.state,folioReading:readingPosition},'');
+}
+function canonicalReading(){
+ const key=location.hash.slice(1);if(key==='cover'||resolve(key)>=0)history.replaceState({...history.state,folioReading:readingPosition},'','#'+(sheets[current]?.key||'cover'));
+}
+function restoreReading(position){
+ render();readingPosition=position;canonicalReading();const version=++restoreVersion;requestAnimationFrame(()=>requestAnimationFrame(()=>{
+  if(version!==restoreVersion)return;
+  if(position?.visible&&position.anchor){const anchor=[...content.querySelectorAll('[data-reading-anchor]')].find(e=>e.dataset.readingAnchor===position.anchor);if(anchor){const r=anchor.getBoundingClientRect();window.scrollBy({top:r.top+r.height*position.within-position.y,behavior:'instant'});}}
+  rebuilding=false;readingPosition=captureReading();canonicalReading();
+ }));
+}
+function rebuild(){const position=readingPosition||captureReading();rebuilding=true;make();current=readingIndex(position);restoreReading(position);}
+function scheduleRebuild(){if(!rebuilding)readingPosition=readingPosition||captureReading();rebuilding=true;clearTimeout(resizeTimer);resizeTimer=setTimeout(rebuild,180);}
+window.addEventListener('scroll',()=>{cancelAnimationFrame(scrollFrame);scrollFrame=requestAnimationFrame(saveReading);},{passive:true});
 
 function fixLinks(){content.querySelectorAll('button[data-cr-zoom]').forEach(b=>b.setAttribute('aria-label','写真を拡大'));content.querySelectorAll('.cr-photo-static').forEach(s=>{if(!s.querySelector('img'))return;const b=document.createElement('button');b.type='button';b.className='cr-photo-button';b.dataset.crZoom='';b.setAttribute('aria-label','図版を拡大');b.innerHTML=s.innerHTML;s.replaceWith(b);});}
 
 function fit(){root.classList.remove('flow-reading');if(current<0)return;requestAnimationFrame(()=>{const r=content.getBoundingClientRect();const lowest=Math.max(...[...content.querySelectorAll('*')].filter(e=>e.getClientRects().length).map(e=>e.getBoundingClientRect().bottom));const excess=lowest>r.bottom+2;if(excess){root.classList.add('flow-reading');}root.dataset.flowReason=excess?'内容の可読性を優先した通常スクロール':'';});}
 function render(focus=false){const reading=current>=0;coverScene.hidden=reading;paperScene.hidden=!reading;paperScene.classList.toggle('is-active',reading);root.classList.remove('flow-reading');document.getElementById('back').disabled=current<0;document.getElementById('forward').disabled=current===sheets.length-1;document.getElementById('forward').textContent=reading?'次へ →':'開く →';document.querySelector('.folio-position').textContent=reading?`${String(current+1).padStart(2,'0')} / ${sheets.length} · ${sheets[current].title}`:'花鳥風月';if(reading){video.pause();content.innerHTML=sheets[current].html;document.getElementById('folioNumber').textContent=String(current+1).padStart(2,'0');fixLinks();content.querySelectorAll('img').forEach(i=>{i.loading='eager';i.addEventListener('load',fit,{once:true});});fit();if(focus)paper.focus({preventScroll:true});}toc.querySelectorAll('a').forEach(a=>a.hash==='#'+(reading?sheets[current].unit:'cover')?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));}
-function go(to,push=true){current=typeof to==='string'?resolve(to):Math.max(-1,Math.min(sheets.length-1,to));if(push)history.pushState({},'','#'+(sheets[current]?.key||'cover'));render(true);root.scrollIntoView({block:'start',behavior:'instant'});}
+function go(to,push=true){
+ if(push)saveReading();current=typeof to==='string'?resolve(to):Math.max(-1,Math.min(sheets.length-1,to));
+ if(push)history.pushState({},'','#'+(sheets[current]?.key||'cover'));
+ render(true);root.scrollIntoView({block:'start',behavior:'instant'});readingPosition=captureReading();requestAnimationFrame(()=>requestAnimationFrame(saveReading));
+}
 function openDialog(d,b){opener=b;d.showModal();d.querySelector('[data-close]').focus();}for(const d of [toc,zoom]){d.querySelector('[data-close]').onclick=()=>d.close();d.addEventListener('close',()=>{opener?.focus({preventScroll:true});});d.addEventListener('click',e=>{if(e.target===d&&e.offsetX<0)d.close();});}
 document.getElementById('contents').onclick=e=>openDialog(toc,e.currentTarget);document.getElementById('back').onclick=()=>go(current-1);document.getElementById('forward').onclick=()=>go(current+1);
 document.addEventListener('click',e=>{const a=e.target.closest('a');if(a&&(a.getAttribute('href')==='#cover'||a.getAttribute('href')==='#top'||resolve(a.getAttribute('href')?.slice(1))>=0)&&!e.ctrlKey&&!e.metaKey){e.preventDefault();if(toc.open){opener=null;toc.close();}go(a.hash.slice(1));}else if(a&&toc.contains(a))toc.close();const z=e.target.closest('[data-cr-zoom]');if(z){const image=z.querySelector('img'),dest=zoom.querySelector('img');dest.src=image.src;dest.alt=image.alt;zoom.querySelector('p').textContent=z.closest('figure').querySelector('figcaption').textContent;openDialog(zoom,z);}});
 root.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight'].includes(e.key)||e.target.closest('a,button,input,.a-table-scroll')||getSelection().toString())return;e.preventDefault();go(current+(e.key==='ArrowRight'?1:-1));});
-window.addEventListener('popstate',()=>go(location.hash.slice(1),false));
+window.addEventListener('popstate',()=>{const key=location.hash.slice(1);if(key!=='cover'&&key&&resolve(key)<0)return;const position=history.state?.folioReading;if(position){rebuilding=true;current=readingIndex(position);restoreReading(position);}else go(key,false);});
 function settle(){video.pause();cover.classList.add('is-motion-settled','is-title-in');}
 document.getElementById('catOpeningSkip').onclick=settle;document.getElementById('catOpeningReplay').onclick=()=>{if(reduce.matches){settle();return;}cover.classList.remove('is-motion-settled','is-title-in');video.currentTime=0;video.play().catch(settle);};video.addEventListener('timeupdate',()=>{if(video.currentTime>4.45)cover.classList.add('is-title-in');});video.addEventListener('ended',settle);video.addEventListener('error',settle);if(reduce.matches)settle();else video.play().catch(settle);
-small.addEventListener('change',()=>{const key=sheets[current]?.unit;make();current=key?resolve(key):-1;render();});let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{const key=sheets[current]?.unit;root.classList.remove('flow-reading');make();current=key?resolve(key):-1;render();},180);});make();current=resolve(location.hash.slice(1));render();await document.fonts.ready;make();current=resolve(location.hash.slice(1));render();fit();window.__folio={sheets:()=>sheets.map(({key,unit,title,sourceIds})=>({key,unit,title,sourceIds})),go,current:()=>sheets[current]?.key||'cover'};
+small.addEventListener('change',scheduleRebuild);window.addEventListener('resize',scheduleRebuild);
+make();const stored=history.state?.folioReading;current=stored&&stored.key===location.hash.slice(1)?readingIndex(stored):resolve(location.hash.slice(1));render();readingPosition=stored&&stored.key===location.hash.slice(1)?stored:captureReading();
+await document.fonts.ready;rebuild();document.fonts.addEventListener('loadingdone',scheduleRebuild);
+window.__folio={sheets:()=>sheets.map(({key,unit,title,sourceIds})=>({key,unit,title,sourceIds})),go,current:()=>sheets[current]?.key||'cover'};
 })().catch(()=>{document.querySelector('.folio-controls').hidden=true;const fallback=document.querySelector('noscript:has(+ main)')||[...document.querySelectorAll('noscript')].find(n=>n.textContent.includes('catalog-text-version'));if(fallback){const text=document.createElement('div');text.innerHTML=fallback.textContent;document.querySelector('.folio').after(text);}});
