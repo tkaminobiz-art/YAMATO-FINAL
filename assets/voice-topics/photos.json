@@ -1,0 +1,1595 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "voiceId": "v01",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v01-01.jpg",
+          "alt": "奈良市 S様邸の写真：ピットリビングで過ごす人々",
+          "caption": "ピットリビングで過ごす人々",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v01-02.jpg",
+          "alt": "奈良市 S様邸の写真：空のLDKと収納",
+          "caption": "空のLDKと収納",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v01-03.jpg",
+          "alt": "奈良市 S様邸の写真：洋室と収納",
+          "caption": "洋室と収納",
+          "width": 1478,
+          "height": 1108
+        },
+        {
+          "src": "assets/voice-topics/photos/v01-04.jpg",
+          "alt": "奈良市 S様邸の写真：キッチンと三角屋根形の収納",
+          "caption": "キッチンと三角屋根形の収納",
+          "width": 512,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v01-05.jpg",
+          "alt": "奈良市 S様邸の写真：外観とウッドデッキ上の人々",
+          "caption": "外観とウッドデッキ上の人々",
+          "width": 512,
+          "height": 640
+        }
+      ]
+    },
+    {
+      "voiceId": "v02",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v02-02.jpg",
+          "alt": "奈良市 N様邸の写真：リビング階段・吹き抜けのあるLDK",
+          "caption": "リビング階段・吹き抜けのあるLDK",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v02-01.jpg",
+          "alt": "奈良市 N様邸の写真：玄関前に並ぶ人々と外観",
+          "caption": "玄関前に並ぶ人々と外観",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v02-03.jpg",
+          "alt": "奈良市 N様邸の写真：吹き抜けの上階ホール",
+          "caption": "吹き抜けの上階ホール",
+          "width": 741,
+          "height": 555
+        },
+        {
+          "src": "assets/voice-topics/photos/v02-04.jpg",
+          "alt": "奈良市 N様邸の写真：下から見上げた吹き抜けと階段",
+          "caption": "下から見上げた吹き抜けと階段",
+          "width": 582,
+          "height": 776
+        },
+        {
+          "src": "assets/voice-topics/photos/v02-05.jpg",
+          "alt": "奈良市 N様邸の写真：建物と駐車スペース",
+          "caption": "建物と駐車スペース",
+          "width": 640,
+          "height": 479
+        }
+      ]
+    },
+    {
+      "voiceId": "v03",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v03-01.jpg",
+          "alt": "奈良市 N様邸の写真：建物前で立ち話をする人々",
+          "caption": "建物前で立ち話をする人々",
+          "width": 640,
+          "height": 479
+        }
+      ]
+    },
+    {
+      "voiceId": "v04",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v04-01.jpg",
+          "alt": "奈良市 F様邸の写真：建物前に並ぶ人々と外観",
+          "caption": "建物前に並ぶ人々と外観",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v04-02.jpg",
+          "alt": "奈良市 F様邸の写真：子供部屋のロフト",
+          "caption": "子供部屋のロフト",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v04-03.jpg",
+          "alt": "奈良市 F様邸の写真：両側に棚のある収納",
+          "caption": "両側に棚のある収納",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v05",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v05-02.jpg",
+          "alt": "奈良市 O様邸の写真：キッチンと食卓での会話",
+          "caption": "キッチンと食卓での会話",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v05-01.jpg",
+          "alt": "奈良市 O様邸の写真：外観を見上げる人々",
+          "caption": "外観を見上げる人々",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v05-03.jpg",
+          "alt": "奈良市 O様邸の写真：キッチン",
+          "caption": "キッチン",
+          "width": 479,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v05-04.jpg",
+          "alt": "奈良市 O様邸の写真：高窓のあるリビング",
+          "caption": "高窓のあるリビング",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v05-05.jpg",
+          "alt": "奈良市 O様邸の写真：バルコニーからの眺め",
+          "caption": "バルコニーからの眺め",
+          "width": 1115,
+          "height": 841
+        }
+      ]
+    },
+    {
+      "voiceId": "v06",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v06-01.jpg",
+          "alt": "奈良市 A様邸の写真：玄関前に並ぶ人々と外観",
+          "caption": "玄関前に並ぶ人々と外観",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v06-02.jpg",
+          "alt": "奈良市 A様邸の写真：木目のキッチン",
+          "caption": "木目のキッチン",
+          "width": 512,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v06-03.jpg",
+          "alt": "奈良市 A様邸の写真：キッチンのダイニング側",
+          "caption": "キッチンのダイニング側",
+          "width": 512,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v06-04.jpg",
+          "alt": "奈良市 A様邸の写真：ピンクの壁の子供部屋と子供",
+          "caption": "ピンクの壁の子供部屋と子供",
+          "width": 640,
+          "height": 479
+        }
+      ]
+    },
+    {
+      "voiceId": "v07",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v07-01.jpg",
+          "alt": "奈良市 O様邸の写真：建物前に並ぶ人々と外観",
+          "caption": "建物前に並ぶ人々と外観",
+          "width": 907,
+          "height": 679
+        },
+        {
+          "src": "assets/voice-topics/photos/v07-02.jpg",
+          "alt": "奈良市 O様邸の写真：木目調外壁の建物",
+          "caption": "木目調外壁の建物",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v07-03.jpg",
+          "alt": "奈良市 O様邸の写真：デッキ脇に立つ人物",
+          "caption": "デッキ脇に立つ人物",
+          "width": 773,
+          "height": 579
+        },
+        {
+          "src": "assets/voice-topics/photos/v07-04.jpg",
+          "alt": "奈良市 O様邸の写真：庭とデッキへの動線",
+          "caption": "庭とデッキへの動線",
+          "width": 892,
+          "height": 668
+        },
+        {
+          "src": "assets/voice-topics/photos/v07-05.jpg",
+          "alt": "奈良市 O様邸の写真：建物と外構",
+          "caption": "建物と外構",
+          "width": 953,
+          "height": 714
+        }
+      ]
+    },
+    {
+      "voiceId": "v08",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v08-05.jpg",
+          "alt": "奈良市 S様邸の写真：ダイニングで会話する人々",
+          "caption": "ダイニングで会話する人々",
+          "width": 640,
+          "height": 556
+        },
+        {
+          "src": "assets/voice-topics/photos/v08-01.jpg",
+          "alt": "奈良市 S様邸の写真：建物前に並ぶ人々と外観",
+          "caption": "建物前に並ぶ人々と外観",
+          "width": 640,
+          "height": 591
+        },
+        {
+          "src": "assets/voice-topics/photos/v08-02.jpg",
+          "alt": "奈良市 S様邸の写真：建物外観",
+          "caption": "建物外観",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v08-03.jpg",
+          "alt": "奈良市 S様邸の写真：フラット対面キッチン",
+          "caption": "フラット対面キッチン",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v08-04.jpg",
+          "alt": "奈良市 S様邸の写真：ダイニングテーブルとキッチン",
+          "caption": "ダイニングテーブルとキッチン",
+          "width": 640,
+          "height": 479
+        }
+      ]
+    },
+    {
+      "voiceId": "v09",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v09-01.jpg",
+          "alt": "大和郡山市 K様邸の写真：建物前に並ぶ人々と外観",
+          "caption": "建物前に並ぶ人々と外観",
+          "width": 590,
+          "height": 442
+        }
+      ]
+    },
+    {
+      "voiceId": "v10",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v10-02.jpg",
+          "alt": "天理市 M様邸の写真：屋根のあるインナーバルコニー",
+          "caption": "屋根のあるインナーバルコニー",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v10-01.jpg",
+          "alt": "天理市 M様邸の写真：建物と駐車場・玄関前の人々",
+          "caption": "建物と駐車場・玄関前の人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v10-03.jpg",
+          "alt": "天理市 M様邸の写真：キッチン",
+          "caption": "キッチン",
+          "width": 479,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v10-04.jpg",
+          "alt": "天理市 M様邸の写真：洗面・脱衣スペース",
+          "caption": "洗面・脱衣スペース",
+          "width": 479,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v10-05.jpg",
+          "alt": "天理市 M様邸の写真：棚付き収納",
+          "caption": "棚付き収納",
+          "width": 479,
+          "height": 640
+        }
+      ]
+    },
+    {
+      "voiceId": "v11",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v11-04.jpg",
+          "alt": "奈良市 M様邸の写真：リビングで過ごす人々",
+          "caption": "リビングで過ごす人々",
+          "width": 766,
+          "height": 574
+        },
+        {
+          "src": "assets/voice-topics/photos/v11-01.jpg",
+          "alt": "奈良市 M様邸の写真：建物前に並ぶ人々",
+          "caption": "建物前に並ぶ人々",
+          "width": 770,
+          "height": 577
+        },
+        {
+          "src": "assets/voice-topics/photos/v11-02.jpg",
+          "alt": "奈良市 M様邸の写真：玄関前の人々",
+          "caption": "玄関前の人々",
+          "width": 559,
+          "height": 419
+        },
+        {
+          "src": "assets/voice-topics/photos/v11-03.jpg",
+          "alt": "奈良市 M様邸の写真：ダイニングで過ごす人々",
+          "caption": "ダイニングで過ごす人々",
+          "width": 636,
+          "height": 477
+        }
+      ]
+    },
+    {
+      "voiceId": "v12",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v12-01.jpg",
+          "alt": "奈良市 I様邸の写真：黒い外観を見上げる人々",
+          "caption": "黒い外観を見上げる人々",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v12-02.jpg",
+          "alt": "奈良市 I様邸の写真：廊下と洗面への出入口",
+          "caption": "廊下と洗面への出入口",
+          "width": 479,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v12-03.jpg",
+          "alt": "奈良市 I様邸の写真：キッチンの収納側",
+          "caption": "キッチンの収納側",
+          "width": 640,
+          "height": 412
+        }
+      ]
+    },
+    {
+      "voiceId": "v13",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v13-03.jpg",
+          "alt": "天理市 Y様邸の写真：キッチン前の収納",
+          "caption": "キッチン前の収納",
+          "width": 479,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v13-01.jpg",
+          "alt": "天理市 Y様邸の写真：建物前に立つ人々と外観",
+          "caption": "建物前に立つ人々と外観",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v13-02.jpg",
+          "alt": "天理市 Y様邸の写真：別角度の外観と人々",
+          "caption": "別角度の外観と人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v13-04.jpg",
+          "alt": "天理市 Y様邸の写真：棚付き収納",
+          "caption": "棚付き収納",
+          "width": 479,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v13-05.jpg",
+          "alt": "天理市 Y様邸の写真：浴室",
+          "caption": "浴室",
+          "width": 479,
+          "height": 640
+        }
+      ]
+    },
+    {
+      "voiceId": "v14",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v14-03.jpg",
+          "alt": "奈良市 I様邸の写真：キッチンから続くLDK",
+          "caption": "キッチンから続くLDK",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v14-01.jpg",
+          "alt": "奈良市 I様邸の写真：外観を見上げる人々",
+          "caption": "外観を見上げる人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v14-02.jpg",
+          "alt": "奈良市 I様邸の写真：建物外観",
+          "caption": "建物外観",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v14-04.jpg",
+          "alt": "奈良市 I様邸の写真：畳スペースとアクセント壁",
+          "caption": "畳スペースとアクセント壁",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v14-05.jpg",
+          "alt": "奈良市 I様邸の写真：アクセント壁と高窓",
+          "caption": "アクセント壁と高窓",
+          "width": 640,
+          "height": 479
+        }
+      ]
+    },
+    {
+      "voiceId": "v15",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v15-01.jpg",
+          "alt": "田原本町 H様邸の写真：建物前に立つ人々と外観",
+          "caption": "建物前に立つ人々と外観",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v16",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v16-02.jpg",
+          "alt": "奈良市 O様邸の写真：庭で遊ぶ人々",
+          "caption": "庭で遊ぶ人々",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v16-01.jpg",
+          "alt": "奈良市 O様邸の写真：玄関前にいる人々",
+          "caption": "玄関前にいる人々",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v16-03.jpg",
+          "alt": "奈良市 O様邸の写真：キッチン",
+          "caption": "キッチン",
+          "width": 479,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v16-04.jpg",
+          "alt": "奈良市 O様邸の写真：庭に面したリビング",
+          "caption": "庭に面したリビング",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v16-05.jpg",
+          "alt": "奈良市 O様邸の写真：引き戸のある室内",
+          "caption": "引き戸のある室内",
+          "width": 640,
+          "height": 479
+        }
+      ]
+    },
+    {
+      "voiceId": "v17",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v17-02.jpg",
+          "alt": "生駒市 I様邸の写真：キッチンで過ごす人々",
+          "caption": "キッチンで過ごす人々",
+          "width": 1005,
+          "height": 565
+        },
+        {
+          "src": "assets/voice-topics/photos/v17-01.jpg",
+          "alt": "生駒市 I様邸の写真：食卓を囲む人々",
+          "caption": "食卓を囲む人々",
+          "width": 515,
+          "height": 332
+        },
+        {
+          "src": "assets/voice-topics/photos/v17-03.jpg",
+          "alt": "生駒市 I様邸の写真：廊下と収納",
+          "caption": "廊下と収納",
+          "width": 555,
+          "height": 740
+        },
+        {
+          "src": "assets/voice-topics/photos/v17-04.jpg",
+          "alt": "生駒市 I様邸の写真：外構の塀に腰掛ける子供",
+          "caption": "外構の塀に腰掛ける子供",
+          "width": 548,
+          "height": 411
+        },
+        {
+          "src": "assets/voice-topics/photos/v17-05.jpg",
+          "alt": "生駒市 I様邸の写真：建物前に並ぶ人々と外観",
+          "caption": "建物前に並ぶ人々と外観",
+          "width": 881,
+          "height": 518
+        }
+      ]
+    },
+    {
+      "voiceId": "v18",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v18-03.jpg",
+          "alt": "田原本町 W様邸の写真：青いアクセント壁のあるLDK",
+          "caption": "青いアクセント壁のあるLDK",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v18-01.jpg",
+          "alt": "田原本町 W様邸の写真：青い外壁の玄関前に立つ人々",
+          "caption": "青い外壁の玄関前に立つ人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v18-02.jpg",
+          "alt": "田原本町 W様邸の写真：玄関前の人々",
+          "caption": "玄関前の人々",
+          "width": 640,
+          "height": 615
+        },
+        {
+          "src": "assets/voice-topics/photos/v18-04.jpg",
+          "alt": "田原本町 W様邸の写真：玩具やソファのあるリビング",
+          "caption": "玩具やソファのあるリビング",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v18-05.jpg",
+          "alt": "田原本町 W様邸の写真：黄色い壁のトイレ",
+          "caption": "黄色い壁のトイレ",
+          "width": 640,
+          "height": 640
+        }
+      ]
+    },
+    {
+      "voiceId": "v19",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v19-01.jpg",
+          "alt": "田原本町 H様邸の写真：建物前に立つ人々と外観",
+          "caption": "建物前に立つ人々と外観",
+          "width": 640,
+          "height": 479
+        }
+      ]
+    },
+    {
+      "voiceId": "v20",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v20-03.jpg",
+          "alt": "生駒市 N様邸の写真：ロフトと吹き抜けのあるLDK",
+          "caption": "ロフトと吹き抜けのあるLDK",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v20-01.jpg",
+          "alt": "生駒市 N様邸の写真：平屋の玄関前で話す人々",
+          "caption": "平屋の玄関前で話す人々",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v20-02.jpg",
+          "alt": "生駒市 N様邸の写真：平屋と庭の外観",
+          "caption": "平屋と庭の外観",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v20-04.jpg",
+          "alt": "生駒市 N様邸の写真：高い天井とアクセント壁",
+          "caption": "高い天井とアクセント壁",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v20-05.jpg",
+          "alt": "生駒市 N様邸の写真：高窓から光が入る室内",
+          "caption": "高窓から光が入る室内",
+          "width": 479,
+          "height": 640
+        }
+      ]
+    },
+    {
+      "voiceId": "v21",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v21-03.jpg",
+          "alt": "天理市 Y様邸の写真：キッチン前の収納",
+          "caption": "キッチン前の収納",
+          "width": 479,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v21-01.jpg",
+          "alt": "天理市 Y様邸の写真：建物前に立つ人々と外観",
+          "caption": "建物前に立つ人々と外観",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v21-02.jpg",
+          "alt": "天理市 Y様邸の写真：空のリビング",
+          "caption": "空のリビング",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v21-04.jpg",
+          "alt": "天理市 Y様邸の写真：浴室",
+          "caption": "浴室",
+          "width": 479,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v21-05.jpg",
+          "alt": "天理市 Y様邸の写真：棚付き収納",
+          "caption": "棚付き収納",
+          "width": 479,
+          "height": 640
+        }
+      ]
+    },
+    {
+      "voiceId": "v22",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v22-02.jpg",
+          "alt": "天理市 O様邸の写真：ダイニングで話す人々",
+          "caption": "ダイニングで話す人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v22-01.jpg",
+          "alt": "天理市 O様邸の写真：玄関前に立つ人々と外観",
+          "caption": "玄関前に立つ人々と外観",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v22-03.jpg",
+          "alt": "天理市 O様邸の写真：キッチン",
+          "caption": "キッチン",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v22-04.jpg",
+          "alt": "天理市 O様邸の写真：トイレ",
+          "caption": "トイレ",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v23",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v23-03.jpg",
+          "alt": "奈良市 A様邸の写真：キッチン前の収納とLDK",
+          "caption": "キッチン前の収納とLDK",
+          "width": 592,
+          "height": 444
+        },
+        {
+          "src": "assets/voice-topics/photos/v23-01.jpg",
+          "alt": "奈良市 A様邸の写真：外観を見上げる人々",
+          "caption": "外観を見上げる人々",
+          "width": 517,
+          "height": 388
+        },
+        {
+          "src": "assets/voice-topics/photos/v23-02.jpg",
+          "alt": "奈良市 A様邸の写真：玄関前で話す人々",
+          "caption": "玄関前で話す人々",
+          "width": 546,
+          "height": 409
+        },
+        {
+          "src": "assets/voice-topics/photos/v23-04.jpg",
+          "alt": "奈良市 A様邸の写真：LDKと引き戸",
+          "caption": "LDKと引き戸",
+          "width": 592,
+          "height": 444
+        },
+        {
+          "src": "assets/voice-topics/photos/v23-05.jpg",
+          "alt": "奈良市 A様邸の写真：棚付き収納",
+          "caption": "棚付き収納",
+          "width": 444,
+          "height": 592
+        }
+      ]
+    },
+    {
+      "voiceId": "v24",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v24-04.jpg",
+          "alt": "奈良市 M様邸の写真：ソファとダイニングがつながるLDK",
+          "caption": "ソファとダイニングがつながるLDK",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v24-01.jpg",
+          "alt": "奈良市 M様邸の写真：建物と駐車スペース・人々",
+          "caption": "建物と駐車スペース・人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v24-02.jpg",
+          "alt": "奈良市 M様邸の写真：建物前の人々",
+          "caption": "建物前の人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v24-03.jpg",
+          "alt": "奈良市 M様邸の写真：照明と食卓のあるLDK",
+          "caption": "照明と食卓のあるLDK",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v24-05.jpg",
+          "alt": "奈良市 M様邸の写真：浴室",
+          "caption": "浴室",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v25",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v25-02.jpg",
+          "alt": "生駒市 N様邸の写真：リビングで過ごす人々",
+          "caption": "リビングで過ごす人々",
+          "width": 646,
+          "height": 484
+        },
+        {
+          "src": "assets/voice-topics/photos/v25-01.jpg",
+          "alt": "生駒市 N様邸の写真：建物前に立つ人々と外観",
+          "caption": "建物前に立つ人々と外観",
+          "width": 575,
+          "height": 431
+        },
+        {
+          "src": "assets/voice-topics/photos/v25-03.jpg",
+          "alt": "生駒市 N様邸の写真：室内で遊ぶ人々",
+          "caption": "室内で遊ぶ人々",
+          "width": 658,
+          "height": 493
+        }
+      ]
+    },
+    {
+      "voiceId": "v26",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v26-05.jpg",
+          "alt": "奈良市 T様邸の写真：キッチン",
+          "caption": "キッチン",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v26-01.jpg",
+          "alt": "奈良市 T様邸の写真：両側に棚のある収納",
+          "caption": "両側に棚のある収納",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v26-02.jpg",
+          "alt": "奈良市 T様邸の写真：棚付き収納の別角度",
+          "caption": "棚付き収納の別角度",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v26-03.jpg",
+          "alt": "奈良市 T様邸の写真：机と棚のある小室",
+          "caption": "机と棚のある小室",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v26-04.jpg",
+          "alt": "奈良市 T様邸の写真：低い天井の収納空間",
+          "caption": "低い天井の収納空間",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v27",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v27-04.jpg",
+          "alt": "生駒市 I様邸の写真：食卓で話す人々",
+          "caption": "食卓で話す人々",
+          "width": 789,
+          "height": 591
+        },
+        {
+          "src": "assets/voice-topics/photos/v27-01.jpg",
+          "alt": "生駒市 I様邸の写真：建物前に立つ人々",
+          "caption": "建物前に立つ人々",
+          "width": 682,
+          "height": 511
+        },
+        {
+          "src": "assets/voice-topics/photos/v27-02.jpg",
+          "alt": "生駒市 I様邸の写真：玄関と建物外観",
+          "caption": "玄関と建物外観",
+          "width": 718,
+          "height": 538
+        },
+        {
+          "src": "assets/voice-topics/photos/v27-03.jpg",
+          "alt": "生駒市 I様邸の写真：デッキと庭",
+          "caption": "デッキと庭",
+          "width": 684,
+          "height": 513
+        }
+      ]
+    },
+    {
+      "voiceId": "v28",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v28-01.jpg",
+          "alt": "奈良市の写真：一部にモザイク処理のある建物外観",
+          "caption": "一部にモザイク処理のある建物外観",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v28-02.jpg",
+          "alt": "奈良市の写真：外構を含む外観・一部モザイク",
+          "caption": "外構を含む外観・一部モザイク",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "src": "assets/voice-topics/photos/v28-04.jpg",
+          "alt": "奈良市の写真：キッチン",
+          "caption": "キッチン",
+          "width": 479,
+          "height": 640
+        }
+      ]
+    },
+    {
+      "voiceId": "v29",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v29-01.jpg",
+          "alt": "奈良市 H様邸の写真：建物外観",
+          "caption": "建物外観",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v29-02.jpg",
+          "alt": "奈良市 H様邸の写真：バルコニー",
+          "caption": "バルコニー",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v30",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v30-02.jpg",
+          "alt": "生駒市 U様邸の写真：リビングのソファで過ごす人々",
+          "caption": "リビングのソファで過ごす人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v30-01.jpg",
+          "alt": "生駒市 U様邸の写真：建物前に立つ人々と駐車スペース",
+          "caption": "建物前に立つ人々と駐車スペース",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v30-03.jpg",
+          "alt": "生駒市 U様邸の写真：木目天井のキッチン",
+          "caption": "木目天井のキッチン",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v31",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v31-01.jpg",
+          "alt": "木津川市 H様邸の写真：建物外観",
+          "caption": "建物外観",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v31-02.jpg",
+          "alt": "木津川市 H様邸の写真：建物と駐車スペース",
+          "caption": "建物と駐車スペース",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v32",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v32-01.jpg",
+          "alt": "斑鳩町 K様邸の写真：建物と駐車スペース",
+          "caption": "建物と駐車スペース",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v33",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v33-01.jpg",
+          "alt": "生駒市 H様邸の写真：建物外観",
+          "caption": "建物外観",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v34",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v34-01.jpg",
+          "alt": "H様邸の写真：建物と駐車スペース",
+          "caption": "建物と駐車スペース",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v35",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v35-04.jpg",
+          "alt": "奈良市 O様の写真：キッチンとソファが見えるLDK",
+          "caption": "キッチンとソファが見えるLDK",
+          "width": 860,
+          "height": 645
+        },
+        {
+          "src": "assets/voice-topics/photos/v35-01.jpg",
+          "alt": "奈良市 O様の写真：建物前に並ぶ人々",
+          "caption": "建物前に並ぶ人々",
+          "width": 733,
+          "height": 549
+        },
+        {
+          "src": "assets/voice-topics/photos/v35-02.jpg",
+          "alt": "奈良市 O様の写真：玄関前で話す人々",
+          "caption": "玄関前で話す人々",
+          "width": 723,
+          "height": 542
+        },
+        {
+          "src": "assets/voice-topics/photos/v35-03.jpg",
+          "alt": "奈良市 O様の写真：建物前の子供たち",
+          "caption": "建物前の子供たち",
+          "width": 763,
+          "height": 572
+        },
+        {
+          "src": "assets/voice-topics/photos/v35-05.jpg",
+          "alt": "奈良市 O様の写真：建物前の人々",
+          "caption": "建物前の人々",
+          "width": 590,
+          "height": 442
+        }
+      ]
+    },
+    {
+      "voiceId": "v36",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v36-01.jpg",
+          "alt": "奈良市 N様邸の写真：建物前に並ぶ人々と外観",
+          "caption": "建物前に並ぶ人々と外観",
+          "width": 500,
+          "height": 281
+        },
+        {
+          "src": "assets/voice-topics/photos/v36-02.jpg",
+          "alt": "奈良市 N様邸の写真：玄関前の人々",
+          "caption": "玄関前の人々",
+          "width": 552,
+          "height": 310
+        },
+        {
+          "src": "assets/voice-topics/photos/v36-03.jpg",
+          "alt": "奈良市 N様邸の写真：室内で過ごす人々",
+          "caption": "室内で過ごす人々",
+          "width": 401,
+          "height": 301
+        },
+        {
+          "src": "assets/voice-topics/photos/v36-04.jpg",
+          "alt": "奈良市 N様邸の写真：ダイニングで過ごす人々",
+          "caption": "ダイニングで過ごす人々",
+          "width": 414,
+          "height": 310
+        }
+      ]
+    },
+    {
+      "voiceId": "v37",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v37-03.jpg",
+          "alt": "京田辺市 F様邸の写真：キッチン・ダイニング・リビング",
+          "caption": "キッチン・ダイニング・リビング",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v37-01.jpg",
+          "alt": "京田辺市 F様邸の写真：建物前に立つ人々と外観",
+          "caption": "建物前に立つ人々と外観",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v37-02.jpg",
+          "alt": "京田辺市 F様邸の写真：ダイニングからキッチンへの動線",
+          "caption": "ダイニングからキッチンへの動線",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v38",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v38-04.jpg",
+          "alt": "木津川市 I様邸の写真：木目天井とリビング階段",
+          "caption": "木目天井とリビング階段",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v38-01.jpg",
+          "alt": "木津川市 I様邸の写真：建築中の柱の前に立つ人々",
+          "caption": "建築中の柱の前に立つ人々",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v38-02.jpg",
+          "alt": "木津川市 I様邸の写真：建物と広い庭・人々",
+          "caption": "建物と広い庭・人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v38-03.jpg",
+          "alt": "木津川市 I様邸の写真：木目天井のキッチン",
+          "caption": "木目天井のキッチン",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v38-05.jpg",
+          "alt": "木津川市 I様邸の写真：庭と建物",
+          "caption": "庭と建物",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v39",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v39-03.jpg",
+          "alt": "生駒市 T様邸の写真：キッチンとLDK",
+          "caption": "キッチンとLDK",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v39-01.jpg",
+          "alt": "生駒市 T様邸の写真：建物前に立つ人々と外観",
+          "caption": "建物前に立つ人々と外観",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v39-02.jpg",
+          "alt": "生駒市 T様邸の写真：建物と庭",
+          "caption": "建物と庭",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v39-04.jpg",
+          "alt": "生駒市 T様邸の写真：木目の収納家具",
+          "caption": "木目の収納家具",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v39-05.jpg",
+          "alt": "生駒市 T様邸の写真：リビング階段",
+          "caption": "リビング階段",
+          "width": 480,
+          "height": 640
+        }
+      ]
+    },
+    {
+      "voiceId": "v40",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v40-02.jpg",
+          "alt": "奈良市 F様邸の写真：リビングの床に座る人々",
+          "caption": "リビングの床に座る人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v40-01.jpg",
+          "alt": "奈良市 F様邸の写真：リビングで過ごす人々",
+          "caption": "リビングで過ごす人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v40-03.jpg",
+          "alt": "奈良市 F様邸の写真：室内で子供を抱く人々",
+          "caption": "室内で子供を抱く人々",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v43",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v43-01.jpg",
+          "alt": "奈良市 S様邸の写真：建築中の柱の前に立つ人々",
+          "caption": "建築中の柱の前に立つ人々",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v43-02.jpg",
+          "alt": "奈良市 S様邸の写真：手形を付ける場面の人々",
+          "caption": "手形を付ける場面の人々",
+          "width": 479,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v43-03.jpg",
+          "alt": "奈良市 S様邸の写真：柱に付いたオレンジ色の手形",
+          "caption": "柱に付いたオレンジ色の手形",
+          "width": 604,
+          "height": 806
+        },
+        {
+          "src": "assets/voice-topics/photos/v43-04.jpg",
+          "alt": "奈良市 S様邸の写真：柱に付いた緑色の手形",
+          "caption": "柱に付いた緑色の手形",
+          "width": 604,
+          "height": 806
+        },
+        {
+          "src": "assets/voice-topics/photos/v43-05.jpg",
+          "alt": "奈良市 S様邸の写真：柱に付いたピンク色の手形",
+          "caption": "柱に付いたピンク色の手形",
+          "width": 604,
+          "height": 806
+        }
+      ]
+    },
+    {
+      "voiceId": "v44",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v44-01.jpg",
+          "alt": "生駒市 S様邸の写真：建物前にいる人々と外観",
+          "caption": "建物前にいる人々と外観",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v44-02.jpg",
+          "alt": "生駒市 S様邸の写真：キッチン",
+          "caption": "キッチン",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v44-03.jpg",
+          "alt": "生駒市 S様邸の写真：玄関から続く廊下",
+          "caption": "玄関から続く廊下",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v44-04.jpg",
+          "alt": "生駒市 S様邸の写真：浴室",
+          "caption": "浴室",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v44-05.jpg",
+          "alt": "生駒市 S様邸の写真：高窓のある洋室",
+          "caption": "高窓のある洋室",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v45",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v45-01.jpg",
+          "alt": "京田辺市 O様邸の写真：間接照明と木目天井のキッチン",
+          "caption": "間接照明と木目天井のキッチン",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v45-02.jpg",
+          "alt": "京田辺市 O様邸の写真：玄関収納と階段",
+          "caption": "玄関収納と階段",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v45-03.jpg",
+          "alt": "京田辺市 O様邸の写真：洗面台と収納",
+          "caption": "洗面台と収納",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v45-04.jpg",
+          "alt": "京田辺市 O様邸の写真：浴室",
+          "caption": "浴室",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v45-05.jpg",
+          "alt": "京田辺市 O様邸の写真：棚付き収納",
+          "caption": "棚付き収納",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v46",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v46-03.jpg",
+          "alt": "橿原市 S様邸の写真：木目の下がり天井とLDK",
+          "caption": "木目の下がり天井とLDK",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v46-01.jpg",
+          "alt": "橿原市 S様邸の写真：建物前に立つ人々と外観",
+          "caption": "建物前に立つ人々と外観",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v46-02.jpg",
+          "alt": "橿原市 S様邸の写真：建築中の柱の手形",
+          "caption": "建築中の柱の手形",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v46-04.jpg",
+          "alt": "橿原市 S様邸の写真：キッチンと木目天井",
+          "caption": "キッチンと木目天井",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v47",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v47-01.jpg",
+          "alt": "京田辺市 T様邸の写真：建物前に並ぶ人々と外観",
+          "caption": "建物前に並ぶ人々と外観",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v47-02.jpg",
+          "alt": "京田辺市 T様邸の写真：別角度の外観と人々",
+          "caption": "別角度の外観と人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v47-03.jpg",
+          "alt": "京田辺市 T様邸の写真：建物前で外観を見る人々",
+          "caption": "建物前で外観を見る人々",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v47-04.jpg",
+          "alt": "京田辺市 T様邸の写真：棚付き収納",
+          "caption": "棚付き収納",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v47-05.jpg",
+          "alt": "京田辺市 T様邸の写真：キッチン",
+          "caption": "キッチン",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v48",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v48-01.jpg",
+          "alt": "奈良市 M様邸の写真：木目の下がり天井とキッチン",
+          "caption": "木目の下がり天井とキッチン",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v48-02.jpg",
+          "alt": "奈良市 M様邸の写真：キッチンの作業側",
+          "caption": "キッチンの作業側",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v48-03.jpg",
+          "alt": "奈良市 M様邸の写真：畳スペースにつながるLDK",
+          "caption": "畳スペースにつながるLDK",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v48-04.jpg",
+          "alt": "奈良市 M様邸の写真：浴室",
+          "caption": "浴室",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v48-05.jpg",
+          "alt": "奈良市 M様邸の写真：収納と廊下",
+          "caption": "収納と廊下",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v49",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v49-04.jpg",
+          "alt": "斑鳩町 I様邸の写真：キッチンとダイニング",
+          "caption": "キッチンとダイニング",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v49-01.jpg",
+          "alt": "斑鳩町 I様邸の写真：建物前に並ぶ人々と外観",
+          "caption": "建物前に並ぶ人々と外観",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v49-02.jpg",
+          "alt": "斑鳩町 I様邸の写真：縦位置の外観と人々",
+          "caption": "縦位置の外観と人々",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v49-03.jpg",
+          "alt": "斑鳩町 I様邸の写真：キッチン",
+          "caption": "キッチン",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v49-05.jpg",
+          "alt": "斑鳩町 I様邸の写真：地鎮祭のテント内に並ぶ人々",
+          "caption": "地鎮祭のテント内に並ぶ人々",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "voiceId": "v50",
+      "verified": true,
+      "images": [
+        {
+          "src": "assets/voice-topics/photos/v50-04.jpg",
+          "alt": "京田辺市 K様邸の写真：吹き抜けとリビング",
+          "caption": "吹き抜けとリビング",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v50-01.jpg",
+          "alt": "京田辺市 K様邸の写真：外観を見上げる人々",
+          "caption": "外観を見上げる人々",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/voice-topics/photos/v50-02.jpg",
+          "alt": "京田辺市 K様邸の写真：ダイニングからキッチン",
+          "caption": "ダイニングからキッチン",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v50-03.jpg",
+          "alt": "京田辺市 K様邸の写真：ダイニングとリビング",
+          "caption": "ダイニングとリビング",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "assets/voice-topics/photos/v50-05.jpg",
+          "alt": "京田辺市 K様邸の写真：ダイニングを中心に見たLDK",
+          "caption": "ダイニングを中心に見たLDK",
+          "width": 640,
+          "height": 480
+        }
+      ]
+    }
+  ]
+}
