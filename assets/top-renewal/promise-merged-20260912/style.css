@@ -1,0 +1,19 @@
+/* Promise 01-03 merged with the three job photographs into one row of cards (adopted 2026-09-12). Loads after promise-adopted-20260911/style.css and reuses its number, eyebrow, body and ornament rules. The section keeps no links (9/11 decision). */
+#homePromise .pr26__cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+#homePromise .pr26__card{min-width:0}
+#homePromise .pr26__card figure{margin:0 0 14px;position:relative}
+#homePromise .pr26__card img{display:block;width:100%;height:auto;aspect-ratio:1.6;object-fit:cover;object-position:50% 35%;max-width:none}
+#homePromise .pr26__card figcaption{margin:9px 0 0;color:#5f6052;font:400 13px/1.5 "Shippori Mincho",serif;letter-spacing:.04em;display:flex;flex-direction:column;gap:1px}
+#homePromise .pr26__card .pr26__cap-en{font:400 11px/1.4 "Shippori Mincho",serif;letter-spacing:.17em;color:#5f6052}
+#homePromise .pr26__card .pr26__cap-ja{color:#303329}
+#homePromise .pr26__card .pr26__mobile-break{display:initial}
+#homePromise .pr26__card .pr26__number{margin:0 0 10px}
+#homePromise .pr26__card .pr26__eyebrow{margin:0 0 6px;font-size:14px;color:#5f6052;letter-spacing:.04em}
+#homePromise .pr26__card h1,#homePromise .pr26__card h2{margin:0 0 10px;font-size:22px;font-weight:400;line-height:1.5;letter-spacing:.025em;color:#303329}
+#homePromise .pr26__card .pr26__body{font-size:15px;line-height:1.8;word-break:keep-all;overflow-wrap:anywhere}
+@media(min-width:1001px){#homePromise .pr26__card--1 img{object-position:50% 40%}#homePromise .pr26__card--2 img{object-position:50% 30%}#homePromise .pr26__card--3 img{object-position:50% 0%}}
+@media(max-width:1000px){#homePromise .pr26__cards{grid-template-columns:1fr;gap:30px}#homePromise .pr26__card img{aspect-ratio:1.5;object-position:50% 30%}#homePromise .pr26__card--3 img{object-position:50% 0%}#homePromise .pr26__card h1,#homePromise .pr26__card h2{font-size:24px}#homePromise .pr26__card .pr26__body{font-size:16px;line-height:1.85}}
+@media(max-width:600px){#homePromise .pr26__card h1,#homePromise .pr26__card h2{font-size:22px}}
+/* Two sentences moved from Promise 03 into the shared specification of the lineup. The note keeps the lineup note style with a tighter top margin. */
+#lineup .common-spec p{word-break:keep-all;overflow-wrap:anywhere}
+#lineup .common-spec .note{margin-top:6px}

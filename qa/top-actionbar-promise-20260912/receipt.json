@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "scope": [
+    {
+      "path": "index.html",
+      "sha256": "682e50e7521cb71bc659717eb03dd6c704349ffdf6e245e8ec624e1402e1eaf0"
+    },
+    {
+      "path": "assets/top-renewal/actionbar-20260912/style.css",
+      "sha256": "1c936a97e7fea1a805e4da2dcb3cf1134b66f6c954c247cb2596f0b9e78700d4"
+    },
+    {
+      "path": "assets/top-renewal/actionbar-20260912/script.js",
+      "sha256": "d25a74812be9d0c5a7812a751f67887b024c8d59539281fb173670a776e007f5"
+    },
+    {
+      "path": "assets/top-renewal/promise-merged-20260912/style.css",
+      "sha256": "ca6edb1f04ebc7811b7422efea129ae09144be5f96d427b9c011d1530c95265b"
+    },
+    {
+      "path": "scripts/verify-homepage.mjs",
+      "sha256": "2afa875e72f936c6736f122b126614f209254822d4b73cb2e5e93f3beddd2b24"
+    }
+  ],
+  "records": {
+    "brief": {
+      "path": "qa/top-actionbar-promise-20260912/brief.md",
+      "sha256": "d3313bd9d946b3c10a9eeeff378e57be85ee228ec23393430c13898df0556e2f"
+    },
+    "copy": {
+      "path": "qa/top-actionbar-promise-20260912/copy.md",
+      "sha256": "310f98eee5f37567686506e03b54e0cccfbfb5cb271212a9c2e6012975850759"
+    },
+    "assets": {
+      "path": "qa/top-actionbar-promise-20260912/assets.md",
+      "sha256": "f9aa17edcefecff7fc89a3cdcf6c181da0a64909a11b9f41be830b5bc5fedb3f"
+    },
+    "visual": {
+      "path": "qa/top-actionbar-promise-20260912/visual.md",
+      "sha256": "af4e47326a72a83f2c4dfb68d2411bafe79cabbf928117f32bf57fa2b068e53f"
+    },
+    "interaction": {
+      "path": "qa/top-actionbar-promise-20260912/interaction.md",
+      "sha256": "06906c2a9796fce8ff46cb426d84f2178f3f93ad4375e0a20e77082892708a37"
+    }
+  },
+  "screenshots": [
+    {
+      "viewport": "pc",
+      "width": 1440,
+      "height": 900,
+      "path": "qa/top-actionbar-promise-20260912/pc-1440-promise.png",
+      "sha256": "dd45b6fabc7fc73e0b9f7fc4bd015b329a93b3f88064e8ca3f26e272a1d44e42"
+    },
+    {
+      "viewport": "sp",
+      "width": 390,
+      "height": 844,
+      "path": "qa/top-actionbar-promise-20260912/sp-390-promise-actionbar.png",
+      "sha256": "1d236df3124df4cfac4ffeaa9e2a217407bb35f833bc65a9446b090131552a79"
+    }
+  ]
+}

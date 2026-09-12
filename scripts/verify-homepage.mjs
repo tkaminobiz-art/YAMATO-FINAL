@@ -34,7 +34,7 @@ export function verifyHomepage(html){
     assert(existsSync(asset),`Approved section dependency is missing: ${asset}`);
   }
   assert(!html.includes('assets/top-renewal/770-editorial.js'),'Retired 770 counter script must not be loaded');
-  assert.equal((built.match(/class="gf-job gf-job--[123]"/g)||[]).length,3,'BUILT BY YAMATO must contain three evidence items');
+  assert.equal((built.match(/class="pr26__card pr26__card--[123]"/g)||[]).length,3,'BUILT BY YAMATO must contain the three merged promise cards');
   assert(/<strong\b[^>]*>770<\/strong>/.test(built),'BUILT BY YAMATO must retain the approved 770 figure');
   for(const label of ['初回から設計士が同席','設計内容を現場で確認','引き渡し後まで社内で対応'])assert(built.includes(label),`BUILT BY YAMATO is missing: ${label}`);
   assert(!built.includes('class="gf-evidence"')&&!built.includes('id="builtTitle"'),'Keep the owner-removed explanation and quotation band absent');
@@ -108,7 +108,7 @@ assert(readFileSync('kodawari.html','utf8').includes('assets/kodawari/editorial.
 if(process.argv.includes('--self-test')){
   assert.throws(()=>verifyHomepage(html.replace(readSection(html,builtOpening),'')));
   assert.throws(()=>verifyHomepage(html.replace('>770</strong>','>600</strong>')));
-  assert.throws(()=>verifyHomepage(html.replace('class="gf-job gf-job--1"','class="removed-item"')));
+  assert.throws(()=>verifyHomepage(html.replace('class="pr26__card pr26__card--1"','class="removed-item"')));
   assert.throws(()=>verifyHomepage(html.replace('assets/top-renewal/generated-fv-20260909/style.css','missing.css')));
   assert.throws(()=>verifyHomepage(html.replace('wg-section wg-white vb26','voices section')));
   assert.throws(()=>verifyHomepage(html.replace('voice.html#v33','voice.html#missing')));
